@@ -26,7 +26,7 @@ everything around that:
 
 - **`main` is protected in every repository** (a ruleset): no force push and no deletion; a change from
   anyone but the operator arrives as a pull request with one approving review. The operator's own
-  pushes - how every agent's work reaches `main` today - stay possible as a bypass of the ruleset.
+  pushes - how every agent's work reaches `main` today - stay possible as a bypass of the ruleset, for the operator's account alone: no deploy key or app may bypass it, and the update jobs open pull requests.
 - **`CODEOWNERS` in every repository** names the operator for `.github/`, the build files (`pom.xml`,
   `pubspec.yaml`, build scripts), `AGENTS.md` and `CODEOWNERS` itself, so a pull request touching them
   waits for the operator.
@@ -43,7 +43,7 @@ everything around that:
 - **Built, read in the code**: `.github/CODEOWNERS` in every repository names the operator for
   `.github/` (itself included), the build files and `AGENTS.md`; `check-actions` in `sokar-release`
   (`CheckActions`) refuses `pull_request_target` and a `workflow_run` that takes the pull request's code.
-- **Left, the operator's, per public repository**: the ruleset on `main` with the bypass decided below,
+- **Left, the operator's, per public repository**: the ruleset on `main` with the operator's account as its only bypass,
   and Actions' "Require approval for all external contributors".
 - **Measured**: a force push and a push by another account refused, a pull request touching `.github/`
   asking for the operator's review, a fork's pull request waiting. Seen to fail first: the force push on
