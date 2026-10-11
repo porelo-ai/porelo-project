@@ -30,15 +30,15 @@ reached without the protocol, and worth comparing against it rather than replace
 ## What is already decided here, so this does not get argued twice
 
 - **A2A is already chosen as a format, and not as a server.**
-  `sokar` B14's design says a message file should be an A2A message
+  `sokar` [B14](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b14)'s design says a message file should be an A2A message
   *"rather than a shape invented here, so that an agent already speaking A2A needs no adapter
   later. It is a format, it costs nothing at runtime, and it commits to no server."* That is
   settled and this file does not reopen it.
 - **A2A as a network protocol is refused by a property rather than by preference.** The daemon
   binds no network interface in any configuration, so a daemon that accepts a peer is a different
-  product. Same argument as cross-machine talking in `sokar` B14.
+  product. Same argument as cross-machine talking in `sokar` [B14](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b14).
 - **MCP is already in the credential design.**
-  `sokar` B31 exists *because* of remote MCP servers - the
+  `sokar` [B31](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b31) exists *because* of remote MCP servers - the
   case where an agent inherits a person's permissions rather than a service account's - and takes
   its shape from what that ecosystem settled on: RFC 9728, PKCE, dynamic client registration,
   revocation, and the explicit refusal of client credentials as a passthrough violation.
@@ -81,7 +81,7 @@ reached without the protocol, and worth comparing against it rather than replace
   touch - or an editor outside reaching in, which is a hole in the box, decides whether this is
   interesting or refused. **Read the specification before answering.** - the coordinator's to read, the
   operator's to decide.
-- **Whether MCP arrives as something a task uses or as something Sokar speaks.** `sokar` B31 treats an MCP
+- **Whether MCP arrives as something a task uses or as something Sokar speaks.** `sokar` [B31](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b31) treats an MCP
   server as a destination a credential is needed for. An agent inside a task calling one is a
   `destination` in the sense [`sokar`'s decisions](https://github.com/sokar-ai/sokar/blob/main/doc/decisions.md#a-service-that-is-not-a-model-provider-is-a-destination)
   give it and needs no new mechanism. Sokar itself becoming an MCP server -
@@ -104,4 +104,4 @@ reached without the protocol, and worth comparing against it rather than replace
   it once as a grant is accepted, and a later change holds the session and asks, showing what
   changed; tool descriptions checked by fixed rules of the kind the message filter uses before they
   reach the agent; and an MCP server inside the container only from a package the project pins, as
-  an agent is pinned. - the coordinator's to read; PJ15 holds the same three proposals as its shape.
+  an agent is pinned. - the coordinator's to read; [PJ15](README.md#pj15) holds the same three proposals as its shape.

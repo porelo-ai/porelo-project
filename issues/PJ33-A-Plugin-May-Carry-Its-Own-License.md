@@ -44,7 +44,7 @@ All of Sokar is GPL-3.0-or-later today, with no exception and no differently lic
 
 Changing the license of existing code needs every contributor's consent; today that is one person,
 and every outside contribution makes it harder, so this comes before contributions are invited
-(`sokar-project` PJ27).
+(`sokar-project` [PJ27](README.md#pj27)).
 
 ## Plan
 

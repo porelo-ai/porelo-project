@@ -88,5 +88,5 @@ like here, or which of the ten repositories their change belongs in.
 ## To be checked
 
 - Where is a vulnerability reported: a `SECURITY.md` per repository, GitHub's private reporting, or an
-  address? - the operator's to decide; PJ32 proposes GitHub's private reporting and a `SECURITY.md`.
+  address? - the operator's to decide; [PJ32](README.md#pj32) proposes GitHub's private reporting and a `SECURITY.md`.
 - A code of conduct: wanted, and which? - the operator's to decide.

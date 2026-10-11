@@ -19,7 +19,7 @@ variable. A stored value may be a reference to a variable rather than a literal.
 
 ## Plan
 
-- **Measured first**, on a VM as A08 was: a real sign-in, what it stores, which hosts it contacts, and
+- **Measured first**, on a VM as [A08](README.md#a08) was: a real sign-in, what it stores, which hosts it contacts, and
   whether the reference-to-a-variable form and a base URL per provider point it at the broker. If it
   cannot be brokered, the answer is written here and nothing is built.
 - **The provider it talks to** is one of the definitions `sokar/providers/` has (`anthropic`,

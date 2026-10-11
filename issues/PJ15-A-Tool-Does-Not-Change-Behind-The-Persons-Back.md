@@ -1,7 +1,7 @@
 # PJ15 — A tool does not change behind the person's back
 
 **Status:** Analyzed; the measurement of whether the broker carries an MCP session comes first.
-**Size:** XL - the broker has to understand MCP first; it splits into the measurement (S), pinning and the hold in `sokar` (L, on `sokar` B167's gateway), acceptance under *Needs you* in `sokar-frontend` (M), the description rules in `sokar-message-sluice` (M), and pinned in-container servers in each agent repository (M each).
+**Size:** XL - the broker has to understand MCP first; it splits into the measurement (S), pinning and the hold in `sokar` (L, on `sokar` [B167](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b167)'s gateway), acceptance under *Needs you* in `sokar-frontend` (M), the description rules in `sokar-message-sluice` (M), and pinned in-container servers in each agent repository (M each).
 
 **What must be true.** What an MCP server tells an agent about its tools is something a person has
 seen and accepted, and a server that changes it afterwards - a rug pull - is stopped until a person
@@ -24,7 +24,7 @@ main channel left; an MCP server started inside the container is neither pinned 
 ## The shape
 
 1. **Tool definitions pinned**: the broker hashes a server's `tools/list`; a person accepts it once, as
-   a grant is accepted (`sokar` B31); a later change holds the session and asks under *Needs you*,
+   a grant is accepted (`sokar` [B31](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b31)); a later change holds the session and asks under *Needs you*,
    showing what changed.
 2. **Tool descriptions checked** by fixed rules of the filter's kind - hidden instructions, invisible
    or look-alike Unicode, encoded payloads - before the agent receives them; deterministic, not
@@ -39,11 +39,11 @@ how agents start MCP servers in the agent repositories.
 ## Plan
 
 - **Today**: the broker (`supervisor` `VaultProxy`) passes MCP bodies through unread, and nothing in
-  `sokar` reads `tools/list`. `sokar` B167 (an MCP gateway on the host, open) is the ground this builds
+  `sokar` reads `tools/list`. `sokar` [B167](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b167) (an MCP gateway on the host, open) is the ground this builds
   on.
 - **Measured first**, in `sokar`: whether the broker carries an MCP session, written here.
 - **`sokar`**: the gateway hashes `tools/list`; a person accepts it once as a grant is accepted (`sokar`
-  B31); a change holds the session and asks under *Needs you*. Seen to fail first: a stub MCP server
+  [B31](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b31)); a change holds the session and asks under *Needs you*. Seen to fail first: a stub MCP server
   whose tool list changes after acceptance, reaching the agent unasked.
 - **`sokar-frontend`**: the acceptance under *Needs you*, showing what changed.
 - **`sokar-message-sluice`** (or a catalog of its own): the fixed description rules, each seen to fail on
@@ -66,5 +66,5 @@ how agents start MCP servers in the agent repositories.
   with Agent Core.
 - Whether a changed tool set holds the session (safe, but stops work) or only flags it. - the operator's
   to decide.
-- Whether this issue is blocked by `sokar` B167, which builds the gateway it needs - the coordinator's
+- Whether this issue is blocked by `sokar` [B167](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b167), which builds the gateway it needs - the coordinator's
   to decide.

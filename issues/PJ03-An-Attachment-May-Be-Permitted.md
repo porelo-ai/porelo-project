@@ -16,7 +16,7 @@ is.
 **The two directions are two questions.** The filter stops the agent from sending data out; a person
 sending a file to an agent is not what it exists to stop. **A person already gives a running task a
 file without a message**: `sokar task give` puts it whole and read-only in `/sokar/files` (`sokar`'s
-hand-in; the interface's side is `sokar-frontend`'s F100). What is left here is a file that travels
+hand-in; the interface's side is `sokar-frontend`'s [F100](https://github.com/sokar-ai/sokar-frontend/blob/main/issues/README.md#f100)). What is left here is a file that travels
 **inside a message** - one a person drops into the project's room or a direct chat, and above all one an
 agent sends out - and outbound is the one that carries the weight.
 
@@ -41,8 +41,8 @@ agent sends out - and outbound is the one that carries the weight.
 
 ## Plan
 
-- **Decided first**: how a permitted part fits the narrowed message schema of `sokar` B108 and
-  `sokar-message-sluice` SL23, which refuse every file, raw and url part.
+- **Decided first**: how a permitted part fits the narrowed message schema of `sokar` [B108](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b108) and
+  `sokar-message-sluice` [SL23](https://github.com/sokar-ai/sokar-message-sluice/blob/main/issues/README.md#sl23), which refuse every file, raw and url part.
 - **`sokar-message-sluice`**: `EnvelopeCheck` and `CheckConfig`, where `check.urlPartSeverity` lives
   today, gain a setting per part kind and direction, refused by default. Seen to fail first: a `raw` part
   still refused with the setting on.
@@ -70,5 +70,5 @@ agent sends out - and outbound is the one that carries the weight.
 
 ## To be checked
 
-- How a non-text part fits the narrowed message schema of `sokar` B108, which refuses every file, raw
+- How a non-text part fits the narrowed message schema of `sokar` [B108](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b108), which refuses every file, raw
   and url part - Agent Core's to decide, with Agent Sluice.

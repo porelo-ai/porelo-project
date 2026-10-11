@@ -35,7 +35,7 @@ formatted" limits the damage but cannot prevent it, and nothing checks it.
 - **IntelliJ formats Java with the `google-java-format` plugin, set to AOSP**, so what the IDE
   produces is exactly what `spotless:check` expects; `.editorconfig` covers everything else. VS Code
   and Eclipse read `.editorconfig` natively or with the EditorConfig extension. The contributor guide
-  (PJ27) names the plugin and its setting.
+  ([PJ27](README.md#pj27)) names the plugin and its setting.
 
 ## Plan
 
@@ -49,7 +49,7 @@ formatted" limits the damage but cannot prevent it, and nothing checks it.
   `.git-blame-ignore-revs`.
 - **3. `sokar-frontend`**: `dart format` checked in its build.
 - **4. `sokar-intellij`**: Gradle, so Spotless's Gradle plugin with the same formatter.
-- **5. The contributor guide** (PJ27) names the IntelliJ plugin and its setting.
+- **5. The contributor guide** ([PJ27](README.md#pj27)) names the IntelliJ plugin and its setting.
 
 ## Acceptance
 

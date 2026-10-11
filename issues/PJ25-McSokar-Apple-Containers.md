@@ -1,7 +1,7 @@
 # PJ25 — McSokar Apple Containers
 
 **Status:** Analyzed. Moved from `sokar`, where it was B08.
-**Size:** XL - a second implementation of the guarantees on another platform; it splits into `sokar` B59 measured on Linux (L), a reading of Apple Containers' primitives (M), the daemon's contract checked free of Linux primitives (M), McSokar itself in a repository of its own (several L), and one client and shared acceptance scenarios (L).
+**Size:** XL - a second implementation of the guarantees on another platform; it splits into `sokar` [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59) measured on Linux (L), a reading of Apple Containers' primitives (M), the daemon's contract checked free of Linux primitives (M), McSokar itself in a repository of its own (several L), and one client and shared acceptance scenarios (L).
 
 **What must be true.** A person on macOS can run tasks with the same guarantees as on Linux, through
 a sibling project on Apple Containers, and drive either kind of host from one client without
@@ -25,12 +25,12 @@ review.
 
 The daemon's varlink contract - built, and the reason its requirement is retired - becomes the
 boundary between the two, so what is added to it has to stay free of one platform's primitives. The same
-applies to `sokar` B06: a person on one host driving tasks on the
+applies to `sokar` [B06](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b06): a person on one host driving tasks on the
 other is the normal case, not an edge case.
 
 ## Plan
 
-- **First, `sokar` B59** on Linux: what survives a task with its own kernel.
+- **First, `sokar` [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59)** on Linux: what survives a task with its own kernel.
 - **Then a reading of Apple Containers on a Mac**: fail-closed egress per container, a host socket in a
   container, the host's loopback mapped in. What is not there is written down as a guarantee not met.
 - **The contract**: the varlink definitions in `sokar/daemon/src/main/resources/varlink/`
@@ -61,12 +61,12 @@ other is the normal case, not an edge case.
 
 ## To be checked
 
-- **Measure it on Linux first.** `sokar` B59 asks the same questions about a task whose
+- **Measure it on Linux first.** `sokar` [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59) asks the same questions about a task whose
   kernel is its own - where the ruleset lives, whether a host socket still reaches the workload,
   what happens to the gate's loopback, what replaces the terminal - on a machine where the
   acceptance suite already runs. What survives there is what can be re-derived here; what does not
   is a guarantee this project would have to state it cannot meet. - Agent Core's to measure, in `sokar`
-  B59.
+  [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59).
 - **Which isolation primitives actually exist there**, and whether per-container
   egress filtering that fails closed is among them. If it is not, this project can
   offer convenience but not the guarantee, and that has to be said out loud rather

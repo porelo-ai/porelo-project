@@ -19,10 +19,10 @@ supported ones, with its real credential never in the container.
 
 ## Plan
 
-- **Measured first**, on a VM as A08 was: a real sign-in, what it stores, which hosts it contacts, and
+- **Measured first**, on a VM as [A08](README.md#a08) was: a real sign-in, what it stores, which hosts it contacts, and
   whether its model endpoint can be pointed at the broker. If it cannot be brokered, the answer is
   written here and nothing is built.
-- **The provider it talks to** is `sokar` P07 (Provider xAI); `sokar/providers/` has no xAI definition
+- **The provider it talks to** is `sokar` [P07](https://github.com/sokar-ai/sokar/blob/main/issues/providers/README.md#p07) (Provider xAI); `sokar/providers/` has no xAI definition
   today.
 - **A repository of its own**, shaped like `sokar-omp` (about 35 files): its `AgentMain` against
   `sokar-agent-api` and `sokar-wire`, its definition, the Debian and RPM packaging, unit tests, and an

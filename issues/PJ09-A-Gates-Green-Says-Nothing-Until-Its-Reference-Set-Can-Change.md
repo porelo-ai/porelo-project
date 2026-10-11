@@ -27,7 +27,7 @@ green cannot be calibrated without one gate that has ever gone red.
 - **Nobody reads:** `sokar` ships and uploads a bill that no job of its own compares, while
   `buildtools/check-packages.sh` justifies shipping it by a comparison that exists only in the agent
   repositories. The sentence is corrected, and whether a comparison job is added there is the same
-  operator decision as PJ08's.
+  operator decision as [PJ08](README.md#pj08)'s.
 - **The coordinating agent's standing duties** (the shared-block diff, cross-repository citations,
   stale statuses, renames) are duties, not gates, and each is counted as coverage only once it has
   fired.
@@ -41,7 +41,7 @@ green cannot be calibrated without one gate that has ever gone red.
   with nothing; `sokar-pi`'s `compare-bills`, which fired.
 - **Per repository, by its agent, from a handover**: an assertion that the walk found anything; a line
   where a gate reports that its set cannot change, or the gate removed; `sokar`'s justification
-  corrected, and a comparison job only if the operator decides so (as in PJ08).
+  corrected, and a comparison job only if the operator decides so (as in [PJ08](README.md#pj08)).
 - **Seen to fail first:** each kind's gate made to fire on a crafted input; the empty walk passing is the
   first red.
 

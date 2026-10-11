@@ -37,9 +37,9 @@ allows.
 - **`sokar`**: a reader of `/etc/sokar/policy.yml` that trusts it only when root owns it, applied before
   anything is made in `TaskLaunch` (beside `SelectedProvider`), in the follow (`FollowSignedBy`,
   `--unverified`), at the clearance prompt (`clearance`), and on a project's class; a definition in the
-  account's `providers/` checked against it; `DoctorCommand` names it. `sokar` B151 (the providers a
+  account's `providers/` checked against it; `DoctorCommand` names it. `sokar` [B151](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b151) (the providers a
   project allows) is the same check one level down.
-- **`sokar-frontend`** F62 shows the policy.
+- **`sokar-frontend`** [F62](https://github.com/sokar-ai/sokar-frontend/blob/main/issues/README.md#f62) shows the policy.
 - **Seen to fail first:** a test with a policy allowing only `github-copilot` in which a start with
   `openrouter` starts.
 
@@ -55,5 +55,5 @@ allows.
 
 ## To be checked
 
-- Whether this and `sokar` B151 are one mechanism at two levels, and which is built first - Agent Core's
+- Whether this and `sokar` [B151](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b151) are one mechanism at two levels, and which is built first - Agent Core's
   to decide.
