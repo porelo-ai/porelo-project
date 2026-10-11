@@ -1,6 +1,6 @@
 # PJ24 — Where The Agent Protocols Touch This
 
-**Status:** Analyzed. Moved from `sokar`, where it was B42.
+**Status:** Analyzed.
 **Size:** M - a reading task: four specifications read, an answer each written down; no code.
 
 **What must be true.** For each of the four agent protocols - A2A, MCP, ACP and AG-UI - this

@@ -1,6 +1,6 @@
 # PJ25 — McSokar Apple Containers
 
-**Status:** Analyzed. Moved from `sokar`, where it was B08.
+**Status:** Analyzed.
 **Size:** XL - a second implementation of the guarantees on another platform; it splits into `sokar` [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59) measured on Linux (L), a reading of Apple Containers' primitives (M), the daemon's contract checked free of Linux primitives (M), McSokar itself in a repository of its own (several L), and one client and shared acceptance scenarios (L).
 
 **What must be true.** A person on macOS can run tasks with the same guarantees as on Linux, through
