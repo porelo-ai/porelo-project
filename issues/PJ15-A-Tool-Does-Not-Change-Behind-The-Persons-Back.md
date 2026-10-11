@@ -1,6 +1,6 @@
 # PJ15 — A tool does not change behind the person's back
 
-**Status:** Analyzed; the measurement of whether the broker carries an MCP session comes first.
+**Status:** Estimated; the measurement of whether the broker carries an MCP session comes first.
 **Size:** XL - the broker has to understand MCP first; it splits into the measurement (S), pinning and the hold in `sokar` (L, on `sokar` [B167](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b167)'s gateway), acceptance under *Needs you* in `sokar-frontend` (M), the description rules in `sokar-message-sluice` (M), and pinned in-container servers in each agent repository (M each).
 
 **What must be true.** What an MCP server tells an agent about its tools is something a person has

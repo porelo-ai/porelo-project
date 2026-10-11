@@ -1,6 +1,6 @@
 # PJ27 — A contributor knows the rules
 
-**Status:** Analyzed. Spans every repository (each links the guide).
+**Status:** Estimated. Spans every repository (each links the guide).
 **Size:** L - crosses every repository: one page, a sign-off check in the shared tooling, a `CONTRIBUTING.md` in each repository, and the operator's settings.
 
 **What must be true.** Someone who wants to change Sokar finds, from any repository, one guide that
