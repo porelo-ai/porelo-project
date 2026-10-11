@@ -29,9 +29,7 @@ itself fronts models from several vendors.
   `gist`, `codespace` and `read:org`.
 - **The model API is reached only after an exchange at `api.github.com`**, the same number of calls,
   with nothing new written to disk. So the credential Sokar swaps in is presented at `api.github.com`,
-  and the short-lived token that comes back is held by the agent: a task would hold a real credential,
-  scoped to Copilot and short-lived, for the requests that cost money - weaker than every other
-  provider, and to be stated plainly.
+  as the sign-in measured it; on 1.0.95 the CLI makes no exchange (see *Plan*).
 - **Hosts contacted:** `api.individual.githubcopilot.com` (the model API), `api.github.com`,
   `telemetry.individual.githubcopilot.com`, `exp.individual.githubcopilot.com`, and `github.com` for
   the sign-in.
@@ -40,6 +38,17 @@ itself fronts models from several vendors.
 
 ## Plan
 
+- **Measured on Copilot CLI 1.0.95: there is no exchange.** The CLI sends the GitHub token itself as
+  `Bearer` to the Copilot API, and `COPILOT_API_URL` points that at any address; the calls are
+  `GET /models` and `POST /chat/completions`. So the broker swaps the real token in for
+  `api.githubcopilot.com` as for the Pi family, and the task holds only a stand-in - no weaker than
+  any other provider. The weekly update watches for `copilot_internal/v2/token` appearing in the code.
+- **The stand-in must start with `gho_`, `ghu_` or `github_pat_`;** nothing after the prefix is checked.
+  `sokar` gains a provider field `token_prefix` and mints `gho_sokarpt_…` for this agent (S, an Idea of
+  Agent Core's once A08 is to be built).
+- **The built-in GitHub MCP server is turned off** (`--disable-builtin-mcps` among the sandboxed
+  arguments); it would post the token to `<API URL>/mcp/readonly`. Its other calls to `api.github.com`
+  (user, managed settings, update check, MCP registry) fail closed in a task and the CLI goes on.
 - **The provider exists**: `sokar/providers/github-copilot.yaml`. What is new is that the credential
   Sokar swaps in is presented at `api.github.com`, and the short-lived token that comes back stays in
   the agent.
@@ -65,7 +74,6 @@ itself fronts models from several vendors.
 
 ## To be checked
 
-- Whether the short-lived Copilot token can stay out of the task: Copilot CLI pointed at `api.githubcopilot.com` with the GitHub token and no exchange, or the broker answering the exchange with a stand-in and swapping the real token in on each model call - Agent Smith's to measure; the operator decides on building it after.
 - Which model names the subscription serves, since BYOK requires an explicit model. - Agent Smith's to
   measure.
 - Whether `telemetry.individual.githubcopilot.com` can be refused without breaking it. - Agent Smith's
