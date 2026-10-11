@@ -38,6 +38,7 @@ how agents start MCP servers in the agent repositories.
 
 ## Plan
 
+- **Decided:** on a changed tool set only the new or changed tools are held until a person accepts them; the unchanged ones stay usable and the task works on.
 - **Today**: the broker (`supervisor` `VaultProxy`) passes MCP bodies through unread, and nothing in
   `sokar` reads `tools/list`. `sokar` [B167](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b167) (an MCP gateway on the host, open) is the ground this builds
   on.
@@ -59,11 +60,6 @@ how agents start MCP servers in the agent repositories.
 - A description carrying a hidden instruction, an invisible character or an encoded payload is
   caught before the agent sees it, and each check is seen to fail on a crafted description.
 - An MCP server inside the container starts only from a package the project pins.
-
-## Open questions
-
-- Whether a changed tool set holds the session (safe, but stops work) or only flags it. - the operator's
-  to decide.
 
 ## To be checked
 

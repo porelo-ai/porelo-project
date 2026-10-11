@@ -27,6 +27,8 @@ construction; a scheduled one needs a place its refusal lands.
 
 ## Plan
 
+- **Decided:** the organisation setting *Allow GitHub Actions to create and approve pull requests* is on.
+- **Decided:** a refusal lands as a red run whose last step writes an `::error` annotation naming the reason, with a step summary; no issue is opened.
 - **Decided first, by the operator**: the organisation setting switched on, and the place a refusal
   lands.
 - **Run once by hand**: `update.yml` in `sokar-pi`, `sokar-omp` and `sokar-claude-code`, to see whether
@@ -45,11 +47,6 @@ construction; a scheduled one needs a place its refusal lands.
   reaching a person, seen by making one refuse on purpose.
 - Every unattended job is listed, per repository, with where its refusal lands; a job whose answer is
   only its run log fails this.
-
-## Open questions
-
-- Which place a refusal can land that a person actually reads: a pull request, an issue or a
-  notification - the agents' channel is not reachable from a hosted runner. - the operator's to decide.
 
 ## To be checked
 

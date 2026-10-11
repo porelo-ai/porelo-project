@@ -63,13 +63,9 @@ itself fronts models from several vendors.
   subscription leaves a short-lived token in the agent, that is said in its documentation.
 - Auto-update is off in its definition, and the version that runs is the one pinned.
 
-## Open questions
-
-- Whether a task holding a short-lived Copilot token, weaker than every other provider, is acceptable,
-  or the agent is not built - the operator's to decide.
-
 ## To be checked
 
+- Whether the short-lived Copilot token can stay out of the task: Copilot CLI pointed at `api.githubcopilot.com` with the GitHub token and no exchange, or the broker answering the exchange with a stand-in and swapping the real token in on each model call - Agent Smith's to measure; the operator decides on building it after.
 - Which model names the subscription serves, since BYOK requires an explicit model. - Agent Smith's to
   measure.
 - Whether `telemetry.individual.githubcopilot.com` can be refused without breaking it. - Agent Smith's

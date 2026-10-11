@@ -19,6 +19,7 @@ supported ones, with its real credential never in the container.
 
 ## Plan
 
+- **Decided:** looked at again in some months, once usage says something; nothing is spent on it until then.
 - **Measured first**, on a VM as [A08](README.md#a08) was: a real sign-in, what it stores, which hosts it contacts, and
   whether its model endpoint can be pointed at the broker. If it cannot be brokered, the answer is
   written here and nothing is built.
@@ -39,11 +40,6 @@ supported ones, with its real credential never in the container.
 - Nothing outside its own directory names it, enforced by the build.
 - A task authenticates without anyone signing in inside the container.
 - The real credential is never in the container, seen by searching the container for it.
-
-## Open questions
-
-- Too recent for usage to mean anything; revisit before spending effort on it. - the operator's to
-  decide.
 
 ## To be checked
 

@@ -1,6 +1,6 @@
 # PJ25 — McSokar Apple Containers
 
-**Status:** Analyzed.
+**Status:** Analyzed; parked: native Sokar on macOS is not planned in the near future, while the interface on macOS with Sokar in a local VM comes first (`sokar-frontend` [F109](https://github.com/sokar-ai/sokar-frontend/blob/main/issues/README.md#f109)).
 **Size:** XL - a second implementation of the guarantees on another platform; it splits into `sokar` [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59) measured on Linux (L), a reading of Apple Containers' primitives (M), the daemon's contract checked free of Linux primitives (M), McSokar itself in a repository of its own (several L), and one client and shared acceptance scenarios (L).
 
 **What must be true.** A person on macOS can run tasks with the same guarantees as on Linux, through

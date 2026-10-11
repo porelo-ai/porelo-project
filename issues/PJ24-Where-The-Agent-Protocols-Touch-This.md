@@ -48,6 +48,8 @@ reached without the protocol, and worth comparing against it rather than replace
 
 ## Plan
 
+- **Decided:** MCP arrives as something a task uses, a destination; Sokar itself speaks no MCP. An orchestrator steering Sokar instances through MCP is [PJ35](README.md#pj35), outside Sokar.
+- **Decided:** not urgent; done before [PJ35](README.md#pj35) is analysed.
 - **Read by the coordinator**: the four specifications, each with its version noted.
 - **Decided by the operator**, on that reading: adopt, already answered otherwise, or refuse, per
   protocol, with the property a refusal rests on and the condition under which it would change.
@@ -71,19 +73,6 @@ reached without the protocol, and worth comparing against it rather than replace
 - Nothing here becomes a dependency on a specification that is still moving without that being
   said out loud, with the version read. Seen to fail: an adopted protocol whose answer names no
   version.
-
-## Open questions
-
-- **Whether MCP arrives as something a task uses or as something Sokar speaks.** `sokar` [B31](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b31) treats an MCP
-  server as a destination a credential is needed for. An agent inside a task calling one is a
-  `destination` in the sense [`sokar`'s decisions](https://github.com/sokar-ai/sokar/blob/main/doc/decisions.md#a-service-that-is-not-a-model-provider-is-a-destination)
-  give it and needs no new mechanism. Sokar itself becoming an MCP server -
-  exposing tasks, the gate or the vault as tools - is a different thing entirely and would put a
-  tool-call surface on the daemon. - the operator's to decide.
-- **Whether any of this is urgent.** Nothing in the product is waiting on an answer. The reason to
-  do it at all is that each of these edges already has a decision here, and a decision that was
-  never compared with what the field settled on is one nobody can defend later. - the operator's to
-  decide.
 
 ## To be checked
 

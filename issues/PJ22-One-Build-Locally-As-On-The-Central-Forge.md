@@ -102,6 +102,7 @@ local one means changing every one of these places.
 
 ## Plan
 
+- **Decided:** the local Forgejo is set up and kept outside the project; Sokar only uses it, its address and accounts in `.AGENTS.md`. The pool of VM run accounts stays `sokar-machines`' in `sokar-buildtools`.
 - **Today**: `sokar-machines` (`sokar-buildtools` `hetzner/`: `Machines`, `Spec`, `Hetzner`,
   `LocalVms`, `Lease`) rents from a cloud provider and from local VMs and sweeps; callers name server
   types. The reader contract `org.fuin.sokar.Build1` is in `sokar/builds/api`; the `github` reader is
@@ -131,7 +132,3 @@ local one means changing every one of these places.
 - The `github` and the `forgejo` reader pass the same contract suite, each against its own forge.
 - A task asks for its work to be built on a declared machine kind and reads the verdict and the log in
   `/sokar/files`; a request for a kind or a command the project does not declare is refused.
-
-## Open questions
-
-- Which repository holds the local Forgejo setup and who keeps it - the operator's to decide.

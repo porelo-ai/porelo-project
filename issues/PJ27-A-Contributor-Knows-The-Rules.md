@@ -62,6 +62,8 @@ like here, or which of the ten repositories their change belongs in.
 
 ## Plan
 
+- **Decided:** a vulnerability is reported through GitHub's private vulnerability reporting, with a `SECURITY.md` in each repository pointing to it ([PJ32](README.md#pj32)).
+- **Decided:** a code of conduct, the Contributor Covenant 2.1, its contact `michael@fuin.org`.
 - **Today**: no `doc/contributing.md` here, no `CONTRIBUTING.md` in any repository, no sign-off rule in
   the shared block, no check of `Signed-off-by:`.
 - **1. The page** `doc/contributing.md` in `sokar-project`, by the coordinator, built with the site.
@@ -84,9 +86,3 @@ like here, or which of the ten repositories their change belongs in.
 - Every public repository has the settings above; seen to fail: one that lacks any of them.
 - No rule is stated on the page that contradicts the shared block; a rule the page states is linked
   to it rather than restated.
-
-## Open questions
-
-- Where is a vulnerability reported: a `SECURITY.md` per repository, GitHub's private reporting, or an
-  address? - the operator's to decide; [PJ32](README.md#pj32) proposes GitHub's private reporting and a `SECURITY.md`.
-- A code of conduct: wanted, and which? - the operator's to decide.
