@@ -72,6 +72,19 @@ reached without the protocol, and worth comparing against it rather than replace
   said out loud, with the version read. Seen to fail: an adopted protocol whose answer names no
   version.
 
+## Open questions
+
+- **Whether MCP arrives as something a task uses or as something Sokar speaks.** `sokar` [B31](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b31) treats an MCP
+  server as a destination a credential is needed for. An agent inside a task calling one is a
+  `destination` in the sense [`sokar`'s decisions](https://github.com/sokar-ai/sokar/blob/main/doc/decisions.md#a-service-that-is-not-a-model-provider-is-a-destination)
+  give it and needs no new mechanism. Sokar itself becoming an MCP server -
+  exposing tasks, the gate or the vault as tools - is a different thing entirely and would put a
+  tool-call surface on the daemon. - the operator's to decide.
+- **Whether any of this is urgent.** Nothing in the product is waiting on an answer. The reason to
+  do it at all is that each of these edges already has a decision here, and a decision that was
+  never compared with what the field settled on is one nobody can defend later. - the operator's to
+  decide.
+
 ## To be checked
 
 - **ACP is the one edge this product has no answer at, and may not want one.** An IDE integration
@@ -81,12 +94,6 @@ reached without the protocol, and worth comparing against it rather than replace
   touch - or an editor outside reaching in, which is a hole in the box, decides whether this is
   interesting or refused. **Read the specification before answering.** - the coordinator's to read, the
   operator's to decide.
-- **Whether MCP arrives as something a task uses or as something Sokar speaks.** `sokar` [B31](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b31) treats an MCP
-  server as a destination a credential is needed for. An agent inside a task calling one is a
-  `destination` in the sense [`sokar`'s decisions](https://github.com/sokar-ai/sokar/blob/main/doc/decisions.md#a-service-that-is-not-a-model-provider-is-a-destination)
-  give it and needs no new mechanism. Sokar itself becoming an MCP server -
-  exposing tasks, the gate or the vault as tools - is a different thing entirely and would put a
-  tool-call surface on the daemon. - the operator's to decide.
 - **Whether AG-UI overlaps the interface's view of what needs a person, or sits under it.** Streaming intermediate state to a person is what
   `Prompts` and `Watch` already do over a unix socket. If AG-UI is a schema for that, it is a
   format question like A2A. If it presumes a browser and a server, it meets the same refusal the
@@ -95,10 +102,6 @@ reached without the protocol, and worth comparing against it rather than replace
   message format (Linux Foundation, v1.0.1). The others have not been read here at all, and a
   specification that moves under a format is a different risk from one that moves under a wire. - the
   coordinator's to read.
-- **Whether any of this is urgent.** Nothing in the product is waiting on an answer. The reason to
-  do it at all is that each of these edges already has a decision here, and a decision that was
-  never compared with what the field settled on is one nobody can defend later. - the operator's to
-  decide.
 - **What would close the MCP gaps the documentation names** (`doc/faq.md`: a changed tool set goes
   unnoticed). Three were proposed: the broker hashes a server's `tools/list` answer, a person accepts
   it once as a grant is accepted, and a later change holds the session and asks, showing what

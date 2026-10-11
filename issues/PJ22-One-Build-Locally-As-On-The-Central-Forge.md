@@ -132,6 +132,6 @@ local one means changing every one of these places.
 - A task asks for its work to be built on a declared machine kind and reads the verdict and the log in
   `/sokar/files`; a request for a kind or a command the project does not declare is refused.
 
-## To be checked
+## Open questions
 
 - Which repository holds the local Forgejo setup and who keeps it - the operator's to decide.

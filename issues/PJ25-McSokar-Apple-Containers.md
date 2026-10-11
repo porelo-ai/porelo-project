@@ -59,14 +59,8 @@ other is the normal case, not an edge case.
   from inside, or when a guarantee one platform cannot meet is presented as equal; a check of the
   client's screens goes red when one branches on host type.
 
-## To be checked
+## Open questions
 
-- **Measure it on Linux first.** `sokar` [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59) asks the same questions about a task whose
-  kernel is its own - where the ruleset lives, whether a host socket still reaches the workload,
-  what happens to the gate's loopback, what replaces the terminal - on a machine where the
-  acceptance suite already runs. What survives there is what can be re-derived here; what does not
-  is a guarantee this project would have to state it cannot meet. - Agent Core's to measure, in `sokar`
-  [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59).
 - **Which isolation primitives actually exist there**, and whether per-container
   egress filtering that fails closed is among them. If it is not, this project can
   offer convenience but not the guarantee, and that has to be said out loud rather
@@ -79,8 +73,17 @@ other is the normal case, not an edge case.
   address for the host there. Without an equivalent, the endpoint a task pushes to is either
   unreachable or on the operator's network, and that has to be said out loud rather than left
   to look like the same guarantee. - the operator's to decide, after a reading on a Mac.
-- Whether the two backends can share one contract without it degrading to the
-  weaker platform's capabilities everywhere. - Agent Core's to decide.
 - How much is genuinely shared. If it turns out to be only the contract and the
   client, that is still worth doing — but it should be a decision, not a surprise
   discovered halfway. - the operator's to decide.
+
+## To be checked
+
+- **Measure it on Linux first.** `sokar` [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59) asks the same questions about a task whose
+  kernel is its own - where the ruleset lives, whether a host socket still reaches the workload,
+  what happens to the gate's loopback, what replaces the terminal - on a machine where the
+  acceptance suite already runs. What survives there is what can be re-derived here; what does not
+  is a guarantee this project would have to state it cannot meet. - Agent Core's to measure, in `sokar`
+  [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59).
+- Whether the two backends can share one contract without it degrading to the
+  weaker platform's capabilities everywhere. - Agent Core's to decide.

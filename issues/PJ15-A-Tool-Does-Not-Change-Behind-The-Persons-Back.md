@@ -60,11 +60,14 @@ how agents start MCP servers in the agent repositories.
   caught before the agent sees it, and each check is seen to fail on a crafted description.
 - An MCP server inside the container starts only from a package the project pins.
 
+## Open questions
+
+- Whether a changed tool set holds the session (safe, but stops work) or only flags it. - the operator's
+  to decide.
+
 ## To be checked
 
 - Whether the description rules are the filter's own catalog, or separate. - Agent Sluice's to decide,
   with Agent Core.
-- Whether a changed tool set holds the session (safe, but stops work) or only flags it. - the operator's
-  to decide.
 - Whether this issue is blocked by `sokar` [B167](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b167), which builds the gateway it needs - the coordinator's
   to decide.

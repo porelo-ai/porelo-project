@@ -85,7 +85,7 @@ like here, or which of the ten repositories their change belongs in.
 - No rule is stated on the page that contradicts the shared block; a rule the page states is linked
   to it rather than restated.
 
-## To be checked
+## Open questions
 
 - Where is a vulnerability reported: a `SECURITY.md` per repository, GitHub's private reporting, or an
   address? - the operator's to decide; [PJ32](README.md#pj32) proposes GitHub's private reporting and a `SECURITY.md`.

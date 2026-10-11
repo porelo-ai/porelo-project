@@ -40,8 +40,11 @@ supported ones, with its real credential never in the container.
 - A task authenticates without anyone signing in inside the container.
 - The real credential is never in the container, seen by searching the container for it.
 
+## Open questions
+
+- Too recent for usage to mean anything; revisit before spending effort on it. - the operator's to
+  decide.
+
 ## To be checked
 
 - Whether a subscription account yields anything storable, or only a session. - Agent Smith's to measure.
-- Too recent for usage to mean anything; revisit before spending effort on it. - the operator's to
-  decide.

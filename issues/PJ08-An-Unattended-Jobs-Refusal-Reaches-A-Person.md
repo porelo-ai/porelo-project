@@ -46,10 +46,13 @@ construction; a scheduled one needs a place its refusal lands.
 - Every unattended job is listed, per repository, with where its refusal lands; a job whose answer is
   only its run log fails this.
 
-## To be checked
+## Open questions
 
 - Which place a refusal can land that a person actually reads: a pull request, an issue or a
   notification - the agents' channel is not reachable from a hosted runner. - the operator's to decide.
+
+## To be checked
+
 - How many unattended jobs there are: `sokar-message-sluice` has none, `sokar-pi` and `sokar-omp` have
   the weekly update; each other repository reports its own. - the coordinator's to confirm with each
   repository's agent, against the list in *Plan*.
