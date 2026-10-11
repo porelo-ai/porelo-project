@@ -1,6 +1,7 @@
 # PJ29 — One code style for the IDE and the build
 
 **Status:** soon. Spans every repository with code; the shared tooling is `sokar-buildtools`'.
+**Size:** XL - every repository with code is reformatted once; it splits into the shared `.editorconfig` and Spotless in the shared tooling (M), then one reformatting issue per repository (S each).
 
 **What must be true.** Every repository states its code style once, in a committed `.editorconfig`
 following the Google style guides, and the IDE formats by it while the build refuses code that does
@@ -36,6 +37,20 @@ formatted" limits the damage but cannot prevent it, and nothing checks it.
   and Eclipse read `.editorconfig` natively or with the EditorConfig extension. The contributor guide
   (PJ27) names the plugin and its setting.
 
+## Plan
+
+- **Today**: no `.editorconfig` in any repository; no Spotless and no formatter check in `sokar-parent`
+  or any build.
+- **1. `sokar-buildtools` and `sokar-parent`**: the shared `.editorconfig`, compared like the shared
+  block by `check-shared`; `spotless-maven-plugin` with `google-java-format` (AOSP) in `sokar-parent`'s
+  plugin management, `spotless:check` bound to `validate`. Seen to fail first: a misformatted file in a
+  test project of `sokar-parent` passing `validate`.
+- **2. Per Maven repository, by its agent**: the plugin switched on, one reformatting commit, its hash in
+  `.git-blame-ignore-revs`.
+- **3. `sokar-frontend`**: `dart format` checked in its build.
+- **4. `sokar-intellij`**: Gradle, so Spotless's Gradle plugin with the same formatter.
+- **5. The contributor guide** (PJ27) names the IntelliJ plugin and its setting.
+
 ## Acceptance
 
 - Every repository with code has the shared `.editorconfig`, and a copy that differs fails a check.
@@ -45,3 +60,9 @@ formatted" limits the damage but cannot prevent it, and nothing checks it.
   unchanged.
 - The reformatting commit changes whitespace and line breaks only, and `git blame` skips it.
 
+## To be checked
+
+- Whether `sokar-intellij` runs the same `google-java-format` version through Spotless's Gradle plugin -
+  Agent IntelliJ's to decide.
+- Which formatter the site's Python scripts use, since the Google Python style names none that is pinned
+  by default - Agent Core's to decide.

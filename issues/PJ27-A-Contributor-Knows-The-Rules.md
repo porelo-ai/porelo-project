@@ -1,6 +1,7 @@
 # PJ27 — A contributor knows the rules
 
 **Status:** soon. Spans every repository (each links the guide).
+**Size:** L - crosses every repository: one page, a sign-off check in the shared tooling, a `CONTRIBUTING.md` in each repository, and the operator's settings.
 
 **What must be true.** Someone who wants to change Sokar finds, from any repository, one guide that
 says how the work is organised, how a change is made, what it must satisfy before it is accepted, and
@@ -59,6 +60,18 @@ like here, or which of the ten repositories their change belongs in.
   - a squashed pull request's commit message is "Pull request title and commit details", and a merged
     branch is deleted.
 
+## Plan
+
+- **Today**: no `doc/contributing.md` here, no `CONTRIBUTING.md` in any repository, no sign-off rule in
+  the shared block, no check of `Signed-off-by:`.
+- **1. The page** `doc/contributing.md` in `sokar-project`, by the coordinator, built with the site.
+- **2. The shared block of `AGENTS.md`**: the sign-off and the `Assisted-by:` line, copied to every
+  repository as the block always is.
+- **3. The sign-off check** in `sokar-release` (`sokar-buildtools`), run by every repository's build on a
+  pull request. Seen to fail first: a pull request commit without `Signed-off-by:` passing.
+- **4. A `CONTRIBUTING.md` and a README link** in each repository, by its agent from a handover.
+- **5. The settings**, set by the operator in every public repository.
+
 ## Acceptance
 
 - The page is on the documentation site in `sokar-project`'s chapter, and `mkdocs build --strict` is
@@ -75,5 +88,5 @@ like here, or which of the ten repositories their change belongs in.
 ## To be checked
 
 - Where is a vulnerability reported: a `SECURITY.md` per repository, GitHub's private reporting, or an
-  address?
-- A code of conduct: wanted, and which?
+  address? - the operator's to decide; PJ32 proposes GitHub's private reporting and a `SECURITY.md`.
+- A code of conduct: wanted, and which? - the operator's to decide.

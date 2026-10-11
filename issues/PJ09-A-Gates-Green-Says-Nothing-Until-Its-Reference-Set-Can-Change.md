@@ -1,6 +1,7 @@
 # PJ09 — A gate's green says nothing until its reference set can change
 
 **Status:** soon.
+**Size:** L - crosses every repository: a census of the gates, then a small change in each one found empty, unchangeable or unread.
 
 **What must be true.** Every gate says what it compares against, and whether that reference set is
 able to change. A gate whose reference set cannot change, is empty, or is read by nothing is named as
@@ -32,6 +33,19 @@ green cannot be calibrated without one gate that has ever gone red.
   stale statuses, renames) are duties, not gates, and each is counted as coverage only once it has
   fired.
 
+## Plan
+
+- **The census, by the coordinator**: every gate in every repository, its reference set and what would
+  change it. Read today: `sokar-message-sluice`'s walk with an empty set; `compare-bills` in `update.yml`
+  of `sokar-omp` (says it is a no-op) and `sokar-claude-code` (reads as working); `sokar` uploads
+  `sokar.cdx.json` in `build.yml` and checks it only in `dist/package-check` (`BillTest`), comparing it
+  with nothing; `sokar-pi`'s `compare-bills`, which fired.
+- **Per repository, by its agent, from a handover**: an assertion that the walk found anything; a line
+  where a gate reports that its set cannot change, or the gate removed; `sokar`'s justification
+  corrected, and a comparison job only if the operator decides so (as in PJ08).
+- **Seen to fail first:** each kind's gate made to fire on a crafted input; the empty walk passing is the
+  first red.
+
 ## Acceptance
 
 - Every gate in every repository names its reference set and what would make that set change.
@@ -39,3 +53,8 @@ green cannot be calibrated without one gate that has ever gone red.
   and is counted as coverage nowhere.
 - No justification in any repository asserts a check that repository does not perform.
 - Each kind has at least one gate seen to fire.
+
+## To be checked
+
+- `buildtools/check-packages.sh`, named in *The shape*, no longer exists in `sokar`; the bill is now
+  checked by `dist/package-check`. Where `sokar` now justifies shipping it - Agent Core's to read.

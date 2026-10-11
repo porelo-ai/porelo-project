@@ -1,6 +1,7 @@
 # A08 — Agent Copilot CLI
 
 **Status:** later; a candidate, its brokering answered.
+**Size:** L - a new agent repository with its packaging and an acceptance leg; brokering is measured, and the subscription's token exchange at `api.github.com` has to be brokered and documented.
 
 **What must be true.** GitHub Copilot CLI runs in a task as a packaged agent, signed in and brokered
 like the supported ones, with its real credential never in the container.
@@ -37,6 +38,21 @@ itself fronts models from several vendors.
 - **It updates itself by default** (`COPILOT_AUTO_UPDATE`), so any definition turns it off, or a
   pinned version would silently run another one.
 
+## Plan
+
+- **The provider exists**: `sokar/providers/github-copilot.yaml`. What is new is that the credential
+  Sokar swaps in is presented at `api.github.com`, and the short-lived token that comes back stays in
+  the agent.
+- **A repository of its own**, shaped like `sokar-omp` (about 35 files): its `AgentMain` against
+  `sokar-agent-api` and `sokar-wire`, its definition with `COPILOT_AUTO_UPDATE` off and the npm version
+  pinned, the Debian and RPM packaging, unit tests, and an acceptance leg on a machine rented through
+  `sokar-machines`.
+- **The sign-in happens on the host**: a fine-grained PAT with "Copilot Requests" given to the broker,
+  never `--with-token` inside a task.
+- **Its documentation says** that a task holds a short-lived Copilot token.
+- **Seen to fail first:** the acceptance leg that searches the container for the PAT, and a run with a
+  pinned version that would have updated itself.
+
 ## Acceptance
 
 - It ships as its own binary and its own package, in a repository of its own, discovered without
@@ -49,5 +65,9 @@ itself fronts models from several vendors.
 
 ## To be checked
 
-- Which model names the subscription serves, since BYOK requires an explicit model.
-- Whether `telemetry.individual.githubcopilot.com` can be refused without breaking it.
+- Which model names the subscription serves, since BYOK requires an explicit model. - Agent Smith's to
+  measure.
+- Whether `telemetry.individual.githubcopilot.com` can be refused without breaking it. - Agent Smith's
+  to measure.
+- Whether a task holding a short-lived Copilot token, weaker than every other provider, is acceptable,
+  or the agent is not built - the operator's to decide.

@@ -1,6 +1,7 @@
 # PJ03 — An attachment may be permitted
 
 **Status:** later.
+**Size:** XL - three repositories and a design to decide first; it splits into the filter's settings per part and direction in `sokar-message-sluice` (M), the permission, the host-side fetch and the hold in `sokar` (L), and the Matrix transport carrying an `mxc://` part to the host (M).
 
 **What must be true.** Whether a message may carry something other than text is a decision an
 operator makes, per direction, per project and per peer - not a constant compiled into the filter.
@@ -39,6 +40,22 @@ agent sends out - and outbound is the one that carries the weight.
   permission, the host-side fetch and the held-with-a-reason path in `sokar`. The transports carry
   bytes and decide nothing.
 
+## Plan
+
+- **Decided first**: how a permitted part fits the narrowed message schema of `sokar` B108 and
+  `sokar-message-sluice` SL23, which refuse every file, raw and url part.
+- **`sokar-message-sluice`**: `EnvelopeCheck` and `CheckConfig`, where `check.urlPartSeverity` lives
+  today, gain a setting per part kind and direction, refused by default. Seen to fail first: a `raw` part
+  still refused with the setting on.
+- **`sokar`**: the permission per project and per peer in the project file (`core/project`), read on the
+  message path in `apps/app-messaging`; an outbound part without it held with a reason, as a held message
+  is listed by `talk held`; an inbound permitted part fetched by the host from `describe.hosts` and put
+  into `/sokar/files` as `HandIns` does; the transport's `max_bytes` shown by `check` and `sokar doctor`.
+  Each setting tested off and on.
+- **`sokar-message-matrix`**: an `mxc://` part passed on with its host (`Describe` already reports
+  `max_bytes`); nothing is decided there.
+- **`sokar` `doc/decisions.md`**: the exposure, why it is taken, and what would change it.
+
 ## Acceptance
 
 - Whether `raw`, `url` and `data` parts are permitted is configuration, per direction, per project
@@ -51,3 +68,8 @@ agent sends out - and outbound is the one that carries the weight.
 - Each new setting is tested with the permission off and on, and a test that passes both ways is
   seen to fail.
 - The exposure, why it is taken and what would change the answer are in `doc/decisions.md`.
+
+## To be checked
+
+- How a non-text part fits the narrowed message schema of `sokar` B108, which refuses every file, raw
+  and url part - Agent Core's to decide, with Agent Sluice.

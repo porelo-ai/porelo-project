@@ -1,6 +1,7 @@
 # PJ16 — An organisation decides which providers its machines use
 
 **Status:** later.
+**Size:** L - several modules of `sokar` (start, follow, clearance, class, doctor) and the interface's side in `sokar-frontend`; nothing of it exists today.
 
 **What must be true.** An organisation can say which model providers the tasks on its machines may
 use, and a developer working on such a machine cannot widen that list - not by choosing another
@@ -31,6 +32,18 @@ management's job; Sokar enforces what it puts in place and makes breaking it vis
 choose providers for the organisation; it decides which of Sokar's provider definitions a machine
 allows.
 
+## Plan
+
+- **Today**: `sokar` reads no machine policy; `/etc/sokar/` holds only tmux files inside the image.
+- **`sokar`**: a reader of `/etc/sokar/policy.yml` that trusts it only when root owns it, applied before
+  anything is made in `TaskLaunch` (beside `SelectedProvider`), in the follow (`FollowSignedBy`,
+  `--unverified`), at the clearance prompt (`clearance`), and on a project's class; a definition in the
+  account's `providers/` checked against it; `DoctorCommand` names it. `sokar` B151 (the providers a
+  project allows) is the same check one level down.
+- **`sokar-frontend`** F62 shows the policy.
+- **Seen to fail first:** a test with a policy allowing only `github-copilot` in which a start with
+  `openrouter` starts.
+
 ## Acceptance
 
 - With a policy allowing only `github-copilot`, a task started with `--provider openrouter` is refused
@@ -40,3 +53,8 @@ allows.
   allow, and a project of class `online` is refused - each naming the policy.
 - `sokar doctor` names the policy and what it allows.
 - Without a policy file, every existing behaviour is unchanged.
+
+## To be checked
+
+- Whether this and `sokar` B151 are one mechanism at two levels, and which is built first - Agent Core's
+  to decide.

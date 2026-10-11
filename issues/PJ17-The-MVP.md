@@ -1,6 +1,7 @@
 # PJ17 — The MVP
 
 **Status:** now; each repository sorts its own index by it.
+**Size:** S - one file kept in step with every repository's index; the work it groups is sized in its own issues.
 
 **What must be true.** One person, one machine, one agent: Sokar is installed, work is started, the
 agent works safely, its result is reviewed and pushed - smoothly, from the interface as much as from
@@ -53,8 +54,24 @@ follows right after it is **soon**; the rest is **later**.
 - **`sokar-message-sluice`:** SL08, SL04, SL12.
 - **`sokar-project`:** PJ16, PJ32, PJ03, PJ24, PJ25; candidate agents A06-A10.
 
+## Plan
+
+- **The coordinator reads every repository's index** and brings the three groups in line, each number
+  in the group its own index gives. Read today: not yet listed are `sokar` B129-B172, `sokar-frontend`
+  F102, F104, F105, F107, F108, `sokar-buildtools` BT02, BT03, `sokar-message-sluice` SL24,
+  `sokar-intellij` IJ02-IJ04 and `sokar-build-github` GH01, GH02; `sokar-claude-code` CC25, `sokar-pi`
+  PI22 and `sokar-omp` OM17 no longer exist.
+- **Checked by hand**, as everything in this repository is: every issue file of every repository found
+  in exactly one group, and every number here found as a file. Seen to fail first: that comparison,
+  naming the numbers above.
+
 ## Acceptance
 
 - Every open issue of every repository is in exactly one of the three groups here, as its own index
   has it, and no number here names an issue that no longer exists.
 - Everything in *Now* is built, measured and released in 0.4.0.
+
+## To be checked
+
+- The acceptance names 0.4.0, which is released; which release *Now* is measured against - the
+  operator's to decide.

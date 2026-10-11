@@ -1,6 +1,7 @@
 # PJ25 — McSokar Apple Containers
 
 **Status:** later. Moved from `sokar`, where it was B08.
+**Size:** XL - a second implementation of the guarantees on another platform; it splits into `sokar` B59 measured on Linux (L), a reading of Apple Containers' primitives (M), the daemon's contract checked free of Linux primitives (M), McSokar itself in a repository of its own (several L), and one client and shared acceptance scenarios (L).
 
 **What must be true.** A person on macOS can run tasks with the same guarantees as on Linux, through
 a sibling project on Apple Containers, and drive either kind of host from one client without
@@ -27,6 +28,19 @@ boundary between the two, so what is added to it has to stay free of one platfor
 applies to `sokar` B06: a person on one host driving tasks on the
 other is the normal case, not an edge case.
 
+## Plan
+
+- **First, `sokar` B59** on Linux: what survives a task with its own kernel.
+- **Then a reading of Apple Containers on a Mac**: fail-closed egress per container, a host socket in a
+  container, the host's loopback mapped in. What is not there is written down as a guarantee not met.
+- **The contract**: the varlink definitions in `sokar/daemon/src/main/resources/varlink/`
+  (`org.fuin.sokar.Tasks1`) read for anything only Linux has.
+- **McSokar**: a repository of its own, its own issues, its own acceptance suite running the shared
+  scenarios.
+- **The client** (`sokar-frontend`) drives both hosts through the one contract.
+- **Seen to fail first:** a shared scenario in which a task starts although its egress policy could not
+  be applied.
+
 ## Acceptance
 
 - The same project file runs a task on either host, or says plainly which parts do
@@ -51,20 +65,22 @@ other is the normal case, not an edge case.
   kernel is its own - where the ruleset lives, whether a host socket still reaches the workload,
   what happens to the gate's loopback, what replaces the terminal - on a machine where the
   acceptance suite already runs. What survives there is what can be re-derived here; what does not
-  is a guarantee this project would have to state it cannot meet.
+  is a guarantee this project would have to state it cannot meet. - Agent Core's to measure, in `sokar`
+  B59.
 - **Which isolation primitives actually exist there**, and whether per-container
   egress filtering that fails closed is among them. If it is not, this project can
   offer convenience but not the guarantee, and that has to be said out loud rather
-  than discovered by a user.
+  than discovered by a user. - the operator's to decide, after a reading on a Mac.
 - Whether a host socket can be mounted into a container, which is how the credential
-  proxy and the signing agent work today. Without it, both need a different shape.
+  proxy and the signing agent work today. Without it, both need a different shape. - the operator's to
+  decide, after a reading on a Mac.
 - **Whether the host's loopback can be mapped into a container.** On Linux the git gate binds
   `127.0.0.1` and is reachable from a task only because pasta is told to send the container's
   address for the host there. Without an equivalent, the endpoint a task pushes to is either
   unreachable or on the operator's network, and that has to be said out loud rather than left
-  to look like the same guarantee.
+  to look like the same guarantee. - the operator's to decide, after a reading on a Mac.
 - Whether the two backends can share one contract without it degrading to the
-  weaker platform's capabilities everywhere.
+  weaker platform's capabilities everywhere. - Agent Core's to decide.
 - How much is genuinely shared. If it turns out to be only the contract and the
   client, that is still worth doing — but it should be a decision, not a surprise
-  discovered halfway.
+  discovered halfway. - the operator's to decide.

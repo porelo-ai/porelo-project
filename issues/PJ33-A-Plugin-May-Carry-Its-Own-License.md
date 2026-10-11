@@ -1,6 +1,7 @@
 # PJ33 — A plugin may carry its own license
 
 **Status:** soon; the license is decided: Apache-2.0 for the parts others link.
+**Size:** L - crosses `sokar` (three modules, the varlink definitions, the documentation) and the shared tooling's license check, after legal advice.
 
 **What must be true.** Whoever writes an agent, a build reader, a messaging transport or a client for
 Sokar may license it as they choose, proprietary included, while Sokar itself stays under the GPL
@@ -45,6 +46,20 @@ Changing the license of existing code needs every contributor's consent; today t
 and every outside contribution makes it harder, so this comes before contributions are invited
 (`sokar-project` PJ27).
 
+## Plan
+
+- **Today**: every module is GPL-3.0-or-later through `sokar-parent`'s `<licenses>`; no source carries
+  a header; the interface libraries are `sokar/wire`, `sokar/agents/api` (which links `snakeyaml`,
+  Apache-2.0) and `sokar/builds/api` (with `org.fuin.sokar.Build1.varlink`); the daemon's definitions
+  are in `sokar/daemon/src/main/resources/varlink/`.
+- **1. Legal advice**, by the operator.
+- **2. `sokar`**: `LICENSE` and `NOTICE` in each interface module, its POM's
+  `<licenses>`, source headers, and the varlink definitions marked or moved so they carry Apache-2.0.
+- **3. The check**: a build of an interface module fails on a dependency that is GPL- or LGPL-only. Seen
+  to fail first: a GPL-only test dependency added to `sokar-wire`, accepted.
+- **4. The documentation** in `sokar`: the boundary in one place, linked from `agents/README.md`, the
+  build reader guide and `doc/transports.md`.
+
 ## Acceptance
 
 - Apache-2.0 is applied to each interface library, checked with legal advice: `LICENSE` and `NOTICE`
@@ -52,3 +67,8 @@ and every outside contribution makes it harder, so this comes before contributio
 - `sokar`'s documentation states the boundary in one place, linked from the agent, reader and
   transport guides.
 - A build check fails when an interface library gains a dependency that is GPL- or LGPL-only.
+
+## To be checked
+
+- Whether the daemon's varlink definitions move out of `daemon` into a module of their own, so that they
+  can carry Apache-2.0 - Agent Core's to decide.

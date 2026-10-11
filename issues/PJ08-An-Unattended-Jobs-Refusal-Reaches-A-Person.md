@@ -1,6 +1,7 @@
 # PJ08 — An unattended job's refusal reaches a person
 
 **Status:** soon.
+**Size:** L - crosses about six repositories' workflows after a decision on where a refusal lands; each change itself is a few lines.
 
 **What must be true.** Where a job nobody is watching refuses something, the refusal reaches a person.
 
@@ -25,6 +26,20 @@ construction; a scheduled one needs a place its refusal lands.
   the class on its own: a refusal that is not a pull request still needs a place to land.
 - **Every unattended job is listed**, per repository, with where its refusal lands.
 
+## Plan
+
+- **Decided first, by the operator**: the organisation setting switched on, and the place a refusal
+  lands.
+- **Run once by hand**: `update.yml` in `sokar-pi`, `sokar-omp` and `sokar-claude-code`, to see whether
+  the pull request now opens.
+- **The unattended jobs, read in today's workflows** (scheduled, or started by `workflow_run`):
+  `sweep.yml` in `sokar`; `update.yml` in `sokar-pi`, `sokar-omp` and `sokar-claude-code`; `machines.yml`
+  in `sokar-buildtools`; `site.yml` in `sokar-ai.github.io`; `delete-runs.yml` in every repository. The
+  list, with where each refusal lands, is kept per repository.
+- **Each job gets a last step that reaches the chosen place on failure**, built by each repository's
+  agent from a handover.
+- **Seen to fail first:** each job made to refuse on purpose, by hand, and the refusal not arriving.
+
 ## Acceptance
 
 - No scheduled or otherwise unattended job in any repository can refuse something without the refusal
@@ -35,6 +50,7 @@ construction; a scheduled one needs a place its refusal lands.
 ## To be checked
 
 - Which place a refusal can land that a person actually reads: a pull request, an issue or a
-  notification - the agents' channel is not reachable from a hosted runner.
-- How many unattended jobs there are: `sokar-message-sluice` has none, `sokar-pi` and `sokar-omp`
-  have the weekly update; each other repository reports its own.
+  notification - the agents' channel is not reachable from a hosted runner. - the operator's to decide.
+- How many unattended jobs there are: `sokar-message-sluice` has none, `sokar-pi` and `sokar-omp` have
+  the weekly update; each other repository reports its own. - the coordinator's to confirm with each
+  repository's agent, against the list in *Plan*.

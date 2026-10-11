@@ -1,6 +1,7 @@
 # PJ15 — A tool does not change behind the person's back
 
 **Status:** soon; the measurement of whether the broker carries an MCP session comes first.
+**Size:** XL - the broker has to understand MCP first; it splits into the measurement (S), pinning and the hold in `sokar` (L, on `sokar` B167's gateway), acceptance under *Needs you* in `sokar-frontend` (M), the description rules in `sokar-message-sluice` (M), and pinned in-container servers in each agent repository (M each).
 
 **What must be true.** What an MCP server tells an agent about its tools is something a person has
 seen and accepted, and a server that changes it afterwards - a rug pull - is stopped until a person
@@ -35,6 +36,21 @@ change. **Where the work lands:** the broker in `sokar`; the description rules i
 `sokar-message-sluice` or a catalog of their own; acceptance under *Needs you* in `sokar-frontend`;
 how agents start MCP servers in the agent repositories.
 
+## Plan
+
+- **Today**: the broker (`supervisor` `VaultProxy`) passes MCP bodies through unread, and nothing in
+  `sokar` reads `tools/list`. `sokar` B167 (an MCP gateway on the host, open) is the ground this builds
+  on.
+- **Measured first**, in `sokar`: whether the broker carries an MCP session, written here.
+- **`sokar`**: the gateway hashes `tools/list`; a person accepts it once as a grant is accepted (`sokar`
+  B31); a change holds the session and asks under *Needs you*. Seen to fail first: a stub MCP server
+  whose tool list changes after acceptance, reaching the agent unasked.
+- **`sokar-frontend`**: the acceptance under *Needs you*, showing what changed.
+- **`sokar-message-sluice`** (or a catalog of its own): the fixed description rules, each seen to fail on
+  a crafted description.
+- **The agent repositories**: an MCP server inside the container started only from a package the
+  project pins.
+
 ## Acceptance
 
 - Whether the broker carries an MCP session is measured first, and the answer is written down.
@@ -46,5 +62,9 @@ how agents start MCP servers in the agent repositories.
 
 ## To be checked
 
-- Whether the description rules are the filter's own catalog, or separate.
-- Whether a changed tool set holds the session (safe, but stops work) or only flags it.
+- Whether the description rules are the filter's own catalog, or separate. - Agent Sluice's to decide,
+  with Agent Core.
+- Whether a changed tool set holds the session (safe, but stops work) or only flags it. - the operator's
+  to decide.
+- Whether this issue is blocked by `sokar` B167, which builds the gateway it needs - the coordinator's
+  to decide.

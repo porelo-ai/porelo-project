@@ -2,6 +2,7 @@
 
 **Status:** soon. Spans `sokar-buildtools` (the tooling that rents machines and checks the rules), every
 repository's workflows and build files, and the local setup.
+**Size:** XL - five repositories' worth of tooling and every workflow; it splits into machine kinds behind `sokar-machines` with the provider-name check (L), the local VM pool of run accounts (L), the local Forgejo with its registry running the same workflows (L), a `forgejo` reader and the contract suite (L), and a task's build on a declared kind in `sokar` (L).
 
 **What must be true.** A change is built, tested and published the same way before it is pushed as after:
 the same workflow files run on a local forge as on the central one, take their artifacts from that forge's
@@ -99,6 +100,22 @@ local one means changing every one of these places.
   runs against each reader: against GitHub centrally, against the local Forgejo locally. Only what is
   particular to one forge's API is tested in that reader alone.
 
+## Plan
+
+- **Today**: `sokar-machines` (`sokar-buildtools` `hetzner/`: `Machines`, `Spec`, `Hetzner`,
+  `LocalVms`, `Lease`) rents from a cloud provider and from local VMs and sweeps; callers name server
+  types. The reader contract `org.fuin.sokar.Build1` is in `sokar/builds/api`; the `github` reader is
+  `sokar-build-github`.
+- **1. Kinds**: `Spec` asks for a kind, the setup says who meets it; the module and workflows stop naming
+  the provider. Seen to fail first: a check in `sokar-buildtools` that finds a provider's name outside
+  its implementation, red on today's tree.
+- **2. The local VM pool**: run accounts reset when given back, the pool's size as the local limit.
+- **3. The local Forgejo**: runner and registry; every repository's workflows take registry addresses
+  and the machine provider as variables of the setup. Seen to fail first: a `build.yml` that runs only
+  centrally.
+- **4. The `forgejo` reader** and one contract suite in the API's kit, run against both readers.
+- **5. A task's build** on a declared kind, read through `Task.builds` (`sokar`).
+
 ## Acceptance
 
 - The same `build.yml` runs green on the local forge and on the central forge, for every repository that
@@ -117,4 +134,4 @@ local one means changing every one of these places.
 
 ## To be checked
 
-(none open)
+- Which repository holds the local Forgejo setup and who keeps it - the operator's to decide.

@@ -1,6 +1,7 @@
 # PJ24 — Where The Agent Protocols Touch This
 
 **Status:** later. Moved from `sokar`, where it was B42.
+**Size:** M - a reading task: four specifications read, an answer each written down; no code.
 
 **What must be true.** For each of the four agent protocols - A2A, MCP, ACP and AG-UI - this
 project can say whether it adopts it, is already doing it another way, or refuses it - with the
@@ -45,6 +46,15 @@ reached without the protocol, and worth comparing against it rather than replace
   The interface opens the window on what needs a person, fed by
   `Prompts` and `Watch` over the daemon's own socket.
 
+## Plan
+
+- **Read by the coordinator**: the four specifications, each with its version noted.
+- **Decided by the operator**, on that reading: adopt, already answered otherwise, or refuse, per
+  protocol, with the property a refusal rests on and the condition under which it would change.
+- **Written in `sokar`'s `doc/decisions.md`**, beside the A2A format and the daemon's
+  refusal of a listener; this issue is then deleted.
+- **Seen to fail first:** the table of four with a protocol left without an answer.
+
 ## Acceptance
 
 - Each protocol gets an answer of one of three kinds: **adopt**, **already answered otherwise**, or
@@ -69,26 +79,29 @@ reached without the protocol, and worth comparing against it rather than replace
   box and the developer is outside it. Whether ACP describes *the agent inside the task* speaking
   to an editor inside the same task - which would be a container-internal matter Sokar does not
   touch - or an editor outside reaching in, which is a hole in the box, decides whether this is
-  interesting or refused. **Read the specification before answering.**
+  interesting or refused. **Read the specification before answering.** - the coordinator's to read, the
+  operator's to decide.
 - **Whether MCP arrives as something a task uses or as something Sokar speaks.** `sokar` B31 treats an MCP
   server as a destination a credential is needed for. An agent inside a task calling one is a
   `destination` in the sense [`sokar`'s decisions](https://github.com/sokar-ai/sokar/blob/main/doc/decisions.md#a-service-that-is-not-a-model-provider-is-a-destination)
   give it and needs no new mechanism. Sokar itself becoming an MCP server -
   exposing tasks, the gate or the vault as tools - is a different thing entirely and would put a
-  tool-call surface on the daemon.
+  tool-call surface on the daemon. - the operator's to decide.
 - **Whether AG-UI overlaps the interface's view of what needs a person, or sits under it.** Streaming intermediate state to a person is what
   `Prompts` and `Watch` already do over a unix socket. If AG-UI is a schema for that, it is a
   format question like A2A. If it presumes a browser and a server, it meets the same refusal the
-  interface already recorded.
+  interface already recorded. - the coordinator's to read.
 - **Which of these are stable enough to depend on.** A2A carried a version when it was read for the
   message format (Linux Foundation, v1.0.1). The others have not been read here at all, and a
-  specification that moves under a format is a different risk from one that moves under a wire.
+  specification that moves under a format is a different risk from one that moves under a wire. - the
+  coordinator's to read.
 - **Whether any of this is urgent.** Nothing in the product is waiting on an answer. The reason to
   do it at all is that each of these edges already has a decision here, and a decision that was
-  never compared with what the field settled on is one nobody can defend later.
+  never compared with what the field settled on is one nobody can defend later. - the operator's to
+  decide.
 - **What would close the MCP gaps the documentation names** (`doc/faq.md`: a changed tool set goes
   unnoticed). Three were proposed: the broker hashes a server's `tools/list` answer, a person accepts
   it once as a grant is accepted, and a later change holds the session and asks, showing what
   changed; tool descriptions checked by fixed rules of the kind the message filter uses before they
   reach the agent; and an MCP server inside the container only from a package the project pins, as
-  an agent is pinned.
+  an agent is pinned. - the coordinator's to read; PJ15 holds the same three proposals as its shape.

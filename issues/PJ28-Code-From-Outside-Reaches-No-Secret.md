@@ -2,6 +2,7 @@
 
 **Status:** now; the repositories are public. Spans every repository: the settings
 are the operator's, the check is `sokar-buildtools`'.
+**Size:** S - the code is built; what is left is the operator's settings in each repository and measuring them.
 
 **What must be true.** Once the repositories are public, a change from someone outside never runs with
 a secret - no rented machine, no package or artifact published, no token read - until a maintainer has
@@ -37,6 +38,17 @@ everything around that:
   project only, under the limit on machines at once, and the sweep deletes what a run left behind;
   each secret can be rotated without changing a workflow.
 
+## Plan
+
+- **Built, read in the code**: `.github/CODEOWNERS` in every repository names the operator for
+  `.github/` (itself included), the build files and `AGENTS.md`; `check-actions` in `sokar-release`
+  (`CheckActions`) refuses `pull_request_target` and a `workflow_run` that takes the pull request's code.
+- **Left, the operator's, per public repository**: the ruleset on `main` with the bypass decided below,
+  and Actions' "Require approval for all external contributors".
+- **Measured**: a force push and a push by another account refused, a pull request touching `.github/`
+  asking for the operator's review, a fork's pull request waiting. Seen to fail first: the force push on
+  one repository before its ruleset.
+
 ## Acceptance
 
 - In every repository: a force push to `main` is refused; a push to `main` by an account other than
@@ -48,4 +60,4 @@ everything around that:
 ## To be checked
 
 - The ruleset's bypass: the operator's account alone, or also a deploy key or app for the update jobs
-  that push today?
+  that push today? - the operator's to decide.
