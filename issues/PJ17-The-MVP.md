@@ -29,7 +29,6 @@ follows right after it is **soon**; the rest is **later**.
 - **`sokar`:** B102, B76, B121, B122, B125, B126, B127, B128.
 - **`sokar-frontend`:** F79, F71, F68, F69.
 - **`sokar-claude-code`:** CC25. **`sokar-pi`:** PI22. **`sokar-omp`:** OM17.
-- **`sokar-intellij`:** IJ01.
 - **`sokar-project`:** PJ14, PJ28.
 
 ## Soon
@@ -38,6 +37,7 @@ follows right after it is **soon**; the rest is **later**.
   B33, B26, B49, B30, B31, B46.
 - **`sokar-frontend`:** F101, F100, F99, F93, F91, F94, F95, F96, F97, F77, F78, F74, F59, F81, F84.
 - **`sokar-buildtools`:** BT01.
+- **`sokar-intellij`:** IJ01, with the repository's first push.
 - **`sokar-claude-code`:** CC23.
 - **`sokar-message-sluice`:** SL07, SL23.
 - **`sokar-ai.github.io`:** SI01.
