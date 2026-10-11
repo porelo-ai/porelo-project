@@ -56,8 +56,3 @@ everything around that:
 - A pull request from a fork shows its workflow waiting for approval.
 - `check-actions` fails on a workflow using `pull_request_target`, seen to fail, and passes on every
   current workflow.
-
-## Open questions
-
-- The ruleset's bypass: the operator's account alone, or also a deploy key or app for the update jobs
-  that push today? - the operator's to decide.
