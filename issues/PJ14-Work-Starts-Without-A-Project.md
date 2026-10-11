@@ -1,6 +1,6 @@
 # PJ14 — Work starts without a project
 
-**Status:** now; built in `sokar` and `sokar-frontend` and measured, three points of the acceptance
+**Status:** Implementing; built in `sokar` and `sokar-frontend` and measured, three points of the acceptance
 left.
 **Size:** M - two refusals and an offer in `sokar`, the offer shown in `sokar-frontend`, and a walk measuring all three.
 

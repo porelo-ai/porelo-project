@@ -1,7 +1,6 @@
 # PJ09 — A gate's green says nothing until its reference set can change
 
-**Status:** soon.
-**Size:** L - crosses every repository: a census of the gates, then a small change in each one found empty, unchangeable or unread.
+**Status:** Analyzed. **Size:** L - crosses every repository: a census of the gates, then a small change in each one found empty, unchangeable or unread.
 
 **What must be true.** Every gate says what it compares against, and whether that reference set is
 able to change. A gate whose reference set cannot change, is empty, or is read by nothing is named as

@@ -1,6 +1,6 @@
 # A08 — Agent Copilot CLI
 
-**Status:** later; a candidate, its brokering answered.
+**Status:** Analyzed; a candidate, its brokering answered.
 **Size:** L - a new agent repository with its packaging and an acceptance leg; brokering is measured, and the subscription's token exchange at `api.github.com` has to be brokered and documented.
 
 **What must be true.** GitHub Copilot CLI runs in a task as a packaged agent, signed in and brokered

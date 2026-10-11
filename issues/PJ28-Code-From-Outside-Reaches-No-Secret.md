@@ -1,6 +1,6 @@
 # PJ28 — Code from outside reaches no secret
 
-**Status:** now; the repositories are public. Spans every repository: the settings
+**Status:** Implementing; the repositories are public. Spans every repository: the settings
 are the operator's, the check is `sokar-buildtools`'.
 **Size:** S - the code is built; what is left is the operator's settings in each repository and measuring them.
 

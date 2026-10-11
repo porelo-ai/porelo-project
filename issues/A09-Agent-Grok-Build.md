@@ -1,6 +1,6 @@
 # A09 — Agent Grok Build
 
-**Status:** later; a candidate.
+**Status:** Analyzed; a candidate.
 **Size:** L - a new agent repository with its packaging and an acceptance leg, after a measurement of whether it can be brokered; it needs a provider `sokar` does not have yet, and pins a Rust binary rather than an npm package.
 
 **What must be true.** Grok Build runs in a task as a packaged agent, signed in and brokered like the

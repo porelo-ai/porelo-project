@@ -1,6 +1,6 @@
 # PJ17 — The MVP
 
-**Status:** now; each repository sorts its own index by it.
+**Status:** Analyzed; each repository sorts its own index by it.
 **Size:** S - one file kept in step with every repository's index; the work it groups is sized in its own issues.
 
 **What must be true.** One person, one machine, one agent: Sokar is installed, work is started, the

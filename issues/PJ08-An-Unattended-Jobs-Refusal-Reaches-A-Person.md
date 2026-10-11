@@ -1,7 +1,6 @@
 # PJ08 — An unattended job's refusal reaches a person
 
-**Status:** soon.
-**Size:** L - crosses about six repositories' workflows after a decision on where a refusal lands; each change itself is a few lines.
+**Status:** Analyzed. **Size:** L - crosses about six repositories' workflows after a decision on where a refusal lands; each change itself is a few lines.
 
 **What must be true.** Where a job nobody is watching refuses something, the refusal reaches a person.
 

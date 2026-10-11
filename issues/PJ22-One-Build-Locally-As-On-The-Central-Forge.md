@@ -1,6 +1,6 @@
 # PJ22 — One build, run locally as on the central forge
 
-**Status:** soon. Spans `sokar-buildtools` (the tooling that rents machines and checks the rules), every
+**Status:** Analyzed. Spans `sokar-buildtools` (the tooling that rents machines and checks the rules), every
 repository's workflows and build files, and the local setup.
 **Size:** XL - five repositories' worth of tooling and every workflow; it splits into machine kinds behind `sokar-machines` with the provider-name check (L), the local VM pool of run accounts (L), the local Forgejo with its registry running the same workflows (L), a `forgejo` reader and the contract suite (L), and a task's build on a declared kind in `sokar` (L).
 

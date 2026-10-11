@@ -1,7 +1,6 @@
 # PJ16 — An organisation decides which providers its machines use
 
-**Status:** later.
-**Size:** L - several modules of `sokar` (start, follow, clearance, class, doctor) and the interface's side in `sokar-frontend`; nothing of it exists today.
+**Status:** Analyzed. **Size:** L - several modules of `sokar` (start, follow, clearance, class, doctor) and the interface's side in `sokar-frontend`; nothing of it exists today.
 
 **What must be true.** An organisation can say which model providers the tasks on its machines may
 use, and a developer working on such a machine cannot widen that list - not by choosing another

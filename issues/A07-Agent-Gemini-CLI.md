@@ -1,6 +1,6 @@
 # A07 — Agent Gemini CLI
 
-**Status:** later; a candidate.
+**Status:** Analyzed; a candidate.
 **Size:** L - a new agent repository with its packaging and an acceptance leg, after a measurement of whether it can be brokered; it needs a provider `sokar` does not have yet.
 
 **What must be true.** Gemini CLI runs in a task as a packaged agent, signed in and brokered like the

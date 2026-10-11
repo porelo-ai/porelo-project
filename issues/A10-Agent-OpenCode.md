@@ -1,6 +1,6 @@
 # A10 — Agent OpenCode
 
-**Status:** later; a candidate.
+**Status:** Analyzed; a candidate.
 **Size:** L - a new agent repository with its packaging and an acceptance leg; brokering is documented, so the measurement is short, and the per-provider credential may need a vault change in `sokar`.
 
 **What must be true.** OpenCode runs in a task as a packaged agent, signed in and brokered like the
