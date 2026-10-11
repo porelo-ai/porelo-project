@@ -1,6 +1,6 @@
 # PJ37 — Work reaches the upstream where no machine key may be added
 
-**Status:** Idea.
+**Status:** Accepted.
 
 **What must be true.** A person who may not add a key to a repository - as in most larger organisations,
 where only an administrator may - still gets a machine to fetch the repository and to pass approved work on,

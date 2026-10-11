@@ -1,6 +1,6 @@
 # PJ36 — Builds read from Bitbucket Data Center and Jenkins
 
-**Status:** Idea.
+**Status:** Accepted.
 
 **What must be true.** A task in an `online` project whose repository is on Bitbucket Data Center and whose
 builds run on Jenkins is told what the build of its push did, as a task on GitHub is today: the commit it

@@ -1,6 +1,6 @@
 # PJ35 — An agent orchestrates Sokar machines
 
-**Status:** Idea.
+**Status:** Accepted.
 
 **What must be true.** An agent outside Sokar can do through MCP much of what a person does in the
 interface - start, watch and message tasks, and set up and choose machines - across several Sokar

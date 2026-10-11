@@ -34,7 +34,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | <a id="pj25"></a>[PJ25](PJ25-McSokar-Apple-Containers.md) | XL | — | McSokar: the same guarantees on Apple Containers, driven by one client through the daemon's contract. | 4 |
 
 
-## Idea
+## Accepted
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
@@ -42,6 +42,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | <a id="pj35"></a>[PJ35](PJ35-An-Agent-Orchestrates-Sokar-Machines.md) | — | — | An MCP server outside Sokar lets an agent steer tasks and machines of one or many Sokar instances, without approving work or opening a vault. |
 | <a id="pj36"></a>[PJ36](PJ36-Builds-Read-From-Bitbucket-Data-Center-And-Jenkins.md) | — | — | Builds of a push read from Bitbucket Data Center and Jenkins, the build server separate from the forge. |
 | <a id="pj37"></a>[PJ37](PJ37-Work-Reaches-The-Upstream-Where-No-Machine-Key-May-Be-Added.md) | — | — | Where no machine key may be added: an administrator asked, or the person's own token used on the host only. |
+
 
 ## Estimated
 
