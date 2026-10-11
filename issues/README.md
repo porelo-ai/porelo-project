@@ -47,6 +47,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
 | <a id="pj34"></a>[PJ34](PJ34-Every-Change-Reaches-Main-Through-A-Pull-Request.md) | — | — | Every change reaches `main` through a pull request with green required checks, so `main` needs no bypass. |
+| <a id="pj35"></a>[PJ35](PJ35-An-Agent-Orchestrates-Sokar-Machines.md) | — | — | An MCP server outside Sokar lets an agent steer tasks and machines of one or many Sokar instances, without approving work or opening a vault. |
 
 ## Finished
 
