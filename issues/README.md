@@ -23,7 +23,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers | Open questions |
 |---|---|---|---|---|
-| [PJ17](PJ17-The-MVP.md) | S | — | The MVP: one person, one machine, Claude Code with Anthropic, local Matrix, a project from a repository - what is now, soon and later in every repository. | 1 |
 | [PJ27](PJ27-A-Contributor-Knows-The-Rules.md) | L | — | One guide for contributors in `sokar-project`'s `doc/`, linked from every repository's README and `CONTRIBUTING.md`: how the work is organised, how a change is made, what it must satisfy. | 2 |
 | [PJ29](PJ29-One-Code-Style-For-IDE-And-Build.md) | XL | — | One shared `.editorconfig` with the Google style in every repository, followed by the IDE and checked by the build with Spotless and `google-java-format` (AOSP: four spaces, 100 columns) in `validate`; IntelliJ with the `google-java-format` plugin. | 2 |
 | [PJ33](PJ33-A-Plugin-May-Carry-Its-Own-License.md) | L | — | An agent, build reader, transport or client may carry its own license: the interface libraries (`sokar-agent-api`, `sokar-build-api`, `sokar-wire`, the varlink definitions) under Apache-2.0, Sokar itself GPL, the boundary written down. | 1 |
@@ -42,6 +41,12 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | [PJ24](PJ24-Where-The-Agent-Protocols-Touch-This.md) | M | — | For A2A, MCP, ACP and AG-UI each: adopted, answered otherwise, or refused, with the reason and what would change it. | 6 |
 | [PJ25](PJ25-McSokar-Apple-Containers.md) | XL | — | McSokar: the same guarantees on Apple Containers, driven by one client through the daemon's contract. | 6 |
 
+
+## Finished
+
+| # | Size | What was built |
+|---|---|---|
+| PJ17 | S | The MVP: its shape is in [the project chapter](../doc/index.md#the-mvp); which issue belongs to a round is now each index's *Backlog*. |
 
 ## What was decided along the way
 
