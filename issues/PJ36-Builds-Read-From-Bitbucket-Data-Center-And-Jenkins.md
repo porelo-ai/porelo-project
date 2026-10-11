@@ -15,4 +15,8 @@ Bitbucket is the same reader as for one on GitHub or GitLab.
   reader answers both, as today.
 - **`sokar-build-bitbucket`** answers `head`, and `look` where Bitbucket itself builds or holds the build status.
   **`sokar-build-jenkins`** answers `look`, finding a commit's build among Jenkins' jobs; it serves any forge.
+- **Bitbucket comes in two variants with different APIs:** Cloud (`api.bitbucket.org`, REST 2.0, workspaces,
+  its own Pipelines) and Data Center (on the organisation's host, REST 1.0, projects, the build-status API that
+  Jenkins or Bamboo report to). They are two forge names, `bitbucket-cloud` and `bitbucket-datacenter`, two
+  executables from one repository, sharing what they can.
 - **Each reader has its own credential**, so the contract keeps one address and one token a call.
