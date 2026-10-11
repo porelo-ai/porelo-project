@@ -14,10 +14,10 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 ## Implementing
 
-| # | Size | Blocked by | What it covers | Open questions |
-|---|---|---|---|---|
-| <a id="pj14"></a>[PJ14](PJ14-Work-Starts-Without-A-Project.md) | M | — | Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured. | — |
-| <a id="pj28"></a>[PJ28](PJ28-Code-From-Outside-Reaches-No-Secret.md) | S | — | Before the repositories are public: `main` protected with the operator as the only bypass, `CODEOWNERS` for workflows, build files and rules, a fork's workflow waits for approval, and `check-actions` refuses `pull_request_target`. | 1 |
+| # | Size | Blocked by | What it covers |
+|---|---|---|---|
+| <a id="pj14"></a>[PJ14](PJ14-Work-Starts-Without-A-Project.md) | M | — | Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured. |
+| <a id="pj28"></a>[PJ28](PJ28-Code-From-Outside-Reaches-No-Secret.md) | S | — | Before the repositories are public: `main` protected with the operator as the only bypass, `CODEOWNERS` for workflows, build files and rules, a fork's workflow waits for approval, and `check-actions` refuses `pull_request_target`. |
 
 ## Analyzed
 
