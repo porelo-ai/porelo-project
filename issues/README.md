@@ -40,6 +40,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 |---|---|---|---|
 | <a id="pj34"></a>[PJ34](PJ34-Every-Change-Reaches-Main-Through-A-Pull-Request.md) | — | — | Every change reaches `main` through a pull request with green required checks, so `main` needs no bypass. |
 | <a id="pj35"></a>[PJ35](PJ35-An-Agent-Orchestrates-Sokar-Machines.md) | — | — | An MCP server outside Sokar lets an agent steer tasks and machines of one or many Sokar instances, without approving work or opening a vault. |
+| <a id="pj36"></a>[PJ36](PJ36-Builds-Read-From-Bitbucket-Data-Center-And-Jenkins.md) | — | — | Builds of a push read from Bitbucket Data Center and Jenkins, the build server separate from the forge. |
 
 ## Estimated
 
