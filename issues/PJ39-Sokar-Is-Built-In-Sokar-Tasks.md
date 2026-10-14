@@ -52,8 +52,9 @@ work for a person either.
   machine and for the operator's preferences; the agents' own memory is switched off. It is handed into every task
   read-only at its start; an agent that wants it changed leaves the changed file as a proposal, and Sokar writes it
   on the host once the operator approved it - nothing a task wrote reaches the next task unseen.
-- **The agents talk over Matrix**: the project's room, through the Matrix transport and the message filter, instead
-  of the channel file on the host.
+- **The agents talk over Matrix** instead of the channel file on the host: the project's room in which its tasks
+  already talk, through the Matrix transport and the message filter. Nothing new is built for the room; the
+  homeserver runs on the host.
 - **The coordinator works in `sokar-all`**, a private repository on Forgejo that holds every repository as a subtree
   and is rebuilt by a workflow at every merge into a `main`. It reads everything there and changes only
   `sokar-project/`: after the operator's approval a second workflow splits that directory back into `sokar-project`
@@ -97,8 +98,9 @@ repository it is meant for.
    (a fresh VM per run on the host's KVM, rather than accounts on a VM),
    Forgejo with its registry running the same workflows, the `forgejo` reader, a task's build on a declared kind;
    then *new, `sokar-buildtools`:* the push mirrors to the central forge, started through Forgejo's API.
-4. **Talking and coordinating:** *new, `sokar-message-matrix`:* the agents' room, an agent in a task reached by a
-   message as the channel's watcher reaches it today; *new, `sokar-project`:* `sokar-all` with its two workflows.
+4. **Talking and coordinating:** the project's room as it is; an agent in a task reached by a message as the
+   channel's watcher reaches it today, if checking finds that missing; *new, `sokar-project`:* `sokar-all` with its
+   two workflows.
 5. **The move, one agent at a time**, the others working as today and the channel kept beside Matrix until the last
    has moved: Sluice first (one repository, one snapshot from the registry); then Smith (snapshots from `sokar`, three
    repositories); Matrix; IntelliJ and Frontend (other toolchains); Core last of the builders, with a way back to the
