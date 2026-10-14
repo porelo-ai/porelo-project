@@ -1,6 +1,6 @@
 # PJ43 — `sokar-project` renamed `porelo-project`
 
-**Status:** Analyzed.
+**Status:** Estimated.
 **Size:** S - 626 occurrences in 35 of 40 files and 4 paths, words and addresses only; checked by hand, since this
 repository has no build.
 

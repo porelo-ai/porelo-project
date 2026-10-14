@@ -1,6 +1,6 @@
 # PJ42 — The forge and Artifactory prepared for Porelo
 
-**Status:** Analyzed.
+**Status:** Estimated.
 **Size:** S - settings at the forge and at Artifactory, done by the operator with the coordinator in one sitting, and
 every checkout's remote; no code.
 

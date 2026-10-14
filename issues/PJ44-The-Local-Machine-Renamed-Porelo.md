@@ -1,6 +1,6 @@
 # PJ44 — The local machine renamed Porelo
 
-**Status:** Analyzed.
+**Status:** Estimated.
 **Size:** S - the checkouts, the local files and tools the agents use on this machine; nothing of it is committed.
 
 **What must be true.** On the machine the agents work on, the checkouts, the local rules, the channel and its tools,
