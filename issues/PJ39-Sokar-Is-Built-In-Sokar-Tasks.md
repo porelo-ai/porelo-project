@@ -44,7 +44,7 @@ work for a person either.
 - **One task per issue, phase and repository**, started with sokar
   [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189)'s values `issue` and `phase`. A
   task works on one repository only; an issue that changes several is built in one task per repository.
-- **An image per repository**, each with the toolchain its repository needs (GraalVM and Maven, Flutter, Gradle,
+- **An image per repository**, from its devcontainer file (sokar [B170](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b170)), each with the toolchain its repository needs (GraalVM and Maven, Flutter, Gradle,
   Python), rather than one image for the whole project.
 - **Downloaded dependencies are cached across tasks**, shared and read-only, as `~/.m2/cached/` is today; what a
   task installs stays its own.
@@ -81,11 +81,11 @@ builds' disk load and with room to grow; 1 Gbit/s. A machine of that class is a 
 In this order; within a phase the items can run side by side. *New* marks an issue that does not exist yet and the
 repository it is meant for.
 
-0. **The host:** *new, `sokar-buildtools`:* the bare-metal host set up from nothing by a script - VPN, Sokar, its
-   account, Forgejo, the Matrix homeserver, KVM - with its state backed up off the machine and restored onto a new
-   one; the same on a machine of one's own and on one rented by the hour.
+0. **The host:** [PJ40](README.md#pj40) brings the project up on the bare-metal host at one command - VPN, Sokar,
+   its account, Forgejo, the Matrix homeserver, KVM, the images, the agents' tasks - with its state backed up off
+   the machine and restored onto a new one; the same on a machine of one's own and on one rented by the hour.
 1. **Sokar's groundwork:** sokar [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189)
-   (values at the start); *new, `sokar`:* an image per repository; *new, `sokar`:* a dependency cache shared across
+   (values at the start); sokar [B170](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b170) (the image from a devcontainer file) and, *new, `sokar`:* that image chosen per repository; *new, `sokar`:* a dependency cache shared across
    tasks; *new, `sokar`:* a file handed in read-only at every start of an agent's task, and its changed copy
    written on the host after approval; *new, `sokar-claude-code`:* the agent's own memory switched off in the task.
 2. **The local forge, [PJ22](README.md#pj22)**, in its five parts: machine kinds in `sokar-machines`, the VM pool
