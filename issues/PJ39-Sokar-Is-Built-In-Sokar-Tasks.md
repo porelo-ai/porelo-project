@@ -81,26 +81,31 @@ builds' disk load and with room to grow; 1 Gbit/s. A machine of that class is a 
 In this order; within a phase the items can run side by side. *New* marks an issue that does not exist yet and the
 repository it is meant for.
 
-0. **The host:** [PJ40](README.md#pj40) brings the project up on the bare-metal host at one command - VPN, Sokar,
+0. **The groundwork, done first:** the code cleaned to the house rules - sokar
+   [B76](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b76) and its counterpart in every
+   repository; one code style checked by the build, [PJ29](README.md#pj29); the rules for contributors from
+   outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](README.md#pj32); and the rename,
+   [PJ41](README.md#pj41), so that nothing built after it carries the old name.
+1. **The host:** [PJ40](README.md#pj40) brings the project up on the bare-metal host at one command - VPN, Sokar,
    its account, Forgejo, the Matrix homeserver, KVM, the images, the agents' tasks - with its state backed up off
    the machine and restored onto a new one; the same on a machine of one's own and on one rented by the hour.
-1. **Sokar's groundwork:** sokar [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189)
+2. **What Sokar must add:** sokar [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189)
    (values at the start); sokar [B170](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b170) (the image from a devcontainer file) and, *new, `sokar`:* that image chosen per repository; *new, `sokar`:* a dependency cache shared across
    tasks; *new, `sokar`:* a file handed in read-only at every start of an agent's task, and its changed copy
    written on the host after approval; *new, `sokar-claude-code`:* the agent's own memory switched off in the task.
-2. **The local forge, [PJ22](README.md#pj22)**, in its five parts: machine kinds in `sokar-machines`, the VM pool
+3. **The local forge, [PJ22](README.md#pj22)**, in its five parts: machine kinds in `sokar-machines`, the VM pool
    (a fresh VM per run on the host's KVM, rather than accounts on a VM),
    Forgejo with its registry running the same workflows, the `forgejo` reader, a task's build on a declared kind;
    then *new, `sokar-buildtools`:* the push mirrors to the central forge, started through Forgejo's API.
-3. **Talking and coordinating:** *new, `sokar-message-matrix`:* the agents' room, an agent in a task reached by a
+4. **Talking and coordinating:** *new, `sokar-message-matrix`:* the agents' room, an agent in a task reached by a
    message as the channel's watcher reaches it today; *new, `sokar-project`:* `sokar-all` with its two workflows.
-4. **The move, one agent at a time**, the others working as today and the channel kept beside Matrix until the last
+5. **The move, one agent at a time**, the others working as today and the channel kept beside Matrix until the last
    has moved: Sluice first (one repository, one snapshot from the registry); then Smith (snapshots from `sokar`, three
    repositories); Matrix; IntelliJ and Frontend (other toolchains); Core last of the builders, with a way back to the
    host, since a fault in Sokar stops its own work; the coordinator last of all.
-5. **Clearing up:** *new, every repository:* `AGENTS.md` and `.AGENTS.md` rewritten for Matrix, Forgejo and the gate;
+6. **Clearing up:** *new, every repository:* `AGENTS.md` and `.AGENTS.md` rewritten for Matrix, Forgejo and the gate;
    the channel file, the hand-over directory and the agents' accounts on the VMs retired.
-6. **Then** sokar [B148](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b148) counts what the
+7. **Then** sokar [B148](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b148) counts what the
    tasks spend, and [PJ38](README.md#pj38) learns from it. The counting can be built earlier; it counts nothing of this work
    before phase 4.
 
