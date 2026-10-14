@@ -19,8 +19,9 @@ work for a person either.
   its registry and runner; the VM pool; the Matrix homeserver; the images and caches. Whether that machine stands
   in the operator's office or is rented by the hour makes no difference to the setup:
   - **It is set up from nothing by a script**, and everything that must outlive it - Forgejo's repositories and
-    registry, the vault, `.AGENTS.md`, the Matrix room - is backed up off the machine and restored onto a new one.
-    A machine given back is not missed.
+    registry with the branches not yet mirrored, the vault, `.AGENTS.md`, the Matrix room, the tasks' usage
+    records - is backed up off the machine, by a backup of its own rather than the central forge, and restored onto
+    a new one. A machine given back is not missed.
   - **Keys deposited on a rented one are deposited for a time** ([PJ37](README.md#pj37)) and forgotten at its end;
     the package signing key is never on it, and releases stay the operator's.
   - **Nothing on it is reachable from the internet**: the operator reaches Forgejo, Matrix and Sokar's ssh through a
