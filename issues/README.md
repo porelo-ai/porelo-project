@@ -25,7 +25,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers | Open questions |
 |---|---|---|---|---|
-| <a id="pj41"></a>[PJ41](PJ41-Sokar-Is-Renamed-Porelo.md) | XL | — | The product renamed Porelo in a window with no other work open: a preparation at the forge and Artifactory, then one scripted rename per repository - parent and tools, `sokar`, the repositories built on it, the words, the local machine - each checked like any change; `org.fuin.porelo`, `porelo-ai`, installed afresh. | — |
 | <a id="pj33"></a>[PJ33](PJ33-A-Plugin-May-Carry-Its-Own-License.md) | L | — | An agent, build reader, transport or client may carry its own license: the interface libraries (`sokar-agent-api`, `sokar-build-api`, `sokar-wire`, the varlink definitions) under Apache-2.0, Sokar itself GPL, the boundary written down. | — |
 | <a id="pj09"></a>[PJ09](PJ09-A-Gates-Green-Says-Nothing-Until-Its-Reference-Set-Can-Change.md) | L | — | Every gate names its reference set; one that is empty, cannot change or is read by nothing is not counted as coverage. | — |
 | <a id="pj16"></a>[PJ16](PJ16-An-Organisation-Decides-Which-Providers-Its-Machines-Use.md) | L | — | A root-owned machine policy names the providers tasks may use, and narrows follows, prompts and the `online` class; a developer cannot widen it. | — |
@@ -54,6 +53,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj41"></a>[PJ41](PJ41-Sokar-Is-Renamed-Porelo.md) | XL | — | The product renamed Porelo in a window with no other work open: a preparation at the forge and Artifactory, then one scripted rename per repository - parent and tools, `sokar`, the repositories built on it, the words, the local machine - each checked like any change; `org.fuin.porelo`, `porelo-ai`, installed afresh. |
 | <a id="pj29"></a>[PJ29](PJ29-One-Code-Style-For-IDE-And-Build.md) | XL | — | One shared `.editorconfig` with the Google style in every repository, followed by the IDE and checked by the build with Spotless and `google-java-format` (AOSP: four spaces, 100 columns) in `validate`; IntelliJ with the `google-java-format` plugin. |
 | <a id="a08"></a>[A08](A08-Agent-Copilot-CLI.md) | L | — | Copilot CLI as a packaged agent: brokerable by environment variable (BYOK), which is not the Copilot subscription. |
 | <a id="pj27"></a>[PJ27](PJ27-A-Contributor-Knows-The-Rules.md) | L | — | One guide for contributors in `sokar-project`'s `doc/`, linked from every repository's README and `CONTRIBUTING.md`: how the work is organised, how a change is made, what it must satisfy. |

@@ -1,6 +1,6 @@
 # PJ41 — Sokar is renamed Porelo
 
-**Status:** Analyzed.
+**Status:** Estimated.
 **Size:** XL - every repository, every contract and the organisation at the forge; it splits into a preparation (S),
 one rename per repository (XS to L, below) and the local machine (S), each an issue of its own in its repository.
 
