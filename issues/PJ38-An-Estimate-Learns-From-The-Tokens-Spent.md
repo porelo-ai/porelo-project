@@ -16,9 +16,9 @@ finished issue can correct the next estimate.
 ## The shape proposed
 
 - **The count comes from Sokar only:** sokar
-  [B148](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b148)'s usage record. The agents that build
-  Sokar's issues work in Sokar tasks, so their broker counts what they spend; an agent's own session record is not a
-  source.
+  [B148](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b148)'s usage record, which sees what the
+  agents spend once they work in Sokar tasks ([PJ39](README.md#pj39)); an agent's own session
+  record is not a source.
 - **One issue per task**, handed in at the task's start as a value of sokar
   [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189) (`issue: sokar#B148`), fixed for the
   task's life. An issue's tokens are the sum over every task carrying it, in every repository. Work for no issue -

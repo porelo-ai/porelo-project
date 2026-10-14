@@ -50,7 +50,8 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj38"></a>[PJ38](PJ38-An-Estimate-Learns-From-The-Tokens-Spent.md) | — | `sokar` [B148](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b148), [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189) | The new tokens of build and rework, counted per task tagged with its issue and phase, are written beside an issue's estimated size before it is Finished; a velocity per size is kept, and a new estimate is compared with finished issues of its size. |
+| <a id="pj39"></a>[PJ39](PJ39-Sokar-Is-Built-In-Sokar-Tasks.md) | — | [PJ22](#pj22); `sokar` [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189) | The agents work in Sokar tasks on one bare-metal host, owned or rented by the hour and set up by a script (16 cores, 128 GB, 2 × 1.92 TB NVMe): an `online` project whose upstream is a local Forgejo, one task per issue, phase and repository, Forgejo building and testing, the operator approving there, Matrix, `.AGENTS.md` instead of memory, `sokar-all` for the coordinator; a plan in seven phases. |
+| <a id="pj38"></a>[PJ38](PJ38-An-Estimate-Learns-From-The-Tokens-Spent.md) | — | `sokar` [B148](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b148), [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189); [PJ39](#pj39) | The new tokens of build and rework, counted per task tagged with its issue and phase, are written beside an issue's estimated size before it is Finished; a velocity per size is kept, and a new estimate is compared with finished issues of its size. |
 
 
 ## Estimated
