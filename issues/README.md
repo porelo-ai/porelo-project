@@ -46,6 +46,13 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | <a id="pj37"></a>[PJ37](PJ37-Work-Reaches-The-Upstream-Where-No-Machine-Key-May-Be-Added.md) | — | — | Where no machine key may be added: an administrator asked, or the person's own token used on the host only. |
 
 
+## Idea
+
+| # | Size | Blocked by | What it covers |
+|---|---|---|---|
+| <a id="pj38"></a>[PJ38](PJ38-An-Estimate-Learns-From-The-Tokens-Spent.md) | — | `sokar` [B148](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b148), [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189) | The new tokens of build and rework, counted per task tagged with its issue and phase, are written beside an issue's estimated size before it is Finished; a velocity per size is kept, and a new estimate is compared with finished issues of its size. |
+
+
 ## Estimated
 
 | # | Size | Blocked by | What it covers |
