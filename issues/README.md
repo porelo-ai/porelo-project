@@ -25,6 +25,9 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers | Open questions |
 |---|---|---|---|---|
+| <a id="pj42"></a>[PJ42](PJ42-The-Forge-And-Artifactory-Prepared-For-Porelo.md) | S | — | Before the first renamed commit is pushed: the organisation renamed `porelo-ai` with an empty `sokar-ai`, the repositories `porelo*`, secret and variable as `PORELO_*`, `porelo-dist-*` and its key pair at Artifactory, every remote moved. | — |
+| <a id="pj43"></a>[PJ43](PJ43-sokar-project-Renamed-Porelo-Project.md) | S | [PJ42](#pj42) | This repository renamed: the script with [PJ41](#pj41) and this issue as exceptions, `project.yml`'s addresses, the Shared Area's text and hash first in the window; checked by hand. | — |
+| <a id="pj44"></a>[PJ44](PJ44-The-Local-Machine-Renamed-Porelo.md) | S | [PJ43](#pj43) | The machine the agents work on: checkouts, `.AGENTS.md`, the channel and its tools, the hand-over directory, the VM accounts with Porelo installed afresh. | — |
 | <a id="pj33"></a>[PJ33](PJ33-A-Plugin-May-Carry-Its-Own-License.md) | L | — | An agent, build reader, transport or client may carry its own license: the interface libraries (`sokar-agent-api`, `sokar-build-api`, `sokar-wire`, the varlink definitions) under Apache-2.0, Sokar itself GPL, the boundary written down. | — |
 | <a id="pj09"></a>[PJ09](PJ09-A-Gates-Green-Says-Nothing-Until-Its-Reference-Set-Can-Change.md) | L | — | Every gate names its reference set; one that is empty, cannot change or is read by nothing is not counted as coverage. | — |
 | <a id="pj16"></a>[PJ16](PJ16-An-Organisation-Decides-Which-Providers-Its-Machines-Use.md) | L | — | A root-owned machine policy names the providers tasks may use, and narrows follows, prompts and the `online` class; a developer cannot widen it. | — |
