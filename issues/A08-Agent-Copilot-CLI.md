@@ -45,7 +45,7 @@ itself fronts models from several vendors.
   any other provider. The weekly update watches for `copilot_internal/v2/token` appearing in the code.
 - **The stand-in must start with `gho_`, `ghu_` or `github_pat_`;** nothing after the prefix is checked.
   `sokar` gains a provider field `token_prefix` and mints `gho_sokarpt_…` for this agent (S, an Idea of
-  Agent Core's once A08 is to be built).
+  Agent Core's once [A08](README.md#a08) is to be built).
 - **The built-in GitHub MCP server is turned off** (`--disable-builtin-mcps` among the sandboxed
   arguments); it would post the token to `<API URL>/mcp/readonly`. Its other calls to `api.github.com`
   (user, managed settings, update check, MCP registry) fail closed in a task and the CLI goes on.
