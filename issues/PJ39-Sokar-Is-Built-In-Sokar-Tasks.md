@@ -1,6 +1,6 @@
 # PJ39 — Sokar is built in Sokar tasks
 
-**Status:** Idea.
+**Status:** Accepted.
 
 **What must be true.** The agents that analyse, build and rework Sokar's issues do that work in Sokar tasks of the
 project `sokar`, not as sessions on the host. Each task's work is built and tested on the local forge as it would be
@@ -82,11 +82,12 @@ builds' disk load and with room to grow; 1 Gbit/s. A machine of that class is a 
 In this order; within a phase the items can run side by side. *New* marks an issue that does not exist yet and the
 repository it is meant for.
 
-0. **The groundwork, done first:** the code cleaned to the house rules - sokar
-   [B76](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b76) and its counterpart in every
-   repository; one code style checked by the build, [PJ29](README.md#pj29); the rules for contributors from
-   outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](README.md#pj32); and the rename,
-   [PJ41](README.md#pj41), so that nothing built after it carries the old name.
+0. **The groundwork, done first, in this order:** what is running is finished and pushed - sokar
+   [B76](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b76)'s findings already made, and the open
+   round; then, in a window with no other work open, the rename [PJ41](README.md#pj41) and the one code style of
+   [PJ29](README.md#pj29); then every repository's code read against its skills (the modules the first reading left out, and its
+   counterparts in the other repositories); last the rules for contributors from outside,
+   [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](README.md#pj32), which describe the result.
 1. **The host:** [PJ40](README.md#pj40) brings the project up on the bare-metal host at one command - VPN, Sokar,
    its account, Forgejo, the Matrix homeserver, KVM, the images, the agents' tasks - with its state backed up off
    the machine and restored onto a new one; the same on a machine of one's own and on one rented by the hour.

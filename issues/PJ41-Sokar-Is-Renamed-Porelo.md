@@ -1,11 +1,11 @@
 # PJ41 — Sokar is renamed Porelo
 
-**Status:** Idea.
+**Status:** Accepted.
 
 **What must be true.** The product, its repositories, its organisation at the forge, its packages and artifacts, its
 commands, its paths and its documentation are named Porelo; nothing a user installs, types or reads still says
-Sokar, except where it says what the old name was. A machine that ran Sokar continues under the new name without
-losing its projects, its vault or its tasks.
+Sokar, except where it says what the old name was. Porelo is installed afresh: nothing of a machine that ran Sokar is
+carried over.
 
 ## Why
 
@@ -31,11 +31,14 @@ What carries the name today, counted across the checkouts:
 - **The words:** documentation, issues, the agents' names and rules.
 
 Done in one go per repository, in the order its dependants need, with a release under the new coordinates and the old
-ones marked as moved; a machine's state is moved once at the first start under the new name.
+ones marked as moved.
 
-## To be settled
+## Decided
 
-- The new group and package names (for example `ai.porelo`), and whether the organisation at the forge is renamed or
-  a new one is made.
-- What a machine that ran Sokar is told and how long the old command and paths keep working.
-- Whether the rename comes before or after the reformatting of [PJ29](README.md#pj29), each touching every file.
+- **Group and packages: `org.fuin.porelo`**, in the namespace already verified at Maven Central.
+- **The organisation at the forge is renamed** (`sokar-ai` to `porelo-ai`), and an empty organisation `sokar-ai` is
+  made at once to hold the old name, so the forge's redirects are not taken over by somebody else.
+- **No migration:** Porelo is installed afresh and its projects set up again; no state, command or path of Sokar is
+  read or kept, and no `sokar` command remains.
+- **First in Phase 0 of [PJ39](README.md#pj39)**, before the reformatting of [PJ29](README.md#pj29), in a window with
+  no other work open: what is running is finished and pushed first.

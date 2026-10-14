@@ -1,6 +1,6 @@
 # PJ40 — A project comes up on a server at one command
 
-**Status:** Idea.
+**Status:** Accepted.
 
 **What must be true.** A person who works with several agents on a project of several repositories puts the whole
 project on a server and starts all of it together with one command, from the project's `project.yml` and the setup
