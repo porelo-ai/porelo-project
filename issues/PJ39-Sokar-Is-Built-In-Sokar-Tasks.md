@@ -74,8 +74,19 @@ Derived from what runs at once, not measured; the analysis measures it on today'
 | **Sum** | **42** | **116 GB** | **700 GB** |
 
 **So the host needs:** x86_64 with hardware virtualisation (VT-x or AMD-V) and AVX2; **at least 16 cores with 32
-threads**; **128 GB of ECC memory**; **two NVMe disks of at least 1.92 TB each, mirrored**, for the VMs' and the
-builds' disk load and with room to grow; 1 Gbit/s. A machine of that class is a common dedicated server.
+threads**; **128 GB of ECC memory**; **two NVMe disks of at least 1.92 TB each**; 1 Gbit/s. A machine of that class is
+a common dedicated server.
+
+**How it is used, as decided:**
+
+- **Rented by the hour** and given back when the work stops; the provider caps the hours at its monthly price.
+- **One disk for the state, one for what can be thrown away**: Forgejo, the vault, the Matrix room and the local
+  agent files on the first; the VMs, the images, the caches and the builds on the second. Neither is mirrored, so the
+  state is backed up off the machine not only at down but during a session, after every merge on Forgejo, and a
+  failed disk loses at most the work since then.
+
+**To be checked before the first rental:** whether the provider's one-time setup fee is charged again for every
+rental by the hour; if it is, a machine is kept for a working period rather than given back each day.
 
 ## Plan
 
