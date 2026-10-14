@@ -12,6 +12,8 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 **How Sokar measures up against security guidelines** is in [security-guidelines.md](security-guidelines.md); every gap to be closed links its issue there.
 
+**How Sokar compares with other tools that isolate or run coding agents** is in [feature-comparison.md](feature-comparison.md); every planned feature links its issue there.
+
 ## Implementing
 
 | # | Size | Blocked by | What it covers |
