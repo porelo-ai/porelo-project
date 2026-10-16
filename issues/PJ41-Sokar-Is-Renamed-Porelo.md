@@ -19,15 +19,17 @@ user.
 ## Decided
 
 - **Group and packages: `org.fuin.porelo`**, in the namespace already verified at Maven Central.
-- **The organisation at the forge is renamed** (`sokar-ai` to `porelo-ai`), and an empty organisation `sokar-ai` is
-  made at once to hold the old name, so the forge's redirects are not taken over by somebody else.
+- **The repositories move to the organisation `porelo-ai`**, which exists already, so `sokar-ai` cannot be renamed
+  to it: each repository is transferred there and renamed `porelo*`. `sokar-ai` stays, holding only its profile (`.github`), so
+  its name and the forge's redirects of the transferred repositories are not taken over by somebody else; no
+  repository of an old name is made in it again.
 - **No migration:** Porelo is installed afresh and its projects set up again; no state, command or path of Sokar is
   read or kept, and no `sokar` command remains.
 - **First in Phase 0 of [PJ39](README.md#pj39)**, before the reformatting of [PJ29](README.md#pj29), in a window with
   no other work open: what is running is finished and pushed first.
 - **What stays at the old addresses:** the artifacts at Maven Central under `org.fuin.sokar` stay as they are,
   without a relocation; the Artifactory repositories `sokar-dist-deb` and `sokar-dist-rpm` are deleted once Porelo's
-  packages are published; the placeholder organisation's README says where Porelo is.
+  packages are published; `sokar-ai`'s profile says where Porelo is.
 - **The version reads on:** Porelo and the tools at `0.5.0`, the parent at `0.2.0`.
 - **The daemon is `porelod`** (`porelod.service`), as the script makes it from `sokard`.
 - **The logo stays:** its design and colours are kept, the word in it changes.
@@ -86,7 +88,7 @@ the size measured on its code.
 - **The Shared Area's text names Sokar**, so its hash changes: `sokar-project` takes the new area first, and every
   repository takes it within the window.
 - **Links resolve on the forge**, and the forge redirects an old name to a new one, not the other way: the
-  organisation and the repositories are renamed there before the first renamed commit is pushed.
+  repositories are transferred to `porelo-ai` and renamed there before the first renamed commit is pushed.
 - **The SELinux types and the firewall's table** are renamed and need the native build and the acceptance on both
   legs, an enforcing Fedora for the policy, before `sokar`'s commit is named.
 - **`porelo` is one character longer** than `sokar`: socket paths stay within their limit, and the tests that assert a
@@ -94,9 +96,9 @@ the size measured on its code.
 
 **In this order**, each step waiting for the one before, since each resolves what the one before publishes:
 
-1. **Preparation (S, the operator with the coordinator):** the organisation renamed `porelo-ai` and an empty
-   `sokar-ai` made; the repositories renamed `porelo*`, the site `porelo-ai.github.io`; the secret and the variable
-   made again under `PORELO_*`; the Artifactory repositories `porelo-dist-deb` and `porelo-dist-rpm` and the key pair
+1. **Preparation (S, the operator with the coordinator):** what the organisation carries made again in
+   `porelo-ai`; every repository transferred from `sokar-ai` to `porelo-ai` and renamed `porelo*`, the site
+   `porelo-ai.github.io`, each redirect checked; `sokar-ai` left with its profile only; the Artifactory repositories `porelo-dist-deb` and `porelo-dist-rpm` and the key pair
    `porelo-packages` made; every checkout's remote moved. Nothing of the code changes in this step.
 2. **`sokar-parent` (XS)** to `porelo-parent`, then **`sokar-buildtools` (M**, 850 occurrences, 114 paths, four values
    in its Java that name the organisation or the product) - `porelo-release`, `porelo-machines`, its five modules - each
@@ -124,4 +126,5 @@ still says `sokar` - seen to fail before the script runs, green after, and kept,
 
 - What other ecosystems require of a new name: a new IntelliJ plugin id is a new plugin, not yet published, so
   nothing is lost; the Dart package is not published.
-- Whether the forge carries an organisation's secrets, variables and Pages over a rename, or each is made again.
+- What a transfer carries to the new organisation - repository secrets and variables, rulesets, Pages - and what is
+  made again there; the organisation's own settings are not carried.
