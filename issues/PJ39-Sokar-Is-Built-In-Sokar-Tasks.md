@@ -21,8 +21,8 @@ work for a person either.
   - **It is set up from nothing by a script** and given back with nothing kept on it: the code is in the forge,
     the person's own settings - configuration, notes, `.AGENTS.md`, small files - are on a drive the person mounts
     there, and the room's conversation and the usage records are copied off it as [PJ45](README.md#pj45) says.
-    Work not yet mirrored to the central forge is lost with a failed machine; that risk is accepted, and a person who
-    wants it covered mirrors the local forge elsewhere with means of their own, of which Sokar knows nothing.
+    Work not yet mirrored to the central forge is lost with a failed machine, an accepted risk
+    ([decision](../doc/decisions.md#work-not-yet-mirrored-is-lost-with-a-failed-machine)).
   - **Keys deposited on a rented one are deposited for a time** ([PJ37](README.md#pj37)) and forgotten at its end;
     the package signing key is never on it, and releases stay the operator's.
   - **Nothing on it is reachable from the internet**: the operator reaches Forgejo, Matrix and Sokar's ssh through a
@@ -49,14 +49,18 @@ work for a person either.
 - **One task per issue, phase and repository**, started with sokar
   [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189)'s values `issue` and `phase`. A
   task works on one repository only; an issue that changes several is built in one task per repository.
-- **An image per repository**, from its devcontainer file (sokar [B170](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b170)), each with the toolchain its repository needs (GraalVM and Maven, Flutter, Gradle,
+- **An image per repository**, from its devcontainer file (sokar [B170](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b170),
+  [B192](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b192)), each with the toolchain its repository needs (GraalVM and Maven, Flutter, Gradle,
   Python), rather than one image for the whole project.
 - **Downloaded dependencies are cached across tasks**, shared and read-only, as `~/.m2/cached/` is today; what a
-  task installs stays its own.
+  task installs stays its own (sokar [B193](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b193)).
 - **`.AGENTS.md` replaces the agents' memory.** It is the one local, uncommitted file for what holds on this
-  machine and for the operator's preferences; the agents' own memory is switched off. It is handed into every task
-  read-only at its start; an agent that wants it changed leaves the changed file as a proposal, and Sokar writes it
-  on the host once the operator approved it - nothing a task wrote reaches the next task unseen.
+  machine and for the operator's preferences, kept on the drive the person mounts ([PJ40](README.md#pj40)); the
+  agents' own memory is switched off (sokar-claude-code
+  [CC30](https://github.com/sokar-ai/sokar-claude-code/blob/main/issues/README.md#cc30)). It is handed into every
+  task read-only at its start (sokar [B194](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b194));
+  an agent that wants it changed leaves the changed file as a proposal, and Sokar writes it back to that drive once
+  the operator approved it - nothing a task wrote reaches the next task unseen.
 - **The agents talk over Matrix** instead of the channel file on the host: the project's room in which its tasks
   already talk, through the Matrix transport and the message filter. Nothing new is built for the room; the
   homeserver runs on the host.
@@ -81,8 +85,8 @@ forge's rented machines do today: the runner's builds, the native ones among the
 | **Sum** | **32-48 GB** |
 
 A task's memory limit is a ceiling, not a reservation, so the limits may add up to more than the host has; a limit
-per repository (high for `sokar`, low for the small ones) belongs to sokar
-[B192](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b192).
+per repository (high for `sokar`, low for the small ones) is the project file's `limits:` under each entry of
+`repositories:` ([the project file](https://sokar-ai.github.io/core/project-file/)), which exists.
 
 **So the host needs at least:** x86_64 with hardware virtualisation (VT-x or AMD-V) and AVX2, bare metal; **8 cores
 with 16 threads**; **64 GB of memory**, ECC where it is offered; **one SSD of at least 1 TB**, NVMe where it is
@@ -96,7 +100,9 @@ measures each agent's peak and corrects this.
 - **One disk**: nothing on it needs to outlive the machine.
 
 **To be checked before the first rental:** whether the provider's one-time setup fee is charged again for every
-rental by the hour; if it is, a machine is kept for a working period rather than given back each day.
+rental by the hour; if it is, a machine is kept for a working period rather than given back each day. And for the
+machine chosen, what its offer leaves unsaid: whether VAT and a setup fee come on top, whether its memory is ECC and
+its disks NVMe, how many CPUs it has.
 
 ## Plan
 
@@ -113,9 +119,14 @@ repository it is meant for.
    its account, Forgejo, the Matrix homeserver, KVM, the images, the agents' tasks - and [PJ45](README.md#pj45)
    keeps the room and the usage records; the same on a machine of one's own and on one rented by the hour.
 2. **What Sokar must add:** sokar [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189)
-   (values at the start); sokar [B170](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b170) (the image from a devcontainer file) and, *new, `sokar`:* that image chosen per repository; *new, `sokar`:* a dependency cache shared across
-   tasks; *new, `sokar`:* a file handed in read-only at every start of an agent's task, and its changed copy
-   written on the host after approval; *new, `sokar-claude-code`:* the agent's own memory switched off in the task.
+   (values at the start); sokar [B170](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b170) (the
+   image from a devcontainer file) and [B192](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b192)
+   (that image chosen per repository); sokar
+   [B193](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b193) (a dependency cache shared across
+   tasks); sokar [B194](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b194) (a file handed in
+   read-only at every start of an agent's task, and its changed copy written after approval); sokar-claude-code
+   [CC30](https://github.com/sokar-ai/sokar-claude-code/blob/main/issues/README.md#cc30) (the agent's own memory
+   switched off in the task).
 3. **The local forge, [PJ22](README.md#pj22)**, in its five parts: machine kinds in `sokar-machines`, the VM pool
    (run accounts on the two VMs),
    Forgejo with its registry running the same workflows, the `forgejo` reader, a task's build on a declared kind;
@@ -128,14 +139,13 @@ repository it is meant for.
    repositories); Matrix; IntelliJ and Frontend (other toolchains); Core last of the builders, with a way back to the
    host, since a fault in Sokar stops its own work; the coordinator last of all.
 6. **Clearing up:** *new, every repository:* `AGENTS.md` and `.AGENTS.md` rewritten for Matrix, Forgejo and the gate;
-   the channel file, the hand-over directory and the agents' accounts on the VMs retired.
+   the channel file, the hand-over directory and the agents' own accounts on the VMs retired, the pool's run
+   accounts in their place.
 7. **Then** sokar [B148](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b148) counts what the
    tasks spend, and [PJ38](README.md#pj38) learns from it. The counting can be built earlier; it counts nothing of this work
    before phase 4.
 
 ## To be checked
 
-- Whether Sokar already hands a file into a task at its start, or only to a running one (`sokar task give`).
 - Whether the broker can hold a credential for Forgejo's API, or only for model providers.
 - Whether the agent in a task is woken by a message as the channel's watcher wakes it, or something is missing.
-- Whether the agent's own memory can be switched off by a setting in the container.
