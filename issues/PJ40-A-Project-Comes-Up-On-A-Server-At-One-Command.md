@@ -31,7 +31,7 @@ is where the command is tried and refined before anyone else relies on it.
   - **Each repository's own files:** its image from its devcontainer file (sokar
     [B170](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b170)), its builds from its
     workflows. Nothing a repository already says is said again in `project.yml`.
-  - **A setup file of the person's, for the machine:** its address, how the person reaches it (a VPN), where backups
+  - **A setup file of the person's, for the machine:** its address, how the person reaches it (a VPN), the drive with the person's settings and where chosen data is kept
     go, the hardware it offers. A project's file never names a machine, so one project comes up on any of them.
 - **Sokar writes the configuration; Ansible sets up the host.** From the three sources Sokar generates an Ansible
   inventory and its variables, and the person runs the playbook from their own machine over ssh: operating system
@@ -56,6 +56,5 @@ is where the command is tried and refined before anyone else relies on it.
     through an inventory, a variable or a log; on a rented machine for a time ([PJ37](README.md#pj37)), and they
     leave with down;
   - **starting the tasks** (`sokar task start`), so their limits, egress and start values hold.
-- **The state is restored**: the forge's repositories and registry, the vault's entries the person chose to keep,
-  the room's history and the local agent files come back from the last backup, so a new machine continues where the
-  old one stopped.
+- **Nothing is restored but what was chosen**: the person's own settings come from the drive the person mounts,
+  and the data [PJ45](README.md#pj45) keeps is put back; the code comes from the forge, everything else is built again.

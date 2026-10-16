@@ -49,6 +49,13 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | <a id="pj38"></a>[PJ38](PJ38-An-Estimate-Learns-From-The-Tokens-Spent.md) | — | `sokar` [B148](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b148), [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189); [PJ39](#pj39) | The new tokens of build and rework, counted per task tagged with its issue and phase, are written beside an issue's estimated size before it is Finished; a velocity per size is kept, and a new estimate is compared with finished issues of its size. |
 
 
+## Idea
+
+| # | Size | Blocked by | What it covers |
+|---|---|---|---|
+| <a id="pj45"></a>[PJ45](PJ45-Chosen-Data-Outlives-The-Machine.md) | — | — | A short list of data that lives only on a machine - the Matrix room's conversation and the token usage records to start with - copied regularly and at down to the person's mounted drive and put back at up; nothing else is kept. |
+
+
 ## Estimated
 
 | # | Size | Blocked by | What it covers |

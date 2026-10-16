@@ -18,10 +18,11 @@ work for a person either.
 - **Everything runs on one bare-metal host**: Sokar with its daemon, gates, broker and vault; the tasks; Forgejo with
   its registry and runner; the VM pool; the Matrix homeserver; the images and caches. Whether that machine stands
   in the operator's office or is rented by the hour makes no difference to the setup:
-  - **It is set up from nothing by a script**, and everything that must outlive it - Forgejo's repositories and
-    registry with the branches not yet mirrored, the vault, `.AGENTS.md`, the Matrix room, the tasks' usage
-    records - is backed up off the machine, by a backup of its own rather than the central forge, and restored onto
-    a new one. A machine given back is not missed.
+  - **It is set up from nothing by a script** and given back with nothing kept on it: the code is in the forge,
+    the person's own settings - configuration, notes, `.AGENTS.md`, small files - are on a drive the person mounts
+    there, and the room's conversation and the usage records are copied off it as [PJ45](README.md#pj45) says.
+    Work not yet mirrored to the central forge is lost with a failed machine; that risk is accepted, and a person who
+    wants it covered mirrors the local forge elsewhere with means of their own, of which Sokar knows nothing.
   - **Keys deposited on a rented one are deposited for a time** ([PJ37](README.md#pj37)) and forgotten at its end;
     the package signing key is never on it, and releases stay the operator's.
   - **Nothing on it is reachable from the internet**: the operator reaches Forgejo, Matrix and Sokar's ssh through a
@@ -82,17 +83,14 @@ per repository (high for `sokar`, low for the small ones) belongs to sokar
 [B192](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b192).
 
 **So the host needs at least:** x86_64 with hardware virtualisation (VT-x or AMD-V) and AVX2, bare metal; **8 cores
-with 16 threads**; **64 GB of memory**, ECC where it is offered; **two SSDs of at least 1 TB**, NVMe where it is
+with 16 threads**; **64 GB of memory**, ECC where it is offered; **one SSD of at least 1 TB**, NVMe where it is
 offered; 1 Gbit/s. More cores make the builds faster, they are not needed for them to run. The first working period
 measures each agent's peak and corrects this.
 
 **How it is used, as decided:**
 
 - **Rented by the hour** and given back when the work stops; the provider caps the hours at its monthly price.
-- **One disk for the state, one for what can be thrown away**: Forgejo, the vault, the Matrix room and the local
-  agent files on the first; the VMs, the images, the caches and the builds on the second. Neither is mirrored, so the
-  state is backed up off the machine not only at down but during a session, after every merge on Forgejo, and a
-  failed disk loses at most the work since then.
+- **One disk**: nothing on it needs to outlive the machine.
 
 **To be checked before the first rental:** whether the provider's one-time setup fee is charged again for every
 rental by the hour; if it is, a machine is kept for a working period rather than given back each day.
@@ -109,8 +107,8 @@ repository it is meant for.
    counterparts in the other repositories); last the rules for contributors from outside,
    [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](README.md#pj32), which describe the result.
 1. **The host:** [PJ40](README.md#pj40) brings the project up on the bare-metal host at one command - VPN, Sokar,
-   its account, Forgejo, the Matrix homeserver, KVM, the images, the agents' tasks - with its state backed up off
-   the machine and restored onto a new one; the same on a machine of one's own and on one rented by the hour.
+   its account, Forgejo, the Matrix homeserver, KVM, the images, the agents' tasks - and [PJ45](README.md#pj45)
+   keeps the room and the usage records; the same on a machine of one's own and on one rented by the hour.
 2. **What Sokar must add:** sokar [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189)
    (values at the start); sokar [B170](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b170) (the image from a devcontainer file) and, *new, `sokar`:* that image chosen per repository; *new, `sokar`:* a dependency cache shared across
    tasks; *new, `sokar`:* a file handed in read-only at every start of an agent's task, and its changed copy
