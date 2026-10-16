@@ -91,7 +91,8 @@ measures each agent's peak and corrects this.
 
 **How it is used, as decided:**
 
-- **Rented by the hour** and given back when the work stops; the provider caps the hours at its monthly price.
+- **Rented by the hour** and given back when the work stops; where the provider does not cap the hours at its
+  monthly price, a machine used most of the month is rented by the month instead.
 - **One disk**: nothing on it needs to outlive the machine.
 
 **To be checked before the first rental:** whether the provider's one-time setup fee is charged again for every
