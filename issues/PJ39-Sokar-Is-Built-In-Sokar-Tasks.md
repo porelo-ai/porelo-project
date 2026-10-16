@@ -43,7 +43,9 @@ work for a person either.
 - **The operator tests and approves each pull request on Forgejo**; the coordinator then merges it through Forgejo's
   API. Each repository's push mirror to the central forge runs only when the coordinator starts it, through the same
   API, in the order and staggered as today's gathered pushes; the token for that API stays on the host and the
-  coordinator's task holds a broker's token only. The limit on rented servers concerns those mirrors only.
+  coordinator's task holds a broker's token only. The mirrors push with the person's own token
+  ([PJ37](README.md#pj37)), so a new host needs no key added at the central forge. The limit on rented servers
+  concerns those mirrors only.
 - **One task per issue, phase and repository**, started with sokar
   [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189)'s values `issue` and `phase`. A
   task works on one repository only; an issue that changes several is built in one task per repository.
