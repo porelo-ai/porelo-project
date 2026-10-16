@@ -27,9 +27,10 @@ work for a person either.
   - **Nothing on it is reachable from the internet**: the operator reaches Forgejo, Matrix and Sokar's ssh through a
     VPN. Outgoing: the model providers through the broker, the dependency repositories, and the central forge for
     the mirrors only.
-  - **The VM pool runs on its own KVM**, so a run gets a fresh VM rather than a reset account, and the scenarios that
-    reboot a machine run locally too. A machine without AVX2 is a machine kind reached from outside, not part of the
-    host.
+  - **Tests run in accounts on two long-lived VMs**, one Ubuntu and one Fedora, as [PJ22](README.md#pj22) plans and
+    as today: a run rents an account of the pool, which is reset when it is given back; no VM is started for a run.
+    The scenarios that reboot a machine run centrally only. A machine without AVX2 is a machine kind reached from
+    outside, not part of the host.
 - **The project `sokar` becomes `online`, its upstream the local Forgejo** of [PJ22](README.md#pj22). A task's push
   goes to its gate, which passes the branch `sokar/<task>` on to Forgejo at once; nothing of it is public.
 - **Forgejo builds it with the same workflows as the central forge**, the acceptance legs on an account of the local
@@ -63,20 +64,27 @@ work for a person either.
 
 ## The hardware
 
-Derived from what runs at once, not measured; the analysis measures it on today's machines and corrects it.
+**Measured on the machine the agents use today:** 8 cores with 16 threads (a current laptop CPU), 53 GB of memory with
+15 GB in use, the Ubuntu VM at 6 vCPUs and 12 GB, the Fedora VM at 2 vCPUs and 4 GB, each agent's session about
+0.4 GB. All seven agents, their builds and the tests on the VM run there. What the host adds is the work the central
+forge's rented machines do today: the runner's builds, the native ones among them.
 
-| What runs at once | Cores | Memory | Disk |
-|---|---|---|---|
-| 8 tasks (seven agents, and one more while an issue spans repositories), 2 cores and 8 GB each | 16 | 64 GB | 160 GB |
-| VM pool: 4 VMs of 4 vCPUs and 8 GB, each with its disk | 16 | 32 GB | 240 GB |
-| Forgejo's runner: 2 jobs at once, 4 cores and 8 GB each | 8 | 16 GB | 50 GB |
-| Forgejo, its registry (snapshots kept for a time), Matrix, Sokar | 2 | 4 GB | 150 GB |
-| Images, one per repository, and the dependency caches | - | - | 100 GB |
-| **Sum** | **42** | **116 GB** | **700 GB** |
+| What runs at once | Memory |
+|---|---|
+| Seven agents' tasks, two or three of them building | 8-12 GB |
+| The Ubuntu VM, and the Fedora VM when a test needs it | 12 GB, 16 GB with Fedora |
+| Forgejo's runner, one or two jobs, a native build among them | 8-16 GB |
+| Forgejo, its registry, Matrix, Sokar | 4 GB |
+| **Sum** | **32-48 GB** |
 
-**So the host needs:** x86_64 with hardware virtualisation (VT-x or AMD-V) and AVX2; **at least 16 cores with 32
-threads**; **128 GB of ECC memory**; **two NVMe disks of at least 1.92 TB each**; 1 Gbit/s. A machine of that class is
-a common dedicated server.
+A task's memory limit is a ceiling, not a reservation, so the limits may add up to more than the host has; a limit
+per repository (high for `sokar`, low for the small ones) belongs to sokar
+[B192](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b192).
+
+**So the host needs at least:** x86_64 with hardware virtualisation (VT-x or AMD-V) and AVX2, bare metal; **8 cores
+with 16 threads**; **64 GB of memory**, ECC where it is offered; **two SSDs of at least 1 TB**, NVMe where it is
+offered; 1 Gbit/s. More cores make the builds faster, they are not needed for them to run. The first working period
+measures each agent's peak and corrects this.
 
 **How it is used, as decided:**
 
@@ -108,7 +116,7 @@ repository it is meant for.
    tasks; *new, `sokar`:* a file handed in read-only at every start of an agent's task, and its changed copy
    written on the host after approval; *new, `sokar-claude-code`:* the agent's own memory switched off in the task.
 3. **The local forge, [PJ22](README.md#pj22)**, in its five parts: machine kinds in `sokar-machines`, the VM pool
-   (a fresh VM per run on the host's KVM, rather than accounts on a VM),
+   (run accounts on the two VMs),
    Forgejo with its registry running the same workflows, the `forgejo` reader, a task's build on a declared kind;
    then *new, `sokar-buildtools`:* the push mirrors to the central forge, started through Forgejo's API.
 4. **Talking and coordinating:** the project's room as it is; an agent in a task reached by a message as the
