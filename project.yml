@@ -10,7 +10,7 @@ project:
 
   # The project's own repository: this one, holding the planning and the issues. A task can be
   # started for it, which is how an agent gets a task for planning.
-  upstream: "git@github.com:sokar-ai/sokar-project.git"
+  upstream: "git@github.com:porelo-ai/porelo-project.git"
 
 # The repositories the work happens in. A task works on exactly one, named at
 # 'sokar task start --repository <name>'; these names are what a person types.
@@ -19,62 +19,62 @@ project:
 repositories:
 
   core:
-    upstream: "git@github.com:sokar-ai/sokar.git"
+    upstream: "git@github.com:porelo-ai/porelo.git"
     description: "The CLI, the daemon, the gate and the guarantees they make"
     issues: ["B", "P"]
 
   frontend:
-    upstream: "git@github.com:sokar-ai/sokar-frontend.git"
+    upstream: "git@github.com:porelo-ai/porelo-frontend.git"
     description: "The interface, which reaches the daemon over the socket and never the filesystem"
     issues: ["F"]
 
   sluice:
-    upstream: "git@github.com:sokar-ai/sokar-message-sluice.git"
+    upstream: "git@github.com:porelo-ai/porelo-message-sluice.git"
     description: "The message filter: what may pass between tasks"
     issues: ["SL"]
 
   matrix:
-    upstream: "git@github.com:sokar-ai/sokar-message-matrix.git"
+    upstream: "git@github.com:porelo-ai/porelo-message-matrix.git"
     description: "The Matrix transport: a project's room, where tasks talk"
     issues: ["MX"]
 
   claude:
-    upstream: "git@github.com:sokar-ai/sokar-claude-code.git"
+    upstream: "git@github.com:porelo-ai/porelo-claude-code.git"
     description: "The packaged agent: Claude Code, as Sokar installs and drives it"
     issues: ["CC"]
 
   pi:
-    upstream: "git@github.com:sokar-ai/sokar-pi.git"
+    upstream: "git@github.com:porelo-ai/porelo-pi.git"
     description: "The packaged agent: pi"
     issues: ["PI"]
 
   omp:
-    upstream: "git@github.com:sokar-ai/sokar-omp.git"
+    upstream: "git@github.com:porelo-ai/porelo-omp.git"
     description: "The packaged agent: oh-my-pi"
     issues: ["OM"]
 
   buildtools:
-    upstream: "git@github.com:sokar-ai/sokar-buildtools.git"
+    upstream: "git@github.com:porelo-ai/porelo-buildtools.git"
     description: "Build and test tooling for the Sokar repositories: rented test machines, release checks and package checks"
     issues: ["BT"]
 
   parent:
-    upstream: "git@github.com:sokar-ai/sokar-parent.git"
+    upstream: "git@github.com:porelo-ai/porelo-parent.git"
     description: "The parent pom every Sokar Maven repository takes: shared build settings, plugin and tool versions"
     issues: ["PA"]
 
   github:
-    upstream: "git@github.com:sokar-ai/sokar-build-github.git"
+    upstream: "git@github.com:porelo-ai/porelo-build-github.git"
     description: "The build-server adapter for GitHub Actions: the verdict and the failing job's log of a task's build"
     issues: ["GH"]
 
   intellij:
-    upstream: "git@github.com:sokar-ai/sokar-intellij.git"
+    upstream: "git@github.com:porelo-ai/porelo-intellij.git"
     description: "The IntelliJ plugin: an agent's waiting work reviewed, approved or rejected in the IDE"
     issues: ["IJ"]
 
   site:
-    upstream: "git@github.com:sokar-ai/sokar-ai.github.io.git"
+    upstream: "git@github.com:porelo-ai/porelo-ai.github.io.git"
     description: "The documentation site: collects every repository's doc/ into one site on GitHub Pages"
     issues: ["SI"]
 
