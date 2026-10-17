@@ -5,6 +5,8 @@ it stays and what would change the answer.
 
 | Subject | What holds | Link |
 |---|---|---|
+| The old name keeps its addresses and holds nothing new | `sokar-ai` keeps only its profile, `org.fuin.sokar` stays at Maven Central without a relocation, released changelog entries keep the old name | [entry](#the-old-name-keeps-its-addresses-and-holds-nothing-new) |
+| The RPM repository indexes one folder deep | `porelo-dist-rpm` has the *YUM Metadata Folder Depth* 1 | [entry](#the-rpm-repository-indexes-one-folder-deep) |
 | Work not yet mirrored is lost with a failed machine | the host keeps no backup of the local forge; a person who wants one mirrors it with means of their own | [entry](#work-not-yet-mirrored-is-lost-with-a-failed-machine) |
 
 ## Work not yet mirrored is lost with a failed machine
@@ -18,3 +20,18 @@ working, for a loss bounded by the time between two mirror runs, and the agents 
 who wants it covered mirrors the local forge elsewhere with means of their own, of which Porelo knows nothing. **What
 would change the answer:** a loss that costs more than the work since the last mirror run can be redone in, or
 mirror runs so far apart that a failed machine regularly takes more than a working day with it.
+
+## The old name keeps its addresses and holds nothing new
+
+The product was called Sokar before it was called Porelo. The organisation `sokar-ai` stays and keeps only its
+profile (`.github`), which says where Porelo is: the forge redirects every transferred repository's old address only
+while no repository of that name exists there, and a kept organisation cannot be taken by somebody else, so no
+repository is made in it again. The artifacts under `org.fuin.sokar` stay at Maven Central as they were released,
+without a relocation. Released changelog entries keep the name they were
+released under; every repository's test that refuses the old name excepts them.
+
+## The RPM repository indexes one folder deep
+
+`porelo-dist-rpm` at Artifactory has the *YUM Metadata Folder Depth* 1, so each channel (`snapshots`, `releases`)
+is indexed in its own folder. A YUM repository made by hand starts at 0 and indexes beside the channel instead of in
+it.

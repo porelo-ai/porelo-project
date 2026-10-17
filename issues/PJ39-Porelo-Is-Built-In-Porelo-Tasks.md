@@ -111,9 +111,9 @@ repository it is meant for.
 
 0. **The groundwork, done first, in this order:** what is running is finished and pushed - porelo
    [B76](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b76)'s findings already made, and the open
-   round; then, in a window with no other work open, the rename [PJ41](README.md#pj41) and the one code style of
-   [PJ29](README.md#pj29); then every repository's code read against its skills (the modules the first reading left out, and its
-   counterparts in the other repositories); last the rules for contributors from outside,
+   round; then the one code style of [PJ29](README.md#pj29); then every repository's code read against its skills
+   (the modules the first reading left out, and its counterparts in the other repositories); last the rules for
+   contributors from outside,
    [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](README.md#pj32), which describe the result.
 1. **The host:** [PJ40](README.md#pj40) brings the project up on the bare-metal host at one command - VPN, Porelo,
    its account, Forgejo, the Matrix homeserver, KVM, the images, the agents' tasks - and [PJ45](README.md#pj45)
