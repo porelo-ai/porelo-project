@@ -29,22 +29,22 @@ What Porelo has, what is planned for it and what is missing, beside ten tools th
 
 ## Overview
 
-88 features over the three tables below, counted per tool. The features are picked from Porelo's point of view, so
+87 features over the three tables below, counted per tool. The features are picked from Porelo's point of view, so
 the counts show how close a tool comes to Porelo's aims, not which tool is better.
 
 | Tool | ✅ yes | 🟡 partly | ❌ no | ❔ unknown |
 |---|---|---|---|---|
-| ▶ **Porelo** | **33** | **48 planned** | **7** | **0** |
-| **Docker SB** | 16 | 15 | 33 | 24 |
-| **OpenShell** | 9 | 12 | 42 | 25 |
-| **srt/CC** | 7 | 15 | 63 | 3 |
-| **Codex** | 6 | 19 | 50 | 13 |
-| **cu** | 5 | 10 | 56 | 17 |
-| **Squad** | 6 | 7 | 72 | 3 |
-| **Cond.** | 8 | 10 | 62 | 8 |
-| **VK** | 13 | 9 | 62 | 4 |
-| **E2B** | 13 | 6 | 42 | 27 |
-| **Daytona** | 15 | 12 | 41 | 20 |
+| ▶ **Porelo** | **34** | **46 planned** | **7** | **0** |
+| **Docker SB** | 16 | 15 | 33 | 23 |
+| **OpenShell** | 9 | 12 | 42 | 24 |
+| **srt/CC** | 7 | 15 | 62 | 3 |
+| **Codex** | 6 | 19 | 49 | 13 |
+| **cu** | 5 | 10 | 55 | 17 |
+| **Squad** | 6 | 7 | 71 | 3 |
+| **Cond.** | 8 | 10 | 61 | 8 |
+| **VK** | 13 | 9 | 61 | 4 |
+| **E2B** | 13 | 6 | 42 | 26 |
+| **Daytona** | 15 | 12 | 41 | 19 |
 
 ## What Porelo has
 
@@ -85,6 +85,7 @@ Each feature links to the page that describes it.
 | [Windows, with Porelo in WSL](https://github.com/porelo-ai/porelo-frontend)¹⁶ | ✅ | ✅ | 🟡 | 🟡 | ✅ | ❔ | ❔ | ❌ | ✅ | ✅ | ✅ |
 | [Its own certificate authority for outbound TLS](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md) | ✅ | ❔ | ❔ | ❔ | ❔ | ❌ | ❌ | ❌ | ❌ | ❔ | ❔ |
 | [Everything stopped with one command](https://github.com/porelo-ai/porelo/blob/main/doc/commands.md#panic) | ✅ | ❔ | ❔ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❔ | ❔ |
+| [Doctor's findings as data](https://github.com/porelo-ai/porelo/blob/main/doc/commands.md#doctor) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 1. **Isolation:**
    - Docker SB and E2B: a microVM with its own kernel, so stronger than Porelo.
@@ -139,7 +140,6 @@ Each feature names its issue; the index row says how far it is.
 | An alert on what looks wrong, the task frozen¹ | 🟡 | ❌ | ❌ | ❌ | 🟡 | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | porelo [B139](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b139) |
 | The workspace scanned for secrets at start | 🟡 | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | porelo [B140](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b140) |
 | New dependencies checked (slopsquatting) | 🟡 | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | porelo [B141](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b141) |
-| One stop for every task of a machine | 🟡 | ❔ | ❔ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❔ | ❔ | porelo [B146](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b146) |
 | A template for a local provider | 🟡 | ❌ | 🟡 | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | porelo [B149](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b149) |
 | The whole diff in review | 🟡 | ❌ | ❌ | ❌ | ❔ | 🟡 | ✅ | ✅ | ✅ | ❌ | ❌ | porelo [B150](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b150) |
 | A tamper-evident event log² | 🟡 | 🟡 | ❌ | ❌ | 🟡 | ❌ | ❌ | ❌ | ❌ | ❔ | 🟡 | porelo [B154](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b154), then [B121](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b121) |
@@ -152,7 +152,6 @@ Each feature names its issue; the index row says how far it is.
 | The conversation survives a real restart | 🟡 | ❔ | ❔ | 🟡 | 🟡 | ❔ | ❔ | ✅ | ❔ | ✅ | 🟡 | porelo [B46](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b46) |
 | A waiting push read as a pull request | 🟡 | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | porelo-frontend [F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78) |
 | A timeline of everything a piece of work did | 🟡 | ❌ | ❌ | ❌ | ❌ | 🟡 | ❌ | 🟡 | 🟡 | ❌ | ❌ | porelo-frontend [F111](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f111), [F112](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f112) |
-| Doctor's findings as data | 🟡 | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | porelo [B161](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b161) |
 | An unattended job's refusal reaches a person | 🟡 | ❔ | ❔ | ❌ | ❔ | ❌ | ❌ | ❔ | ❔ | ❌ | ❌ | [PJ08](README.md#pj08) |
 | MCP tools pinned, changes held back³ | 🟡 | 🟡 | ❌ | ❌ | 🟡 | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | [PJ15](README.md#pj15) |
 | Personal data caught by the message filter | 🟡 | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | porelo-message-sluice [SL07](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl07) |

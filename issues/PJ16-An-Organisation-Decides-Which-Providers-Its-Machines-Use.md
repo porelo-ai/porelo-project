@@ -57,3 +57,6 @@ allows.
 
 - Whether this and `porelo` [B151](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b151) are one mechanism at two levels, and which is built first - Agent Core's
   to decide.
+- Whether this becomes one case of `porelo` [B198](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b198),
+  settings inherited down an organisation's tree: the allowed providers a locked setting of the organisation's
+  file, the root-owned policy file its pinned top. To be folded in when that is analysed.

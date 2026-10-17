@@ -56,6 +56,6 @@ repository as the way.
 
 ## To be checked
 
-- *Why* and point 5 of *The shape* say approved work goes to the repository's `origin`; `porelo` [B126](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b126)
+- *Why* and point 5 of *The shape* say approved work goes to the repository's `origin`; `porelo`
   makes a checkout the source both ways, so approved work goes back into the checkout and Porelo never
   reaches its remote (`WorkOrigin.fromCheckout`) - the coordinator's to bring this issue in line.

@@ -16,7 +16,7 @@ is.
 **The two directions are two questions.** The filter stops the agent from sending data out; a person
 sending a file to an agent is not what it exists to stop. **A person already gives a running task a
 file without a message**: `porelo task give` puts it whole and read-only in `/porelo/files` (`porelo`'s
-hand-in; the interface's side is `porelo-frontend`'s [F100](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f100)). What is left here is a file that travels
+hand-in, which the interface offers too). What is left here is a file that travels
 **inside a message** - one a person drops into the project's room or a direct chat, and above all one an
 agent sends out - and outbound is the one that carries the weight.
 
