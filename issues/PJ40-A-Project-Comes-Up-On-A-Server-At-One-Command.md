@@ -60,7 +60,9 @@ is where the command is tried and refined before anyone else relies on it.
 - **Nothing is restored but what was chosen**: the person's own settings come from the drive the person mounts,
   and the data [PJ45](README.md#pj45) keeps is put back; the code comes from the forge, everything else is built again.
 - **The person's drive** is mounted at up and unmounted at down: a folder on a shared drive the person already uses
-  (a cloud drive with end-to-end encryption is preferred, since a VPN's key may lie there), reached with a
+  (a cloud drive with end-to-end encryption is preferred, since a VPN's key may lie there; the operator's is
+  Tresorit, which has a command-line client for Linux:
+  [Tresorit CLI unter Linux verwenden](https://support.tresorit.com/hc/de/articles/360009330614-Tresorit-CLI-unter-Linux-verwenden)), reached with a
   credential that opens that one folder and nothing else of the person's, deposited like the other keys and for a
   time on a rented machine. It holds small things that are read, not worked in: configuration, notes, the agents'
   `.AGENTS.md` (handed into each task read-only by porelo
