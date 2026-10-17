@@ -6,6 +6,7 @@ it stays and what would change the answer.
 | Subject | What holds | Link |
 |---|---|---|
 | The old name keeps its addresses and holds nothing new | `sokar-ai` keeps only its profile, `org.fuin.sokar` stays at Maven Central without a relocation, released changelog entries keep the old name | [entry](#the-old-name-keeps-its-addresses-and-holds-nothing-new) |
+| Porelo is installed afresh | nothing of a machine that ran Sokar is read, kept or migrated | [entry](#porelo-is-installed-afresh) |
 | The RPM repository indexes one folder deep | `porelo-dist-rpm` has the *YUM Metadata Folder Depth* 1 | [entry](#the-rpm-repository-indexes-one-folder-deep) |
 | Work not yet mirrored is lost with a failed machine | the host keeps no backup of the local forge; a person who wants one mirrors it with means of their own | [entry](#work-not-yet-mirrored-is-lost-with-a-failed-machine) |
 
@@ -29,6 +30,12 @@ while no repository of that name exists there, and a kept organisation cannot be
 repository is made in it again. The artifacts under `org.fuin.sokar` stay at Maven Central as they were released,
 without a relocation. Released changelog entries keep the name they were
 released under; every repository's test that refuses the old name excepts them.
+
+## Porelo is installed afresh
+
+A machine that ran Sokar gets Porelo as a new install: no state, command, path, setting or vault of Sokar is read,
+kept running or migrated, and no `sokar` command remains. Projects are set up again and credentials entered again.
+Nothing has to carry two names, and a test refusing the old name can hold everywhere outside the released history.
 
 ## The RPM repository indexes one folder deep
 
