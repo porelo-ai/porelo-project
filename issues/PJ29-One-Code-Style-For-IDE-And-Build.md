@@ -1,6 +1,6 @@
 # PJ29 — One code style for the IDE and the build
 
-**Status:** Estimated. Spans every repository with code; the shared tooling is `porelo-buildtools`'.
+**Status:** Backlog. Spans every repository with code; the shared tooling is `porelo-buildtools`'.
 **Size:** XL - every repository with code is reformatted once; it splits into the shared `.editorconfig` and Spotless in the shared tooling (M), then one reformatting issue per repository (S each).
 
 **What must be true.** Every repository states its code style once, in a committed `.editorconfig`
@@ -58,7 +58,8 @@ formatted" limits the damage but cannot prevent it, and nothing checks it.
   naming the file; after `spotless:apply` it passes. Seen to fail once in each repository.
 - Code formatted by IntelliJ with the `google-java-format` plugin set to AOSP passes `spotless:check`
   unchanged.
-- The reformatting commit changes whitespace and line breaks only, and `git blame` skips it.
+- The reformatting commit changes only whitespace, line breaks (Javadoc rewrapped too) and the order of imports,
+  as `google-java-format` does by default with no option to skip either, and `git blame` skips it.
 
 ## To be checked
 

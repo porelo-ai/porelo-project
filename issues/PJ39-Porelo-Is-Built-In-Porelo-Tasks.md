@@ -115,6 +115,10 @@ repository it is meant for.
    (the modules the first reading left out, and its counterparts in the other repositories); last the rules for
    contributors from outside,
    [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](README.md#pj32), which describe the result.
+   **This order holds for `porelo`.** The other repositories take the code style and their reading beside it, once
+   [PJ29](README.md#pj29)'s shared part is in `porelo-parent` and `porelo-buildtools`: each is reformatted in one
+   commit and cleaned up after its reading in another, both pushed together, and neither changes an interface
+   another repository reads; a finding that would is named in the channel instead.
 1. **The host:** [PJ40](README.md#pj40) brings the project up on the bare-metal host at one command - VPN, Porelo,
    its account, Forgejo, the Matrix homeserver, KVM, the images, the agents' tasks - and [PJ45](README.md#pj45)
    keeps the room and the usage records; the same on a machine of one's own and on one rented by the hour.
