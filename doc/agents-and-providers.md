@@ -5,7 +5,7 @@ costs, and which to build next. Each claim says whether it was measured; a candi
 unsupportable stays here, so the question is not asked twice.
 
 Two axes that are easy to conflate. The **agent** is the harness that runs in the
-box and is what Sokar packages. The **provider** serves the model and is something
+box and is what Porelo packages. The **provider** serves the model and is something
 an agent talks to. Some agents are tied to one provider, some deliberately are not,
 and a provider with no agent of its own is reached through somebody else's.
 
@@ -38,16 +38,16 @@ again.
 
 | Provider | Reached how | Credential | Consequence |
 |---|---|---|---|
-| [Anthropic](https://github.com/sokar-ai/sokar/blob/main/doc/credentials.md#the-providers-sokar-ships) | its own agent, natively | subscription token or API key | the case already built |
-| [OpenRouter](https://github.com/sokar-ai/sokar/blob/main/doc/credentials.md#the-providers-sokar-ships) | any agent speaking the OpenAI dialect | API key, as a bearer token | the second case built, and the first with an agent not its own |
-| [OpenAI](https://github.com/sokar-ai/sokar/blob/main/issues/providers/README.md) | its own agent, or any speaking its dialect | account or API key | the most imitated dialect |
-| [Google](https://github.com/sokar-ai/sokar/blob/main/issues/providers/README.md) | its own agent, or a provider-agnostic one | account or API key | one agent each |
-| [GitHub Copilot](https://github.com/sokar-ai/sokar/blob/main/doc/credentials.md#the-providers-sokar-ships) | its own agent, or as a provider inside others | forge account, granted once by device flow; the token never expires | shipped, measured with two agents |
-| [xAI](https://github.com/sokar-ai/sokar/blob/main/issues/providers/README.md) | its own agent, or its public API | subscription or API key | one agent each |
-| [Zhipu](https://github.com/sokar-ai/sokar/blob/main/issues/providers/README.md) | an endpoint compatible with another vendor's dialect | API key, in a variable of its own | **the broker's upstream cannot be a constant** |
+| [Anthropic](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#the-providers-porelo-ships) | its own agent, natively | subscription token or API key | the case already built |
+| [OpenRouter](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#the-providers-porelo-ships) | any agent speaking the OpenAI dialect | API key, as a bearer token | the second case built, and the first with an agent not its own |
+| [OpenAI](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md) | its own agent, or any speaking its dialect | account or API key | the most imitated dialect |
+| [Google](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md) | its own agent, or a provider-agnostic one | account or API key | one agent each |
+| [GitHub Copilot](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#the-providers-porelo-ships) | its own agent, or as a provider inside others | forge account, granted once by device flow; the token never expires | shipped, measured with two agents |
+| [xAI](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md) | its own agent, or its public API | subscription or API key | one agent each |
+| [Zhipu](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md) | an endpoint compatible with another vendor's dialect | API key, in a variable of its own | **the broker's upstream cannot be a constant** |
 
 Pi reaches GitHub Copilot through the broker, with the sign-in on the host
-([a subscription granted once](https://github.com/sokar-ai/sokar/blob/main/doc/credentials.md#a-subscription-granted-once-github-copilot)).
+([a subscription granted once](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#a-subscription-granted-once-github-copilot)).
 
 ## What a provider-agnostic agent already models
 
@@ -66,10 +66,10 @@ rediscovering:
 - **Adding one is a declaration plus a registry entry**, not a change to the agent.
 - **Credentials land in one store** rather than one file per provider, and at least
   one agent lets a stored value be written as a reference to an environment variable
-  instead of a literal. That indirection is the cleanest thing Sokar could ask for:
+  instead of a literal. That indirection is the cleanest thing Porelo could ask for:
   no file to seed, no format to imitate, just a variable already being injected.
 
-Two of those land directly on Sokar's own design:
+Two of those land directly on Porelo's own design:
 
 - The vault is keyed by **agent** name. An agent that talks to several providers
   needs one credential per provider, so the key has to become agent *and* provider.

@@ -13,8 +13,8 @@ Bitbucket is the same reader as for one on GitHub or GitLab.
 - **Two roles, two readers.** `builds.forge` answers `head` (where a branch points: the repository's host);
   a new `builds.server` answers `look` (what the build of a commit did: the build server). Unset, the forge's
   reader answers both, as today.
-- **`sokar-build-bitbucket`** answers `head`, and `look` where Bitbucket itself builds or holds the build status.
-  **`sokar-build-jenkins`** answers `look`, finding a commit's build among Jenkins' jobs; it serves any forge.
+- **`porelo-build-bitbucket`** answers `head`, and `look` where Bitbucket itself builds or holds the build status.
+  **`porelo-build-jenkins`** answers `look`, finding a commit's build among Jenkins' jobs; it serves any forge.
 - **Bitbucket comes in two variants with different APIs:** Cloud (`api.bitbucket.org`, REST 2.0, workspaces,
   its own Pipelines) and Data Center (on the organisation's host, REST 1.0, projects, the build-status API that
   Jenkins or Bamboo report to). They are two forge names, `bitbucket-cloud` and `bitbucket-datacenter`, two

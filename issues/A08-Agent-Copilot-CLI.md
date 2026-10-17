@@ -17,7 +17,7 @@ itself fronts models from several vendors.
   `COPILOT_PROVIDER_TYPE`, `COPILOT_PROVIDER_API_KEY`, `COPILOT_MODEL`) switches it to a custom
   provider (BYOK) and turns GitHub authentication off - the easy shape, like the first agent's. But
   **BYOK is not the Copilot subscription**: building it reaches no new provider and not the Copilot
-  subscription Sokar already brokers as a provider.
+  subscription Porelo already brokers as a provider.
 - **Sign-in has three modes**: a browser loopback redirect with PKCE (default on a desktop), a device
   code (default in SSH, containers and CI, though detection chose the web flow in a container over
   SSH), and a token on standard input (`--with-token`). `COPILOT_GITHUB_TOKEN`, `GH_TOKEN` and
@@ -28,7 +28,7 @@ itself fronts models from several vendors.
   permission is accepted** and is the better credential: the sign-in's token also carries `repo`,
   `gist`, `codespace` and `read:org`.
 - **The model API is reached only after an exchange at `api.github.com`**, the same number of calls,
-  with nothing new written to disk. So the credential Sokar swaps in is presented at `api.github.com`,
+  with nothing new written to disk. So the credential Porelo swaps in is presented at `api.github.com`,
   as the sign-in measured it; on 1.0.95 the CLI makes no exchange (see *Plan*).
 - **Hosts contacted:** `api.individual.githubcopilot.com` (the model API), `api.github.com`,
   `telemetry.individual.githubcopilot.com`, `exp.individual.githubcopilot.com`, and `github.com` for
@@ -44,18 +44,18 @@ itself fronts models from several vendors.
   `api.githubcopilot.com` as for the Pi family, and the task holds only a stand-in - no weaker than
   any other provider. The weekly update watches for `copilot_internal/v2/token` appearing in the code.
 - **The stand-in must start with `gho_`, `ghu_` or `github_pat_`;** nothing after the prefix is checked.
-  `sokar` gains a provider field `token_prefix` and mints `gho_sokarpt_…` for this agent (S, an Idea of
+  `porelo` gains a provider field `token_prefix` and mints `gho_porelopt_…` for this agent (S, an Idea of
   Agent Core's once [A08](README.md#a08) is to be built).
 - **The built-in GitHub MCP server is turned off** (`--disable-builtin-mcps` among the sandboxed
   arguments); it would post the token to `<API URL>/mcp/readonly`. Its other calls to `api.github.com`
   (user, managed settings, update check, MCP registry) fail closed in a task and the CLI goes on.
-- **The provider exists**: `sokar/providers/github-copilot.yaml`. What is new is that the credential
-  Sokar swaps in is presented at `api.github.com`, and the short-lived token that comes back stays in
+- **The provider exists**: `porelo/providers/github-copilot.yaml`. What is new is that the credential
+  Porelo swaps in is presented at `api.github.com`, and the short-lived token that comes back stays in
   the agent.
-- **A repository of its own**, shaped like `sokar-omp` (about 35 files): its `AgentMain` against
-  `sokar-agent-api` and `sokar-wire`, its definition with `COPILOT_AUTO_UPDATE` off and the npm version
+- **A repository of its own**, shaped like `porelo-omp` (about 35 files): its `AgentMain` against
+  `porelo-agent-api` and `porelo-wire`, its definition with `COPILOT_AUTO_UPDATE` off and the npm version
   pinned, the Debian and RPM packaging, unit tests, and an acceptance leg on a machine rented through
-  `sokar-machines`.
+  `porelo-machines`.
 - **The sign-in happens on the host**: a fine-grained PAT with "Copilot Requests" given to the broker,
   never `--with-token` inside a task.
 - **Its documentation says** that a task holds a short-lived Copilot token.
@@ -65,7 +65,7 @@ itself fronts models from several vendors.
 ## Acceptance
 
 - It ships as its own binary and its own package, in a repository of its own, discovered without
-  Sokar changing.
+  Porelo changing.
 - Nothing outside its own directory names it, enforced by the build.
 - A task authenticates without anyone signing in inside the container.
 - The real credential is never in the container, seen by searching the container for it; where the

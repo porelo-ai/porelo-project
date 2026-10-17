@@ -1,8 +1,8 @@
-# The Sokar project. Every key is documented in the core repository, doc/project-file.md.
+# The Porelo project. Every key is documented in the core repository, doc/project-file.md.
 
 project:
 
-  name: "sokar"
+  name: "porelo"
 
   description: "A hardened box an agent works in, and a gate its work leaves through"
 
@@ -13,9 +13,9 @@ project:
   upstream: "git@github.com:porelo-ai/porelo-project.git"
 
 # The repositories the work happens in. A task works on exactly one, named at
-# 'sokar task start --repository <name>'; these names are what a person types.
+# 'porelo task start --repository <name>'; these names are what a person types.
 #
-# 'sokar' is not among them: that name belongs to the project's own repository, above.
+# 'porelo' is not among them: that name belongs to the project's own repository, above.
 repositories:
 
   core:
@@ -40,7 +40,7 @@ repositories:
 
   claude:
     upstream: "git@github.com:porelo-ai/porelo-claude-code.git"
-    description: "The packaged agent: Claude Code, as Sokar installs and drives it"
+    description: "The packaged agent: Claude Code, as Porelo installs and drives it"
     issues: ["CC"]
 
   pi:
@@ -55,12 +55,12 @@ repositories:
 
   buildtools:
     upstream: "git@github.com:porelo-ai/porelo-buildtools.git"
-    description: "Build and test tooling for the Sokar repositories: rented test machines, release checks and package checks"
+    description: "Build and test tooling for the Porelo repositories: rented test machines, release checks and package checks"
     issues: ["BT"]
 
   parent:
     upstream: "git@github.com:porelo-ai/porelo-parent.git"
-    description: "The parent pom every Sokar Maven repository takes: shared build settings, plugin and tool versions"
+    description: "The parent pom every Porelo Maven repository takes: shared build settings, plugin and tool versions"
     issues: ["PA"]
 
   github:

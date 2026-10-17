@@ -1,8 +1,8 @@
 # PJ22 — One build, run locally as on the central forge
 
-**Status:** Estimated. Spans `sokar-buildtools` (the tooling that rents machines and checks the rules), every
+**Status:** Estimated. Spans `porelo-buildtools` (the tooling that rents machines and checks the rules), every
 repository's workflows and build files, and the local setup.
-**Size:** XL - five repositories' worth of tooling and every workflow; it splits into machine kinds behind `sokar-machines` with the provider-name check (L), the local VM pool of run accounts (L), the local Forgejo with its registry running the same workflows (L), a `forgejo` reader and the contract suite (L), and a task's build on a declared kind in `sokar` (L).
+**Size:** XL - five repositories' worth of tooling and every workflow; it splits into machine kinds behind `porelo-machines` with the provider-name check (L), the local VM pool of run accounts (L), the local Forgejo with its registry running the same workflows (L), a `forgejo` reader and the contract suite (L), and a task's build on a declared kind in `porelo` (L).
 
 **What must be true.** A change is built, tested and published the same way before it is pushed as after:
 the same workflow files run on a local forge as on the central one, take their artifacts from that forge's
@@ -34,7 +34,7 @@ local one means changing every one of these places.
 
 ### One interface for rented machines
 
-- **`sokar-machines` in `sokar-buildtools`**: rent a machine of a kind, run on it, return it, list what a
+- **`porelo-machines` in `porelo-buildtools`**: rent a machine of a kind, run on it, return it, list what a
   run holds, delete what a run left behind. It already rents from a cloud provider and from local VMs,
   and sweeps what a run left; what changes is how a caller asks: today it names the provider's server
   types (and workflows name the provider), afterwards it asks for a **kind**, never for a provider's
@@ -70,7 +70,7 @@ local one means changing every one of these places.
   workflow files** as the central forge - the one tool that runs them unchanged; where a step our
   workflows use does not run there (an action not reachable, a variable of the central runner's image),
   it is made a variable of the setup or mirrored, never a second workflow. The machine part is
-  `sokar-machines`', not another tool's.
+  `porelo-machines`', not another tool's.
 - **Its package registry** (Maven, Debian, RPM, generic) stands in for Maven Central, Sonatype's
   snapshots and the package repositories: every local build publishes into it, and every other
   repository's local build resolves from it. It replaces the hand-over directory.
@@ -93,7 +93,7 @@ local one means changing every one of these places.
   container gets a credential or a network path to the machine.
 - **Each run starts clean**: a fresh account or server, the commit alone, no secret of the host.
 - **One reader contract, two forges**: the build readers stay behind the one contract they already
-  share (`org.fuin.sokar.Build1`, through `sokar-build-api`), abstracted where it still speaks of one
+  share (`org.fuin.porelo.Build1`, through `porelo-build-api`), abstracted where it still speaks of one
   forge, and a **`forgejo` reader** joins `github`, so a task reads a local build's verdict as a central
   one's. **One contract suite**, in the API's kit, holds what every reader must do - a branch's head, a
   commit's verdict over every run, a failing job and its log, a refused credential said plainly - and
@@ -102,20 +102,20 @@ local one means changing every one of these places.
 
 ## Plan
 
-- **Decided:** the local Forgejo is set up and kept outside the project; Sokar only uses it, its address and accounts in `.AGENTS.md`. The pool of VM run accounts stays `sokar-machines`' in `sokar-buildtools`.
-- **Today**: `sokar-machines` (`sokar-buildtools` `hetzner/`: `Machines`, `Spec`, `Hetzner`,
+- **Decided:** the local Forgejo is set up and kept outside the project; Porelo only uses it, its address and accounts in `.AGENTS.md`. The pool of VM run accounts stays `porelo-machines`' in `porelo-buildtools`.
+- **Today**: `porelo-machines` (`porelo-buildtools` `hetzner/`: `Machines`, `Spec`, `Hetzner`,
   `LocalVms`, `Lease`) rents from a cloud provider and from local VMs and sweeps; callers name server
-  types. The reader contract `org.fuin.sokar.Build1` is in `sokar/builds/api`; the `github` reader is
-  `sokar-build-github`.
+  types. The reader contract `org.fuin.porelo.Build1` is in `porelo/builds/api`; the `github` reader is
+  `porelo-build-github`.
 - **1. Kinds**: `Spec` asks for a kind, the setup says who meets it; the module and workflows stop naming
-  the provider. Seen to fail first: a check in `sokar-buildtools` that finds a provider's name outside
+  the provider. Seen to fail first: a check in `porelo-buildtools` that finds a provider's name outside
   its implementation, red on today's tree.
 - **2. The local VM pool**: run accounts reset when given back, the pool's size as the local limit.
 - **3. The local Forgejo**: runner and registry; every repository's workflows take registry addresses
   and the machine provider as variables of the setup. Seen to fail first: a `build.yml` that runs only
   centrally.
 - **4. The `forgejo` reader** and one contract suite in the API's kit, run against both readers.
-- **5. A task's build** on a declared kind, read through `Task.builds` (`sokar`).
+- **5. A task's build** on a declared kind, read through `Task.builds` (`porelo`).
 
 ## Acceptance
 
@@ -128,7 +128,7 @@ local one means changing every one of these places.
 - A publishing fault of a child module fails the local run before any tag reaches the central forge.
 - An acceptance leg runs on a rented VM account locally and on a rented server centrally, through the
   same interface call; no repository outside the interface's implementation names a provider (a check
-  in `sokar-buildtools` finds a name that slips in).
+  in `porelo-buildtools` finds a name that slips in).
 - The `github` and the `forgejo` reader pass the same contract suite, each against its own forge.
 - A task asks for its work to be built on a declared machine kind and reads the verdict and the log in
-  `/sokar/files`; a request for a kind or a command the project does not declare is refused.
+  `/porelo/files`; a request for a kind or a command the project does not declare is refused.

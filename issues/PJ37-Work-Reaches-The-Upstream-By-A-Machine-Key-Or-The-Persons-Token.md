@@ -26,8 +26,8 @@ told plainly what each way costs.
   the forge allows one.
 - **On a remote or rented machine, for the time of the work:** the person deposits their own token or key there
   with a duration (`--for`, as the remote vault's passphrase is kept), and the machine forgets it when the time is
-  up, when the person takes it back, and at `sokar clear` - whichever comes first; until then the interface shows
+  up, when the person takes it back, and at `porelo clear` - whichever comes first; until then the interface shows
   that it is there and until when.
 - **On the person's own machine** approved work goes back to the checkout and the person pushes with their own
   rights, so there the gap is the fetch alone.
-- Spans `sokar` (the gate, the vault) and `sokar-frontend` (the way to a project, [F72](https://github.com/sokar-ai/sokar-frontend/blob/main/issues/README.md#f72)'s Bitbucket Data Center).
+- Spans `porelo` (the gate, the vault) and `porelo-frontend` (the way to a project, [F72](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f72)'s Bitbucket Data Center).

@@ -1,16 +1,16 @@
-# sokar
+# porelo
 
 <img src="doc/images/early-bird.svg" width="350" alt="Early bird - work in progress">
 
-> **Early bird - work in progress.** Sokar is not stable yet: until release 1.0.0, its code, commands
+> **Early bird - work in progress.** Porelo is not stable yet: until release 1.0.0, its code, commands
 > and file formats can change without notice.
 
-**The project.** Sokar is a hardened box an agent works in, and a gate its work leaves through.
+**The project.** Porelo is a hardened box an agent works in, and a gate its work leaves through.
 This repository is not part of it: it is where the project is *defined and planned*, and it holds
 no product code.
 
-The documentation of all of Sokar is one site, **<https://sokar-ai.github.io>**; this
-repository's chapter is <https://sokar-ai.github.io/sokar-project/>.
+The documentation of all of Porelo is one site, **<https://porelo-ai.github.io>**; this
+repository's chapter is <https://porelo-ai.github.io/porelo-project/>.
 
 ## What is in here
 
@@ -22,30 +22,30 @@ repository's chapter is <https://sokar-ai.github.io/sokar-project/>.
 ## What a project is, and why this repository exists
 
 **A project is a named unit of work over one or more git repositories.** It is not a second name
-for one of them. Sokar's own work is ten repositories: this one, which holds the planning, and the
+for one of them. Porelo's own work is ten repositories: this one, which holds the planning, and the
 nine the work happens in.
 
 | Name | Repository | What it is |
 |---|---|---|
-| `sokar` | [sokar-project](https://github.com/sokar-ai/sokar-project) | This one. The project's own repository. |
-| `core` | [sokar](https://github.com/sokar-ai/sokar) | The CLI, the daemon, the gate and the guarantees they make. |
-| `frontend` | [sokar-frontend](https://github.com/sokar-ai/sokar-frontend) | The interface, which reaches the daemon over the socket and never the filesystem. |
-| `sluice` | [sokar-message-sluice](https://github.com/sokar-ai/sokar-message-sluice) | The message filter: what may pass between tasks. |
-| `matrix` | [sokar-message-matrix](https://github.com/sokar-ai/sokar-message-matrix) | The Matrix transport: a project's room, where tasks talk. |
-| `claude` | [sokar-claude-code](https://github.com/sokar-ai/sokar-claude-code) | The packaged agent: Claude Code. |
-| `pi` | [sokar-pi](https://github.com/sokar-ai/sokar-pi) | The packaged agent: pi. |
-| `omp` | [sokar-omp](https://github.com/sokar-ai/sokar-omp) | The packaged agent: oh-my-pi. |
-| `buildtools` | [sokar-buildtools](https://github.com/sokar-ai/sokar-buildtools) | Build and test tooling: rented test machines, release checks and package checks. |
-| `site` | [sokar-ai.github.io](https://github.com/sokar-ai/sokar-ai.github.io) | The documentation site: every repository's `doc/` collected into one site. |
+| `porelo` | [porelo-project](https://github.com/porelo-ai/porelo-project) | This one. The project's own repository. |
+| `core` | [porelo](https://github.com/porelo-ai/porelo) | The CLI, the daemon, the gate and the guarantees they make. |
+| `frontend` | [porelo-frontend](https://github.com/porelo-ai/porelo-frontend) | The interface, which reaches the daemon over the socket and never the filesystem. |
+| `sluice` | [porelo-message-sluice](https://github.com/porelo-ai/porelo-message-sluice) | The message filter: what may pass between tasks. |
+| `matrix` | [porelo-message-matrix](https://github.com/porelo-ai/porelo-message-matrix) | The Matrix transport: a project's room, where tasks talk. |
+| `claude` | [porelo-claude-code](https://github.com/porelo-ai/porelo-claude-code) | The packaged agent: Claude Code. |
+| `pi` | [porelo-pi](https://github.com/porelo-ai/porelo-pi) | The packaged agent: pi. |
+| `omp` | [porelo-omp](https://github.com/porelo-ai/porelo-omp) | The packaged agent: oh-my-pi. |
+| `buildtools` | [porelo-buildtools](https://github.com/porelo-ai/porelo-buildtools) | Build and test tooling: rented test machines, release checks and package checks. |
+| `site` | [porelo-ai.github.io](https://github.com/porelo-ai/porelo-ai.github.io) | The documentation site: every repository's `doc/` collected into one site. |
 
 The names in the first column are what a person types. They say what a repository *is* rather than
 what it happens to be called on GitHub - which is also why the core repository is not called
-`sokar`: **the project's own repository is named after the project**, so that name is taken.
+`porelo`: **the project's own repository is named after the project**, so that name is taken.
 
 ## A task works on exactly one repository
 
 ```sh
-sokar task start review --repository core
+porelo task start review --repository core
 ```
 
 A project that names several repositories never guesses which one is meant: a start without one
@@ -64,7 +64,7 @@ A requirement starts here as markdown, in `issues/`. Once it is clear enough to 
 repository does what, it **moves into that repository as an issue** - and from then on it is that
 repository's, reviewed through that repository's gate like anything else.
 
-In Sokar's own terms that is an agent with a task on this repository handing over to an agent with a
+In Porelo's own terms that is an agent with a task on this repository handing over to an agent with a
 task on a work repository: a `handover` message carrying the repository, the ref and the commit.
 Work is named by commit and travels through the gate, never inside a message.
 
@@ -77,14 +77,14 @@ rather than applied, because somebody without the key can still re-serve an olde
 configuration to put back a rule that was taken away.
 
 ```sh
-sokar project follow sokar git@github.com:sokar-ai/sokar-project.git --signed-by <key>
+porelo project follow porelo git@github.com:porelo-ai/porelo-project.git --signed-by <key>
 ```
 
 ## Where the documentation is
 
-The documentation is at <https://sokar-ai.github.io>, one chapter per repository, built from each
+The documentation is at <https://porelo-ai.github.io>, one chapter per repository, built from each
 repository's `doc/`. Everything `project.yml` can carry is in
-[The project file](https://sokar-ai.github.io/core/project-file/).
+[The project file](https://porelo-ai.github.io/core/project-file/).
 
 ## Licence
 

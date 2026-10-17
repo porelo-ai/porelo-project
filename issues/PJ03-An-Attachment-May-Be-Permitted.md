@@ -1,6 +1,6 @@
 # PJ03 — An attachment may be permitted
 
-**Status:** Analyzed. **Size:** XL - three repositories and a design to decide first; it splits into the filter's settings per part and direction in `sokar-message-sluice` (M), the permission, the host-side fetch and the hold in `sokar` (L), and the Matrix transport carrying an `mxc://` part to the host (M).
+**Status:** Analyzed. **Size:** XL - three repositories and a design to decide first; it splits into the filter's settings per part and direction in `porelo-message-sluice` (M), the permission, the host-side fetch and the hold in `porelo` (L), and the Matrix transport carrying an `mxc://` part to the host (M).
 
 **What must be true.** Whether a message may carry something other than text is a decision an
 operator makes, per direction, per project and per peer - not a constant compiled into the filter.
@@ -15,8 +15,8 @@ is.
 
 **The two directions are two questions.** The filter stops the agent from sending data out; a person
 sending a file to an agent is not what it exists to stop. **A person already gives a running task a
-file without a message**: `sokar task give` puts it whole and read-only in `/sokar/files` (`sokar`'s
-hand-in; the interface's side is `sokar-frontend`'s [F100](https://github.com/sokar-ai/sokar-frontend/blob/main/issues/README.md#f100)). What is left here is a file that travels
+file without a message**: `porelo task give` puts it whole and read-only in `/porelo/files` (`porelo`'s
+hand-in; the interface's side is `porelo-frontend`'s [F100](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f100)). What is left here is a file that travels
 **inside a message** - one a person drops into the project's room or a direct chat, and above all one an
 agent sends out - and outbound is the one that carries the weight.
 
@@ -32,35 +32,35 @@ agent sends out - and outbound is the one that carries the weight.
 - **A permitted attachment is fetched by the host from a declared host** - over Matrix an `mxc://` on
   the homeserver in `describe.hosts`, never an arbitrary URL and never from inside a container.
 - **The detectors still see what they can see**: file names and media types go through them.
-- **The size limit is the transport's** (`describe` reports `max_bytes`); Sokar sets no second one,
-  and the limit in force is shown by `check` and `sokar doctor`, and named in a refusal for size with
+- **The size limit is the transport's** (`describe` reports `max_bytes`); Porelo sets no second one,
+  and the limit in force is shown by `check` and `porelo doctor`, and named in a refusal for size with
   where it came from.
-- **Where the work lands:** the severity settings and envelope rules in `sokar-message-sluice`; the
-  permission, the host-side fetch and the held-with-a-reason path in `sokar`. The transports carry
+- **Where the work lands:** the severity settings and envelope rules in `porelo-message-sluice`; the
+  permission, the host-side fetch and the held-with-a-reason path in `porelo`. The transports carry
   bytes and decide nothing.
 
 ## Plan
 
-- **Decided first**: how a permitted part fits the narrowed message schema of `sokar` [B108](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b108) and
-  `sokar-message-sluice` [SL23](https://github.com/sokar-ai/sokar-message-sluice/blob/main/issues/README.md#sl23), which refuse every file, raw and url part.
-- **`sokar-message-sluice`**: `EnvelopeCheck` and `CheckConfig`, where `check.urlPartSeverity` lives
+- **Decided first**: how a permitted part fits the narrowed message schema of `porelo` [B108](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b108) and
+  `porelo-message-sluice` [SL23](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl23), which refuse every file, raw and url part.
+- **`porelo-message-sluice`**: `EnvelopeCheck` and `CheckConfig`, where `check.urlPartSeverity` lives
   today, gain a setting per part kind and direction, refused by default. Seen to fail first: a `raw` part
   still refused with the setting on.
-- **`sokar`**: the permission per project and per peer in the project file (`core/project`), read on the
+- **`porelo`**: the permission per project and per peer in the project file (`core/project`), read on the
   message path in `apps/app-messaging`; an outbound part without it held with a reason, as a held message
   is listed by `talk held`; an inbound permitted part fetched by the host from `describe.hosts` and put
-  into `/sokar/files` as `HandIns` does; the transport's `max_bytes` shown by `check` and `sokar doctor`.
+  into `/porelo/files` as `HandIns` does; the transport's `max_bytes` shown by `check` and `porelo doctor`.
   Each setting tested off and on.
-- **`sokar-message-matrix`**: an `mxc://` part passed on with its host (`Describe` already reports
+- **`porelo-message-matrix`**: an `mxc://` part passed on with its host (`Describe` already reports
   `max_bytes`); nothing is decided there.
-- **`sokar` `doc/decisions.md`**: the exposure, why it is taken, and what would change it.
+- **`porelo` `doc/decisions.md`**: the exposure, why it is taken, and what would change it.
 
 ## Acceptance
 
 - Whether `raw`, `url` and `data` parts are permitted is configuration, per direction, per project
   and per peer, with every one refused by default.
 - A person can send a file to a task in a message where an operator permitted it, and the task receives
-  it in `/sokar/files`, as a handed-in file is.
+  it in `/porelo/files`, as a handed-in file is.
 - An agent cannot send one out unless an operator permitted that separately; an attempt without the
   permission is held with a reason naming what is missing.
 - A `url` part resolving to anything but the declared host is refused at every severity.
@@ -70,5 +70,5 @@ agent sends out - and outbound is the one that carries the weight.
 
 ## To be checked
 
-- How a non-text part fits the narrowed message schema of `sokar` [B108](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b108), which refuses every file, raw
+- How a non-text part fits the narrowed message schema of `porelo` [B108](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b108), which refuses every file, raw
   and url part - Agent Core's to decide, with Agent Sluice.

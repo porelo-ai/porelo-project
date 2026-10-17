@@ -1,7 +1,7 @@
-# PJ25 — McSokar Apple Containers
+# PJ25 — McPorelo Apple Containers
 
-**Status:** Analyzed; parked: native Sokar on macOS is not planned in the near future, while the interface on macOS with Sokar in a local VM comes first (`sokar-frontend` [F109](https://github.com/sokar-ai/sokar-frontend/blob/main/issues/README.md#f109)).
-**Size:** XL - a second implementation of the guarantees on another platform; it splits into `sokar` [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59) measured on Linux (L), a reading of Apple Containers' primitives (M), the daemon's contract checked free of Linux primitives (M), McSokar itself in a repository of its own (several L), and one client and shared acceptance scenarios (L).
+**Status:** Analyzed; parked: native Porelo on macOS is not planned in the near future, while the interface on macOS with Porelo in a local VM comes first (`porelo-frontend` [F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109)).
+**Size:** XL - a second implementation of the guarantees on another platform; it splits into `porelo` [B59](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b59) measured on Linux (L), a reading of Apple Containers' primitives (M), the daemon's contract checked free of Linux primitives (M), McPorelo itself in a repository of its own (several L), and one client and shared acceptance scenarios (L).
 
 **What must be true.** A person on macOS can run tasks with the same guarantees as on Linux, through
 a sibling project on Apple Containers, and drive either kind of host from one client without
@@ -9,7 +9,7 @@ having to know which is on the other end.
 
 ## Why
 
-A sibling project, **McSokar**, offering the same behavior on Apple Containers so
+A sibling project, **McPorelo**, offering the same behavior on Apple Containers so
 that macOS is a first-class host rather than an unsupported one. The graphical
 client is one codebase and connects to either, without the person using it having to
 know which is on the other end.
@@ -25,19 +25,19 @@ review.
 
 The daemon's varlink contract - built, and the reason its requirement is retired - becomes the
 boundary between the two, so what is added to it has to stay free of one platform's primitives. The same
-applies to `sokar` [B06](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b06): a person on one host driving tasks on the
+applies to `porelo` [B06](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b06): a person on one host driving tasks on the
 other is the normal case, not an edge case.
 
 ## Plan
 
-- **First, `sokar` [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59)** on Linux: what survives a task with its own kernel.
+- **First, `porelo` [B59](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b59)** on Linux: what survives a task with its own kernel.
 - **Then a reading of Apple Containers on a Mac**: fail-closed egress per container, a host socket in a
   container, the host's loopback mapped in. What is not there is written down as a guarantee not met.
-- **The contract**: the varlink definitions in `sokar/daemon/src/main/resources/varlink/`
-  (`org.fuin.sokar.Tasks1`) read for anything only Linux has.
-- **McSokar**: a repository of its own, its own issues, its own acceptance suite running the shared
+- **The contract**: the varlink definitions in `porelo/daemon/src/main/resources/varlink/`
+  (`org.fuin.porelo.Tasks1`) read for anything only Linux has.
+- **McPorelo**: a repository of its own, its own issues, its own acceptance suite running the shared
   scenarios.
-- **The client** (`sokar-frontend`) drives both hosts through the one contract.
+- **The client** (`porelo-frontend`) drives both hosts through the one contract.
 - **Seen to fail first:** a shared scenario in which a task starts although its egress policy could not
   be applied.
 
@@ -79,11 +79,11 @@ other is the normal case, not an edge case.
 
 ## To be checked
 
-- **Measure it on Linux first.** `sokar` [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59) asks the same questions about a task whose
+- **Measure it on Linux first.** `porelo` [B59](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b59) asks the same questions about a task whose
   kernel is its own - where the ruleset lives, whether a host socket still reaches the workload,
   what happens to the gate's loopback, what replaces the terminal - on a machine where the
   acceptance suite already runs. What survives there is what can be re-derived here; what does not
-  is a guarantee this project would have to state it cannot meet. - Agent Core's to measure, in `sokar`
-  [B59](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b59).
+  is a guarantee this project would have to state it cannot meet. - Agent Core's to measure, in `porelo`
+  [B59](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b59).
 - Whether the two backends can share one contract without it degrading to the
   weaker platform's capabilities everywhere. - Agent Core's to decide.

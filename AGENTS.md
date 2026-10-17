@@ -1,6 +1,6 @@
 # Rules for working in this repository
 
-## Shared across the Sokar repositories
+## Shared across the Porelo repositories
 
 > **BEGIN Shared Area** · sha256 `8f49d85552af3cd1` · changed 2026-10-16T16:20Z
 
@@ -324,7 +324,7 @@ and the UTC time that text last changed; change it in the channel first, never i
 - **A requirement moves to the repository that builds it as a handover, not a copy.** This
   repository's issue prefixes are `PJ`, and `A` for candidate agents without a repository; they are
   not in `project.yml`, because `project.yml` is defined here.
-- **`project.yml`'s keys are documented in `sokar`, under `doc/project-file.md`**, not here.
+- **`project.yml`'s keys are documented in `porelo`, under `doc/project-file.md`**, not here.
 
 ## Coordinating
 

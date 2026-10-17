@@ -1,12 +1,12 @@
 # PJ14 — Work starts without a project
 
-**Status:** Implementing; built in `sokar` and `sokar-frontend` and measured, three points of the acceptance
+**Status:** Implementing; built in `porelo` and `porelo-frontend` and measured, three points of the acceptance
 left.
-**Size:** M - two refusals and an offer in `sokar`, the offer shown in `sokar-frontend`, and a walk measuring all three.
+**Size:** M - two refusals and an offer in `porelo`, the offer shown in `porelo-frontend`, and a walk measuring all three.
 
 **What must be true.** A developer who has a repository checked out, or picks one in the interface,
 starts a task on it without writing a project first. That work belongs to the project **`default`**,
-which every machine has, which Sokar keeps itself, and which nobody configures.
+which every machine has, which Porelo keeps itself, and which nobody configures.
 
 ## Why
 
@@ -18,11 +18,11 @@ repository as the way.
 
 ## The shape
 
-1. **`default` is the one project that does not come from a repository.** Sokar creates it on every
+1. **`default` is the one project that does not come from a repository.** Porelo creates it on every
    machine and keeps it there; no repository, signature or follow is involved, and its configuration
-   comes from Sokar and the person at this machine, never from anything a task or a forge can write.
+   comes from Porelo and the person at this machine, never from anything a task or a forge can write.
 2. **Its name is fixed and reserved**: no followed project may be called `default`.
-3. **Its settings are Sokar's defaults and cannot be changed**: class `guarded`, the default base
+3. **Its settings are Porelo's defaults and cannot be changed**: class `guarded`, the default base
    image, no egress beyond the agent's provider. Whoever needs more makes a project repository.
 4. **No messaging**: its tasks are standalone and nobody's peers.
 5. **Approved work goes to the repository's `origin`**, reached with what the developer already has
@@ -38,11 +38,11 @@ repository as the way.
   (`FollowSignedBy.refuseReserved`) and in the draft check (`ProjectFileCheck`), both with
   `FollowedProjects.RESERVED`; a followed project naming the repository takes the next start
   (`WorkOrigin.followedNaming`); egress for `default` is refused (`EgressControl.DEFAULT_REFUSED`).
-- **A transport or a peer for `default` refused** in `sokar`'s `apps/app-messaging`
+- **A transport or a peer for `default` refused** in `porelo`'s `apps/app-messaging`
   (`TaskConversations.setUp`, `TalkPeersCommand`), naming a project repository as the egress refusal
   does. Seen to fail first: a test setting up a conversation for `default`, accepted today.
 - **The offer to remove a repository from `default`** once a followed project names it, at the start in
-  `WorkOrigin` and on the interface's work page (`sokar-frontend` `lib/src/ui/work_page.dart`); neither
+  `WorkOrigin` and on the interface's work page (`porelo-frontend` `lib/src/ui/work_page.dart`); neither
   exists today.
 - **Measured** on the VM, with the follow refusal, as the acceptance says.
 
@@ -56,6 +56,6 @@ repository as the way.
 
 ## To be checked
 
-- *Why* and point 5 of *The shape* say approved work goes to the repository's `origin`; `sokar` [B126](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b126)
-  makes a checkout the source both ways, so approved work goes back into the checkout and Sokar never
+- *Why* and point 5 of *The shape* say approved work goes to the repository's `origin`; `porelo` [B126](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b126)
+  makes a checkout the source both ways, so approved work goes back into the checkout and Porelo never
   reaches its remote (`WorkOrigin.fromCheckout`) - the coordinator's to bring this issue in line.

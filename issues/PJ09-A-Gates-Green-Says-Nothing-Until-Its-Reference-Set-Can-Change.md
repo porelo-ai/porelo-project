@@ -10,10 +10,10 @@ such rather than counted as coverage.
 
 Four gates in four repositories are green in the same way, and only one of them can report anything:
 
-    a reference set that is EMPTY        everything passes forever          sokar-message-sluice
-    one that CANNOT CHANGE               libraries that never move          sokar-omp, sokar-claude-code
-    one that NOBODY READS                a bill shipped, compared by no job sokar
-    one that WORKS                       a licence gate that fired          sokar-pi
+    a reference set that is EMPTY        everything passes forever          porelo-message-sluice
+    one that CANNOT CHANGE               libraries that never move          porelo-omp, porelo-claude-code
+    one that NOBODY READS                a bill shipped, compared by no job porelo
+    one that WORKS                       a licence gate that fired          porelo-pi
 
 Nothing in the output distinguishes them. The working gate is what made the other three measurable:
 green cannot be calibrated without one gate that has ever gone red.
@@ -21,10 +21,10 @@ green cannot be calibrated without one gate that has ever gone red.
 ## The shape
 
 - **Empty:** an assertion that the walk found anything at all.
-- **Cannot change:** the gate says so where it reports (`sokar-omp`'s does; `sokar-claude-code`'s
+- **Cannot change:** the gate says so where it reports (`porelo-omp`'s does; `porelo-claude-code`'s
   reads as working), or is removed - each agent's call, depending on whether a real reference set is
   coming.
-- **Nobody reads:** `sokar` ships and uploads a bill that no job of its own compares, while
+- **Nobody reads:** `porelo` ships and uploads a bill that no job of its own compares, while
   `buildtools/check-packages.sh` justifies shipping it by a comparison that exists only in the agent
   repositories. The sentence is corrected, and whether a comparison job is added there is the same
   operator decision as [PJ08](README.md#pj08)'s.
@@ -35,12 +35,12 @@ green cannot be calibrated without one gate that has ever gone red.
 ## Plan
 
 - **The census, by the coordinator**: every gate in every repository, its reference set and what would
-  change it. Read today: `sokar-message-sluice`'s walk with an empty set; `compare-bills` in `update.yml`
-  of `sokar-omp` (says it is a no-op) and `sokar-claude-code` (reads as working); `sokar` uploads
-  `sokar.cdx.json` in `build.yml` and checks it only in `dist/package-check` (`BillTest`), comparing it
-  with nothing; `sokar-pi`'s `compare-bills`, which fired.
+  change it. Read today: `porelo-message-sluice`'s walk with an empty set; `compare-bills` in `update.yml`
+  of `porelo-omp` (says it is a no-op) and `porelo-claude-code` (reads as working); `porelo` uploads
+  `porelo.cdx.json` in `build.yml` and checks it only in `dist/package-check` (`BillTest`), comparing it
+  with nothing; `porelo-pi`'s `compare-bills`, which fired.
 - **Per repository, by its agent, from a handover**: an assertion that the walk found anything; a line
-  where a gate reports that its set cannot change, or the gate removed; `sokar`'s justification
+  where a gate reports that its set cannot change, or the gate removed; `porelo`'s justification
   corrected, and a comparison job only if the operator decides so (as in [PJ08](README.md#pj08)).
 - **Seen to fail first:** each kind's gate made to fire on a crafted input; the empty walk passing is the
   first red.
@@ -55,5 +55,5 @@ green cannot be calibrated without one gate that has ever gone red.
 
 ## To be checked
 
-- `buildtools/check-packages.sh`, named in *The shape*, no longer exists in `sokar`; the bill is now
-  checked by `dist/package-check`. Where `sokar` now justifies shipping it - Agent Core's to read.
+- `buildtools/check-packages.sh`, named in *The shape*, no longer exists in `porelo`; the bill is now
+  checked by `dist/package-check`. Where `porelo` now justifies shipping it - Agent Core's to read.

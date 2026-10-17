@@ -30,15 +30,15 @@ reached without the protocol, and worth comparing against it rather than replace
 ## What is already decided here, so this does not get argued twice
 
 - **A2A is already chosen as a format, and not as a server.**
-  `sokar` [B14](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b14)'s design says a message file should be an A2A message
+  `porelo` [B14](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b14)'s design says a message file should be an A2A message
   *"rather than a shape invented here, so that an agent already speaking A2A needs no adapter
   later. It is a format, it costs nothing at runtime, and it commits to no server."* That is
   settled and this file does not reopen it.
 - **A2A as a network protocol is refused by a property rather than by preference.** The daemon
   binds no network interface in any configuration, so a daemon that accepts a peer is a different
-  product. Same argument as cross-machine talking in `sokar` [B14](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b14).
+  product. Same argument as cross-machine talking in `porelo` [B14](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b14).
 - **MCP is already in the credential design.**
-  `sokar` [B31](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b31) exists *because* of remote MCP servers - the
+  `porelo` [B31](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b31) exists *because* of remote MCP servers - the
   case where an agent inherits a person's permissions rather than a service account's - and takes
   its shape from what that ecosystem settled on: RFC 9728, PKCE, dynamic client registration,
   revocation, and the explicit refusal of client credentials as a passthrough violation.
@@ -48,12 +48,12 @@ reached without the protocol, and worth comparing against it rather than replace
 
 ## Plan
 
-- **Decided:** MCP arrives as something a task uses, a destination; Sokar itself speaks no MCP. An orchestrator steering Sokar instances through MCP is [PJ35](README.md#pj35), outside Sokar.
+- **Decided:** MCP arrives as something a task uses, a destination; Porelo itself speaks no MCP. An orchestrator steering Porelo instances through MCP is [PJ35](README.md#pj35), outside Porelo.
 - **Decided:** not urgent; done before [PJ35](README.md#pj35) is analysed.
 - **Read by the coordinator**: the four specifications, each with its version noted.
 - **Decided by the operator**, on that reading: adopt, already answered otherwise, or refuse, per
   protocol, with the property a refusal rests on and the condition under which it would change.
-- **Written in `sokar`'s `doc/decisions.md`**, beside the A2A format and the daemon's
+- **Written in `porelo`'s `doc/decisions.md`**, beside the A2A format and the daemon's
   refusal of a listener; this issue is then deleted.
 - **Seen to fail first:** the table of four with a protocol left without an answer.
 
@@ -77,9 +77,9 @@ reached without the protocol, and worth comparing against it rather than replace
 ## To be checked
 
 - **ACP is the one edge this product has no answer at, and may not want one.** An IDE integration
-  puts an assistant in the developer's environment; Sokar's whole claim is that the agent is in a
+  puts an assistant in the developer's environment; Porelo's whole claim is that the agent is in a
   box and the developer is outside it. Whether ACP describes *the agent inside the task* speaking
-  to an editor inside the same task - which would be a container-internal matter Sokar does not
+  to an editor inside the same task - which would be a container-internal matter Porelo does not
   touch - or an editor outside reaching in, which is a hole in the box, decides whether this is
   interesting or refused. **Read the specification before answering.** - the coordinator's to read, the
   operator's to decide.

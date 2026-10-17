@@ -15,6 +15,6 @@ The local forge is not backed up. **The exposure:** what was merged on the local
 central one, and every branch not yet merged, is lost when the machine fails or is given back too early. **Why it
 stays:** a backup of the forge would be a second copy of the code with its own schedule, target and restore to keep
 working, for a loss bounded by the time between two mirror runs, and the agents can build the work again. A person
-who wants it covered mirrors the local forge elsewhere with means of their own, of which Sokar knows nothing. **What
+who wants it covered mirrors the local forge elsewhere with means of their own, of which Porelo knows nothing. **What
 would change the answer:** a loss that costs more than the work since the last mirror run can be redone in, or
 mirror runs so far apart that a failed machine regularly takes more than a working day with it.

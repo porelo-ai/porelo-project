@@ -1,18 +1,18 @@
 # The project
 
-Sokar is developed as one project over several repositories. This chapter comes from the project's
-own repository, [sokar-project](https://github.com/sokar-ai/sokar-project): it defines the project
+Porelo is developed as one project over several repositories. This chapter comes from the project's
+own repository, [porelo-project](https://github.com/porelo-ai/porelo-project): it defines the project
 in `project.yml` and holds the requirements that belong to the project as a whole rather than to
 one of its repositories. It holds no product code.
 
 What the project file can carry, and what a project is, is described in the core chapter:
-[The project file](https://sokar-ai.github.io/core/project-file/).
+[The project file](https://porelo-ai.github.io/core/project-file/).
 
 ## The MVP
 
-The first version Sokar aims at: one person, one machine, one agent. Sokar is installed, work is
+The first version Porelo aims at: one person, one machine, one agent. Porelo is installed, work is
 started, the agent works safely, its result is reviewed and pushed - smoothly, from the interface as
-much as from the command line, for someone who has never used Sokar.
+much as from the command line, for someone who has never used Porelo.
 
 1. **The standard pair is Claude Code with Anthropic, signed in with a Claude subscription** - the
    browser login the interface runs in its login terminal, so no key is typed anywhere. An Anthropic
@@ -24,7 +24,7 @@ much as from the command line, for someone who has never used Sokar.
    `project.yml` by hand to begin; so is work without a project.
 4. **A rented machine set up from the interface behaves like a local one.** The same steps, the same
    result; that a machine is remote changes nothing for the person.
-5. **The person using it is new to Sokar:** anything that needs Sokar's own words, a terminal where
+5. **The person using it is new to Porelo:** anything that needs Porelo's own words, a terminal where
    the interface should do, or a step not said, is a defect of the MVP.
 
 ## Pages

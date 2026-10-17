@@ -1,6 +1,6 @@
 # PJ29 — One code style for the IDE and the build
 
-**Status:** Estimated. Spans every repository with code; the shared tooling is `sokar-buildtools`'.
+**Status:** Estimated. Spans every repository with code; the shared tooling is `porelo-buildtools`'.
 **Size:** XL - every repository with code is reformatted once; it splits into the shared `.editorconfig` and Spotless in the shared tooling (M), then one reformatting issue per repository (S each).
 
 **What must be true.** Every repository states its code style once, in a committed `.editorconfig`
@@ -26,7 +26,7 @@ formatted" limits the damage but cannot prevent it, and nothing checks it.
 - **The build checks Java with Spotless and `google-java-format` in its AOSP style**, the formatter
   the Google Java Style is defined by: `spotless:check` bound to Maven's `validate`, so every local
   build and every CI build fails on a misformatted file, and `spotless:apply` fixes it. Spotless is a
-  Maven plugin, so no command of `sokar-release` is needed. Spotless does not derive Java formatting
+  Maven plugin, so no command of `porelo-release` is needed. Spotless does not derive Java formatting
   from `.editorconfig`; the formatter's style is what decides.
 - **Other languages use their own formatter, pinned:** `dart format` for the frontend, the Google
   Python style's formatter for the site's scripts; `.editorconfig` carries their indent and length.
@@ -39,16 +39,16 @@ formatted" limits the damage but cannot prevent it, and nothing checks it.
 
 ## Plan
 
-- **Today**: no `.editorconfig` in any repository; no Spotless and no formatter check in `sokar-parent`
+- **Today**: no `.editorconfig` in any repository; no Spotless and no formatter check in `porelo-parent`
   or any build.
-- **1. `sokar-buildtools` and `sokar-parent`**: the shared `.editorconfig`, compared like the shared
-  block by `check-shared`; `spotless-maven-plugin` with `google-java-format` (AOSP) in `sokar-parent`'s
+- **1. `porelo-buildtools` and `porelo-parent`**: the shared `.editorconfig`, compared like the shared
+  block by `check-shared`; `spotless-maven-plugin` with `google-java-format` (AOSP) in `porelo-parent`'s
   plugin management, `spotless:check` bound to `validate`. Seen to fail first: a misformatted file in a
-  test project of `sokar-parent` passing `validate`.
+  test project of `porelo-parent` passing `validate`.
 - **2. Per Maven repository, by its agent**: the plugin switched on, one reformatting commit, its hash in
   `.git-blame-ignore-revs`.
-- **3. `sokar-frontend`**: `dart format` checked in its build.
-- **4. `sokar-intellij`**: Gradle, so Spotless's Gradle plugin with the same formatter.
+- **3. `porelo-frontend`**: `dart format` checked in its build.
+- **4. `porelo-intellij`**: Gradle, so Spotless's Gradle plugin with the same formatter.
 - **5. The contributor guide** ([PJ27](README.md#pj27)) names the IntelliJ plugin and its setting.
 
 ## Acceptance
@@ -62,7 +62,7 @@ formatted" limits the damage but cannot prevent it, and nothing checks it.
 
 ## To be checked
 
-- Whether `sokar-intellij` runs the same `google-java-format` version through Spotless's Gradle plugin -
+- Whether `porelo-intellij` runs the same `google-java-format` version through Spotless's Gradle plugin -
   Agent IntelliJ's to decide.
 - Which formatter the site's Python scripts use, since the Google Python style names none that is pinned
   by default - Agent Core's to decide.

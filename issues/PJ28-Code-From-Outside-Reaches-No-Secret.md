@@ -1,7 +1,7 @@
 # PJ28 — Code from outside reaches no secret
 
 **Status:** Implementing; the repositories are public. Spans every repository: the settings
-are the operator's, the check is `sokar-buildtools`'.
+are the operator's, the check is `porelo-buildtools`'.
 **Size:** S - the code is built; what is left is the operator's settings in each repository and measuring them.
 
 **What must be true.** Once the repositories are public, a change from someone outside never runs with
@@ -41,7 +41,7 @@ everything around that:
 ## Plan
 
 - **Built, read in the code**: `.github/CODEOWNERS` in every repository names the operator for
-  `.github/` (itself included), the build files and `AGENTS.md`; `check-actions` in `sokar-release`
+  `.github/` (itself included), the build files and `AGENTS.md`; `check-actions` in `porelo-release`
   (`CheckActions`) refuses `pull_request_target` and a `workflow_run` that takes the pull request's code.
 - **Left, the operator's, per public repository**: the ruleset on `main` with the operator's account as its only bypass,
   and Actions' "Require approval for all external contributors".

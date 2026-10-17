@@ -3,7 +3,7 @@
 **Status:** Estimated. Spans every repository (each links the guide).
 **Size:** L - crosses every repository: one page, a sign-off check in the shared tooling, a `CONTRIBUTING.md` in each repository, and the operator's settings.
 
-**What must be true.** Someone who wants to change Sokar finds, from any repository, one guide that
+**What must be true.** Someone who wants to change Porelo finds, from any repository, one guide that
 says how the work is organised, how a change is made, what it must satisfy before it is accepted, and
 where to ask. They do not have to read `AGENTS.md`, which is written for agents, to learn it.
 
@@ -16,8 +16,8 @@ like here, or which of the ten repositories their change belongs in.
 
 ## The shape
 
-- **One page, `doc/contributing.md` in `sokar-project`**, so it appears in this repository's chapter of
-  the documentation site; this repository is about how Sokar is developed as a whole.
+- **One page, `doc/contributing.md` in `porelo-project`**, so it appears in this repository's chapter of
+  the documentation site; this repository is about how Porelo is developed as a whole.
 - **Every repository links it:** a `CONTRIBUTING.md` at its root holding one paragraph and the link
   (GitHub shows that file when an issue or a pull request is opened), plus what is particular to that
   repository - how it is built and tested, linking its `build.md`.
@@ -25,10 +25,10 @@ like here, or which of the ten repositories their change belongs in.
   block of `AGENTS.md` as the one authoritative list, so there is no second copy to drift.
 - **Proposed sections of the page:**
   1. **How the work is organised** - one project, ten repositories, what each holds (the table in
-     `sokar-project`'s README), which repository a change belongs in.
+     `porelo-project`'s README), which repository a change belongs in.
   2. **Issues** - every open task is a file in its repository's `issues/`, grouped Now, Soon and Later;
      the prefixes per repository (`project.yml`); a requirement not yet placed waits in
-     `sokar-project`; how someone outside proposes one.
+     `porelo-project`; how someone outside proposes one.
   3. **Making a change** - build and test locally (each repository's `build.md`); a fix starts with a
      test seen to fail; one task, one commit when it is finished; the commit message (what changes
      and why, its length, no issue numbers); the changelog.
@@ -45,10 +45,10 @@ like here, or which of the ten repositories their change belongs in.
   - **A contribution comes in under the project's licence and stays under it.** Every commit carries
     a `Signed-off-by:` line (`git commit -s`): the Developer Certificate of Origin, by which its author
     certifies the right to submit it. No rights are transferred and there is no contributor agreement;
-    Sokar is offered under the GPL only.
+    Porelo is offered under the GPL only.
   - **Work written with an AI's help is accepted, and says so.** A person vouches for every commit with
     their sign-off - never the agent - and the commit names the help in an `Assisted-by: <tool, model>`
-    line. Sokar's own agents' commits follow the same rule.
+    line. Porelo's own agents' commits follow the same rule.
   - **A pull request from outside follows an issue.** Someone who wants to change something opens a
     GitHub issue first; once it is agreed there, a pull request is welcome. One that arrives without
     that is closed with a pointer to this page.
@@ -66,17 +66,17 @@ like here, or which of the ten repositories their change belongs in.
 - **Decided:** a code of conduct, the Contributor Covenant 2.1, its contact `michael@fuin.org`.
 - **Today**: no `doc/contributing.md` here, no `CONTRIBUTING.md` in any repository, no sign-off rule in
   the shared block, no check of `Signed-off-by:`.
-- **1. The page** `doc/contributing.md` in `sokar-project`, by the coordinator, built with the site.
+- **1. The page** `doc/contributing.md` in `porelo-project`, by the coordinator, built with the site.
 - **2. The shared block of `AGENTS.md`**: the sign-off and the `Assisted-by:` line, copied to every
   repository as the block always is.
-- **3. The sign-off check** in `sokar-release` (`sokar-buildtools`), run by every repository's build on a
+- **3. The sign-off check** in `porelo-release` (`porelo-buildtools`), run by every repository's build on a
   pull request. Seen to fail first: a pull request commit without `Signed-off-by:` passing.
 - **4. A `CONTRIBUTING.md` and a README link** in each repository, by its agent from a handover.
 - **5. The settings**, set by the operator in every public repository.
 
 ## Acceptance
 
-- The page is on the documentation site in `sokar-project`'s chapter, and `mkdocs build --strict` is
+- The page is on the documentation site in `porelo-project`'s chapter, and `mkdocs build --strict` is
   clean.
 - Every repository has a `CONTRIBUTING.md` linking the page, and its README links it too.
 - A pull request whose commits lack a `Signed-off-by:` line is marked failing by a check, seen to fail

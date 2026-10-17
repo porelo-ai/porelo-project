@@ -15,12 +15,12 @@ finished issue can correct the next estimate.
 
 ## The shape proposed
 
-- **The count comes from Sokar only:** sokar
-  [B148](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b148)'s usage record, which sees what the
-  agents spend once they work in Sokar tasks ([PJ39](README.md#pj39)); an agent's own session
+- **The count comes from Porelo only:** porelo
+  [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148)'s usage record, which sees what the
+  agents spend once they work in Porelo tasks ([PJ39](README.md#pj39)); an agent's own session
   record is not a source.
-- **One issue per task**, handed in at the task's start as a value of sokar
-  [B189](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b189) (`issue: sokar#B148`), fixed for the
+- **One issue per task**, handed in at the task's start as a value of porelo
+  [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189) (`issue: porelo#B148`), fixed for the
   task's life. An issue's tokens are the sum over every task carrying it, in every repository. Work for no issue -
   coordination, index upkeep, the channel - runs as `issue: none` and is not in the statistic.
 - **One phase per task**, a second value: `phase: analysis | build | rework`. The size is estimated at the end of the
@@ -28,8 +28,8 @@ finished issue can correct the next estimate.
   is shown apart.
 - **What is counted: the new tokens** - input without the cache, cache write and output, the reasoning within it.
   Cache reads are left out: every answer reads the whole context again, so they grow with a session's length, not
-  with the work. Beside them, for information only, the cost at list price from sokar
-  [B191](https://github.com/sokar-ai/sokar/blob/main/issues/base/README.md#b191), with its price date; it depends
+  with the work. Beside them, for information only, the cost at list price from porelo
+  [B191](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b191), with its price date; it depends
   on the model and on prices that change, so it is not what an estimate is compared with.
 - **At Finished:** the issue's row under *Finished* in the index keeps its estimated size and gains the new tokens per
   phase and the cost beside them, since the file itself is deleted then.

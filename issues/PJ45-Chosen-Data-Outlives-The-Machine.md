@@ -34,6 +34,6 @@ where the agents and the person talk - the record of hand-overs, questions and a
 
 - What Tuwunel offers for a backup of its database while it runs (a backup path and a number of backups to keep, or
   an admin command), and whether a backup of one version loads into the next.
-- Whether the operating system's means suffice - a systemd timer and a copy - or something of Sokar's own is needed.
-- Which repository builds it: the homeserver's part belongs to `sokar-message-matrix`, the usage records' to `sokar`,
+- Whether the operating system's means suffice - a systemd timer and a copy - or something of Porelo's own is needed.
+- Which repository builds it: the homeserver's part belongs to `porelo-message-matrix`, the usage records' to `porelo`,
   the schedule and the target perhaps to the deploy repository of [PJ40](README.md#pj40).
