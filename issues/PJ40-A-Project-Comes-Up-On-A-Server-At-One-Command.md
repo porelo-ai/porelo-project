@@ -1,6 +1,6 @@
 # PJ40 — A project comes up on a server at one command
 
-**Status:** Accepted.
+**Status:** Analyzed: renting the host is decided; the playbook's shape and the size are next.
 
 **What must be true.** A person who works with several agents on a project of several repositories puts the whole
 project on a server and starts all of it together with one command, from the project's `project.yml` and the setup
@@ -39,12 +39,11 @@ is where the command is tried and refined before anyone else relies on it.
   packages, the VPN, KVM, the forge, the homeserver, Porelo's package and account. Ansible changes only what differs
   on a second run and takes it down again; existing roles are used where they are sound (the homeserver, the VPN,
   KVM) rather than rebuilt. Ansible is a tool the person brings, not part of Porelo.
-- **Renting the machine is not part of this issue.** Here the machine is there before up - one's own, or rented by
-  hand - and its address goes into the person's setup file. Taking it from a provider before up and giving it back
-  after down, with OpenTofu, one module per provider and the state kept encrypted with the person, is an issue of its
-  own, analysed when somebody needs a host rented by the hour. Renting a project's host is never renting a test
-  machine for one run ([PJ22](README.md#pj22)'s `porelo-machines`, internal to Porelo's own builds); the two stay
-  apart.
+- **Renting is a step before up and after down**, and for Porelo's own project the host is rented by the hour
+  (decided 2026-10-18): `porelo-machines` takes it from a provider before up and gives it back after down (see
+  *Renting the host* below). A machine of one's own skips the step, and its address goes into the person's setup
+  file. OpenTofu, one module per provider with the state kept encrypted with the person, stays a planned extension
+  for Porelo as a product for others; it is not needed for this project's own run.
 - **Where it lives**: a new repository, a product of its own and not part of Porelo's internal build tooling, holds
   the playbook and its roles, published as an Ansible collection, in versions that match Porelo's. It gets an agent of its own, as every repository has one. What it calls on stays in `porelo`:
   writing the configuration, the follow, the keys, the images and the tasks.
@@ -68,3 +67,51 @@ is where the command is tried and refined before anyone else relies on it.
   [B194](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b194)), the VPN's key, so the person's
   devices need not be set up again, and the copies [PJ45](README.md#pj45) makes. Nothing runs on it: a database or a
   repository on a mounted cloud drive is broken by its delayed, piecewise sync.
+
+## Renting the host
+
+**Decided 2026-10-18:** Porelo's own project rents its host by the hour from a provider of bare metal, through
+`porelo-machines` extended by `host up` and `host down`. The reasons: it already rents, labels, waits on a provider's
+limits, deletes by name and builds images; renting the host and renting a test machine use the same code, while each
+keeps a provider project, a token and a quota of its own, so a host never takes a test run's room. Hetzner Cloud stays
+the provider of the CI's test machines.
+
+**A provider behind an interface.** `porelo-machines` gains one interface for a provider, with one adapter per provider
+([PJ22](README.md#pj22)'s machine kinds, taken earlier for this): create a server with tags and a cloud-init
+`user_data`, read its state, give it back, and say what the provider offers beyond that. Two adapters:
+
+- **Hetzner Cloud**, as today: own images, volumes, primary IPs, firewalls.
+- **Scaleway Elastic Metal** for the host: bare metal with hardware virtualisation, so the VM pool runs on it.
+
+**Scaleway Elastic Metal's API**, read from its documentation and OpenAPI schema
+([API](https://www.scaleway.com/en/developers/api/elastic-metal),
+[schema](https://www.scaleway.com/en/developers/api/elastic-metal/v1/schema.yml)):
+
+- `https://api.scaleway.com/baremetal/v1/zones/{zone}/…`, zones `fr-par-1/2`, `nl-ams-1/2`, `pl-waw-2/3`; the key is
+  sent as `X-Auth-Token`.
+- **Billed by the minute** from delivery to deletion; `price_per_hour` pays the next 60 minutes ahead.
+- **Up:** `GET …/offers?subscription_period=hourly` (price, `stock`, `fee`), then `POST …/servers` with `offer_id`,
+  `project_id`, `name`, `tags`, `install{os_id, hostname, ssh_key_ids}`, `user_data` for cloud-init and `protected`;
+  `GET …/servers/{id}` until `ready` and the install `completed` (the operating system's install takes about ten
+  minutes).
+- **Down:** `DELETE …/servers/{id}`. `POST …/servers/{id}/migrate-offer-monthly` moves a server used most of a month
+  to the monthly price.
+- **What fits:** cloud-init, so a host key made per run reaches it as on Hetzner (porelo-buildtools
+  [BT11](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt11)); tags, so the provider's
+  labels stay the state; `protected` against a delete by mistake.
+- **What is missing against Hetzner Cloud, and what follows:**
+  - no images of one's own, only the provider's operating systems: every up installs afresh, then cloud-init and the
+    playbook; no host image is baked;
+  - no volumes: what outlives the machine ([PJ45](README.md#pj45)) is copied off at down and put back at up, which
+    makes that copy part of every rental, so its speed matters;
+  - a fixed address only through Flexible IPs, a separate API;
+  - an offer can be out of stock (`stock`, the status `out_of_stock`): up names another offer or zone, or says why
+    it cannot.
+
+## To be checked
+
+- With a Scaleway account (its key read from a file only): the hourly offers that meet [PJ39](README.md#pj39)'s
+  minimum, their prices, and **whether the one-time `fee` is charged again for every hourly order**. If it is, a host
+  is kept for a working period rather than given back each day.
+- How long an order takes from `POST` to `ready` and an installed system, measured on the first rental.
+- Where [PJ45](README.md#pj45)'s copies go and how fast they come back: the person's drive, or the provider's object storage.
