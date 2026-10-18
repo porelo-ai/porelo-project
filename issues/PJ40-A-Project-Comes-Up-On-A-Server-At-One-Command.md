@@ -108,10 +108,31 @@ the provider of the CI's test machines.
   - an offer can be out of stock (`stock`, the status `out_of_stock`): up names another offer or zone, or says why
     it cannot.
 
+**Read from the account's API** (offers and operating systems, with a read-only key):
+
+- **The one-time `fee` is 0 for every hourly offer**, so a host can be given back each day at no extra cost.
+- The hourly offers that meet [PJ39](README.md#pj39)'s minimum (AVX2 rules out the older Xeon offers), prices in EUR
+  without VAT:
+
+  | Offer | CPU | Memory | Disk | €/h |
+  |---|---|---|---|---|
+  | EM-B320E-NVME | EPYC 7232P, 8 cores, 16 threads | 128 GB ECC | 4 TB NVMe | 0.417 |
+  | EM-B420E-NVME | EPYC 7272, 12 cores, 24 threads | 128 GB ECC | 2 TB NVMe | 0.444 |
+  | EM-I220E-NVME | EPYC 8124P, 16 cores, 32 threads | 128 GB ECC | 1.92 TB NVMe | 0.630 |
+  | EM-I320E-NVME | EPYC 8224P, 24 cores, 48 threads | 192 GB ECC | 3.84 TB NVMe | 0.959 |
+  | EM-I420E-NVME | EPYC 8324P, 32 cores, 64 threads | 256 GB ECC | 3.84 TB NVMe | 1.233 |
+
+  Stock differs by zone and changes; EM-I220E-NVME was available in most zones, so it is the first choice.
+- **Operating systems with cloud-init:** Ubuntu 22.04, 24.04 and 26.04, Debian 12 and 13, Rocky Linux 8; no Fedora.
+  The host runs Ubuntu 26.04; Fedora's test machines are VMs on it.
+- **A new account's quota for Elastic Metal is 0** and cannot be raised in the console: the first order is refused
+  with "quota(s) exceeded for this resource" until the provider's support raises it. A guide for others names this
+  step.
+- The key is an application's with a policy limited to the project: `ElasticMetalFullAccess` and
+  `SSHKeysReadOnly`; it never has the person's own rights.
+
 ## To be checked
 
-- With a Scaleway account (its key read from a file only): the hourly offers that meet [PJ39](README.md#pj39)'s
-  minimum, their prices, and **whether the one-time `fee` is charged again for every hourly order**. If it is, a host
-  is kept for a working period rather than given back each day.
-- How long an order takes from `POST` to `ready` and an installed system, measured on the first rental.
+- How long an order takes from `POST` to `ready` and an installed system, measured on the first rental, and that the
+  machine offers AVX2, hardware virtualisation and `/dev/kvm`.
 - Where [PJ45](README.md#pj45)'s copies go and how fast they come back: the person's drive, or the provider's object storage.
