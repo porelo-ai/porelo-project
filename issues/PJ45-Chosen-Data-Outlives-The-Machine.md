@@ -1,6 +1,8 @@
 # PJ45 — Chosen data outlives the machine
 
-**Status:** Idea.
+**Status:** Analyzed.
+**Size:** M - a small contract, two repositories' parts (`porelo-message-matrix`, `porelo`), the playbook's
+timer, and a round trip measured on a rented host.
 
 **What must be true.** A short list of data that lives only on a machine and is worth keeping is copied off it
 regularly, and put back when the machine is set up again; everything else on the machine is thrown away with it.
@@ -30,10 +32,52 @@ where the agents and the person talk - the record of hand-overs, questions and a
 - **Nothing more than needed:** what the forge holds, what is built again (images, caches, the registry's
   snapshots) and the tasks themselves are not on the list.
 
+## Plan
+
+Read in today's code and in Tuwunel's documentation
+([backups](https://matrix-construct.github.io/tuwunel/backups.html)).
+
+- **The homeserver, by Tuwunel's own online backup.** Tuwunel keeps its database in RocksDB, in the
+  podman volume `porelo-matrix-homeserver` (`TUWUNEL_DATABASE_PATH=/data`, set by
+  `porelo-matrix-homeserver.service` in `porelo-message-matrix`). It makes consistent backups while it
+  runs: `database_backup_path` names a directory, `database_backups_to_keep` how many it keeps, and the
+  admin command `!admin server backup-database` makes one. A backup's files are written once and never
+  changed, so the backup directory may be copied as it stands, also to a drive that syncs file by file.
+  Restore: with the homeserver stopped, its binary started once with `--restore-backup` puts the newest
+  backup into `database_path`. Media are not in a backup and are left out.
+- **`porelo-message-matrix` builds the homeserver's part:** the unit mounts a second volume as
+  `TUWUNEL_DATABASE_BACKUP_PATH`, and the transport gains `backup <dir>`, which gives the admin command in
+  the admin room it already uses (`AdminRoom`), waits for the answer and copies the new backup into
+  `<dir>`, and `restore <dir>`, which with the unit stopped copies `<dir>` back and runs the restore once.
+- **`porelo` builds the usage records' part,** where [PJ38](README.md#pj38) writes them under the
+  account's state directory: an append-only record is copied as it stands, so `porelo keep <dir>` copies
+  them, and `porelo keep --restore <dir>` puts them back before a task starts.
+- **One contract for the list,** so a new entry changes nothing in how it is copied: each entry is a
+  command that writes its consistent copy into a directory it is given, and one that puts it back, run
+  in the order the list names. The two above are its first entries. The vault is never one.
+- **The schedule and the target are the playbook's** ([PJ40](README.md#pj40)): a systemd user timer runs
+  the list every hour and at down, into a folder of the person's mounted drive named in their machine
+  file; up runs the restores before the homeserver and the tasks start. Plain systemd and a copy are
+  enough; nothing of Porelo's own schedules it.
+- **Red first:** a room with messages, the machine given back, a new one set up from the copy, and the
+  same messages read there; without the restore they are gone.
+
+## Acceptance
+
+- On a rented host, a room's messages and the usage records written before down are there after up on a
+  new machine, read by the person and by `porelo` alike.
+- A backup made while the homeserver is busy loads; a copy of the live database files is never taken.
+- Seen to fail first: the same round trip without the restore step loses the room.
+
+## Open questions
+
+- How often is copied while the machine runs: every hour as proposed, or only at down?
+- How many backups are kept on the drive: Tuwunel's default is one; seven would cover a working week.
+
 ## To be checked
 
-- What Tuwunel offers for a backup of its database while it runs (a backup path and a number of backups to keep, or
-  an admin command), and whether a backup of one version loads into the next.
-- Whether the operating system's means suffice - a systemd timer and a copy - or something of Porelo's own is needed.
-- Which repository builds it: the homeserver's part belongs to `porelo-message-matrix`, the usage records' to `porelo`,
-  the schedule and the target perhaps to the deploy repository of [PJ40](README.md#pj40).
+- Whether a backup made by one Tuwunel version restores into the next one pinned (the documentation says
+  nothing); measured once when the pin moves.
+- Whether anything Porelo sends into a room is media rather than text (an attachment, an image), which a
+  backup leaves out.
+- How long a backup and its copy take on the mounted drive, with a room of a few weeks' messages.
