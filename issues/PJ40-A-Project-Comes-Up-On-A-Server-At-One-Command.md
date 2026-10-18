@@ -43,7 +43,7 @@ is where the command is tried and refined before anyone else relies on it.
   second run and takes it down again; existing roles are used where they are sound (the homeserver, the VPN, KVM)
   rather than rebuilt.
 - **Renting is a step before up and after down**, and for Porelo's own project the host is rented by the hour
-  (decided 2026-10-18): `porelo-machines` takes it from a provider before up and gives it back after down (see
+  (decided 2026-10-18): `host up` takes it from a provider before up and `host down` gives it back after down (see
   *Renting the host* below). A machine of one's own skips the step, and its address goes into the person's setup
   file. OpenTofu, one module per provider with the state kept encrypted with the person, stays a planned extension
   for Porelo as a product for others; it is not needed for this project's own run.
@@ -79,12 +79,16 @@ is where the command is tried and refined before anyone else relies on it.
 ## Renting the host
 
 **Decided 2026-10-18:** Porelo's own project rents its host by the hour from a provider of bare metal, through
-`porelo-machines` extended by `host up` and `host down`. The reasons: it already rents, labels, waits on a provider's
-limits, deletes by name and builds images; renting the host and renting a test machine use the same code, while each
-keeps a provider project, a token and a quota of its own, so a host never takes a test run's room. Hetzner Cloud stays
-the provider of the CI's test machines.
+`host up` and `host down`: **a Dart package of porelo-frontend's** (decided), used by the interface and by a small
+command-line program built from the same code with `dart compile exe` for Linux, macOS and Windows. The reasons: the
+playbook runs on the host, so what is left at the person's is a provider's REST API and ssh, which Dart does on all
+three systems; nothing else is shipped, signed and downloaded beside the interface, and the command line stays.
+`porelo-machines` keeps renting the CI's test machines from Hetzner Cloud; the two share no code, and overlap only if
+the host is ever rented from Hetzner too. Each keeps a provider project, a token and a quota of its own, so a host never
+takes a test run's room. The provider's key lies in the system's own secret store (Keychain, Credential Manager,
+Secret Service), never in a file or a log.
 
-**A provider behind an interface.** `porelo-machines` gains one interface for a provider, with one adapter per provider
+**A provider behind an interface.** The package has one interface for a provider, with one adapter per provider
 ([PJ22](README.md#pj22)'s machine kinds, taken earlier for this): create a server with tags and a cloud-init
 `user_data`, read its state, give it back, and say what the provider offers beyond that. Two adapters:
 
@@ -156,22 +160,22 @@ outlives it is in the person's drive and the project's store, never at the provi
 new adapter and a word in the person's machine file. Hetzner's snapshots stay for the CI's test machines.
 
 ```
-porelo-machines host up / host down      the one command the person types
- 1. the machine         porelo-machines (Java), one interface, one adapter per provider
+host up / host down                      the one command the person types, or the interface's button
+ 1. the machine         the Dart package (porelo-frontend), one interface, one adapter per provider
  2. the system          the playbook (Ansible), run on the host itself, started over ssh
  3. the guarantees      porelo's own commands, called by the playbook
 ```
 
-**1. `porelo-machines` rents and gives back, and nothing else:**
+**1. The Dart package rents and gives back, starts the playbook over ssh, and reports:**
 
-```java
-interface HostProvider {
-    List<Offer> offers(Requirements minimum);   // price per hour, stock, zone, one-time fee
-    Host create(HostRequest request);           // name, offer, zone, operating system, labels (run,
-                                                // porelo-expires), user_data (host key, ssh key)
-    Host await(HostId id, Duration limit);      // until installed and reachable over ssh
-    List<Host> list(Labels labels);
-    void delete(HostId id);                     // and waits until it is gone
+```dart
+abstract interface class HostProvider {
+  Future<List<Offer>> offers(Requirements minimum); // price per hour, stock, zone, one-time fee
+  Future<Host> create(HostRequest request);         // name, offer, zone, operating system, labels (run,
+                                                    // porelo-expires), user_data (host key, ssh key)
+  Future<Host> await(HostId id, Duration limit);    // until installed and reachable over ssh
+  Future<List<Host>> list(Labels labels);
+  Future<void> delete(HostId id);                   // and waits until it is gone
 }
 ```
 
@@ -179,8 +183,8 @@ interface HostProvider {
   made for this rental (porelo-buildtools [BT11](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt11));
   `await`; the playbook's inventory written.
 - **down:** `delete`, then `list` shows nothing of the project's left.
-- The person's machine file names the provider, the offer and the zone; the provider's key is read from a file
-  only.
+- The person's machine file names the provider, the offer and the zone; the provider's key comes from the system's
+  secret store only.
 
 **2. The playbook sets up and takes down the system:**
 
@@ -201,10 +205,10 @@ and each list entry's copy and restore (the homeserver's in `porelo-message-matr
 
 **The interface drives it too** (decided): the person runs `host up` and `host down` from porelo-frontend as from
 the command line, and when `up` stops for the vault, the interface asks for the passphrase and opens it, so a
-person needs no terminal for any step. The interface calls the same commands; it does no step of its own.
+person needs no terminal for any step. The interface and the command line are one code, the Dart package.
 
-**Who builds what:** `porelo-machines`' interface and the Scaleway adapter in `porelo-buildtools`; the playbook in a
-new repository with an agent of its own; the list's entries in `porelo-message-matrix` and `porelo`
+**Who builds what:** the Dart package, its Scaleway adapter and its command line in porelo-frontend; the playbook in
+porelo-host; the list's entries in `porelo-message-matrix` and `porelo`
 ([PJ45](README.md#pj45)).
 
 **Red first:** `host up` on a rented host, a room message and a Maven build made, `host down`, then `host up` on a
