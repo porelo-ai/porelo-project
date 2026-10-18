@@ -15,9 +15,14 @@ work for a person either.
 
 ## The shape proposed
 
+- **The work runs in sprints** (decided 2026-10-18): the operator rents the host, it is set up at one command, a
+  sprint of a chosen scope from the backlog runs for some hours, the operator reviews what Forgejo built green, the
+  work goes to the central forge in one gathered push in dependency order, and the host is given back once all of it
+  is there.
 - **Everything runs on one bare-metal host**: Porelo with its daemon, gates, broker and vault; the tasks; Forgejo with
   its registry and runner; the VM pool; the Matrix homeserver; the images and caches. Whether that machine stands
-  in the operator's office or is rented by the hour makes no difference to the setup:
+  in the operator's office or is rented by the hour makes no difference to the setup. Porelo's own host is rented by
+  the hour from Scaleway Elastic Metal through `porelo-machines` ([PJ40](README.md#pj40)'s *Renting the host*):
   - **It is set up from nothing by a script** and given back with nothing kept on it: the code is in the forge,
     the person's own settings - configuration, notes, `.AGENTS.md`, small files - are on a drive the person mounts
     there, and the room's conversation and the usage records are copied off it as [PJ45](README.md#pj45) says.
@@ -40,8 +45,8 @@ work for a person either.
 - **A snapshot one task built is what the next task resolves**: every Forgejo build publishes into Forgejo's
   registry, which a task reaches by a declared name on port 443. It replaces the hand-over directory and the split
   Maven repository.
-- **The operator tests and approves each pull request on Forgejo**; the coordinator then merges it through Forgejo's
-  API. Each repository's push mirror to the central forge runs only when the coordinator starts it, through the same
+- **The operator reviews what Forgejo built green, gathered at the sprint's end**, and approves it on Forgejo; the
+  coordinator then merges it through Forgejo's API. Each repository's push mirror to the central forge runs only when the coordinator starts it, through the same
   API, in the order and staggered as today's gathered pushes; the token for that API stays on the host and the
   coordinator's task holds a broker's token only. The mirrors push with the person's own token
   ([PJ37](README.md#pj37)), so a new host needs no key added at the central forge. The limit on rented servers
@@ -49,9 +54,11 @@ work for a person either.
 - **One task per issue, phase and repository**, started with porelo
   [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189)'s values `issue` and `phase`. A
   task works on one repository only; an issue that changes several is built in one task per repository.
-- **An image per repository**, from its devcontainer file (porelo [B170](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b170),
-  [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)), each with the toolchain its repository needs (GraalVM and Maven, Flutter, Gradle,
-  Python), rather than one image for the whole project.
+- **An image per repository**, each with the toolchain its repository needs (GraalVM and Maven, Flutter, Gradle,
+  Python), rather than one image for the whole project (porelo
+  [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)): the repository names it in a
+  checked-in `porelo.yml` (the image and its tools only, never egress or limits), read from its default branch; a
+  `.porelo.yml` that is not checked in overrides it locally; `project.yml` overrides both.
 - **Downloaded dependencies are cached across tasks**, shared and read-only, as `~/.m2/cached/` is today; what a
   task installs stays its own (porelo [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193)).
 - **`.AGENTS.md` replaces the agents' memory.** It is the one local, uncommitted file for what holds on this
@@ -63,7 +70,8 @@ work for a person either.
   the operator approved it - nothing a task wrote reaches the next task unseen.
 - **The agents talk over Matrix** instead of the channel file on the host: the project's room in which its tasks
   already talk, through the Matrix transport and the message filter. Nothing new is built for the room; the
-  homeserver runs on the host.
+  homeserver runs on the host. An agent that needs something of the operator asks in the operator's own channel, not
+  in the room.
 - **The coordinator works in `porelo-all`**, a private repository on Forgejo that holds every repository as a subtree
   and is rebuilt by a workflow at every merge into a `main`. It reads everything there and changes only
   `porelo-project/`: after the operator's approval a second workflow splits that directory back into `porelo-project`
@@ -121,11 +129,12 @@ repository it is meant for.
    another repository reads; a finding that would is named in the channel instead.
 1. **The host:** [PJ40](README.md#pj40) brings the project up on the bare-metal host at one command - VPN, Porelo,
    its account, Forgejo, the Matrix homeserver, KVM, the images, the agents' tasks - and [PJ45](README.md#pj45)
-   keeps the room and the usage records; the same on a machine of one's own and on one rented by the hour.
+   keeps the room and the usage records; the same on a machine of one's own and on one rented by the hour. *New,
+   `porelo-buildtools`:* one provider interface in `porelo-machines` with an adapter each for Hetzner Cloud and
+   Scaleway Elastic Metal, and `host up` / `host down` on it.
 2. **What Porelo must add:** porelo [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189)
-   (values at the start); porelo [B170](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b170) (the
-   image from a devcontainer file) and [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)
-   (that image chosen per repository); porelo
+   (values at the start); porelo [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)
+   (an image per repository from its `porelo.yml`); porelo
    [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193) (a dependency cache shared across
    tasks); porelo [B194](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b194) (a file handed in
    read-only at every start of an agent's task, and its changed copy written after approval); porelo-claude-code
@@ -136,8 +145,8 @@ repository it is meant for.
    Forgejo with its registry running the same workflows, the `forgejo` reader, a task's build on a declared kind;
    then *new, `porelo-buildtools`:* the push mirrors to the central forge, started through Forgejo's API.
 4. **Talking and coordinating:** the project's room as it is; an agent in a task reached by a message as the
-   channel's watcher reaches it today, if checking finds that missing; *new, `porelo-project`:* `porelo-all` with its
-   two workflows.
+   channel's watcher reaches it today, if checking finds that missing; the operator's own channel for an agent's
+   question; *new, `porelo-project`:* `porelo-all` with its two workflows.
 5. **The move, one agent at a time**, the others working as today and the channel kept beside Matrix until the last
    has moved: Sluice first (one repository, one snapshot from the registry); then Smith (snapshots from `porelo`, three
    repositories); Matrix; IntelliJ and Frontend (other toolchains); Core last of the builders, with a way back to the
