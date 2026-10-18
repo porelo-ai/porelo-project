@@ -18,7 +18,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj29"></a>[PJ29](PJ29-One-Code-Style-For-IDE-And-Build.md) | XL | — | One shared `.editorconfig` with the Google style in every repository, followed by the IDE and checked by the build with Spotless and `google-java-format` (AOSP: four spaces, 100 columns) in `validate`; IntelliJ with the `google-java-format` plugin. |
 
 ## Implementing
 
@@ -79,6 +78,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Title | What was built |
 |---|---|---|
+| <a id="pj29"></a>[PJ29](README.md#pj29) | One code style for the IDE and the build | One shared `.editorconfig` in every repository, Spotless with `google-java-format` (AOSP) in `validate` from `porelo-parent`, Gradle's Spotless in the plugin, `dart format` in the interface, and one reformatting commit per repository named in `.git-blame-ignore-revs`. |
 | <a id="pj41"></a>[PJ41](README.md#pj41) | Sokar is renamed Porelo | Every repository, artifact, package, command, path and document is named Porelo under `porelo-ai` and `org.fuin.porelo`, released as Porelo 0.5.0, and installed afresh. |
 | <a id="pj42"></a>[PJ42](README.md#pj42) | The forge and Artifactory prepared for Porelo | Every repository transferred to `porelo-ai` and renamed, the organisation's settings and tokens made again, `porelo-dist-*` and the key pair `porelo-packages` at Artifactory. |
 | <a id="pj43"></a>[PJ43](README.md#pj43) | sokar-project renamed porelo-project | This repository, its `project.yml` and the Shared Area under the new name. |
