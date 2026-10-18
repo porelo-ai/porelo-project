@@ -1,6 +1,6 @@
 # PJ29 — One code style for the IDE and the build
 
-**Status:** Backlog. Spans every repository with code; the shared tooling is `porelo-buildtools`'.
+**Status:** Review. Spans every repository with code; the shared tooling is `porelo-buildtools`'.
 **Size:** XL - every repository with code is reformatted once; it splits into the shared `.editorconfig` and Spotless in the shared tooling (M), then one reformatting issue per repository (S each).
 
 **What must be true.** Every repository states its code style once, in a committed `.editorconfig`
