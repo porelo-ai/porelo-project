@@ -35,10 +35,13 @@ is where the command is tried and refined before anyone else relies on it.
     with the person's own settings, the hardware it offers. A project's file never names a machine, so one project
     comes up on any of them.
 - **Porelo writes the configuration; Ansible sets up the host.** From the three sources Porelo generates an Ansible
-  inventory and its variables, and the person runs the playbook from their own machine over ssh: operating system
-  packages, the VPN, KVM, the forge, the homeserver, Porelo's package and account. Ansible changes only what differs
-  on a second run and takes it down again; existing roles are used where they are sound (the homeserver, the VPN,
-  KVM) rather than rebuilt. Ansible is a tool the person brings, not part of Porelo.
+  inventory and its variables, and the playbook runs **on the host itself** (decided): `host up` copies the
+  collection and the inventory over ssh, installs `ansible-core` there from the distribution's packages and runs
+  `ansible-playbook -c local`: operating system packages, the VPN, KVM, the forge, the homeserver, Porelo's package
+  and account. So the person's computer, Linux, macOS or Windows, needs only an ssh client and `host up`; Ansible's
+  control node runs on no Windows natively, and podman is not assumed there. Ansible changes only what differs on a
+  second run and takes it down again; existing roles are used where they are sound (the homeserver, the VPN, KVM)
+  rather than rebuilt.
 - **Renting is a step before up and after down**, and for Porelo's own project the host is rented by the hour
   (decided 2026-10-18): `porelo-machines` takes it from a provider before up and gives it back after down (see
   *Renting the host* below). A machine of one's own skips the step, and its address goes into the person's setup
@@ -155,7 +158,7 @@ new adapter and a word in the person's machine file. Hetzner's snapshots stay fo
 ```
 porelo-machines host up / host down      the one command the person types
  1. the machine         porelo-machines (Java), one interface, one adapter per provider
- 2. the system          the playbook (Ansible), over ssh from the person's machine
+ 2. the system          the playbook (Ansible), run on the host itself, started over ssh
  3. the guarantees      porelo's own commands, called by the playbook
 ```
 
