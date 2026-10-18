@@ -2,7 +2,7 @@
 
 ## Shared across the Porelo repositories
 
-> **BEGIN Shared Area** · sha256 `1b87b5ddd8799c95` · changed 2026-10-18T05:06Z
+> **BEGIN Shared Area** · sha256 `1ba28d325472bdcc` · changed 2026-10-18T12:43Z
 
 Identical in every repository `project.yml` names but `porelo-parent`, which holds only the parent pom
 and no `AGENTS.md`. The markers carry the SHA-256 of the lines between them (the first 16 hex digits)
@@ -166,6 +166,8 @@ and the UTC time that text last changed; change it in the channel first, never i
   machine reachable from here is restarted only by the operator.
 - **A rented machine's name says which agent and which run made it.** Every run deletes exactly what
   it created, after a failure too, and never sweeps by age or touches a machine it cannot attribute.
+- **The scheduled sweep of the CI's machines deletes one only past the `porelo-expires` time it was
+  made with, or one that carries none**; it is the one clean-up that is not a run's own.
 - **A script that changes a machine refuses to start over leftovers, removes only what it created -
   on interrupt too - and exits non-zero naming anything it left.**
 - **Before a run on a shared machine, check what it does to that machine and say so.**
@@ -330,7 +332,7 @@ and the UTC time that text last changed; change it in the channel first, never i
 - **Every native executable is built with `-march=x86-64`**, so it starts on any x86-64 CPU, and the
   build checks each executable for exactly that instruction set.
 
-> **END Shared Area** · sha256 `1b87b5ddd8799c95`
+> **END Shared Area** · sha256 `1ba28d325472bdcc`
 
 ## Work in this repository
 
