@@ -45,6 +45,9 @@ Read in today's code and in Tuwunel's documentation
   changed, so the backup directory may be copied as it stands, also to a drive that syncs file by file.
   Restore: with the homeserver stopped, its binary started once with `--restore-backup` puts the newest
   backup into `database_path`. Media are not in a backup and are left out.
+- **48 restore points are kept**, two working days of hourly backups: `database_backups_to_keep = 48`.
+  The backup directory is mirrored to the drive as it is, so the drive holds the same 48; a backup shares
+  its unchanged files with the ones before it, so 48 cost little more than one.
 - **`porelo-message-matrix` builds the homeserver's part:** the unit mounts a second volume as
   `TUWUNEL_DATABASE_BACKUP_PATH`, and the transport gains `backup <dir>`, which gives the admin command in
   the admin room it already uses (`AdminRoom`), waits for the answer and copies the new backup into
@@ -56,7 +59,7 @@ Read in today's code and in Tuwunel's documentation
   command that writes its consistent copy into a directory it is given, and one that puts it back, run
   in the order the list names. The two above are its first entries. The vault is never one.
 - **The schedule and the target are the playbook's** ([PJ40](README.md#pj40)): a systemd user timer runs
-  the list every hour and at down, into a folder of the person's mounted drive named in their machine
+  the list every hour while the machine runs, and once more at down, into a folder of the person's mounted drive named in their machine
   file; up runs the restores before the homeserver and the tasks start. Plain systemd and a copy are
   enough; nothing of Porelo's own schedules it.
 - **Red first:** a room with messages, the machine given back, a new one set up from the copy, and the
@@ -68,11 +71,6 @@ Read in today's code and in Tuwunel's documentation
   new machine, read by the person and by `porelo` alike.
 - A backup made while the homeserver is busy loads; a copy of the live database files is never taken.
 - Seen to fail first: the same round trip without the restore step loses the room.
-
-## Open questions
-
-- How often is copied while the machine runs: every hour as proposed, or only at down?
-- How many backups are kept on the drive: Tuwunel's default is one; seven would cover a working week.
 
 ## To be checked
 
