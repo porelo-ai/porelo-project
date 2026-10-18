@@ -196,6 +196,10 @@ interface HostProvider {
 and each list entry's copy and restore (the homeserver's in `porelo-message-matrix`, the usage records' in
 `porelo`).
 
+**The interface drives it too** (decided): the person runs `host up` and `host down` from porelo-frontend as from
+the command line, and when `up` stops for the vault, the interface asks for the passphrase and opens it, so a
+person needs no terminal for any step. The interface calls the same commands; it does no step of its own.
+
 **Who builds what:** `porelo-machines`' interface and the Scaleway adapter in `porelo-buildtools`; the playbook in a
 new repository with an agent of its own; the list's entries in `porelo-message-matrix` and `porelo`
 ([PJ45](README.md#pj45)).
