@@ -39,15 +39,14 @@ is where the command is tried and refined before anyone else relies on it.
   packages, the VPN, KVM, the forge, the homeserver, Porelo's package and account. Ansible changes only what differs
   on a second run and takes it down again; existing roles are used where they are sound (the homeserver, the VPN,
   KVM) rather than rebuilt. Ansible is a tool the person brings, not part of Porelo.
-- **Renting is a step before and after, and optional**: where the machine is rented, OpenTofu takes it from the
-  provider before up and gives it back after down, its address going straight into the inventory. A machine of
-  one's own skips it. One module per provider, the provider named in that module only; the state stays with the
-  person and is encrypted, since it can hold the new machine's secrets. Renting a project's host for hours or days
-  is not renting a test machine for one run ([PJ22](README.md#pj22)'s `porelo-machines`, internal to Porelo's own
-  builds); the two stay apart.
+- **Renting the machine is not part of this issue.** Here the machine is there before up - one's own, or rented by
+  hand - and its address goes into the person's setup file. Taking it from a provider before up and giving it back
+  after down, with OpenTofu, one module per provider and the state kept encrypted with the person, is an issue of its
+  own, analysed when somebody needs a host rented by the hour. Renting a project's host is never renting a test
+  machine for one run ([PJ22](README.md#pj22)'s `porelo-machines`, internal to Porelo's own builds); the two stay
+  apart.
 - **Where it lives**: a new repository, a product of its own and not part of Porelo's internal build tooling, holds
-  the playbook and its roles, published as an Ansible collection, and the OpenTofu modules beside them, in versions
-  that match Porelo's. It gets an agent of its own, as every repository has one. What it calls on stays in `porelo`:
+  the playbook and its roles, published as an Ansible collection, in versions that match Porelo's. It gets an agent of its own, as every repository has one. What it calls on stays in `porelo`:
   writing the configuration, the follow, the keys, the images and the tasks.
 - **What keeps a guarantee stays Porelo's**, and the playbook calls Porelo's own commands for it rather than doing it
   itself:
