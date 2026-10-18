@@ -72,7 +72,8 @@ like here, or which of the ten repositories their change belongs in.
 - **3. The sign-off check** in `porelo-release` (`porelo-buildtools`), run by every repository's build on a
   pull request. Seen to fail first: a pull request commit without `Signed-off-by:` passing.
 - **4. A `CONTRIBUTING.md` and a README link** in each repository, by its agent from a handover.
-- **5. The settings**, set by the operator in every public repository.
+- **5. The settings**, set by the operator in every public repository: done, private vulnerability
+  reporting read back through the API.
 
 ## Acceptance
 
