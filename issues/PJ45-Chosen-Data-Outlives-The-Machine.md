@@ -59,7 +59,9 @@ Read in today's code and in Tuwunel's documentation
   kept; it is put back at up before the first build.
 - **`restic` does the copying for every entry:** each entry's command writes its consistent copy into a local
   directory, and `restic backup` sends the directories to the store, `restic forget --keep-last 48` (one for
-  the cache) thins it, and `restic restore` brings them back at up. The keys come from the vault.
+  the cache) thins it, and `restic restore` brings them back at up. restic reads its password and the store's key
+  from files on the person's drive (`RESTIC_PASSWORD_FILE` and the like), never through Ansible; Porelo's vault
+  hands no key out, so it is not their source.
 - **One contract for the list,** so a new entry changes nothing in how it is copied: each entry is a
   command that writes its consistent copy into a directory it is given, and one that puts it back, run
   in the order the list names. The two above are its first entries. The vault is never one.
