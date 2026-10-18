@@ -131,8 +131,15 @@ the provider of the CI's test machines.
 - The key is an application's with a policy limited to the project: `ElasticMetalFullAccess` and
   `SSHKeysReadOnly`; it never has the person's own rights.
 
+**Measured on a first rental** (EM-I220E-NVME in `fr-par-1`, Ubuntu 26.04):
+
+- From the order to `ready` 32 s, to the installed system 8 minutes, to `ssh` 13 minutes: the machine reboots once
+  after the install.
+- It offers AVX2, AMD-V (`svm`) and `/dev/kvm`, 124 GB of memory and two 960 GB NVMe disks, installed as RAID 1.
+- `ci/leg-build.sh`, the native build of a leg, took 4:00 minutes, against 5:17 on a Hetzner `ccx33` (8 dedicated
+  vCPUs); each native image built in about two thirds of the time.
+- The delete took 11 s, and every zone listed no server after it.
+
 ## To be checked
 
-- How long an order takes from `POST` to `ready` and an installed system, measured on the first rental, and that the
-  machine offers AVX2, hardware virtualisation and `/dev/kvm`.
 - Where [PJ45](README.md#pj45)'s copies go and how fast they come back: the person's drive, or the provider's object storage.
