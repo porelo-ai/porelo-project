@@ -84,7 +84,8 @@ command-line program built from the same code with `dart compile exe` for Linux,
 playbook runs on the host, so what is left at the person's is a provider's REST API and ssh, which Dart does on all
 three systems; nothing else is shipped, signed and downloaded beside the interface, and the command line stays.
 `porelo-machines` keeps renting the CI's test machines from Hetzner Cloud; the two share no code, and overlap only if
-the host is ever rented from Hetzner too. Each keeps a provider project, a token and a quota of its own, so a host never
+the host is ever rented from Hetzner too. That is decided when the providers are made a choice for others: OpenTofu,
+which runs on Linux, macOS and Windows, is then the likelier way than an adapter per provider in each language. Each keeps a provider project, a token and a quota of its own, so a host never
 takes a test run's room. The provider's key lies in the system's own secret store (Keychain, Credential Manager,
 Secret Service), never in a file or a log.
 
