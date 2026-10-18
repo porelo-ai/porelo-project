@@ -31,5 +31,8 @@ much as from the command line, for someone who has never used Porelo.
 
 - [Agents and providers compared](agents-and-providers.md): every agent and provider set beside
   each other, which of them can be brokered at all, what that costs, and which to build next.
+- [Contributing](contributing.md): how Porelo is worked on, for someone who wants to change it.
+- [Reporting a vulnerability](security.md): how a security problem is reported privately, and
+  what happens next.
 - [Decisions](decisions.md): the choices the project as a whole is built on, and the risks it
   accepts.
