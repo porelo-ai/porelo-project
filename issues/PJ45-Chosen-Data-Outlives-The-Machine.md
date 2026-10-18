@@ -67,6 +67,12 @@ Read in today's code and in Tuwunel's documentation
   the list every hour while the machine runs, and once more at down, into the project's store; up runs the
   restores before the homeserver and the tasks start. Plain systemd and `restic` are enough; nothing of
   Porelo's own schedules it.
+- **The tasks' logs are not on the list.** The plain logs (`gate.log`, `vault.log` and the others under the
+  runtime directory) are gone at every reboot today and are not history. What must outlive the machine
+  unchanged is the security event log porelo
+  [B154](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b154) builds; it becomes an entry
+  once it exists, in a store of its own: a bucket with S3 Object Lock, written with a key that cannot delete,
+  so not even the project's own key can change or thin it. restic's `forget` never runs on it.
 - **Red first:** a room with messages, the machine given back, a new one set up from the copy, and the
   same messages read there; without the restore they are gone.
 
