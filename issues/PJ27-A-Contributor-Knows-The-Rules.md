@@ -42,13 +42,16 @@ like here, or which of the ten repositories their change belongs in.
   8. **Reporting a vulnerability** - where, and not as a public issue.
   9. **Licence** - the code is under the GPL v3 or later; what a contribution is licensed under.
 - **Decided, and what the page says:**
-  - **A contribution comes in under the project's licence and stays under it.** Every commit carries
-    a `Signed-off-by:` line (`git commit -s`): the Developer Certificate of Origin, by which its author
-    certifies the right to submit it. No rights are transferred and there is no contributor agreement;
-    Porelo is offered under the GPL only.
-  - **Work written with an AI's help is accepted, and says so.** A person vouches for every commit with
-    their sign-off - never the agent - and the commit names the help in an `Assisted-by: <tool, model>`
-    line. Porelo's own agents' commits follow the same rule.
+  - **A contribution comes in under the project's licence and stays under it.** Every commit of a pull
+    request from outside carries a `Signed-off-by:` line (`git commit -s`): the Developer Certificate of
+    Origin, by which its author certifies the right to submit it. No rights are transferred and there is
+    no contributor agreement; Porelo is offered under the GPL only.
+  - **Work written with an AI's help is accepted, and says so.** The person who submits it signs off,
+    never the AI, and the commit names the help in an `Assisted-by: <tool>, <model>` line.
+  - **Porelo's own agents never write a `Signed-off-by:`**, which would certify for the operator the
+    origin of a change they have not read; each of their commits carries `Assisted-by:`, and the operator
+    vouches for them by pushing them. The check requires the sign-off on a pull request from outside
+    only, and exempts the bots' commits and GitHub's merges of them.
   - **A pull request from outside follows an issue.** Someone who wants to change something opens a
     GitHub issue first; once it is agreed there, a pull request is welcome. One that arrives without
     that is closed with a pointer to this page.
@@ -67,10 +70,11 @@ like here, or which of the ten repositories their change belongs in.
 - **Today**: no `doc/contributing.md` here, no `CONTRIBUTING.md` in any repository, no sign-off rule in
   the shared block, no check of `Signed-off-by:`.
 - **1. The page** `doc/contributing.md` in `porelo-project`, by the coordinator, built with the site.
-- **2. The shared block of `AGENTS.md`**: the sign-off and the `Assisted-by:` line, copied to every
-  repository as the block always is.
+- **2. The shared block of `AGENTS.md`**: trailers allowed below the one line, `Assisted-by:` on every
+  agent commit, no sign-off by an agent: done.
 - **3. The sign-off check** in `porelo-release` (`porelo-buildtools`), run by every repository's build on a
-  pull request. Seen to fail first: a pull request commit without `Signed-off-by:` passing.
+  pull request from outside, with porelo-buildtools [BT17](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt17)'s exemptions (the bots' commits, GitHub's merges). Seen to fail
+  first: a pull request commit without `Signed-off-by:` passing.
 - **4. A `CONTRIBUTING.md` and a README link** in each repository, by its agent from a handover.
 - **5. The settings**, set by the operator in every public repository: done, private vulnerability
   reporting read back through the API.
@@ -82,8 +86,8 @@ like here, or which of the ten repositories their change belongs in.
 - Every repository has a `CONTRIBUTING.md` linking the page, and its README links it too.
 - A pull request whose commits lack a `Signed-off-by:` line is marked failing by a check, seen to fail
   on one without it.
-- The shared block of `AGENTS.md` says that every commit carries the sign-off and, where an agent wrote
-  it, the `Assisted-by:` line.
+- The shared block of `AGENTS.md` says that an agent's commit carries `Assisted-by:` and no sign-off,
+  and that trailers may follow the one line.
 - Every public repository has the settings above; seen to fail: one that lacks any of them.
 - No rule is stated on the page that contradicts the shared block; a rule the page states is linked
   to it rather than restated.

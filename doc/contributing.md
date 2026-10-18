@@ -38,12 +38,12 @@ welcome.
   ([Commits and pushes](https://github.com/porelo-ai/porelo-project/blob/main/AGENTS.md#commits-and-pushes)).
 - **A change to what ships gets its line in `CHANGELOG.md`**, under `[Unreleased]`, in the same
   commit.
-- **Every commit carries a `Signed-off-by:` line** (`git commit -s`), by which its author certifies
-  under the [Developer Certificate of Origin](https://developercertificate.org/) that they may submit
-  it.
-- **Work written with an AI's help is welcome, and says so.** A person vouches for every commit with
-  their sign-off, never the agent, and the commit names the help in an `Assisted-by: <tool, model>`
-  line. Porelo's own agents' commits follow the same rule.
+- **Every commit of a pull request carries a `Signed-off-by:` line** (`git commit -s`), by which its
+  author certifies under the [Developer Certificate of Origin](https://developercertificate.org/)
+  that they may submit it. A pull request whose commits lack it is marked failing.
+- **Work written with an AI's help is welcome, and says so.** The person who submits it signs off,
+  never the AI, and the commit names the help in an `Assisted-by: <tool>, <model>` line. Porelo's own
+  agents' commits carry that line and no sign-off: the operator vouches for them by pushing them.
 
 ## What a change must satisfy
 
