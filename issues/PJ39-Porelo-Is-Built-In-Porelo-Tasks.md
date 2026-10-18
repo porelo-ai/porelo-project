@@ -37,6 +37,17 @@ work for a person either.
     as today: a run rents an account of the pool, which is reset when it is given back; no VM is started for a run.
     The scenarios that reboot a machine run centrally only. A machine without AVX2 is a machine kind reached from
     outside, not part of the host.
+  - **porelo-host is the one exception** (decided): its playbook sets up a whole machine as root, which no pool
+    account allows, so its Molecule tests make and delete a libvirt VM of their own for each run. The same workflow
+    does so on GitHub's runner, which offers nested KVM (measured), and in the Forgejo build on the host, whose runner
+    sits outside every task; a task never reaches libvirt or `/dev/kvm`. Its agent's task checks only what needs no
+    machine (lint, the tarball, the shared checks), with the Ansible tools in its own image, and reads the verdict
+    through the `forgejo` reader.
+  - **porelo-host is the one exception** (decided): its playbook sets up a whole machine as root, which no pool
+    account allows, so its Molecule tests run in its Forgejo build on a throwaway VM per run, made and deleted by
+    the runner, which sits outside every task and may use KVM; the host's bare metal runs it nested. Its agent's task
+    checks only what needs no machine (lint, the tarball, the shared checks), with the Ansible tools in its own
+    image, and reads the verdict through the `forgejo` reader. A task never reaches libvirt or `/dev/kvm`.
 - **The project `porelo` becomes `online`, its upstream the local Forgejo** of [PJ22](README.md#pj22). A task's push
   goes to its gate, which passes the branch `porelo/<task>` on to Forgejo at once; nothing of it is public.
 - **Forgejo builds it with the same workflows as the central forge**, the acceptance legs on an account of the local
