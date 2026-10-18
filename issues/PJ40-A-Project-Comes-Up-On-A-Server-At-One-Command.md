@@ -56,17 +56,22 @@ is where the command is tried and refined before anyone else relies on it.
     leave with down;
   - **starting the tasks** (`porelo task start`), so their limits, egress and start values hold.
 - **Nothing is restored but what was chosen**: the person's own settings come from the drive the person mounts,
-  and the data [PJ45](README.md#pj45) keeps is put back; the code comes from the forge, everything else is built again.
-- **The person's drive** is mounted at up and unmounted at down: a folder on a shared drive the person already uses
-  (a cloud drive with end-to-end encryption is preferred, since a VPN's key may lie there; the operator's is
-  Tresorit, which has a command-line client for Linux:
-  [Tresorit CLI unter Linux verwenden](https://support.tresorit.com/hc/de/articles/360009330614-Tresorit-CLI-unter-Linux-verwenden)), reached with a
-  credential that opens that one folder and nothing else of the person's, deposited like the other keys and for a
-  time on a rented machine. It holds small things that are read, not worked in: configuration, notes, the agents'
-  `.AGENTS.md` (handed into each task read-only by porelo
-  [B194](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b194)), the VPN's key, so the person's
-  devices need not be set up again, and the copies [PJ45](README.md#pj45) makes. Nothing runs on it: a database or a
-  repository on a mounted cloud drive is broken by its delayed, piecewise sync.
+  and the data [PJ45](README.md#pj45) keeps comes back from the project's store; the code comes from the forge, everything else is built again.
+- **Two places outlive the machine, kept apart** (decided): what is the person's, and what is the project's.
+  - **The person's drive** is mounted at up and unmounted at down: a folder on a shared drive the person already
+    uses (a cloud drive with end-to-end encryption is preferred, since a VPN's key may lie there; the operator's
+    is Tresorit, which has a command-line client for Linux:
+    [Tresorit CLI unter Linux verwenden](https://support.tresorit.com/hc/de/articles/360009330614-Tresorit-CLI-unter-Linux-verwenden)),
+    reached with a credential that opens that one folder and nothing else of the person's, deposited like the
+    other keys and for a time on a rented machine. It holds the person's own small files, read and changed on
+    the host as anywhere else: configuration, notes, the agents' `.AGENTS.md` (handed into each task read-only by
+    porelo [B194](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b194)), the VPN's key, the
+    person's machine file, and the keys to the project's store. Nothing runs on it: a database or a repository
+    on a mounted cloud drive is broken by its delayed, piecewise sync.
+  - **The project's store** holds what [PJ45](README.md#pj45) keeps: the room, the usage records, the Maven
+    cache. It is S3 object storage, which every provider offers, written by `restic`, which encrypts on the
+    host before anything leaves it, deduplicates and keeps a set number of snapshots; so the store's provider
+    sees nothing and changes by its address and key alone. It belongs to the project, not to one person.
 
 ## Renting the host
 
@@ -142,4 +147,4 @@ the provider of the CI's test machines.
 
 ## To be checked
 
-- Where [PJ45](README.md#pj45)'s copies go and how fast they come back: the person's drive, or the provider's object storage.
+- How fast [PJ45](README.md#pj45)'s store gives the room and the Maven cache back at up, measured on the first rental.
