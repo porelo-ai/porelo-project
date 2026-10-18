@@ -28,8 +28,8 @@ welcome.
 
 ## Making a change
 
-- **Build and test locally first.** Each repository's `doc/build.md` says how, and its
-  `CONTRIBUTING.md` names what is particular to it. A change is ready only when every step its
+- **Build and test locally first.** Each repository's `CONTRIBUTING.md` says how, links where its
+  build is described, and names what is particular to it. A change is ready only when every step its
   build workflow runs has passed locally.
 - **A fix starts with a test seen to fail**, and tests guard what a change could break, not its
   wording or layout ([Testing and machines](https://github.com/porelo-ai/porelo-project/blob/main/AGENTS.md#testing-and-machines)).
