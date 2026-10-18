@@ -73,6 +73,11 @@ repositories:
         description: "The IntelliJ plugin: an agent's waiting work reviewed, approved or rejected in the IDE"
         issues: ["IJ"]
 
+    host:
+        upstream: "git@github.com:porelo-ai/porelo-host.git"
+        description: "Brings a Porelo project up on a server and takes it down again, owned or rented by the hour: an Ansible collection"
+        issues: ["HO"]
+
     site:
         upstream: "git@github.com:porelo-ai/porelo-ai.github.io.git"
         description: "The documentation site: collects every repository's doc/ into one site on GitHub Pages"
