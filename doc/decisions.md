@@ -8,7 +8,23 @@ it stays and what would change the answer.
 | The old name keeps its addresses and holds nothing new | `sokar-ai` keeps only its profile, `org.fuin.sokar` stays at Maven Central without a relocation, released changelog entries keep the old name | [entry](#the-old-name-keeps-its-addresses-and-holds-nothing-new) |
 | Porelo is installed afresh | nothing of a machine that ran Sokar is read, kept or migrated | [entry](#porelo-is-installed-afresh) |
 | The RPM repository indexes one folder deep | `porelo-dist-rpm` has the *YUM Metadata Folder Depth* 1 | [entry](#the-rpm-repository-indexes-one-folder-deep) |
+| Code from outside reaches no secret | one organisation ruleset on `main` (no deletion, no force push, a pull request with the code owner's review), its only bypass the organisation admin; `CODEOWNERS` for `.github/`, build files and `AGENTS.md`; a fork's workflow waits for approval | [entry](#code-from-outside-reaches-no-secret) |
 | Work not yet mirrored is lost with a failed machine | the host keeps no backup of the local forge; a person who wants one mirrors it with means of their own | [entry](#work-not-yet-mirrored-is-lost-with-a-failed-machine) |
+
+## Code from outside reaches no secret
+
+The repositories are public and their builds rent machines and publish with secrets GitHub holds. **What holds:**
+one organisation ruleset protects `main` in every repository - no deletion, no force push, and a change only through
+a pull request with one approval that is the code owner's, re-asked after each push, merged by squash. Its only bypass
+is the organisation admin, which is how the operator's own pushes reach `main`; no app, team or deploy key bypasses
+it. `CODEOWNERS` names the operator for `.github/`, the build files and `AGENTS.md`. A fork's pull request runs no
+workflow until approved ("Require approval for all external contributors"), and `check-actions` refuses
+`pull_request_target`. **How it is checked:** `tools/forge-rules-probe.sh OWNER_TOKEN_FILE OTHER_TOKEN_FILE` makes a
+throwaway repository, sees a second account's direct push and force push refused, its fork's pull request waiting for
+approval and asking for the code owner, and removes everything again. It needs a token of the operator's
+(`repo`, `workflow`, `delete_repo`, `admin:org`) and one of a second account (`public_repo`, `delete_repo`), read from
+files only. **What would change the answer:** a second maintainer, which makes the bypass a team, or a bot that must
+merge, which this rule set lets through only as a bypass.
 
 ## Work not yet mirrored is lost with a failed machine
 

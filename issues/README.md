@@ -24,7 +24,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
 | <a id="pj14"></a>[PJ14](PJ14-Work-Starts-Without-A-Project.md) | M | — | Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured. |
-| <a id="pj28"></a>[PJ28](PJ28-Code-From-Outside-Reaches-No-Secret.md) | S | — | Before the repositories are public: `main` protected with the operator as the only bypass, `CODEOWNERS` for workflows, build files and rules, a fork's workflow waits for approval, and `check-actions` refuses `pull_request_target`. |
 
 ## Analyzed
 
@@ -78,6 +77,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Title | What was built |
 |---|---|---|
+| <a id="pj28"></a>[PJ28](README.md#pj28) | Code from outside reaches no secret | The organisation ruleset on `main` with the admin as its only bypass, `CODEOWNERS`, fork approval, `check-actions` refusing `pull_request_target`, and a probe that shows them holding ([decision](../doc/decisions.md#code-from-outside-reaches-no-secret)). |
 | <a id="pj29"></a>[PJ29](README.md#pj29) | One code style for the IDE and the build | One shared `.editorconfig` in every repository, Spotless with `google-java-format` (AOSP) in `validate` from `porelo-parent`, Gradle's Spotless in the plugin, `dart format` in the interface, and one reformatting commit per repository named in `.git-blame-ignore-revs`. |
 | <a id="pj41"></a>[PJ41](README.md#pj41) | Sokar is renamed Porelo | Every repository, artifact, package, command, path and document is named Porelo under `porelo-ai` and `org.fuin.porelo`, released as Porelo 0.5.0, and installed afresh. |
 | <a id="pj42"></a>[PJ42](README.md#pj42) | The forge and Artifactory prepared for Porelo | Every repository transferred to `porelo-ai` and renamed, the organisation's settings and tokens made again, `porelo-dist-*` and the key pair `porelo-packages` at Artifactory. |
