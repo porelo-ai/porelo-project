@@ -1,6 +1,6 @@
 # PJ40 — A project comes up on a server at one command
 
-**Status:** Analyzed: renting the host is decided; the playbook's shape and the size are next.
+**Status:** Analyzed: renting the host and the cut between the layers are decided; the size is next.
 
 **What must be true.** A person who works with several agents on a project of several repositories puts the whole
 project on a server and starts all of it together with one command, from the project's `project.yml` and the setup
@@ -144,6 +144,65 @@ the provider of the CI's test machines.
 - `ci/leg-build.sh`, the native build of a leg, took 4:00 minutes, against 5:17 on a Hetzner `ccx33` (8 dedicated
   vCPUs); each native image built in about two thirds of the time.
 - The delete took 11 s, and every zone listed no server after it.
+
+## Plan: the cut between the three layers
+
+**No provider's own images, volumes or snapshots for the host**, with any provider: a host is a fresh install of
+the operating system, cloud-init `user_data`, labels and a delete, which every provider of bare metal offers. What
+outlives it is in the person's drive and the project's store, never at the provider; so a change of provider is a
+new adapter and a word in the person's machine file. Hetzner's snapshots stay for the CI's test machines.
+
+```
+porelo-machines host up / host down      the one command the person types
+ 1. the machine         porelo-machines (Java), one interface, one adapter per provider
+ 2. the system          the playbook (Ansible), over ssh from the person's machine
+ 3. the guarantees      porelo's own commands, called by the playbook
+```
+
+**1. `porelo-machines` rents and gives back, and nothing else:**
+
+```java
+interface HostProvider {
+    List<Offer> offers(Requirements minimum);   // price per hour, stock, zone, one-time fee
+    Host create(HostRequest request);           // name, offer, zone, operating system, labels (run,
+                                                // porelo-expires), user_data (host key, ssh key)
+    Host await(HostId id, Duration limit);      // until installed and reachable over ssh
+    List<Host> list(Labels labels);
+    void delete(HostId id);                     // and waits until it is gone
+}
+```
+
+- **up:** an offer that meets the minimum, in another zone when one is out of stock; `create` with a host key
+  made for this rental (porelo-buildtools [BT11](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt11));
+  `await`; the playbook's inventory written.
+- **down:** `delete`, then `list` shows nothing of the project's left.
+- The person's machine file names the provider, the offer and the zone; the provider's key is read from a file
+  only.
+
+**2. The playbook sets up and takes down the system:**
+
+| up, in this order | down |
+|---|---|
+| packages, KVM, podman, the VPN | the last copy of [PJ45](README.md#pj45)'s list into the project's store |
+| the person's drive mounted, its one folder only | the services stopped |
+| Porelo's package, the account, `porelo setup` | the drive unmounted |
+| the keys into the vault through `porelo vault`, never through a variable | |
+| [PJ45](README.md#pj45)'s list restored from the project's store, before anything that reads it starts | |
+| the forge with its registry, the homeserver, the VM pool | |
+| `porelo project follow --signed-by`, `porelo task start` | |
+| a timer that copies the list every hour | |
+
+**3. Porelo's own commands keep the guarantees:** following a signed project, depositing keys, starting tasks,
+and each list entry's copy and restore (the homeserver's in `porelo-message-matrix`, the usage records' in
+`porelo`).
+
+**Who builds what:** `porelo-machines`' interface and the Scaleway adapter in `porelo-buildtools`; the playbook in a
+new repository with an agent of its own; the list's entries in `porelo-message-matrix` and `porelo`
+([PJ45](README.md#pj45)).
+
+**Red first:** `host up` on a rented host, a room message and a Maven build made, `host down`, then `host up` on a
+new machine of another provider: the message is in the room, the build finds its cache, and the first provider
+lists nothing.
 
 ## To be checked
 
