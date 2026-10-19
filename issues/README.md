@@ -60,6 +60,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj50"></a>[PJ50](PJ50-A-Host-Mounts-The-Persons-Drives.md) | — | — | A host takes its setup from a tresor of its own or its folder in a shared one, as the person chooses, and mounts the person's private drives for the person's own use; one mechanism for Tresorit and OneDrive, a list of drives in the machine file, and a person's account on the host to be weighed. |
 | <a id="pj48"></a>[PJ48](PJ48-GitHub-Does-Not-Run-Scheduled-Workflows-Reliably.md) | — | — | GitHub starts scheduled workflows late or drops them, silently, while the updates, the sweep and the daily rules check must run when nobody develops; ideas: start them from outside by `workflow_dispatch`, catch up only what is overdue, notice a missing run, and where such a timer runs. |
 
 
