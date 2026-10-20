@@ -14,6 +14,65 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 **How Porelo compares with other tools that isolate or run coding agents** is in [feature-comparison.md](feature-comparison.md); every planned feature links its issue there.
 
+## Sprints
+
+### Current: Porelo is built in Porelo tasks
+
+[PJ39](#pj39): the agents move their work into Porelo tasks on one host, phase by phase.
+
+```
+Phase 0  The groundwork              ██████████████████  done
+Phase 1  The host                    ████████████████░░  up and down at one command on a rented host  ← here
+Phase 2  What Porelo must add        █████░░░░░░░░░░░░░  a porelo.yml in every repository; its reader in Backlog
+Phase 3  The local forge             ░░░░░░░░░░░░░░░░░░
+Phase 4  Talking and coordinating    █░░░░░░░░░░░░░░░░░  the Matrix room exists
+Phase 5  The move                    ████████░░░░░░░░░░  every repository builds green inside a task
+Phase 6  Clearing up                 ░░░░░░░░░░░░░░░░░░
+```
+
+| Phase | Where it stands |
+|---|---|
+| 0 · The groundwork | ✅ Done: the open work finished, one code style, every repository read against its skills, the rules for contributors. |
+| 1 · The host | 🔄 In progress: [PJ40](#pj40) brings a rented host up and down at one command, end to end; the forge and the VM pool are still to come. [PJ45](#pj45), what outlives the machine, is next. |
+| 2 · What Porelo must add | 🔄 In progress: every repository carries its `porelo.yml`. Waiting: porelo [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189) and [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192), which reads it, in Backlog, [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193), [B194](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b194) and porelo-claude-code [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30) accepted. |
+| 3 · The local forge | ⏳ Waiting: [PJ22](#pj22). |
+| 4 · Talking and coordinating | 🔄 In progress: the project's Matrix room exists. |
+| 5 · The move | 🔄 In progress: every repository builds green inside a Porelo task. |
+| 6 · Clearing up | ⏳ Waiting. |
+
+### Next: Usability
+
+A developer installs Porelo on their own machine and starts in a repository they already have, with no project
+written and no flags to learn.
+
+**First, the easy start:**
+
+| Issue | Size | What it gives |
+|---|---|---|
+| The rest of [PJ14](#pj14) | M | Work starts in any repository without a project, in `default`. |
+| porelo [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192) | L | A repository's own image from its `porelo.yml` or a local `.porelo.yml`. |
+| porelo [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224) | M | The agent protocol only grows, so agents and Porelo need not release together. |
+| porelo [B225](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b225) | L | The agent signed in on the machine is the default, its source named ([PJ53](#pj53)). |
+| porelo-claude-code [CC36](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc36) | S | Claude Code's sign-in found on the machine. |
+| porelo-frontend [F143](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f143) | S–M | The interface lets the machine choose the agent. |
+| porelo [B228](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b228) | S | A key pasted at `vault put` is read whole. |
+| porelo [B229](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b229) | S | Following a repository with no commit says so and what to do. |
+| porelo [B227](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b227) | S | A project repository followed from a directory is read again. |
+| porelo [B33](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b33) | S | A failed fetch is never reported as a credential problem. |
+| porelo [P09](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p09) | M | An agent given a provider it does not know is refused before the task starts. |
+| porelo-frontend [F118](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f118) | S | An upstream that cannot be read is said before a start, with what fixes it. |
+
+**Then, the project proposed from the checkout** ([PJ52](#pj52)) and the company's repositories:
+
+| Issue | Size | What it gives |
+|---|---|---|
+| porelo [B220](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b220) | M | Build-tool plugins found at run time, started without network. |
+| porelo [B221](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b221) | L | `porelo project init` and the drafts shown before the first task. |
+| porelo [B222](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b222) | M | A task's tool settings written at its start. |
+| porelo-frontend [F142](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f142) | M | The drafts offered in the interface. |
+| `porelo-ecosystems` | M–L | A new repository, a new agent: Maven first, through MIMA. |
+| porelo [B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219) | L | A company's authenticated package repository read through the broker. |
+
 ## Review
 
 | # | Size | Blocked by | What it covers |
