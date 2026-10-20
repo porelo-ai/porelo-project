@@ -1,6 +1,6 @@
 # PJ45 — Chosen data outlives the machine
 
-**Status:** Analyzed.
+**Status:** Backlog.
 **Size:** M - a small contract, `restic` to a store, two repositories' parts (`porelo-message-matrix`, `porelo`), the playbook's
 timer, and a round trip measured on a rented host.
 
@@ -48,16 +48,19 @@ Read in today's code and in Tuwunel's documentation
 - **48 restore points are kept**, two working days of hourly backups: `database_backups_to_keep = 48`.
   The store keeps the same 48 of the backup directory; a backup shares
   its unchanged files with the ones before it, so 48 cost little more than one.
-- **`porelo-message-matrix` builds the homeserver's part:** the unit mounts a second volume as
+- **`porelo-message-matrix` builds the homeserver's part**
+  ([MX24](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx24)): the unit mounts a second volume as
   `TUWUNEL_DATABASE_BACKUP_PATH`, and the transport gains `backup <dir>`, which gives the admin command in
   the admin room it already uses (`AdminRoom`), waits for the answer and copies the new backup into
   `<dir>`, and `restore <dir>`, which with the unit stopped copies `<dir>` back and runs the restore once.
-- **`porelo` builds the usage records' part,** where [PJ38](README.md#pj38) writes them under the
+- **`porelo` builds the usage records' part** ([B231](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b231),
+  after [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148), which writes them), where [PJ38](README.md#pj38) writes them under the
   account's state directory: an append-only record is copied as it stands, so `porelo keep <dir>` copies
   them, and `porelo keep --restore <dir>` puts them back before a task starts.
 - **The Maven cache** is copied at down only, since it is large and changes little, and one snapshot of it is
   kept; it is put back at up before the first build.
-- **`restic` does the copying for every entry:** each entry's command writes its consistent copy into a local
+- **`restic` does the copying for every entry**
+  (`porelo-host` [HO07](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho07)): each entry's command writes its consistent copy into a local
   directory, and `restic backup` sends the directories to the store, `restic forget --keep-last 48` (one for
   the cache) thins it, and `restic restore` brings them back at up. restic reads its password and the store's key
   from files on the person's drive (`RESTIC_PASSWORD_FILE` and the like), never through Ansible; Porelo's vault

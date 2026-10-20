@@ -50,4 +50,4 @@ the clear, where every host that syncs the tresor can read it ([PJ50](README.md#
 - A Dart reader and writer of KDBX 4 that is maintained, or KeePassXC's command line carried by its digest.
 - How the file is written while the person may have it open in KeePassXC, without losing either's change.
 - Which entries' names the interface relies on, so a person's own file can be used.
-- What replaces the age identity of `porelo-frontend`'s F140 once the host's secrets come on standard input.
+- What replaces the age identity of `porelo-frontend`'s [F140](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f140) once the host's secrets come on standard input.

@@ -1,6 +1,8 @@
 # PJ40 — A project comes up on a server at one command
 
-**Status:** Analyzed: renting the host and the cut between the layers are decided; the size is next.
+**Status:** Implementing; a rented host brought up and down at one command end to end, the forge, the VM pool and
+[PJ45](README.md#pj45)'s store still to come.
+**Size:** XL - three repositories; built as the issues under *Built in*.
 
 **What must be true.** A person who works with several agents on a project of several repositories puts the whole
 project on a server and starts all of it together with one command, from the project's `project.yml` and the setup
@@ -215,6 +217,16 @@ porelo-host; the list's entries in `porelo-message-matrix` and `porelo`
 **Red first:** `host up` on a rented host, a room message and a Maven build made, `host down`, then `host up` on a
 new machine of another provider: the message is in the room, the build finds its cache, and the first provider
 lists nothing.
+
+## Built in
+
+- **`porelo-frontend`, the machine:** [F131](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f131) `host up` and `down`, [F132](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f132) Scaleway Elastic Metal, [F134](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f134)
+  `porelo-host` built for Linux and Windows, [F135](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f135) the host from the interface, [F137](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f137) the collection taken by its
+  digest, [F140](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f140) the host's files written into the person's drive, [F141](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f141) an agent signed in at `up`'s stop.
+- **`porelo-host`, the system:** [HO02](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho02) Porelo's own commands, [HO05](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho05) the VPN, [HO06](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho06) the person's drive,
+  [HO09](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho09) up and down in their order, [HO10](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho10) the vault opened over ssh, [HO11](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho11) the homeserver's packages,
+  [HO07](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho07) the project's store ([PJ45](README.md#pj45)), [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08) the forge with its registry, [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12) the VM pool,
+  [HO13](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho13) the release's tarball and digest, [HO14](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho14) the collection's Python checked.
 
 ## To be checked
 

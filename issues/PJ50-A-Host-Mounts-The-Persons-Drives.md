@@ -26,7 +26,7 @@ in which the tasks run, so a private drive has no place to go.
 - **Several hosts in one tresor:** a folder per host, `hosts/<name>/`, beside a `shared/` folder every host reads;
   the host's name comes from its inventory (today the project's tag). Where the client syncs the whole tresor, each
   host's secrets either sit in a tresor of their own or are encrypted to that host, so the others see only
-  ciphertext; [porelo-frontend](https://github.com/porelo-ai/porelo-frontend)'s F140 already plans age encryption with
+  ciphertext; [porelo-frontend](https://github.com/porelo-ai/porelo-frontend)'s [F140](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f140) already plans age encryption with
   the key given only at the stop.
 - **One tresor per host** stays possible as it is today, for the person who wants hosts kept apart.
 - **The person's account on the host:** whether there is one, how the person reaches it (through the VPN, by ssh),

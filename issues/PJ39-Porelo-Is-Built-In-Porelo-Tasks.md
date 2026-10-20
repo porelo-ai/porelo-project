@@ -1,6 +1,7 @@
 # PJ39 — Porelo is built in Porelo tasks
 
-**Status:** Accepted.
+**Status:** Implementing; phase 0 is done, phase 1 (the host) is under way: a rented server is brought up and down
+at one command end to end, [PJ40](README.md#pj40) and [PJ45](README.md#pj45) are open.
 
 **What must be true.** The agents that analyse, build and rework Porelo's issues do that work in Porelo tasks of the
 project `porelo`, not as sessions on the host. Each task's work is built and tested on the local forge as it would be
