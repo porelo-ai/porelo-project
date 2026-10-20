@@ -87,6 +87,8 @@ The documentation is at <https://porelo-ai.github.io>, one chapter per repositor
 repository's `doc/`. Everything `project.yml` can carry is in
 [The project file](https://porelo-ai.github.io/core/project-file/).
 
+How to change this repository is in [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
 ## Licence
 
 GNU General Public License v3.0 or later — see [LICENSE](LICENSE).

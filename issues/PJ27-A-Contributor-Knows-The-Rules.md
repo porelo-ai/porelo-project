@@ -1,6 +1,8 @@
 # PJ27 — A contributor knows the rules
 
-**Status:** Implementing. Spans every repository (each links the guide).
+**Status:** Implementing; the page, every repository's `CONTRIBUTING.md` and README link, the shared block and the
+repositories' settings are done; left: the sign-off check run by every repository's *Shared rules check* on a pull
+request.
 **Size:** L - crosses every repository: one page, a sign-off check in the shared tooling, a `CONTRIBUTING.md` in each repository, and the operator's settings.
 
 **What must be true.** Someone who wants to change Porelo finds, from any repository, one guide that
@@ -85,7 +87,8 @@ like here, or which of the ten repositories their change belongs in.
   clean.
 - Every repository has a `CONTRIBUTING.md` linking the page, and its README links it too.
 - A pull request whose commits lack a `Signed-off-by:` line is marked failing by a check, seen to fail
-  on one without it.
+  on one without it. `porelo-parent` is left out: it uses nothing of another Porelo repository, so it cannot
+  run `porelo-release`, and it takes few pull requests.
 - The shared block of `AGENTS.md` says that an agent's commit carries `Assisted-by:` and no sign-off,
   and that trailers may follow the one line.
 - Every public repository has the settings above; seen to fail: one that lacks any of them.
