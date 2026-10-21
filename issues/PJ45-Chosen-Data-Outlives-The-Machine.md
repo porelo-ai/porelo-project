@@ -40,19 +40,25 @@ Read in today's code and in Tuwunel's documentation
 - **The homeserver, by Tuwunel's own online backup.** Tuwunel keeps its database in RocksDB, in the
   podman volume `porelo-matrix-homeserver` (`TUWUNEL_DATABASE_PATH=/data`, set by
   `porelo-matrix-homeserver.service` in `porelo-message-matrix`). It makes consistent backups while it
-  runs: `database_backup_path` names a directory, `database_backups_to_keep` how many it keeps, and the
-  admin command `!admin server backup-database` makes one. A backup's files are written once and never
-  changed, so the backup directory may be copied as it stands.
+  runs: `database_backup_path` names a directory, `database_backups_to_keep` how many it keeps, and
+  `server backup-database` makes one; with `admin_signal_execute`, `SIGUSR2` runs it without the admin room
+  or any token. A backup's files are written once and never changed, so the backup directory may be copied
+  as it stands; a copied backup restores the room, every message and every token (measured on Tuwunel
+  1.9.4).
   Restore: with the homeserver stopped, its binary started once with `--restore-backup` puts the newest
   backup into `database_path`. Media are not in a backup and are left out.
 - **48 restore points are kept**, two working days of hourly backups: `database_backups_to_keep = 48`.
   The store keeps the same 48 of the backup directory; a backup shares
   its unchanged files with the ones before it, so 48 cost little more than one.
 - **`porelo-message-matrix` builds the homeserver's part**
-  ([MX24](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx24)): the unit mounts a second volume as
-  `TUWUNEL_DATABASE_BACKUP_PATH`, and the transport gains `backup <dir>`, which gives the admin command in
-  the admin room it already uses (`AdminRoom`), waits for the answer and copies the new backup into
-  `<dir>`, and `restore <dir>`, which with the unit stopped copies `<dir>` back and runs the restore once.
+  ([MX24](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx24)): the backups go to a
+  host directory of the account's (mode 700), and the transport gains `backup <dir>` and `restore <dir>`.
+  `backup` signals the homeserver rather than using the admin room, since the hourly timer runs without
+  Porelo and so without `@porelo`'s token; it copies the relay's poll positions too, taken under each
+  poll's lock, so the relay on a new host hands over only what came after its last poll. `restore` runs
+  before the first `setup`; where a database exists it restores nothing and says so, since a restore over
+  data would replace it without a word. After a restore, `setup` takes `@porelo` back on the account's own
+  homeserver, since the vault is not copied.
 - **`porelo` builds the usage records' part** ([B231](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b231),
   after [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148), which writes them), where [PJ38](README.md#pj38) writes them under the
   account's state directory: an append-only record is copied as it stands, so `porelo keep <dir>` copies
