@@ -22,8 +22,8 @@ repository's chapter is <https://porelo-ai.github.io/porelo-project/>.
 ## What a project is, and why this repository exists
 
 **A project is a named unit of work over one or more git repositories.** It is not a second name
-for one of them. Porelo's own work is ten repositories: this one, which holds the planning, and the
-nine the work happens in.
+for one of them. Porelo's own work is this repository, which holds the planning, and
+the ones the work happens in.
 
 | Name | Repository | What it is |
 |---|---|---|
@@ -35,6 +35,7 @@ nine the work happens in.
 | `claude` | [porelo-claude-code](https://github.com/porelo-ai/porelo-claude-code) | The packaged agent: Claude Code. |
 | `pi` | [porelo-pi](https://github.com/porelo-ai/porelo-pi) | The packaged agent: pi. |
 | `omp` | [porelo-omp](https://github.com/porelo-ai/porelo-omp) | The packaged agent: oh-my-pi. |
+| `codex` | [porelo-codex](https://github.com/porelo-ai/porelo-codex) | The packaged agent: Codex CLI. |
 | `buildtools` | [porelo-buildtools](https://github.com/porelo-ai/porelo-buildtools) | Build and test tooling: rented test machines, release checks and package checks. |
 | `host` | [porelo-host](https://github.com/porelo-ai/porelo-host) | The host playbook: brings a project up on a server and takes it down again, owned or rented by the hour. |
 | `site` | [porelo-ai.github.io](https://github.com/porelo-ai/porelo-ai.github.io) | The documentation site: every repository's `doc/` collected into one site. |

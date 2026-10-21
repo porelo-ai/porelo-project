@@ -53,6 +53,11 @@ repositories:
         description: "The packaged agent: oh-my-pi"
         issues: ["OM"]
 
+    codex:
+        upstream: "git@github.com:porelo-ai/porelo-codex.git"
+        description: "The packaged agent: Codex CLI"
+        issues: ["CX"]
+
     buildtools:
         upstream: "git@github.com:porelo-ai/porelo-buildtools.git"
         description: "Build and test tooling for the Porelo repositories: rented test machines, release checks and package checks"
