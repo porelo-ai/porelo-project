@@ -54,6 +54,10 @@ work for a person either.
 - **Forgejo builds it with the same workflows as the central forge**, the acceptance legs on an account of the local
   VM pool, and the task reads the verdict and the logs of failed jobs through the `forgejo` reader (`builds:` in
   `project.yml`). This replaces the agents' own test on a VM before a hand-over. The pool's size is the local limit.
+  **The packages and the pin checks run there, not in the task**: the runner sits outside every task, so an agent's
+  refused domains do not reach it, and a task needs only its repository's quick check (unit tests and the shared
+  checks). porelo-claude-code is the case that needs it: its package build and its pin check reach the host the
+  pinned CLI comes from, which agent `claude` refuses in every task.
 - **A snapshot one task built is what the next task resolves**: every Forgejo build publishes into Forgejo's
   registry, which a task reaches by a declared name on port 443. It replaces the hand-over directory and the split
   Maven repository.
