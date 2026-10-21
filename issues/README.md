@@ -113,6 +113,7 @@ written and no flags to learn.
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj54"></a>[PJ54](PJ54-The-ChatGPT-Sign-In-Is-A-Provider.md) | — | — | The ChatGPT sign-in as a provider of its own beside the API key, brokered on the host with its token refresh, for Codex CLI; the undocumented backend accepted as a risk. Waits for `porelo`. |
 | <a id="pj49"></a>[PJ49](PJ49-A-Test-Names-The-Capability-It-Needs.md) | — | — | A test that needs what a Porelo task does not give - a nested container, `/dev/kvm`, the kernel keyring, a desktop session - carries a tag naming that capability; the tags say only what the agent runs in its task before it pushes; the task is finished when the build its push started, which runs every test, is green; mending a test to run in a task comes first where it is cheap. |
 | <a id="pj47"></a>[PJ47](PJ47-A-Known-Vulnerability-Is-Read-And-Answered.md) | — | — | Every advisory against what a repository resolves is read within a week: ships or builds, reached or not, a fix or the reason; a release holds no high one against what ships unless the operator decides. | — |
 | <a id="pj34"></a>[PJ34](PJ34-Every-Change-Reaches-Main-Through-A-Pull-Request.md) | — | — | Every change reaches `main` through a pull request with green required checks, so `main` needs no bypass. |
