@@ -20,7 +20,7 @@ real credential or go unsupported.
 | Agent | Provider(s) | Tied to one? | Authentication | Redirectable endpoint? |
 |---|---|---|---|---|
 | Claude Code | Anthropic; also three cloud vendors | model yes, endpoint no | subscription token or API key | **yes**, verified |
-| Codex CLI | OpenAI | yes | account sign-in or API key | unverified |
+| Codex CLI | OpenAI | yes | ChatGPT sign-in or API key | **yes**, verified - a custom provider's base URL, for both |
 | Gemini CLI | Google | yes | account sign-in or API key | unverified |
 | GitHub Copilot CLI | GitHub Copilot | yes | forge account, device flow, or a token on standard input | **yes**, by environment variable (BYOK), which is not the subscription |
 | Grok Build | xAI | yes | subscription account | unverified |
