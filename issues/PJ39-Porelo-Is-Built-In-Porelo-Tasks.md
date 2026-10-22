@@ -39,12 +39,6 @@ work for a person either.
     The scenarios that reboot a machine run centrally only. A machine without AVX2 is a machine kind reached from
     outside, not part of the host.
   - **porelo-host is the one exception** (decided): its playbook sets up a whole machine as root, which no pool
-    account allows, so its Molecule tests make and delete a libvirt VM of their own for each run. The same workflow
-    does so on GitHub's runner, which offers nested KVM (measured), and in the Forgejo build on the host, whose runner
-    sits outside every task; a task never reaches libvirt or `/dev/kvm`. Its agent's task checks only what needs no
-    machine (lint, the tarball, the shared checks), with the Ansible tools in its own image, and reads the verdict
-    through the `forgejo` reader.
-  - **porelo-host is the one exception** (decided): its playbook sets up a whole machine as root, which no pool
     account allows, so its Molecule tests run in its Forgejo build on a throwaway VM per run, made and deleted by
     the runner, which sits outside every task and may use KVM; the host's bare metal runs it nested. Its agent's task
     checks only what needs no machine (lint, the tarball, the shared checks), with the Ansible tools in its own
@@ -75,8 +69,8 @@ work for a person either.
   [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)): the repository names it in a
   checked-in `porelo.yml` (the image and its tools only, never egress or limits), read from its default branch; a
   `.porelo.yml` that is not checked in overrides it locally; `project.yml` overrides both.
-- **Downloaded dependencies are cached across tasks**, shared and read-only, as `~/.m2/cached/` is today; what a
-  task installs stays its own (porelo [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193)).
+- **Downloaded dependencies are cached across tasks later**, shared and read-only, as `~/.m2/cached/` is today; what a
+  task installs stays its own (porelo [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193), after this sprint: until then each task downloads its own).
 - **What an agent learns goes into its repository's `AGENTS.md`, as a commit.** Nothing an agent needs is private
   any more: the machines, the accounts and the tools are named by `project.yml`, the `porelo.yml` files and the
   host's scripts, and the secrets stay in the vault behind the broker. So there is no local, uncommitted
@@ -150,30 +144,32 @@ repository it is meant for.
    Scaleway Elastic Metal, and `host up` / `host down` on it.
 2. **What Porelo must add:** porelo [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189)
    (values at the start); porelo [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)
-   (an image per repository from its `porelo.yml`); porelo
-   [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193) (a dependency cache shared across
-   tasks); porelo-claude-code
+   (an image per repository from its `porelo.yml`); porelo-claude-code
    [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30) (the agent's own memory
    switched off in the task).
 3. **The local forge, [PJ22](README.md#pj22)**, in its five parts: machine kinds in `porelo-machines`, the VM pool
    (run accounts on the two VMs),
    Forgejo with its registry running the same workflows, the `forgejo` reader, a task's build on a declared kind;
    then *new, `porelo-buildtools`:* the push mirrors to the central forge, started through Forgejo's API.
+   Every repository's workflows run there as centrally ([PJ60](README.md#pj60)), and the project `porelo` goes
+   online with Forgejo as its upstream ([PJ61](README.md#pj61)).
 4. **Talking and coordinating:** the project's room as it is; an agent in a task reached by a message as the
    channel's watcher reaches it today, if checking finds that missing; the operator's own channel for an agent's
-   question; *new, `porelo-project`:* `porelo-all` with its two workflows.
-5. **The move, one agent at a time**, the others working as today and the channel kept beside Matrix until the last
-   has moved: Sluice first (one repository, one snapshot from the registry); then Smith (snapshots from `porelo`, three
-   repositories); Matrix; IntelliJ and Frontend (other toolchains); Core last of the builders, with a way back to the
+   question; `porelo-all` with its two workflows ([PJ58](README.md#pj58)).
+5. **The move, one agent at a time** ([PJ59](README.md#pj59)), the others working as today and the channel kept beside
+   Matrix until the last has moved: Sluice first (one repository, one snapshot from the registry); then Smith
+   (snapshots from `porelo`, three repositories); AGY and Codex (an adapter repository each); Matrix; IntelliJ and Frontend (other toolchains); Core last of the builders, with a way back to the
    host, since a fault in Porelo stops its own work; the coordinator last of all.
 6. **Clearing up:** *new, every repository:* `AGENTS.md` rewritten for Matrix, Forgejo and the gate, with what
    `.AGENTS.md` still holds that the host does not replace; `.AGENTS.md` retired with the channel file, the hand-over directory and the agents' own accounts on the VMs retired, the pool's run
    accounts in their place.
-7. **Then** porelo [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148) counts what the
+7. **Then** porelo [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193) caches the downloaded dependencies across tasks, a speed-up the move does not
+   need; porelo [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148) counts what the
    tasks spend, and [PJ38](README.md#pj38) learns from it. The counting can be built earlier; it counts nothing of this work
    before phase 4.
 
 ## To be checked
 
-- Whether the broker can hold a credential for Forgejo's API, or only for model providers.
-- Whether the agent in a task is woken by a message as the channel's watcher wakes it, or something is missing.
+- Whether Matrix delivers a message for an agent in a task into its mailbox; Porelo's half is there.
+- Whether a task reaches the local Forgejo's API through the broker once porelo-host adds the host's CA to the
+  account's `ca-certificates.pem`; the forge serves only https with a certificate of that CA.

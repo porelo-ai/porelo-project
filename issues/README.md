@@ -26,7 +26,7 @@ Phase 1  The host                    ██████████████�
 Phase 2  What Porelo must add        ██████████░░░░░░░░  values at the start and an image per repository built
 Phase 3  The local forge             ██░░░░░░░░░░░░░░░░  the forge runs on the host
 Phase 4  Talking and coordinating    █░░░░░░░░░░░░░░░░░  the Matrix room exists
-Phase 5  The move                    ████████████████░░  12 of 13 repositories build green inside a task  ← here
+Phase 5  The move                    ███░░░░░░░░░░░░░░░  no agent moved yet; 13 of 13 repositories build green inside a task
 Phase 6  Clearing up                 ░░░░░░░░░░░░░░░░░░
 ```
 
@@ -34,10 +34,10 @@ Phase 6  Clearing up                 ░░░░░░░░░░░░░░�
 |---|---|
 | 0 · The groundwork | ✅ Done: the open work finished, one code style, every repository read against its skills, the rules for contributors. |
 | 1 · The host | 🔄 In progress: [PJ40](#pj40) brings a rented host up and down at one command, end to end, with the agents' tasks and the forge with its registry; the VM pool is still to come. [PJ45](#pj45), what outlives the machine, has its design: the room backed up by signal. |
-| 2 · What Porelo must add | 🔄 In progress: every repository carries its `porelo.yml`; porelo [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189) (values at the start) and [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192) (an image per repository) are built. Waiting: [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193) analyzed, porelo-claude-code [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30) accepted. |
+| 2 · What Porelo must add | 🔄 In progress: every repository carries its `porelo.yml`; porelo [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189) (values at the start) and [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192) (an image per repository) are built. Waiting: porelo-claude-code [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30) accepted. |
 | 3 · The local forge | 🔄 In progress: the forge runs on the host and checks the packages and pins in its runner; the rest of [PJ22](#pj22) waits. |
 | 4 · Talking and coordinating | 🔄 In progress: the project's Matrix room exists. |
-| 5 · The move | 🔄 In progress: every repository but the site builds green inside a Porelo task; the site waits on two porelo findings. |
+| 5 · The move | ⏳ Not begun: no agent works in a task yet; the move waits on the host, the local forge and an agent reached through Matrix. Ready before it: every repository, the site included, builds green inside a Porelo task. |
 | 6 · Clearing up | ⏳ Waiting. |
 
 ### Next: Usability
@@ -114,6 +114,10 @@ Its core is the Porelo Wizard, [PJ57](#pj57), which leads a person through every
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj61"></a>[PJ61](PJ61-The-Project-Porelo-Is-Online-With-The-Local-Forge-Upstream.md) | — | — | The project `porelo` online with the local Forgejo upstream: a task's push built there, its verdict read in the task, the central forge reached through the mirrors after approval; proved on Sluice first. |
+| <a id="pj60"></a>[PJ60](PJ60-Every-Workflow-Runs-On-The-Local-Forge-As-On-The-Central-One.md) | — | — | Every repository's `build.yml` runs green on the local Forgejo and the central forge with no edit between: kinds, registry and provider as variables; one issue (S) per repository. |
+| <a id="pj59"></a>[PJ59](PJ59-Each-Agent-Moves-Into-A-Porelo-Task.md) | — | — | Each agent moves into a Porelo task, one at a time in a fixed order, each move an issue (S) of its own that the agent works inside its new task; the channel file kept beside Matrix until the last has moved. |
+| <a id="pj58"></a>[PJ58](PJ58-The-Coordinator-Works-In-One-Repository-Of-Them-All.md) | — | — | The coordinator reads every repository in `porelo-all` on the local Forgejo and changes only `porelo-project`, split back after the operator's approval. |
 | <a id="pj57"></a>[PJ57](PJ57-A-Person-Is-Led-From-Nothing-To-Work.md) | — | — | The Porelo Wizard, in a repository of its own with an agent of its own: questions first, a plan of every step, progress kept and taken up again, hand-overs with instructions to an administrator or a forge's, and a chat beside it in the interface; the core of the usability sprint. |
 | <a id="pj55"></a>[PJ55](PJ55-Porelo-Runs-On-arm64.md) | — | — | Porelo and every native package it installs built, tested and published for arm64, so a Linux VM on Apple silicon installs them, for porelo-frontend [F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109): built and checked on GitHub's arm64 runners on every Build; for a release, a Mac rented for the whole test window tests every part, the interface included. |
 | <a id="pj54"></a>[PJ54](PJ54-The-ChatGPT-Sign-In-Is-A-Provider.md) | — | — | The ChatGPT sign-in as a provider of its own beside the API key, brokered on the host with its token refresh, for Codex CLI; the undocumented backend accepted as a risk. Waits for `porelo`. |
