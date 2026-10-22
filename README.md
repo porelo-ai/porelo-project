@@ -36,6 +36,7 @@ the ones the work happens in.
 | `pi` | [porelo-pi](https://github.com/porelo-ai/porelo-pi) | The packaged agent: pi. |
 | `omp` | [porelo-omp](https://github.com/porelo-ai/porelo-omp) | The packaged agent: oh-my-pi. |
 | `codex` | [porelo-codex](https://github.com/porelo-ai/porelo-codex) | The packaged agent: Codex CLI. |
+| `agy` | [porelo-agy](https://github.com/porelo-ai/porelo-agy) | The packaged agent: Antigravity CLI. |
 | `buildtools` | [porelo-buildtools](https://github.com/porelo-ai/porelo-buildtools) | Build and test tooling: rented test machines, release checks and package checks. |
 | `host` | [porelo-host](https://github.com/porelo-ai/porelo-host) | The host playbook: brings a project up on a server and takes it down again, owned or rented by the hour. |
 | `site` | [porelo-ai.github.io](https://github.com/porelo-ai/porelo-ai.github.io) | The documentation site: every repository's `doc/` collected into one site. |

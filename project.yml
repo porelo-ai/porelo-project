@@ -58,6 +58,11 @@ repositories:
         description: "The packaged agent: Codex CLI"
         issues: ["CX"]
 
+    agy:
+        upstream: "git@github.com:porelo-ai/porelo-agy.git"
+        description: "The packaged agent: Antigravity CLI"
+        issues: ["AG"]
+
     buildtools:
         upstream: "git@github.com:porelo-ai/porelo-buildtools.git"
         description: "Build and test tooling for the Porelo repositories: rented test machines, release checks and package checks"

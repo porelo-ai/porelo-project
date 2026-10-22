@@ -21,7 +21,7 @@ real credential or go unsupported.
 |---|---|---|---|---|
 | Claude Code | Anthropic; also three cloud vendors | model yes, endpoint no | subscription token or API key | **yes**, verified |
 | Codex CLI | OpenAI | yes | ChatGPT sign-in or API key | **yes**, verified - a custom provider's base URL, for both |
-| Gemini CLI | Google | yes | account sign-in or API key | unverified |
+| Antigravity CLI (`agy`) | Google; Gemini, Claude and gpt-oss models | yes | Google sign-in tied to an AI plan, or a Gemini API key | **yes** for the API key, measured - `GOOGLE_GEMINI_BASE_URL` with `modelProvider: gemini`; the sign-in unverified |
 | GitHub Copilot CLI | GitHub Copilot | yes | forge account, device flow, or a token on standard input | **yes**, by environment variable (BYOK), which is not the subscription |
 | Grok Build | xAI | yes | subscription account | unverified |
 | OpenCode | many, per session | **no** | key, sign-in, or variable | **documented** |
