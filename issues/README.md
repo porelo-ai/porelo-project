@@ -45,6 +45,8 @@ Phase 6  Clearing up                 ░░░░░░░░░░░░░░�
 A developer installs Porelo on their own machine and starts in a repository they already have, with no project
 written and no flags to learn.
 
+Its core is the Porelo Wizard, [PJ57](#pj57), which leads a person through every step below and those around them.
+
 **First, the easy start:**
 
 | Issue | Size | What it gives |
@@ -112,6 +114,7 @@ written and no flags to learn.
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj57"></a>[PJ57](PJ57-A-Person-Is-Led-From-Nothing-To-Work.md) | — | — | The Porelo Wizard, in a repository of its own with an agent of its own: questions first, a plan of every step, progress kept and taken up again, hand-overs with instructions to an administrator or a forge's, and a chat beside it in the interface; the core of the usability sprint. |
 | <a id="pj55"></a>[PJ55](PJ55-Porelo-Runs-On-arm64.md) | — | — | Porelo and every native package it installs built, tested and published for arm64, so a Linux VM on Apple silicon installs them, for porelo-frontend [F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109): built and checked on GitHub's arm64 runners on every Build; for a release, a Mac rented for the whole test window tests every part, the interface included. |
 | <a id="pj54"></a>[PJ54](PJ54-The-ChatGPT-Sign-In-Is-A-Provider.md) | — | — | The ChatGPT sign-in as a provider of its own beside the API key, brokered on the host with its token refresh, for Codex CLI; the undocumented backend accepted as a risk. Waits for `porelo`. |
 | <a id="pj49"></a>[PJ49](PJ49-A-Test-Names-The-Capability-It-Needs.md) | — | — | A test that needs what a Porelo task does not give - a nested container, `/dev/kvm`, the kernel keyring, a desktop session - carries a tag naming that capability; the tags say only what the agent runs in its task before it pushes; the task is finished when the build its push started, which runs every test, is green; mending a test to run in a task comes first where it is cheap. |
