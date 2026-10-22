@@ -22,22 +22,22 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 ```
 Phase 0  The groundwork              ██████████████████  done
-Phase 1  The host                    ████████████████░░  up and down at one command on a rented host  ← here
-Phase 2  What Porelo must add        █████░░░░░░░░░░░░░  a porelo.yml in every repository; its reader in Backlog
-Phase 3  The local forge             ░░░░░░░░░░░░░░░░░░
+Phase 1  The host                    █████████████████░  up and down at one command, with the agents' tasks and the forge
+Phase 2  What Porelo must add        ██████████░░░░░░░░  values at the start and an image per repository built
+Phase 3  The local forge             ██░░░░░░░░░░░░░░░░  the forge runs on the host
 Phase 4  Talking and coordinating    █░░░░░░░░░░░░░░░░░  the Matrix room exists
-Phase 5  The move                    ████████░░░░░░░░░░  every repository builds green inside a task
+Phase 5  The move                    ████████████████░░  12 of 13 repositories build green inside a task  ← here
 Phase 6  Clearing up                 ░░░░░░░░░░░░░░░░░░
 ```
 
 | Phase | Where it stands |
 |---|---|
 | 0 · The groundwork | ✅ Done: the open work finished, one code style, every repository read against its skills, the rules for contributors. |
-| 1 · The host | 🔄 In progress: [PJ40](#pj40) brings a rented host up and down at one command, end to end; the forge and the VM pool are still to come. [PJ45](#pj45), what outlives the machine, is next. |
-| 2 · What Porelo must add | 🔄 In progress: every repository carries its `porelo.yml`. Waiting: porelo [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189) and [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192), which reads it, in Backlog, [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193), [B194](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b194) and porelo-claude-code [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30) accepted. |
-| 3 · The local forge | ⏳ Waiting: [PJ22](#pj22). |
+| 1 · The host | 🔄 In progress: [PJ40](#pj40) brings a rented host up and down at one command, end to end, with the agents' tasks and the forge with its registry; the VM pool is still to come. [PJ45](#pj45), what outlives the machine, has its design: the room backed up by signal. |
+| 2 · What Porelo must add | 🔄 In progress: every repository carries its `porelo.yml`; porelo [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189) (values at the start) and [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192) (an image per repository) are built. Waiting: [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193) and [B194](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b194) analyzed, porelo-claude-code [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30) accepted. |
+| 3 · The local forge | 🔄 In progress: the forge runs on the host and checks the packages and pins in its runner; the rest of [PJ22](#pj22) waits. |
 | 4 · Talking and coordinating | 🔄 In progress: the project's Matrix room exists. |
-| 5 · The move | 🔄 In progress: every repository builds green inside a Porelo task. |
+| 5 · The move | 🔄 In progress: every repository but the site builds green inside a Porelo task; the site waits on two porelo findings. |
 | 6 · Clearing up | ⏳ Waiting. |
 
 ### Next: Usability
