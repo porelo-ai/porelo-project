@@ -102,7 +102,7 @@ local one means changing every one of these places.
 
 ## Plan
 
-- **Decided:** the local Forgejo is set up and kept outside the project; Porelo only uses it, its address and accounts in `.AGENTS.md`. The pool of VM run accounts stays `porelo-machines`' in `porelo-buildtools`.
+- **Decided:** the local Forgejo is set up and kept outside the project; Porelo only uses it, its address and accounts in the person's machine file. The pool of VM run accounts stays `porelo-machines`' in `porelo-buildtools`.
 - **Today**: `porelo-machines` (`porelo-buildtools` `hetzner/`: `Machines`, `Spec`, `Hetzner`,
   `LocalVms`, `Lease`) rents from a cloud provider and from local VMs and sweeps; callers name server
   types. The reader contract `org.fuin.porelo.Build1` is in `porelo/builds/api`; the `github` reader is

@@ -25,7 +25,7 @@ work for a person either.
   in the operator's office or is rented by the hour makes no difference to the setup. Porelo's own host is rented by
   the hour from Scaleway Elastic Metal through `porelo-machines` ([PJ40](README.md#pj40)'s *Renting the host*):
   - **It is set up from nothing by a script** and given back with nothing kept on it: the code is in the forge,
-    the person's own settings - configuration, notes, `.AGENTS.md`, small files - are on a drive the person mounts
+    the person's own settings - configuration, notes, small files - are on a drive the person mounts
     there, and the room's conversation and the usage records are copied off it as [PJ45](README.md#pj45) says.
     Work not yet mirrored to the central forge is lost with a failed machine, an accepted risk
     ([decision](../doc/decisions.md#work-not-yet-mirrored-is-lost-with-a-failed-machine)).
@@ -77,13 +77,13 @@ work for a person either.
   `.porelo.yml` that is not checked in overrides it locally; `project.yml` overrides both.
 - **Downloaded dependencies are cached across tasks**, shared and read-only, as `~/.m2/cached/` is today; what a
   task installs stays its own (porelo [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193)).
-- **`.AGENTS.md` replaces the agents' memory.** It is the one local, uncommitted file for what holds on this
-  machine and for the operator's preferences, kept on the drive the person mounts ([PJ40](README.md#pj40)); the
-  agents' own memory is switched off (porelo-claude-code
-  [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30)). It is handed into every
-  task read-only at its start (porelo [B194](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b194));
-  an agent that wants it changed leaves the changed file as a proposal, and Porelo writes it back to that drive once
-  the operator approved it - nothing a task wrote reaches the next task unseen.
+- **What an agent learns goes into its repository's `AGENTS.md`, as a commit.** Nothing an agent needs is private
+  any more: the machines, the accounts and the tools are named by `project.yml`, the `porelo.yml` files and the
+  host's scripts, and the secrets stay in the vault behind the broker. So there is no local, uncommitted
+  `.AGENTS.md`: what holds on the host and the operator's preferences are committed, built by Forgejo and approved
+  with the sprint's other work, and nothing a task wrote reaches the next task unseen. The agents' own memory is
+  switched off (porelo-claude-code
+  [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30)).
 - **The agents talk over Matrix** instead of the channel file on the host: the project's room in which its tasks
   already talk, through the Matrix transport and the message filter. Nothing new is built for the room; the
   homeserver runs on the host. An agent that needs something of the operator asks in the operator's own channel, not
@@ -152,8 +152,7 @@ repository it is meant for.
    (values at the start); porelo [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)
    (an image per repository from its `porelo.yml`); porelo
    [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193) (a dependency cache shared across
-   tasks); porelo [B194](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b194) (a file handed in
-   read-only at every start of an agent's task, and its changed copy written after approval); porelo-claude-code
+   tasks); porelo-claude-code
    [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30) (the agent's own memory
    switched off in the task).
 3. **The local forge, [PJ22](README.md#pj22)**, in its five parts: machine kinds in `porelo-machines`, the VM pool
@@ -167,8 +166,8 @@ repository it is meant for.
    has moved: Sluice first (one repository, one snapshot from the registry); then Smith (snapshots from `porelo`, three
    repositories); Matrix; IntelliJ and Frontend (other toolchains); Core last of the builders, with a way back to the
    host, since a fault in Porelo stops its own work; the coordinator last of all.
-6. **Clearing up:** *new, every repository:* `AGENTS.md` and `.AGENTS.md` rewritten for Matrix, Forgejo and the gate;
-   the channel file, the hand-over directory and the agents' own accounts on the VMs retired, the pool's run
+6. **Clearing up:** *new, every repository:* `AGENTS.md` rewritten for Matrix, Forgejo and the gate, with what
+   `.AGENTS.md` still holds that the host does not replace; `.AGENTS.md` retired with the channel file, the hand-over directory and the agents' own accounts on the VMs retired, the pool's run
    accounts in their place.
 7. **Then** porelo [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148) counts what the
    tasks spend, and [PJ38](README.md#pj38) learns from it. The counting can be built earlier; it counts nothing of this work

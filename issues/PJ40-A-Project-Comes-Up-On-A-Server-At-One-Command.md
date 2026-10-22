@@ -69,8 +69,7 @@ is where the command is tried and refined before anyone else relies on it.
     [Tresorit CLI unter Linux verwenden](https://support.tresorit.com/hc/de/articles/360009330614-Tresorit-CLI-unter-Linux-verwenden)),
     reached with a credential that opens that one folder and nothing else of the person's, deposited like the
     other keys and for a time on a rented machine. It holds the person's own small files, read and changed on
-    the host as anywhere else: configuration, notes, the agents' `.AGENTS.md` (handed into each task read-only by
-    porelo [B194](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b194)), the VPN's key, the
+    the host as anywhere else: configuration, notes, the VPN's key, the
     person's machine file, and the keys to the project's store. Nothing runs on it: a database or a repository
     on a mounted cloud drive is broken by its delayed, piecewise sync.
   - **The project's store** holds what [PJ45](README.md#pj45) keeps: the room, the usage records, the Maven
