@@ -55,6 +55,11 @@ A person may hold several at once: two Claude Code subscriptions, one ChatGPT, o
   key endpoint, response headers, a forge's billing API. Where nothing can be read, Porelo's own count of what its tasks
   spent (porelo [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148)) stands in, marked as
   estimated. The adapter keeps no credential of its own: it takes the vault's per call, as build readers do.
+- **In this order** (decided): the accounts used daily first - Claude Code, Codex and Antigravity - then OpenRouter
+  and API keys, then a forge's AI credits and a company's budget per developer.
+- **A forge's AI credits are an account like any other** (decided), with the forge as its provider and credits as
+  how it is paid, read by a provider adapter for that forge with the vault's credential; the forge's build adapter
+  ([PJ62](README.md#pj62)) keeps to builds and reviews.
 - **One view, on the command line and in the interface,** drawn from the daemon's answer as `porelo providers` is
   today, so the interface reads what the command line reads: every account, its meters, what is left and when it comes
   back, and which running tasks spend on it. A meter below a threshold the person sets is shown as warned.
@@ -69,9 +74,3 @@ A person may hold several at once: two Claude Code subscriptions, one ChatGPT, o
 - **`porelo-frontend`:** one view of every configured account, each with its provider's own kind of meters drawn as
   that kind reads best - a window's share as a bar with its reset time, a quota or credits as used of allowed, money
   as spent of its cap - estimated ones marked as such, and the warned ones first.
-
-## Open questions
-
-- Which accounts to read first. Proposed: Claude Code, Codex and Antigravity, as used daily; then OpenRouter and an
-  API key; then GitHub's AI credits and a company's budget.
-- Whether a forge's AI credits belong here, or with the forge's own adapter.

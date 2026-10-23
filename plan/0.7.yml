@@ -1,0 +1,53 @@
+# The plan of release 0.7. Issue states are not written here: they are read from each repository's index.
+release: "0.7"
+goal: "A developer starts in a repository they already have, led by the Porelo Wizard"
+issue: porelo-project#PJ57
+sprints:
+  - id: "1"
+    title: "Starting in one's own repository"
+    goal: "A developer starts in a repository they already have, with no project written and no flags to learn."
+    functions:
+      - title: "Work without a project, with plain refusals"
+        test: "A task starts in a checkout in `default`; a followed project naming the repository is offered to take it; a repository with no commit, an unreadable upstream or a failed fetch is named as what it is, with the next step."
+        issues: [porelo-project#PJ14, porelo#B229, porelo#B33, porelo-frontend#F118]
+      - title: "The agent already on the machine is taken"
+        test: "Without `--agent` and `--provider` the task starts with the Claude Code signed in there and says what it found and where; the interface shows the same choice."
+        issues: [porelo-project#PJ53, porelo#B225, porelo-claude-code#CC36, porelo#B224, porelo-frontend#F143]
+      - title: "Keys and providers without stumbling"
+        test: "A key pasted at `vault put` is read whole; an agent given a provider it does not know is refused before the start."
+        issues: [porelo#B228, porelo#P09]
+  - id: "2"
+    title: "A project proposed from the checkout"
+    goal: "Whoever needs more than the default image or `default` gets drafts from what the checkout already says."
+    functions:
+      - title: "`porelo project init` proposes tools and rules"
+        test: "For a Maven repository, a `.porelo.yml` and where needed a `project.yml` draft, each value with its source; a project kept in a local repository is read again at `refresh`."
+        issues: [porelo-project#PJ52, porelo#B220, porelo#B221, porelo#B227]
+        notes: ["porelo-ecosystems, a new repository and agent, Maven first"]
+      - title: "The drafts shown before the first task"
+        test: "At the first start in `default`, the interface shows what the machine proposes, to take or leave."
+        issues: [porelo-frontend#F142]
+      - title: "A company's private package repository, with no credential in the task"
+        test: "A task builds against an authenticated Nexus or Artifactory; `settings.xml` is written at the start and the credential stays in the vault."
+        issues: [porelo#B222, porelo#B219]
+  - id: "3"
+    title: "The Porelo Wizard leads"
+    goal: "One way from an empty machine to the first reviewed work; the steps of sprints 1 and 2 become steps of its catalogue."
+    functions:
+      - title: "Questions, a plan, and taken up again"
+        test: "The questions first, the whole plan shown before anything runs, and after a pause it goes on where the person was; a step done elsewhere counts as done."
+        issues: [porelo-project#PJ57]
+        notes: ["porelo-wizard, a new repository", "the catalogue of steps", "the checks porelo still lacks"]
+      - title: "A step for someone else handed over"
+        test: "A step for an administrator comes as instructions and as a file to run; the wizard waits for its check."
+        notes: ["hand-overs in the wizard"]
+  - id: "4"
+    title: "A chat beside the wizard, and a run with nobody there"
+    goal: "Questions about the current step, and the same plan for many machines."
+    functions:
+      - title: "A chat answers questions about the current step"
+        test: "Beside the wizard, with the Claude Code already signed in on the machine; it never sees a secret and runs nothing unconfirmed."
+        notes: ["the chat on flutter_ai_toolkit", "the chat's Claude Code provider"]
+      - title: "The same plan from a file of answers"
+        test: "The wizard runs with nobody there for many machines; a step that needs a person stops it and says so."
+        notes: ["a run from a file of answers"]

@@ -16,7 +16,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 ## Sprints
 
-### Current: Porelo is built in Porelo tasks
+### Current: release 0.6, Porelo is built in Porelo tasks
 
 [PJ39](#pj39): the agents move their work into Porelo tasks on one host, in small sprints, each ending in two or
 three functions the operator tests by hand. A bar counts the functions tested, not the issues built.
@@ -48,14 +48,14 @@ Sprint 9  Clearing up and counting             ░░░░░░░░░░░
 | 8 · The move, last wave | Core with a way back; the coordinator in `porelo-all` ([PJ58](#pj58)). |
 | 9 · Clearing up and counting | No channel file any more; the room and the records outliving the host ([PJ45](#pj45)); the tokens counted per task. |
 
-### Next: Usability
+### Next: release 0.7, usability
 
 A developer installs Porelo on their own machine and starts in a repository they already have, with no project
 written and no flags to learn. Its core is the Porelo Wizard, [PJ57](#pj57), which comes last and leads a person
 through the steps the sprints before it build. An image per repository, porelo
 [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192), comes with sprint 1.
 
-**Sprint 10 · Starting in one's own repository**
+**Sprint 1 of 0.7 · Starting in one's own repository**
 
 - *Work without a project, with plain refusals:* a task starts in a checkout in `default`; a followed project naming
   the repository is offered to take it; a repository with no commit, an unreadable upstream or a failed fetch is named
@@ -74,7 +74,7 @@ through the steps the sprints before it build. An image per repository, porelo
   [B228](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b228),
   [P09](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p09)).
 
-**Sprint 11 · A project proposed from the checkout** ([PJ52](#pj52))
+**Sprint 2 of 0.7 · A project proposed from the checkout** ([PJ52](#pj52))
 
 - *`porelo project init` proposes tools and rules:* for a Maven repository, a `.porelo.yml` and where needed a
   `project.yml` draft, each value with its source; a project kept in a local repository is read again at `refresh`
@@ -89,14 +89,14 @@ through the steps the sprints before it build. An image per repository, porelo
   [B222](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b222),
   [B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219)).
 
-**Sprint 12 · The Porelo Wizard leads** ([PJ57](#pj57); *new, `porelo-wizard`*)
+**Sprint 3 of 0.7 · The Porelo Wizard leads** ([PJ57](#pj57); *new, `porelo-wizard`*)
 
 - *Questions, a plan, and taken up again:* the questions first, the whole plan shown before anything runs, and after a
   pause it goes on where the person was; a step done elsewhere counts as done.
 - *A step for someone else handed over:* a step for an administrator comes as instructions and as a file to run; the
   wizard waits for its check.
 
-**Sprint 13 · A chat beside the wizard, and a run with nobody there** ([PJ57](#pj57))
+**Sprint 4 of 0.7 · A chat beside the wizard, and a run with nobody there** ([PJ57](#pj57))
 
 - *A chat answers questions about the current step:* with the Claude Code already signed in on the machine; it never
   sees a secret and runs nothing unconfirmed.

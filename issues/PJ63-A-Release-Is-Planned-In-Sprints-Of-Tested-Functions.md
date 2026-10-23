@@ -55,7 +55,8 @@ Read in `porelo-buildtools` `release` at `c296fdd`, and in this repository.
   - a Finished issue in a function not yet tested;
   - a function with no issue, no note and no `tested` date.
 - **In this repository**, by the coordinator, once the command is published:
-  - `plan/0.6.yml` with [PJ39](README.md#pj39)'s nine sprints and the usability sprints as they stand;
+  - `plan/0.6.yml` with [PJ39](README.md#pj39)'s sprints, and `plan/0.7.yml` with the usability sprints; sprints are
+    numbered within their release;
   - the page `plan/0.6.md` rendered from it;
   - the index's sprint section shortened to a pointer to the page;
   - `plan check` run by hand before each push, as the project's other checks are. This project has no workflow of
