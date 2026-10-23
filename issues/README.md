@@ -160,6 +160,7 @@ through the steps the sprints before it build. An image per repository, porelo
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj63"></a>[PJ63](PJ63-A-Release-Is-Planned-In-Sprints-Of-Tested-Functions.md) | — | — | A release planned once in a checked-in file - its sprints, each sprint's functions the operator tests and the issues serving them - and a page made from it with every issue's state, kept current by the coordinator and checked against the indexes. |
 | <a id="pj56"></a>[PJ56](PJ56-A-Release-Is-Tested-Together-On-One-Host.md) | — | — | Every part's release candidate installed and tested together on one host rented for the release's test window, a VM per operating system and an account per part, the arm64 Mac of [PJ55](#pj55) beside it; the per-push legs stay. |
 | <a id="pj51"></a>[PJ51](PJ51-The-Persons-Secrets-Kept-Once-In-A-File-They-Can-Open.md) | — | — | The secrets a host's setup needs, kept once in a KDBX 4 file on the person's drive that KeePassXC opens, unlocked on the desktop only and given to the host on standard input; a wizard in the interface asks how the person works. |
 | <a id="pj50"></a>[PJ50](PJ50-A-Host-Mounts-The-Persons-Drives.md) | — | — | A host takes its setup from a tresor of its own or its folder in a shared one, as the person chooses, and mounts the person's private drives for the person's own use; one mechanism for Tresorit and OneDrive, a list of drives in the machine file, and a person's account on the host to be weighed. |
