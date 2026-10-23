@@ -102,6 +102,17 @@ through the steps the sprints before it build. An image per repository, porelo
   sees a secret and runs nothing unconfirmed.
 - *The same plan from a file of answers:* for many machines; a step that needs a person stops it and says so.
 
+### Later: release 0.8, steering the work
+
+The agents' work chosen, checked and paid for by rule; its plan is `plan/0.8.yml`.
+
+| Sprint | The functions tested at its end |
+|---|---|
+| 1 · Adapters say what they offer | An adapter's services listed and a lacking one refused; a deprecated contract still taken with a warning ([PJ66](#pj66)). |
+| 2 · A task's agent and effort by its work | The choice shown with where it came from; the operator's rule for a time ([PJ64](#pj64)). |
+| 3 · A change checked before it leaves the machine | Rounds of check and fix at the gate; the person approves with every round in view ([PJ67](#pj67)). |
+| 4 · What is left of each account | The daily accounts read; the accounts in the interface, the low ones first ([PJ65](#pj65)). |
+
 ## Review
 
 | # | Size | Blocked by | What it covers |
