@@ -42,3 +42,13 @@ sprints:
       - title: "The accounts in the interface, the low ones first"
         test: "The interface shows every configured account as its kind reads best - a window's share as a bar with its reset, a quota as used of allowed - with a meter below its threshold warned and shown first."
         notes: ["the accounts' view in porelo-frontend (from PJ65)"]
+  - id: "5"
+    title: "A machine nobody sits at tells its person"
+    goal: "A machine working alone says what needs its person - an expiring credential, a locked vault, a stopped service, a machine running short - wherever the person is."
+    functions:
+      - title: "An expiring token told ahead"
+        test: "A forge token set to expire soon on a host makes one message to the person, in the way they chose, naming the machine, the token, when it expires and how to renew it; it is not repeated until it changes."
+        issues: [porelo-project#PJ70]
+      - title: "A stopped service told with its cause"
+        test: "The room's homeserver stopped on a host makes one message naming the machine, the service, since when and its last error line; when it runs again, the person is told it is resolved."
+        notes: ["the watcher in porelo, the person's ways of being told (from PJ70)"]

@@ -51,4 +51,4 @@ keys (*Administration* at GitHub).
 
 - A project's repositories written as `https` URLs, since an `ssh` URL needs a key and never takes a token
   (porelo serves an `https` remote from `git.token.<host>` today); `porelo credentials deploy-key` goes with the keys.
-- The forge's own expiry of a token, and how a machine says that it needs a new one.
+- The forge's own expiry of a token; a machine telling its person that it needs a new one is [PJ70](README.md#pj70).
