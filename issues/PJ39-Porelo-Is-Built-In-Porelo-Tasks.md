@@ -145,8 +145,7 @@ from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](READ
      [HO02](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho02),
      [HO05](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho05),
      [HO06](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho06),
-     [HO09](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho09),
-     [HO10](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho10)).
+     [HO09](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho09)).
    - *Claude works in a task, signed in with the operator's subscription:* signed in by hand at the stop
      `agent-login:claude`, the task holds only a short-lived token and no memory of the agent's own, and Sluice works
      a small issue in it (porelo-claude-code
@@ -159,17 +158,21 @@ from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](READ
      [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189),
      [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)).
 2. **The host from the interface, the agents in the room.**
-   - *The host up and down from the interface:* *Put on a server* shows the steps, asks at the stop for the drive's
-     login and the vault's passphrase, signs the agent in, and writes the VPN key and the machine file into the
-     person's drive (porelo-frontend
-     [F135](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f135),
+   - *The host up and down from the interface, then a task started there:* *Put on a server* shows the steps and
+     asks at the stop for the drive's login and the vault's passphrase; it writes the machine file (project and keys
+     only) and the host's VPN key into the person's drive and offers the person's tunnel as a file. The machine
+     installs every agent and starts no task (decided): the operator then starts a task on the host as on any machine,
+     and its agent is signed in on the way. A failed step's line names the command's own words (porelo
+     [B258](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b258); porelo-host
+     [HO10](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho10), [HO18](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho18), [HO19](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho19);
+     porelo-frontend [F135](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f135),
      [F140](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f140),
      [F141](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f141)).
    - *Two agents talk in the room, and a message wakes the resting one:* two tasks on the host write to each other
      in the project's room, the operator reads along through the VPN, a message naming a resting agent wakes it, and
      a question for the operator comes in the operator's own channel (porelo-host
      [HO11](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho11); porelo-message-matrix
-     [MX12](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx12)).
+     [MX12](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx12), [MX31](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx31), [MX32](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx32), [MX33](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx33)).
 3. **The build servers read.**
    - *A build server asked from the command line:* `porelo build status --project=<project>
      --repository=<repository> --branch=<branch>` (or `--commit=<sha>`, `--logs=none|failure|all`, `--json`) shows
