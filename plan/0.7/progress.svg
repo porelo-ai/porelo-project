@@ -1,0 +1,151 @@
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1098 200" role="img" aria-label="Sprint progress for release 0.7">
+<title>Sprint progress for release 0.7</title>
+<style>
+text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
+@media (prefers-color-scheme:dark){text{fill:#f0efec}.legend{fill:#c3c2b7}.c-surface{fill:#1a1a19}.c-grid{fill:#383835}.c-open{fill:#5e5d58}.c-review{fill:#3987e5}.c-dec{fill:#d95926}.c-new{fill:#1a1a19}}
+</style>
+<rect width="100%" height="100%" fill="#fcfcfb" class="c-surface"/>
+
+
+<g transform="translate(0 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#0ca30c" class="c-done" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Finished / Rejected</text>
+</g>
+
+
+<g transform="translate(320 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#2a78d6" class="c-review" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Review</text>
+</g>
+
+
+<g transform="translate(640 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#fab219" class="c-impl" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Implementing / Rework</text>
+</g>
+
+
+<g transform="translate(0 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#b9b8b2" class="c-open" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Accepted / Estimated / Analyzed</text>
+</g>
+
+
+<g transform="translate(320 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#eb6834" class="c-dec" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Idea / Backlog</text>
+</g>
+
+
+<g transform="translate(640 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#ffffff" class="c-new" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Not filed yet / Missing</text>
+</g>
+
+
+
+<g transform="translate(0 70)">
+<text x="0" y="17">1. Starting in one's own repository</text>
+<desc>Review 1, Implementing 1, Accepted 1, Estimated 1, Analyzed 7. PJ14: porelo-project#PJ14 · Implementing · M · Work starts without a project; B229: porelo#B229 · Analyzed · S · A Follow Of A Repository Without A Commit Says So; B33: porelo#B33 · Analyzed · S · A Task's Own Fetches; F118: porelo-frontend#F118 · Review · — · An Upstream That Cannot Be Read Said Before A Start; PJ53: porelo-project#PJ53 · Analyzed · XL · The agent already on the machine is the default; B225: porelo#B225 · Analyzed · L · The Agent Found On The Machine; CC36: porelo-claude-code#CC36 · Analyzed · S · Report What Claude Code Finds Of Itself On The Host; B224: porelo#B224 · Analyzed · M · An Agent Protocol That Only Grows; F143: porelo-frontend#F143 · Accepted · — · The Agent The Machine Found Is The Default; B228: porelo#B228 · Analyzed · S · A Key Pasted At The Prompt Is Read Whole; P09: porelo#P09 · Estimated · M · A Native Agent And A Provider It Does Not Know; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="36.36363636363637" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
+
+<rect x="36.36363636363637" width="36.36363636363637" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+
+<rect x="72.72727272727273" width="327.27272727272725" height="20" fill="#b9b8b2" class="c-open" stroke="#fcfcfb"><title>Accepted / Estimated / Analyzed: 9</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 11 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>Work without a project, with plain refusals: Not tested</title>⚪</text>
+
+
+<text x="1022" y="17"><title>The agent already on the machine is taken: Not tested</title>⚪</text>
+
+
+<text x="1046" y="17"><title>Keys and providers without stumbling: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 100)">
+<text x="0" y="17">2. A project proposed from the checkout</text>
+<desc>Estimated 2, Analyzed 5, Not filed yet 1. PJ52: porelo-project#PJ52 · Estimated · XL · A repository's build tools are recognized and a project proposed; B220: porelo#B220 · Analyzed · M · Build-Tool Plugins Found At Run Time; B221: porelo#B221 · Analyzed · L · A Project Proposed From A Checkout; B227: porelo#B227 · Analyzed · S · A Project Followed From A Path Is Refreshed; porelo-ecosystems, a new repository and agent, Maven first: Not filed yet; F142: porelo-frontend#F142 · Analyzed · M · The Drafts Offered Before The First Task In Default; B222: porelo#B222 · Analyzed · M · A Task's Tool Settings Written At Its Start; B219: porelo#B219 · Estimated · L · A Private Package Repository Through The Broker; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="350.0" height="20" fill="#b9b8b2" class="c-open" stroke="#fcfcfb"><title>Accepted / Estimated / Analyzed: 7</title></rect>
+
+<rect x="350.0" width="50.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 8 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>`porelo project init` proposes tools and rules: Not tested</title>⚪</text>
+
+
+<text x="1022" y="17"><title>The drafts shown before the first task: Not tested</title>⚪</text>
+
+
+<text x="1046" y="17"><title>A company's private package repository, with no credential in the task: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 130)">
+<text x="0" y="17">3. The Porelo Wizard leads</text>
+<desc>Accepted 1, Not filed yet 4. PJ57: porelo-project#PJ57 · Accepted · — · A person is led from nothing to work; porelo-wizard, a new repository: Not filed yet; the catalogue of steps: Not filed yet; the checks porelo still lacks: Not filed yet; hand-overs in the wizard: Not filed yet; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="80.0" height="20" fill="#b9b8b2" class="c-open" stroke="#fcfcfb"><title>Accepted / Estimated / Analyzed: 1</title></rect>
+
+<rect x="80.0" width="320.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 4</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 5 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>Questions, a plan, and taken up again: Not tested</title>⚪</text>
+
+
+<text x="1022" y="17"><title>A step for someone else handed over: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 160)">
+<text x="0" y="17">4. A chat beside the wizard, and a run with nobody there</text>
+<desc>Not filed yet 3. the chat on flutter_ai_toolkit: Not filed yet; the chat's Claude Code provider: Not filed yet; a run from a file of answers: Not filed yet; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 3</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>A chat answers questions about the current step: Not tested</title>⚪</text>
+
+
+<text x="1022" y="17"><title>The same plan from a file of answers: Not tested</title>⚪</text>
+
+</g>
+
+</svg>

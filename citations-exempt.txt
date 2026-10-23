@@ -2,6 +2,3 @@
 plan/0.6.yml
 plan/0.7.yml
 plan/0.8.yml
-plan/0.6.md
-plan/0.7.md
-plan/0.8.md
