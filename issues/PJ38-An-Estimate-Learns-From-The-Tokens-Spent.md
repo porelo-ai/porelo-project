@@ -35,5 +35,8 @@ finished issue can correct the next estimate.
   phase and the cost beside them, since the file itself is deleted then.
 - **The statistic:** per size and per repository, what build and rework of the finished issues cost - the middle and
   the spread - and how often a size was exceeded; updated with every issue set Finished.
-- **At estimating:** an issue's size is given with the finished issues of the same size beside it and what they cost,
-  so a size that does not fit stands out before the operator sets Estimated.
+- **At estimating, by likeness:** an issue's size is given with the finished issue most like it in kind of work -
+  the same sort of change, in the same part, with the same kind of test - and what that one cost in time and tokens;
+  the size follows from that measured neighbour, not from the size alone. The finished issues of the size it lands on
+  stand beside it, so a size that does not fit stands out before the operator sets Estimated. Each finished issue
+  therefore keeps a one-line description of its kind of work.
