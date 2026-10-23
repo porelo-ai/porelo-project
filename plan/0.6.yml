@@ -121,3 +121,6 @@ sprints:
       - title: "The tokens counted per task, the dependencies shared"
         test: "Each issue shows what its tasks spent; a second Maven build downloads nothing again."
         issues: [porelo#B148, porelo-project#PJ38, porelo#B193]
+      - title: "The release plan page drawn as the local one"
+        test: "The HTML page made from the plan shows each sprint's bar by its issues' states and a mark per function, as the local page does, and every text in it is escaped."
+        notes: ["jte templates for the plan page in porelo-buildtools"]
