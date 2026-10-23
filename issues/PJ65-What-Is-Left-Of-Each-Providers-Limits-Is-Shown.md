@@ -3,7 +3,7 @@
 **Status:** Idea.
 
 **What must be true.** A person sees, for every account their agents spend on, what is left of its limits and when it
-comes back - a subscription's share of its window, an API key's tokens or money, a forge's AI credits, a company's
+comes back - a subscription's share of its window, an API key's tokens or money, a provider's AI credits, a company's
 budget for each developer - in one view, read from the provider where it can be read and marked as estimated where it
 cannot. Several accounts of the same kind are told apart, such as two Claude Code subscriptions.
 
@@ -19,7 +19,7 @@ The billing models differ widely:
 - **A subscription** shows a share of a time window - five hours, a week - with the time it resets, and sometimes
   several windows at once.
 - **An API key** has tokens or money per period, and short rate limits per minute.
-- **A forge** such as GitHub counts AI credits of its own.
+- **A provider that bills in credits**, such as GitHub for its models, counts AI credits of its own.
 - **A company** often gives each developer a budget of tokens or credits.
 
 A person may hold several at once: two Claude Code subscriptions, one ChatGPT, one Google, and a key for OpenRouter.
@@ -45,21 +45,23 @@ A person may hold several at once: two Claude Code subscriptions, one ChatGPT, o
 - **An account has meters, each of one kind:**
   - a share of a window, in %, with the window's length and its reset time;
   - a quota of tokens, used and allowed, per period;
-  - credits, such as a forge's AI credits, used and allowed, per period;
+  - credits, such as GitHub's AI credits, used and allowed, per period;
   - money, spent and capped, per period;
   - a rate, per minute, which is short-lived and shown only while it limits.
 
   Each meter says when it was read and where from: read from the provider, or counted by Porelo and therefore
   estimated.
 - **Each provider's adapter reads its meters** where the provider tells them: a CLI's usage command, an API's usage or
-  key endpoint, response headers, a forge's billing API. Where nothing can be read, Porelo's own count of what its tasks
+  key endpoint, response headers, a billing API. Where nothing can be read, Porelo's own count of what its tasks
   spent (porelo [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148)) stands in, marked as
   estimated. The adapter keeps no credential of its own: it takes the vault's per call, as build readers do.
 - **In this order** (decided): the accounts used daily first - Claude Code, Codex and Antigravity - then OpenRouter
-  and API keys, then a forge's AI credits and a company's budget per developer.
-- **A forge's AI credits are an account like any other** (decided), with the forge as its provider and credits as
-  how it is paid, read by a provider adapter for that forge with the vault's credential; the forge's build adapter
-  ([PJ62](README.md#pj62)) keeps to builds and reviews.
+  and API keys, then a provider's AI credits and a company's budget per developer.
+- **A service is told apart from who offers it** (decided): a model provider, a forge, a build server, a registry are
+  each a service one signs in to with rights of its own, and one company may offer several. GitHub's AI credits are an
+  account of GitHub as a model provider, with credits as how it is paid, read by that provider's adapter with its own
+  credential from the vault; GitHub as a forge ([PJ62](README.md#pj62)) and as a build server are other services with
+  other credentials, as Bitbucket is a forge and Jenkins a build server apart from it.
 - **One view, on the command line and in the interface,** drawn from the daemon's answer as `porelo providers` is
   today, so the interface reads what the command line reads: every account, its meters, what is left and when it comes
   back, and which running tasks spend on it. A meter below a threshold the person sets is shown as warned.
