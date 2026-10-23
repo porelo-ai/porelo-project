@@ -142,7 +142,7 @@ through the steps the sprints before it build. An image per repository, porelo
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj62"></a>[PJ62](PJ62-The-Forge-Adapters-Live-In-One-Repository.md) | — | — | The forge adapters in one repository, `porelo-forge`, renamed from `porelo-build-github`: its `github` adapter, a `forgejo` adapter beside it, one contract suite both pass, and `porelo build status` to ask any of them. |
+| <a id="pj62"></a>[PJ62](PJ62-The-Forge-Adapters-Live-In-One-Repository.md) | — | — | The forge adapters in one repository, `porelo-adapters`, renamed from `porelo-build-github`: its `github` adapter, a `forgejo` adapter beside it, one contract suite both pass, and `porelo build status` to ask any of them. |
 | <a id="pj61"></a>[PJ61](PJ61-The-Project-Porelo-Is-Online-With-The-Local-Forge-Upstream.md) | — | — | The project `porelo` online with the local Forgejo upstream: a task's push built there, its verdict read in the task, the central forge reached through the mirrors after approval; proved on Sluice first. |
 | <a id="pj60"></a>[PJ60](PJ60-Every-Workflow-Runs-On-The-Local-Forge-As-On-The-Central-One.md) | — | — | Every repository's `build.yml` runs green on the local Forgejo and the central forge with no edit between: kinds, registry and provider as variables; one issue (S) per repository. |
 | <a id="pj59"></a>[PJ59](PJ59-Each-Agent-Moves-Into-A-Porelo-Task.md) | — | — | Each agent moves into a Porelo task, one at a time in a fixed order, each move an issue (S) of its own that the agent works inside its new task; the channel file kept beside Matrix until the last has moved. |

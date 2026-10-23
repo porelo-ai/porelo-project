@@ -45,7 +45,7 @@ sprints:
         issues: [porelo#B256]
       - title: "The same command reads Forgejo"
         test: "Against a Forgejo run in podman, the same answer in the same shape."
-        notes: ["the forgejo adapter in porelo-forge"]
+        notes: ["the forgejo adapter in porelo-adapters"]
       - title: "Both adapters pass one contract suite"
         test: "Every case from recorded answers; an adapter broken on purpose fails it."
         issues: [porelo-project#PJ62, porelo#B253]

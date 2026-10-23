@@ -114,7 +114,7 @@ local one means changing every one of these places.
 - **3. The local Forgejo**: runner and registry; every repository's workflows take registry addresses
   and the machine provider as variables of the setup. Seen to fail first: a `build.yml` that runs only
   centrally.
-- **4. The `forgejo` reader** and one contract suite, run against both readers: in `porelo-forge`
+- **4. The `forgejo` reader** and one contract suite, run against both readers: in `porelo-adapters`
   ([PJ62](README.md#pj62)), with `porelo build status` to ask them.
 - **5. A task's build** on a declared kind, read through `Task.builds` (`porelo`).
 

@@ -2,10 +2,10 @@
 
 **Status:** Accepted.
 
-**What must be true.** Every adapter Porelo uses to read a forge's builds, and later to act on them, is built in one
-repository, `porelo-forge`, beside one contract suite that each of them passes; `porelo-build-github` is renamed
-`porelo-forge`, a `forgejo` adapter joins its `github` one, and a person asks any of them through one command of
-Porelo's.
+**What must be true.** Every adapter Porelo uses to read a build server's builds or a forge's reviews, and later to
+act on them, is built in one repository, `porelo-adapters` (named after [PJ66](README.md#pj66)), beside one contract
+suite that each of them passes; `porelo-build-github` is renamed `porelo-adapters`, a `forgejo` adapter joins its
+`github` one, and a person asks any of them through one command of Porelo's.
 
 From [PJ39](README.md#pj39), sprint 3, and [PJ22](README.md#pj22) part 4: "The `forgejo` reader and one contract suite
 in the API's kit, run against both readers."
@@ -20,12 +20,12 @@ not.
 
 ## The shape proposed
 
-- **New coordinates:** the parent `org.fuin.porelo:porelo-forge`; the modules `porelo-forge-contract` (the suite,
-  published so an adapter outside the project can run it), `porelo-forge-github` and `porelo-forge-forgejo`. Each
+- **New coordinates:** the parent `org.fuin.porelo:porelo-adapters`; the modules `porelo-build-contract` (the suite,
+  published so an adapter outside the project can run it), `porelo-adapter-github` and `porelo-adapter-forgejo`. Each
   adapter is packaged as `.deb` and `.rpm` of the module's name and installed where Porelo looks today,
-  `/usr/libexec/porelo/builds/<forge>`, so no project changes its file; `porelo-forge-github` replaces the package
+  `/usr/libexec/porelo/builds/<forge>`, so no project changes its file; `porelo-adapter-github` replaces the package
   `porelo-build-github` (Debian `Replaces`/`Conflicts`, RPM `Obsoletes`).
-- **A rename, not a move:** the operator renames the repository `porelo-build-github` to `porelo-forge` on the central
+- **A rename, not a move:** the operator renames the repository `porelo-build-github` to `porelo-adapters` on the central
   forge when sprint 3 begins, so its history, issues, settings, secrets and variables and the organisation's grants
   stay as they are, and the central forge sends the old address on to the new one. Every place in the project that
   names the old repository - the project file's upstream, the documentation, the site, the local clones' remotes - is
@@ -51,7 +51,7 @@ not.
 - `porelo build status` against GitHub names the commit, the verdict, the jobs and a failed job's log, for one red
   and one green Build; against a Forgejo in podman it answers in the same shape.
 - Both adapters pass the same suite; an adapter changed to answer one case wrongly fails it.
-- After installing `porelo-forge-github` in place of `porelo-build-github`, an `online` task's verdicts arrive as
+- After installing `porelo-adapter-github` in place of `porelo-build-github`, an `online` task's verdicts arrive as
   before.
 
 ## To be checked

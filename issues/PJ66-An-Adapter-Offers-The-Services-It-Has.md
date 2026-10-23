@@ -45,16 +45,12 @@ Three things are mixed up:
   own rights.
 - **Adapters are found in one place,** with a directory per adapter rather than per service, and an adapter's package
   installs it there.
-- **Repositories follow adapters, not services:** the repository [PJ62](README.md#pj62) makes would be named for the
-  adapters it holds (github, forgejo, later jenkins), not for one service.
+- **Repositories follow adapters, not services:** the repository [PJ62](README.md#pj62) makes is named
+  `porelo-adapters` (decided), for the adapters it holds - github, forgejo, later jenkins - with every service each
+  offers.
+- **Agents and transports move to the same `describe` with their next release** (decided), not all at once.
 
 ## Not in it
 
 - **Message filters behind the filter:** porelo-message-sluice is to reach further filters of outside providers later;
   that is its own design, inside Sluice.
-
-## Open questions
-
-- What the repository [PJ62](README.md#pj62) makes is named, before sprint 3 of release 0.6 renames
-  `porelo-build-github`. Proposed: `porelo-adapters`.
-- Whether agents and transports move to the same `describe` now, or as each is next released.

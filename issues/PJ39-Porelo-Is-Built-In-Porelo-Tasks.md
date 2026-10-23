@@ -179,7 +179,7 @@ from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](READ
      the commit, the verdict, the jobs and the failed jobs' logs, the project and the repository named by their keys,
      the reader, its address and its credential taken from the project file (*new, `porelo`*).
    - *The same command reads Forgejo:* against a Forgejo run in podman, answered in the same shape as GitHub
-     (*new, `porelo-forge`:* the `forgejo` adapter).
+     (*new, `porelo-adapters`:* the `forgejo` adapter).
    - *Both adapters pass one contract suite:* every case from recorded answers, a deliberately broken adapter
      failing it ([PJ62](README.md#pj62); porelo
      [B253](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b253), moved there).
