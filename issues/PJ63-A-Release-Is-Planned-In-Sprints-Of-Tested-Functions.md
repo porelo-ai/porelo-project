@@ -1,6 +1,6 @@
 # PJ63 — A release is planned in sprints of tested functions
 
-**Status:** Estimated; planned right after sprint 2 of [PJ39](README.md#pj39).
+**Status:** Backlog; planned right after sprint 2 of [PJ39](README.md#pj39).
 **Size:** M - one new command with two verbs in the release tools, a file format another repository (porelo-frontend)
 will read, its documentation, and this project's plan moved into it.
 

@@ -121,6 +121,7 @@ through the steps the sprints before it build. An image per repository, porelo
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj63"></a>[PJ63](PJ63-A-Release-Is-Planned-In-Sprints-Of-Tested-Functions.md) | M | — | A release planned once in a checked-in file - its sprints, each sprint's functions the operator tests and the issues serving them - and a page made from it with every issue's state, kept current by the coordinator and checked against the indexes. |
 | <a id="pj45"></a>[PJ45](PJ45-Chosen-Data-Outlives-The-Machine.md) | M | — | A short list of data that lives only on a machine - the Matrix room, the token usage records and the Maven cache to start with - copied every hour and at down by restic into the project's S3 store, encrypted on the host, and put back at up; nothing else is kept. |
 
 ## Analyzed
@@ -172,7 +173,6 @@ through the steps the sprints before it build. An image per repository, porelo
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj63"></a>[PJ63](PJ63-A-Release-Is-Planned-In-Sprints-Of-Tested-Functions.md) | M | — | A release planned once in a checked-in file - its sprints, each sprint's functions the operator tests and the issues serving them - and a page made from it with every issue's state, kept current by the coordinator and checked against the indexes. |
 | <a id="pj52"></a>[PJ52](PJ52-A-Repositorys-Build-Tools-Are-Recognized-And-A-Project-Proposed.md) | XL | `porelo` [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192); an agent for `porelo-ecosystems` | Drafts proposed from what a checkout and the person's tool settings say: the tools as a `.porelo.yml` the repository never receives, the rules (egress, private repositories, memory) as a `project.yml` for a project repository of the person's own; one plugin per build tool in `porelo-ecosystems`, a native executable of its own spoken to over varlink, that never runs the project's code and reads only local caches (Maven's effective model through MIMA, offline), measured against the Porelo repositories' own `porelo.yml`; credentials named by id and offered into the Porelo-Vault, never copied. |
 | <a id="pj46"></a>[PJ46](PJ46-Document-Tests-Run-Only-Where-The-Agent-Works.md) | M | — | The tests that read only issues and documents run on the agent's machine and in the daily Shared rules check, never in a Build: left out by the build tool's own switch, and naming no single issue, so setting an issue Finished touches no test. |
 | <a id="a08"></a>[A08](A08-Agent-Copilot-CLI.md) | L | — | Copilot CLI as a packaged agent: brokerable by environment variable (BYOK), which is not the Copilot subscription. |
