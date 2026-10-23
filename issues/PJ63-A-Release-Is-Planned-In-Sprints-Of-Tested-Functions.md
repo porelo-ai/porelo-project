@@ -41,7 +41,9 @@ Read in `porelo-buildtools` `release` at `c296fdd`, and in this repository.
   reads every repository's index, from the tree, from a checkout beside it, or from `main` on the central forge
   (`IssueLinks`), and it has Jackson's YAML reader (`jackson-dataformat-yaml`). No new tool and no new dependency.
 - **New:**
-  - `Plan` reads `plan/<release>.yml` into records (release, goal, sprints, functions, issue references).
+  - `Plan` reads `plan/<release>.yml` into records (release, goal, sprints, functions, issue references). The plan file
+    is the release's own description: it names no issue of the release as a whole (decided); a design issue such as
+    [PJ39](README.md#pj39) stands in the function it serves.
   - `IssueIndex` gives each index row's state, from the `## <State>` heading it stands under. That is an extension of
     what `IssueLinks` parses, not a second parser.
   - `PlanRender` writes the Markdown page: a text bar per sprint by state, a mark per function, and each issue linked

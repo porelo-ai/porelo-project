@@ -1,7 +1,6 @@
 # The plan of release 0.7. Issue states are not written here: they are read from each repository's index.
 release: "0.7"
 goal: "A developer starts in a repository they already have, led by the Porelo Wizard"
-issue: porelo-project#PJ57
 sprints:
   - id: "1"
     title: "Starting in one's own repository"
