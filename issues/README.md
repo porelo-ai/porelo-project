@@ -23,8 +23,9 @@ three functions the operator tests by hand. A bar counts the functions tested, n
 
 ```
 Groundwork                                     ██████████████████  done
-Sprint 1  An agent works on the rented host    ████████████░░░░░░  2 of 3 tested; Claude in a task waits on CC24
+Sprint 1  An agent works on the rented host    ██████████████████  3 of 3 tested
 Sprint 2  Host from the interface, room        ░░░░░░░░░░░░░░░░░░  0 of 2
+Sprint 2b The release plan as a page           ░░░░░░░░░░░░░░░░░░  0 of 1
 Sprint 3  The build servers read               ░░░░░░░░░░░░░░░░░░  0 of 3
 Sprint 4  The local forge builds               ░░░░░░░░░░░░░░░░░░  0 of 3
 Sprint 5  From the task's push to approval     ░░░░░░░░░░░░░░░░░░  0 of 2
@@ -38,6 +39,7 @@ Sprint 9  Clearing up and counting             ░░░░░░░░░░░
 |---|---|
 | 1 · An agent works on the rented host | The host rented and given back at one command; Claude working in a task with the operator's subscription; each repository's image and each task's values. |
 | 2 · The host from the interface, the agents in the room | The host up and down from the interface; two agents talking in the room, a message waking the resting one. |
+| 2b · The release plan as a page | The plan page made from a checked-in plan file and read on the central forge, its check finding a planted fault ([PJ63](#pj63)). |
 | 3 · The build servers read | `porelo build status` against GitHub; the same against Forgejo; both adapters passing one suite ([PJ62](#pj62)). |
 | 4 · The local forge builds as the central one | Forgejo's registry reached by name from a task; test machines by kind from the VM pool; Sluice green on both forges. |
 | 5 · From the task's push to the central forge | The task hearing its build from Forgejo ([PJ61](#pj61)); the mirror only after the operator's approval. |
