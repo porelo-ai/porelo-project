@@ -1,6 +1,6 @@
 # PJ70 — A machine nobody sits at tells its person what needs them
 
-**Status:** Idea.
+**Status:** Accepted.
 
 **What must be true.** A machine that works while nobody sits at it - a rented host, or this computer while the
 person is away - watches what it needs to go on working, and tells its person when something needs them, wherever

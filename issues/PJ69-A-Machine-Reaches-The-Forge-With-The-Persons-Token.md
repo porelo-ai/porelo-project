@@ -1,6 +1,6 @@
 # PJ69 — A machine reaches the forge with the person's token
 
-**Status:** Idea.
+**Status:** Accepted.
 
 **What must be true.** A machine fetches from and pushes to a project's repositories with the person's own forge
 token by default, kept in the machine's vault. Porelo no longer makes a deploy key per machine and repository at the

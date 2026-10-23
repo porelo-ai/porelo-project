@@ -1,6 +1,6 @@
 # PJ68 — Every container fits the machine it runs on
 
-**Status:** Idea.
+**Status:** Accepted.
 
 **What must be true.** Every container a Porelo part starts - a task, an image build, the room's homeserver, the
 host's forge and its runner's jobs - runs with limits set for it (processes, memory, CPU, open files), and whatever
