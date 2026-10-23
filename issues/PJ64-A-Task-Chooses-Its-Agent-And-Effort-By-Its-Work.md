@@ -58,3 +58,16 @@ decision.
 - **A `check` task reads and reports, nothing more:** its workspace holds the commit it checks and is read-only, its
   gate takes no push, its network is narrower than a build's, it ends within a time limit, and it leaves its findings as
   a file the building task or agent reads. Its tokens count as `check`, apart from build and rework.
+
+## Built in
+
+- **`porelo`:** the phase `check`, the field `risk` and its raise, the project's rule, the operator's rule for a time
+  with its commands, the order of choice and the start naming it, and the `check` task that only reads.
+- **The agents' adapters** (`porelo-claude-code`, `porelo-codex`, `porelo-agy`): each maps the one effort scale onto its
+  provider and says where it takes a lower level.
+- **`porelo-frontend`:** the start of a task offers its issue and phase, shows its issue's risk and offers to raise it,
+  shows the choice and where it came from before the start, and lets the person override it; a view lists the
+  operator's rules for a time, with their dates, and sets and revokes them. Starting an agent for each repository at
+  one click (porelo-frontend [F148](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f148))
+  makes the same choice for each task.
+
