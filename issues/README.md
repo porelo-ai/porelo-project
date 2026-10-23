@@ -23,7 +23,7 @@ three functions the operator tests by hand. A bar counts the functions tested, n
 
 ```
 Groundwork                                     ██████████████████  done
-Sprint 1  An agent works on the rented host    ░░░░░░░░░░░░░░░░░░  0 of 3 tested; most issues in Review
+Sprint 1  An agent works on the rented host    ████████████░░░░░░  2 of 3 tested; Claude in a task waits on CC24
 Sprint 2  Host from the interface, room        ░░░░░░░░░░░░░░░░░░  0 of 2
 Sprint 3  The build servers read               ░░░░░░░░░░░░░░░░░░  0 of 3
 Sprint 4  The local forge builds               ░░░░░░░░░░░░░░░░░░  0 of 3
