@@ -53,7 +53,7 @@ Read in `porelo-buildtools` `release` at `c296fdd`, and in this repository.
   - an issue in two functions;
   - a page that differs from what `render` writes now;
   - a Finished issue in a function not yet tested;
-  - a function with no issue and no `tested` date.
+  - a function with no issue, no note and no `tested` date.
 - **In this repository**, by the coordinator, once the command is published:
   - `plan/0.6.yml` with [PJ39](README.md#pj39)'s nine sprints and the usability sprints as they stand;
   - the page `plan/0.6.md` rendered from it;
