@@ -6,7 +6,7 @@
 and on the central forge, with no edit between them: the machines it asks for by kind, the registry and the provider
 given as variables of the setup.
 
-From [PJ39](README.md#pj39), phase 3, and [PJ22](README.md#pj22) part 3: "every repository's workflows take registry
+From [PJ39](README.md#pj39), sprints 4 and 6 to 8, and [PJ22](README.md#pj22) part 3: "every repository's workflows take registry
 addresses and the machine provider as variables of the setup. Seen to fail first: a `build.yml` that runs only
 centrally."
 
@@ -22,8 +22,9 @@ a task ([PJ59](README.md#pj59)) has no build to read for its push.
 
 - **One issue per repository, filed by its agent when the kinds are built**, from their table: the workflow asks for kinds,
   names no provider, and takes the registry's address as a variable; size S each.
-- **In the order of the move:** porelo-message-sluice first, then Smith's three repositories, porelo-agy and
-  porelo-codex, porelo-message-matrix, porelo-intellij and porelo-frontend, porelo last.
+- **In the order of the move:** porelo-message-sluice first (sprint 4), then Smith's three repositories, porelo-agy
+  and porelo-codex (sprint 6), porelo-message-matrix, porelo-intellij and porelo-frontend (sprint 7), porelo last
+  (sprint 8).
 - **What runs only centrally is named by a variable**, never by a branch in the workflow: publishing to Artifactory and
   Maven Central, and GitHub's Windows runner.
 

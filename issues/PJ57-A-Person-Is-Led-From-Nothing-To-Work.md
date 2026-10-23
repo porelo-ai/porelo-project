@@ -1,6 +1,6 @@
 # PJ57 — A person is led from nothing to work
 
-**Status:** Accepted; built in the usability sprint, after porelo-project [PJ39](README.md#pj39).
+**Status:** Accepted; built in the usability sprints 12 and 13, after porelo-project [PJ39](README.md#pj39).
 
 **What must be true.** A person who wants to work with Porelo is led from an empty machine to their
 first reviewed work by one guide, the Porelo Wizard. It asks first what the person has and wants, plans

@@ -6,7 +6,7 @@
 private repository on the local Forgejo, and can change only `porelo-project`: a change anywhere else is refused by
 construction, not by the coordinator's care.
 
-From [PJ39](README.md#pj39), phase 4: "*new, `porelo-project`:* `porelo-all` with its two workflows".
+From [PJ39](README.md#pj39), sprint 8: "*new, `porelo-project`:* `porelo-all` with its two workflows".
 
 ## Why
 

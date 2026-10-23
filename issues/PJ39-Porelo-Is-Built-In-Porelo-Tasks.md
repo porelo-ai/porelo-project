@@ -1,7 +1,6 @@
 # PJ39 — Porelo is built in Porelo tasks
 
-**Status:** Implementing; phase 0 is done, phase 1 (the host) is under way: a rented server is brought up and down
-at one command end to end, [PJ40](README.md#pj40) and [PJ45](README.md#pj45) are open.
+**Status:** Implementing; the groundwork is done, sprint 1 (an agent working on the rented host) is under way.
 
 **What must be true.** The agents that analyse, build and rework Porelo's issues do that work in Porelo tasks of the
 project `porelo`, not as sessions on the host. Each task's work is built and tested on the local forge as it would be
@@ -70,7 +69,7 @@ work for a person either.
   checked-in `porelo.yml` (the image and its tools only, never egress or limits), read from its default branch; a
   `.porelo.yml` that is not checked in overrides it locally; `project.yml` overrides both.
 - **Downloaded dependencies are cached across tasks later**, shared and read-only, as `~/.m2/cached/` is today; what a
-  task installs stays its own (porelo [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193), after this sprint: until then each task downloads its own).
+  task installs stays its own (porelo [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193), sprint 9: until then each task downloads its own).
 - **What an agent learns goes into its repository's `AGENTS.md`, as a commit.** Nothing an agent needs is private
   any more: the machines, the accounts and the tools are named by `project.yml`, the `porelo.yml` files and the
   host's scripts, and the secrets stay in the vault behind the broker. So there is no local, uncommitted
@@ -124,49 +123,118 @@ its disks NVMe, how many CPUs it has.
 
 ## Plan
 
-In this order; within a phase the items can run side by side. *New* marks an issue that does not exist yet and the
-repository it is meant for.
+**The work runs in small sprints, each ending in two or three functions the operator tests by hand.** A function
+is done when the operator has tried it as written under it, not when its issues are; the issues are grouped by the
+function they serve. Within a sprint the functions can be built side by side; a sprint begins when the one it needs
+is tested, not when the previous one is finished. *New* marks an issue that does not exist yet and the repository it
+is meant for.
 
-0. **The groundwork, done first, in this order:** what is running is finished and pushed - porelo
-   [B76](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b76)'s findings already made, and the open
-   round; then the one code style of [PJ29](README.md#pj29); then every repository's code read against its skills
-   (the modules the first reading left out, and its counterparts in the other repositories); last the rules for
-   contributors from outside,
-   [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](README.md#pj32), which describe the result.
-   **This order holds for `porelo`.** The other repositories take the code style and their reading beside it, once
-   [PJ29](README.md#pj29)'s shared part is in `porelo-parent` and `porelo-buildtools`: each is reformatted in one
-   commit and cleaned up after its reading in another, both pushed together, and neither changes an interface
-   another repository reads; a finding that would is named in the channel instead.
-1. **The host:** [PJ40](README.md#pj40) brings the project up on the bare-metal host at one command - VPN, Porelo,
-   its account, Forgejo, the Matrix homeserver, KVM, the images, the agents' tasks - and [PJ45](README.md#pj45)
-   keeps the room and the usage records; the same on a machine of one's own and on one rented by the hour. *New,
-   `porelo-buildtools`:* one provider interface in `porelo-machines` with an adapter each for Hetzner Cloud and
-   Scaleway Elastic Metal, and `host up` / `host down` on it.
-2. **What Porelo must add:** porelo [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189)
-   (values at the start); porelo [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)
-   (an image per repository from its `porelo.yml`); porelo-claude-code
-   [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30) (the agent's own memory
-   switched off in the task).
-3. **The local forge, [PJ22](README.md#pj22)**, in its five parts: machine kinds in `porelo-machines`, the VM pool
-   (run accounts on the two VMs),
-   Forgejo with its registry running the same workflows, the `forgejo` reader, a task's build on a declared kind;
-   then *new, `porelo-buildtools`:* the push mirrors to the central forge, started through Forgejo's API.
-   Every repository's workflows run there as centrally ([PJ60](README.md#pj60)), and the project `porelo` goes
-   online with Forgejo as its upstream ([PJ61](README.md#pj61)).
-4. **Talking and coordinating:** the project's room as it is; an agent in a task reached by a message as the
-   channel's watcher reaches it today, if checking finds that missing; the operator's own channel for an agent's
-   question; `porelo-all` with its two workflows ([PJ58](README.md#pj58)).
-5. **The move, one agent at a time** ([PJ59](README.md#pj59)), the others working as today and the channel kept beside
-   Matrix until the last has moved: Sluice first (one repository, one snapshot from the registry); then Smith
-   (snapshots from `porelo`, three repositories); AGY and Codex (an adapter repository each); Matrix; IntelliJ and Frontend (other toolchains); Core last of the builders, with a way back to the
-   host, since a fault in Porelo stops its own work; the coordinator last of all.
-6. **Clearing up:** *new, every repository:* `AGENTS.md` rewritten for Matrix, Forgejo and the gate, with what
-   `.AGENTS.md` still holds that the host does not replace; `.AGENTS.md` retired with the channel file, the hand-over directory and the agents' own accounts on the VMs retired, the pool's run
-   accounts in their place.
-7. **Then** porelo [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193) caches the downloaded dependencies across tasks, a speed-up the move does not
-   need; porelo [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148) counts what the
-   tasks spend, and [PJ38](README.md#pj38) learns from it. The counting can be built earlier; it counts nothing of this work
-   before phase 4.
+**Done first: the groundwork**, in this order: what was running finished and pushed (porelo
+[B76](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b76)'s findings and the open round), the one
+code style of [PJ29](README.md#pj29), every repository's code read against its skills, and the rules for contributors
+from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](README.md#pj32).
+
+1. **An agent works on the rented host.** No local forge, pool or room yet; the task follows the central forge as
+   today.
+   - *The host rented and given back at one command:* `porelo-host up porelo` rents from Scaleway Elastic Metal and
+     sets it up, the operator reaches it only through the VPN with the drive mounted, and `down` leaves nothing at
+     the provider ([PJ40](README.md#pj40): porelo-frontend
+     [F131](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f131),
+     [F132](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f132),
+     [F134](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f134); porelo-host
+     [HO02](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho02),
+     [HO05](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho05),
+     [HO06](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho06),
+     [HO09](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho09),
+     [HO10](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho10)).
+   - *Claude works in a task, signed in with the operator's subscription:* signed in by hand at the stop
+     `agent-login:claude`, the task holds only a short-lived token and no memory of the agent's own, and Sluice works
+     a small issue in it (porelo-claude-code
+     [CC24](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc24),
+     [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30); porelo
+     [B255](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b255); porelo-message-sluice
+     [SL29](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl29)).
+   - *Each repository brings its image, and each task its values:* the task starts with `issue` and `phase`, its
+     image made from the repository's `porelo.yml` (porelo
+     [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189),
+     [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)).
+2. **The host from the interface, the agents in the room.**
+   - *The host up and down from the interface:* *Put on a server* shows the steps, asks at the stop for the drive's
+     login and the vault's passphrase, signs the agent in, and writes the VPN key and the machine file into the
+     person's drive (porelo-frontend
+     [F135](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f135),
+     [F140](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f140),
+     [F141](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f141)).
+   - *Two agents talk in the room, and a message wakes the resting one:* two tasks on the host write to each other
+     in the project's room, the operator reads along through the VPN, a message naming a resting agent wakes it, and
+     a question for the operator comes in the operator's own channel (porelo-host
+     [HO11](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho11); porelo-message-matrix
+     [MX12](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx12)).
+3. **The build servers read.**
+   - *A build server asked from the command line:* `porelo build status --project=<project>
+     --repository=<repository> --branch=<branch>` (or `--commit=<sha>`, `--logs=none|failure|all`, `--json`) shows
+     the commit, the verdict, the jobs and the failed jobs' logs, the project and the repository named by their keys,
+     the reader, its address and its credential taken from the project file (*new, `porelo`*).
+   - *The same command reads Forgejo:* against a Forgejo run in podman, answered in the same shape as GitHub
+     (*new, `porelo-forge`:* the `forgejo` adapter).
+   - *Both adapters pass one contract suite:* every case from recorded answers, a deliberately broken adapter
+     failing it ([PJ62](README.md#pj62); porelo
+     [B253](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b253), moved there).
+4. **The local forge builds as the central one.**
+   - *Forgejo with its registry, a task fetching a snapshot by name:* the operator opens Forgejo through the VPN; a
+     task reaches its registry by a declared name on 443, trusts its certificate and fetches a snapshot, and
+     reaches nothing else on the host (porelo-host
+     [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08),
+     [HO17](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho17); porelo
+     [B233](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b233),
+     [B234](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b234)).
+   - *Test machines by kind from the VM pool:* a run asks for the kind `ubuntu` and gets an account of the pool,
+     reset afterwards, and the check finds no provider's name in any workflow (porelo-host
+     [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12); porelo-buildtools
+     [BT24](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt24),
+     [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25)).
+   - *Sluice green on both forges on the same commit:* the same `build.yml` of porelo-message-sluice, registry and
+     machines as variables of the setup ([PJ60](README.md#pj60), its first repository).
+5. **From the task's push to the central forge, after the operator's approval.** Shown on porelo-message-sluice.
+   - *The task hears its build from Forgejo:* the task pushes through its gate to `porelo/<task>` on Forgejo, which
+     builds it, and the verdict and a failed job's log are in the task's `/porelo/files` ([PJ61](README.md#pj61)).
+   - *Only the operator's approval brings the work to the central forge:* nothing is there before it, the mirror
+     reaches it after; the same push with the project `offline` reaches no forge (porelo-buildtools
+     [BT06](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt06);
+     [PJ37](README.md#pj37)).
+6. **The move, first wave** ([PJ59](README.md#pj59)), the others working as today and the channel kept beside Matrix
+   until the last has moved; each move a small issue of its own in the agent's repository, worked inside the new
+   task to Review with the local forge's build green.
+   - *Sluice works wholly in its task:* reached in the room, its session and VM account no longer used.
+   - *Smith in its task, with snapshots of `porelo` from the registry:* its three repositories build on Forgejo
+     ([PJ60](README.md#pj60) for each).
+   - *AGY and Codex in their tasks, their sub-agents signed in from the vault:* (porelo
+     [P12](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p12); porelo-codex
+     [CX01](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx01),
+     [CX02](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx02)).
+7. **The move, second wave: the other toolchains.**
+   - *Matrix in its task.*
+   - *IntelliJ and Frontend in their tasks:* Gradle and Flutter build on Forgejo; the Windows job runs centrally
+     only, named by a variable.
+8. **The move, last wave.**
+   - *Core in its task, with a way back:* Core builds `porelo` in a task, and works on the host again if a fault in
+     Porelo stops it.
+   - *The coordinator reads everything and changes only `porelo-project`:* in [PJ58](README.md#pj58)'s
+     `porelo-all`, a change outside `porelo-project/` refused.
+9. **Clearing up and counting.**
+   - *No channel file and no hand-over directory any more:* every repository's `AGENTS.md` describes Matrix, Forgejo
+     and the gate; the channel file, the hand-over directory and the agents' own VM accounts are retired, the pool's
+     run accounts in their place (*new, every repository*).
+   - *The room and the usage records outlive the host:* after `down` and a new `up` the room is there with its
+     messages, and so are the records ([PJ45](README.md#pj45); porelo-message-matrix
+     [MX24](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx24); porelo-host
+     [HO07](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho07); porelo
+     [B231](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b231)).
+   - *The tokens counted per task, the dependencies shared:* each issue shows what its tasks spent, and a second
+     Maven build downloads nothing again (porelo
+     [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148),
+     [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193);
+     [PJ38](README.md#pj38)).
 
 ## To be checked
 

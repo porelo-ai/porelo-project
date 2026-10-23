@@ -6,12 +6,12 @@
 in a fixed order, and each move is checked before the next begins; the channel file stays beside Matrix until the last
 agent has moved.
 
-From [PJ39](README.md#pj39), phase 5: "The move, one agent at a time, the others working as today and the channel kept
+From [PJ39](README.md#pj39), sprints 6 to 8: "The move, one agent at a time, the others working as today and the channel kept
 beside Matrix until the last has moved".
 
 ## Why
 
-Phases 1 to 4 give the host, the local forge and the room. Nothing moves an agent by itself: each one has its own
+Sprints 1 to 5 give the host, the room, the build servers read and the local forge. Nothing moves an agent by itself: each one has its own
 repositories, toolchain, VM account and habits, and a fault found in the first move must be fixed before the next.
 
 ## The shape proposed

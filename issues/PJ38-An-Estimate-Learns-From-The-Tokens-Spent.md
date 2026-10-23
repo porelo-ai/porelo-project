@@ -1,6 +1,6 @@
 # PJ38 — An estimate learns from the tokens spent
 
-**Status:** Accepted; analysed after Phase 0 of [PJ39](README.md#pj39).
+**Status:** Accepted; analysed after the groundwork of [PJ39](README.md#pj39).
 
 **What must be true.** Before an issue is set Finished, the tokens actually spent on it are written beside the
 size it was estimated at. Every finished issue adds to a statistic - a velocity: what a size has cost in tokens so

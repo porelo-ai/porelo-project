@@ -18,62 +18,87 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 ### Current: Porelo is built in Porelo tasks
 
-[PJ39](#pj39): the agents move their work into Porelo tasks on one host, phase by phase.
+[PJ39](#pj39): the agents move their work into Porelo tasks on one host, in small sprints, each ending in two or
+three functions the operator tests by hand. A bar counts the functions tested, not the issues built.
 
 ```
-Phase 0  The groundwork              ██████████████████  done
-Phase 1  The host                    █████████████████░  up and down at one command, with the agents' tasks and the forge
-Phase 2  What Porelo must add        ██████████░░░░░░░░  values at the start and an image per repository built
-Phase 3  The local forge             ██░░░░░░░░░░░░░░░░  the forge runs on the host
-Phase 4  Talking and coordinating    █░░░░░░░░░░░░░░░░░  the Matrix room exists
-Phase 5  The move                    ███░░░░░░░░░░░░░░░  no agent moved yet; 13 of 13 repositories build green inside a task
-Phase 6  Clearing up                 ░░░░░░░░░░░░░░░░░░
+Groundwork                                     ██████████████████  done
+Sprint 1  An agent works on the rented host    ░░░░░░░░░░░░░░░░░░  0 of 3 tested; most issues in Review
+Sprint 2  Host from the interface, room        ░░░░░░░░░░░░░░░░░░  0 of 2
+Sprint 3  The build servers read               ░░░░░░░░░░░░░░░░░░  0 of 3
+Sprint 4  The local forge builds               ░░░░░░░░░░░░░░░░░░  0 of 3
+Sprint 5  From the task's push to approval     ░░░░░░░░░░░░░░░░░░  0 of 2
+Sprint 6  The move, first wave                 ░░░░░░░░░░░░░░░░░░  0 of 3
+Sprint 7  The move, other toolchains           ░░░░░░░░░░░░░░░░░░  0 of 2
+Sprint 8  The move, Core and the coordinator   ░░░░░░░░░░░░░░░░░░  0 of 2
+Sprint 9  Clearing up and counting             ░░░░░░░░░░░░░░░░░░  0 of 3
 ```
 
-| Phase | Where it stands |
+| Sprint | The functions tested at its end |
 |---|---|
-| 0 · The groundwork | ✅ Done: the open work finished, one code style, every repository read against its skills, the rules for contributors. |
-| 1 · The host | 🔄 In progress: [PJ40](#pj40) brings a rented host up and down at one command, end to end, with the agents' tasks and the forge with its registry; the VM pool is still to come. [PJ45](#pj45), what outlives the machine, has its design: the room backed up by signal. |
-| 2 · What Porelo must add | 🔄 In progress: every repository carries its `porelo.yml`; porelo [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189) (values at the start) and [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192) (an image per repository) are built. Waiting: porelo-claude-code [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30) accepted. |
-| 3 · The local forge | 🔄 In progress: the forge runs on the host and checks the packages and pins in its runner; the rest of [PJ22](#pj22) waits. |
-| 4 · Talking and coordinating | 🔄 In progress: the project's Matrix room exists. |
-| 5 · The move | ⏳ Not begun: no agent works in a task yet; the move waits on the host, the local forge and an agent reached through Matrix. Ready before it: every repository, the site included, builds green inside a Porelo task. |
-| 6 · Clearing up | ⏳ Waiting. |
+| 1 · An agent works on the rented host | The host rented and given back at one command; Claude working in a task with the operator's subscription; each repository's image and each task's values. |
+| 2 · The host from the interface, the agents in the room | The host up and down from the interface; two agents talking in the room, a message waking the resting one. |
+| 3 · The build servers read | `porelo build status` against GitHub; the same against Forgejo; both adapters passing one suite ([PJ62](#pj62)). |
+| 4 · The local forge builds as the central one | Forgejo's registry reached by name from a task; test machines by kind from the VM pool; Sluice green on both forges. |
+| 5 · From the task's push to the central forge | The task hearing its build from Forgejo ([PJ61](#pj61)); the mirror only after the operator's approval. |
+| 6 · The move, first wave | Sluice; Smith; AGY and Codex ([PJ59](#pj59)). |
+| 7 · The move, the other toolchains | Matrix; IntelliJ and Frontend. |
+| 8 · The move, last wave | Core with a way back; the coordinator in `porelo-all` ([PJ58](#pj58)). |
+| 9 · Clearing up and counting | No channel file any more; the room and the records outliving the host ([PJ45](#pj45)); the tokens counted per task. |
 
 ### Next: Usability
 
 A developer installs Porelo on their own machine and starts in a repository they already have, with no project
-written and no flags to learn.
+written and no flags to learn. Its core is the Porelo Wizard, [PJ57](#pj57), which comes last and leads a person
+through the steps the sprints before it build. An image per repository, porelo
+[B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192), comes with sprint 1.
 
-Its core is the Porelo Wizard, [PJ57](#pj57), which leads a person through every step below and those around them.
+**Sprint 10 · Starting in one's own repository**
 
-**First, the easy start:**
+- *Work without a project, with plain refusals:* a task starts in a checkout in `default`; a followed project naming
+  the repository is offered to take it; a repository with no commit, an unreadable upstream or a failed fetch is named
+  as what it is, with the next step. The rest of [PJ14](#pj14); porelo
+  [B229](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b229),
+  [B33](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b33); porelo-frontend
+  [F118](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f118).
+- *The agent already on the machine is taken:* without `--agent` and `--provider` the task starts with the Claude Code
+  signed in there, and says what it found and where; the interface shows the same choice ([PJ53](#pj53); porelo
+  [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224),
+  [B225](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b225); porelo-claude-code
+  [CC36](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc36); porelo-frontend
+  [F143](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f143)).
+- *Keys and providers without stumbling:* a key pasted at `vault put` is read whole; an agent given a provider it
+  does not know is refused before the start (porelo
+  [B228](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b228),
+  [P09](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p09)).
 
-| Issue | Size | What it gives |
-|---|---|---|
-| The rest of [PJ14](#pj14) | M | Work starts in any repository without a project, in `default`. |
-| porelo [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192) | L | A repository's own image from its `porelo.yml` or a local `.porelo.yml`. |
-| porelo [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224) | M | The agent protocol only grows, so agents and Porelo need not release together. |
-| porelo [B225](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b225) | L | The agent signed in on the machine is the default, its source named ([PJ53](#pj53)). |
-| porelo-claude-code [CC36](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc36) | S | Claude Code's sign-in found on the machine. |
-| porelo-frontend [F143](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f143) | S–M | The interface lets the machine choose the agent. |
-| porelo [B228](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b228) | S | A key pasted at `vault put` is read whole. |
-| porelo [B229](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b229) | S | Following a repository with no commit says so and what to do. |
-| porelo [B227](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b227) | S | A project repository followed from a directory is read again. |
-| porelo [B33](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b33) | S | A failed fetch is never reported as a credential problem. |
-| porelo [P09](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p09) | M | An agent given a provider it does not know is refused before the task starts. |
-| porelo-frontend [F118](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f118) | S | An upstream that cannot be read is said before a start, with what fixes it. |
+**Sprint 11 · A project proposed from the checkout** ([PJ52](#pj52))
 
-**Then, the project proposed from the checkout** ([PJ52](#pj52)) and the company's repositories:
+- *`porelo project init` proposes tools and rules:* for a Maven repository, a `.porelo.yml` and where needed a
+  `project.yml` draft, each value with its source; a project kept in a local repository is read again at `refresh`
+  (porelo [B220](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b220),
+  [B221](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b221),
+  [B227](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b227); *new, `porelo-ecosystems`:* a new
+  repository and agent, Maven first, through MIMA).
+- *The drafts shown before the first task:* in `default`, the interface shows what the machine proposes (porelo-frontend
+  [F142](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f142)).
+- *A company's private package repository, with no credential in the task:* `settings.xml` written at the start, the
+  credential kept in the vault (porelo
+  [B222](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b222),
+  [B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219)).
 
-| Issue | Size | What it gives |
-|---|---|---|
-| porelo [B220](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b220) | M | Build-tool plugins found at run time, started without network. |
-| porelo [B221](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b221) | L | `porelo project init` and the drafts shown before the first task. |
-| porelo [B222](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b222) | M | A task's tool settings written at its start. |
-| porelo-frontend [F142](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f142) | M | The drafts offered in the interface. |
-| `porelo-ecosystems` | M–L | A new repository, a new agent: Maven first, through MIMA. |
-| porelo [B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219) | L | A company's authenticated package repository read through the broker. |
+**Sprint 12 · The Porelo Wizard leads** ([PJ57](#pj57); *new, `porelo-wizard`*)
+
+- *Questions, a plan, and taken up again:* the questions first, the whole plan shown before anything runs, and after a
+  pause it goes on where the person was; a step done elsewhere counts as done.
+- *A step for someone else handed over:* a step for an administrator comes as instructions and as a file to run; the
+  wizard waits for its check.
+
+**Sprint 13 · A chat beside the wizard, and a run with nobody there** ([PJ57](#pj57))
+
+- *A chat answers questions about the current step:* with the Claude Code already signed in on the machine; it never
+  sees a secret and runs nothing unconfirmed.
+- *The same plan from a file of answers:* for many machines; a step that needs a person stops it and says so.
 
 ## Review
 
@@ -87,7 +112,7 @@ Its core is the Porelo Wizard, [PJ57](#pj57), which leads a person through every
 | <a id="pj32"></a>[PJ32](PJ32-A-Vulnerability-Has-A-Way-In.md) | M | — | Whoever finds a vulnerability reports it privately through a `SECURITY.md` in every repository and one page in `doc/`; a fix gets a GitHub advisory and a changelog line. |
 | <a id="pj27"></a>[PJ27](PJ27-A-Contributor-Knows-The-Rules.md) | L | — | One guide for contributors in `porelo-project`'s `doc/`, linked from every repository's README and `CONTRIBUTING.md`: how the work is organised, how a change is made, what it must satisfy. |
 | <a id="pj40"></a>[PJ40](PJ40-A-Project-Comes-Up-On-A-Server-At-One-Command.md) | XL | — | Any project of several agents and repositories comes up on a server, owned or rented by the hour, at one command: Porelo writes an Ansible inventory from `project.yml`, the repositories' own files and the person's machine file; Ansible sets up the host from the host itself, `host up` (a Dart package of porelo-frontend, for the interface and the command line) rents it by the hour (Scaleway Elastic Metal for Porelo's own; OpenTofu later for others); following, keys and tasks stay Porelo's; Porelo's own project first. |
-| <a id="pj39"></a>[PJ39](PJ39-Porelo-Is-Built-In-Porelo-Tasks.md) | — | [PJ40](#pj40), [PJ45](#pj45), [PJ22](#pj22); `porelo` [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189) | The agents work in Porelo tasks on one bare-metal host, owned or rented by the hour and set up by a script (at least 8 cores with 16 threads, 64 GB, one SSD of 1 TB): an `online` project whose upstream is a local Forgejo, one task per issue, phase and repository, Forgejo building and testing, the operator approving there, Matrix, what an agent learns committed to its `AGENTS.md` instead of memory, `porelo-all` for the coordinator; a plan in eight phases, the groundwork first. |
+| <a id="pj39"></a>[PJ39](PJ39-Porelo-Is-Built-In-Porelo-Tasks.md) | — | [PJ40](#pj40), [PJ45](#pj45), [PJ22](#pj22); `porelo` [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189) | The agents work in Porelo tasks on one bare-metal host, owned or rented by the hour and set up by a script (at least 8 cores with 16 threads, 64 GB, one SSD of 1 TB): an `online` project whose upstream is a local Forgejo, one task per issue, phase and repository, Forgejo building and testing, the operator approving there, Matrix, what an agent learns committed to its `AGENTS.md` instead of memory, `porelo-all` for the coordinator; a plan in nine sprints after the groundwork, each ending in functions the operator tests. |
 | <a id="pj14"></a>[PJ14](PJ14-Work-Starts-Without-A-Project.md) | M | — | Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured. |
 
 ## Backlog
@@ -114,6 +139,7 @@ Its core is the Porelo Wizard, [PJ57](#pj57), which leads a person through every
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj62"></a>[PJ62](PJ62-The-Forge-Adapters-Live-In-One-Repository.md) | — | — | The forge adapters in one repository, `porelo-forge`: the `github` adapter moved from `porelo-build-github`, a `forgejo` adapter beside it, one contract suite both pass, and `porelo build status` to ask any of them. |
 | <a id="pj61"></a>[PJ61](PJ61-The-Project-Porelo-Is-Online-With-The-Local-Forge-Upstream.md) | — | — | The project `porelo` online with the local Forgejo upstream: a task's push built there, its verdict read in the task, the central forge reached through the mirrors after approval; proved on Sluice first. |
 | <a id="pj60"></a>[PJ60](PJ60-Every-Workflow-Runs-On-The-Local-Forge-As-On-The-Central-One.md) | — | — | Every repository's `build.yml` runs green on the local Forgejo and the central forge with no edit between: kinds, registry and provider as variables; one issue (S) per repository. |
 | <a id="pj59"></a>[PJ59](PJ59-Each-Agent-Moves-Into-A-Porelo-Task.md) | — | — | Each agent moves into a Porelo task, one at a time in a fixed order, each move an issue (S) of its own that the agent works inside its new task; the channel file kept beside Matrix until the last has moved. |
