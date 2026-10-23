@@ -1,0 +1,44 @@
+# The plan of release 0.8. Issue states are not written here: they are read from each repository's index.
+release: "0.8"
+goal: "Steering the work: the agents' work chosen, checked and paid for by rule"
+sprints:
+  - id: "1"
+    title: "Adapters say what they offer"
+    goal: "Every adapter lists its services, each by its own contract, and a missing or deprecated function is said, not guessed."
+    functions:
+      - title: "An adapter's services listed, a lacking one refused"
+        test: "Porelo lists each installed adapter's services with contract, version and optional functions; an adapter that lacks a mandatory function is refused by name before any task needs it."
+        issues: [porelo-project#PJ66]
+      - title: "A deprecated contract still taken, with a warning"
+        test: "An adapter that speaks only a deprecated contract version still works, and every start that uses it says since when it is deprecated and in which release it goes."
+        notes: ["the deprecated contracts in porelo (from PJ66)"]
+  - id: "2"
+    title: "A task's agent and effort by its work"
+    goal: "The start of a task chooses agent, model and effort from its phase and its issue's risk, and says why."
+    functions:
+      - title: "The choice shown with where it came from"
+        test: "A task started for an issue in phase `check` with risk `harm` runs Claude Code at `xhigh`, and the start names the project's rule; a flag overrides it; the interface shows the same before the start."
+        issues: [porelo-project#PJ64]
+      - title: "The operator's rule for a time"
+        test: "A rule set by the operator moves `check` with `harm` to another agent; every start it changes names it with its date; once revoked, the project's rule applies again."
+        notes: ["the operator's rule in porelo, its view in porelo-frontend (from PJ64)"]
+  - id: "3"
+    title: "A change checked before it leaves the machine"
+    goal: "Work waiting at a gate is checked, fixed and checked again before the person approves it."
+    functions:
+      - title: "Rounds of check and fix at the gate"
+        test: "A build task pushes to its gate; a check task reads that commit and leaves findings; the build task wakes, fixes and pushes again; the next check is clean, or the rounds stop at their bound."
+        issues: [porelo-project#PJ67]
+      - title: "The person approves with every round in view"
+        test: "`porelo gate review` and the interface show the diff with the last findings and the rounds before it; only the approval sends the work on."
+        notes: ["findings shown at the gate in porelo and the interface (from PJ67)"]
+  - id: "4"
+    title: "What is left of each account"
+    goal: "Every account the agents spend on, with what is left and when it comes back."
+    functions:
+      - title: "The daily accounts read"
+        test: "`porelo limits` shows two Claude Code subscriptions, Codex and Antigravity, each with its own meters, read time and source; an estimate is marked as such."
+        issues: [porelo-project#PJ65]
+      - title: "The accounts in the interface, the low ones first"
+        test: "The interface shows every configured account as its kind reads best - a window's share as a bar with its reset, a quota as used of allowed - with a meter below its threshold warned and shown first."
+        notes: ["the accounts' view in porelo-frontend (from PJ65)"]
