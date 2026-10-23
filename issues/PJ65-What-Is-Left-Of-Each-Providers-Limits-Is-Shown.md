@@ -31,10 +31,17 @@ A person may hold several at once: two Claude Code subscriptions, one ChatGPT, o
   `~/.local/share/porelo/providers` and `/usr/share/porelo/providers`), which agents use each, and what the person's
   vault holds for each: an API key, or a subscription's sign-in. Each such vault entry is an account; nothing is
   configured twice.
-- **An account** is one thing that is billed: a provider, the identity it bills (a subscription, a key, a seat in an
-  organisation), and a name the person gives it. **Today a vault entry is named by its provider**, so one person holds
-  one account per provider; two Claude Code subscriptions need entries named apart (for example `anthropic` and
-  `anthropic.work`), each naming its provider, and the start of a task names the account it spends on.
+- **An account** is one thing that is billed, and says three things of its own beside the credential it holds:
+  - **its provider**, as `porelo providers` names it, e.g. `anthropic`;
+  - **how it is paid**: a subscription, an API key, or a seat in an organisation's plan; this decides which meters it
+    has;
+  - **a name the person gives it**, free and unique, e.g. `claude-home` and `claude-work` for two subscriptions and
+    `anthropic-api` for a key.
+
+  **Today a vault entry is named by its provider and holds one credential**, so one person has one account per
+  provider, and how it is paid shows only in the credential's kind (a subscription's sign-in or a key). Two
+  subscriptions and one key of the same provider need three entries, each naming its provider and how it is paid. The
+  start of a task names the account it spends on, and a task may be told which.
 - **An account has meters, each of one kind:**
   - a share of a window, in %, with the window's length and its reset time;
   - a quota of tokens, used and allowed, per period;
@@ -56,7 +63,7 @@ A person may hold several at once: two Claude Code subscriptions, one ChatGPT, o
 
 ## Built in
 
-- **`porelo`:** the account as a vault entry naming its provider, several per provider; the meters' model; the
+- **`porelo`:** the account as a named vault entry with its provider and how it is paid, several per provider; the meters' model; the
   daemon's answer and `porelo limits` on the command line; the estimate from its own count.
 - **The providers' and agents' adapters:** each reads the meters its provider tells.
 - **`porelo-frontend`:** one view of every configured account, each with its provider's own kind of meters drawn as
