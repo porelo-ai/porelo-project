@@ -63,8 +63,8 @@ A person may hold several at once: two Claude Code subscriptions, one ChatGPT, o
 
 ## Built in
 
-- **`porelo`:** the account as a named vault entry with its provider and how it is paid, several per provider; the meters' model; the
-  daemon's answer and `porelo limits` on the command line; the estimate from its own count.
+- **`porelo`:** the account as a named vault entry with its provider and how it is paid, several per provider; the
+  meters' model; the daemon's answer and `porelo limits` on the command line; the estimate from its own count.
 - **The providers' and agents' adapters:** each reads the meters its provider tells.
 - **`porelo-frontend`:** one view of every configured account, each with its provider's own kind of meters drawn as
   that kind reads best - a window's share as a bar with its reset time, a quota or credits as used of allowed, money
