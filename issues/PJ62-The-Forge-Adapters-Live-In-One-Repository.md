@@ -3,8 +3,9 @@
 **Status:** Accepted.
 
 **What must be true.** Every adapter Porelo uses to read a forge's builds, and later to act on them, is built in one
-repository, `porelo-forge`, beside one contract suite that each of them passes; the `github` adapter moves there from
-`porelo-build-github`, a `forgejo` adapter joins it, and a person asks any of them through one command of Porelo's.
+repository, `porelo-forge`, beside one contract suite that each of them passes; `porelo-build-github` is renamed
+`porelo-forge`, a `forgejo` adapter joins its `github` one, and a person asks any of them through one command of
+Porelo's.
 
 From [PJ39](README.md#pj39), sprint 3, and [PJ22](README.md#pj22) part 4: "The `forgejo` reader and one contract suite
 in the API's kit, run against both readers."
@@ -24,8 +25,11 @@ not.
   adapter is packaged as `.deb` and `.rpm` of the module's name and installed where Porelo looks today,
   `/usr/libexec/porelo/builds/<forge>`, so no project changes its file; `porelo-forge-github` replaces the package
   `porelo-build-github` (Debian `Replaces`/`Conflicts`, RPM `Obsoletes`).
-- **The move:** `porelo-build-github`'s code comes over with its history; its open issues move as a handover, and the
-  repository is archived once the first release of `porelo-forge-github` is installed in its place.
+- **A rename, not a move:** the operator renames the repository `porelo-build-github` to `porelo-forge` on the central
+  forge when sprint 3 begins, so its history, issues, settings, secrets and variables and the organisation's grants
+  stay as they are, and the central forge sends the old address on to the new one. Every place in the project that
+  names the old repository - the project file's upstream, the documentation, the site, the local clones' remotes - is
+  changed in the same round.
 - **The contract stays Porelo's:** `porelo-build-api` and `org.fuin.porelo.Build1` stay in `porelo`. Its method
   `look` is renamed `build` under a new protocol version, so an adapter of the old one is refused by name, as an
   unknown version is today; every adapter is released anew with it.
@@ -39,8 +43,8 @@ not.
   `failure`) and `--json`; `-p` and `-r` as in `porelo task start`. The project and the repository are named by their
   keys, never a URL: the adapter, its address and its credential come from the project file's `builds:`, the token
   from the vault, and it appears nowhere. A project without `builds:`, `default` among them, is refused naming why.
-- **The repository needs the operator's grants:** `JF_ACCESS_TOKEN` and `JF_URL`, `HETZNER_API` and `HETZNER_SSH`, and
-  publishing to Maven Central.
+- **Nothing new to grant:** the rename keeps the repository's grants; Maven Central takes the new artifacts under the
+  namespace `org.fuin.porelo` it already publishes to.
 
 ## Acceptance
 
