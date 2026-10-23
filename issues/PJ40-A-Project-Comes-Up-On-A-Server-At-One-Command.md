@@ -7,8 +7,10 @@
 **What must be true.** A person who works with several agents on a project of several repositories puts the whole
 project on a server and starts all of it together with one command, from the project's `project.yml` and the setup
 files its repositories already carry (a devcontainer file, the workflows): the host prepared, the images built, and,
-where the project asks for them, a local forge, a homeserver and machines for its tests in place, and an agent's
-task started for each repository that names one. The same command works on a server of the person's own and on one
+where the project asks for them, a local forge, a homeserver and machines for its tests in place, and the agents the
+person chose installed. The tasks are the person's, started afterwards on the host as on any machine, one at a time or
+an agent for each repository that names one at a click (porelo-frontend
+[F148](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f148)). The same command works on a server of the person's own and on one
 rented by the hour; a second run changes only what differs, and taking it down leaves nothing the next start would
 miss.
 
@@ -23,8 +25,10 @@ is where the command is tried and refined before anyone else relies on it.
 
 ## The shape proposed
 
-- **One command, two directions**: up - prepare the host, follow the project, build, start; and down - back up what
-  must outlive the machine, stop, and leave the machine to be given back.
+- **One command, two directions**: up - prepare the host, follow the project, install the agents, build; and down -
+  back up what must outlive the machine, stop every task, and leave the machine to be given back. **Starting tasks is
+  not part of it** (decided): the machine and the work on it are kept apart, so a machine never starts work its person
+  did not start.
 - **Three sources, each saying only its own:**
   - **`project.yml`, the project's:** its repositories, the agent for each, the security class, egress, limits;
     and, where it wants them, a local forge with its registry, a homeserver and its room, and the machine kinds its
@@ -51,7 +55,7 @@ is where the command is tried and refined before anyone else relies on it.
   for Porelo as a product for others; it is not needed for this project's own run.
 - **Where it lives**: a new repository, a product of its own and not part of Porelo's internal build tooling, holds
   the playbook and its roles, published as an Ansible collection, in versions that match Porelo's. It gets an agent of its own, as every repository has one. What it calls on stays in `porelo`:
-  writing the configuration, the follow, the keys, the images and the tasks.
+  writing the configuration, the follow, the keys and the images.
 - **What keeps a guarantee stays Porelo's**, and the playbook calls Porelo's own commands for it rather than doing it
   itself:
   - **following the project**, verifying its signature (`porelo project follow --signed-by`); nothing started comes
@@ -59,7 +63,6 @@ is where the command is tried and refined before anyone else relies on it.
   - **depositing keys**: provider tokens and the forge credential - keys or the person's own token - go into the server's vault through `porelo vault`, never
     through an inventory, a variable or a log; on a rented machine for a time ([PJ37](README.md#pj37)), and they
     leave with down;
-  - **starting the tasks** (`porelo task start`), so their limits, egress and start values hold.
 - **Nothing is restored but what was chosen**: the person's own settings come from the drive the person mounts,
   and the data [PJ45](README.md#pj45) keeps comes back from the project's store; the code comes from the forge, everything else is built again.
 - **Two places outlive the machine, kept apart** (decided): what is the person's, and what is the project's.
@@ -198,10 +201,10 @@ abstract interface class HostProvider {
 | the keys into the vault through `porelo vault`, never through a variable | |
 | [PJ45](README.md#pj45)'s list restored from the project's store, before anything that reads it starts | |
 | the forge with its registry, the homeserver, the VM pool | |
-| `porelo project follow --signed-by`, `porelo task start` | |
+| `porelo project follow --signed-by`, the agents' packages | every task stopped |
 | a timer that copies the list every hour | |
 
-**3. Porelo's own commands keep the guarantees:** following a signed project, depositing keys, starting tasks,
+**3. Porelo's own commands keep the guarantees:** following a signed project, depositing keys, stopping tasks,
 and each list entry's copy and restore (the homeserver's in `porelo-message-matrix`, the usage records' in
 `porelo`).
 
