@@ -26,9 +26,15 @@ A person may hold several at once: two Claude Code subscriptions, one ChatGPT, o
 
 ## The shape proposed
 
+- **Where the accounts come from, per person** (to start with): what Porelo already keeps for each person's own account
+  on a machine. `porelo providers` lists the providers declared there (data files under
+  `~/.local/share/porelo/providers` and `/usr/share/porelo/providers`), which agents use each, and what the person's
+  vault holds for each: an API key, or a subscription's sign-in. Each such vault entry is an account; nothing is
+  configured twice.
 - **An account** is one thing that is billed: a provider, the identity it bills (a subscription, a key, a seat in an
-  organisation), and a name the person gives it. It is tied to the vault entry that holds its credential, so two Claude
-  Code subscriptions are two accounts.
+  organisation), and a name the person gives it. **Today a vault entry is named by its provider**, so one person holds
+  one account per provider; two Claude Code subscriptions need entries named apart (for example `anthropic` and
+  `anthropic.work`), each naming its provider, and the start of a task names the account it spends on.
 - **An account has meters, each of one kind:**
   - a share of a window, in %, with the window's length and its reset time;
   - a quota of tokens, used and allowed, per period;
@@ -42,10 +48,20 @@ A person may hold several at once: two Claude Code subscriptions, one ChatGPT, o
   key endpoint, response headers, a forge's billing API. Where nothing can be read, Porelo's own count of what its tasks
   spent (porelo [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148)) stands in, marked as
   estimated. The adapter keeps no credential of its own: it takes the vault's per call, as build readers do.
-- **One view, on the command line and in the interface:** every account, its meters, what is left and when it comes
+- **One view, on the command line and in the interface,** drawn from the daemon's answer as `porelo providers` is
+  today, so the interface reads what the command line reads: every account, its meters, what is left and when it comes
   back, and which running tasks spend on it. A meter below a threshold the person sets is shown as warned.
 - **Later, tied to [PJ64](README.md#pj64):** a rule that moves work to another account when a meter runs low, set by
   the operator as a rule for a time, named at every start it changes.
+
+## Built in
+
+- **`porelo`:** the account as a vault entry naming its provider, several per provider; the meters' model; the
+  daemon's answer and `porelo limits` on the command line; the estimate from its own count.
+- **The providers' and agents' adapters:** each reads the meters its provider tells.
+- **`porelo-frontend`:** one view of every configured account, each with its provider's own kind of meters drawn as
+  that kind reads best - a window's share as a bar with its reset time, a quota or credits as used of allowed, money
+  as spent of its cap - estimated ones marked as such, and the warned ones first.
 
 ## Open questions
 
