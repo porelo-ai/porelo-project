@@ -38,6 +38,22 @@ sprints:
       - title: "The release plan page drawn as the local one"
         test: "The page made from the plan shows each sprint's bar by its issues' states, coloured chips per issue and a mark per function, as the local page does, drawn as SVG so the central forge shows it too; every text in it is escaped."
         issues: [porelo-buildtools#BT27]
+  - id: "2c"
+    title: "The host flow anew"
+    goal: "Putting a project on a server, walked first against stand-ins: no locked screen, no secret in a form, every step in words, and the person's own steps offered by the interface."
+    functions:
+      - title: "The host flow walked against stand-ins"
+        test: "In a development build against the stand-in porelo-host, the operator walks up and down: the host stands in Machines while it is prepared, each step in words with the time left, a stop shown as needs you, down from the host's own menu with no field typed again; a refused start names its cause in words."
+        issues: [porelo-frontend#F162, porelo-frontend#F154, porelo-frontend#F155, porelo-frontend#F156, porelo-host#HO21, porelo-frontend#F161, porelo#B268, porelo#B265, porelo#B267]
+      - title: "Secrets only in a terminal, by the provider's own login"
+        test: "At the host's stop a terminal opens with Tresorit's own login, the code asked after the password; the vault's passphrase is typed there; the forge is reached with the person's token from GitHub's device-code login, and no deploy key is made; Ctrl+Shift+V pastes in every terminal of the interface."
+        issues: [porelo-frontend#F152, porelo-frontend#F153, porelo-frontend#F160, porelo-project#PJ69]
+      - title: "The person's own steps offered, the room without handwork"
+        test: "The interface offers the VPN, joining the room and its tunnel as terminals with the command filled in; the room shows no helper account, or one that answers what it is; needs-you rows name their machine and their way out, and stay readable when resolved; work starts from a visible button."
+        issues: [porelo-frontend#F157, porelo-frontend#F158, porelo-frontend#F159, porelo-message-matrix#MX35, porelo#B264]
+      - title: "A rented host with the new flow"
+        test: "On a 32-core rented host, the whole flow from the interface: the collection comes with porelo-host, its digest checked; the room's homeserver starts with no hand fix; two tasks talk; down leaves nothing at the provider."
+        issues: [porelo-message-matrix#MX34, porelo-host#HO13, porelo-frontend#F163]
   - id: "3"
     title: "The build servers read"
     goal: "A build server asked from the command line, GitHub and Forgejo alike."
@@ -57,7 +73,7 @@ sprints:
     functions:
       - title: "Forgejo with its registry, a task fetching a snapshot by name"
         test: "The operator opens Forgejo through the VPN; a task reaches its registry by a declared name on 443 and fetches a snapshot, and reaches nothing else on the host."
-        issues: [porelo-host#HO08, porelo-host#HO17, porelo#B233, porelo#B234]
+        issues: [porelo-host#HO08, porelo-host#HO17, porelo#B233, porelo#B234, porelo-host#HO20, porelo#B266]
       - title: "Test machines by kind from the VM pool"
         test: "A run asks for the kind `ubuntu` and gets an account of the pool, reset afterwards; no workflow names a provider."
         issues: [porelo-host#HO12, porelo-buildtools#BT24, porelo-buildtools#BT25]
