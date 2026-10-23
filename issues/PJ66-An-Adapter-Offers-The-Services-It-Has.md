@@ -40,6 +40,18 @@ Three things are mixed up:
 - **"Not supported" is an answer of its own** for a call a service of that adapter cannot serve, never an empty
   result read as nothing found: the rule porelo
   [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224) sets for agents, for every service.
+- **A contract marks each function mandatory or optional.** A mandatory one is what makes the service of use at all,
+  such as a branch's head and a commit's verdict for `build`; in the Java interface it is an abstract method. An
+  optional one makes the service richer, such as starting a failed job again; in the Java interface it is a default
+  method that answers "not supported" until an adapter implements it.
+- **`describe` names, per service, its contract's version and the optional functions the adapter serves.** An adapter
+  that lacks a mandatory function is refused at `describe`, by name and before any task needs it, as an unknown
+  version is today. An optional function it lacks is off for that adapter: the interface does not offer it, and a call
+  to it is answered "not supported".
+- **A contract version or a function can be deprecated** before it is removed: the contract says since which release,
+  and in which it goes (in Java `@Deprecated(since = "...", forRemoval = true)`). Porelo still takes a deprecated one,
+  says so at `describe` and at every start that uses it, and refuses it only from the release named. So a new contract
+  version, such as `Build2` beside `Build1`, needs no window in which adapters are refused.
 - **The project file names a service, its adapter and its credential,** for example `builds: { adapter: github,
   credential: github-actions }` and `reviews: { adapter: bitbucket, credential: … }`, so each service signs in with its
   own rights.
