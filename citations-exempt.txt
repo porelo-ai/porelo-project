@@ -1,0 +1,2 @@
+# A release plan names its issues by repository and number on purpose: that is what it is made of.
+plan/0.6.yml

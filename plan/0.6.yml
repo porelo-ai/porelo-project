@@ -35,8 +35,7 @@ sprints:
     functions:
       - title: "The plan page made from the plan file"
         test: "`plan/0.6.md` shows the same sprints, functions, states and marks as the local page; `plan check` finds a planted fault."
-        issues: [porelo-project#PJ63]
-        notes: ["plan render and plan check in porelo-buildtools"]
+        issues: [porelo-project#PJ63, porelo-buildtools#BT26]
   - id: "3"
     title: "The build servers read"
     goal: "A build server asked from the command line, GitHub and Forgejo alike."
