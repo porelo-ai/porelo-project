@@ -55,14 +55,15 @@ Read in `porelo-buildtools` `release` at `c296fdd`, and in this repository.
   - a Finished issue in a function not yet tested;
   - a function with no issue and no `tested` date.
 - **In this repository**, by the coordinator, once the command is published:
-  - `plan/0.6.yml` with PJ39's nine sprints and the usability sprints as they stand;
+  - `plan/0.6.yml` with [PJ39](README.md#pj39)'s nine sprints and the usability sprints as they stand;
   - the page `plan/0.6.md` rendered from it;
   - the index's sprint section shortened to a pointer to the page;
   - `plan check` run by hand before each push, as the project's other checks are. This project has no workflow of
     its own.
 - **Estimate:** wall time about 180 minutes for the command, with Codex building and reviewing, and about 45 minutes
-  for this repository's part. Measured neighbour: porelo-host HO18, size S, 51 minutes - one plugin, its tests seen
-  red first, docs. This is about three times that: two verbs, a renderer, a file format.
+  for this repository's part. Measured neighbour: porelo-host
+  [HO18](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho18), size S, 51 minutes - one plugin, its
+  tests seen red first, docs. This is about three times that: two verbs, a renderer, a file format.
 
 ## Acceptance
 
