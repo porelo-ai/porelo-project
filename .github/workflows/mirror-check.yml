@@ -1,0 +1,77 @@
+# Measures, on the runner the package check uses, how installing porelo's dependencies in ubuntu:26.04
+# behaves per Ubuntu mirror: apt-get update, each file's download, then the real install with every
+# line of its output timestamped, so a hang shows where it is. Started by hand only; it publishes and
+# rents nothing and reads no secret.
+name: Mirror check
+
+on:
+    workflow_dispatch:
+        inputs:
+            mirror:
+                description: "Another mirror to compare, e.g. http://de.archive.ubuntu.com/ubuntu/ (optional)"
+                required: false
+                default: ""
+
+permissions:
+    contents: read
+
+jobs:
+    measure:
+        runs-on: ubuntu-24.04
+        timeout-minutes: 75
+        steps:
+            - name: The runner
+              env:
+                  MIRROR: ${{ inputs.mirror }}
+              run: |
+                  echo "cpus: $(nproc)"; free -m | head -2; podman --version
+                  for m in http://azure.archive.ubuntu.com/ubuntu/ http://archive.ubuntu.com/ubuntu/ $MIRROR; do
+                      curl -s -o /dev/null --max-time 30 \
+                          -w "release file of $m: %{http_code} in %{time_total} s (connect %{time_connect} s)\n" \
+                          "${m}dists/resolute/Release" || echo "release file of $m: no answer in 30 s"
+                  done
+
+            - name: Write the measurement
+              run: |
+                  cat > "$RUNNER_TEMP/measure.sh" <<'EOF'
+                  set -u
+                  export DEBIAN_FRONTEND=noninteractive
+                  stamp() { while IFS= read -r line; do printf '%s %s\n' "$(date -u +%H:%M:%S)" "$line"; done; }
+                  sed -i "s|^URIs:.*|URIs: $MIRROR|" /etc/apt/sources.list.d/*.sources
+                  printf '%s\n' 'Acquire::http::Timeout "20";' 'Acquire::Retries "2";' > /etc/apt/apt.conf.d/99-timeouts
+                  echo "== apt-get update"
+                  s=$(date +%s); apt-get update --error-on=any 2>&1 | stamp; echo "apt-get update: $(( $(date +%s) - s )) s"
+                  deps="podman nftables dnsmasq-base git util-linux"
+                  echo "== what installing porelo's dependencies fetches (Recommends included, as the check installs)"
+                  apt-get install --print-uris -qq $deps 2>/dev/null | awk -F"'" '/^.http/{print $2}' > /tmp/uris
+                  echo "files: $(wc -l < /tmp/uris)"
+                  apt-get install -y -qq curl >/dev/null 2>&1 || true
+                  : > /tmp/times
+                  while read -r u; do
+                      curl -s -o /dev/null --max-time 120 -w '%{time_total} %{size_download} %{http_code} %{url_effective}\n' "$u" >> /tmp/times \
+                          || echo "120 0 TIMEOUT $u" >> /tmp/times
+                  done < /tmp/uris
+                  awk '{t+=$1; b+=$2} END{printf "downloaded %.1f MB in %.1f s, one file after another\n", b/1e6, t}' /tmp/times
+                  echo "slowest 10:"; sort -rn /tmp/times | head -10 | awk '{printf "  %6.1f s  %8.0f kB  %s  %s\n",$1,$2/1000,$3,$4}'
+                  echo "not 200:"; awk '$3!="200"{print "  "$0}' /tmp/times
+                  echo "== the real install, each line timestamped"
+                  s=$(date +%s); apt-get install -y -o Dpkg::Use-Pty=0 $deps 2>&1 | stamp; echo "install: $(( $(date +%s) - s )) s"
+                  EOF
+
+            - name: Azure mirror (the package check's)
+              timeout-minutes: 20
+              continue-on-error: true
+              run: podman run --rm -e MIRROR=http://azure.archive.ubuntu.com/ubuntu/ -v "$RUNNER_TEMP":/m:ro ubuntu:26.04 bash /m/measure.sh
+
+            - name: Ubuntu's main archive
+              timeout-minutes: 20
+              continue-on-error: true
+              run: podman run --rm -e MIRROR=http://archive.ubuntu.com/ubuntu/ -v "$RUNNER_TEMP":/m:ro ubuntu:26.04 bash /m/measure.sh
+
+            - name: The mirror given
+              if: ${{ inputs.mirror != '' }}
+              timeout-minutes: 20
+              continue-on-error: true
+              env:
+                  MIRROR: ${{ inputs.mirror }}
+              run: podman run --rm -e MIRROR -v "$RUNNER_TEMP":/m:ro ubuntu:26.04 bash /m/measure.sh
