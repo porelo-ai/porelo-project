@@ -55,6 +55,10 @@ Three things are mixed up:
 - **The project file names a service, its adapter and its credential,** for example `builds: { adapter: github,
   credential: github-actions }` and `reviews: { adapter: bitbucket, credential: … }`, so each service signs in with its
   own rights.
+- **A service says the kind of credential it needs**, at `describe`: `build` and `review` call a forge's or build
+  server's API and take a token, never an ssh key. A credential of the wrong kind is refused at `describe`, by name.
+- **Git is not a service of an adapter:** clone, fetch and push are Porelo's own, through `doc/credentials.md` in
+  porelo, with the person's ssh key or token ([PJ69](README.md#pj69)).
 - **Adapters are found in one place,** with a directory per adapter rather than per service, and an adapter's package
   installs it there.
 - **Repositories follow adapters, not services:** the repository [PJ62](README.md#pj62) makes is named
