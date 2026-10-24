@@ -1,6 +1,6 @@
 # PJ39 — Porelo is built in Porelo tasks
 
-**Status:** Implementing; the groundwork is done, sprint 1 (an agent working on the rented host) is under way.
+**Status:** Implementing; its sprints are planned in `plan/0.6.yml`, where each stands is on the plan's page.
 
 **What must be true.** The agents that analyse, build and rework Porelo's issues do that work in Porelo tasks of the
 project `porelo`, not as sessions on the host. Each task's work is built and tested on the local forge as it would be
