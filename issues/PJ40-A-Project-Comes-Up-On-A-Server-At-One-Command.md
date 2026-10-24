@@ -52,7 +52,8 @@ is where the command is tried and refined before anyone else relies on it.
   (decided 2026-10-18): `host up` takes it from a provider before up and `host down` gives it back after down (see
   *Renting the host* below). A machine of one's own skips the step, and its address goes into the person's setup
   file. OpenTofu, one module per provider with the state kept encrypted with the person, stays a planned extension
-  for Porelo as a product for others; it is not needed for this project's own run.
+  for Porelo as a product for others, in porelo-host as its Idea "A Machine Rented And Given Back By OpenTofu"; it is
+  not needed for this project's own run.
 - **Where it lives**: a new repository, a product of its own and not part of Porelo's internal build tooling, holds
   the playbook and its roles, published as an Ansible collection, in versions that match Porelo's. It gets an agent of its own, as every repository has one. What it calls on stays in `porelo`:
   writing the configuration, the follow, the keys and the images.

@@ -41,7 +41,8 @@ way into a host it is written down who uses it, for what, and over which channel
   file**: the machine's address, the account, the host key's fingerprint, and whether a VPN is needed. On a machine in
   the company's network the access file says it is reached directly, and no WireGuard key is asked for.
 - **Setting up and taking down may happen outside Porelo**: by `porelo-host` for a rented host, by an OpenTofu module
-  per provider (the extension [PJ40](README.md#pj40) names), or by a company's own tools. The person's side is only the access file.
+  per provider (the extension [PJ40](README.md#pj40) names, porelo-host's Idea "A Machine Rented And Given Back By
+  OpenTofu"), or by a company's own tools. The person's side is only the access file.
 
 ## What is mixed today
 
