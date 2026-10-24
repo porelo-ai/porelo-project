@@ -40,8 +40,7 @@ sprints:
         issues: [porelo-project#PJ63, porelo-buildtools#BT26]
       - title: "The release plan page drawn as the local one"
         test: "The page made from the plan shows each sprint's bar by its issues' states, coloured chips per issue and a mark per function, as the local page does, drawn as SVG so the central forge shows it too; every text in it is escaped."
-        tested: "2026-10-24"
-        issues: [porelo-buildtools#BT27]
+        issues: [porelo-buildtools#BT27, porelo-buildtools#BT29]
   - id: "2c"
     title: "The host flow anew"
     goal: "Putting a project on a server, walked first against stand-ins: no locked screen, no secret in a form, every step in words, and the person's own steps offered by the interface."
