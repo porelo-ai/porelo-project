@@ -53,7 +53,7 @@ sprints:
         issues: [porelo-frontend#F152, porelo-frontend#F153, porelo-frontend#F160, porelo-project#PJ69, porelo#B269]
       - title: "The person's own steps offered, the room without handwork"
         test: "The interface offers the VPN, joining the room and its tunnel as terminals with the command filled in; the room shows no helper account, or one that answers what it is; needs-you rows name their machine and their way out, and stay readable when resolved; work starts from a visible button."
-        issues: [porelo-frontend#F157, porelo-frontend#F158, porelo-frontend#F159, porelo-message-matrix#MX35, porelo#B264]
+        issues: [porelo-frontend#F157, porelo-frontend#F158, porelo-frontend#F159, porelo-frontend#F165, porelo-message-matrix#MX35, porelo#B264]
       - title: "A rented host with the new flow"
         test: "On a 32-core rented host, the whole flow from the interface: the collection comes with porelo-host, its digest checked; the room's homeserver starts with no hand fix; two tasks talk; down leaves nothing at the provider."
         issues: [porelo-message-matrix#MX34, porelo-host#HO13, porelo-buildtools#BT28, porelo-frontend#F163]
