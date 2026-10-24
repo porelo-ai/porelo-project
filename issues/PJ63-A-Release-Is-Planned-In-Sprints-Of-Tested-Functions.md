@@ -1,6 +1,6 @@
 # PJ63 — A release is planned in sprints of tested functions
 
-**Status:** Backlog; planned right after sprint 2 of [PJ39](README.md#pj39).
+**Status:** Review; built by porelo-buildtools [BT26](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt26) and [BT27](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt27), both published, and this project's plan moved into `plan/`.
 **Size:** M - one new command with two verbs in the release tools, a file format another repository (porelo-frontend)
 will read, its documentation, and this project's plan moved into it.
 

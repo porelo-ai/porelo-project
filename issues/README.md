@@ -117,6 +117,7 @@ The agents' work chosen, checked and paid for by rule; its plan is `plan/0.8.yml
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj63"></a>[PJ63](PJ63-A-Release-Is-Planned-In-Sprints-Of-Tested-Functions.md) | M | — | A release planned once in a checked-in file - its sprints, each sprint's functions the operator tests and the issues serving them - and a page made from it with every issue's state, kept current by the coordinator and checked against the indexes. |
 
 ## Implementing
 
@@ -132,7 +133,6 @@ The agents' work chosen, checked and paid for by rule; its plan is `plan/0.8.yml
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj63"></a>[PJ63](PJ63-A-Release-Is-Planned-In-Sprints-Of-Tested-Functions.md) | M | — | A release planned once in a checked-in file - its sprints, each sprint's functions the operator tests and the issues serving them - and a page made from it with every issue's state, kept current by the coordinator and checked against the indexes. |
 | <a id="pj45"></a>[PJ45](PJ45-Chosen-Data-Outlives-The-Machine.md) | M | — | A short list of data that lives only on a machine - the Matrix room, the token usage records and the Maven cache to start with - copied every hour and at down by restic into the project's S3 store, encrypted on the host, and put back at up; nothing else is kept. |
 
 ## Analyzed
