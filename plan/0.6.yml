@@ -51,7 +51,7 @@ sprints:
         issues: [porelo-frontend#F162, porelo-frontend#F164, porelo-frontend#F154, porelo-frontend#F155, porelo-frontend#F156, porelo-host#HO21, porelo-frontend#F161, porelo#B268, porelo-message-matrix#MX37, porelo#B265, porelo#B267]
       - title: "Secrets only in a terminal, by the provider's own login"
         test: "At the host's stop a terminal opens with Tresorit's own login, the code asked after the password; the vault's passphrase is typed there; the forge is reached with the person's token from GitHub's device-code login, and no deploy key is made; Ctrl+Shift+V pastes in every terminal of the interface."
-        issues: [porelo-frontend#F152, porelo-frontend#F153, porelo-frontend#F160, porelo-project#PJ69, porelo#B269]
+        issues: [porelo-frontend#F152, porelo-frontend#F153, porelo-frontend#F160, porelo#B269]
       - title: "The person's own steps offered, the room without handwork"
         test: "The interface offers the VPN, joining the room and its tunnel as terminals with the command filled in; the room shows no helper account, or one that answers what it is; needs-you rows name their machine and their way out, and stay readable when resolved; work starts from a visible button."
         issues: [porelo-frontend#F157, porelo-frontend#F158, porelo-frontend#F159, porelo-frontend#F165, porelo-message-matrix#MX35, porelo#B264, porelo#B273]
