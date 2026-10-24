@@ -40,6 +40,7 @@ sprints:
         issues: [porelo-project#PJ63, porelo-buildtools#BT26]
       - title: "The release plan page drawn as the local one"
         test: "The page made from the plan shows each sprint's bar by its issues' states, coloured chips per issue and a mark per function, as the local page does, drawn as SVG so the central forge shows it too; every text in it is escaped."
+        tested: "2026-10-24"
         issues: [porelo-buildtools#BT27, porelo-buildtools#BT29]
   - id: "2c"
     title: "The host flow anew"
@@ -53,7 +54,7 @@ sprints:
         issues: [porelo-frontend#F152, porelo-frontend#F153, porelo-frontend#F160, porelo-project#PJ69, porelo#B269]
       - title: "The person's own steps offered, the room without handwork"
         test: "The interface offers the VPN, joining the room and its tunnel as terminals with the command filled in; the room shows no helper account, or one that answers what it is; needs-you rows name their machine and their way out, and stay readable when resolved; work starts from a visible button."
-        issues: [porelo-frontend#F157, porelo-frontend#F158, porelo-frontend#F159, porelo-frontend#F165, porelo-message-matrix#MX35, porelo#B264]
+        issues: [porelo-frontend#F157, porelo-frontend#F158, porelo-frontend#F159, porelo-frontend#F165, porelo-message-matrix#MX35, porelo#B264, porelo#B273]
       - title: "A rented host with the new flow"
         test: "On a 32-core rented host, the whole flow from the interface: the collection comes with porelo-host, its digest checked; the room's homeserver starts with no hand fix; two tasks talk; down leaves nothing at the provider."
         issues: [porelo-message-matrix#MX34, porelo-host#HO13, porelo-buildtools#BT28, porelo-frontend#F163]
@@ -108,7 +109,7 @@ sprints:
         notes: ["Smith's move issue", "PJ60 issues for the three repositories"]
       - title: "AGY and Codex in their tasks, their sub-agents signed in"
         test: "Antigravity with the operator's Google subscription and Codex CLI with its sign-in, both from the vault."
-        issues: [porelo#P12, porelo-agy#AG01, porelo-codex#CX01, porelo-codex#CX02]
+        issues: [porelo#P12, porelo-agy#AG01, porelo-codex#CX01, porelo#B272, porelo-codex#CX02]
         notes: ["AGY's move issue", "Codex's move issue"]
   - id: "7"
     title: "The move, second wave: the other toolchains"
