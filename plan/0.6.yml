@@ -104,6 +104,7 @@ sprints:
         notes: ["Sluice's move issue"]
       - title: "Smith in its task, with snapshots of porelo from the registry"
         test: "Smith's three repositories build on Forgejo and take porelo from the local registry."
+        issues: [porelo-pi#PI21]
         notes: ["Smith's move issue", "PJ60 issues for the three repositories"]
       - title: "AGY and Codex in their tasks, their sub-agents signed in"
         test: "Antigravity with the operator's Google subscription and Codex CLI with its sign-in, both from the vault."
