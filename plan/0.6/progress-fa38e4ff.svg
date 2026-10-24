@@ -1,0 +1,359 @@
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1130 434" role="img" aria-label="Sprint progress for release 0.6">
+<title>Sprint progress for release 0.6</title>
+<style>
+text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
+@media (prefers-color-scheme:dark){text{fill:#f0efec}.legend{fill:#c3c2b7}.c-surface{fill:#1a1a19}.c-grid{fill:#383835}.c-backlog{fill:#80bee6}.c-estimated{fill:#b497cf}.c-analyzed{fill:#77766f}.c-accepted{fill:#aaa9a2}.c-review{fill:#3987e5}.c-idea{fill:#d95926}.c-new{fill:#1a1a19}}
+</style>
+<rect width="100%" height="100%" fill="#fcfcfb" class="c-surface"/>
+
+
+<g transform="translate(0 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#0ca30c" class="c-done" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Finished / Rejected</text>
+</g>
+
+
+<g transform="translate(320 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#2a78d6" class="c-review" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Review</text>
+</g>
+
+
+<g transform="translate(640 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#fab219" class="c-impl" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Implementing / Rework</text>
+</g>
+
+
+<g transform="translate(0 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#8ac8f0" class="c-backlog" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Backlog</text>
+</g>
+
+
+<g transform="translate(320 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#9575b5" class="c-estimated" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Estimated</text>
+</g>
+
+
+<g transform="translate(640 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#77766f" class="c-analyzed" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Analyzed</text>
+</g>
+
+
+<g transform="translate(0 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#b9b8b2" class="c-accepted" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Accepted</text>
+</g>
+
+
+<g transform="translate(320 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#eb6834" class="c-idea" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Idea</text>
+</g>
+
+
+<g transform="translate(640 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#ffffff" class="c-new" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Not filed yet / Missing</text>
+</g>
+
+
+
+<g transform="translate(0 94)">
+<text x="0" y="17">1. An agent works on the rented host</text>
+<desc>Finished 13. F131: porelo-frontend#F131 · Finished · - · A Host Brought Up And Down By One Command; F132: porelo-frontend#F132 · Finished · - · A Host Rented From Scaleway Elastic Metal; F134: porelo-frontend#F134 · Finished · - · The Host Command Built And Shipped For Linux And Windows; HO09: porelo-host#HO09 · Finished · - · Up And Down In Their Order; HO05: porelo-host#HO05 · Finished · - · The VPN; HO06: porelo-host#HO06 · Finished · - · The Person's Drive Mounted; HO02: porelo-host#HO02 · Finished · - · Porelo's Own Commands Called, Never Redone; CC30: porelo-claude-code#CC30 · Finished · - · Switch Off The Agent's Own Memory In A Task; CC24: porelo-claude-code#CC24 · Finished · - · Prove OAuth Isolation End To End; B255: porelo#B255 · Finished · - · No Stored Kind Is Invented For An Empty Vault; SL29: porelo-message-sluice#SL29 · Finished · - · Built in a Porelo task; B189: porelo#B189 · Finished · - · Values Handed To A Task At Its Start; B192: porelo#B192 · Finished · - · An Image Chosen Per Repository; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 13</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">13 of 13 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>The host rented and given back at one command: Tested 2026-10-23</title>✅</text>
+
+
+<text x="1054" y="17"><title>Claude works in a task, signed in with the operator's subscription: Tested 2026-10-23</title>✅</text>
+
+
+<text x="1078" y="17"><title>Each repository brings its image, and each task its values: Tested 2026-10-23</title>✅</text>
+
+</g>
+
+
+<g transform="translate(0 124)">
+<text x="0" y="17">2. The host from the interface, the agents in the room</text>
+<desc>Finished 15. F135: porelo-frontend#F135 · Finished · - · The Interface Brings A Host Up And Down; F140: porelo-frontend#F140 · Finished · - · The Host's Files Written Into The Person's Drive; F141: porelo-frontend#F141 · Finished · - · An Agent Signed In When A Task Needs It On The Host; HO19: porelo-host#HO19 · Finished · - · The Machine Installs Its Agents And Starts No Task; HO10: porelo-host#HO10 · Finished · - · A Vault Opened With Nobody There; B258: porelo#B258 · Finished · - · The Machine Installs Every Agent And Names No Task; B261: porelo#B261 · Finished · - · A Stop Of Everything Says What Still Runs; HO18: porelo-host#HO18 · Finished · - · A Failed Loop Says Why; F151: porelo-frontend#F151 · Finished · - · A Stop's Survivors Read In Either Form; HO11: porelo-host#HO11 · Finished · - · The Homeserver's Packages; MX12: porelo-message-matrix#MX12 · Finished · - · Several Machines On One Homeserver; MX31: porelo-message-matrix#MX31 · Finished · - · A Host Named In Upper Case Joins Its Conversation; MX32: porelo-message-matrix#MX32 · Finished · - · The Account Is Cleared With Its Machine Named; MX33: porelo-message-matrix#MX33 · Finished · - · A Person Is Shown By Their Name; B259: porelo#B259 · Finished · - · A Person's Message Id The Filter Takes; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 15</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">15 of 15 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>The host up and down from the interface, then a task started there: Tested 2026-10-23</title>✅</text>
+
+
+<text x="1054" y="17"><title>Two agents talk in the room, and a message wakes the resting one: Tested 2026-10-23</title>✅</text>
+
+</g>
+
+
+<g transform="translate(0 154)">
+<text x="0" y="17">2b. The release plan as a page</text>
+<desc>Finished 5. PJ63: porelo-project#PJ63 · Finished · - · A release is planned in sprints of tested functions; BT26: porelo-buildtools#BT26 · Finished · - · A Release Planned In Sprints Of Tested Functions; BT27: porelo-buildtools#BT27 · Finished · - · The Release Plan Page Drawn From Templates; BT29: porelo-buildtools#BT29 · Finished · - · The Plan Page Tells Ready From Undecided; BT31: porelo-buildtools#BT31 · Finished · - · A Function Names The Parents It Covers; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 5</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">5 of 5 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>The plan page made from the plan file: Tested 2026-10-24</title>✅</text>
+
+
+<text x="1054" y="17"><title>The release plan page drawn as the local one: Tested 2026-10-24</title>✅</text>
+
+
+<text x="1078" y="17"><title>A parent issue shown apart from the issues that carry its work: Tested 2026-10-24</title>✅</text>
+
+</g>
+
+
+<g transform="translate(0 184)">
+<text x="0" y="17">2c. The host flow anew</text>
+<desc>Review 26. F162: porelo-frontend#F162 · Review · — · The Host Flow Walked Against Stand-Ins; F164: porelo-frontend#F164 · Review · — · Putting A Project On A Server, Step By Step; F154: porelo-frontend#F154 · Review · — · A Host Stands In Machines While It Is Prepared; F155: porelo-frontend#F155 · Review · — · A Host Taken Down From Machines; F156: porelo-frontend#F156 · Review · — · The Host Dialog's Fields And Words; HO21: porelo-host#HO21 · Review · S · Each Step Says What It Does And How Long; F161: porelo-frontend#F161 · Review · — · A Start's Progress And Refusal In Words; B268: porelo#B268 · Review · M · A Start Says Each Step And What It Waits On; MX37: porelo-message-matrix#MX37 · Review · XS · The Homeserver Says Why It Did Not Start; B265: porelo#B265 · Review · S · A Reserved Variable Refused With Its Fix; B267: porelo#B267 · Review · S · A Mirror Without A Default Branch Is Named; F152: porelo-frontend#F152 · Review · — · Secrets For A Host Typed Only In A Terminal; F153: porelo-frontend#F153 · Review · — · A Forge's Token By The Provider's Own Login; F160: porelo-frontend#F160 · Review · — · The Interface's Terminals Paste As Linux Terminals Do; B269: porelo#B269 · Review · M · Git By The Person's Key Or Token, With No Deploy Key; F157: porelo-frontend#F157 · Review · — · A Person's Terminal Steps Offered By The Interface; F158: porelo-frontend#F158 · Review · — · A Needs-You Row Names Its Machine And Its Way Out; F159: porelo-frontend#F159 · Review · — · Work Started From The Project Page; F165: porelo-frontend#F165 · Review · — · A Project's Commands As Tiles On Its Page; MX35: porelo-message-matrix#MX35 · Review · M · A Person Knows The Room's Helpers; B264: porelo#B264 · Review · S · A Word To A Helper Wakes No Task; B273: porelo#B273 · Review · S · A Conversation Says What It Waits On; MX34: porelo-message-matrix#MX34 · Review · S · The Homeserver Starts On A Large Machine; HO13: porelo-host#HO13 · Review · S · A Release Carries Its Tarball And Digest; BT28: porelo-buildtools#BT28 · Review · M · A Release's Publish Job May Write Its Contents; F163: porelo-frontend#F163 · Review · — · The Collection Comes With Porelo-Host; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 26</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 26 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>The host flow walked against stand-ins: Tested 2026-10-24</title>✅</text>
+
+
+<text x="1054" y="17"><title>Secrets only in a terminal, by the provider's own login: Tested 2026-10-24</title>✅</text>
+
+
+<text x="1078" y="17"><title>The person's own steps offered, the room without handwork: Tested 2026-10-24</title>✅</text>
+
+
+<text x="1102" y="17"><title>A rented host with the new flow: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 214)">
+<text x="0" y="17">3. The build servers read</text>
+<desc>Backlog 2, Idea 2. B256: porelo#B256 · Backlog · M · A Person Asks What a Branch or a Commit Built; GH07: porelo-build-github#GH07 · Idea · - · The Forgejo Adapter Answers As The GitHub One; B253: porelo#B253 · Backlog · M · Every Forge Adapter Speaks the Build Contract's Second Version; GH06: porelo-build-github#GH06 · Idea · - · One Contract Suite Every Adapter Passes; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 2</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 4 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>A build server asked from the command line: Not tested</title>⚪</text>
+
+
+<text x="1054" y="17"><title>The same command reads Forgejo: Not tested</title>⚪</text>
+
+
+<text x="1078" y="17"><title>Both adapters pass one contract suite: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 244)">
+<text x="0" y="17">4. The local forge builds as the central one</text>
+<desc>Implementing 3, Estimated 2, Accepted 5, Not filed yet 1. HO08: porelo-host#HO08 · Implementing · L · The Forge With Its Registry; HO17: porelo-host#HO17 · Accepted · XS · The Forge's CA In Porelo's Account; B233: porelo#B233 · Accepted · L · A Host Service Reached By Name; B234: porelo#B234 · Accepted · M · The Host's Authority In A Task's Trust Store; HO20: porelo-host#HO20 · Estimated · M · Every Container Of The Host Fits The Machine; B266: porelo#B266 · Estimated · M · A Task Fits The Machine It Runs On; HO12: porelo-host#HO12 · Implementing · L · The VM Pool; BT24: porelo-buildtools#BT24 · Implementing · M · An Account Rented From The Local Pool; BT25: porelo-buildtools#BT25 · Accepted · L · Machines Asked For By Kind; PJ60: porelo-project#PJ60 · Accepted · — · Every workflow runs on the local forge as on the central one; PJ60 issue for porelo-message-sluice: Not filed yet; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="109.0909090909091" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 3</title></rect>
+
+<rect x="109.0909090909091" width="72.72727272727273" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 2</title></rect>
+
+<rect x="181.8181818181818" width="181.8181818181818" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 5</title></rect>
+
+<rect x="363.6363636363636" width="36.36363636363637" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 11 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>Forgejo with its registry, a task fetching a snapshot by name: Not tested</title>⚪</text>
+
+
+<text x="1054" y="17"><title>Test machines by kind from the VM pool: Not tested</title>⚪</text>
+
+
+<text x="1078" y="17"><title>Sluice green on both forges on the same commit: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 274)">
+<text x="0" y="17">5. From the task's push to the central forge, after approval</text>
+<desc>Accepted 3. PJ61: porelo-project#PJ61 · Accepted · — · The project porelo is online with the local forge upstream; BT06: porelo-buildtools#BT06 · Accepted · - · Push Mirrors Started Through The Forge; PJ37: porelo-project#PJ37 · Accepted · — · Work reaches the upstream by a machine key or the person's own token; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 3</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>The task hears its build from Forgejo: Not tested</title>⚪</text>
+
+
+<text x="1054" y="17"><title>Only the operator's approval brings the work to the central forge: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 304)">
+<text x="0" y="17">6. The move, first wave</text>
+<desc>Review 1, Implementing 4, Analyzed 1, Accepted 2, Not filed yet 5. PJ59: porelo-project#PJ59 · Accepted · — · Each agent moves into a Porelo task; F148: porelo-frontend#F148 · Accepted · — · An Agent For Each Repository, At One Click; Sluice's move issue: Not filed yet; PI21: porelo-pi#PI21 · Review · L · A login inside a brokered Pi task fails; Smith's move issue: Not filed yet; PJ60 issues for the three repositories: Not filed yet; P12: porelo#P12 · Implementing · L · The Google Sign-In As A Provider; AG01: porelo-agy#AG01 · Implementing · L · Agent Antigravity CLI; CX01: porelo-codex#CX01 · Implementing · L · Agent Codex CLI; B272: porelo#B272 · Analyzed · S · A Sign-In Is Renewed On The Host On Request; CX02: porelo-codex#CX02 · Implementing · M · Build in a Porelo task; AGY's move issue: Not filed yet; Codex's move issue: Not filed yet; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="30.76923076923077" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
+
+<rect x="30.76923076923077" width="123.07692307692308" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 4</title></rect>
+
+<rect x="153.84615384615384" width="30.76923076923077" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="184.6153846153846" width="61.53846153846154" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
+
+<rect x="246.15384615384616" width="153.84615384615384" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 5</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 13 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>Sluice works wholly in its task: Not tested</title>⚪</text>
+
+
+<text x="1054" y="17"><title>Smith in its task, with snapshots of porelo from the registry: Not tested</title>⚪</text>
+
+
+<text x="1078" y="17"><title>AGY and Codex in their tasks, their sub-agents signed in: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 334)">
+<text x="0" y="17">7. The move, second wave: the other toolchains</text>
+<desc>Not filed yet 5. Matrix's move issue: Not filed yet; PJ60 issue for porelo-message-matrix: Not filed yet; IntelliJ's move issue: Not filed yet; Frontend's move issue: Not filed yet; PJ60 issues for the three repositories: Not filed yet; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 5</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 5 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>Matrix in its task: Not tested</title>⚪</text>
+
+
+<text x="1054" y="17"><title>IntelliJ and Frontend in their tasks: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 364)">
+<text x="0" y="17">8. The move, last wave</text>
+<desc>Accepted 1, Not filed yet 2. Core's move issue: Not filed yet; PJ60 issue for porelo: Not filed yet; PJ58: porelo-project#PJ58 · Accepted · — · The coordinator works in one repository of them all; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="133.33333333333334" width="266.6666666666667" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 2</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>Core in its task, with a way back: Not tested</title>⚪</text>
+
+
+<text x="1054" y="17"><title>The coordinator reads everything and changes only porelo-project: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 394)">
+<text x="0" y="17">9. Clearing up and counting</text>
+<desc>Review 2, Backlog 2, Analyzed 2, Accepted 1, Not filed yet 1. every repository's AGENTS.md rewritten: Not filed yet; MX24: porelo-message-matrix#MX24 · Review · M · The Room Outlives The Machine; MX36: porelo-message-matrix#MX36 · Review · S · A Backup Runs While Tasks Poll; HO07: porelo-host#HO07 · Backlog · L · The Project's Store Restored And Kept; B231: porelo#B231 · Analyzed · M · The Usage Records Kept Off The Machine; B148: porelo#B148 · Analyzed · L · Token Counting Per Task; PJ38: porelo-project#PJ38 · Accepted · — · An estimate learns from the tokens spent; B193: porelo#B193 · Backlog · XL · A Dependency Cache Shared Across Tasks; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="100.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
+
+<rect x="100.0" width="100.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 2</title></rect>
+
+<rect x="200.0" width="100.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+
+<rect x="300.0" width="50.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="350.0" width="50.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 8 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>No channel file and no hand-over directory any more: Not tested</title>⚪</text>
+
+
+<text x="1054" y="17"><title>The room and the usage records outlive the host: Not tested</title>⚪</text>
+
+
+<text x="1078" y="17"><title>The tokens counted per task, the dependencies shared: Not tested</title>⚪</text>
+
+</g>
+
+</svg>
