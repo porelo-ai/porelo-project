@@ -48,7 +48,7 @@ sprints:
     functions:
       - title: "The host flow walked against stand-ins"
         test: "In a development build against the stand-in porelo-host, the operator walks up and down: the host stands in Machines while it is prepared, each step in words with the time left, a stop shown as needs you, down from the host's own menu with no field typed again; a refused start names its cause in words."
-        issues: [porelo-frontend#F162, porelo-frontend#F154, porelo-frontend#F155, porelo-frontend#F156, porelo-host#HO21, porelo-frontend#F161, porelo#B268, porelo#B265, porelo#B267]
+        issues: [porelo-frontend#F162, porelo-frontend#F154, porelo-frontend#F155, porelo-frontend#F156, porelo-host#HO21, porelo-frontend#F161, porelo#B268, porelo-message-matrix#MX37, porelo#B265, porelo#B267]
       - title: "Secrets only in a terminal, by the provider's own login"
         test: "At the host's stop a terminal opens with Tresorit's own login, the code asked after the password; the vault's passphrase is typed there; the forge is reached with the person's token from GitHub's device-code login, and no deploy key is made; Ctrl+Shift+V pastes in every terminal of the interface."
         issues: [porelo-frontend#F152, porelo-frontend#F153, porelo-frontend#F160, porelo-project#PJ69]
@@ -139,7 +139,7 @@ sprints:
         notes: ["every repository's AGENTS.md rewritten"]
       - title: "The room and the usage records outlive the host"
         test: "After `down` and a new `up` the room is there with its messages, and so are the records."
-        issues: [porelo-project#PJ45, porelo-message-matrix#MX24, porelo-host#HO07, porelo#B231]
+        issues: [porelo-project#PJ45, porelo-message-matrix#MX24, porelo-message-matrix#MX36, porelo-host#HO07, porelo#B231]
       - title: "The tokens counted per task, the dependencies shared"
         test: "Each issue shows what its tasks spent; a second Maven build downloads nothing again."
         issues: [porelo#B148, porelo-project#PJ38, porelo#B193]
