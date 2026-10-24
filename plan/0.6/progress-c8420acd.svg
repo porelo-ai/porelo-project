@@ -167,14 +167,16 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 214)">
 <text x="0" y="17">2d. The host flow without stumbling</text>
-<desc>Implementing 1, Missing 12. porelo-frontend#F167: Missing index row; porelo-frontend#F171: Missing index row; HO25: porelo-host#HO25 · Implementing · S · The Stop Asks Again Until It Is Done; porelo-frontend#F172: Missing index row; porelo-frontend#F169: Missing index row; porelo-frontend#F170: Missing index row; porelo-frontend#F174: Missing index row; porelo-frontend#F175: Missing index row; porelo#B277: Missing index row; porelo-frontend#F168: Missing index row; porelo#B276: Missing index row; porelo-frontend#F173: Missing index row; porelo-frontend#F176: Missing index row; </desc>
+<desc>Implementing 1, Backlog 2, Missing 10. porelo-frontend#F167: Missing index row; porelo-frontend#F171: Missing index row; HO25: porelo-host#HO25 · Implementing · S · The Stop Asks Again Until It Is Done; porelo-frontend#F172: Missing index row; porelo-frontend#F169: Missing index row; porelo-frontend#F170: Missing index row; porelo-frontend#F174: Missing index row; porelo-frontend#F175: Missing index row; B277: porelo#B277 · Backlog · S · A Task Says When Its Agent Last Wrote And What Waits For It; porelo-frontend#F168: Missing index row; B276: porelo#B276 · Backlog · S · A Held Conversation Names The Vault And When The Project Was Used; porelo-frontend#F173: Missing index row; porelo-frontend#F176: Missing index row; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
 <rect x="0.0" width="30.76923076923077" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
 
-<rect x="30.76923076923077" width="369.2307692307692" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 12</title></rect>
+<rect x="30.76923076923077" width="61.53846153846154" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 2</title></rect>
+
+<rect x="92.3076923076923" width="307.6923076923077" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 10</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 13 done</text>
