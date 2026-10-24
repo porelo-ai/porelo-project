@@ -75,10 +75,10 @@ sprints:
         issues: [porelo#B256]
       - title: "The same command reads Forgejo"
         test: "Against a Forgejo run in podman, the same answer in the same shape."
-        issues: [porelo-build-github#GH07, porelo#B275]
+        issues: [porelo-adapters#GH07, porelo#B275]
       - title: "Both adapters pass one contract suite"
         test: "Every case from recorded answers; an adapter broken on purpose fails it."
-        issues: [porelo#B253, porelo-build-github#GH06]
+        issues: [porelo#B253, porelo-adapters#GH06]
         covers: [porelo-project#PJ62]
   - id: "4"
     title: "The local forge builds as the central one"

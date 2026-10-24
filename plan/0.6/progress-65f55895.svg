@@ -167,7 +167,7 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 214)">
 <text x="0" y="17">3. The build servers read</text>
-<desc>Implementing 2, Backlog 1, Idea 2. B256: porelo#B256 · Implementing · M · A Person Asks What a Branch or a Commit Built; GH07: porelo-build-github#GH07 · Idea · - · The Forgejo Adapter Answers As The GitHub One; B275: porelo#B275 · Backlog · XS · A Forge On This Machine Answers Over Plain HTTP; B253: porelo#B253 · Implementing · M · Every Forge Adapter Speaks the Build Contract's Second Version; GH06: porelo-build-github#GH06 · Idea · - · One Contract Suite Every Adapter Passes; </desc>
+<desc>Implementing 2, Backlog 1, Idea 2. B256: porelo#B256 · Implementing · M · A Person Asks What a Branch or a Commit Built; GH07: porelo-adapters#GH07 · Idea · - · The Forgejo Adapter Answers As The GitHub One; B275: porelo#B275 · Backlog · XS · A Forge On This Machine Answers Over Plain HTTP; B253: porelo#B253 · Implementing · M · Every Forge Adapter Speaks the Build Contract's Second Version; GH06: porelo-adapters#GH06 · Idea · - · One Contract Suite Every Adapter Passes; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>

@@ -74,7 +74,7 @@ repositories:
         issues: ["PA"]
 
     github:
-        upstream: "git@github.com:porelo-ai/porelo-build-github.git"
+        upstream: "git@github.com:porelo-ai/porelo-adapters.git"
         description: "The build-server adapter for GitHub Actions: the verdict and the failing job's log of a task's build"
         issues: ["GH"]
 
