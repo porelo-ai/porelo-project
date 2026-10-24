@@ -167,14 +167,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 214)">
 <text x="0" y="17">2d. The host flow without stumbling</text>
-<desc>Review 3, Missing 10. porelo-frontend#F167: Missing index row; porelo-frontend#F171: Missing index row; HO25: porelo-host#HO25 · Review · S · The Stop Asks Again Until It Is Done; porelo-frontend#F172: Missing index row; porelo-frontend#F169: Missing index row; porelo-frontend#F170: Missing index row; porelo-frontend#F174: Missing index row; porelo-frontend#F175: Missing index row; B277: porelo#B277 · Review · S · A Task Says When Its Agent Last Wrote And What Waits For It; porelo-frontend#F168: Missing index row; B276: porelo#B276 · Review · S · A Held Conversation Names The Vault And When The Project Was Used; porelo-frontend#F173: Missing index row; porelo-frontend#F176: Missing index row; </desc>
+<desc>Review 13. F167: porelo-frontend#F167 · Review · — · The Project Bundle Written By The Wizard; F171: porelo-frontend#F171 · Review · — · The Stop Opens Its Own Small Dialog; HO25: porelo-host#HO25 · Review · S · The Stop Asks Again Until It Is Done; F172: porelo-frontend#F172 · Review · — · The VPN As The Setup's Last Step; F169: porelo-frontend#F169 · Review · — · A Server In Preparation Kept Across A Restart; F170: porelo-frontend#F170 · Review · — · The Setup Protocol With Times And Words; F174: porelo-frontend#F174 · Review · — · The Project Room Joined From The Project; F175: porelo-frontend#F175 · Review · — · A Running Task's Agent Said In Words; B277: porelo#B277 · Review · S · A Task Says When Its Agent Last Wrote And What Waits For It; F168: porelo-frontend#F168 · Review · — · The Locked-Vault Row Says Which Vault And Project; B276: porelo#B276 · Review · S · A Held Conversation Names The Vault And When The Project Was Used; F173: porelo-frontend#F173 · Review · — · Action Tiles That Read As Buttons; F176: porelo-frontend#F176 · Review · — · Giving The Server Back Confirmed By Its Consequences; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="92.3076923076923" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 3</title></rect>
-
-<rect x="92.3076923076923" width="307.6923076923077" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 10</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 13</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 13 done</text>
