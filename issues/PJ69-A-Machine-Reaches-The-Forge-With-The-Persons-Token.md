@@ -1,6 +1,6 @@
 # PJ69 — A machine reaches the forge with the person's token
 
-**Status:** Accepted.
+**Status:** Implementing; built in its two parts, `porelo` [B269](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b269) and `porelo-frontend` [F153](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f153), held for porelo-frontend's push.
 
 **What must be true.** A machine reaches a project's repositories and the forge's API with the person's own
 credentials, kept in the machine's vault: for git, the person's ssh key or their token, for the forge's API, their

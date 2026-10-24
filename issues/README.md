@@ -122,6 +122,8 @@ The agents' work chosen, checked and paid for by rule; its plan is `plan/0.8.yml
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj69"></a>[PJ69](PJ69-A-Machine-Reaches-The-Forge-With-The-Persons-Token.md) | — | — | A machine reaches the forge with the person's own credentials, kept in its vault - for git their ssh key or token, for the forge's API their token; Porelo no longer makes and removes a deploy key per machine and repository, which a company seldom lets a person create. |
+| <a id="pj45"></a>[PJ45](PJ45-Chosen-Data-Outlives-The-Machine.md) | M | — | A short list of data that lives only on a machine - the Matrix room, the token usage records and the Maven cache to start with - copied every hour and at down by restic into the project's S3 store, encrypted on the host, and put back at up; nothing else is kept. |
 | <a id="pj32"></a>[PJ32](PJ32-A-Vulnerability-Has-A-Way-In.md) | M | — | Whoever finds a vulnerability reports it privately through a `SECURITY.md` in every repository and one page in `doc/`; a fix gets a GitHub advisory and a changelog line. |
 | <a id="pj27"></a>[PJ27](PJ27-A-Contributor-Knows-The-Rules.md) | L | — | One guide for contributors in `porelo-project`'s `doc/`, linked from every repository's README and `CONTRIBUTING.md`: how the work is organised, how a change is made, what it must satisfy. |
 | <a id="pj40"></a>[PJ40](PJ40-A-Project-Comes-Up-On-A-Server-At-One-Command.md) | XL | — | Any project of several agents and repositories comes up on a server, owned or rented by the hour, at one command: Porelo writes an Ansible inventory from `project.yml`, the repositories' own files and the person's machine file; Ansible sets up the host from the host itself, `host up` (a Dart package of porelo-frontend, for the interface and the command line) rents it by the hour (Scaleway Elastic Metal for Porelo's own; OpenTofu later for others); following, keys and tasks stay Porelo's; Porelo's own project first. |
@@ -132,7 +134,6 @@ The agents' work chosen, checked and paid for by rule; its plan is `plan/0.8.yml
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj45"></a>[PJ45](PJ45-Chosen-Data-Outlives-The-Machine.md) | M | — | A short list of data that lives only on a machine - the Matrix room, the token usage records and the Maven cache to start with - copied every hour and at down by restic into the project's S3 store, encrypted on the host, and put back at up; nothing else is kept. |
 
 ## Analyzed
 
@@ -153,7 +154,6 @@ The agents' work chosen, checked and paid for by rule; its plan is `plan/0.8.yml
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
 | <a id="pj68"></a>[PJ68](PJ68-Every-Container-Fits-The-Machine-It-Runs-On.md) | — | — | Every container a Porelo part starts - task, image build, the room's homeserver, the host's forge and runner jobs - runs with limits of its own, and a pool sized from the machine sees those limits, so a part that works on a small machine also works on a large rented host. |
-| <a id="pj69"></a>[PJ69](PJ69-A-Machine-Reaches-The-Forge-With-The-Persons-Token.md) | — | — | A machine reaches the forge with the person's own credentials, kept in its vault - for git their ssh key or token, for the forge's API their token; Porelo no longer makes and removes a deploy key per machine and repository, which a company seldom lets a person create. |
 | <a id="pj70"></a>[PJ70](PJ70-A-Machine-Nobody-Sits-At-Tells-Its-Person-What-Needs-Them.md) | — | — | A machine nobody sits at watches what it needs to go on - credentials and their expiry, the vault, its services, memory and disk, a rented host's running time - and tells its person what needs them, wherever they are. |
 | <a id="pj62"></a>[PJ62](PJ62-The-Forge-Adapters-Live-In-One-Repository.md) | — | — | The forge adapters in one repository, `porelo-adapters`, renamed from `porelo-build-github`: its `github` adapter, a `forgejo` adapter beside it, one contract suite both pass, and `porelo build status` to ask any of them. |
 | <a id="pj61"></a>[PJ61](PJ61-The-Project-Porelo-Is-Online-With-The-Local-Forge-Upstream.md) | — | — | The project `porelo` online with the local Forgejo upstream: a task's push built there, its verdict read in the task, the central forge reached through the mirrors after approval; proved on Sluice first. |

@@ -1,6 +1,6 @@
 # PJ45 — Chosen data outlives the machine
 
-**Status:** Backlog.
+**Status:** Implementing; its store's part, `porelo-message-matrix` [MX24](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx24), is in Review, `porelo-host` [HO07](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho07) to come.
 **Size:** M - a small contract, `restic` to a store, two repositories' parts (`porelo-message-matrix`, `porelo`), the playbook's
 timer, and a round trip measured on a rented host.
 
