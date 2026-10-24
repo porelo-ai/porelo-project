@@ -65,6 +65,7 @@ sprints:
         issues: [porelo-frontend#F157, porelo-frontend#F158, porelo-frontend#F159, porelo-frontend#F165, porelo-message-matrix#MX35, porelo#B264, porelo#B273]
       - title: "A rented host with the new flow"
         test: "On a rented host of 32 threads, the whole flow from the interface: the collection comes with porelo-host, its digest checked; the room's homeserver starts with no hand fix; two tasks talk; down leaves nothing at the provider."
+        tested: "2026-10-24"
         issues: [porelo-message-matrix#MX34, porelo-host#HO13, porelo-buildtools#BT28, porelo-frontend#F163]
   - id: "3"
     title: "The build servers read"
