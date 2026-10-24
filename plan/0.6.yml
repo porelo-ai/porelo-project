@@ -67,6 +67,25 @@ sprints:
         test: "On a rented host of 32 threads, the whole flow from the interface: the collection comes with porelo-host, its digest checked; the room's homeserver starts with no hand fix; two tasks talk; down leaves nothing at the provider."
         tested: "2026-10-24"
         issues: [porelo-message-matrix#MX34, porelo-host#HO13, porelo-buildtools#BT28, porelo-frontend#F163]
+  - id: "2d"
+    title: "The host flow without stumbling"
+    goal: "The findings of the rented-host test of 2c: nothing typed that Porelo can know, the stop and the VPN in one flow, every state said in words."
+    functions:
+      - title: "Nothing asked that Porelo can know"
+        test: "The wizard writes the project's bundle itself and asks for no path on the server; the public key is filled from the private one; the summary names the project."
+        issues: [porelo-frontend#F167]
+      - title: "The stop and the VPN in one flow"
+        test: "At the stop a small dialog asks for the Tresorit e-mail and opens the terminal; a mistyped password is asked again in place; the VPN comes up as the setup's last step with only the sudo password, its handshake checked, and only then the server is ready."
+        issues: [porelo-frontend#F171, porelo-host#HO25, porelo-frontend#F172]
+      - title: "A setup that survives a restart, told in times and words"
+        test: "Closing the interface during a setup warns; after a restart the server stands under Machines in preparation and goes on or comes down; each step shows its start and duration, an overrun step says so in words, no raw lines."
+        issues: [porelo-frontend#F169, porelo-frontend#F170]
+      - title: "Room, task and vault said in words"
+        test: "The room is joined from the project's page with numbered steps for Element; a running task says whether its agent works, waits or ended, with a leave button; the locked-vault row names this computer's vault and the project, with a button to unlock and to stop following."
+        issues: [porelo-frontend#F174, porelo-frontend#F175, porelo#B277, porelo-frontend#F168, porelo#B276]
+      - title: "Buttons that read as buttons"
+        test: "The project page's actions are equal tiles in the style the operator picked; giving the server back is confirmed by its consequences."
+        issues: [porelo-frontend#F173, porelo-frontend#F176]
   - id: "3"
     title: "The build servers read"
     goal: "A build server asked from the command line, GitHub and Forgejo alike."
