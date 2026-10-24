@@ -107,7 +107,7 @@ sprints:
         notes: ["Smith's move issue", "PJ60 issues for the three repositories"]
       - title: "AGY and Codex in their tasks, their sub-agents signed in"
         test: "Antigravity with the operator's Google subscription and Codex CLI with its sign-in, both from the vault."
-        issues: [porelo#P12, porelo-codex#CX01, porelo-codex#CX02]
+        issues: [porelo#P12, porelo-agy#AG01, porelo-codex#CX01, porelo-codex#CX02]
         notes: ["AGY's move issue", "Codex's move issue"]
   - id: "7"
     title: "The move, second wave: the other toolchains"
