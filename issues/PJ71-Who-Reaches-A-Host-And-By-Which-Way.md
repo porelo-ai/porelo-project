@@ -43,6 +43,22 @@ way into a host it is written down who uses it, for what, and over which channel
 - **Setting up and taking down may happen outside Porelo**: by `porelo-host` for a rented host, by an OpenTofu module
   per provider (the extension [PJ40](README.md#pj40) names), or by a company's own tools. The person's side is only the access file.
 
+## What is mixed today
+
+`up` does both roles' work in one run, which stays right for a person who holds every role, such as this project's
+own rented host; nothing of it changes before the roles are built.
+
+- **The person's part inside `up`:** it creates and fills Porelo's vault (its passphrase at the stop) and follows the
+  project. With roles apart, that is the person's first start in their own account, so that no administrator learns
+  the person's passphrase or forge token.
+- **The machine file holds both:** the host's part (drive, VPN, forge, pool) is the administrator's; the project and
+  the credentials for the vault are the person's, and reach them through the access file and following the project.
+- **The host's drive** (its WireGuard key and setup files, porelo-host's role `drive`) is a `host-admin` tool for a
+  rented host, which a company's own means may replace; a person's private drives
+  ([PJ50](README.md#pj50)) are the `user` role's and are mounted in that person's own account.
+- **Removing and taking down:** removing a person (`access-admin`) clears that person's account and vault; taking
+  the machine down (`host-admin`) clears the rest. Today `down` clears the one vault there is.
+
 ## Open questions
 
 - The split itself: which functions go over ssh (setting up before the VPN exists, the stop's terminal, the
