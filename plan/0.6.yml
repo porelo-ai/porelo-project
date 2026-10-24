@@ -34,9 +34,11 @@ sprints:
     functions:
       - title: "The plan page made from the plan file"
         test: "`plan/0.6.md` shows the same sprints, functions, states and marks as the local page; `plan check` finds a planted fault."
+        tested: "2026-10-24"
         issues: [porelo-project#PJ63, porelo-buildtools#BT26]
       - title: "The release plan page drawn as the local one"
         test: "The page made from the plan shows each sprint's bar by its issues' states, coloured chips per issue and a mark per function, as the local page does, drawn as SVG so the central forge shows it too; every text in it is escaped."
+        tested: "2026-10-24"
         issues: [porelo-buildtools#BT27]
   - id: "2c"
     title: "The host flow anew"

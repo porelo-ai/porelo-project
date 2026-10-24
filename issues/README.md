@@ -117,7 +117,6 @@ The agents' work chosen, checked and paid for by rule; its plan is `plan/0.8.yml
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj63"></a>[PJ63](PJ63-A-Release-Is-Planned-In-Sprints-Of-Tested-Functions.md) | M | — | A release planned once in a checked-in file - its sprints, each sprint's functions the operator tests and the issues serving them - and a page made from it with every issue's state, kept current by the coordinator and checked against the indexes. |
 
 ## Implementing
 
@@ -203,6 +202,7 @@ The agents' work chosen, checked and paid for by rule; its plan is `plan/0.8.yml
 
 | # | Title | What was built |
 |---|---|---|
+| <a id="pj63"></a>[PJ63](README.md#pj63) | A release is planned in sprints of tested functions | `plan/<release>.yml` holds each release's goal, sprints, functions the operator tests and their issues; `porelo-release plan render` makes `plan/<release>.md` with a progress image and `plan check` refuses a faulty plan, built in porelo-buildtools. |
 | <a id="pj28"></a>[PJ28](README.md#pj28) | Code from outside reaches no secret | The organisation ruleset on `main` with the admin as its only bypass, `CODEOWNERS`, fork approval, `check-actions` refusing `pull_request_target`, and a probe that shows them holding ([decision](../doc/decisions.md#code-from-outside-reaches-no-secret)). |
 | <a id="pj29"></a>[PJ29](README.md#pj29) | One code style for the IDE and the build | One shared `.editorconfig` in every repository, Spotless with `google-java-format` (AOSP) in `validate` from `porelo-parent`, Gradle's Spotless in the plugin, `dart format` in the interface, and one reformatting commit per repository named in `.git-blame-ignore-revs`. |
 | <a id="pj41"></a>[PJ41](README.md#pj41) | Sokar is renamed Porelo | Every repository, artifact, package, command, path and document is named Porelo under `porelo-ai` and `org.fuin.porelo`, released as Porelo 0.5.0, and installed afresh. |

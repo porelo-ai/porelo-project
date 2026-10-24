@@ -345,6 +345,9 @@ and the UTC time that text last changed; change it in the channel first, never i
   repository's issue prefixes are `PJ`, and `A` for candidate agents without a repository; they are
   not in `project.yml`, because `project.yml` is defined here.
 - **`project.yml`'s keys are documented in `porelo`, under `doc/project-file.md`**, not here.
+- **A release is planned in `plan/<release>.yml`**: its sprints, the functions the operator tests and their
+  issues, never an issue of the release as a whole. `porelo-release plan render` makes its page and `plan check`
+  checks it; the plan is kept current at every change of state.
 
 ## Coordinating
 
