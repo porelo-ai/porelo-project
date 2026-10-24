@@ -44,6 +44,7 @@ sprints:
         issues: [porelo-buildtools#BT27, porelo-buildtools#BT29]
       - title: "A parent issue shown apart from the issues that carry its work"
         test: "A parent with no work of its own stands as one line under its function with its state, never as a chip or in a bar; `plan check` refuses a parent behind its parts."
+        tested: "2026-10-24"
         issues: [porelo-buildtools#BT31]
   - id: "2c"
     title: "The host flow anew"
@@ -71,10 +72,11 @@ sprints:
         issues: [porelo#B256]
       - title: "The same command reads Forgejo"
         test: "Against a Forgejo run in podman, the same answer in the same shape."
-        notes: ["the forgejo adapter in porelo-adapters"]
+        issues: [porelo-build-github#GH07]
       - title: "Both adapters pass one contract suite"
         test: "Every case from recorded answers; an adapter broken on purpose fails it."
-        issues: [porelo-project#PJ62, porelo#B253]
+        issues: [porelo#B253, porelo-build-github#GH06]
+        covers: [porelo-project#PJ62]
   - id: "4"
     title: "The local forge builds as the central one"
     goal: "Forgejo, its registry and the test machines on the host; one repository builds there unchanged."
