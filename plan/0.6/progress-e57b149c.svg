@@ -198,15 +198,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 244)">
 <text x="0" y="17">2e. The host flow without stumbling, part 2</text>
-<desc>Review 14. F180: porelo-frontend#F180 · Review · — · One Host Command At A Time Per Project; F179: porelo-frontend#F179 · Review · — · An Interrupted Setup In Needs You And A Running One Found Again; F178: porelo-frontend#F178 · Review · — · An Interrupted Run's Protocol Kept Across A Restart; F181: porelo-frontend#F181 · Review · — · One Setup Protocol That Stays Still While Read; F186: porelo-frontend#F186 · Review · — · The Scaleway Key Checked When Stored And In The Wizard; F177: porelo-frontend#F177 · Review · — · Every Navigation Entry Counts What Its List Shows; F182: porelo-frontend#F182 · Review · — · The VPN Interface Left Unmanaged By NetworkManager; F183: porelo-frontend#F183 · Review · — · One VPN Action That Follows The Tunnel's State; F185: porelo-frontend#F185 · Review · — · The VPN Taken Down When A Server Is Given Back; B279: porelo#B279 · Review · XS · A Windows Log's Line Ends As A Line; B280: porelo#B280 · Review · S · A Test Leaves No Key In The Kernel Keyring; F184: porelo-frontend#F184 · Review · — · The Room's Accounts Listed With Remove And New Password; B278: porelo#B278 · Review · M · A Person Removed From A Project's Conversation; MX40: porelo-message-matrix#MX40 · Review · S · A Person Leaves A Project's Room; </desc>
+<desc>Finished 1, Review 13. F180: porelo-frontend#F180 · Review · — · One Host Command At A Time Per Project; F179: porelo-frontend#F179 · Review · — · An Interrupted Setup In Needs You And A Running One Found Again; F178: porelo-frontend#F178 · Review · — · An Interrupted Run's Protocol Kept Across A Restart; F181: porelo-frontend#F181 · Review · — · One Setup Protocol That Stays Still While Read; F186: porelo-frontend#F186 · Review · — · The Scaleway Key Checked When Stored And In The Wizard; F177: porelo-frontend#F177 · Review · — · Every Navigation Entry Counts What Its List Shows; F182: porelo-frontend#F182 · Review · — · The VPN Interface Left Unmanaged By NetworkManager; F183: porelo-frontend#F183 · Review · — · One VPN Action That Follows The Tunnel's State; F185: porelo-frontend#F185 · Review · — · The VPN Taken Down When A Server Is Given Back; B279: porelo#B279 · Review · XS · A Windows Log's Line Ends As A Line; B280: porelo#B280 · Review · S · A Test Leaves No Key In The Kernel Keyring; F184: porelo-frontend#F184 · Review · — · The Room's Accounts Listed With Remove And New Password; B278: porelo#B278 · Review · M · A Person Removed From A Project's Conversation; MX40: porelo-message-matrix#MX40 · Finished · - · A Person Leaves A Project's Room; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 14</title></rect>
+<rect x="0.0" width="28.571428571428573" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
+
+<rect x="28.571428571428573" width="371.42857142857144" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 13</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 14 done</text>
+<text class="legend" x="410" y="17">1 of 14 done</text>
 </svg>
 
 
@@ -404,33 +406,36 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 484)">
 <text x="0" y="17">9. Clearing up and counting</text>
-<desc>Review 2, Backlog 2, Analyzed 2, Accepted 1, Not filed yet 1. every repository's AGENTS.md rewritten: Not filed yet; MX24: porelo-message-matrix#MX24 · Review · M · The Room Outlives The Machine; MX36: porelo-message-matrix#MX36 · Review · S · A Backup Runs While Tasks Poll; HO07: porelo-host#HO07 · Backlog · L · The Project's Store Restored And Kept; B231: porelo#B231 · Analyzed · M · The Usage Records Kept Off The Machine; B148: porelo#B148 · Analyzed · L · Token Counting Per Task; PJ38: porelo-project#PJ38 · Accepted · — · An estimate learns from the tokens spent; B193: porelo#B193 · Backlog · XL · A Dependency Cache Shared Across Tasks; </desc>
+<desc>Review 2, Backlog 2, Analyzed 2, Accepted 1, Not filed yet 2. every repository's AGENTS.md rewritten: Not filed yet; removing BT25's compatible provider call in porelo-buildtools, after every repository's PJ60 issue: Not filed yet; MX24: porelo-message-matrix#MX24 · Review · M · The Room Outlives The Machine; MX36: porelo-message-matrix#MX36 · Review · S · A Backup Runs While Tasks Poll; HO07: porelo-host#HO07 · Backlog · L · The Project's Store Restored And Kept; B231: porelo#B231 · Analyzed · M · The Usage Records Kept Off The Machine; B148: porelo#B148 · Analyzed · L · Token Counting Per Task; PJ38: porelo-project#PJ38 · Accepted · — · An estimate learns from the tokens spent; B193: porelo#B193 · Backlog · XL · A Dependency Cache Shared Across Tasks; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="100.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
+<rect x="0.0" width="88.88888888888889" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
 
-<rect x="100.0" width="100.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 2</title></rect>
+<rect x="88.88888888888889" width="88.88888888888889" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 2</title></rect>
 
-<rect x="200.0" width="100.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+<rect x="177.77777777777777" width="88.88888888888889" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
 
-<rect x="300.0" width="50.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+<rect x="266.6666666666667" width="44.44444444444444" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
 
-<rect x="350.0" width="50.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+<rect x="311.1111111111111" width="88.88888888888889" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 2</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 8 done</text>
+<text class="legend" x="410" y="17">0 of 9 done</text>
 </svg>
 
 
 <text x="1030" y="17"><title>No channel file and no hand-over directory any more: Not tested</title>⚪</text>
 
 
-<text x="1054" y="17"><title>The room and the usage records outlive the host: Not tested</title>⚪</text>
+<text x="1054" y="17"><title>Machines asked for by kind only: Not tested</title>⚪</text>
 
 
-<text x="1078" y="17"><title>The tokens counted per task, the dependencies shared: Not tested</title>⚪</text>
+<text x="1078" y="17"><title>The room and the usage records outlive the host: Not tested</title>⚪</text>
+
+
+<text x="1102" y="17"><title>The tokens counted per task, the dependencies shared: Not tested</title>⚪</text>
 
 </g>
 
