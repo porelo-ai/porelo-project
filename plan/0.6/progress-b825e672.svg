@@ -198,14 +198,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 244)">
 <text x="0" y="17">2e. The host flow without stumbling, part 2</text>
-<desc>Review 3, Implementing 11. F180: porelo-frontend#F180 · Implementing · S · One Host Command At A Time Per Project; F179: porelo-frontend#F179 · Implementing · M · An Interrupted Setup In Needs You And A Running One Found Again; F178: porelo-frontend#F178 · Implementing · S · An Interrupted Run's Protocol Kept Across A Restart; F181: porelo-frontend#F181 · Implementing · S · One Setup Protocol That Stays Still While Read; F186: porelo-frontend#F186 · Implementing · M · The Scaleway Key Checked When Stored And In The Wizard; F177: porelo-frontend#F177 · Implementing · XS · Every Navigation Entry Counts What Its List Shows; F182: porelo-frontend#F182 · Implementing · XS · The VPN Interface Left Unmanaged By NetworkManager; F183: porelo-frontend#F183 · Implementing · S · One VPN Action That Follows The Tunnel's State; F185: porelo-frontend#F185 · Implementing · S · The VPN Taken Down When A Server Is Given Back; B279: porelo#B279 · Review · XS · A Windows Log's Line Ends As A Line; B280: porelo#B280 · Review · S · A Test Leaves No Key In The Kernel Keyring; F184: porelo-frontend#F184 · Implementing · M · The Room's Accounts Listed With Remove And New Password; B278: porelo#B278 · Review · M · A Person Removed From A Project's Conversation; MX40: porelo-message-matrix#MX40 · Implementing · S · A Person Leaves A Project's Room; </desc>
+<desc>Review 14. F180: porelo-frontend#F180 · Review · — · One Host Command At A Time Per Project; F179: porelo-frontend#F179 · Review · — · An Interrupted Setup In Needs You And A Running One Found Again; F178: porelo-frontend#F178 · Review · — · An Interrupted Run's Protocol Kept Across A Restart; F181: porelo-frontend#F181 · Review · — · One Setup Protocol That Stays Still While Read; F186: porelo-frontend#F186 · Review · — · The Scaleway Key Checked When Stored And In The Wizard; F177: porelo-frontend#F177 · Review · — · Every Navigation Entry Counts What Its List Shows; F182: porelo-frontend#F182 · Review · — · The VPN Interface Left Unmanaged By NetworkManager; F183: porelo-frontend#F183 · Review · — · One VPN Action That Follows The Tunnel's State; F185: porelo-frontend#F185 · Review · — · The VPN Taken Down When A Server Is Given Back; B279: porelo#B279 · Review · XS · A Windows Log's Line Ends As A Line; B280: porelo#B280 · Review · S · A Test Leaves No Key In The Kernel Keyring; F184: porelo-frontend#F184 · Review · — · The Room's Accounts Listed With Remove And New Password; B278: porelo#B278 · Review · M · A Person Removed From A Project's Conversation; MX40: porelo-message-matrix#MX40 · Review · S · A Person Leaves A Project's Room; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="85.71428571428571" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 3</title></rect>
-
-<rect x="85.71428571428571" width="314.2857142857143" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 11</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 14</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 14 done</text>
@@ -225,12 +223,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 274)">
 <text x="0" y="17">2f. Lists and tiles</text>
-<desc>Implementing 3. F187: porelo-frontend#F187 · Implementing · L · Needs You As Compact Expandable Rows Without Pink Surfaces; F188: porelo-frontend#F188 · Implementing · L · One Expandable List Row For Every List; F189: porelo-frontend#F189 · Implementing · S · The Server Page's Actions As A Grid Of Tiles; </desc>
+<desc>Review 3. F187: porelo-frontend#F187 · Review · — · Needs You As Compact Expandable Rows Without Pink Surfaces; F188: porelo-frontend#F188 · Review · — · One Expandable List Row For Every List; F189: porelo-frontend#F189 · Review · — · The Server Page's Actions As A Grid Of Tiles; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 3</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 3</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 3 done</text>
