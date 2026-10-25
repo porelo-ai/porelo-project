@@ -187,14 +187,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 244)">
 <text x="0" y="17">6. A host rented from any provider</text>
-<desc>Analyzed 1, Idea 1. HO23: porelo-host#HO23 · Analyzed · L · A Machine Rented And Given Back By OpenTofu; F166: porelo-frontend#F166 · Idea · M · A Host Rented Through OpenTofu; F166: porelo-frontend#F166 · Idea · M · A Host Rented Through OpenTofu; </desc>
+<desc>Analyzed 1, Accepted 1. HO23: porelo-host#HO23 · Analyzed · L · A Machine Rented And Given Back By OpenTofu; F166: porelo-frontend#F166 · Accepted · M · A Host Rented Through OpenTofu; F166: porelo-frontend#F166 · Accepted · M · A Host Rented Through OpenTofu; </desc>
 <svg x="384" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
 <rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
 
-<rect x="200.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+<rect x="200.0" width="200.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 2 done</text>
