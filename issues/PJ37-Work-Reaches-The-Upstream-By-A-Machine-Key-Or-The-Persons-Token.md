@@ -1,6 +1,6 @@
 # PJ37 — Work reaches the upstream by a machine key or the person's own token
 
-**Status:** Accepted.
+**Status:** Accepted; its sprint 5 part is decided in [PJ61](README.md#pj61): the operator's own token, asked for hidden at the gathered push and stored nowhere.
 
 **What must be true.** A machine fetches a project's repositories and passes approved work on either with keys of
 its own (a deploy key per machine and repository) or with the person's own token, and the two are equal choices,
@@ -20,7 +20,7 @@ told plainly what each way costs.
   shown which of these the token they deposit has.
 - **One token serves every repository of the project** and a new machine at once, where keys are made and added
   again for every repository on every new machine ([PJ39](README.md#pj39)'s host is set up again often, and its
-  mirrors to the central forge use the token).
+  gathered push to the central forge uses the token).
 - **Where the forge has no narrower token, it reaches every repository the person can,** not only this one (a Bitbucket Data Center
   personal token knows read or write, not one repository): said plainly when it is chosen, with an expiry where
   the forge allows one.

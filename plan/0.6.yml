@@ -152,8 +152,9 @@ sprints:
       - title: "The task hears its build from Forgejo"
         test: "The task pushes through its gate to `porelo/<task>` on Forgejo, which builds it; the verdict and a red job's log are in the task's `/porelo/files`."
         issues: [porelo-project#PJ61]
+        notes: ["porelo-adapters: the forgejo reader trusts the forge's CA", "porelo: the gate's git trusts the forge's CA, setup installs the reader", "porelo-host: the forge for the host's git and the reader, Sluice seeded, main protected"]
       - title: "Only the operator's approval brings the work to the central forge"
-        test: "Nothing is there before the approval, the mirror reaches it after; with the project `offline` the push reaches no forge."
+        test: "Nothing is there before the approval, the gathered push brings it after; with the project `offline` the push reaches no forge."
         issues: [porelo-buildtools#BT06, porelo-project#PJ37]
   - id: "6"
     title: "The move, first wave"

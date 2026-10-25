@@ -303,15 +303,19 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 364)">
 <text x="0" y="17">5. From the task's push to the central forge, after approval</text>
-<desc>Accepted 3. PJ61: porelo-project#PJ61 · Accepted · — · The project porelo is online with the local forge upstream; BT06: porelo-buildtools#BT06 · Accepted · - · Push Mirrors Started Through The Forge; PJ37: porelo-project#PJ37 · Accepted · — · Work reaches the upstream by a machine key or the person's own token; </desc>
+<desc>Analyzed 1, Accepted 2, Not filed yet 3. PJ61: porelo-project#PJ61 · Analyzed · M (five repositories, about 4 h) · The project porelo is online with the local forge upstream; porelo-adapters: the forgejo reader trusts the forge's CA: Not filed yet; porelo: the gate's git trusts the forge's CA, setup installs the reader: Not filed yet; porelo-host: the forge for the host's git and the reader, Sluice seeded, main protected: Not filed yet; BT06: porelo-buildtools#BT06 · Accepted · - · Push Mirrors Started Through The Forge; PJ37: porelo-project#PJ37 · Accepted · — · Work reaches the upstream by a machine key or the person's own token; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 3</title></rect>
+<rect x="0.0" width="66.66666666666667" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="66.66666666666667" width="133.33333333333334" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 3</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 3 done</text>
+<text class="legend" x="410" y="17">0 of 6 done</text>
 </svg>
 
 
@@ -325,14 +329,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 394)">
 <text x="0" y="17">6. The move, first wave</text>
-<desc>Review 1, Implementing 5, Accepted 2, Not filed yet 5. PJ59: porelo-project#PJ59 · Accepted · — · Each agent moves into a Porelo task; F148: porelo-frontend#F148 · Accepted · — · An Agent For Each Repository, At One Click; Sluice's move issue: Not filed yet; PI21: porelo-pi#PI21 · Review · L · A login inside a brokered Pi task fails; Smith's move issue: Not filed yet; PJ60 issues for the three repositories: Not filed yet; P12: porelo#P12 · Implementing · L · The Google Sign-In As A Provider; AG01: porelo-agy#AG01 · Implementing · L · Agent Antigravity CLI; CX01: porelo-codex#CX01 · Implementing · L · Agent Codex CLI; B272: porelo#B272 · Implementing · S · A Sign-In Is Renewed On The Host On Request; CX02: porelo-codex#CX02 · Implementing · M · Build in a Porelo task; AGY's move issue: Not filed yet; Codex's move issue: Not filed yet; </desc>
+<desc>Review 2, Implementing 4, Accepted 2, Not filed yet 5. PJ59: porelo-project#PJ59 · Accepted · — · Each agent moves into a Porelo task; F148: porelo-frontend#F148 · Accepted · — · An Agent For Each Repository, At One Click; Sluice's move issue: Not filed yet; PI21: porelo-pi#PI21 · Review · L · A login inside a brokered Pi task fails; Smith's move issue: Not filed yet; PJ60 issues for the three repositories: Not filed yet; P12: porelo#P12 · Implementing · L · The Google Sign-In As A Provider; AG01: porelo-agy#AG01 · Implementing · L · Agent Antigravity CLI; CX01: porelo-codex#CX01 · Implementing · L · Agent Codex CLI; B272: porelo#B272 · Review · S · A Sign-In Is Renewed On The Host On Request; CX02: porelo-codex#CX02 · Implementing · M · Build in a Porelo task; AGY's move issue: Not filed yet; Codex's move issue: Not filed yet; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="30.76923076923077" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
+<rect x="0.0" width="61.53846153846154" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
 
-<rect x="30.76923076923077" width="153.84615384615384" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 5</title></rect>
+<rect x="61.53846153846154" width="123.07692307692308" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 4</title></rect>
 
 <rect x="184.6153846153846" width="61.53846153846154" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
 
