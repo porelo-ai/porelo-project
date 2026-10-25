@@ -198,12 +198,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 244)">
 <text x="0" y="17">2e. The host flow without stumbling, part 2</text>
-<desc>Implementing 14. F180: porelo-frontend#F180 · Implementing · S · One Host Command At A Time Per Project; F179: porelo-frontend#F179 · Implementing · M · An Interrupted Setup In Needs You And A Running One Found Again; F178: porelo-frontend#F178 · Implementing · S · An Interrupted Run's Protocol Kept Across A Restart; F181: porelo-frontend#F181 · Implementing · S · One Setup Protocol That Stays Still While Read; F186: porelo-frontend#F186 · Implementing · M · The Scaleway Key Checked When Stored And In The Wizard; F177: porelo-frontend#F177 · Implementing · XS · Every Navigation Entry Counts What Its List Shows; F182: porelo-frontend#F182 · Implementing · XS · The VPN Interface Left Unmanaged By NetworkManager; F183: porelo-frontend#F183 · Implementing · S · One VPN Action That Follows The Tunnel's State; F185: porelo-frontend#F185 · Implementing · S · The VPN Taken Down When A Server Is Given Back; B279: porelo#B279 · Implementing · XS · A Windows Log's Line Ends As A Line; B280: porelo#B280 · Implementing · S · A Test Leaves No Key In The Kernel Keyring; F184: porelo-frontend#F184 · Implementing · M · The Room's Accounts Listed With Remove And New Password; B278: porelo#B278 · Implementing · M · A Person Removed From A Project's Conversation; MX40: porelo-message-matrix#MX40 · Implementing · S · A Person Leaves A Project's Room; </desc>
+<desc>Review 3, Implementing 11. F180: porelo-frontend#F180 · Implementing · S · One Host Command At A Time Per Project; F179: porelo-frontend#F179 · Implementing · M · An Interrupted Setup In Needs You And A Running One Found Again; F178: porelo-frontend#F178 · Implementing · S · An Interrupted Run's Protocol Kept Across A Restart; F181: porelo-frontend#F181 · Implementing · S · One Setup Protocol That Stays Still While Read; F186: porelo-frontend#F186 · Implementing · M · The Scaleway Key Checked When Stored And In The Wizard; F177: porelo-frontend#F177 · Implementing · XS · Every Navigation Entry Counts What Its List Shows; F182: porelo-frontend#F182 · Implementing · XS · The VPN Interface Left Unmanaged By NetworkManager; F183: porelo-frontend#F183 · Implementing · S · One VPN Action That Follows The Tunnel's State; F185: porelo-frontend#F185 · Implementing · S · The VPN Taken Down When A Server Is Given Back; B279: porelo#B279 · Review · XS · A Windows Log's Line Ends As A Line; B280: porelo#B280 · Review · S · A Test Leaves No Key In The Kernel Keyring; F184: porelo-frontend#F184 · Implementing · M · The Room's Accounts Listed With Remove And New Password; B278: porelo#B278 · Review · M · A Person Removed From A Project's Conversation; MX40: porelo-message-matrix#MX40 · Implementing · S · A Person Leaves A Project's Room; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 14</title></rect>
+<rect x="0.0" width="85.71428571428571" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 3</title></rect>
+
+<rect x="85.71428571428571" width="314.2857142857143" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 11</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 14 done</text>
@@ -270,14 +272,18 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 334)">
 <text x="0" y="17">4. The local forge builds as the central one</text>
-<desc>Implementing 8, Accepted 2, Not filed yet 1. HO08: porelo-host#HO08 · Implementing · L · The Forge With Its Registry; HO17: porelo-host#HO17 · Implementing · XS · The Forge's CA In Porelo's Account; B233: porelo#B233 · Implementing · M · A Host Service Reached By Name; B234: porelo#B234 · Implementing · M · The Host's Authority In A Task's Trust Store; HO20: porelo-host#HO20 · Implementing · M · Every Container Of The Host Fits The Machine; B266: porelo#B266 · Implementing · M · A Task Fits The Machine It Runs On; HO12: porelo-host#HO12 · Implementing · L · The VM Pool; BT24: porelo-buildtools#BT24 · Implementing · M · An Account Rented From The Local Pool; BT25: porelo-buildtools#BT25 · Accepted · L · Machines Asked For By Kind; PJ60: porelo-project#PJ60 · Accepted · — · Every workflow runs on the local forge as on the central one; PJ60 issue for porelo-message-sluice: Not filed yet; </desc>
+<desc>Review 7, Implementing 1, Estimated 1, Accepted 1, Not filed yet 1. HO08: porelo-host#HO08 · Implementing · L · The Forge With Its Registry; HO17: porelo-host#HO17 · Review · XS · The Forge's CA In Porelo's Account; B233: porelo#B233 · Review · M · A Host Service Reached By Name; B234: porelo#B234 · Review · M · The Host's Authority In A Task's Trust Store; HO20: porelo-host#HO20 · Review · M · Every Container Of The Host Fits The Machine; B266: porelo#B266 · Review · M · A Task Fits The Machine It Runs On; HO12: porelo-host#HO12 · Review · L · The VM Pool; BT24: porelo-buildtools#BT24 · Review · M · An Account Rented From The Local Pool; BT25: porelo-buildtools#BT25 · Estimated · L · Machines Asked For By Kind; PJ60: porelo-project#PJ60 · Accepted · — · Every workflow runs on the local forge as on the central one; PJ60 issue for porelo-message-sluice: Not filed yet; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="290.90909090909093" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 8</title></rect>
+<rect x="0.0" width="254.54545454545453" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 7</title></rect>
 
-<rect x="290.90909090909093" width="72.72727272727273" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
+<rect x="254.54545454545453" width="36.36363636363637" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+
+<rect x="290.90909090909093" width="36.36363636363637" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="327.27272727272725" width="36.36363636363637" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
 
 <rect x="363.6363636363636" width="36.36363636363637" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
