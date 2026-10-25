@@ -14,8 +14,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 **How Porelo compares with other tools that isolate or run coding agents** is in [feature-comparison.md](feature-comparison.md); every planned feature links its issue there.
 
-**The plan of each release, its sprints and the functions tested at their end**, is in [plan/](../plan/):
-[0.6](../plan/0.6.md), [0.7](../plan/0.7.md), [0.8](../plan/0.8.md).
+**The plan of each release, its sprints and the functions tested at their end**, is in [plan/](../plan/README.md).
 
 ## Review
 
