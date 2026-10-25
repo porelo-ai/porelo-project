@@ -31,8 +31,11 @@ finished issue can correct the next estimate.
   with the work. Beside them, for information only, the cost at list price from porelo
   [B191](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b191), with its price date; it depends
   on the model and on prices that change, so it is not what an estimate is compared with.
-- **At Finished:** the issue's row under *Finished* in the index keeps its estimated size and gains the new tokens per
-  phase and the cost beside them, since the file itself is deleted then.
+- **At Finished, a record for machines and a row for people:** the issue's figures go into a structured record in its
+  repository, one JSON object per finished issue, since the file itself is deleted then. The record holds the issue,
+  the estimated size, the new tokens per phase, the cost with its price date, the tasks counted, and the one-line kind
+  of work. The row under *Finished* in the index shows the same figures for a reader. It is rendered from the record
+  and never written by hand, so the statistic is computed from the records and not parsed out of a Markdown table.
 - **The statistic:** per size and per repository, what build and rework of the finished issues cost - the middle and
   the spread - and how often a size was exceeded; updated with every issue set Finished.
 - **At estimating, by likeness:** an issue's size is given with the finished issue most like it in kind of work -
@@ -40,3 +43,14 @@ finished issue can correct the next estimate.
   the size follows from that measured neighbour, not from the size alone. The finished issues of the size it lands on
   stand beside it, so a size that does not fit stands out before the operator sets Estimated. Each finished issue
   therefore keeps a one-line description of its kind of work.
+
+## Open questions
+
+- **Where the statistic lives:** a file next to the records in each repository, one in porelo-project for all
+  repositories, or a page rendered from the records, as the plan is rendered from `plan/*.yml`.
+- **Who adds up an issue's tasks** when they ran on several machines: each machine's usage records are its own
+  ([PJ45](README.md#pj45) keeps them beyond the machine). Something must gather every record that carries the issue
+  before the issue is set Finished, and it must name a machine whose records it could not read rather than count
+  without them.
+- **The record's form:** one file per repository with one line per finished issue, or one file per issue, and its
+  schema version.

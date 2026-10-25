@@ -35,6 +35,15 @@ way into a host it is written down who uses it, for what, and over which channel
   | `host-admin` | setting a machine up (renting it, `up`) and taking it down (`down`, giving it back, clearing it) |
   | `access-admin` | admitting a person to a machine and removing them: account, ssh key, VPN peer |
 
+- **Where the functions sit in the interface** (decided): *Rent a server* sits under *Machines*, beside *Add a
+  machine*; putting a project on a machine, the new one or another, is the second step and sits under *Projects*.
+  *Give the server back* is a function of a rented machine under *Machines*, offered only there; a machine that was
+  only added, set up by someone else, has none. Whether porelo-host's `up` splits into setting the machine up and
+  placing the project is decided when this is built.
+- **Joining the project's room** (decided): today any name may join; with the `access-admin` role, *Join* admits only
+  a person declared as a peer of the project, or warns on another name.
+- **Built with the roles:** these move together with the roles when this comes, not ahead of them.
+
 - **The hand-over between administrator and person:** the person's computer makes their ssh key and, only where the
   machine's own VPN is needed, their WireGuard key; the private halves never leave it. The interface writes an
   **access request** with the person's name and public keys; the administrator admits it and returns an **access

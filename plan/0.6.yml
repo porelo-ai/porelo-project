@@ -73,31 +73,62 @@ sprints:
     functions:
       - title: "Nothing asked that Porelo can know"
         test: "The wizard writes the project's bundle itself and asks for no path on the server; the public key is filled from the private one; the summary names the project."
+        tested: "2026-10-25"
         issues: [porelo-frontend#F167]
       - title: "The stop and the VPN in one flow"
         test: "At the stop a small dialog asks for the Tresorit e-mail and opens the terminal; a mistyped password is asked again in place; the VPN comes up as the setup's last step with only the sudo password, its handshake checked, and only then the server is ready."
+        tested: "2026-10-25"
         issues: [porelo-frontend#F171, porelo-host#HO25, porelo-frontend#F172]
       - title: "A setup that survives a restart, told in times and words"
         test: "Closing the interface during a setup warns; after a restart the server stands under Machines in preparation and goes on or comes down; each step shows its start and duration, an overrun step says so in words, no raw lines."
+        tested: "2026-10-25"
         issues: [porelo-frontend#F169, porelo-frontend#F170]
       - title: "Room, task and vault said in words"
         test: "The room is joined from the project's page with numbered steps for Element; a running task says whether its agent works, waits or ended, with a leave button; the locked-vault row names this computer's vault and the project, with a button to unlock and to stop following."
+        tested: "2026-10-25"
         issues: [porelo-frontend#F174, porelo-frontend#F175, porelo#B277, porelo-frontend#F168, porelo#B276]
       - title: "Buttons that read as buttons"
         test: "The project page's actions are equal tiles in the style the operator picked; giving the server back is confirmed by its consequences."
+        tested: "2026-10-25"
         issues: [porelo-frontend#F173, porelo-frontend#F176]
+  - id: "2e"
+    title: "The host flow without stumbling, part 2"
+    goal: "The findings of the rented-host test of 2d: a run that survives the interface, one protocol, the VPN and the key that say their state."
+    functions:
+      - title: "A setup run once, kept and found again"
+        test: "Closing the interface ends or keeps its setup in words; after a restart a running setup is found, an interrupted one shows in Needs you with Go on; a second run of one project is refused; the protocol stays until the give-back, in one list."
+        issues: [porelo-frontend#F180, porelo-frontend#F179, porelo-frontend#F178, porelo-frontend#F181]
+      - title: "The key, the VPN and the counts say their state"
+        test: "A Scaleway key is checked when stored and in the wizard's first step; one VPN tile follows the tunnel; no NetworkManager popup; the give-back takes this computer's tunnel down; every menu count equals its list."
+        issues: [porelo-frontend#F186, porelo-frontend#F177, porelo-frontend#F182, porelo-frontend#F183, porelo-frontend#F185, porelo#B279, porelo#B280]
+      - title: "Who is in the project's room"
+        test: "The messages page lists the room's accounts with Remove, and offers a new password to one already in."
+        issues: [porelo-frontend#F184, porelo#B278, porelo-message-matrix#MX40]
+  - id: "2f"
+    title: "Lists and tiles"
+    goal: "Every list a column of even rows that expand, Needs you without pink, the machine page as tiles."
+    functions:
+      - title: "Even rows that expand, Needs you without pink"
+        test: "Projects, Forges, Machines and Needs you show single-line rows of one height; the arrow expands in place, a click opens the detail; Needs you has its action in the row and no pink surface."
+        issues: [porelo-frontend#F187, porelo-frontend#F188]
+      - title: "The machine page as tiles"
+        test: "The machine's actions stand in the project page's grid with one icon each; taking the server down stands apart in red."
+        issues: [porelo-frontend#F189]
   - id: "3"
     title: "The build servers read"
     goal: "A build server asked from the command line, GitHub and Forgejo alike."
     functions:
       - title: "A build server asked from the command line"
         test: "`porelo build status --project=<project> --repository=<repository> --branch=main` shows the commit, the verdict, the jobs and a red job's log, on GitHub."
+        tested: "2026-10-25"
         issues: [porelo#B256]
       - title: "The same command reads Forgejo"
         test: "Against a Forgejo run in podman, the same answer in the same shape."
+        tested: "2026-10-25"
         issues: [porelo-adapters#GH07, porelo#B275]
       - title: "Both adapters pass one contract suite"
         test: "Every case from recorded answers; an adapter broken on purpose fails it."
+        tested: "2026-10-25"
         issues: [porelo#B253, porelo-adapters#GH06]
         covers: [porelo-project#PJ62]
   - id: "4"
