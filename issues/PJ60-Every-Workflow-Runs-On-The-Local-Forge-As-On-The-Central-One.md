@@ -1,6 +1,6 @@
 # PJ60 — Every workflow runs on the local forge as on the central one
 
-**Status:** Analyzed for sprint 4 (porelo-message-sluice); the later repositories are analysed with their sprints.
+**Status:** Analyzed for sprint 4 (porelo-parent, porelo-buildtools, porelo-message-sluice); the later repositories are analysed with their sprints.
 
 **What must be true.** Every repository of the project that builds runs the same `build.yml` green on the local Forgejo
 and on the central forge, with no edit between them: the machines it asks for by kind, the registry and the provider
@@ -52,19 +52,40 @@ VM pool in Sluice. [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/ma
 | Publish (`vars.JF_URL`, `secrets.JF_ACCESS_TOKEN`, `if: github.ref == 'refs/heads/main'`) | neither exists on the local forge | porelo-message-sluice: Publish switched by a variable present on both forges (`true` on GitHub, `false` on the forge), not by a branch |
 | `delete-runs.yml` (`gh api …/actions/runs`) | GitHub's API; dispatched by hand only | porelo-message-sluice: switched by the same variable |
 
-The snapshots in `settings.xml` stay Sonatype's on both forges: the host reaches them as GitHub's runner does.
+**Snapshots on the forge come from the forge.** Local stacks depend on each other, so on the local Forgejo the
+snapshots are deployed to the forge's Maven registry and read from there; on GitHub they go to Sonatype and are read
+from there, as today. porelo-parent and porelo-buildtools deploy (parent first); porelo-message-sluice deploys no Maven
+artifact and only reads the parent and the buildtools' jars.
 
-**Before Sluice can be green there:** [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08) with the runner labels, the actions' source and the publishing variable set on the forge.
+| Variable or secret | On GitHub | On the local Forgejo |
+|---|---|---|
+| `vars.PORELO_DEPLOY_PROFILE` | `central-sonatype-release` | `forge-release` |
+| `vars.MAVEN_SNAPSHOTS_URL` | `https://central.sonatype.com/repository/maven-snapshots/` | the forge's registry, `https://<forge>/api/packages/porelo/maven` |
+| `secrets.PORELO_PUBLISHER_TOKEN` | a placeholder: Sonatype's snapshots are read without one | `porelo-publisher`'s token, which porelo-host [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08) creates; reading needs it too, as the `porelo` organisation is private |
+| `vars.PORELO_PUBLISH` | `true` | `false` |
+
+- **porelo-parent:** a second profile `forge-release` beside `central-sonatype-release`, deploying with
+  `maven-deploy-plugin` to `MAVEN_SNAPSHOTS_URL` with no signing and no Central plugin. The deploy step runs
+  `deploy -P${{ vars.PORELO_DEPLOY_PROFILE }}`. The deploy dry run and its check stay on `central-sonatype-release` on
+  both forges.
+- **porelo-buildtools:** the same deploy step, and `settings.xml` reading `MAVEN_SNAPSHOTS_URL` with the repository's id
+  equal to the server's that carries `PORELO_PUBLISHER_TOKEN`.
+- **porelo-message-sluice:** `settings.xml` reading the same way.
+- **porelo-host [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08):** the variables and the
+  secret set on the forge, and the forge's CA reaching every JVM in a job (`JAVA_TOOL_OPTIONS` with a trust store), as Java
+  ignores `SSL_CERT_FILE`.
+
+**Before Sluice can be green there:** [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08) with the runner labels, the actions' source, the variables above and the JVM trust store set on the forge; then porelo-parent's and porelo-buildtools' snapshots deployed to it.
 
 **The issue for porelo-message-sluice** (size S, about 45 to 60 minutes): its four workflows run unchanged on the
 local Forgejo and on GitHub. The JDK comes from `actions/setup-java` and missing tools are installed in a step. Publishing and deleting old
-runs are switched by that variable, present on both forges, never by a branch. Seen to fail first: today's
+runs are switched by `PORELO_PUBLISH`, present on both forges, never by a branch; `settings.xml` reads the snapshots
+from `MAVEN_SNAPSHOTS_URL`. Seen to fail first: today's
 `build.yml` on the local Forgejo.
 
 **Not in sprint 4:** publishing Sluice's packages to the local forge's registry (with porelo-buildtools [BT23](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt23)'s helper,
-an Idea), a `porelo-machines` acceptance leg in `build.yml`, and building without internet (mirrored actions, the snapshots in
-the forge's registry).
+an Idea), a `porelo-machines` acceptance leg in `build.yml`, and building without internet (mirrored actions).
 
 ## Open questions
 
-- The publishing variable's name, which porelo-host sets with [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08), and Sluice takes it.
+None for sprint 4.
