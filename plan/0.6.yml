@@ -137,22 +137,18 @@ sprints:
     functions:
       - title: "Forgejo with its registry, a task fetching a snapshot by name"
         test: "The operator opens Forgejo through the VPN; a task reaches its registry by a declared name on 443 and fetches a snapshot, and reaches nothing else on the host."
-        issues: [porelo-host#HO08, porelo-host#HO17, porelo#B233, porelo#B234, porelo-host#HO20, porelo#B266]
-      - title: "Test machines by kind from the VM pool"
-        test: "A run asks for the kind `ubuntu` and gets an account of the pool, reset afterwards; no workflow names a provider."
-        issues: [porelo-host#HO12, porelo-buildtools#BT24, porelo-buildtools#BT25]
+        issues: [porelo-host#HO08, porelo-host#HO17, porelo#B233, porelo#B234, porelo-host#HO20, porelo#B266, porelo-host#HO26]
       - title: "Sluice green on both forges on the same commit"
         test: "The same `build.yml` of porelo-message-sluice runs green on Forgejo and on the central forge."
-        issues: [porelo-project#PJ60]
-        notes: ["PJ60 issue for porelo-message-sluice"]
+        issues: [porelo-project#PJ60, porelo#B285, porelo-buildtools#BT32, porelo-message-sluice#SL33]
   - id: "5"
     title: "From the task's push to the central forge, after approval"
     goal: "The whole way of a piece of work, shown on porelo-message-sluice."
     functions:
       - title: "The task hears its build from Forgejo"
         test: "The task pushes through its gate to `porelo/<task>` on Forgejo, which builds it; the verdict and a red job's log are in the task's `/porelo/files`."
-        issues: [porelo-project#PJ61]
-        notes: ["porelo-adapters: the forgejo reader trusts the forge's CA", "porelo: the gate's git trusts the forge's CA, setup installs the reader", "porelo-host: the forge for the host's git and the reader, Sluice seeded, main protected"]
+        issues: [porelo-project#PJ61, porelo-adapters#GH08, porelo#B286]
+        notes: ["porelo-host: the forge for the host's git and the reader, Sluice seeded, main protected"]
       - title: "Only the operator's approval brings the work to the central forge"
         test: "Nothing is there before the approval, the gathered push brings it after; with the project `offline` the push reaches no forge."
         issues: [porelo-buildtools#BT06, porelo-project#PJ37]
@@ -182,6 +178,10 @@ sprints:
       - title: "IntelliJ and Frontend in their tasks"
         test: "Gradle and Flutter build on Forgejo; the Windows job runs centrally only, named by a variable."
         notes: ["IntelliJ's move issue", "Frontend's move issue", "PJ60 issues for the three repositories"]
+      - title: "Test machines by kind from the VM pool"
+        test: "porelo-frontend's leased leg asks for the kind `amd64` on Forgejo and gets an account of the pool, reset afterwards, and a rented machine on the central forge; no workflow names a provider."
+        issues: [porelo-host#HO12, porelo-buildtools#BT24, porelo-buildtools#BT25]
+        notes: ["The pool taken by the same call on Forgejo"]
   - id: "8"
     title: "The move, last wave"
     goal: "Core with a way back, then the coordinator."

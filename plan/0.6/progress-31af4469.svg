@@ -270,20 +270,16 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 334)">
 <text x="0" y="17">4. The local forge builds as the central one</text>
-<desc>Review 7, Implementing 1, Estimated 1, Analyzed 1, Not filed yet 1. HO08: porelo-host#HO08 · Implementing · L · The Forge With Its Registry; HO17: porelo-host#HO17 · Review · XS · The Forge's CA In Porelo's Account; B233: porelo#B233 · Review · M · A Host Service Reached By Name; B234: porelo#B234 · Review · M · The Host's Authority In A Task's Trust Store; HO20: porelo-host#HO20 · Review · M · Every Container Of The Host Fits The Machine; B266: porelo#B266 · Review · M · A Task Fits The Machine It Runs On; HO12: porelo-host#HO12 · Review · L · The VM Pool; BT24: porelo-buildtools#BT24 · Review · M · An Account Rented From The Local Pool; BT25: porelo-buildtools#BT25 · Estimated · L · Machines Asked For By Kind; PJ60: porelo-project#PJ60 · Analyzed · S (each of parent, buildtools, Sluice) · Every workflow runs on the local forge as on the central one; PJ60 issue for porelo-message-sluice: Not filed yet; </desc>
+<desc>Review 9, Implementing 1, Analyzed 1. HO08: porelo-host#HO08 · Review · L · The Forge With Its Registry; HO17: porelo-host#HO17 · Review · XS · The Forge's CA In Porelo's Account; B233: porelo#B233 · Review · M · A Host Service Reached By Name; B234: porelo#B234 · Review · M · The Host's Authority In A Task's Trust Store; HO20: porelo-host#HO20 · Review · M · Every Container Of The Host Fits The Machine; B266: porelo#B266 · Review · M · A Task Fits The Machine It Runs On; HO26: porelo-host#HO26 · Review · S · Each Agent's Own Forge Account; PJ60: porelo-project#PJ60 · Analyzed · S (each of parent, buildtools, Sluice) · Every workflow runs on the local forge as on the central one; B285: porelo#B285 · Review · S · A Snapshot Deployed To The Local Forge; BT32: porelo-buildtools#BT32 · Review · S · Snapshots On The Forge's Own Registry; SL33: porelo-message-sluice#SL33 · Implementing · S · The Workflows Run On The Local Forge As On GitHub; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="254.54545454545453" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 7</title></rect>
+<rect x="0.0" width="327.27272727272725" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 9</title></rect>
 
-<rect x="254.54545454545453" width="36.36363636363637" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+<rect x="327.27272727272725" width="36.36363636363637" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
 
-<rect x="290.90909090909093" width="36.36363636363637" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
-
-<rect x="327.27272727272725" width="36.36363636363637" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
-
-<rect x="363.6363636363636" width="36.36363636363637" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+<rect x="363.6363636363636" width="36.36363636363637" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 11 done</text>
@@ -293,26 +289,25 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 <text x="1030" y="17"><title>Forgejo with its registry, a task fetching a snapshot by name: Not tested</title>⚪</text>
 
 
-<text x="1054" y="17"><title>Test machines by kind from the VM pool: Not tested</title>⚪</text>
-
-
-<text x="1078" y="17"><title>Sluice green on both forges on the same commit: Not tested</title>⚪</text>
+<text x="1054" y="17"><title>Sluice green on both forges on the same commit: Not tested</title>⚪</text>
 
 </g>
 
 
 <g transform="translate(0 364)">
 <text x="0" y="17">5. From the task's push to the central forge, after approval</text>
-<desc>Analyzed 1, Accepted 2, Not filed yet 3. PJ61: porelo-project#PJ61 · Analyzed · M (five repositories, about 4 h) · The project porelo is online with the local forge upstream; porelo-adapters: the forgejo reader trusts the forge's CA: Not filed yet; porelo: the gate's git trusts the forge's CA, setup installs the reader: Not filed yet; porelo-host: the forge for the host's git and the reader, Sluice seeded, main protected: Not filed yet; BT06: porelo-buildtools#BT06 · Accepted · - · Push Mirrors Started Through The Forge; PJ37: porelo-project#PJ37 · Accepted · — · Work reaches the upstream by a machine key or the person's own token; </desc>
+<desc>Review 2, Analyzed 1, Accepted 2, Not filed yet 1. PJ61: porelo-project#PJ61 · Analyzed · M (five repositories, about 4 h) · The project porelo is online with the local forge upstream; GH08: porelo-adapters#GH08 · Review · S · The Forgejo Adapter Trusts The Account's Authorities; B286: porelo#B286 · Review · S · The Host's Git Trusts The Account's Authorities; porelo-host: the forge for the host's git and the reader, Sluice seeded, main protected: Not filed yet; BT06: porelo-buildtools#BT06 · Accepted · - · The Gathered Push Refuses A Moved Central Forge; PJ37: porelo-project#PJ37 · Accepted · — · Work reaches the upstream by a machine key or the person's own token; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="66.66666666666667" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="133.33333333333334" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
 
-<rect x="66.66666666666667" width="133.33333333333334" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
+<rect x="133.33333333333334" width="66.66666666666667" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
 
-<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 3</title></rect>
+<rect x="200.0" width="133.33333333333334" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
+
+<rect x="333.3333333333333" width="66.66666666666667" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 6 done</text>
@@ -360,15 +355,19 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 424)">
 <text x="0" y="17">7. The move, second wave: the other toolchains</text>
-<desc>Not filed yet 5. Matrix's move issue: Not filed yet; PJ60 issue for porelo-message-matrix: Not filed yet; IntelliJ's move issue: Not filed yet; Frontend's move issue: Not filed yet; PJ60 issues for the three repositories: Not filed yet; </desc>
+<desc>Review 2, Estimated 1, Not filed yet 6. Matrix's move issue: Not filed yet; PJ60 issue for porelo-message-matrix: Not filed yet; IntelliJ's move issue: Not filed yet; Frontend's move issue: Not filed yet; PJ60 issues for the three repositories: Not filed yet; HO12: porelo-host#HO12 · Review · L · The VM Pool; BT24: porelo-buildtools#BT24 · Review · M · An Account Rented From The Local Pool; BT25: porelo-buildtools#BT25 · Estimated · L · Machines Asked For By Kind; The pool taken by the same call on Forgejo: Not filed yet; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 5</title></rect>
+<rect x="0.0" width="88.88888888888889" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
+
+<rect x="88.88888888888889" width="44.44444444444444" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="133.33333333333334" width="266.6666666666667" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 6</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 5 done</text>
+<text class="legend" x="410" y="17">0 of 9 done</text>
 </svg>
 
 
@@ -376,6 +375,9 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 
 <text x="1054" y="17"><title>IntelliJ and Frontend in their tasks: Not tested</title>⚪</text>
+
+
+<text x="1078" y="17"><title>Test machines by kind from the VM pool: Not tested</title>⚪</text>
 
 </g>
 
