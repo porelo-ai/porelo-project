@@ -44,24 +44,25 @@ VM pool in Sluice. [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/ma
 
 | What | Why it breaks | Changed in |
 |---|---|---|
-| `runs-on: ubuntu-24.04` (`build.yml`), `ubuntu-26.04` (the other three) | the forge's runner offers only the label `porelo-host` (`roles/forge/defaults/main.yml`), so those jobs wait for ever | porelo-host [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08): a label per runner kind, backed by an image with what the jobs take (Node.js for the actions, JDK 25 at `JAVA_HOME_25_X64`, `gcc`, `zlib1g-dev`, `rpmbuild`, `rpm2cpio`, `cpio`, `dpkg-deb`, `python3-yaml`) |
-| `actions/checkout`, `actions/cache` by GitHub digest | Forgejo looks actions up on `data.forgejo.org` unless `DEFAULT_ACTIONS_URL` says otherwise, and porelo-host sets none | porelo-host [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08): `DEFAULT_ACTIONS_URL` set, or both actions mirrored on the forge |
-| the snapshot repository in `settings.xml` | it names Sonatype's snapshots; on the local forge the parent and buildtools snapshots come from the forge's Maven registry | porelo-message-sluice: the address as a variable of the setup; porelo-host sets it on the forge's organisation |
-| Publish (`vars.JF_URL`, `secrets.JF_ACCESS_TOKEN`, `if: github.ref == 'refs/heads/main'`) | neither exists on the local forge | porelo-message-sluice: Publish runs where the central variable is set, not by a branch |
+| `runs-on: ubuntu-24.04` (`build.yml`), `ubuntu-26.04` (the other three) | the forge's runner offers only the label `porelo-host` (`roles/forge/defaults/main.yml`), so those jobs wait for ever | porelo-host [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08): each label mapped to an existing GitHub-like runner image, pinned by digest |
+| JDK 25 from the image's `JAVA_HOME_25_X64`, and the package tools (`gcc`, `zlib1g-dev`, `rpmbuild`, `rpm2cpio`, `cpio`, `dpkg-deb`, `python3-yaml`) | a GitHub-like image need not carry them | porelo-message-sluice: `actions/setup-java` for the JDK and a step installing what is missing, the same on both forges |
+| `actions/checkout`, `actions/cache` by GitHub digest | Forgejo looks actions up on `data.forgejo.org` unless `DEFAULT_ACTIONS_URL` says otherwise, and porelo-host sets none | porelo-host [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08): `DEFAULT_ACTIONS_URL` set to github.com; each action is pinned by commit, so a job fetches the same state as on GitHub |
+| Publish (`vars.JF_URL`, `secrets.JF_ACCESS_TOKEN`, `if: github.ref == 'refs/heads/main'`) | neither exists on the local forge | porelo-message-sluice: Publish runs where the central variable is set, not by a branch; porelo-host leaves it unset on the forge |
 | `delete-runs.yml` (`gh api …/actions/runs`) | GitHub's API; dispatched by hand only | porelo-message-sluice: central only, by the same variable |
 
-**Before Sluice can be green there:** [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08) with the runner labels and the actions' source, and porelo-parent and
-porelo-buildtools snapshots in the forge's Maven registry.
+The snapshots in `settings.xml` stay Sonatype's on both forges: the host reaches them as GitHub's runner does.
+
+**Before Sluice can be green there:** [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08) with the runner labels, the actions' source and the central variable.
 
 **The issue for porelo-message-sluice** (size S, about 45 to 60 minutes): its four workflows run unchanged on the
-local Forgejo and on GitHub. The snapshot repository's address is a variable of the setup. Publishing and deleting old
+local Forgejo and on GitHub. The JDK comes from `actions/setup-java` and missing tools are installed in a step. Publishing and deleting old
 runs run only where the central variable is set, named by it and never by a branch. Seen to fail first: today's
 `build.yml` on the local Forgejo.
 
 **Not in sprint 4:** publishing Sluice's packages to the local forge's registry (with porelo-buildtools [BT23](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt23)'s helper,
-an Idea), and a `porelo-machines` acceptance leg in `build.yml`.
+an Idea), a `porelo-machines` acceptance leg in `build.yml`, and building without internet (mirrored actions, the snapshots in
+the forge's registry).
 
 ## Open questions
 
-- The variables' names that porelo-host sets on the forge's organisation, for the snapshot repository and for "central";
-  porelo-host names them with [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08), and Sluice takes them.
+- The central variable's name, which porelo-host sets with [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08), and Sluice takes it.
