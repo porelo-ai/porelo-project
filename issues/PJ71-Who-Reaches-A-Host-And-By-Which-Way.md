@@ -1,6 +1,6 @@
 # PJ71 — Who reaches a host, and by which way
 
-**Status:** Idea.
+**Status:** Accepted; analysed after 0.6.
 
 **What must be true.** Setting a machine up, admitting a person to it or removing them, and taking it down are kept
 apart from normal work, as roles the interface is started with: without a role given it shows normal work only. A
