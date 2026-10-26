@@ -97,12 +97,15 @@ sprints:
     functions:
       - title: "A setup run once, kept and found again"
         test: "Closing the interface ends or keeps its setup in words; after a restart a running setup is found, an interrupted one shows in Needs you with Go on; a second run of one project is refused; the protocol stays until the give-back, in one list."
+        tested: "2026-10-25"
         issues: [porelo-frontend#F180, porelo-frontend#F179, porelo-frontend#F178, porelo-frontend#F181]
       - title: "The key, the VPN and the counts say their state"
         test: "A Scaleway key is checked when stored and in the wizard's first step; one VPN tile follows the tunnel; no NetworkManager popup; the give-back takes this computer's tunnel down; every menu count equals its list."
+        tested: "2026-10-25"
         issues: [porelo-frontend#F186, porelo-frontend#F177, porelo-frontend#F182, porelo-frontend#F183, porelo-frontend#F185, porelo#B279, porelo#B280]
       - title: "Who is in the project's room"
         test: "The messages page lists the room's accounts with Remove, and offers a new password to one already in."
+        tested: "2026-10-25"
         issues: [porelo-frontend#F184, porelo#B278, porelo-message-matrix#MX40]
   - id: "2f"
     title: "Lists and tiles"
@@ -110,9 +113,11 @@ sprints:
     functions:
       - title: "Even rows that expand, Needs you without pink"
         test: "Projects, Forges, Machines and Needs you show single-line rows of one height; the arrow expands in place, a click opens the detail; Needs you has its action in the row and no pink surface."
+        tested: "2026-10-25"
         issues: [porelo-frontend#F187, porelo-frontend#F188]
       - title: "The machine page as tiles"
         test: "The machine's actions stand in the project page's grid with one icon each; taking the server down stands apart in red."
+        tested: "2026-10-25"
         issues: [porelo-frontend#F189]
   - id: "3"
     title: "The build servers read"

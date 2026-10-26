@@ -210,13 +210,13 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 </svg>
 
 
-<text x="1030" y="17"><title>A setup run once, kept and found again: Not tested</title>⚪</text>
+<text x="1030" y="17"><title>A setup run once, kept and found again: Tested 2026-10-25</title>✅</text>
 
 
-<text x="1054" y="17"><title>The key, the VPN and the counts say their state: Not tested</title>⚪</text>
+<text x="1054" y="17"><title>The key, the VPN and the counts say their state: Tested 2026-10-25</title>✅</text>
 
 
-<text x="1078" y="17"><title>Who is in the project's room: Not tested</title>⚪</text>
+<text x="1078" y="17"><title>Who is in the project's room: Tested 2026-10-25</title>✅</text>
 
 </g>
 
@@ -235,10 +235,10 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 </svg>
 
 
-<text x="1030" y="17"><title>Even rows that expand, Needs you without pink: Not tested</title>⚪</text>
+<text x="1030" y="17"><title>Even rows that expand, Needs you without pink: Tested 2026-10-25</title>✅</text>
 
 
-<text x="1054" y="17"><title>The machine page as tiles: Not tested</title>⚪</text>
+<text x="1054" y="17"><title>The machine page as tiles: Tested 2026-10-25</title>✅</text>
 
 </g>
 
