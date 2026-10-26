@@ -12,3 +12,8 @@ The host's forge makes its organization and repositories private, and a task get
 the registry by its declared name is refused with `401`. Two ways are open, to be weighed: the organization made
 public on the forge, reachable only through the VPN and from the host's tasks; or a read-only registry credential
 given to the task through the Porelo-Vault.
+
+## To be checked
+
+- Where a downstream build on the local forge takes porelo-parent's pom from: porelo-buildtools' Build there downloaded
+  the parent's `maven-metadata.xml` from `porelo-forge`, and its log names no download of the pom.
