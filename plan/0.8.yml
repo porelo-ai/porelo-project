@@ -1,64 +1,97 @@
 # The plan of release 0.8. Issue states are not written here: they are read from each repository's index.
 release: "0.8"
-goal: "Steering the work: the agents' work chosen, checked and paid for by rule"
+goal: "Code reviews as SARIF: every finding and comment - from a person, a checking agent, a linter or a forge - in one format, trusted by who wrote it"
 sprints:
   - id: "1"
+    title: "A finding is SARIF"
+    goal: "Porelo reads review data only as SARIF in its profile; a report that is outside the profile is refused by name."
+    functions:
+      - title: "A linter's report shown on the waiting work"
+        test: "A SARIF report of a linter added to waiting work shows each finding on its file and lines in `porelo gate review` and in the interface, with its level and its source named as a linter."
+        issues: [porelo-project#PJ72]
+        notes: ["the SARIF profile in porelo, read and written through java-sarif with a current Jackson (from PJ72)"]
+      - title: "A report outside the profile refused"
+        test: "Reports with a `file://` or `../` location, a fix in another file than its anchor, an external property file, a bidirectional control character, or more results than the limit are each refused, naming the element; nothing of them is shown or kept."
+        issues: [porelo-message-sluice#SL24]
+  - id: "2"
+    title: "The person comments at the gate"
+    goal: "A person reads waiting work as at a forge and comments on its lines; the agent receives each comment and answers with a new push."
+    functions:
+      - title: "A comment with a suggestion reaches the agent"
+        test: "In the interface's review a person comments on a line with a suggestion; the building task receives it as untrusted review input, pushes a fix, and the review shows the thread answered on the new commit."
+        issues: [porelo#B166, porelo-frontend#F78, porelo-frontend#F107]
+      - title: "A thread follows the new push"
+        test: "A thread on lines the new push left unchanged moves with them; one on changed lines stays on its old commit and says so."
+        issues: [porelo#B176]
+  - id: "3"
+    title: "An agent that only reviews"
+    goal: "A task in the role reviewer reads waiting work and writes comments, nothing else; its agent and effort follow the work."
+    functions:
+      - title: "A reviewer reads and comments, and can do nothing more"
+        test: "`porelo task start --role reviewer` on waiting work writes its findings as comments beside the person's, marked with its task and role; its push, approve and reject are refused by the host."
+        issues: [porelo#B172]
+      - title: "Its agent and effort chosen by the work"
+        test: "A reviewer started for an issue with risk `harm` runs the agent and effort the project's rule names for `check`, and the start says which rule chose it; a flag overrides it."
+        issues: [porelo-project#PJ64]
+  - id: "4"
+    title: "Rounds of check and fix"
+    goal: "Work waiting at a gate is checked, fixed and checked again before the person approves it."
+    functions:
+      - title: "Rounds of check and fix at the gate"
+        test: "A build task pushes to its gate; a reviewer reads that commit and leaves findings; the build task wakes, fixes and pushes again; the next check is clean, or the rounds stop at their bound."
+        issues: [porelo-project#PJ67]
+      - title: "The person approves with every round in view"
+        test: "`porelo gate review` and the interface show the diff with the last findings and the rounds before it, compared by `baselineState`; a finding the agent marked suppressed still counts until a person clears it."
+        notes: ["findings shown at the gate in porelo and the interface (from PJ67)"]
+  - id: "5"
+    title: "What a change touches decides its review"
+    goal: "A change's risk class comes from rules alone and decides how it is reviewed and approved."
+    functions:
+      - title: "A dangerous change ranked by rule"
+        test: "Waiting work that deletes a test, changes a workflow, adds a dependency or retargets a symbolic link is ranked C2 or C3 by rule, with the reason shown; a reviewer's finding can raise the class, never lower it."
+        issues: [porelo-project#PJ73, porelo#B283, porelo#B141]
+      - title: "A C3 change approved by two people, on what they read"
+        test: "Approving a C3 change asks for a second person; a push the agent makes between review and approval is never forwarded unseen."
+        issues: [porelo#B145, porelo#B136]
+  - id: "6"
     title: "Adapters say what they offer"
     goal: "Every adapter lists its services, each by its own contract, and a missing or deprecated function is said, not guessed."
     functions:
       - title: "An adapter's services listed, a lacking one refused"
-        test: "Porelo lists each installed adapter's services with contract, version and optional functions; an adapter that lacks a mandatory function is refused by name before any task needs it."
+        test: "Porelo lists each installed adapter's services - build, review - with contract, version and optional functions; an adapter that lacks a mandatory function is refused by name before any task needs it."
         issues: [porelo-project#PJ66]
       - title: "A deprecated contract still taken, with a warning"
         test: "An adapter that speaks only a deprecated contract version still works, and every start that uses it says since when it is deprecated and in which release it goes."
         notes: ["the deprecated contracts in porelo (from PJ66)"]
-  - id: "2"
-    title: "A task's agent and effort by its work"
-    goal: "The start of a task chooses agent, model and effort from its phase and its issue's risk, and says why."
+  - id: "7"
+    title: "Review comments from GitHub"
+    goal: "Review comments on a task's GitHub pull request reach the task as SARIF, trusted by who wrote them, and its replies go back once released."
     functions:
-      - title: "The choice shown with where it came from"
-        test: "A task started for an issue in phase `check` with risk `harm` runs Claude Code at `xhigh`, and the start names the project's rule; a flag overrides it; the interface shows the same before the start."
-        issues: [porelo-project#PJ64]
-      - title: "The operator's rule for a time"
-        test: "A rule set by the operator moves `check` with `harm` to another agent; every start it changes names it with its date; once revoked, the project's rule applies again."
-        notes: ["the operator's rule in porelo, its view in porelo-frontend (from PJ64)"]
-  - id: "3"
-    title: "A change checked before it leaves the machine"
-    goal: "Work waiting at a gate is checked, fixed and checked again before the person approves it."
+      - title: "Comments delivered by who wrote them"
+        test: "On a task's pull request, a comment of an internal account and of a listed partner reach the task at once; a comment of an unknown account is held and shown until the person releases it; a comment that claims another author changes nothing."
+        issues: [porelo#B171, porelo-adapters#GH02]
+      - title: "Replies released, a thread resolved by an internal person"
+        test: "The agent's reply appears on the pull request only after the person releases it; a thread an internal account resolves on GitHub clears its finding at the gate, one resolved by anyone else is only shown as resolved."
+        notes: ["the release of held and outgoing comments in the interface (from PJ72)"]
+  - id: "8"
+    title: "Reviews on the host's Forgejo"
+    goal: "A task's work becomes a pull request on the host's Forgejo, reviewed and approved there by the person."
     functions:
-      - title: "Rounds of check and fix at the gate"
-        test: "A build task pushes to its gate; a check task reads that commit and leaves findings; the build task wakes, fixes and pushes again; the next check is clean, or the rounds stop at their bound."
-        issues: [porelo-project#PJ67]
-      - title: "The person approves with every round in view"
-        test: "`porelo gate review` and the interface show the diff with the last findings and the rounds before it; only the approval sends the work on."
-        notes: ["findings shown at the gate in porelo and the interface (from PJ67)"]
-  - id: "4"
-    title: "What is left of each account"
-    goal: "Every account the agents spend on, with what is left and when it comes back."
+      - title: "The agent opens, the person approves"
+        test: "A task's approved work is a pull request opened by the agent's own forge account; the person approves it from the interface with their own account; an approval with the agent's account is refused."
+        issues: [porelo-frontend#F190]
+        notes: ["the Forgejo review adapter in porelo-adapters (from PJ72)"]
+      - title: "A pull request from outside only read"
+        test: "A pull request of an unknown account on the host's Forgejo is read and commented, never built; the refusal to build names its source level."
+        issues: [porelo-project#PJ73]
+  - id: "9"
+    title: "The review in IntelliJ"
+    goal: "A developer reads and writes review comments in IntelliJ's diff as on a colleague's change."
     functions:
-      - title: "The daily accounts read"
-        test: "`porelo limits` shows two Claude Code subscriptions, Codex and Antigravity, each with its own meters, read time and source; an estimate is marked as such."
-        issues: [porelo-project#PJ65]
-      - title: "The accounts in the interface, the low ones first"
-        test: "The interface shows every configured account as its kind reads best - a window's share as a bar with its reset, a quota as used of allowed - with a meter below its threshold warned and shown first."
-        notes: ["the accounts' view in porelo-frontend (from PJ65)"]
-  - id: "5"
-    title: "A machine nobody sits at tells its person"
-    goal: "A machine working alone says what needs its person - an expiring credential, a locked vault, a stopped service, a machine running short - wherever the person is."
-    functions:
-      - title: "An expiring token told ahead"
-        test: "A forge token set to expire soon on a host makes one message to the person, in the way they chose, naming the machine, the token, when it expires and how to renew it; it is not repeated until it changes."
-        issues: [porelo-project#PJ70]
-      - title: "A stopped service told with its cause"
-        test: "The room's homeserver stopped on a host makes one message naming the machine, the service, since when and its last error line; when it runs again, the person is told it is resolved."
-        notes: ["the watcher in porelo, the person's ways of being told (from PJ70)"]
-  - id: "6"
-    title: "A host rented from any provider"
-    goal: "A host is rented and given back through one OpenTofu module per provider, by the same `up` and `down` as today."
-    functions:
-      - title: "Rented and given back through the module"
-        test: "`porelo-host up` rents a Scaleway host through the module and `down` gives it back; afterwards `tofu plan` reads no change, and nothing tagged with the project is left at the provider."
-        issues: [porelo-host#HO23, porelo-frontend#F166]
-      - title: "A state from another computer refused"
-        test: "A tagged server the module's state lacks makes `up` refuse, naming it; a conflict copy of the state makes `up` and `down` refuse until a person keeps one."
-        issues: [porelo-frontend#F166]
+      - title: "Threads in IntelliJ's diff"
+        test: "The plugin's review shows every thread of waiting work on its lines with its origin - person, task, forge account or linter - and a suggestion as a small diff."
+        issues: [porelo-intellij#IJ04]
+        notes: ["the plugin's adapter on IntelliJ's code review module, in Java (from PJ72)"]
+      - title: "A comment written and a held one released"
+        test: "A comment and a reply written in the plugin reach the task as in the interface; a held forge comment is released from the plugin one at a time."
+        issues: [porelo-intellij#IJ04]

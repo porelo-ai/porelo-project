@@ -10,8 +10,9 @@ built, and the gaps between them, can be decided for the area as a whole rather 
 
 Reviewing is spread over many repositories: the daemon's gate and comment model, the interface, the IntelliJ plugin,
 the forge adapters, the sluice, the host. A review can come from three places - the person at the gate, a checking
-agent, a forge - and the issues for each were written apart. Only three of them are in a release plan (0.8, sprints
-1 to 3); the forge's way is in none.
+agent, a forge - and the issues for each were written apart. Release 0.8 is the release of this area, planned in
+[plan/0.8.yml](../plan/0.8.yml): first the profile and the review at the gate, then the agent that reviews and the rounds
+of check and fix, the risk classes, and last the reviews on GitHub, on the host's Forgejo and in IntelliJ.
 
 ## The technical base: SARIF
 
@@ -34,10 +35,15 @@ SARIF results. Nothing in Porelo knows a forge's own format.
 - **The sluice checks the profile:** a result passes only in the profile's exact shape ([SL24](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl24)), in both directions.
 - **More than reviews for free:** a linter or scanner that already writes SARIF (CodeQL, Semgrep, SpotBugs, detekt,
   Qodana) can put its results beside the review without a converter.
+- **A checking agent is a reviewer:** [PJ67](README.md#pj67)'s check task is a task in
+  [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172)'s role reviewer, and its findings
+  are SARIF results like every other comment; one design serves the gate and the pull request.
+- **The forges of 0.8 are GitHub and Forgejo;** GitLab, Bitbucket and Azure DevOps follow later, each with an adapter
+  of its own.
 - **IntelliJ reuses what it ships rather than building a review of its own:** the plugin keeps its own review of a
   waiting push in the platform's diff ([IJ01](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij01)). For comment threads in the diff's gutter ([IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04)) it uses the
   platform's `collaborationTools` code review module, on which the bundled GitHub and GitLab integrations draw, behind
-  a narrow adapter of its own that can be replaced: JetBrains promises no stability for that module, parts of it are
+  a narrow adapter of its own, written in Java like the rest of the plugin, that can be replaced: JetBrains promises no stability for that module, parts of it are
   experimental or internal. The bundled Qodana plugin is a model to learn from and at most an optional report viewer,
   never a dependency.
 - **The Java library is `com.contrastsecurity:java-sarif`** (MIT, on Maven Central, classes generated from the SARIF
@@ -83,8 +89,8 @@ SARIF results. Nothing in Porelo knows a forge's own format.
 
 | # | Status | What it covers |
 |---|---|---|
-| [PJ67](README.md#pj67) | Idea | Rounds of check and fix at the gate until a check is clean or the rounds run out; the person approves with every round in view. Release 0.8, sprint 3. |
-| [PJ64](README.md#pj64) | Idea | The agent and effort of a `check` task chosen by phase and risk. Release 0.8, sprint 2. |
+| [PJ67](README.md#pj67) | Idea | Rounds of check and fix at the gate until a check is clean or the rounds run out; the person approves with every round in view. |
+| [PJ64](README.md#pj64) | Idea | The agent and effort of a `check` task chosen by phase and risk. |
 | porelo [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172) | Estimated | A task in the role reviewer: reads waiting work, a branch or a pull request read-only, writes only comments. |
 | porelo-omp [OM19](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om19) | Estimated | A read-only mode asked for by name at a task's start. |
 
@@ -94,7 +100,7 @@ SARIF results. Nothing in Porelo knows a forge's own format.
 |---|---|---|
 | porelo [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171) | Estimated | A pull request's review comments reach the task that made it, its replies go back; only listed accounts are delivered, outgoing ones released by the person. |
 | porelo-adapters [GH02](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh02) | Analyzed | GitHub's side of it: review comments, threads and suggestions read and written (`Review1`). |
-| [PJ66](README.md#pj66) | Idea | An adapter lists the services it offers, a forge's reviews among them. Release 0.8, sprint 1. |
+| [PJ66](README.md#pj66) | Idea | An adapter lists the services it offers, a forge's reviews among them. |
 | porelo [B288](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b288) | Idea | A reviewer task started by itself when the forge's build is green. |
 | porelo [B289](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b289) | Idea | A task removed once its pull request is merged. |
 | porelo-host [HO28](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho28) | Idea | The forge's events, a comment among them, routed to the right account's daemon; a speed-up only. |
@@ -115,16 +121,7 @@ SARIF results. Nothing in Porelo knows a forge's own format.
 ## Acceptance
 
 - Every open issue about reviewing, in any repository, is listed in one theme here, with its current status.
-- The order of the themes in the release plans is decided, and each gap above is either closed in its issue or filed.
-
-## Open questions
-
-- Which release takes the comment model ([B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166))
-  and the forge's reviews ([B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171)): before,
-  with or after [PJ67](README.md#pj67) in 0.8?
-- Is [PJ67](README.md#pj67)'s check task the same as
-  [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172)'s reviewer, so that one design
-  serves the gate and the pull request?
+- Each gap above is either closed in its issue or filed.
 
 ## To be checked
 

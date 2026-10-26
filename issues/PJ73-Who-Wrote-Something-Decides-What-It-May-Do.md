@@ -60,12 +60,13 @@ not a requirement of the framework.
 
 | Operation | E0 | E1 | I1 | A |
 |---|---|---|---|---|
-| A comment delivered to the building agent | only after a person releases it | open | yes | yes, marked untrusted |
+| A comment delivered to the building agent | only after a person releases it | yes, marked untrusted | yes | yes, marked untrusted |
 | A suggestion (`fixes`) applied by the agent | no | after release | yes | after release |
 | A reviewer task started by itself | no | yes | yes | - |
 | The code built or tested | only in a throw-away container without secrets or egress ([B95](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b95)) | throw-away container | as usual | - |
 | Secrets or tokens in that run | never | never | by the project's rule | never |
-| A reply written back to the forge | after release | after release | by the project's rule | always after release |
+| A reply written back to the forge | after release | after release | after release; a project may let it go without | always after release |
+| A thread resolved on the forge | shown, the finding stays | shown, the finding stays | clears the finding at the gate | shown, the finding stays |
 | Approval at the gate | two people ([B145](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b145)) | one person | one person | never |
 
 - A class C3 change is treated at least as E0 for building, secrets and approval, whoever wrote it.
@@ -76,7 +77,11 @@ not a requirement of the framework.
   comments and test data, all written by the source, and can be steered by them. Its result is shown, but the
   person's review is still required.
 - The project file can tighten the default; a machine's policy
-  ([PJ16](README.md#pj16)) can tighten it further, never loosen it.
+  ([PJ16](README.md#pj16)) can tighten it further, never loosen it. The one default a project may loosen is the
+  release of replies on I1, and a machine's policy can forbid that too.
+- **Until a throw-away container exists**
+  ([B95](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b95)), a pull request of E0 or E1 is read
+  and commented, never built or tested; the refusal names its source level.
 
 ### Provenance that can be checked
 
@@ -99,7 +104,6 @@ not a requirement of the framework.
 
 ## Open questions
 
-- Which cells marked "open" or "by the project's rule" hold by default.
 - Whether E1 is a list kept by hand in the project file, or follows from merged contributions.
 - Whether I1 requires signed commits by default.
 

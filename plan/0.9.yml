@@ -1,0 +1,34 @@
+# The plan of release 0.9. Issue states are not written here: they are read from each repository's index.
+release: "0.9"
+goal: "Running alone: the accounts, a machine nobody sits at, and hosts from any provider"
+sprints:
+  - id: "1"
+    title: "What is left of each account"
+    goal: "Every account the agents spend on, with what is left and when it comes back."
+    functions:
+      - title: "The daily accounts read"
+        test: "`porelo limits` shows two Claude Code subscriptions, Codex and Antigravity, each with its own meters, read time and source; an estimate is marked as such."
+        issues: [porelo-project#PJ65]
+      - title: "The accounts in the interface, the low ones first"
+        test: "The interface shows every configured account as its kind reads best - a window's share as a bar with its reset, a quota as used of allowed - with a meter below its threshold warned and shown first."
+        notes: ["the accounts' view in porelo-frontend (from PJ65)"]
+  - id: "2"
+    title: "A machine nobody sits at tells its person"
+    goal: "A machine working alone says what needs its person - an expiring credential, a locked vault, a stopped service, a machine running short - wherever the person is."
+    functions:
+      - title: "An expiring token told ahead"
+        test: "A forge token set to expire soon on a host makes one message to the person, in the way they chose, naming the machine, the token, when it expires and how to renew it; it is not repeated until it changes."
+        issues: [porelo-project#PJ70]
+      - title: "A stopped service told with its cause"
+        test: "The room's homeserver stopped on a host makes one message naming the machine, the service, since when and its last error line; when it runs again, the person is told it is resolved."
+        notes: ["the watcher in porelo, the person's ways of being told (from PJ70)"]
+  - id: "3"
+    title: "A host rented from any provider"
+    goal: "A host is rented and given back through one OpenTofu module per provider, by the same `up` and `down` as today."
+    functions:
+      - title: "Rented and given back through the module"
+        test: "`porelo-host up` rents a Scaleway host through the module and `down` gives it back; afterwards `tofu plan` reads no change, and nothing tagged with the project is left at the provider."
+        issues: [porelo-host#HO23, porelo-frontend#F166]
+      - title: "A state from another computer refused"
+        test: "A tagged server the module's state lacks makes `up` refuse, naming it; a conflict copy of the state makes `up` and `down` refuse until a person keeps one."
+        issues: [porelo-frontend#F166]

@@ -1,0 +1,287 @@
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 994 374" role="img" aria-label="Sprint progress for release 0.8">
+<title>Sprint progress for release 0.8</title>
+<style>
+text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
+@media (prefers-color-scheme:dark){text{fill:#f0efec}.legend{fill:#c3c2b7}.c-surface{fill:#1a1a19}.c-grid{fill:#383835}.c-backlog{fill:#80bee6}.c-estimated{fill:#b497cf}.c-analyzed{fill:#77766f}.c-accepted{fill:#aaa9a2}.c-review{fill:#3987e5}.c-idea{fill:#d95926}.c-new{fill:#1a1a19}}
+</style>
+<rect width="100%" height="100%" fill="#fcfcfb" class="c-surface"/>
+
+
+<g transform="translate(0 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#0ca30c" class="c-done" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Finished / Rejected</text>
+</g>
+
+
+<g transform="translate(320 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#2a78d6" class="c-review" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Review</text>
+</g>
+
+
+<g transform="translate(640 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#fab219" class="c-impl" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Implementing / Rework</text>
+</g>
+
+
+<g transform="translate(0 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#8ac8f0" class="c-backlog" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Backlog</text>
+</g>
+
+
+<g transform="translate(320 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#9575b5" class="c-estimated" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Estimated</text>
+</g>
+
+
+<g transform="translate(640 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#77766f" class="c-analyzed" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Analyzed</text>
+</g>
+
+
+<g transform="translate(0 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#b9b8b2" class="c-accepted" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Accepted</text>
+</g>
+
+
+<g transform="translate(320 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#eb6834" class="c-idea" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Idea</text>
+</g>
+
+
+<g transform="translate(640 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#ffffff" class="c-new" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Not filed yet / Missing</text>
+</g>
+
+
+
+<g transform="translate(0 94)">
+<text x="0" y="17">1. A finding is SARIF</text>
+<desc>Estimated 1, Idea 1, Not filed yet 1. PJ72: porelo-project#PJ72 · Idea · — · Every issue about reviewing work - by the person at the gate, by a checking agent, by comments on a forge's pull request - listed in one place by theme, so the order and the gaps are decided for the area as a whole; Porelo reads and writes review data only as SARIF, the adapters convert to and from each forge, IntelliJ reuses what it ships.; the SARIF profile in porelo, read and written through java-sarif with a current Jackson (from PJ72): Not filed yet; SL24: porelo-message-sluice#SL24 · Estimated · L · A code comment, the filter's side; </desc>
+<svg x="344" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="894" y="17"><title>A linter's report shown on the waiting work: Not tested</title>⚪</text>
+
+
+<text x="918" y="17"><title>A report outside the profile refused: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 124)">
+<text x="0" y="17">2. The person comments at the gate</text>
+<desc>Estimated 1, Analyzed 3. B166: porelo#B166 · Estimated · L · Line Comments Sent Back To The Agent; F78: porelo-frontend#F78 · Analyzed · M · A Waiting Push Is Reviewed As At A Forge; F107: porelo-frontend#F107 · Analyzed · L · Code Comments In The Review; B176: porelo#B176 · Analyzed · M · Comment Threads That Follow A New Push; </desc>
+<svg x="344" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="100.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="100.0" width="300.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 3</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 4 done</text>
+</svg>
+
+
+<text x="894" y="17"><title>A comment with a suggestion reaches the agent: Not tested</title>⚪</text>
+
+
+<text x="918" y="17"><title>A thread follows the new push: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 154)">
+<text x="0" y="17">3. An agent that only reviews</text>
+<desc>Estimated 1, Idea 1. B172: porelo#B172 · Estimated · M · A Task That Reviews; PJ64: porelo-project#PJ64 · Idea · — · A task chooses its agent and effort by its work; </desc>
+<svg x="344" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="894" y="17"><title>A reviewer reads and comments, and can do nothing more: Not tested</title>⚪</text>
+
+
+<text x="918" y="17"><title>Its agent and effort chosen by the work: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 184)">
+<text x="0" y="17">4. Rounds of check and fix</text>
+<desc>Idea 1, Not filed yet 1. PJ67: porelo-project#PJ67 · Idea · — · A change is checked before it leaves the machine; findings shown at the gate in porelo and the interface (from PJ67): Not filed yet; </desc>
+<svg x="344" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="894" y="17"><title>Rounds of check and fix at the gate: Not tested</title>⚪</text>
+
+
+<text x="918" y="17"><title>The person approves with every round in view: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 214)">
+<text x="0" y="17">5. What a change touches decides its review</text>
+<desc>Estimated 3, Idea 2. PJ73: porelo-project#PJ73 · Idea · — · Who wrote something decides what it may do; B283: porelo#B283 · Idea · - · A Retargeted Symbolic Link Ranked Dangerous; B141: porelo#B141 · Estimated · XL · New Dependencies Checked Before Review; B145: porelo#B145 · Estimated · L · Four Eyes At The Gate; B136: porelo#B136 · Estimated · M · An Approve Bound To What Was Reviewed; </desc>
+<svg x="344" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="240.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
+
+<rect x="240.0" width="160.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 5 done</text>
+</svg>
+
+
+<text x="894" y="17"><title>A dangerous change ranked by rule: Not tested</title>⚪</text>
+
+
+<text x="918" y="17"><title>A C3 change approved by two people, on what they read: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 244)">
+<text x="0" y="17">6. Adapters say what they offer</text>
+<desc>Idea 1, Not filed yet 1. PJ66: porelo-project#PJ66 · Idea · — · An adapter offers the services it has; the deprecated contracts in porelo (from PJ66): Not filed yet; </desc>
+<svg x="344" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="894" y="17"><title>An adapter's services listed, a lacking one refused: Not tested</title>⚪</text>
+
+
+<text x="918" y="17"><title>A deprecated contract still taken, with a warning: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 274)">
+<text x="0" y="17">7. Review comments from GitHub</text>
+<desc>Estimated 1, Analyzed 1, Not filed yet 1. B171: porelo#B171 · Estimated · L · Forge Review Comments To And From A Task; GH02: porelo-adapters#GH02 · Analyzed · M · Review Comments Read And Written; the release of held and outgoing comments in the interface (from PJ72): Not filed yet; </desc>
+<svg x="344" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="894" y="17"><title>Comments delivered by who wrote them: Not tested</title>⚪</text>
+
+
+<text x="918" y="17"><title>Replies released, a thread resolved by an internal person: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 304)">
+<text x="0" y="17">8. Reviews on the host's Forgejo</text>
+<desc>Idea 2, Not filed yet 1. F190: porelo-frontend#F190 · Idea · — · Approved Work Brought To The Central Forge; the Forgejo review adapter in porelo-adapters (from PJ72): Not filed yet; PJ73: porelo-project#PJ73 · Idea · — · Who wrote something decides what it may do; </desc>
+<svg x="344" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="266.6666666666667" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="894" y="17"><title>The agent opens, the person approves: Not tested</title>⚪</text>
+
+
+<text x="918" y="17"><title>A pull request from outside only read: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 334)">
+<text x="0" y="17">9. The review in IntelliJ</text>
+<desc>Estimated 1, Not filed yet 1. IJ04: porelo-intellij#IJ04 · Estimated · XL · Code comments in the review; the plugin's adapter on IntelliJ's code review module, in Java (from PJ72): Not filed yet; IJ04: porelo-intellij#IJ04 · Estimated · XL · Code comments in the review; </desc>
+<svg x="344" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="894" y="17"><title>Threads in IntelliJ's diff: Not tested</title>⚪</text>
+
+
+<text x="918" y="17"><title>A comment written and a held one released: Not tested</title>⚪</text>
+
+</g>
+
+</svg>
