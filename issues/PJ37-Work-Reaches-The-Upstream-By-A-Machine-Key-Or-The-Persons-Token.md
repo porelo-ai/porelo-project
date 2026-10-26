@@ -48,7 +48,7 @@ repository:
   for the push of `porelo/<task>` and by the build reader, never in a task: porelo-host's sprint-5 part in
   [PJ61](README.md#pj61)'s table.
 - **The gathered push's central token** is the operator's fine-grained token, asked for hidden and stored nowhere:
-  porelo-buildtools [BT06](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt06).
+  porelo-host [HO32](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho32).
 
 Left for later sprints, and placed then: the machine's own deploy keys and the request to an administrator, a person's
 token deposited on a rented machine for a time (`--for`), the forge without narrower tokens, and the way to a project in

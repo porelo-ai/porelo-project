@@ -1,6 +1,6 @@
 # PJ61 — The project porelo is online with the local forge upstream
 
-**Status:** Analyzed for sprint 5.
+**Status:** Estimated for sprint 5.
 
 **What must be true.** The project `porelo`'s file names the local Forgejo as its upstream: a task's push passes through
 its gate to the branch `porelo/<task>` on Forgejo at once, Forgejo builds it, the task reads the verdict through the
@@ -23,7 +23,7 @@ moves ([PJ59](README.md#pj59)).
   destination through the broker, which trusts the host's authority (porelo-host
   [HO17](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho17)).
 - **To the central forge only after approval:** the gathered push (porelo-buildtools
-  [BT06](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt06)), a plain `git push` without
+  [HO32](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho32)), a plain `git push` without
   force, carries a task's work once the operator approved it.
 - **Proved on porelo-message-sluice first:** a task pushes, Forgejo builds it on its own runner, the task reads the verdict, the
   operator approves, the gathered push reaches the central forge.
@@ -39,7 +39,7 @@ moves ([PJ59](README.md#pj59)).
 
 - **The approval** is the operator merging the pull request `porelo/<task>` → `main` in Forgejo's interface. `main`
   on the forge is protected: only a pull request the operator approved reaches it, never a direct push.
-- **The gathered push** ([BT06](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt06)) is
+- **The gathered push** ([HO32](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho32)) is
   started by hand on the host over ssh in sprint 5; started from a task through the broker later, when the agents move.
 - **The central forge's credential** is the operator's fine-grained token (`Contents` and `Workflows` read and write,
   only the project's repositories, with an expiry). In sprint 5 it is stored nowhere: the push asks for it hidden in the
@@ -60,8 +60,9 @@ moves ([PJ59](README.md#pj59)).
 |---|---|
 | porelo-adapters | built in [GH08](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh08) (Review): `porelo-adapter-forgejo` reads the account's `ca-certificates.pem` |
 | porelo | built in [B286](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b286) (Review): the gate's host `git` trusts that bundle through `GIT_SSL_CAINFO`; `porelo-setup.sh` installs no build reader ([B287](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b287), an Idea) |
-| porelo-host | the forge's CA and name for the host's `git`, the build reader installed, a forge token for the gate and the reader in the account's vault, porelo-message-sluice seeded on the forge, `main` protected |
-| porelo-buildtools | [BT06](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt06): the gathered push |
+| porelo-host | [HO31](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho31): the forge's CA and name for the host's `git`, the build reader installed, a forge token for the gate and the reader in the account's vault, porelo-message-sluice seeded on the forge, `main` protected |
+| porelo-host | [HO29](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho29): the operator's own login on the forge, with which the pull request is approved |
+| porelo-host | [HO32](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho32): the gathered push |
 | porelo-project | `project.yml` `online`, porelo-message-sluice's upstream on the forge, `builds:` read by `forgejo` |
 
 ## To be checked
