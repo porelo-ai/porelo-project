@@ -1,6 +1,6 @@
 # PJ61 — The project porelo is online with the local forge upstream
 
-**Status:** Estimated for sprint 5.
+**Status:** Backlog for sprint 5.
 
 **What must be true.** The project `porelo`'s file names the local Forgejo as its upstream: a task's push passes through
 its gate to the branch `porelo/<task>` on Forgejo at once, Forgejo builds it, the task reads the verdict through the

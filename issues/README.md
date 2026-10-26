@@ -36,6 +36,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj61"></a>[PJ61](PJ61-The-Project-Porelo-Is-Online-With-The-Local-Forge-Upstream.md) | M (five repositories, about 4 h) | — | The project `porelo` online with the local Forgejo upstream: a task's push built there, its verdict read in the task, the central forge reached by the gathered push after approval; proved on Sluice first. |
 
 ## Analyzed
 
@@ -96,7 +97,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj61"></a>[PJ61](PJ61-The-Project-Porelo-Is-Online-With-The-Local-Forge-Upstream.md) | M (five repositories, about 4 h) | — | The project `porelo` online with the local Forgejo upstream: a task's push built there, its verdict read in the task, the central forge reached by the gathered push after approval; proved on Sluice first. |
 | <a id="pj52"></a>[PJ52](PJ52-A-Repositorys-Build-Tools-Are-Recognized-And-A-Project-Proposed.md) | XL | `porelo` [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192); an agent for `porelo-ecosystems` | Drafts proposed from what a checkout and the person's tool settings say: the tools as a `.porelo.yml` the repository never receives, the rules (egress, private repositories, memory) as a `project.yml` for a project repository of the person's own; one plugin per build tool in `porelo-ecosystems`, a native executable of its own spoken to over varlink, that never runs the project's code and reads only local caches (Maven's effective model through MIMA, offline), measured against the Porelo repositories' own `porelo.yml`; credentials named by id and offered into the Porelo-Vault, never copied. |
 | <a id="pj46"></a>[PJ46](PJ46-Document-Tests-Run-Only-Where-The-Agent-Works.md) | M | — | The tests that read only issues and documents run on the agent's machine and in the daily Shared rules check, never in a Build: left out by the build tool's own switch, and naming no single issue, so setting an issue Finished touches no test. |
 | <a id="a08"></a>[A08](A08-Agent-Copilot-CLI.md) | L | — | Copilot CLI as a packaged agent: brokerable by environment variable (BYOK), which is not the Copilot subscription. |
