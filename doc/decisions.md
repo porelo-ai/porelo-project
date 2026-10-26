@@ -11,6 +11,7 @@ it stays and what would change the answer.
 | A library's license follows how it is shipped | plain Java libraries LGPL-3.0-or-later; parts linked into native images and shipped as packages Apache-2.0; Porelo itself GPL-3.0 | [entry](#a-librarys-license-follows-how-it-is-shipped) |
 | Code from outside reaches no secret | one organisation ruleset on `main` (no deletion, no force push, a pull request with the code owner's review), its only bypass the organisation admin; `CODEOWNERS` for `.github/`, build files and `AGENTS.md`; a fork's workflow waits for approval | [entry](#code-from-outside-reaches-no-secret) |
 | Work not yet sent by the gathered push is lost with a failed machine | the host keeps no backup of the local forge; a person who wants one backs it up with means of their own | [entry](#work-not-yet-sent-by-the-gathered-push-is-lost-with-a-failed-machine) |
+| A pull request's checks inform and never block | no repository requires a status check to merge; the *Workflow check* runs only on a pull request touching `.github/**` | [entry](#a-pull-requests-checks-inform-and-never-block) |
 
 ## A library's license follows how it is shipped
 
@@ -68,3 +69,14 @@ Nothing has to carry two names, and a test refusing the old name can hold everyw
 `porelo-dist-rpm` at Artifactory has the *YUM Metadata Folder Depth* 1, so each channel (`snapshots`, `releases`)
 is indexed in its own folder. A YUM repository made by hand starts at 0 and indexes beside the channel instead of in
 it.
+
+## A pull request's checks inform and never block
+
+**What holds:** no repository's ruleset requires a status check before a merge. Each pull request runs its checks,
+the *Build* when code changes and the *Workflow check* only when it touches `.github/**` (an action's pin, its
+version comment, each workflow loading with triggers and jobs); the code owner reads their result before merging.
+Measured on 2026-10-26 on all 15 repositories: none requires a check. **Why it stays:** a required check would
+have to report on every pull request, so the path-filtered *Workflow check* would run on all of them, and a check
+that cannot pass on one forge (such as `shared-rules.yml` on the local forge) would block a merge there; the code
+owner already reviews every merge. **What would change the answer:** a merge by anyone other than the code owner, or
+a red check found merged on `main`.
