@@ -136,27 +136,6 @@ sprints:
         tested: "2026-10-25"
         issues: [porelo#B253, porelo-adapters#GH06]
         covers: [porelo-project#PJ62]
-  - id: "3a"
-    title: "Trust the local build"
-    goal: "A local build checks its commits and reuses only results that still apply."
-    functions:
-      - title: "The commit checked and a proven build reused"
-        test: "Check a valid and an invalid commit locally and in the build; the invalid one is refused by name. Change only Actions and confirm no full Build starts. Reuse fresh legs for the same tree; a different tree or an old result must be refused."
-        issues: [porelo-buildtools#BT17, porelo-buildtools#BT13, porelo-claude-code#CC34, porelo-pi#PI31]
-  - id: "3b"
-    title: "Receive the test machine requested"
-    goal: "A run asking for IPv4 alone gets exactly that."
-    functions:
-      - title: "One primary IPv4 and no IPv6"
-        test: "Rent an IPv4-only leg machine and read the provider inventory; it shows exactly one primary IPv4 and no IPv6. Return the machine and confirm its resources are gone."
-        issues: [porelo-buildtools#BT10]
-  - id: "3c"
-    title: "A dry run says what will be refused"
-    goal: "The person sees an agent refusing a host before starting the task."
-    functions:
-      - title: "A refused host shown as refused"
-        test: "Run task start with --dry-run for an allowed host and one the agent refuses; the latter is named as refused and is refused again by the running task."
-        issues: [porelo#B235]
   - id: "4"
     title: "The local forge builds as the central one"
     goal: "Forgejo, its registry and the test machines on the host; one repository builds there unchanged."
@@ -167,6 +146,27 @@ sprints:
       - title: "Sluice green on both forges on the same commit"
         test: "The same `build.yml` of porelo-message-sluice runs green on Forgejo and on the central forge."
         issues: [porelo-project#PJ60, porelo#B285, porelo-buildtools#BT32, porelo-message-sluice#SL33]
+  - id: "4a"
+    title: "Trust the local build"
+    goal: "A local build checks its commits and reuses only results that still apply."
+    functions:
+      - title: "The commit checked and a proven build reused"
+        test: "Check a valid and an invalid commit locally and in the build; the invalid one is refused by name. Change only Actions and confirm no full Build starts. Reuse fresh legs for the same tree; a different tree or an old result must be refused."
+        issues: [porelo-buildtools#BT17, porelo-buildtools#BT13, porelo-claude-code#CC34, porelo-pi#PI31]
+  - id: "4b"
+    title: "Receive the test machine requested"
+    goal: "A run asking for IPv4 alone gets exactly that."
+    functions:
+      - title: "One primary IPv4 and no IPv6"
+        test: "Rent an IPv4-only leg machine and read the provider inventory; it shows exactly one primary IPv4 and no IPv6. Return the machine and confirm its resources are gone."
+        issues: [porelo-buildtools#BT10]
+  - id: "4c"
+    title: "A dry run says what will be refused"
+    goal: "The person sees an agent refusing a host before starting the task."
+    functions:
+      - title: "A refused host shown as refused"
+        test: "Run task start with --dry-run for an allowed host and one the agent refuses; the latter is named as refused and is refused again by the running task."
+        issues: [porelo#B235]
   - id: "5"
     title: "From the task's push to the central forge, after approval"
     goal: "The whole way of a piece of work, shown on porelo-message-sluice."

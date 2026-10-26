@@ -269,65 +269,6 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 
 <g transform="translate(0 334)">
-<text x="0" y="17">3a. Trust the local build</text>
-<desc>Review 2, Implementing 2. BT17: porelo-buildtools#BT17 · Implementing · M · Commit Messages Checked Before And On A Push; BT13: porelo-buildtools#BT13 · Implementing · S · Action Moves Merged Without A Build; CC34: porelo-claude-code#CC34 · Review · S · Take The Legs From A Run That Proved The Same Tree; PI31: porelo-pi#PI31 · Review · S · Take The Legs From A Run That Proved The Same Tree; </desc>
-<svg x="480" width="540" height="24" viewBox="0 0 540 24">
-<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
-<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
-
-<rect x="0.0" width="200.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
-
-<rect x="200.0" width="200.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 2</title></rect>
-
-</svg>
-<text class="legend" x="410" y="17">0 of 4 done</text>
-</svg>
-
-
-<text x="1030" y="17"><title>The commit checked and a proven build reused: Not tested</title>⚪</text>
-
-</g>
-
-
-<g transform="translate(0 364)">
-<text x="0" y="17">3b. Receive the test machine requested</text>
-<desc>Implementing 1. BT10: porelo-buildtools#BT10 · Implementing · S · A Leg Takes No IPv6 Address; </desc>
-<svg x="480" width="540" height="24" viewBox="0 0 540 24">
-<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
-<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
-
-<rect x="0.0" width="400.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
-
-</svg>
-<text class="legend" x="410" y="17">0 of 1 done</text>
-</svg>
-
-
-<text x="1030" y="17"><title>One primary IPv4 and no IPv6: Not tested</title>⚪</text>
-
-</g>
-
-
-<g transform="translate(0 394)">
-<text x="0" y="17">3c. A dry run says what will be refused</text>
-<desc>Backlog 1. B235: porelo#B235 · Backlog · S · A Dry Run Shows The Agent's Refusals; </desc>
-<svg x="480" width="540" height="24" viewBox="0 0 540 24">
-<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
-<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
-
-<rect x="0.0" width="400.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
-
-</svg>
-<text class="legend" x="410" y="17">0 of 1 done</text>
-</svg>
-
-
-<text x="1030" y="17"><title>A refused host shown as refused: Not tested</title>⚪</text>
-
-</g>
-
-
-<g transform="translate(0 424)">
 <text x="0" y="17">4. The local forge builds as the central one</text>
 <desc>Review 9, Implementing 1, Analyzed 1. HO08: porelo-host#HO08 · Review · L · The Forge With Its Registry; HO17: porelo-host#HO17 · Review · XS · The Forge's CA In Porelo's Account; B233: porelo#B233 · Review · M · A Host Service Reached By Name; B234: porelo#B234 · Review · M · The Host's Authority In A Task's Trust Store; HO20: porelo-host#HO20 · Review · M · Every Container Of The Host Fits The Machine; B266: porelo#B266 · Review · M · A Task Fits The Machine It Runs On; HO26: porelo-host#HO26 · Review · S · Each Agent's Own Forge Account; PJ60: porelo-project#PJ60 · Analyzed · S (each of parent, buildtools, Sluice) · Every workflow runs on the local forge as on the central one; B285: porelo#B285 · Review · S · A Snapshot Deployed To The Local Forge; BT32: porelo-buildtools#BT32 · Review · S · Snapshots On The Forge's Own Registry; SL33: porelo-message-sluice#SL33 · Implementing · S · The Workflows Run On The Local Forge As On GitHub; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
@@ -349,6 +290,65 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 
 <text x="1054" y="17"><title>Sluice green on both forges on the same commit: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 364)">
+<text x="0" y="17">4a. Trust the local build</text>
+<desc>Review 2, Implementing 2. BT17: porelo-buildtools#BT17 · Implementing · M · Commit Messages Checked Before And On A Push; BT13: porelo-buildtools#BT13 · Implementing · S · Action Moves Merged Without A Build; CC34: porelo-claude-code#CC34 · Review · S · Take The Legs From A Run That Proved The Same Tree; PI31: porelo-pi#PI31 · Review · S · Take The Legs From A Run That Proved The Same Tree; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 2</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 4 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>The commit checked and a proven build reused: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 394)">
+<text x="0" y="17">4b. Receive the test machine requested</text>
+<desc>Implementing 1. BT10: porelo-buildtools#BT10 · Implementing · S · A Leg Takes No IPv6 Address; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>One primary IPv4 and no IPv6: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 424)">
+<text x="0" y="17">4c. A dry run says what will be refused</text>
+<desc>Backlog 1. B235: porelo#B235 · Backlog · S · A Dry Run Shows The Agent's Refusals; </desc>
+<svg x="480" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1030" y="17"><title>A refused host shown as refused: Not tested</title>⚪</text>
 
 </g>
 
