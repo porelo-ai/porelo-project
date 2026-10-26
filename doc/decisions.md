@@ -9,7 +9,7 @@ it stays and what would change the answer.
 | Porelo is installed afresh | nothing of a machine that ran Sokar is read, kept or migrated | [entry](#porelo-is-installed-afresh) |
 | The RPM repository indexes one folder deep | `porelo-dist-rpm` has the *YUM Metadata Folder Depth* 1 | [entry](#the-rpm-repository-indexes-one-folder-deep) |
 | Code from outside reaches no secret | one organisation ruleset on `main` (no deletion, no force push, a pull request with the code owner's review), its only bypass the organisation admin; `CODEOWNERS` for `.github/`, build files and `AGENTS.md`; a fork's workflow waits for approval | [entry](#code-from-outside-reaches-no-secret) |
-| Work not yet mirrored is lost with a failed machine | the host keeps no backup of the local forge; a person who wants one mirrors it with means of their own | [entry](#work-not-yet-mirrored-is-lost-with-a-failed-machine) |
+| Work not yet sent by the gathered push is lost with a failed machine | the host keeps no backup of the local forge; a person who wants one backs it up with means of their own | [entry](#work-not-yet-sent-by-the-gathered-push-is-lost-with-a-failed-machine) |
 
 ## Code from outside reaches no secret
 
@@ -26,17 +26,17 @@ approval and asking for the code owner, and removes everything again. It needs a
 files only. **What would change the answer:** a second maintainer, which makes the bypass a team, or a bot that must
 merge, which this rule set lets through only as a bypass.
 
-## Work not yet mirrored is lost with a failed machine
+## Work not yet sent by the gathered push is lost with a failed machine
 
 The host the agents work on is set up from nothing and given back with nothing kept on it: the code is in the
 forge, the person's own settings on a drive the person mounts, and a short list of chosen data is copied off it.
-The local forge is not backed up. **The exposure:** what was merged on the local forge but not yet mirrored to the
-central one, and every branch not yet merged, is lost when the machine fails or is given back too early. **Why it
-stays:** a backup of the forge would be a second copy of the code with its own schedule, target and restore to keep
-working, for a loss bounded by the time between two mirror runs, and the agents can build the work again. A person
-who wants it covered mirrors the local forge elsewhere with means of their own, of which Porelo knows nothing. **What
-would change the answer:** a loss that costs more than the work since the last mirror run can be redone in, or
-mirror runs so far apart that a failed machine regularly takes more than a working day with it.
+The local forge is not backed up. **The exposure:** work merged on the local forge but not yet sent to the central
+forge by the gathered push, and every branch not yet merged, is lost when the machine fails or is given back too
+early. **Why it stays:** a backup of the forge would be a second copy of the code with its own schedule, target and
+restore to keep working, for a loss bounded by the time between two gathered pushes, and the agents can build the work again. A person
+who wants it covered backs up the local forge elsewhere with means of their own, of which Porelo knows nothing. **What
+would change the answer:** a loss that costs more than the work since the last gathered push can be redone in, or
+gathered pushes so far apart that a failed machine regularly takes more than a working day with it.
 
 ## The old name keeps its addresses and holds nothing new
 

@@ -15,7 +15,7 @@ work for a person either.
 
 ## The shape proposed
 
-- **The work runs in sprints** (decided 2026-10-18): the operator rents the host, it is set up at one command, a
+- **The work runs in sprints**: the operator rents the host, it is set up at one command, a
   sprint of a chosen scope from the backlog runs for some hours, the operator reviews what Forgejo built green, the
   work goes to the central forge in one gathered push in dependency order, and the host is given back once all of it
   is there.
@@ -26,15 +26,15 @@ work for a person either.
   - **It is set up from nothing by a script** and given back with nothing kept on it: the code is in the forge,
     the person's own settings - configuration, notes, small files - are on a drive the person mounts
     there, and the room's conversation and the usage records are copied off it as [PJ45](README.md#pj45) says.
-    Work not yet mirrored to the central forge is lost with a failed machine, an accepted risk
-    ([decision](../doc/decisions.md#work-not-yet-mirrored-is-lost-with-a-failed-machine)).
+    Work not yet sent to the central forge by the gathered push is lost with a failed machine, an accepted risk
+    ([decision](../doc/decisions.md#work-not-yet-sent-by-the-gathered-push-is-lost-with-a-failed-machine)).
   - **Keys deposited on a rented one are deposited for a time** ([PJ37](README.md#pj37)) and forgotten at its end;
     the package signing key is never on it, and releases stay the operator's.
   - **Nothing on it is reachable from the internet**: the operator reaches Forgejo, Matrix and Porelo's ssh through a
     VPN. Outgoing: the model providers through the broker, the dependency repositories, and the central forge for
-    the mirrors only.
-  - **Tests run in accounts on two long-lived VMs**, one Ubuntu and one Fedora, as [PJ22](README.md#pj22) plans and
-    as today: a run rents an account of the pool, which is reset when it is given back; no VM is started for a run.
+    the gathered push and repository migration.
+  - **Tests run in a VM pool**, with Ubuntu and Fedora kinds, as [PJ22](README.md#pj22) plans:
+    each VM has one run account, and the whole VM is reset after each run.
     The scenarios that reboot a machine run centrally only. A machine without AVX2 is a machine kind reached from
     outside, not part of the host.
   - **porelo-host is the one exception** (decided): its playbook sets up a whole machine as root, which no pool
@@ -54,12 +54,14 @@ work for a person either.
 - **A snapshot one task built is what the next task resolves**: every Forgejo build publishes into Forgejo's
   registry, which a task reaches by a declared name on port 443. It replaces the hand-over directory and the split
   Maven repository.
-- **The operator reviews what Forgejo built green, gathered at the sprint's end**, and approves it on Forgejo; the
-  coordinator then merges it through Forgejo's API. Each repository's push mirror to the central forge runs only when the coordinator starts it, through the same
-  API, in the order and staggered as today's gathered pushes; the token for that API stays on the host and the
-  coordinator's task holds a broker's token only. The mirrors push with the person's own token
-  ([PJ37](README.md#pj37)), so a new host needs no key added at the central forge. The limit on rented servers
-  concerns those mirrors only.
+- **The person reviews what Forgejo built green, gathered at the sprint's end**, and approves each task by merging
+  its pull request `porelo/<task>` into the protected `main` on the host's forge. Only the person merges it.
+  The person starts the gathered push (porelo-buildtools
+  [BT06](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt06)), a plain `git push` without
+  force from the host's forge to the central forge, in dependency order and staggered to respect the limit on rented
+  build servers. It asks for the person's fine-grained central token hidden and stores it nowhere
+  ([PJ37](README.md#pj37)). A moved central forge refuses the push; its `main` comes to the host's forge as
+  `central/main`, merged in a task and approved like any other work ([PJ61](README.md#pj61)).
 - **One task per issue, phase and repository**, started with porelo
   [B189](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b189)'s values `issue` and `phase`. A
   task works on one repository only; an issue that changes several is built in one task per repository.
@@ -191,8 +193,8 @@ from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](READ
      [HO17](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho17); porelo
      [B233](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b233),
      [B234](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b234)).
-   - *Test machines by kind from the VM pool:* a run asks for the kind `ubuntu` and gets an account of the pool,
-     reset afterwards, and the check finds no provider's name in any workflow (porelo-host
+   - *Test machines by kind from the VM pool:* a run asks for the kind `ubuntu` and gets a VM with one run account;
+     the whole VM is reset afterwards, and the check finds no machine provider's name in any workflow (porelo-host
      [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12); porelo-buildtools
      [BT24](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt24),
      [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25)).
@@ -201,8 +203,9 @@ from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](READ
 5. **From the task's push to the central forge, after the operator's approval.** Shown on porelo-message-sluice.
    - *The task hears its build from Forgejo:* the task pushes through its gate to `porelo/<task>` on Forgejo, which
      builds it, and the verdict and a failed job's log are in the task's `/porelo/files` ([PJ61](README.md#pj61)).
-   - *Only the operator's approval brings the work to the central forge:* nothing is there before it, the mirror
-     reaches it after; the same push with the project `offline` reaches no forge (porelo-buildtools
+   - *Only the person's merge approves the work:* the person merges `porelo/<task>` into the protected `main` on the
+     host's forge, then starts the gathered push to the central forge; the same task push with the project `offline`
+     reaches no forge (porelo-buildtools
      [BT06](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt06);
      [PJ37](README.md#pj37)).
 6. **The move, first wave** ([PJ59](README.md#pj59)), the others working as today and the channel kept beside Matrix
@@ -242,5 +245,6 @@ from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](READ
 ## To be checked
 
 - Whether Matrix delivers a message for an agent in a task into its mailbox; Porelo's half is there.
-- Whether a task reaches the local Forgejo's API through the broker once porelo-host adds the host's CA to the
-  account's `ca-certificates.pem`; the forge serves only https with a certificate of that CA.
+- Whether the host's build reader returns the local Forgejo's verdict and failed-job logs to the task. The reader
+  runs on the host and reads the account's `ca-certificates.pem`; a task reaches only the services it is declared
+  to use, with its separate task CA bundle.

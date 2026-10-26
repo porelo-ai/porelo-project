@@ -5,7 +5,7 @@ costs, and which to build next. Each claim says whether it was measured; a candi
 unsupportable stays here, so the question is not asked twice.
 
 Two axes that are easy to conflate. The **agent** is the harness that runs in the
-box and is what Porelo packages. The **provider** serves the model and is something
+box and is what Porelo packages. The **model provider** serves the model and is something
 an agent talks to. Some agents are tied to one provider, some deliberately are not,
 and a provider with no agent of its own is reached through somebody else's.
 
@@ -44,7 +44,7 @@ again.
 | [Google](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md) | its own agent, or a provider-agnostic one | account or API key | one agent each |
 | [GitHub Copilot](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#the-providers-porelo-ships) | its own agent, or as a provider inside others | forge account, granted once by device flow; the token never expires | shipped, measured with two agents |
 | [xAI](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md) | its own agent, or its public API | subscription or API key | one agent each |
-| [Zhipu](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md) | an endpoint compatible with another vendor's dialect | API key, in a variable of its own | **the broker's upstream cannot be a constant** |
+| [Zhipu](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md) | an endpoint compatible with another vendor's dialect | API key, in a variable of its own | **the broker's destination endpoint cannot be a constant** |
 
 Pi reaches GitHub Copilot through the broker, with the sign-in on the host
 ([a subscription granted once](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#a-subscription-granted-once-github-copilot)).
@@ -71,9 +71,9 @@ rediscovering:
 
 Two of those land directly on Porelo's own design:
 
-- The vault is keyed by **agent** name. An agent that talks to several providers
-  needs one credential per provider, so the key has to become agent *and* provider.
-  Every agent supported so far has hidden this by having exactly one.
+- The vault entry is keyed by **model provider** name. An agent that talks to several
+  model providers uses each provider's credential; agents using the same provider share
+  that entry.
 - A **refresh flow is a problem for a task-scoped token**. An agent holding what it
   believes is an expiring credential will try to renew it, and a phantom token
   cannot be renewed by anyone but the broker that minted it. Either the proxy

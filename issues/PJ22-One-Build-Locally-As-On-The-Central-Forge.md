@@ -56,17 +56,17 @@ local one means changing every one of these places.
 - **The setup says who meets a kind** - `ubuntu` a run account on the local VM or a rented server,
   `old-cpu` an account on a machine with that CPU, `restart` a rented server only - and a kind it cannot
   meet is refused with that said.
-- **The provider sits behind it**, chosen by the setup's configuration: a **local VM provider** that
-  rents one account of a **pool of run accounts** on a VM (four to start with, each reset when it is given
-  back; the sudo of today's agent accounts for installing packages, but **no reboot** - scenarios that
-  reboot run centrally only; the pool's size is the local limit), and a **server provider** that rents from a cloud provider. Its name appears only in the one
-  implementation that talks to it.
-- **The limits are the setup's**: how many machines, or VM accounts, may be rented at once is
+- **The machine provider sits behind it**, chosen by the setup's configuration: a **local VM provider** that
+  rents a VM with **one run account per VM** and resets the whole VM after each run. The run account can install
+  packages with sudo, but **no reboot** - scenarios that reboot run centrally only; the pool's size is the local
+  limit. A **server provider** rents from a cloud provider. Its name appears only in the one implementation that
+  talks to it.
+- **The limits are the setup's**: how many VMs or servers may be rented at once is
   configuration of the interface, which waits or refuses beyond it.
 
 ### One build, two places
 
-- **A local forge, Forgejo** with its Actions runner, mirrors the repositories and runs **the same
+- **A local forge, Forgejo** with its Actions runner, holds migrated ordinary repositories and runs **the same
   workflow files** as the central forge - the one tool that runs them unchanged; where a step our
   workflows use does not run there (an action not reachable, a variable of the central runner's image),
   it is made a variable of the setup or mirrored, never a second workflow. The machine part is
@@ -91,26 +91,28 @@ local one means changing every one of these places.
   used; a task may ask for one of them by its name, never for a command of its own, a kind not declared, a
   provider or a key. No
   container gets a credential or a network path to the machine.
-- **Each run starts clean**: a fresh account or server, the commit alone, no secret of the host.
+- **Each run starts clean**: a reset VM with one run account or a fresh server, the commit alone, no secret of the host.
 - **One reader contract, two forges**: the build readers stay behind the one contract they already
-  share (`org.fuin.porelo.Build1`, through `porelo-build-api`), abstracted where it still speaks of one
-  forge, and a **`forgejo` reader** joins `github`, so a task reads a local build's verdict as a central
-  one's. **One contract suite**, in the API's kit, holds what every reader must do - a branch's head, a
+  share (`org.fuin.porelo.Build2`, through `porelo-build-api`); the **`forgejo` reader** in `porelo-adapters`
+  reads Forgejo alongside `github`, so a task reads a local build's verdict as a central
+  one's. **One contract suite**, in `porelo-adapters`, holds what every reader must do - a branch's head, a
   commit's verdict over every run, a failing job and its log, a refused credential said plainly - and
   runs against each reader: against GitHub centrally, against the local Forgejo locally. Only what is
   particular to one forge's API is tested in that reader alone.
 
 ## Plan
 
-- **Decided:** the local Forgejo is set up and kept outside the project; Porelo only uses it, its address and accounts in the person's machine file. The pool of VM run accounts stays `porelo-machines`' in `porelo-buildtools`.
+- **Decided:** the local Forgejo is set up and kept outside the project; Porelo only uses it, its address and accounts
+  in the person's machine file. The VM pool stays `porelo-machines`' in `porelo-buildtools`, with one run account per VM
+  and the whole VM reset after each run.
 - **Today**: `porelo-machines` (`porelo-buildtools` `hetzner/`: `Machines`, `Spec`, `Hetzner`,
   `LocalVms`, `Lease`) rents from a cloud provider and from local VMs and sweeps; callers name server
-  types. The reader contract `org.fuin.porelo.Build1` is in `porelo/builds/api`; the `github` reader is
-  `porelo-build-github`.
+  types. The reader contract `org.fuin.porelo.Build2` is in `porelo/builds/api`; the `github` and `forgejo`
+  readers are in `porelo-adapters`.
 - **1. Kinds**: `Spec` asks for a kind, the setup says who meets it; the module and workflows stop naming
   the provider. Seen to fail first: a check in `porelo-buildtools` that finds a provider's name outside
   its implementation, red on today's tree.
-- **2. The local VM pool**: run accounts reset when given back, the pool's size as the local limit.
+- **2. The local VM pool**: one run account per VM, the whole VM reset after each run, the pool's size as the local limit.
 - **3. The local Forgejo**: runner and registry; every repository's workflows take registry addresses
   and the machine provider as variables of the setup. Seen to fail first: a `build.yml` that runs only
   centrally.
@@ -127,9 +129,9 @@ local one means changing every one of these places.
   by that repository's local build, not from a hand-over directory or a local install. Seen to fail: a
   build green with an artifact no local build published.
 - A publishing fault of a child module fails the local run before any tag reaches the central forge.
-- An acceptance leg runs on a rented VM account locally and on a rented server centrally, through the
+- An acceptance leg runs on a rented VM with one run account locally and on a rented server centrally, through the
   same interface call; no repository outside the interface's implementation names a provider (a check
-  in `porelo-buildtools` finds a name that slips in).
+  in `porelo-buildtools` finds a name that slips in). The whole VM is reset after each run.
 - The `github` and the `forgejo` reader pass the same contract suite, each against its own forge.
 - A task asks for its work to be built on a declared machine kind and reads the verdict and the log in
   `/porelo/files`; a request for a kind or a command the project does not declare is refused.

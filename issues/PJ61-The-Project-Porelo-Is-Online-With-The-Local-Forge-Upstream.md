@@ -55,8 +55,8 @@ moves ([PJ59](README.md#pj59)).
 
 | Where | What |
 |---|---|
-| porelo-adapters | `porelo-adapter-forgejo` is its own native program; its HTTP client does not read the account's `ca-certificates.pem`, so it is refused by the forge's TLS |
-| porelo | the gate's `git` on the host does not read that file either (only the JVM does); `porelo-setup.sh` installs no build reader |
+| porelo-adapters | built in [GH08](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh08) (Review): `porelo-adapter-forgejo` reads the account's `ca-certificates.pem` |
+| porelo | built in [B286](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b286) (Review): the gate's host `git` trusts that bundle through `GIT_SSL_CAINFO`; `porelo-setup.sh` installs no build reader ([B287](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b287), an Idea) |
 | porelo-host | the forge's CA and name for the host's `git`, the build reader installed, a forge token for the gate and the reader in the account's vault, porelo-message-sluice seeded on the forge, `main` protected |
 | porelo-buildtools | [BT06](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt06): the gathered push |
 | porelo-project | `project.yml` `online`, porelo-message-sluice's upstream on the forge, `builds:` read by `forgejo` |

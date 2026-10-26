@@ -22,8 +22,8 @@ a task ([PJ59](README.md#pj59)) has no build to read for its push.
 
 - **One issue per repository, filed by its agent when the kinds are built**, from their table: the workflow asks for kinds,
   names no provider, and takes the registry's address as a variable; size S each.
-- **In the order of the move:** porelo-message-sluice first (sprint 4), then Smith's three repositories, porelo-agy
-  and porelo-codex (sprint 6), porelo-message-matrix, porelo-intellij and porelo-frontend (sprint 7), porelo last
+- **In the order of the move:** porelo-message-sluice first (sprint 4), then porelo-claude-code, porelo-pi, porelo-omp,
+  porelo-agy and porelo-codex (sprint 6), porelo-message-matrix, porelo-intellij and porelo-frontend (sprint 7), porelo last
   (sprint 8).
 - **The workflows run 1:1 on both forges; only the values of variables and secrets differ.** A setting that must
   differ is a variable present on both forges, set to fit each, never a variable set on one and missing on the other,
@@ -38,19 +38,20 @@ a task ([PJ59](README.md#pj59)) has no build to read for its push.
 
 ## Sprint 4: porelo-message-sluice
 
-Read on porelo-message-sluice `7cca2c2` and porelo-host `56d4d13`. Sluice's workflows name no provider and ask for no
+The porelo-message-sluice workflows name no machine provider and ask for no
 machine: `build.yml` builds and checks its packages inside the runner. So sprint 4 needs neither [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25)'s kinds nor the
 VM pool in Sluice. [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25) stays compatible, its provider call kept until sprint 9.
 
-**What breaks on the local Forgejo today, and where it is changed:**
+**What the workflows use on the local Forgejo:**
 
-| What | Why it breaks | Changed in |
+| What | What holds | Where |
 |---|---|---|
-| `runs-on: ubuntu-24.04` (`build.yml`), `ubuntu-26.04` (the other three) | the forge's runner offers only the label `porelo-host` (`roles/forge/defaults/main.yml`), so those jobs wait for ever | porelo-host [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08): each label mapped to an existing GitHub-like runner image, pinned by digest |
-| JDK 25 from the image's `JAVA_HOME_25_X64`, and the package tools (`gcc`, `zlib1g-dev`, `rpmbuild`, `rpm2cpio`, `cpio`, `dpkg-deb`, `python3-yaml`) | a GitHub-like image need not carry them | porelo-message-sluice: `actions/setup-java` for the JDK and a step installing what is missing, the same on both forges |
-| `actions/checkout`, `actions/cache` by GitHub digest | Forgejo looks actions up on `data.forgejo.org` unless `DEFAULT_ACTIONS_URL` says otherwise, and porelo-host sets none | porelo-host [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08): `DEFAULT_ACTIONS_URL` set to github.com; each action is pinned by commit, so a job fetches the same state as on GitHub |
-| Publish (`vars.JF_URL`, `secrets.JF_ACCESS_TOKEN`, `if: github.ref == 'refs/heads/main'`) | neither exists on the local forge | porelo-message-sluice: Publish switched by a variable present on both forges (`true` on GitHub, `false` on the forge), not by a branch |
-| `delete-runs.yml` (`gh api …/actions/runs`) | GitHub's API; dispatched by hand only | porelo-message-sluice: switched by the same variable |
+| `runs-on: ubuntu-24.04` (`build.yml`), `ubuntu-26.04` (the other three) | both labels map to a GitHub-like runner image pinned by digest | porelo-host [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08), `roles/forge/defaults/main.yml` |
+| JDK 25 through `JAVA_HOME_25_X64` | the runner mounts the pinned JDK into each job and sets the variable | porelo-host, the forge runner's configuration |
+| Package tools (`gcc`, `zlib1g-dev`, `rpm2cpio`, `cpio`, `dpkg-deb`) | the workflow installs missing tools from the distribution's signed archive; a Maven plugin writes the RPM without `rpmbuild` | porelo-message-sluice, `build.yml` |
+| `actions/checkout`, `actions/cache` by GitHub digest | `DEFAULT_ACTIONS_URL` is `https://github.com`; each action is pinned by commit | porelo-host, the Forgejo container's configuration |
+| Publish (`vars.JF_URL`, `secrets.JF_ACCESS_TOKEN`) | `PORELO_PUBLISH` is present on both forges, `true` on GitHub and `false` on Forgejo; Forgejo has placeholder publishing credentials | porelo-host sets the values; porelo-message-sluice checks the variable and gates publishing with it |
+| `delete-runs.yml` (`gh api …/actions/runs`) | GitHub's API, dispatched by hand only, switched by `PORELO_PUBLISH` | porelo-message-sluice |
 
 **Snapshots on the forge come from the forge.** Local stacks depend on each other, so on the local Forgejo the
 snapshots are deployed to the forge's Maven registry and read from there; on GitHub they go to Sonatype and are read
@@ -75,10 +76,13 @@ artifact and only reads the parent and the buildtools' jars.
   secret set on the forge, and the forge's CA reaching every JVM in a job (`JAVA_TOOL_OPTIONS` with a trust store), as Java
   ignores `SSL_CERT_FILE`.
 
-**Before Sluice can be green there:** [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08) with the runner labels, the actions' source, the variables above and the JVM trust store set on the forge; then porelo-parent's and porelo-buildtools' snapshots deployed to it.
+**The build prerequisites:** [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08) supplies
+the runner labels, the actions' source, the variables above and the JVM trust store. The build also needs
+porelo-parent's and porelo-buildtools' snapshots deployed to the forge.
 
 **The issue for porelo-message-sluice** (size S, about 45 to 60 minutes): its four workflows run unchanged on the
-local Forgejo and on GitHub. The JDK comes from `actions/setup-java` and missing tools are installed in a step. Publishing and deleting old
+local Forgejo and on GitHub. The runner supplies JDK 25 through `JAVA_HOME_25_X64`, and missing package tools are
+installed in a step. Publishing and deleting old
 runs are switched by `PORELO_PUBLISH`, present on both forges, never by a branch; `settings.xml` reads the snapshots
 from `MAVEN_SNAPSHOTS_URL`. Seen to fail first: today's
 `build.yml` on the local Forgejo.
