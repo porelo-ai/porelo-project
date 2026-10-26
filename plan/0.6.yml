@@ -142,9 +142,11 @@ sprints:
     functions:
       - title: "Forgejo with its registry, a task fetching a snapshot by name"
         test: "The operator opens Forgejo through the VPN; a task reaches its registry by a declared name on 443 and fetches a snapshot, and reaches nothing else on the host."
+        tested: "2026-10-26"
         issues: [porelo-host#HO08, porelo-host#HO17, porelo#B233, porelo#B234, porelo-host#HO20, porelo#B266, porelo-host#HO26]
       - title: "Sluice green on both forges on the same commit"
         test: "The same `build.yml` of porelo-message-sluice runs green on Forgejo and on the central forge."
+        tested: "2026-10-26"
         issues: [porelo-project#PJ60, porelo#B285, porelo-buildtools#BT32, porelo-message-sluice#SL33]
   - id: "4a"
     title: "Trust the local build"

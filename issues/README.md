@@ -37,6 +37,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
 | <a id="pj61"></a>[PJ61](PJ61-The-Project-Porelo-Is-Online-With-The-Local-Forge-Upstream.md) | M (five repositories, about 4 h) | — | The project `porelo` online with the local Forgejo upstream: a task's push built there, its verdict read in the task, the central forge reached by the gathered push after approval; proved on Sluice first. |
+| <a id="pj37"></a>[PJ37](PJ37-Work-Reaches-The-Upstream-By-A-Machine-Key-Or-The-Persons-Token.md) | — | — | A machine reaches the upstream by keys of its own or by the person's own token, equal choices per project; the token as narrow as the forge allows, used on the host only, deposited for a time on a rented machine. | 0 |
 
 ## Analyzed
 
@@ -51,7 +52,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | <a id="a10"></a>[A10](A10-Agent-OpenCode.md) | L | — | OpenCode as a packaged agent: a base URL configurable per provider. | — |
 | <a id="pj25"></a>[PJ25](PJ25-McPorelo-Apple-Containers.md) | XL | — | McPorelo: the same guarantees on Apple Containers, driven by one client through the daemon's contract. | 4 |
 | <a id="pj60"></a>[PJ60](PJ60-Every-Workflow-Runs-On-The-Local-Forge-As-On-The-Central-One.md) | S (each of parent, buildtools, Sluice) | — | Every repository's `build.yml` runs green on the local Forgejo and the central forge with no edit between: kinds, registry and provider as variables; one issue (S) per repository. | — |
-| <a id="pj37"></a>[PJ37](PJ37-Work-Reaches-The-Upstream-By-A-Machine-Key-Or-The-Persons-Token.md) | — | — | A machine reaches the upstream by keys of its own or by the person's own token, equal choices per project; the token as narrow as the forge allows, used on the host only, deposited for a time on a rented machine. | 0 |
 
 
 ## Accepted

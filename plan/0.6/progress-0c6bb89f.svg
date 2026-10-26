@@ -270,26 +270,26 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 334)">
 <text x="0" y="17">4. The local forge builds as the central one</text>
-<desc>Review 9, Implementing 1, Analyzed 1. HO08: porelo-host#HO08 · Review · L · The Forge With Its Registry; HO17: porelo-host#HO17 · Review · XS · The Forge's CA In Porelo's Account; B233: porelo#B233 · Review · M · A Host Service Reached By Name; B234: porelo#B234 · Review · M · The Host's Authority In A Task's Trust Store; HO20: porelo-host#HO20 · Review · M · Every Container Of The Host Fits The Machine; B266: porelo#B266 · Review · M · A Task Fits The Machine It Runs On; HO26: porelo-host#HO26 · Review · S · Each Agent's Own Forge Account; PJ60: porelo-project#PJ60 · Analyzed · S (each of parent, buildtools, Sluice) · Every workflow runs on the local forge as on the central one; B285: porelo#B285 · Review · S · A Snapshot Deployed To The Local Forge; BT32: porelo-buildtools#BT32 · Review · S · Snapshots On The Forge's Own Registry; SL33: porelo-message-sluice#SL33 · Implementing · S · The Workflows Run On The Local Forge As On GitHub; </desc>
+<desc>Finished 9, Review 1, Analyzed 1. HO08: porelo-host#HO08 · Finished · - · The Forge With Its Registry; HO17: porelo-host#HO17 · Finished · - · The Forge's CA In Porelo's Account; B233: porelo#B233 · Review · M · A Host Service Reached By Name; B234: porelo#B234 · Finished · - · The Host's Authority In A Task's Trust Store; HO20: porelo-host#HO20 · Finished · - · Every Container Of The Host Fits The Machine; B266: porelo#B266 · Finished · - · A Task Fits The Machine It Runs On; HO26: porelo-host#HO26 · Finished · - · Each Agent's Own Forge Account; PJ60: porelo-project#PJ60 · Analyzed · S (each of parent, buildtools, Sluice) · Every workflow runs on the local forge as on the central one; B285: porelo#B285 · Finished · - · A Snapshot Deployed To The Local Forge; BT32: porelo-buildtools#BT32 · Finished · - · Snapshots On The Forge's Own Registry; SL33: porelo-message-sluice#SL33 · Finished · - · The Workflows Run On The Local Forge As On GitHub; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="327.27272727272725" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 9</title></rect>
+<rect x="0.0" width="327.27272727272725" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 9</title></rect>
 
-<rect x="327.27272727272725" width="36.36363636363637" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+<rect x="327.27272727272725" width="36.36363636363637" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
 <rect x="363.6363636363636" width="36.36363636363637" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 11 done</text>
+<text class="legend" x="410" y="17">9 of 11 done</text>
 </svg>
 
 
-<text x="1030" y="17"><title>Forgejo with its registry, a task fetching a snapshot by name: Not tested</title>⚪</text>
+<text x="1030" y="17"><title>Forgejo with its registry, a task fetching a snapshot by name: Tested 2026-10-26</title>✅</text>
 
 
-<text x="1054" y="17"><title>Sluice green on both forges on the same commit: Not tested</title>⚪</text>
+<text x="1054" y="17"><title>Sluice green on both forges on the same commit: Tested 2026-10-26</title>✅</text>
 
 </g>
 
@@ -336,12 +336,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 424)">
 <text x="0" y="17">4c. A dry run says what will be refused</text>
-<desc>Backlog 1. B235: porelo#B235 · Backlog · S · A Dry Run Shows The Agent's Refusals; </desc>
+<desc>Review 1. B235: porelo#B235 · Review · S · A Dry Run Shows The Agent's Refusals; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 1 done</text>
@@ -355,21 +355,19 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 454)">
 <text x="0" y="17">5. From the task's push to the central forge, after approval</text>
-<desc>Review 2, Analyzed 1, Accepted 2, Not filed yet 1. PJ61: porelo-project#PJ61 · Analyzed · M (five repositories, about 4 h) · The project porelo is online with the local forge upstream; GH08: porelo-adapters#GH08 · Review · S · The Forgejo Adapter Trusts The Account's Authorities; B286: porelo#B286 · Review · S · The Host's Git Trusts The Account's Authorities; porelo-host: the forge for the host's git and the reader, Sluice seeded, main protected: Not filed yet; BT06: porelo-buildtools#BT06 · Accepted · - · The Gathered Push Refuses A Moved Central Forge; PJ37: porelo-project#PJ37 · Accepted · — · Work reaches the upstream by a machine key or the person's own token; </desc>
+<desc>Review 2, Backlog 3, Analyzed 2. PJ61: porelo-project#PJ61 · Backlog · M (five repositories, about 4 h) · The project porelo is online with the local forge upstream; GH08: porelo-adapters#GH08 · Review · S · The Forgejo Adapter Trusts The Account's Authorities; B286: porelo#B286 · Review · S · The Host's Git Trusts The Account's Authorities; HO31: porelo-host#HO31 · Analyzed · M · The Account's Gate And Reader On The Host's Forge; HO29: porelo-host#HO29 · Analyzed · S · The Person's Own Web Login On The Forge; HO32: porelo-host#HO32 · Backlog · M · The Gathered Push Refuses A Moved Central Forge; PJ37: porelo-project#PJ37 · Backlog · — · Work reaches the upstream by a machine key or the person's own token; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="133.33333333333334" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
+<rect x="0.0" width="114.28571428571429" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
 
-<rect x="133.33333333333334" width="66.66666666666667" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="114.28571428571429" width="171.42857142857142" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 3</title></rect>
 
-<rect x="200.0" width="133.33333333333334" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
-
-<rect x="333.3333333333333" width="66.66666666666667" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+<rect x="285.7142857142857" width="114.28571428571429" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 6 done</text>
+<text class="legend" x="410" y="17">0 of 7 done</text>
 </svg>
 
 
