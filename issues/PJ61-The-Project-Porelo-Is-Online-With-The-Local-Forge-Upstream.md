@@ -25,7 +25,7 @@ moves ([PJ59](README.md#pj59)).
 - **To the central forge only after approval:** the gathered push (porelo-buildtools
   [BT06](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt06)), a plain `git push` without
   force, carries a task's work once the operator approved it.
-- **Proved on porelo-message-sluice first:** a task pushes, Forgejo builds on the pool, the task reads the verdict, the
+- **Proved on porelo-message-sluice first:** a task pushes, Forgejo builds it on its own runner, the task reads the verdict, the
   operator approves, the gathered push reaches the central forge.
 
 ## Acceptance
@@ -50,6 +50,8 @@ moves ([PJ59](README.md#pj59)).
 - **One repository at a time;** waiting for each Build before the next comes later, as sprint 5 pushes only
   porelo-message-sluice.
 - **`offline` is tested with a second project file,** as an `offline` project may name no `builds:`.
+- **No VM pool:** the first repositories to move build on the forge's own runner, as porelo-message-sluice's
+  `build.yml` did on a rented host in sprint 4; the pool comes with the repositories that need one.
 
 **What is missing, read on the pushed heads of 2026-10-25:**
 
