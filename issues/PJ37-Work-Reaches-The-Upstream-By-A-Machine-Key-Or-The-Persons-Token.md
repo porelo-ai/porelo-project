@@ -1,6 +1,6 @@
 # PJ37 — Work reaches the upstream by a machine key or the person's own token
 
-**Status:** Accepted; its sprint 5 part is decided in [PJ61](README.md#pj61): the operator's own token, asked for hidden at the gathered push and stored nowhere.
+**Status:** Analyzed for sprint 5, which builds nothing of its own here: its three credentials are built where [PJ61](README.md#pj61)'s table places them; the rest waits for its sprint.
 
 **What must be true.** A machine fetches a project's repositories and passes approved work on either with keys of
 its own (a deploy key per machine and repository) or with the person's own token, and the two are equal choices,
@@ -36,3 +36,20 @@ push to it use separate credentials.
 - **On the person's own machine** approved work goes back to the checkout and the person pushes with their own
   rights, so there the gap is the fetch alone.
 - Spans `porelo` (the gate, the vault) and `porelo-frontend` (the way to a project, [F72](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f72)'s Bitbucket Data Center).
+
+## Sprint 5
+
+Sprint 5 proves the three credentials of one project, porelo-message-sluice, on the rented host; none is built in this
+repository:
+
+- **The migration credential** is the operator's read-only token in the drive's `forge-central.token`, with which the
+  host's forge imports the repositories: built in porelo-host and used in sprint 4.
+- **The gate's credential for the host's forge** is a forge token in the account's vault, used by the gate on the host
+  for the push of `porelo/<task>` and by the build reader, never in a task: porelo-host's sprint-5 part in
+  [PJ61](README.md#pj61)'s table.
+- **The gathered push's central token** is the operator's fine-grained token, asked for hidden and stored nowhere:
+  porelo-buildtools [BT06](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt06).
+
+Left for later sprints, and placed then: the machine's own deploy keys and the request to an administrator, a person's
+token deposited on a rented machine for a time (`--for`), the forge without narrower tokens, and the way to a project in
+porelo-frontend.
