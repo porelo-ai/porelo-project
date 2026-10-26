@@ -1,0 +1,189 @@
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1034 284" role="img" aria-label="Sprint progress for release 0.15">
+<title>Sprint progress for release 0.15</title>
+<style>
+text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
+@media (prefers-color-scheme:dark){text{fill:#f0efec}.legend{fill:#c3c2b7}.c-surface{fill:#1a1a19}.c-grid{fill:#383835}.c-backlog{fill:#80bee6}.c-estimated{fill:#b497cf}.c-analyzed{fill:#77766f}.c-accepted{fill:#aaa9a2}.c-review{fill:#3987e5}.c-idea{fill:#d95926}.c-new{fill:#1a1a19}}
+</style>
+<rect width="100%" height="100%" fill="#fcfcfb" class="c-surface"/>
+
+
+<g transform="translate(0 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#0ca30c" class="c-done" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Finished / Rejected</text>
+</g>
+
+
+<g transform="translate(320 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#2a78d6" class="c-review" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Review</text>
+</g>
+
+
+<g transform="translate(640 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#fab219" class="c-impl" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Implementing / Rework</text>
+</g>
+
+
+<g transform="translate(0 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#8ac8f0" class="c-backlog" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Backlog</text>
+</g>
+
+
+<g transform="translate(320 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#9575b5" class="c-estimated" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Estimated</text>
+</g>
+
+
+<g transform="translate(640 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#77766f" class="c-analyzed" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Analyzed</text>
+</g>
+
+
+<g transform="translate(0 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#b9b8b2" class="c-accepted" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Accepted</text>
+</g>
+
+
+<g transform="translate(320 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#eb6834" class="c-idea" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Idea</text>
+</g>
+
+
+<g transform="translate(640 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#ffffff" class="c-new" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Not filed yet / Missing</text>
+</g>
+
+
+
+<g transform="translate(0 94)">
+<text x="0" y="17">1. Read events after the task is gone</text>
+<desc>Analyzed 2. B26: porelo#B26 · Analyzed · L · What This Machine Has Been Doing; B116: porelo#B116 · Analyzed · M · A Log Read Back In Windows; </desc>
+<svg x="384" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="934" y="17"><title>Read events after the task is gone: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 124)">
+<text x="0" y="17">2. Detect changes to the history</text>
+<desc>Backlog 1, Analyzed 1, Not filed yet 1. B154: porelo#B154 · Backlog · L · A Tamper-Evident Event Log Per Node; B121: porelo#B121 · Analyzed · M · A Message Record Without A Chain; Use the shared event journal, without a second journal implementation.: Not filed yet; </desc>
+<svg x="384" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="934" y="17"><title>Detect changes to the history: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 154)">
+<text x="0" y="17">3. See origin and current inventory</text>
+<desc>Estimated 1, Analyzed 1. B38: porelo#B38 · Analyzed · L · How Far Something That Got Through Can Get; B156: porelo#B156 · Estimated · M · porelo inventory; </desc>
+<svg x="384" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="934" y="17"><title>See origin and current inventory: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 184)">
+<text x="0" y="17">4. Keep reliable commit details and private logs</text>
+<desc>Estimated 2. B144: porelo#B144 · Estimated · L · AI Provenance In The Commit; B155: porelo#B155 · Estimated · M · The Logs Checked And Documented; </desc>
+<svg x="384" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 2</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="934" y="17"><title>Keep reliable commit details and private logs: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 214)">
+<text x="0" y="17">5. Read a coherent work history</text>
+<desc>Backlog 1, Estimated 1. B168: porelo#B168 · Estimated · M · A Recording Of Each Session; F111: porelo-frontend#F111 · Backlog · M · All Of A Piece's Logs In One Timeline; </desc>
+<svg x="384" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="934" y="17"><title>Read a coherent work history: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 244)">
+<text x="0" y="17">6. Keep each backup's own record</text>
+<desc>Estimated 1. MX39: porelo-message-matrix#MX39 · Estimated · S · A Backup Is Its Own; </desc>
+<svg x="384" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="934" y="17"><title>Keep each backup's own record: Not tested</title>⚪</text>
+
+</g>
+
+</svg>

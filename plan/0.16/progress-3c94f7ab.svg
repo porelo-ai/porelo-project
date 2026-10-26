@@ -1,0 +1,215 @@
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1090 314" role="img" aria-label="Sprint progress for release 0.16">
+<title>Sprint progress for release 0.16</title>
+<style>
+text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
+@media (prefers-color-scheme:dark){text{fill:#f0efec}.legend{fill:#c3c2b7}.c-surface{fill:#1a1a19}.c-grid{fill:#383835}.c-backlog{fill:#80bee6}.c-estimated{fill:#b497cf}.c-analyzed{fill:#77766f}.c-accepted{fill:#aaa9a2}.c-review{fill:#3987e5}.c-idea{fill:#d95926}.c-new{fill:#1a1a19}}
+</style>
+<rect width="100%" height="100%" fill="#fcfcfb" class="c-surface"/>
+
+
+<g transform="translate(0 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#0ca30c" class="c-done" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Finished / Rejected</text>
+</g>
+
+
+<g transform="translate(320 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#2a78d6" class="c-review" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Review</text>
+</g>
+
+
+<g transform="translate(640 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#fab219" class="c-impl" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Implementing / Rework</text>
+</g>
+
+
+<g transform="translate(0 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#8ac8f0" class="c-backlog" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Backlog</text>
+</g>
+
+
+<g transform="translate(320 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#9575b5" class="c-estimated" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Estimated</text>
+</g>
+
+
+<g transform="translate(640 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#77766f" class="c-analyzed" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Analyzed</text>
+</g>
+
+
+<g transform="translate(0 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#b9b8b2" class="c-accepted" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Accepted</text>
+</g>
+
+
+<g transform="translate(320 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#eb6834" class="c-idea" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Idea</text>
+</g>
+
+
+<g transform="translate(640 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#ffffff" class="c-new" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Not filed yet / Missing</text>
+</g>
+
+
+
+<g transform="translate(0 94)">
+<text x="0" y="17">1. Require both project and machine to allow a provider</text>
+<desc>Analyzed 2. B151: porelo#B151 · Analyzed · M · The Providers A Project Allows; PJ16: porelo-project#PJ16 · Analyzed · L · An organisation decides which providers its machines use; </desc>
+<svg x="440" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="990" y="17"><title>Require both project and machine to allow a provider: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 124)">
+<text x="0" y="17">2. Inherit signed rules through the organization</text>
+<desc>Accepted 1, Not filed yet 1. B198: porelo#B198 · Accepted · - · Settings Inherited Down An Organisation's Tree; Pin An Organization Root; Verify The Settings Chain; Inherit Organization Settings; Enforce Fixed And Narrow-Only Settings.: Not filed yet; </desc>
+<svg x="440" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="990" y="17"><title>Inherit signed rules through the organization: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 154)">
+<text x="0" y="17">3. Understand where a binding setting came from</text>
+<desc>Analyzed 1, Accepted 1. F62: porelo-frontend#F62 · Analyzed · M · An Organisation's Policy Is Shown; F123: porelo-frontend#F123 · Accepted · — · Where A Machine And A Project Stand In Their Organisation's Tree; </desc>
+<svg x="440" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="990" y="17"><title>Understand where a binding setting came from: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 184)">
+<text x="0" y="17">4. Open administration and daily work separately</text>
+<desc>Accepted 1, Not filed yet 1. PJ71: porelo-project#PJ71 · Accepted · — · Who reaches a host, and by which way; Separate Administrative Entry Points; Define Host Access Routes. Roles choose the offered functions and add no separate authorization check. Decide access routes before implementation; this parent also covers sprint 5.: Not filed yet; </desc>
+<svg x="440" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="990" y="17"><title>Open administration and daily work separately: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 214)">
+<text x="0" y="17">5. Admit and remove another person</text>
+<desc>Not filed yet 1. Exchange Public Access Requests; Provision Personal Host Access; Revoke Personal Host Access. Continue sprint 4 after deciding account, forge and room access.: Not filed yet; </desc>
+<svg x="440" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="990" y="17"><title>Admit and remove another person: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 244)">
+<text x="0" y="17">6. Take in existing repositories and signing keys</text>
+<desc>Backlog 1, Analyzed 4. F147: porelo-frontend#F147 · Backlog · XS · Every Repository Of Default Offered To Start In; F84: porelo-frontend#F84 · Analyzed · M · A Signing Key Found Or Made From The Window; F94: porelo-frontend#F94 · Analyzed · M · A Project's Keys Told In One Place; F115: porelo-frontend#F115 · Analyzed · S · A Fine-Grained Token Waiting For An Organisation's Approval; F59: porelo-frontend#F59 · Analyzed · S · A Project From A Repository, Measured Against GitHub; </desc>
+<svg x="440" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="80.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+
+<rect x="80.0" width="320.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 4</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 5 done</text>
+</svg>
+
+
+<text x="990" y="17"><title>Choose a repository and signing key: Not tested</title>⚪</text>
+
+
+<text x="1014" y="17"><title>Recognize a token awaiting organization approval: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 274)">
+<text x="0" y="17">7. Follow a local or offline project</text>
+<desc>Estimated 1, Analyzed 1, Not filed yet 1. B160: porelo#B160 · Estimated · M · A Project Followed From A File Over The Socket; F104: porelo-frontend#F104 · Analyzed · M · A Project Followed From A File; Deliver the core upload before the interface flow.: Not filed yet; </desc>
+<svg x="440" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="990" y="17"><title>Follow a local or offline project: Not tested</title>⚪</text>
+
+</g>
+
+</svg>

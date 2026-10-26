@@ -1,0 +1,196 @@
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1018 284" role="img" aria-label="Sprint progress for release 0.19">
+<title>Sprint progress for release 0.19</title>
+<style>
+text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
+@media (prefers-color-scheme:dark){text{fill:#f0efec}.legend{fill:#c3c2b7}.c-surface{fill:#1a1a19}.c-grid{fill:#383835}.c-backlog{fill:#80bee6}.c-estimated{fill:#b497cf}.c-analyzed{fill:#77766f}.c-accepted{fill:#aaa9a2}.c-review{fill:#3987e5}.c-idea{fill:#d95926}.c-new{fill:#1a1a19}}
+</style>
+<rect width="100%" height="100%" fill="#fcfcfb" class="c-surface"/>
+
+
+<g transform="translate(0 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#0ca30c" class="c-done" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Finished / Rejected</text>
+</g>
+
+
+<g transform="translate(320 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#2a78d6" class="c-review" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Review</text>
+</g>
+
+
+<g transform="translate(640 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#fab219" class="c-impl" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Implementing / Rework</text>
+</g>
+
+
+<g transform="translate(0 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#8ac8f0" class="c-backlog" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Backlog</text>
+</g>
+
+
+<g transform="translate(320 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#9575b5" class="c-estimated" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Estimated</text>
+</g>
+
+
+<g transform="translate(640 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#77766f" class="c-analyzed" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Analyzed</text>
+</g>
+
+
+<g transform="translate(0 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#b9b8b2" class="c-accepted" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Accepted</text>
+</g>
+
+
+<g transform="translate(320 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#eb6834" class="c-idea" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Idea</text>
+</g>
+
+
+<g transform="translate(640 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#ffffff" class="c-new" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Not filed yet / Missing</text>
+</g>
+
+
+
+<g transform="translate(0 94)">
+<text x="0" y="17">1. Connect an existing Bitbucket project</text>
+<desc>Analyzed 1, Not filed yet 1. F72: porelo-frontend#F72 · Analyzed · L · Forges Beyond GitHub; Separate Forge Connection Behavior; Connect Bitbucket Data Center. A test installation and evaluation license are prerequisites.: Not filed yet; </desc>
+<svg x="368" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="918" y="17"><title>Connect an existing Bitbucket project: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 124)">
+<text x="0" y="17">2. Find the exact pushed commit in Jenkins</text>
+<desc>Accepted 1, Not filed yet 1. PJ36: porelo-project#PJ36 · Accepted · — · Builds read from Bitbucket Data Center and Jenkins; Read Jenkins Builds Independently Of The Forge; Match Bitbucket Pushes To Jenkins Builds. The build contract from release 0.6 must work first.: Not filed yet; </desc>
+<svg x="368" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="918" y="17"><title>Find the exact pushed commit in Jenkins: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 154)">
+<text x="0" y="17">3. Choose the host forge and pool deliberately</text>
+<desc>Idea 4. F145: porelo-frontend#F145 · Idea · — · The Host's Forge Switched On With Its Repositories; F146: porelo-frontend#F146 · Idea · — · The Host's VM Pool Switched On; HO27: porelo-host#HO27 · Idea · - · The Forge's Jobs Told Where The Pool Is; B254: porelo#B254 · Idea · - · A Task Has Its Work Built on a Declared Kind; </desc>
+<svg x="368" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 4</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 4 done</text>
+</svg>
+
+
+<text x="918" y="17"><title>Configure forge repositories and a pool: Not tested</title>⚪</text>
+
+
+<text x="942" y="17"><title>Request a declared build from the task: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 184)">
+<text x="0" y="17">4. Install a build reader by its offered kind</text>
+<desc>Idea 1. B287: porelo#B287 · Idea · - · Build Readers Offered Where Agents Are; </desc>
+<svg x="368" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="918" y="17"><title>Install a build reader by its offered kind: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 214)">
+<text x="0" y="17">5. Prove one build works locally and centrally</text>
+<desc>Estimated 1, Not filed yet 1. PJ22: porelo-project#PJ22 · Estimated · XL · One build, run locally as on the central forge; Parent acceptance for one build, not duplicate implementation. This includes the forge, pool and task-build work from release 0.6 and this release; return the whole local VM after a run and keep provider names out of workflows.: Not filed yet; </desc>
+<svg x="368" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="918" y="17"><title>Prove one build works locally and centrally: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 244)">
+<text x="0" y="17">6. Read and answer enterprise forge reviews</text>
+<desc>Not filed yet 3. Not yet filed: a GitLab review adapter from the review-area parent in release 0.8. Use the SARIF profile and the review contract, with conversion in both directions.: Not filed yet; Not yet filed: a Bitbucket review adapter from the review-area parent in release 0.8. This is separate work from the Bitbucket connection and Jenkins build reader.: Not filed yet; Not yet filed: an Azure DevOps review adapter from the review-area parent in release 0.8. Each forge has its own adapter under the shared review contract.: Not filed yet; </desc>
+<svg x="368" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 3</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="918" y="17"><title>Review a GitLab merge request: Not tested</title>⚪</text>
+
+
+<text x="942" y="17"><title>Review a Bitbucket pull request: Not tested</title>⚪</text>
+
+
+<text x="966" y="17"><title>Review an Azure DevOps pull request: Not tested</title>⚪</text>
+
+</g>
+
+</svg>

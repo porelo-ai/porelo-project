@@ -2,3 +2,15 @@
 plan/0.6.yml
 plan/0.7.yml
 plan/0.8.yml
+plan/0.9.yml
+plan/0.10.yml
+plan/0.11.yml
+plan/0.12.yml
+plan/0.13.yml
+plan/0.14.yml
+plan/0.15.yml
+plan/0.16.yml
+plan/0.17.yml
+plan/0.18.yml
+plan/0.19.yml
+plan/0.20.yml

@@ -1,0 +1,48 @@
+# The plan of release 0.18. Issue states are not written here: they are read from each repository's index.
+release: "0.18"
+goal: "Keep MCP tools inspectable and require approval when their accepted definitions change"
+sprints:
+  - id: "1"
+    title: "Inspect MCP sessions through the broker"
+    goal: "Tool lists and calls are visible without giving the task a server credential."
+    functions:
+      - title: "Inspect MCP sessions through the broker"
+        test: "Use an HTTP MCP stand-in through the gateway and read its tool list and calls in the journal. Search the task for the server credential; it is absent. A local host command under mcp: is refused."
+        issues: [porelo#B167, porelo-project#PJ15]
+        notes: ["Measure MCP Sessions Through The Broker. The tool parent also covers sprints 2 through 4; organization rules and audit records must work first."]
+  - id: "2"
+    title: "Hold only new or changed tools for approval"
+    goal: "An unchanged accepted tool keeps working while others wait for consent."
+    functions:
+      - title: "Hold only new or changed tools for approval"
+        test: "Accept two tools, leave one unchanged, change the second and add a third. The unchanged tool works; only the changed and new tools wait in Needs you. Reject them; they stay blocked."
+        notes: ["Pin Accepted MCP Tools; Accept Tool Changes In Needs You. Continue sprint 1."]
+  - id: "3"
+    title: "Check descriptions and the first local agent servers"
+    goal: "Tool descriptions and local servers cannot bypass the configured checks."
+    functions:
+      - title: "Check descriptions and the first local agent servers"
+        test: "Trigger a description rule with a known counterexample. Start pinned Claude Code and Pi local servers, then change each package or digest; the changed start fails. The rule makes no claim of unlimited protection against prompt injection."
+        notes: ["Check MCP Tool Descriptions; Pin Claude Code Local MCP Servers; Pin Pi Local MCP Servers. Continue sprint 2."]
+  - id: "4"
+    title: "Apply the same checks to the other agents"
+    goal: "Every supported agent starts only the accepted local server contents."
+    functions:
+      - title: "Apply the same checks to the other agents"
+        test: "For OMP, Codex and Antigravity, start an allowed server package and then alter its contents. The allowed version works; a changed or unlisted version is refused."
+        notes: ["Pin OMP Local MCP Servers; Pin Codex Local MCP Servers; Pin Antigravity Local MCP Servers. Confirm the final supported-agent list before splitting these parts."]
+  - id: "5"
+    title: "Control one Porelo instance from outside"
+    goal: "An external agent starts and observes tasks but cannot approve work or unlock the vault."
+    functions:
+      - title: "Control one Porelo instance from outside"
+        test: "Start a task, read status and send a message over MCP. Then try approve, reject and vault unlock; those operations are unavailable or explicitly refused."
+        issues: [porelo-project#PJ35]
+        notes: ["Control One Porelo Instance Over MCP; Refuse Approval And Vault Operations. This parent also covers sprint 6."]
+  - id: "6"
+    title: "Choose exactly which instance to control"
+    goal: "A control request affects only the selected machine."
+    functions:
+      - title: "Choose exactly which instance to control"
+        test: "Configure two instances, start a task on one and perform an allowed setup step there. A wrong instance identifier and a forbidden administrative action are refused; the other instance remains untouched."
+        notes: ["Address Multiple Porelo Instances; Control Permitted Machine Setup. Continue sprint 5 after deciding administrative scope and spending authority."]

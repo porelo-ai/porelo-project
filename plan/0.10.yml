@@ -1,0 +1,48 @@
+# The plan of release 0.10. Issue states are not written here: they are read from each repository's index.
+release: "0.10"
+goal: "Try waiting work before approval, compare alternatives and open a limited preview"
+sprints:
+  - id: "1"
+    title: "Run waiting work in its own environment"
+    goal: "The person tries a waiting commit without giving it the gate or vault."
+    functions:
+      - title: "Run waiting work in its own environment"
+        test: "Run a waiting commit with gate try and read its streamed result. Try to reach the gate and vault from the trial; both are refused. Cancel the run and confirm its environment is removed."
+        issues: [porelo#B95]
+        notes: ["Create An Isolated Review Trial; Stream Review Trial Results. The SARIF review path in release 0.8 is a prerequisite."]
+  - id: "2"
+    title: "Choose a trial or a clone"
+    goal: "The interface tests exactly the work the person selected."
+    functions:
+      - title: "Choose a trial or a clone"
+        test: "Run a waiting commit in a trial container from the interface, then fetch the same commit into a chosen clone. Commit and result are visible. Choose a clone holding other or unsaved work; that work must not be overwritten."
+        issues: [porelo-frontend#F74, porelo-frontend#F95]
+        notes: ["Confirm how local, WSL and SSH targets are addressed before building this step."]
+  - id: "3"
+    title: "Compare alternatives and open a local preview"
+    goal: "The person chooses one result and reaches a task preview through host loopback only."
+    functions:
+      - title: "Approve one of several attempts"
+        test: "Start several attempts from one commit, read their differences and approve one. The other attempts are rejected; any rate limit is shown for the affected attempt."
+        issues: [porelo#B163]
+      - title: "Open a task port locally"
+        test: "Start a web server in the task and open its port. Host-loopback access works; access from the network or through another account's relay socket is refused."
+        issues: [porelo#B165]
+  - id: "4"
+    title: "Restore a turn and offer a task view"
+    goal: "The person can restore files and explicitly enable a limited screen view."
+    functions:
+      - title: "Return to the chosen files"
+        test: "Create two turn snapshots, rewind and compare the restored files. An unsupported session restore must be explained, with a restart offered where appropriate."
+        issues: [porelo#B164]
+      - title: "Offer a screen only when enabled"
+        test: "Start projects with and without a task view. Without permission there is no access; with permission only the intended socket is offered."
+        issues: [porelo#B100]
+        notes: ["Expose A Task View Socket. This parent also covers the next sprint."]
+  - id: "5"
+    title: "Pass the view through safely"
+    goal: "Task and review views require the correct strong token."
+    functions:
+      - title: "Pass the view through safely"
+        test: "Open task and trial views. Use no token and a wrong token; no byte may reach the VNC server. End each view and confirm the relay and its processes are gone."
+        notes: ["Authenticate The Task View Relay; Provide Task View Image Tools; Open A Review Trial View. Continue the task-view parent from sprint 4."]

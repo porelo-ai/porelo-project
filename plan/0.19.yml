@@ -1,0 +1,58 @@
+# The plan of release 0.19. Issue states are not written here: they are read from each repository's index.
+release: "0.19"
+goal: "Use enterprise forges, read Jenkins builds and extend reviews to their pull requests"
+sprints:
+  - id: "1"
+    title: "Connect an existing Bitbucket project"
+    goal: "A Bitbucket Data Center repository works through the ordinary setup flow."
+    functions:
+      - title: "Connect an existing Bitbucket project"
+        test: "Connect the test installation, read the identity and take in a repository as a project. Offer a token without the required rights and a wrong host key; both are clearly refused."
+        issues: [porelo-frontend#F72]
+        notes: ["Separate Forge Connection Behavior; Connect Bitbucket Data Center. A test installation and evaluation license are prerequisites."]
+  - id: "2"
+    title: "Find the exact pushed commit in Jenkins"
+    goal: "A task receives its own build result without holding a Jenkins credential."
+    functions:
+      - title: "Find the exact pushed commit in Jenkins"
+        test: "Push a green and a red commit. The task receives commit, stages, verdict and the failing log. Offer a build of another commit; it is not accepted as the result of this push. The task contains no Jenkins credential."
+        issues: [porelo-project#PJ36]
+        notes: ["Read Jenkins Builds Independently Of The Forge; Match Bitbucket Pushes To Jenkins Builds. The build contract from release 0.6 must work first."]
+  - id: "3"
+    title: "Choose the host forge and pool deliberately"
+    goal: "The person selects forge repositories and build machines before work is run."
+    functions:
+      - title: "Configure forge repositories and a pool"
+        test: "Choose the forge, repositories and pool through the dialog and CLI. Omit the required central token; setup refuses before creating a partial forge. With complete inputs, the same workflow uses the local pool and a central rented machine."
+        issues: [porelo-frontend#F145, porelo-frontend#F146, porelo-host#HO27]
+      - title: "Request a declared build from the task"
+        test: "Ask a task to build on a declared kind and read the result in its files. An undeclared kind or command is refused; the task receives no machine credential."
+        issues: [porelo#B254]
+  - id: "4"
+    title: "Install a build reader by its offered kind"
+    goal: "The person chooses a build reader without knowing its package name."
+    functions:
+      - title: "Install a build reader by its offered kind"
+        test: "Read the setup --list and daemon Installable catalogs; reader packages appear as kind build-reader. Select and install one through setup --with and query a build through it. A package outside the declared catalog is refused."
+        issues: [porelo#B287]
+  - id: "5"
+    title: "Prove one build works locally and centrally"
+    goal: "A task sees the same complete build before and after the central push."
+    functions:
+      - title: "Prove one build works locally and centrally"
+        test: "Run every building repository's same workflow on the local and central forges without editing it. Resolve another repository's locally published artifact, including a child-module publication. Break that publication; the local run fails before any central tag. Request a declared machine kind, read the verdict and log in the task, and refuse undeclared kinds or commands."
+        issues: [porelo-project#PJ22]
+        notes: ["Parent acceptance for one build, not duplicate implementation. This includes the forge, pool and task-build work from release 0.6 and this release; return the whole local VM after a run and keep provider names out of workflows."]
+  - id: "6"
+    title: "Read and answer enterprise forge reviews"
+    goal: "Each added forge converts its review data through the shared SARIF profile."
+    functions:
+      - title: "Review a GitLab merge request"
+        test: "Read GitLab threads and suggestions into the waiting work and release a reply back. Known authors follow the configured trust rule; an unknown author is held and a forged author cannot change that. A reply is sent only after its release."
+        notes: ["Not yet filed: a GitLab review adapter from the review-area parent in release 0.8. Use the SARIF profile and the review contract, with conversion in both directions."]
+      - title: "Review a Bitbucket pull request"
+        test: "Read Bitbucket Data Center threads and suggestions as SARIF and release a reply. An unknown author is held; an unreleased reply never appears online. A build-reader result cannot stand in for a review result."
+        notes: ["Not yet filed: a Bitbucket review adapter from the review-area parent in release 0.8. This is separate work from the Bitbucket connection and Jenkins build reader."]
+      - title: "Review an Azure DevOps pull request"
+        test: "Read Azure DevOps threads and suggestions as SARIF and release a reply. An unknown author is held; an unreleased reply never appears online. Refuse an unsupported mandatory review operation by name."
+        notes: ["Not yet filed: an Azure DevOps review adapter from the review-area parent in release 0.8. Each forge has its own adapter under the shared review contract."]

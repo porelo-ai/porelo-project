@@ -1,0 +1,452 @@
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1114 674" role="img" aria-label="Sprint progress for release 0.17">
+<title>Sprint progress for release 0.17</title>
+<style>
+text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
+@media (prefers-color-scheme:dark){text{fill:#f0efec}.legend{fill:#c3c2b7}.c-surface{fill:#1a1a19}.c-grid{fill:#383835}.c-backlog{fill:#80bee6}.c-estimated{fill:#b497cf}.c-analyzed{fill:#77766f}.c-accepted{fill:#aaa9a2}.c-review{fill:#3987e5}.c-idea{fill:#d95926}.c-new{fill:#1a1a19}}
+</style>
+<rect width="100%" height="100%" fill="#fcfcfb" class="c-surface"/>
+
+
+<g transform="translate(0 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#0ca30c" class="c-done" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Finished / Rejected</text>
+</g>
+
+
+<g transform="translate(320 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#2a78d6" class="c-review" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Review</text>
+</g>
+
+
+<g transform="translate(640 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#fab219" class="c-impl" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Implementing / Rework</text>
+</g>
+
+
+<g transform="translate(0 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#8ac8f0" class="c-backlog" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Backlog</text>
+</g>
+
+
+<g transform="translate(320 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#9575b5" class="c-estimated" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Estimated</text>
+</g>
+
+
+<g transform="translate(640 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#77766f" class="c-analyzed" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Analyzed</text>
+</g>
+
+
+<g transform="translate(0 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#b9b8b2" class="c-accepted" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Accepted</text>
+</g>
+
+
+<g transform="translate(320 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#eb6834" class="c-idea" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Idea</text>
+</g>
+
+
+<g transform="translate(640 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#ffffff" class="c-new" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Not filed yet / Missing</text>
+</g>
+
+
+
+<g transform="translate(0 94)">
+<text x="0" y="17">1. Use one allowed message shape</text>
+<desc>Estimated 1, Analyzed 1. B108: porelo#B108 · Analyzed · M · The Narrowed Message Schema Enforced; SL23: porelo-message-sluice#SL23 · Estimated · M · The narrowed message schema, the filter's side; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Use one allowed message shape: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 124)">
+<text x="0" y="17">2. Accept only admitted people as people</text>
+<desc>Analyzed 2, Accepted 1, Not filed yet 1. B86: porelo#B86 · Analyzed · M · Messages Over Matrix, The Porelo Half; B122: porelo#B122 · Analyzed · M · No Direct Chat Between Tasks; MX30: porelo-message-matrix#MX30 · Accepted · M · Only A Person Speaks As A Person; The move acceptance in release 0.6 must be complete first.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+
+<rect x="200.0" width="100.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="300.0" width="100.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 4 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Accept only admitted people as people: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 154)">
+<text x="0" y="17">3. Keep the homeserver and room entrances separate</text>
+<desc>Backlog 1, Accepted 1, Not filed yet 1. MX29: porelo-message-matrix#MX29 · Backlog · - · The Homeserver On A Socket Of The Account's Own; MX38: porelo-message-matrix#MX38 · Accepted · XL · A Room Shows No Helper; Separate Room Polling And Positions. The room parent also covers sprints 9 through 11. Begin only after the move acceptance.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Keep the homeserver and room entrances separate: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 184)">
+<text x="0" y="17">4. Use the published transport contract</text>
+<desc>Estimated 1, Not filed yet 1. B123: porelo#B123 · Estimated · XL · Message Transports Behind A Published API; Publish The Transport Contract; Provide A Stub Transport. This parent also covers sprints 5 and 6.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Use the published transport contract: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 214)">
+<text x="0" y="17">5. Keep a failing transport from blocking another</text>
+<desc>Not filed yet 1. Use The Transport Client On The Host; Protect Transport Calls And Secrets. Continue sprint 4 after the transport secret-input contract from release 0.13 works.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Keep a failing transport from blocking another: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 244)">
+<text x="0" y="17">6. Move Matrix to the public transport API</text>
+<desc>Not filed yet 1. Move Matrix To The Transport API; Retire The Command-Line Transport Contract. Continue sprint 5.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Move Matrix to the public transport API: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 274)">
+<text x="0" y="17">7. Approve a group and its peer keys</text>
+<desc>Backlog 1, Not filed yet 1. B14: porelo#B14 · Backlog · XL · Talking Between Tasks; Address Task Groups; Confirm Peer Fingerprints. This parent also covers sprint 8.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Approve a group and its peer keys: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 304)">
+<text x="0" y="17">8. Use the group across two machines</text>
+<desc>Not filed yet 1. Talk Across Two Machines; Verify Cross-Machine Refusals. Continue sprint 7.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Use the group across two machines: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 334)">
+<text x="0" y="17">9. Let a limited service manage task accounts</text>
+<desc>Not filed yet 1. Register A Project Application Service; Rotate And Revoke Service Secrets. Continue the room parent from sprint 3 after sprint 8.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Let a limited service manage task accounts: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 364)">
+<text x="0" y="17">10. Show only people and tasks in the room</text>
+<desc>Not filed yet 1. Create A Restricted Project Room; Keep The Project Room Alias Stable. Continue sprint 9; decide empty-room recovery before implementation.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Show only people and tasks in the room: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 394)">
+<text x="0" y="17">11. Move existing rooms safely</text>
+<desc>Not filed yet 1. Migrate Existing Project Rooms; Retire Legacy Helpers Safely. Continue sprint 10; retire the old helper workaround only after this proof.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Move existing rooms safely: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 424)">
+<text x="0" y="17">12. Refuse oversized Git blobs at the gate</text>
+<desc>Estimated 1, Not filed yet 1. B15: porelo#B15 · Estimated · XL · Handing Artifacts Between Tasks; Redesign Artifact Delivery Through Transports; Refuse Oversized Gate Blobs. This parent also covers sprints 13 and 14.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Refuse oversized Git blobs at the gate: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 454)">
+<text x="0" y="17">13. Carry signed artifacts through the transport</text>
+<desc>Not filed yet 1. Add Artifact Transport Operations; Provide Artifact Contract Scenarios. Continue sprint 12.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Carry signed artifacts through the transport: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 484)">
+<text x="0" y="17">14. Give, receive and withdraw a file</text>
+<desc>Not filed yet 1. Export Artifacts From A Task; Receive And Withdraw Artifacts. Continue sprint 13.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Give, receive and withdraw a file: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 514)">
+<text x="0" y="17">15. Allow message attachments separately by direction</text>
+<desc>Analyzed 1, Not filed yet 1. PJ03: porelo-project#PJ03 · Analyzed · XL · An attachment may be permitted; Configure Attachment Parts By Direction; Enforce Attachment Permissions On The Host; Carry Matrix Media References. Agree the extension to the message schema before implementation.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Allow message attachments separately by direction: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 544)">
+<text x="0" y="17">16. Recognize a file spread across messages</text>
+<desc>Estimated 1, Not filed yet 1. SL08: porelo-message-sluice#SL08 · Estimated · XL · Refuse a payload spread over several messages; Index Message Fragments; Reconstruct Accumulated Payloads. This parent also covers sprint 17.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Recognize a file spread across messages: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 574)">
+<text x="0" y="17">17. Recognize split secrets without blocking ordinary talk</text>
+<desc>Not filed yet 1. Detect Split Secrets; Distinguish Scripted Message Bursts. Continue sprint 16. The accepted gap for fragments from multiple sending tasks remains.: Not filed yet; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Recognize split secrets without blocking ordinary talk: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 604)">
+<text x="0" y="17">18. Wake only the tasks addressed</text>
+<desc>Estimated 1, Analyzed 1, Accepted 1. B112: porelo#B112 · Estimated · M · A Nickname For Each Agent; F88: porelo-frontend#F88 · Analyzed · M · A Nickname For Each Agent; B274: porelo#B274 · Accepted · S · A Room Line Wakes Only The Tasks It Mentions; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Wake only the tasks addressed: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 634)">
+<text x="0" y="17">19. Reach a directly addressed peer or explain why not</text>
+<desc>Idea 1. B257: porelo#B257 · Idea · - · A Direct Peer Reached Without A Conversation; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>Reach a directly addressed peer or explain why not: Not tested</title>⚪</text>
+
+</g>
+
+</svg>

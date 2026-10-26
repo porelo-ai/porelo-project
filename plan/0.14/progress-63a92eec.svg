@@ -1,0 +1,277 @@
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 404" role="img" aria-label="Sprint progress for release 0.14">
+<title>Sprint progress for release 0.14</title>
+<style>
+text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
+@media (prefers-color-scheme:dark){text{fill:#f0efec}.legend{fill:#c3c2b7}.c-surface{fill:#1a1a19}.c-grid{fill:#383835}.c-backlog{fill:#80bee6}.c-estimated{fill:#b497cf}.c-analyzed{fill:#77766f}.c-accepted{fill:#aaa9a2}.c-review{fill:#3987e5}.c-idea{fill:#d95926}.c-new{fill:#1a1a19}}
+</style>
+<rect width="100%" height="100%" fill="#fcfcfb" class="c-surface"/>
+
+
+<g transform="translate(0 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#0ca30c" class="c-done" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Finished / Rejected</text>
+</g>
+
+
+<g transform="translate(320 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#2a78d6" class="c-review" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Review</text>
+</g>
+
+
+<g transform="translate(640 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#fab219" class="c-impl" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Implementing / Rework</text>
+</g>
+
+
+<g transform="translate(0 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#8ac8f0" class="c-backlog" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Backlog</text>
+</g>
+
+
+<g transform="translate(320 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#9575b5" class="c-estimated" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Estimated</text>
+</g>
+
+
+<g transform="translate(640 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#77766f" class="c-analyzed" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Analyzed</text>
+</g>
+
+
+<g transform="translate(0 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#b9b8b2" class="c-accepted" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Accepted</text>
+</g>
+
+
+<g transform="translate(320 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#eb6834" class="c-idea" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Idea</text>
+</g>
+
+
+<g transform="translate(640 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#ffffff" class="c-new" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Not filed yet / Missing</text>
+</g>
+
+
+
+<g transform="translate(0 94)">
+<text x="0" y="17">1. Measure price and enforce the token limit</text>
+<desc>Estimated 1, Analyzed 1, Not filed yet 1. B191: porelo#B191 · Analyzed · L · What A Task Cost At List Prices; B138: porelo#B138 · Estimated · M · A Token Ceiling Per Task; The usage record from release 0.6 is a prerequisite.: Not filed yet; </desc>
+<svg x="400" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="950" y="17"><title>Measure price and enforce the token limit: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 124)">
+<text x="0" y="17">2. Limit money, time and disk space</text>
+<desc>Estimated 2, Analyzed 1. B177: porelo#B177 · Analyzed · M · A Cost Ceiling Per Task; B147: porelo#B147 · Estimated · M · A Wall-Clock Limit For Unattended Runs; B185: porelo#B185 · Estimated · M · A Bound On What A Task Writes To This Disk; </desc>
+<svg x="400" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="266.6666666666667" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 2</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="950" y="17"><title>Limit money, time and disk space: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 154)">
+<text x="0" y="17">3. Keep container limits on large hosts</text>
+<desc>Accepted 1, Not filed yet 1. PJ68: porelo-project#PJ68 · Accepted · — · Every container fits the machine it runs on; Limit Tasks And Image Builds; Limit Homeserver And Backup Runs; Limit Forge And Runner Jobs; Check VM Pool Capacity.: Not filed yet; </desc>
+<svg x="400" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="950" y="17"><title>Keep container limits on large hosts: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 184)">
+<text x="0" y="17">4. Explain a machine quota refusal</text>
+<desc>Accepted 1. BT09: porelo-buildtools#BT09 · Accepted · - · A Limit Wait Names The Limit; </desc>
+<svg x="400" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="950" y="17"><title>Explain a machine quota refusal: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 214)">
+<text x="0" y="17">5. Report or stop on unusual traffic</text>
+<desc>Estimated 1, Not filed yet 1. B139: porelo#B139 · Estimated · L · An Alert On What Looks Wrong; Establish Traffic Baselines; Report Traffic Anomalies; Stop Tasks On Selected Alerts. Notifications from release 0.9 must work first.: Not filed yet; </desc>
+<svg x="400" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="950" y="17"><title>Report or stop on unusual traffic: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 244)">
+<text x="0" y="17">6. Start and stop with an accurate state</text>
+<desc>Idea 2. B250: porelo#B250 · Idea · - · No Broker Address for a Task Without One; B262: porelo#B262 · Idea · - · A Stop's Survivors In The Form Its Interface Declares; </desc>
+<svg x="400" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="950" y="17"><title>Give the agent only its actual broker address: Not tested</title>⚪</text>
+
+
+<text x="974" y="17"><title>Show surviving processes correctly: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 274)">
+<text x="0" y="17">7. Start again without a previous task's changes</text>
+<desc>Idea 2. PI37: porelo-pi#PI37 · Idea ·  · Nothing The Agent Writes Reaches The Next Pi; B282: porelo#B282 · Idea · - · A Failed Continuation Is Forgotten; </desc>
+<svg x="400" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="950" y="17"><title>Start again without a previous task's changes: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 304)">
+<text x="0" y="17">8. Measure whether a task can have its own kernel</text>
+<desc>Estimated 1, Not filed yet 1. B59: porelo#B59 · Estimated · XL · A Kernel Of Its Own For A Task; Measure KVM-Backed Task Isolation; Report KVM Runtime Capability. The reach boundaries from release 0.11 must pass first. This parent also covers runtime adoption in sprint 9.: Not filed yet; </desc>
+<svg x="400" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="950" y="17"><title>Measure whether a task can have its own kernel: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 334)">
+<text x="0" y="17">9. Adopt the runtime only after proof</text>
+<desc>Estimated 1, Not filed yet 2. Adopt A KVM-Backed Runtime Opt-In. Proceed only after a positive decision from sprint 8 measurements.: Not filed yet; B169: porelo#B169 · Estimated · L · Containers Inside A Task; Assess Nested Container Guarantees. This parent also covers sprint 10.: Not filed yet; </desc>
+<svg x="400" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="133.33333333333334" width="266.6666666666667" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 2</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="950" y="17"><title>Use the separate kernel only with project opt-in: Not tested</title>⚪</text>
+
+
+<text x="974" y="17"><title>Measure nested containers on both legs: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 364)">
+<text x="0" y="17">10. Allow inner containers only in the proven case</text>
+<desc>Not filed yet 1. Enable Assessed Nested Containers; Verify Nested Container Refusals. If the assessment is negative, record the reasons and do not introduce nesting.: Not filed yet; </desc>
+<svg x="400" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="950" y="17"><title>Allow inner containers only in the proven case: Not tested</title>⚪</text>
+
+</g>
+
+</svg>

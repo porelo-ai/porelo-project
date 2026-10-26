@@ -1,0 +1,70 @@
+# The plan of release 0.13. Issue states are not written here: they are read from each repository's index.
+release: "0.13"
+goal: "Secrets stay with their owner and reach only the permitted consumer"
+sprints:
+  - id: "1"
+    title: "Keep project intake and sign-in free of hidden secrets"
+    goal: "The person can identify unsafe secret storage and credentials without an expiry."
+    functions:
+      - title: "Keep project intake and sign-in free of hidden secrets"
+        test: "Load an invalid credential name; it is explicitly refused. Put a known test credential in the repository; start warns or stops under the project rule. Sign in and inspect container layers and temporary host directories; no plaintext remains there. Store a credential without expiry; the response and list say so."
+        issues: [porelo#B202, porelo#B140, porelo#B178, porelo#B252]
+        notes: ["Decide how existing credential names migrate before enforcing the new names."]
+  - id: "2"
+    title: "Control sign-in from the person's terminal"
+    goal: "A sign-in can be canceled and forge access uses the forge's own device-code flow."
+    functions:
+      - title: "Cancel the agent sign-in completely"
+        test: "Start vault login in its own terminal and cancel using the supported escape even if the agent consumes Ctrl-C. The login container stops and is removed, nothing is stored and the command exits nonzero."
+        issues: [porelo#B271]
+      - title: "Store a forge sign-in without pasting a token"
+        test: "Complete the forge's device-code login in a terminal on the machine. The token is stored under the forge host's credential name and a task can use it through the host. Cancel the flow; no partial credential is saved."
+        issues: [porelo#B270]
+      - title: "Verify the complete ChatGPT sign-in"
+        test: "Ask a Codex task a question through the ChatGPT sign-in. The container contains none of the real tokens; a rotated refresh token survives an interrupted broker refresh. Check the chosen rule for the additional startup host; it is enforced."
+        issues: [porelo-project#PJ54]
+        notes: ["Parent acceptance for the ChatGPT provider delivered in release 0.6; no second implementation."]
+  - id: "3"
+    title: "Give a transport its secret through the intended input"
+    goal: "A working transport never exposes its token in its process environment."
+    functions:
+      - title: "Give a transport its secret through the intended input"
+        test: "Start Matrix with a test token, deliver a message and inspect /proc environments and process arguments during startup and operation. The token is absent. A transport with an unsupported secret-input protocol is refused before use."
+        issues: [porelo#B206, porelo-message-matrix#MX23]
+        notes: ["Change the host contract before adapting Matrix."]
+  - id: "4"
+    title: "Remove access without deleting another person's keys"
+    goal: "Unused access and remaining work stay visible during cleanup."
+    functions:
+      - title: "Remove access without deleting another person's keys"
+        test: "Follow and unfollow a project, then clear the machine. Read remaining deploy keys, unreviewed or unpushed work and old unused slots. Remove the project's keys in the GitHub test account; another project's key remains."
+        issues: [porelo#B117, porelo#B153, porelo-frontend#F96]
+  - id: "5"
+    title: "Measure hardware protection first"
+    goal: "A device store derives the share at unlock instead of keeping it stored."
+    functions:
+      - title: "Measure hardware protection first"
+        test: "Measure a token present, removed and untouched. Enroll and unlock with a device-store stand-in. The stored state contains no share; unlock without authorization fails."
+        issues: [porelo#B63, porelo-frontend#F52]
+        notes: ["Measure FIDO2 Share Derivation; Derive Device Shares At Unlock. These parents also cover sprints 6 through 8. Desktop FIDO2 remains a separate later task."]
+  - id: "6"
+    title: "Unlock the machine with the right touched token"
+    goal: "Unlock requires the enrolled FIDO2 token and its required touch."
+    functions:
+      - title: "Unlock the machine with the right touched token"
+        test: "Enroll a machine with the token and unlock after a restart. Try without the token and without touching it; both fail within a bounded wait with a clear reason. Only nonsecret derivation parameters remain stored."
+        notes: ["Enroll A Machine With FIDO2; Record Verifiable Slot Evidence. Continue the hardware-protection parents from sprint 5."]
+  - id: "7"
+    title: "Show only proven TPM2 protection"
+    goal: "A claimed hardware slot receives no more protection credit than the evidence supports."
+    functions:
+      - title: "Show only proven TPM2 protection"
+        test: "Set up and unlock a TPM2 slot. Offer a slot that only claims hardware protection; the proven slot is labeled correctly and the unsupported claim receives no more than USER_SCOPED."
+        notes: ["Enroll A Machine With TPM2; Verify Claimed Slot Protection. Continue sprint 6."]
+  - id: "8"
+    title: "Unlock the desktop with TPM2 and a PIN"
+    goal: "The interface offers only the device protection the machine actually has."
+    functions:
+      - title: "Unlock the desktop with TPM2 and a PIN"
+        test: "Enroll and unlock on Linux and Windows. Try a wrong PIN and a missing TPM; both are explained and refused. A capability the machine lacks is never offered."
+        notes: ["Unlock With TPM2 On Linux; Unlock With TPM2 On Windows; Explain Device Unlock Refusals. Continue sprint 7."]

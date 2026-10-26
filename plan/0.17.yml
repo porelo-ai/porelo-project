@@ -1,0 +1,144 @@
+# The plan of release 0.17. Issue states are not written here: they are read from each repository's index.
+release: "0.17"
+goal: "Communicate across machines with clear trust boundaries and hand over files only as allowed"
+sprints:
+  - id: "1"
+    title: "Use one allowed message shape"
+    goal: "The guide and the filter accept the same message forms."
+    functions:
+      - title: "Use one allowed message shape"
+        test: "Send every permitted message kind, then send an extra metadata key, a second text part and a forbidden data part. Valid messages arrive; each invalid message is refused with its offending element named."
+        issues: [porelo#B108, porelo-message-sluice#SL23]
+  - id: "2"
+    title: "Accept only admitted people as people"
+    goal: "Two machines use the same homeserver without confusing identities."
+    functions:
+      - title: "Accept only admitted people as people"
+        test: "Sign two machines in to the central homeserver. Have an admitted person write in the room and directly. Have a foreign task claim to be a person and try a task-to-task direct chat. Only the admitted person is delivered as a person; forbidden paths are refused."
+        issues: [porelo#B86, porelo#B122, porelo-message-matrix#MX30]
+        notes: ["The move acceptance in release 0.6 must be complete first."]
+  - id: "3"
+    title: "Keep the homeserver and room entrances separate"
+    goal: "Another account cannot replace the homeserver or send private chat into the room."
+    functions:
+      - title: "Keep the homeserver and room entrances separate"
+        test: "Reach the homeserver through its account-owned Unix socket; a second account cannot connect. Read the room and a direct chat together and change the task reading them. Direct messages remain private, with no lost or repeated delivery."
+        issues: [porelo-message-matrix#MX29, porelo-message-matrix#MX38]
+        notes: ["Separate Room Polling And Positions. The room parent also covers sprints 9 through 11. Begin only after the move acceptance."]
+  - id: "4"
+    title: "Use the published transport contract"
+    goal: "An independently built transport works through the public API alone."
+    functions:
+      - title: "Use the published transport contract"
+        test: "Build the stub against only the API and wire libraries and transfer a message between tasks. Offer an unknown protocol version; it is refused by name before use."
+        issues: [porelo#B123]
+        notes: ["Publish The Transport Contract; Provide A Stub Transport. This parent also covers sprints 5 and 6."]
+  - id: "5"
+    title: "Keep a failing transport from blocking another"
+    goal: "The host isolates transport failures and secrets."
+    functions:
+      - title: "Keep a failing transport from blocking another"
+        test: "Connect the host to a working stub and a deliberately broken one. Call the broken transport; its error is named and the working transport still delivers. Inspect processes and task environments; secrets are absent."
+        notes: ["Use The Transport Client On The Host; Protect Transport Calls And Secrets. Continue sprint 4 after the transport secret-input contract from release 0.13 works."]
+  - id: "6"
+    title: "Move Matrix to the public transport API"
+    goal: "Matrix works fully without the old command-line transport path."
+    functions:
+      - title: "Move Matrix to the public transport API"
+        test: "Use rooms, direct chats, enrollment and retirement with a host that has no old call path. Offer an old transport; it is clearly refused. Verify delivery guarantees on every path."
+        notes: ["Move Matrix To The Transport API; Retire The Command-Line Transport Contract. Continue sprint 5."]
+  - id: "7"
+    title: "Approve a group and its peer keys"
+    goal: "Only confirmed peers join the conversation."
+    functions:
+      - title: "Approve a group and its peer keys"
+        test: "Create a task group, confirm its fingerprints and send a group message. Offer an unconfirmed peer or changed key; delivery is refused until confirmation."
+        issues: [porelo#B14]
+        notes: ["Address Task Groups; Confirm Peer Fingerprints. This parent also covers sprint 8."]
+  - id: "8"
+    title: "Use the group across two machines"
+    goal: "A confirmed group works across machine boundaries."
+    functions:
+      - title: "Use the group across two machines"
+        test: "Start tasks on two machines, exchange messages and reconnect one machine. Valid messages arrive once. Substitute a wrong peer key; that identity is refused."
+        notes: ["Talk Across Two Machines; Verify Cross-Machine Refusals. Continue sprint 7."]
+  - id: "9"
+    title: "Let a limited service manage task accounts"
+    goal: "The project service can act only as identities from its own project."
+    functions:
+      - title: "Let a limited service manage task accounts"
+        test: "Register the project service and act as its own task. Try acting as a person or another project's task; both fail. Retire and restore the service; old tokens no longer work."
+        notes: ["Register A Project Application Service; Rotate And Revoke Service Secrets. Continue the room parent from sprint 3 after sprint 8."]
+  - id: "10"
+    title: "Show only people and tasks in the room"
+    goal: "The room remains reachable without a visible helper account."
+    functions:
+      - title: "Show only people and tasks in the room"
+        test: "Admit the first task and person and read the member list; no administrator or relay is a member. Try inviting an unrelated person into the lobby; it is refused. Reuse an empty room under the chosen recovery rule."
+        notes: ["Create A Restricted Project Room; Keep The Project Room Alias Stable. Continue sprint 9; decide empty-room recovery before implementation."]
+  - id: "11"
+    title: "Move existing rooms safely"
+    goal: "Moving a room preserves its readers and access restrictions."
+    functions:
+      - title: "Move existing rooms safely"
+        test: "Migrate an old room with running tasks and direct chats. Remove the helper only after the new reader is present. Enroll and retire tasks; room delivery and old direct chats keep working until the intended switch. Unrelated rooms are untouched."
+        notes: ["Migrate Existing Project Rooms; Retire Legacy Helpers Safely. Continue sprint 10; retire the old helper workaround only after this proof."]
+  - id: "12"
+    title: "Refuse oversized Git blobs at the gate"
+    goal: "Large files cannot bypass file-handover rules by hiding in Git."
+    functions:
+      - title: "Refuse oversized Git blobs at the gate"
+        test: "Configure a blob size limit and push a small and an oversized blob. The small blob waits for ordinary review; the large blob is refused with its size and the limit."
+        issues: [porelo#B15]
+        notes: ["Redesign Artifact Delivery Through Transports; Refuse Oversized Gate Blobs. This parent also covers sprints 13 and 14."]
+  - id: "13"
+    title: "Carry signed artifacts through the transport"
+    goal: "A missing artifact capability is refused before a handover begins."
+    functions:
+      - title: "Carry signed artifacts through the transport"
+        test: "Use Put, Fetch, List and Remove with the stub. Offer a transport without artifact support and an artifact with a wrong signature; both are refused. The host uses the shared contract for every transport."
+        notes: ["Add Artifact Transport Operations; Provide Artifact Contract Scenarios. Continue sprint 12."]
+  - id: "14"
+    title: "Give, receive and withdraw a file"
+    goal: "Only an allowed regular file reaches its recipient, read-only."
+    functions:
+      - title: "Give, receive and withdraw a file"
+        test: "Put a file in the task's drop and hand it to an allowed peer. Try a symbolic link, an oversized file and an undeclared recipient; each handover fails. Read the recipient's permissions and withdraw the artifact; no shared writable task directory exists."
+        notes: ["Export Artifacts From A Task; Receive And Withdraw Artifacts. Continue sprint 13."]
+  - id: "15"
+    title: "Allow message attachments separately by direction"
+    goal: "Each incoming or outgoing attachment needs its own permission."
+    functions:
+      - title: "Allow message attachments separately by direction"
+        test: "Send attachments both ways without permission; they are refused or held. Allow incoming attachments for one peer; its file reaches /porelo/files while outgoing attachments stay blocked. Try a URL on another host and an oversized attachment; both fail regardless of severity."
+        issues: [porelo-project#PJ03]
+        notes: ["Configure Attachment Parts By Direction; Enforce Attachment Permissions On The Host; Carry Matrix Media References. Agree the extension to the message schema before implementation."]
+  - id: "16"
+    title: "Recognize a file spread across messages"
+    goal: "Splitting a payload cannot avoid its threshold."
+    functions:
+      - title: "Recognize a file spread across messages"
+        test: "Split ZIP and PEM payloads into 2, 5, 20 and 100 messages and pass the threshold. The refusal names the contributing messages. Delete and rebuild the index; the verdict stays the same."
+        issues: [porelo-message-sluice#SL08]
+        notes: ["Index Message Fragments; Reconstruct Accumulated Payloads. This parent also covers sprint 17."]
+  - id: "17"
+    title: "Recognize split secrets without blocking ordinary talk"
+    goal: "Correlation catches divided secrets and leaves normal dialogue usable."
+    functions:
+      - title: "Recognize split secrets without blocking ordinary talk"
+        test: "Spread a secret over messages and examine 200 real English messages. The secret is detected and the ordinary conversation has no correlation finding. Findings from bursts or similarity alone remain SUSPICIOUS."
+        notes: ["Detect Split Secrets; Distinguish Scripted Message Bursts. Continue sprint 16. The accepted gap for fragments from multiple sending tasks remains."]
+  - id: "18"
+    title: "Wake only the tasks addressed"
+    goal: "The person can name a task without waking every agent."
+    functions:
+      - title: "Wake only the tasks addressed"
+        test: "Set two unique nicknames and send non-ASCII text mentioning one, then @room, then neither. First only the named task wakes, then all; the unaddressed message wakes none and is read at the next wake. Duplicate nicknames are refused and the interface shows the same names."
+        issues: [porelo#B112, porelo-frontend#F88, porelo#B274]
+  - id: "19"
+    title: "Reach a directly addressed peer or explain why not"
+    goal: "A direct-only peer never appears usable when its required account is missing."
+    functions:
+      - title: "Reach a directly addressed peer or explain why not"
+        test: "Send to a peer with a valid direct transport address. Remove the required account and start or send again; the operation is refused with the missing requirement named rather than silently losing the message."
+        issues: [porelo#B257]

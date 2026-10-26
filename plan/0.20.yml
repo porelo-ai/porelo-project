@@ -1,0 +1,118 @@
+# The plan of release 0.20. Issue states are not written here: they are read from each repository's index.
+release: "0.20"
+goal: "Work on Apple silicon, Fedora and Windows, with chosen drives and a shared secrets file"
+sprints:
+  - id: "1"
+    title: "Prove the Apple silicon VM can enforce the boundaries"
+    goal: "The ARM VM starts a contained task or explains the missing capability."
+    functions:
+      - title: "Prove the Apple silicon VM can enforce the boundaries"
+        test: "Probe Podman, nftables, user namespaces, cgroups and the daemon socket in ARM Lima. A refused unshare or missing firewall stops the task start. Check the ARM instruction baseline of the produced test executable."
+        issues: [porelo#B251, porelo-project#PJ55]
+        notes: ["Define And Check The ARM Baseline. The ARM parent also covers sprints 2 through 4. Use real Apple silicon; package building waits for this probe to pass."]
+  - id: "2"
+    title: "Install native ARM core packages"
+    goal: "A fresh ARM VM installs Porelo through the ordinary package channel."
+    functions:
+      - title: "Install native ARM core packages"
+        test: "Install a fresh ARM VM, read package architecture and --version and start a task. A missing or wrong-architecture package is refused without silently substituting emulation."
+        notes: ["Build Porelo For ARM64; Publish ARM64 Package Indexes. Continue sprint 1."]
+  - id: "3"
+    title: "Run the supported ARM agents"
+    goal: "Supported agents work natively in the ARM VM."
+    functions:
+      - title: "Run the supported ARM agents"
+        test: "Install each supported adapter and run a small task through the broker. A wrong architecture or incompatible protocol is refused by name."
+        notes: ["Build Claude Code Adapter For ARM64; Build Pi Adapter For ARM64; Build OMP Adapter For ARM64; Build Codex Adapter For ARM64. Continue sprint 2."]
+  - id: "4"
+    title: "Read messages and builds on ARM"
+    goal: "An ARM task communicates and reads build results without an x86 substitute."
+    functions:
+      - title: "Read messages and builds on ARM"
+        test: "Send a filtered message and read a green and a red build. An invalid message is refused and the red build includes its log. Check that the installed executables meet the ARM baseline."
+        notes: ["Build Sluice For ARM64; Build Matrix Transport For ARM64; Build The Build Reader For ARM64. Continue sprint 3."]
+  - id: "5"
+    title: "Install the Mac application"
+    goal: "The published Mac package opens a usable interface."
+    functions:
+      - title: "Install the Mac application"
+        test: "Install in a fresh account, verify the checksum or attestation and follow the documented Gatekeeper step. Open a terminal and type. A build without even an ad hoc signature is not accepted as an installable result."
+        issues: [porelo-frontend#F109]
+        notes: ["Build The macOS Frontend; Publish The macOS Application Package. This parent also covers sprint 6."]
+  - id: "6"
+    title: "Set up the local VM from the Mac interface"
+    goal: "A person can go from the Mac application to reviewed task work."
+    functions:
+      - title: "Set up the local VM from the Mac interface"
+        test: "Create the Lima VM in the interface, follow a project, start a task, use its terminal and review a push. Connect to a remote machine over SSH too. A missing VM capability stops setup with a reason; cancellation leaves no unknown setup resources."
+        notes: ["Set Up A Local Lima VM From The Frontend; Verify Remote SSH From macOS. Continue sprint 5 with the approved Mac test window and budget."]
+  - id: "7"
+    title: "Prepare Fedora through the host roles"
+    goal: "Fedora is configured with its own services and preserves the access boundaries."
+    functions:
+      - title: "Prepare Fedora through the host roles"
+        test: "Set up a Fedora test host and check SELinux, firewalld and dnf. Forbidden service access remains blocked. Run setup again; it makes no unjustified change."
+        issues: [porelo-host#HO15, porelo-frontend#F138]
+        notes: ["Configure Fedora Host Roles; Verify Fedora Host Provisioning. These parents also cover sprint 8; the unattended setup and reach-boundary releases must pass first."]
+  - id: "8"
+    title: "Use the ordinary host flow for Fedora"
+    goal: "Up and down use the tools required by the chosen distribution."
+    functions:
+      - title: "Use the ordinary host flow for Fedora"
+        test: "Select Fedora, go through the stop to ready and take the host down. An unsupported image or missing tool is refused before partial installation."
+        notes: ["Bootstrap Fedora Host Tools; Offer Fedora In The Host Flow. Continue sprint 7 with an available Fedora host or provider image."]
+  - id: "9"
+    title: "Choose drive areas for each host"
+    goal: "A host sees only the drive areas chosen for it."
+    functions:
+      - title: "Choose drive areas for each host"
+        test: "Configure two hosts in separate vaults and then in a shared vault. Each receives only its chosen area; an unselected personal area never appears."
+        issues: [porelo-project#PJ50]
+        notes: ["Describe Personal And Host Drives; Mount Only Selected Host Drive Areas. The access boundaries from release 0.16 must work first."]
+  - id: "10"
+    title: "Use a secrets file readable by a separate tool"
+    goal: "Porelo and the person's own tool read the same encrypted collection."
+    functions:
+      - title: "Use a secrets file readable by a separate tool"
+        test: "Open and change the KDBX file in KeePassXC and Porelo. Concurrent changes are preserved or an explicit conflict stops the write; silent overwriting is refused. The drive contains no plaintext secrets."
+        issues: [porelo-project#PJ51]
+        notes: ["Read And Write KDBX Setup Secrets; Preserve Concurrent Secret File Changes. This parent also covers sprint 11; decide the file format and protection scope first."]
+  - id: "11"
+    title: "Open the secrets file only on the desktop"
+    goal: "The host receives only the secrets just requested for setup."
+    functions:
+      - title: "Open the secrets file only on the desktop"
+        test: "Run setup with the secrets file and complete its stop. Inspect host disks and process arguments: the file is opened only on the desktop and the host never receives the whole decrypted collection. Enter the TOTP personally under the chosen rule."
+        notes: ["Supply Host Stop Secrets Through Standard Input; Guide Setup Secret Storage Choices. Continue sprint 10."]
+  - id: "12"
+    title: "Use OneDrive with measured protection"
+    goal: "The host syncs only the intended area and keeps secret material protected."
+    functions:
+      - title: "Use OneDrive with measured protection"
+        test: "Sync a test area, restart the host and read it again. A missing login is named, unselected areas remain absent and secret setup material stays protected by the chosen encryption model."
+        issues: [porelo-host#HO16, porelo-frontend#F139]
+        notes: ["Run The OneDrive Host Client; Protect OneDrive Setup Material. These parents also cover sprint 13; use a OneDrive test account."]
+  - id: "13"
+    title: "Choose the drive service during setup"
+    goal: "Each chosen drive uses its own correct sign-in and resume path."
+    functions:
+      - title: "Choose the drive service during setup"
+        test: "Set up one host with Tresorit and another with OneDrive. Selection, stop and resume match the service. Cancel the login; the host is not shown as ready and setup does not silently use the other service."
+        notes: ["Choose The Project Drive Service; Complete The Selected Drive Login. Continue sprint 12."]
+  - id: "14"
+    title: "Reach a remote machine from Windows"
+    goal: "A Windows user connects without installing an SSH executable."
+    functions:
+      - title: "Reach a remote machine from Windows"
+        test: "On Windows without an SSH binary, connect to the host, start a task and reconnect. A wrong host key is refused and the relay carries the full stream."
+        issues: [porelo-frontend#F37, porelo-frontend#F108]
+  - id: "15"
+    title: "Notify the Windows user and close connections cleanly"
+    goal: "Notifications reach the running interface and IntelliJ leaves no connection processes behind."
+    functions:
+      - title: "Activate a Windows notification"
+        test: "Trigger and activate an MSIX toast; the correct running interface opens at the intended work."
+        issues: [porelo-frontend#F114]
+      - title: "Close WSL and SSH sessions without leftovers"
+        test: "Use WSL and SSH from IntelliJ on real Windows, cancel while connecting and close the IDE. No child process, socket file or partial probe response remains. Reproduce any suspected relay defect before fixing it."
+        issues: [porelo-intellij#IJ10, porelo-intellij#IJ11]

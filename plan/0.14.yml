@@ -1,0 +1,85 @@
+# The plan of release 0.14. Issue states are not written here: they are read from each repository's index.
+release: "0.14"
+goal: "An unattended task keeps its limits; a kernel of its own is offered only after proof"
+sprints:
+  - id: "1"
+    title: "Measure price and enforce the token limit"
+    goal: "A task shows its cost and stops at the token limit."
+    functions:
+      - title: "Measure price and enforce the token limit"
+        test: "Use two models with dated prices and read an unpriced request; it is not shown as free. Reach a small token limit; further provider calls are refused. Raise the limit and deliberately resume."
+        issues: [porelo#B191, porelo#B138]
+        notes: ["The usage record from release 0.6 is a prerequisite."]
+  - id: "2"
+    title: "Limit money, time and disk space"
+    goal: "Different limits stop work with distinct reasons and a way to continue."
+    functions:
+      - title: "Limit money, time and disk space"
+        test: "Cross a low dollar limit; an unknown price cannot bypass it. Exceed runtime with and without a person attached; the defined deferral rule holds. Exceed disk and mailbox limits and reduce free space below its minimum. Status names each reason and how to continue."
+        issues: [porelo#B177, porelo#B147, porelo#B185]
+  - id: "3"
+    title: "Keep container limits on large hosts"
+    goal: "Every container sees and keeps its own limits, whatever the host size."
+    functions:
+      - title: "Keep container limits on large hosts"
+        test: "Start the same configuration on a small and a large host. Read task CPU visibility and process limits. Run the homeserver and backup with a deliberately low process limit. Request an oversized VM pool; it is refused before creation."
+        issues: [porelo-project#PJ68]
+        notes: ["Limit Tasks And Image Builds; Limit Homeserver And Backup Runs; Limit Forge And Runner Jobs; Check VM Pool Capacity."]
+  - id: "4"
+    title: "Explain a machine quota refusal"
+    goal: "The machine request reports the actual limit and leaves no accidental resources."
+    functions:
+      - title: "Explain a machine quota refusal"
+        test: "Exhaust the test provider quota and request a leg machine. The refusal states the actual limit returned by the provider. Inspect the inventory afterwards; nothing accidentally created by the refused request remains."
+        issues: [porelo-buildtools#BT09]
+  - id: "5"
+    title: "Report or stop on unusual traffic"
+    goal: "An anomaly causes the reaction the person chose."
+    functions:
+      - title: "Report or stop on unusual traffic"
+        test: "Record normal traffic, then generate unusual body size, clearance attempts and DNS names. In alert-only mode an alert appears; in stop mode the task pauses or stops and its token becomes invalid."
+        issues: [porelo#B139]
+        notes: ["Establish Traffic Baselines; Report Traffic Anomalies; Stop Tasks On Selected Alerts. Notifications from release 0.9 must work first."]
+  - id: "6"
+    title: "Start and stop with an accurate state"
+    goal: "A task receives only the services it has, and its stop result is shown correctly."
+    functions:
+      - title: "Give the agent only its actual broker address"
+        test: "Compare brokered and brokerless starts. Only a task with a broker receives its broker address; an agent reached by URL must not treat a relay as a broker."
+        issues: [porelo#B250]
+      - title: "Show surviving processes correctly"
+        test: "Stop a task with surviving processes and compare the daemon result with the interface. Both show the same actual integer count, including a nonzero case."
+        issues: [porelo#B262]
+  - id: "7"
+    title: "Start again without a previous task's changes"
+    goal: "A fresh task starts clean and a failed continuation does not poison later starts."
+    functions:
+      - title: "Start again without a previous task's changes"
+        test: "Change Pi settings, extensions and PATH in a task; a new task inherits none of them. Make a continuation fail without a session identifier. The recorded session is discarded and the next start says it is fresh."
+        issues: [porelo-pi#PI37, porelo#B282]
+  - id: "8"
+    title: "Measure whether a task can have its own kernel"
+    goal: "Doctor states whether this machine can run the isolated task."
+    functions:
+      - title: "Measure whether a task can have its own kernel"
+        test: "Probe with and without usable KVM; exercise network rules, sockets, attach and snapshot/restore. Without KVM or the runtime, doctor says unavailable. Without a working firewall, no task starts."
+        issues: [porelo#B59]
+        notes: ["Measure KVM-Backed Task Isolation; Report KVM Runtime Capability. The reach boundaries from release 0.11 must pass first. This parent also covers runtime adoption in sprint 9."]
+  - id: "9"
+    title: "Adopt the runtime only after proof"
+    goal: "A project chooses the runtime explicitly and nested-container guarantees are measured."
+    functions:
+      - title: "Use the separate kernel only with project opt-in"
+        test: "Start projects with and without opt-in, then break rule installation. Only the opted-in project uses the new runtime; a start with ineffective rules is refused."
+        notes: ["Adopt A KVM-Backed Runtime Opt-In. Proceed only after a positive decision from sprint 8 measurements."]
+      - title: "Measure nested containers on both legs"
+        test: "Exercise network, process and resource limits with an inner container on both legs. Record each guarantee as held or violated before deciding whether to offer nesting."
+        issues: [porelo#B169]
+        notes: ["Assess Nested Container Guarantees. This parent also covers sprint 10."]
+  - id: "10"
+    title: "Allow inner containers only in the proven case"
+    goal: "Nesting cannot extend allowed reach or bypass guarded mode."
+    functions:
+      - title: "Allow inner containers only in the proven case"
+        test: "Try allowed and unallowed destinations from an inner container; only the allowed one works. A guarded task with nesting enabled is refused. If measurements require a separate kernel, nesting on a shared kernel remains refused."
+        notes: ["Enable Assessed Nested Containers; Verify Nested Container Refusals. If the assessment is negative, record the reasons and do not introduce nesting."]

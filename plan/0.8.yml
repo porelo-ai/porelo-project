@@ -23,6 +23,13 @@ sprints:
       - title: "A thread follows the new push"
         test: "A thread on lines the new push left unchanged moves with them; one on changed lines stays on its old commit and says so."
         issues: [porelo#B176]
+  - id: "2a"
+    title: "Understand the scope of a review"
+    goal: "The person can tell what was read and what was cut from a running or stopped task."
+    functions:
+      - title: "A large diff and local commits shown honestly"
+        test: "Open a review larger than 4 MiB; it is cut at a file boundary, says so and keeps the full file list. Read a running task with local commits, then stop it. Summary, commits and diff agree in both states; missing parts must not appear complete."
+        issues: [porelo#B150, porelo#B174, porelo-frontend#F112]
   - id: "3"
     title: "An agent that only reviews"
     goal: "A task in the role reviewer reads waiting work and writes comments, nothing else; its agent and effort follow the work."
@@ -33,6 +40,13 @@ sprints:
       - title: "Its agent and effort chosen by the work"
         test: "A reviewer started for an issue with risk `harm` runs the agent and effort the project's rule names for `check`, and the start says which rule chose it; a flag overrides it."
         issues: [porelo-project#PJ64]
+  - id: "3a"
+    title: "Choose the review mode"
+    goal: "A reviewer receives its named mode and thinking level."
+    functions:
+      - title: "A read-only OMP reviewer started explicitly"
+        test: "Start OMP with read-only mode and a thinking level; the agent receives those values. An unknown mode or level is refused before the start. Try a reviewer push or approval; the host still refuses it."
+        issues: [porelo#B101, porelo-omp#OM19]
   - id: "4"
     title: "Rounds of check and fix"
     goal: "Work waiting at a gate is checked, fixed and checked again before the person approves it."
@@ -84,6 +98,14 @@ sprints:
       - title: "A pull request from outside only read"
         test: "A pull request of an unknown account on the host's Forgejo is read and commented, never built; the refusal to build names its source level."
         issues: [porelo-project#PJ73]
+  - id: "8a"
+    title: "Protect main without a bypass"
+    goal: "Every change reaches main through the required pull request checks."
+    functions:
+      - title: "Direct pushes and red checks refused"
+        test: "Try direct pushes to main with the project account and another account; both fail. Try to merge a pull request with a red required check; it is refused. A permitted person can merge once all required checks pass."
+        issues: [porelo-project#PJ34]
+        notes: ["Require Checks On Pull Requests; Remove Direct Main Bypasses. Build these parts after the forge review path works."]
   - id: "9"
     title: "The review in IntelliJ"
     goal: "A developer reads and writes review comments in IntelliJ's diff as on a colleague's change."

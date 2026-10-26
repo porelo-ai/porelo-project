@@ -15,6 +15,55 @@ sprints:
       - title: "Keys and providers without stumbling"
         test: "A key pasted at `vault put` is read whole; an agent given a provider it does not know is refused before the start."
         issues: [porelo#B228, porelo#P09]
+  - id: "1a"
+    title: "Connections finish or say why they failed"
+    goal: "A first connection has a clear loading state and a bounded wait."
+    functions:
+      - title: "Load, time out and forget one connection"
+        test: "Load a page for the first time and open a rarely used connection action; both show the same loading state. Connect a server that accepts but never answers; the call ends with a named timeout. Forget one connection; the others remain."
+        issues: [porelo#B200, porelo-frontend#F91, porelo-frontend#F93]
+  - id: "1b"
+    title: "Tell work from rest"
+    goal: "The terminal and task card agree about what the agent is doing."
+    functions:
+      - title: "An agent shown working, resting or waiting"
+        test: "Attach to an agent, let it work, rest and wait, and compare the CLI with the task card. Both show the same state; rest must not appear as ongoing work. Check the Pi activity path too."
+        issues: [porelo#B118, porelo-frontend#F99, porelo-pi#PI33]
+  - id: "1c"
+    title: "Choose the right existing sign-in"
+    goal: "An imported sign-in belongs to the provider the person selected."
+    functions:
+      - title: "Import one provider and recognize OMP"
+        test: "Sign Pi in to two providers, import the chosen provider and start a task; the other sign-in must not be selected. Detect OMP through agent.db and import its SQLite sign-in. An undetermined sign-in must be shown as unknown."
+        issues: [porelo#B226, porelo-pi#PI36, porelo-omp#OM32, porelo-omp#OM33]
+  - id: "1d"
+    title: "Installed agents fit the start"
+    goal: "Package compatibility and command options say what they actually do."
+    functions:
+      - title: "Refuse an incompatible protocol and a meaningless option"
+        test: "Install compatible and too-old core packages with the agent; only an incompatible protocol version is refused. Exercise the defined behavior of --now, or confirm its removal is explained; it must never be accepted without an effect."
+        issues: [porelo#B230, porelo-claude-code#CC22, porelo#B201]
+  - id: "1e"
+    title: "Use a provider that fits"
+    goal: "A supported wire format works even when the agent does not already know the provider."
+    functions:
+      - title: "Start local, organization and added providers"
+        test: "Use a loopback provider, an organization HTTPS provider, xAI, Zhipu and Z.AI. A supported dialect works; an unsupported dialect and HTTP outside loopback are refused before the start."
+        issues: [porelo#P10, porelo#B149, porelo#P07, porelo#P08]
+  - id: "1f"
+    title: "Deliver to the chosen branch"
+    goal: "The person chooses where the approved work goes."
+    functions:
+      - title: "The chosen branch receives the work"
+        test: "Choose a branch template or an explicit branch, approve the work and read the result on GitHub. Only the chosen branch receives it; an existing online branch belonging to someone else is refused."
+        issues: [porelo#B190, porelo-frontend#F97]
+  - id: "1g"
+    title: "Explain a refused delivery"
+    goal: "A delivery failure stays visible and says what the person can do."
+    functions:
+      - title: "A failed delivery named and kept visible"
+        test: "Make the forge stop answering and trigger other delivery refusals. Each answer ends within the configured bound with a distinct reason code; the error remains visible. The card names its repository, and a project push made by the person is picked up."
+        issues: [porelo#B179, porelo#B197, porelo-frontend#F117]
   - id: "2"
     title: "A project proposed from the checkout"
     goal: "Whoever needs more than the default image or `default` gets drafts from what the checkout already says."
@@ -40,6 +89,13 @@ sprints:
       - title: "A step for someone else handed over"
         test: "A step for an administrator comes as instructions and as a file to run; the wizard waits for its check."
         notes: ["hand-overs in the wizard"]
+  - id: "3a"
+    title: "Use the terminal beside a live task list"
+    goal: "The person can type normally and follow tasks as their states change."
+    functions:
+      - title: "A terminal and live list used together"
+        test: "Use the embedded terminal as an ordinary terminal and open task list --watch beside it. States and the clearance hint update. Input reaches the task whole and unchanged; Ctrl-C restores the terminal."
+        issues: [porelo-frontend#F105, porelo#B48]
   - id: "4"
     title: "A chat beside the wizard, and a run with nobody there"
     goal: "Questions about the current step, and the same plan for many machines."

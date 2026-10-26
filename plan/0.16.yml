@@ -1,0 +1,59 @@
+# The plan of release 0.16. Issue states are not written here: they are read from each repository's index.
+release: "0.16"
+goal: "Manage organization rules and personal access, and take in existing projects"
+sprints:
+  - id: "1"
+    title: "Require both project and machine to allow a provider"
+    goal: "A developer cannot bypass the narrower provider list."
+    functions:
+      - title: "Require both project and machine to allow a provider"
+        test: "Configure different provider lists in the project and a root-owned machine rule. Start a provider allowed by both. Try a provider allowed at only one level and a custom provider definition; both are refused with a reason."
+        issues: [porelo#B151, porelo-project#PJ16]
+  - id: "2"
+    title: "Inherit signed rules through the organization"
+    goal: "A team or project can narrow a rule only as its parent permits."
+    functions:
+      - title: "Inherit signed rules through the organization"
+        test: "Connect organization, team and project settings and narrow an allowed value. Try to widen a fixed value, alter a signature and insert an unrelated project. The permitted narrowing works; all three bypasses are refused by name."
+        issues: [porelo#B198]
+        notes: ["Pin An Organization Root; Verify The Settings Chain; Inherit Organization Settings; Enforce Fixed And Narrow-Only Settings."]
+  - id: "3"
+    title: "Understand where a binding setting came from"
+    goal: "The interface explains each setting's origin and allowed changes."
+    functions:
+      - title: "Understand where a binding setting came from"
+        test: "Open machine and project settings, read their rule chain and effective providers, and try changing a locked setting. The interface explains its origin and the permitted next step; the daemon still refuses the forbidden change."
+        issues: [porelo-frontend#F62, porelo-frontend#F123]
+  - id: "4"
+    title: "Open administration and daily work separately"
+    goal: "Each role offers its intended work area and a usable access route."
+    functions:
+      - title: "Open administration and daily work separately"
+        test: "Open the interface as user, host-admin and access-admin. Walk setup, admitting a person and daily work. Each role sees its intended functions; the stated SSH and VPN routes can actually be reached."
+        issues: [porelo-project#PJ71]
+        notes: ["Separate Administrative Entry Points; Define Host Access Routes. Roles choose the offered functions and add no separate authorization check. Decide access routes before implementation; this parent also covers sprint 5."]
+  - id: "5"
+    title: "Admit and remove another person"
+    goal: "Personal access does not require sharing a private key."
+    functions:
+      - title: "Admit and remove another person"
+        test: "Admit a second computer with its own key and reach the intended services. Remove that person; their access ends while the other person's access remains. The handover file contains no private key."
+        notes: ["Exchange Public Access Requests; Provision Personal Host Access; Revoke Personal Host Access. Continue sprint 4 after deciding account, forge and room access."]
+  - id: "6"
+    title: "Take in existing repositories and signing keys"
+    goal: "The person chooses from what already exists and sees the actual token state."
+    functions:
+      - title: "Choose a repository and signing key"
+        test: "Read all default repositories. Choose a signing key from a file or create one and inspect it in the shared overview. An unsuitable key is refused."
+        issues: [porelo-frontend#F147, porelo-frontend#F84, porelo-frontend#F94]
+      - title: "Recognize a token awaiting organization approval"
+        test: "Create a project against the GitHub test organization with a token awaiting approval. The interface says it is waiting for approval instead of calling it invalid; after approval the operation succeeds."
+        issues: [porelo-frontend#F115, porelo-frontend#F59]
+  - id: "7"
+    title: "Follow a local or offline project"
+    goal: "Project intake works without a public repository."
+    functions:
+      - title: "Follow a local or offline project"
+        test: "Select a directory and bundle, watch the upload and reconnect. The followed project is recognized as a file source. A bundle above 1 GiB, a disallowed path and a damaged bundle are refused."
+        issues: [porelo#B160, porelo-frontend#F104]
+        notes: ["Deliver the core upload before the interface flow."]

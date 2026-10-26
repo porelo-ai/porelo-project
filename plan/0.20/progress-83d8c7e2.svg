@@ -1,0 +1,373 @@
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1106 554" role="img" aria-label="Sprint progress for release 0.20">
+<title>Sprint progress for release 0.20</title>
+<style>
+text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
+@media (prefers-color-scheme:dark){text{fill:#f0efec}.legend{fill:#c3c2b7}.c-surface{fill:#1a1a19}.c-grid{fill:#383835}.c-backlog{fill:#80bee6}.c-estimated{fill:#b497cf}.c-analyzed{fill:#77766f}.c-accepted{fill:#aaa9a2}.c-review{fill:#3987e5}.c-idea{fill:#d95926}.c-new{fill:#1a1a19}}
+</style>
+<rect width="100%" height="100%" fill="#fcfcfb" class="c-surface"/>
+
+
+<g transform="translate(0 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#0ca30c" class="c-done" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Finished / Rejected</text>
+</g>
+
+
+<g transform="translate(320 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#2a78d6" class="c-review" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Review</text>
+</g>
+
+
+<g transform="translate(640 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#fab219" class="c-impl" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Implementing / Rework</text>
+</g>
+
+
+<g transform="translate(0 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#8ac8f0" class="c-backlog" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Backlog</text>
+</g>
+
+
+<g transform="translate(320 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#9575b5" class="c-estimated" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Estimated</text>
+</g>
+
+
+<g transform="translate(640 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#77766f" class="c-analyzed" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Analyzed</text>
+</g>
+
+
+<g transform="translate(0 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#b9b8b2" class="c-accepted" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Accepted</text>
+</g>
+
+
+<g transform="translate(320 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#eb6834" class="c-idea" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Idea</text>
+</g>
+
+
+<g transform="translate(640 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#ffffff" class="c-new" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Not filed yet / Missing</text>
+</g>
+
+
+
+<g transform="translate(0 94)">
+<text x="0" y="17">1. Prove the Apple silicon VM can enforce the boundaries</text>
+<desc>Accepted 1, Idea 1, Not filed yet 1. B251: porelo#B251 · Idea · - · Porelo Inside a Lima VM; PJ55: porelo-project#PJ55 · Accepted · — · Porelo runs on arm64; Define And Check The ARM Baseline. The ARM parent also covers sprints 2 through 4. Use real Apple silicon; package building waits for this probe to pass.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Prove the Apple silicon VM can enforce the boundaries: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 124)">
+<text x="0" y="17">2. Install native ARM core packages</text>
+<desc>Not filed yet 1. Build Porelo For ARM64; Publish ARM64 Package Indexes. Continue sprint 1.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Install native ARM core packages: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 154)">
+<text x="0" y="17">3. Run the supported ARM agents</text>
+<desc>Not filed yet 1. Build Claude Code Adapter For ARM64; Build Pi Adapter For ARM64; Build OMP Adapter For ARM64; Build Codex Adapter For ARM64. Continue sprint 2.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Run the supported ARM agents: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 184)">
+<text x="0" y="17">4. Read messages and builds on ARM</text>
+<desc>Not filed yet 1. Build Sluice For ARM64; Build Matrix Transport For ARM64; Build The Build Reader For ARM64. Continue sprint 3.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Read messages and builds on ARM: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 214)">
+<text x="0" y="17">5. Install the Mac application</text>
+<desc>Analyzed 1, Not filed yet 1. F109: porelo-frontend#F109 · Analyzed · XL · The Interface On macOS, With Porelo In A Local VM; Build The macOS Frontend; Publish The macOS Application Package. This parent also covers sprint 6.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Install the Mac application: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 244)">
+<text x="0" y="17">6. Set up the local VM from the Mac interface</text>
+<desc>Not filed yet 1. Set Up A Local Lima VM From The Frontend; Verify Remote SSH From macOS. Continue sprint 5 with the approved Mac test window and budget.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Set up the local VM from the Mac interface: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 274)">
+<text x="0" y="17">7. Prepare Fedora through the host roles</text>
+<desc>Idea 2, Not filed yet 1. HO15: porelo-host#HO15 · Idea · - · The Host On Fedora; F138: porelo-frontend#F138 · Idea · — · A Host On Fedora From The Same Command; Configure Fedora Host Roles; Verify Fedora Host Provisioning. These parents also cover sprint 8; the unattended setup and reach-boundary releases must pass first.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="266.6666666666667" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Prepare Fedora through the host roles: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 304)">
+<text x="0" y="17">8. Use the ordinary host flow for Fedora</text>
+<desc>Not filed yet 1. Bootstrap Fedora Host Tools; Offer Fedora In The Host Flow. Continue sprint 7 with an available Fedora host or provider image.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Use the ordinary host flow for Fedora: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 334)">
+<text x="0" y="17">9. Choose drive areas for each host</text>
+<desc>Idea 1, Not filed yet 1. PJ50: porelo-project#PJ50 · Idea · — · A host mounts the person's drives; Describe Personal And Host Drives; Mount Only Selected Host Drive Areas. The access boundaries from release 0.16 must work first.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Choose drive areas for each host: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 364)">
+<text x="0" y="17">10. Use a secrets file readable by a separate tool</text>
+<desc>Idea 1, Not filed yet 1. PJ51: porelo-project#PJ51 · Idea · — · The person's secrets kept once, in a file they can open; Read And Write KDBX Setup Secrets; Preserve Concurrent Secret File Changes. This parent also covers sprint 11; decide the file format and protection scope first.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Use a secrets file readable by a separate tool: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 394)">
+<text x="0" y="17">11. Open the secrets file only on the desktop</text>
+<desc>Not filed yet 1. Supply Host Stop Secrets Through Standard Input; Guide Setup Secret Storage Choices. Continue sprint 10.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Open the secrets file only on the desktop: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 424)">
+<text x="0" y="17">12. Use OneDrive with measured protection</text>
+<desc>Idea 2, Not filed yet 1. HO16: porelo-host#HO16 · Idea · - · The Person's Drive On OneDrive; F139: porelo-frontend#F139 · Idea · — · OneDrive As The Project's Drive; Run The OneDrive Host Client; Protect OneDrive Setup Material. These parents also cover sprint 13; use a OneDrive test account.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="266.6666666666667" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Use OneDrive with measured protection: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 454)">
+<text x="0" y="17">13. Choose the drive service during setup</text>
+<desc>Not filed yet 1. Choose The Project Drive Service; Complete The Selected Drive Login. Continue sprint 12.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Choose the drive service during setup: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 484)">
+<text x="0" y="17">14. Reach a remote machine from Windows</text>
+<desc>Backlog 1, Analyzed 1. F37: porelo-frontend#F37 · Analyzed · L · Reach A Machine Without An ssh Binary; F108: porelo-frontend#F108 · Backlog · M · A Machine Over Ssh From Windows; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Reach a remote machine from Windows: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 514)">
+<text x="0" y="17">15. Notify the Windows user and close connections cleanly</text>
+<desc>Analyzed 1, Idea 2. F114: porelo-frontend#F114 · Analyzed · M · Windows Notifications From The MSIX; IJ10: porelo-intellij#IJ10 · Idea ·  · Relays and connections end cleanly; IJ11: porelo-intellij#IJ11 · Idea ·  · Tried on a Windows machine; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="133.33333333333334" width="266.6666666666667" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Activate a Windows notification: Not tested</title>⚪</text>
+
+
+<text x="1030" y="17"><title>Close WSL and SSH sessions without leftovers: Not tested</title>⚪</text>
+
+</g>
+
+</svg>

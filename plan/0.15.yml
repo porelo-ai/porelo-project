@@ -1,0 +1,47 @@
+# The plan of release 0.15. Issue states are not written here: they are read from each repository's index.
+release: "0.15"
+goal: "Trace what a task did, where its work came from and what was approved"
+sprints:
+  - id: "1"
+    title: "Read events after the task is gone"
+    goal: "The past remains readable through the terminal and daemon."
+    functions:
+      - title: "Read events after the task is gone"
+        test: "Start, push and remove a task. Clear its runtime directory or restart the machine. Read events using a cursor and older log windows; order and truncation markers are correct. The event journal contains neither credentials nor unrestricted agent output."
+        issues: [porelo#B26, porelo#B116]
+  - id: "2"
+    title: "Detect changes to the history"
+    goal: "Approval evidence remains verifiable after clear."
+    functions:
+      - title: "Detect changes to the history"
+        test: "Approve, reject and change a credential. Change a journal line and truncate the end; verification names both changes. Run clear; the evidence remains. Remove the old message hash chain only after this proof."
+        issues: [porelo#B154, porelo#B121]
+        notes: ["Use the shared event journal, without a second journal implementation."]
+  - id: "3"
+    title: "See origin and current inventory"
+    goal: "The person can trace a handover and read what the account operates."
+    functions:
+      - title: "See origin and current inventory"
+        test: "Hand over a file, let the task modify files and remove it. Origin and change size remain readable. Compare text and JSON inventory: agents, providers, credentials, projects, models and last use agree; secret values are absent."
+        issues: [porelo#B38, porelo#B156]
+  - id: "4"
+    title: "Keep reliable commit details and private logs"
+    goal: "Commit origin comes from the host and logs disclose no secrets."
+    functions:
+      - title: "Keep reliable commit details and private logs"
+        test: "Approve work from different models and read the merge trailers. Offer forged agent details; they cannot replace the host record. Send a test secret through broker and gate; it appears in no log. File permissions and retention match the stated rules."
+        issues: [porelo#B144, porelo#B155]
+  - id: "5"
+    title: "Read a coherent work history"
+    goal: "Session replay and the filtered timeline show the same sequence."
+    functions:
+      - title: "Read a coherent work history"
+        test: "Create a session with terminal, broker and gate events. Replay it and filter the timeline by source; time order is retained. Reach size and retention limits; neither host nor interface blocks."
+        issues: [porelo#B168, porelo-frontend#F111]
+  - id: "6"
+    title: "Keep each backup's own record"
+    goal: "Overlapping backups preserve their own consistent state."
+    functions:
+      - title: "Keep each backup's own record"
+        test: "Trigger overlapping Matrix backups with different source states and restore each. Each contains its own consistent state; neither overwrites the other or combines unrelated files."
+        issues: [porelo-message-matrix#MX39]

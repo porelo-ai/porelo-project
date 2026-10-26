@@ -1,0 +1,41 @@
+# The plan of release 0.12. Issue states are not written here: they are read from each repository's index.
+release: "0.12"
+goal: "Installed packages, setup scripts and images have a verifiable origin"
+sprints:
+  - id: "1"
+    title: "Check unusual workflow spellings too"
+    goal: "A different YAML spelling cannot bypass a supply-chain check."
+    functions:
+      - title: "Check unusual workflow spellings too"
+        test: "Build every Maven repository with the corrected parent. Restore a plugin version with a known advisory; the check names it. Offer the same forbidden workflow permission normally, quoted and in flow YAML; all forms are refused."
+        issues: [porelo#B210, porelo-buildtools#BT30]
+  - id: "2"
+    title: "Sign packages and setup with the trusted key"
+    goal: "Only correctly signed publications are offered and installed."
+    functions:
+      - title: "Sign packages and setup with the trusted key"
+        test: "Install Porelo and the Claude Code adapter from their joint published version. Verify the RPM and versioned setup script. Send an unsigned package and one signed by another key through publication and installation; both paths refuse them."
+        issues: [porelo#B99, porelo-claude-code#CC23]
+        notes: ["Confirm the other packages named by the signing parent before starting the joint change."]
+  - id: "3"
+    title: "Install from the intended package source"
+    goal: "A fresh machine trusts the correct source and keeps signature checking enabled."
+    functions:
+      - title: "Install from the intended package source"
+        test: "Install through the interface on fresh Fedora and Debian or Ubuntu. Change the setup script; it must not run. Offer an agent package with the same name from another source; it is not selected. Install the correctly signed package and confirm package checking remains enabled."
+        issues: [porelo#B196, porelo-frontend#F81, porelo#B260]
+  - id: "4"
+    title: "See the exact image and package contents"
+    goal: "The person can identify the fixed parts that are running."
+    functions:
+      - title: "See the exact image and package contents"
+        test: "Read package contents or its SBOM. Follow a project with an image tag alone; start is refused until an explicit one-time exception. Change the digest; the next start names the change. Check a moving runner name; it is refused while a versioned runner is accepted."
+        issues: [porelo#B41, porelo#B98, porelo-buildtools#BT18]
+        notes: ["Apply an image signature policy only within its explicitly chosen scope."]
+  - id: "5"
+    title: "Recover from an unavailable image source"
+    goal: "An image build tries a configured second source after a bounded first attempt."
+    functions:
+      - title: "Recover from an unavailable image source"
+        test: "Make the first Ubuntu mirror stop answering and build the image. The first attempt ends within its bound and the configured fallback succeeds. An unknown source remains refused."
+        issues: [porelo#B263]

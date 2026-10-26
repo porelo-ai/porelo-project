@@ -136,6 +136,27 @@ sprints:
         tested: "2026-10-25"
         issues: [porelo#B253, porelo-adapters#GH06]
         covers: [porelo-project#PJ62]
+  - id: "3a"
+    title: "Trust the local build"
+    goal: "A local build checks its commits and reuses only results that still apply."
+    functions:
+      - title: "The commit checked and a proven build reused"
+        test: "Check a valid and an invalid commit locally and in the build; the invalid one is refused by name. Change only Actions and confirm no full Build starts. Reuse fresh legs for the same tree; a different tree or an old result must be refused."
+        issues: [porelo-buildtools#BT17, porelo-buildtools#BT13, porelo-claude-code#CC34, porelo-pi#PI31]
+  - id: "3b"
+    title: "Receive the test machine requested"
+    goal: "A run asking for IPv4 alone gets exactly that."
+    functions:
+      - title: "One primary IPv4 and no IPv6"
+        test: "Rent an IPv4-only leg machine and read the provider inventory; it shows exactly one primary IPv4 and no IPv6. Return the machine and confirm its resources are gone."
+        issues: [porelo-buildtools#BT10]
+  - id: "3c"
+    title: "A dry run says what will be refused"
+    goal: "The person sees an agent refusing a host before starting the task."
+    functions:
+      - title: "A refused host shown as refused"
+        test: "Run task start with --dry-run for an allowed host and one the agent refuses; the latter is named as refused and is refused again by the running task."
+        issues: [porelo#B235]
   - id: "4"
     title: "The local forge builds as the central one"
     goal: "Forgejo, its registry and the test machines on the host; one repository builds there unchanged."
@@ -173,6 +194,27 @@ sprints:
         test: "Antigravity with the operator's Google subscription and Codex CLI with its sign-in, both from the vault."
         issues: [porelo#P12, porelo-agy#AG01, porelo-codex#CX01, porelo#B272, porelo-codex#CX02]
         notes: ["AGY's move issue", "Codex's move issue"]
+  - id: "6a"
+    title: "Use the ChatGPT sign-in"
+    goal: "A Codex task works through the sign-in kept by the host."
+    functions:
+      - title: "Codex answers without holding real tokens"
+        test: "Start a Codex task with the ChatGPT sign-in and ask it a question. Search the container for the real tokens; none are present. Interrupt a refresh after rotation and resume; the new refresh token must still work."
+        issues: [porelo#P11]
+  - id: "6b"
+    title: "Messages keep their text"
+    goal: "A message with non-ASCII text reaches the program whole."
+    functions:
+      - title: "Non-ASCII arguments and paths arrive whole"
+        test: "Send a room message and use a path containing non-ASCII characters through each launched program; the recipient sees exactly the text sent, without replacement characters or missing bytes."
+        issues: [porelo#B215]
+  - id: "6c"
+    title: "A repeated tool failure ends the test run"
+    goal: "The task acceptance run stops a loop even when the agent redraws its screen."
+    functions:
+      - title: "A compact failure loop stopped"
+        test: "Run an acceptance scenario with an agent that redraws a compact view and repeats a failed tool call; the loop watch stops it before the scenario bound and names the repeated failure. A progressing scenario must continue."
+        issues: [porelo#B244]
   - id: "7"
     title: "The move, second wave: the other toolchains"
     goal: "Gradle and Flutter move."
@@ -187,6 +229,13 @@ sprints:
         test: "porelo-frontend's leased leg asks for the kind `amd64` on Forgejo and gets an account of the pool, reset afterwards, and a rented machine on the central forge; no workflow names a provider."
         issues: [porelo-host#HO12, porelo-buildtools#BT24, porelo-buildtools#BT25]
         notes: ["The pool taken by the same call on Forgejo"]
+  - id: "7a"
+    title: "The website and IntelliJ work in the task"
+    goal: "The website builds and a person reviews waiting work from IntelliJ."
+    functions:
+      - title: "Build the website and review in IntelliJ"
+        test: "Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed. In IntelliJ read a waiting push, approve the displayed commit and reject another with a reason. A new push appears within the stated seconds; approval of the old commit is refused."
+        issues: [porelo-ai.github.io#SI05, porelo-intellij#IJ01, porelo-intellij#IJ02]
   - id: "8"
     title: "The move, last wave"
     goal: "Core with a way back, then the coordinator."
@@ -217,3 +266,25 @@ sprints:
       - title: "An unfollow leaves nothing of the project"
         test: "After `porelo project unfollow`, `porelo prune` finds nothing of the project left: no clone, no build lock, no upstream copy."
         issues: [porelo#B238]
+  - id: "9a"
+    title: "The host collection is checked before use"
+    goal: "The host setup refuses a collection whose contents changed."
+    functions:
+      - title: "A changed collection refused"
+        test: "Install the host collection through the interface, then offer a changed collection tarball with the original digest; installation is refused before its contents run."
+        issues: [porelo-frontend#F137]
+  - id: "10"
+    title: "Accept the published tools"
+    goal: "The release is installed from its publication channel and its dependencies are checked."
+    functions:
+      - title: "A published release installed and verified"
+        test: "Publish and pin Buildtools 0.5.1, then build IntelliJ from an empty Gradle home. Change a dependency digest; the build must fail. Install the release leg from its publication channel; a wrong channel or a candidate must be refused as proof of the tested release."
+        issues: [porelo-intellij#IJ09, porelo-buildtools#BT01]
+  - id: "11"
+    title: "Check the whole move"
+    goal: "The setup and move are judged against their full parent criteria."
+    functions:
+      - title: "The setup, move and recovery proven together"
+        test: "Bring up the project, run the local builds, move each agent and restore the room and usage after giving the host back. Compare the results with every setup and move criterion; a missing local-build or recovery prerequisite keeps the parent acceptance open."
+        issues: [porelo-project#PJ40, porelo-project#PJ39]
+        notes: ["Parent acceptance only; the work is carried by the setup, build, move and recovery functions. Parent acceptance remains open until the complete one-build proof in release 0.19 and the recovery prerequisites pass."]

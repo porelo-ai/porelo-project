@@ -1,0 +1,245 @@
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1106 344" role="img" aria-label="Sprint progress for release 0.13">
+<title>Sprint progress for release 0.13</title>
+<style>
+text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
+@media (prefers-color-scheme:dark){text{fill:#f0efec}.legend{fill:#c3c2b7}.c-surface{fill:#1a1a19}.c-grid{fill:#383835}.c-backlog{fill:#80bee6}.c-estimated{fill:#b497cf}.c-analyzed{fill:#77766f}.c-accepted{fill:#aaa9a2}.c-review{fill:#3987e5}.c-idea{fill:#d95926}.c-new{fill:#1a1a19}}
+</style>
+<rect width="100%" height="100%" fill="#fcfcfb" class="c-surface"/>
+
+
+<g transform="translate(0 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#0ca30c" class="c-done" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Finished / Rejected</text>
+</g>
+
+
+<g transform="translate(320 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#2a78d6" class="c-review" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Review</text>
+</g>
+
+
+<g transform="translate(640 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#fab219" class="c-impl" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Implementing / Rework</text>
+</g>
+
+
+<g transform="translate(0 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#8ac8f0" class="c-backlog" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Backlog</text>
+</g>
+
+
+<g transform="translate(320 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#9575b5" class="c-estimated" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Estimated</text>
+</g>
+
+
+<g transform="translate(640 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#77766f" class="c-analyzed" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Analyzed</text>
+</g>
+
+
+<g transform="translate(0 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#b9b8b2" class="c-accepted" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Accepted</text>
+</g>
+
+
+<g transform="translate(320 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#eb6834" class="c-idea" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Idea</text>
+</g>
+
+
+<g transform="translate(640 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#ffffff" class="c-new" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Not filed yet / Missing</text>
+</g>
+
+
+
+<g transform="translate(0 94)">
+<text x="0" y="17">1. Keep project intake and sign-in free of hidden secrets</text>
+<desc>Estimated 1, Analyzed 1, Accepted 1, Idea 1, Not filed yet 1. B202: porelo#B202 · Accepted · - · Credential Names In A Project File Checked; B140: porelo#B140 · Estimated · M · A Secret Scan Of The Workspace At Start; B178: porelo#B178 · Analyzed · M · A Credential With No Expiry Said So; B252: porelo#B252 · Idea · - · A Sign-In Collected on No Disk; Decide how existing credential names migrate before enforcing the new names.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="80.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="80.0" width="80.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="160.0" width="80.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="240.0" width="80.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+<rect x="320.0" width="80.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 5 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Keep project intake and sign-in free of hidden secrets: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 124)">
+<text x="0" y="17">2. Control sign-in from the person's terminal</text>
+<desc>Analyzed 1, Accepted 2, Not filed yet 1. B271: porelo#B271 · Analyzed · M · A Login Is Cancelled From Its Own Terminal; B270: porelo#B270 · Accepted · - · A Forge Token Stored By The Forge's Own Login; PJ54: porelo-project#PJ54 · Accepted · — · The ChatGPT sign-in is a provider; Parent acceptance for the ChatGPT provider delivered in release 0.6; no second implementation.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="100.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="100.0" width="200.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
+
+<rect x="300.0" width="100.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 4 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Cancel the agent sign-in completely: Not tested</title>⚪</text>
+
+
+<text x="1030" y="17"><title>Store a forge sign-in without pasting a token: Not tested</title>⚪</text>
+
+
+<text x="1054" y="17"><title>Verify the complete ChatGPT sign-in: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 154)">
+<text x="0" y="17">3. Give a transport its secret through the intended input</text>
+<desc>Backlog 2, Not filed yet 1. B206: porelo#B206 · Backlog · L · A Transport Takes Its Secrets On Its Input; MX23: porelo-message-matrix#MX23 · Backlog · M · The Transport Takes Its Tokens On Its Input; Change the host contract before adapting Matrix.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="266.6666666666667" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 2</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Give a transport its secret through the intended input: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 184)">
+<text x="0" y="17">4. Remove access without deleting another person's keys</text>
+<desc>Estimated 2, Analyzed 1. B117: porelo#B117 · Estimated · M · What Clearing Leaves For A Person; B153: porelo#B153 · Estimated · M · Unused Slots And Keys Reported; F96: porelo-frontend#F96 · Analyzed · M · Keys A Machine No Longer Knows, Found By Their Title; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="266.6666666666667" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 2</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Remove access without deleting another person's keys: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 214)">
+<text x="0" y="17">5. Measure hardware protection first</text>
+<desc>Estimated 1, Analyzed 1, Not filed yet 1. B63: porelo#B63 · Estimated · XL · A Share That Is Not Stored At All; F52: porelo-frontend#F52 · Analyzed · XL · Release A Device's Key Only With A Touch Or A PIN; Measure FIDO2 Share Derivation; Derive Device Shares At Unlock. These parents also cover sprints 6 through 8. Desktop FIDO2 remains a separate later task.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Measure hardware protection first: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 244)">
+<text x="0" y="17">6. Unlock the machine with the right touched token</text>
+<desc>Not filed yet 1. Enroll A Machine With FIDO2; Record Verifiable Slot Evidence. Continue the hardware-protection parents from sprint 5.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Unlock the machine with the right touched token: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 274)">
+<text x="0" y="17">7. Show only proven TPM2 protection</text>
+<desc>Not filed yet 1. Enroll A Machine With TPM2; Verify Claimed Slot Protection. Continue sprint 6.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Show only proven TPM2 protection: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 304)">
+<text x="0" y="17">8. Unlock the desktop with TPM2 and a PIN</text>
+<desc>Not filed yet 1. Unlock With TPM2 On Linux; Unlock With TPM2 On Windows; Explain Device Unlock Refusals. Continue sprint 7.: Not filed yet; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>Unlock the desktop with TPM2 and a PIN: Not tested</title>⚪</text>
+
+</g>
+
+</svg>

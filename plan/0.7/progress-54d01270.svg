@@ -1,0 +1,345 @@
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1098 464" role="img" aria-label="Sprint progress for release 0.7">
+<title>Sprint progress for release 0.7</title>
+<style>
+text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
+@media (prefers-color-scheme:dark){text{fill:#f0efec}.legend{fill:#c3c2b7}.c-surface{fill:#1a1a19}.c-grid{fill:#383835}.c-backlog{fill:#80bee6}.c-estimated{fill:#b497cf}.c-analyzed{fill:#77766f}.c-accepted{fill:#aaa9a2}.c-review{fill:#3987e5}.c-idea{fill:#d95926}.c-new{fill:#1a1a19}}
+</style>
+<rect width="100%" height="100%" fill="#fcfcfb" class="c-surface"/>
+
+
+<g transform="translate(0 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#0ca30c" class="c-done" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Finished / Rejected</text>
+</g>
+
+
+<g transform="translate(320 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#2a78d6" class="c-review" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Review</text>
+</g>
+
+
+<g transform="translate(640 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#fab219" class="c-impl" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Implementing / Rework</text>
+</g>
+
+
+<g transform="translate(0 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#8ac8f0" class="c-backlog" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Backlog</text>
+</g>
+
+
+<g transform="translate(320 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#9575b5" class="c-estimated" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Estimated</text>
+</g>
+
+
+<g transform="translate(640 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#77766f" class="c-analyzed" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Analyzed</text>
+</g>
+
+
+<g transform="translate(0 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#b9b8b2" class="c-accepted" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Accepted</text>
+</g>
+
+
+<g transform="translate(320 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#eb6834" class="c-idea" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Idea</text>
+</g>
+
+
+<g transform="translate(640 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#ffffff" class="c-new" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Not filed yet / Missing</text>
+</g>
+
+
+
+<g transform="translate(0 94)">
+<text x="0" y="17">1. Starting in one's own repository</text>
+<desc>Review 1, Implementing 1, Estimated 1, Analyzed 7, Accepted 1. PJ14: porelo-project#PJ14 · Implementing · M · Work starts without a project; B229: porelo#B229 · Analyzed · S · A Follow Of A Repository Without A Commit Says So; B33: porelo#B33 · Analyzed · S · A Task's Own Fetches; F118: porelo-frontend#F118 · Review · — · An Upstream That Cannot Be Read Said Before A Start; PJ53: porelo-project#PJ53 · Analyzed · XL · The agent already on the machine is the default; B225: porelo#B225 · Analyzed · L · The Agent Found On The Machine; CC36: porelo-claude-code#CC36 · Analyzed · S · Report What Claude Code Finds Of Itself On The Host; B224: porelo#B224 · Analyzed · M · An Agent Protocol That Only Grows; F143: porelo-frontend#F143 · Accepted · — · The Agent The Machine Found Is The Default; B228: porelo#B228 · Analyzed · S · A Key Pasted At The Prompt Is Read Whole; P09: porelo#P09 · Estimated · M · A Native Agent And A Provider It Does Not Know; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="36.36363636363637" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
+
+<rect x="36.36363636363637" width="36.36363636363637" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+
+<rect x="72.72727272727273" width="36.36363636363637" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="109.0909090909091" width="254.54545454545453" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 7</title></rect>
+
+<rect x="363.6363636363636" width="36.36363636363637" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 11 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>Work without a project, with plain refusals: Not tested</title>⚪</text>
+
+
+<text x="1022" y="17"><title>The agent already on the machine is taken: Not tested</title>⚪</text>
+
+
+<text x="1046" y="17"><title>Keys and providers without stumbling: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 124)">
+<text x="0" y="17">1a. Connections finish or say why they failed</text>
+<desc>Analyzed 3. B200: porelo#B200 · Analyzed · M · A Varlink Call Has A Read Deadline; F91: porelo-frontend#F91 · Analyzed · M · One Way To Show Loading; F93: porelo-frontend#F93 · Analyzed · S · Connections: Its Rare Actions Out Of The Way; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 3</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>Load, time out and forget one connection: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 154)">
+<text x="0" y="17">1b. Tell work from rest</text>
+<desc>Backlog 1, Analyzed 1, Idea 1. B118: porelo#B118 · Analyzed · M · An Attached Agent Said At Rest Or Working; F99: porelo-frontend#F99 · Backlog · S · An Attached Agent Shown At Rest Or Working; PI33: porelo-pi#PI33 · Idea ·  · Tell Waiting From Pi's Program Status; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>An agent shown working, resting or waiting: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 184)">
+<text x="0" y="17">1c. Choose the right existing sign-in</text>
+<desc>Analyzed 3, Idea 1. B226: porelo#B226 · Analyzed · M · An Imported Credential Names Its Provider; PI36: porelo-pi#PI36 · Analyzed · M · Import And Report Pi's Sign-Ins On The Host; OM32: porelo-omp#OM32 · Analyzed · S · Report What Oh My Pi Finds Of Itself On The Host; OM33: porelo-omp#OM33 · Idea ·  · Read Oh My Pi's Sign-Ins From Its Database; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="300.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 3</title></rect>
+
+<rect x="300.0" width="100.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 4 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>Import one provider and recognize OMP: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 214)">
+<text x="0" y="17">1d. Installed agents fit the start</text>
+<desc>Estimated 1, Analyzed 2. B230: porelo#B230 · Analyzed · M · The Package Provides The Lowest Agent Protocol; CC22: porelo-claude-code#CC22 · Estimated · S · Depend on the agent protocol Porelo's package provides; B201: porelo#B201 · Analyzed · S · A Start Now, Built Or Removed; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="133.33333333333334" width="266.6666666666667" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>Refuse an incompatible protocol and a meaningless option: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 244)">
+<text x="0" y="17">1e. Use a provider that fits</text>
+<desc>Estimated 3, Analyzed 1. P10: porelo#P10 · Analyzed · M · A Native Agent Reaching A Provider It Does Not Know; B149: porelo#B149 · Estimated · M · A Local Provider Template; P07: porelo#P07 · Estimated · S · Provider xAI; P08: porelo#P08 · Estimated · S · Provider Zhipu; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="300.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
+
+<rect x="300.0" width="100.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 4 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>Start local, organization and added providers: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 274)">
+<text x="0" y="17">1f. Deliver to the chosen branch</text>
+<desc>Backlog 1, Analyzed 1. B190: porelo#B190 · Backlog · L · A Task's Branch Named By The Project's Scheme; F97: porelo-frontend#F97 · Analyzed · M · Forwarding To A Branch, Measured Against GitHub; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>The chosen branch receives the work: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 304)">
+<text x="0" y="17">1g. Explain a refused delivery</text>
+<desc>Backlog 1, Estimated 1, Analyzed 1. B179: porelo#B179 · Analyzed · M · A Code Beside Why A Release Cannot Go; B197: porelo#B197 · Estimated · M · A Push To A Slow Forge Has A Bound; F117: porelo-frontend#F117 · Backlog · M · What Walk 8 Left Unbuilt; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="133.33333333333334" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>A failed delivery named and kept visible: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 334)">
+<text x="0" y="17">2. A project proposed from the checkout</text>
+<desc>Estimated 2, Analyzed 5, Not filed yet 1. PJ52: porelo-project#PJ52 · Estimated · XL · A repository's build tools are recognized and a project proposed; B220: porelo#B220 · Analyzed · M · Build-Tool Plugins Found At Run Time; B221: porelo#B221 · Analyzed · L · A Project Proposed From A Checkout; B227: porelo#B227 · Analyzed · S · A Project Followed From A Path Is Refreshed; porelo-ecosystems, a new repository and agent, Maven first: Not filed yet; F142: porelo-frontend#F142 · Analyzed · M · The Drafts Offered Before The First Task In Default; B222: porelo#B222 · Analyzed · M · A Task's Tool Settings Written At Its Start; B219: porelo#B219 · Estimated · L · A Private Package Repository Through The Broker; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="100.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 2</title></rect>
+
+<rect x="100.0" width="250.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 5</title></rect>
+
+<rect x="350.0" width="50.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 8 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>`porelo project init` proposes tools and rules: Not tested</title>⚪</text>
+
+
+<text x="1022" y="17"><title>The drafts shown before the first task: Not tested</title>⚪</text>
+
+
+<text x="1046" y="17"><title>A company's private package repository, with no credential in the task: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 364)">
+<text x="0" y="17">3. The Porelo Wizard leads</text>
+<desc>Accepted 1, Not filed yet 4. PJ57: porelo-project#PJ57 · Accepted · — · A person is led from nothing to work; porelo-wizard, a new repository: Not filed yet; the catalogue of steps: Not filed yet; the checks porelo still lacks: Not filed yet; hand-overs in the wizard: Not filed yet; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="80.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="80.0" width="320.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 4</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 5 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>Questions, a plan, and taken up again: Not tested</title>⚪</text>
+
+
+<text x="1022" y="17"><title>A step for someone else handed over: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 394)">
+<text x="0" y="17">3a. Use the terminal beside a live task list</text>
+<desc>Estimated 1, Analyzed 1. F105: porelo-frontend#F105 · Analyzed · M · A Task's Terminal In The Interface As Outside It; B48: porelo#B48 · Estimated · M · The Overview That Stays Open; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>A terminal and live list used together: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 424)">
+<text x="0" y="17">4. A chat beside the wizard, and a run with nobody there</text>
+<desc>Not filed yet 3. the chat on flutter_ai_toolkit: Not filed yet; the chat's Claude Code provider: Not filed yet; a run from a file of answers: Not filed yet; </desc>
+<svg x="448" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 3</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="998" y="17"><title>A chat answers questions about the current step: Not tested</title>⚪</text>
+
+
+<text x="1022" y="17"><title>The same plan from a file of answers: Not tested</title>⚪</text>
+
+</g>
+
+</svg>

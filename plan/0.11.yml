@@ -1,0 +1,63 @@
+# The plan of release 0.11. Issue states are not written here: they are read from each repository's index.
+release: "0.11"
+goal: "Tasks, builds and transports reach only the resources that were allowed"
+sprints:
+  - id: "1"
+    title: "Check allowed destinations"
+    goal: "A network permission works exactly as the person sees it."
+    functions:
+      - title: "Check allowed destinations"
+        test: "Read resolver capability in doctor. Start a project with addresses, domains and sets. Reach an allowed destination; an unallowed one fails and is shown as refused. Allow a CNAME while the task runs; it becomes reachable. An incomplete set must not appear complete."
+        issues: [porelo#B34, porelo#B10, porelo#B237]
+  - id: "2"
+    title: "Let only Porelo own its Fedora socket"
+    goal: "Package installation establishes the required socket boundary."
+    functions:
+      - title: "Let only Porelo own its Fedora socket"
+        test: "Install the build on an enforcing SELinux Fedora machine and connect with Porelo. Have another program bind the protected socket; it is refused. Remove and reinstall the package; the module is removed and loaded as intended. Run the Fedora deploy path too, including --account."
+        issues: [porelo#B135, porelo#B40, porelo#B284]
+  - id: "3"
+    title: "Trust only the intended socket and inbox owner"
+    goal: "An AppArmor task accepts only the intended connection and messages."
+    functions:
+      - title: "Trust only the intended socket and inbox owner"
+        test: "Start a real task on AppArmor. Offer another program's socket, an inbox file owned by the wrong account and a symbolic link. The real connection and delivery work; each planted entry or wrong socket is refused and named."
+        issues: [porelo#B175, porelo#B184]
+  - id: "4"
+    title: "Keep image builds within their allowed sources"
+    goal: "A build can use an allowed private source without keeping its credential."
+    functions:
+      - title: "Keep image builds within their allowed sources"
+        test: "Build using an allowed public source and an authenticated private source. Fetch an unallowed destination from the snippet; that fetch is refused while the allowed fetches work. Inspect layers, build context and arguments; the private credential is absent."
+        issues: [porelo#B207, porelo#B223]
+        notes: ["Private package sources from release 0.7 must work first."]
+  - id: "5"
+    title: "Keep accounts and projects apart"
+    goal: "Another account or project cannot take over files, state or identity."
+    functions:
+      - title: "Keep accounts and projects apart"
+        test: "Run a transport against a declared and an undeclared destination; only the first works. Try reading Porelo data and review directories as a second account; access fails. Use project/task pairs a-b/c and a/b-c; state and credentials stay separate. Change PATH; privileged hooks still use their fixed programs."
+        issues: [porelo#B199, porelo#B50, porelo#B246, porelo#B249]
+        notes: ["The move acceptance in release 0.6 must be complete before this sprint starts."]
+  - id: "6"
+    title: "Keep public SSH closed after the VPN is ready"
+    goal: "The host has a tested recovery route while ordinary access stays inside the VPN."
+    functions:
+      - title: "Keep public SSH closed after the VPN is ready"
+        test: "Bring up the VPN, then try public SSH; it fails. Break the VPN and follow the documented recovery route successfully. Do not enable the restriction until this recovery route has been tested."
+        issues: [porelo-host#HO22]
+  - id: "7"
+    title: "Make security failures hold the release"
+    goal: "Deliberately breaking a boundary causes the required tests to fail."
+    functions:
+      - title: "Make security failures hold the release"
+        test: "Run Fedora isolation and all three misuse groups on their intended legs. Disable one protection in each group; its test turns red and blocks release approval. Restore protection; every required case runs, and an inapplicable skip cannot count as success."
+        issues: [porelo#B51, porelo#B142]
+  - id: "8"
+    title: "Know what a task can test"
+    goal: "The person sees which checks need a capability and which failure ended a run."
+    functions:
+      - title: "Know what a task can test"
+        test: "Run capability-tagged tests with and without the needed capability. A task skips only what it lacks; a complete CI leg runs every case. Emit a declared failure in task.log after the step baseline; the loop watch stops the run and names it."
+        issues: [porelo-project#PJ49, porelo#B119]
+        notes: ["Capability tags never replace a complete green build on the forge."]
