@@ -154,7 +154,7 @@ sprints:
     functions:
       - title: "The commit checked and a proven build reused"
         test: "Check a valid and an invalid commit locally and in the build; the invalid one is refused by name. Change only Actions and confirm no full Build starts. Reuse fresh legs for the same tree; a different tree or an old result must be refused."
-        issues: [porelo-buildtools#BT17, porelo-buildtools#BT13, porelo-claude-code#CC34, porelo-pi#PI31]
+        issues: [porelo-buildtools#BT17, porelo-buildtools#BT34, porelo-buildtools#BT13, porelo-claude-code#CC34, porelo-pi#PI31]
   - id: "4b"
     title: "Receive the test machine requested"
     goal: "A run asking for IPv4 alone gets exactly that."

@@ -296,17 +296,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 364)">
 <text x="0" y="17">4a. Trust the local build</text>
-<desc>Review 2, Implementing 2. BT17: porelo-buildtools#BT17 · Implementing · M · Commit Messages Checked Before And On A Push; BT13: porelo-buildtools#BT13 · Implementing · S · Action Moves Merged Without A Build; CC34: porelo-claude-code#CC34 · Review · S · Take The Legs From A Run That Proved The Same Tree; PI31: porelo-pi#PI31 · Review · S · Take The Legs From A Run That Proved The Same Tree; </desc>
+<desc>Review 3, Implementing 2. BT17: porelo-buildtools#BT17 · Implementing · M · Commit Messages Checked Before And On A Push; BT34: porelo-buildtools#BT34 · Implementing · XS · The Own Update Workflow's Pull Request Counts As Inside; BT13: porelo-buildtools#BT13 · Review · S · Action Moves Merged Without A Build; CC34: porelo-claude-code#CC34 · Review · S · Take The Legs From A Run That Proved The Same Tree; PI31: porelo-pi#PI31 · Review · S · Take The Legs From A Run That Proved The Same Tree; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
+<rect x="0.0" width="240.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 3</title></rect>
 
-<rect x="200.0" width="200.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 2</title></rect>
+<rect x="240.0" width="160.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 2</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 4 done</text>
+<text class="legend" x="410" y="17">0 of 5 done</text>
 </svg>
 
 
@@ -317,12 +317,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 394)">
 <text x="0" y="17">4b. Receive the test machine requested</text>
-<desc>Implementing 1. BT10: porelo-buildtools#BT10 · Implementing · S · A Leg Takes No IPv6 Address; </desc>
+<desc>Review 1. BT10: porelo-buildtools#BT10 · Review · S · A Leg Takes No IPv6 Address; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 1 done</text>
@@ -355,16 +355,16 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 454)">
 <text x="0" y="17">5. From the task's push to the central forge, after approval</text>
-<desc>Review 2, Backlog 3, Analyzed 2. PJ61: porelo-project#PJ61 · Backlog · M (five repositories, about 4 h) · The project porelo is online with the local forge upstream; GH08: porelo-adapters#GH08 · Review · S · The Forgejo Adapter Trusts The Account's Authorities; B286: porelo#B286 · Review · S · The Host's Git Trusts The Account's Authorities; HO31: porelo-host#HO31 · Analyzed · M · The Account's Gate And Reader On The Host's Forge; HO29: porelo-host#HO29 · Analyzed · S · The Person's Own Web Login On The Forge; HO32: porelo-host#HO32 · Backlog · M · The Gathered Push Refuses A Moved Central Forge; PJ37: porelo-project#PJ37 · Backlog · — · Work reaches the upstream by a machine key or the person's own token; </desc>
+<desc>Review 2, Implementing 2, Backlog 3. PJ61: porelo-project#PJ61 · Backlog · M (five repositories, about 4 h) · The project porelo is online with the local forge upstream; GH08: porelo-adapters#GH08 · Review · S · The Forgejo Adapter Trusts The Account's Authorities; B286: porelo#B286 · Review · S · The Host's Git Trusts The Account's Authorities; HO31: porelo-host#HO31 · Backlog · M · The Account's Gate And Reader On The Host's Forge; HO29: porelo-host#HO29 · Implementing · S · The Person's Own Web Login On The Forge; HO32: porelo-host#HO32 · Implementing · M · The Gathered Push Refuses A Moved Central Forge; PJ37: porelo-project#PJ37 · Backlog · — · Work reaches the upstream by a machine key or the person's own token; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
 <rect x="0.0" width="114.28571428571429" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
 
-<rect x="114.28571428571429" width="171.42857142857142" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 3</title></rect>
+<rect x="114.28571428571429" width="114.28571428571429" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 2</title></rect>
 
-<rect x="285.7142857142857" width="114.28571428571429" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+<rect x="228.57142857142858" width="171.42857142857142" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 3</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 7 done</text>
@@ -431,12 +431,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 544)">
 <text x="0" y="17">6b. Messages keep their text</text>
-<desc>Backlog 1. B215: porelo#B215 · Backlog · XS · A Helper Started With A UTF-8 Locale; </desc>
+<desc>Review 1. B215: porelo#B215 · Review · XS · A Helper Started With A UTF-8 Locale; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 1 done</text>
@@ -450,12 +450,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 574)">
 <text x="0" y="17">6c. A repeated tool failure ends the test run</text>
-<desc>Backlog 1. B244: porelo#B244 · Backlog · M · The Loop Watch Sees A Compact Screen; </desc>
+<desc>Implementing 1. B244: porelo#B244 · Implementing · M · The Loop Watch Sees A Compact Screen; </desc>
 <svg x="480" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 1 done</text>
