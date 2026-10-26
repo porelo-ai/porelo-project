@@ -50,7 +50,7 @@ moves ([PJ59](README.md#pj59)).
 - **One repository at a time;** waiting for each Build before the next comes later, as sprint 5 pushes only
   porelo-message-sluice.
 - **`offline` is tested with a second project file,** as an `offline` project may name no `builds:`.
-- **One forge token for the gate and the reader:** `project.yml` names no `builds.credential`; both take the default vault entry `git.token.<forge-host>`, as [PJ37](README.md#pj37)'s sprint 5 places the gate's credential.
+- **One forge token for the gate and the reader:** the gate takes the default vault entry `git.token.<forge-host>`, as [PJ37](README.md#pj37)'s sprint 5 places the gate's credential, and `project.yml` names that same entry as `builds.credential: "git.token.forge.porelo.internal"`, since porelo requires `builds.credential` and has no default for it (`Builds` refuses an empty one; read in porelo `ce7eeb95`).
 - **No VM pool:** the first repositories to move build on the forge's own runner, as porelo-message-sluice's
   `build.yml` did on a rented host in sprint 4; the pool comes with the repositories that need one.
 
