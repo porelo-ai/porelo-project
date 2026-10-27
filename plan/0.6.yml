@@ -187,7 +187,7 @@ sprints:
         covers: [porelo-project#PJ37]
   - id: "6"
     title: "The groundwork for the move"
-    goal: "What the moves rest on but can be finished and tested before them: the sub-agents signed in, Pi logged in in a brokered task, and an agent per repository started at one click."
+    goal: "What the moves rest on but can be finished and tested before them: the sub-agents signed in and Pi logged in in a brokered task."
     functions:
       - title: "Antigravity and Codex signed in from the vault"
         test: "Antigravity with the operator's Google subscription and Codex CLI with its sign-in, both from the vault, each answering in a task."
@@ -195,9 +195,6 @@ sprints:
       - title: "Pi logs in inside a brokered task"
         test: "A Pi task behind the broker logs in and answers."
         issues: [porelo-pi#PI21]
-      - title: "An agent for each repository, at one click"
-        test: "The interface starts a repository's own agent in its own task with one click, named after the repository or its nickname."
-        issues: [porelo-frontend#F148]
   - id: "6a"
     title: "Use the ChatGPT sign-in"
     goal: "A Codex task works through the sign-in kept by the host."
@@ -229,7 +226,7 @@ sprints:
         covers: [porelo-project#PJ51]
       - title: "A repository names its agent and the name it goes by"
         test: "Give two repositories an agent and one a nickname; the start takes each repository's agent, the room shows `Agent <nickname>` or `Agent <repository>`, a task's commits are authored so, and a shared or malformed nickname is refused."
-        issues: [porelo#B298]
+        issues: [porelo#B298, porelo-frontend#F148]
   - id: "6e"
     title: "The host's secrets from the file"
     goal: "Step 2: every secret of the host's setup comes on standard input from `secrets.kdbx`; the drive still holds `machine.yml` and the bundle."
