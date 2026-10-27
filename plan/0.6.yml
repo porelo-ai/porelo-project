@@ -302,7 +302,8 @@ sprints:
         notes: ["porelo-message-matrix's move issue", "PJ60 issue for porelo-message-matrix"]
       - title: "porelo-intellij and porelo-frontend each in its own task"
         test: "Gradle and Flutter build on Forgejo; the Windows job runs centrally only, named by a variable."
-        notes: ["porelo-intellij's move issue", "porelo-frontend's move issue", "PJ60 issues for the two repositories"]
+        issues: [porelo-intellij#IJ14, porelo-intellij#IJ15]
+        notes: ["porelo-frontend's move issue", "PJ60 issue for porelo-frontend"]
       - title: "Test machines by kind from the VM pool"
         test: "porelo-frontend's leased leg asks for the kind `amd64` on Forgejo and gets an account of the pool, reset afterwards, and a rented machine on the central forge; no workflow names a provider."
         issues: [porelo-host#HO12, porelo-buildtools#BT24, porelo-buildtools#BT25]
@@ -333,7 +334,7 @@ sprints:
     goal: "The website builds and a person reviews waiting work from IntelliJ."
     functions:
       - title: "Build the website and review in IntelliJ"
-        test: "Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed. In IntelliJ read a waiting push, approve the displayed commit and reject another with a reason. A new push appears within the stated seconds; approval of the old commit is refused."
+        test: "Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed. In IntelliJ read a waiting push, approve the displayed commit and reject another with a reason. A new push from a second task appears within the stated seconds; approval of the old commit is refused."
         issues: [porelo-ai.github.io#SI05, porelo-intellij#IJ01, porelo-intellij#IJ02]
   - id: "9"
     title: "Clearing up and counting"
