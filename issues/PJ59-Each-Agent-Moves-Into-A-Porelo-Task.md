@@ -1,6 +1,6 @@
 # PJ59 — Each agent moves into a Porelo task
 
-**Status:** Estimated.
+**Status:** Backlog.
 **Size:** L - crosses every repository over three sprints; its own part here is the move's procedure, its check, the
 channel's bridge to the moved agents and the rules table, each agent's move an issue (S) of its own.
 
@@ -79,8 +79,8 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
   homeserver moves to the host, before this machine may be off.
 - **The rules table below** gains one column per agent: a rule is dropped for an agent only once its replacement
   is shown in that agent's task, and the coordinator ticks it in the same commit as the move's check.
-- **The host (operator, 2026-10-27):** the host rented for sprint 4 and 5's re-test is kept and becomes the move's host;
-  it runs for the whole move, sprints 6 to 8.
+- **The host (operator, 2026-10-27):** the move's host is rented once the room, MX42 and this procedure are ready, and
+  then runs for the whole move, sprints 6 to 8; the re-test's host was given back, since the move could not start that day.
 - **Order and timing** stay as proposed. One move per working day; the next starts only after the last one's check is
   green and the operator has accepted its move issue.
 
