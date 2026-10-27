@@ -267,6 +267,17 @@ sprints:
       - title: "The forge opened in the browser once the VPN is up"
         test: "After the VPN, open `https://forge.porelo.internal/` and sign in with the lasting password: no hosts line, CA import or password file by hand; the CA's key never reached the host. A second host needs no new CA in Firefox; a certificate for another name signed by the CA fails `openssl verify`."
         issues: [porelo-host#HO35, porelo-frontend#F202]
+  - id: "6i"
+    title: "The room on this computer, reached from the host"
+    goal: "Before the first move: this computer's homeserver is also served on its VPN address, and a rented host is admitted to the room the local agents use."
+    functions:
+      - title: "The local homeserver also on the VPN's address"
+        test: "With the VPN up, the homeserver answers on `https://10.73.0.2:<port>` under its own certificate and still on `127.0.0.1`; with the VPN down, the loopback listener keeps running and nothing listens on another address."
+        issues: [porelo-message-matrix#MX42]
+      - title: "A rented host admitted to the room"
+        test: "Rent a host and admit it: a task there writes in the project's room and a local agent answers; dismissing the host revokes its registration token, and its next message is refused."
+        issues: [porelo#B304]
+        notes: ["porelo-frontend's issue for `publish` after the tunnel is up and `publish --off` when the host is dropped (to be filed once QM39 is settled)"]
   - id: "7"
     title: "The move, second wave: the other toolchains"
     goal: "Gradle and Flutter move."
