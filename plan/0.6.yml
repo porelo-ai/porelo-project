@@ -180,7 +180,8 @@ sprints:
         issues: [porelo-project#PJ61, porelo-adapters#GH08, porelo#B286, porelo-host#HO31, porelo#B296, porelo-frontend#F194, porelo-host#HO33]
       - title: "Only the operator's approval brings the work to the central forge"
         test: "Nothing is there before the approval, the gathered push brings it after; with the project `offline` the push reaches no forge."
-        issues: [porelo-host#HO29, porelo-host#HO32, porelo-project#PJ37, porelo#B297, porelo-host#HO34]
+        issues: [porelo-host#HO29, porelo-host#HO32, porelo#B297, porelo-host#HO34]
+        covers: [porelo-project#PJ37]
   - id: "6"
     title: "The move, first wave"
     goal: "Each agent works its own move issue inside its new task to Review; the others work as today."
@@ -289,5 +290,5 @@ sprints:
     functions:
       - title: "The setup, move and recovery proven together"
         test: "Bring up the project, run the local builds, move each agent and restore the room and usage after giving the host back. Compare the results with every setup and move criterion; a missing local-build or recovery prerequisite keeps the parent acceptance open."
-        issues: [porelo-project#PJ40, porelo-project#PJ39]
+        covers: [porelo-project#PJ40, porelo-project#PJ39]
         notes: ["Parent acceptance only; the work is carried by the setup, build, move and recovery functions. Parent acceptance remains open until the complete one-build proof in release 0.19 and the recovery prerequisites pass."]
