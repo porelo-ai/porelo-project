@@ -5,8 +5,8 @@
 channel's bridge to the moved agents and the rules table, each agent's move an issue (S) of its own.
 
 **What must be true.** Each agent of the project works in a Porelo task of the project `porelo`, one agent at a time,
-in a fixed order, and each move is checked before the next begins; the channel file stays beside Matrix until the last
-agent has moved.
+in a fixed order, and each move is checked before the next begins; all of them talk in the
+project's room, whose homeserver runs on this machine until the last agent has moved.
 
 From [PJ39](README.md#pj39), sprints 6 to 8: "The move, one agent at a time, the others working as today and the channel kept
 beside Matrix until the last has moved".
@@ -69,10 +69,14 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
   the forge as `porelo/<task>`; a Build of it was read by the `forgejo` reader; the pull request was opened by the
   gate (porelo [B297](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b297)); the task is in the room's `agent-card.json`. Each line says what it found. **Red first:** run
   against Sluice before its move, every line fails by name.
-- **The channel's bridge (operator, 2026-10-27: a).** Until the last agent has moved, the channel file stays here and
-  the moved agents talk in the room. The coordinator joins the room as a person (`porelo talk join porelo
-  coordinator`), and reads and writes there with a small Matrix client of its own in `tools/`. Its login stays in
-  the vault, and it never runs inside a task. It relays between the room and the channel file until the last move.
+- **The room replaces the channel file, before the first move** (operator, 2026-10-27). The project's Matrix
+  homeserver runs on this machine, which stays on until the last agent has moved. Every agent, local or moved,
+  talks in the one room. For the host's tasks it is a remote homeserver, reached over the VPN
+  (`mail.transports.matrix.homeserver` and `ca_file` in the host's `project.yml`). The local agents and the
+  coordinator read and write the room with a small client, in place of `porelo-channel-read`, `-post` and `-wait`;
+  its login stays in the vault. The channel file is read-only from the switch on. No bridge is needed.
+- **The room moves to the host last.** The host works on its own only after the last move; then the
+  homeserver moves to the host, before this machine may be off.
 - **The rules table below** gains one column per agent: a rule is dropped for an agent only once its replacement
   is shown in that agent's task, and the coordinator ticks it in the same commit as the move's check.
 - **The host (operator, 2026-10-27):** the host rented for sprint 4 and 5's re-test is kept and becomes the move's host;
@@ -88,6 +92,11 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
 
 ## To be checked
 
+- Today's homeserver is this account's own, on loopback only (`matrix: {}`), and the host's tasks cannot reach it.
+  Serving it on the VPN's address with a certificate the host trusts is work for porelo-message-matrix and porelo;
+  the issues are filed with Agent Matrix and Agent Core before the switch.
+- Where the local agents' room client lives (porelo-message-matrix, beside the transport, is the first guess), and
+  that it waits for a message as `porelo-channel-wait` does.
 - What each agent needs in its task's image beyond its repository's `porelo.yml`: the agent's own tools, its
   sub-agents (Codex CLI, Antigravity CLI) and their sign-ins.
 - Whether `porelo talk tell` reaches an attended task's prompt as the wake does (B-side `wake.feature`).
@@ -95,7 +104,7 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
 ## Local rules Porelo replaces
 
 A local rule is dropped for an agent only once its replacement is shown in that agent's own task.
-The channel file stays beside Matrix until the last agent has moved.
+The channel file is replaced by the room before the first move (see *Plan*).
 
 Partial coverage is not a complete replacement: [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148) and [PJ38](README.md#pj38) do not cover all timing fields.
 [B254](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b254) adds an explicit build request from a task; it is not required for the move because a task push can already start the forge workflow.
