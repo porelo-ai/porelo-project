@@ -70,6 +70,8 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
   answers in the room (*Open questions*).
 - **The rules table below** gains one column per agent: a rule is dropped for an agent only once its replacement
   is shown in that agent's task, and the coordinator ticks it in the same commit as the move's check.
+- **The host (operator, 2026-10-27):** the host rented for sprint 4 and 5's re-test is kept and becomes the move's host;
+  it runs for the whole move, sprints 6 to 8.
 - **Order and timing** stay as proposed. One move per working day; the next starts only after the last one's check is
   green and the operator has accepted its move issue.
 
@@ -81,8 +83,6 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
 
 ## Open questions
 
-- **The host for sprints 6 to 8.** The moved agents live on the rented host, so it runs for the whole move,
-  about three weeks, instead of a day per test. Is a host kept running that long, and which size?
 - **How the coordinator talks to a moved agent** while it still works here: (a) it joins the room as a person
   (`porelo talk join porelo coordinator`) and reads and writes there with a small Matrix client of its own;
   (b) it writes with `porelo talk tell` over ssh, and the moved agent answers in the room, which the operator
