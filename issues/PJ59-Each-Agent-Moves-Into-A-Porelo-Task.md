@@ -18,15 +18,25 @@ repositories, toolchain, VM account and habits, and a fault found in the first m
 
 ## The shape proposed
 
-**The order:**
+**One agent per repository (operator, 2026-10-27).** A task holds one repository, so each repository moves with an
+agent of its own, named after the repository or its nickname (porelo
+[B298](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b298), which comes before the first
+move). Today's agents that look after several repositories (Core, Smith, Machines) are split at the move; Agent AGY
+and Agent Codex are gone already, their repositories with Smith until then.
 
-1. **Agent Sluice** first: one repository, one snapshot from the registry.
-2. **Agent Smith:** snapshots from `porelo`, three repositories.
-3. **Agent AGY and Agent Codex:** an adapter repository each, shaped like Smith's.
-4. **Agent Matrix.**
-5. **Agent IntelliJ and Agent Frontend:** other toolchains.
-6. **Agent Core**, last of the builders, with a way back to the host, since a fault in Porelo stops its own work.
-7. **The coordinator** last of all, in [PJ58](README.md#pj58)'s `porelo-all`.
+**The order, by repository:**
+
+1. **`porelo-message-sluice`** first: one repository, one snapshot from the registry.
+2. **`porelo-pi`, `porelo-omp` and `porelo-claude-code`:** snapshots from `porelo`, each in its own task.
+3. **`porelo-agy` and `porelo-codex`:** adapter repositories shaped like the three before, their sub-agents signed
+   in from the vault.
+4. **`porelo-buildtools`:** Maven like the first, proposed here since it had no place in the order before.
+5. **`porelo-message-matrix`.**
+6. **`porelo-intellij` and `porelo-frontend`:** other toolchains.
+7. **`porelo-adapters` and `porelo-ai.github.io`.**
+8. **`porelo` and `porelo-host`**, last of the builders, each with a way back to this machine, since a fault in
+   Porelo or in the host's setup stops their own work.
+9. **The coordinator** last of all, in [PJ58](README.md#pj58)'s `porelo-all`.
 
 **Each move is done when:**
 
