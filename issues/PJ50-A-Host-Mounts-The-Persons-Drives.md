@@ -1,6 +1,6 @@
 # PJ50 — A host mounts the person's drives
 
-**Status:** Accepted (operator, 2026-10-27). The agents weigh the shapes below before anything is built.
+**Status:** Analyzed (2026-10-27), built as porelo-host [HO36](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho36) (M) and porelo-frontend [F197](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f197) (L, blocked by [HO36](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho36)); one layout `hosts/<project>/` beside `shared/`, the host named after its project (QF63 a), the old `porelo-host/` refused, never migrated.
 
 **What must be true.** A host takes what it needs from the person's drives, in two roles. **Its own setup** - the
 machine file, its VPN key, the keys it puts into Porelo's vault - comes either from a tresor of its own or from its

@@ -1,6 +1,6 @@
 # PJ51 — The person's secrets kept once, in a file they can open
 
-**Status:** Accepted (operator, 2026-10-27). The shape below is a proposal to weigh.
+**Status:** Analyzed (2026-10-27), built as porelo-host [HO37](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho37) (L) and porelo-frontend [F198](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f198) (L) and [F199](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f199) (M, blocked by [F198](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f198) and [HO37](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho37)); porelo-host [HO35](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho35) (M) builds on [HO37](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho37). Decided: one `secrets.kdbx`, groups `shared` and `hosts/<name>`, the vault passphrase per host; the master password typed in a terminal, `keepassxc-cli` the only reader (QF64/QH41 a); KeePassXC a package dependency on Linux (QF65), shipped later on Windows and macOS ([F200](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f200)); the desktop signs the forge's certificate (QH40 b); the host's WireGuard key in `/etc/wireguard` (QH42 a).
 
 **What must be true.** The secrets a person needs to put a project on a host are kept once, in one file on the
 person's own drive, encrypted in an open format the person can open with a common tool of their own. The interface
