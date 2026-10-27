@@ -191,7 +191,7 @@ sprints:
     functions:
       - title: "Antigravity and Codex signed in from the vault"
         test: "Antigravity with the operator's Google subscription and Codex CLI with its sign-in, both from the vault, each answering in a task."
-        issues: [porelo#P12, porelo-agy#AG01, porelo-codex#CX01, porelo#B272, porelo-codex#CX02]
+        issues: [porelo#P12, porelo-agy#AG01, porelo-codex#CX01, porelo#B272, porelo-codex#CX02, porelo#B303, porelo#B302]
       - title: "Pi logs in inside a brokered task"
         test: "A Pi task behind the broker logs in and answers."
         issues: [porelo-pi#PI21]
@@ -233,7 +233,7 @@ sprints:
     functions:
       - title: "The host's secrets from one file, typed as one master password"
         test: "Rent a host from a drive holding only `machine.yml` and the bundle; on the desktop type the master password once, at the host the drive's login; the host comes up with its VPN key in `/etc/wireguard` and its tokens and vault keys from the file, and no secret lies on the drive. A need the file does not bring is refused, never prompted for."
-        issues: [porelo-host#HO37, porelo-frontend#F199]
+        issues: [porelo-host#HO37, porelo-frontend#F199, porelo-frontend#F195, porelo-frontend#F196]
         covers: [porelo-project#PJ51]
   - id: "6f"
     title: "The host's files uploaded"
@@ -264,7 +264,7 @@ sprints:
     functions:
       - title: "The local homeserver also on the VPN's address"
         test: "With the VPN up, the homeserver answers on `https://10.73.0.2:<port>` under its own certificate and still on `127.0.0.1`; with the VPN down, the loopback listener keeps running and nothing listens on another address."
-        issues: [porelo-message-matrix#MX42]
+        issues: [porelo-message-matrix#MX42, porelo-message-matrix#MX41, porelo#B300]
       - title: "A rented host admitted to the room"
         test: "Rent a host and admit it: a task there writes in the project's room and a local agent answers; dismissing the host revokes its registration token, and its next message is refused."
         issues: [porelo#B304]
@@ -285,14 +285,14 @@ sprints:
     functions:
       - title: "porelo-pi, porelo-omp and porelo-claude-code each in its own task, with snapshots of porelo from the registry"
         test: "Each of the three repositories has its own agent and task, builds on Forgejo and takes porelo from the local registry."
-        notes: ["A move issue per repository", "PJ60 issues for the three repositories"]
+        issues: [porelo-pi#PI38, porelo-pi#PI39, porelo-omp#OM35, porelo-omp#OM36, porelo-claude-code#CC38, porelo-claude-code#CC39]
   - id: "7b"
     title: "The move, wave 3: the sub-agents' repositories"
     goal: "porelo-agy and porelo-codex move, their sub-agents signed in inside the task."
     functions:
       - title: "porelo-agy and porelo-codex each in its own task, their sub-agents signed in"
         test: "Each move issue reaches Review inside its task with Forgejo's build green; Antigravity and Codex CLI answer there with their sign-ins from the vault."
-        notes: ["porelo-agy's move issue", "porelo-codex's move issue"]
+        issues: [porelo-agy#AG02, porelo-codex#CX04]
   - id: "7c"
     title: "The move, wave 4: the other toolchains"
     goal: "Gradle and Flutter move."
