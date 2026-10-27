@@ -60,7 +60,11 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
   3. *The start:* `porelo task start --repository <name> --agent <agent>` on the host, attended, its terminal
      opened by the operator; the agent works its move issue to Review inside the task.
   4. *The check* (below), then the agent's session on this machine and its VM account are stopped.
-  5. *The way back:* the upstream switched back and the local session resumed, for a move that fails.
+  5. *The way back, at any time* (operator, 2026-10-27): a moved agent can work here again, for a failed move, a
+     host given back or lost, or any other reason. The task's open work is fetched from the host's forge into the
+     agent's local checkout first (approved work has reached the central forge already). Then the repository's
+     upstream switches back in `project.yml`, and the local session resumes with its channel watcher. Moving
+     in again is a new start, as in step 3.
 - **`tools/move-check.sh <repository>`**, read-only, run on the host over ssh: the task runs; its last push reached
   the forge as `porelo/<task>`; a Build of it was read by the `forgejo` reader; the pull request was opened by the
   gate (porelo [B297](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b297)); the task is in the room's `agent-card.json`. Each line says what it found. **Red first:** run
