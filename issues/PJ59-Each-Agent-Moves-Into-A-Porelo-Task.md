@@ -1,6 +1,8 @@
 # PJ59 — Each agent moves into a Porelo task
 
-**Status:** Accepted.
+**Status:** Analyzed.
+**Size:** L - crosses every repository over three sprints; its own part here is the move's procedure, its check, the
+channel's bridge to the moved agents and the rules table, each agent's move an issue (S) of its own.
 
 **What must be true.** Each agent of the project works in a Porelo task of the project `porelo`, one agent at a time,
 in a fixed order, and each move is checked before the next begins; the channel file stays beside Matrix until the last
@@ -46,10 +48,51 @@ only after porelo-pi [PI32](https://github.com/porelo-ai/porelo-pi/blob/main/iss
 [CC24](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc24), since the Claude agents
 work there with the operator's subscription.
 
+## Plan
+
+Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`, and the sprint 5 test on the rented host.
+
+- **`doc/move.md`, the move's procedure**, one section per step, the same for every agent:
+  1. *Before:* the agent's repositories have a `porelo.yml` whose image holds its tools and sub-agents (*To be
+     checked*); its sign-ins are in the host's vault; its move issue (S) is filed in its own repository.
+  2. *The switch:* in `project.yml` the agent's repositories take the host's forge as upstream (PJ61's shape,
+     until now proven only on a throwaway central repository); one commit here, pushed by the coordinator.
+  3. *The start:* `porelo task start --repository <name> --agent <agent>` on the host, attended, its terminal
+     opened by the operator; the agent works its move issue to Review inside the task.
+  4. *The check* (below), then the agent's session on this machine and its VM account are stopped.
+  5. *The way back:* the upstream switched back and the local session resumed, for a move that fails.
+- **`tools/move-check.sh <repository>`**, read-only, run on the host over ssh: the task runs; its last push reached
+  the forge as `porelo/<task>`; a Build of it was read by the `forgejo` reader; the pull request was opened by the
+  gate (B297); the task is in the room's `agent-card.json`. Each line says what it found. **Red first:** run
+  against Sluice before its move, every line fails by name.
+- **The channel's bridge.** Until the last agent has moved, the channel file stays here and the moved agents talk
+  in the room. The coordinator writes to a moved task with `porelo talk tell <task>` over ssh and reads its
+  answers in the room (*Open questions*).
+- **The rules table below** gains one column per agent: a rule is dropped for an agent only once its replacement
+  is shown in that agent's task, and the coordinator ticks it in the same commit as the move's check.
+- **Order and timing** stay as proposed. One move per working day; the next starts only after the last one's check is
+  green and the operator has accepted its move issue.
+
+## Acceptance
+
+- Sluice's move: `move-check.sh sluice` red before, green after, with its move issue in Review from inside the task.
+- Every later move the same; the coordinator's own move last, in PJ58's `porelo-all`.
+- Seen to fail first: the check against an agent that has not moved.
+
+## Open questions
+
+- **The host for sprints 6 to 8.** The moved agents live on the rented host, so it runs for the whole move,
+  about three weeks, instead of a day per test. Is a host kept running that long, and which size?
+- **How the coordinator talks to a moved agent** while it still works here: (a) it joins the room as a person
+  (`porelo talk join porelo coordinator`) and reads and writes there with a small Matrix client of its own;
+  (b) it writes with `porelo talk tell` over ssh, and the moved agent answers in the room, which the operator
+  reads; (c) the operator relays. Recommended: (a).
+
 ## To be checked
 
 - What each agent needs in its task's image beyond its repository's `porelo.yml`: the agent's own tools, its
   sub-agents (Codex CLI, Antigravity CLI) and their sign-ins.
+- Whether `porelo talk tell` reaches an attended task's prompt as the wake does (B-side `wake.feature`).
 
 ## Local rules Porelo replaces
 
