@@ -25,6 +25,9 @@ sprints:
       - title: "Approve one of several attempts"
         test: "Start several attempts from one commit, read their differences and approve one. The other attempts are rejected; any rate limit is shown for the affected attempt."
         issues: [porelo#B163]
+      - title: "Several agents build the same work, one more compares them"
+        test: "Start the same issue with two agents or models side by side; a comparing agent names the better result and why, and each run's wall time, tokens and cost are shown beside it. A finished issue built again is compared against its own commit."
+        issues: [porelo-project#PJ77]
       - title: "Open a task port locally"
         test: "Start a web server in the task and open its port. Host-loopback access works; access from the network or through another account's relay socket is refused."
         issues: [porelo#B165]
