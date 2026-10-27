@@ -266,7 +266,7 @@ sprints:
     functions:
       - title: "The forge opened in the browser once the VPN is up"
         test: "After the VPN, open `https://forge.porelo.internal/` and sign in with the lasting password: no hosts line, CA import or password file by hand; the CA's key never reached the host. A second host needs no new CA in Firefox; a certificate for another name signed by the CA fails `openssl verify`."
-        issues: [porelo-host#HO35]
+        issues: [porelo-host#HO35, porelo-frontend#F202]
   - id: "7"
     title: "The move, second wave: the other toolchains"
     goal: "Gradle and Flutter move."
