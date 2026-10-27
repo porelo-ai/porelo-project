@@ -161,6 +161,7 @@ sprints:
     functions:
       - title: "One primary IPv4 and no IPv6"
         test: "Rent an IPv4-only leg machine and read the provider inventory; it shows exactly one primary IPv4 and no IPv6. Return the machine and confirm its resources are gone."
+        tested: "2026-10-27"
         issues: [porelo-buildtools#BT10]
   - id: "4c"
     title: "A dry run says what will be refused"
@@ -168,6 +169,7 @@ sprints:
     functions:
       - title: "A refused host shown as refused"
         test: "Run task start with --dry-run for an allowed host and one the agent refuses; the latter is named as refused and is refused again by the running task."
+        tested: "2026-10-27"
         issues: [porelo#B235]
   - id: "5"
     title: "From the task's push to the central forge, after approval"
@@ -175,10 +177,10 @@ sprints:
     functions:
       - title: "The task hears its build from Forgejo"
         test: "The task pushes through its gate to `porelo/<task>` on Forgejo, which builds it; the verdict and a red job's log are in the task's `/porelo/files`."
-        issues: [porelo-project#PJ61, porelo-adapters#GH08, porelo#B286, porelo-host#HO31]
+        issues: [porelo-project#PJ61, porelo-adapters#GH08, porelo#B286, porelo-host#HO31, porelo#B296, porelo-frontend#F194, porelo-host#HO33]
       - title: "Only the operator's approval brings the work to the central forge"
         test: "Nothing is there before the approval, the gathered push brings it after; with the project `offline` the push reaches no forge."
-        issues: [porelo-host#HO29, porelo-host#HO32, porelo-project#PJ37]
+        issues: [porelo-host#HO29, porelo-host#HO32, porelo-project#PJ37, porelo#B297, porelo-host#HO34]
   - id: "6"
     title: "The move, first wave"
     goal: "Each agent works its own move issue inside its new task to Review; the others work as today."
