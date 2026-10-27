@@ -147,7 +147,7 @@ sprints:
       - title: "Sluice green on both forges on the same commit"
         test: "The same `build.yml` of porelo-message-sluice runs green on Forgejo and on the central forge."
         tested: "2026-10-26"
-        issues: [porelo-project#PJ60, porelo#B285, porelo-buildtools#BT32, porelo-message-sluice#SL33]
+        issues: [porelo#B285, porelo-buildtools#BT32, porelo-message-sluice#SL33]
   - id: "4a"
     title: "Trust the local build"
     goal: "A local build checks its commits and reuses only results that still apply."
