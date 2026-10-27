@@ -186,24 +186,18 @@ sprints:
         issues: [porelo-host#HO29, porelo-host#HO32, porelo#B297, porelo-host#HO34]
         covers: [porelo-project#PJ37]
   - id: "6"
-    title: "The move, first wave"
-    goal: "One agent per repository: each repository's agent works its own move issue inside its new task to Review; the others work as today. Starts only once 6i is tested, since a moved agent talks in the room on this computer from the host; 6d to 6h come before it too."
+    title: "The groundwork for the move"
+    goal: "What the moves rest on but can be finished and tested before them: the sub-agents signed in, Pi logged in in a brokered task, and an agent per repository started at one click."
     functions:
-      - title: "porelo-message-sluice works wholly in its task"
-        test: "Its move issue reaches Review inside the task with Forgejo's build green; its agent is reached in the room under its repository's name."
-        issues: [porelo-project#PJ59, porelo-frontend#F148]
-        notes: ["porelo-message-sluice's move issue"]
-      - title: "porelo-pi, porelo-omp and porelo-claude-code each in its own task, with snapshots of porelo from the registry"
-        test: "Each of the three repositories has its own agent and task, builds on Forgejo and takes porelo from the local registry."
-        issues: [porelo-pi#PI21]
-        notes: ["A move issue per repository", "PJ60 issues for the three repositories"]
-      - title: "porelo-agy and porelo-codex each in its own task, their sub-agents signed in"
-        test: "Antigravity with the operator's Google subscription and Codex CLI with its sign-in, both from the vault, each in its repository's own task."
+      - title: "Antigravity and Codex signed in from the vault"
+        test: "Antigravity with the operator's Google subscription and Codex CLI with its sign-in, both from the vault, each answering in a task."
         issues: [porelo#P12, porelo-agy#AG01, porelo-codex#CX01, porelo#B272, porelo-codex#CX02]
-        notes: ["porelo-agy's move issue", "porelo-codex's move issue"]
-      - title: "porelo-buildtools in its task"
-        test: "Its move issue reaches Review inside the task with Forgejo's build green."
-        notes: ["porelo-buildtools' move issue"]
+      - title: "Pi logs in inside a brokered task"
+        test: "A Pi task behind the broker logs in and answers."
+        issues: [porelo-pi#PI21]
+      - title: "An agent for each repository, at one click"
+        test: "The interface starts a repository's own agent in its own task with one click, named after the repository or its nickname."
+        issues: [porelo-frontend#F148]
   - id: "6a"
     title: "Use the ChatGPT sign-in"
     goal: "A Codex task works through the sign-in kept by the host."
@@ -279,7 +273,32 @@ sprints:
         issues: [porelo#B304]
         notes: ["porelo-frontend's issue for `publish` after the tunnel is up and `publish --off` when the host is dropped (to be filed once QM39 is settled)"]
   - id: "7"
-    title: "The move, second wave: the other toolchains"
+    title: "The move, wave 1: the smallest repositories"
+    goal: "Starts only once 6 to 6i are tested, since a moved agent talks in the room on this computer from the host. One agent per repository: each works its own move issue inside its new task to Review; the others work as today."
+    functions:
+      - title: "porelo-message-sluice works wholly in its task"
+        test: "Its move issue reaches Review inside the task with Forgejo's build green; its agent is reached in the room under its repository's name."
+        issues: [porelo-project#PJ59]
+        notes: ["porelo-message-sluice's move issue"]
+      - title: "porelo-buildtools in its task"
+        test: "Its move issue reaches Review inside the task with Forgejo's build green."
+        notes: ["porelo-buildtools' move issue"]
+  - id: "7a"
+    title: "The move, wave 2: the agent adapters"
+    goal: "porelo-pi, porelo-omp and porelo-claude-code move, taking porelo's snapshots from the local registry."
+    functions:
+      - title: "porelo-pi, porelo-omp and porelo-claude-code each in its own task, with snapshots of porelo from the registry"
+        test: "Each of the three repositories has its own agent and task, builds on Forgejo and takes porelo from the local registry."
+        notes: ["A move issue per repository", "PJ60 issues for the three repositories"]
+  - id: "7b"
+    title: "The move, wave 3: the sub-agents' repositories"
+    goal: "porelo-agy and porelo-codex move, their sub-agents signed in inside the task."
+    functions:
+      - title: "porelo-agy and porelo-codex each in its own task, their sub-agents signed in"
+        test: "Each move issue reaches Review inside its task with Forgejo's build green; Antigravity and Codex CLI answer there with their sign-ins from the vault."
+        notes: ["porelo-agy's move issue", "porelo-codex's move issue"]
+  - id: "7c"
+    title: "The move, wave 4: the other toolchains"
     goal: "Gradle and Flutter move."
     functions:
       - title: "porelo-message-matrix in its task"
@@ -292,26 +311,34 @@ sprints:
         test: "porelo-frontend's leased leg asks for the kind `amd64` on Forgejo and gets an account of the pool, reset afterwards, and a rented machine on the central forge; no workflow names a provider."
         issues: [porelo-host#HO12, porelo-buildtools#BT24, porelo-buildtools#BT25]
         notes: ["The pool taken by the same call on Forgejo"]
-  - id: "7a"
+  - id: "8"
+    title: "The move, wave 5: the adapters and the website"
+    goal: "porelo-adapters and porelo-ai.github.io move."
+    functions:
+      - title: "porelo-adapters and porelo-ai.github.io each in its own task"
+        test: "Each move issue reaches Review inside its task with Forgejo's build green."
+        notes: ["porelo-adapters' move issue", "porelo-ai.github.io's move issue"]
+  - id: "8a"
+    title: "The move, wave 6: porelo and porelo-host"
+    goal: "The two repositories everything rests on move last of the code, each with a way back."
+    functions:
+      - title: "porelo and porelo-host each in its task, with a way back"
+        test: "porelo's agent builds porelo in a task and porelo-host's agent its collection; each works on this machine again if a fault in Porelo or the host's setup stops it."
+        notes: ["porelo's move issue", "porelo-host's move issue", "PJ60 issue for porelo"]
+  - id: "8b"
+    title: "The move, last: the coordinator"
+    goal: "The coordinator reads every repository and changes only porelo-project."
+    functions:
+      - title: "The coordinator reads everything and changes only porelo-project"
+        test: "In `porelo-all` every repository is there; a change outside `porelo-project/` is refused."
+        issues: [porelo-project#PJ58]
+  - id: "8c"
     title: "The website and IntelliJ work in the task"
     goal: "The website builds and a person reviews waiting work from IntelliJ."
     functions:
       - title: "Build the website and review in IntelliJ"
         test: "Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed. In IntelliJ read a waiting push, approve the displayed commit and reject another with a reason. A new push appears within the stated seconds; approval of the old commit is refused."
         issues: [porelo-ai.github.io#SI05, porelo-intellij#IJ01, porelo-intellij#IJ02]
-  - id: "8"
-    title: "The move, last wave"
-    goal: "The remaining repositories, porelo and porelo-host with a way back, then the coordinator."
-    functions:
-      - title: "porelo-adapters and porelo-ai.github.io each in its own task"
-        test: "Each move issue reaches Review inside its task with Forgejo's build green."
-        notes: ["porelo-adapters' move issue", "porelo-ai.github.io's move issue"]
-      - title: "porelo and porelo-host each in its task, with a way back"
-        test: "porelo's agent builds porelo in a task and porelo-host's agent its collection; each works on this machine again if a fault in Porelo or the host's setup stops it."
-        notes: ["porelo's move issue", "porelo-host's move issue", "PJ60 issue for porelo"]
-      - title: "The coordinator reads everything and changes only porelo-project"
-        test: "In `porelo-all` every repository is there; a change outside `porelo-project/` is refused."
-        issues: [porelo-project#PJ58]
   - id: "9"
     title: "Clearing up and counting"
     goal: "What the move leaves behind, and what it makes measurable."
