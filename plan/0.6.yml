@@ -237,16 +237,32 @@ sprints:
         test: "Give two repositories an agent and one a nickname; the start takes each repository's agent, the room shows `Agent <nickname>` or `Agent <repository>`, a task's commits are authored so, and a shared or malformed nickname is refused."
         issues: [porelo#B298]
   - id: "6e"
-    title: "A host set up from the file"
-    goal: "A host is rented from its own folder on the drive and gets every secret from the file, typed as one master password."
+    title: "The host's secrets from the file"
+    goal: "Step 2: every secret of the host's setup comes on standard input from `secrets.kdbx`; the drive still holds `machine.yml` and the bundle."
     functions:
-      - title: "The host's secrets from one file, its folder apart from what all hosts share"
-        test: "Rent a host from a drive holding only `hosts/<project>/` beside `shared/` and `secrets.kdbx`; type the master password once in the setup's terminal (and the drive's one-time code); the host comes up with its VPN key in `/etc/wireguard`, and no secret lies in the clear on the drive. A drive with the old `porelo-host/` layout is refused, naming the new place."
-        issues: [porelo-host#HO36, porelo-host#HO37, porelo-frontend#F197, porelo-frontend#F199]
-        covers: [porelo-project#PJ50, porelo-project#PJ51]
+      - title: "The host's secrets from one file, typed as one master password"
+        test: "Rent a host from a drive holding only `machine.yml` and the bundle; on the desktop type the master password once, at the host the drive's login; the host comes up with its VPN key in `/etc/wireguard` and its tokens and vault keys from the file, and no secret lies on the drive. A need the file does not bring is refused, never prompted for."
+        issues: [porelo-host#HO37, porelo-frontend#F199]
+        covers: [porelo-project#PJ51]
   - id: "6f"
+    title: "The host's files uploaded"
+    goal: "Step 3: `machine.yml` and the bundle go up over the setup's own ssh; the setup reads nothing from the drive."
+    functions:
+      - title: "The setup's files uploaded, not read from the drive"
+        test: "Rent once with a drive holding neither `machine.yml` nor the bundle; the setup comes up from `/etc/porelo-host/setup/`, a digest mismatch refuses `copy`, and a `machine.yml` the account can write is refused."
+        issues: [porelo-host#HO36, porelo-frontend#F197]
+        covers: [porelo-project#PJ50]
+  - id: "6g"
+    title: "The drive is the person's own"
+    goal: "Step 4: the drive leaves the host's setup and becomes the person's optional drive, mounted in their own account."
+    functions:
+      - title: "A host without a drive, and the person's own drive in their account"
+        test: "Rent without a drive: no Tresorit client, only the master password and sudo typed. Rent again with the person's drive: it is mounted in the person's account, and Porelo's account cannot list it."
+        issues: [porelo-host#HO38, porelo-frontend#F201]
+        covers: [porelo-project#PJ50]
+  - id: "6h"
     title: "The forge opened in the browser"
-    goal: "Once the VPN is up the person opens the forge and signs in, with nothing done by hand; may be tested on 6e's host."
+    goal: "Step 5: once the VPN is up the person opens the forge and signs in, with nothing done by hand; may be tested on an earlier step's host."
     functions:
       - title: "The forge opened in the browser once the VPN is up"
         test: "After the VPN, open `https://forge.porelo.internal/` and sign in with the lasting password: no hosts line, CA import or password file by hand; the CA's key never reached the host. A second host needs no new CA in Firefox; a certificate for another name signed by the CA fails `openssl verify`."
