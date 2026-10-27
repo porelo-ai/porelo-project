@@ -79,7 +79,7 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
   homeserver moves to the host, before this machine may be off.
 - **The rules table below** gains one column per agent: a rule is dropped for an agent only once its replacement
   is shown in that agent's task, and the coordinator ticks it in the same commit as the move's check.
-- **The host (operator, 2026-10-27):** the move's host is rented once the room, MX42 and this procedure are ready, and
+- **The host (operator, 2026-10-27):** the move's host is rented once the room, porelo-message-matrix [MX42](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx42) and this procedure are ready, and
   then runs for the whole move, sprints 6 to 8; the re-test's host was given back, since the move could not start that day.
 - **Order and timing** stay as proposed. One move per working day; the next starts only after the last one's check is
   green and the operator has accepted its move issue.
