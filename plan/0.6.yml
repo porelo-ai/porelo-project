@@ -223,19 +223,31 @@ sprints:
         test: "Run an acceptance scenario with an agent that redraws a compact view and repeats a failed tool call; the loop watch stops it before the scenario bound and names the repeated failure. A progressing scenario must continue."
         issues: [porelo#B244]
   - id: "6d"
-    title: "A host set up with one password"
-    goal: "A host is set up from one KeePassXC file on the person's drive, and its forge opens in the browser without steps by hand."
+    title: "The person's secrets in one file, and an agent named per repository"
+    goal: "Without a host: the secrets file is made and read on this computer, and a repository names its agent and the name it goes by."
     functions:
-      - title: "The host's secrets from one file, its folder apart from what all hosts share"
-        test: "Rent a host from a drive holding only `hosts/<project>/` beside `shared/` and `secrets.kdbx`; type the master password once in the setup's terminal (and the drive's one-time code); the host comes up with its VPN, and no secret lies in the clear on the drive. A drive with the old `porelo-host/` layout is refused, naming the new place."
-        issues: [porelo-host#HO36, porelo-host#HO37, porelo-frontend#F197, porelo-frontend#F198, porelo-frontend#F199]
-        covers: [porelo-project#PJ50, porelo-project#PJ51]
-      - title: "The forge opened in the browser once the VPN is up"
-        test: "After the VPN, open `https://forge.porelo.internal/` and sign in with the lasting password: no hosts line, CA import or password file by hand. A second host needs no new CA in Firefox; a certificate for another name signed by the CA fails `openssl verify`."
-        issues: [porelo-host#HO35]
+      - title: "The secrets file made once and opened with KeePassXC"
+        test: "On this computer, without renting: the interface's terminal makes `secrets.kdbx` on the drive with the groups `shared` and `hosts/<project>` after one master password; KeePassXC opens it with that password and shows the entries; the interface's package brought `keepassxc-cli` with it, and no secret appears in the interface, a file beside it or a log."
+        issues: [porelo-frontend#F198]
+        covers: [porelo-project#PJ51]
       - title: "A repository names its agent and the name it goes by"
         test: "Give two repositories an agent and one a nickname; the start takes each repository's agent, the room shows `Agent <nickname>` or `Agent <repository>`, a task's commits are authored so, and a shared or malformed nickname is refused."
         issues: [porelo#B298]
+  - id: "6e"
+    title: "A host set up from the file"
+    goal: "A host is rented from its own folder on the drive and gets every secret from the file, typed as one master password."
+    functions:
+      - title: "The host's secrets from one file, its folder apart from what all hosts share"
+        test: "Rent a host from a drive holding only `hosts/<project>/` beside `shared/` and `secrets.kdbx`; type the master password once in the setup's terminal (and the drive's one-time code); the host comes up with its VPN key in `/etc/wireguard`, and no secret lies in the clear on the drive. A drive with the old `porelo-host/` layout is refused, naming the new place."
+        issues: [porelo-host#HO36, porelo-host#HO37, porelo-frontend#F197, porelo-frontend#F199]
+        covers: [porelo-project#PJ50, porelo-project#PJ51]
+  - id: "6f"
+    title: "The forge opened in the browser"
+    goal: "Once the VPN is up the person opens the forge and signs in, with nothing done by hand; may be tested on 6e's host."
+    functions:
+      - title: "The forge opened in the browser once the VPN is up"
+        test: "After the VPN, open `https://forge.porelo.internal/` and sign in with the lasting password: no hosts line, CA import or password file by hand; the CA's key never reached the host. A second host needs no new CA in Firefox; a certificate for another name signed by the CA fails `openssl verify`."
+        issues: [porelo-host#HO35]
   - id: "7"
     title: "The move, second wave: the other toolchains"
     goal: "Gradle and Flutter move."
