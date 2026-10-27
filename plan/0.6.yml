@@ -178,9 +178,11 @@ sprints:
     functions:
       - title: "The task hears its build from Forgejo"
         test: "The task pushes through its gate to `porelo/<task>` on Forgejo, which builds it; the verdict and a red job's log are in the task's `/porelo/files`."
+        tested: "2026-10-27"
         issues: [porelo-project#PJ61, porelo-adapters#GH08, porelo#B286, porelo-host#HO31, porelo#B296, porelo-frontend#F194, porelo-host#HO33]
       - title: "Only the operator's approval brings the work to the central forge"
         test: "Nothing is there before the approval, the gathered push brings it after; with the project `offline` the push reaches no forge."
+        tested: "2026-10-27"
         issues: [porelo-host#HO29, porelo-host#HO32, porelo#B297, porelo-host#HO34]
         covers: [porelo-project#PJ37]
   - id: "6"

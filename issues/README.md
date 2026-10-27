@@ -36,7 +36,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj61"></a>[PJ61](PJ61-The-Project-Porelo-Is-Online-With-The-Local-Forge-Upstream.md) | M (five repositories, about 4 h) | — | The project `porelo` online with the local Forgejo upstream: a task's push built there, its verdict read in the task, the central forge reached by the gathered push after approval; proved on Sluice first. |
 | <a id="pj37"></a>[PJ37](PJ37-Work-Reaches-The-Upstream-By-A-Machine-Key-Or-The-Persons-Token.md) | — | — | A machine reaches the upstream by keys of its own or by the person's own token, equal choices per project; the token as narrow as the forge allows, used on the host only, deposited for a time on a rented machine. | 0 |
 
 ## Analyzed
@@ -110,6 +109,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Title | What was built |
 |---|---|---|
+| <a id="pj61"></a>[PJ61](README.md#pj61) | The project porelo is online with the local forge upstream | A task's push passes its gate to `porelo/<task>` on the host's Forgejo, which builds it; the verdict and a red job's log reach the task; the gate opens the pull request, the operator approves and merges fast-forward only, and the gathered push alone reaches the central forge; offline reaches no forge. Proved on Sluice with the project `sprint5` (0.6 sprint 5, tested 2026-10-27); the project `porelo`'s own file follows with [PJ59](README.md#pj59). |
 | <a id="pj69"></a>[PJ69](README.md#pj69) | A machine reaches the forge with the person's own credentials | The person's token kept in the vault and used for git and the forge's API, no deploy key per machine and repository: `porelo` [B269](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b269), `porelo-frontend` [F153](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f153) (sprint 2c). |
 | <a id="pj62"></a>[PJ62](README.md#pj62) | The forge adapters live in one repository | `porelo-adapters` with the `github` and `forgejo` adapters, one contract suite both pass, and `porelo build status` asking either (sprint 3: [GH06](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh06), [GH07](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh07), [B253](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b253), [B256](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b256), [B275](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b275)). |
 | <a id="pj63"></a>[PJ63](README.md#pj63) | A release is planned in sprints of tested functions | `plan/<release>.yml` holds each release's goal, sprints, functions the operator tests and their issues; `porelo-release plan render` makes `plan/<release>.md` with a progress image and `plan check` refuses a faulty plan, built in porelo-buildtools. |
