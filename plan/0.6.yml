@@ -313,15 +313,14 @@ sprints:
     functions:
       - title: "porelo-adapters and porelo-ai.github.io each in its own task"
         test: "Each move issue reaches Review inside its task with Forgejo's build green."
-        notes: ["porelo-adapters' move issue", "porelo-ai.github.io's move issue"]
+        issues: [porelo-adapters#GH11, porelo-ai.github.io#SI06]
   - id: "8a"
     title: "The move, wave 6: porelo and porelo-host"
     goal: "The two repositories everything rests on move last of the code, each with a way back."
     functions:
       - title: "porelo and porelo-host each in its task, with a way back"
         test: "porelo's agent builds porelo in a task and porelo-host's agent its collection; each works on this machine again if a fault in Porelo or the host's setup stops it."
-        issues: [porelo-host#HO39]
-        notes: ["porelo's move issue", "PJ60 issue for porelo"]
+        issues: [porelo-host#HO39, porelo#B305, porelo#B306]
   - id: "8b"
     title: "The move, last: the coordinator"
     goal: "The coordinator reads every repository and changes only porelo-project."
