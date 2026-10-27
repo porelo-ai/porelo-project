@@ -1,6 +1,6 @@
 # PJ50 — A host mounts the person's drives
 
-**Status:** Idea. Nothing is decided; the agents weigh the shapes below before anything is built.
+**Status:** Accepted (operator, 2026-10-27). The agents weigh the shapes below before anything is built.
 
 **What must be true.** A host takes what it needs from the person's drives, in two roles. **Its own setup** - the
 machine file, its VPN key, the keys it puts into Porelo's vault - comes either from a tresor of its own or from its

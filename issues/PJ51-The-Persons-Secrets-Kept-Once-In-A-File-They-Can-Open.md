@@ -1,6 +1,6 @@
 # PJ51 — The person's secrets kept once, in a file they can open
 
-**Status:** Idea. Nothing is decided; the shape below is a proposal to weigh.
+**Status:** Accepted (operator, 2026-10-27). The shape below is a proposal to weigh.
 
 **What must be true.** The secrets a person needs to put a project on a host are kept once, in one file on the
 person's own drive, encrypted in an open format the person can open with a common tool of their own. The interface
