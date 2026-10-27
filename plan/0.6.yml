@@ -320,7 +320,7 @@ sprints:
     functions:
       - title: "porelo and porelo-host each in its task, with a way back"
         test: "porelo's agent builds porelo in a task and porelo-host's agent its collection; each works on this machine again if a fault in Porelo or the host's setup stops it."
-        issues: [porelo-host#HO39, porelo#B305, porelo#B306]
+        issues: [porelo-host#HO40, porelo-host#HO39, porelo#B305, porelo#B306]
   - id: "8b"
     title: "The move, last: the coordinator"
     goal: "The coordinator reads every repository and changes only porelo-project."
