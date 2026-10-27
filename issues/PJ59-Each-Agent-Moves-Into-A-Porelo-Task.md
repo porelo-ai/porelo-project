@@ -55,7 +55,7 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
 - **`doc/move.md`, the move's procedure**, one section per step, the same for every agent:
   1. *Before:* the agent's repositories have a `porelo.yml` whose image holds its tools and sub-agents (*To be
      checked*); its sign-ins are in the host's vault; its move issue (S) is filed in its own repository.
-  2. *The switch:* in `project.yml` the agent's repositories take the host's forge as upstream (PJ61's shape,
+  2. *The switch:* in `project.yml` the agent's repositories take the host's forge as upstream ([PJ61](README.md#pj61)'s shape,
      until now proven only on a throwaway central repository); one commit here, pushed by the coordinator.
   3. *The start:* `porelo task start --repository <name> --agent <agent>` on the host, attended, its terminal
      opened by the operator; the agent works its move issue to Review inside the task.
@@ -63,7 +63,7 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
   5. *The way back:* the upstream switched back and the local session resumed, for a move that fails.
 - **`tools/move-check.sh <repository>`**, read-only, run on the host over ssh: the task runs; its last push reached
   the forge as `porelo/<task>`; a Build of it was read by the `forgejo` reader; the pull request was opened by the
-  gate (B297); the task is in the room's `agent-card.json`. Each line says what it found. **Red first:** run
+  gate (porelo [B297](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b297)); the task is in the room's `agent-card.json`. Each line says what it found. **Red first:** run
   against Sluice before its move, every line fails by name.
 - **The channel's bridge.** Until the last agent has moved, the channel file stays here and the moved agents talk
   in the room. The coordinator writes to a moved task with `porelo talk tell <task>` over ssh and reads its
@@ -76,7 +76,7 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
 ## Acceptance
 
 - Sluice's move: `move-check.sh sluice` red before, green after, with its move issue in Review from inside the task.
-- Every later move the same; the coordinator's own move last, in PJ58's `porelo-all`.
+- Every later move the same; the coordinator's own move last, in [PJ58](README.md#pj58)'s `porelo-all`.
 - Seen to fail first: the check against an agent that has not moved.
 
 ## Open questions
