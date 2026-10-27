@@ -275,8 +275,7 @@ sprints:
     functions:
       - title: "porelo-message-sluice works wholly in its task"
         test: "Its move issue reaches Review inside the task with Forgejo's build green; its agent is reached in the room under its repository's name."
-        issues: [porelo-project#PJ59]
-        notes: ["porelo-message-sluice's move issue"]
+        issues: [porelo-project#PJ59, porelo-message-sluice#SL35]
       - title: "porelo-buildtools in its task"
         test: "Its move issue reaches Review inside the task with Forgejo's build green."
         issues: [porelo-buildtools#BT37]
