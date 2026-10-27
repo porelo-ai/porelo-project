@@ -65,9 +65,10 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
   the forge as `porelo/<task>`; a Build of it was read by the `forgejo` reader; the pull request was opened by the
   gate (porelo [B297](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b297)); the task is in the room's `agent-card.json`. Each line says what it found. **Red first:** run
   against Sluice before its move, every line fails by name.
-- **The channel's bridge.** Until the last agent has moved, the channel file stays here and the moved agents talk
-  in the room. The coordinator writes to a moved task with `porelo talk tell <task>` over ssh and reads its
-  answers in the room (*Open questions*).
+- **The channel's bridge (operator, 2026-10-27: a).** Until the last agent has moved, the channel file stays here and
+  the moved agents talk in the room. The coordinator joins the room as a person (`porelo talk join porelo
+  coordinator`), and reads and writes there with a small Matrix client of its own in `tools/`. Its login stays in
+  the vault, and it never runs inside a task. It relays between the room and the channel file until the last move.
 - **The rules table below** gains one column per agent: a rule is dropped for an agent only once its replacement
   is shown in that agent's task, and the coordinator ticks it in the same commit as the move's check.
 - **The host (operator, 2026-10-27):** the host rented for sprint 4 and 5's re-test is kept and becomes the move's host;
@@ -80,13 +81,6 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
 - Sluice's move: `move-check.sh sluice` red before, green after, with its move issue in Review from inside the task.
 - Every later move the same; the coordinator's own move last, in [PJ58](README.md#pj58)'s `porelo-all`.
 - Seen to fail first: the check against an agent that has not moved.
-
-## Open questions
-
-- **How the coordinator talks to a moved agent** while it still works here: (a) it joins the room as a person
-  (`porelo talk join porelo coordinator`) and reads and writes there with a small Matrix client of its own;
-  (b) it writes with `porelo talk tell` over ssh, and the moved agent answers in the room, which the operator
-  reads; (c) the operator relays. Recommended: (a).
 
 ## To be checked
 
