@@ -299,11 +299,10 @@ sprints:
     functions:
       - title: "porelo-message-matrix in its task"
         test: "Its move issue reaches Review inside the task with Forgejo's build green."
-        notes: ["porelo-message-matrix's move issue", "PJ60 issue for porelo-message-matrix"]
+        issues: [porelo-message-matrix#MX43]
       - title: "porelo-intellij and porelo-frontend each in its own task"
         test: "Gradle and Flutter build on Forgejo; the Windows job runs centrally only, named by a variable."
-        issues: [porelo-intellij#IJ14, porelo-intellij#IJ15]
-        notes: ["porelo-frontend's move issue", "PJ60 issue for porelo-frontend"]
+        issues: [porelo-intellij#IJ14, porelo-intellij#IJ15, porelo-frontend#F203, porelo-frontend#F204]
       - title: "Test machines by kind from the VM pool"
         test: "porelo-frontend's leased leg asks for the kind `amd64` on Forgejo and gets an account of the pool, reset afterwards, and a rented machine on the central forge; no workflow names a provider."
         issues: [porelo-host#HO12, porelo-buildtools#BT24, porelo-buildtools#BT25]
