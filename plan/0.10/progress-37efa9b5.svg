@@ -67,7 +67,7 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 94)">
 <text x="0" y="17">1. Run waiting work in its own environment</text>
-<desc>Idea 1, Not filed yet 1. B95: porelo#B95 · Idea · - · A Container To Try Waiting Work In; Create An Isolated Review Trial; Stream Review Trial Results. The SARIF review path in release 0.8 is a prerequisite.: Not filed yet; </desc>
+<desc>Idea 1, Not filed yet 1. B95: porelo#B95 · Idea · - · Pinned gate try in a throw-away container with source/risk limits; no gate route, E0/C3 no egress, bounded scanner import; IDE backend remains separate follow-up.; Create An Isolated Review Trial; Stream Review Trial Results. The SARIF review path in release 0.8 is a prerequisite.: Not filed yet; </desc>
 <svg x="384" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
@@ -109,24 +109,27 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 154)">
 <text x="0" y="17">3. Compare alternatives and open a local preview</text>
-<desc>Estimated 1, Analyzed 1. B163: porelo#B163 · Estimated · L · Several Attempts At One Assignment; B165: porelo#B165 · Analyzed · M · A Port Of A Task On Loopback Only; </desc>
+<desc>Analyzed 2, Idea 1. B163: porelo#B163 · Analyzed · L · Grouped attempts start at one commit; compare per-attempt risk/build/SARIF evidence and enforce selected-commit controls; safe cleanup preserves pending replies and pins.; PJ77: porelo-project#PJ77 · Idea · — · Agents compared on the same work; B165: porelo#B165 · Analyzed · M · A Port Of A Task On Loopback Only; </desc>
 <svg x="384" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+<rect x="0.0" width="266.6666666666667" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
 
-<rect x="200.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 2 done</text>
+<text class="legend" x="410" y="17">0 of 3 done</text>
 </svg>
 
 
 <text x="934" y="17"><title>Approve one of several attempts: Not tested</title>⚪</text>
 
 
-<text x="958" y="17"><title>Open a task port locally: Not tested</title>⚪</text>
+<text x="958" y="17"><title>Several agents build the same work, one more compares them: Not tested</title>⚪</text>
+
+
+<text x="982" y="17"><title>Open a task port locally: Not tested</title>⚪</text>
 
 </g>
 
