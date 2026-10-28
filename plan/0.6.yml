@@ -226,10 +226,12 @@ sprints:
     functions:
       - title: "The secrets file made once and opened with KeePassXC"
         test: "On this computer, without renting: the interface's terminal makes `secrets.kdbx` where the person chooses (offered `~/Porelo/secrets.kdbx`) with the groups `shared` and `hosts/<project>` after one master password; KeePassXC opens it with that password and shows the entries; the interface's package brought `keepassxc-cli` with it, and no secret appears in the interface, a file beside it or a log."
+        tested: "2026-10-28"
         issues: [porelo-frontend#F198]
         covers: [porelo-project#PJ51]
       - title: "A repository names its agent and the name it goes by"
         test: "Give two repositories an agent and one a nickname; the start takes each repository's agent, the room shows `Agent <nickname>` or `Agent <repository>`, a task's commits are authored so, and a shared or malformed nickname is refused."
+        tested: "2026-10-28"
         issues: [porelo#B298, porelo-frontend#F148]
   - id: "6e"
     title: "The host's secrets from the file"
