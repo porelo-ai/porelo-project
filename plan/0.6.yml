@@ -190,6 +190,7 @@ sprints:
     functions:
       - title: "Antigravity and Codex signed in from the vault"
         test: "Antigravity with the operator's Google subscription and Codex CLI with its sign-in, both from the vault, each answering in a task."
+        tested: "2026-10-28"
         issues: [porelo#P12, porelo-agy#AG01, porelo-codex#CX01, porelo#B272, porelo-codex#CX02, porelo#B303, porelo#B302]
       - title: "Pi logs in inside a brokered task"
         test: "A Pi task behind the broker logs in and answers."
