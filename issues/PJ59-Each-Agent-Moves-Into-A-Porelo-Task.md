@@ -91,6 +91,13 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
   is shown in that agent's task, and the coordinator ticks it in the same commit as the move's check.
 - **The host (operator, 2026-10-27):** the move's host is rented once the room, porelo-message-matrix [MX42](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx42) and this procedure are ready, and
   then runs for the whole move, sprints 6 to 8; the re-test's host was given back, since the move could not start that day.
+- **The host's setup for the move (operator, 2026-10-28):** today's flow, `porelo-host up --project porelo`, one
+  project on the host. [PJ78](README.md#pj78) (a host set up once, projects put on it) follows the move, with one
+  re-setup of the host then.
+- **A local dry run first (operator, 2026-10-28):** Sluice's move is rehearsed in a task on this machine, online with
+  GitHub as upstream and the room on this machine's homeserver, driven from the interface; the forge lines of the
+  check wait for the host. Until porelo [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172),
+  an agent outside the task reads the pull request's diff and posts its findings in the room.
 - **Order and timing** stay as proposed. One move per working day; the next starts only after the last one's check is
   green and the operator has accepted its move issue.
 
