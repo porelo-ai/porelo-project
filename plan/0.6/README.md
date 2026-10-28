@@ -3,11 +3,11 @@
 
 Porelo is built in Porelo tasks
 
-*Stand: 2026-10-28T18:32:46Z; no commit time for B318-A-Vault-Clear-A-Play-Can-Read.md (excluded; no file-time fallback)*
+*Stand: 2026-10-28T18:40:32Z*
 
 ## Sprint progress
 
-![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 7, Review 1; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Review 1; Sprint 6d: Finished 2, Review 1; Sprint 6e: Review 4; Sprint 6f: Review 2; Sprint 6g: Review 2; Sprint 6h: Review 2; Sprint 6i: Review 5, Implementing 2; Sprint 7: Backlog 1, Analyzed 1, Idea 1; Sprint 7a: Analyzed 6; Sprint 7b: Analyzed 2; Sprint 7c: Review 3, Idea 5, Not filed yet 1; Sprint 8: Idea 2; Sprint 8a: Idea 4; Sprint 8b: Accepted 1; Sprint 8c: Implementing 3; Sprint 9: Review 3, Backlog 2, Analyzed 2, Accepted 1, Not filed yet 2; Sprint 9a: Review 1; Sprint 10: Implementing 1, Backlog 1; Sprint 11: Not filed yet 1](progress-332019a1.svg)
+![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 7, Review 1; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Review 1; Sprint 6d: Finished 2, Review 1; Sprint 6e: Review 4; Sprint 6f: Review 2; Sprint 6g: Review 2; Sprint 6h: Review 2; Sprint 6i: Review 5, Implementing 2; Sprint 7: Backlog 1, Analyzed 1, Idea 1; Sprint 7a: Analyzed 6; Sprint 7b: Analyzed 2; Sprint 7c: Review 3, Idea 5, Not filed yet 1; Sprint 8: Idea 2; Sprint 8a: Idea 4; Sprint 8b: Accepted 1; Sprint 8c: Implementing 3; Sprint 9: Review 3, Backlog 2, Analyzed 2, Accepted 1, Not filed yet 2; Sprint 9a: Review 1; Sprint 10: Implementing 1, Backlog 1; Sprint 11: Not filed yet 1](progress-8d2d6a0e.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -435,7 +435,7 @@ covers [PJ50](https://github.com/porelo-ai/porelo-project/blob/main/issues/READM
 
 Step 4: the drive leaves the host's setup and becomes the person's optional drive, mounted in their own account.
 
-**A host without a drive, and the person's own drive in their account ⚪ Not tested**
+**A host without a drive, and the person's own drive in their account ✅ Tested 2026-10-28**
 
 Test: Rent without a drive: no Tresorit client, only the master password and sudo typed. Rent again with the person's drive: it is mounted in the person's account, and Porelo's account cannot list it.
 

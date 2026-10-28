@@ -257,6 +257,7 @@ sprints:
     functions:
       - title: "A host without a drive, and the person's own drive in their account"
         test: "Rent without a drive: no Tresorit client, only the master password and sudo typed. Rent again with the person's drive: it is mounted in the person's account, and Porelo's account cannot list it."
+        tested: "2026-10-28"
         issues: [porelo-host#HO38, porelo-frontend#F201]
         covers: [porelo-project#PJ50]
   - id: "6h"
