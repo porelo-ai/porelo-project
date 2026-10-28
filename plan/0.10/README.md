@@ -3,11 +3,11 @@
 
 Try waiting work before approval, compare alternatives and open a limited preview
 
-*Stand: 2026-10-28T12:00:12Z*
+*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Idea 1, Not filed yet 1; Sprint 2: Analyzed 2, Not filed yet 1; Sprint 3: Analyzed 2, Idea 1; Sprint 4: Estimated 1, Idea 1, Not filed yet 1; Sprint 5: Not filed yet 1](0.10/progress-37efa9b5.svg)
+![Sprint 1: Idea 1, Not filed yet 1; Sprint 2: Analyzed 2, Not filed yet 1; Sprint 3: Analyzed 2, Idea 1; Sprint 4: Estimated 1, Idea 1, Not filed yet 1; Sprint 5: Not filed yet 1](progress-37efa9b5.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 

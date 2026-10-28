@@ -107,12 +107,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 154)">
 <text x="0" y="17">3. Understand where a binding setting came from</text>
-<desc>Analyzed 1, Accepted 1. F62: porelo-frontend#F62 · Analyzed · M · An Organisation's Policy Is Shown; F123: porelo-frontend#F123 · Accepted · — · Where A Machine And A Project Stand In Their Organisation's Tree; </desc>
+<desc>Estimated 1, Accepted 1. F62: porelo-frontend#F62 · Estimated · M · An Organisation's Policy Is Shown; F123: porelo-frontend#F123 · Accepted · — · Where A Machine And A Project Stand In Their Organisation's Tree; </desc>
 <svg x="440" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
 
 <rect x="200.0" width="200.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
 
@@ -168,14 +168,16 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 244)">
 <text x="0" y="17">6. Take in existing repositories and signing keys</text>
-<desc>Backlog 1, Analyzed 4. F147: porelo-frontend#F147 · Backlog · XS · Every Repository Of Default Offered To Start In; F84: porelo-frontend#F84 · Analyzed · M · A Signing Key Found Or Made From The Window; F94: porelo-frontend#F94 · Analyzed · M · A Project's Keys Told In One Place; F115: porelo-frontend#F115 · Analyzed · S · A Fine-Grained Token Waiting For An Organisation's Approval; F59: porelo-frontend#F59 · Analyzed · S · A Project From A Repository, Measured Against GitHub; </desc>
+<desc>Backlog 1, Estimated 3, Analyzed 1. F147: porelo-frontend#F147 · Backlog · XS · Every Repository Of Default Offered To Start In; F84: porelo-frontend#F84 · Estimated · M · A Signing Key Found Or Made From The Window; F94: porelo-frontend#F94 · Estimated · M · A Project's Keys Told In One Place; F115: porelo-frontend#F115 · Analyzed · S · A Fine-Grained Token Waiting For An Organisation's Approval; F59: porelo-frontend#F59 · Estimated · S · A Project From A Repository, Measured Against GitHub; </desc>
 <svg x="440" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
 <rect x="0.0" width="80.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
-<rect x="80.0" width="320.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 4</title></rect>
+<rect x="80.0" width="240.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
+
+<rect x="320.0" width="80.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 5 done</text>
@@ -192,14 +194,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 274)">
 <text x="0" y="17">7. Follow a local or offline project</text>
-<desc>Estimated 1, Analyzed 1, Not filed yet 1. B160: porelo#B160 · Estimated · M · A Project Followed From A File Over The Socket; F104: porelo-frontend#F104 · Analyzed · M · A Project Followed From A File; Deliver the core upload before the interface flow.: Not filed yet; </desc>
+<desc>Estimated 2, Not filed yet 1. B160: porelo#B160 · Estimated · M · A Project Followed From A File Over The Socket; F104: porelo-frontend#F104 · Estimated · M · A Project Followed From A File; Deliver the core upload before the interface flow.: Not filed yet; </desc>
 <svg x="440" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
-
-<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="266.6666666666667" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 2</title></rect>
 
 <rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 

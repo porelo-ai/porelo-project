@@ -3,11 +3,11 @@
 
 Work on Apple silicon, Fedora and Windows, with chosen drives and a shared secrets file
 
-*Stand: 2026-10-26T13:35:07Z; no commit time for PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md, 0.20.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Not filed yet 1; Sprint 3: Not filed yet 1; Sprint 4: Not filed yet 1; Sprint 5: Analyzed 1, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Idea 2, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Idea 1, Not filed yet 1; Sprint 10: Idea 1, Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Idea 2, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Backlog 1, Analyzed 1; Sprint 15: Analyzed 1, Idea 2](0.20/progress-83d8c7e2.svg)
+![Sprint 1: Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Not filed yet 1; Sprint 3: Not filed yet 1; Sprint 4: Not filed yet 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Idea 2, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Analyzed 1, Not filed yet 1; Sprint 10: Analyzed 1, Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Rejected 2, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Backlog 1, Estimated 1; Sprint 15: Analyzed 1, Idea 2](progress-7bfbcd33.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -79,7 +79,7 @@ The published Mac package opens a usable interface.
 
 Test: Install in a fresh account, verify the checksum or attestation and follow the documented Gatekeeper step. Open a terminal and type. A build without even an ad hoc signature is not accepted as an installable result.
 
-⬛ [F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109 "porelo-frontend#F109 · Analyzed · XL · The Interface On macOS, With Porelo In A Local VM") ◻️ Build The macOS Frontend; Publish The macOS Application Package. This parent also covers sprint 6.
+🟪 [F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109 "porelo-frontend#F109 · Estimated · XL · The Interface On macOS, With Porelo In A Local VM") ◻️ Build The macOS Frontend; Publish The macOS Application Package. This parent also covers sprint 6.
 
 </td></tr></table>
 
@@ -135,7 +135,7 @@ A host sees only the drive areas chosen for it.
 
 Test: Configure two hosts in separate vaults and then in a shared vault. Each receives only its chosen area; an unselected personal area never appears.
 
-🟧 [PJ50](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj50 "porelo-project#PJ50 · Idea · — · A host mounts the person's drives") ◻️ Describe Personal And Host Drives; Mount Only Selected Host Drive Areas. The access boundaries from release 0.16 must work first.
+⬛ [PJ50](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj50 "porelo-project#PJ50 · Analyzed · M + L · A host mounts the person's drives") ◻️ Describe Personal And Host Drives; Mount Only Selected Host Drive Areas. The access boundaries from release 0.16 must work first.
 
 </td></tr></table>
 
@@ -149,7 +149,7 @@ Porelo and the person's own tool read the same encrypted collection.
 
 Test: Open and change the KDBX file in KeePassXC and Porelo. Concurrent changes are preserved or an explicit conflict stops the write; silent overwriting is refused. The drive contains no plaintext secrets.
 
-🟧 [PJ51](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj51 "porelo-project#PJ51 · Idea · — · The person's secrets kept once, in a file they can open") ◻️ Read And Write KDBX Setup Secrets; Preserve Concurrent Secret File Changes. This parent also covers sprint 11; decide the file format and protection scope first.
+⬛ [PJ51](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj51 "porelo-project#PJ51 · Analyzed · L + L + M · The person's secrets kept once, in a file they can open") ◻️ Read And Write KDBX Setup Secrets; Preserve Concurrent Secret File Changes. This parent also covers sprint 11; decide the file format and protection scope first.
 
 </td></tr></table>
 
@@ -177,7 +177,7 @@ The host syncs only the intended area and keeps secret material protected.
 
 Test: Sync a test area, restart the host and read it again. A missing login is named, unselected areas remain absent and secret setup material stays protected by the chosen encryption model.
 
-🟧 [HO16](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho16 "porelo-host#HO16 · Idea · - · The Person's Drive On OneDrive") 🟧 [F139](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f139 "porelo-frontend#F139 · Idea · — · OneDrive As The Project's Drive") ◻️ Run The OneDrive Host Client; Protect OneDrive Setup Material. These parents also cover sprint 13; use a OneDrive test account.
+🟩 [HO16](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho16 "porelo-host#HO16 · Rejected · - · The Person's Drive On OneDrive") 🟩 [F139](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f139 "porelo-frontend#F139 · Rejected · - · OneDrive As The Project's Drive") ◻️ Run The OneDrive Host Client; Protect OneDrive Setup Material. These parents also cover sprint 13; use a OneDrive test account.
 
 </td></tr></table>
 
@@ -205,7 +205,7 @@ A Windows user connects without installing an SSH executable.
 
 Test: On Windows without an SSH binary, connect to the host, start a task and reconnect. A wrong host key is refused and the relay carries the full stream.
 
-⬛ [F37](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f37 "porelo-frontend#F37 · Analyzed · L · Reach A Machine Without An ssh Binary") 🔲 [F108](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f108 "porelo-frontend#F108 · Backlog · M · A Machine Over Ssh From Windows")
+🟪 [F37](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f37 "porelo-frontend#F37 · Estimated · L · Reach A Machine Without An ssh Binary") 🔲 [F108](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f108 "porelo-frontend#F108 · Backlog · M · A Machine Over Ssh From Windows")
 
 </td></tr></table>
 

@@ -3,11 +3,11 @@
 
 Secrets stay with their owner and reach only the permitted consumer
 
-*Stand: 2026-10-26T13:35:07Z; no commit time for PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md, 0.13.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Analyzed 1, Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Analyzed 1, Accepted 2, Not filed yet 1; Sprint 3: Backlog 2, Not filed yet 1; Sprint 4: Estimated 2, Analyzed 1; Sprint 5: Estimated 1, Analyzed 1, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Not filed yet 1; Sprint 8: Not filed yet 1](0.13/progress-d446f8b1.svg)
+![Sprint 1: Estimated 1, Analyzed 1, Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Analyzed 1, Accepted 2, Not filed yet 1; Sprint 3: Review 2, Not filed yet 1; Sprint 4: Estimated 3; Sprint 5: Estimated 2, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Not filed yet 1; Sprint 8: Not filed yet 1](progress-08bebaa4.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -63,7 +63,7 @@ A working transport never exposes its token in its process environment.
 
 Test: Start Matrix with a test token, deliver a message and inspect /proc environments and process arguments during startup and operation. The token is absent. A transport with an unsupported secret-input protocol is refused before use.
 
-🔲 [B206](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b206 "porelo#B206 · Backlog · L · A Transport Takes Its Secrets On Its Input") 🔲 [MX23](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx23 "porelo-message-matrix#MX23 · Backlog · M · The Transport Takes Its Tokens On Its Input") ◻️ Change the host contract before adapting Matrix.
+🟦 [B206](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b206 "porelo#B206 · Review · L · A Transport Takes Its Secrets On Its Input") 🟦 [MX23](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx23 "porelo-message-matrix#MX23 · Review · M · The Transport Takes Its Tokens On Its Input") ◻️ Change the host contract before adapting Matrix.
 
 </td></tr></table>
 
@@ -77,7 +77,7 @@ Unused access and remaining work stay visible during cleanup.
 
 Test: Follow and unfollow a project, then clear the machine. Read remaining deploy keys, unreviewed or unpushed work and old unused slots. Remove the project's keys in the GitHub test account; another project's key remains.
 
-🟪 [B117](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b117 "porelo#B117 · Estimated · M · What Clearing Leaves For A Person") 🟪 [B153](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b153 "porelo#B153 · Estimated · M · Unused Slots And Keys Reported") ⬛ [F96](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f96 "porelo-frontend#F96 · Analyzed · M · Keys A Machine No Longer Knows, Found By Their Title")
+🟪 [B117](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b117 "porelo#B117 · Estimated · M · What Clearing Leaves For A Person") 🟪 [B153](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b153 "porelo#B153 · Estimated · M · Unused Slots And Keys Reported") 🟪 [F96](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f96 "porelo-frontend#F96 · Estimated · M · Keys A Machine No Longer Knows, Found By Their Title")
 
 </td></tr></table>
 
@@ -91,7 +91,7 @@ A device store derives the share at unlock instead of keeping it stored.
 
 Test: Measure a token present, removed and untouched. Enroll and unlock with a device-store stand-in. The stored state contains no share; unlock without authorization fails.
 
-🟪 [B63](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b63 "porelo#B63 · Estimated · XL · A Share That Is Not Stored At All") ⬛ [F52](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f52 "porelo-frontend#F52 · Analyzed · XL · Release A Device's Key Only With A Touch Or A PIN") ◻️ Measure FIDO2 Share Derivation; Derive Device Shares At Unlock. These parents also cover sprints 6 through 8. Desktop FIDO2 remains a separate later task.
+🟪 [B63](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b63 "porelo#B63 · Estimated · XL · A Share That Is Not Stored At All") 🟪 [F52](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f52 "porelo-frontend#F52 · Estimated · XL · Release A Device's Key Only With A Touch Or A PIN") ◻️ Measure FIDO2 Share Derivation; Derive Device Shares At Unlock. These parents also cover sprints 6 through 8. Desktop FIDO2 remains a separate later task.
 
 </td></tr></table>
 

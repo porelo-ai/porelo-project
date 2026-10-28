@@ -3,11 +3,11 @@
 
 Communicate across machines with clear trust boundaries and hand over files only as allowed
 
-*Stand: 2026-10-26T13:35:07Z; no commit time for PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md, 0.17.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Analyzed 1; Sprint 2: Analyzed 2, Accepted 1, Not filed yet 1; Sprint 3: Backlog 1, Accepted 1, Not filed yet 1; Sprint 4: Estimated 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Backlog 1, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Not filed yet 1; Sprint 10: Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Estimated 1, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Not filed yet 1; Sprint 15: Analyzed 1, Not filed yet 1; Sprint 16: Estimated 1, Not filed yet 1; Sprint 17: Not filed yet 1; Sprint 18: Estimated 1, Analyzed 1, Accepted 1; Sprint 19: Idea 1](0.17/progress-7de29d40.svg)
+![Sprint 1: Estimated 1, Analyzed 1; Sprint 2: Analyzed 2, Accepted 1, Not filed yet 1; Sprint 3: Backlog 1, Accepted 1, Not filed yet 1; Sprint 4: Estimated 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Backlog 1, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Not filed yet 1; Sprint 10: Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Estimated 1, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Not filed yet 1; Sprint 15: Analyzed 1, Not filed yet 1; Sprint 16: Estimated 1, Not filed yet 1; Sprint 17: Not filed yet 1; Sprint 18: Estimated 2, Accepted 1; Sprint 19: Idea 1](progress-81bdfccd.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -261,7 +261,7 @@ The person can name a task without waking every agent.
 
 Test: Set two unique nicknames and send non-ASCII text mentioning one, then @room, then neither. First only the named task wakes, then all; the unaddressed message wakes none and is read at the next wake. Duplicate nicknames are refused and the interface shows the same names.
 
-🟪 [B112](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b112 "porelo#B112 · Estimated · M · A Nickname For Each Agent") ⬛ [F88](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f88 "porelo-frontend#F88 · Analyzed · M · A Nickname For Each Agent") ⬜ [B274](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b274 "porelo#B274 · Accepted · S · A Room Line Wakes Only The Tasks It Mentions")
+🟪 [B112](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b112 "porelo#B112 · Estimated · M · A Nickname For Each Agent") 🟪 [F88](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f88 "porelo-frontend#F88 · Estimated · M · A Nickname For Each Agent") ⬜ [B274](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b274 "porelo#B274 · Accepted · S · A Room Line Wakes Only The Tasks It Mentions")
 
 </td></tr></table>
 

@@ -3,11 +3,11 @@
 
 Manage organization rules and personal access, and take in existing projects
 
-*Stand: 2026-10-26T13:35:07Z; no commit time for PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md, 0.16.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Analyzed 2; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Analyzed 1, Accepted 1; Sprint 4: Accepted 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Backlog 1, Analyzed 4; Sprint 7: Estimated 1, Analyzed 1, Not filed yet 1](0.16/progress-3c94f7ab.svg)
+![Sprint 1: Analyzed 2; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Estimated 1, Accepted 1; Sprint 4: Accepted 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Backlog 1, Estimated 3, Analyzed 1; Sprint 7: Estimated 2, Not filed yet 1](progress-c58f0335.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -51,7 +51,7 @@ The interface explains each setting's origin and allowed changes.
 
 Test: Open machine and project settings, read their rule chain and effective providers, and try changing a locked setting. The interface explains its origin and the permitted next step; the daemon still refuses the forbidden change.
 
-⬛ [F62](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f62 "porelo-frontend#F62 · Analyzed · M · An Organisation's Policy Is Shown") ⬜ [F123](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f123 "porelo-frontend#F123 · Accepted · — · Where A Machine And A Project Stand In Their Organisation's Tree")
+🟪 [F62](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f62 "porelo-frontend#F62 · Estimated · M · An Organisation's Policy Is Shown") ⬜ [F123](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f123 "porelo-frontend#F123 · Accepted · — · Where A Machine And A Project Stand In Their Organisation's Tree")
 
 </td></tr></table>
 
@@ -93,13 +93,13 @@ The person chooses from what already exists and sees the actual token state.
 
 Test: Read all default repositories. Choose a signing key from a file or create one and inspect it in the shared overview. An unsuitable key is refused.
 
-🔲 [F147](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f147 "porelo-frontend#F147 · Backlog · XS · Every Repository Of Default Offered To Start In") ⬛ [F84](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f84 "porelo-frontend#F84 · Analyzed · M · A Signing Key Found Or Made From The Window") ⬛ [F94](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f94 "porelo-frontend#F94 · Analyzed · M · A Project's Keys Told In One Place")
+🔲 [F147](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f147 "porelo-frontend#F147 · Backlog · XS · Every Repository Of Default Offered To Start In") 🟪 [F84](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f84 "porelo-frontend#F84 · Estimated · M · A Signing Key Found Or Made From The Window") 🟪 [F94](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f94 "porelo-frontend#F94 · Estimated · M · A Project's Keys Told In One Place")
 
 **Recognize a token awaiting organization approval ⚪ Not tested**
 
 Test: Create a project against the GitHub test organization with a token awaiting approval. The interface says it is waiting for approval instead of calling it invalid; after approval the operation succeeds.
 
-⬛ [F115](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f115 "porelo-frontend#F115 · Analyzed · S · A Fine-Grained Token Waiting For An Organisation's Approval") ⬛ [F59](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f59 "porelo-frontend#F59 · Analyzed · S · A Project From A Repository, Measured Against GitHub")
+⬛ [F115](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f115 "porelo-frontend#F115 · Analyzed · S · A Fine-Grained Token Waiting For An Organisation's Approval") 🟪 [F59](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f59 "porelo-frontend#F59 · Estimated · S · A Project From A Repository, Measured Against GitHub")
 
 </td></tr></table>
 
@@ -113,7 +113,7 @@ Project intake works without a public repository.
 
 Test: Select a directory and bundle, watch the upload and reconnect. The followed project is recognized as a file source. A bundle above 1 GiB, a disallowed path and a damaged bundle are refused.
 
-🟪 [B160](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b160 "porelo#B160 · Estimated · M · A Project Followed From A File Over The Socket") ⬛ [F104](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f104 "porelo-frontend#F104 · Analyzed · M · A Project Followed From A File") ◻️ Deliver the core upload before the interface flow.
+🟪 [B160](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b160 "porelo#B160 · Estimated · M · A Project Followed From A File Over The Socket") 🟪 [F104](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f104 "porelo-frontend#F104 · Estimated · M · A Project Followed From A File") ◻️ Deliver the core upload before the interface flow.
 
 </td></tr></table>
 

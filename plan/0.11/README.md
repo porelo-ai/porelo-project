@@ -3,11 +3,11 @@
 
 Tasks, builds and transports reach only the resources that were allowed
 
-*Stand: 2026-10-26T13:35:07Z; no commit time for PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md, 0.11.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T11:39:23Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Analyzed 2; Sprint 2: Estimated 1, Analyzed 1, Idea 1; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Backlog 1, Accepted 1, Not filed yet 1; Sprint 5: Estimated 1, Accepted 2, Idea 1, Not filed yet 1; Sprint 6: Accepted 1; Sprint 7: Estimated 2; Sprint 8: Analyzed 1, Accepted 1, Not filed yet 1](0.11/progress-7a3db328.svg)
+![Sprint 1: Estimated 1, Analyzed 2; Sprint 2: Estimated 1, Analyzed 1, Idea 1; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Backlog 1, Accepted 1, Not filed yet 1; Sprint 5: Estimated 1, Accepted 2, Idea 1, Not filed yet 1; Sprint 6: Accepted 1; Sprint 7: Estimated 2; Sprint 8: Analyzed 1, Accepted 1, Not filed yet 1](progress-7a3db328.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 

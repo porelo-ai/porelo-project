@@ -147,12 +147,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 214)">
 <text x="0" y="17">5. Install the Mac application</text>
-<desc>Analyzed 1, Not filed yet 1. F109: porelo-frontend#F109 · Analyzed · XL · The Interface On macOS, With Porelo In A Local VM; Build The macOS Frontend; Publish The macOS Application Package. This parent also covers sprint 6.: Not filed yet; </desc>
+<desc>Estimated 1, Not filed yet 1. F109: porelo-frontend#F109 · Estimated · XL · The Interface On macOS, With Porelo In A Local VM; Build The macOS Frontend; Publish The macOS Application Package. This parent also covers sprint 6.: Not filed yet; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
 
 <rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
@@ -227,12 +227,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 334)">
 <text x="0" y="17">9. Choose drive areas for each host</text>
-<desc>Idea 1, Not filed yet 1. PJ50: porelo-project#PJ50 · Idea · — · A host mounts the person's drives; Describe Personal And Host Drives; Mount Only Selected Host Drive Areas. The access boundaries from release 0.16 must work first.: Not filed yet; </desc>
+<desc>Analyzed 1, Not filed yet 1. PJ50: porelo-project#PJ50 · Analyzed · M + L · A host mounts the person's drives; Describe Personal And Host Drives; Mount Only Selected Host Drive Areas. The access boundaries from release 0.16 must work first.: Not filed yet; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
 
 <rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
@@ -248,12 +248,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 364)">
 <text x="0" y="17">10. Use a secrets file readable by a separate tool</text>
-<desc>Idea 1, Not filed yet 1. PJ51: porelo-project#PJ51 · Idea · — · The person's secrets kept once, in a file they can open; Read And Write KDBX Setup Secrets; Preserve Concurrent Secret File Changes. This parent also covers sprint 11; decide the file format and protection scope first.: Not filed yet; </desc>
+<desc>Analyzed 1, Not filed yet 1. PJ51: porelo-project#PJ51 · Analyzed · L + L + M · The person's secrets kept once, in a file they can open; Read And Write KDBX Setup Secrets; Preserve Concurrent Secret File Changes. This parent also covers sprint 11; decide the file format and protection scope first.: Not filed yet; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
 
 <rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
@@ -288,17 +288,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 424)">
 <text x="0" y="17">12. Use OneDrive with measured protection</text>
-<desc>Idea 2, Not filed yet 1. HO16: porelo-host#HO16 · Idea · - · The Person's Drive On OneDrive; F139: porelo-frontend#F139 · Idea · — · OneDrive As The Project's Drive; Run The OneDrive Host Client; Protect OneDrive Setup Material. These parents also cover sprint 13; use a OneDrive test account.: Not filed yet; </desc>
+<desc>Rejected 2, Not filed yet 1. HO16: porelo-host#HO16 · Rejected · - · The Person's Drive On OneDrive; F139: porelo-frontend#F139 · Rejected · - · OneDrive As The Project's Drive; Run The OneDrive Host Client; Protect OneDrive Setup Material. These parents also cover sprint 13; use a OneDrive test account.: Not filed yet; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="266.6666666666667" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+<rect x="0.0" width="266.6666666666667" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 2</title></rect>
 
 <rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 3 done</text>
+<text class="legend" x="410" y="17">2 of 3 done</text>
 </svg>
 
 
@@ -328,14 +328,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 484)">
 <text x="0" y="17">14. Reach a remote machine from Windows</text>
-<desc>Backlog 1, Analyzed 1. F37: porelo-frontend#F37 · Analyzed · L · Reach A Machine Without An ssh Binary; F108: porelo-frontend#F108 · Backlog · M · A Machine Over Ssh From Windows; </desc>
+<desc>Backlog 1, Estimated 1. F37: porelo-frontend#F37 · Estimated · L · Reach A Machine Without An ssh Binary; F108: porelo-frontend#F108 · Backlog · M · A Machine Over Ssh From Windows; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
 <rect x="0.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
-<rect x="200.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="200.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 2 done</text>

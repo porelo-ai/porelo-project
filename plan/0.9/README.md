@@ -3,11 +3,11 @@
 
 Running alone: the accounts, a machine nobody sits at, and hosts from any provider
 
-*Stand: 2026-10-26T13:35:07Z; no commit time for PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Idea 1, Not filed yet 1; Sprint 1a: Backlog 2; Sprint 2: Accepted 1, Not filed yet 1; Sprint 2b: Estimated 1, Idea 1; Sprint 3: Estimated 1, Accepted 1; Sprint 3a: Idea 1, Not filed yet 1; Sprint 3b: Not filed yet 1; Sprint 3c: Not filed yet 1; Sprint 4a: Idea 2; Sprint 4b: Idea 2](0.9/progress-bad4a809.svg)
+![Sprint 1: Idea 1, Not filed yet 1; Sprint 1a: Implementing 1, Backlog 1; Sprint 2: Accepted 1, Not filed yet 1; Sprint 2b: Estimated 1, Idea 1; Sprint 3: Estimated 1, Accepted 1; Sprint 3a: Idea 1, Not filed yet 1; Sprint 3b: Not filed yet 1; Sprint 3c: Not filed yet 1; Sprint 4a: Idea 2; Sprint 4b: Idea 2](progress-9d33b8eb.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -43,7 +43,7 @@ A second identical setup reports that nothing changed.
 
 Test: Set the same credential twice and run setup twice. The second run reports unchanged in text and JSON, with no unnecessary service restart or credential change. Change the value; it is reported as changed.
 
-🔲 [B214](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b214 "porelo#B214 · Backlog · M · A Vault Entry Put Again Unchanged") 🔲 [B216](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b216 "porelo#B216 · Backlog · M · A Second Setup Says Nothing Changed")
+🟨 [B214](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b214 "porelo#B214 · Implementing · M · A Vault Entry Put Again Unchanged") 🔲 [B216](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b216 "porelo#B216 · Backlog · M · A Second Setup Says Nothing Changed")
 
 </td></tr></table>
 
@@ -153,7 +153,7 @@ The project can opt into review and cleanup without losing remaining work.
 
 Test: Report the same green build more than once; exactly one reviewer starts for that commit. Merge a task pull request; a task with no remaining work is removed, while unmerged work stays visible. With no project opt-in, neither action runs.
 
-🟧 [B288](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b288 "porelo#B288 · Idea · - · A Reviewer Started When The Build Is Green") 🟧 [B289](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b289 "porelo#B289 · Idea · - · A Task Removed When Its Pull Request Is Merged")
+🟧 [B288](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b288 "porelo#B288 · Idea · - · One bounded automatic reviewer per eligible green commit; E0 never auto-starts, restart-safe deduplication and no automatic approval.") 🟧 [B289](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b289 "porelo#B289 · Idea · - · Authenticated human merge of the exact reviewed source head triggers safe stop/recheck/remove; unmerged work, pending replies and needed review pins are preserved.")
 
 </td></tr></table>
 

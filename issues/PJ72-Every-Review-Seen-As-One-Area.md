@@ -11,7 +11,7 @@ built, and the gaps between them, can be decided for the area as a whole rather 
 Reviewing is spread over many repositories: the daemon's gate and comment model, the interface, the IntelliJ plugin,
 the forge adapters, the sluice, the host. A review can come from three places - the person at the gate, a checking
 agent, a forge - and the issues for each were written apart. Release 0.8 is the release of this area, planned in
-[plan/0.8.yml](../plan/0.8.yml): first the profile and the review at the gate, then the agent that reviews and the rounds
+[plan/0.8/plan.yml](../plan/0.8/plan.yml): first the profile and the review at the gate, then the agent that reviews and the rounds
 of check and fix, the risk classes, and last the reviews on GitHub, on the host's Forgejo and in IntelliJ.
 
 ## The technical base: SARIF

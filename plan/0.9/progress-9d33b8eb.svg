@@ -91,12 +91,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 124)">
 <text x="0" y="17">1a. Repeating setup changes nothing</text>
-<desc>Backlog 2. B214: porelo#B214 · Backlog · M · A Vault Entry Put Again Unchanged; B216: porelo#B216 · Backlog · M · A Second Setup Says Nothing Changed; </desc>
+<desc>Implementing 1, Backlog 1. B214: porelo#B214 · Implementing · M · A Vault Entry Put Again Unchanged; B216: porelo#B216 · Backlog · M · A Second Setup Says Nothing Changed; </desc>
 <svg x="424" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 2</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 2 done</text>
@@ -238,7 +240,7 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 334)">
 <text x="0" y="17">4a. Review a green commit and retire merged tasks</text>
-<desc>Idea 2. B288: porelo#B288 · Idea · - · A Reviewer Started When The Build Is Green; B289: porelo#B289 · Idea · - · A Task Removed When Its Pull Request Is Merged; </desc>
+<desc>Idea 2. B288: porelo#B288 · Idea · - · One bounded automatic reviewer per eligible green commit; E0 never auto-starts, restart-safe deduplication and no automatic approval.; B289: porelo#B289 · Idea · - · Authenticated human merge of the exact reviewed source head triggers safe stop/recheck/remove; unmerged work, pending replies and needed review pins are preserved.; </desc>
 <svg x="424" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>

@@ -35,7 +35,7 @@ sprints:
     goal: "This page, made from a checked-in plan file and readable on the central forge."
     functions:
       - title: "The plan page made from the plan file"
-        test: "`plan/0.6.md` shows the same sprints, functions, states and marks as the local page; `plan check` finds a planted fault."
+        test: "`plan/0.6/README.md` shows the same sprints, functions, states and marks as the local page; `plan check` finds a planted fault."
         tested: "2026-10-24"
         issues: [porelo-project#PJ63, porelo-buildtools#BT26]
       - title: "The release plan page drawn as the local one"

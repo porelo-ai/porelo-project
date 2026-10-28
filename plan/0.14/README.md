@@ -3,11 +3,11 @@
 
 An unattended task keeps its limits; a kernel of its own is offered only after proof
 
-*Stand: 2026-10-26T13:35:07Z; no commit time for PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md, 0.14.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T11:39:23Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Analyzed 1, Not filed yet 1; Sprint 2: Estimated 2, Analyzed 1; Sprint 3: Accepted 1, Not filed yet 1; Sprint 4: Accepted 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Idea 2; Sprint 7: Idea 2; Sprint 8: Estimated 1, Not filed yet 1; Sprint 9: Estimated 1, Not filed yet 2; Sprint 10: Not filed yet 1](0.14/progress-63a92eec.svg)
+![Sprint 1: Estimated 1, Analyzed 1, Not filed yet 1; Sprint 2: Estimated 2, Analyzed 1; Sprint 3: Accepted 1, Not filed yet 1; Sprint 4: Accepted 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Idea 2; Sprint 7: Idea 2; Sprint 8: Estimated 1, Not filed yet 1; Sprint 9: Estimated 1, Not filed yet 2; Sprint 10: Not filed yet 1](progress-63a92eec.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 

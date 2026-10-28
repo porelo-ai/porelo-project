@@ -3,11 +3,11 @@
 
 Installed packages, setup scripts and images have a verifiable origin
 
-*Stand: 2026-10-26T13:35:07Z; no commit time for PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md, 0.12.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Accepted 1; Sprint 2: Estimated 2, Not filed yet 1; Sprint 3: Estimated 1, Analyzed 1, Accepted 1; Sprint 4: Estimated 2, Idea 1, Not filed yet 1; Sprint 5: Idea 1](0.12/progress-c5cf2d08.svg)
+![Sprint 1: Estimated 1, Accepted 1; Sprint 2: Estimated 2, Not filed yet 1; Sprint 3: Estimated 2, Accepted 1; Sprint 4: Estimated 2, Idea 1, Not filed yet 1; Sprint 5: Idea 1](progress-c2d6e5a4.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -51,7 +51,7 @@ A fresh machine trusts the correct source and keeps signature checking enabled.
 
 Test: Install through the interface on fresh Fedora and Debian or Ubuntu. Change the setup script; it must not run. Offer an agent package with the same name from another source; it is not selected. Install the correctly signed package and confirm package checking remains enabled.
 
-🟪 [B196](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b196 "porelo#B196 · Estimated · S · The Fedora Repository Checked By Its Key") ⬛ [F81](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f81 "porelo-frontend#F81 · Analyzed · M · The Setup Script Checked By Its Signature") ⬜ [B260](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b260 "porelo#B260 · Accepted · M · Only Porelo's Own Source Installs An Agent")
+🟪 [B196](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b196 "porelo#B196 · Estimated · S · The Fedora Repository Checked By Its Key") 🟪 [F81](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f81 "porelo-frontend#F81 · Estimated · M · The Setup Script Checked By Its Signature") ⬜ [B260](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b260 "porelo#B260 · Accepted · M · Only Porelo's Own Source Installs An Agent")
 
 </td></tr></table>
 

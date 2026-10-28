@@ -436,12 +436,12 @@ and the UTC time that text last changed; change it in the channel first, never i
   repository's issue prefixes are `PJ`, and `A` for candidate agents without a repository; they are
   not in `project.yml`, because `project.yml` is defined here.
 - **`project.yml`'s keys are documented in `porelo`, under `doc/project-file.md`**, not here.
-- **A release is planned in `plan/<release>.yml`**: its sprints, the functions the operator tests and their
+- **A release is planned in `plan/<release>/plan.yml`**: its sprints, the functions the operator tests and their
   issues, never an issue of the release as a whole. `porelo-release plan render` makes its page and `plan check`
   checks it; the plan is kept current at every change of state.
 - **Sprints are numbered from one within each release.** A sprint reference names its release when
   the context does not make it clear.
-- **Every issue being worked on appears under the function it serves in `plan/<release>.yml`.** Add
+- **Every issue being worked on appears under the function it serves in `plan/<release>/plan.yml`.** Add
   a new dependency or split issue when it is filed or started.
 
 ## Coordinating

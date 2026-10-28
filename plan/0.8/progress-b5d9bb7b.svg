@@ -67,12 +67,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 94)">
 <text x="0" y="17">1. A finding is SARIF</text>
-<desc>Estimated 1, Idea 1, Not filed yet 1. PJ72: porelo-project#PJ72 · Idea · — · Every issue about reviewing work - by the person at the gate, by a checking agent, by comments on a forge's pull request - listed in one place by theme, so the order and the gaps are decided for the area as a whole; Porelo reads and writes review data only as SARIF, the adapters convert to and from each forge, IntelliJ reuses what it ships.; the SARIF profile in porelo, read and written through java-sarif with a current Jackson (from PJ72): Not filed yet; SL24: porelo-message-sluice#SL24 · Estimated · L · A code comment, the filter's side; </desc>
+<desc>Analyzed 1, Idea 1, Not filed yet 1. PJ72: porelo-project#PJ72 · Idea · — · Every issue about reviewing work - by the person at the gate, by a checking agent, by comments on a forge's pull request - listed in one place by theme, so the order and the gaps are decided for the area as a whole; Porelo reads and writes review data only as SARIF, the adapters convert to and from each forge, IntelliJ reuses what it ships.; the SARIF profile in porelo, read and written through java-sarif with a current Jackson (from PJ72): Not filed yet; SL24: porelo-message-sluice#SL24 · Analyzed · L · A code comment, the filter's side; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+<rect x="0.0" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
 
 <rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
 
@@ -93,14 +93,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 124)">
 <text x="0" y="17">2. The person comments at the gate</text>
-<desc>Estimated 1, Analyzed 3. B166: porelo#B166 · Estimated · L · Line Comments Sent Back To The Agent; F78: porelo-frontend#F78 · Analyzed · M · A Waiting Push Is Reviewed As At A Forge; F107: porelo-frontend#F107 · Analyzed · L · Code Comments In The Review; B176: porelo#B176 · Analyzed · M · Comment Threads That Follow A New Push; </desc>
+<desc>Analyzed 4. B166: porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.; F78: porelo-frontend#F78 · Analyzed · M · A Waiting Push Is Reviewed As At A Forge; F107: porelo-frontend#F107 · Analyzed · L · Code Comments In The Review; B176: porelo#B176 · Analyzed · M · Byte-exact thread relocation with original revision retained, outdated reasons and hidden pins; moved fixes revalidated and SARIF runs separated by revision.; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="100.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
-
-<rect x="100.0" width="300.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 3</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 4</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 4 done</text>
@@ -117,7 +115,7 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 154)">
 <text x="0" y="17">2a. Understand the scope of a review</text>
-<desc>Estimated 1, Analyzed 2. B150: porelo#B150 · Analyzed · M · The Whole Diff In Review; B174: porelo#B174 · Estimated · M · A Running Task's Commits And Their Diff; F112: porelo-frontend#F112 · Analyzed · L · What A Piece Of Work Did, In Words; </desc>
+<desc>Estimated 1, Analyzed 2. B150: porelo#B150 · Analyzed · M · Bound serialized review replies with explicit file-boundary cuts; retain complete file inventory or refuse by name; full-diff risk and SARIF completeness stay independent.; B174: porelo#B174 · Estimated · M · A Running Task's Commits And Their Diff; F112: porelo-frontend#F112 · Analyzed · L · What A Piece Of Work Did, In Words; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
@@ -138,12 +136,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 184)">
 <text x="0" y="17">3. An agent that only reviews</text>
-<desc>Estimated 1, Idea 1. B172: porelo#B172 · Estimated · M · A Task That Reviews; PJ64: porelo-project#PJ64 · Idea · — · A task chooses its agent and effort by its work; </desc>
+<desc>Analyzed 1, Idea 1. B172: porelo#B172 · Analyzed · M · One read-only reviewer/check role, pinned target and SARIF output; no push, approval, suppression or resolution authority; ends after durable delivery.; PJ64: porelo-project#PJ64 · Idea · — · A task chooses its agent and effort by its work; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
 
 <rect x="200.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
 
@@ -162,14 +160,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 214)">
 <text x="0" y="17">3a. Choose the review mode</text>
-<desc>Estimated 1, Analyzed 1. B101: porelo#B101 · Analyzed · M · A Mode A Start Asks For By Name; OM19: porelo-omp#OM19 · Estimated · S · Declare a thinking level and a read-only mode; </desc>
+<desc>Analyzed 2. B101: porelo#B101 · Analyzed · M · A Mode A Start Asks For By Name; OM19: porelo-omp#OM19 · Analyzed · S · Declare a thinking level and a read-only mode; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
-
-<rect x="200.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 2 done</text>
@@ -207,12 +203,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 274)">
 <text x="0" y="17">5. What a change touches decides its review</text>
-<desc>Estimated 3, Idea 2. PJ73: porelo-project#PJ73 · Idea · — · Who wrote something decides what it may do; B283: porelo#B283 · Idea · - · A Retargeted Symbolic Link Ranked Dangerous; B141: porelo#B141 · Estimated · XL · New Dependencies Checked Before Review; B145: porelo#B145 · Estimated · L · Four Eyes At The Gate; B136: porelo#B136 · Estimated · M · An Approve Bound To What Was Reviewed; </desc>
+<desc>Analyzed 3, Idea 2. PJ73: porelo-project#PJ73 · Idea · — · Who wrote something decides what it may do; B283: porelo#B283 · Idea · - · Every changed symbolic link ranks dangerous, including retarget, deletion and replacement; feeds C3 evidence without traversal.; B141: porelo#B141 · Analyzed · XL · Dependency changes and registry/name findings as SARIF; commit-bound human confirmation holds approval; splits into extraction (M), registry/hold (L), look-alike names (S).; B145: porelo#B145 · Analyzed · L · Independent human signatures required for E0/C3 or project four-eyes policy, bound to the exact reviewed commit; no agent or forge verdict can substitute.; B136: porelo#B136 · Analyzed · M · Capture one reviewed commit for patch/log and every approval path; confirmations and signatures use that key; SARIF never authorizes forwarding.; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="240.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
+<rect x="0.0" width="240.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 3</title></rect>
 
 <rect x="240.0" width="160.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
 
@@ -255,14 +251,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 334)">
 <text x="0" y="17">7. Review comments from GitHub</text>
-<desc>Estimated 1, Analyzed 1, Not filed yet 1. B171: porelo#B171 · Estimated · L · Forge Review Comments To And From A Task; GH02: porelo-adapters#GH02 · Analyzed · M · Review Comments Read And Written; the release of held and outgoing comments in the interface (from PJ72): Not filed yet; </desc>
+<desc>Analyzed 2, Not filed yet 1. B171: porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.; GH02: porelo-adapters#GH02 · Analyzed · L · GitHub serves `Review1` beside `Build2` as SARIF 2.1.0 through the `github` client, preserving thread and origin evidence and sending explicit authorized writes with per-call credentials; the release of held and outgoing comments in the interface (from PJ72): Not filed yet; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
-
-<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="266.6666666666667" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
 
 <rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
@@ -326,12 +320,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 424)">
 <text x="0" y="17">9. The review in IntelliJ</text>
-<desc>Estimated 1, Not filed yet 1. IJ04: porelo-intellij#IJ04 · Estimated · XL · Code comments in the review; the plugin's adapter on IntelliJ's code review module, in Java (from PJ72): Not filed yet; IJ04: porelo-intellij#IJ04 · Estimated · XL · Code comments in the review; </desc>
+<desc>Analyzed 1, Not filed yet 1. IJ04: porelo-intellij#IJ04 · Analyzed · L · Code comments in the review; the plugin's adapter on IntelliJ's code review module, in Java (from PJ72): Not filed yet; IJ04: porelo-intellij#IJ04 · Analyzed · L · Code comments in the review; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
 
 <rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 

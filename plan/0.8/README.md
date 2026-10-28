@@ -3,11 +3,11 @@
 
 Code reviews as SARIF: every finding and comment - from a person, a checking agent, a linter or a forge - in one format, trusted by who wrote it
 
-*Stand: 2026-10-26T13:35:07Z; no commit time for PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Idea 1, Not filed yet 1; Sprint 2: Estimated 1, Analyzed 3; Sprint 2a: Estimated 1, Analyzed 2; Sprint 3: Estimated 1, Idea 1; Sprint 3a: Estimated 1, Analyzed 1; Sprint 4: Idea 1, Not filed yet 1; Sprint 5: Estimated 3, Idea 2; Sprint 6: Idea 1, Not filed yet 1; Sprint 7: Estimated 1, Analyzed 1, Not filed yet 1; Sprint 8: Idea 2, Not filed yet 1; Sprint 8a: Accepted 1, Not filed yet 1; Sprint 9: Estimated 1, Not filed yet 1](0.8/progress-e5edd6d1.svg)
+![Sprint 1: Analyzed 1, Idea 1, Not filed yet 1; Sprint 2: Analyzed 4; Sprint 2a: Estimated 1, Analyzed 2; Sprint 3: Analyzed 1, Idea 1; Sprint 3a: Analyzed 2; Sprint 4: Idea 1, Not filed yet 1; Sprint 5: Analyzed 3, Idea 2; Sprint 6: Idea 1, Not filed yet 1; Sprint 7: Analyzed 2, Not filed yet 1; Sprint 8: Idea 2, Not filed yet 1; Sprint 8a: Accepted 1, Not filed yet 1; Sprint 9: Analyzed 1, Not filed yet 1](progress-b5d9bb7b.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -29,7 +29,7 @@ Test: A SARIF report of a linter added to waiting work shows each finding on its
 
 Test: Reports with a `file://` or `../` location, a fix in another file than its anchor, an external property file, a bidirectional control character, or more results than the limit are each refused, naming the element; nothing of them is shown or kept.
 
-🟪 [SL24](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl24 "porelo-message-sluice#SL24 · Estimated · L · A code comment, the filter's side")
+⬛ [SL24](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl24 "porelo-message-sluice#SL24 · Analyzed · L · A code comment, the filter's side")
 
 </td></tr></table>
 
@@ -43,13 +43,13 @@ A person reads waiting work as at a forge and comments on its lines; the agent r
 
 Test: In the interface's review a person comments on a line with a suggestion; the building task receives it as untrusted review input, pushes a fix, and the review shows the thread answered on the new commit.
 
-🟪 [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166 "porelo#B166 · Estimated · L · Line Comments Sent Back To The Agent") ⬛ [F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78 "porelo-frontend#F78 · Analyzed · M · A Waiting Push Is Reviewed As At A Forge") ⬛ [F107](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f107 "porelo-frontend#F107 · Analyzed · L · Code Comments In The Review")
+⬛ [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166 "porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.") ⬛ [F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78 "porelo-frontend#F78 · Analyzed · M · A Waiting Push Is Reviewed As At A Forge") ⬛ [F107](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f107 "porelo-frontend#F107 · Analyzed · L · Code Comments In The Review")
 
 **A thread follows the new push ⚪ Not tested**
 
 Test: A thread on lines the new push left unchanged moves with them; one on changed lines stays on its old commit and says so.
 
-⬛ [B176](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b176 "porelo#B176 · Analyzed · M · Comment Threads That Follow A New Push")
+⬛ [B176](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b176 "porelo#B176 · Analyzed · M · Byte-exact thread relocation with original revision retained, outdated reasons and hidden pins; moved fixes revalidated and SARIF runs separated by revision.")
 
 </td></tr></table>
 
@@ -63,7 +63,7 @@ The person can tell what was read and what was cut from a running or stopped tas
 
 Test: Open a review larger than 4 MiB; it is cut at a file boundary, says so and keeps the full file list. Read a running task with local commits, then stop it. Summary, commits and diff agree in both states; missing parts must not appear complete.
 
-⬛ [B150](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b150 "porelo#B150 · Analyzed · M · The Whole Diff In Review") 🟪 [B174](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b174 "porelo#B174 · Estimated · M · A Running Task's Commits And Their Diff") ⬛ [F112](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f112 "porelo-frontend#F112 · Analyzed · L · What A Piece Of Work Did, In Words")
+⬛ [B150](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b150 "porelo#B150 · Analyzed · M · Bound serialized review replies with explicit file-boundary cuts; retain complete file inventory or refuse by name; full-diff risk and SARIF completeness stay independent.") 🟪 [B174](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b174 "porelo#B174 · Estimated · M · A Running Task's Commits And Their Diff") ⬛ [F112](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f112 "porelo-frontend#F112 · Analyzed · L · What A Piece Of Work Did, In Words")
 
 </td></tr></table>
 
@@ -77,7 +77,7 @@ A task in the role reviewer reads waiting work and writes comments, nothing else
 
 Test: `porelo task start --role reviewer` on waiting work writes its findings as comments beside the person's, marked with its task and role; its push, approve and reject are refused by the host.
 
-🟪 [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172 "porelo#B172 · Estimated · M · A Task That Reviews")
+⬛ [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172 "porelo#B172 · Analyzed · M · One read-only reviewer/check role, pinned target and SARIF output; no push, approval, suppression or resolution authority; ends after durable delivery.")
 
 **Its agent and effort chosen by the work ⚪ Not tested**
 
@@ -97,7 +97,7 @@ A reviewer receives its named mode and thinking level.
 
 Test: Start OMP with read-only mode and a thinking level; the agent receives those values. An unknown mode or level is refused before the start. Try a reviewer push or approval; the host still refuses it.
 
-⬛ [B101](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b101 "porelo#B101 · Analyzed · M · A Mode A Start Asks For By Name") 🟪 [OM19](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om19 "porelo-omp#OM19 · Estimated · S · Declare a thinking level and a read-only mode")
+⬛ [B101](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b101 "porelo#B101 · Analyzed · M · A Mode A Start Asks For By Name") ⬛ [OM19](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om19 "porelo-omp#OM19 · Analyzed · S · Declare a thinking level and a read-only mode")
 
 </td></tr></table>
 
@@ -131,13 +131,13 @@ A change's risk class comes from rules alone and decides how it is reviewed and 
 
 Test: Waiting work that deletes a test, changes a workflow, adds a dependency or retargets a symbolic link is ranked C2 or C3 by rule, with the reason shown; a reviewer's finding can raise the class, never lower it.
 
-🟧 [PJ73](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj73 "porelo-project#PJ73 · Idea · — · Who wrote something decides what it may do") 🟧 [B283](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b283 "porelo#B283 · Idea · - · A Retargeted Symbolic Link Ranked Dangerous") 🟪 [B141](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b141 "porelo#B141 · Estimated · XL · New Dependencies Checked Before Review")
+🟧 [PJ73](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj73 "porelo-project#PJ73 · Idea · — · Who wrote something decides what it may do") 🟧 [B283](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b283 "porelo#B283 · Idea · - · Every changed symbolic link ranks dangerous, including retarget, deletion and replacement; feeds C3 evidence without traversal.") ⬛ [B141](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b141 "porelo#B141 · Analyzed · XL · Dependency changes and registry/name findings as SARIF; commit-bound human confirmation holds approval; splits into extraction &#40;M&#41;, registry/hold &#40;L&#41;, look-alike names &#40;S&#41;.")
 
 **A C3 change approved by two people, on what they read ⚪ Not tested**
 
 Test: Approving a C3 change asks for a second person; a push the agent makes between review and approval is never forwarded unseen.
 
-🟪 [B145](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b145 "porelo#B145 · Estimated · L · Four Eyes At The Gate") 🟪 [B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136 "porelo#B136 · Estimated · M · An Approve Bound To What Was Reviewed")
+⬛ [B145](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b145 "porelo#B145 · Analyzed · L · Independent human signatures required for E0/C3 or project four-eyes policy, bound to the exact reviewed commit; no agent or forge verdict can substitute.") ⬛ [B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136 "porelo#B136 · Analyzed · M · Capture one reviewed commit for patch/log and every approval path; confirmations and signatures use that key; SARIF never authorizes forwarding.")
 
 </td></tr></table>
 
@@ -171,7 +171,7 @@ Review comments on a task's GitHub pull request reach the task as SARIF, trusted
 
 Test: On a task's pull request, a comment of an internal account and of a listed partner reach the task at once; a comment of an unknown account is held and shown until the person releases it; a comment that claims another author changes nothing.
 
-🟪 [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171 "porelo#B171 · Estimated · L · Forge Review Comments To And From A Task") ⬛ [GH02](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh02 "porelo-adapters#GH02 · Analyzed · M · Review Comments Read And Written")
+⬛ [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171 "porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.") ⬛ [GH02](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh02 "porelo-adapters#GH02 · Analyzed · L · GitHub serves `Review1` beside `Build2` as SARIF 2.1.0 through the `github` client, preserving thread and origin evidence and sending explicit authorized writes with per-call credentials")
 
 **Replies released, a thread resolved by an internal person ⚪ Not tested**
 
@@ -225,13 +225,13 @@ A developer reads and writes review comments in IntelliJ's diff as on a colleagu
 
 Test: The plugin's review shows every thread of waiting work on its lines with its origin - person, task, forge account or linter - and a suggestion as a small diff.
 
-🟪 [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04 "porelo-intellij#IJ04 · Estimated · XL · Code comments in the review") ◻️ the plugin's adapter on IntelliJ's code review module, in Java (from PJ72)
+⬛ [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04 "porelo-intellij#IJ04 · Analyzed · L · Code comments in the review") ◻️ the plugin's adapter on IntelliJ's code review module, in Java (from PJ72)
 
 **A comment written and a held one released ⚪ Not tested**
 
 Test: A comment and a reply written in the plugin reach the task as in the interface; a held forge comment is released from the plugin one at a time.
 
-🟪 [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04 "porelo-intellij#IJ04 · Estimated · XL · Code comments in the review")
+⬛ [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04 "porelo-intellij#IJ04 · Analyzed · L · Code comments in the review")
 
 </td></tr></table>
 

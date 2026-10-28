@@ -3,11 +3,11 @@
 
 A developer starts in a repository they already have, led by the Porelo Wizard
 
-*Stand: 2026-10-26T13:35:07Z; no commit time for PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Review 1, Implementing 1, Estimated 1, Analyzed 7, Accepted 1; Sprint 1a: Analyzed 3; Sprint 1b: Backlog 1, Analyzed 1, Idea 1; Sprint 1c: Analyzed 3, Idea 1; Sprint 1d: Estimated 1, Analyzed 2; Sprint 1e: Estimated 3, Analyzed 1; Sprint 1f: Backlog 1, Analyzed 1; Sprint 1g: Backlog 1, Estimated 1, Analyzed 1; Sprint 2: Estimated 2, Analyzed 5, Not filed yet 1; Sprint 3: Accepted 1, Not filed yet 4; Sprint 3a: Estimated 1, Analyzed 1; Sprint 4: Not filed yet 3](0.7/progress-54d01270.svg)
+![Sprint 1: Review 1, Implementing 1, Estimated 1, Analyzed 7, Accepted 1; Sprint 1a: Estimated 2, Analyzed 1; Sprint 1b: Backlog 1, Analyzed 1, Idea 1; Sprint 1c: Analyzed 3, Idea 1; Sprint 1d: Estimated 1, Analyzed 2; Sprint 1e: Estimated 3, Analyzed 1; Sprint 1f: Review 1, Estimated 1; Sprint 1g: Backlog 1, Estimated 1, Analyzed 1; Sprint 2: Estimated 3, Analyzed 4, Not filed yet 1; Sprint 3: Accepted 1, Not filed yet 4; Sprint 3a: Estimated 2; Sprint 4: Not filed yet 3](progress-0ea2d936.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -49,7 +49,7 @@ A first connection has a clear loading state and a bounded wait.
 
 Test: Load a page for the first time and open a rarely used connection action; both show the same loading state. Connect a server that accepts but never answers; the call ends with a named timeout. Forget one connection; the others remain.
 
-⬛ [B200](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b200 "porelo#B200 · Analyzed · M · A Varlink Call Has A Read Deadline") ⬛ [F91](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f91 "porelo-frontend#F91 · Analyzed · M · One Way To Show Loading") ⬛ [F93](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f93 "porelo-frontend#F93 · Analyzed · S · Connections: Its Rare Actions Out Of The Way")
+⬛ [B200](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b200 "porelo#B200 · Analyzed · M · A Varlink Call Has A Read Deadline") 🟪 [F91](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f91 "porelo-frontend#F91 · Estimated · M · One Way To Show Loading") 🟪 [F93](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f93 "porelo-frontend#F93 · Estimated · S · Connections: Its Rare Actions Out Of The Way")
 
 </td></tr></table>
 
@@ -119,7 +119,7 @@ The person chooses where the approved work goes.
 
 Test: Choose a branch template or an explicit branch, approve the work and read the result on GitHub. Only the chosen branch receives it; an existing online branch belonging to someone else is refused.
 
-🔲 [B190](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b190 "porelo#B190 · Backlog · L · A Task's Branch Named By The Project's Scheme") ⬛ [F97](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f97 "porelo-frontend#F97 · Analyzed · M · Forwarding To A Branch, Measured Against GitHub")
+🟦 [B190](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b190 "porelo#B190 · Review · L · A Task's Branch Named By The Project's Scheme") 🟪 [F97](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f97 "porelo-frontend#F97 · Estimated · M · Forwarding To A Branch, Measured Against GitHub")
 
 </td></tr></table>
 
@@ -153,7 +153,7 @@ Test: For a Maven repository, a `.porelo.yml` and where needed a `project.yml` d
 
 Test: At the first start in `default`, the interface shows what the machine proposes, to take or leave.
 
-⬛ [F142](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f142 "porelo-frontend#F142 · Analyzed · M · The Drafts Offered Before The First Task In Default")
+🟪 [F142](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f142 "porelo-frontend#F142 · Estimated · M · The Drafts Offered Before The First Task In Default")
 
 **A company's private package repository, with no credential in the task ⚪ Not tested**
 
@@ -193,7 +193,7 @@ The person can type normally and follow tasks as their states change.
 
 Test: Use the embedded terminal as an ordinary terminal and open task list --watch beside it. States and the clearance hint update. Input reaches the task whole and unchanged; Ctrl-C restores the terminal.
 
-⬛ [F105](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f105 "porelo-frontend#F105 · Analyzed · M · A Task's Terminal In The Interface As Outside It") 🟪 [B48](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b48 "porelo#B48 · Estimated · M · The Overview That Stays Open")
+🟪 [F105](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f105 "porelo-frontend#F105 · Estimated · M · A Task's Terminal In The Interface As Outside It") 🟪 [B48](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b48 "porelo#B48 · Estimated · M · The Overview That Stays Open")
 
 </td></tr></table>
 

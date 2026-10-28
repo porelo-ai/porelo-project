@@ -123,12 +123,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 154)">
 <text x="0" y="17">3. Give a transport its secret through the intended input</text>
-<desc>Backlog 2, Not filed yet 1. B206: porelo#B206 · Backlog · L · A Transport Takes Its Secrets On Its Input; MX23: porelo-message-matrix#MX23 · Backlog · M · The Transport Takes Its Tokens On Its Input; Change the host contract before adapting Matrix.: Not filed yet; </desc>
+<desc>Review 2, Not filed yet 1. B206: porelo#B206 · Review · L · A Transport Takes Its Secrets On Its Input; MX23: porelo-message-matrix#MX23 · Review · M · The Transport Takes Its Tokens On Its Input; Change the host contract before adapting Matrix.: Not filed yet; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="266.6666666666667" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 2</title></rect>
+<rect x="0.0" width="266.6666666666667" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
 
 <rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
@@ -144,14 +144,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 184)">
 <text x="0" y="17">4. Remove access without deleting another person's keys</text>
-<desc>Estimated 2, Analyzed 1. B117: porelo#B117 · Estimated · M · What Clearing Leaves For A Person; B153: porelo#B153 · Estimated · M · Unused Slots And Keys Reported; F96: porelo-frontend#F96 · Analyzed · M · Keys A Machine No Longer Knows, Found By Their Title; </desc>
+<desc>Estimated 3. B117: porelo#B117 · Estimated · M · What Clearing Leaves For A Person; B153: porelo#B153 · Estimated · M · Unused Slots And Keys Reported; F96: porelo-frontend#F96 · Estimated · M · Keys A Machine No Longer Knows, Found By Their Title; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="266.6666666666667" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 2</title></rect>
-
-<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 3 done</text>
@@ -165,14 +163,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 214)">
 <text x="0" y="17">5. Measure hardware protection first</text>
-<desc>Estimated 1, Analyzed 1, Not filed yet 1. B63: porelo#B63 · Estimated · XL · A Share That Is Not Stored At All; F52: porelo-frontend#F52 · Analyzed · XL · Release A Device's Key Only With A Touch Or A PIN; Measure FIDO2 Share Derivation; Derive Device Shares At Unlock. These parents also cover sprints 6 through 8. Desktop FIDO2 remains a separate later task.: Not filed yet; </desc>
+<desc>Estimated 2, Not filed yet 1. B63: porelo#B63 · Estimated · XL · A Share That Is Not Stored At All; F52: porelo-frontend#F52 · Estimated · XL · Release A Device's Key Only With A Touch Or A PIN; Measure FIDO2 Share Derivation; Derive Device Shares At Unlock. These parents also cover sprints 6 through 8. Desktop FIDO2 remains a separate later task.: Not filed yet; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
-
-<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="266.6666666666667" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 2</title></rect>
 
 <rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 

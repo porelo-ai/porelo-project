@@ -3,11 +3,11 @@
 
 Use enterprise forges, read Jenkins builds and extend reviews to their pull requests
 
-*Stand: 2026-10-26T13:35:07Z; no commit time for PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md, 0.19.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Analyzed 1, Not filed yet 1; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Idea 4; Sprint 4: Idea 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Not filed yet 3](0.19/progress-7d4effbf.svg)
+![Sprint 1: Estimated 1, Not filed yet 1; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Estimated 1, Idea 3; Sprint 4: Idea 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Not filed yet 3](progress-c3931b60.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -23,7 +23,7 @@ A Bitbucket Data Center repository works through the ordinary setup flow.
 
 Test: Connect the test installation, read the identity and take in a repository as a project. Offer a token without the required rights and a wrong host key; both are clearly refused.
 
-⬛ [F72](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f72 "porelo-frontend#F72 · Analyzed · L · Forges Beyond GitHub") ◻️ Separate Forge Connection Behavior; Connect Bitbucket Data Center. A test installation and evaluation license are prerequisites.
+🟪 [F72](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f72 "porelo-frontend#F72 · Estimated · L · Forges Beyond GitHub") ◻️ Separate Forge Connection Behavior; Connect Bitbucket Data Center. A test installation and evaluation license are prerequisites.
 
 </td></tr></table>
 
@@ -51,7 +51,7 @@ The person selects forge repositories and build machines before work is run.
 
 Test: Choose the forge, repositories and pool through the dialog and CLI. Omit the required central token; setup refuses before creating a partial forge. With complete inputs, the same workflow uses the local pool and a central rented machine.
 
-🟧 [F145](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f145 "porelo-frontend#F145 · Idea · — · The Host's Forge Switched On With Its Repositories") 🟧 [F146](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f146 "porelo-frontend#F146 · Idea · — · The Host's VM Pool Switched On") 🟧 [HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27 "porelo-host#HO27 · Idea · - · The Forge's Jobs Told Where The Pool Is")
+🟪 [F145](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f145 "porelo-frontend#F145 · Estimated · S · The Host's Forge Switched Off In The Server Setup") 🟧 [F146](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f146 "porelo-frontend#F146 · Idea · — · The Host's VM Pool Switched On") 🟧 [HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27 "porelo-host#HO27 · Idea · - · The Forge's Jobs Told Where The Pool Is")
 
 **Request a declared build from the task ⚪ Not tested**
 

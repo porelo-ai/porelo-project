@@ -3,11 +3,11 @@
 
 Trace what a task did, where its work came from and what was approved
 
-*Stand: 2026-10-26T13:35:07Z; no commit time for PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md, 0.15.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Analyzed 2; Sprint 2: Backlog 1, Analyzed 1, Not filed yet 1; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Estimated 2; Sprint 5: Backlog 1, Estimated 1; Sprint 6: Estimated 1](0.15/progress-f946fac7.svg)
+![Sprint 1: Analyzed 2; Sprint 2: Implementing 1, Analyzed 1, Not filed yet 1; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Estimated 2; Sprint 5: Backlog 1, Estimated 1; Sprint 6: Estimated 1](progress-4f0ac57a.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -37,7 +37,7 @@ Approval evidence remains verifiable after clear.
 
 Test: Approve, reject and change a credential. Change a journal line and truncate the end; verification names both changes. Run clear; the evidence remains. Remove the old message hash chain only after this proof.
 
-🔲 [B154](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b154 "porelo#B154 · Backlog · L · A Tamper-Evident Event Log Per Node") ⬛ [B121](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b121 "porelo#B121 · Analyzed · M · A Message Record Without A Chain") ◻️ Use the shared event journal, without a second journal implementation.
+🟨 [B154](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b154 "porelo#B154 · Implementing · L · A Tamper-Evident Event Log Per Node") ⬛ [B121](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b121 "porelo#B121 · Analyzed · M · A Message Record Without A Chain") ◻️ Use the shared event journal, without a second journal implementation.
 
 </td></tr></table>
 
