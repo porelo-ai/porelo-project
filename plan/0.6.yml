@@ -266,8 +266,7 @@ sprints:
         issues: [porelo-message-matrix#MX42, porelo-message-matrix#MX41, porelo#B300]
       - title: "A rented host admitted to the room"
         test: "Rent a host and admit it: a task there writes in the project's room and a local agent answers; dismissing the host revokes its registration token, and its next message is refused."
-        issues: [porelo#B304, porelo#B313, porelo-host#HO41]
-        notes: ["porelo-frontend's issue for `publish` after the tunnel is up and `publish --off` when the host is dropped (to be filed once QM39 is settled)"]
+        issues: [porelo#B304, porelo#B313, porelo-host#HO41, porelo-frontend#F217]
   - id: "7"
     title: "The move, wave 1: the smallest repositories"
     goal: "Starts only once 6 to 6i are tested, since a moved agent talks in the room on this computer from the host. One agent per repository: each works its own move issue inside its new task to Review; the others work as today."
