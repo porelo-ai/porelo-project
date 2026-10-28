@@ -184,7 +184,6 @@ sprints:
         test: "Nothing is there before the approval, the gathered push brings it after; with the project `offline` the push reaches no forge."
         tested: "2026-10-27"
         issues: [porelo-host#HO29, porelo-host#HO32, porelo#B297, porelo-host#HO34]
-        covers: [porelo-project#PJ37]
   - id: "6"
     title: "The groundwork for the move"
     goal: "What the moves rest on but can be finished and tested before them: the sub-agents signed in and Pi logged in in a brokered task."

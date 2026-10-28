@@ -1,6 +1,6 @@
 # PJ37 — Work reaches the upstream by a machine key or the person's own token
 
-**Status:** Backlog for sprint 5, which builds nothing of its own here: its three credentials are built where [PJ61](README.md#pj61)'s table places them; the rest waits for its sprint.
+**Status:** Estimated; taken out of sprint 5 by the operator (2026-10-28), which built nothing of its own here: its three credentials are built where [PJ61](README.md#pj61)'s table places them; the rest waits for a sprint.
 
 **What must be true.** A machine fetches a project's repositories and passes approved work on either with keys of
 its own (a deploy key per machine and repository) or with the person's own token, and the two are equal choices,
