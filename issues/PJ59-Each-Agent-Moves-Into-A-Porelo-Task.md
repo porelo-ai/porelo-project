@@ -98,6 +98,13 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
   GitHub as upstream and the room on this machine's homeserver, driven from the interface; the forge lines of the
   check wait for the host. Until porelo [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172),
   an agent outside the task reads the pull request's diff and posts its findings in the room.
+- **The local dry run passed (operator, 2026-10-28, walk 21):** a Claude Code task for porelo-message-sluice in the
+  project `sluice-dry` took its work from the room, pushed through the gate to a `porelo/…` branch on GitHub, fixed the
+  outside reader's four findings with an amended commit, and read the pull request's green Shared rules check itself;
+  the pull request was closed unmerged and the branch deleted. Its findings went to
+  [SL35](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl35) (the task's commit
+  trailer, a forced push of the task's own unmerged branch, a revoked sign-in needing a login and a restart, the outside
+  reader's room join) and to porelo-frontend F229, F230 and F231.
 - **Order and timing** stay as proposed. One move per working day; the next starts only after the last one's check is
   green and the operator has accepted its move issue.
 
