@@ -248,6 +248,7 @@ sprints:
     functions:
       - title: "The setup's files uploaded, not read from the drive"
         test: "Rent once with a drive holding neither `machine.yml` nor the bundle; the setup comes up from `/etc/porelo-host/setup/`, a digest mismatch refuses `copy`, and a `machine.yml` the account can write is refused."
+        tested: "2026-10-28"
         issues: [porelo-host#HO36, porelo-frontend#F197]
         covers: [porelo-project#PJ50]
   - id: "6g"
