@@ -208,6 +208,7 @@ sprints:
     functions:
       - title: "Non-ASCII arguments and paths arrive whole"
         test: "Send a room message and use a path containing non-ASCII characters through each launched program; the recipient sees exactly the text sent, without replacement characters or missing bytes."
+        tested: "2026-10-28"
         issues: [porelo#B215]
   - id: "6c"
     title: "A repeated tool failure ends the test run"
