@@ -218,6 +218,7 @@ sprints:
     functions:
       - title: "A compact failure loop stopped"
         test: "Run an acceptance scenario with an agent that redraws a compact view and repeats a failed tool call; the loop watch stops it before the scenario bound and names the repeated failure. A progressing scenario must continue."
+        tested: "2026-10-28"
         issues: [porelo#B244]
   - id: "6d"
     title: "The person's secrets in one file, and an agent named per repository"
