@@ -239,6 +239,7 @@ sprints:
     functions:
       - title: "The host's secrets from one file, typed as one master password"
         test: "Rent a host from a drive holding only `machine.yml` and the bundle; on the desktop type the master password once, at the host the drive's login; the host comes up with its VPN key in `/etc/wireguard` and its tokens and vault keys from the file, and no secret lies on the drive. A need the file does not bring is refused, never prompted for."
+        tested: "2026-10-28"
         issues: [porelo-host#HO37, porelo-frontend#F199, porelo-frontend#F195, porelo-frontend#F196]
         covers: [porelo-project#PJ51]
   - id: "6f"
