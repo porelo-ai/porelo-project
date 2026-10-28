@@ -200,6 +200,7 @@ sprints:
     functions:
       - title: "Codex answers without holding real tokens"
         test: "Start a Codex task with the ChatGPT sign-in and ask it a question. Search the container for the real tokens; none are present. Interrupt a refresh after rotation and resume; the new refresh token must still work."
+        tested: "2026-10-28"
         issues: [porelo#P11]
   - id: "6b"
     title: "Messages keep their text"
