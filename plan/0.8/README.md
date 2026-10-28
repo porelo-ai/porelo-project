@@ -3,7 +3,7 @@
 
 Code reviews as SARIF: every finding and comment - from a person, a checking agent, a linter or a forge - in one format, trusted by who wrote it
 
-*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:30:30Z*
 
 ## Sprint progress
 

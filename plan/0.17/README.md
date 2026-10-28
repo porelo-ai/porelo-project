@@ -3,7 +3,7 @@
 
 Communicate across machines with clear trust boundaries and hand over files only as allowed
 
-*Stand: 2026-10-28T12:00:12Z; no commit time for plan.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:30:30Z*
 
 ## Sprint progress
 

@@ -3,7 +3,7 @@
 
 Keep MCP tools inspectable and require approval when their accepted definitions change
 
-*Stand: 2026-10-28T11:39:23Z; no commit time for plan.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:30:30Z*
 
 ## Sprint progress
 

@@ -3,7 +3,7 @@
 
 Tasks, builds and transports reach only the resources that were allowed
 
-*Stand: 2026-10-28T11:39:23Z; no commit time for plan.yml (excluded; no file-time fallback)*
+*Stand: 2026-10-28T12:30:30Z*
 
 ## Sprint progress
 
