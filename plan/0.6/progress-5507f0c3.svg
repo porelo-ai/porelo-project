@@ -545,7 +545,7 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 </svg>
 
 
-<text x="1118" y="17"><title>The forge opened in the browser once the VPN is up: Not tested</title>⚪</text>
+<text x="1118" y="17"><title>The forge opened in the browser once the VPN is up: Tested 2026-10-28</title>✅</text>
 
 </g>
 
@@ -566,24 +566,26 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 </svg>
 
 
-<text x="1118" y="17"><title>The local homeserver also on the VPN's address: Not tested</title>⚪</text>
+<text x="1118" y="17"><title>The local homeserver also on the VPN's address: Tested 2026-10-28</title>✅</text>
 
 
-<text x="1142" y="17"><title>A rented host admitted to the room: Not tested</title>⚪</text>
+<text x="1142" y="17"><title>A rented host admitted to the room: Tested 2026-10-28</title>✅</text>
 
 </g>
 
 
 <g transform="translate(0 784)">
 <text x="0" y="17">7. The move, wave 1: the smallest repositories</text>
-<desc>Backlog 1, Idea 2. PJ59: porelo-project#PJ59 · Backlog · L · Each agent moves into a Porelo task; SL35: porelo-message-sluice#SL35 · Idea · — · The Sluice's Agent Works In A Porelo Task; BT37: porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task; </desc>
+<desc>Backlog 1, Analyzed 1, Idea 1. PJ59: porelo-project#PJ59 · Backlog · L · Each agent moves into a Porelo task; SL35: porelo-message-sluice#SL35 · Analyzed · S · The Sluice's Agent Works In A Porelo Task; BT37: porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
 <rect x="0.0" width="133.33333333333334" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
-<rect x="133.33333333333334" width="266.6666666666667" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 3 done</text>
@@ -600,12 +602,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 814)">
 <text x="0" y="17">7a. The move, wave 2: the agent adapters</text>
-<desc>Idea 6. PI38: porelo-pi#PI38 · Idea ·  · The Build Runs On The Local Forge As On The Central One; PI39: porelo-pi#PI39 · Idea ·  · The Repository's Agent Works In A Porelo Task; OM35: porelo-omp#OM35 · Idea ·  · The Build Runs On The Local Forge As On The Central One; OM36: porelo-omp#OM36 · Idea ·  · The Repository's Agent Works In A Porelo Task; CC38: porelo-claude-code#CC38 · Idea ·  · The Build Runs On The Local Forge As On The Central One; CC39: porelo-claude-code#CC39 · Idea ·  · The Repository's Agent Works In A Porelo Task; </desc>
+<desc>Analyzed 6. PI38: porelo-pi#PI38 · Analyzed · S · The Build Runs On The Local Forge As On The Central One; PI39: porelo-pi#PI39 · Analyzed · S · The Repository's Agent Works In A Porelo Task; OM35: porelo-omp#OM35 · Analyzed · S · The Build Runs On The Local Forge As On The Central One; OM36: porelo-omp#OM36 · Analyzed · S · The Repository's Agent Works In A Porelo Task; CC38: porelo-claude-code#CC38 · Analyzed · S · The Build Runs On The Local Forge As On The Central One; CC39: porelo-claude-code#CC39 · Analyzed · S · The Repository's Agent Works In A Porelo Task; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 6</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 6</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 6 done</text>
@@ -619,12 +621,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 844)">
 <text x="0" y="17">7b. The move, wave 3: the sub-agents' repositories</text>
-<desc>Idea 2. AG02: porelo-agy#AG02 · Idea ·  · The Repository's Agent Works In A Porelo Task; CX04: porelo-codex#CX04 · Idea ·  · The Repository's Agent Works In A Porelo Task; </desc>
+<desc>Analyzed 2. AG02: porelo-agy#AG02 · Analyzed · S · The Repository's Agent Works In A Porelo Task; CX04: porelo-codex#CX04 · Analyzed · S · The Repository's Agent Works In A Porelo Task; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 2 done</text>

@@ -3,11 +3,11 @@
 
 Porelo is built in Porelo tasks
 
-*Stand: 2026-10-28T16:30:31Z*
+*Stand: 2026-10-28T18:30:31Z*
 
 ## Sprint progress
 
-![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 7, Review 1; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Review 1; Sprint 6d: Finished 2, Review 1; Sprint 6e: Review 4; Sprint 6f: Review 2; Sprint 6g: Review 2; Sprint 6h: Review 2; Sprint 6i: Review 5, Implementing 2; Sprint 7: Backlog 1, Idea 2; Sprint 7a: Idea 6; Sprint 7b: Idea 2; Sprint 7c: Review 3, Idea 5, Not filed yet 1; Sprint 8: Idea 2; Sprint 8a: Idea 4; Sprint 8b: Accepted 1; Sprint 8c: Implementing 3; Sprint 9: Review 3, Backlog 2, Analyzed 2, Accepted 1, Not filed yet 2; Sprint 9a: Review 1; Sprint 10: Implementing 1, Backlog 1; Sprint 11: Not filed yet 1](progress-53fe982f.svg)
+![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 7, Review 1; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Review 1; Sprint 6d: Finished 2, Review 1; Sprint 6e: Review 4; Sprint 6f: Review 2; Sprint 6g: Review 2; Sprint 6h: Review 2; Sprint 6i: Review 5, Implementing 2; Sprint 7: Backlog 1, Analyzed 1, Idea 1; Sprint 7a: Analyzed 6; Sprint 7b: Analyzed 2; Sprint 7c: Review 3, Idea 5, Not filed yet 1; Sprint 8: Idea 2; Sprint 8a: Idea 4; Sprint 8b: Accepted 1; Sprint 8c: Implementing 3; Sprint 9: Review 3, Backlog 2, Analyzed 2, Accepted 1, Not filed yet 2; Sprint 9a: Review 1; Sprint 10: Implementing 1, Backlog 1; Sprint 11: Not filed yet 1](progress-5507f0c3.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -451,7 +451,7 @@ covers [PJ50](https://github.com/porelo-ai/porelo-project/blob/main/issues/READM
 
 Step 5: once the VPN is up the person opens the forge and signs in, with nothing done by hand; may be tested on an earlier step's host.
 
-**The forge opened in the browser once the VPN is up ⚪ Not tested**
+**The forge opened in the browser once the VPN is up ✅ Tested 2026-10-28**
 
 Test: After the VPN, open `https://forge.porelo.internal/` and sign in with the lasting password: no hosts line, CA import or password file by hand; the CA's key never reached the host. A second host needs no new CA in Firefox; a certificate for another name signed by the CA fails `openssl verify`.
 
@@ -465,13 +465,13 @@ Test: After the VPN, open `https://forge.porelo.internal/` and sign in with the 
 
 Before the first move: this computer's homeserver is also served on its VPN address, and a rented host is admitted to the room the local agents use.
 
-**The local homeserver also on the VPN's address ⚪ Not tested**
+**The local homeserver also on the VPN's address ✅ Tested 2026-10-28**
 
 Test: With the VPN up, the homeserver answers on `https://10.73.0.2:&lt;port&gt;` under its own certificate and still on `127.0.0.1`; with the VPN down, the loopback listener keeps running and nothing listens on another address.
 
 🟦 [MX42](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx42 "porelo-message-matrix#MX42 · Review · L · The Host's Tasks Reach The Room Over The VPN") 🟦 [MX41](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx41 "porelo-message-matrix#MX41 · Review · M · The Agents Talk In The Project's Room") 🟦 [B300](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b300 "porelo#B300 · Review · S · A Person Joins A Conversation Without Seeing Its Password")
 
-**A rented host admitted to the room ⚪ Not tested**
+**A rented host admitted to the room ✅ Tested 2026-10-28**
 
 Test: Rent a host and admit it: a task there writes in the project's room and a local agent answers; dismissing the host revokes its registration token, and its next message is refused.
 
@@ -489,7 +489,7 @@ Starts only once 6 to 6i are tested, since a moved agent talks in the room on th
 
 Test: Its move issue reaches Review inside the task with Forgejo's build green; its agent is reached in the room under its repository's name.
 
-🔲 [PJ59](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj59 "porelo-project#PJ59 · Backlog · L · Each agent moves into a Porelo task") 🟧 [SL35](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl35 "porelo-message-sluice#SL35 · Idea · — · The Sluice's Agent Works In A Porelo Task")
+🔲 [PJ59](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj59 "porelo-project#PJ59 · Backlog · L · Each agent moves into a Porelo task") ⬛ [SL35](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl35 "porelo-message-sluice#SL35 · Analyzed · S · The Sluice's Agent Works In A Porelo Task")
 
 **porelo-buildtools in its task ⚪ Not tested**
 
@@ -509,7 +509,7 @@ porelo-pi, porelo-omp and porelo-claude-code move, taking porelo's snapshots fro
 
 Test: Each of the three repositories has its own agent and task, builds on Forgejo and takes porelo from the local registry.
 
-🟧 [PI38](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi38 "porelo-pi#PI38 · Idea ·  · The Build Runs On The Local Forge As On The Central One") 🟧 [PI39](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi39 "porelo-pi#PI39 · Idea ·  · The Repository's Agent Works In A Porelo Task") 🟧 [OM35](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om35 "porelo-omp#OM35 · Idea ·  · The Build Runs On The Local Forge As On The Central One") 🟧 [OM36](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om36 "porelo-omp#OM36 · Idea ·  · The Repository's Agent Works In A Porelo Task") 🟧 [CC38](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc38 "porelo-claude-code#CC38 · Idea ·  · The Build Runs On The Local Forge As On The Central One") 🟧 [CC39](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc39 "porelo-claude-code#CC39 · Idea ·  · The Repository's Agent Works In A Porelo Task")
+⬛ [PI38](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi38 "porelo-pi#PI38 · Analyzed · S · The Build Runs On The Local Forge As On The Central One") ⬛ [PI39](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi39 "porelo-pi#PI39 · Analyzed · S · The Repository's Agent Works In A Porelo Task") ⬛ [OM35](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om35 "porelo-omp#OM35 · Analyzed · S · The Build Runs On The Local Forge As On The Central One") ⬛ [OM36](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om36 "porelo-omp#OM36 · Analyzed · S · The Repository's Agent Works In A Porelo Task") ⬛ [CC38](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc38 "porelo-claude-code#CC38 · Analyzed · S · The Build Runs On The Local Forge As On The Central One") ⬛ [CC39](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc39 "porelo-claude-code#CC39 · Analyzed · S · The Repository's Agent Works In A Porelo Task")
 
 </td></tr></table>
 
@@ -523,7 +523,7 @@ porelo-agy and porelo-codex move, their sub-agents signed in inside the task.
 
 Test: Each move issue reaches Review inside its task with Forgejo's build green; Antigravity and Codex CLI answer there with their sign-ins from the vault.
 
-🟧 [AG02](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag02 "porelo-agy#AG02 · Idea ·  · The Repository's Agent Works In A Porelo Task") 🟧 [CX04](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx04 "porelo-codex#CX04 · Idea ·  · The Repository's Agent Works In A Porelo Task")
+⬛ [AG02](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag02 "porelo-agy#AG02 · Analyzed · S · The Repository's Agent Works In A Porelo Task") ⬛ [CX04](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx04 "porelo-codex#CX04 · Analyzed · S · The Repository's Agent Works In A Porelo Task")
 
 </td></tr></table>
 

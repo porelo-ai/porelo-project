@@ -264,6 +264,7 @@ sprints:
     functions:
       - title: "The forge opened in the browser once the VPN is up"
         test: "After the VPN, open `https://forge.porelo.internal/` and sign in with the lasting password: no hosts line, CA import or password file by hand; the CA's key never reached the host. A second host needs no new CA in Firefox; a certificate for another name signed by the CA fails `openssl verify`."
+        tested: "2026-10-28"
         issues: [porelo-host#HO35, porelo-frontend#F202]
   - id: "6i"
     title: "The room on this computer, reached from the host"
@@ -271,9 +272,11 @@ sprints:
     functions:
       - title: "The local homeserver also on the VPN's address"
         test: "With the VPN up, the homeserver answers on `https://10.73.0.2:<port>` under its own certificate and still on `127.0.0.1`; with the VPN down, the loopback listener keeps running and nothing listens on another address."
+        tested: "2026-10-28"
         issues: [porelo-message-matrix#MX42, porelo-message-matrix#MX41, porelo#B300]
       - title: "A rented host admitted to the room"
         test: "Rent a host and admit it: a task there writes in the project's room and a local agent answers; dismissing the host revokes its registration token, and its next message is refused."
+        tested: "2026-10-28"
         issues: [porelo#B304, porelo#B313, porelo-host#HO41, porelo-frontend#F217]
   - id: "7"
     title: "The move, wave 1: the smallest repositories"
