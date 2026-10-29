@@ -313,7 +313,7 @@ sprints:
     functions:
       - title: "Developers added and dropped through the access file"
         test: "A developer added to the signed `access.yml` joins from their own laptop with their own key and works; one dropped is locked at once at the next `sync`; an unsigned or altered access file changes nothing."
-        issues: [porelo-host#HO46, porelo-frontend#F215, porelo-frontend#F216]
+        issues: [porelo-host#HO46, porelo-host#HO55, porelo-frontend#F215, porelo-frontend#F216]
         covers: [porelo-project#PJ78]
       - title: "The gathered push by any developer, every role on one host"
         test: "Any developer runs the gathered push to the central forge with their own token; on one host the host admin, two project admins and their developers each do what their role allows and nothing more."
