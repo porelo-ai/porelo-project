@@ -3,7 +3,7 @@
 
 Porelo is built in Porelo tasks
 
-*Stand: 2026-10-29T15:03:46Z*
+*Stand: 2026-10-29T15:05:41Z*
 
 ## Sprint progress
 
@@ -541,7 +541,7 @@ Who works on a project follows its signed access file; every role works on one h
 
 **Developers added and dropped through the access file ⚪ Not tested**
 
-Test: A developer added to the signed `access.yml` joins from their own laptop with their own key and works; one dropped is locked at once at the next `sync`; an unsigned or altered access file changes nothing.
+Test: A developer added to the signed `access.yml` joins from their own laptop with their own key and works; one dropped is locked at once at the next `sync`, unless another project or the host admin still holds them; an unsigned or altered access file changes nothing; a project taken off locks whoever has no membership left, and `down` refuses while anyone holds one, naming them.
 
 🟪 [HO46](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho46 "porelo-host#HO46 · Estimated · L · The Developers Kept In Step With The Signed Access File") ⬛ [HO55](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho55 "porelo-host#HO55 · Analyzed · M · A Person Leaves When No Membership Is Left") 🟪 [F215](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f215 "porelo-frontend#F215 · Estimated · L · The Developers Of A Project Kept In Its Access File") 🟪 [F216](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f216 "porelo-frontend#F216 · Estimated · L · A Developer Joins A Project On Its Host")
 
