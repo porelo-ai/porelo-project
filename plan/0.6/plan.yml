@@ -394,6 +394,7 @@ sprints:
     functions:
       - title: "Review in IntelliJ"
         test: "On the laptop, against the local Porelo: in IntelliJ read a waiting push, approve the displayed commit and reject another with a reason. A new push from a second task appears within the stated seconds; approval of the old commit is refused."
+        tested: "2026-10-29"
         issues: [porelo-intellij#IJ01, porelo-intellij#IJ02]
       - title: "The website builds in its task"
         test: "Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed."
