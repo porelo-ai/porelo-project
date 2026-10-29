@@ -2,7 +2,7 @@
 
 ## Shared across the Porelo repositories
 
-> **BEGIN Shared Area** · sha256 `0de1188665a5bbf0` · changed 2026-10-29T12:39Z
+> **BEGIN Shared Area** · sha256 `b51c07efd20274e0` · changed 2026-10-29T12:40Z
 
 Identical in every repository `project.yml` names but `porelo-parent`, which holds only the parent pom
 and no `AGENTS.md`. The markers carry the SHA-256 of the lines between them (the first 16 hex digits)
@@ -128,10 +128,10 @@ and the UTC time that text last changed; change it in the channel first, never i
     an issues-only commit of its own with `[skip ci]` on `main`.
   - **Review** - the agent, when all is done, in the same commit as the last code; the operator tests
     what is pushed and published as a snapshot.
+  - **Rework** or **Finished** - the operator only, after the test; a rework says what was found.
 
   A state counts only on `main`, where the plan page reads it; a state set only in a worktree or branch
   does not.
-  - **Rework** or **Finished** - the operator only, after the test; a rework says what was found.
 
   An agent never sets Accepted, Rejected, Estimated, Backlog, Rework or Finished; it proposes in the channel. A
   size or plan that grows clearly while building is said before building on.
@@ -458,7 +458,7 @@ and the UTC time that text last changed; change it in the channel first, never i
   with `+`: estimates summed, the earliest start and the stack's readiness, VM time and tokens counted
   once.
 
-> **END Shared Area** · sha256 `0de1188665a5bbf0`
+> **END Shared Area** · sha256 `b51c07efd20274e0`
 
 ## Work in this repository
 
