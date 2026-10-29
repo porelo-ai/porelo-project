@@ -300,6 +300,9 @@ sprints:
         test: "The project admin brings a project onto the prepared host from the interface: its repositories in a forge organization of its own, `main` protected, the gate and the agents with their forge identities, the gathered push set up. The project names a signed `access.yml`, in a private repository of its own or beside `project.yml`; one whose `host:` block is another host's admits nothing. A second project is brought without a new host setup, and the one button of the interface prepares the host the first time only."
         issues: [porelo#B310, porelo#B311, porelo#B320, porelo-host#HO45, porelo-frontend#F214, porelo-frontend#F213]
         covers: [porelo-project#PJ78]
+      - title: "No forge user `operator`"
+        test: "A host set up anew has no forge user `operator`; on a host set up before, it is gone after `up`, and the forge's people, protection and owners still work."
+        issues: [porelo-host#HO53]
       - title: "The room made and kept on a central homeserver"
         test: "The project's room is made on a central homeserver; the project admin's Porelo keeps its members to the developers of the access file, adding and removing them."
         issues: [porelo-message-matrix#MX45, porelo#B314]
