@@ -640,16 +640,16 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 874)">
 <text x="0" y="17">7. The move, wave 1: the smallest repositories</text>
-<desc>Backlog 1, Analyzed 3, Accepted 3, Idea 3. HO52: porelo-host#HO52 · Analyzed · M · Snapshots Resolved With A Read-Only Token; BT39: porelo-buildtools#BT39 · Analyzed · M · Snapshots Resolved With A Read-Only Token; SL36: porelo-message-sluice#SL36 · Analyzed · S · Snapshots Resolved With A Read-Only Token; CC41: porelo-claude-code#CC41 · Accepted ·  · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; PI41: porelo-pi#PI41 · Accepted ·  · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; OM38: porelo-omp#OM38 · Accepted ·  · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; SL35: porelo-message-sluice#SL35 · Backlog · S · The Sluice's Agent Works In A Porelo Task; BT37: porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task; B306: porelo#B306 · Idea · - · Porelo's Build Runs On The Local Forge; PJ75: porelo-project#PJ75 · Idea · — · A task fetches a snapshot from its host's forge; </desc>
+<desc>Implementing 4, Backlog 1, Analyzed 2, Idea 3. HO52: porelo-host#HO52 · Analyzed · M · Snapshots Resolved With A Read-Only Token; BT39: porelo-buildtools#BT39 · Analyzed · M · Snapshots Resolved With A Read-Only Token; SL36: porelo-message-sluice#SL36 · Implementing · S · Snapshots Resolved With A Read-Only Token; CC41: porelo-claude-code#CC41 · Implementing · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; PI41: porelo-pi#PI41 · Implementing · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; OM38: porelo-omp#OM38 · Implementing · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; SL35: porelo-message-sluice#SL35 · Backlog · S · The Sluice's Agent Works In A Porelo Task; BT37: porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task; B306: porelo#B306 · Idea · - · Porelo's Build Runs On The Local Forge; PJ75: porelo-project#PJ75 · Idea · — · A task fetches a snapshot from its host's forge; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="40.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+<rect x="0.0" width="160.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 4</title></rect>
 
-<rect x="40.0" width="120.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 3</title></rect>
+<rect x="160.0" width="40.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
-<rect x="160.0" width="120.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 3</title></rect>
+<rect x="200.0" width="80.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
 
 <rect x="280.0" width="120.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 3</title></rect>
 
@@ -805,19 +805,24 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 1084)">
 <text x="0" y="17">8c. The website and IntelliJ work in the task</text>
-<desc>Implementing 2. IJ01: porelo-intellij#IJ01 · Implementing · S · Work is reviewed in IntelliJ; IJ02: porelo-intellij#IJ02 · Implementing · M · Live notices and a guide; </desc>
+<desc>Review 2, Not filed yet 1. IJ01: porelo-intellij#IJ01 · Review · S · Work is reviewed in IntelliJ; IJ02: porelo-intellij#IJ02 · Review · M · Live notices and a guide; Built by the website's move in sprint 8; tested here once it is there: Not filed yet; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 2</title></rect>
+<rect x="0.0" width="266.6666666666667" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 2 done</text>
+<text class="legend" x="410" y="17">0 of 3 done</text>
 </svg>
 
 
-<text x="1118" y="17"><title>Build the website and review in IntelliJ: Not tested</title>⚪</text>
+<text x="1118" y="17"><title>Review in IntelliJ: Not tested</title>⚪</text>
+
+
+<text x="1142" y="17"><title>The website builds in its task: Not tested</title>⚪</text>
 
 </g>
 

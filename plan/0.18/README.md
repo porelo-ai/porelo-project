@@ -3,7 +3,7 @@
 
 Keep MCP tools inspectable and require approval when their accepted definitions change
 
-*Stand: 2026-10-29T13:28:27Z*
+*Stand: 2026-10-29T13:59:57Z*
 
 ## Sprint progress
 

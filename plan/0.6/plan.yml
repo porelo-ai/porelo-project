@@ -389,9 +389,12 @@ sprints:
     title: "The website and IntelliJ work in the task"
     goal: "The website builds and a person reviews waiting work from IntelliJ."
     functions:
-      - title: "Build the website and review in IntelliJ"
-        test: "Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed. In IntelliJ read a waiting push, approve the displayed commit and reject another with a reason. A new push from a second task appears within the stated seconds; approval of the old commit is refused."
+      - title: "Review in IntelliJ"
+        test: "On the laptop, against the local Porelo: in IntelliJ read a waiting push, approve the displayed commit and reject another with a reason. A new push from a second task appears within the stated seconds; approval of the old commit is refused."
         issues: [porelo-intellij#IJ01, porelo-intellij#IJ02]
+      - title: "The website builds in its task"
+        test: "Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed."
+        notes: ["Built by the website's move in sprint 8; tested here once it is there"]
   - id: "9"
     title: "Clearing up and counting"
     goal: "What the move leaves behind, and what it makes measurable."

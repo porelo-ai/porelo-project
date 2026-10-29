@@ -3,11 +3,11 @@
 
 Porelo is built in Porelo tasks
 
-*Stand: 2026-10-29T13:28:27Z*
+*Stand: 2026-10-29T14:00:21Z*
 
 ## Sprint progress
 
-![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 8; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Finished 1; Sprint 6d: Finished 3; Sprint 6e: Finished 4; Sprint 6f: Finished 2; Sprint 6g: Finished 2; Sprint 6h: Finished 2; Sprint 6i: Finished 7; Sprint 6j: Review 2, Implementing 10; Sprint 6k: Implementing 4, Estimated 4; Sprint 6l: Estimated 5; Sprint 7: Backlog 1, Analyzed 3, Accepted 3, Idea 3; Sprint 7a: Backlog 6; Sprint 7b: Analyzed 4; Sprint 7c: Review 3, Estimated 2, Idea 3, Not filed yet 1; Sprint 8: Implementing 1, Idea 2; Sprint 8a: Idea 3; Sprint 8b: Accepted 1; Sprint 8c: Implementing 2; Sprint 9: Review 3, Backlog 2, Estimated 1, Analyzed 2, Accepted 1, Not filed yet 2; Sprint 9a: Review 1; Sprint 10: Implementing 1, Backlog 1; Sprint 11: Not filed yet 1](progress-b53eeebe.svg)
+![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 8; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Finished 1; Sprint 6d: Finished 3; Sprint 6e: Finished 4; Sprint 6f: Finished 2; Sprint 6g: Finished 2; Sprint 6h: Finished 2; Sprint 6i: Finished 7; Sprint 6j: Review 2, Implementing 10; Sprint 6k: Implementing 4, Estimated 4; Sprint 6l: Estimated 5; Sprint 7: Implementing 4, Backlog 1, Analyzed 2, Idea 3; Sprint 7a: Backlog 6; Sprint 7b: Analyzed 4; Sprint 7c: Review 3, Estimated 2, Idea 3, Not filed yet 1; Sprint 8: Implementing 1, Idea 2; Sprint 8a: Idea 3; Sprint 8b: Accepted 1; Sprint 8c: Review 2, Not filed yet 1; Sprint 9: Review 3, Backlog 2, Estimated 1, Analyzed 2, Accepted 1, Not filed yet 2; Sprint 9a: Review 1; Sprint 10: Implementing 1, Backlog 1; Sprint 11: Not filed yet 1](progress-92888bac.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -561,7 +561,7 @@ Starts only once 6 to 6i are tested, since a moved agent talks in the room on th
 
 Test: Every project's organization on the host holds `PORELO_PACKAGES_READ_TOKEN` (scope `read:package`) and its own `MAVEN_SNAPSHOTS_URL`; a build on an unreviewed branch resolves snapshots with it and holds no publisher's token, only the deploying step on `main` does; a missing `MAVEN_SNAPSHOTS_URL` fails the Build on any forge but github.com.
 
-⬛ [HO52](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho52 "porelo-host#HO52 · Analyzed · M · Snapshots Resolved With A Read-Only Token") ⬛ [BT39](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt39 "porelo-buildtools#BT39 · Analyzed · M · Snapshots Resolved With A Read-Only Token") ⬛ [SL36](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl36 "porelo-message-sluice#SL36 · Analyzed · S · Snapshots Resolved With A Read-Only Token") ⬜ [CC41](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc41 "porelo-claude-code#CC41 · Accepted ·  · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused") ⬜ [PI41](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi41 "porelo-pi#PI41 · Accepted ·  · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused") ⬜ [OM38](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om38 "porelo-omp#OM38 · Accepted ·  · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused")
+⬛ [HO52](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho52 "porelo-host#HO52 · Analyzed · M · Snapshots Resolved With A Read-Only Token") ⬛ [BT39](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt39 "porelo-buildtools#BT39 · Analyzed · M · Snapshots Resolved With A Read-Only Token") 🟨 [SL36](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl36 "porelo-message-sluice#SL36 · Implementing · S · Snapshots Resolved With A Read-Only Token") 🟨 [CC41](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc41 "porelo-claude-code#CC41 · Implementing · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused") 🟨 [PI41](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi41 "porelo-pi#PI41 · Implementing · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused") 🟨 [OM38](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om38 "porelo-omp#OM38 · Implementing · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused")
 
 **porelo-message-sluice works wholly in its task ⚪ Not tested**
 
@@ -693,11 +693,17 @@ Test: In `porelo-all` every repository is there; a change outside `porelo-projec
 
 The website builds and a person reviews waiting work from IntelliJ.
 
-**Build the website and review in IntelliJ ⚪ Not tested**
+**Review in IntelliJ ⚪ Not tested**
 
-Test: Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed. In IntelliJ read a waiting push, approve the displayed commit and reject another with a reason. A new push from a second task appears within the stated seconds; approval of the old commit is refused.
+Test: On the laptop, against the local Porelo: in IntelliJ read a waiting push, approve the displayed commit and reject another with a reason. A new push from a second task appears within the stated seconds; approval of the old commit is refused.
 
-🟨 [IJ01](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij01 "porelo-intellij#IJ01 · Implementing · S · Work is reviewed in IntelliJ") 🟨 [IJ02](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij02 "porelo-intellij#IJ02 · Implementing · M · Live notices and a guide")
+🟦 [IJ01](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij01 "porelo-intellij#IJ01 · Review · S · Work is reviewed in IntelliJ") 🟦 [IJ02](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij02 "porelo-intellij#IJ02 · Review · M · Live notices and a guide")
+
+**The website builds in its task ⚪ Not tested**
+
+Test: Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed.
+
+◻️ Built by the website's move in sprint 8; tested here once it is there
 
 </td></tr></table>
 
