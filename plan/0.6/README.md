@@ -3,7 +3,7 @@
 
 Porelo is built in Porelo tasks
 
-*Stand: 2026-10-29T06:11:44Z*
+*Stand: 2026-10-29T07:53:22Z*
 
 ## Sprint progress
 
@@ -511,7 +511,7 @@ A project admin brings a project onto an existing host from its signed access fi
 
 **A project brought by its project admin ⚪ Not tested**
 
-Test: The project admin brings a project onto the prepared host from the interface: its repositories in a forge organization of its own, `main` protected, the gate and the agents with their forge identities, the gathered push set up. The project names a private, signed `access.yml`; one whose `host:` block is another host's admits nothing. A second project is brought without a new host setup, and the one button of the interface prepares the host the first time only.
+Test: The project admin brings a project onto the prepared host from the interface: its repositories in a forge organization of its own, `main` protected, the gate and the agents with their forge identities, the gathered push set up. The project names a signed `access.yml`, in a private repository of its own or beside `project.yml`; one whose `host:` block is another host's admits nothing. A second project is brought without a new host setup, and the one button of the interface prepares the host the first time only.
 
 🟪 [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310 "porelo#B310 · Estimated · M · A Project Names A Private, Signed Access File") 🟪 [B311](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b311 "porelo#B311 · Estimated · S · A Project Verified Without Following It") 🟪 [B320](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b320 "porelo#B320 · Estimated · XS-S · An Inventory Reads Its Files From The Access File") 🟪 [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45 "porelo-host#HO45 · Estimated · L · The Project Brought And Joined In The Person's Own Account") 🟪 [F214](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f214 "porelo-frontend#F214 · Estimated · M · The Setup Files And The Stop Split By Act") 🟪 [F213](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f213 "porelo-frontend#F213 · Estimated · L · A Project Brought Onto A Prepared Host")
 

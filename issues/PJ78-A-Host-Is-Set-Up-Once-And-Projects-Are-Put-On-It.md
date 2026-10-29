@@ -33,9 +33,10 @@ auf einen bestehenden Host (der dann eine Forge haben muss)" are two different a
 - **Preparing a host makes no project and no person**: the VPN on `10.73.<n>.0/24`, the shared forge, runner, pool
   and homeserver under the host's names, their certificates signed by the host admin's lasting CA, constrained to
   the host's names and network. A laptop reaches several hosts, one VPN each; a colliding network is refused.
-- **Who may work on a project is signed, not handed over.** A project names a private repository whose signed
-  `access.yml` holds its `host:` block, its developers with their public keys, and its transports' settings. The
-  host follows that list: a developer added is admitted, one dropped is locked at once; nothing is admitted when the
+- **Who may work on a project is signed, not handed over.** A project names a signed `access.yml` that holds its
+  `host:` block, its developers with their public keys, and its transports' settings. It lies in a private repository
+  of its own, or, where the project accepts that these become public, beside `project.yml` in the project's
+  repository; both are signed and checked alike (decided by the operator, 2026-10-29). The host follows that list: a developer added is admitted, one dropped is locked at once; nothing is admitted when the
   `host:` block is not the host's own.
 - **[PJ40](README.md#pj40)'s one command** stays one button: the first time it prepares the host and brings the project; a second
   project is brought alone. The host's forge runs whether or not a project names repositories.
@@ -55,7 +56,7 @@ Each part states its contract itself; the order between them is this list's, and
 | porelo-host | [HO46](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho46) `sync`: developers kept to the signed `access.yml` | L | [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45), [B311](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b311) |
 | porelo-host | [HO47](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho47) the gathered push run by any developer | S | [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45) |
 | porelo-host | [HO48](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho48) every role tested on one host | L | [HO46](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho46), [HO47](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho47) |
-| porelo | [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310) a project names a private, signed access file | M | - |
+| porelo | [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310) a project names a signed access file | M | - |
 | porelo | [B311](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b311) `porelo project verify --json` | S | [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310) |
 | porelo | [B312](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b312) a transport's machine named `<host>-<account>` | S | - |
 | porelo | [B320](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b320) the inventory's `files` read from the access file | S | [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310), [B311](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b311) |
