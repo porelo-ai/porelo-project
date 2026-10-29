@@ -319,6 +319,13 @@ sprints:
         test: "Any developer runs the gathered push to the central forge with their own token; on one host the host admin, two project admins and their developers each do what their role allows and nothing more."
         issues: [porelo-host#HO47, porelo-host#HO48]
         covers: [porelo-project#PJ78]
+  - id: "6m"
+    title: "Accept the published tools"
+    goal: "The release is installed from its publication channel and its dependencies are checked."
+    functions:
+      - title: "A published release installed and verified"
+        test: "Publish and pin Buildtools 0.5.1, then build IntelliJ from an empty Gradle home. Change a dependency digest; the build must fail. Install the release leg from its publication channel; a wrong channel or a candidate must be refused as proof of the tested release."
+        issues: [porelo-intellij#IJ09, porelo-buildtools#BT01]
   - id: "7"
     title: "The move, wave 1: the smallest repositories"
     goal: "Starts only once 6 to 6i are tested, since a moved agent talks in the room on this computer from the host. One agent per repository: each works its own move issue inside its new task to Review; the others work as today."
@@ -427,13 +434,6 @@ sprints:
         test: "Install the host collection through the interface, then offer a changed collection tarball with the original digest; installation is refused before its contents run."
         issues: [porelo-frontend#F137]
   - id: "10"
-    title: "Accept the published tools"
-    goal: "The release is installed from its publication channel and its dependencies are checked."
-    functions:
-      - title: "A published release installed and verified"
-        test: "Publish and pin Buildtools 0.5.1, then build IntelliJ from an empty Gradle home. Change a dependency digest; the build must fail. Install the release leg from its publication channel; a wrong channel or a candidate must be refused as proof of the tested release."
-        issues: [porelo-intellij#IJ09, porelo-buildtools#BT01]
-  - id: "11"
     title: "Check the whole move"
     goal: "The setup and move are judged against their full parent criteria."
     functions:
