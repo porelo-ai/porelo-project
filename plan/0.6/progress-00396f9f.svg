@@ -594,16 +594,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 814)">
 <text x="0" y="17">6k. A project put on a prepared host</text>
-<desc>Review 3, Implementing 4, Estimated 2. B310: porelo#B310 · Review · M · A Project Names A Private, Signed Access File; B311: porelo#B311 · Review · S · A Project Verified Without Following It; B320: porelo#B320 · Estimated · XS-S · An Inventory Reads Its Files From The Access File; HO45: porelo-host#HO45 · Implementing · L · The Project Brought And Joined In The Person's Own Account; F214: porelo-frontend#F214 · Implementing · M · The Setup Files And The Stop Split By Act; F213: porelo-frontend#F213 · Implementing · L · A Project Brought Onto A Prepared Host; HO53: porelo-host#HO53 · Implementing · S · No Forge User Operator; MX45: porelo-message-matrix#MX45 · Review · M · A Project Admin Brings The Room Onto A Central Homeserver; B314: porelo#B314 · Estimated · S · A Project Admin Keeps The Room's Members To The List; </desc>
+<desc>Review 5, Implementing 4. B310: porelo#B310 · Review · M · A Project Names A Private, Signed Access File; B311: porelo#B311 · Review · S · A Project Verified Without Following It; B320: porelo#B320 · Review · XS-S · An Inventory Reads Its Files From The Access File; HO45: porelo-host#HO45 · Implementing · L · The Project Brought And Joined In The Person's Own Account; F214: porelo-frontend#F214 · Implementing · M · The Setup Files And The Stop Split By Act; F213: porelo-frontend#F213 · Implementing · L · A Project Brought Onto A Prepared Host; HO53: porelo-host#HO53 · Implementing · S · No Forge User Operator; MX45: porelo-message-matrix#MX45 · Review · M · A Project Admin Brings The Room Onto A Central Homeserver; B314: porelo#B314 · Review · S · A Project Admin Keeps The Room's Members To The List; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="133.33333333333334" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 3</title></rect>
+<rect x="0.0" width="222.22222222222223" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 5</title></rect>
 
-<rect x="133.33333333333334" width="177.77777777777777" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 4</title></rect>
-
-<rect x="311.1111111111111" width="88.88888888888889" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 2</title></rect>
+<rect x="222.22222222222223" width="177.77777777777777" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 4</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 9 done</text>
@@ -623,14 +621,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 844)">
 <text x="0" y="17">6l. Developers kept to the signed list</text>
-<desc>Implementing 1, Estimated 5. HO46: porelo-host#HO46 · Estimated · L · The Developers Kept In Step With The Signed Access File; HO55: porelo-host#HO55 · Implementing · M · A Person Leaves When No Membership Is Left; F215: porelo-frontend#F215 · Estimated · L · The Developers Of A Project Kept In Its Access File; F216: porelo-frontend#F216 · Estimated · L · A Developer Joins A Project On Its Host; HO47: porelo-host#HO47 · Estimated · S · The Gathered Push Run By Any Developer; HO48: porelo-host#HO48 · Estimated · L · Every Role Tested On One Host; </desc>
+<desc>Implementing 3, Backlog 3. HO46: porelo-host#HO46 · Implementing · L · The Developers Kept In Step With The Signed Access File; HO55: porelo-host#HO55 · Implementing · M · A Person Leaves When No Membership Is Left; F215: porelo-frontend#F215 · Backlog · L · The Developers Of A Project Kept In Its Access File; F216: porelo-frontend#F216 · Backlog · L · A Developer Joins A Project On Its Host; HO47: porelo-host#HO47 · Implementing · S · The Gathered Push Run By Any Developer; HO48: porelo-host#HO48 · Backlog · L · Every Role Tested On One Host; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="66.66666666666667" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 3</title></rect>
 
-<rect x="66.66666666666667" width="333.3333333333333" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 5</title></rect>
+<rect x="200.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 3</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 6 done</text>
