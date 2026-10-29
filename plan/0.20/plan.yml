@@ -116,3 +116,10 @@ sprints:
       - title: "Close WSL and SSH sessions without leftovers"
         test: "Use WSL and SSH from IntelliJ on real Windows, cancel while connecting and close the IDE. No child process, socket file or partial probe response remains. Reproduce any suspected relay defect before fixing it."
         issues: [porelo-intellij#IJ10, porelo-intellij#IJ11]
+  - id: "16"
+    title: "A person added again keeps their name"
+    goal: "A person removed from a host and added again later under the same user name gets their accounts on the host's homeserver back."
+    functions:
+      - title: "A person added again keeps their name"
+        test: "Remove a person from a prepared host and add them again under the same user name: their Porelo sets its own password with the one-time passwords it was handed, rejoins the room under `<host>-<user>`, and no one else can use those passwords."
+        issues: [porelo-message-matrix#MX53]

@@ -1,7 +1,7 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1106 554" role="img" aria-label="Sprint progress for release 0.20">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1106 584" role="img" aria-label="Sprint progress for release 0.20">
 <title>Sprint progress for release 0.20</title>
 <style>
 text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
@@ -367,6 +367,25 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 
 <text x="1030" y="17"><title>Close WSL and SSH sessions without leftovers: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 544)">
+<text x="0" y="17">16. A person added again keeps their name</text>
+<desc>Idea 1. MX53: porelo-message-matrix#MX53 · Idea · - · A Person Added Again Keeps Their Name; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>A person added again keeps their name: Not tested</title>⚪</text>
 
 </g>
 

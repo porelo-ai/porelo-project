@@ -1,6 +1,6 @@
 # PJ78 — A host is set up once, and projects are put on it
 
-**Status:** Accepted (operator, 2026-10-28).
+**Status:** Implementing (since 2026-10-29, sprint 6j; accepted by the operator 2026-10-28).
 
 **What must be true.** Setting up a host and putting a project on it are two separate acts. A host is set up once,
 with no project: the machine, the VPN, the person's account, and its forge, with the person's login, lasting password

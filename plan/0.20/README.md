@@ -3,11 +3,11 @@
 
 Work on Apple silicon, Fedora and Windows, with chosen drives and a shared secrets file
 
-*Stand: 2026-10-29T07:53:22Z*
+*Stand: 2026-10-29T08:08:06Z*
 
 ## Sprint progress
 
-![Sprint 1: Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Not filed yet 1; Sprint 3: Not filed yet 1; Sprint 4: Not filed yet 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Idea 2, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Implementing 1, Not filed yet 1; Sprint 10: Implementing 1, Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Rejected 2, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Backlog 1, Estimated 1; Sprint 15: Analyzed 1, Idea 2](progress-b67a49c9.svg)
+![Sprint 1: Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Not filed yet 1; Sprint 3: Not filed yet 1; Sprint 4: Not filed yet 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Idea 2, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Implementing 1, Not filed yet 1; Sprint 10: Implementing 1, Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Rejected 2, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Backlog 1, Estimated 1; Sprint 15: Analyzed 1, Idea 2; Sprint 16: Idea 1](progress-609e48cd.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -226,6 +226,20 @@ Test: Trigger and activate an MSIX toast; the correct running interface opens at
 Test: Use WSL and SSH from IntelliJ on real Windows, cancel while connecting and close the IDE. No child process, socket file or partial probe response remains. Reproduce any suspected relay defect before fixing it.
 
 🟧 [IJ10](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij10 "porelo-intellij#IJ10 · Idea ·  · Relays and connections end cleanly") 🟧 [IJ11](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij11 "porelo-intellij#IJ11 · Idea ·  · Tried on a Windows machine")
+
+</td></tr></table>
+
+<table><tr><td>
+
+### Sprint 16: A person added again keeps their name
+
+A person removed from a host and added again later under the same user name gets their accounts on the host's homeserver back.
+
+**A person added again keeps their name ⚪ Not tested**
+
+Test: Remove a person from a prepared host and add them again under the same user name: their Porelo sets its own password with the one-time passwords it was handed, rejoins the room under `&lt;host&gt;-&lt;user&gt;`, and no one else can use those passwords.
+
+🟧 [MX53](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx53 "porelo-message-matrix#MX53 · Idea · - · A Person Added Again Keeps Their Name")
 
 </td></tr></table>
 
