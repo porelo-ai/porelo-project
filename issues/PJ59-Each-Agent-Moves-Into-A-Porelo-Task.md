@@ -16,97 +16,152 @@ beside Matrix until the last has moved".
 Sprints 1 to 5 give the host, the room, the build servers read and the local forge. Nothing moves an agent by itself: each one has its own
 repositories, toolchain, VM account and habits, and a fault found in the first move must be fixed before the next.
 
-## The shape proposed
-
-**One agent per repository (operator, 2026-10-27).** A task holds one repository, so each repository moves with an
-agent of its own, named after the repository or its nickname (porelo
-[B298](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b298), which comes before the first
-move). Today's agents that look after several repositories (Core, Smith, Machines) are split at the move; Agent AGY
-and Agent Codex are gone already, their repositories with Smith until then.
-
-**The order, by repository:**
-
-1. **`porelo-message-sluice`** first: one repository, one snapshot from the registry.
-2. **`porelo-pi`, `porelo-omp` and `porelo-claude-code`:** snapshots from `porelo`, each in its own task.
-3. **`porelo-agy` and `porelo-codex`:** adapter repositories shaped like the three before, their sub-agents signed
-   in from the vault.
-4. **`porelo-buildtools`:** Maven like the first, proposed here since it had no place in the order before.
-5. **`porelo-message-matrix`.**
-6. **`porelo-intellij` and `porelo-frontend`:** other toolchains.
-7. **`porelo-adapters` and `porelo-ai.github.io`.**
-8. **`porelo` and `porelo-host`**, last of the builders, each with a way back to this machine, since a fault in
-   Porelo or in the host's setup stops their own work.
-9. **The coordinator** last of all, in [PJ58](README.md#pj58)'s `porelo-all`.
-
-**Each move is done when:**
-
-- the agent's task follows its repositories through the gate, its pushes reach the local Forgejo, and it reads its
-  builds through the `forgejo` reader;
-- its move issue is taken from start to Review inside the task, with the local forge's build green: each move
-  has a small issue (S) of its own in the agent's repository, filed when the move begins, and the agent works it
-  inside the new task to show the move done;
-- the agent is reached in the room and asks the operator in the operator's own channel;
-- its session on the host and its VM account are no longer used.
-
-**A moved agent runs attended in its task:** Porelo wakes an agent resting at its prompt when a message names it,
-as the channel's watcher wakes it today; an unattended run that has ended has no terminal to wake. Only an agent whose
-definition declares both its resting and its waiting screen is woken; Pi's does not yet, so a Pi in a task is woken
-only after porelo-pi [PI32](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi32) and
-[PI33](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi33).
-
-**Before the first move:** porelo-claude-code
-[CC24](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc24), since the Claude agents
-work there with the operator's subscription.
-
 ## Plan
 
-Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`, and the sprint 5 test on the rented host.
+The move happens twice. **A trial move per repository**, in the sprint that prepares it: the repository runs in a task
+on the host rented for that sprint until its check is green, then goes the way back and is worked on the development
+machine again. **The real move of all of them at once**, once every repository has passed its trial: one switch in
+`project.yml` for all, then each repository's check on the host.
 
-- **`doc/move.md`, the move's procedure**, one section per step, the same for every agent:
-  1. *Before:* the agent's repositories have a `porelo.yml` whose image holds its tools and sub-agents (*To be
-     checked*); its sign-ins are in the host's vault; its move issue (S) is filed in its own repository.
-  2. *The switch:* in `project.yml` the agent's repositories take the host's forge as upstream ([PJ61](README.md#pj61)'s shape,
-     until now proven only on a throwaway central repository); one commit here, pushed by the coordinator.
-  3. *The start:* `porelo task start --repository <name> --agent <agent>` on the host, attended, its terminal
-     opened by the operator; the agent works its move issue to Review inside the task.
-  4. *The check* (below), then the agent's session on this machine and its VM account are stopped.
-  5. *The way back, at any time* (operator, 2026-10-27): a moved agent can work here again, for a failed move, a
-     host given back or lost, or any other reason. The task's open work is fetched from the host's forge into the
-     agent's local checkout first (approved work has reached the central forge already). Then the repository's
-     upstream switches back in `project.yml`, and the local session resumes with its channel watcher. Moving
-     in again is a new start, as in step 3.
-- **`tools/move-check.sh <repository>`**, read-only, run on the host over ssh: the task runs; its last push reached
-  the forge as `porelo/<task>`; a Build of it was read by the `forgejo` reader; the pull request was opened by the
-  gate (porelo [B297](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b297)); the task is in the room's `agent-card.json`. Each line says what it found. **Red first:** run
-  against Sluice before its move, every line fails by name.
-- **The room replaces the channel file, before the first move** (operator, 2026-10-27). The project's Matrix
-  homeserver runs on this machine, which stays on until the last agent has moved. Every agent, local or moved,
-  talks in the one room. For the host's tasks it is a remote homeserver, reached over the VPN
-  (`mail.transports.matrix.homeserver` and `ca_file` in the host's `project.yml`). The local agents and the
-  coordinator read and write the room with a small client, in place of `porelo-channel-read`, `-post` and `-wait`;
-  its login stays in the vault. The channel file is read-only from the switch on. No bridge is needed.
-- **The room moves to the host last.** The host works on its own only after the last move; then the
-  homeserver moves to the host, before this machine may be off.
-- **The rules table below** gains one column per agent: a rule is dropped for an agent only once its replacement
-  is shown in that agent's task, and the coordinator ticks it in the same commit as the move's check.
-- **The host (operator, 2026-10-27):** the move's host is rented once the room, porelo-message-matrix [MX42](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx42) and this procedure are ready, and
-  then runs for the whole move, sprints 6 to 8; the re-test's host was given back, since the move could not start that day.
-- **The host's setup for the move (operator, 2026-10-28):** today's flow, `porelo-host up --project porelo`, one
-  project on the host. [PJ78](README.md#pj78) (a host set up once, projects put on it) follows the move, with one
-  re-setup of the host then.
-- **A local dry run first (operator, 2026-10-28):** Sluice's move is rehearsed in a task on this machine, online with
-  GitHub as upstream and the room on this machine's homeserver, driven from the interface; the forge lines of the
-  check wait for the host. Until porelo [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172),
-  an agent outside the task reads the pull request's diff and posts its findings in the room.
-- **The local dry run passed (operator, 2026-10-28, walk 21):** a Claude Code task for porelo-message-sluice in the
-  project `sluice-dry` took its work from the room, pushed through the gate to a `porelo/…` branch on GitHub, fixed the
-  outside reader's four findings with an amended commit, and read the pull request's green Shared rules check itself;
-  the pull request was closed unmerged and the branch deleted. Its findings went to
-  [SL35](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl35) (the task's commit
-  trailer, a forced push of the task's own unmerged branch, a revoked sign-in needing a login and a restart, the outside
-  reader's room join) and to porelo-frontend F229, F230 and F231.
-- **Order and timing** stay as proposed. One move per working day; the next starts only after the last one's check is
-  green and the operator has accepted its move issue.
+Every repository's move follows these steps; a repository's own move issue states only what is particular to it, and
+the coordinator gives its agent this procedure when its move is due.
+
+### Who moves, and in which order
+
+A task holds one repository, so each repository moves with an agent of its own, named after the repository or the
+nickname its entry in `project.yml` gives it. The trial moves go one at a time, also within one stage, in this order:
+the next starts only after the last one's check is green and the operator has accepted it.
+
+1. `porelo-message-sluice`.
+2. `porelo-pi`, `porelo-omp` and `porelo-claude-code`.
+3. `porelo-agy` and `porelo-codex`.
+4. `porelo-buildtools`.
+5. `porelo-message-matrix`.
+6. `porelo-intellij` and `porelo-frontend`.
+7. `porelo-adapters` and `porelo-ai.github.io`.
+8. `porelo` and `porelo-host`, last of the builders.
+9. The coordinator, once tasks that review work exist; until then it reads the moved agents' work from outside, and
+   stays on the development machine after the real move.
+
+`porelo-parent` has no agent and does not move: a change to it is a task on that repository, started when one is
+needed. After the real move, an agent's session on the development machine and its VM accounts stop.
+
+### Before the first trial
+
+- **The room is reachable from the host**: `project.yml` names the development machine's published homeserver by a
+  name the host resolves to the machine's VPN address, with its CA and its registration token file.
+- **A repository whose snapshots another one resolves builds on the host's forge first**: it is named in
+  `forge_repositories` and its Build, deploying with `forge-release`, is green on the sprint's host before the first
+  trial whose build resolves it. That holds for `porelo-parent` and `porelo-buildtools` before every trial, and for
+  `porelo` before every adapter's.
+
+### Before each trial
+
+- **The dry run passed on the development machine**: a task for the repository, online with the central forge as its
+  upstream and the room on the machine's own homeserver, takes a change through the gate to a `porelo/…` branch, is
+  woken by a message in the room, and reads its build. A person opens the pull request there.
+- **The repository builds on the host's forge as on the central one**: its workflows run unchanged on both, with the
+  values of [the local registry and publication settings](https://github.com/porelo-ai/porelo-host/blob/main/doc/local-forge.md#the-local-registry-and-publication-settings).
+- **The host's inventory names the repository in `forge_repositories`**: the forge migrates a repository, protects
+  its `main` and makes the gate's identity only for those named.
+- **The forge's registry holds the snapshots the build resolves**, no older than the central forge's on the day of
+  the trial.
+- **The repository has a `porelo.yml`** whose image holds the agent's tools; the agent's sign-ins are in the host's
+  vault. A task has no sub-agent of its own.
+- **The task's egress reaches what the build and the agent fetch**: Maven Central, Sonatype's snapshots, GitHub's
+  release downloads and API, and the skills' store. The task's own build reads the snapshots from the forge's
+  registry by their declared name, as [PJ75](README.md#pj75) makes possible before the first adapter's trial.
+- **The skills the repository names are in the task** where its harness reads them, checked against their digests.
+
+### The steps
+
+The same for a trial and for the real move, which takes step 1 for every repository in one commit.
+
+1. **The switch:** in `project.yml` the repository takes the host's forge as its upstream; one commit in
+   porelo-project.
+2. **The start:** `porelo task start --repository <name> --agent <agent>` on the host, attended, its terminal opened
+   by the operator.
+3. **The work:** the agent takes its move's own small change from start to review inside the task, through the gate,
+   with the forge's build green.
+4. **The check** (below).
+5. **After a trial, the way back** (below): the repository is worked on the development machine again until the real
+   move.
+
+### The check
+
+Read-only, on the host. Each line says what it found, and each fails by name before the trial:
+
+- the task runs;
+- its last push reached the forge as `porelo/<task>`;
+- a Build of that push was read by the forge's build reader;
+- the pull request was opened by the gate;
+- the task is listed in the room's `agent-card.json`;
+- a message naming the agent in the room wakes it, and its answer appears there.
+
+### Working in a task
+
+- **A moved agent runs attended**: Porelo wakes an agent resting at its prompt when a message names it. Only an agent
+  whose definition declares both its resting and its waiting screen is woken; a Pi in a task is woken only after
+  porelo-pi [PI33](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi33).
+- **What a task cannot test runs in the forge's Build**: an acceptance leg on a machine from the host's pool. A
+  hand-over names those legs in place of a VM run on the development machine.
+- **An adapter moves before the pool is there** (operator, 2026-10-29): during its move the adapter's checks that rent a
+  machine from the host's pool are switched off. porelo's Build moves to the forge before the adapters, so they build
+  against its snapshots there, and its acceptance job is off on the forge the same way. Each adapter switches them on again in its own issue of release 0.7,
+  planned once the pool and machines asked for by kind are done.
+- **The reading before a hand-over is done from outside**: the coordinator has the pull request's diff read against
+  the repository's skills by a sub-agent on the development machine and posts the findings in the room.
+- **A fix after a reading amends the task's commit** and is pushed with `--force` to the task's own unmerged branch,
+  which the gate lets through; the work stays one commit. `main` is never pushed with force.
+- **A revoked sign-in** is renewed with `porelo vault login <agent> --force` and a restart of the task, which keeps
+  the token it read at its start.
+- **The task changes nothing on the host.** Only the host admin installs a new Porelo there, deliberately; if the
+  installed Porelo is broken, the way back is the remedy.
+
+### What the agent is given in place of `.AGENTS.md`
+
+`.AGENTS.md` is not committed, so it is not in the task. At the start, the task's context gives the agent:
+
+- **its name**, the one it signs with;
+- **its commit attribution**, `Assisted-by: <tool>, <model>` (the harness, such as `Claude Code`, never the agent's
+  name), and no other trailer of its own;
+- **which forge its upstream is**: the host's forge, and the central forge only through the gathered push;
+- **the room in place of the channel**: it reads and writes the project's room, not the channel file;
+- **the operator's language and time zone**, as the development machine's local rules state them;
+- **every local rule Porelo does not yet replace in the task**, until its replacement is shown in that agent's own
+  task.
+
+What the coordinator finds missing in a task's context is said before the start.
+
+### The room
+
+Every agent, in a task or not, talks in the project's one room. Its homeserver runs on the development machine,
+reached by the host's tasks over the VPN; the agents on the development machine use a room client in place of the
+channel's commands, and the channel file is read-only from the first trial on. After the real move the project's room
+is made anew on the host's homeserver and `project.yml` names it; the old room is cleared, and its history is not
+carried over.
+
+### The way back
+
+Every trial ends with it, and a moved agent can take it at any time - for a failed move, a host given back or lost,
+or any other reason:
+
+1. What the host's forge holds of the task's work is fetched into the agent's local checkout.
+2. The repository's upstream switches back in `project.yml`, one commit in porelo-project.
+3. The local session resumes, with its watcher.
+
+Work that only the host held is lost with the host, as for any work on it; the host's backup is what protects it.
+Moving in again is a new start, from *The steps*.
+
+### Open
+
+- **The guided walks of the interface** - the walk's folder on the operator's laptop and the walk first done on a
+  test machine - are settled with `porelo-frontend`'s move.
+- **Testing against another repository's work before it is published**: whether a moved agent tests only against
+  snapshots another repository's Build published, or where such a hand-over lies for a task.
+- **A guarded project's gate**: the gate passes a task's push on to the forge, with `--force` onto the task's own
+  branch, only in an `online` project; in `porelo`'s class, `guarded`, the push waits at the gate for approval. Where
+  the reading from outside reads that waiting work, and what an amended push does to it, is to be measured.
 
 ## Acceptance
 
@@ -115,6 +170,10 @@ Read in today's `project.yml`, porelo's `doc/messages.md` and `doc/commands.md`,
 - Seen to fail first: the check against an agent that has not moved.
 
 ## To be checked
+
+- The release plan's sprints 7 to 8b of 0.6 follow the *Plan* as decided: each wave a trial move on the sprint's
+  rented host and back, then one real move of all repositories, and the coordinator's move after the reviewing tasks
+  of 0.8; to be replanned after the cleanup of issue citations.
 
 - Today's homeserver is this account's own, on loopback only (`matrix: {}`), and the host's tasks cannot reach it.
   Serving it on the VPN's address with a certificate the host trusts is work for porelo-message-matrix and porelo;

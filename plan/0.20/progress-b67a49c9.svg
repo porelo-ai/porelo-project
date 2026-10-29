@@ -227,12 +227,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 334)">
 <text x="0" y="17">9. Choose drive areas for each host</text>
-<desc>Analyzed 1, Not filed yet 1. PJ50: porelo-project#PJ50 · Analyzed · M + L · A host mounts the person's drives; Describe Personal And Host Drives; Mount Only Selected Host Drive Areas. The access boundaries from release 0.16 must work first.: Not filed yet; </desc>
+<desc>Implementing 1, Not filed yet 1. PJ50: porelo-project#PJ50 · Implementing · M + L · A host mounts the person's drives; Describe Personal And Host Drives; Mount Only Selected Host Drive Areas. The access boundaries from release 0.16 must work first.: Not filed yet; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
 
 <rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
@@ -248,12 +248,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 364)">
 <text x="0" y="17">10. Use a secrets file readable by a separate tool</text>
-<desc>Analyzed 1, Not filed yet 1. PJ51: porelo-project#PJ51 · Analyzed · L + L + M · The person's secrets kept once, in a file they can open; Read And Write KDBX Setup Secrets; Preserve Concurrent Secret File Changes. This parent also covers sprint 11; decide the file format and protection scope first.: Not filed yet; </desc>
+<desc>Implementing 1, Not filed yet 1. PJ51: porelo-project#PJ51 · Implementing · L + L + M · The person's secrets kept once, in a file they can open; Read And Write KDBX Setup Secrets; Preserve Concurrent Secret File Changes. This parent also covers sprint 11; decide the file format and protection scope first.: Not filed yet; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
 
 <rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 

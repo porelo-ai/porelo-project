@@ -12,14 +12,14 @@ sprints:
       - title: "The accounts in the interface, the low ones first"
         test: "The interface shows every configured account as its kind reads best - a window's share as a bar with its reset, a quota as used of allowed - with a meter below its threshold warned and shown first."
         notes: ["the accounts' view in porelo-frontend (from PJ65)"]
-  - id: "1a"
+  - id: "2"
     title: "Repeating setup changes nothing"
     goal: "A second identical setup reports that nothing changed."
     functions:
       - title: "An unchanged credential and setup reported honestly"
         test: "Set the same credential twice and run setup twice. The second run reports unchanged in text and JSON, with no unnecessary service restart or credential change. Change the value; it is reported as changed."
         issues: [porelo#B214, porelo#B216]
-  - id: "2"
+  - id: "3"
     title: "A machine nobody sits at tells its person"
     goal: "A machine working alone says what needs its person - an expiring credential, a locked vault, a stopped service, a machine running short - wherever the person is."
     functions:
@@ -29,24 +29,21 @@ sprints:
       - title: "A stopped service told with its cause"
         test: "The room's homeserver stopped on a host makes one message naming the machine, the service, since when and its last error line; when it runs again, the person is told it is resolved."
         notes: ["the watcher in porelo, the person's ways of being told (from PJ70)"]
-  - id: "2b"
+  - id: "4"
     title: "Keep working and show unattended failures"
     goal: "A setup survives its viewer and a failed unattended job names its cause."
     functions:
       - title: "Resume setup and read a failed job"
         test: "Close the interface or SSH during setup, reconnect and find the running setup with its full log. A second start is refused. Fail an unattended CI job; the red run, ::error and summary name the cause. No issue is opened automatically."
         issues: [porelo-host#HO24, porelo-project#PJ08]
-  - id: "3"
+  - id: "5"
     title: "A host rented from any provider"
     goal: "A host is rented and given back through one OpenTofu module per provider, by the same `up` and `down` as today."
     functions:
-      - title: "Rented and given back through the module"
-        test: "`porelo-host up` rents a Scaleway host through the module and `down` gives it back; afterwards `tofu plan` reads no change, and nothing tagged with the project is left at the provider."
+      - title: "Rented and given back through the module, a state from another computer refused"
+        test: "`porelo-host up` rents a Scaleway host through the module and `down` gives it back; afterwards `tofu plan` reads no change, and nothing tagged with the project is left at the provider. A tagged server the module's state lacks makes `up` refuse, naming it; a conflict copy of the state makes `up` and `down` refuse until a person keeps one."
         issues: [porelo-host#HO23, porelo-frontend#F166]
-      - title: "A state from another computer refused"
-        test: "A tagged server the module's state lacks makes `up` refuse, naming it; a conflict copy of the state makes `up` and `down` refuse until a person keeps one."
-        issues: [porelo-frontend#F166]
-  - id: "3a"
+  - id: "6"
     title: "Describe machine sources"
     goal: "The same machine request has checked inputs on both forges."
     functions:
@@ -54,28 +51,28 @@ sprints:
         test: "Read the same machine-provider variable on both forges. Request an unknown provider, omit a required parameter and supply an empty required secret; all are refused before renting. A complete request is accepted."
         issues: [porelo-buildtools#BT33]
         notes: ["Define Machine Provider Descriptions; Validate Machine Provider Inputs. This parent also covers the next two sprints."]
-  - id: "3b"
+  - id: "7"
     title: "Request a rented or borrowed machine the same way"
     goal: "A run receives a machine by kind and returns only what it owns."
     functions:
       - title: "Cloud, pool and fixed accounts borrowed safely"
         test: "Request the same kind from a cloud source, pool and fixed server. A second run cannot take an occupied account. Return each lease; only its own cloud resources are deleted or its own borrowed account reset."
-        notes: ["Provide Machines Through OpenTofu; Lend Pool Run Accounts; Lend Fixed Server Accounts. Continue the machine-source parent from sprint 3a."]
-  - id: "3c"
+        notes: ["Provide Machines Through OpenTofu; Lend Pool Run Accounts; Lend Fixed Server Accounts. Continue the machine-source parent from sprint 6."]
+  - id: "8"
     title: "Clean up interrupted leases"
     goal: "An interrupted run leaves no unknown bill and never removes another run."
     functions:
       - title: "Capacity and abandoned leases handled"
         test: "Fill the chosen provider and confirm the configured next source is used. Interrupt a run and lose its state. The sweep finds attributable leftovers, removes only those and reports anything it cannot resolve; other resources remain."
-        notes: ["Respect Provider Capacity; Recover Abandoned Machine Leases. Continue sprint 3b after the state and sweep design is settled."]
-  - id: "4a"
+        notes: ["Respect Provider Capacity; Recover Abandoned Machine Leases. Continue sprint 7 after the state and sweep design is settled."]
+  - id: "9"
     title: "Review a green commit and retire merged tasks"
     goal: "The project can opt into review and cleanup without losing remaining work."
     functions:
       - title: "Review once and preserve unmerged work"
         test: "Report the same green build more than once; exactly one reviewer starts for that commit. Merge a task pull request; a task with no remaining work is removed, while unmerged work stays visible. With no project opt-in, neither action runs."
         issues: [porelo#B288, porelo#B289]
-  - id: "4b"
+  - id: "10"
     title: "Handle a refused gathered push"
     goal: "Only an opted-in project starts merge work, and events reach the right account."
     functions:

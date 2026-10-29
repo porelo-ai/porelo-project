@@ -3,11 +3,11 @@
 
 Code reviews as SARIF: every finding and comment - from a person, a checking agent, a linter or a forge - in one format, trusted by who wrote it
 
-*Stand: 2026-10-28T12:30:30Z*
+*Stand: 2026-10-29T06:11:44Z*
 
 ## Sprint progress
 
-![Sprint 1: Analyzed 1, Idea 1, Not filed yet 1; Sprint 2: Analyzed 4; Sprint 2a: Estimated 1, Analyzed 2; Sprint 3: Analyzed 1, Idea 1; Sprint 3a: Analyzed 2; Sprint 4: Idea 1, Not filed yet 1; Sprint 5: Analyzed 3, Idea 2; Sprint 6: Idea 1, Not filed yet 1; Sprint 7: Analyzed 2, Not filed yet 1; Sprint 8: Idea 2, Not filed yet 1; Sprint 8a: Accepted 1, Not filed yet 1; Sprint 9: Analyzed 1, Not filed yet 1](progress-b5d9bb7b.svg)
+![Sprint 1: Analyzed 1, Idea 3; Sprint 2: Analyzed 6; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Idea 1, Not filed yet 1; Sprint 5: Analyzed 2, Idea 2; Sprint 6: Analyzed 1, Idea 1; Sprint 7: Analyzed 2; Sprint 8: Idea 2, Not filed yet 1; Sprint 9: Analyzed 2, Idea 2; Sprint 10: Idea 2; Sprint 11: Accepted 1, Not filed yet 1; Sprint 12: Analyzed 1, Idea 2](progress-7545c5c7.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -23,7 +23,17 @@ Porelo reads review data only as SARIF in its profile; a report that is outside 
 
 Test: A SARIF report of a linter added to waiting work shows each finding on its file and lines in `porelo gate review` and in the interface, with its level and its source named as a linter.
 
-🟧 [PJ72](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj72 "porelo-project#PJ72 · Idea · — · Every issue about reviewing work - by the person at the gate, by a checking agent, by comments on a forge's pull request - listed in one place by theme, so the order and the gaps are decided for the area as a whole; Porelo reads and writes review data only as SARIF, the adapters convert to and from each forge, IntelliJ reuses what it ships.") ◻️ the SARIF profile in porelo, read and written through java-sarif with a current Jackson (from PJ72)
+🟧 [B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291 "porelo#B291 · Idea · - · One closed SARIF 2.1.0 profile for every review producer and consumer, with field ownership, Git-tree anchors, safe rendering and shared fixtures.") 🟧 [B292](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b292 "porelo#B292 · Idea · - · Strict java-sarif/Jackson reader and fresh-object writer, plus isolated scanner normalization with byte, CPU and memory bounds and explicit completeness.")
+
+covers [PJ72](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj72 "porelo-project#PJ72 · Idea · — · Every issue about reviewing work - by the person at the gate, by a checking agent, by comments on a forge's pull request - listed in one place by theme, so the order and the gaps are decided for the area as a whole; Porelo reads and writes review data only as SARIF, the adapters convert to and from each forge, IntelliJ reuses what it ships.") · Idea
+
+**Who wrote it and what it touches, shown on waiting work ⚪ Not tested**
+
+Test: Waiting work, each comment and each finding carry the source level the daemon derived from authenticated data (E0, E1, I1, A) and the risk class of the change (C0-C3), shown in `porelo gate review`; a level claimed in the content changes nothing, and nothing is refused by them yet.
+
+🟧 [B323](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b323 "porelo#B323 · Idea · - · The daemon derives each item's source level from authenticated evidence and the C0-C3 class from rules over the complete change, and carries both with waiting work, comments and findings; nothing is refused by them yet")
+
+covers [PJ73](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj73 "porelo-project#PJ73 · Idea · — · Who wrote something decides what it may do") · Idea
 
 **A report outside the profile refused ⚪ Not tested**
 
@@ -43,7 +53,7 @@ A person reads waiting work as at a forge and comments on its lines; the agent r
 
 Test: In the interface's review a person comments on a line with a suggestion; the building task receives it as untrusted review input, pushes a fix, and the review shows the thread answered on the new commit.
 
-⬛ [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166 "porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.") ⬛ [F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78 "porelo-frontend#F78 · Analyzed · M · A Waiting Push Is Reviewed As At A Forge") ⬛ [F107](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f107 "porelo-frontend#F107 · Analyzed · L · Code Comments In The Review")
+⬛ [B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136 "porelo#B136 · Analyzed · M · Capture one reviewed commit for patch/log and every approval path; confirmations and signatures use that key; SARIF never authorizes forwarding.") ⬛ [B150](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b150 "porelo#B150 · Analyzed · M · Bound serialized review replies with explicit file-boundary cuts; retain complete file inventory or refuse by name; full-diff risk and SARIF completeness stay independent.") ⬛ [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166 "porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.") ⬛ [F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78 "porelo-frontend#F78 · Analyzed · M · A Waiting Push Is Reviewed As At A Forge") ⬛ [F107](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f107 "porelo-frontend#F107 · Analyzed · L · Code Comments In The Review")
 
 **A thread follows the new push ⚪ Not tested**
 
@@ -55,7 +65,7 @@ Test: A thread on lines the new push left unchanged moves with them; one on chan
 
 <table><tr><td>
 
-### Sprint 2a: Understand the scope of a review
+### Sprint 3: Understand the scope of a review
 
 The person can tell what was read and what was cut from a running or stopped task.
 
@@ -63,41 +73,7 @@ The person can tell what was read and what was cut from a running or stopped tas
 
 Test: Open a review larger than 4 MiB; it is cut at a file boundary, says so and keeps the full file list. Read a running task with local commits, then stop it. Summary, commits and diff agree in both states; missing parts must not appear complete.
 
-⬛ [B150](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b150 "porelo#B150 · Analyzed · M · Bound serialized review replies with explicit file-boundary cuts; retain complete file inventory or refuse by name; full-diff risk and SARIF completeness stay independent.") 🟪 [B174](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b174 "porelo#B174 · Estimated · M · A Running Task's Commits And Their Diff") ⬛ [F112](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f112 "porelo-frontend#F112 · Analyzed · L · What A Piece Of Work Did, In Words")
-
-</td></tr></table>
-
-<table><tr><td>
-
-### Sprint 3: An agent that only reviews
-
-A task in the role reviewer reads waiting work and writes comments, nothing else; its agent and effort follow the work.
-
-**A reviewer reads and comments, and can do nothing more ⚪ Not tested**
-
-Test: `porelo task start --role reviewer` on waiting work writes its findings as comments beside the person's, marked with its task and role; its push, approve and reject are refused by the host.
-
-⬛ [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172 "porelo#B172 · Analyzed · M · One read-only reviewer/check role, pinned target and SARIF output; no push, approval, suppression or resolution authority; ends after durable delivery.")
-
-**Its agent and effort chosen by the work ⚪ Not tested**
-
-Test: A reviewer started for an issue with risk `harm` runs the agent and effort the project's rule names for `check`, and the start says which rule chose it; a flag overrides it.
-
-🟧 [PJ64](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj64 "porelo-project#PJ64 · Idea · — · A task chooses its agent and effort by its work")
-
-</td></tr></table>
-
-<table><tr><td>
-
-### Sprint 3a: Choose the review mode
-
-A reviewer receives its named mode and thinking level.
-
-**A read-only OMP reviewer started explicitly ⚪ Not tested**
-
-Test: Start OMP with read-only mode and a thinking level; the agent receives those values. An unknown mode or level is refused before the start. Try a reviewer push or approval; the host still refuses it.
-
-⬛ [B101](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b101 "porelo#B101 · Analyzed · M · A Mode A Start Asks For By Name") ⬛ [OM19](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om19 "porelo-omp#OM19 · Analyzed · S · Declare a thinking level and a read-only mode")
+🟪 [B174](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b174 "porelo#B174 · Estimated · M · A Running Task's Commits And Their Diff") ⬛ [F112](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f112 "porelo-frontend#F112 · Analyzed · L · What A Piece Of Work Did, In Words")
 
 </td></tr></table>
 
@@ -131,19 +107,55 @@ A change's risk class comes from rules alone and decides how it is reviewed and 
 
 Test: Waiting work that deletes a test, changes a workflow, adds a dependency or retargets a symbolic link is ranked C2 or C3 by rule, with the reason shown; a reviewer's finding can raise the class, never lower it.
 
-🟧 [PJ73](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj73 "porelo-project#PJ73 · Idea · — · Who wrote something decides what it may do") 🟧 [B283](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b283 "porelo#B283 · Idea · - · Every changed symbolic link ranks dangerous, including retarget, deletion and replacement; feeds C3 evidence without traversal.") ⬛ [B141](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b141 "porelo#B141 · Analyzed · XL · Dependency changes and registry/name findings as SARIF; commit-bound human confirmation holds approval; splits into extraction &#40;M&#41;, registry/hold &#40;L&#41;, look-alike names &#40;S&#41;.")
+🟧 [B293](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b293 "porelo#B293 · Idea · - · Daemon-authenticated source levels and deterministic C0-C3 rules constrain delivery, builds, secrets, replies and required human approvals; policies only tighten defaults.") 🟧 [B283](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b283 "porelo#B283 · Idea · - · Every changed symbolic link ranks dangerous, including retarget, deletion and replacement; feeds C3 evidence without traversal.") ⬛ [B141](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b141 "porelo#B141 · Analyzed · XL · Dependency changes and registry/name findings as SARIF; commit-bound human confirmation holds approval; splits into extraction &#40;M&#41;, registry/hold &#40;L&#41;, look-alike names &#40;S&#41;.")
+
+covers [PJ73](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj73 "porelo-project#PJ73 · Idea · — · Who wrote something decides what it may do") · Idea
 
 **A C3 change approved by two people, on what they read ⚪ Not tested**
 
 Test: Approving a C3 change asks for a second person; a push the agent makes between review and approval is never forwarded unseen.
 
-⬛ [B145](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b145 "porelo#B145 · Analyzed · L · Independent human signatures required for E0/C3 or project four-eyes policy, bound to the exact reviewed commit; no agent or forge verdict can substitute.") ⬛ [B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136 "porelo#B136 · Analyzed · M · Capture one reviewed commit for patch/log and every approval path; confirmations and signatures use that key; SARIF never authorizes forwarding.")
+⬛ [B145](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b145 "porelo#B145 · Analyzed · L · Independent human signatures required for E0/C3 or project four-eyes policy, bound to the exact reviewed commit; no agent or forge verdict can substitute.")
 
 </td></tr></table>
 
 <table><tr><td>
 
-### Sprint 6: Adapters say what they offer
+### Sprint 6: An agent that only reviews
+
+A task in the role reviewer reads waiting work and writes comments, nothing else; its agent and effort follow the work.
+
+**A reviewer reads and comments, and can do nothing more ⚪ Not tested**
+
+Test: `porelo task start --role reviewer` on waiting work writes its findings as comments beside the person's, marked with its task and role; its push, approve and reject are refused by the host.
+
+⬛ [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172 "porelo#B172 · Analyzed · M · One read-only reviewer/check role, pinned target and SARIF output; no push, approval, suppression or resolution authority; ends after durable delivery.")
+
+**Its agent and effort chosen by the work ⚪ Not tested**
+
+Test: A reviewer started for an issue with risk `harm` runs the agent and effort the project's rule names for `check`, and the start says which rule chose it; a flag overrides it.
+
+🟧 [PJ64](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj64 "porelo-project#PJ64 · Idea · — · A task chooses its agent and effort by its work")
+
+</td></tr></table>
+
+<table><tr><td>
+
+### Sprint 7: Choose the review mode
+
+A reviewer receives its named mode and thinking level.
+
+**A read-only OMP reviewer started explicitly ⚪ Not tested**
+
+Test: Start OMP with read-only mode and a thinking level; the agent receives those values. An unknown mode or level is refused before the start. Try a reviewer push or approval; the host still refuses it.
+
+⬛ [B101](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b101 "porelo#B101 · Analyzed · M · A Mode A Start Asks For By Name") ⬛ [OM19](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om19 "porelo-omp#OM19 · Analyzed · S · Declare a thinking level and a read-only mode")
+
+</td></tr></table>
+
+<table><tr><td>
+
+### Sprint 8: Adapters say what they offer
 
 Every adapter lists its services, each by its own contract, and a missing or deprecated function is said, not guessed.
 
@@ -159,11 +171,17 @@ Test: An adapter that speaks only a deprecated contract version still works, and
 
 ◻️ the deprecated contracts in porelo (from PJ66)
 
+**A forge's calls in a client that knows nothing of Porelo ⚪ Not tested**
+
+Test: GitHub's and Forgejo's pull requests, reviews and their comments, checks and webhooks are called through `porelo-forge-clients`, one module per forge, under the LGPL; none of its modules names Porelo, its contracts or SARIF.
+
+🟧 [PJ74](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj74 "porelo-project#PJ74 · Idea · — · Forge and build server clients know nothing of Porelo")
+
 </td></tr></table>
 
 <table><tr><td>
 
-### Sprint 7: Review comments from GitHub
+### Sprint 9: Review comments from GitHub
 
 Review comments on a task's GitHub pull request reach the task as SARIF, trusted by who wrote them, and its replies go back once released.
 
@@ -171,19 +189,21 @@ Review comments on a task's GitHub pull request reach the task as SARIF, trusted
 
 Test: On a task's pull request, a comment of an internal account and of a listed partner reach the task at once; a comment of an unknown account is held and shown until the person releases it; a comment that claims another author changes nothing.
 
-⬛ [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171 "porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.") ⬛ [GH02](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh02 "porelo-adapters#GH02 · Analyzed · L · GitHub serves `Review1` beside `Build2` as SARIF 2.1.0 through the `github` client, preserving thread and origin evidence and sending explicit authorized writes with per-call credentials")
+⬛ [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171 "porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.") 🟧 [GH09](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh09 "porelo-adapters#GH09 · Idea · - · Shared `Review1` cases in `porelo-build-contract` guard SARIF fidelity and native client calls, unsupported capabilities and authorized writes without duplicates; blocks [GH02]&#40;README.md#gh02&#41; and [GH10]&#40;README.md#gh10&#41;") ⬛ [GH02](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh02 "porelo-adapters#GH02 · Analyzed · L · GitHub serves `Review1` beside `Build2` as SARIF 2.1.0 through the `github` client, preserving thread and origin evidence and sending explicit authorized writes with per-call credentials")
 
 **Replies released, a thread resolved by an internal person ⚪ Not tested**
 
 Test: The agent's reply appears on the pull request only after the person releases it; a thread an internal account resolves on GitHub clears its finding at the gate, one resolved by anyone else is only shown as resolved.
 
-◻️ the release of held and outgoing comments in the interface (from PJ72)
+🟧 [F191](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f191 "porelo-frontend#F191 · Idea · — · Held And Outgoing Forge Comments Released")
+
+covers [PJ72](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj72 "porelo-project#PJ72 · Idea · — · Every issue about reviewing work - by the person at the gate, by a checking agent, by comments on a forge's pull request - listed in one place by theme, so the order and the gaps are decided for the area as a whole; Porelo reads and writes review data only as SARIF, the adapters convert to and from each forge, IntelliJ reuses what it ships.") · Idea
 
 </td></tr></table>
 
 <table><tr><td>
 
-### Sprint 8: Reviews on the host's Forgejo
+### Sprint 10: Reviews on the host's Forgejo
 
 A task's work becomes a pull request on the host's Forgejo, reviewed and approved there by the person.
 
@@ -191,19 +211,23 @@ A task's work becomes a pull request on the host's Forgejo, reviewed and approve
 
 Test: A task's approved work is a pull request opened by the agent's own forge account; the person approves it from the interface with their own account; an approval with the agent's account is refused.
 
-🟧 [F190](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f190 "porelo-frontend#F190 · Idea · — · Approved Work Brought To The Central Forge") ◻️ the Forgejo review adapter in porelo-adapters (from PJ72)
+🟧 [F190](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f190 "porelo-frontend#F190 · Idea · — · Approved Work Brought To The Central Forge")
+
+covers [PJ72](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj72 "porelo-project#PJ72 · Idea · — · Every issue about reviewing work - by the person at the gate, by a checking agent, by comments on a forge's pull request - listed in one place by theme, so the order and the gaps are decided for the area as a whole; Porelo reads and writes review data only as SARIF, the adapters convert to and from each forge, IntelliJ reuses what it ships.") · Idea
 
 **A pull request from outside only read ⚪ Not tested**
 
 Test: A pull request of an unknown account on the host's Forgejo is read and commented, never built; the refusal to build names its source level.
 
-🟧 [PJ73](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj73 "porelo-project#PJ73 · Idea · — · Who wrote something decides what it may do")
+🟧 [GH10](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh10 "porelo-adapters#GH10 · Idea · - · Forgejo serves reviews as SARIF beside `Build2` through the `forgejo` client, preserving origin and position evidence and holding unsupported writes")
+
+covers [PJ72](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj72 "porelo-project#PJ72 · Idea · — · Every issue about reviewing work - by the person at the gate, by a checking agent, by comments on a forge's pull request - listed in one place by theme, so the order and the gaps are decided for the area as a whole; Porelo reads and writes review data only as SARIF, the adapters convert to and from each forge, IntelliJ reuses what it ships.") · Idea, [PJ73](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj73 "porelo-project#PJ73 · Idea · — · Who wrote something decides what it may do") · Idea
 
 </td></tr></table>
 
 <table><tr><td>
 
-### Sprint 8a: Protect main without a bypass
+### Sprint 11: Protect main without a bypass
 
 Every change reaches main through the required pull request checks.
 
@@ -217,7 +241,7 @@ Test: Try direct pushes to main with the project account and another account; bo
 
 <table><tr><td>
 
-### Sprint 9: The review in IntelliJ
+### Sprint 12: The review in IntelliJ
 
 A developer reads and writes review comments in IntelliJ's diff as on a colleague's change.
 
@@ -225,13 +249,34 @@ A developer reads and writes review comments in IntelliJ's diff as on a colleagu
 
 Test: The plugin's review shows every thread of waiting work on its lines with its origin - person, task, forge account or linter - and a suggestion as a small diff.
 
-⬛ [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04 "porelo-intellij#IJ04 · Analyzed · L · Code comments in the review") ◻️ the plugin's adapter on IntelliJ's code review module, in Java (from PJ72)
+⬛ [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04 "porelo-intellij#IJ04 · Analyzed · L · Code comments in the review") 🟧 [IJ12](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij12 "porelo-intellij#IJ12 · Idea ·  · The Code Review Adapter Over collaborationTools")
+
+covers [PJ72](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj72 "porelo-project#PJ72 · Idea · — · Every issue about reviewing work - by the person at the gate, by a checking agent, by comments on a forge's pull request - listed in one place by theme, so the order and the gaps are decided for the area as a whole; Porelo reads and writes review data only as SARIF, the adapters convert to and from each forge, IntelliJ reuses what it ships.") · Idea
 
 **A comment written and a held one released ⚪ Not tested**
 
 Test: A comment and a reply written in the plugin reach the task as in the interface; a held forge comment is released from the plugin one at a time.
 
-⬛ [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04 "porelo-intellij#IJ04 · Analyzed · L · Code comments in the review")
+🟧 [IJ13](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij13 "porelo-intellij#IJ13 · Idea ·  · Held And Outgoing Forge Comments Released In IntelliJ")
 
 </td></tr></table>
+
+## Waits
+
+- [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171 "porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.") · Analyzed after [SL24](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl24 "porelo-message-sluice#SL24 · Analyzed · L · A code comment, the filter's side") · Analyzed
+- [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166 "porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.") · Analyzed after [SL24](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl24 "porelo-message-sluice#SL24 · Analyzed · L · A code comment, the filter's side") · Analyzed
+- [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172 "porelo#B172 · Analyzed · M · One read-only reviewer/check role, pinned target and SARIF output; no push, approval, suppression or resolution authority; ends after durable delivery.") · Analyzed after [SL24](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl24 "porelo-message-sluice#SL24 · Analyzed · L · A code comment, the filter's side") · Analyzed
+- [GH02](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh02 "porelo-adapters#GH02 · Analyzed · L · GitHub serves `Review1` beside `Build2` as SARIF 2.1.0 through the `github` client, preserving thread and origin evidence and sending explicit authorized writes with per-call credentials") · Analyzed after [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166 "porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.") · Analyzed, [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171 "porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.") · Analyzed, [B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291 "porelo#B291 · Idea · - · One closed SARIF 2.1.0 profile for every review producer and consumer, with field ownership, Git-tree anchors, safe rendering and shared fixtures.") · Idea, [B292](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b292 "porelo#B292 · Idea · - · Strict java-sarif/Jackson reader and fresh-object writer, plus isolated scanner normalization with byte, CPU and memory bounds and explicit completeness.") · Idea, [B293](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b293 "porelo#B293 · Idea · - · Daemon-authenticated source levels and deterministic C0-C3 rules constrain delivery, builds, secrets, replies and required human approvals; policies only tighten defaults.") · Idea, [PJ74](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj74 "porelo-project#PJ74 · Idea · — · Forge and build server clients know nothing of Porelo") · Idea
+- [GH09](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh09 "porelo-adapters#GH09 · Idea · - · Shared `Review1` cases in `porelo-build-contract` guard SARIF fidelity and native client calls, unsupported capabilities and authorized writes without duplicates; blocks [GH02]&#40;README.md#gh02&#41; and [GH10]&#40;README.md#gh10&#41;") · Idea after [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166 "porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.") · Analyzed, [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171 "porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.") · Analyzed, [B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291 "porelo#B291 · Idea · - · One closed SARIF 2.1.0 profile for every review producer and consumer, with field ownership, Git-tree anchors, safe rendering and shared fixtures.") · Idea, [B292](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b292 "porelo#B292 · Idea · - · Strict java-sarif/Jackson reader and fresh-object writer, plus isolated scanner normalization with byte, CPU and memory bounds and explicit completeness.") · Idea, [B293](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b293 "porelo#B293 · Idea · - · Daemon-authenticated source levels and deterministic C0-C3 rules constrain delivery, builds, secrets, replies and required human approvals; policies only tighten defaults.") · Idea, [PJ74](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj74 "porelo-project#PJ74 · Idea · — · Forge and build server clients know nothing of Porelo") · Idea
+- [GH10](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh10 "porelo-adapters#GH10 · Idea · - · Forgejo serves reviews as SARIF beside `Build2` through the `forgejo` client, preserving origin and position evidence and holding unsupported writes") · Idea after [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166 "porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.") · Analyzed, [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171 "porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.") · Analyzed, [B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291 "porelo#B291 · Idea · - · One closed SARIF 2.1.0 profile for every review producer and consumer, with field ownership, Git-tree anchors, safe rendering and shared fixtures.") · Idea, [B292](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b292 "porelo#B292 · Idea · - · Strict java-sarif/Jackson reader and fresh-object writer, plus isolated scanner normalization with byte, CPU and memory bounds and explicit completeness.") · Idea, [B293](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b293 "porelo#B293 · Idea · - · Daemon-authenticated source levels and deterministic C0-C3 rules constrain delivery, builds, secrets, replies and required human approvals; policies only tighten defaults.") · Idea, [PJ74](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj74 "porelo-project#PJ74 · Idea · — · Forge and build server clients know nothing of Porelo") · Idea
+- [F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78 "porelo-frontend#F78 · Analyzed · M · A Waiting Push Is Reviewed As At A Forge") · Analyzed after [B150](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b150 "porelo#B150 · Analyzed · M · Bound serialized review replies with explicit file-boundary cuts; retain complete file inventory or refuse by name; full-diff risk and SARIF completeness stay independent.") · Analyzed, [B323](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b323 "porelo#B323 · Idea · - · The daemon derives each item's source level from authenticated evidence and the C0-C3 class from rules over the complete change, and carries both with waiting work, comments and findings; nothing is refused by them yet") · Idea
+- [F107](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f107 "porelo-frontend#F107 · Analyzed · L · Code Comments In The Review") · Analyzed after [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166 "porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.") · Analyzed, [B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291 "porelo#B291 · Idea · - · One closed SARIF 2.1.0 profile for every review producer and consumer, with field ownership, Git-tree anchors, safe rendering and shared fixtures.") · Idea
+- [F112](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f112 "porelo-frontend#F112 · Analyzed · L · What A Piece Of Work Did, In Words") · Analyzed after [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166 "porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.") · Analyzed, [B174](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b174 "porelo#B174 · Estimated · M · A Running Task's Commits And Their Diff") · Estimated, [B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291 "porelo#B291 · Idea · - · One closed SARIF 2.1.0 profile for every review producer and consumer, with field ownership, Git-tree anchors, safe rendering and shared fixtures.") · Idea, [B323](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b323 "porelo#B323 · Idea · - · The daemon derives each item's source level from authenticated evidence and the C0-C3 class from rules over the complete change, and carries both with waiting work, comments and findings; nothing is refused by them yet") · Idea
+- [F190](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f190 "porelo-frontend#F190 · Idea · — · Approved Work Brought To The Central Forge") · Idea after [B145](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b145 "porelo#B145 · Analyzed · L · Independent human signatures required for E0/C3 or project four-eyes policy, bound to the exact reviewed commit; no agent or forge verdict can substitute.") · Analyzed, [B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291 "porelo#B291 · Idea · - · One closed SARIF 2.1.0 profile for every review producer and consumer, with field ownership, Git-tree anchors, safe rendering and shared fixtures.") · Idea, [B293](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b293 "porelo#B293 · Idea · - · Daemon-authenticated source levels and deterministic C0-C3 rules constrain delivery, builds, secrets, replies and required human approvals; policies only tighten defaults.") · Idea, [HO32](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho32 "porelo-host#HO32 · Finished · - · The Gathered Push Refuses A Moved Central Forge") · Finished, [GH07](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh07 "porelo-adapters#GH07 · Finished · - · The Forgejo Adapter Answers As The GitHub One") · Finished, [GH10](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh10 "porelo-adapters#GH10 · Idea · - · Forgejo serves reviews as SARIF beside `Build2` through the `forgejo` client, preserving origin and position evidence and holding unsupported writes") · Idea
+- [F191](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f191 "porelo-frontend#F191 · Idea · — · Held And Outgoing Forge Comments Released") · Idea after [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171 "porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.") · Analyzed, [B293](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b293 "porelo#B293 · Idea · - · Daemon-authenticated source levels and deterministic C0-C3 rules constrain delivery, builds, secrets, replies and required human approvals; policies only tighten defaults.") · Idea
+- [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04 "porelo-intellij#IJ04 · Analyzed · L · Code comments in the review") · Analyzed after [B145](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b145 "porelo#B145 · Analyzed · L · Independent human signatures required for E0/C3 or project four-eyes policy, bound to the exact reviewed commit; no agent or forge verdict can substitute.") · Analyzed, [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166 "porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.") · Analyzed, [B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291 "porelo#B291 · Idea · - · One closed SARIF 2.1.0 profile for every review producer and consumer, with field ownership, Git-tree anchors, safe rendering and shared fixtures.") · Idea, [B292](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b292 "porelo#B292 · Idea · - · Strict java-sarif/Jackson reader and fresh-object writer, plus isolated scanner normalization with byte, CPU and memory bounds and explicit completeness.") · Idea, [B323](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b323 "porelo#B323 · Idea · - · The daemon derives each item's source level from authenticated evidence and the C0-C3 class from rules over the complete change, and carries both with waiting work, comments and findings; nothing is refused by them yet") · Idea
+- [IJ12](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij12 "porelo-intellij#IJ12 · Idea ·  · The Code Review Adapter Over collaborationTools") · Idea after [B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291 "porelo#B291 · Idea · - · One closed SARIF 2.1.0 profile for every review producer and consumer, with field ownership, Git-tree anchors, safe rendering and shared fixtures.") · Idea, [B292](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b292 "porelo#B292 · Idea · - · Strict java-sarif/Jackson reader and fresh-object writer, plus isolated scanner normalization with byte, CPU and memory bounds and explicit completeness.") · Idea
+- [IJ13](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij13 "porelo-intellij#IJ13 · Idea ·  · Held And Outgoing Forge Comments Released In IntelliJ") · Idea after [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171 "porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.") · Analyzed, [B179](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b179 "porelo#B179 · Analyzed · M · A Code Beside Why A Release Cannot Go") · Analyzed, [B293](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b293 "porelo#B293 · Idea · - · Daemon-authenticated source levels and deterministic C0-C3 rules constrain delivery, builds, secrets, replies and required human approvals; policies only tighten defaults.") · Idea
+- [SL24](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl24 "porelo-message-sluice#SL24 · Analyzed · L · A code comment, the filter's side") · Analyzed after [B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291 "porelo#B291 · Idea · - · One closed SARIF 2.1.0 profile for every review producer and consumer, with field ownership, Git-tree anchors, safe rendering and shared fixtures.") · Idea, [B292](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b292 "porelo#B292 · Idea · - · Strict java-sarif/Jackson reader and fresh-object writer, plus isolated scanner normalization with byte, CPU and memory bounds and explicit completeness.") · Idea
+- [OM19](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om19 "porelo-omp#OM19 · Analyzed · S · Declare a thinking level and a read-only mode") · Analyzed after [B101](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b101 "porelo#B101 · Analyzed · M · A Mode A Start Asks For By Name") · Analyzed
 

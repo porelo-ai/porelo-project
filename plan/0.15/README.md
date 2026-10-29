@@ -3,11 +3,11 @@
 
 Trace what a task did, where its work came from and what was approved
 
-*Stand: 2026-10-28T12:30:30Z*
+*Stand: 2026-10-29T06:11:44Z*
 
 ## Sprint progress
 
-![Sprint 1: Analyzed 2; Sprint 2: Implementing 1, Analyzed 1, Not filed yet 1; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Estimated 2; Sprint 5: Backlog 1, Estimated 1; Sprint 6: Estimated 1](progress-4f0ac57a.svg)
+![Sprint 1: Analyzed 2; Sprint 2: Implementing 1, Analyzed 1, Not filed yet 1; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Estimated 2; Sprint 5: Backlog 1, Estimated 1](progress-5aee3c17.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -80,20 +80,6 @@ Session replay and the filtered timeline show the same sequence.
 Test: Create a session with terminal, broker and gate events. Replay it and filter the timeline by source; time order is retained. Reach size and retention limits; neither host nor interface blocks.
 
 🟪 [B168](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b168 "porelo#B168 · Estimated · M · A Recording Of Each Session") 🔲 [F111](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f111 "porelo-frontend#F111 · Backlog · M · All Of A Piece's Logs In One Timeline")
-
-</td></tr></table>
-
-<table><tr><td>
-
-### Sprint 6: Keep each backup's own record
-
-Overlapping backups preserve their own consistent state.
-
-**Keep each backup's own record ⚪ Not tested**
-
-Test: Trigger overlapping Matrix backups with different source states and restore each. Each contains its own consistent state; neither overwrites the other or combines unrelated files.
-
-🟪 [MX39](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx39 "porelo-message-matrix#MX39 · Estimated · S · A Backup Is Its Own")
 
 </td></tr></table>
 

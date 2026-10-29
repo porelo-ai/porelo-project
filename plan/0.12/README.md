@@ -3,7 +3,7 @@
 
 Installed packages, setup scripts and images have a verifiable origin
 
-*Stand: 2026-10-28T12:30:30Z*
+*Stand: 2026-10-29T06:11:44Z*
 
 ## Sprint progress
 
@@ -82,4 +82,9 @@ Test: Make the first Ubuntu mirror stop answering and build the image. The first
 🟧 [B263](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b263 "porelo#B263 · Idea · - · A Task Image Built Past A Stalled Mirror")
 
 </td></tr></table>
+
+## Waits
+
+- [F81](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f81 "porelo-frontend#F81 · Estimated · M · The Setup Script Checked By Its Signature") · Estimated after [B99](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b99 "porelo#B99 · Estimated · L · Packages Signed And Checked") · Estimated
+- [CC23](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc23 "porelo-claude-code#CC23 · Estimated · S · Sign the RPMs, together with Porelo's") · Estimated after [B99](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b99 "porelo#B99 · Estimated · L · Packages Signed And Checked") · Estimated
 

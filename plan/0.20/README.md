@@ -3,11 +3,11 @@
 
 Work on Apple silicon, Fedora and Windows, with chosen drives and a shared secrets file
 
-*Stand: 2026-10-28T12:30:30Z*
+*Stand: 2026-10-29T06:11:44Z*
 
 ## Sprint progress
 
-![Sprint 1: Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Not filed yet 1; Sprint 3: Not filed yet 1; Sprint 4: Not filed yet 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Idea 2, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Analyzed 1, Not filed yet 1; Sprint 10: Analyzed 1, Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Rejected 2, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Backlog 1, Estimated 1; Sprint 15: Analyzed 1, Idea 2](progress-7bfbcd33.svg)
+![Sprint 1: Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Not filed yet 1; Sprint 3: Not filed yet 1; Sprint 4: Not filed yet 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Idea 2, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Implementing 1, Not filed yet 1; Sprint 10: Implementing 1, Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Rejected 2, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Backlog 1, Estimated 1; Sprint 15: Analyzed 1, Idea 2](progress-b67a49c9.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -135,7 +135,7 @@ A host sees only the drive areas chosen for it.
 
 Test: Configure two hosts in separate vaults and then in a shared vault. Each receives only its chosen area; an unselected personal area never appears.
 
-⬛ [PJ50](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj50 "porelo-project#PJ50 · Analyzed · M + L · A host mounts the person's drives") ◻️ Describe Personal And Host Drives; Mount Only Selected Host Drive Areas. The access boundaries from release 0.16 must work first.
+🟨 [PJ50](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj50 "porelo-project#PJ50 · Implementing · M + L · A host mounts the person's drives") ◻️ Describe Personal And Host Drives; Mount Only Selected Host Drive Areas. The access boundaries from release 0.16 must work first.
 
 </td></tr></table>
 
@@ -149,7 +149,7 @@ Porelo and the person's own tool read the same encrypted collection.
 
 Test: Open and change the KDBX file in KeePassXC and Porelo. Concurrent changes are preserved or an explicit conflict stops the write; silent overwriting is refused. The drive contains no plaintext secrets.
 
-⬛ [PJ51](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj51 "porelo-project#PJ51 · Analyzed · L + L + M · The person's secrets kept once, in a file they can open") ◻️ Read And Write KDBX Setup Secrets; Preserve Concurrent Secret File Changes. This parent also covers sprint 11; decide the file format and protection scope first.
+🟨 [PJ51](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj51 "porelo-project#PJ51 · Implementing · L + L + M · The person's secrets kept once, in a file they can open") ◻️ Read And Write KDBX Setup Secrets; Preserve Concurrent Secret File Changes. This parent also covers sprint 11; decide the file format and protection scope first.
 
 </td></tr></table>
 
@@ -228,4 +228,8 @@ Test: Use WSL and SSH from IntelliJ on real Windows, cancel while connecting and
 🟧 [IJ10](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij10 "porelo-intellij#IJ10 · Idea ·  · Relays and connections end cleanly") 🟧 [IJ11](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij11 "porelo-intellij#IJ11 · Idea ·  · Tried on a Windows machine")
 
 </td></tr></table>
+
+## Waits
+
+- [F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109 "porelo-frontend#F109 · Estimated · XL · The Interface On macOS, With Porelo In A Local VM") · Estimated after [PJ55](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj55 "porelo-project#PJ55 · Accepted · — · Porelo runs on arm64") · Accepted
 

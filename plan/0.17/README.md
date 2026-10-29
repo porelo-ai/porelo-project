@@ -3,7 +3,7 @@
 
 Communicate across machines with clear trust boundaries and hand over files only as allowed
 
-*Stand: 2026-10-28T12:30:30Z*
+*Stand: 2026-10-29T06:11:44Z*
 
 ## Sprint progress
 
@@ -278,4 +278,8 @@ Test: Send to a peer with a valid direct transport address. Remove the required 
 🟧 [B257](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b257 "porelo#B257 · Idea · - · A Direct Peer Reached Without A Conversation")
 
 </td></tr></table>
+
+## Waits
+
+- [SL23](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl23 "porelo-message-sluice#SL23 · Estimated · M · The narrowed message schema, the filter's side") · Estimated after [B108](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b108 "porelo#B108 · Analyzed · M · The Narrowed Message Schema Enforced") · Analyzed
 

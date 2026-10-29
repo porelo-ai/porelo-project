@@ -3,7 +3,7 @@
 
 Manage organization rules and personal access, and take in existing projects
 
-*Stand: 2026-10-28T12:30:30Z*
+*Stand: 2026-10-29T06:11:44Z*
 
 ## Sprint progress
 
@@ -116,4 +116,10 @@ Test: Select a directory and bundle, watch the upload and reconnect. The followe
 🟪 [B160](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b160 "porelo#B160 · Estimated · M · A Project Followed From A File Over The Socket") 🟪 [F104](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f104 "porelo-frontend#F104 · Estimated · M · A Project Followed From A File") ◻️ Deliver the core upload before the interface flow.
 
 </td></tr></table>
+
+## Waits
+
+- [F62](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f62 "porelo-frontend#F62 · Estimated · M · An Organisation's Policy Is Shown") · Estimated after [PJ16](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj16 "porelo-project#PJ16 · Analyzed · L · An organisation decides which providers its machines use") · Analyzed
+- [F104](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f104 "porelo-frontend#F104 · Estimated · M · A Project Followed From A File") · Estimated after [B160](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b160 "porelo#B160 · Estimated · M · A Project Followed From A File Over The Socket") · Estimated
+- [F123](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f123 "porelo-frontend#F123 · Accepted · — · Where A Machine And A Project Stand In Their Organisation's Tree") · Accepted after [B198](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b198 "porelo#B198 · Accepted · - · Settings Inherited Down An Organisation's Tree") · Accepted
 

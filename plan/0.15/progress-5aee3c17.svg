@@ -1,7 +1,7 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1034 284" role="img" aria-label="Sprint progress for release 0.15">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1034 254" role="img" aria-label="Sprint progress for release 0.15">
 <title>Sprint progress for release 0.15</title>
 <style>
 text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
@@ -164,25 +164,6 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 
 <text x="934" y="17"><title>Read a coherent work history: Not tested</title>⚪</text>
-
-</g>
-
-
-<g transform="translate(0 244)">
-<text x="0" y="17">6. Keep each backup's own record</text>
-<desc>Estimated 1. MX39: porelo-message-matrix#MX39 · Estimated · S · A Backup Is Its Own; </desc>
-<svg x="384" width="540" height="24" viewBox="0 0 540 24">
-<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
-<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
-
-<rect x="0.0" width="400.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
-
-</svg>
-<text class="legend" x="410" y="17">0 of 1 done</text>
-</svg>
-
-
-<text x="934" y="17"><title>Keep each backup's own record: Not tested</title>⚪</text>
 
 </g>
 

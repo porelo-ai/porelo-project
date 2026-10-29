@@ -280,16 +280,59 @@ sprints:
         test: "Rent a host and admit it: a task there writes in the project's room and a local agent answers; dismissing the host revokes its registration token, and its next message is refused."
         tested: "2026-10-28"
         issues: [porelo#B304, porelo#B313, porelo-host#HO41, porelo-frontend#F217]
+  - id: "6j"
+    title: "A host prepared once, by its host admin"
+    goal: "A host is set up with no project and no person; its host admin admits people and registers projects by hand."
+    functions:
+      - title: "A host prepared with no project or person"
+        test: "The host admin prepares a rented server from the interface: the VPN on `10.73.<n>.0/24`, the shared forge, runner, pool and homeserver under the host's names, their certificates signed by the host admin's lasting CA; no project and no person is made. A laptop reaches two hosts, one VPN each; a host whose network collides is refused."
+        issues: [porelo-host#HO42, porelo-frontend#F208, porelo-frontend#F209, porelo-frontend#F210, porelo-frontend#F212, porelo-frontend#F211]
+        covers: [porelo-project#PJ78]
+      - title: "A person admitted, locked and purged; a project registered and taken off"
+        test: "The host admin admits a project admin by hand, who gets an account of their own and a token of the shared homeserver, named `<host>-<account>` in the room; a locked person loses every access without a terminal, and a purge removes the account. A project registered and taken off leaves the host and its forge standing."
+        issues: [porelo-host#HO43, porelo-host#HO44, porelo-message-matrix#MX44, porelo#B312, porelo#B315]
+        covers: [porelo-project#PJ78]
+  - id: "6k"
+    title: "A project put on a prepared host"
+    goal: "A project admin brings a project onto an existing host from its signed access file; a second project needs no new host."
+    functions:
+      - title: "A project brought by its project admin"
+        test: "The project admin brings a project onto the prepared host from the interface: its repositories in a forge organization of its own, `main` protected, the gate and the agents with their forge identities, the gathered push set up. The project names a private, signed `access.yml`; one whose `host:` block is another host's admits nothing. A second project is brought without a new host setup, and the one button of the interface prepares the host the first time only."
+        issues: [porelo#B310, porelo#B311, porelo#B320, porelo-host#HO45, porelo-frontend#F214, porelo-frontend#F213]
+        covers: [porelo-project#PJ78]
+      - title: "The room made and kept on a central homeserver"
+        test: "The project's room is made on a central homeserver; the project admin's Porelo keeps its members to the developers of the access file, adding and removing them."
+        issues: [porelo-message-matrix#MX45, porelo#B314]
+        covers: [porelo-project#PJ78]
+  - id: "6l"
+    title: "Developers kept to the signed list"
+    goal: "Who works on a project follows its signed access file; every role works on one host."
+    functions:
+      - title: "Developers added and dropped through the access file"
+        test: "A developer added to the signed `access.yml` joins from their own laptop with their own key and works; one dropped is locked at once at the next `sync`; an unsigned or altered access file changes nothing."
+        issues: [porelo-host#HO46, porelo-frontend#F215, porelo-frontend#F216]
+        covers: [porelo-project#PJ78]
+      - title: "The gathered push by any developer, every role on one host"
+        test: "Any developer runs the gathered push to the central forge with their own token; on one host the host admin, two project admins and their developers each do what their role allows and nothing more."
+        issues: [porelo-host#HO47, porelo-host#HO48]
+        covers: [porelo-project#PJ78]
   - id: "7"
     title: "The move, wave 1: the smallest repositories"
     goal: "Starts only once 6 to 6i are tested, since a moved agent talks in the room on this computer from the host. One agent per repository: each works its own move issue inside its new task to Review; the others work as today."
     functions:
       - title: "porelo-message-sluice works wholly in its task"
         test: "Its move issue reaches Review inside the task with Forgejo's build green; its agent is reached in the room under its repository's name."
-        issues: [porelo-project#PJ59, porelo-message-sluice#SL35]
+        issues: [porelo-message-sluice#SL35]
+        covers: [porelo-project#PJ59]
       - title: "porelo-buildtools in its task"
         test: "Its move issue reaches Review inside the task with Forgejo's build green."
         issues: [porelo-buildtools#BT37]
+      - title: "porelo's Build on the host's Forgejo"
+        test: "porelo's workflows run green on Forgejo and on GitHub on one commit, its acceptance job skipped on Forgejo; porelo's snapshots are in the forge's registry."
+        issues: [porelo#B306]
+      - title: "A task fetches a snapshot from its host's forge"
+        test: "A build inside a task on the host fetches porelo's snapshot from the forge's registry by the name its project declares, with no credential put into the project; the task reaches nothing else on the host."
+        issues: [porelo-project#PJ75]
   - id: "7a"
     title: "The move, wave 2: the agent adapters"
     goal: "porelo-pi, porelo-omp and porelo-claude-code move, taking porelo's snapshots from the local registry."
@@ -303,7 +346,7 @@ sprints:
     functions:
       - title: "porelo-agy and porelo-codex each in its own task, their sub-agents signed in"
         test: "Each move issue reaches Review inside its task with Forgejo's build green; Antigravity and Codex CLI answer there with their sign-ins from the vault."
-        issues: [porelo-agy#AG02, porelo-codex#CX04]
+        issues: [porelo-agy#AG02, porelo-agy#AG04, porelo-codex#CX04, porelo-codex#CX08]
   - id: "7c"
     title: "The move, wave 4: the other toolchains"
     goal: "Gradle and Flutter move."
@@ -324,14 +367,14 @@ sprints:
     functions:
       - title: "porelo-adapters and porelo-ai.github.io each in its own task"
         test: "Each move issue reaches Review inside its task with Forgejo's build green."
-        issues: [porelo-adapters#GH11, porelo-ai.github.io#SI06]
+        issues: [porelo-adapters#GH11, porelo-ai.github.io#SI05, porelo-ai.github.io#SI06]
   - id: "8a"
     title: "The move, wave 6: porelo and porelo-host"
     goal: "The two repositories everything rests on move last of the code, each with a way back."
     functions:
       - title: "porelo and porelo-host each in its task, with a way back"
         test: "porelo's agent builds porelo in a task and porelo-host's agent its collection; each works on this machine again if a fault in Porelo or the host's setup stops it."
-        issues: [porelo-host#HO40, porelo-host#HO39, porelo#B305, porelo#B306]
+        issues: [porelo-host#HO40, porelo-host#HO39, porelo#B305]
   - id: "8b"
     title: "The move, last: the coordinator"
     goal: "The coordinator reads every repository and changes only porelo-project."
@@ -345,7 +388,7 @@ sprints:
     functions:
       - title: "Build the website and review in IntelliJ"
         test: "Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed. In IntelliJ read a waiting push, approve the displayed commit and reject another with a reason. A new push from a second task appears within the stated seconds; approval of the old commit is refused."
-        issues: [porelo-ai.github.io#SI05, porelo-intellij#IJ01, porelo-intellij#IJ02]
+        issues: [porelo-intellij#IJ01, porelo-intellij#IJ02]
   - id: "9"
     title: "Clearing up and counting"
     goal: "What the move leaves behind, and what it makes measurable."
@@ -358,7 +401,7 @@ sprints:
         notes: ["removing BT25's compatible provider call in porelo-buildtools, after every repository's PJ60 issue"]
       - title: "The room and the usage records outlive the host"
         test: "After `down` and a new `up` the room is there with its messages, and so are the records."
-        issues: [porelo-message-matrix#MX24, porelo-message-matrix#MX36, porelo-host#HO07, porelo#B231]
+        issues: [porelo-message-matrix#MX24, porelo-message-matrix#MX36, porelo-message-matrix#MX39, porelo-host#HO07, porelo#B231]
         covers: [porelo-project#PJ45]
       - title: "The tokens counted per task, the dependencies shared"
         test: "Each issue shows what its tasks spent; a second Maven build downloads nothing again."
@@ -387,4 +430,4 @@ sprints:
       - title: "The setup, move and recovery proven together"
         test: "Bring up the project, run the local builds, move each agent and restore the room and usage after giving the host back. Compare the results with every setup and move criterion; a missing local-build or recovery prerequisite keeps the parent acceptance open."
         covers: [porelo-project#PJ40, porelo-project#PJ39]
-        notes: ["Parent acceptance only; the work is carried by the setup, build, move and recovery functions. Parent acceptance remains open until the complete one-build proof in release 0.19 and the recovery prerequisites pass."]
+        notes: ["Parent acceptance only; the work is carried by the setup, build, move and recovery functions. The complete one-build proof is PJ22's alone, accepted in release 0.19."]

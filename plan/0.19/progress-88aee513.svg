@@ -109,17 +109,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 154)">
 <text x="0" y="17">3. Choose the host forge and pool deliberately</text>
-<desc>Estimated 1, Idea 3. F145: porelo-frontend#F145 · Estimated · S · The Host's Forge Switched Off In The Server Setup; F146: porelo-frontend#F146 · Idea · — · The Host's VM Pool Switched On; HO27: porelo-host#HO27 · Idea · - · The Forge's Jobs Told Where The Pool Is; B254: porelo#B254 · Idea · - · A Task Has Its Work Built on a Declared Kind; </desc>
+<desc>Estimated 1, Idea 2. F145: porelo-frontend#F145 · Estimated · S · The Host's Forge Switched Off In The Server Setup; F146: porelo-frontend#F146 · Idea · — · The Host's VM Pool Switched On; B254: porelo#B254 · Idea · - · A Task Has Its Work Built on a Declared Kind; </desc>
 <svg x="368" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="100.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
 
-<rect x="100.0" width="300.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 3</title></rect>
+<rect x="133.33333333333334" width="266.6666666666667" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 4 done</text>
+<text class="legend" x="410" y="17">0 of 3 done</text>
 </svg>
 
 

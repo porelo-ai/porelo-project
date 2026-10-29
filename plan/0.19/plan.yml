@@ -24,7 +24,7 @@ sprints:
     functions:
       - title: "Configure forge repositories and a pool"
         test: "Choose the forge, repositories and pool through the dialog and CLI. Omit the required central token; setup refuses before creating a partial forge. With complete inputs, the same workflow uses the local pool and a central rented machine."
-        issues: [porelo-frontend#F145, porelo-frontend#F146, porelo-host#HO27]
+        issues: [porelo-frontend#F145, porelo-frontend#F146]
       - title: "Request a declared build from the task"
         test: "Ask a task to build on a declared kind and read the result in its files. An undeclared kind or command is refused; the task receives no machine credential."
         issues: [porelo#B254]

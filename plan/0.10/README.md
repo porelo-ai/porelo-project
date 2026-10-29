@@ -3,7 +3,7 @@
 
 Try waiting work before approval, compare alternatives and open a limited preview
 
-*Stand: 2026-10-28T12:30:30Z*
+*Stand: 2026-10-29T06:11:44Z*
 
 ## Sprint progress
 
@@ -100,4 +100,9 @@ Test: Open task and trial views. Use no token and a wrong token; no byte may rea
 ◻️ Authenticate The Task View Relay; Provide Task View Image Tools; Open A Review Trial View. Continue the task-view parent from sprint 4.
 
 </td></tr></table>
+
+## Waits
+
+- [F74](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f74 "porelo-frontend#F74 · Analyzed · M · A Waiting Push's Tests Run In A Container Of Its Own") · Analyzed after [B95](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b95 "porelo#B95 · Idea · - · Pinned gate try in a throw-away container with source/risk limits; no gate route, E0/C3 no egress, bounded scanner import; IDE backend remains separate follow-up.") · Idea, [B293](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b293 "porelo#B293 · Idea · - · Daemon-authenticated source levels and deterministic C0-C3 rules constrain delivery, builds, secrets, replies and required human approvals; policies only tighten defaults.") · Idea
+- [F95](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f95 "porelo-frontend#F95 · Analyzed · M · A Waiting Push Fetched Here, Into A Clone Chosen") · Analyzed after [B323](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b323 "porelo#B323 · Idea · - · The daemon derives each item's source level from authenticated evidence and the C0-C3 class from rules over the complete change, and carries both with waiting work, comments and findings; nothing is refused by them yet") · Idea
 

@@ -8,8 +8,12 @@ sprints:
     functions:
       - title: "A linter's report shown on the waiting work"
         test: "A SARIF report of a linter added to waiting work shows each finding on its file and lines in `porelo gate review` and in the interface, with its level and its source named as a linter."
-        issues: [porelo-project#PJ72]
-        notes: ["the SARIF profile in porelo, read and written through java-sarif with a current Jackson (from PJ72)"]
+        issues: [porelo#B291, porelo#B292]
+        covers: [porelo-project#PJ72]
+      - title: "Who wrote it and what it touches, shown on waiting work"
+        test: "Waiting work, each comment and each finding carry the source level the daemon derived from authenticated data (E0, E1, I1, A) and the risk class of the change (C0-C3), shown in `porelo gate review`; a level claimed in the content changes nothing, and nothing is refused by them yet."
+        issues: [porelo#B323]
+        covers: [porelo-project#PJ73]
       - title: "A report outside the profile refused"
         test: "Reports with a `file://` or `../` location, a fix in another file than its anchor, an external property file, a bidirectional control character, or more results than the limit are each refused, naming the element; nothing of them is shown or kept."
         issues: [porelo-message-sluice#SL24]
@@ -19,34 +23,17 @@ sprints:
     functions:
       - title: "A comment with a suggestion reaches the agent"
         test: "In the interface's review a person comments on a line with a suggestion; the building task receives it as untrusted review input, pushes a fix, and the review shows the thread answered on the new commit."
-        issues: [porelo#B166, porelo-frontend#F78, porelo-frontend#F107]
+        issues: [porelo#B136, porelo#B150, porelo#B166, porelo-frontend#F78, porelo-frontend#F107]
       - title: "A thread follows the new push"
         test: "A thread on lines the new push left unchanged moves with them; one on changed lines stays on its old commit and says so."
         issues: [porelo#B176]
-  - id: "2a"
+  - id: "3"
     title: "Understand the scope of a review"
     goal: "The person can tell what was read and what was cut from a running or stopped task."
     functions:
       - title: "A large diff and local commits shown honestly"
         test: "Open a review larger than 4 MiB; it is cut at a file boundary, says so and keeps the full file list. Read a running task with local commits, then stop it. Summary, commits and diff agree in both states; missing parts must not appear complete."
-        issues: [porelo#B150, porelo#B174, porelo-frontend#F112]
-  - id: "3"
-    title: "An agent that only reviews"
-    goal: "A task in the role reviewer reads waiting work and writes comments, nothing else; its agent and effort follow the work."
-    functions:
-      - title: "A reviewer reads and comments, and can do nothing more"
-        test: "`porelo task start --role reviewer` on waiting work writes its findings as comments beside the person's, marked with its task and role; its push, approve and reject are refused by the host."
-        issues: [porelo#B172]
-      - title: "Its agent and effort chosen by the work"
-        test: "A reviewer started for an issue with risk `harm` runs the agent and effort the project's rule names for `check`, and the start says which rule chose it; a flag overrides it."
-        issues: [porelo-project#PJ64]
-  - id: "3a"
-    title: "Choose the review mode"
-    goal: "A reviewer receives its named mode and thinking level."
-    functions:
-      - title: "A read-only OMP reviewer started explicitly"
-        test: "Start OMP with read-only mode and a thinking level; the agent receives those values. An unknown mode or level is refused before the start. Try a reviewer push or approval; the host still refuses it."
-        issues: [porelo#B101, porelo-omp#OM19]
+        issues: [porelo#B174, porelo-frontend#F112]
   - id: "4"
     title: "Rounds of check and fix"
     goal: "Work waiting at a gate is checked, fixed and checked again before the person approves it."
@@ -63,11 +50,29 @@ sprints:
     functions:
       - title: "A dangerous change ranked by rule"
         test: "Waiting work that deletes a test, changes a workflow, adds a dependency or retargets a symbolic link is ranked C2 or C3 by rule, with the reason shown; a reviewer's finding can raise the class, never lower it."
-        issues: [porelo-project#PJ73, porelo#B283, porelo#B141]
+        issues: [porelo#B293, porelo#B283, porelo#B141]
+        covers: [porelo-project#PJ73]
       - title: "A C3 change approved by two people, on what they read"
         test: "Approving a C3 change asks for a second person; a push the agent makes between review and approval is never forwarded unseen."
-        issues: [porelo#B145, porelo#B136]
+        issues: [porelo#B145]
   - id: "6"
+    title: "An agent that only reviews"
+    goal: "A task in the role reviewer reads waiting work and writes comments, nothing else; its agent and effort follow the work."
+    functions:
+      - title: "A reviewer reads and comments, and can do nothing more"
+        test: "`porelo task start --role reviewer` on waiting work writes its findings as comments beside the person's, marked with its task and role; its push, approve and reject are refused by the host."
+        issues: [porelo#B172]
+      - title: "Its agent and effort chosen by the work"
+        test: "A reviewer started for an issue with risk `harm` runs the agent and effort the project's rule names for `check`, and the start says which rule chose it; a flag overrides it."
+        issues: [porelo-project#PJ64]
+  - id: "7"
+    title: "Choose the review mode"
+    goal: "A reviewer receives its named mode and thinking level."
+    functions:
+      - title: "A read-only OMP reviewer started explicitly"
+        test: "Start OMP with read-only mode and a thinking level; the agent receives those values. An unknown mode or level is refused before the start. Try a reviewer push or approval; the host still refuses it."
+        issues: [porelo#B101, porelo-omp#OM19]
+  - id: "8"
     title: "Adapters say what they offer"
     goal: "Every adapter lists its services, each by its own contract, and a missing or deprecated function is said, not guessed."
     functions:
@@ -77,28 +82,33 @@ sprints:
       - title: "A deprecated contract still taken, with a warning"
         test: "An adapter that speaks only a deprecated contract version still works, and every start that uses it says since when it is deprecated and in which release it goes."
         notes: ["the deprecated contracts in porelo (from PJ66)"]
-  - id: "7"
+      - title: "A forge's calls in a client that knows nothing of Porelo"
+        test: "GitHub's and Forgejo's pull requests, reviews and their comments, checks and webhooks are called through `porelo-forge-clients`, one module per forge, under the LGPL; none of its modules names Porelo, its contracts or SARIF."
+        issues: [porelo-project#PJ74]
+  - id: "9"
     title: "Review comments from GitHub"
     goal: "Review comments on a task's GitHub pull request reach the task as SARIF, trusted by who wrote them, and its replies go back once released."
     functions:
       - title: "Comments delivered by who wrote them"
         test: "On a task's pull request, a comment of an internal account and of a listed partner reach the task at once; a comment of an unknown account is held and shown until the person releases it; a comment that claims another author changes nothing."
-        issues: [porelo#B171, porelo-adapters#GH02]
+        issues: [porelo#B171, porelo-adapters#GH09, porelo-adapters#GH02]
       - title: "Replies released, a thread resolved by an internal person"
         test: "The agent's reply appears on the pull request only after the person releases it; a thread an internal account resolves on GitHub clears its finding at the gate, one resolved by anyone else is only shown as resolved."
-        notes: ["the release of held and outgoing comments in the interface (from PJ72)"]
-  - id: "8"
+        issues: [porelo-frontend#F191]
+        covers: [porelo-project#PJ72]
+  - id: "10"
     title: "Reviews on the host's Forgejo"
     goal: "A task's work becomes a pull request on the host's Forgejo, reviewed and approved there by the person."
     functions:
       - title: "The agent opens, the person approves"
         test: "A task's approved work is a pull request opened by the agent's own forge account; the person approves it from the interface with their own account; an approval with the agent's account is refused."
         issues: [porelo-frontend#F190]
-        notes: ["the Forgejo review adapter in porelo-adapters (from PJ72)"]
+        covers: [porelo-project#PJ72]
       - title: "A pull request from outside only read"
         test: "A pull request of an unknown account on the host's Forgejo is read and commented, never built; the refusal to build names its source level."
-        issues: [porelo-project#PJ73]
-  - id: "8a"
+        issues: [porelo-adapters#GH10]
+        covers: [porelo-project#PJ72, porelo-project#PJ73]
+  - id: "11"
     title: "Protect main without a bypass"
     goal: "Every change reaches main through the required pull request checks."
     functions:
@@ -106,14 +116,14 @@ sprints:
         test: "Try direct pushes to main with the project account and another account; both fail. Try to merge a pull request with a red required check; it is refused. A permitted person can merge once all required checks pass."
         issues: [porelo-project#PJ34]
         notes: ["Require Checks On Pull Requests; Remove Direct Main Bypasses. Build these parts after the forge review path works."]
-  - id: "9"
+  - id: "12"
     title: "The review in IntelliJ"
     goal: "A developer reads and writes review comments in IntelliJ's diff as on a colleague's change."
     functions:
       - title: "Threads in IntelliJ's diff"
         test: "The plugin's review shows every thread of waiting work on its lines with its origin - person, task, forge account or linter - and a suggestion as a small diff."
-        issues: [porelo-intellij#IJ04]
-        notes: ["the plugin's adapter on IntelliJ's code review module, in Java (from PJ72)"]
+        issues: [porelo-intellij#IJ04, porelo-intellij#IJ12]
+        covers: [porelo-project#PJ72]
       - title: "A comment written and a held one released"
         test: "A comment and a reply written in the plugin reach the task as in the interface; a held forge comment is released from the plugin one at a time."
-        issues: [porelo-intellij#IJ04]
+        issues: [porelo-intellij#IJ13]

@@ -3,11 +3,11 @@
 
 Running alone: the accounts, a machine nobody sits at, and hosts from any provider
 
-*Stand: 2026-10-28T12:30:30Z*
+*Stand: 2026-10-29T06:11:44Z*
 
 ## Sprint progress
 
-![Sprint 1: Idea 1, Not filed yet 1; Sprint 1a: Implementing 1, Backlog 1; Sprint 2: Accepted 1, Not filed yet 1; Sprint 2b: Estimated 1, Idea 1; Sprint 3: Estimated 1, Accepted 1; Sprint 3a: Idea 1, Not filed yet 1; Sprint 3b: Not filed yet 1; Sprint 3c: Not filed yet 1; Sprint 4a: Idea 2; Sprint 4b: Idea 2](progress-9d33b8eb.svg)
+![Sprint 1: Idea 1, Not filed yet 1; Sprint 2: Implementing 1, Backlog 1; Sprint 3: Accepted 1, Not filed yet 1; Sprint 4: Estimated 1, Idea 1; Sprint 5: Estimated 1, Accepted 1; Sprint 6: Idea 1, Not filed yet 1; Sprint 7: Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Idea 2; Sprint 10: Idea 2](progress-f21748d3.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -35,7 +35,7 @@ Test: The interface shows every configured account as its kind reads best - a wi
 
 <table><tr><td>
 
-### Sprint 1a: Repeating setup changes nothing
+### Sprint 2: Repeating setup changes nothing
 
 A second identical setup reports that nothing changed.
 
@@ -49,7 +49,7 @@ Test: Set the same credential twice and run setup twice. The second run reports 
 
 <table><tr><td>
 
-### Sprint 2: A machine nobody sits at tells its person
+### Sprint 3: A machine nobody sits at tells its person
 
 A machine working alone says what needs its person - an expiring credential, a locked vault, a stopped service, a machine running short - wherever the person is.
 
@@ -69,7 +69,7 @@ Test: The room's homeserver stopped on a host makes one message naming the machi
 
 <table><tr><td>
 
-### Sprint 2b: Keep working and show unattended failures
+### Sprint 4: Keep working and show unattended failures
 
 A setup survives its viewer and a failed unattended job names its cause.
 
@@ -83,27 +83,21 @@ Test: Close the interface or SSH during setup, reconnect and find the running se
 
 <table><tr><td>
 
-### Sprint 3: A host rented from any provider
+### Sprint 5: A host rented from any provider
 
 A host is rented and given back through one OpenTofu module per provider, by the same `up` and `down` as today.
 
-**Rented and given back through the module ⚪ Not tested**
+**Rented and given back through the module, a state from another computer refused ⚪ Not tested**
 
-Test: `porelo-host up` rents a Scaleway host through the module and `down` gives it back; afterwards `tofu plan` reads no change, and nothing tagged with the project is left at the provider.
+Test: `porelo-host up` rents a Scaleway host through the module and `down` gives it back; afterwards `tofu plan` reads no change, and nothing tagged with the project is left at the provider. A tagged server the module's state lacks makes `up` refuse, naming it; a conflict copy of the state makes `up` and `down` refuse until a person keeps one.
 
 🟪 [HO23](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho23 "porelo-host#HO23 · Estimated · L · A Machine Rented And Given Back By OpenTofu") ⬜ [F166](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f166 "porelo-frontend#F166 · Accepted · M · A Host Rented Through OpenTofu")
-
-**A state from another computer refused ⚪ Not tested**
-
-Test: A tagged server the module's state lacks makes `up` refuse, naming it; a conflict copy of the state makes `up` and `down` refuse until a person keeps one.
-
-⬜ [F166](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f166 "porelo-frontend#F166 · Accepted · M · A Host Rented Through OpenTofu")
 
 </td></tr></table>
 
 <table><tr><td>
 
-### Sprint 3a: Describe machine sources
+### Sprint 6: Describe machine sources
 
 The same machine request has checked inputs on both forges.
 
@@ -117,7 +111,7 @@ Test: Read the same machine-provider variable on both forges. Request an unknown
 
 <table><tr><td>
 
-### Sprint 3b: Request a rented or borrowed machine the same way
+### Sprint 7: Request a rented or borrowed machine the same way
 
 A run receives a machine by kind and returns only what it owns.
 
@@ -125,13 +119,13 @@ A run receives a machine by kind and returns only what it owns.
 
 Test: Request the same kind from a cloud source, pool and fixed server. A second run cannot take an occupied account. Return each lease; only its own cloud resources are deleted or its own borrowed account reset.
 
-◻️ Provide Machines Through OpenTofu; Lend Pool Run Accounts; Lend Fixed Server Accounts. Continue the machine-source parent from sprint 3a.
+◻️ Provide Machines Through OpenTofu; Lend Pool Run Accounts; Lend Fixed Server Accounts. Continue the machine-source parent from sprint 6.
 
 </td></tr></table>
 
 <table><tr><td>
 
-### Sprint 3c: Clean up interrupted leases
+### Sprint 8: Clean up interrupted leases
 
 An interrupted run leaves no unknown bill and never removes another run.
 
@@ -139,13 +133,13 @@ An interrupted run leaves no unknown bill and never removes another run.
 
 Test: Fill the chosen provider and confirm the configured next source is used. Interrupt a run and lose its state. The sweep finds attributable leftovers, removes only those and reports anything it cannot resolve; other resources remain.
 
-◻️ Respect Provider Capacity; Recover Abandoned Machine Leases. Continue sprint 3b after the state and sweep design is settled.
+◻️ Respect Provider Capacity; Recover Abandoned Machine Leases. Continue sprint 7 after the state and sweep design is settled.
 
 </td></tr></table>
 
 <table><tr><td>
 
-### Sprint 4a: Review a green commit and retire merged tasks
+### Sprint 9: Review a green commit and retire merged tasks
 
 The project can opt into review and cleanup without losing remaining work.
 
@@ -159,7 +153,7 @@ Test: Report the same green build more than once; exactly one reviewer starts fo
 
 <table><tr><td>
 
-### Sprint 4b: Handle a refused gathered push
+### Sprint 10: Handle a refused gathered push
 
 Only an opted-in project starts merge work, and events reach the right account.
 
@@ -170,4 +164,10 @@ Test: Advance central main and refuse the gathered push; a matching merge task s
 🟧 [B290](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b290 "porelo#B290 · Idea · - · A Merge Task Started When The Central Forge Moved") 🟧 [HO28](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho28 "porelo-host#HO28 · Idea · - · The Forge's Events Routed To Each Account's Porelo")
 
 </td></tr></table>
+
+## Waits
+
+- [B290](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b290 "porelo#B290 · Idea · - · A Merge Task Started When The Central Forge Moved") · Idea after [HO32](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho32 "porelo-host#HO32 · Finished · - · The Gathered Push Refuses A Moved Central Forge") · Finished
+- [F166](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f166 "porelo-frontend#F166 · Accepted · M · A Host Rented Through OpenTofu") · Accepted after [HO23](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho23 "porelo-host#HO23 · Estimated · L · A Machine Rented And Given Back By OpenTofu") · Estimated
+- [HO28](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho28 "porelo-host#HO28 · Idea · - · The Forge's Events Routed To Each Account's Porelo") · Idea after [B288](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b288 "porelo#B288 · Idea · - · One bounded automatic reviewer per eligible green commit; E0 never auto-starts, restart-safe deduplication and no automatic approval.") · Idea, [B289](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b289 "porelo#B289 · Idea · - · Authenticated human merge of the exact reviewed source head triggers safe stop/recheck/remove; unmerged work, pending replies and needed review pins are preserved.") · Idea, [B290](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b290 "porelo#B290 · Idea · - · A Merge Task Started When The Central Forge Moved") · Idea
 

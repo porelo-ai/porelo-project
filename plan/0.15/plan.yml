@@ -38,10 +38,3 @@ sprints:
       - title: "Read a coherent work history"
         test: "Create a session with terminal, broker and gate events. Replay it and filter the timeline by source; time order is retained. Reach size and retention limits; neither host nor interface blocks."
         issues: [porelo#B168, porelo-frontend#F111]
-  - id: "6"
-    title: "Keep each backup's own record"
-    goal: "Overlapping backups preserve their own consistent state."
-    functions:
-      - title: "Keep each backup's own record"
-        test: "Trigger overlapping Matrix backups with different source states and restore each. Each contains its own consistent state; neither overwrites the other or combines unrelated files."
-        issues: [porelo-message-matrix#MX39]

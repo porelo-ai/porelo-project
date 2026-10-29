@@ -3,11 +3,11 @@
 
 Use enterprise forges, read Jenkins builds and extend reviews to their pull requests
 
-*Stand: 2026-10-28T12:30:30Z*
+*Stand: 2026-10-29T06:11:44Z*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Not filed yet 1; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Estimated 1, Idea 3; Sprint 4: Idea 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Not filed yet 3](progress-c3931b60.svg)
+![Sprint 1: Estimated 1, Not filed yet 1; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Estimated 1, Idea 2; Sprint 4: Idea 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Not filed yet 3](progress-88aee513.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -51,7 +51,7 @@ The person selects forge repositories and build machines before work is run.
 
 Test: Choose the forge, repositories and pool through the dialog and CLI. Omit the required central token; setup refuses before creating a partial forge. With complete inputs, the same workflow uses the local pool and a central rented machine.
 
-🟪 [F145](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f145 "porelo-frontend#F145 · Estimated · S · The Host's Forge Switched Off In The Server Setup") 🟧 [F146](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f146 "porelo-frontend#F146 · Idea · — · The Host's VM Pool Switched On") 🟧 [HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27 "porelo-host#HO27 · Idea · - · The Forge's Jobs Told Where The Pool Is")
+🟪 [F145](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f145 "porelo-frontend#F145 · Estimated · S · The Host's Forge Switched Off In The Server Setup") 🟧 [F146](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f146 "porelo-frontend#F146 · Idea · — · The Host's VM Pool Switched On")
 
 **Request a declared build from the task ⚪ Not tested**
 
@@ -114,4 +114,9 @@ Test: Read Azure DevOps threads and suggestions as SARIF and release a reply. An
 ◻️ Not yet filed: an Azure DevOps review adapter from the review-area parent in release 0.8. Each forge has its own adapter under the shared review contract.
 
 </td></tr></table>
+
+## Waits
+
+- [B254](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b254 "porelo#B254 · Idea · - · A Task Has Its Work Built on a Declared Kind") · Idea after [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25 "porelo-buildtools#BT25 · Review · L · Machines Asked For By Kind") · Review
+- [F146](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f146 "porelo-frontend#F146 · Idea · — · The Host's VM Pool Switched On") · Idea after [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12 "porelo-host#HO12 · Review · L · The VM Pool") · Review
 
