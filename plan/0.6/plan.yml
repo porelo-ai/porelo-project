@@ -286,7 +286,7 @@ sprints:
     functions:
       - title: "A host prepared with no project or person"
         test: "The host admin prepares a rented server from the interface: the VPN on `10.73.<n>.0/24`, the shared forge, runner, pool and homeserver under the host's names, their certificates signed by the host admin's lasting CA; no project and no person is made. A laptop reaches two hosts, one VPN each; a host whose network collides is refused."
-        issues: [porelo-host#HO42, porelo-frontend#F208, porelo-frontend#F209, porelo-frontend#F210, porelo-frontend#F212, porelo-frontend#F211]
+        issues: [porelo-message-matrix#MX54, porelo-host#HO42, porelo-frontend#F208, porelo-frontend#F209, porelo-frontend#F210, porelo-frontend#F212, porelo-frontend#F211]
         covers: [porelo-project#PJ78]
       - title: "A person admitted, locked and purged; a project registered and taken off"
         test: "The host admin admits a project admin by hand, who gets an account of their own and a token of the shared homeserver, named `<host>-<account>` in the room; a locked person loses every access without a terminal, and a purge removes the account. A project registered and taken off leaves the host and its forge standing."
