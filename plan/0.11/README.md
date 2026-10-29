@@ -3,7 +3,7 @@
 
 Tasks, builds and transports reach only the resources that were allowed
 
-*Stand: 2026-10-29T09:28:42Z*
+*Stand: 2026-10-29T11:39:00Z*
 
 ## Sprint progress
 

@@ -570,16 +570,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 784)">
 <text x="0" y="17">6j. A host prepared once, by its host admin</text>
-<desc>Implementing 4, Estimated 7, Idea 1. MX54: porelo-message-matrix#MX54 · Idea · - · The Homeserver Serves A Certificate Made Elsewhere; HO42: porelo-host#HO42 · Implementing · L · The Host Prepared With No Project Or Person; F208: porelo-frontend#F208 · Estimated · M · Roles Given At The Start Of The Interface; F209: porelo-frontend#F209 · Estimated · M · The VPN Kept Per Host, Several Up At Once; F210: porelo-frontend#F210 · Estimated · S · The Secrets File Grouped By Host And By Project; F212: porelo-frontend#F212 · Estimated · M · The Forge's CA One Per Host; F211: porelo-frontend#F211 · Estimated · L · A Server Prepared With No Project; HO43: porelo-host#HO43 · Estimated · L · A Project Admin Admitted By The Host Admin; HO44: porelo-host#HO44 · Estimated · M · A Project Registered On The Host; MX44: porelo-message-matrix#MX44 · Implementing · M · The Host's Homeserver Gives Each Person A Token; B312: porelo#B312 · Implementing · S · A Machine Named By Its Host And Account; B315: porelo#B315 · Implementing · XS · A Person Locked Out Without A Terminal; </desc>
+<desc>Implementing 5, Estimated 7. MX54: porelo-message-matrix#MX54 · Implementing · M · The Homeserver Serves A Certificate Made Elsewhere; HO42: porelo-host#HO42 · Implementing · L · The Host Prepared With No Project Or Person; F208: porelo-frontend#F208 · Estimated · M · Roles Given At The Start Of The Interface; F209: porelo-frontend#F209 · Estimated · M · The VPN Kept Per Host, Several Up At Once; F210: porelo-frontend#F210 · Estimated · S · The Secrets File Grouped By Host And By Project; F212: porelo-frontend#F212 · Estimated · M · The Forge's CA One Per Host; F211: porelo-frontend#F211 · Estimated · L · A Server Prepared With No Project; HO43: porelo-host#HO43 · Estimated · L · A Project Admin Admitted By The Host Admin; HO44: porelo-host#HO44 · Estimated · M · A Project Registered On The Host; MX44: porelo-message-matrix#MX44 · Implementing · M · The Host's Homeserver Gives Each Person A Token; B312: porelo#B312 · Implementing · S · A Machine Named By Its Host And Account; B315: porelo#B315 · Implementing · XS · A Person Locked Out Without A Terminal; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="133.33333333333334" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 4</title></rect>
+<rect x="0.0" width="166.66666666666666" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 5</title></rect>
 
-<rect x="133.33333333333334" width="233.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 7</title></rect>
-
-<rect x="366.6666666666667" width="33.333333333333336" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+<rect x="166.66666666666666" width="233.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 7</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 12 done</text>
@@ -640,42 +638,49 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 874)">
 <text x="0" y="17">7. The move, wave 1: the smallest repositories</text>
-<desc>Analyzed 1, Idea 3. SL35: porelo-message-sluice#SL35 · Analyzed · S · The Sluice's Agent Works In A Porelo Task; BT37: porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task; B306: porelo#B306 · Idea · - · Porelo's Build Runs On The Local Forge; PJ75: porelo-project#PJ75 · Idea · — · A task fetches a snapshot from its host's forge; </desc>
+<desc>Backlog 1, Analyzed 3, Accepted 3, Idea 3. HO52: porelo-host#HO52 · Analyzed · M · Snapshots Resolved With A Read-Only Token; BT39: porelo-buildtools#BT39 · Analyzed · M · Snapshots Resolved With A Read-Only Token; SL36: porelo-message-sluice#SL36 · Analyzed · S · Snapshots Resolved With A Read-Only Token; CC41: porelo-claude-code#CC41 · Accepted ·  · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; PI41: porelo-pi#PI41 · Accepted ·  · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; OM38: porelo-omp#OM38 · Accepted ·  · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; SL35: porelo-message-sluice#SL35 · Backlog · S · The Sluice's Agent Works In A Porelo Task; BT37: porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task; B306: porelo#B306 · Idea · - · Porelo's Build Runs On The Local Forge; PJ75: porelo-project#PJ75 · Idea · — · A task fetches a snapshot from its host's forge; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="100.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="40.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
-<rect x="100.0" width="300.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 3</title></rect>
+<rect x="40.0" width="120.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 3</title></rect>
+
+<rect x="160.0" width="120.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 3</title></rect>
+
+<rect x="280.0" width="120.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 3</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 4 done</text>
+<text class="legend" x="410" y="17">0 of 10 done</text>
 </svg>
 
 
-<text x="1118" y="17"><title>porelo-message-sluice works wholly in its task: Not tested</title>⚪</text>
+<text x="1118" y="17"><title>Builds on the host's forge resolve snapshots with a read-only token: Not tested</title>⚪</text>
 
 
-<text x="1142" y="17"><title>porelo-buildtools in its task: Not tested</title>⚪</text>
+<text x="1142" y="17"><title>porelo-message-sluice works wholly in its task: Not tested</title>⚪</text>
 
 
-<text x="1166" y="17"><title>porelo's Build on the host's Forgejo: Not tested</title>⚪</text>
+<text x="1166" y="17"><title>porelo-buildtools in its task: Not tested</title>⚪</text>
 
 
-<text x="1190" y="17"><title>A task fetches a snapshot from its host's forge: Not tested</title>⚪</text>
+<text x="1190" y="17"><title>porelo's Build on the host's Forgejo: Not tested</title>⚪</text>
+
+
+<text x="1214" y="17"><title>A task fetches a snapshot from its host's forge: Not tested</title>⚪</text>
 
 </g>
 
 
 <g transform="translate(0 904)">
 <text x="0" y="17">7a. The move, wave 2: the agent adapters</text>
-<desc>Analyzed 6. PI38: porelo-pi#PI38 · Analyzed · S · The Build Runs On The Local Forge As On The Central One; PI39: porelo-pi#PI39 · Analyzed · S · The Repository's Agent Works In A Porelo Task; OM35: porelo-omp#OM35 · Analyzed · S · The Build Runs On The Local Forge As On The Central One; OM36: porelo-omp#OM36 · Analyzed · S · The Repository's Agent Works In A Porelo Task; CC38: porelo-claude-code#CC38 · Analyzed · S · The Build Runs On The Local Forge As On The Central One; CC39: porelo-claude-code#CC39 · Analyzed · S · The Repository's Agent Works In A Porelo Task; </desc>
+<desc>Backlog 6. PI38: porelo-pi#PI38 · Backlog · S · The Build Runs On The Local Forge As On The Central One; PI39: porelo-pi#PI39 · Backlog · S · The Repository's Agent Works In A Porelo Task; OM35: porelo-omp#OM35 · Backlog · S · The Build Runs On The Local Forge As On The Central One; OM36: porelo-omp#OM36 · Backlog · S · The Repository's Agent Works In A Porelo Task; CC38: porelo-claude-code#CC38 · Backlog · S · The Build Runs On The Local Forge As On The Central One; CC39: porelo-claude-code#CC39 · Backlog · S · The Repository's Agent Works In A Porelo Task; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 6</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 6</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 6 done</text>
@@ -708,14 +713,16 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 964)">
 <text x="0" y="17">7c. The move, wave 4: the other toolchains</text>
-<desc>Review 3, Idea 5, Not filed yet 1. MX43: porelo-message-matrix#MX43 · Idea · - · This Repository Moves Into A Porelo Task; IJ14: porelo-intellij#IJ14 · Idea ·  · Every Workflow Runs On The Host's Forge As On GitHub; IJ15: porelo-intellij#IJ15 · Idea ·  · The IntelliJ Agent Works In A Porelo Task; F203: porelo-frontend#F203 · Idea · — · This Repository Worked In A Porelo Task; F204: porelo-frontend#F204 · Idea · — · The Build Runs On The Local Forge As On The Central One; HO12: porelo-host#HO12 · Review · L · The VM Pool; BT24: porelo-buildtools#BT24 · Review · M · An Account Rented From The Local Pool; BT25: porelo-buildtools#BT25 · Review · L · Machines Asked For By Kind; The pool taken by the same call on Forgejo: Not filed yet; </desc>
+<desc>Review 3, Estimated 2, Idea 3, Not filed yet 1. MX43: porelo-message-matrix#MX43 · Idea · - · This Repository Moves Into A Porelo Task; IJ14: porelo-intellij#IJ14 · Estimated · M · Every Workflow Runs On The Host's Forge As On GitHub; IJ15: porelo-intellij#IJ15 · Estimated · S · The IntelliJ Agent Works In A Porelo Task; F203: porelo-frontend#F203 · Idea · — · This Repository Worked In A Porelo Task; F204: porelo-frontend#F204 · Idea · — · The Build Runs On The Local Forge As On The Central One; HO12: porelo-host#HO12 · Review · L · The VM Pool; BT24: porelo-buildtools#BT24 · Review · M · An Account Rented From The Local Pool; BT25: porelo-buildtools#BT25 · Review · L · Machines Asked For By Kind; The pool taken by the same call on Forgejo: Not filed yet; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
 <rect x="0.0" width="133.33333333333334" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 3</title></rect>
 
-<rect x="133.33333333333334" width="222.22222222222223" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 5</title></rect>
+<rect x="133.33333333333334" width="88.88888888888889" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 2</title></rect>
+
+<rect x="222.22222222222223" width="133.33333333333334" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 3</title></rect>
 
 <rect x="355.55555555555554" width="44.44444444444444" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
