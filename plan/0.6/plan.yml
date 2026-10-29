@@ -333,6 +333,12 @@ sprints:
       - title: "Builds on the host's forge resolve snapshots with a read-only token"
         test: "Every project's organization on the host holds `PORELO_PACKAGES_READ_TOKEN` (scope `read:package`) and its own `MAVEN_SNAPSHOTS_URL`; a build on an unreviewed branch resolves snapshots with it and holds no publisher's token, only the deploying step on `main` does; a missing `MAVEN_SNAPSHOTS_URL` fails the Build on any forge but github.com."
         issues: [porelo-host#HO52, porelo-buildtools#BT39, porelo-message-sluice#SL36, porelo-claude-code#CC41, porelo-pi#PI41, porelo-omp#OM38]
+      - title: "A host follows its project across a signer handover"
+        test: "Hand the project's signing over to a new signer. `following --json` names the keys it pinned; a host's bring verifies with `--since` using them and takes the new signer's commit, and a commit signed by a dropped key is refused."
+        issues: [porelo#B332, porelo-host#HO57]
+      - title: "Leaving a host clears the person's push and sync"
+        test: "Remove a person from a host; their push configuration and their sync timer are gone, and no sync runs for them afterwards."
+        issues: [porelo-host#HO56]
       - title: "porelo-message-sluice works wholly in its task"
         test: "Its move issue reaches Review inside the task with Forgejo's build green; its agent is reached in the room under its repository's name."
         issues: [porelo-message-sluice#SL35]

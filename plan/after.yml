@@ -49,6 +49,7 @@ after:
   # porelo-host
   porelo-host#HO07: [porelo-message-matrix#MX24, porelo-message-matrix#MX39, porelo#B231]
   porelo-host#HO27: [porelo-buildtools#BT25]
+  porelo-host#HO57: [porelo#B332]
   porelo-host#HO28: [porelo#B288, porelo#B289, porelo#B290]
   porelo-host#HO43: [porelo-message-matrix#MX44, porelo#B312]
   porelo-host#HO45: [porelo#B310, porelo#B320]

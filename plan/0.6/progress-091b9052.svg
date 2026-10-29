@@ -1,7 +1,7 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1238 1244" role="img" aria-label="Sprint progress for release 0.6">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1286 1244" role="img" aria-label="Sprint progress for release 0.6">
 <title>Sprint progress for release 0.6</title>
 <style>
 text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
@@ -664,37 +664,47 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 904)">
 <text x="0" y="17">7. The move, wave 1: the smallest repositories</text>
-<desc>Review 4, Backlog 1, Analyzed 2, Idea 3. HO52: porelo-host#HO52 · Analyzed · M · Snapshots Resolved With A Read-Only Token; BT39: porelo-buildtools#BT39 · Analyzed · M · Snapshots Resolved With A Read-Only Token; SL36: porelo-message-sluice#SL36 · Review · S · Snapshots Resolved With A Read-Only Token; CC41: porelo-claude-code#CC41 · Review · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; PI41: porelo-pi#PI41 · Review · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; OM38: porelo-omp#OM38 · Review · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; SL35: porelo-message-sluice#SL35 · Backlog · S · The Sluice's Agent Works In A Porelo Task; BT37: porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task; B306: porelo#B306 · Idea · - · Porelo's Build Runs On The Local Forge; PJ75: porelo-project#PJ75 · Idea · — · A task fetches a snapshot from its host's forge; </desc>
+<desc>Review 4, Backlog 1, Estimated 1, Analyzed 2, Accepted 2, Idea 3. HO52: porelo-host#HO52 · Analyzed · M · Snapshots Resolved With A Read-Only Token; BT39: porelo-buildtools#BT39 · Analyzed · M · Snapshots Resolved With A Read-Only Token; SL36: porelo-message-sluice#SL36 · Review · S · Snapshots Resolved With A Read-Only Token; CC41: porelo-claude-code#CC41 · Review · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; PI41: porelo-pi#PI41 · Review · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; OM38: porelo-omp#OM38 · Review · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; B332: porelo#B332 · Estimated · XS · A Follow Lists The Keys It Pinned; HO57: porelo-host#HO57 · Accepted · S · The Bring Checks With The Keys In Force After A Handover; HO56: porelo-host#HO56 · Accepted · M · Remove Takes The Person's Push And Sync Away; SL35: porelo-message-sluice#SL35 · Backlog · S · The Sluice's Agent Works In A Porelo Task; BT37: porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task; B306: porelo#B306 · Idea · - · Porelo's Build Runs On The Local Forge; PJ75: porelo-project#PJ75 · Idea · — · A task fetches a snapshot from its host's forge; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="160.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 4</title></rect>
+<rect x="0.0" width="123.07692307692308" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 4</title></rect>
 
-<rect x="160.0" width="40.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+<rect x="123.07692307692308" width="30.76923076923077" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
-<rect x="200.0" width="80.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+<rect x="153.84615384615384" width="30.76923076923077" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
 
-<rect x="280.0" width="120.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 3</title></rect>
+<rect x="184.6153846153846" width="61.53846153846154" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+
+<rect x="246.15384615384616" width="61.53846153846154" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
+
+<rect x="307.6923076923077" width="92.3076923076923" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 3</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 10 done</text>
+<text class="legend" x="410" y="17">0 of 13 done</text>
 </svg>
 
 
 <text x="1118" y="17"><title>Builds on the host's forge resolve snapshots with a read-only token: Not tested</title>⚪</text>
 
 
-<text x="1142" y="17"><title>porelo-message-sluice works wholly in its task: Not tested</title>⚪</text>
+<text x="1142" y="17"><title>A host follows its project across a signer handover: Not tested</title>⚪</text>
 
 
-<text x="1166" y="17"><title>porelo-buildtools in its task: Not tested</title>⚪</text>
+<text x="1166" y="17"><title>Leaving a host clears the person's push and sync: Not tested</title>⚪</text>
 
 
-<text x="1190" y="17"><title>porelo's Build on the host's Forgejo: Not tested</title>⚪</text>
+<text x="1190" y="17"><title>porelo-message-sluice works wholly in its task: Not tested</title>⚪</text>
 
 
-<text x="1214" y="17"><title>A task fetches a snapshot from its host's forge: Not tested</title>⚪</text>
+<text x="1214" y="17"><title>porelo-buildtools in its task: Not tested</title>⚪</text>
+
+
+<text x="1238" y="17"><title>porelo's Build on the host's Forgejo: Not tested</title>⚪</text>
+
+
+<text x="1262" y="17"><title>A task fetches a snapshot from its host's forge: Not tested</title>⚪</text>
 
 </g>
 
