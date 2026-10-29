@@ -3,7 +3,7 @@
 
 Code reviews as SARIF: every finding and comment - from a person, a checking agent, a linter or a forge - in one format, trusted by who wrote it
 
-*Stand: 2026-10-29T11:39:00Z*
+*Stand: 2026-10-29T13:28:27Z*
 
 ## Sprint progress
 

@@ -570,14 +570,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 784)">
 <text x="0" y="17">6j. A host prepared once, by its host admin</text>
-<desc>Implementing 5, Estimated 7. MX54: porelo-message-matrix#MX54 · Implementing · M · The Homeserver Serves A Certificate Made Elsewhere; HO42: porelo-host#HO42 · Implementing · L · The Host Prepared With No Project Or Person; F208: porelo-frontend#F208 · Estimated · M · Roles Given At The Start Of The Interface; F209: porelo-frontend#F209 · Estimated · M · The VPN Kept Per Host, Several Up At Once; F210: porelo-frontend#F210 · Estimated · S · The Secrets File Grouped By Host And By Project; F212: porelo-frontend#F212 · Estimated · M · The Forge's CA One Per Host; F211: porelo-frontend#F211 · Estimated · L · A Server Prepared With No Project; HO43: porelo-host#HO43 · Estimated · L · A Project Admin Admitted By The Host Admin; HO44: porelo-host#HO44 · Estimated · M · A Project Registered On The Host; MX44: porelo-message-matrix#MX44 · Implementing · M · The Host's Homeserver Gives Each Person A Token; B312: porelo#B312 · Implementing · S · A Machine Named By Its Host And Account; B315: porelo#B315 · Implementing · XS · A Person Locked Out Without A Terminal; </desc>
+<desc>Review 2, Implementing 10. MX54: porelo-message-matrix#MX54 · Review · M · The Homeserver Serves A Certificate Made Elsewhere; HO42: porelo-host#HO42 · Implementing · L · The Host Prepared With No Project Or Person; F208: porelo-frontend#F208 · Implementing · M · Roles Given At The Start Of The Interface; F209: porelo-frontend#F209 · Implementing · M · The VPN Kept Per Host, Several Up At Once; F210: porelo-frontend#F210 · Implementing · S · The Secrets File Grouped By Host And By Project; F212: porelo-frontend#F212 · Implementing · M · The Forge's CA One Per Host; F211: porelo-frontend#F211 · Implementing · L · A Server Prepared With No Project; HO43: porelo-host#HO43 · Implementing · L · A Project Admin Admitted By The Host Admin; HO44: porelo-host#HO44 · Implementing · M · A Project Registered On The Host; MX44: porelo-message-matrix#MX44 · Review · M · The Host's Homeserver Gives Each Person A Token; B312: porelo#B312 · Implementing · S · A Machine Named By Its Host And Account; B315: porelo#B315 · Implementing · XS · A Person Locked Out Without A Terminal; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="166.66666666666666" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 5</title></rect>
+<rect x="0.0" width="66.66666666666667" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
 
-<rect x="166.66666666666666" width="233.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 7</title></rect>
+<rect x="66.66666666666667" width="333.3333333333333" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 10</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 12 done</text>
@@ -594,12 +594,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 814)">
 <text x="0" y="17">6k. A project put on a prepared host</text>
-<desc>Estimated 8. B310: porelo#B310 · Estimated · M · A Project Names A Private, Signed Access File; B311: porelo#B311 · Estimated · S · A Project Verified Without Following It; B320: porelo#B320 · Estimated · XS-S · An Inventory Reads Its Files From The Access File; HO45: porelo-host#HO45 · Estimated · L · The Project Brought And Joined In The Person's Own Account; F214: porelo-frontend#F214 · Estimated · M · The Setup Files And The Stop Split By Act; F213: porelo-frontend#F213 · Estimated · L · A Project Brought Onto A Prepared Host; MX45: porelo-message-matrix#MX45 · Estimated · M · A Project Admin Brings The Room Onto A Central Homeserver; B314: porelo#B314 · Estimated · S · A Project Admin Keeps The Room's Members To The List; </desc>
+<desc>Implementing 4, Estimated 4. B310: porelo#B310 · Implementing · M · A Project Names A Private, Signed Access File; B311: porelo#B311 · Estimated · S · A Project Verified Without Following It; B320: porelo#B320 · Estimated · XS-S · An Inventory Reads Its Files From The Access File; HO45: porelo-host#HO45 · Estimated · L · The Project Brought And Joined In The Person's Own Account; F214: porelo-frontend#F214 · Implementing · M · The Setup Files And The Stop Split By Act; F213: porelo-frontend#F213 · Implementing · L · A Project Brought Onto A Prepared Host; MX45: porelo-message-matrix#MX45 · Implementing · M · A Project Admin Brings The Room Onto A Central Homeserver; B314: porelo#B314 · Estimated · S · A Project Admin Keeps The Room's Members To The List; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 8</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 4</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 4</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 8 done</text>
