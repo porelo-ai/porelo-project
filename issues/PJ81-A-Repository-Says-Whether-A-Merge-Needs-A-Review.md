@@ -26,6 +26,8 @@ repositories:
   no push straight to `main`; fast-forward only. Every change still goes through a pull request and is on record.
 - **An agent's work** reaches the forge only through the gate, where a person approves it first; with `optional` that is
   its only review by a person, with `required` the forge's approval comes on top.
+- **The project's own repository** takes the same setting as `project.review`, with the same values and default
+  (operator, 2026-10-30).
 - The key sits in the project file, so changing it is signed by the project admin ([PJ80](README.md#pj80)).
 
 ## To be checked
