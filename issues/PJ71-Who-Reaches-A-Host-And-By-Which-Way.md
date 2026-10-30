@@ -1,6 +1,6 @@
 # PJ71 — Who reaches a host, and by which way
 
-**Status:** Accepted; analysed after 0.6.
+**Status:** Accepted.
 
 **What must be true.** Setting a machine up, admitting a person to it or removing them, and taking it down are kept
 apart from normal work, as roles the interface is started with: without a role given it shows normal work only. A
@@ -43,6 +43,10 @@ way into a host it is written down who uses it, for what, and over which channel
 - **Joining the project's room** (decided): today any name may join; with the `access-admin` role, *Join* admits only
   a person declared as a peer of the project, or warns on another name.
 - **Built with the roles:** these move together with the roles when this comes, not ahead of them.
+- **Only ssh in normal work** (decided): a developer and a project admin reach the host, its forge, the room and the
+  daemon by ssh with their own key, forwarded where a service is not ssh; the VPN is the installation's, the host
+  admin's alone. A VPN peer per person, as built for moving the project's own repositories, is taken out before
+  others are admitted. See [the decision](../doc/decisions.md#only-ssh-reaches-a-host-in-normal-work).
 
 - **The hand-over between administrator and person:** the person's computer makes their ssh key and, only where the
   machine's own VPN is needed, their WireGuard key; the private halves never leave it. The interface writes an
@@ -71,7 +75,5 @@ own rented host; nothing of it changes before the roles are built.
 
 ## Open questions
 
-- The split itself: which functions go over ssh (setting up before the VPN exists, the stop's terminal, the
-  interface's room forward) and which over the VPN (the forge, the room, the daemon, the VM pool, a task's view).
 - What an admitted person gets: an OS account and Porelo node of their own, the room, the local forge.
 - The form of the access request and the access file, and whether the command line offers the same.

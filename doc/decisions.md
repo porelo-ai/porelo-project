@@ -12,6 +12,7 @@ it stays and what would change the answer.
 | Code from outside reaches no secret | one organisation ruleset on `main` (no deletion, no force push, a pull request with the code owner's review), its only bypass the organisation admin; `CODEOWNERS` for `.github/`, build files and `AGENTS.md`; a fork's workflow waits for approval | [entry](#code-from-outside-reaches-no-secret) |
 | Work not yet sent by the gathered push is lost with a failed machine | the host keeps no backup of the local forge; a person who wants one backs it up with means of their own | [entry](#work-not-yet-sent-by-the-gathered-push-is-lost-with-a-failed-machine) |
 | A pull request's checks inform and never block | no repository requires a status check to merge; the *Workflow check* runs only on a pull request touching `.github/**` | [entry](#a-pull-requests-checks-inform-and-never-block) |
+| Only ssh reaches a host in normal work | a developer and a project admin reach a host by ssh with their own key, never by a VPN; the VPN is the installation's alone, and a VPN per person is allowed only while the project's own work moves onto its hosts | [entry](#only-ssh-reaches-a-host-in-normal-work) |
 
 ## A library's license follows how it is shipped
 
@@ -80,3 +81,13 @@ have to report on every pull request, so the path-filtered *Workflow check* woul
 that cannot pass on one forge (such as `shared-rules.yml` on the local forge) would block a merge there; the code
 owner already reviews every merge. **What would change the answer:** a merge by anyone other than the code owner, or
 a red check found merged on `main`.
+
+## Only ssh reaches a host in normal work
+
+**What holds:** a developer and a project admin reach a host only by ssh with a key of their own: their account, the
+forge (Git, pull requests, its web pages, the registry), the project's room and the daemon, through ssh's own
+forwarding where a service is not ssh. The VPN belongs to installing the host, its host admin alone. While the
+project's own repositories move onto their hosts, a VPN peer per person is allowed; it is taken out before others are
+admitted. **Why:** an access file a person can be given then needs only an ssh key, on any machine and any network, and
+a host offers one way in to secure. **What would change the answer:** a service that cannot be forwarded over ssh.
+
