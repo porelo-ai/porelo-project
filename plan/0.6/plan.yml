@@ -342,7 +342,7 @@ sprints:
         covers: [porelo-project#PJ83]
       - title: "The room reached through the homeserver's gate, accounts by login"
         test: "Element and Porelo reach the homeserver only through the tunnel to its gate, which knows the person by their host login; a person's accounts are named by their login, not a machine; a lock for one project takes them out of that project's rooms only; no VPN address, machine token or certificate is left."
-        issues: [porelo-message-matrix#MX56, porelo-message-matrix#MX57, porelo-message-matrix#MX58, porelo-message-matrix#MX59]
+        issues: [porelo-message-matrix#MX30, porelo-message-matrix#MX56, porelo-message-matrix#MX57, porelo-message-matrix#MX58, porelo-message-matrix#MX59]
         covers: [porelo-project#PJ83]
       - title: "The sign-in says how it is answered"
         test: "Signing an agent in on the host shows either \"Paste the code shown in your browser\" or \"Confirm on the device page\", as its definition says; a loopback sign-in on a host account is refused, naming the agent."

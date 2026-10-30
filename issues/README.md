@@ -25,6 +25,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj83"></a>[PJ83](PJ83-A-Person-Joins-With-One-Click.md) | XL | — | One SSH key per person; persons, hosts and admissions lie signed in Git on the central forge, and each person joins with one click from lists built from them; SSH carries everything, with no VPN. |
 | <a id="pj59"></a>[PJ59](PJ59-Each-Agent-Moves-Into-A-Porelo-Task.md) | L | — | Each agent moves into a Porelo task, one at a time in a fixed order, each move an issue (S) of its own that the agent works inside its new task; the channel file kept beside Matrix until the last has moved. |
 | <a id="pj50"></a>[PJ50](PJ50-A-Host-Mounts-The-Persons-Drives.md) | M + L | — | A host takes its setup from a tresor of its own or its folder in a shared one, as the person chooses, and mounts the person's private drives for the person's own use; one mechanism for Tresorit and OneDrive, a list of drives in the machine file, and a person's account on the host to be weighed. |
 | <a id="pj51"></a>[PJ51](PJ51-The-Persons-Secrets-Kept-Once-In-A-File-They-Can-Open.md) | L + L + M | — | The secrets a host's setup needs, kept once in a KDBX 4 file on the person's drive that KeePassXC opens, unlocked on the desktop only and given to the host on standard input; a wizard in the interface asks how the person works. |
@@ -60,7 +61,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj83"></a>[PJ83](PJ83-A-Person-Joins-With-One-Click.md) | — | — | One SSH key per person; persons, hosts and admissions lie signed in Git on the central forge, and each person joins with one click from lists built from them; SSH carries everything, with no VPN. |
 | <a id="pj80"></a>[PJ80](PJ80-Only-The-Project-File-Needs-A-Signers-Signature.md) | — | — | A follow applies a new `main` when every commit that changes the project file, or another file deciding what the machines do, is signed by a key in `signers`; other commits need no signature, so developers change the rest of the project's repository on their own and the project admin signs changes to the project file. |
 | <a id="pj81"></a>[PJ81](PJ81-A-Repository-Says-Whether-A-Merge-Needs-A-Review.md) | — | [PJ80](#pj80) | The project file says per repository whether a pull request on the host's local forge needs another person's approval (`review: required`, the default, an approval dismissed by a later commit) or the author may merge (`review: optional`); only people merge, never an agent. |
 | <a id="pj79"></a>[PJ79](PJ79-An-Issue-Names-Nothing-Of-Another-Repository.md) | — | — | An issue outside `porelo-project` names no issue, sprint or release of another repository and states the contract it builds against itself; only `porelo-project`'s requirements and plans name the other repositories' issues, their order and their waits, so replanning changes one repository and no check reads another's index. |

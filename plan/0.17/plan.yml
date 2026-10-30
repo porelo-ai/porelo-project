@@ -15,7 +15,7 @@ sprints:
     functions:
       - title: "Accept only admitted people as people"
         test: "Sign two machines in to the central homeserver. Have an admitted person write in the room and directly. Have a foreign task claim to be a person and try a task-to-task direct chat. Only the admitted person is delivered as a person; forbidden paths are refused."
-        issues: [porelo#B86, porelo#B122, porelo-message-matrix#MX30]
+        issues: [porelo#B86, porelo#B122]
         notes: ["The move acceptance in release 0.6 must be complete first."]
   - id: "3"
     title: "Keep the homeserver and room entrances separate"
