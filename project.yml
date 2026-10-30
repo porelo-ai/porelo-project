@@ -78,6 +78,11 @@ repositories:
         description: "The build-server adapter for GitHub Actions: the verdict and the failing job's log of a task's build"
         issues: ["GH"]
 
+    forge-clients:
+        upstream: "git@github.com:porelo-ai/porelo-forge-clients.git"
+        description: "Clients for forge and build server APIs, one module per forge, knowing nothing of Porelo"
+        issues: ["FC"]
+
     intellij:
         upstream: "git@github.com:porelo-ai/porelo-intellij.git"
         description: "The IntelliJ plugin: an agent's waiting work reviewed, approved or rejected in the IDE"

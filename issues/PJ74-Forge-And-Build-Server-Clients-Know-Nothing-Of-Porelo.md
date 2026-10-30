@@ -1,6 +1,6 @@
 # PJ74 — Forge and build server clients know nothing of Porelo
 
-**Status:** Idea.
+**Status:** Accepted.
 
 **What must be true.** The calls to a forge's or a build server's API - pull requests, reviews and their comments,
 checks and builds, webhooks - live in one repository of their own, `porelo-forge-clients`, with one module per forge or
