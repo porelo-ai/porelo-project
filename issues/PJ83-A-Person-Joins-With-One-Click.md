@@ -34,8 +34,8 @@ gathered and signed where it arises, and lists read from Git, the long wizards g
   unlocked: one unlock per session. KeePassXC can unlock without a password by a YubiKey, Windows Hello or Touch ID.
   The agent's socket is never forwarded to a host and never reaches a task.
 - The same key is entered in the person's account on the central forge, so that the forge's public key list names it.
-- **Gone:** the forge password on the host (Git over SSH, the forge's web login through the tunnel); the project's own
-  signing key (a project's signers are its project admins' keys); every per-machine key.
+- **Gone:** the forge password on the host (Git by the person's forge token, the web login through the tunnel); the
+  project's own signing key (a project's signers are its project admins' keys); every per-machine key.
 - **Changing the key:** the person makes a new key and a new card that names the old key as its predecessor, signed by
   both the new and the old key. Porelo commits it to the registry and brings it to each host the person is on.
 - **Losing the key:** a project admin (or for the host the host admin) puts the person's new key in the access file and
@@ -74,15 +74,18 @@ It names **no machine**.
 | host name | for example `walk9server` |
 | address and SSH port | for example `195.154.103.7:22` |
 | SSH host key | so Porelo knows the real host; `age` can encrypt to it if a token is ever kept on the host |
-| services | the forge (web port, Git SSH port and its own SSH host key) and the homeserver (port) |
+| services | the forge (web port and Git port) and the homeserver (port) |
 
 The service ports are the same local ports on every person's machine.
 
-**Everything over SSH.** Porelo opens one SSH tunnel per host with the person's key. Git runs over it; the forge's web
-interface and Matrix are forwarded to `localhost`. On the host they listen on Unix sockets, reachable only by the
-admitted persons' group, not on TCP, and without TLS, since the tunnel encrypts. On the person's machine the forwards
-bind `127.0.0.1` only. The host's only open port is SSH. Today's return path to the messenger on the person's machine,
-a short-lived crutch, runs over `ssh -R` to that one socket only, until it goes. No VPN, no WireGuard, no host CA and no
+**Everything over SSH.** Porelo opens one SSH tunnel per host with the person's key. The forge's web interface, its Git
+and Matrix are forwarded to `localhost`. On the host they listen on Unix sockets, reachable only by the admitted
+persons' group, not on TCP, and without TLS, since the tunnel encrypts. The web interface and Matrix know the person by
+their login on the host; Git authenticates with the person's own forge token, which the host's sync makes. A task's
+container reaches none of these sockets, nor does any other task process; the host passes a task's branch on with the
+task's own token, limited to that repository and ending with the task. On the person's machine the forwards bind
+`127.0.0.1` only. The host's only open port is SSH. Today's return path to the messenger on the person's machine, a
+short-lived crutch, runs over `ssh -R` to that one socket only, until it goes. No VPN, no WireGuard, no host CA and no
 `sudo` in daily use.
 
 ## Building block 3: the state lies in Git on the central forge
@@ -117,7 +120,11 @@ Whether each person files their own card or chosen persons take cards and file t
   commit that breaks this keeps the last good state and is named.
 - **The host never talks to the central forge on its own.** After each change, the Porelo of the admin who made it
   brings the signed state to the host through the tunnel (as the access bundle goes today); the host checks the
-  signatures and syncs.
+  signatures against its host admin's key, pinned at setup, and syncs. It needs neither the forge nor `owners.yml` for
+  that, so `hosts/<host>/access.yml` names each project admin with their key's fingerprint, and each project's access
+  file names each of its persons with theirs. The host refuses a brought state that does not descend from the one it
+  has, so an older, validly signed state cannot bring back a revoked person. A new host admin's key is pinned on the
+  host the same way as at setup.
 - **Secrets,** if one is ever kept in Git, are encrypted with `age` to the keys of the persons, or the host, needing it.
 
 **The central forge's token does not lie on the host,** unless a project opts in (below). The gathered push, which takes
@@ -153,7 +160,8 @@ projects that must publish unattended; such a token is limited to pushing to tha
 ## Secrets the host keeps
 
 - **The forge's and homeserver's own tokens** for persons and tasks are made by the host's sync itself, through
-  Forgejo's admin command and the homeserver's account; none of them travels between persons.
+  Forgejo's admin command and the homeserver's account; none of them travels between persons. A person's own forge
+  token reaches their Porelo through the tunnel and is kept in their vault, never in a file.
 - **An agent's provider sign-in** (a subscription or an API key) stays, as today, in the vault of the person's account
   on the host: the user-mode Porelo there renews it while the person is away.
 - **Unlocking that vault without a passphrase.** An Ed25519 signature is deterministic. The vault's key is derived
@@ -217,8 +225,9 @@ projects that must publish unattended; such a token is limited to pushing to tha
 
 - A developer joins a project on a host with one click after their card is filed, and a project admin is admitted and
   registers their project with one click each, with no value or key copied by hand.
-- A card filed under another person's login, a host card signed by someone not named in `owners.yml`, and a successor
-  card signed by a revoked key are each refused, naming why.
+- Porelo refuses a card filed under another person's login, a host card signed by someone not named in `owners.yml`,
+  and a successor card signed by a revoked key, naming why; the host refuses a brought state that is not its own state's
+  descendant.
 - The host's only open port is SSH, and no person needs a password beyond unlocking their own key.
 
 ## To be checked
@@ -228,7 +237,7 @@ projects that must publish unattended; such a token is limited to pushing to tha
 - The forwards on a person's machine bind `127.0.0.1`, which other local users of that machine also reach; where the
   browser allows it, a socket private to the person is better.
 - SSHSIG in Java (Bouncy Castle) or through `ssh-keygen -Y`; `age` in Java or as a tool.
-- How each repository changes: porelo (key, cards, registry reading, tunnel), porelo-frontend (lists instead of
-  wizards), porelo-host (accounts from person cards, KRL, SSH only, no WireGuard), porelo-message-matrix and
+- How each repository changes: porelo (key, cards, registry reading, vault unlock), porelo-frontend (lists instead of
+  wizards, the tunnel), porelo-host (accounts from person cards, KRL, SSH only, no WireGuard), porelo-message-matrix and
   porelo-message-sluice (Matrix over the tunnel, the return path by `ssh -R`).
 - Which held GUI findings of the walk this replaces.
