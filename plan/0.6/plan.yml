@@ -330,7 +330,7 @@ sprints:
         covers: [porelo-project#PJ83]
       - title: "Admitted, registered, added and joined with one click, from lists"
         test: "The host admin admits a project admin by picking them from the registry's persons; the project admin registers their project and adds a developer the same way; the developer joins with one click; Machines, Projects and Forges are lists whose rows open their own pages, each list with a filter, each row with its ⋮; no VPN, CA or per-machine key is left in the interface."
-        issues: [porelo-frontend#F269, porelo-frontend#F271, porelo-frontend#F272, porelo-frontend#F273, porelo-frontend#F278, porelo-frontend#F276]
+        issues: [porelo#B352, porelo-frontend#F269, porelo-frontend#F271, porelo-frontend#F272, porelo-frontend#F273, porelo-frontend#F278, porelo-frontend#F276]
         covers: [porelo-project#PJ83]
       - title: "Task keys certified, and each push judged when it arrives"
         test: "A task signs with its own key certified by the person who started it; the host records the certificate and the task's forge token, judges each push by its arrival, and refuses one by an expired certificate or a revoked key."
