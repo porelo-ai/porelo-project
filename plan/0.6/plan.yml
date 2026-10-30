@@ -318,7 +318,7 @@ sprints:
     functions:
       - title: "Each person's one key and card, kept in the registry"
         test: "A person's key and card are made once and filed under `people/` with the key also on their forge account; a card under another person's login, one whose key the forge account does not list, and a successor signed by a revoked key are refused, naming why; a changed key reaches the registry and each host; a lost key is replaced by an admin, and a single admin's backup key may only replace that entry."
-        issues: [porelo#B337, porelo#B339, porelo#B338, porelo#B346, porelo-frontend#F268, porelo-frontend#F280, porelo-forge-clients#FC04, porelo-forge-clients#FC07, porelo-forge-clients#FC02, porelo-forge-clients#FC05, porelo-forge-clients#FC01, porelo-forge-clients#FC06]
+        issues: [porelo#B337, porelo#B339, porelo#B338, porelo#B346, porelo-frontend#F268, porelo-frontend#F280, porelo-forge-clients#FC04, porelo-forge-clients#FC07]
         covers: [porelo-project#PJ83]
       - title: "The host vault opened by the person's key"
         test: "Opening the tunnel unlocks the person's host vault without a passphrase or prompt; the share stays in locked memory until the host restarts or the person is locked; after a reboot the vault waits for the next connection; a lost key means the vault is deleted and set up again."
@@ -366,6 +366,9 @@ sprints:
       - title: "A published release installed and verified"
         test: "Publish and pin Buildtools 0.5.1, then build IntelliJ from an empty Gradle home. Change a dependency digest; the build must fail. Install the release leg from its publication channel; a wrong channel or a candidate must be refused as proof of the tested release."
         issues: [porelo-intellij#IJ09, porelo-buildtools#BT01]
+      - title: "A forge's keys and repositories through its client"
+        test: "On Forgejo and on GitHub the client reads a person's public SSH keys without a token, lists, adds and deletes the signed-in person's own keys, tells whether a user owns an organization, and reads and creates a repository in it, against answers recorded from the real forge."
+        issues: [porelo-forge-clients#FC02, porelo-forge-clients#FC05, porelo-forge-clients#FC01, porelo-forge-clients#FC06]
   - id: "7"
     title: "The move, wave 1: the smallest repositories"
     goal: "Starts only once 6 to 6i are tested, since a moved agent talks in the room on this computer from the host. One agent per repository: each works its own move issue inside its new task to Review; the others work as today."
