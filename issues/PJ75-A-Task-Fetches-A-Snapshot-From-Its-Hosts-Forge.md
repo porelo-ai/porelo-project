@@ -9,9 +9,11 @@ on the host.
 ## Why
 
 The host's forge makes its organization and repositories private, and a task gets no forge token, so a task reaching
-the registry by its declared name is refused with `401`. Two ways are open, to be weighed: the organization made
-public on the forge, reachable only through the VPN and from the host's tasks; or a read-only registry credential
-given to the task through the Porelo-Vault.
+the registry by its declared name is refused with `401`.
+
+The shared building blocks (porelo-parent, porelo-buildtools) live in their own organization on the host's forge, which
+is public there: everyone on the host, every person and every task, reads their snapshots without a token. They are
+open source and public on Sonatype already. A project's own snapshots stay private.
 
 ## To be checked
 
