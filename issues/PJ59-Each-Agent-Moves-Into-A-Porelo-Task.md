@@ -1,6 +1,6 @@
 # PJ59 — Each agent moves into a Porelo task
 
-**Status:** Backlog.
+**Status:** Implementing.
 **Size:** L - crosses every repository over three sprints; its own part here is the move's procedure, its check, the
 channel's bridge to the moved agents and the rules table, each agent's move an issue (S) of its own.
 

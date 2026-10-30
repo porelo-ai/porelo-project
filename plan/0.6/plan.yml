@@ -318,7 +318,7 @@ sprints:
     functions:
       - title: "Each person's one key and card, kept in the registry"
         test: "A person's key and card are made once and filed under `people/` with the key also on their forge account; a card under another person's login, one whose key the forge account does not list, and a successor signed by a revoked key are refused, naming why; a changed key reaches the registry and each host; a lost key is replaced by an admin, and a single admin's backup key may only replace that entry."
-        issues: [porelo#B337, porelo#B339, porelo#B338, porelo#B346]
+        issues: [porelo#B337, porelo#B339, porelo#B338, porelo#B346, porelo-frontend#F268, porelo-frontend#F280, porelo-forge-clients#FC04, porelo-forge-clients#FC07, porelo-forge-clients#FC02, porelo-forge-clients#FC05, porelo-forge-clients#FC01, porelo-forge-clients#FC06]
         covers: [porelo-project#PJ83]
       - title: "The host vault opened by the person's key"
         test: "Opening the tunnel unlocks the person's host vault without a passphrase or prompt; the share stays in locked memory until the host restarts or the person is locked; after a reboot the vault waits for the next connection; a lost key means the vault is deleted and set up again."
@@ -326,15 +326,19 @@ sprints:
         covers: [porelo-project#PJ83]
       - title: "A host reached over SSH only, its state taken from the registry"
         test: "The host's only open port is SSH; the forge and the homeserver are reached through their gates over the tunnel with no password and no VPN; the host takes its project admins, projects and persons from the signed registry state an admin brings, and refuses a card under another person's login, a host card not signed by a host admin of `owners.yml` and a successor card signed by a revoked key, naming why."
-        issues: [porelo-host#HO68, porelo-host#HO69, porelo-host#HO70, porelo-host#HO75, porelo-host#HO73, porelo#B349, porelo#B340, porelo#B342]
+        issues: [porelo-host#HO68, porelo-host#HO69, porelo-host#HO70, porelo-host#HO75, porelo-host#HO73, porelo#B349, porelo#B340, porelo#B342, porelo-frontend#F270, porelo-intellij#IJ18]
+        covers: [porelo-project#PJ83]
+      - title: "Admitted, registered, added and joined with one click, from lists"
+        test: "The host admin admits a project admin by picking them from the registry's persons; the project admin registers their project and adds a developer the same way; the developer joins with one click; Machines, Projects and Forges are lists whose rows open their own pages, each list with a filter, each row with its ⋮; no VPN, CA or per-machine key is left in the interface."
+        issues: [porelo-frontend#F269, porelo-frontend#F271, porelo-frontend#F272, porelo-frontend#F273, porelo-frontend#F278, porelo-frontend#F276]
         covers: [porelo-project#PJ83]
       - title: "Task keys certified, and each push judged when it arrives"
         test: "A task signs with its own key certified by the person who started it; the host records the certificate and the task's forge token, judges each push by its arrival, and refuses one by an expired certificate or a revoked key."
-        issues: [porelo-host#HO71, porelo-host#HO76, porelo#B341, porelo#B343, porelo#B344]
+        issues: [porelo#B335, porelo#B334, porelo-host#HO71, porelo-host#HO76, porelo#B341, porelo#B343, porelo#B344, porelo-frontend#F277]
         covers: [porelo-project#PJ83]
       - title: "The central forge reached only on a person's word"
         test: "The gathered push and the pull run only when an admitted person starts them, with their own token sent through the tunnel and kept nowhere on the host."
-        issues: [porelo-host#HO72]
+        issues: [porelo-host#HO72, porelo-frontend#F274]
         covers: [porelo-project#PJ83]
       - title: "The room reached through the homeserver's gate, accounts by login"
         test: "Element and Porelo reach the homeserver only through the tunnel to its gate, which knows the person by their host login; a person's accounts are named by their login, not a machine; a lock for one project takes them out of that project's rooms only; no VPN address, machine token or certificate is left."
@@ -342,11 +346,11 @@ sprints:
         covers: [porelo-project#PJ83]
       - title: "The sign-in says how it is answered"
         test: "Signing an agent in on the host shows either \"Paste the code shown in your browser\" or \"Confirm on the device page\", as its definition says; a loopback sign-in on a host account is refused, naming the agent."
-        issues: [porelo-claude-code#CC43, porelo-pi#PI42, porelo-omp#OM40, porelo-codex#CX10, porelo-agy#AG07, porelo#B347]
+        issues: [porelo-claude-code#CC43, porelo-pi#PI42, porelo-omp#OM40, porelo-codex#CX10, porelo-agy#AG07, porelo#B347, porelo-frontend#F275]
         covers: [porelo-project#PJ83]
       - title: "The gathered push by any developer, every role on one host"
         test: "Any developer runs the gathered push to the central forge with their own token; on one host the host admin, two project admins and their developers each do what their role allows and nothing more."
-        issues: [porelo-host#HO47, porelo-host#HO48, porelo-host#HO74]
+        issues: [porelo-host#HO47, porelo-host#HO48, porelo-host#HO74, porelo-frontend#F279]
         covers: [porelo-project#PJ78, porelo-project#PJ83]
       - title: "No forge user `operator`"
         test: "A host set up anew has no forge user `operator`; on a host set up before, it is gone after `up`, and the forge's people, protection and owners still work."
@@ -377,7 +381,7 @@ sprints:
         issues: [porelo-host#HO56]
       - title: "A person in the project's room on a host"
         test: "A developer of the access file, logged in with their host account over an ssh forward, reads and writes in the project's room on the host's homeserver; dropped from the access file, they leave the room at the next sync."
-        issues: [porelo-message-matrix#MX55, porelo#B334]
+        issues: [porelo-message-matrix#MX55]
       - title: "porelo-message-sluice works wholly in its task"
         test: "Its move issue reaches Review inside the task with Forgejo's build green; its agent is reached in the room under its repository's name."
         issues: [porelo-message-sluice#SL35]

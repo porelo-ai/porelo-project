@@ -25,6 +25,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj59"></a>[PJ59](PJ59-Each-Agent-Moves-Into-A-Porelo-Task.md) | L | — | Each agent moves into a Porelo task, one at a time in a fixed order, each move an issue (S) of its own that the agent works inside its new task; the channel file kept beside Matrix until the last has moved. |
 | <a id="pj50"></a>[PJ50](PJ50-A-Host-Mounts-The-Persons-Drives.md) | M + L | — | A host takes its setup from a tresor of its own or its folder in a shared one, as the person chooses, and mounts the person's private drives for the person's own use; one mechanism for Tresorit and OneDrive, a list of drives in the machine file, and a person's account on the host to be weighed. |
 | <a id="pj51"></a>[PJ51](PJ51-The-Persons-Secrets-Kept-Once-In-A-File-They-Can-Open.md) | L + L + M | — | The secrets a host's setup needs, kept once in a KDBX 4 file on the person's drive that KeePassXC opens, unlocked on the desktop only and given to the host on standard input; a wizard in the interface asks how the person works. |
 | <a id="pj45"></a>[PJ45](PJ45-Chosen-Data-Outlives-The-Machine.md) | M | — | A short list of data that lives only on a machine - the Matrix room, the token usage records and the Maven cache to start with - copied every hour and at down by restic into the project's S3 store, encrypted on the host, and put back at up; nothing else is kept. |
@@ -39,7 +40,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj59"></a>[PJ59](PJ59-Each-Agent-Moves-Into-A-Porelo-Task.md) | L | — | Each agent moves into a Porelo task, one at a time in a fixed order, each move an issue (S) of its own that the agent works inside its new task; the channel file kept beside Matrix until the last has moved. |
 
 ## Analyzed
 

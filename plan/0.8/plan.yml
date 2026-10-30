@@ -84,7 +84,7 @@ sprints:
         notes: ["the deprecated contracts in porelo (from PJ66)"]
       - title: "A forge's calls in a client that knows nothing of Porelo"
         test: "GitHub's and Forgejo's pull requests, reviews and their comments, checks and webhooks are called through `porelo-forge-clients`, one module per forge, under the LGPL; none of its modules names Porelo, its contracts or SARIF."
-        issues: [porelo-project#PJ74, porelo-forge-clients#FC01, porelo-forge-clients#FC02, porelo-forge-clients#FC03]
+        issues: [porelo-project#PJ74, porelo-forge-clients#FC03]
   - id: "9"
     title: "Review comments from GitHub"
     goal: "Review comments on a task's GitHub pull request reach the task as SARIF, trusted by who wrote them, and its replies go back once released."
