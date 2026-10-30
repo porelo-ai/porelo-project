@@ -3,11 +3,11 @@
 
 Porelo is built in Porelo tasks
 
-*Stand: 2026-10-29T20:46:48Z*
+*Stand: 2026-10-30T19:17:13Z*
 
 ## Sprint progress
 
-![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 8; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Finished 1; Sprint 6d: Finished 3; Sprint 6e: Finished 4; Sprint 6f: Finished 2; Sprint 6g: Finished 2; Sprint 6h: Finished 2; Sprint 6i: Finished 7; Sprint 6j: Review 12; Sprint 6k: Review 6, Implementing 3; Sprint 6l: Implementing 3, Backlog 3; Sprint 6m: Implementing 1, Backlog 1; Sprint 7: Review 4, Backlog 1, Estimated 1, Analyzed 2, Accepted 2, Idea 3; Sprint 7a: Backlog 6; Sprint 7b: Analyzed 4; Sprint 7c: Review 3, Estimated 2, Idea 3, Not filed yet 1; Sprint 8: Implementing 1, Idea 2; Sprint 8a: Idea 3; Sprint 8b: Accepted 1; Sprint 8c: Finished 2, Not filed yet 1; Sprint 9: Review 3, Backlog 2, Estimated 1, Analyzed 2, Accepted 1, Not filed yet 2; Sprint 9a: Review 1; Sprint 10: Not filed yet 1](progress-091b9052.svg)
+![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 8; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Finished 1; Sprint 6d: Finished 3; Sprint 6e: Finished 4; Sprint 6f: Finished 2; Sprint 6g: Finished 2; Sprint 6h: Finished 2; Sprint 6i: Finished 7; Sprint 6j: Finished 4, Review 8; Sprint 6k: Finished 3, Review 3; Sprint 6l: Review 5; Sprint 6m: Review 5, Accepted 30; Sprint 6n: Implementing 1, Backlog 1; Sprint 7: Rejected 1, Review 4, Implementing 1, Estimated 1, Analyzed 2, Accepted 3, Idea 3; Sprint 7a: Backlog 6; Sprint 7b: Analyzed 4; Sprint 7c: Review 3, Estimated 2, Idea 3, Not filed yet 1; Sprint 8: Implementing 1, Idea 2; Sprint 8a: Idea 3; Sprint 8b: Accepted 1; Sprint 8c: Finished 2, Not filed yet 1; Sprint 9: Review 3, Backlog 2, Estimated 1, Analyzed 2, Accepted 1, Not filed yet 2; Sprint 9a: Review 1; Sprint 10: Not filed yet 1](progress-bc8a246e.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -485,19 +485,19 @@ Test: Rent a host and admit it: a task there writes in the project's room and a 
 
 A host is set up with no project and no person; its host admin admits people and registers projects by hand.
 
-**A host prepared with no project or person ⚪ Not tested**
+**A host prepared with no project or person ✅ Tested 2026-10-30**
 
 Test: The host admin prepares a rented server from the interface: the VPN on `10.73.&lt;n&gt;.0/24`, the shared forge, runner, pool and homeserver under the host's names, their certificates signed by the host admin's lasting CA; no project and no person is made. A laptop reaches two hosts, one VPN each; a host whose network collides is refused.
 
-🟦 [MX54](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx54 "porelo-message-matrix#MX54 · Review · M · The Homeserver Serves A Certificate Made Elsewhere") 🟦 [HO42](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho42 "porelo-host#HO42 · Review · L · The Host Prepared With No Project Or Person") 🟦 [F208](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f208 "porelo-frontend#F208 · Review · — · Roles Given At The Start Of The Interface") 🟦 [F209](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f209 "porelo-frontend#F209 · Review · — · The VPN Kept Per Host, Several Up At Once") 🟦 [F210](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f210 "porelo-frontend#F210 · Review · — · The Secrets File Grouped By Host And By Project") 🟦 [F212](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f212 "porelo-frontend#F212 · Review · — · The Forge's CA One Per Host") 🟦 [F211](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f211 "porelo-frontend#F211 · Review · — · A Server Prepared With No Project")
+🟩 [MX54](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx54 "porelo-message-matrix#MX54 · Finished · - · The Homeserver Serves A Certificate Made Elsewhere") 🟦 [HO42](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho42 "porelo-host#HO42 · Review · L · The Host Prepared With No Project Or Person") 🟦 [F208](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f208 "porelo-frontend#F208 · Review · — · Roles Given At The Start Of The Interface") 🟦 [F209](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f209 "porelo-frontend#F209 · Review · — · The VPN Kept Per Host, Several Up At Once") 🟦 [F210](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f210 "porelo-frontend#F210 · Review · — · The Secrets File Grouped By Host And By Project") 🟦 [F212](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f212 "porelo-frontend#F212 · Review · — · The Forge's CA One Per Host") 🟦 [F211](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f211 "porelo-frontend#F211 · Review · — · A Server Prepared With No Project")
 
 covers [PJ78](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj78 "porelo-project#PJ78 · Implementing · — · A host is set up once, and projects are put on it") · Implementing
 
-**A person admitted, locked and purged; a project registered and taken off ⚪ Not tested**
+**A person admitted, locked and purged; a project registered and taken off ✅ Tested 2026-10-30**
 
 Test: The host admin admits a project admin by hand, who gets an account of their own and a token of the shared homeserver, named `&lt;host&gt;-&lt;account&gt;` in the room; a locked person loses every access without a terminal, and a purge removes the account. A project registered and taken off leaves the host and its forge standing.
 
-🟦 [HO43](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho43 "porelo-host#HO43 · Review · L · A Project Admin Admitted By The Host Admin") 🟦 [HO44](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho44 "porelo-host#HO44 · Review · M · A Project Registered On The Host") 🟦 [MX44](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx44 "porelo-message-matrix#MX44 · Review · M · The Host's Homeserver Gives Each Person A Token") 🟦 [B312](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b312 "porelo#B312 · Review · S · A Machine Named By Its Host And Account") 🟦 [B315](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b315 "porelo#B315 · Review · XS · A Person Locked Out Without A Terminal")
+🟦 [HO43](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho43 "porelo-host#HO43 · Review · L · A Project Admin Admitted By The Host Admin") 🟦 [HO44](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho44 "porelo-host#HO44 · Review · M · A Project Registered On The Host") 🟩 [MX44](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx44 "porelo-message-matrix#MX44 · Finished · - · The Host's Homeserver Gives Each Person A Token") 🟩 [B312](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b312 "porelo#B312 · Finished · - · A Machine Named By Its Host And Account") 🟩 [B315](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b315 "porelo#B315 · Finished · - · A Person Locked Out Without A Terminal")
 
 covers [PJ78](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj78 "porelo-project#PJ78 · Implementing · — · A host is set up once, and projects are put on it") · Implementing
 
@@ -509,19 +509,107 @@ covers [PJ78](https://github.com/porelo-ai/porelo-project/blob/main/issues/READM
 
 A project admin brings a project onto an existing host from its signed access file; a second project needs no new host.
 
-**A project brought by its project admin ⚪ Not tested**
+**A project brought by its project admin ✅ Tested 2026-10-30**
 
 Test: The project admin brings a project onto the prepared host from the interface: its repositories in a forge organization of its own, `main` protected, the gate and the agents with their forge identities, the gathered push set up. The project names a signed `access.yml`, in a private repository of its own or beside `project.yml`; one whose `host:` block is another host's admits nothing. A second project is brought without a new host setup, and the one button of the interface prepares the host the first time only.
 
-🟦 [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310 "porelo#B310 · Review · M · A Project Names A Private, Signed Access File") 🟦 [B311](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b311 "porelo#B311 · Review · S · A Project Verified Without Following It") 🟦 [B320](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b320 "porelo#B320 · Review · XS-S · An Inventory Reads Its Files From The Access File") 🟨 [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45 "porelo-host#HO45 · Implementing · L · The Project Brought And Joined In The Person's Own Account") 🟦 [F214](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f214 "porelo-frontend#F214 · Review · — · The Setup Files And The Stop Split By Act") 🟨 [F213](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f213 "porelo-frontend#F213 · Implementing · L · A Project Brought Onto A Prepared Host")
+🟩 [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310 "porelo#B310 · Finished · - · A Project Names A Private Signed Access File") 🟩 [B311](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b311 "porelo#B311 · Finished · - · A Project Verified Without Following It") 🟩 [B320](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b320 "porelo#B320 · Finished · - · An Inventory Reads Its Files From The Access File") 🟦 [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45 "porelo-host#HO45 · Review · L · The Project Brought And Joined In The Person's Own Account") 🟦 [F214](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f214 "porelo-frontend#F214 · Review · — · The Setup Files And The Stop Split By Act") 🟦 [F213](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f213 "porelo-frontend#F213 · Review · — · A Project Brought Onto A Prepared Host")
 
 covers [PJ78](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj78 "porelo-project#PJ78 · Implementing · — · A host is set up once, and projects are put on it") · Implementing
+
+</td></tr></table>
+
+<table><tr><td>
+
+### Sprint 6l: Developers kept to the signed list
+
+Who works on a project follows its signed access file; every role works on one host.
+
+**Developers added and dropped through the access file ✅ Tested 2026-10-30**
+
+Test: A developer added to the signed `access.yml` joins from their own laptop with their own key and works; one dropped is locked at once at the next `sync`, unless another project or the host admin still holds them; an unsigned or altered access file changes nothing; a project taken off locks whoever has no membership left, and `down` refuses while anyone holds one, naming them.
+
+🟦 [HO46](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho46 "porelo-host#HO46 · Review · L · The Developers Kept In Step With The Signed Access File") 🟦 [HO55](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho55 "porelo-host#HO55 · Review · M · A Person Leaves When No Membership Is Left") 🟦 [F215](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f215 "porelo-frontend#F215 · Review · — · The Developers Of A Project Kept In Its Access File") 🟦 [F216](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f216 "porelo-frontend#F216 · Review · — · A Developer Joins A Project On Its Host") 🟦 [F232](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f232 "porelo-frontend#F232 · Review · — · The Project Admin's Own VPN For A Bring")
+
+covers [PJ78](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj78 "porelo-project#PJ78 · Implementing · — · A host is set up once, and projects are put on it") · Implementing
+
+</td></tr></table>
+
+<table><tr><td>
+
+### Sprint 6m: One key per person, the state in Git
+
+The rebuild: each person joins with one click from lists read from the registry on the central forge, over SSH only; and what 6k and 6l left open.
+
+**Each person's one key and card, kept in the registry ⚪ Not tested**
+
+Test: A person's key and card are made once and filed under `people/` with the key also on their forge account; a card under another person's login, one whose key the forge account does not list, and a successor signed by a revoked key are refused, naming why; a changed key reaches the registry and each host; a lost key is replaced by an admin, and a single admin's backup key may only replace that entry.
+
+⬜ [B337](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b337 "porelo#B337 · Accepted · S · A Person Card Signed By Its Own Key") ⬜ [B339](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b339 "porelo#B339 · Accepted · M · The Registry Read And Written By Its Signers") ⬜ [B338](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b338 "porelo#B338 · Accepted · M · An Identity Made, Changed And Replaced") ⬜ [B346](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b346 "porelo#B346 · Accepted · S · A Backup Key For A Single Admin")
+
+covers [PJ83](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj83 "porelo-project#PJ83 · Accepted · — · A person joins with one click") · Accepted
+
+**The host vault opened by the person's key ⚪ Not tested**
+
+Test: Opening the tunnel unlocks the person's host vault without a passphrase or prompt; the share stays in locked memory until the host restarts or the person is locked; after a reboot the vault waits for the next connection; a lost key means the vault is deleted and set up again.
+
+⬜ [B345](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b345 "porelo#B345 · Accepted · M · A Host Vault Opened By The Person's Key")
+
+covers [PJ83](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj83 "porelo-project#PJ83 · Accepted · — · A person joins with one click") · Accepted
+
+**A host reached over SSH only, its state taken from the registry ⚪ Not tested**
+
+Test: The host's only open port is SSH; the forge and the homeserver are reached through their gates over the tunnel with no password and no VPN; the host takes its project admins, projects and persons from the signed registry state an admin brings, and refuses a card under another person's login, a host card not signed by a host admin of `owners.yml` and a successor card signed by a revoked key, naming why.
+
+⬜ [HO68](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho68 "porelo-host#HO68 · Accepted · M · SSH The Host's Only Way In") ⬜ [HO69](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho69 "porelo-host#HO69 · Accepted · M · The Forge Behind Its Gate Without TLS") ⬜ [HO70](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho70 "porelo-host#HO70 · Accepted · M · The Host's State Taken From The Registry") ⬜ [HO75](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho75 "porelo-host#HO75 · Accepted · M · The Persons Taken From Their Cards") ⬜ [HO73](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho73 "porelo-host#HO73 · Accepted · S · The Homeserver Reached Through Its Gate") ⬜ [B349](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b349 "porelo#B349 · Accepted · S · A Host Card Signed By Its Host Admin") ⬜ [B340](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b340 "porelo#B340 · Accepted · S · A Host Checks The Registry It Was Brought") ⬜ [B342](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b342 "porelo#B342 · Accepted · M · Persons In The Access File By Their Cards")
+
+covers [PJ83](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj83 "porelo-project#PJ83 · Accepted · — · A person joins with one click") · Accepted
+
+**Task keys certified, and each push judged when it arrives ⚪ Not tested**
+
+Test: A task signs with its own key certified by the person who started it; the host records the certificate and the task's forge token, judges each push by its arrival, and refuses one by an expired certificate or a revoked key.
+
+⬜ [HO71](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho71 "porelo-host#HO71 · Accepted · M · A Task Recorded And Given Its Forge Token By The Host") ⬜ [HO76](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho76 "porelo-host#HO76 · Accepted · M · Each Push Judged When It Arrives") ⬜ [B341](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b341 "porelo#B341 · Accepted · S · A New Commit Is Never Accepted By A Retired Key") ⬜ [B343](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b343 "porelo#B343 · Accepted · M · Each Task Signs With Its Own Certified Key") ⬜ [B344](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b344 "porelo#B344 · Accepted · M · Messages Signed By A Task's Key")
+
+covers [PJ83](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj83 "porelo-project#PJ83 · Accepted · — · A person joins with one click") · Accepted
+
+**The central forge reached only on a person's word ⚪ Not tested**
+
+Test: The gathered push and the pull run only when an admitted person starts them, with their own token sent through the tunnel and kept nowhere on the host.
+
+⬜ [HO72](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho72 "porelo-host#HO72 · Accepted · M · The Central Forge Reached Only On A Person's Word")
+
+covers [PJ83](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj83 "porelo-project#PJ83 · Accepted · — · A person joins with one click") · Accepted
+
+**The room reached through the homeserver's gate, accounts by login ⚪ Not tested**
+
+Test: Element and Porelo reach the homeserver only through the tunnel to its gate, which knows the person by their host login; a person's accounts are named by their login, not a machine; a lock for one project takes them out of that project's rooms only; no VPN address, machine token or certificate is left.
+
+⬜ [MX56](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx56 "porelo-message-matrix#MX56 · Accepted · M · The Homeserver Knows The Person At Its Gate") ⬜ [MX57](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx57 "porelo-message-matrix#MX57 · Accepted · M · A Person's Accounts Are Named By Their Login") ⬜ [MX58](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx58 "porelo-message-matrix#MX58 · Accepted · S · The Transport Reaches The Homeserver On A Socket") ⬜ [MX59](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx59 "porelo-message-matrix#MX59 · Accepted · M · The VPN Path Goes")
+
+covers [PJ83](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj83 "porelo-project#PJ83 · Accepted · — · A person joins with one click") · Accepted
+
+**The sign-in says how it is answered ⚪ Not tested**
+
+Test: Signing an agent in on the host shows either "Paste the code shown in your browser" or "Confirm on the device page", as its definition says; a loopback sign-in on a host account is refused, naming the agent.
+
+⬜ [CC43](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc43 "porelo-claude-code#CC43 · Accepted · XS · The Sign-In Says How It Is Answered") ⬜ [PI42](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi42 "porelo-pi#PI42 · Accepted · XS · The Sign-In Says How It Is Answered") ⬜ [OM40](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om40 "porelo-omp#OM40 · Accepted · XS · The Sign-In Says How It Is Answered") ⬜ [CX10](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx10 "porelo-codex#CX10 · Accepted · XS · The Sign-In Says How It Is Answered") ⬜ [AG07](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag07 "porelo-agy#AG07 · Accepted · XS · The Sign-In Says How It Is Answered") ⬜ [B347](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b347 "porelo#B347 · Accepted · XS · An Agent Says How It Signs In")
+
+covers [PJ83](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj83 "porelo-project#PJ83 · Accepted · — · A person joins with one click") · Accepted
+
+**The gathered push by any developer, every role on one host ⚪ Not tested**
+
+Test: Any developer runs the gathered push to the central forge with their own token; on one host the host admin, two project admins and their developers each do what their role allows and nothing more.
+
+🟦 [HO47](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho47 "porelo-host#HO47 · Review · S · The Gathered Push Run By Any Developer") 🟦 [HO48](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho48 "porelo-host#HO48 · Review · L · Every Role Tested On One Host") ⬜ [HO74](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho74 "porelo-host#HO74 · Accepted · M · Every Role Tested Without The VPN")
+
+covers [PJ78](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj78 "porelo-project#PJ78 · Implementing · — · A host is set up once, and projects are put on it") · Implementing, [PJ83](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj83 "porelo-project#PJ83 · Accepted · — · A person joins with one click") · Accepted
 
 **No forge user `operator` ⚪ Not tested**
 
 Test: A host set up anew has no forge user `operator`; on a host set up before, it is gone after `up`, and the forge's people, protection and owners still work.
 
-🟨 [HO53](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho53 "porelo-host#HO53 · Implementing · S · No Forge User Operator")
+🟦 [HO53](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho53 "porelo-host#HO53 · Review · S · No Forge User Operator")
 
 **The room made and kept on a central homeserver ⚪ Not tested**
 
@@ -535,31 +623,7 @@ covers [PJ78](https://github.com/porelo-ai/porelo-project/blob/main/issues/READM
 
 <table><tr><td>
 
-### Sprint 6l: Developers kept to the signed list
-
-Who works on a project follows its signed access file; every role works on one host.
-
-**Developers added and dropped through the access file ⚪ Not tested**
-
-Test: A developer added to the signed `access.yml` joins from their own laptop with their own key and works; one dropped is locked at once at the next `sync`, unless another project or the host admin still holds them; an unsigned or altered access file changes nothing; a project taken off locks whoever has no membership left, and `down` refuses while anyone holds one, naming them.
-
-🟨 [HO46](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho46 "porelo-host#HO46 · Implementing · L · The Developers Kept In Step With The Signed Access File") 🟨 [HO55](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho55 "porelo-host#HO55 · Implementing · M · A Person Leaves When No Membership Is Left") 🔲 [F215](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f215 "porelo-frontend#F215 · Backlog · L · The Developers Of A Project Kept In Its Access File") 🔲 [F216](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f216 "porelo-frontend#F216 · Backlog · L · A Developer Joins A Project On Its Host")
-
-covers [PJ78](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj78 "porelo-project#PJ78 · Implementing · — · A host is set up once, and projects are put on it") · Implementing
-
-**The gathered push by any developer, every role on one host ⚪ Not tested**
-
-Test: Any developer runs the gathered push to the central forge with their own token; on one host the host admin, two project admins and their developers each do what their role allows and nothing more.
-
-🟨 [HO47](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho47 "porelo-host#HO47 · Implementing · S · The Gathered Push Run By Any Developer") 🔲 [HO48](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho48 "porelo-host#HO48 · Backlog · L · Every Role Tested On One Host")
-
-covers [PJ78](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj78 "porelo-project#PJ78 · Implementing · — · A host is set up once, and projects are put on it") · Implementing
-
-</td></tr></table>
-
-<table><tr><td>
-
-### Sprint 6m: Accept the published tools
+### Sprint 6n: Accept the published tools
 
 The release is installed from its publication channel and its dependencies are checked.
 
@@ -595,11 +659,17 @@ Test: Remove a person from a host; their push configuration and their sync timer
 
 ⬜ [HO56](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho56 "porelo-host#HO56 · Accepted · M · Remove Takes The Person's Push And Sync Away")
 
+**A person in the project's room on a host ⚪ Not tested**
+
+Test: A developer of the access file, logged in with their host account over an ssh forward, reads and writes in the project's room on the host's homeserver; dropped from the access file, they leave the room at the next sync.
+
+🟩 [MX55](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx55 "porelo-message-matrix#MX55 · Rejected · - · A Person Has Their Own Account In The Room") ⬜ [B334](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b334 "porelo#B334 · Accepted · - · A Person Kept In The Project Room")
+
 **porelo-message-sluice works wholly in its task ⚪ Not tested**
 
 Test: Its move issue reaches Review inside the task with Forgejo's build green; its agent is reached in the room under its repository's name.
 
-🔲 [SL35](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl35 "porelo-message-sluice#SL35 · Backlog · S · The Sluice's Agent Works In A Porelo Task")
+🟨 [SL35](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl35 "porelo-message-sluice#SL35 · Implementing · S · The Sluice's Agent Works In A Porelo Task")
 
 covers [PJ59](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj59 "porelo-project#PJ59 · Backlog · L · Each agent moves into a Porelo task") · Backlog
 
@@ -811,7 +881,7 @@ covers [PJ40](https://github.com/porelo-ai/porelo-project/blob/main/issues/READM
 
 ## Waits
 
-- [PJ38](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj38 "porelo-project#PJ38 · Accepted · — · An estimate learns from the tokens spent") · Accepted after [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148 "porelo#B148 · Analyzed · L · Token Counting Per Task") · Analyzed, [SL35](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl35 "porelo-message-sluice#SL35 · Backlog · S · The Sluice's Agent Works In A Porelo Task") · Backlog
+- [PJ38](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj38 "porelo-project#PJ38 · Accepted · — · An estimate learns from the tokens spent") · Accepted after [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148 "porelo#B148 · Analyzed · L · Token Counting Per Task") · Analyzed, [SL35](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl35 "porelo-message-sluice#SL35 · Implementing · S · The Sluice's Agent Works In A Porelo Task") · Implementing
 - [B305](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b305 "porelo#B305 · Idea · - · Porelo's Agent Works In A Porelo Task") · Idea after [BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37 "porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task") · Idea
 - [B306](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b306 "porelo#B306 · Idea · - · Porelo's Build Runs On The Local Forge") · Idea after [BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37 "porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task") · Idea
 - [B314](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b314 "porelo#B314 · Review · S · A Project Admin Keeps The Room's Members To The List") · Review after [MX45](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx45 "porelo-message-matrix#MX45 · Review · M · A Project Admin Brings The Room Onto A Central Homeserver") · Review
@@ -820,20 +890,20 @@ covers [PJ40](https://github.com/porelo-ai/porelo-project/blob/main/issues/READM
 - [F204](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f204 "porelo-frontend#F204 · Idea · — · The Build Runs On The Local Forge As On The Central One") · Idea after [BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37 "porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task") · Idea
 - [F203](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f203 "porelo-frontend#F203 · Idea · — · This Repository Worked In A Porelo Task") · Idea after [BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37 "porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task") · Idea
 - [F211](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f211 "porelo-frontend#F211 · Review · — · A Server Prepared With No Project") · Review after [HO42](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho42 "porelo-host#HO42 · Review · L · The Host Prepared With No Project Or Person") · Review, [HO43](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho43 "porelo-host#HO43 · Review · L · A Project Admin Admitted By The Host Admin") · Review, [HO44](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho44 "porelo-host#HO44 · Review · M · A Project Registered On The Host") · Review
-- [F213](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f213 "porelo-frontend#F213 · Implementing · L · A Project Brought Onto A Prepared Host") · Implementing after [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310 "porelo#B310 · Review · M · A Project Names A Private, Signed Access File") · Review, [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45 "porelo-host#HO45 · Implementing · L · The Project Brought And Joined In The Person's Own Account") · Implementing
-- [F214](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f214 "porelo-frontend#F214 · Review · — · The Setup Files And The Stop Split By Act") · Review after [HO42](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho42 "porelo-host#HO42 · Review · L · The Host Prepared With No Project Or Person") · Review, [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45 "porelo-host#HO45 · Implementing · L · The Project Brought And Joined In The Person's Own Account") · Implementing
-- [F215](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f215 "porelo-frontend#F215 · Backlog · L · The Developers Of A Project Kept In Its Access File") · Backlog after [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310 "porelo#B310 · Review · M · A Project Names A Private, Signed Access File") · Review, [HO46](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho46 "porelo-host#HO46 · Implementing · L · The Developers Kept In Step With The Signed Access File") · Implementing
-- [F216](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f216 "porelo-frontend#F216 · Backlog · L · A Developer Joins A Project On Its Host") · Backlog after [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310 "porelo#B310 · Review · M · A Project Names A Private, Signed Access File") · Review, [B311](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b311 "porelo#B311 · Review · S · A Project Verified Without Following It") · Review, [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45 "porelo-host#HO45 · Implementing · L · The Project Brought And Joined In The Person's Own Account") · Implementing
+- [F213](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f213 "porelo-frontend#F213 · Review · — · A Project Brought Onto A Prepared Host") · Review after [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310 "porelo#B310 · Finished · - · A Project Names A Private Signed Access File") · Finished, [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45 "porelo-host#HO45 · Review · L · The Project Brought And Joined In The Person's Own Account") · Review
+- [F214](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f214 "porelo-frontend#F214 · Review · — · The Setup Files And The Stop Split By Act") · Review after [HO42](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho42 "porelo-host#HO42 · Review · L · The Host Prepared With No Project Or Person") · Review, [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45 "porelo-host#HO45 · Review · L · The Project Brought And Joined In The Person's Own Account") · Review
+- [F215](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f215 "porelo-frontend#F215 · Review · — · The Developers Of A Project Kept In Its Access File") · Review after [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310 "porelo#B310 · Finished · - · A Project Names A Private Signed Access File") · Finished, [HO46](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho46 "porelo-host#HO46 · Review · L · The Developers Kept In Step With The Signed Access File") · Review
+- [F216](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f216 "porelo-frontend#F216 · Review · — · A Developer Joins A Project On Its Host") · Review after [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310 "porelo#B310 · Finished · - · A Project Names A Private Signed Access File") · Finished, [B311](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b311 "porelo#B311 · Finished · - · A Project Verified Without Following It") · Finished, [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45 "porelo-host#HO45 · Review · L · The Project Brought And Joined In The Person's Own Account") · Review
 - [HO07](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho07 "porelo-host#HO07 · Backlog · L · The Project's Store Restored And Kept") · Backlog after [MX24](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx24 "porelo-message-matrix#MX24 · Review · M · The Room Outlives The Machine") · Review, [MX39](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx39 "porelo-message-matrix#MX39 · Estimated · S · A Backup Is Its Own") · Estimated, [B231](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b231 "porelo#B231 · Analyzed · M · The Usage Records Kept Off The Machine") · Analyzed
 - [HO57](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho57 "porelo-host#HO57 · Accepted · S · The Bring Checks With The Keys In Force After A Handover") · Accepted after [B332](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b332 "porelo#B332 · Estimated · XS · A Follow Lists The Keys It Pinned") · Estimated
-- [HO43](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho43 "porelo-host#HO43 · Review · L · A Project Admin Admitted By The Host Admin") · Review after [MX44](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx44 "porelo-message-matrix#MX44 · Review · M · The Host's Homeserver Gives Each Person A Token") · Review, [B312](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b312 "porelo#B312 · Review · S · A Machine Named By Its Host And Account") · Review
-- [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45 "porelo-host#HO45 · Implementing · L · The Project Brought And Joined In The Person's Own Account") · Implementing after [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310 "porelo#B310 · Review · M · A Project Names A Private, Signed Access File") · Review, [B320](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b320 "porelo#B320 · Review · XS-S · An Inventory Reads Its Files From The Access File") · Review
-- [HO46](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho46 "porelo-host#HO46 · Implementing · L · The Developers Kept In Step With The Signed Access File") · Implementing after [B311](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b311 "porelo#B311 · Review · S · A Project Verified Without Following It") · Review
+- [HO43](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho43 "porelo-host#HO43 · Review · L · A Project Admin Admitted By The Host Admin") · Review after [MX44](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx44 "porelo-message-matrix#MX44 · Finished · - · The Host's Homeserver Gives Each Person A Token") · Finished, [B312](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b312 "porelo#B312 · Finished · - · A Machine Named By Its Host And Account") · Finished
+- [HO45](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho45 "porelo-host#HO45 · Review · L · The Project Brought And Joined In The Person's Own Account") · Review after [B310](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b310 "porelo#B310 · Finished · - · A Project Names A Private Signed Access File") · Finished, [B320](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b320 "porelo#B320 · Finished · - · An Inventory Reads Its Files From The Access File") · Finished
+- [HO46](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho46 "porelo-host#HO46 · Review · L · The Developers Kept In Step With The Signed Access File") · Review after [B311](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b311 "porelo#B311 · Finished · - · A Project Verified Without Following It") · Finished
 - [IJ14](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij14 "porelo-intellij#IJ14 · Estimated · M · Every Workflow Runs On The Host's Forge As On GitHub") · Estimated after [BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37 "porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task") · Idea
 - [IJ15](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij15 "porelo-intellij#IJ15 · Estimated · S · The IntelliJ Agent Works In A Porelo Task") · Estimated after [BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37 "porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task") · Idea
 - [MX43](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx43 "porelo-message-matrix#MX43 · Idea · - · This Repository Moves Into A Porelo Task") · Idea after [BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37 "porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task") · Idea
-- [MX45](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx45 "porelo-message-matrix#MX45 · Review · M · A Project Admin Brings The Room Onto A Central Homeserver") · Review after [B312](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b312 "porelo#B312 · Review · S · A Machine Named By Its Host And Account") · Review
-- [SL35](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl35 "porelo-message-sluice#SL35 · Backlog · S · The Sluice's Agent Works In A Porelo Task") · Backlog after [BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37 "porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task") · Idea
+- [MX45](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx45 "porelo-message-matrix#MX45 · Review · M · A Project Admin Brings The Room Onto A Central Homeserver") · Review after [B312](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b312 "porelo#B312 · Finished · - · A Machine Named By Its Host And Account") · Finished
+- [SL35](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl35 "porelo-message-sluice#SL35 · Implementing · S · The Sluice's Agent Works In A Porelo Task") · Implementing after [BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37 "porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task") · Idea, [PJ75](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj75 "porelo-project#PJ75 · Idea · — · A task fetches a snapshot from its host's forge") · Idea, [MX55](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx55 "porelo-message-matrix#MX55 · Rejected · - · A Person Has Their Own Account In The Room") · Rejected, [B334](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b334 "porelo#B334 · Accepted · - · A Person Kept In The Project Room") · Accepted
 - [CC38](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc38 "porelo-claude-code#CC38 · Backlog · S · The Build Runs On The Local Forge As On The Central One") · Backlog after [B306](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b306 "porelo#B306 · Idea · - · Porelo's Build Runs On The Local Forge") · Idea, [BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37 "porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task") · Idea
 - [CC39](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc39 "porelo-claude-code#CC39 · Backlog · S · The Repository's Agent Works In A Porelo Task") · Backlog after [PJ75](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj75 "porelo-project#PJ75 · Idea · — · A task fetches a snapshot from its host's forge") · Idea
 - [PI38](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi38 "porelo-pi#PI38 · Backlog · S · The Build Runs On The Local Forge As On The Central One") · Backlog after [B306](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b306 "porelo#B306 · Idea · - · Porelo's Build Runs On The Local Forge") · Idea, [BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37 "porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task") · Idea

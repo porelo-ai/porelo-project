@@ -286,10 +286,12 @@ sprints:
     functions:
       - title: "A host prepared with no project or person"
         test: "The host admin prepares a rented server from the interface: the VPN on `10.73.<n>.0/24`, the shared forge, runner, pool and homeserver under the host's names, their certificates signed by the host admin's lasting CA; no project and no person is made. A laptop reaches two hosts, one VPN each; a host whose network collides is refused."
+        tested: "2026-10-30"
         issues: [porelo-message-matrix#MX54, porelo-host#HO42, porelo-frontend#F208, porelo-frontend#F209, porelo-frontend#F210, porelo-frontend#F212, porelo-frontend#F211]
         covers: [porelo-project#PJ78]
       - title: "A person admitted, locked and purged; a project registered and taken off"
         test: "The host admin admits a project admin by hand, who gets an account of their own and a token of the shared homeserver, named `<host>-<account>` in the room; a locked person loses every access without a terminal, and a purge removes the account. A project registered and taken off leaves the host and its forge standing."
+        tested: "2026-10-30"
         issues: [porelo-host#HO43, porelo-host#HO44, porelo-message-matrix#MX44, porelo#B312, porelo#B315]
         covers: [porelo-project#PJ78]
   - id: "6k"
@@ -298,14 +300,8 @@ sprints:
     functions:
       - title: "A project brought by its project admin"
         test: "The project admin brings a project onto the prepared host from the interface: its repositories in a forge organization of its own, `main` protected, the gate and the agents with their forge identities, the gathered push set up. The project names a signed `access.yml`, in a private repository of its own or beside `project.yml`; one whose `host:` block is another host's admits nothing. A second project is brought without a new host setup, and the one button of the interface prepares the host the first time only."
+        tested: "2026-10-30"
         issues: [porelo#B310, porelo#B311, porelo#B320, porelo-host#HO45, porelo-frontend#F214, porelo-frontend#F213]
-        covers: [porelo-project#PJ78]
-      - title: "No forge user `operator`"
-        test: "A host set up anew has no forge user `operator`; on a host set up before, it is gone after `up`, and the forge's people, protection and owners still work."
-        issues: [porelo-host#HO53]
-      - title: "The room made and kept on a central homeserver"
-        test: "The project's room is made on a central homeserver; the project admin's Porelo keeps its members to the developers of the access file, adding and removing them."
-        issues: [porelo-message-matrix#MX45, porelo#B314]
         covers: [porelo-project#PJ78]
   - id: "6l"
     title: "Developers kept to the signed list"
@@ -313,13 +309,53 @@ sprints:
     functions:
       - title: "Developers added and dropped through the access file"
         test: "A developer added to the signed `access.yml` joins from their own laptop with their own key and works; one dropped is locked at once at the next `sync`, unless another project or the host admin still holds them; an unsigned or altered access file changes nothing; a project taken off locks whoever has no membership left, and `down` refuses while anyone holds one, naming them."
+        tested: "2026-10-30"
         issues: [porelo-host#HO46, porelo-host#HO55, porelo-frontend#F215, porelo-frontend#F216, porelo-frontend#F232]
         covers: [porelo-project#PJ78]
+  - id: "6m"
+    title: "One key per person, the state in Git"
+    goal: "The rebuild: each person joins with one click from lists read from the registry on the central forge, over SSH only; and what 6k and 6l left open."
+    functions:
+      - title: "Each person's one key and card, kept in the registry"
+        test: "A person's key and card are made once and filed under `people/` with the key also on their forge account; a card under another person's login, one whose key the forge account does not list, and a successor signed by a revoked key are refused, naming why; a changed key reaches the registry and each host; a lost key is replaced by an admin, and a single admin's backup key may only replace that entry."
+        issues: [porelo#B337, porelo#B339, porelo#B338, porelo#B346]
+        covers: [porelo-project#PJ83]
+      - title: "The host vault opened by the person's key"
+        test: "Opening the tunnel unlocks the person's host vault without a passphrase or prompt; the share stays in locked memory until the host restarts or the person is locked; after a reboot the vault waits for the next connection; a lost key means the vault is deleted and set up again."
+        issues: [porelo#B345]
+        covers: [porelo-project#PJ83]
+      - title: "A host reached over SSH only, its state taken from the registry"
+        test: "The host's only open port is SSH; the forge and the homeserver are reached through their gates over the tunnel with no password and no VPN; the host takes its project admins, projects and persons from the signed registry state an admin brings, and refuses a card under another person's login, a host card not signed by a host admin of `owners.yml` and a successor card signed by a revoked key, naming why."
+        issues: [porelo-host#HO68, porelo-host#HO69, porelo-host#HO70, porelo-host#HO75, porelo-host#HO73, porelo#B349, porelo#B340, porelo#B342]
+        covers: [porelo-project#PJ83]
+      - title: "Task keys certified, and each push judged when it arrives"
+        test: "A task signs with its own key certified by the person who started it; the host records the certificate and the task's forge token, judges each push by its arrival, and refuses one by an expired certificate or a revoked key."
+        issues: [porelo-host#HO71, porelo-host#HO76, porelo#B341, porelo#B343, porelo#B344]
+        covers: [porelo-project#PJ83]
+      - title: "The central forge reached only on a person's word"
+        test: "The gathered push and the pull run only when an admitted person starts them, with their own token sent through the tunnel and kept nowhere on the host."
+        issues: [porelo-host#HO72]
+        covers: [porelo-project#PJ83]
+      - title: "The room reached through the homeserver's gate, accounts by login"
+        test: "Element and Porelo reach the homeserver only through the tunnel to its gate, which knows the person by their host login; a person's accounts are named by their login, not a machine; a lock for one project takes them out of that project's rooms only; no VPN address, machine token or certificate is left."
+        issues: [porelo-message-matrix#MX56, porelo-message-matrix#MX57, porelo-message-matrix#MX58, porelo-message-matrix#MX59]
+        covers: [porelo-project#PJ83]
+      - title: "The sign-in says how it is answered"
+        test: "Signing an agent in on the host shows either \"Paste the code shown in your browser\" or \"Confirm on the device page\", as its definition says; a loopback sign-in on a host account is refused, naming the agent."
+        issues: [porelo-claude-code#CC43, porelo-pi#PI42, porelo-omp#OM40, porelo-codex#CX10, porelo-agy#AG07, porelo#B347]
+        covers: [porelo-project#PJ83]
       - title: "The gathered push by any developer, every role on one host"
         test: "Any developer runs the gathered push to the central forge with their own token; on one host the host admin, two project admins and their developers each do what their role allows and nothing more."
-        issues: [porelo-host#HO47, porelo-host#HO48]
+        issues: [porelo-host#HO47, porelo-host#HO48, porelo-host#HO74]
+        covers: [porelo-project#PJ78, porelo-project#PJ83]
+      - title: "No forge user `operator`"
+        test: "A host set up anew has no forge user `operator`; on a host set up before, it is gone after `up`, and the forge's people, protection and owners still work."
+        issues: [porelo-host#HO53]
+      - title: "The room made and kept on a central homeserver"
+        test: "The project's room is made on a central homeserver; the project admin's Porelo keeps its members to the developers of the access file, adding and removing them."
+        issues: [porelo-message-matrix#MX45, porelo#B314]
         covers: [porelo-project#PJ78]
-  - id: "6m"
+  - id: "6n"
     title: "Accept the published tools"
     goal: "The release is installed from its publication channel and its dependencies are checked."
     functions:
