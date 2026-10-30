@@ -339,6 +339,9 @@ sprints:
       - title: "Leaving a host clears the person's push and sync"
         test: "Remove a person from a host; their push configuration and their sync timer are gone, and no sync runs for them afterwards."
         issues: [porelo-host#HO56]
+      - title: "A person in the project's room on a host"
+        test: "A developer of the access file, logged in with their host account over an ssh forward, reads and writes in the project's room on the host's homeserver; dropped from the access file, they leave the room at the next sync."
+        issues: [porelo-message-matrix#MX55, porelo#B334]
       - title: "porelo-message-sluice works wholly in its task"
         test: "Its move issue reaches Review inside the task with Forgejo's build green; its agent is reached in the room under its repository's name."
         issues: [porelo-message-sluice#SL35]
