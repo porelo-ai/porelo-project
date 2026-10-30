@@ -8,20 +8,23 @@ it stays and what would change the answer.
 | The old name keeps its addresses and holds nothing new | `sokar-ai` keeps only its profile, `org.fuin.sokar` stays at Maven Central without a relocation, released changelog entries keep the old name | [entry](#the-old-name-keeps-its-addresses-and-holds-nothing-new) |
 | Porelo is installed afresh | nothing of a machine that ran Sokar is read, kept or migrated | [entry](#porelo-is-installed-afresh) |
 | The RPM repository indexes one folder deep | `porelo-dist-rpm` has the *YUM Metadata Folder Depth* 1 | [entry](#the-rpm-repository-indexes-one-folder-deep) |
-| A library's license follows how it is shipped | plain Java libraries LGPL-3.0-or-later; parts linked into native images and shipped as packages Apache-2.0; Porelo itself GPL-3.0 | [entry](#a-librarys-license-follows-how-it-is-shipped) |
+| A library's license follows how it is used | Java libraries LGPL-3.0-or-later, even where a native package links them; an API others build their own extensions against Apache-2.0; Porelo itself GPL-3.0 | [entry](#a-librarys-license-follows-how-it-is-used) |
 | Code from outside reaches no secret | one organisation ruleset on `main` (no deletion, no force push, a pull request with the code owner's review), its only bypass the organisation admin; `CODEOWNERS` for `.github/`, build files and `AGENTS.md`; a fork's workflow waits for approval | [entry](#code-from-outside-reaches-no-secret) |
 | Work not yet sent by the gathered push is lost with a failed machine | the host keeps no backup of the local forge; a person who wants one backs it up with means of their own | [entry](#work-not-yet-sent-by-the-gathered-push-is-lost-with-a-failed-machine) |
 | A pull request's checks inform and never block | no repository requires a status check to merge; the *Workflow check* runs only on a pull request touching `.github/**` | [entry](#a-pull-requests-checks-inform-and-never-block) |
 | Only ssh reaches a host in normal work | a developer and a project admin reach a host by ssh with their own key, never by a VPN; the VPN is the installation's alone, and a VPN per person is allowed only while the project's own work moves onto its hosts | [entry](#only-ssh-reaches-a-host-in-normal-work) |
 
-## A library's license follows how it is shipped
+## A library's license follows how it is used
 
-**What holds:** a plain Java library of the project - used as a jar by whoever depends on it - is under the
+**What holds:** a Java library of the project - used as a jar by whoever depends on it - is under the
 LGPL-3.0-or-later: anyone may build it into their own products, closed ones included, and a change to the library
-itself is published. A part that is linked into a native image and shipped as a package (`.deb`, `.rpm`), such as an
-adapter or the interface libraries a plugin links, is under Apache-2.0, because inside a native image the LGPL would
-ask that the library can be replaced. Porelo itself is under the GPL-3.0. **What would change the answer:** a plain
-library that is to be linked into native images of others, or a packaged part that is to be used as a plain library.
+itself is published. This holds where one of the project's own native packages (`.deb`, `.rpm`) links it, as
+`porelo-adapters` links `porelo-forge-clients`: that package's source is open, so anyone can rebuild it with a changed
+library, which is what the LGPL asks. An API that others build their own extensions against, such as an adapter's or a
+plugin's interface library, is under Apache-2.0, because such an extension may be closed and shipped as a native
+image, where the LGPL would ask that the library can be replaced. Porelo itself is under the GPL-3.0 (operator,
+2026-10-30: "Für allgemeine Java Libraries gilt der Grundsatz LGPL zu benutzen"). **What would change the answer:** a
+library that turns out to be an API for others' extensions, or an extension API that is to be used as a plain library.
 
 ## Code from outside reaches no secret
 
