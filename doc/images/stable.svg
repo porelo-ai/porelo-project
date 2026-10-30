@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="160" viewBox="0 0 640 160" role="img" aria-labelledby="t d">
+  <title id="t">Stable - safe to build on</title>
+  <desc id="d">A grown bird resting in its nest on a sturdy branch under a clear sky, beside the words Stable, safe to build on, contracts change only in a new major version.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6f5ea"/>
+      <stop offset="1" stop-color="#b9e2c4"/>
+    </linearGradient>
+    <clipPath id="card"><rect width="640" height="160" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="640" height="160" fill="url(#sky)"/>
+    <!-- the sun, high -->
+    <circle cx="176" cy="34" r="16" fill="#ffd166"/>
+    <!-- the trunk and branch -->
+    <rect x="8" y="0" width="22" height="160" fill="#6b4423"/>
+    <path d="M28 118 C 80 112, 130 112, 196 108" stroke="#6b4423" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <ellipse cx="186" cy="96" rx="11" ry="6" fill="#3f8f4f" transform="rotate(-30 186 96)"/>
+    <ellipse cx="44" cy="104" rx="10" ry="5" fill="#3f8f4f" transform="rotate(25 44 104)"/>
+    <!-- the nest -->
+    <path d="M56 112 C 60 136, 140 136, 144 112 Z" fill="#a0703f"/>
+    <path d="M60 116 C 80 122, 120 122, 140 116 M64 124 C 84 130, 116 130, 136 124" stroke="#7a5230" stroke-width="3" fill="none"/>
+    <!-- the bird -->
+    <g transform="translate(100 82)">
+      <path d="M-34 14 L-52 22 L-30 24 Z" fill="#1d6b45"/>
+      <ellipse cx="0" cy="14" rx="36" ry="22" fill="#2e8b57"/>
+      <ellipse cx="8" cy="20" rx="20" ry="12" fill="#f4e3c1"/>
+      <path d="M-18 6 C -4 -2, 14 6, 6 22 C -8 24, -20 16, -18 6 Z" fill="#1d6b45"/>
+      <circle cx="22" cy="-8" r="16" fill="#2e8b57"/>
+      <path d="M17 -10 q 5 -4 10 0" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+      <path d="M36 -8 L48 -4 L36 0 Z" fill="#f08a00"/>
+    </g>
+    <!-- the words -->
+    <text x="232" y="66" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="2" fill="#2b2b2b">STABLE</text>
+    <text x="234" y="98" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#1d6b45">Safe to build on</text>
+    <text x="234" y="124" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#4a4a4a">Contracts change only in a new major version</text>
+    <!-- the steady band -->
+    <rect y="144" width="640" height="16" fill="#2e8b57"/>
+    <path d="M600 148 l 6 6 l 12 -12" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="translate(0 2)"/>
+  </g>
+  <rect x="1" y="1" width="638" height="158" rx="17" fill="none" stroke="#2e8b57" stroke-width="2"/>
+</svg>
