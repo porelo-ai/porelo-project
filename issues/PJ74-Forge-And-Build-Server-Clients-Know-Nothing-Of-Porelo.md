@@ -34,6 +34,19 @@ porelo  <-  porelo-adapters (Build1, Review1, SARIF mapping, contract suite)  <-
 - **Tested on its own:** each module against recorded answers of its forge, with no Porelo running; the contract suite
   every adapter passes ([GH06](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh06)) stays in
   `porelo-adapters`.
+- **Where the recorded answers come from depends on the kind of forge** (operator, 2026-10-30). Every build tests
+  against the recordings alone, with no network and no credential; what differs is how they are made and how often they
+  are checked against the real forge:
+  - *Open source* (Forgejo, GitLab CE, Jenkins): a Podman container with seeded data, checked live on every build.
+  - *Cloud* (GitHub, GitLab.com, Bitbucket Cloud, Azure DevOps): a test account or organisation of our own at each
+    provider, its token a GitHub secret, checked live on a schedule and by hand, never on every push - rate limits,
+    forks' pull requests without secrets, and a provider's outage must not turn every build red.
+  - *Private* (Bitbucket Data Center, GitHub Enterprise Server, Azure DevOps Server), where no container can be had: a
+    probe script a user runs harmlessly on their own installation. It only reads (GET) a repository and a pull request
+    the user names, refuses to run with more than read rights, and records only the shape - field names, types, status
+    codes and the server's version - with every value replaced by a placeholder, so no company's data reaches us. Its
+    output is a readable file the user checks and sends themselves; the script sends nothing and writes no token. The
+    output is read once per version a user reports and turned into synthetic recordings.
 - **LGPL-3.0-or-later, as every Java library of the project:** anyone may use it in their own products, closed ones
   included, and changes to the library itself are published. It stays LGPL where `porelo-adapters` links it into a
   native package, since that package's source is open and can be rebuilt with a changed library; only an API that
@@ -54,3 +67,6 @@ porelo  <-  porelo-adapters (Build1, Review1, SARIF mapping, contract suite)  <-
 - Which of `porelo-adapters`' present code moves, and what the move changes for its published artifacts.
 - The OpenAPI descriptions of GitHub, Forgejo, GitLab and Azure DevOps: their license, how complete they are for the
   paths used, and how records are generated from them with the smallest dependencies.
+- Which forges offer an official container or a developer licence (Bitbucket Data Center, GitHub Enterprise Server,
+  Azure DevOps Server), which moves them from the probe script to a container, and which provider's test account is
+  free.
