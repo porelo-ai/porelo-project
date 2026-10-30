@@ -67,6 +67,10 @@ porelo  <-  porelo-adapters (Build1, Review1, SARIF mapping, contract suite)  <-
 - Which of `porelo-adapters`' present code moves, and what the move changes for its published artifacts.
 - The OpenAPI descriptions of GitHub, Forgejo, GitLab and Azure DevOps: their license, how complete they are for the
   paths used, and how records are generated from them with the smallest dependencies.
-- Which forges offer an official container or a developer licence (Bitbucket Data Center, GitHub Enterprise Server,
-  Azure DevOps Server), which moves them from the probe script to a container, and which provider's test account is
-  free.
+- ~~Which forges offer an official container or a developer licence, and which provider's test account is free.~~
+  Read by Agent Gorge from the vendors' pages, 2026-10-30: Bitbucket Data Center moves to a container (`atlassian/bitbucket`
+  on Docker Hub, with Atlassian's three-hour "timebomb" developer licence for ten users); GitHub Enterprise Server stays
+  with the probe script (only a 45-day trial of a VM image); Azure DevOps Server stays with it too (its free Express
+  edition installs only on Windows with SQL Server, no container). All four cloud providers have a free test account:
+  a GitHub organization, a GitLab.com group, a Bitbucket Cloud workspace and an Azure DevOps organization, each free
+  for up to five users.
