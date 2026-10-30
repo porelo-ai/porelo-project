@@ -13,6 +13,7 @@ it stays and what would change the answer.
 | Work not yet sent by the gathered push is lost with a failed machine | the host keeps no backup of the local forge; a person who wants one backs it up with means of their own | [entry](#work-not-yet-sent-by-the-gathered-push-is-lost-with-a-failed-machine) |
 | A pull request's checks inform and never block | no repository requires a status check to merge; the *Workflow check* runs only on a pull request touching `.github/**` | [entry](#a-pull-requests-checks-inform-and-never-block) |
 | Only ssh reaches a host in normal work | a developer and a project admin reach a host by ssh with their own key, never by a VPN; the VPN is the installation's alone, and a VPN per person is allowed only while the project's own work moves onto its hosts | [entry](#only-ssh-reaches-a-host-in-normal-work) |
+| The project file alone needs the project admin's signature | a follow checks every commit that changes the project file, not the top of `main`; developers change the rest of the project's repository on their own; each repository says whether a merge needs a second person's review; an agent never merges | [entry](#the-project-file-alone-needs-the-project-admins-signature) |
 
 ## A library's license follows how it is used
 
@@ -93,4 +94,18 @@ forwarding where a service is not ssh. The VPN belongs to installing the host, i
 project's own repositories move onto their hosts, a VPN peer per person is allowed; it is taken out before others are
 admitted. **Why:** an access file a person can be given then needs only an ssh key, on any machine and any network, and
 a host offers one way in to secure. **What would change the answer:** a service that cannot be forwarded over ssh.
+
+## The project file alone needs the project admin's signature
+
+**What holds:** a machine following a project applies a new `main` when every commit that changes the project file, or
+another file deciding what the machines do, is signed by a key in `signers`; other commits need no signature.
+Developers change the rest of the project's repository on their own; a change to
+the project file is the project admin's, signed, and a developer reviews it. Each repository says in the project file
+whether a pull request on the host's local forge needs another person's approval or its author may merge it; only
+people merge, never an agent. **Why:** checking only the top commit refused every
+change a developer brought in by a pull request, even one the project admin approved, since the forge's approval is no
+signature and `main` takes no direct push; and what the signature protects is the project file - the security class,
+`egress`, the agents, `signers` - not the plans and documents beside it. Not every project wants a second person's
+review of each change (operator, 2026-10-30). **What would change the answer:** a file outside the project file that
+decides what the machines do and cannot be listed as protected.
 
