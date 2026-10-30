@@ -34,10 +34,10 @@ porelo  <-  porelo-adapters (Build1, Review1, SARIF mapping, contract suite)  <-
 - **Tested on its own:** each module against recorded answers of its forge, with no Porelo running; the contract suite
   every adapter passes ([GH06](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh06)) stays in
   `porelo-adapters`.
-- **LGPL-3.0-or-later, as every plain Java library of the project:** anyone may use it in their own products, closed
-  ones included, and changes to the library itself are published. Parts that are linked into native images and shipped
-  as packages (`.deb`, `.rpm`) take Apache-2.0 instead ([PJ33](README.md#pj33)), because there the LGPL would ask that
-  the library can be replaced inside the image.
+- **LGPL-3.0-or-later, as every Java library of the project:** anyone may use it in their own products, closed ones
+  included, and changes to the library itself are published. It stays LGPL where `porelo-adapters` links it into a
+  native package, since that package's source is open and can be rebuilt with a changed library; only an API that
+  others build their own extensions against takes Apache-2.0 ([PJ33](README.md#pj33), operator, 2026-10-30).
 - **Agent Gorge owns it,** a new repository agent set up like the others.
 - **When:** in release 0.8, while the Forgejo review adapter is written and GitHub's reader is rewritten for reviews;
   GitHub's build reading moves along with it.

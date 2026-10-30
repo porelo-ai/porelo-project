@@ -17,9 +17,9 @@ after:
   porelo-adapters#GH11: [porelo-buildtools#BT37]
   # porelo-ai.github.io
   porelo-ai.github.io#SI06: [porelo-buildtools#BT37]
-  porelo-adapters#GH02: [porelo#B166, porelo#B171, porelo#B291, porelo#B292, porelo#B293, porelo-project#PJ74]
-  porelo-adapters#GH09: [porelo#B166, porelo#B171, porelo#B291, porelo#B292, porelo#B293, porelo-project#PJ74]
-  porelo-adapters#GH10: [porelo#B166, porelo#B171, porelo#B291, porelo#B292, porelo#B293, porelo-project#PJ74]
+  porelo-adapters#GH02: [porelo#B166, porelo#B171, porelo#B291, porelo#B292, porelo#B293, porelo-forge-clients#FC03]
+  porelo-adapters#GH09: [porelo#B166, porelo#B171, porelo#B291, porelo#B292, porelo#B293, porelo-forge-clients#FC03]
+  porelo-adapters#GH10: [porelo#B166, porelo#B171, porelo#B291, porelo#B292, porelo#B293, porelo-forge-clients#FC03]
   # porelo-frontend
   porelo-frontend#F204: [porelo-buildtools#BT37]
   porelo-frontend#F203: [porelo-buildtools#BT37]
