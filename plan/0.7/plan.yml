@@ -50,6 +50,9 @@ sprints:
       - title: "Start local, organization and added providers"
         test: "Use a loopback provider, an organization HTTPS provider, xAI, Zhipu and Z.AI. A supported dialect works; an unsupported dialect and HTTP outside loopback are refused before the start."
         issues: [porelo#P10, porelo#B149, porelo#P07, porelo#P08]
+      - title: "The providers' usage seen in a status line"
+        test: "The status line shows one traffic light for all providers in use; a click lists each provider with its own light; a provider past its configured critical threshold also raises a warning in needs you."
+        issues: [porelo#B365, porelo-frontend#F282]
   - id: "7"
     title: "Deliver to the chosen branch"
     goal: "The person chooses where the approved work goes."
