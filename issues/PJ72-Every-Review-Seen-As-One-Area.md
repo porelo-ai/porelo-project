@@ -59,8 +59,12 @@ gutter threads and the code navigation. The interface keeps to states and minima
 and risk class, counts of open findings and threads, and the person's decisions. Letting a waiting push through or
 turning it away stays possible in the interface, with the file list, the risk and one button, so that no decision
 needs an IDE (operator, 2026-10-31). The interface's issues of this area
-(F78, F107, F112, F190, F191) are cut down to that before 0.8 starts; what they lose moves to IntelliJ's (IJ01, IJ04,
-IJ12, IJ13) where it is not there yet.
+([F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78), [F107](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f107), [F112](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f112), [F190](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f190), [F191](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f191)) are cut down to that before 0.8 starts; what they lose moves to IntelliJ's ([IJ01](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij01), [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04),
+[IJ12](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij12), [IJ13](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij13)) where it is not there yet. The interface's screens drafted for this cut are taken as its shape (operator,
+2026-10-31): a push with a `C3` file asks a second time and names those files; a check that is not complete never
+refuses letting through or bringing on, and the confirmation names it; *Copy the diff* is dropped for the fetch line;
+the bring-on row shows the source level, risk class and check completeness; a running task's highest class comes with
+its commits, by the gate's rules, with no diff sent.
 
 ## The issues, by theme
 
