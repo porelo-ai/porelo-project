@@ -1,6 +1,6 @@
 # PJ85 — A task reviews a pull request on the central forge
 
-**Status:** Idea.
+**Status:** Accepted (operator, 2026-10-31).
 
 **What must be true.** A reviewer task, as [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172)
 builds it, also takes as its target any existing pull request on the central forge, named by its URL, that no task
