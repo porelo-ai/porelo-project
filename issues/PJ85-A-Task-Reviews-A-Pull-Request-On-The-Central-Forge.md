@@ -2,17 +2,17 @@
 
 **Status:** Idea.
 
-**What must be true.** A person starts a task, in a project or without one, with an existing pull request on the
-central forge as its target. The task's agent reads that pull request's change read-only and answers only with SARIF
-comments and findings; the person reads and answers them in IntelliJ's review, and each one reaches the pull request
-only after the person releases it. The task can push nothing, approve nothing and resolve nothing on the forge.
+**What must be true.** A reviewer task, as [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172)
+builds it, also takes as its target any existing pull request on the central forge, named by its URL, that no task
+made and no project maps, and it does so in a project or without one. Everything else is the reviewer's as [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172) has it:
+read-only, pinned to the pull request's head, no push, SARIF comments and findings only, read and answered in
+IntelliJ, and each one reaching the pull request only after the person releases it.
 
 ## Why
 
-A task that reviews today receives another task's work, not a pull request that already lies on a forge, and a task
-without a project reaches no forge and is mapped to no pull request, so its comments to a forge are refused. Most of
-what this needs is being built for the review area of release 0.8: the reviewer role, the daemon's comment calls with
-held and outgoing forge comments, IntelliJ's review threads, and the adapters' conversion between a forge's review
-comments and SARIF. What is missing is starting a task with a pull request as its target, and mapping a task to a pull
-request without a project, including which forge account reads the pull request and which one writes the released
-comments.
+[B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172) reviews another task's work, and a pull request only where
+[B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171)'s authenticated mapping ties it to a
+task of the same project. A pull request somebody else opened, or one in a repository no project names, cannot be
+reviewed that way, and a task without a project reaches no forge at all. What this adds to [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172): the pull request's URL
+as a target, fetching its base and head into the task's gate read-only, and, without a project, which forge account
+reads the pull request and which one writes the released comments.
