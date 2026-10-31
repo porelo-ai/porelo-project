@@ -326,7 +326,7 @@ sprints:
         covers: [porelo-project#PJ83]
       - title: "A host reached over SSH only, its state taken from the registry"
         test: "The host's only open port is SSH; the forge and the homeserver are reached through their gates over the tunnel with no password and no VPN; the host takes its project admins, projects and persons from the signed registry state an admin brings, and refuses a card under another person's login, a host card not signed by a host admin of `owners.yml` and a successor card signed by a revoked key, naming why."
-        issues: [porelo-host#HO68, porelo-host#HO69, porelo-host#HO80, porelo-host#HO70, porelo-host#HO75, porelo-host#HO73, porelo#B349, porelo#B340, porelo#B342, porelo-frontend#F270, porelo-intellij#IJ18]
+        issues: [porelo-host#HO68, porelo-host#HO69, porelo-host#HO80, porelo-host#HO70, porelo-host#HO75, porelo-host#HO73, porelo#B349, porelo#B351, porelo#B340, porelo#B342, porelo-frontend#F270, porelo-intellij#IJ18]
         covers: [porelo-project#PJ83]
       - title: "Admitted, registered, added and joined with one click, from lists"
         test: "The host admin admits a project admin by picking them from the registry's persons; the project admin registers their project and adds a developer the same way; the developer joins with one click; Machines, Projects and Forges are lists whose rows open their own pages, each list with a filter, each row with its ⋮; no VPN, CA or per-machine key is left in the interface."
