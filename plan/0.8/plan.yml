@@ -91,7 +91,7 @@ sprints:
     functions:
       - title: "Comments delivered by who wrote them"
         test: "On a task's pull request, a comment of an internal account and of a listed partner reach the task at once; a comment of an unknown account is held and shown until the person releases it; a comment that claims another author changes nothing."
-        issues: [porelo#B171, porelo-adapters#GH09, porelo-adapters#GH02]
+        issues: [porelo#B171, porelo-forge-clients#FC08, porelo-adapters#GH09, porelo-adapters#GH02]
       - title: "Replies released, a thread resolved by an internal person"
         test: "The agent's reply appears on the pull request only after the person releases it; a thread an internal account resolves on GitHub clears its finding at the gate, one resolved by anyone else is only shown as resolved."
         issues: [porelo-frontend#F191]
