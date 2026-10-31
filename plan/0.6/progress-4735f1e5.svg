@@ -1,7 +1,7 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1358 1274" role="img" aria-label="Sprint progress for release 0.6">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1382 1274" role="img" aria-label="Sprint progress for release 0.6">
 <title>Sprint progress for release 0.6</title>
 <style>
 text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
@@ -570,17 +570,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 784)">
 <text x="0" y="17">6j. A host prepared once, by its host admin</text>
-<desc>Finished 4, Review 8. MX54: porelo-message-matrix#MX54 · Finished · - · The Homeserver Serves A Certificate Made Elsewhere; HO42: porelo-host#HO42 · Review · L · The Host Prepared With No Project Or Person; F208: porelo-frontend#F208 · Review · — · Roles Given At The Start Of The Interface; F209: porelo-frontend#F209 · Review · — · The VPN Kept Per Host, Several Up At Once; F210: porelo-frontend#F210 · Review · — · The Secrets File Grouped By Host And By Project; F212: porelo-frontend#F212 · Review · — · The Forge's CA One Per Host; F211: porelo-frontend#F211 · Review · — · A Server Prepared With No Project; HO43: porelo-host#HO43 · Review · L · A Project Admin Admitted By The Host Admin; HO44: porelo-host#HO44 · Review · M · A Project Registered On The Host; MX44: porelo-message-matrix#MX44 · Finished · - · The Host's Homeserver Gives Each Person A Token; B312: porelo#B312 · Finished · - · A Machine Named By Its Host And Account; B315: porelo#B315 · Finished · - · A Person Locked Out Without A Terminal; </desc>
+<desc>Finished 9, Review 3. MX54: porelo-message-matrix#MX54 · Finished · - · The Homeserver Serves A Certificate Made Elsewhere; HO42: porelo-host#HO42 · Review · L · The Host Prepared With No Project Or Person; F208: porelo-frontend#F208 · Finished · - · Roles Given At The Start Of The Interface; F209: porelo-frontend#F209 · Finished · - · The VPN Kept Per Host, Several Up At Once; F210: porelo-frontend#F210 · Finished · - · The Secrets File Grouped By Host And By Project; F212: porelo-frontend#F212 · Finished · - · The Forge's CA One Per Host; F211: porelo-frontend#F211 · Finished · - · A Server Prepared With No Project; HO43: porelo-host#HO43 · Review · L · A Project Admin Admitted By The Host Admin; HO44: porelo-host#HO44 · Review · M · A Project Registered On The Host; MX44: porelo-message-matrix#MX44 · Finished · - · The Host's Homeserver Gives Each Person A Token; B312: porelo#B312 · Finished · - · A Machine Named By Its Host And Account; B315: porelo#B315 · Finished · - · A Person Locked Out Without A Terminal; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="133.33333333333334" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 4</title></rect>
+<rect x="0.0" width="300.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 9</title></rect>
 
-<rect x="133.33333333333334" width="266.6666666666667" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 8</title></rect>
+<rect x="300.0" width="100.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 3</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">4 of 12 done</text>
+<text class="legend" x="410" y="17">9 of 12 done</text>
 </svg>
 
 
@@ -594,17 +594,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 814)">
 <text x="0" y="17">6k. A project put on a prepared host</text>
-<desc>Finished 3, Review 3. B310: porelo#B310 · Finished · - · A Project Names A Private Signed Access File; B311: porelo#B311 · Finished · - · A Project Verified Without Following It; B320: porelo#B320 · Finished · - · An Inventory Reads Its Files From The Access File; HO45: porelo-host#HO45 · Review · L · The Project Brought And Joined In The Person's Own Account; F214: porelo-frontend#F214 · Review · — · The Setup Files And The Stop Split By Act; F213: porelo-frontend#F213 · Review · — · A Project Brought Onto A Prepared Host; </desc>
+<desc>Finished 5, Review 1. B310: porelo#B310 · Finished · - · A Project Names A Private Signed Access File; B311: porelo#B311 · Finished · - · A Project Verified Without Following It; B320: porelo#B320 · Finished · - · An Inventory Reads Its Files From The Access File; HO45: porelo-host#HO45 · Review · L · The Project Brought And Joined In The Person's Own Account; F214: porelo-frontend#F214 · Finished · - · The Setup Files And The Stop Split By Act; F213: porelo-frontend#F213 · Finished · - · A Project Brought Onto A Prepared Host; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 3</title></rect>
+<rect x="0.0" width="333.3333333333333" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 5</title></rect>
 
-<rect x="200.0" width="200.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 3</title></rect>
+<rect x="333.3333333333333" width="66.66666666666667" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">3 of 6 done</text>
+<text class="legend" x="410" y="17">5 of 6 done</text>
 </svg>
 
 
@@ -615,15 +615,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 844)">
 <text x="0" y="17">6l. Developers kept to the signed list</text>
-<desc>Review 5. HO46: porelo-host#HO46 · Review · L · The Developers Kept In Step With The Signed Access File; HO55: porelo-host#HO55 · Review · M · A Person Leaves When No Membership Is Left; F215: porelo-frontend#F215 · Review · — · The Developers Of A Project Kept In Its Access File; F216: porelo-frontend#F216 · Review · — · A Developer Joins A Project On Its Host; F232: porelo-frontend#F232 · Review · — · The Project Admin's Own VPN For A Bring; </desc>
+<desc>Finished 3, Review 2. HO46: porelo-host#HO46 · Review · L · The Developers Kept In Step With The Signed Access File; HO55: porelo-host#HO55 · Review · M · A Person Leaves When No Membership Is Left; F215: porelo-frontend#F215 · Finished · - · The Developers Of A Project Kept In Its Access File; F216: porelo-frontend#F216 · Finished · - · A Developer Joins A Project On Its Host; F232: porelo-frontend#F232 · Finished · - · The Project Admin's Own VPN For A Bring; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 5</title></rect>
+<rect x="0.0" width="240.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 3</title></rect>
+
+<rect x="240.0" width="160.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 5 done</text>
+<text class="legend" x="410" y="17">3 of 5 done</text>
 </svg>
 
 
@@ -634,17 +636,25 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 874)">
 <text x="0" y="17">6m. One key per person, the state in Git</text>
-<desc>Review 5, Accepted 30. B337: porelo#B337 · Accepted · S · A Person Card Signed By Its Own Key; B339: porelo#B339 · Accepted · M · The Registry Read And Written By Its Signers; B338: porelo#B338 · Accepted · M · An Identity Made, Changed And Replaced; B346: porelo#B346 · Accepted · S · A Backup Key For A Single Admin; B345: porelo#B345 · Accepted · M · A Host Vault Opened By The Person's Key; HO68: porelo-host#HO68 · Accepted · M · SSH The Host's Only Way In; HO69: porelo-host#HO69 · Accepted · M · The Forge Behind Its Gate Without TLS; HO70: porelo-host#HO70 · Accepted · M · The Host's State Taken From The Registry; HO75: porelo-host#HO75 · Accepted · M · The Persons Taken From Their Cards; HO73: porelo-host#HO73 · Accepted · S · The Homeserver Reached Through Its Gate; B349: porelo#B349 · Accepted · S · A Host Card Signed By Its Host Admin; B340: porelo#B340 · Accepted · S · A Host Checks The Registry It Was Brought; B342: porelo#B342 · Accepted · M · Persons In The Access File By Their Cards; HO71: porelo-host#HO71 · Accepted · M · A Task Recorded And Given Its Forge Token By The Host; HO76: porelo-host#HO76 · Accepted · M · Each Push Judged When It Arrives; B341: porelo#B341 · Accepted · S · A New Commit Is Never Accepted By A Retired Key; B343: porelo#B343 · Accepted · M · Each Task Signs With Its Own Certified Key; B344: porelo#B344 · Accepted · M · Messages Signed By A Task's Key; HO72: porelo-host#HO72 · Accepted · M · The Central Forge Reached Only On A Person's Word; MX56: porelo-message-matrix#MX56 · Accepted · M · The Homeserver Knows The Person At Its Gate; MX57: porelo-message-matrix#MX57 · Accepted · M · A Person's Accounts Are Named By Their Login; MX58: porelo-message-matrix#MX58 · Accepted · S · The Transport Reaches The Homeserver On A Socket; MX59: porelo-message-matrix#MX59 · Accepted · M · The VPN Path Goes; CC43: porelo-claude-code#CC43 · Accepted · XS · The Sign-In Says How It Is Answered; PI42: porelo-pi#PI42 · Accepted · XS · The Sign-In Says How It Is Answered; OM40: porelo-omp#OM40 · Accepted · XS · The Sign-In Says How It Is Answered; CX10: porelo-codex#CX10 · Accepted · XS · The Sign-In Says How It Is Answered; AG07: porelo-agy#AG07 · Accepted · XS · The Sign-In Says How It Is Answered; B347: porelo#B347 · Accepted · XS · An Agent Says How It Signs In; HO47: porelo-host#HO47 · Review · S · The Gathered Push Run By Any Developer; HO48: porelo-host#HO48 · Review · L · Every Role Tested On One Host; HO74: porelo-host#HO74 · Accepted · M · Every Role Tested Without The VPN; HO53: porelo-host#HO53 · Review · S · No Forge User Operator; MX45: porelo-message-matrix#MX45 · Review · M · A Project Admin Brings The Room Onto A Central Homeserver; B314: porelo#B314 · Review · S · A Project Admin Keeps The Room's Members To The List; </desc>
+<desc>Review 17, Implementing 13, Backlog 10, Accepted 5, Idea 1, Missing 9. B337: porelo#B337 · Review · S · A Person Card Signed By Its Own Key; B339: porelo#B339 · Accepted · M · The Registry Read And Written By Its Signers; B338: porelo#B338 · Accepted · L · An Identity Made, Changed And Replaced; B346: porelo#B346 · Accepted · S · A Backup Key For A Single Admin; F268: porelo-frontend#F268 · Backlog · M · One Key And One Card Per Person; F280: porelo-frontend#F280 · Backlog · M · A Lost Or Stolen Key Replaced; FC04: porelo-forge-clients#FC04 · Review · M · Records Generated From A Pinned OpenAPI Description; FC07: porelo-forge-clients#FC07 · Review · XS · Plain Key Lists On Forgejo; B345: porelo#B345 · Implementing · L · A Host Vault Opened By The Person's Key; porelo-host#HO68: Missing index row; porelo-host#HO69: Missing index row; porelo-host#HO70: Missing index row; porelo-host#HO75: Missing index row; porelo-host#HO73: Missing index row; B349: porelo#B349 · Review · S · A Host Card Signed By Its Host Admin; B340: porelo#B340 · Implementing · S · A Host Checks The Registry It Was Brought; B342: porelo#B342 · Implementing · M · Persons In The Access File By Their Cards; F270: porelo-frontend#F270 · Implementing · M · One SSH Tunnel Per Host From Its Card; IJ18: porelo-intellij#IJ18 · Review · M · A host is reached as its card says; B352: porelo#B352 · Idea · M · A Person's Access Written By Porelo; F269: porelo-frontend#F269 · Backlog · M · The Registry Read For Every List; F271: porelo-frontend#F271 · Backlog · M · A Host Admin Admits From The Registry; F272: porelo-frontend#F272 · Backlog · M · A Project Admin Registers And Adds From The Registry; F273: porelo-frontend#F273 · Backlog · M · A Developer Joins At One Click; F278: porelo-frontend#F278 · Implementing · L · The Machines, Projects And Forges Pages; F276: porelo-frontend#F276 · Implementing · L · The VPN, The CA And Per-Machine Keys Taken Out; B335: porelo#B335 · Implementing · M · Every Change To A Protected File Signed; B334: porelo#B334 · Review · M · A Person Kept In The Project Room; porelo-host#HO71: Missing index row; porelo-host#HO76: Missing index row; B341: porelo#B341 · Implementing · M · A New Commit Is Never Accepted By A Retired Key; B343: porelo#B343 · Accepted · M · Each Task Signs With Its Own Certified Key; B344: porelo#B344 · Accepted · M · Messages Signed By A Task's Key; F277: porelo-frontend#F277 · Backlog · M · Commits Signed With The Person's Key; porelo-host#HO72: Missing index row; F274: porelo-frontend#F274 · Backlog · M · Push And Pull With The Central Forge Started By A Person; MX30: porelo-message-matrix#MX30 · Review · S · Only A Person Speaks As A Person; MX56: porelo-message-matrix#MX56 · Review · L · The Homeserver Knows The Person At Its Gate; MX57: porelo-message-matrix#MX57 · Review · M · A Person's Accounts Are Named By Their Login; MX58: porelo-message-matrix#MX58 · Review · S · The Transport Reaches The Homeserver On A Socket; MX59: porelo-message-matrix#MX59 · Review · M · The VPN Path Goes; CC43: porelo-claude-code#CC43 · Implementing · XS · The Sign-In Says How It Is Answered; PI42: porelo-pi#PI42 · Implementing · XS · The Sign-In Says How It Is Answered; OM40: porelo-omp#OM40 · Implementing · XS · The Sign-In Says How It Is Answered; CX10: porelo-codex#CX10 · Implementing · XS · The Sign-In Says How It Is Answered; AG07: porelo-agy#AG07 · Implementing · XS · The Sign-In Says How It Is Answered; B347: porelo#B347 · Review · M · An Agent Says How It Signs In; F275: porelo-frontend#F275 · Backlog · S · The Sign-In Says Its Flow; HO47: porelo-host#HO47 · Review · S · The Gathered Push Run By Any Developer; HO48: porelo-host#HO48 · Review · L · Every Role Tested On One Host; porelo-host#HO74: Missing index row; F279: porelo-frontend#F279 · Backlog · S · The Steps Of One-Click Joining; HO53: porelo-host#HO53 · Review · S · No Forge User Operator; MX45: porelo-message-matrix#MX45 · Review · M · A Project Admin Brings The Room Onto A Central Homeserver; B314: porelo#B314 · Review · S · A Project Admin Keeps The Room's Members To The List; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="57.142857142857146" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 5</title></rect>
+<rect x="0.0" width="123.63636363636364" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 17</title></rect>
 
-<rect x="57.142857142857146" width="342.85714285714283" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 30</title></rect>
+<rect x="123.63636363636364" width="94.54545454545455" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 13</title></rect>
+
+<rect x="218.1818181818182" width="72.72727272727273" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 10</title></rect>
+
+<rect x="290.90909090909093" width="36.36363636363637" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 5</title></rect>
+
+<rect x="327.27272727272725" width="7.2727272727272725" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+<rect x="334.54545454545456" width="65.45454545454545" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 9</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 35 done</text>
+<text class="legend" x="410" y="17">0 of 55 done</text>
 </svg>
 
 
@@ -657,73 +667,81 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 <text x="1166" y="17"><title>A host reached over SSH only, its state taken from the registry: Not tested</title>⚪</text>
 
 
-<text x="1190" y="17"><title>Task keys certified, and each push judged when it arrives: Not tested</title>⚪</text>
+<text x="1190" y="17"><title>Admitted, registered, added and joined with one click, from lists: Not tested</title>⚪</text>
 
 
-<text x="1214" y="17"><title>The central forge reached only on a person's word: Not tested</title>⚪</text>
+<text x="1214" y="17"><title>Task keys certified, and each push judged when it arrives: Not tested</title>⚪</text>
 
 
-<text x="1238" y="17"><title>The room reached through the homeserver's gate, accounts by login: Not tested</title>⚪</text>
+<text x="1238" y="17"><title>The central forge reached only on a person's word: Not tested</title>⚪</text>
 
 
-<text x="1262" y="17"><title>The sign-in says how it is answered: Not tested</title>⚪</text>
+<text x="1262" y="17"><title>The room reached through the homeserver's gate, accounts by login: Not tested</title>⚪</text>
 
 
-<text x="1286" y="17"><title>The gathered push by any developer, every role on one host: Not tested</title>⚪</text>
+<text x="1286" y="17"><title>The sign-in says how it is answered: Not tested</title>⚪</text>
 
 
-<text x="1310" y="17"><title>No forge user `operator`: Not tested</title>⚪</text>
+<text x="1310" y="17"><title>The gathered push by any developer, every role on one host: Not tested</title>⚪</text>
 
 
-<text x="1334" y="17"><title>The room made and kept on a central homeserver: Not tested</title>⚪</text>
+<text x="1334" y="17"><title>No forge user `operator`: Not tested</title>⚪</text>
+
+
+<text x="1358" y="17"><title>The room made and kept on a central homeserver: Not tested</title>⚪</text>
 
 </g>
 
 
 <g transform="translate(0 904)">
 <text x="0" y="17">6n. Accept the published tools</text>
-<desc>Implementing 1, Backlog 1. IJ09: porelo-intellij#IJ09 · Implementing · M · The build verifies every dependency; BT01: porelo-buildtools#BT01 · Backlog · S · A Release Leg Installs The Release; </desc>
+<desc>Review 1, Implementing 3, Backlog 2. IJ09: porelo-intellij#IJ09 · Implementing · M · The build verifies every dependency; BT01: porelo-buildtools#BT01 · Backlog · S · A Release Leg Installs The Release; FC02: porelo-forge-clients#FC02 · Implementing · M · The Forgejo Client; FC05: porelo-forge-clients#FC05 · Review · S · Keys And Repositories On Forgejo; FC01: porelo-forge-clients#FC01 · Implementing · L · The GitHub Client; FC06: porelo-forge-clients#FC06 · Backlog · M · Keys, Repositories And Commit Statuses On GitHub; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+<rect x="0.0" width="66.66666666666667" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
-<rect x="200.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+<rect x="66.66666666666667" width="200.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 3</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 2</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 2 done</text>
+<text class="legend" x="410" y="17">0 of 6 done</text>
 </svg>
 
 
 <text x="1118" y="17"><title>A published release installed and verified: Not tested</title>⚪</text>
+
+
+<text x="1142" y="17"><title>A forge's keys and repositories through its client: Not tested</title>⚪</text>
 
 </g>
 
 
 <g transform="translate(0 934)">
 <text x="0" y="17">7. The move, wave 1: the smallest repositories</text>
-<desc>Rejected 1, Review 4, Implementing 1, Estimated 1, Analyzed 2, Accepted 3, Idea 3. HO52: porelo-host#HO52 · Analyzed · M · Snapshots Resolved With A Read-Only Token; BT39: porelo-buildtools#BT39 · Analyzed · M · Snapshots Resolved With A Read-Only Token; SL36: porelo-message-sluice#SL36 · Review · S · Snapshots Resolved With A Read-Only Token; CC41: porelo-claude-code#CC41 · Review · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; PI41: porelo-pi#PI41 · Review · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; OM38: porelo-omp#OM38 · Review · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; B332: porelo#B332 · Estimated · XS · A Follow Lists The Keys It Pinned; HO57: porelo-host#HO57 · Accepted · S · The Bring Checks With The Keys In Force After A Handover; HO56: porelo-host#HO56 · Accepted · M · Remove Takes The Person's Push And Sync Away; MX55: porelo-message-matrix#MX55 · Rejected · - · A Person Has Their Own Account In The Room; B334: porelo#B334 · Accepted · - · A Person Kept In The Project Room; SL35: porelo-message-sluice#SL35 · Implementing · S · The Sluice's Agent Works In A Porelo Task; BT37: porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task; B306: porelo#B306 · Idea · - · Porelo's Build Runs On The Local Forge; PJ75: porelo-project#PJ75 · Idea · — · A task fetches a snapshot from its host's forge; </desc>
+<desc>Rejected 1, Review 4, Implementing 1, Estimated 1, Analyzed 2, Accepted 2, Idea 3. HO52: porelo-host#HO52 · Analyzed · M · Snapshots Resolved With A Read-Only Token; BT39: porelo-buildtools#BT39 · Analyzed · M · Snapshots Resolved With A Read-Only Token; SL36: porelo-message-sluice#SL36 · Review · S · Snapshots Resolved With A Read-Only Token; CC41: porelo-claude-code#CC41 · Review · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; PI41: porelo-pi#PI41 · Review · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; OM38: porelo-omp#OM38 · Review · S · Snapshots Resolved With A Read-Only Token, A Forge Without Its Registry Refused; B332: porelo#B332 · Estimated · XS · A Follow Lists The Keys It Pinned; HO57: porelo-host#HO57 · Accepted · S · The Bring Checks With The Keys In Force After A Handover; HO56: porelo-host#HO56 · Accepted · M · Remove Takes The Person's Push And Sync Away; MX55: porelo-message-matrix#MX55 · Rejected · - · A Person Has Their Own Account In The Room; SL35: porelo-message-sluice#SL35 · Implementing · S · The Sluice's Agent Works In A Porelo Task; BT37: porelo-buildtools#BT37 · Idea · - · The Buildtools' Agent Works In A Porelo Task; B306: porelo#B306 · Idea · - · Porelo's Build Runs On The Local Forge; PJ75: porelo-project#PJ75 · Idea · — · A task fetches a snapshot from its host's forge; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="26.666666666666668" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
+<rect x="0.0" width="28.571428571428573" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
 
-<rect x="26.666666666666668" width="106.66666666666667" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 4</title></rect>
+<rect x="28.571428571428573" width="114.28571428571429" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 4</title></rect>
 
-<rect x="133.33333333333334" width="26.666666666666668" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+<rect x="142.85714285714286" width="28.571428571428573" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
 
-<rect x="160.0" width="26.666666666666668" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+<rect x="171.42857142857142" width="28.571428571428573" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
 
-<rect x="186.66666666666666" width="53.333333333333336" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+<rect x="200.0" width="57.142857142857146" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
 
-<rect x="240.0" width="80.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 3</title></rect>
+<rect x="257.14285714285717" width="57.142857142857146" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
 
-<rect x="320.0" width="80.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 3</title></rect>
+<rect x="314.2857142857143" width="85.71428571428571" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 3</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">1 of 15 done</text>
+<text class="legend" x="410" y="17">1 of 14 done</text>
 </svg>
 
 
