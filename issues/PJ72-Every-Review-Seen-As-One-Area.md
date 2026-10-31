@@ -27,7 +27,8 @@ SARIF results. Nothing in Porelo knows a forge's own format.
   - who wrote it - the person, a task in its role, a forge account, a linter - is the `run`'s `tool` and the result's
     property bag;
   - a thread, a reply and the resolved state live in the result's property bag (SARIF has no threads of its own), the
-    resolved state as a `suppression`;
+    resolved state as `porelo/threadState` (`open` or `resolved`), never a `suppression`, which means a finding
+    accepted on purpose (operator, 2026-10-31);
   - which round of a check ([PJ67](README.md#pj67)) a result belongs to is its `run`, compared across rounds by `baselineState`.
 - **The adapters convert, nothing else does:** each forge adapter (GitHub, Forgejo, Bitbucket Data Center, ...)
   translates between its forge's pull request review API and the profile, in both directions, and says so in the
