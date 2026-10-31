@@ -65,6 +65,8 @@ needs an IDE (operator, 2026-10-31). The interface's issues of this area
 refuses letting through or bringing on, and the confirmation names it; *Copy the diff* is dropped for the fetch line;
 the bring-on row shows the source level, risk class and check completeness; a running task's highest class comes with
 its commits, by the gate's rules, with no diff sent.
+A pull request on the host's Forgejo is approved and merged either in IntelliJ or on the forge itself; both stay
+possible, and the interface shows its state and brings approved work on (operator, 2026-10-31).
 
 ## The issues, by theme
 
