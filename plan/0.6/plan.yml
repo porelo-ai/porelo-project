@@ -350,7 +350,7 @@ sprints:
         covers: [porelo-project#PJ83]
       - title: "The gathered push by any developer, every role on one host"
         test: "Any developer runs the gathered push to the central forge with their own token; on one host the host admin, two project admins and their developers each do what their role allows and nothing more."
-        issues: [porelo-host#HO47, porelo-host#HO48, porelo-host#HO74, porelo-frontend#F279]
+        issues: [porelo-host#HO47, porelo-host#HO48, porelo-host#HO63, porelo-host#HO74, porelo-frontend#F279]
         covers: [porelo-project#PJ78, porelo-project#PJ83]
       - title: "No forge user `operator`"
         test: "A host set up anew has no forge user `operator`; on a host set up before, it is gone after `up`, and the forge's people, protection and owners still work."
