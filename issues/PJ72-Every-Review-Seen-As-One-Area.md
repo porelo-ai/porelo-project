@@ -52,6 +52,16 @@ SARIF results. Nothing in Porelo knows a forge's own format.
   from the IDE's own libraries and checks the same profile. The `qodana-sarif` model inside IntelliJ is not used, so
   that one model and one check hold everywhere.
 
+## Where code is read: IntelliJ
+
+**Code and diffs are read and commented in IntelliJ** (operator, 2026-10-31): the platform already has the diff, the
+gutter threads and the code navigation. The interface keeps to states and minimal views: what waits, its source level
+and risk class, counts of open findings and threads, and the person's decisions. Letting a waiting push through or
+turning it away stays possible in the interface, with the file list, the risk and one button, so that no decision
+needs an IDE (operator, 2026-10-31). The interface's issues of this area
+(F78, F107, F112, F190, F191) are cut down to that before 0.8 starts; what they lose moves to IntelliJ's (IJ01, IJ04,
+IJ12, IJ13) where it is not there yet.
+
 ## The issues, by theme
 
 ### 1. The person reviews waiting work at the gate
