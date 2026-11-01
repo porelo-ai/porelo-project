@@ -76,7 +76,8 @@ on) and an id (asked again, the same answer).
 
 | Kind | Function | Input | Answer | The question or purpose |
 |---|---|---|---|---|
-| Connection | `open` | address | handle, or a refusal | connect |
+| Discovery | `available` | – | the directories this adapter can reach, each with its id, name and a short summary | what the interface offers under *Add a directory*; the interface names no adapter |
+| Connection | `open` | id from `available` | handle, or a refusal | connect |
 | | `close` | – | – | clean up |
 | Questions | `trusts` | login, key | yes; no with the reason; cannot say | is it their key, and not revoked? |
 | | `keyHolder` | key | login, or nobody | does another person hold this key? |
