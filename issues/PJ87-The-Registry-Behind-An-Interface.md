@@ -34,19 +34,27 @@ registry), so it is settled here before either works on it.
 
 ## Decided (operator, 2026-11-01)
 
-- **Two interfaces, the check stays in Core.** One is where the signed entries are kept (Git first, a database
-  later); the other is who vouches for a login and its keys and who owns the organisation (GitHub first, later
-  Forgejo, LDAP or OIDC). Core checks every signature the same way whatever the store.
-- **The store guarantees its history.** Each implementation keeps a history that cannot be rewritten unnoticed
-  (Git's descent from the pinned state; an append-only table in a database), so no revocation and no older card
-  can be played back silently. Core relies on the store for it.
+- **Two interfaces.** One is where the directory is kept (Git first, a database later); the other is who vouches
+  for a login and its keys and who owns the organisation (GitHub first, later Forgejo, LDAP or OIDC).
+- **Each store adapter guarantees the security itself.** Porelo uses an API; the adapter behind it is an
+  implementation of its own and must meet the directory's security requirements: every change signed by the one
+  allowed to make it, a history that cannot be rewritten unnoticed, so no revocation and no older card can be
+  played back, and a host's offline check against its pinned key. Today's Git code already meets them and becomes
+  the Git adapter; the change separates the API from that implementation. A second adapter must meet the same
+  requirements.
 - **Several directories on one machine, kept apart.** Each holds only its own hosts and projects; its revocations
   and its key checks are answered by its own identity source. A person keeps one card, filed in each directory
   they work in. The interface shows all of them side by side.
 - **The name is "directory"** (German "Verzeichnis") in the interface, Core's and the host's commands and the
   documents, in place of "registry".
 
-## Still open
+## The order of the work (operator, 2026-11-01)
 
-- How the store states its guarantee, and how a host checks a directory brought from a store that is not Git.
-- The order of the work: the rename, several directories, then a second store and a second identity source.
+All in 0.7, none before the test on a rented machine; a second store, such as a database, only when it is needed.
+
+1. The API separated from today's Git code, which becomes the Git adapter, and the security requirements written
+   down as the adapter's contract, with checks every adapter must pass (Core). Nothing visible changes.
+2. The rename from registry to directory, with a transition for the old commands and files (Core, Frontend,
+   Machines, documents).
+3. Several directories on one machine, kept apart (Core, Frontend).
+4. A second identity source, such as Forgejo (Core, Frontend).
