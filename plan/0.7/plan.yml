@@ -142,6 +142,12 @@ sprints:
       - title: "A registry commit split as git splits it"
         test: "A commit with any gpgsig header is judged by Porelo as git judges it, through one shared splitting."
         issues: [porelo#B374]
+      - title: "A start that waits for its helpers"
+        test: "A start whose gate or relay does not come up ends with a code; a start waits for both; two starts of one name never stop each other's task."
+        issues: [porelo#B384]
+      - title: "A project access contract without guessing"
+        test: "A filed request is looked up by its id; verify names the access commit's signer and the head it took; access add answers for an admin already listed."
+        issues: [porelo#B386]
   - id: "16"
     title: "Clearing up 0.7"
     goal: "Each repository's gathered small findings are worked off or become issues of their own."

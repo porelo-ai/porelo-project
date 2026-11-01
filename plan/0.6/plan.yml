@@ -376,6 +376,9 @@ sprints:
       - title: "Host cards by name, a forge on its own port, a fast build"
         test: "A host card with a DNS name or an IPv6 address is read for Register and Add; a vault token is lent to a forge on a port other than 443; the porelo Build's verify ends in about 8 minutes."
         issues: [porelo-frontend#F291, porelo#B373, porelo#B383]
+      - title: "A KeePassXC key that is usable"
+        test: "A new key made in KeePassXC asks for the master password once; a retry after key-not-served takes the key already made; no empty or orphaned entry is left; without a terminal the refusal says so."
+        issues: [porelo#B385]
   - id: "7"
     title: "The move, wave 1: the smallest repositories"
     goal: "Starts only once 6 to 6i are tested, since a moved agent talks in the room on this computer from the host. One agent per repository: each works its own move issue inside its new task to Review; the others work as today."
