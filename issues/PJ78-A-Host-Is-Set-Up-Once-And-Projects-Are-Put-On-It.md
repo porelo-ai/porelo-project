@@ -17,8 +17,8 @@ the protection of `main`, the agents' accounts) is made only when repositories a
 project has an empty forge nobody can sign in to. The interface writes no forge switch at all
 (porelo-frontend [F145](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f145)), so
 porelo-frontend [F202](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f202), the forge's
-certificate and password, has nothing to work on. The operator, 2026-10-28: "Setup des Host" and "Pack ein Projekt
-auf einen bestehenden Host (der dann eine Forge haben muss)" are two different acts.
+certificate and password, has nothing to work on. Setting up a host and putting a project on an existing host, which
+must then have a forge, are two different acts.
 
 ## Decided
 
@@ -36,7 +36,7 @@ auf einen bestehenden Host (der dann eine Forge haben muss)" are two different a
 - **Who may work on a project is signed, not handed over.** A project names a signed `access.yml` that holds its
   `host:` block, its developers with their public keys, and its transports' settings. It lies in a private repository
   of its own, or, where the project accepts that these become public, beside `project.yml` in the project's
-  repository; both are signed and checked alike (decided by the operator, 2026-10-29). The host follows that list: a developer added is admitted, one dropped is locked at once; nothing is admitted when the
+  repository; both are signed and checked alike. The host follows that list: a developer added is admitted, one dropped is locked at once; nothing is admitted when the
   `host:` block is not the host's own.
 - **[PJ40](README.md#pj40)'s one command** stays one button: the first time it prepares the host and brings the project; a second
   project is brought alone. The host's forge runs whether or not a project names repositories.

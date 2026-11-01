@@ -9,7 +9,7 @@ central forge. A project with only the central forge and no local one on its hos
 
 ## Why
 
-The operator asked on 2026-10-30 to shorten the run times on the local VM: a bugfix or small change is tried there
+To shorten the run times on the local VM, a bugfix or small change is tried there
 only in the area where it changed, and the second agent's review is limited to the same area. It is only meant to show
 that nothing is broken; the full test runs afterwards on the central forge.
 

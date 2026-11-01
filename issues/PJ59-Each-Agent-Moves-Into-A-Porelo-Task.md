@@ -105,7 +105,7 @@ Read-only, on the host. Each line says what it found, and each fails by name bef
   porelo-pi [PI33](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi33).
 - **What a task cannot test runs in the forge's Build**: an acceptance leg on a machine from the host's pool. A
   hand-over names those legs in place of a VM run on the development machine.
-- **An adapter moves before the pool is there** (operator, 2026-10-29): during its move the adapter's checks that rent a
+- **An adapter moves before the pool is there**: during its move the adapter's checks that rent a
   machine from the host's pool are switched off. porelo's Build moves to the forge before the adapters, so they build
   against its snapshots there, and its acceptance job is off on the forge the same way. Each adapter switches them on again in its own issue of release 0.7,
   planned once the pool and machines asked for by kind are done.

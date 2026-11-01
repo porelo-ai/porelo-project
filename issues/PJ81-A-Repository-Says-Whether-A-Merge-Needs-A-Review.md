@@ -1,6 +1,6 @@
 # PJ81 — A repository says whether a merge needs a review
 
-**Status:** Accepted (operator, 2026-10-30).
+**Status:** Accepted.
 
 **What must be true.** The project file says for each repository whether a pull request on the host's local forge needs
 another person's approval before it is merged (`review: required`, the default) or whether a person with a developer's
@@ -26,8 +26,7 @@ repositories:
   no push straight to `main`; fast-forward only. Every change still goes through a pull request and is on record.
 - **An agent's work** reaches the forge only through the gate, where a person approves it first; with `optional` that is
   its only review by a person, with `required` the forge's approval comes on top.
-- **The project's own repository** takes the same setting as `project.review`, with the same values and default
-  (operator, 2026-10-30).
+- **The project's own repository** takes the same setting as `project.review`, with the same values and default.
 - The key sits in the project file, so changing it is signed by the project admin ([PJ80](README.md#pj80)).
 
 ## To be checked

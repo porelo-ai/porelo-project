@@ -1,6 +1,6 @@
 # PJ79 — An issue names nothing of another repository
 
-**Status:** Accepted (operator, 2026-10-29), to be done now.
+**Status:** Accepted, to be done now.
 
 **What must be true.** An issue in a repository's `issues/` is self-contained: it states the contract it builds against
 in words - a command, a key, a file format, a version - and names no issue, sprint, release or `porelo-project`

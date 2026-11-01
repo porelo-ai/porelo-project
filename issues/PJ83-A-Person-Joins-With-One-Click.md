@@ -1,6 +1,6 @@
 # PJ83 — A person joins with one click
 
-**Status:** Implementing; Estimated and Backlog (operator, 2026-10-30, sprint 6m).
+**Status:** Implementing; Estimated and Backlog (sprint 6m).
 **Size:** XL - it crosses eight repositories and is split into their issues of L or smaller, which sprint 6m lists.
 
 **What must be true.** Every person has one identity, a key pair they keep themselves. Who exists, which hosts exist and

@@ -23,9 +23,8 @@ itself is published. This holds where one of the project's own native packages (
 `porelo-adapters` links `porelo-forge-clients`: that package's source is open, so anyone can rebuild it with a changed
 library, which is what the LGPL asks. An API that others build their own extensions against, such as an adapter's or a
 plugin's interface library, is under Apache-2.0, because such an extension may be closed and shipped as a native
-image, where the LGPL would ask that the library can be replaced. Porelo itself is under the GPL-3.0 (operator,
-2026-10-30: "Für allgemeine Java Libraries gilt der Grundsatz LGPL zu benutzen"). **What would change the answer:** a
-library that turns out to be an API for others' extensions, or an extension API that is to be used as a plain library.
+image, where the LGPL would ask that the library can be replaced. Porelo itself is under the GPL-3.0. **What would change the answer:** 
+a library that turns out to be an API for others' extensions, or an extension API that is to be used as a plain library.
 
 ## Code from outside reaches no secret
 
@@ -106,6 +105,6 @@ people merge, never an agent. **Why:** checking only the top commit refused ever
 change a developer brought in by a pull request, even one the project admin approved, since the forge's approval is no
 signature and `main` takes no direct push; and what the signature protects is the project file - the security class,
 `egress`, the agents, `signers` - not the plans and documents beside it. Not every project wants a second person's
-review of each change (operator, 2026-10-30). **What would change the answer:** a file outside the project file that
+review of each change. **What would change the answer:** a file outside the project file that
 decides what the machines do and cannot be listed as protected.
 

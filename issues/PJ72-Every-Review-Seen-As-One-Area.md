@@ -28,7 +28,7 @@ SARIF results. Nothing in Porelo knows a forge's own format.
     property bag;
   - a thread, a reply and the resolved state live in the result's property bag (SARIF has no threads of its own), the
     resolved state as `porelo/threadState` (`open` or `resolved`), never a `suppression`, which means a finding
-    accepted on purpose (operator, 2026-10-31);
+    accepted on purpose;
   - which round of a check ([PJ67](README.md#pj67)) a result belongs to is its `run`, compared across rounds by `baselineState`.
 - **The adapters convert, nothing else does:** each forge adapter (GitHub, Forgejo, Bitbucket Data Center, ...)
   translates between its forge's pull request review API and the profile, in both directions, and says so in the
@@ -54,19 +54,18 @@ SARIF results. Nothing in Porelo knows a forge's own format.
 
 ## Where code is read: IntelliJ
 
-**Code and diffs are read and commented in IntelliJ** (operator, 2026-10-31): the platform already has the diff, the
+**Code and diffs are read and commented in IntelliJ**: the platform already has the diff, the
 gutter threads and the code navigation. The interface keeps to states and minimal views: what waits, its source level
 and risk class, counts of open findings and threads, and the person's decisions. Letting a waiting push through or
 turning it away stays possible in the interface, with the file list, the risk and one button, so that no decision
-needs an IDE (operator, 2026-10-31). The interface's issues of this area
+needs an IDE. The interface's issues of this area
 ([F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78), [F107](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f107), [F112](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f112), [F190](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f190), [F191](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f191)) are cut down to that before 0.8 starts; what they lose moves to IntelliJ's ([IJ01](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij01), [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04),
-[IJ12](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij12), [IJ13](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij13)) where it is not there yet. The interface's screens drafted for this cut are taken as its shape (operator,
-2026-10-31): a push with a `C3` file asks a second time and names those files; a check that is not complete never
+[IJ12](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij12), [IJ13](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij13)) where it is not there yet. The interface's screens drafted for this cut are taken as its shape: a push with a `C3` file asks a second time and names those files; a check that is not complete never
 refuses letting through or bringing on, and the confirmation names it; *Copy the diff* is dropped for the fetch line;
 the bring-on row shows the source level, risk class and check completeness; a running task's highest class comes with
 its commits, by the gate's rules, with no diff sent.
 A pull request on the host's Forgejo is approved and merged either in IntelliJ or on the forge itself; both stay
-possible, and the interface shows its state and brings approved work on (operator, 2026-10-31).
+possible, and the interface shows its state and brings approved work on.
 
 ## The issues, by theme
 

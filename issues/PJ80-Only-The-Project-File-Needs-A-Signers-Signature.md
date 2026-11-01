@@ -1,6 +1,6 @@
 # PJ80 — Only the project file needs a signer's signature
 
-**Status:** Accepted (operator, 2026-10-30).
+**Status:** Accepted.
 
 **What must be true.** A machine following a project applies a new `main` when every commit that changes the project
 file - or another file that decides what happens on the machines - is signed by a key in `signers`; every other commit

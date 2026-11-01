@@ -34,7 +34,7 @@ porelo  <-  porelo-adapters (Build1, Review1, SARIF mapping, contract suite)  <-
 - **Tested on its own:** each module against recorded answers of its forge, with no Porelo running; the contract suite
   every adapter passes ([GH06](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh06)) stays in
   `porelo-adapters`.
-- **Where the recorded answers come from depends on the kind of forge** (operator, 2026-10-30). Every build tests
+- **Where the recorded answers come from depends on the kind of forge**. Every build tests
   against the recordings alone, with no network and no credential; what differs is how they are made and how often they
   are checked against the real forge:
   - *Open source* (Forgejo, GitLab CE, Jenkins): a Podman container with seeded data, checked live on every build.
@@ -50,7 +50,7 @@ porelo  <-  porelo-adapters (Build1, Review1, SARIF mapping, contract suite)  <-
 - **LGPL-3.0-or-later, as every Java library of the project:** anyone may use it in their own products, closed ones
   included, and changes to the library itself are published. It stays LGPL where `porelo-adapters` links it into a
   native package, since that package's source is open and can be rebuilt with a changed library; only an API that
-  others build their own extensions against takes Apache-2.0 ([PJ33](README.md#pj33), operator, 2026-10-30).
+  others build their own extensions against takes Apache-2.0 ([PJ33](README.md#pj33)).
 - **Agent Gorge owns it,** a new repository agent set up like the others.
 - **When:** in release 0.8, while the Forgejo review adapter is written and GitHub's reader is rewritten for reviews;
   GitHub's build reading moves along with it.
