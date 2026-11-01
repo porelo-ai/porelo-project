@@ -46,10 +46,36 @@ registry), so it is settled here before either works on it.
   and its key checks are answered by its own identity source. A person keeps one card, filed in each directory
   they work in. The interface shows all of them side by side.
 - **A directory is made outside Porelo.** For Git today by a script or by hand, signed; later perhaps otherwise.
-  Porelo only adds a directory an adapter lists as available, from one list with a search field that names no
-  adapter.
+  Porelo only adds directories an adapter lists as available, several at once, from one list with a search field
+  that names no adapter.
+- **Removing a directory removes it from this machine only.** Porelo stops reading it, and its hosts, projects and
+  persons leave the interface. The directory itself, the person's card in it and the hosts stay as they are; a host
+  goes on with the last state brought to it. Withdrawing one's card is a revocation of its own. It is added again
+  from the same list.
 - **The name is "directory"** (German "Verzeichnis") in the interface, Core's and the host's commands and the
   documents, in place of "registry".
+
+## The interface (operator, 2026-11-01)
+
+Drawn by the Coordinator as a design canvas and agreed with the operator; it follows the list screens of today.
+
+- **A rail item of its own,** *Directories*, under *Set up* after *Projects*, with its count.
+- **The list:** the explanation block on top (what a directory is, where it is kept, who vouches for a person),
+  then the filter and *Add a directory*, then one expandable row per directory. Folded, the row shows the name,
+  a short state (my card filed or not, people, hosts) and the one action due, such as *File my card*. Unfolded it
+  shows, without opening the directory: where it is kept, who vouches, my card, owners, hosts, projects, people,
+  what has not reached a host yet, and when it was read.
+- **A directory's page,** like a project's: back to *Directories*, the name with its menu, where it is kept and my
+  card's state, then foldable sections *People*, *Hosts* and *Owners* with filters. A person's row says whether
+  they are trusted (yes; not yet, the identity source not reached; no, revoked). A host's menu holds what the
+  questions allow: *Bring the directory*, *Register a project*, *Add a developer*, *Add a host admin*, *Open the
+  machine*, *Remove the host*.
+- **Add a directory:** a dialog with a search field over the list of every directory the adapters can reach
+  (`available`), several picked at once; ones already added are shown and cannot be picked.
+- **Remove from Porelo…** in a directory's menu, with a confirmation that names the hosts and projects leaving the
+  interface and warns of work running on them.
+- **Forges** keeps only the access to a forge (signed in as, Git over ssh, the check, disconnect, used by). The
+  choice of the registry leaves it.
 
 ## The order of the work (operator, 2026-11-01)
 
