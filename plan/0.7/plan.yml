@@ -116,3 +116,10 @@ sprints:
       - title: "The same plan from a file of answers"
         test: "The wizard runs with nobody there for many machines; a step that needs a person stops it and says so."
         notes: ["a run from a file of answers"]
+  - id: "14"
+    title: "The interface from a Windows desktop"
+    goal: "A person on Windows reaches machines and hosts as a person on Linux does."
+    functions:
+      - title: "A machine and a host reached from Windows"
+        test: "From the Windows build, a machine over ssh shows its projects, work, a terminal and the gate; a host from its card is joined, prepared, admitted and added to, through one ssh process with loopback TCP ends and no master."
+        issues: [porelo-frontend#F108, porelo-frontend#F290]
