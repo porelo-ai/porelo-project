@@ -90,15 +90,18 @@ on) and an id (asked again, the same answer).
 | | `getOwners` | – | owners | |
 | | `getCard` | login | the person's card, or unknown | |
 | | `getHostCard` | host | the host's card, or unknown | |
-| Writing | `putCard` | own signed card, base, id | new revision; refusal with the reason | file a card or a change of key |
-| | `putHostCard` | host, card signed by a host admin, base, id | same | enter a host |
-| | `deleteHostCard` | host, a host admin's signature, base, id | same | remove a host |
-| | `putHostAccess` | host, access file signed by a host admin, base, id | same | a host's admins and projects |
-| | `putOwners` | owners signed by the owners before, base, id | same | change the owners |
+| Writing | `putCard` | the person's card, the acting person, base, id | new revision; refusal with the reason | file a card or a change of key |
+| | `putHostCard` | host, its card, the acting host admin, base, id | same | enter a host |
+| | `deleteHostCard` | host, the acting host admin, base, id | same | remove a host |
+| | `putHostAccess` | host, its admins and projects, the acting host admin, base, id | same | a host's admins and projects |
+| | `putOwners` | the owners, the acting owner, base, id | same | change the owners |
 | Delivery to a host | `deliveryFor` | host | a delivery (Git: a bundle) | what the admin brings to the host |
 | | `acceptDelivery` | delivery, pin, last state | yes with persons and projects; no with the reason | on the host, offline: may this state be taken? |
 
-"No" names the reason: revoked, unknown, not signed by its own key, or not vouched for by the identity source.
+"No" names the reason: revoked, unknown, not proven by the store, or not vouched for by the identity source.
 
-Still open: whether every entry carries its own signature. Today the host's access file and the owners file are
-proven only by the Git commit that changed them, which another store would have to rebuild.
+**Signatures are the adapter's alone** (operator, 2026-11-01). The implementation guarantees itself that the chain
+of trust is closed; the Git adapter does it with signatures, as today, and how another adapter does it is no concern
+of Porelo's. Porelo uses only the API and relies on a correct implementation; it needs no knowledge of signatures.
+So a write hands the adapter the content and the acting person, and the adapter signs it as it must (Git: through
+the person's ssh-agent); `acceptDelivery` on the host is the adapter's code as well.
