@@ -12,8 +12,8 @@ with the operator first; only then does it become issues of Core and Frontend.
 
 In the sprint 6m test (2026-11-01) no project could be started. The interface writes no `project.yml` by design and
 can only follow an existing project repository. Core has no command that writes one. `porelo project follow` needed a
-first access commit, and `porelo project access init` needed a followed project, so each waited on the other (B387
-fixes this wait). On walk6m the steps Register, Add a developer and Join, and everything after them, could not run
+first access commit, and `porelo project access init` needed a followed project, so each waited on the other (Core is fixing
+this wait). On walk6m the steps Register, Add a developer and Join, and everything after them, could not run
 until a project repository was made by hand.
 
 ## Known so far
@@ -21,10 +21,10 @@ until a project repository was made by hand.
 - Frontend: a wizard that hands Core the name, the host, the access address and the signer, and lets Core make and
   sign the repository; size M. It needs Core's creation command as its contract.
 - Core: a command that writes `project.yml` (signers, the access repository) and commits it signed through the
-  person's agent; B387 lets `follow` take an empty access repository so that `access init` writes the first access
+  person's agent; Core's fix lets `follow` take an empty access repository so that `access init` writes the first access
   commit.
 - Machines: the host registers the project as root today (`porelo-host-project add`); a person registering it is
-  HO88.
+  [HO88](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho88).
 
 ## Open questions
 
