@@ -32,8 +32,21 @@ registry), so it is settled here before either works on it.
   repository…*, the first thing to do, stands below the empty registry list. The operator wants the page redesigned
   with Frontend.
 
-## Open questions
+## Decided (operator, 2026-11-01)
 
-- What the interface holds: persons and their cards, hosts and their cards, owners, admissions, revocations.
-- How trust is kept when the store is not a signed Git history.
-- Whether a machine may read several registries at once, and which one a person's card is filed in.
+- **Two interfaces, the check stays in Core.** One is where the signed entries are kept (Git first, a database
+  later); the other is who vouches for a login and its keys and who owns the organisation (GitHub first, later
+  Forgejo, LDAP or OIDC). Core checks every signature the same way whatever the store.
+- **The store guarantees its history.** Each implementation keeps a history that cannot be rewritten unnoticed
+  (Git's descent from the pinned state; an append-only table in a database), so no revocation and no older card
+  can be played back silently. Core relies on the store for it.
+- **Several directories on one machine, kept apart.** Each holds only its own hosts and projects; its revocations
+  and its key checks are answered by its own identity source. A person keeps one card, filed in each directory
+  they work in. The interface shows all of them side by side.
+- **The name is "directory"** (German "Verzeichnis") in the interface, Core's and the host's commands and the
+  documents, in place of "registry".
+
+## Still open
+
+- How the store states its guarantee, and how a host checks a directory brought from a store that is not Git.
+- The order of the work: the rename, several directories, then a second store and a second identity source.
