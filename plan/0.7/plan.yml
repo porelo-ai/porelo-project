@@ -148,6 +148,9 @@ sprints:
       - title: "A project access contract without guessing"
         test: "A filed request is looked up by its id; verify names the access commit's signer and the head it took; access add answers for an admin already listed."
         issues: [porelo#B386]
+      - title: "Each person's state named by sync and status"
+        test: "The host's sync and registry status name each person's state on the host, so the interface confirms Add, Lock and Let back in from it."
+        issues: [porelo-host#HO90]
   - id: "16"
     title: "Clearing up 0.7"
     goal: "Each repository's gathered small findings are worked off or become issues of their own."
