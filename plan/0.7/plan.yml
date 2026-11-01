@@ -123,3 +123,29 @@ sprints:
       - title: "A machine and a host reached from Windows"
         test: "From the Windows build, a machine over ssh shows its projects, work, a terminal and the gate; a host from its card is joined, prepared, admitted and added to, through one ssh process with loopback TCP ends and no master."
         issues: [porelo-frontend#F108, porelo-frontend#F290]
+  - id: "15"
+    title: "What 0.6 left, placed"
+    goal: "The follow-ups of 0.6's last sprint, each a function of its own."
+    functions:
+      - title: "A project registered from the admin's own account"
+        test: "The project's admin registers it from the interface; the host makes its forge organization and teams; no root step."
+        issues: [porelo-host#HO88]
+      - title: "Add confirmed, Lock and Let back in from the interface"
+        test: "Add a developer is confirmed by the person's state on the host; Lock and Let back in are offered and confirmed the same way."
+        issues: [porelo-frontend#F292]
+      - title: "The host and project access hardened"
+        test: "git runs in a clean environment; bundles are placed in one ssh call and at once; sudo runs without the login shell; the registry is held while a bundle is sent."
+        issues: [porelo-frontend#F293]
+      - title: "The subagent number chosen when starting"
+        test: "The start dialog shows the number of subagents that applies, takes another one, and says a number Core refuses before anything is made."
+        issues: [porelo-frontend#F284]
+      - title: "A registry commit split as git splits it"
+        test: "A commit with any gpgsig header is judged by Porelo as git judges it, through one shared splitting."
+        issues: [porelo#B374]
+  - id: "16"
+    title: "Clearing up 0.7"
+    goal: "Each repository's gathered small findings are worked off or become issues of their own."
+    functions:
+      - title: "The gathered findings worked off"
+        test: "B380, HO86 and F288 hold no open point; a point that proved larger is an issue of its own."
+        issues: [porelo#B380, porelo-host#HO86, porelo-frontend#F288]
