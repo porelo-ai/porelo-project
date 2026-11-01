@@ -58,3 +58,47 @@ All in 0.7, none before the test on a rented machine; a second store, such as a 
    Machines, documents).
 3. Several directories on one machine, kept apart (Core, Frontend).
 4. A second identity source, such as Forgejo (Core, Frontend).
+
+## Draft API (Coordinator, from today's commands; Core to check against the code)
+
+The identity source:
+
+- `vouches(login, fingerprint)`: whether the key belongs to that person: yes, no, or cannot say. The adapter asks its
+  source as it can (GitHub: the login's key lists); a list of all keys is not part of the API.
+- `owns(organisation, login)`: whether the login owns the organisation: yes, no, or cannot say; needed for the first
+  owners file that founds a directory.
+- Optional, for the interface's *See the keys the forge lists*: the keys of a login, where a source offers them.
+
+The store, `DirectoryStore`, asked by question wherever Porelo decides, read only for display (operator,
+2026-11-01). Every answer names the revision it rests on, and a revision can be given, so that several questions are
+asked against one state. Every write names the revision it was made against (`base`, refused when the store moved
+on) and an id (asked again, the same answer).
+
+| Kind | Function | Input | Answer | The question or purpose |
+|---|---|---|---|---|
+| Connection | `open` | address | handle, or a refusal | connect |
+| | `close` | – | – | clean up |
+| Questions | `trusts` | login, key | yes; no with the reason; cannot say | is it their key, and not revoked? |
+| | `keyHolder` | key | login, or nobody | does another person hold this key? |
+| | `isOwner` | login | yes, no | may they change the directory? |
+| | `isHostAdmin` | host, login | yes, no | may they administer this host? |
+| | `projectAdmin` | host, project | login, or no such project | who answers for the project on the host? |
+| | `reach` | host | address, port, host key; or unknown | how is the host reached safely? |
+| | `joinable` | login | list of host, project, admin | where may they join? |
+| Reading, for display | `getPersons` | – | persons with their state | |
+| | `getHosts` | – | hosts with admins and projects | |
+| | `getOwners` | – | owners | |
+| | `getCard` | login | the person's card, or unknown | |
+| | `getHostCard` | host | the host's card, or unknown | |
+| Writing | `putCard` | own signed card, base, id | new revision; refusal with the reason | file a card or a change of key |
+| | `putHostCard` | host, card signed by a host admin, base, id | same | enter a host |
+| | `deleteHostCard` | host, a host admin's signature, base, id | same | remove a host |
+| | `putHostAccess` | host, access file signed by a host admin, base, id | same | a host's admins and projects |
+| | `putOwners` | owners signed by the owners before, base, id | same | change the owners |
+| Delivery to a host | `deliveryFor` | host | a delivery (Git: a bundle) | what the admin brings to the host |
+| | `acceptDelivery` | delivery, pin, last state | yes with persons and projects; no with the reason | on the host, offline: may this state be taken? |
+
+"No" names the reason: revoked, unknown, not signed by its own key, or not vouched for by the identity source.
+
+Still open: whether every entry carries its own signature. Today the host's access file and the owners file are
+proven only by the Git commit that changed them, which another store would have to rebuild.
