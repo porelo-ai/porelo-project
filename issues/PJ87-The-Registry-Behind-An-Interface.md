@@ -45,6 +45,9 @@ registry), so it is settled here before either works on it.
 - **Several directories on one machine, kept apart.** Each holds only its own hosts and projects; its revocations
   and its key checks are answered by its own identity source. A person keeps one card, filed in each directory
   they work in. The interface shows all of them side by side.
+- **A directory is made outside Porelo.** For Git today by a script or by hand, signed; later perhaps otherwise.
+  Porelo only adds a directory an adapter lists as available, from one list with a search field that names no
+  adapter.
 - **The name is "directory"** (German "Verzeichnis") in the interface, Core's and the host's commands and the
   documents, in place of "registry".
 
