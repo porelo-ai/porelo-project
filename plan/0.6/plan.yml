@@ -504,6 +504,9 @@ sprints:
       - title: "The first release's leg installs the release"
         test: "Not a walk: on the first tag run of 0.6, on a `porelo-buildtools` release holding the change, an agent repository's and `porelo-frontend`'s legs install the released Porelo from its channel, and their logs name it; a reader refuses a wrong channel or a candidate as proof of the tested release. The release stops if it fails."
         issues: [porelo-buildtools#BT01]
+      - title: "The gate and the transport held by tests"
+        test: "Not a walk: a mutation run of `porelo-message-matrix` shows that removing a refusal of the gate or its parser, a certificate check on any trust path, or what keeps a message or a copy whole fails a unit test; a task of the project `default` joins no room, and a stalled client loses its connection."
+        issues: [porelo-message-matrix#MX66, porelo-message-matrix#MX68, porelo-message-matrix#MX69, porelo-message-matrix#MX70, porelo-message-matrix#MX71, porelo-message-matrix#MX72, porelo-message-matrix#MX73, porelo-message-matrix#MX74, porelo-message-matrix#MX75]
       - title: "No channel file and no hand-over directory any more"
         test: "Every `AGENTS.md` describes Matrix, Forgejo and the gate; the channel file, the hand-over directory and the agents' own VM accounts are gone."
         notes: ["every repository's AGENTS.md rewritten"]
