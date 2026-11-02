@@ -49,11 +49,3 @@ sprints:
       - title: "Recognize a token awaiting organization approval"
         test: "Create a project against the GitHub test organization with a token awaiting approval. The interface says it is waiting for approval instead of calling it invalid; after approval the operation succeeds."
         issues: [porelo-frontend#F115, porelo-frontend#F59]
-  - id: "7"
-    title: "Follow a local or offline project"
-    goal: "Project intake works without a public repository."
-    functions:
-      - title: "Follow a local or offline project"
-        test: "Select a directory and bundle, watch the upload and reconnect. The followed project is recognized as a file source. A bundle above 1 GiB, a disallowed path and a damaged bundle are refused."
-        issues: [porelo#B160, porelo-frontend#F104]
-        notes: ["Deliver the core upload before the interface flow."]

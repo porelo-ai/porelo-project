@@ -1,6 +1,6 @@
 # PJ88 — A project created from the interface
 
-**Status:** Backlog (estimated L).
+**Status:** Implementing.
 **Severity:** medium.
 
 **What must be true.** An organization owner creates a new project from the interface, under *Organization ›

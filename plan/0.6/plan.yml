@@ -287,12 +287,12 @@ sprints:
       - title: "A host prepared with no project or person"
         test: "The host admin prepares a rented server from the interface: the VPN on `10.73.<n>.0/24`, the shared forge, runner, pool and homeserver under the host's names, their certificates signed by the host admin's lasting CA; no project and no person is made. A laptop reaches two hosts, one VPN each; a host whose network collides is refused."
         tested: "2026-10-30"
-        issues: [porelo-message-matrix#MX54, porelo-host#HO42, porelo-frontend#F208, porelo-frontend#F209, porelo-frontend#F210, porelo-frontend#F212, porelo-frontend#F211]
+        issues: [porelo-message-matrix#MX54, porelo-frontend#F208, porelo-frontend#F209, porelo-frontend#F210, porelo-frontend#F212, porelo-frontend#F211]
         covers: [porelo-project#PJ78]
       - title: "A person admitted, locked and purged; a project registered and taken off"
         test: "The host admin admits a project admin by hand, who gets an account of their own and a token of the shared homeserver, named `<host>-<account>` in the room; a locked person loses every access without a terminal, and a purge removes the account. A project registered and taken off leaves the host and its forge standing."
         tested: "2026-10-30"
-        issues: [porelo-host#HO43, porelo-host#HO44, porelo-message-matrix#MX44, porelo#B312, porelo#B315]
+        issues: [porelo-message-matrix#MX44, porelo#B312, porelo#B315]
         covers: [porelo-project#PJ78]
   - id: "6k"
     title: "A project put on a prepared host"
@@ -301,7 +301,7 @@ sprints:
       - title: "A project brought by its project admin"
         test: "The project admin brings a project onto the prepared host from the interface: its repositories in a forge organization of its own, `main` protected, the gate and the agents with their forge identities, the gathered push set up. The project names a signed `access.yml`, in a private repository of its own or beside `project.yml`; one whose `host:` block is another host's admits nothing. A second project is brought without a new host setup, and the one button of the interface prepares the host the first time only."
         tested: "2026-10-30"
-        issues: [porelo#B310, porelo#B311, porelo#B320, porelo-host#HO45, porelo-frontend#F214, porelo-frontend#F213]
+        issues: [porelo#B310, porelo#B311, porelo#B320, porelo-frontend#F214, porelo-frontend#F213]
         covers: [porelo-project#PJ78]
   - id: "6l"
     title: "Developers kept to the signed list"
@@ -310,7 +310,7 @@ sprints:
       - title: "Developers added and dropped through the access file"
         test: "A developer added to the signed `access.yml` joins from their own laptop with their own key and works; one dropped is locked at once at the next `sync`, unless another project or the host admin still holds them; an unsigned or altered access file changes nothing; a project taken off locks whoever has no membership left, and `down` refuses while anyone holds one, naming them."
         tested: "2026-10-30"
-        issues: [porelo-host#HO46, porelo-host#HO55, porelo-frontend#F215, porelo-frontend#F216, porelo-frontend#F232]
+        issues: [porelo-frontend#F215, porelo-frontend#F216, porelo-frontend#F232]
         covers: [porelo-project#PJ78]
   - id: "6m"
     title: "One key per person, the state in Git"
@@ -371,61 +371,39 @@ sprints:
         test: "The display started on porelo-adapters' GitHub stand-in shows every push of the recorded pull request in order with no warning line, and each push opens."
         issues: [porelo-adapters#GH12]
         tested: "2026-11-02"
-  - id: "6o"
-    title: "Before real use: what 6m left"
-    goal: "What the 6m test and its readings left that a real host or a first key would meet is done."
-    functions:
-      - title: "Host cards by name, a forge on its own port, a fast build"
-        test: "A host card with a DNS name or an IPv6 address is read for Register and Add; a vault token is lent to a forge on a port other than 443; the porelo Build's verify ends in about 12 minutes."
-        issues: [porelo-frontend#F291, porelo#B373, porelo#B383]
-  - id: "6p"
-    title: "The organization behind an interface"
-    goal: "The organization's API and the Git adapter are taken out of today's registry code, with the security requirements as contract tests every adapter passes; nothing visible changes."
-    functions:
-      - title: "The registry's code split into an API and a Git adapter"
-        test: "Every walk of 6m that reads or files the registry passes unchanged; the contract tests fail against an adapter that accepts an unsigned change, a played-back older state or a revoked card."
-        issues: [porelo#B390, porelo#B392]
-        covers: [porelo-project#PJ87]
   - id: "6q"
-    title: "A project apart from its machines, in one organization"
-    goal: "The cut: the registry becomes the organization, a project names no host, a host follows its projects by itself, and nobody joins; built side by side on branches against one contract and merged for one walk."
+    title: "The rebuild: a project apart from its machines, in one organization"
+    goal: "The registry becomes the organization behind an interface, a project names no host, a host follows its projects by itself, and nobody joins; everything still open from 6j to 6r is tested with it in one walk on one rebuilt host."
     functions:
       - title: "The organization's page, and a project created there"
-        test: "An organization made anew by Core's script shows its people, projects, hosts and owners; each person sees only the actions of their roles; an organization owner adds a project and names its project admin, who makes its project repository on first opening it."
+        test: "An organization made anew by Core's script shows its people, projects, hosts and owners; each person sees only the actions of their roles; an organization owner adds a project and names its project admin, who makes its project repository on first opening it; a lost key is withdrawn and replaced, and the organization goes on."
         issues: [porelo#B391, porelo-frontend#F309, porelo-frontend#F311, porelo-frontend#F314, porelo-frontend#F315]
         notes: ["Core's organization commands"]
         covers: [porelo-project#PJ87, porelo-project#PJ88]
+      - title: "The organization behind an interface"
+        test: "The contract tests fail against an adapter that accepts an unsigned change, a played-back older state or a revoked card."
+        issues: [porelo#B390, porelo#B392]
+        covers: [porelo-project#PJ87]
       - title: "A project edited on its own page, with no machine"
         test: "The project admin adds and removes repositories and members and changes a role on the project's page; a member sees it read-only; nothing on it names a host."
         issues: [porelo-frontend#F310]
         notes: ["Core's project commands"]
         covers: [porelo-project#PJ89]
       - title: "A host carries projects and follows them by itself"
-        test: "A host admin puts a project on a host with their central token; every member is admitted there within five minutes or at once on Refresh, and a member removed is locked there at the same moment, with no step of anyone; a person connects once per host and finds every project they are in ready, with no Join."
-        issues: [porelo-host#HO93, porelo-host#HO94, porelo-host#HO95, porelo-host#HO96, porelo-message-matrix#MX65, porelo-frontend#F312, porelo-frontend#F313]
+        test: "A host admin puts a project on a host with their central token; every member is admitted there within five minutes or at once on Refresh, and a member removed is locked there at the same moment, with no step of anyone; a person connects once per host and finds every project they are in ready, with no Join; a project taken off the host leaves nothing of itself there."
+        issues: [porelo-host#HO93, porelo-host#HO94, porelo-host#HO95, porelo-host#HO96, porelo-message-matrix#MX65, porelo-message-matrix#MX67, porelo-frontend#F312, porelo-frontend#F313]
         covers: [porelo-project#PJ89]
-  - id: "6r"
-    title: "What 6m left untested, after the rebuild"
-    goal: "The functions of 6m that had no step are walked once the interface's new structure and its API stand (porelo-project#PJ87, porelo-project#PJ89)."
-    functions:
+      - title: "A host prepared once, its roles on it, and a person leaving"
+        test: "A host set up anew carries its host admin and no project; on it the host admin, a project admin and members each do what their role allows and nothing more, without the VPN; any member runs the gathered push to the central forge with their own token; a person with no membership left is purged after seven days; the host has no forge user `operator`."
+        issues: [porelo-host#HO42, porelo-host#HO43, porelo-host#HO44, porelo-host#HO47, porelo-host#HO53, porelo-host#HO55, porelo-host#HO63, porelo-host#HO74]
+        covers: [porelo-project#PJ78, porelo-project#PJ83]
       - title: "The host vault opened by the person's key"
         test: "Opening the tunnel unlocks the person's host vault without a passphrase or prompt; the share stays in locked memory until the host restarts or the person is locked; after a reboot the vault waits for the next connection; a lost key means the vault is deleted and set up again."
         issues: [porelo#B345]
         covers: [porelo-project#PJ83]
-      - title: "The gathered push by any developer, every role on one host"
-        test: "Any developer runs the gathered push to the central forge with their own token; on one host the host admin, two project admins and their developers each do what their role allows and nothing more."
-        issues: [porelo-host#HO47, porelo-host#HO48, porelo-host#HO63, porelo-host#HO74, porelo-frontend#F279]
-        covers: [porelo-project#PJ78, porelo-project#PJ83]
-      - title: "No forge user `operator`"
-        test: "A host set up anew has no forge user `operator`; on a host set up before, it is gone after `up`, and the forge's people, protection and owners still work."
-        issues: [porelo-host#HO53]
-      - title: "The room made and kept on a central homeserver"
-        test: "The project's room is made on a central homeserver; the project admin's Porelo keeps its members to the developers of the access file, adding and removing them."
-        issues: [porelo-message-matrix#MX45, porelo#B314]
-        covers: [porelo-project#PJ78]
-      - title: "A KeePassXC key that is usable"
-        test: "A new key made in KeePassXC asks for the master password once; a retry after key-not-served takes the key already made; no empty or orphaned entry is left; without a terminal the refusal says so."
-        issues: [porelo#B385]
+      - title: "Host cards by name, a forge on its own port, a fast build"
+        test: "A host card with a DNS name or an IPv6 address is read and connected; a vault token is lent to a forge on a port other than 443; the porelo Build's verify ends in about 12 minutes, shown by a real Build and not by a step of the walk."
+        issues: [porelo-frontend#F291, porelo#B373, porelo#B383]
   - id: "6s"
     title: "The agent already on the machine is taken"
     goal: "Pulled forward from 0.7 beside the rebuild: the agent protocol only grows, and each packaged agent says what it finds of itself on the host."
@@ -443,12 +421,6 @@ sprints:
       - title: "Builds on the host's forge resolve snapshots with a read-only token"
         test: "Every project's organization on the host holds `PORELO_PACKAGES_READ_TOKEN` (scope `read:package`) and its own `MAVEN_SNAPSHOTS_URL`; a build on an unreviewed branch resolves snapshots with it and holds no publisher's token, only the deploying step on `main` does; a missing `MAVEN_SNAPSHOTS_URL` fails the Build on any forge but github.com."
         issues: [porelo-host#HO52, porelo-buildtools#BT39, porelo-message-sluice#SL36, porelo-claude-code#CC41, porelo-pi#PI41, porelo-omp#OM38]
-      - title: "A host follows its project across a signer handover"
-        test: "Hand the project's signing over to a new signer. `following --json` names the keys it pinned; a host's bring verifies with `--since` using them and takes the new signer's commit, and a commit signed by a dropped key is refused."
-        issues: [porelo#B332, porelo-host#HO57]
-      - title: "Leaving a host clears the person's push and sync"
-        test: "Remove a person from a host; their push configuration and their sync timer are gone, and no sync runs for them afterwards."
-        issues: [porelo-host#HO56]
       - title: "A person in the project's room on a host"
         test: "A developer of the access file, logged in with their host account over an ssh forward, reads and writes in the project's room on the host's homeserver; dropped from the access file, they leave the room at the next sync."
         issues: [porelo-message-matrix#MX55]
