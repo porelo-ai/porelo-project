@@ -73,6 +73,11 @@ issue carries it through the whole handling of a project.
   Git on the central forge) is known only to the adapter, never to Porelo. As with the organization
   ([PJ87](PJ87-The-Organization-Behind-An-Interface.md)), the adapter guarantees that a state it hands over is signed by
   the project's signers and cannot be played back.
+- **The host admin's token brings a project onto the host.** Putting a project on a host sends the host admin's
+  central token through the tunnel once, as the gathered push does today, so the project's repositories are on the
+  host's forge at once; nothing waits for another person's first connection.
+- **A host takes a change within five minutes, or at once on asking.** The host fetches its organization's and its
+  projects' state every five minutes; *Refresh* on the host's page fetches it at once.
 - **A member's card is enough for a host.** A host admits a person when the organization names them as a member of the
   project and trusts their card. The host admin pins no developer: the host's `admins` name only its host
   admins, and the host admin decides which projects the host carries, never which persons.
