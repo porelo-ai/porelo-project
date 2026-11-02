@@ -377,9 +377,6 @@ sprints:
       - title: "Host cards by name, a forge on its own port, a fast build"
         test: "A host card with a DNS name or an IPv6 address is read for Register and Add; a vault token is lent to a forge on a port other than 443; the porelo Build's verify ends in about 12 minutes."
         issues: [porelo-frontend#F291, porelo#B373, porelo#B383]
-      - title: "A KeePassXC key that is usable"
-        test: "A new key made in KeePassXC asks for the master password once; a retry after key-not-served takes the key already made; no empty or orphaned entry is left; without a terminal the refusal says so."
-        issues: [porelo#B385]
   - id: "6p"
     title: "The organization behind an interface"
     goal: "The organization's API and the Git adapter are taken out of today's registry code, with the security requirements as contract tests every adapter passes; nothing visible changes."
@@ -425,6 +422,9 @@ sprints:
         test: "The project's room is made on a central homeserver; the project admin's Porelo keeps its members to the developers of the access file, adding and removing them."
         issues: [porelo-message-matrix#MX45, porelo#B314]
         covers: [porelo-project#PJ78]
+      - title: "A KeePassXC key that is usable"
+        test: "A new key made in KeePassXC asks for the master password once; a retry after key-not-served takes the key already made; no empty or orphaned entry is left; without a terminal the refusal says so."
+        issues: [porelo#B385]
   - id: "6s"
     title: "The agent already on the machine is taken"
     goal: "Pulled forward from 0.7 beside the rebuild: the agent protocol only grows, and each packaged agent says what it finds of itself on the host."
