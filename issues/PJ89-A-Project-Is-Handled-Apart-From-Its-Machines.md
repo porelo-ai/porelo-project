@@ -17,7 +17,7 @@ takes them off again. The other edits projects and who belongs to them, and has 
 Porelo and the interface mix the two, so the steps of either cannot be followed, and a person is asked to join a
 project they were already added to.
 
-[PJ87](PJ87-The-Registry-Behind-An-Interface.md) records the separation as decided for the organization's host menu; this
+[PJ87](PJ87-The-Organization-Behind-An-Interface.md) records the separation as decided for the organization's host menu; this
 issue carries it through the whole handling of a project.
 
 ## Found in the same test
@@ -43,7 +43,7 @@ issue carries it through the whole handling of a project.
 
 - **A project is its `project.yml` and its part of the organization.** `project.yml`, in the project's repository,
   holds its repositories, its agents and its signers. The organization
-  ([PJ87](PJ87-The-Registry-Behind-An-Interface.md)) holds the project's card (its name, the address of its project
+  ([PJ87](PJ87-The-Organization-Behind-An-Interface.md)) holds the project's card (its name, the address of its project
   repository, its project admin) and its members with their role, changed by the project admin. A member's key is the
   one on their card. The access file leaves with no transition: no `access.repository`, no access repository, no host
   block, no person's `hosts:` list; which projects a host carries is the host's, kept in the organization.
@@ -71,7 +71,7 @@ issue carries it through the whole handling of a project.
   a host. The host asks the
   installed adapter for the current, signed state of its organization and of each project it carries, and applies it; where and how the project is kept (today
   Git on the central forge) is known only to the adapter, never to Porelo. As with the organization
-  ([PJ87](PJ87-The-Registry-Behind-An-Interface.md)), the adapter guarantees that a state it hands over is signed by
+  ([PJ87](PJ87-The-Organization-Behind-An-Interface.md)), the adapter guarantees that a state it hands over is signed by
   the project's signers and cannot be played back.
 - **A member's card is enough for a host.** A host admits a person when the organization names them as a member of the
   project and trusts their card. The host admin pins no developer: the host's `admins` name only its host
@@ -83,7 +83,7 @@ issue carries it through the whole handling of a project.
 
 The change is a hard cut, so the old and the new structure are never kept side by side; the cut itself lands in one
 sprint, and until then the old structure keeps working. Together with
-[PJ87](PJ87-The-Registry-Behind-An-Interface.md) and [PJ88](PJ88-A-Project-Created-From-The-Interface.md):
+[PJ87](PJ87-The-Organization-Behind-An-Interface.md) and [PJ88](PJ88-A-Project-Created-From-The-Interface.md):
 
 | Sprint | Step | Who | What works at its end |
 |---|---|---|---|

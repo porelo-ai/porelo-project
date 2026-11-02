@@ -10,7 +10,7 @@ organization is added and removed in the interface.
 
 ## Why
 
-[PJ87](PJ87-The-Registry-Behind-An-Interface.md) gives a machine one organization, set when Porelo is set up there;
+[PJ87](PJ87-The-Organization-Behind-An-Interface.md) gives a machine one organization, set when Porelo is set up there;
 the interface never asks which organization. A person who works for several organizations needs more than one on the
 same machine.
 
@@ -41,4 +41,4 @@ same machine.
   work running on them.
 
 Until then the interface has no list of organizations and no *Add an organization*; the design canvas of
-[PJ87](PJ87-The-Registry-Behind-An-Interface.md) shows the one organization's page only.
+[PJ87](PJ87-The-Organization-Behind-An-Interface.md) shows the one organization's page only.

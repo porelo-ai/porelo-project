@@ -371,7 +371,7 @@ sprints:
       - title: "A KeePassXC key that is usable"
         test: "A new key made in KeePassXC asks for the master password once; a retry after key-not-served takes the key already made; no empty or orphaned entry is left; without a terminal the refusal says so."
         issues: [porelo#B385]
-  - id: "6p"
+  - id: "6r"
     title: "What 6m left untested, after the rebuild"
     goal: "The functions of 6m that had no step are walked once the interface's new structure and its API stand (porelo-project#PJ87, porelo-project#PJ89)."
     functions:

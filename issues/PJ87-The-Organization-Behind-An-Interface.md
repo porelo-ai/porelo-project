@@ -1,4 +1,4 @@
-# PJ87 — The registry behind an interface
+# PJ87 — The organization behind an interface
 
 **Status:** Idea.
 **Severity:** medium.

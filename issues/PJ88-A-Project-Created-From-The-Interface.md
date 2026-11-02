@@ -31,7 +31,7 @@ until a project repository was made by hand.
 ## Decided
 
 - **Only an organization owner adds or removes a project** (`addProject`, `removeProject` in
-  [PJ87](PJ87-The-Registry-Behind-An-Interface.md)); a project admin edits the project they are given.
+  [PJ87](PJ87-The-Organization-Behind-An-Interface.md)); a project admin edits the project they are given.
 - **No access file.** A project's members are kept in the organization, so there is no access repository and no
   first access commit to make ([PJ89](PJ89-A-Project-Is-Handled-Apart-From-Its-Machines.md)).
 - **The project admin signs the first `project.yml`.** The organization owner adds the project's card; the project
