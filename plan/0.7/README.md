@@ -3,11 +3,11 @@
 
 A developer starts in a repository they already have, led by the Porelo Wizard
 
-*Stand: 2026-11-02T14:10:00Z*
+*Stand: 2026-11-02T21:22:31Z*
 
 ## Sprint progress
 
-![Sprint 1: Review 1, Implementing 1, Estimated 1, Analyzed 3; Sprint 2: Estimated 2, Analyzed 1; Sprint 3: Backlog 1, Analyzed 1, Idea 1; Sprint 4: Idea 1; Sprint 5: Estimated 1, Analyzed 2; Sprint 6: Estimated 3, Analyzed 1, Idea 2; Sprint 7: Review 1, Estimated 1; Sprint 8: Backlog 1, Estimated 1, Analyzed 1; Sprint 9: Idea 6; Sprint 10: Backlog 2, Estimated 3, Analyzed 4, Accepted 1, Not filed yet 1; Sprint 11: Accepted 1, Not filed yet 4; Sprint 12: Estimated 2; Sprint 13: Not filed yet 3; Sprint 14: Review 1, Idea 1; Sprint 15: Idea 8; Sprint 16: Idea 3](progress-910226b7.svg)
+![Sprint 1: Review 1, Implementing 1, Estimated 1, Analyzed 2; Sprint 2: Estimated 2, Analyzed 1; Sprint 3: Backlog 1, Analyzed 1, Idea 1; Sprint 4: Idea 1; Sprint 5: Estimated 1, Analyzed 2; Sprint 6: Estimated 3, Analyzed 1, Idea 2; Sprint 7: Review 1, Estimated 1; Sprint 8: Backlog 1, Estimated 1, Analyzed 1; Sprint 9: Idea 6; Sprint 10: Review 3, Implementing 1, Estimated 3, Analyzed 2, Not filed yet 1; Sprint 11: Accepted 1, Not filed yet 4; Sprint 12: Estimated 2; Sprint 13: Not filed yet 3; Sprint 14: Review 1, Idea 1; Sprint 15: Backlog 1, Idea 2; Sprint 16: Idea 3](progress-71556457.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -23,7 +23,7 @@ A developer starts in a repository they already have, with no project written an
 
 Test: A task starts in a checkout in `default`; a followed project naming the repository is offered to take it; a repository with no commit, an unreadable upstream or a failed fetch is named as what it is, with the next step.
 
-🟨 [PJ14](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj14 "porelo-project#PJ14 · Implementing · M · Work starts without a project") ⬛ [B229](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b229 "porelo#B229 · Analyzed · S · A Follow Of A Repository Without A Commit Says So") ⬛ [B33](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b33 "porelo#B33 · Analyzed · S · A Task's Own Fetches") 🟦 [F118](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f118 "porelo-frontend#F118 · Review · — · An Upstream That Cannot Be Read Said Before A Start")
+🟨 [PJ14](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj14 "porelo-project#PJ14 · Implementing · M · Work starts without a project") ⬛ [B33](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b33 "porelo#B33 · Analyzed · S · A Task's Own Fetches") 🟦 [F118](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f118 "porelo-frontend#F118 · Review · — · An Upstream That Cannot Be Read Said Before A Start")
 
 **Keys and providers without stumbling ⚪ Not tested**
 
@@ -161,7 +161,7 @@ Whoever needs more than the default image or `default` gets drafts from what the
 
 Test: For a Maven repository, a `.porelo.yml` and where needed a `project.yml` draft, each value with its source; a project kept in a local repository is read again at `refresh`.
 
-🟪 [PJ52](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj52 "porelo-project#PJ52 · Estimated · XL · A repository's build tools are recognized and a project proposed") ⬛ [B220](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b220 "porelo#B220 · Analyzed · M · Build-Tool Plugins Found At Run Time") ⬛ [B221](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b221 "porelo#B221 · Analyzed · L · A Project Proposed From A Checkout") ⬛ [B227](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b227 "porelo#B227 · Analyzed · S · A Project Followed From A Path Is Refreshed") 🔲 [EC01](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec01 "porelo-ecosystems#EC01 · Backlog · S · A Spike Of The Model Builder In A Native Image") 🔲 [EC02](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec02 "porelo-ecosystems#EC02 · Backlog · M · Maven Repository Hosts Recognized From A Checkout And The Settings") ⬜ [EC03](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec03 "porelo-ecosystems#EC03 · Accepted · - · The Maven Plugin Behind The Contract") ◻️ Maven first; the other plugins in porelo-ecosystems stay Accepted
+🟪 [PJ52](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj52 "porelo-project#PJ52 · Estimated · XL · A repository's build tools are recognized and a project proposed") 🟨 [B220](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b220 "porelo#B220 · Implementing · M · Build-Tool Plugins Found At Run Time") ⬛ [B221](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b221 "porelo#B221 · Analyzed · L · A Project Proposed From A Checkout") 🟦 [EC01](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec01 "porelo-ecosystems#EC01 · Review · S · A Spike Of The Model Builder In A Native Image") 🟦 [EC02](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec02 "porelo-ecosystems#EC02 · Review · M · Maven Repository Hosts Recognized From A Checkout And The Settings") 🟦 [EC03](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec03 "porelo-ecosystems#EC03 · Review · M · The Maven Plugin Behind The Contract") ◻️ Maven first; the other plugins in porelo-ecosystems stay Accepted
 
 **The drafts shown before the first task ⚪ Not tested**
 
@@ -251,23 +251,11 @@ Test: From the Windows build, a machine over ssh shows its projects, work, a ter
 
 The follow-ups of 0.6's last sprint, each a function of its own.
 
-**A project registered from the admin's own account ⚪ Not tested**
+**A KeePassXC key that is usable ⚪ Not tested**
 
-Test: The project's admin registers it from the interface; the host makes its forge organization and teams; no root step.
+Test: A new key made in KeePassXC asks for the master password once; a retry after key-not-served takes the key already made; no empty or orphaned entry is left; without a terminal the refusal says so.
 
-🟧 [HO88](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho88 "porelo-host#HO88 · Idea · - · A Project Registered From The Admin's Own Account")
-
-**Add confirmed, Lock and Let back in from the interface ⚪ Not tested**
-
-Test: Add a developer is confirmed by the person's state on the host; Lock and Let back in are offered and confirmed the same way.
-
-🟧 [F292](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f292 "porelo-frontend#F292 · Idea · M · A Developer Confirmed By The Host's Registry Status")
-
-**The host and project access hardened ⚪ Not tested**
-
-Test: git runs in a clean environment; bundles are placed in one ssh call and at once; sudo runs without the login shell; the registry is held while a bundle is sent.
-
-🟧 [F293](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f293 "porelo-frontend#F293 · Idea · M · Host Deliveries Hardened")
+🔲 [B385](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b385 "porelo#B385 · Backlog · L · A KeePassXC Key That Is Usable")
 
 **The subagent number chosen when starting ⚪ Not tested**
 
@@ -275,29 +263,11 @@ Test: The start dialog shows the number of subagents that applies, takes another
 
 🟧 [F284](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f284 "porelo-frontend#F284 · Idea · — · The Subagent Number Chosen When Starting")
 
-**A registry commit split as git splits it ⚪ Not tested**
-
-Test: A commit with any gpgsig header is judged by Porelo as git judges it, through one shared splitting.
-
-🟧 [B374](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b374 "porelo#B374 · Idea · S · A Registry Commit Split As Git Splits It")
-
 **A start that waits for its helpers ⚪ Not tested**
 
 Test: A start whose gate or relay does not come up ends with a code; a start waits for both; two starts of one name never stop each other's task.
 
 🟧 [B384](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b384 "porelo#B384 · Idea · S · A Start That Waits For Its Helpers")
-
-**A project access contract without guessing ⚪ Not tested**
-
-Test: A filed request is looked up by its id; verify names the access commit's signer and the head it took; access add answers for an admin already listed.
-
-🟧 [B386](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b386 "porelo#B386 · Idea · S · A Project Access Contract Without Guessing")
-
-**Each person's state named by sync and status ⚪ Not tested**
-
-Test: The host's sync and registry status name each person's state on the host, so the interface confirms Add, Lock and Let back in from it.
-
-🟧 [HO90](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho90 "porelo-host#HO90 · Idea · S · Each Person's State Named By Sync And Status")
 
 </td></tr></table>
 

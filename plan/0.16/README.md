@@ -3,11 +3,11 @@
 
 Manage organization rules and personal access, and take in existing projects
 
-*Stand: 2026-10-29T20:46:48Z*
+*Stand: 2026-11-02T21:22:31Z*
 
 ## Sprint progress
 
-![Sprint 1: Analyzed 2; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Estimated 1, Accepted 1; Sprint 4: Accepted 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Backlog 1, Estimated 3, Analyzed 1; Sprint 7: Estimated 2, Not filed yet 1](progress-c58f0335.svg)
+![Sprint 1: Analyzed 2; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Estimated 1, Accepted 1; Sprint 4: Accepted 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Backlog 1, Estimated 3, Analyzed 1](progress-8bbdfd3b.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -103,23 +103,8 @@ Test: Create a project against the GitHub test organization with a token awaitin
 
 </td></tr></table>
 
-<table><tr><td>
-
-### Sprint 7: Follow a local or offline project
-
-Project intake works without a public repository.
-
-**Follow a local or offline project ⚪ Not tested**
-
-Test: Select a directory and bundle, watch the upload and reconnect. The followed project is recognized as a file source. A bundle above 1 GiB, a disallowed path and a damaged bundle are refused.
-
-🟪 [B160](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b160 "porelo#B160 · Estimated · M · A Project Followed From A File Over The Socket") 🟪 [F104](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f104 "porelo-frontend#F104 · Estimated · M · A Project Followed From A File") ◻️ Deliver the core upload before the interface flow.
-
-</td></tr></table>
-
 ## Waits
 
 - [F62](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f62 "porelo-frontend#F62 · Estimated · M · An Organisation's Policy Is Shown") · Estimated after [PJ16](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj16 "porelo-project#PJ16 · Analyzed · L · An organisation decides which providers its machines use") · Analyzed
-- [F104](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f104 "porelo-frontend#F104 · Estimated · M · A Project Followed From A File") · Estimated after [B160](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b160 "porelo#B160 · Estimated · M · A Project Followed From A File Over The Socket") · Estimated
 - [F123](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f123 "porelo-frontend#F123 · Accepted · — · Where A Machine And A Project Stand In Their Organisation's Tree") · Accepted after [B198](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b198 "porelo#B198 · Accepted · - · Settings Inherited Down An Organisation's Tree") · Accepted
 

@@ -46,8 +46,8 @@ and the first build fails behind the firewall.
   Gradle version catalog from Gradle's cache. A value that sits in something not found there is named as unknown,
   with where it is set (for example "Java release: set in parent `org.fuin.porelo:porelo-parent`, not in the local
   repository"), never guessed; building the project once fills the cache.
-- **Files a forge can write are parsed hardened**: XML without DTDs, external entities or fetching, and with limits
-  on size and expansion, so a hostile pom can read no other file and exhaust nothing.
+- **Recognition secures nothing.** It runs on a developer's own machine and eases the start of someone new to Porelo;
+  it reads the files as the build tool itself would, and is judged by matching the real build.
 - **The Maven plugin builds the effective model with Maven's own `maven-model-builder`**, offline, with a resolver
   that reads the local repository alone, so parents, properties, profiles and imported BOMs are merged as Maven merges
   them. It carries no HTTP client, takes in no password and writes nothing, by how it is built; MIMA's static runtime was

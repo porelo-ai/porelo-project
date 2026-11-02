@@ -3,11 +3,11 @@
 
 Communicate across machines with clear trust boundaries and hand over files only as allowed
 
-*Stand: 2026-10-29T20:46:48Z*
+*Stand: 2026-11-02T21:22:31Z*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Analyzed 1; Sprint 2: Analyzed 2, Accepted 1, Not filed yet 1; Sprint 3: Backlog 1, Accepted 1, Not filed yet 1; Sprint 4: Estimated 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Backlog 1, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Not filed yet 1; Sprint 10: Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Estimated 1, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Not filed yet 1; Sprint 15: Analyzed 1, Not filed yet 1; Sprint 16: Estimated 1, Not filed yet 1; Sprint 17: Not filed yet 1; Sprint 18: Estimated 2, Accepted 1; Sprint 19: Idea 1](progress-81bdfccd.svg)
+![Sprint 1: Estimated 1, Analyzed 1; Sprint 2: Analyzed 2, Not filed yet 1; Sprint 3: Backlog 1, Not filed yet 1; Sprint 4: Estimated 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Backlog 1, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Not filed yet 1; Sprint 10: Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Estimated 1, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Not filed yet 1; Sprint 15: Analyzed 1, Not filed yet 1; Sprint 16: Estimated 1, Not filed yet 1; Sprint 17: Not filed yet 1; Sprint 18: Estimated 2, Accepted 1; Sprint 19: Idea 1](progress-1b1e25e7.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -37,7 +37,7 @@ Two machines use the same homeserver without confusing identities.
 
 Test: Sign two machines in to the central homeserver. Have an admitted person write in the room and directly. Have a foreign task claim to be a person and try a task-to-task direct chat. Only the admitted person is delivered as a person; forbidden paths are refused.
 
-⬛ [B86](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b86 "porelo#B86 · Analyzed · M · Messages Over Matrix, The Porelo Half") ⬛ [B122](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b122 "porelo#B122 · Analyzed · M · No Direct Chat Between Tasks") ⬜ [MX30](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx30 "porelo-message-matrix#MX30 · Accepted · M · Only A Person Speaks As A Person") ◻️ The move acceptance in release 0.6 must be complete first.
+⬛ [B86](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b86 "porelo#B86 · Analyzed · M · Messages Over Matrix, The Porelo Half") ⬛ [B122](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b122 "porelo#B122 · Analyzed · M · No Direct Chat Between Tasks") ◻️ The move acceptance in release 0.6 must be complete first.
 
 </td></tr></table>
 
@@ -51,7 +51,7 @@ Another account cannot replace the homeserver or send private chat into the room
 
 Test: Reach the homeserver through its account-owned Unix socket; a second account cannot connect. Read the room and a direct chat together and change the task reading them. Direct messages remain private, with no lost or repeated delivery.
 
-🔲 [MX29](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx29 "porelo-message-matrix#MX29 · Backlog · - · The Homeserver On A Socket Of The Account's Own") ⬜ [MX38](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx38 "porelo-message-matrix#MX38 · Accepted · XL · A Room Shows No Helper") ◻️ Separate Room Polling And Positions. The room parent also covers sprints 9 through 11. Begin only after the move acceptance.
+🔲 [MX29](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx29 "porelo-message-matrix#MX29 · Backlog · - · The Homeserver On A Socket Of The Account's Own") ◻️ Separate Room Polling And Positions. The room parent also covers sprints 9 through 11. Begin only after the move acceptance.
 
 </td></tr></table>
 

@@ -1,6 +1,6 @@
 # PJ53 — The agent already on the machine is the default
 
-**Status:** Backlog (estimated XL).
+**Status:** Implementing.
 **Size:** XL - four repositories and a contract change every agent repository reads; splits into the issues under
 *Plan*.
 

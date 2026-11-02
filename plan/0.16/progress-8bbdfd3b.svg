@@ -1,7 +1,7 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1090 314" role="img" aria-label="Sprint progress for release 0.16">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1090 284" role="img" aria-label="Sprint progress for release 0.16">
 <title>Sprint progress for release 0.16</title>
 <style>
 text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
@@ -188,27 +188,6 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 
 <text x="1014" y="17"><title>Recognize a token awaiting organization approval: Not tested</title>⚪</text>
-
-</g>
-
-
-<g transform="translate(0 274)">
-<text x="0" y="17">7. Follow a local or offline project</text>
-<desc>Estimated 2, Not filed yet 1. B160: porelo#B160 · Estimated · M · A Project Followed From A File Over The Socket; F104: porelo-frontend#F104 · Estimated · M · A Project Followed From A File; Deliver the core upload before the interface flow.: Not filed yet; </desc>
-<svg x="440" width="540" height="24" viewBox="0 0 540 24">
-<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
-<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
-
-<rect x="0.0" width="266.6666666666667" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 2</title></rect>
-
-<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
-
-</svg>
-<text class="legend" x="410" y="17">0 of 3 done</text>
-</svg>
-
-
-<text x="990" y="17"><title>Follow a local or offline project: Not tested</title>⚪</text>
 
 </g>
 

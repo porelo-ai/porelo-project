@@ -88,19 +88,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 124)">
 <text x="0" y="17">2. Accept only admitted people as people</text>
-<desc>Analyzed 2, Accepted 1, Not filed yet 1. B86: porelo#B86 · Analyzed · M · Messages Over Matrix, The Porelo Half; B122: porelo#B122 · Analyzed · M · No Direct Chat Between Tasks; MX30: porelo-message-matrix#MX30 · Accepted · M · Only A Person Speaks As A Person; The move acceptance in release 0.6 must be complete first.: Not filed yet; </desc>
+<desc>Analyzed 2, Not filed yet 1. B86: porelo#B86 · Analyzed · M · Messages Over Matrix, The Porelo Half; B122: porelo#B122 · Analyzed · M · No Direct Chat Between Tasks; The move acceptance in release 0.6 must be complete first.: Not filed yet; </desc>
 <svg x="464" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+<rect x="0.0" width="266.6666666666667" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
 
-<rect x="200.0" width="100.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
-
-<rect x="300.0" width="100.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 4 done</text>
+<text class="legend" x="410" y="17">0 of 3 done</text>
 </svg>
 
 
@@ -111,19 +109,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 154)">
 <text x="0" y="17">3. Keep the homeserver and room entrances separate</text>
-<desc>Backlog 1, Accepted 1, Not filed yet 1. MX29: porelo-message-matrix#MX29 · Backlog · - · The Homeserver On A Socket Of The Account's Own; MX38: porelo-message-matrix#MX38 · Accepted · XL · A Room Shows No Helper; Separate Room Polling And Positions. The room parent also covers sprints 9 through 11. Begin only after the move acceptance.: Not filed yet; </desc>
+<desc>Backlog 1, Not filed yet 1. MX29: porelo-message-matrix#MX29 · Backlog · - · The Homeserver On A Socket Of The Account's Own; Separate Room Polling And Positions. The room parent also covers sprints 9 through 11. Begin only after the move acceptance.: Not filed yet; </desc>
 <svg x="464" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="133.33333333333334" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
-<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
-
-<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 3 done</text>
+<text class="legend" x="410" y="17">0 of 2 done</text>
 </svg>
 
 

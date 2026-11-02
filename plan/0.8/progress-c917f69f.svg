@@ -94,7 +94,7 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 124)">
 <text x="0" y="17">2. The person comments at the gate</text>
-<desc>Analyzed 6. B136: porelo#B136 · Analyzed · M · Capture one reviewed commit for patch/log and every approval path; confirmations and signatures use that key; SARIF never authorizes forwarding.; B150: porelo#B150 · Analyzed · M · Bound serialized review replies with explicit file-boundary cuts; retain complete file inventory or refuse by name; full-diff risk and SARIF completeness stay independent.; B166: porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.; F78: porelo-frontend#F78 · Analyzed · M · A Waiting Push Is Reviewed As At A Forge; F107: porelo-frontend#F107 · Analyzed · L · Code Comments In The Review; B176: porelo#B176 · Analyzed · M · Byte-exact thread relocation with original revision retained, outdated reasons and hidden pins; moved fixes revalidated and SARIF runs separated by revision.; </desc>
+<desc>Analyzed 6. B136: porelo#B136 · Analyzed · M · Capture one reviewed commit for patch/log and every approval path; confirmations and signatures use that key; SARIF never authorizes forwarding.; B150: porelo#B150 · Analyzed · M · Bound serialized review replies with explicit file-boundary cuts; retain complete file inventory or refuse by name; full-diff risk and SARIF completeness stay independent.; B166: porelo#B166 · Analyzed · L · Host-stored SARIF comments/findings on lines, files or whole reviews; validated fixes, reject delivery, local replies and authenticated origin through the shared message path.; F78: porelo-frontend#F78 · Analyzed · S · A Waiting Push Is Reviewed As At A Forge; F107: porelo-frontend#F107 · Analyzed · M · Code Comments In The Review; B176: porelo#B176 · Analyzed · M · Byte-exact thread relocation with original revision retained, outdated reasons and hidden pins; moved fixes revalidated and SARIF runs separated by revision.; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
@@ -116,7 +116,7 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 154)">
 <text x="0" y="17">3. Understand the scope of a review</text>
-<desc>Estimated 1, Analyzed 1. B174: porelo#B174 · Estimated · M · A Running Task's Commits And Their Diff; F112: porelo-frontend#F112 · Analyzed · L · What A Piece Of Work Did, In Words; </desc>
+<desc>Estimated 1, Analyzed 1. B174: porelo#B174 · Estimated · M · A Running Task's Commits And Their Diff; F112: porelo-frontend#F112 · Analyzed · M · What A Piece Of Work Did, In Words; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
@@ -228,17 +228,23 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 304)">
 <text x="0" y="17">8. Adapters say what they offer</text>
-<desc>Idea 2, Not filed yet 1. PJ66: porelo-project#PJ66 · Idea · — · An adapter offers the services it has; the deprecated contracts in porelo (from PJ66): Not filed yet; PJ74: porelo-project#PJ74 · Idea · — · Forge and build server clients know nothing of Porelo; </desc>
+<desc>Finished 1, Estimated 3, Accepted 2, Idea 1, Not filed yet 1. PJ66: porelo-project#PJ66 · Idea · — · An adapter offers the services it has; the deprecated contracts in porelo (from PJ66): Not filed yet; PJ74: porelo-project#PJ74 · Accepted · — · Forge and build server clients know nothing of Porelo; FC03: porelo-forge-clients#FC03 · Accepted · - · The Forge Calls Of The Adapters Move Here; FC09: porelo-forge-clients#FC09 · Finished · - · A rate limit told from a refusal with the delay to wait, the end of a paged list known, whether a failed request was sent, and every answer read up to a bound, on both forges; described in their READMEs; FC10: porelo-forge-clients#FC10 · Estimated · S · A Pull Request's Commits On GitHub; FC11: porelo-forge-clients#FC11 · Estimated · S · A Pull Request's Commits On Forgejo; FC13: porelo-forge-clients#FC13 · Estimated · M · GitHub's Nulls For A Deleted Fork And An Empty Review; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="266.6666666666667" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+<rect x="0.0" width="50.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
 
-<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+<rect x="50.0" width="150.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
+
+<rect x="200.0" width="100.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
+
+<rect x="300.0" width="50.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+<rect x="350.0" width="50.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 3 done</text>
+<text class="legend" x="410" y="17">1 of 8 done</text>
 </svg>
 
 
@@ -255,17 +261,21 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 334)">
 <text x="0" y="17">9. Review comments from GitHub</text>
-<desc>Analyzed 2, Idea 2. B171: porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.; GH09: porelo-adapters#GH09 · Idea · - · Shared `Review1` cases in `porelo-build-contract` guard SARIF fidelity and native client calls, unsupported capabilities and authorized writes without duplicates; blocks [GH02](README.md#gh02) and [GH10](README.md#gh10); GH02: porelo-adapters#GH02 · Analyzed · L · GitHub serves `Review1` beside `Build2` as SARIF 2.1.0 through the `github` client, preserving thread and origin evidence and sending explicit authorized writes with per-call credentials; F191: porelo-frontend#F191 · Idea · — · Held And Outgoing Forge Comments Released; </desc>
+<desc>Finished 1, Backlog 1, Analyzed 2, Idea 1. B171: porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.; FC08: porelo-forge-clients#FC08 · Finished · - · GitHub's general comments, review comment edits and deletes, one review's comments, the merge base, pull requests by head branch and one review thread by its id with its resolver; Forgejo's general comments, review comments, the pull request of two branches and the server version, with what Forgejo cannot do measured; recorded live and from the container; described in both clients' READMEs.; GH09: porelo-adapters#GH09 · Idea · - · Shared `Review1` cases in `porelo-build-contract` guard SARIF fidelity and native client calls, unsupported capabilities and authorized writes without duplicates; blocks [GH02](README.md#gh02) and [GH10](README.md#gh10); GH02: porelo-adapters#GH02 · Backlog · L · GitHub serves `Review1` beside `Build2` as SARIF 2.1.0 through the `github` client, preserving thread and origin evidence and sending explicit authorized writes with per-call credentials; F191: porelo-frontend#F191 · Analyzed · M · Held And Outgoing Forge Comments Released; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+<rect x="0.0" width="80.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
 
-<rect x="200.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+<rect x="80.0" width="80.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+
+<rect x="160.0" width="160.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+
+<rect x="320.0" width="80.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 4 done</text>
+<text class="legend" x="410" y="17">1 of 5 done</text>
 </svg>
 
 
@@ -279,12 +289,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 364)">
 <text x="0" y="17">10. Reviews on the host's Forgejo</text>
-<desc>Idea 2. F190: porelo-frontend#F190 · Idea · — · Approved Work Brought To The Central Forge; GH10: porelo-adapters#GH10 · Idea · - · Forgejo serves reviews as SARIF beside `Build2` through the `forgejo` client, preserving origin and position evidence and holding unsupported writes; </desc>
+<desc>Analyzed 1, Idea 1. F190: porelo-frontend#F190 · Analyzed · M · Approved Work Brought To The Central Forge; GH10: porelo-adapters#GH10 · Idea · - · Forgejo serves reviews as SARIF beside `Build2` through the `forgejo` client, preserving origin and position evidence and holding unsupported writes; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 2 done</text>
@@ -322,17 +334,21 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 424)">
 <text x="0" y="17">12. The review in IntelliJ</text>
-<desc>Analyzed 1, Idea 2. IJ04: porelo-intellij#IJ04 · Analyzed · L · Code comments in the review; IJ12: porelo-intellij#IJ12 · Idea ·  · The Code Review Adapter Over collaborationTools; IJ13: porelo-intellij#IJ13 · Idea ·  · Held And Outgoing Forge Comments Released In IntelliJ; </desc>
+<desc>Review 1, Backlog 1, Idea 1, Not filed yet 1. IJ04: porelo-intellij#IJ04 · Backlog · L · Code comments in the review; IJ12: porelo-intellij#IJ12 · Review · M · The Code Review Adapter Over collaborationTools; a real pull request through porelo-adapters' stand-in and the display, with the operator's token (left from GH12): Not filed yet; IJ13: porelo-intellij#IJ13 · Idea ·  · Held And Outgoing Forge Comments Released In IntelliJ; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="100.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
-<rect x="133.33333333333334" width="266.6666666666667" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
+<rect x="100.0" width="100.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+
+<rect x="200.0" width="100.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+<rect x="300.0" width="100.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 3 done</text>
+<text class="legend" x="410" y="17">0 of 4 done</text>
 </svg>
 
 

@@ -25,6 +25,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj53"></a>[PJ53](PJ53-The-Agent-Already-On-The-Machine-Is-The-Default.md) | XL | — | A start without `--agent` and `--provider` takes the agent already installed and signed in on the machine, with its provider: each packaged agent reports what it finds of itself on the host, by path and never a credential's value; `porelo` chooses, a flag still wins, the choice and its source are named, and what is found but not in the vault is offered for `vault import`. |
 | <a id="pj87"></a>[PJ87](PJ87-The-Organization-Behind-An-Interface.md) | XL | — | The registry becomes the organization: its owners, its people, its projects with their members, and its hosts, reached through one interface with more than one implementation, Git on the central forge first; `porelo org …` and the interface use the word "organization". |
 | <a id="pj89"></a>[PJ89](PJ89-A-Project-Is-Handled-Apart-From-Its-Machines.md) | XL | — | Handling a project and putting it on a machine are two processes: a project, its repositories and its members are made and changed on the project, which names no host; a host admin puts a project on a host with every person it names and takes it off again, and the host follows it with no step of its own. |
 | <a id="pj88"></a>[PJ88](PJ88-A-Project-Created-From-The-Interface.md) | L | — | An organization owner creates a project from the interface, naming it and its project admin; Porelo adds its card to the organization and makes the signed project repository with its `project.yml`, with no hand-written file and no host picked. |
@@ -44,7 +45,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj53"></a>[PJ53](PJ53-The-Agent-Already-On-The-Machine-Is-The-Default.md) | XL | — | A start without `--agent` and `--provider` takes the agent already installed and signed in on the machine, with its provider: each packaged agent reports what it finds of itself on the host, by path and never a credential's value; `porelo` chooses, a flag still wins, the choice and its source are named, and what is found but not in the vault is offered for `vault import`. |
 
 ## Analyzed
 
