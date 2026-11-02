@@ -1,6 +1,6 @@
 # PJ89 — A project is handled apart from its machines
 
-**Status:** Idea.
+**Status:** Accepted.
 **Severity:** high.
 
 **What must be true.** Handling a project and putting it on a machine are two processes of their own, in Porelo and in

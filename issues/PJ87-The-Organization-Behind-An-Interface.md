@@ -1,6 +1,6 @@
 # PJ87 — The organization behind an interface
 
-**Status:** Idea.
+**Status:** Accepted.
 **Severity:** medium.
 
 **What must be true.** The registry becomes the organization: its owners, its people, its projects with their
