@@ -48,12 +48,14 @@ and the first build fails behind the firewall.
   repository"), never guessed; building the project once fills the cache.
 - **Files a forge can write are parsed hardened**: XML without DTDs, external entities or fetching, and with limits
   on size and expansion, so a hostile pom can read no other file and exhaust nothing.
-- **The Maven plugin builds the effective model with MIMA** (`eu.maveniverse.maven.mima`): Maven's own model
-  builder, offline, against the local repository and the person's `settings.xml`, so parents, properties, profiles
-  and imported BOMs are merged as Maven merges them, and no inheritance of Porelo's own is written. It resolves no
-  dependency tree: a draft needs the repositories, not the artifacts in them. A missing parent is the model builder's
-  error, turned into an unknown value naming it. A checkout with `.mvn/extensions.xml` is named as such, its
-  extensions never loaded, and the model it would change marked as not trusted.
+- **The Maven plugin builds the effective model with Maven's own `maven-model-builder`**, offline, with a resolver
+  that reads the local repository alone, so parents, properties, profiles and imported BOMs are merged as Maven merges
+  them. It carries no HTTP client, takes in no password and writes nothing, by how it is built; MIMA's static runtime was
+  measured against it and does all three unless configured otherwise. The person's settings, their mirrors and profiles
+  are read by the plugin's own reader, which also gives file and line. It resolves no dependency tree: a draft needs the
+  repositories, not the artifacts in them. A missing parent is the model builder's error, turned into an unknown value
+  naming it. A checkout with `.mvn/extensions.xml` is named as such, its extensions never loaded, and the model it would
+  change marked as not trusted.
 - **Gradle has no model without running its scripts**, so its plugin reads only files:
   `gradle/wrapper/gradle-wrapper.properties`, `gradle/libs.versions.toml`, toolchain declarations written as
   literals, and names more values unknown than Maven's.
@@ -152,8 +154,7 @@ its agent reads them.
   - **`configure` at the task start**, [B222](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b222): beside `placeAgentFiles` and after [B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219)'s relay, placing the plugin's files
     with `TaskRunner.place` from [B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219)'s variables.
 - **`porelo-ecosystems`, new**, one issue each:
-  - **a spike first**: MIMA's static runtime in a native image, its size, its model API, and offline mode refusing
-    to fetch;
+  - **a spike first**, done: the model builder as a native image, against MIMA's static runtime;
   - **Maven**, M to L, after the spike and `porelo`'s contract;
   - **Gradle, npm, pip, Flutter**, S to M each.
 - **`porelo-frontend`, M**, `porelo-frontend` [F142](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f142), read in its code: the drafts asked for and shown in one dialog on `StartWork`, the one
