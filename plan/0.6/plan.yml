@@ -356,8 +356,9 @@ sprints:
     goal: "The release is installed from its publication channel and its dependencies are checked."
     functions:
       - title: "A published release installed and verified"
-        test: "Publish and pin Buildtools 0.5.1, then build IntelliJ from an empty Gradle home. Change a dependency digest; the build must fail. Install the release leg from its publication channel; a wrong channel or a candidate must be refused as proof of the tested release."
+        test: "Publish and pin Buildtools 0.5.1, then build IntelliJ from an empty Gradle home. Change a dependency digest; the build must fail. Install the release leg from its publication channel; its log names the channel, and a reader refuses a wrong channel or a candidate as proof of the tested release."
         issues: [porelo-intellij#IJ09, porelo-buildtools#BT01]
+        notes: ["BT01's install leg is proved on the next tag of porelo-buildtools"]
       - title: "A forge's keys and repositories through its client"
         test: "On Forgejo and on GitHub the client reads a person's public SSH keys without a token, lists, adds and deletes the signed-in person's own keys, tells whether a user owns an organization, and reads and creates a repository in it, against answers recorded from the real forge."
         issues: [porelo-forge-clients#FC02, porelo-forge-clients#FC05, porelo-forge-clients#FC06]
