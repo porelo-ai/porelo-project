@@ -371,6 +371,30 @@ sprints:
       - title: "A KeePassXC key that is usable"
         test: "A new key made in KeePassXC asks for the master password once; a retry after key-not-served takes the key already made; no empty or orphaned entry is left; without a terminal the refusal says so."
         issues: [porelo#B385]
+  - id: "6p"
+    title: "The organization behind an interface"
+    goal: "The organization's API and the Git adapter are taken out of today's registry code, with the security requirements as contract tests every adapter passes; nothing visible changes."
+    functions:
+      - title: "The registry's code split into an API and a Git adapter"
+        test: "Every walk of 6m that reads or files the registry passes unchanged; the contract tests fail against an adapter that accepts an unsigned change, a played-back older state or a revoked card."
+        issues: []
+        covers: [porelo-project#PJ87]
+  - id: "6q"
+    title: "A project apart from its machines, in one organization"
+    goal: "The cut: the registry becomes the organization, a project names no host, a host follows its projects by itself, and nobody joins; built side by side on branches against one contract and merged for one walk."
+    functions:
+      - title: "The organization's page, and a project created there"
+        test: "An organization made anew by Core's script shows its people, projects, hosts and owners; each person sees only the actions of their roles; an organization owner adds a project and names its project admin, who makes its project repository on first opening it."
+        issues: []
+        covers: [porelo-project#PJ87, porelo-project#PJ88]
+      - title: "A project edited on its own page, with no machine"
+        test: "The project admin adds and removes repositories and members and changes a role on the project's page; a member sees it read-only; nothing on it names a host."
+        issues: []
+        covers: [porelo-project#PJ89]
+      - title: "A host carries projects and follows them by itself"
+        test: "A host admin puts a project on a host with their central token; every member is admitted there within five minutes or at once on Refresh, and a member removed is locked at once; a person connects once per host and finds every project they are in ready, with no Join."
+        issues: []
+        covers: [porelo-project#PJ89]
   - id: "6r"
     title: "What 6m left untested, after the rebuild"
     goal: "The functions of 6m that had no step are walked once the interface's new structure and its API stand (porelo-project#PJ87, porelo-project#PJ89)."

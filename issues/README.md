@@ -41,6 +41,8 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj87"></a>[PJ87](PJ87-The-Organization-Behind-An-Interface.md) | XL | — | The registry becomes the organization: its owners, its people, its projects with their members, and its hosts, reached through one interface with more than one implementation, Git on the central forge first; `porelo org …` and the interface use the word "organization". |
+| <a id="pj89"></a>[PJ89](PJ89-A-Project-Is-Handled-Apart-From-Its-Machines.md) | XL | [PJ87](#pj87) | Handling a project and putting it on a machine are two processes: a project, its repositories and its members are made and changed on the project, which names no host; a host admin puts a project on a host with every person it names and takes it off again, and the host follows it with no step of its own. |
 
 ## Analyzed
 
@@ -61,8 +63,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj87"></a>[PJ87](PJ87-The-Organization-Behind-An-Interface.md) | — | — | The registry becomes the organization: its owners, its people, its projects with their members, and its hosts, reached through one interface with more than one implementation, Git on the central forge first; `porelo org …` and the interface use the word "organization". |
-| <a id="pj89"></a>[PJ89](PJ89-A-Project-Is-Handled-Apart-From-Its-Machines.md) | — | [PJ87](#pj87) | Handling a project and putting it on a machine are two processes: a project, its repositories and its members are made and changed on the project, which names no host; a host admin puts a project on a host with every person it names and takes it off again, and the host follows it with no step of its own. |
 | <a id="pj80"></a>[PJ80](PJ80-Only-The-Project-File-Needs-A-Signers-Signature.md) | — | — | A follow applies a new `main` when every commit that changes the project file, or another file deciding what the machines do, is signed by a key in `signers`; other commits need no signature, so developers change the rest of the project's repository on their own and the project admin signs changes to the project file. |
 | <a id="pj81"></a>[PJ81](PJ81-A-Repository-Says-Whether-A-Merge-Needs-A-Review.md) | — | [PJ80](#pj80) | The project file says per repository whether a pull request on the host's local forge needs another person's approval (`review: required`, the default, an approval dismissed by a later commit) or the author may merge (`review: optional`); only people merge, never an agent. |
 | <a id="pj79"></a>[PJ79](PJ79-An-Issue-Names-Nothing-Of-Another-Repository.md) | — | — | An issue outside `porelo-project` names no issue, sprint or release of another repository and states the contract it builds against itself; only `porelo-project`'s requirements and plans name the other repositories' issues, their order and their waits, so replanning changes one repository and no check reads another's index. |
