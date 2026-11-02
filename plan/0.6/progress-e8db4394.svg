@@ -673,26 +673,26 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 904)">
 <text x="0" y="17">6n. Accept the published tools</text>
-<desc>Review 3, Implementing 1, Backlog 1. IJ09: porelo-intellij#IJ09 · Implementing · M · The build verifies every dependency; BT01: porelo-buildtools#BT01 · Backlog · S · A Release Leg Installs The Release; FC02: porelo-forge-clients#FC02 · Review · M · The Forgejo Client; FC05: porelo-forge-clients#FC05 · Review · S · Keys And Repositories On Forgejo; FC06: porelo-forge-clients#FC06 · Review · M · Keys, Repositories And Commit Statuses On GitHub; </desc>
+<desc>Finished 3, Review 1, Backlog 1. IJ09: porelo-intellij#IJ09 · Review · M · The build verifies every dependency; BT01: porelo-buildtools#BT01 · Backlog · S · A Release Leg Installs The Release; FC02: porelo-forge-clients#FC02 · Finished · - · The `forgejo` module: REST operations from Forgejo 17's MIT Swagger 2.0 description and signed webhook deliveries, its answers recorded from a real Forgejo and every call checked live against one in the Build; described in [clients/forgejo/README.md](../clients/forgejo/README.md).; FC05: porelo-forge-clients#FC05 · Finished · - · A Forgejo user's public SSH keys read, the signed-in user's own keys listed, added and deleted, whether a user owns an organization, a repository read and created in an organization; described in [clients/forgejo/README.md](../clients/forgejo/README.md).; FC06: porelo-forge-clients#FC06 · Finished · - · A GitHub user's public SSH authentication and signing keys and key page read without a token, the signed-in user's own keys of both kinds listed, added and deleted, whether a user owns an organization, a repository read and created in an organization and a commit's combined status, recorded live; described in [clients/github/README.md](../clients/github/README.md).; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="240.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 3</title></rect>
+<rect x="0.0" width="240.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 3</title></rect>
 
-<rect x="240.0" width="80.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+<rect x="240.0" width="80.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
 <rect x="320.0" width="80.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 5 done</text>
+<text class="legend" x="410" y="17">3 of 5 done</text>
 </svg>
 
 
 <text x="1118" y="17"><title>A published release installed and verified: Not tested</title>⚪</text>
 
 
-<text x="1142" y="17"><title>A forge's keys and repositories through its client: Not tested</title>⚪</text>
+<text x="1142" y="17"><title>A forge's keys and repositories through its client: Tested 2026-11-02</title>✅</text>
 
 </g>
 
@@ -723,12 +723,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 964)">
 <text x="0" y="17">6p. The organization behind an interface</text>
-<desc>Implementing 1, Backlog 2. B390: porelo#B390 · Implementing · L · The Organization's API Apart From Its Git Reading; B391: porelo#B391 · Backlog · L · The Organization's Writes In Its Git Adapter; B392: porelo#B392 · Backlog · M · Checks Every Organization Adapter Passes; </desc>
+<desc>Review 1, Backlog 2. B390: porelo#B390 · Review · L · The Organization's API Apart From Its Git Reading; B391: porelo#B391 · Backlog · L · The Organization's Writes In Its Git Adapter; B392: porelo#B392 · Backlog · M · Checks Every Organization Adapter Passes; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="133.33333333333334" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+<rect x="0.0" width="133.33333333333334" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
 <rect x="133.33333333333334" width="266.6666666666667" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 2</title></rect>
 
@@ -744,14 +744,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 994)">
 <text x="0" y="17">6q. A project apart from its machines, in one organization</text>
-<desc>Implementing 3, Backlog 9, Not filed yet 2. F309: porelo-frontend#F309 · Implementing · L · The Organization Page; F311: porelo-frontend#F311 · Backlog · L · Register, Join And The Developers Dialog Taken Out; F314: porelo-frontend#F314 · Backlog · L · The Calls Behind The Organization Pages; F315: porelo-frontend#F315 · Backlog · S · Saved Settings Dropped Once And Said; Core's organization commands: Not filed yet; F310: porelo-frontend#F310 · Backlog · L · A Project Page For Its Admin And Its Members; Core's project commands: Not filed yet; HO93: porelo-host#HO93 · Backlog · L · The Host Follows Its Organization By Itself; HO94: porelo-host#HO94 · Backlog · M · A Project Put On The Host And Taken Off; HO95: porelo-host#HO95 · Implementing · M · No Access File, Bring Or Join On The Host; HO96: porelo-host#HO96 · Implementing · M · The Registry Named The Organization On The Host; MX65: porelo-message-matrix#MX65 · Backlog · M · The Host Keeps A Project's Room; F312: porelo-frontend#F312 · Backlog · L · A Host Page For Its Host Admins; F313: porelo-frontend#F313 · Backlog · M · Connect Once Per Host; </desc>
+<desc>Implementing 7, Backlog 5, Not filed yet 2. F309: porelo-frontend#F309 · Implementing · L · The Organization Page; F311: porelo-frontend#F311 · Implementing · L · Register, Join And The Developers Dialog Taken Out; F314: porelo-frontend#F314 · Backlog · L · The Calls Behind The Organization Pages; F315: porelo-frontend#F315 · Backlog · S · Saved Settings Dropped Once And Said; Core's organization commands: Not filed yet; F310: porelo-frontend#F310 · Implementing · L · A Project Page For Its Admin And Its Members; Core's project commands: Not filed yet; HO93: porelo-host#HO93 · Backlog · L · The Host Follows Its Organization By Itself; HO94: porelo-host#HO94 · Backlog · M · A Project Put On The Host And Taken Off; HO95: porelo-host#HO95 · Implementing · M · No Access File, Bring Or Join On The Host; HO96: porelo-host#HO96 · Implementing · M · The Registry Named The Organization On The Host; MX65: porelo-message-matrix#MX65 · Backlog · M · The Host Keeps A Project's Room; F312: porelo-frontend#F312 · Implementing · L · A Host Page For Its Host Admins; F313: porelo-frontend#F313 · Implementing · M · Connect Once Per Host; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="85.71428571428571" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 3</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 7</title></rect>
 
-<rect x="85.71428571428571" width="257.14285714285717" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 9</title></rect>
+<rect x="200.0" width="142.85714285714286" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 5</title></rect>
 
 <rect x="342.85714285714283" width="57.142857142857146" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 2</title></rect>
 
