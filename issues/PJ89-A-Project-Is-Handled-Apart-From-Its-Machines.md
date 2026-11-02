@@ -42,56 +42,62 @@ issue carries it through the whole handling of a project.
 ## Decided
 
 - **A project is its `project.yml` and its part of the organization.** `project.yml`, in the project's repository,
-  holds its repositories, its agents and its signers. The organization
-  ([PJ87](README.md#pj87)) holds the project's card (its name, the address of its project
-  repository, its project admin) and its members with their role, changed by the project admin. A member's key is the
+  holds its repositories and its agents. The organization ([PJ87](README.md#pj87)) holds the
+  project's card (its name, its first admin), its repository's address, and its members with their role and whether
+  locked, changed by its admins. A member's key is the
   one on their card. The access file leaves with no transition: no `access.repository`, no access repository, no host
   block, no person's `hosts:` list; which projects a host carries is the host's, kept in the organization.
-- **Every member of a project is on every host the project is on.** When a host admin puts a project on a host,
-  every member of the project is admitted there; a member removed from it is locked on every host at once.
-  There is no choice of members per host.
+- **A project is on one host at a time, and every member of the project is on it.** When a host admin puts a
+  project on a host, every member of the project is admitted there; a member removed from it is locked on the host at
+  once. A member an admin locks stays listed and may nothing until unlocked. There is no choice of members per host.
+  Two hosts for one project, if wanted later, are designed then.
 - ***Projects* holds the person's own projects; *Organization* shows them all.** *Projects* lists the projects the
-  person is the project admin or a member of, with their role, and is the only place a project is edited: its
-  project admin adds and removes repositories and members and changes a member's role; a member sees the same page
+  person is an admin or a member of, with their role, and is the only place a project is edited: an admin adds and
+  removes repositories and members, changes a member's role and locks or unlocks a member; a member sees the same page
   and changes nothing. A project is added and removed by an organization owner, on the organization's page
-  ([PJ88](README.md#pj88)). The organization's page lists every project with its project
-  admin and changes none; a project the person is in links to its page under *Projects*. Nobody joins a project on
-  their own: the project admin adds them.
-- ***Projects* deals with projects alone.** It lists the person's projects, one entry each, and a project's page holds its
-  repositories and its members with their role, with *Add* and *Remove* beside them. Nothing there refers to a
-  machine: not the hosts a project is on, of which there may be several, nor whether it is ready on this machine.
-  Which projects a host carries, and putting a project on a host or taking it off, is on the host's page alone.
+  ([PJ88](README.md#pj88)). The organization's page lists every project with its
+  admins and changes none; a project the person is in links to its page under *Projects*. Nobody joins a project on
+  their own: an admin adds them.
+- ***Projects* lists each project once, with its one host.** A project's page holds its repositories and its members
+  with their role, with *Add* and *Remove* beside them, and opens the project on its host, where work, agents, the
+  project's messages and saved jobs start as today. Putting a project on a host or taking it off is on the host's
+  page alone.
 - **A connection belongs to a host, not to a project.** A person has one account, one daemon and one vault on a host,
   and one connection to it from their machine (ssh configuration, the host key from the organization, the tunnels to the
   forge, the homeserver and their daemon), whatever number of the host's projects they are a member of. *Machines*
   lists the hosts carrying a project the person is a member of, and *Connect* sets up that connection once per host. Every
   project the person is a member of on a connected host is ready to work on at once and followed with no step of its
   own; a project put on that host later appears the same way. There is no *Join*.
-- **A host fetches its organization's and its projects' state itself.** No interface uploads or brings anything to
-  a host. The host asks the
-  installed adapter for the current, signed state of its organization and of each project it carries, and applies it; where and how the project is kept (today
-  Git on the central forge) is known only to the adapter, never to Porelo. As with the organization
-  ([PJ87](README.md#pj87)), the adapter guarantees that a state it hands over is signed by
-  the project's signers and cannot be played back.
+- **A host fetches its organization's state itself, and each account its project's repositories.** No interface
+  uploads or brings anything to a host. The host asks the installed adapter for the organization's current state,
+  which the adapter guarantees cannot be played back ([PJ87](README.md#pj87)). Each account on
+  the host fetches its project's repositories itself from the configured forge, the host's own when one is installed
+  there and the central one otherwise, and Porelo checks every commit with `signingKeys`. No function of Porelo relies
+  on a forge being on the host.
+- **A host reads private repositories with deploy keys of its own.** For each repository it reads, the host makes a
+  read-only deploy key; the host admin's token adds it when the host is set up and when a project is put on it, and
+  removes it when the project is taken off. The keys are root's alone and bound to no person.
 - **The host admin's token brings a project onto the host.** Putting a project on a host sends the host admin's
   central token through the tunnel once, as the gathered push does today, so the project's repositories are on the
-  host's forge at once; nothing waits for another person's first connection.
+  host's forge at once, when it has one; nothing waits for another person's first connection.
 - **A host takes a change within five minutes, or at once on asking.** The host fetches its organization's and its
   projects' state every five minutes; *Refresh* on the host's page fetches it at once.
 - **A member's card is enough for a host.** A host admits a person when the organization names them as a member of the
   project and trusts their card. The host admin pins no developer: the host's `admins` name only its host
   admins, and the host admin decides which projects the host carries, never which persons.
 - **No person follows a project by hand.** `porelo project follow` and `unfollow` go with the cut, for every
-  project: a host follows the projects it carries through the adapter, and nothing else is followed.
+  project: the accounts on a host fetch the projects the host carries, and nothing else is followed.
 - **A project is created from the interface in the same change.** [PJ88](README.md#pj88)
   is built in 6q beside this issue.
 - **What a finished issue's Done section says stays as it is.** It records what was built; an issue in Review is
   changed by the cut only where its open text depends on what goes.
-- **A project's room is kept per host.** A project on two hosts has two separate rooms, one on each host's
-  homeserver. Taking a project off a host deletes its room there, with its conversation. A homeserver outside the
-  host stays possible: `project.yml` names it, and the room is then kept there.
-- **The project admin signs the members.** The project's members are changed and signed by the project admin named
-  on the project's card; the signers of `project.yml` sign that file alone.
+- **A project's room is on its host's homeserver.** Taking a project off the host deletes its room, with its
+  conversation. A homeserver elsewhere stays possible: `mail.transports.matrix` in `project.yml` names it, and the
+  room is then kept there.
+- **A project's admins sign its members and its `project.yml`.** Any member with role admin changes both. After a
+  change of admins or keys, a project stays at its last state until a current admin confirms once. Both roles
+  certify tasks. An organization owner may add and remove a project's admins, so a project whose admins all lost
+  their keys can be recovered; a project admin has no backup key.
 
 ## The order of the work
 
@@ -104,7 +110,7 @@ sprint, and until then the old structure keeps working. Together with
 | 6m | The running test finished, its reviews made, everything pushed | all | today's structure, as the base |
 | 6p | The organization's API and the Git adapter taken out of today's registry code, with the security requirements as contract tests every adapter passes; nothing visible changes | Core | everything as in 6m, and the contract tests |
 | 6q | 1. The contract first: `porelo org …` and `porelo project …` with their `--json` output, the organization's files, `fetchFor` on the host; Core writes it, Frontend and Machines check it | Core, Frontend, Machines | one document all three build against |
-| 6q | 2. The three parts built side by side on branches: Core the data model and the commands; Machines the host fetching its organization and projects itself, with no bundle upload and no pin; Frontend the new pages and dialogs, with no *Register*, *Join* or developers' dialog | Core, Machines, Frontend | each part with its unit tests against the contract |
+| 6q | 2. The three parts built side by side on branches: Core the data model and the commands, `porelo project open` and the dependency on porelo-forge-clients; Machines the host fetching its organization and projects itself, with no bundle upload and no pin; Frontend the new pages and dialogs, with no *Register*, *Join* or developers' dialog | Core, Machines, Frontend | each part with its unit tests against the contract |
 | 6q | 3. The test organization made anew by a script, not converted | Core writes it, the operator runs it | an organization with an owner, people, a project and a host |
 | 6q | 4. The three branches merged together and tested on a fresh machine in one walk | all | the new structure throughout |
 

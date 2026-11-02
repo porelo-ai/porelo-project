@@ -4,10 +4,10 @@
 **Severity:** medium.
 
 **What must be true.** An organization owner creates a new project from the interface, under *Organization ›
-Projects › Add a project*: they name it and name its project admin, who may be themselves. Porelo adds the project's
-card to the organization and makes the signed project repository with its `project.yml`, with no hand-written file
-and no script. Creating a project picks no host: a host admin puts it on a host afterwards
-([PJ89](README.md#pj89)), and its members are added by its project admin. The concept is talked through
+Projects › Add a project*: they name it and name its first admin, who may be themselves. Porelo adds the project's
+card to the organization, and the first admin's `porelo project open` makes the signed project repository with its
+`project.yml`, with no hand-written file and no script. Creating a project picks no host: a host admin puts it on a host afterwards
+([PJ89](README.md#pj89)), and its members are added by its admins. The concept is talked through
 with the operator first; only then does it become issues of Core and Frontend.
 
 ## Why
@@ -20,11 +20,10 @@ until a project repository was made by hand.
 
 ## Known so far
 
-- Frontend: a wizard that hands Core the name, the host, the access address and the signer, and lets Core make and
-  sign the repository; size M. It needs Core's creation command as its contract.
-- Core: a command that writes `project.yml` (signers, the access repository) and commits it signed through the
-  person's agent; Core's fix lets `follow` take an empty access repository so that `access init` writes the first access
-  commit.
+- Frontend: the organization's *Add a project* dialog, and on the project's page the first open, which runs Core's
+  command. It needs that command as its contract.
+- Core: `porelo project open`, which creates the repository through porelo-forge-clients and commits the first
+  `project.yml` signed through the first admin's agent.
 - Machines: the host registers the project as root today (`porelo-host-project add`); a person registering it is
   [HO88](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho88).
 
@@ -35,9 +34,8 @@ until a project repository was made by hand.
 - **No access file.** A project's members are kept in the organization, so there is no access repository and no
   first access commit to make ([PJ89](README.md#pj89)).
 - **The project admin signs the first `project.yml`.** The organization owner adds the project's card; the project
-  admin it names writes and signs the first commit of `project.yml` when they first open the project, so only a key
-  `signers` names ever signs it.
-
-## Open questions
-
-- Where the project repository lives: on the central forge, on the host's forge, or both.
+  admin it names writes and signs the first commit of `project.yml` when they first open the project, so only an
+  admin's key ever signs it.
+- **Where the project repository lives.** Wherever the first admin's `porelo project open` creates it, through
+  porelo-forge-clients with their token; its address is in the organization as a pointer, which the organization
+  adapter never opens. porelo depends on porelo-forge-clients for it.
