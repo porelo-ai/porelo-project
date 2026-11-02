@@ -673,19 +673,19 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 904)">
 <text x="0" y="17">6n. Accept the published tools</text>
-<desc>Finished 5, Review 1, Backlog 1. IJ09: porelo-intellij#IJ09 · Review · M · The build verifies every dependency; BT01: porelo-buildtools#BT01 · Backlog · S · A Release Leg Installs The Release; FC02: porelo-forge-clients#FC02 · Finished · - · The `forgejo` module: REST operations from Forgejo 17's MIT Swagger 2.0 description and signed webhook deliveries, its answers recorded from a real Forgejo and every call checked live against one in the Build; described in [clients/forgejo/README.md](../clients/forgejo/README.md).; FC05: porelo-forge-clients#FC05 · Finished · - · A Forgejo user's public SSH keys read, the signed-in user's own keys listed, added and deleted, whether a user owns an organization, a repository read and created in an organization; described in [clients/forgejo/README.md](../clients/forgejo/README.md).; FC06: porelo-forge-clients#FC06 · Finished · - · A GitHub user's public SSH authentication and signing keys and key page read without a token, the signed-in user's own keys of both kinds listed, added and deleted, whether a user owns an organization, a repository read and created in an organization and a commit's combined status, recorded live; described in [clients/github/README.md](../clients/github/README.md).; FC12: porelo-forge-clients#FC12 · Finished · - · GitHub's recorded answers and the replaying `HttpClient` in a `tests` jar of the github module, published beside the main jar for the adapters' tests; described in [clients/github/README.md](../clients/github/README.md).; FC14: porelo-forge-clients#FC14 · Finished · - · The GitHub recorder keeps owning what an earlier request made when a later one of its kind is refused, and the key page refusal test fails when the page does not stop.; </desc>
+<desc>Finished 6, Review 1, Backlog 1. IJ09: porelo-intellij#IJ09 · Review · M · The build verifies every dependency; BT01: porelo-buildtools#BT01 · Backlog · S · A Release Leg Installs The Release; FC02: porelo-forge-clients#FC02 · Finished · - · The `forgejo` module: REST operations from Forgejo 17's MIT Swagger 2.0 description and signed webhook deliveries, its answers recorded from a real Forgejo and every call checked live against one in the Build; described in [clients/forgejo/README.md](../clients/forgejo/README.md).; FC05: porelo-forge-clients#FC05 · Finished · - · A Forgejo user's public SSH keys read, the signed-in user's own keys listed, added and deleted, whether a user owns an organization, a repository read and created in an organization; described in [clients/forgejo/README.md](../clients/forgejo/README.md).; FC06: porelo-forge-clients#FC06 · Finished · - · A GitHub user's public SSH authentication and signing keys and key page read without a token, the signed-in user's own keys of both kinds listed, added and deleted, whether a user owns an organization, a repository read and created in an organization and a commit's combined status, recorded live; described in [clients/github/README.md](../clients/github/README.md).; FC12: porelo-forge-clients#FC12 · Finished · - · GitHub's recorded answers and the replaying `HttpClient` in a `tests` jar of the github module, published beside the main jar for the adapters' tests; described in [clients/github/README.md](../clients/github/README.md).; FC14: porelo-forge-clients#FC14 · Finished · - · The GitHub recorder keeps owning what an earlier request made when a later one of its kind is refused, and the key page refusal test fails when the page does not stop.; GH12: porelo-adapters#GH12 · Finished · - · A Stand-In For The Daemon's Review Calls; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="285.7142857142857" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 5</title></rect>
+<rect x="0.0" width="300.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 6</title></rect>
 
-<rect x="285.7142857142857" width="57.142857142857146" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
+<rect x="300.0" width="50.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
-<rect x="342.85714285714283" width="57.142857142857146" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+<rect x="350.0" width="50.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">5 of 7 done</text>
+<text class="legend" x="410" y="17">6 of 8 done</text>
 </svg>
 
 
@@ -696,6 +696,9 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 
 <text x="1166" y="17"><title>GitHub's recorded answers usable from another repository: Tested 2026-11-02</title>✅</text>
+
+
+<text x="1190" y="17"><title>A task's pushes shown from a recorded pull request: Tested 2026-11-02</title>✅</text>
 
 </g>
 
@@ -806,14 +809,16 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 1054)">
 <text x="0" y="17">6s. The agent already on the machine is taken</text>
-<desc>Implementing 3, Backlog 4, Accepted 1. PJ53: porelo-project#PJ53 · Backlog · XL · The agent already on the machine is the default; B225: porelo#B225 · Backlog · L · The Agent Found On The Machine; CC36: porelo-claude-code#CC36 · Implementing · S · Report What Claude Code Finds Of Itself On The Host; B224: porelo#B224 · Backlog · M · An Agent Protocol That Only Grows; F143: porelo-frontend#F143 · Accepted · — · The Agent The Machine Found Is The Default; B226: porelo#B226 · Backlog · M · An Imported Credential Names Its Provider; PI36: porelo-pi#PI36 · Implementing · M · Import And Report Pi's Sign-Ins On The Host; OM32: porelo-omp#OM32 · Implementing · S · Report What Oh My Pi Finds Of Itself On The Host; </desc>
+<desc>Review 1, Implementing 3, Backlog 3, Accepted 1. PJ53: porelo-project#PJ53 · Backlog · XL · The agent already on the machine is the default; B225: porelo#B225 · Backlog · L · The Agent Found On The Machine; CC36: porelo-claude-code#CC36 · Implementing · S · Report What Claude Code Finds Of Itself On The Host; B224: porelo#B224 · Review · M · An Agent Protocol That Only Grows; F143: porelo-frontend#F143 · Accepted · — · The Agent The Machine Found Is The Default; B226: porelo#B226 · Backlog · M · An Imported Credential Names Its Provider; PI36: porelo-pi#PI36 · Implementing · M · Import And Report Pi's Sign-Ins On The Host; OM32: porelo-omp#OM32 · Implementing · S · Report What Oh My Pi Finds Of Itself On The Host; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="150.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 3</title></rect>
+<rect x="0.0" width="50.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
-<rect x="150.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 4</title></rect>
+<rect x="50.0" width="150.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 3</title></rect>
+
+<rect x="200.0" width="150.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 3</title></rect>
 
 <rect x="350.0" width="50.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
 

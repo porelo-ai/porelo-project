@@ -366,6 +366,10 @@ sprints:
         test: "A small program in another repository replays GitHub's answers from the main and the tests jar with no network, the tests jar read from Central's snapshots; the GitHub recorder keeps owning what an earlier request made when a later one of its kind is refused."
         issues: [porelo-forge-clients#FC12, porelo-forge-clients#FC14]
         tested: "2026-11-02"
+      - title: "A task's pushes shown from a recorded pull request"
+        test: "The display started on porelo-adapters' GitHub stand-in shows every push of the recorded pull request in order with no warning line, and each push opens."
+        issues: [porelo-adapters#GH12]
+        tested: "2026-11-02"
   - id: "6o"
     title: "Before real use: what 6m left"
     goal: "What the 6m test and its readings left that a real host or a first key would meet is done."

@@ -91,7 +91,7 @@ sprints:
     functions:
       - title: "Comments delivered by who wrote them"
         test: "On a task's pull request, a comment of an internal account and of a listed partner reach the task at once; a comment of an unknown account is held and shown until the person releases it; a comment that claims another author changes nothing."
-        issues: [porelo#B171, porelo-forge-clients#FC08, porelo-adapters#GH12, porelo-adapters#GH09, porelo-adapters#GH02]
+        issues: [porelo#B171, porelo-forge-clients#FC08, porelo-adapters#GH09, porelo-adapters#GH02]
       - title: "Replies released, a thread resolved by an internal person"
         test: "The agent's reply appears on the pull request only after the person releases it; a thread an internal account resolves on GitHub clears its finding at the gate, one resolved by anyone else is only shown as resolved."
         issues: [porelo-frontend#F191]
@@ -123,6 +123,7 @@ sprints:
       - title: "Threads in IntelliJ's diff"
         test: "The plugin's review shows every thread of waiting work on its lines with its origin - person, task, forge account or linter - and a suggestion as a small diff."
         issues: [porelo-intellij#IJ04, porelo-intellij#IJ12]
+        notes: ["a real pull request through porelo-adapters' stand-in and the display, with the operator's token (left from GH12)"]
         covers: [porelo-project#PJ72]
       - title: "A comment written and a held one released"
         test: "A comment and a reply written in the plugin reach the task as in the interface; a held forge comment is released from the plugin one at a time."
