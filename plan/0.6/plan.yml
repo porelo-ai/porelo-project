@@ -476,6 +476,9 @@ sprints:
     title: "The move, wave 6: porelo and porelo-host"
     goal: "The two repositories everything rests on move last of the code, each with a way back."
     functions:
+      - title: "The release and pipeline tools the move rests on"
+        test: "Not a walk: each issue's own acceptance holds: `main` read by its pushes, a pull request from the same repository counted as inside, one directory per release plan, work allowed to wait on work begun, Codex's forge pull requests and snapshot package, and the busy check waiting on a tool the scenario ends."
+        issues: [porelo-buildtools#BT35, porelo-buildtools#BT36, porelo-buildtools#BT38, porelo-buildtools#BT40, porelo-codex#CX03, porelo-codex#CX05, porelo-omp#OM39]
       - title: "porelo and porelo-host each in its task, with a way back"
         test: "porelo's agent builds porelo in a task and porelo-host's agent its collection; each works on this machine again if a fault in Porelo or the host's setup stops it."
         issues: [porelo-host#HO40, porelo-host#HO39, porelo#B305]
@@ -506,7 +509,13 @@ sprints:
         issues: [porelo-buildtools#BT01]
       - title: "The gate and the transport held by tests"
         test: "Not a walk: a mutation run of `porelo-message-matrix` shows that removing a refusal of the gate or its parser, a certificate check on any trust path, or what keeps a message or a copy whole fails a unit test; a task of the project `default` joins no room, and a stalled client loses its connection."
-        issues: [porelo-message-matrix#MX66, porelo-message-matrix#MX68, porelo-message-matrix#MX69, porelo-message-matrix#MX70, porelo-message-matrix#MX71, porelo-message-matrix#MX72, porelo-message-matrix#MX73, porelo-message-matrix#MX74, porelo-message-matrix#MX75]
+        issues: [porelo#B393, porelo-message-matrix#MX66, porelo-message-matrix#MX68, porelo-message-matrix#MX69, porelo-message-matrix#MX70, porelo-message-matrix#MX71, porelo-message-matrix#MX72, porelo-message-matrix#MX73, porelo-message-matrix#MX74, porelo-message-matrix#MX75]
+      - title: "Small repairs of safety and robustness"
+        test: "Not a walk: each issue's own acceptance holds: a forced removal kills what outlives its stop, the gate's route match holds for every decoded byte, the person's token is kept where each tool reads it, the push judge is armed only where it holds, a task of another project cannot be named as a peer, a transport borrows the token its lifecycle needs, a registry owner check works with an app token, and a stopped test walks core findings and cannot reach the person's vault."
+        issues: [porelo-host#HO81, porelo-host#HO83, porelo-host#HO85, porelo-message-sluice#SL37, porelo#B388, porelo#B395, porelo#B329, porelo#B398, porelo#B389]
+      - title: "Subagents and reviews, as a person sees them"
+        test: "A task may start only the subagents its task allows; another is refused and the task says so. In IntelliJ, an open review shows that its push moved, and Approve and Reject are named in words."
+        issues: [porelo#B361, porelo-intellij#IJ16, porelo-intellij#IJ17]
       - title: "No channel file and no hand-over directory any more"
         test: "Every `AGENTS.md` describes Matrix, Forgejo and the gate; the channel file, the hand-over directory and the agents' own VM accounts are gone."
         notes: ["every repository's AGENTS.md rewritten"]
