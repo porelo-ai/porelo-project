@@ -30,9 +30,9 @@ sprints:
     title: "Choose the right existing sign-in"
     goal: "An imported sign-in belongs to the provider the person selected."
     functions:
-      - title: "Import one provider and recognize OMP"
-        test: "Sign Pi in to two providers, import the chosen provider and start a task; the other sign-in must not be selected. Detect OMP through agent.db and import its SQLite sign-in. An undetermined sign-in must be shown as unknown."
-        issues: [porelo#B226, porelo-pi#PI36, porelo-omp#OM32, porelo-omp#OM33]
+      - title: "OMP's sign-in read from its database"
+        test: "Sign OMP in and start a task with no `vault login`; the sign-in read from its SQLite database is offered for import."
+        issues: [porelo-omp#OM33]
   - id: "5"
     title: "Installed agents fit the start"
     goal: "Package compatibility and command options say what they actually do."
