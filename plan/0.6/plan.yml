@@ -355,10 +355,10 @@ sprints:
     title: "Accept the published tools"
     goal: "The release is installed from its publication channel and its dependencies are checked."
     functions:
-      - title: "A published release installed and verified"
-        test: "Publish and pin Buildtools 0.5.1, then build IntelliJ from an empty Gradle home. Change a dependency digest; the build must fail. Install the release leg from its publication channel; its log names the channel, and a reader refuses a wrong channel or a candidate as proof of the tested release."
-        issues: [porelo-intellij#IJ09, porelo-buildtools#BT01]
-        notes: ["BT01's install leg is proved on the next tag of porelo-buildtools"]
+      - title: "A published release built and verified"
+        test: "Publish and pin Buildtools 0.5.1, then build IntelliJ from an empty Gradle home. Change a dependency digest; the build must fail."
+        issues: [porelo-intellij#IJ09]
+        tested: "2026-11-02"
       - title: "A forge's keys and repositories through its client"
         test: "On Forgejo and on GitHub the client reads a person's public SSH keys without a token, lists, adds and deletes the signed-in person's own keys, tells whether a user owns an organization, and reads and creates a repository in it, against answers recorded from the real forge."
         issues: [porelo-forge-clients#FC02, porelo-forge-clients#FC05, porelo-forge-clients#FC06]
@@ -501,6 +501,9 @@ sprints:
     title: "Clearing up and counting"
     goal: "What the move leaves behind, and what it makes measurable."
     functions:
+      - title: "The first release's leg installs the release"
+        test: "Not a walk: on the first tag run of 0.6, on a `porelo-buildtools` release holding the change, an agent repository's and `porelo-frontend`'s legs install the released Porelo from its channel, and their logs name it; a reader refuses a wrong channel or a candidate as proof of the tested release. The release stops if it fails."
+        issues: [porelo-buildtools#BT01]
       - title: "No channel file and no hand-over directory any more"
         test: "Every `AGENTS.md` describes Matrix, Forgejo and the gate; the channel file, the hand-over directory and the agents' own VM accounts are gone."
         notes: ["every repository's AGENTS.md rewritten"]
