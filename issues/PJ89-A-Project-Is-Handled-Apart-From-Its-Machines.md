@@ -85,6 +85,9 @@ issue carries it through the whole handling of a project.
 - **A member's card is enough for a host.** A host admits a person when the organization names them as a member of the
   project and trusts their card. The host admin pins no developer: the host's `admins` name only its host
   admins, and the host admin decides which projects the host carries, never which persons.
+- **The host's page has no action on a person.** No *Admit*, *Lock*, *Let back in* or *Delete the account*: a
+  person is locked in their project by its admins. A person no longer a member of any project the host carries is
+  locked there at once, and their account on the host is deleted by itself.
 - **No person follows a project by hand.** `porelo project follow` and `unfollow` go with the cut, for every
   project: the accounts on a host fetch the projects the host carries, and nothing else is followed.
 - **A project is created from the interface in the same change.** [PJ88](README.md#pj88)
