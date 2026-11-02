@@ -15,7 +15,7 @@ with the operator first; only then does it become issues of Core and Frontend.
 In the sprint 6m test (2026-11-01) no project could be started. The interface writes no `project.yml` by design and
 can only follow an existing project repository. Core has no command that writes one. `porelo project follow` needed a
 first access commit, and `porelo project access init` needed a followed project, so each waited on the other (Core is fixing
-this wait). On walk6m the steps Register, Add a developer and Join, and everything after them, could not run
+this wait). On a test walk the steps Register, Add a developer and Join, and everything after them, could not run
 until a project repository was made by hand.
 
 ## Known so far

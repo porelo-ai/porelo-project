@@ -28,7 +28,7 @@ A person may hold several at once: two Claude Code subscriptions, one ChatGPT, o
 
 - **Where the accounts come from, per person** (to start with): what Porelo already keeps for each person's own account
   on a machine. `porelo providers` lists the providers declared there (data files under
-  `~/.local/share/porelo/providers` and `/usr/share/porelo/providers`), which agents use each, and what the person's
+  `$XDG_DATA_HOME/porelo/providers` and `/usr/share/porelo/providers`), which agents use each, and what the person's
   vault holds for each: an API key, or a subscription's sign-in. Each such vault entry is an account; nothing is
   configured twice.
 - **An account** is one thing that is billed, and says three things of its own beside the credential it holds:

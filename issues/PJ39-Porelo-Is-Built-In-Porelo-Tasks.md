@@ -70,7 +70,7 @@ work for a person either.
   [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)): the repository names it in a
   checked-in `porelo.yml` (the image and its tools only, never egress or limits), read from its default branch; a
   `.porelo.yml` that is not checked in overrides it locally; `project.yml` overrides both.
-- **Downloaded dependencies are cached across tasks later**, shared and read-only, as `~/.m2/cached/` is today; what a
+- **Downloaded dependencies are cached across tasks later**, shared and read-only, as Maven's `cached` directory is today; what a
   task installs stays its own (porelo [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193), sprint 9: until then each task downloads its own).
 - **What an agent learns goes into its repository's `AGENTS.md`, as a commit.** Nothing an agent needs is private
   any more: the machines, the accounts and the tools are named by `project.yml`, the `porelo.yml` files and the

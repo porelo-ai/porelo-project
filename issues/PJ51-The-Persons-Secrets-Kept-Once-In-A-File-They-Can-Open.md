@@ -14,7 +14,7 @@ Putting a project on a host today takes many secrets, each kept or typed its own
 | Secret | For | Kept today |
 |---|---|---|
 | The provider's API key | renting and giving back | the desktop's system store |
-| The ssh key `porelo-host` | reaching the host | `~/.ssh` |
+| The ssh key `porelo-host` | reaching the host | the account's ssh directory |
 | The drive's login (e-mail, password, one-time code) | the host's drive | typed at each `up` |
 | Porelo's vault passphrase on the host | the host's vault | typed at each `up`; a new host has a new vault |
 | The agents' sign-ins | the agents on the host | a browser flow at each host |

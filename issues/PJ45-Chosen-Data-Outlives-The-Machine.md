@@ -20,7 +20,7 @@ where the agents and the person talk - the record of hand-overs, questions and a
 
 - **A list of what is kept**, each entry a kind of data with how it is read consistently while it is in use: the
   homeserver's database (Tuwunel's, in its podman volume), the usage records (`usage/<task>.jsonl`, appended
-  line by line) and the Maven cache (`~/.m2/repository`), whose download every new machine would otherwise repeat.
+  line by line) and the Maven cache (Maven's local repository), whose download every new machine would otherwise repeat.
 - **Copied regularly and at down** to the project's store ([PJ40](README.md#pj40)): S3 object storage written by
   `restic`, encrypted on the host and deduplicated, its address and keys on the person's drive. Nothing is
   copied anywhere the person did not name.

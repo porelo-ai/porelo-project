@@ -23,7 +23,7 @@ itself fronts models from several vendors.
   SSH), and a token on standard input (`--with-token`). `COPILOT_GITHUB_TOKEN`, `GH_TOKEN` and
   `GITHUB_TOKEN`, in that order, outrank anything stored. So the sign-in never has to happen in a
   task: a credential is obtained on the host and given to the broker.
-- **What it stores**: one file, `~/.copilot/config.json`, mode 0600, holding a `gho_…` token in
+- **What it stores**: one file, `config.json` in Copilot's own directory, mode 0600, holding a `gho_…` token in
   plaintext; no refresh token, no expiry. **A fine-grained PAT with the "Copilot Requests"
   permission is accepted** and is the better credential: the sign-in's token also carries `repo`,
   `gist`, `codespace` and `read:org`.

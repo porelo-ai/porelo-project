@@ -13,4 +13,3 @@ CLI's own switch: a denied tool, a disabled feature or a hook. These govern only
 agent has a shell and can start itself again, so the switch is soft. A hard bound would sit where Porelo holds the
 task: a process limit in the task's container, or a cap on concurrent requests at the provider proxy.
 
-Agent Smith's survey of the five CLIs: `~/.porelo/handover/porelo-claude-code/subagent-limit-survey.md`.

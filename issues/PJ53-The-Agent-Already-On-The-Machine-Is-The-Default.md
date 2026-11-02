@@ -49,7 +49,7 @@ refuses when the agent is already signed in here.
 - **The findings decide at every start**; no choice is kept for the machine, so an agent installed, removed or
   signed out since the last start is seen at the next.
 - **The start names the choice and its source**, for example "agent claude, provider anthropic (subscription),
-  found in ~/.claude", so a default never acts unseen.
+  found in Claude Code's own directory", so a default never acts unseen.
 
 ## Plan
 
