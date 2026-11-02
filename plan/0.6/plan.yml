@@ -362,6 +362,10 @@ sprints:
         test: "On Forgejo and on GitHub the client reads a person's public SSH keys without a token, lists, adds and deletes the signed-in person's own keys, tells whether a user owns an organization, and reads and creates a repository in it, against answers recorded from the real forge."
         issues: [porelo-forge-clients#FC02, porelo-forge-clients#FC05, porelo-forge-clients#FC06]
         tested: "2026-11-02"
+      - title: "GitHub's recorded answers usable from another repository"
+        test: "A small program in another repository replays GitHub's answers from the main and the tests jar with no network, the tests jar read from Central's snapshots; the GitHub recorder keeps owning what an earlier request made when a later one of its kind is refused."
+        issues: [porelo-forge-clients#FC12, porelo-forge-clients#FC14]
+        tested: "2026-11-02"
   - id: "6o"
     title: "Before real use: what 6m left"
     goal: "What the 6m test and its readings left that a real host or a first key would meet is done."
