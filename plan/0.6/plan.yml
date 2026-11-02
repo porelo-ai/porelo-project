@@ -391,7 +391,7 @@ sprints:
         covers: [porelo-project#PJ89]
       - title: "A host carries projects and follows them by itself"
         test: "A host admin puts a project on a host with their central token; every member is admitted there within five minutes or at once on Refresh, and a member removed is locked there at the same moment, with no step of anyone; a person connects once per host and finds every project they are in ready, with no Join; a project taken off the host leaves nothing of itself there."
-        issues: [porelo-host#HO93, porelo-host#HO94, porelo-host#HO95, porelo-host#HO96, porelo-message-matrix#MX65, porelo-message-matrix#MX67, porelo-frontend#F312, porelo-frontend#F313]
+        issues: [porelo-host#HO49, porelo-host#HO84, porelo-host#HO93, porelo-host#HO94, porelo-host#HO95, porelo-host#HO96, porelo-message-matrix#MX65, porelo-message-matrix#MX67, porelo-frontend#F312, porelo-frontend#F313]
         covers: [porelo-project#PJ89]
       - title: "A host prepared once, its roles on it, and a person leaving"
         test: "A host set up anew carries its host admin and no project; on it the host admin, a project admin and members each do what their role allows and nothing more, without the VPN; any member runs the gathered push to the central forge with their own token; a person with no membership left is purged after seven days; the host has no forge user `operator`."
@@ -516,6 +516,9 @@ sprints:
       - title: "Subagents and reviews, as a person sees them"
         test: "A task may start only the subagents its task allows; another is refused and the task says so. In IntelliJ, an open review shows that its push moved, and Approve and Reject are named in words."
         issues: [porelo#B361, porelo-intellij#IJ16, porelo-intellij#IJ17]
+      - title: "A ready server runs its setup again, and a rented one is found"
+        test: "On a ready server, *Run its setup again* runs the setup once more and says how it ended; the server keeps its work. `porelo-host find` says which server is rented now, or that none is."
+        issues: [porelo-frontend#F223, porelo-frontend#F224]
       - title: "No channel file and no hand-over directory any more"
         test: "Every `AGENTS.md` describes Matrix, Forgejo and the gate; the channel file, the hand-over directory and the agents' own VM accounts are gone."
         notes: ["every repository's AGENTS.md rewritten"]
