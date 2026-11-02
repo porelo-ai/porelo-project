@@ -3,11 +3,11 @@
 
 A developer starts in a repository they already have, led by the Porelo Wizard
 
-*Stand: 2026-10-29T20:46:48Z*
+*Stand: 2026-11-02T14:10:00Z*
 
 ## Sprint progress
 
-![Sprint 1: Review 1, Implementing 1, Estimated 1, Analyzed 7, Accepted 1; Sprint 2: Estimated 2, Analyzed 1; Sprint 3: Backlog 1, Analyzed 1, Idea 1; Sprint 4: Analyzed 3, Idea 1; Sprint 5: Estimated 1, Analyzed 2; Sprint 6: Estimated 3, Analyzed 1; Sprint 7: Review 1, Estimated 1; Sprint 8: Backlog 1, Estimated 1, Analyzed 1; Sprint 9: Idea 6; Sprint 10: Estimated 3, Analyzed 4, Not filed yet 1; Sprint 11: Accepted 1, Not filed yet 4; Sprint 12: Estimated 2; Sprint 13: Not filed yet 3](progress-43595fcf.svg)
+![Sprint 1: Review 1, Implementing 1, Estimated 1, Analyzed 3; Sprint 2: Estimated 2, Analyzed 1; Sprint 3: Backlog 1, Analyzed 1, Idea 1; Sprint 4: Idea 1; Sprint 5: Estimated 1, Analyzed 2; Sprint 6: Estimated 3, Analyzed 1, Idea 2; Sprint 7: Review 1, Estimated 1; Sprint 8: Backlog 1, Estimated 1, Analyzed 1; Sprint 9: Idea 6; Sprint 10: Backlog 2, Estimated 3, Analyzed 4, Accepted 1, Not filed yet 1; Sprint 11: Accepted 1, Not filed yet 4; Sprint 12: Estimated 2; Sprint 13: Not filed yet 3; Sprint 14: Review 1, Idea 1; Sprint 15: Idea 8; Sprint 16: Idea 3](progress-910226b7.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -24,12 +24,6 @@ A developer starts in a repository they already have, with no project written an
 Test: A task starts in a checkout in `default`; a followed project naming the repository is offered to take it; a repository with no commit, an unreadable upstream or a failed fetch is named as what it is, with the next step.
 
 🟨 [PJ14](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj14 "porelo-project#PJ14 · Implementing · M · Work starts without a project") ⬛ [B229](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b229 "porelo#B229 · Analyzed · S · A Follow Of A Repository Without A Commit Says So") ⬛ [B33](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b33 "porelo#B33 · Analyzed · S · A Task's Own Fetches") 🟦 [F118](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f118 "porelo-frontend#F118 · Review · — · An Upstream That Cannot Be Read Said Before A Start")
-
-**The agent already on the machine is taken ⚪ Not tested**
-
-Test: Without `--agent` and `--provider` the task starts with the Claude Code signed in there and says what it found and where; the interface shows the same choice.
-
-⬛ [PJ53](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj53 "porelo-project#PJ53 · Analyzed · XL · The agent already on the machine is the default") ⬛ [B225](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b225 "porelo#B225 · Analyzed · L · The Agent Found On The Machine") ⬛ [CC36](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc36 "porelo-claude-code#CC36 · Analyzed · S · Report What Claude Code Finds Of Itself On The Host") ⬛ [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224 "porelo#B224 · Analyzed · M · An Agent Protocol That Only Grows") ⬜ [F143](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f143 "porelo-frontend#F143 · Accepted · — · The Agent The Machine Found Is The Default")
 
 **Keys and providers without stumbling ⚪ Not tested**
 
@@ -73,11 +67,11 @@ Test: Attach to an agent, let it work, rest and wait, and compare the CLI with t
 
 An imported sign-in belongs to the provider the person selected.
 
-**Import one provider and recognize OMP ⚪ Not tested**
+**OMP's sign-in read from its database ⚪ Not tested**
 
-Test: Sign Pi in to two providers, import the chosen provider and start a task; the other sign-in must not be selected. Detect OMP through agent.db and import its SQLite sign-in. An undetermined sign-in must be shown as unknown.
+Test: Sign OMP in and start a task with no `vault login`; the sign-in read from its SQLite database is offered for import.
 
-⬛ [B226](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b226 "porelo#B226 · Analyzed · M · An Imported Credential Names Its Provider") ⬛ [PI36](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi36 "porelo-pi#PI36 · Analyzed · M · Import And Report Pi's Sign-Ins On The Host") ⬛ [OM32](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om32 "porelo-omp#OM32 · Analyzed · S · Report What Oh My Pi Finds Of Itself On The Host") 🟧 [OM33](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om33 "porelo-omp#OM33 · Idea ·  · Read Oh My Pi's Sign-Ins From Its Database")
+🟧 [OM33](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om33 "porelo-omp#OM33 · Idea ·  · Read Oh My Pi's Sign-Ins From Its Database")
 
 </td></tr></table>
 
@@ -106,6 +100,12 @@ A supported wire format works even when the agent does not already know the prov
 Test: Use a loopback provider, an organization HTTPS provider, xAI, Zhipu and Z.AI. A supported dialect works; an unsupported dialect and HTTP outside loopback are refused before the start.
 
 ⬛ [P10](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p10 "porelo#P10 · Analyzed · M · A Native Agent Reaching A Provider It Does Not Know") 🟪 [B149](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b149 "porelo#B149 · Estimated · M · A Local Provider Template") 🟪 [P07](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p07 "porelo#P07 · Estimated · S · Provider xAI") 🟪 [P08](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p08 "porelo#P08 · Estimated · S · Provider Zhipu")
+
+**The providers' usage seen in a status line ⚪ Not tested**
+
+Test: The status line shows one traffic light for all providers in use; a click lists each provider with its own light; a provider past its configured critical threshold also raises a warning in needs you.
+
+🟧 [B365](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b365 "porelo#B365 · Idea · M · The Providers' Usage Answered In One Form") 🟧 [F282](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f282 "porelo-frontend#F282 · Idea · — · The Providers' Usage In A Status Line")
 
 </td></tr></table>
 
@@ -161,7 +161,7 @@ Whoever needs more than the default image or `default` gets drafts from what the
 
 Test: For a Maven repository, a `.porelo.yml` and where needed a `project.yml` draft, each value with its source; a project kept in a local repository is read again at `refresh`.
 
-🟪 [PJ52](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj52 "porelo-project#PJ52 · Estimated · XL · A repository's build tools are recognized and a project proposed") ⬛ [B220](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b220 "porelo#B220 · Analyzed · M · Build-Tool Plugins Found At Run Time") ⬛ [B221](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b221 "porelo#B221 · Analyzed · L · A Project Proposed From A Checkout") ⬛ [B227](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b227 "porelo#B227 · Analyzed · S · A Project Followed From A Path Is Refreshed") ◻️ porelo-ecosystems, a new repository and agent, Maven first
+🟪 [PJ52](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj52 "porelo-project#PJ52 · Estimated · XL · A repository's build tools are recognized and a project proposed") ⬛ [B220](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b220 "porelo#B220 · Analyzed · M · Build-Tool Plugins Found At Run Time") ⬛ [B221](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b221 "porelo#B221 · Analyzed · L · A Project Proposed From A Checkout") ⬛ [B227](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b227 "porelo#B227 · Analyzed · S · A Project Followed From A Path Is Refreshed") 🔲 [EC01](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec01 "porelo-ecosystems#EC01 · Backlog · S · A Spike Of The Model Builder In A Native Image") 🔲 [EC02](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec02 "porelo-ecosystems#EC02 · Backlog · M · Maven Repository Hosts Recognized From A Checkout And The Settings") ⬜ [EC03](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec03 "porelo-ecosystems#EC03 · Accepted · - · The Maven Plugin Behind The Contract") ◻️ Maven first; the other plugins in porelo-ecosystems stay Accepted
 
 **The drafts shown before the first task ⚪ Not tested**
 
@@ -231,6 +231,90 @@ Test: The wizard runs with nobody there for many machines; a step that needs a p
 
 </td></tr></table>
 
+<table><tr><td>
+
+### Sprint 14: The interface from a Windows desktop
+
+A person on Windows reaches machines and hosts as a person on Linux does.
+
+**A machine and a host reached from Windows ⚪ Not tested**
+
+Test: From the Windows build, a machine over ssh shows its projects, work, a terminal and the gate; a host from its card is joined, prepared, admitted and added to, through one ssh process with loopback TCP ends and no master.
+
+🟦 [F108](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f108 "porelo-frontend#F108 · Review · — · A Machine Over Ssh From Windows") 🟧 [F290](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f290 "porelo-frontend#F290 · Idea · M · The Host Functions From A Windows Desktop")
+
+</td></tr></table>
+
+<table><tr><td>
+
+### Sprint 15: What 0.6 left, placed
+
+The follow-ups of 0.6's last sprint, each a function of its own.
+
+**A project registered from the admin's own account ⚪ Not tested**
+
+Test: The project's admin registers it from the interface; the host makes its forge organization and teams; no root step.
+
+🟧 [HO88](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho88 "porelo-host#HO88 · Idea · - · A Project Registered From The Admin's Own Account")
+
+**Add confirmed, Lock and Let back in from the interface ⚪ Not tested**
+
+Test: Add a developer is confirmed by the person's state on the host; Lock and Let back in are offered and confirmed the same way.
+
+🟧 [F292](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f292 "porelo-frontend#F292 · Idea · M · A Developer Confirmed By The Host's Registry Status")
+
+**The host and project access hardened ⚪ Not tested**
+
+Test: git runs in a clean environment; bundles are placed in one ssh call and at once; sudo runs without the login shell; the registry is held while a bundle is sent.
+
+🟧 [F293](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f293 "porelo-frontend#F293 · Idea · M · Host Deliveries Hardened")
+
+**The subagent number chosen when starting ⚪ Not tested**
+
+Test: The start dialog shows the number of subagents that applies, takes another one, and says a number Core refuses before anything is made.
+
+🟧 [F284](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f284 "porelo-frontend#F284 · Idea · — · The Subagent Number Chosen When Starting")
+
+**A registry commit split as git splits it ⚪ Not tested**
+
+Test: A commit with any gpgsig header is judged by Porelo as git judges it, through one shared splitting.
+
+🟧 [B374](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b374 "porelo#B374 · Idea · S · A Registry Commit Split As Git Splits It")
+
+**A start that waits for its helpers ⚪ Not tested**
+
+Test: A start whose gate or relay does not come up ends with a code; a start waits for both; two starts of one name never stop each other's task.
+
+🟧 [B384](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b384 "porelo#B384 · Idea · S · A Start That Waits For Its Helpers")
+
+**A project access contract without guessing ⚪ Not tested**
+
+Test: A filed request is looked up by its id; verify names the access commit's signer and the head it took; access add answers for an admin already listed.
+
+🟧 [B386](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b386 "porelo#B386 · Idea · S · A Project Access Contract Without Guessing")
+
+**Each person's state named by sync and status ⚪ Not tested**
+
+Test: The host's sync and registry status name each person's state on the host, so the interface confirms Add, Lock and Let back in from it.
+
+🟧 [HO90](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho90 "porelo-host#HO90 · Idea · S · Each Person's State Named By Sync And Status")
+
+</td></tr></table>
+
+<table><tr><td>
+
+### Sprint 16: Clearing up 0.7
+
+Each repository's gathered small findings are worked off or become issues of their own.
+
+**The gathered findings worked off ⚪ Not tested**
+
+Test: B380, HO86 and F288 hold no open point; a point that proved larger is an issue of its own.
+
+🟧 [B380](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b380 "porelo#B380 · Idea · - · Small Edge Cases Left By Readings And Fixes") 🟧 [HO86](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho86 "porelo-host#HO86 · Idea · - · The Push Judge's Smaller Edges") 🟧 [F288](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f288 "porelo-frontend#F288 · Idea · — · Small Leftovers Of The One-Click Flow")
+
+</td></tr></table>
+
 ## Waits
 
 - [PJ52](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj52 "porelo-project#PJ52 · Estimated · XL · A repository's build tools are recognized and a project proposed") · Estimated after [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192 "porelo#B192 · Finished · - · An Image Chosen Per Repository") · Finished
@@ -238,15 +322,11 @@ Test: The wizard runs with nobody there for many machines; a step that needs a p
 - [F99](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f99 "porelo-frontend#F99 · Backlog · S · An Attached Agent Shown At Rest Or Working") · Backlog after [B118](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b118 "porelo#B118 · Analyzed · M · An Attached Agent Said At Rest Or Working") · Analyzed
 - [F117](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f117 "porelo-frontend#F117 · Backlog · M · What Walk 8 Left Unbuilt") · Backlog after [B179](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b179 "porelo#B179 · Analyzed · M · A Code Beside Why A Release Cannot Go") · Analyzed
 - [F142](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f142 "porelo-frontend#F142 · Estimated · M · The Drafts Offered Before The First Task In Default") · Estimated after [B221](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b221 "porelo#B221 · Analyzed · L · A Project Proposed From A Checkout") · Analyzed
-- [F143](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f143 "porelo-frontend#F143 · Accepted · — · The Agent The Machine Found Is The Default") · Accepted after [B225](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b225 "porelo#B225 · Analyzed · L · The Agent Found On The Machine") · Analyzed
 - [HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27 "porelo-host#HO27 · Idea · - · The Forge's Jobs Told Where The Pool Is") · Idea after [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25 "porelo-buildtools#BT25 · Review · L · Machines Asked For By Kind") · Review
 - [CC40](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc40 "porelo-claude-code#CC40 · Idea ·  · The Acceptance Legs Run On The Host's Forge") · Idea after [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12 "porelo-host#HO12 · Review · L · The VM Pool") · Review, [HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27 "porelo-host#HO27 · Idea · - · The Forge's Jobs Told Where The Pool Is") · Idea, [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25 "porelo-buildtools#BT25 · Review · L · Machines Asked For By Kind") · Review
 - [PI40](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi40 "porelo-pi#PI40 · Idea ·  · The Acceptance Legs Run On The Host's Forge") · Idea after [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12 "porelo-host#HO12 · Review · L · The VM Pool") · Review, [HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27 "porelo-host#HO27 · Idea · - · The Forge's Jobs Told Where The Pool Is") · Idea, [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25 "porelo-buildtools#BT25 · Review · L · Machines Asked For By Kind") · Review
 - [OM37](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om37 "porelo-omp#OM37 · Idea ·  · The Acceptance Legs Run On The Host's Forge") · Idea after [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12 "porelo-host#HO12 · Review · L · The VM Pool") · Review, [HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27 "porelo-host#HO27 · Idea · - · The Forge's Jobs Told Where The Pool Is") · Idea, [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25 "porelo-buildtools#BT25 · Review · L · Machines Asked For By Kind") · Review
 - [AG05](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag05 "porelo-agy#AG05 · Idea ·  · The Acceptance Legs Run On The Host's Forge") · Idea after [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12 "porelo-host#HO12 · Review · L · The VM Pool") · Review, [HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27 "porelo-host#HO27 · Idea · - · The Forge's Jobs Told Where The Pool Is") · Idea, [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25 "porelo-buildtools#BT25 · Review · L · Machines Asked For By Kind") · Review
-- [CC22](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc22 "porelo-claude-code#CC22 · Estimated · S · Depend on the agent protocol Porelo's package provides") · Estimated after [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224 "porelo#B224 · Analyzed · M · An Agent Protocol That Only Grows") · Analyzed, [B230](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b230 "porelo#B230 · Analyzed · M · The Package Provides The Lowest Agent Protocol") · Analyzed
-- [CC36](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc36 "porelo-claude-code#CC36 · Analyzed · S · Report What Claude Code Finds Of Itself On The Host") · Analyzed after [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224 "porelo#B224 · Analyzed · M · An Agent Protocol That Only Grows") · Analyzed, [B225](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b225 "porelo#B225 · Analyzed · L · The Agent Found On The Machine") · Analyzed
-- [PI36](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi36 "porelo-pi#PI36 · Analyzed · M · Import And Report Pi's Sign-Ins On The Host") · Analyzed after [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224 "porelo#B224 · Analyzed · M · An Agent Protocol That Only Grows") · Analyzed, [B225](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b225 "porelo#B225 · Analyzed · L · The Agent Found On The Machine") · Analyzed, [B226](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b226 "porelo#B226 · Analyzed · M · An Imported Credential Names Its Provider") · Analyzed
-- [OM32](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om32 "porelo-omp#OM32 · Analyzed · S · Report What Oh My Pi Finds Of Itself On The Host") · Analyzed after [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224 "porelo#B224 · Analyzed · M · An Agent Protocol That Only Grows") · Analyzed, [B225](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b225 "porelo#B225 · Analyzed · L · The Agent Found On The Machine") · Analyzed
-- [OM33](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om33 "porelo-omp#OM33 · Idea ·  · Read Oh My Pi's Sign-Ins From Its Database") · Idea after [B226](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b226 "porelo#B226 · Analyzed · M · An Imported Credential Names Its Provider") · Analyzed
+- [CC22](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc22 "porelo-claude-code#CC22 · Estimated · S · Depend on the agent protocol Porelo's package provides") · Estimated after [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224 "porelo#B224 · Review · M · An Agent Protocol That Only Grows") · Review, [B230](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b230 "porelo#B230 · Analyzed · M · The Package Provides The Lowest Agent Protocol") · Analyzed
+- [OM33](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om33 "porelo-omp#OM33 · Idea ·  · Read Oh My Pi's Sign-Ins From Its Database") · Idea after [B226](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b226 "porelo#B226 · Review · M · An Imported Credential Names Its Provider") · Review
 

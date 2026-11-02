@@ -1,7 +1,7 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1106 494" role="img" aria-label="Sprint progress for release 0.7">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1198 584" role="img" aria-label="Sprint progress for release 0.7">
 <title>Sprint progress for release 0.7</title>
 <style>
 text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
@@ -67,33 +67,28 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 94)">
 <text x="0" y="17">1. Starting in one's own repository</text>
-<desc>Review 1, Implementing 1, Estimated 1, Analyzed 7, Accepted 1. PJ14: porelo-project#PJ14 · Implementing · M · Work starts without a project; B229: porelo#B229 · Analyzed · S · A Follow Of A Repository Without A Commit Says So; B33: porelo#B33 · Analyzed · S · A Task's Own Fetches; F118: porelo-frontend#F118 · Review · — · An Upstream That Cannot Be Read Said Before A Start; PJ53: porelo-project#PJ53 · Analyzed · XL · The agent already on the machine is the default; B225: porelo#B225 · Analyzed · L · The Agent Found On The Machine; CC36: porelo-claude-code#CC36 · Analyzed · S · Report What Claude Code Finds Of Itself On The Host; B224: porelo#B224 · Analyzed · M · An Agent Protocol That Only Grows; F143: porelo-frontend#F143 · Accepted · — · The Agent The Machine Found Is The Default; B228: porelo#B228 · Analyzed · S · A Key Pasted At The Prompt Is Read Whole; P09: porelo#P09 · Estimated · M · A Native Agent And A Provider It Does Not Know; </desc>
+<desc>Review 1, Implementing 1, Estimated 1, Analyzed 3. PJ14: porelo-project#PJ14 · Implementing · M · Work starts without a project; B229: porelo#B229 · Analyzed · S · A Follow Of A Repository Without A Commit Says So; B33: porelo#B33 · Analyzed · S · A Task's Own Fetches; F118: porelo-frontend#F118 · Review · — · An Upstream That Cannot Be Read Said Before A Start; B228: porelo#B228 · Analyzed · S · A Key Pasted At The Prompt Is Read Whole; P09: porelo#P09 · Estimated · M · A Native Agent And A Provider It Does Not Know; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="36.36363636363637" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
+<rect x="0.0" width="66.66666666666667" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
-<rect x="36.36363636363637" width="36.36363636363637" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+<rect x="66.66666666666667" width="66.66666666666667" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
 
-<rect x="72.72727272727273" width="36.36363636363637" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+<rect x="133.33333333333334" width="66.66666666666667" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
 
-<rect x="109.0909090909091" width="254.54545454545453" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 7</title></rect>
-
-<rect x="363.6363636363636" width="36.36363636363637" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+<rect x="200.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 3</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 11 done</text>
+<text class="legend" x="410" y="17">0 of 6 done</text>
 </svg>
 
 
 <text x="1006" y="17"><title>Work without a project, with plain refusals: Not tested</title>⚪</text>
 
 
-<text x="1030" y="17"><title>The agent already on the machine is taken: Not tested</title>⚪</text>
-
-
-<text x="1054" y="17"><title>Keys and providers without stumbling: Not tested</title>⚪</text>
+<text x="1030" y="17"><title>Keys and providers without stumbling: Not tested</title>⚪</text>
 
 </g>
 
@@ -144,21 +139,19 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 184)">
 <text x="0" y="17">4. Choose the right existing sign-in</text>
-<desc>Analyzed 3, Idea 1. B226: porelo#B226 · Analyzed · M · An Imported Credential Names Its Provider; PI36: porelo-pi#PI36 · Analyzed · M · Import And Report Pi's Sign-Ins On The Host; OM32: porelo-omp#OM32 · Analyzed · S · Report What Oh My Pi Finds Of Itself On The Host; OM33: porelo-omp#OM33 · Idea ·  · Read Oh My Pi's Sign-Ins From Its Database; </desc>
+<desc>Idea 1. OM33: porelo-omp#OM33 · Idea ·  · Read Oh My Pi's Sign-Ins From Its Database; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="300.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 3</title></rect>
-
-<rect x="300.0" width="100.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 4 done</text>
+<text class="legend" x="410" y="17">0 of 1 done</text>
 </svg>
 
 
-<text x="1006" y="17"><title>Import one provider and recognize OMP: Not tested</title>⚪</text>
+<text x="1006" y="17"><title>OMP's sign-in read from its database: Not tested</title>⚪</text>
 
 </g>
 
@@ -186,21 +179,26 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 244)">
 <text x="0" y="17">6. Use a provider that fits</text>
-<desc>Estimated 3, Analyzed 1. P10: porelo#P10 · Analyzed · M · A Native Agent Reaching A Provider It Does Not Know; B149: porelo#B149 · Estimated · M · A Local Provider Template; P07: porelo#P07 · Estimated · S · Provider xAI; P08: porelo#P08 · Estimated · S · Provider Zhipu; </desc>
+<desc>Estimated 3, Analyzed 1, Idea 2. P10: porelo#P10 · Analyzed · M · A Native Agent Reaching A Provider It Does Not Know; B149: porelo#B149 · Estimated · M · A Local Provider Template; P07: porelo#P07 · Estimated · S · Provider xAI; P08: porelo#P08 · Estimated · S · Provider Zhipu; B365: porelo#B365 · Idea · M · The Providers' Usage Answered In One Form; F282: porelo-frontend#F282 · Idea · — · The Providers' Usage In A Status Line; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="300.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
 
-<rect x="300.0" width="100.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="200.0" width="66.66666666666667" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 2</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 4 done</text>
+<text class="legend" x="410" y="17">0 of 6 done</text>
 </svg>
 
 
 <text x="1006" y="17"><title>Start local, organization and added providers: Not tested</title>⚪</text>
+
+
+<text x="1030" y="17"><title>The providers' usage seen in a status line: Not tested</title>⚪</text>
 
 </g>
 
@@ -270,19 +268,23 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 364)">
 <text x="0" y="17">10. A project proposed from the checkout</text>
-<desc>Estimated 3, Analyzed 4, Not filed yet 1. PJ52: porelo-project#PJ52 · Estimated · XL · A repository's build tools are recognized and a project proposed; B220: porelo#B220 · Analyzed · M · Build-Tool Plugins Found At Run Time; B221: porelo#B221 · Analyzed · L · A Project Proposed From A Checkout; B227: porelo#B227 · Analyzed · S · A Project Followed From A Path Is Refreshed; porelo-ecosystems, a new repository and agent, Maven first: Not filed yet; F142: porelo-frontend#F142 · Estimated · M · The Drafts Offered Before The First Task In Default; B222: porelo#B222 · Analyzed · M · A Task's Tool Settings Written At Its Start; B219: porelo#B219 · Estimated · L · A Private Package Repository Through The Broker; </desc>
+<desc>Backlog 2, Estimated 3, Analyzed 4, Accepted 1, Not filed yet 1. PJ52: porelo-project#PJ52 · Estimated · XL · A repository's build tools are recognized and a project proposed; B220: porelo#B220 · Analyzed · M · Build-Tool Plugins Found At Run Time; B221: porelo#B221 · Analyzed · L · A Project Proposed From A Checkout; B227: porelo#B227 · Analyzed · S · A Project Followed From A Path Is Refreshed; EC01: porelo-ecosystems#EC01 · Backlog · S · A Spike Of The Model Builder In A Native Image; EC02: porelo-ecosystems#EC02 · Backlog · M · Maven Repository Hosts Recognized From A Checkout And The Settings; EC03: porelo-ecosystems#EC03 · Accepted · - · The Maven Plugin Behind The Contract; Maven first; the other plugins in porelo-ecosystems stay Accepted: Not filed yet; F142: porelo-frontend#F142 · Estimated · M · The Drafts Offered Before The First Task In Default; B222: porelo#B222 · Analyzed · M · A Task's Tool Settings Written At Its Start; B219: porelo#B219 · Estimated · L · A Private Package Repository Through The Broker; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="150.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
+<rect x="0.0" width="72.72727272727273" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 2</title></rect>
 
-<rect x="150.0" width="200.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 4</title></rect>
+<rect x="72.72727272727273" width="109.0909090909091" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
 
-<rect x="350.0" width="50.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+<rect x="181.8181818181818" width="145.45454545454547" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 4</title></rect>
+
+<rect x="327.27272727272725" width="36.36363636363637" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="363.6363636363636" width="36.36363636363637" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 8 done</text>
+<text class="legend" x="410" y="17">0 of 11 done</text>
 </svg>
 
 
@@ -358,6 +360,86 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 
 <text x="1030" y="17"><title>The same plan from a file of answers: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 484)">
+<text x="0" y="17">14. The interface from a Windows desktop</text>
+<desc>Review 1, Idea 1. F108: porelo-frontend#F108 · Review · — · A Machine Over Ssh From Windows; F290: porelo-frontend#F290 · Idea · M · The Host Functions From A Windows Desktop; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="200.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 2 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>A machine and a host reached from Windows: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 514)">
+<text x="0" y="17">15. What 0.6 left, placed</text>
+<desc>Idea 8. HO88: porelo-host#HO88 · Idea · - · A Project Registered From The Admin's Own Account; F292: porelo-frontend#F292 · Idea · M · A Developer Confirmed By The Host's Registry Status; F293: porelo-frontend#F293 · Idea · M · Host Deliveries Hardened; F284: porelo-frontend#F284 · Idea · — · The Subagent Number Chosen When Starting; B374: porelo#B374 · Idea · S · A Registry Commit Split As Git Splits It; B384: porelo#B384 · Idea · S · A Start That Waits For Its Helpers; B386: porelo#B386 · Idea · S · A Project Access Contract Without Guessing; HO90: porelo-host#HO90 · Idea · S · Each Person's State Named By Sync And Status; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 8</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 8 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>A project registered from the admin's own account: Not tested</title>⚪</text>
+
+
+<text x="1030" y="17"><title>Add confirmed, Lock and Let back in from the interface: Not tested</title>⚪</text>
+
+
+<text x="1054" y="17"><title>The host and project access hardened: Not tested</title>⚪</text>
+
+
+<text x="1078" y="17"><title>The subagent number chosen when starting: Not tested</title>⚪</text>
+
+
+<text x="1102" y="17"><title>A registry commit split as git splits it: Not tested</title>⚪</text>
+
+
+<text x="1126" y="17"><title>A start that waits for its helpers: Not tested</title>⚪</text>
+
+
+<text x="1150" y="17"><title>A project access contract without guessing: Not tested</title>⚪</text>
+
+
+<text x="1174" y="17"><title>Each person's state named by sync and status: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 544)">
+<text x="0" y="17">16. Clearing up 0.7</text>
+<desc>Idea 3. B380: porelo#B380 · Idea · - · Small Edge Cases Left By Readings And Fixes; HO86: porelo-host#HO86 · Idea · - · The Push Judge's Smaller Edges; F288: porelo-frontend#F288 · Idea · — · Small Leftovers Of The One-Click Flow; </desc>
+<svg x="456" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 3</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 3 done</text>
+</svg>
+
+
+<text x="1006" y="17"><title>The gathered findings worked off: Not tested</title>⚪</text>
 
 </g>
 
