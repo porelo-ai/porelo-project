@@ -87,6 +87,9 @@ issue carries it through the whole handling of a project.
   is built in 6q beside this issue.
 - **What a finished issue's Done section says stays as it is.** It records what was built; an issue in Review is
   changed by the cut only where its open text depends on what goes.
+- **A project's room is kept per host.** A project on two hosts has two separate rooms, one on each host's
+  homeserver. Taking a project off a host deletes its room there, with its conversation. A homeserver outside the
+  host stays possible: `project.yml` names it, and the room is then kept there.
 - **The project admin signs the members.** The project's members are changed and signed by the project admin named
   on the project's card; the signers of `project.yml` sign that file alone.
 
