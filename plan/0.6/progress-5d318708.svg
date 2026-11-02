@@ -806,16 +806,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 1054)">
 <text x="0" y="17">6s. The agent already on the machine is taken</text>
-<desc>Implementing 1, Backlog 3, Analyzed 3, Accepted 1. PJ53: porelo-project#PJ53 · Backlog · XL · The agent already on the machine is the default; B225: porelo#B225 · Backlog · L · The Agent Found On The Machine; CC36: porelo-claude-code#CC36 · Implementing · S · Report What Claude Code Finds Of Itself On The Host; B224: porelo#B224 · Backlog · M · An Agent Protocol That Only Grows; F143: porelo-frontend#F143 · Accepted · — · The Agent The Machine Found Is The Default; B226: porelo#B226 · Analyzed · M · An Imported Credential Names Its Provider; PI36: porelo-pi#PI36 · Analyzed · M · Import And Report Pi's Sign-Ins On The Host; OM32: porelo-omp#OM32 · Analyzed · S · Report What Oh My Pi Finds Of Itself On The Host; </desc>
+<desc>Implementing 3, Backlog 4, Accepted 1. PJ53: porelo-project#PJ53 · Backlog · XL · The agent already on the machine is the default; B225: porelo#B225 · Backlog · L · The Agent Found On The Machine; CC36: porelo-claude-code#CC36 · Implementing · S · Report What Claude Code Finds Of Itself On The Host; B224: porelo#B224 · Backlog · M · An Agent Protocol That Only Grows; F143: porelo-frontend#F143 · Accepted · — · The Agent The Machine Found Is The Default; B226: porelo#B226 · Backlog · M · An Imported Credential Names Its Provider; PI36: porelo-pi#PI36 · Implementing · M · Import And Report Pi's Sign-Ins On The Host; OM32: porelo-omp#OM32 · Implementing · S · Report What Oh My Pi Finds Of Itself On The Host; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="50.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+<rect x="0.0" width="150.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 3</title></rect>
 
-<rect x="50.0" width="150.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 3</title></rect>
-
-<rect x="200.0" width="150.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 3</title></rect>
+<rect x="150.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 4</title></rect>
 
 <rect x="350.0" width="50.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
 

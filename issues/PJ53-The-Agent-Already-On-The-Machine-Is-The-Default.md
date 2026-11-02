@@ -71,7 +71,7 @@ The split, each part sized by its repository's agent, read in the code.
   - `porelo-pi` [PI36](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi36), M: a configuration directory and `vault import` first, then the findings
     from Pi's sign-in file; a key given as a command is reported, never run.
   - `porelo-omp` [OM32](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om32), S: oh-my-pi found by
-    Oh My Pi's agent database existing, never opened, and "cannot say" for its sign-in, which stays with `vault login`.
+    Oh My Pi's agent database existing, never opened, and "cannot say" for its sign-in, which stays with `vault put` and `vault authorize github-copilot`; `vault login omp` refuses today.
     Reading the sign-ins from that SQLite database is
     [OM33](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om33), an Idea and a nice to have.
 - **The interface**, `porelo-frontend` [F143](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f143),
