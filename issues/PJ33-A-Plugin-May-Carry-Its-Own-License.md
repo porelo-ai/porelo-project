@@ -30,7 +30,7 @@ All of Porelo is GPL-3.0-or-later today, with no exception and no differently li
 
 ## The shape
 
-1. **The parts others link under Apache-2.0:** `porelo-agent-api`, `porelo-build-api`, `porelo-wire` and
+1. **The parts others link under Apache-2.0:** `porelo-agent-api`, `porelo-build-api`, `porelo-ecosystem-api`, `porelo-wire` and
    the `.varlink` interface definitions. Everything else in Porelo stays GPL-3.0-or-later. A plugin may
    then carry any license, and a plugin built as one native image needs nothing further: Apache-2.0
    asks for the license and notices to be kept, not for the library to be replaceable, which the LGPL
