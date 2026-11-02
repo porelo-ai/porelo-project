@@ -385,17 +385,17 @@ sprints:
     functions:
       - title: "The organization's page, and a project created there"
         test: "An organization made anew by Core's script shows its people, projects, hosts and owners; each person sees only the actions of their roles; an organization owner adds a project and names its project admin, who makes its project repository on first opening it."
-        issues: []
-        notes: ["Core's organization commands; Frontend's organization page and its dialog to add a project"]
+        issues: [porelo-frontend#F309, porelo-frontend#F311, porelo-frontend#F314, porelo-frontend#F315]
+        notes: ["Core's organization commands"]
         covers: [porelo-project#PJ87, porelo-project#PJ88]
       - title: "A project edited on its own page, with no machine"
         test: "The project admin adds and removes repositories and members and changes a role on the project's page; a member sees it read-only; nothing on it names a host."
-        issues: []
-        notes: ["Core's project commands; Frontend's project page"]
+        issues: [porelo-frontend#F310]
+        notes: ["Core's project commands"]
         covers: [porelo-project#PJ89]
       - title: "A host carries projects and follows them by itself"
         test: "A host admin puts a project on a host with their central token; every member is admitted there within five minutes or at once on Refresh, and a member removed is locked at once; a person connects once per host and finds every project they are in ready, with no Join."
-        issues: [porelo-host#HO93, porelo-host#HO94, porelo-host#HO95, porelo-host#HO96, porelo-message-matrix#MX65]
+        issues: [porelo-host#HO93, porelo-host#HO94, porelo-host#HO95, porelo-host#HO96, porelo-message-matrix#MX65, porelo-frontend#F312, porelo-frontend#F313]
         covers: [porelo-project#PJ89]
   - id: "6r"
     title: "What 6m left untested, after the rebuild"
