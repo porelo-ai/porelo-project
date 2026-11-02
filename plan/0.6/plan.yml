@@ -393,7 +393,7 @@ sprints:
         covers: [porelo-project#PJ89]
       - title: "A host carries projects and follows them by itself"
         test: "A host admin puts a project on a host with their central token; every member is admitted there within five minutes or at once on Refresh, and a member removed is locked at once; a person connects once per host and finds every project they are in ready, with no Join."
-        issues: []
+        issues: [porelo-host#HO93, porelo-host#HO94, porelo-host#HO95, porelo-host#HO96]
         covers: [porelo-project#PJ89]
   - id: "6r"
     title: "What 6m left untested, after the rebuild"
