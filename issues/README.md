@@ -43,12 +43,12 @@ Within each group, ordered by what to do next; the number is identity, not seque
 |---|---|---|---|
 | <a id="pj87"></a>[PJ87](PJ87-The-Organization-Behind-An-Interface.md) | XL | — | The registry becomes the organization: its owners, its people, its projects with their members, and its hosts, reached through one interface with more than one implementation, Git on the central forge first; `porelo org …` and the interface use the word "organization". |
 | <a id="pj89"></a>[PJ89](PJ89-A-Project-Is-Handled-Apart-From-Its-Machines.md) | XL | [PJ87](#pj87) | Handling a project and putting it on a machine are two processes: a project, its repositories and its members are made and changed on the project, which names no host; a host admin puts a project on a host with every person it names and takes it off again, and the host follows it with no step of its own. |
+| <a id="pj53"></a>[PJ53](PJ53-The-Agent-Already-On-The-Machine-Is-The-Default.md) | XL | — | A start without `--agent` and `--provider` takes the agent already installed and signed in on the machine, with its provider: each packaged agent reports what it finds of itself on the host, by path and never a credential's value; `porelo` chooses, a flag still wins, the choice and its source are named, and what is found but not in the vault is offered for `vault import`. |
 
 ## Analyzed
 
 | # | Size | Blocked by | What it covers | Open questions |
 |---|---|---|---|---|
-| <a id="pj53"></a>[PJ53](PJ53-The-Agent-Already-On-The-Machine-Is-The-Default.md) | XL | — | A start without `--agent` and `--provider` takes the agent already installed and signed in on the machine, with its provider: each packaged agent reports what it finds of itself on the host, by path and never a credential's value; `porelo` chooses, a flag still wins, the choice and its source are named, and what is found but not in the vault is offered for `vault import`. | 0 |
 | <a id="pj33"></a>[PJ33](PJ33-A-Plugin-May-Carry-Its-Own-License.md) | L | — | An agent, build reader, transport or client may carry its own license: the interface libraries (`porelo-agent-api`, `porelo-build-api`, `porelo-wire`, the varlink definitions) under Apache-2.0, Porelo itself GPL, the boundary written down. | — |
 | <a id="pj09"></a>[PJ09](PJ09-A-Gates-Green-Says-Nothing-Until-Its-Reference-Set-Can-Change.md) | L | — | Every gate names its reference set; one that is empty, cannot change or is read by nothing is not counted as coverage. | — |
 | <a id="pj16"></a>[PJ16](PJ16-An-Organisation-Decides-Which-Providers-Its-Machines-Use.md) | L | — | A root-owned machine policy names the providers tasks may use, and narrows follows, prompts and the `online` class; a developer cannot widen it. | — |

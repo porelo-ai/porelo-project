@@ -1,6 +1,6 @@
 # PJ53 — The agent already on the machine is the default
 
-**Status:** Analyzed.
+**Status:** Backlog (estimated XL).
 **Size:** XL - four repositories and a contract change every agent repository reads; splits into the issues under
 *Plan*.
 
@@ -36,10 +36,10 @@ refuses when the agent is already signed in here.
   cannot read its tool's state answers "cannot say" itself. Neither is ever shown as "nothing found".
 - **What the person has installed is looked up on `PATH` by `porelo` itself**, once for every agent: an adapter runs
   its own pinned CLI inside the task, never the host's, so a command found says only that the person uses that agent.
-- **What each agent finds today**: Claude Code reads `~/.claude/.credentials.json`, `claudeAiOauth` for a
+- **What each agent finds today**: Claude Code reads Claude Code's credentials file, `claudeAiOauth` for a
   subscription, `apiKey` for an API key, as its `vault import` does, and reports a file holding neither instead of
   failing as the import does. pi and oh-my-pi have no configuration directory and no `vault import` yet, which they need
-  first: pi keeps `~/.pi/agent/auth.json`, oh-my-pi `~/.omp/agent/`.
+  first: pi keeps Pi's sign-in file, oh-my-pi Oh My Pi's agent folder.
 - **`porelo` chooses from the findings**, in this order: a flag given; what the project names; one agent found
   signed in; several found, asked at a terminal with the signed-in ones first, refused without one, naming them; none
   found, as today.
@@ -63,12 +63,12 @@ The split, each part sized by its repository's agent, read in the code.
   - [B226](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b226), M: an optional provider for `ExtractCredential` and `vault import --provider`, since one store can hold
     several providers.
 - **The agents**, each blocked by [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224) and [B225](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b225):
-  - `porelo-claude-code` [CC36](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc36), S: the sign-in from `~/.claude/.credentials.json`; another
+  - `porelo-claude-code` [CC36](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc36), S: the sign-in from Claude Code's credentials file; another
     base URL, Bedrock or Vertex in `settings.json` reported as not Anthropic.
   - `porelo-pi` [PI36](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi36), M: a configuration directory and `vault import` first, then the findings
-    from `~/.pi/agent/auth.json`; a key given as a command is reported, never run.
+    from Pi's sign-in file; a key given as a command is reported, never run.
   - `porelo-omp` [OM32](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om32), S: oh-my-pi found by
-    `~/.omp/agent/agent.db` existing, never opened, and "cannot say" for its sign-in, which stays with `vault login`.
+    Oh My Pi's agent database existing, never opened, and "cannot say" for its sign-in, which stays with `vault login`.
     Reading the sign-ins from that SQLite database is
     [OM33](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om33), an Idea and a nice to have.
 - **The interface**, `porelo-frontend` [F143](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f143),
@@ -79,7 +79,7 @@ The split, each part sized by its repository's agent, read in the code.
 
 - What else says Claude Code is signed in, or to which provider, measured before its finding is built: the login in
   macOS's Keychain rather than the file; `ANTHROPIC_API_KEY` or `CLAUDE_CODE_OAUTH_TOKEN` in the person's shell, which an
-  agent the daemon spawns does not see; `CLAUDE_CONFIG_DIR` moving `~/.claude`; `~/.claude.json`; an `env` block or
-  `apiKeyHelper` in `~/.claude/settings.json` naming another provider (`ANTHROPIC_BASE_URL`, Bedrock, Vertex). "Provider
+  agent the daemon spawns does not see; `CLAUDE_CONFIG_DIR` moving Claude Code's configuration folder; Claude Code's account file; an `env` block or
+  `apiKeyHelper` in Claude Code's settings file naming another provider (`ANTHROPIC_BASE_URL`, Bedrock, Vertex). "Provider
   anthropic" is a finding only when none of these says otherwise.
 - Whether and where oh-my-pi keeps a sign-in among `config.yml` and its SQLite databases.

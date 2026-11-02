@@ -417,6 +417,13 @@ sprints:
         test: "The project's room is made on a central homeserver; the project admin's Porelo keeps its members to the developers of the access file, adding and removing them."
         issues: [porelo-message-matrix#MX45, porelo#B314]
         covers: [porelo-project#PJ78]
+  - id: "6s"
+    title: "The agent already on the machine is taken"
+    goal: "Pulled forward from 0.7 beside the rebuild: the agent protocol only grows, and each packaged agent says what it finds of itself on the host."
+    functions:
+      - title: "The agent already on the machine is taken"
+        test: "Without `--agent` and `--provider` the task starts with the Claude Code signed in there and says what it found and where; the interface shows the same choice."
+        issues: [porelo-project#PJ53, porelo#B225, porelo-claude-code#CC36, porelo#B224, porelo-frontend#F143]
   - id: "7"
     title: "The move, wave 1: the smallest repositories"
     goal: "Starts only once 6 to 6i are tested, since a moved agent talks in the room on this computer from the host. One agent per repository: each works its own move issue inside its new task to Review; the others work as today."

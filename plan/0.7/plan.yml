@@ -9,9 +9,6 @@ sprints:
       - title: "Work without a project, with plain refusals"
         test: "A task starts in a checkout in `default`; a followed project naming the repository is offered to take it; a repository with no commit, an unreadable upstream or a failed fetch is named as what it is, with the next step."
         issues: [porelo-project#PJ14, porelo#B229, porelo#B33, porelo-frontend#F118]
-      - title: "The agent already on the machine is taken"
-        test: "Without `--agent` and `--provider` the task starts with the Claude Code signed in there and says what it found and where; the interface shows the same choice."
-        issues: [porelo-project#PJ53, porelo#B225, porelo-claude-code#CC36, porelo#B224, porelo-frontend#F143]
       - title: "Keys and providers without stumbling"
         test: "A key pasted at `vault put` is read whole; an agent given a provider it does not know is refused before the start."
         issues: [porelo#B228, porelo#P09]
