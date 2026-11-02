@@ -77,8 +77,8 @@ sprints:
     functions:
       - title: "`porelo project init` proposes tools and rules"
         test: "For a Maven repository, a `.porelo.yml` and where needed a `project.yml` draft, each value with its source; a project kept in a local repository is read again at `refresh`."
-        issues: [porelo-project#PJ52, porelo#B220, porelo#B221, porelo#B227]
-        notes: ["porelo-ecosystems, a new repository and agent, Maven first"]
+        issues: [porelo-project#PJ52, porelo#B220, porelo#B221, porelo#B227, porelo-ecosystems#EC01, porelo-ecosystems#EC02, porelo-ecosystems#EC03]
+        notes: ["Maven first; the other plugins in porelo-ecosystems stay Accepted"]
       - title: "The drafts shown before the first task"
         test: "At the first start in `default`, the interface shows what the machine proposes, to take or leave."
         issues: [porelo-frontend#F142]

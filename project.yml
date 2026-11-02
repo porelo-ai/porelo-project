@@ -96,6 +96,12 @@ repositories:
         issues: ["FC"]
         maturity: "crazy-chicken"
 
+    ecosystems:
+        upstream: "git@github.com:porelo-ai/porelo-ecosystems.git"
+        description: "Build-tool plugins: propose a project's tools and rules from its checkout, offline"
+        issues: ["EC"]
+        maturity: "crazy-chicken"
+
     intellij:
         upstream: "git@github.com:porelo-ai/porelo-intellij.git"
         description: "The IntelliJ plugin: an agent's waiting work reviewed, approved or rejected in the IDE"

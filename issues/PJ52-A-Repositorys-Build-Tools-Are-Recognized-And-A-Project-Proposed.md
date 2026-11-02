@@ -1,7 +1,6 @@
 # PJ52 — A repository's build tools are recognized and a project proposed
 
-**Status:** Estimated; blocked by `porelo` [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192),
-and by an agent for `porelo-ecosystems`, which does not exist yet.
+**Status:** Estimated.
 **Size:** XL - three repositories, one of them new with an agent still to come; splits into the issues under *Plan*.
 
 **What must be true.** A developer whose checkout needs more than the default image - another JDK, Flutter, native
@@ -17,7 +16,7 @@ commits in a project repository of their own. Nothing takes effect before the pe
 Most of what both files must say is already written down elsewhere: a Maven project names its Java release in the
 pom and its Maven version in `.mvn/wrapper/maven-wrapper.properties`, a Flutter project its SDK in `pubspec.yaml`, a
 workflow its tool versions in `setup-java`, `setup-python` or `setup-node`; a company's mirror and the credentials it
-needs sit in the person's `~/.m2/settings.xml`. Copying that by hand is slow, and the place where a host is forgotten
+needs sit in the person's Maven settings. Copying that by hand is slow, and the place where a host is forgotten
 and the first build fails behind the firewall.
 
 ## The shape proposed
@@ -25,7 +24,7 @@ and the first build fails behind the firewall.
 - **Two drafts, split as [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192) splits them.**
   - **Tools** - `base_image`, `snippet`, `env` - go into a `.porelo.yml`: in the checkout for the project `default`
     (kept out of git by the person's `.git/info/exclude`), or under
-    `~/.config/porelo/projects/<project>/<repository>/` for a followed project. A repository with its own
+    `$XDG_CONFIG_HOME/porelo/projects/<project>/<repository>/` for a followed project. A repository with its own
     `porelo.yml` gets no tools draft; its file wins.
   - **Rules** - egress hosts, the private repositories and their credentials (`porelo`
     [B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219)), memory - go into a draft
@@ -43,7 +42,7 @@ and the first build fails behind the firewall.
   no plugin of the project's. It reads files and the models built from them; running any of these would run what a
   forge can write on the host.
 - **A plugin reaches no network**: `porelo` starts it without one, which a process of its own allows. What lies outside the checkout is read from the
-  person's local caches only - a parent pom or an imported BOM from `~/.m2/repository` or its `<relativePath>`, a
+  person's local caches only - a parent pom or an imported BOM from the local repository or its `<relativePath>`, a
   Gradle version catalog from Gradle's cache. A value that sits in something not found there is named as unknown,
   with where it is set (for example "Java release: set in parent `org.fuin.porelo:porelo-parent`, not in the local
   repository"), never guessed; building the project once fills the cache.
@@ -76,7 +75,7 @@ and the first build fails behind the firewall.
   the start goes on as today and names `porelo project init` in one line.
 - **A repository added in the interface has no checkout**: neither the interface nor `porelo` clones one for
   `default`, so it lives only in Porelo's mirror. The plugins read the mirror's default branch, exported read-only,
-  and its tools draft goes to `~/.config/porelo/projects/default/<repository>/.porelo.yml`, which the image's choice
+  and its tools draft goes to `$XDG_CONFIG_HOME/porelo/projects/default/<repository>/.porelo.yml`, which the image's choice
   reads for such a repository after [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)'s own sources.
 - **The person's own files are those of the machine's account where `porelod` runs**, not of the desktop the
   interface runs on; the drafts name the machine they were read on.
@@ -94,9 +93,9 @@ and the first build fails behind the firewall.
         unknown     Node's version                       package.json names no engines
 
       Rules: need a project of your own, default cannot take them
-        egress      nexus.corp.example                   ~/.m2/settings.xml:12  mirror of *      yours
+        egress      nexus.corp.example                      settings.xml:12  mirror of *      yours
         egress   !  repo.example.org                     pom.xml:54  <repository>           from the checkout
-        credential  corp-nexus                           ~/.m2/settings.xml:20  not in the vault
+        credential  corp-nexus                              settings.xml:20  not in the vault
         memory      16g                                  23 modules
 
       Without the rules, this task cannot reach nexus.corp.example and its build will fail.
@@ -179,7 +178,7 @@ its agent reads them.
 - A checkout with `.mvn/extensions.xml` gets a draft naming it and its model as not trusted, and the extension's
   code is never loaded; with the network cut, no detection reaches out, and a parent only on a remote repository is
   named unknown.
-- A checkout whose Java release is set only in a parent pom missing from `~/.m2/repository` gets a draft naming that
+- A checkout whose Java release is set only in a parent pom missing from the local repository gets a draft naming that
   value unknown and the parent's coordinates; with the parent in the local repository, the draft names the release.
 - The checkout's tracked files are byte for byte unchanged after `project init`.
 
