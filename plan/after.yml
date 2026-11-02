@@ -56,7 +56,6 @@ after:
   porelo-host#HO46: [porelo#B311]
   # porelo-intellij
   porelo-intellij#IJ04: [porelo#B145, porelo#B166, porelo#B291, porelo#B292, porelo#B323]
-  porelo-intellij#IJ12: [porelo#B291, porelo#B292]
   porelo-intellij#IJ13: [porelo#B171, porelo#B179, porelo#B293]
   porelo-intellij#IJ14: [porelo-buildtools#BT37]
   porelo-intellij#IJ15: [porelo-buildtools#BT37]
