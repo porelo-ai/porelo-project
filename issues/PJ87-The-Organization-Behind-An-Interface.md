@@ -66,6 +66,10 @@ registry), so it is settled here before either works on it.
   one organization adapter installed, which reads and writes it. The organization's address is Porelo's setting,
   handed to the adapter unread. The interface never asks which organization. Several organizations on one machine
   are [PJ90](README.md#pj90), a nice to have.
+- **The organization adapter is built into Porelo.** It decides whom Porelo trusts, so it is no separate
+  executable that would itself have to be trusted first; a second adapter comes with a Porelo release. The API
+  carries plain data only, with no path, commit or callback, so an executable can stand behind it later without
+  changing a caller.
 - **An organization is made outside Porelo.** For Git today by a script or by hand, signed; later perhaps otherwise.
   Porelo is given its address when it is set up.
 - **Machines and projects are two separate processes** ([PJ89](README.md#pj89)).
