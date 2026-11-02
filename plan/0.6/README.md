@@ -3,11 +3,11 @@
 
 Porelo is built in Porelo tasks
 
-*Stand: 2026-11-02T06:13:43Z*
+*Stand: 2026-11-02T06:15:32Z*
 
 ## Sprint progress
 
-![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 8; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Finished 1; Sprint 6d: Finished 3; Sprint 6e: Finished 4; Sprint 6f: Finished 2; Sprint 6g: Finished 2; Sprint 6h: Finished 2; Sprint 6i: Finished 7; Sprint 6j: Finished 9, Review 3; Sprint 6k: Finished 5, Review 1; Sprint 6l: Finished 3, Review 2; Sprint 6m: Finished 47, Implementing 6, Accepted 2, Missing 2; Sprint 6n: Finished 1, Review 2, Implementing 2, Backlog 1; Sprint 6o: Implementing 1, Idea 3; Sprint 6p: ; Sprint 6q: Backlog 1, Missing 4; Sprint 6r: Review 6, Implementing 1, Accepted 1, Idea 1; Sprint 7: Rejected 1, Review 4, Backlog 1, Estimated 1, Analyzed 2, Accepted 2, Idea 3; Sprint 7a: Backlog 6; Sprint 7b: Analyzed 4; Sprint 7c: Review 3, Estimated 2, Idea 3, Not filed yet 1; Sprint 8: Implementing 1, Idea 2; Sprint 8a: Idea 3; Sprint 8b: Accepted 1; Sprint 8c: Finished 2, Not filed yet 1; Sprint 9: Review 3, Backlog 2, Estimated 1, Analyzed 2, Accepted 1, Not filed yet 2; Sprint 9a: Review 1; Sprint 10: Not filed yet 1](progress-ff6276dd.svg)
+![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 8; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Finished 1; Sprint 6d: Finished 3; Sprint 6e: Finished 4; Sprint 6f: Finished 2; Sprint 6g: Finished 2; Sprint 6h: Finished 2; Sprint 6i: Finished 7; Sprint 6j: Finished 9, Review 3; Sprint 6k: Finished 5, Review 1; Sprint 6l: Finished 3, Review 2; Sprint 6m: Finished 47, Implementing 6, Accepted 2, Missing 2; Sprint 6n: Review 3, Implementing 1, Backlog 1; Sprint 6o: Review 1, Idea 3; Sprint 6p: Not filed yet 1; Sprint 6q: Backlog 1, Not filed yet 2, Missing 4; Sprint 6r: Review 6, Implementing 1, Accepted 1, Idea 1; Sprint 7: Rejected 1, Review 4, Backlog 1, Estimated 1, Analyzed 2, Accepted 2, Idea 3; Sprint 7a: Backlog 6; Sprint 7b: Analyzed 4; Sprint 7c: Review 3, Estimated 2, Idea 3, Not filed yet 1; Sprint 8: Implementing 1, Idea 2; Sprint 8a: Idea 3; Sprint 8b: Accepted 1; Sprint 8c: Finished 2, Not filed yet 1; Sprint 9: Review 3, Backlog 2, Estimated 1, Analyzed 2, Accepted 1, Not filed yet 2; Sprint 9a: Review 1; Sprint 10: Not filed yet 1](progress-6fe2c311.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -615,7 +615,7 @@ Test: Publish and pin Buildtools 0.5.1, then build IntelliJ from an empty Gradle
 
 Test: On Forgejo and on GitHub the client reads a person's public SSH keys without a token, lists, adds and deletes the signed-in person's own keys, tells whether a user owns an organization, and reads and creates a repository in it, against answers recorded from the real forge.
 
-🟨 [FC02](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc02 "porelo-forge-clients#FC02 · Implementing · M · The Forgejo Client") 🟦 [FC05](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc05 "porelo-forge-clients#FC05 · Review · S · Keys And Repositories On Forgejo") 🟩 [FC01](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc01 "porelo-forge-clients#FC01 · Finished · - · The `github` module: 18 REST operations from GitHub's OpenAPI description and review threads over GraphQL, tested strictly against answers recorded live and scrubbed, with the hand-run recorder and the live check; described in [clients/github/README.md]&#40;../clients/github/README.md&#41;.") 🟦 [FC06](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc06 "porelo-forge-clients#FC06 · Review · M · Keys, Repositories And Commit Statuses On GitHub")
+🟦 [FC02](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc02 "porelo-forge-clients#FC02 · Review · M · The Forgejo Client") 🟦 [FC05](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc05 "porelo-forge-clients#FC05 · Review · S · Keys And Repositories On Forgejo") 🟦 [FC06](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc06 "porelo-forge-clients#FC06 · Review · M · Keys, Repositories And Commit Statuses On GitHub")
 
 </td></tr></table>
 
@@ -629,7 +629,7 @@ What the 6m test and its readings left that a real host or a first key would mee
 
 Test: A host card with a DNS name or an IPv6 address is read for Register and Add; a vault token is lent to a forge on a port other than 443; the porelo Build's verify ends in about 8 minutes.
 
-🟨 [F291](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f291 "porelo-frontend#F291 · Implementing · M · A Host Card With A Name Or An IPv6 Address Read") 🟧 [B373](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b373 "porelo#B373 · Idea · S · A Token Lent To A Forge On Its Own Port") 🟧 [B383](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b383 "porelo#B383 · Idea · S · A Build That Fits Its Old Time")
+🟦 [F291](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f291 "porelo-frontend#F291 · Review · M · A Host Card With A Name Or An IPv6 Address Read") 🟧 [B373](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b373 "porelo#B373 · Idea · S · A Token Lent To A Forge On Its Own Port") 🟧 [B383](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b383 "porelo#B383 · Idea · S · A Build That Fits Its Old Time")
 
 **A KeePassXC key that is usable ⚪ Not tested**
 
@@ -649,6 +649,8 @@ The organization's API and the Git adapter are taken out of today's registry cod
 
 Test: Every walk of 6m that reads or files the registry passes unchanged; the contract tests fail against an adapter that accepts an unsigned change, a played-back older state or a revoked card.
 
+◻️ Core's issue that splits the code and adds the contract tests
+
 covers [PJ87](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj87 "porelo-project#PJ87 · Backlog · XL · The organization behind an interface") · Backlog
 
 </td></tr></table>
@@ -663,11 +665,15 @@ The cut: the registry becomes the organization, a project names no host, a host 
 
 Test: An organization made anew by Core's script shows its people, projects, hosts and owners; each person sees only the actions of their roles; an organization owner adds a project and names its project admin, who makes its project repository on first opening it.
 
+◻️ Core's organization commands; Frontend's organization page and its dialog to add a project
+
 covers [PJ87](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj87 "porelo-project#PJ87 · Backlog · XL · The organization behind an interface") · Backlog, [PJ88](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj88 "porelo-project#PJ88 · Idea · — · A project created from the interface") · Idea
 
 **A project edited on its own page, with no machine ⚪ Not tested**
 
 Test: The project admin adds and removes repositories and members and changes a role on the project's page; a member sees it read-only; nothing on it names a host.
+
+◻️ Core's project commands; Frontend's project page
 
 covers [PJ89](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj89 "porelo-project#PJ89 · Backlog · XL · A project is handled apart from its machines") · Backlog
 

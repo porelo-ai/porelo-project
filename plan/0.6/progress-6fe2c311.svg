@@ -679,21 +679,19 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 904)">
 <text x="0" y="17">6n. Accept the published tools</text>
-<desc>Finished 1, Review 2, Implementing 2, Backlog 1. IJ09: porelo-intellij#IJ09 · Implementing · M · The build verifies every dependency; BT01: porelo-buildtools#BT01 · Backlog · S · A Release Leg Installs The Release; FC02: porelo-forge-clients#FC02 · Implementing · M · The Forgejo Client; FC05: porelo-forge-clients#FC05 · Review · S · Keys And Repositories On Forgejo; FC01: porelo-forge-clients#FC01 · Finished · - · The `github` module: 18 REST operations from GitHub's OpenAPI description and review threads over GraphQL, tested strictly against answers recorded live and scrubbed, with the hand-run recorder and the live check; described in [clients/github/README.md](../clients/github/README.md).; FC06: porelo-forge-clients#FC06 · Review · M · Keys, Repositories And Commit Statuses On GitHub; </desc>
+<desc>Review 3, Implementing 1, Backlog 1. IJ09: porelo-intellij#IJ09 · Implementing · M · The build verifies every dependency; BT01: porelo-buildtools#BT01 · Backlog · S · A Release Leg Installs The Release; FC02: porelo-forge-clients#FC02 · Review · M · The Forgejo Client; FC05: porelo-forge-clients#FC05 · Review · S · Keys And Repositories On Forgejo; FC06: porelo-forge-clients#FC06 · Review · M · Keys, Repositories And Commit Statuses On GitHub; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="66.66666666666667" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
+<rect x="0.0" width="240.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 3</title></rect>
 
-<rect x="66.66666666666667" width="133.33333333333334" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 2</title></rect>
+<rect x="240.0" width="80.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
 
-<rect x="200.0" width="133.33333333333334" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 2</title></rect>
-
-<rect x="333.3333333333333" width="66.66666666666667" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+<rect x="320.0" width="80.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">1 of 6 done</text>
+<text class="legend" x="410" y="17">0 of 5 done</text>
 </svg>
 
 
@@ -707,12 +705,12 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 934)">
 <text x="0" y="17">6o. Before real use: what 6m left</text>
-<desc>Implementing 1, Idea 3. F291: porelo-frontend#F291 · Implementing · M · A Host Card With A Name Or An IPv6 Address Read; B373: porelo#B373 · Idea · S · A Token Lent To A Forge On Its Own Port; B383: porelo#B383 · Idea · S · A Build That Fits Its Old Time; B385: porelo#B385 · Idea · M · A KeePassXC Key That Is Usable; </desc>
+<desc>Review 1, Idea 3. F291: porelo-frontend#F291 · Review · M · A Host Card With A Name Or An IPv6 Address Read; B373: porelo#B373 · Idea · S · A Token Lent To A Forge On Its Own Port; B383: porelo#B383 · Idea · S · A Build That Fits Its Old Time; B385: porelo#B385 · Idea · M · A KeePassXC Key That Is Usable; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="100.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+<rect x="0.0" width="100.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 1</title></rect>
 
 <rect x="100.0" width="300.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 3</title></rect>
 
@@ -731,13 +729,15 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 964)">
 <text x="0" y="17">6p. The organization behind an interface</text>
-<desc>. </desc>
+<desc>Not filed yet 1. Core's issue that splits the code and adds the contract tests: Not filed yet; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
+<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+
 </svg>
-<text class="legend" x="410" y="17">0 of 0 done</text>
+<text class="legend" x="410" y="17">0 of 1 done</text>
 </svg>
 
 
@@ -748,17 +748,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 994)">
 <text x="0" y="17">6q. A project apart from its machines, in one organization</text>
-<desc>Backlog 1, Missing 4. porelo-host#HO93: Missing index row; porelo-host#HO94: Missing index row; porelo-host#HO95: Missing index row; porelo-host#HO96: Missing index row; MX65: porelo-message-matrix#MX65 · Backlog · M · The Host Keeps A Project's Room; </desc>
+<desc>Backlog 1, Not filed yet 2, Missing 4. Core's organization commands; Frontend's organization page and its dialog to add a project: Not filed yet; Core's project commands; Frontend's project page: Not filed yet; porelo-host#HO93: Missing index row; porelo-host#HO94: Missing index row; porelo-host#HO95: Missing index row; porelo-host#HO96: Missing index row; MX65: porelo-message-matrix#MX65 · Backlog · M · The Host Keeps A Project's Room; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="80.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+<rect x="0.0" width="57.142857142857146" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
-<rect x="80.0" width="320.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 4</title></rect>
+<rect x="57.142857142857146" width="342.85714285714283" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 6</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 5 done</text>
+<text class="legend" x="410" y="17">0 of 7 done</text>
 </svg>
 
 
