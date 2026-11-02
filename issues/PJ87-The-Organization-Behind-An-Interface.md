@@ -108,13 +108,17 @@ Drawn by the Coordinator as a design canvas and agreed with the operator; it fol
 
 ## The order of the work
 
-All in 0.7, none before the test on a rented machine; a second store, such as a database, only when it is needed.
+In release 0.6, right after 6n and 6o, as [PJ89](PJ89-A-Project-Is-Handled-Apart-From-Its-Machines.md) lays out;
+a second store, such as a database, only when it is needed.
 
 1. The API separated from today's Git code, which becomes the Git adapter, and the security requirements written
-   down as the adapter's contract, with checks every adapter must pass (Core). Nothing visible changes.
+   down as the adapter's contract, with checks every adapter must pass (Core). Nothing visible changes, and no new
+   check comes with it.
 2. The rename from registry to organization, with the projects and their members moved into it, a hard cut with no
    transition for the old commands and files (Core, Frontend, Machines, documents).
-3. A second identity source, such as Forgejo (Core, Frontend).
+
+A second identity source, such as Forgejo, is not part of this change; it becomes an issue of its own later. GitHub
+is the only identity source behind the interface.
 
 ## Draft API (Coordinator, from today's commands; Core to check against the code)
 

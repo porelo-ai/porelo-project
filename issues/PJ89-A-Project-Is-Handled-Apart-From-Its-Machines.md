@@ -76,6 +76,12 @@ issue carries it through the whole handling of a project.
 - **A member's card is enough for a host.** A host admits a person when the organization names them as a member of the
   project and trusts their card. The host admin pins no developer: the host's `admins` name only its host
   admins, and the host admin decides which projects the host carries, never which persons.
+- **No person follows a project by hand.** `porelo project follow` and `unfollow` go with the cut, for every
+  project: a host follows the projects it carries through the adapter, and nothing else is followed.
+- **A project is created from the interface in the same change.** [PJ88](PJ88-A-Project-Created-From-The-Interface.md)
+  is built in 6q beside this issue.
+- **What a finished issue's Done section says stays as it is.** It records what was built; an issue in Review is
+  changed by the cut only where its open text depends on what goes.
 - **The project admin signs the members.** The project's members are changed and signed by the project admin named
   on the project's card; the signers of `project.yml` sign that file alone.
 
