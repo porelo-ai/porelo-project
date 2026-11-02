@@ -17,16 +17,16 @@ takes them off again. The other edits projects and who belongs to them, and has 
 Porelo and the interface mix the two, so the steps of either cannot be followed, and a person is asked to join a
 project they were already added to.
 
-[PJ87](PJ87-The-Organization-Behind-An-Interface.md) records the separation as decided for the organization's host menu; this
+[PJ87](README.md#pj87) records the separation as decided for the organization's host menu; this
 issue carries it through the whole handling of a project.
 
 ## Found in the same test
 
 - **Projects are listed per machine.** sprint6m-demo and "Without a project" appear once per machine, with no sign
-  that they are one project (porelo-frontend F300).
+  that they are one project.
 - **Who belongs to a project sits on a machine's page.** *Add a developer* is hidden in the page menu of the project
   "on this machine", in a dialog that does not say what its parts are for; the page's own *Persons* section is a host's registry
-  admission, not the project's members (porelo-frontend F301, F303).
+  admission, not the project's members.
 - **Adding a developer reaches into the host.** After signing the project's access file, the dialog uploads the
   project to the host and runs its sync. And the host admitted the developer only once the host admin had pinned
   them under the host's `admins` in the registry, a second signature on the host's side (Core fixed the reading in
@@ -43,7 +43,7 @@ issue carries it through the whole handling of a project.
 
 - **A project is its `project.yml` and its part of the organization.** `project.yml`, in the project's repository,
   holds its repositories, its agents and its signers. The organization
-  ([PJ87](PJ87-The-Organization-Behind-An-Interface.md)) holds the project's card (its name, the address of its project
+  ([PJ87](README.md#pj87)) holds the project's card (its name, the address of its project
   repository, its project admin) and its members with their role, changed by the project admin. A member's key is the
   one on their card. The access file leaves with no transition: no `access.repository`, no access repository, no host
   block, no person's `hosts:` list; which projects a host carries is the host's, kept in the organization.
@@ -54,7 +54,7 @@ issue carries it through the whole handling of a project.
   person is the project admin or a member of, with their role, and is the only place a project is edited: its
   project admin adds and removes repositories and members and changes a member's role; a member sees the same page
   and changes nothing. A project is added and removed by an organization owner, on the organization's page
-  ([PJ88](PJ88-A-Project-Created-From-The-Interface.md)). The organization's page lists every project with its project
+  ([PJ88](README.md#pj88)). The organization's page lists every project with its project
   admin and changes none; a project the person is in links to its page under *Projects*. Nobody joins a project on
   their own: the project admin adds them.
 - ***Projects* deals with projects alone.** It lists the person's projects, one entry each, and a project's page holds its
@@ -71,7 +71,7 @@ issue carries it through the whole handling of a project.
   a host. The host asks the
   installed adapter for the current, signed state of its organization and of each project it carries, and applies it; where and how the project is kept (today
   Git on the central forge) is known only to the adapter, never to Porelo. As with the organization
-  ([PJ87](PJ87-The-Organization-Behind-An-Interface.md)), the adapter guarantees that a state it hands over is signed by
+  ([PJ87](README.md#pj87)), the adapter guarantees that a state it hands over is signed by
   the project's signers and cannot be played back.
 - **The host admin's token brings a project onto the host.** Putting a project on a host sends the host admin's
   central token through the tunnel once, as the gathered push does today, so the project's repositories are on the
@@ -83,7 +83,7 @@ issue carries it through the whole handling of a project.
   admins, and the host admin decides which projects the host carries, never which persons.
 - **No person follows a project by hand.** `porelo project follow` and `unfollow` go with the cut, for every
   project: a host follows the projects it carries through the adapter, and nothing else is followed.
-- **A project is created from the interface in the same change.** [PJ88](PJ88-A-Project-Created-From-The-Interface.md)
+- **A project is created from the interface in the same change.** [PJ88](README.md#pj88)
   is built in 6q beside this issue.
 - **What a finished issue's Done section says stays as it is.** It records what was built; an issue in Review is
   changed by the cut only where its open text depends on what goes.
@@ -94,7 +94,7 @@ issue carries it through the whole handling of a project.
 
 The change is a hard cut, so the old and the new structure are never kept side by side; the cut itself lands in one
 sprint, and until then the old structure keeps working. Together with
-[PJ87](PJ87-The-Organization-Behind-An-Interface.md) and [PJ88](PJ88-A-Project-Created-From-The-Interface.md):
+[PJ87](README.md#pj87) and [PJ88](README.md#pj88):
 
 | Sprint | Step | Who | What works at its end |
 |---|---|---|---|
@@ -105,6 +105,6 @@ sprint, and until then the old structure keeps working. Together with
 | 6q | 3. The test organization made anew by a script, not converted | Core writes it, the operator runs it | an organization with an owner, people, a project and a host |
 | 6q | 4. The three branches merged together and tested on a fresh machine in one walk | all | the new structure throughout |
 
-Before 6q starts, every open issue of Core, Frontend, Machines and this repository is sorted against PJ87, PJ89 and
-[PJ90](PJ90-Several-Organizations-On-One-Machine.md): obsolete, taken into a part of 6q, changed, or untouched. What
+Before 6q starts, every open issue of Core, Frontend, Machines and this repository is sorted against [PJ87](README.md#pj87), [PJ89](README.md#pj89) and
+[PJ90](README.md#pj90): obsolete, taken into a part of 6q, changed, or untouched. What
 6o holds is cut again afterwards.

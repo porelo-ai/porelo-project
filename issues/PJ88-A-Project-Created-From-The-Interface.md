@@ -7,7 +7,7 @@
 Projects › Add a project*: they name it and name its project admin, who may be themselves. Porelo adds the project's
 card to the organization and makes the signed project repository with its `project.yml`, with no hand-written file
 and no script. Creating a project picks no host: a host admin puts it on a host afterwards
-([PJ89](PJ89-A-Project-Is-Handled-Apart-From-Its-Machines.md)), and its members are added by its project admin. The concept is talked through
+([PJ89](README.md#pj89)), and its members are added by its project admin. The concept is talked through
 with the operator first; only then does it become issues of Core and Frontend.
 
 ## Why
@@ -31,9 +31,9 @@ until a project repository was made by hand.
 ## Decided
 
 - **Only an organization owner adds or removes a project** (`addProject`, `removeProject` in
-  [PJ87](PJ87-The-Organization-Behind-An-Interface.md)); a project admin edits the project they are given.
+  [PJ87](README.md#pj87)); a project admin edits the project they are given.
 - **No access file.** A project's members are kept in the organization, so there is no access repository and no
-  first access commit to make ([PJ89](PJ89-A-Project-Is-Handled-Apart-From-Its-Machines.md)).
+  first access commit to make ([PJ89](README.md#pj89)).
 - **The project admin signs the first `project.yml`.** The organization owner adds the project's card; the project
   admin it names writes and signs the first commit of `project.yml` when they first open the project, so only a key
   `signers` names ever signs it.

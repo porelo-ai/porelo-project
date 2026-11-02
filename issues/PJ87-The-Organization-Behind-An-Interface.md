@@ -22,7 +22,7 @@ registry), so it is settled here before either works on it.
   hosts. A better name is wanted, in the interface, in Core's commands and in the documents.
 - **No list of projects.** A project appears in the registry only under a host, so the interface builds its list of
   projects from the machines it knows, and a project on two machines appears twice.
-- **Several registries or forges.** Moved to [PJ90](PJ90-Several-Organizations-On-One-Machine.md).
+- **Several registries or forges.** Moved to [PJ90](README.md#pj90).
 - **Older trust records.** A trust record written by an older porelo, without `<sha>.where.json` beside it, stops
   every identity command of snapshot.368; there is no migration.
 - **The forge page.** It does not say what a registry or a registry repository is, and *Choose the registry
@@ -47,7 +47,7 @@ registry), so it is settled here before either works on it.
 
   A member's key is the one on their card, nowhere else, so a change of key or a revocation holds in every project
   at once. A project's repositories, agents and signers stay in its `project.yml`
-  ([PJ89](PJ89-A-Project-Is-Handled-Apart-From-Its-Machines.md)). In the Git adapter the organization is one
+  ([PJ89](README.md#pj89)). In the Git adapter the organization is one
   repository: `owners.yml`, `people/<login>.card`, `projects/<project>/card`, `projects/<project>/members.yml`,
   `hosts/<host>/card` and `hosts/<host>/host.yml`.
 - **With GitHub, a Porelo organization is a GitHub organization.** The organization's repository and its projects'
@@ -65,10 +65,10 @@ registry), so it is settled here before either works on it.
 - **One organization per machine.** A machine belongs to one organization, set when Porelo is set up there, and has
   one organization adapter installed, which reads and writes it. The organization's address is Porelo's setting,
   handed to the adapter unread. The interface never asks which organization. Several organizations on one machine
-  are [PJ90](PJ90-Several-Organizations-On-One-Machine.md), a nice to have.
+  are [PJ90](README.md#pj90), a nice to have.
 - **An organization is made outside Porelo.** For Git today by a script or by hand, signed; later perhaps otherwise.
   Porelo is given its address when it is set up.
-- **Machines and projects are two separate processes** ([PJ89](PJ89-A-Project-Is-Handled-Apart-From-Its-Machines.md)).
+- **Machines and projects are two separate processes** ([PJ89](README.md#pj89)).
   Machines: a host is set up, a project is put on it with every member it has and later taken off again; that is the
   host admin's. Projects: a project, its repositories and its members are edited; that is the project admin's and
   names no host. A host follows its organization's and its projects' state by itself, fetched through the installed
@@ -108,7 +108,7 @@ Drawn by the Coordinator as a design canvas and agreed with the operator; it fol
 
 ## The order of the work
 
-In release 0.6, right after 6n and 6o, as [PJ89](PJ89-A-Project-Is-Handled-Apart-From-Its-Machines.md) lays out;
+In release 0.6, right after 6n and 6o, as [PJ89](README.md#pj89) lays out;
 a second store, such as a database, only when it is needed.
 
 1. The API separated from today's Git code, which becomes the Git adapter, and the security requirements written
