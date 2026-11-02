@@ -87,8 +87,9 @@ issue carries it through the whole handling of a project.
   admins, and the host admin decides which projects the host carries, never which persons.
 - **The host's page has no action on a person.** No *Admit*, *Lock*, *Let back in* or *Delete the account*: a
   person is locked in their project by its admins. A person no longer a member of any project the host carries is
-  locked there at once, and their account on the host is deleted by itself seven days later, with whatever it holds
-  unpushed; taken back into a project before then, they find it as they left it.
+  locked there when the host takes that change, with no step of anyone, and their account on the host is deleted by
+  itself seven days later, with whatever it holds unpushed; taken back into a project before then, they find it as they
+  left it.
   The host's page shows the day it will be deleted, read only.
 - **No person follows a project by hand.** `porelo project follow` and `unfollow` go with the cut, for every
   project: the accounts on a host fetch the projects the host carries, and nothing else is followed.
