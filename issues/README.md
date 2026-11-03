@@ -88,6 +88,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj92"></a>[PJ92](PJ92-Every-Forge-Call-Behind-One-Contract.md) | — | — | The window asks only Core, Core asks only an adapter, and only the adapter knows a forge, so any forge offering what Porelo needs can be used. |
 | <a id="pj90"></a>[PJ90](PJ90-Several-Organizations-On-One-Machine.md) | — | [PJ87](#pj87) | One machine works with several organizations at once, each holding only its own people, projects and hosts and answered by its own identity source; a person keeps one card, filed in each organization, and the interface shows them side by side. |
 | <a id="pj77"></a>[PJ77](PJ77-Agents-Compared-On-The-Same-Work.md) | — | — | Several agents with their own models build the same issue side by side, one more compares the results, and time, tokens and cost are measured; finished issues with their commit serve as references; the overview feeds which agent and model suits which work. |
 | <a id="pj64"></a>[PJ64](PJ64-A-Task-Chooses-Its-Agent-And-Effort-By-Its-Work.md) | — | — | A task gets the agent, provider, model and effort its work calls for - by its phase (`build`, `check`, `rework`) and its issue's risk - on one effort scale each agent maps to its provider, with a flag, the project's rule, its default and the machine's agent in that order; a `check` task only reads and reports. |
