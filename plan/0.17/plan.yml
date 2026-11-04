@@ -23,7 +23,7 @@ sprints:
     functions:
       - title: "Keep the homeserver and room entrances separate"
         test: "Reach the homeserver through its account-owned Unix socket; a second account cannot connect. Read the room and a direct chat together and change the task reading them. Direct messages remain private, with no lost or repeated delivery."
-        issues: [porelo-message-matrix#MX29]
+        issues: [porelo-message-matrix#MX29, porelo-message-matrix#MX77]
         notes: ["Separate Room Polling And Positions. The room parent also covers sprints 9 through 11. Begin only after the move acceptance."]
   - id: "4"
     title: "Use the published transport contract"

@@ -23,7 +23,7 @@ sprints:
         issues: [porelo-claude-code#CC42]
       - title: "porelo-codex"
         test: "Not planned for a test yet."
-        issues: [porelo-codex#CX07, porelo-codex#CX06, porelo-codex#CX09]
+        issues: [porelo-project#PJ80, porelo-codex#CX07, porelo-codex#CX06, porelo-codex#CX09]
       - title: "porelo-ecosystems"
         test: "Not planned for a test yet."
         issues: [porelo-ecosystems#EC04, porelo-ecosystems#EC05, porelo-ecosystems#EC06, porelo-ecosystems#EC07, porelo-ecosystems#EC08, porelo-ecosystems#EC09]

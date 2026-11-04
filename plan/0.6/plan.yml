@@ -405,8 +405,8 @@ sprints:
         test: "A host card with a DNS name or an IPv6 address is read and connected; a vault token is lent to a forge on a port other than 443; the porelo Build's verify ends in about 12 minutes, shown by a real Build and not by a step of the walk."
         issues: [porelo-frontend#F291, porelo#B373, porelo#B383]
       - title: "A person sees who must review and sign"
-        test: "The project file alone needs a signer; a repository says whether its merge needs a review, and the page shows it."
-        issues: [porelo-project#PJ80, porelo-project#PJ81]
+        test: "A repository says whether its merge needs a review, and the page shows it."
+        issues: [porelo-project#PJ81]
   - id: "6s"
     title: "The agent already on the machine is taken"
     goal: "Pulled forward from 0.7 beside the rebuild: the agent protocol only grows, and each packaged agent says what it finds of itself on the host."
