@@ -153,19 +153,26 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 214)">
 <text x="0" y="17">5. Recover from an unavailable image source</text>
-<desc>Idea 1. B263: porelo#B263 · Idea · - · A Task Image Built Past A Stalled Mirror; </desc>
+<desc>Implementing 1, Accepted 1, Idea 1. B263: porelo#B263 · Idea · - · A Task Image Built Past A Stalled Mirror; PJ32: porelo-project#PJ32 · Implementing · M · A vulnerability has a way in; PJ47: porelo-project#PJ47 · Accepted · — · A known vulnerability is read and answered; </desc>
 <svg x="376" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+<rect x="0.0" width="133.33333333333334" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="266.6666666666667" width="133.33333333333334" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 1 done</text>
+<text class="legend" x="410" y="17">0 of 3 done</text>
 </svg>
 
 
 <text x="926" y="17"><title>Recover from an unavailable image source: Not tested</title>⚪</text>
+
+
+<text x="950" y="17"><title>A vulnerability has a way in and is answered: Not tested</title>⚪</text>
 
 </g>
 

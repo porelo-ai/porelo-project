@@ -8,17 +8,17 @@ sprints:
     functions:
       - title: "Work without a project, with plain refusals"
         test: "A task starts in a checkout in `default`; a followed project naming the repository is offered to take it; a repository with no commit, an unreadable upstream or a failed fetch is named as what it is, with the next step."
-        issues: [porelo-project#PJ14, porelo#B33, porelo-frontend#F118]
+        issues: [porelo-project#PJ14, porelo#B33, porelo-frontend#F118, porelo#B355]
       - title: "Keys and providers without stumbling"
         test: "A key pasted at `vault put` is read whole; an agent given a provider it does not know is refused before the start."
-        issues: [porelo#B228, porelo#P09]
+        issues: [porelo#B228, porelo#P09, porelo#B316]
   - id: "2"
     title: "Connections finish or say why they failed"
     goal: "A first connection has a clear loading state and a bounded wait."
     functions:
       - title: "Load, time out and forget one connection"
         test: "Load a page for the first time and open a rarely used connection action; both show the same loading state. Connect a server that accepts but never answers; the call ends with a named timeout. Forget one connection; the others remain."
-        issues: [porelo#B200, porelo-frontend#F91, porelo-frontend#F93]
+        issues: [porelo#B200, porelo-frontend#F91, porelo-frontend#F93, porelo#B321, porelo-frontend#F219]
   - id: "3"
     title: "Tell work from rest"
     goal: "The terminal and task card agree about what the agent is doing."
@@ -96,6 +96,9 @@ sprints:
       - title: "A step for someone else handed over"
         test: "A step for an administrator comes as instructions and as a file to run; the wizard waits for its check."
         notes: ["hand-overs in the wizard"]
+      - title: "The comfortable start at GitHub"
+        test: "A person starts at GitHub without making a token by hand, on a trial app first."
+        issues: [porelo-project#PJ91]
   - id: "12"
     title: "Use the terminal beside a live task list"
     goal: "The person can type normally and follow tasks as their states change."
@@ -133,10 +136,16 @@ sprints:
       - title: "A start that waits for its helpers"
         test: "A start whose gate or relay does not come up ends with a code; a start waits for both; two starts of one name never stop each other's task."
         issues: [porelo#B384]
+      - title: "Long verbs say how far they are"
+        test: "A long command says how far it is."
+        issues: [porelo-message-matrix#MX51]
+      - title: "A person joins another project"
+        test: "A person joins another project on the machine."
+        issues: [porelo-message-matrix#MX52]
   - id: "16"
     title: "Clearing up 0.7"
     goal: "Each repository's gathered small findings are worked off or become issues of their own."
     functions:
       - title: "The gathered findings worked off"
         test: "B380, HO86 and F288 hold no open point; a point that proved larger is an issue of its own."
-        issues: [porelo#B380, porelo-host#HO86, porelo-frontend#F288]
+        issues: [porelo#B380, porelo-host#HO86, porelo-frontend#F288, porelo#B203]

@@ -168,19 +168,19 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 244)">
 <text x="0" y="17">6. Take in existing repositories and signing keys</text>
-<desc>Backlog 1, Estimated 3, Analyzed 1. F147: porelo-frontend#F147 · Backlog · XS · Every Repository Of Default Offered To Start In; F84: porelo-frontend#F84 · Estimated · M · A Signing Key Found Or Made From The Window; F94: porelo-frontend#F94 · Estimated · M · A Project's Keys Told In One Place; F115: porelo-frontend#F115 · Analyzed · S · A Fine-Grained Token Waiting For An Organisation's Approval; F59: porelo-frontend#F59 · Estimated · S · A Project From A Repository, Measured Against GitHub; </desc>
+<desc>Backlog 1, Estimated 4, Analyzed 1. F147: porelo-frontend#F147 · Backlog · XS · Every Repository Of Default Offered To Start In; F84: porelo-frontend#F84 · Estimated · M · A Signing Key Found Or Made From The Window; F94: porelo-frontend#F94 · Estimated · M · A Project's Keys Told In One Place; F104: porelo-frontend#F104 · Estimated · M · A Project Followed From A File; F115: porelo-frontend#F115 · Analyzed · S · A Fine-Grained Token Waiting For An Organisation's Approval; F59: porelo-frontend#F59 · Estimated · S · A Project From A Repository, Measured Against GitHub; </desc>
 <svg x="440" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="80.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+<rect x="0.0" width="66.66666666666667" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
-<rect x="80.0" width="240.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
+<rect x="66.66666666666667" width="266.6666666666667" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 4</title></rect>
 
-<rect x="320.0" width="80.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="333.3333333333333" width="66.66666666666667" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 5 done</text>
+<text class="legend" x="410" y="17">0 of 6 done</text>
 </svg>
 
 

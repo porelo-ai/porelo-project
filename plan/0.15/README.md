@@ -3,11 +3,11 @@
 
 Trace what a task did, where its work came from and what was approved
 
-*Stand: 2026-10-29T20:46:48Z*
+*Stand: 2026-11-04T04:34:32Z*
 
 ## Sprint progress
 
-![Sprint 1: Analyzed 2; Sprint 2: Implementing 1, Analyzed 1, Not filed yet 1; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Estimated 2; Sprint 5: Backlog 1, Estimated 1](progress-5aee3c17.svg)
+![Sprint 1: Analyzed 2; Sprint 2: Implementing 1, Analyzed 1, Not filed yet 1; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Estimated 3; Sprint 5: Backlog 1, Estimated 1](progress-f21debac.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -65,7 +65,7 @@ Commit origin comes from the host and logs disclose no secrets.
 
 Test: Approve work from different models and read the merge trailers. Offer forged agent details; they cannot replace the host record. Send a test secret through broker and gate; it appears in no log. File permissions and retention match the stated rules.
 
-🟪 [B144](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b144 "porelo#B144 · Estimated · L · AI Provenance In The Commit") 🟪 [B155](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b155 "porelo#B155 · Estimated · M · The Logs Checked And Documented")
+🟪 [B144](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b144 "porelo#B144 · Estimated · L · AI Provenance In The Commit") 🟪 [B155](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b155 "porelo#B155 · Estimated · M · The Logs Checked And Documented") 🟪 [B143](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b143 "porelo#B143 · Estimated · S · Porelo In A Data Protection And ISDS Concept")
 
 </td></tr></table>
 

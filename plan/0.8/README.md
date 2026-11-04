@@ -3,11 +3,11 @@
 
 Code reviews as SARIF: every finding and comment - from a person, a checking agent, a linter or a forge - in one format, trusted by who wrote it
 
-*Stand: 2026-11-02T21:22:31Z*
+*Stand: 2026-11-04T04:34:32Z*
 
 ## Sprint progress
 
-![Sprint 1: Analyzed 1, Idea 3; Sprint 2: Analyzed 6; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Idea 1, Not filed yet 1; Sprint 5: Analyzed 2, Idea 2; Sprint 6: Analyzed 1, Idea 1; Sprint 7: Analyzed 2; Sprint 8: Finished 1, Estimated 3, Accepted 2, Idea 1, Not filed yet 1; Sprint 9: Finished 1, Backlog 1, Analyzed 2, Idea 1; Sprint 10: Analyzed 1, Idea 1; Sprint 11: Accepted 1, Not filed yet 1; Sprint 12: Review 1, Backlog 1, Idea 1, Not filed yet 1](progress-c917f69f.svg)
+![Sprint 1: Analyzed 1, Idea 3; Sprint 2: Analyzed 6; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Idea 1, Not filed yet 1; Sprint 5: Analyzed 2, Idea 2; Sprint 6: Analyzed 1, Idea 1; Sprint 7: Analyzed 2; Sprint 8: Finished 1, Estimated 3, Analyzed 1, Accepted 2, Idea 1, Not filed yet 1; Sprint 9: Finished 1, Backlog 1, Analyzed 2, Accepted 1, Idea 1; Sprint 10: Analyzed 1, Idea 1; Sprint 11: Accepted 1, Not filed yet 1; Sprint 12: Review 1, Backlog 1, Idea 1, Not filed yet 1](progress-1d2d9f85.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -163,7 +163,7 @@ Every adapter lists its services, each by its own contract, and a missing or dep
 
 Test: Porelo lists each installed adapter's services - build, review - with contract, version and optional functions; an adapter that lacks a mandatory function is refused by name before any task needs it.
 
-🟧 [PJ66](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj66 "porelo-project#PJ66 · Idea · — · An adapter offers the services it has")
+🟧 [PJ66](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj66 "porelo-project#PJ66 · Idea · — · An adapter offers the services it has") ⬛ [B308](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b308 "porelo#B308 · Analyzed · L · A Guide For Adding A Provider Or An Agent")
 
 **A deprecated contract still taken, with a warning ⚪ Not tested**
 
@@ -189,7 +189,7 @@ Review comments on a task's GitHub pull request reach the task as SARIF, trusted
 
 Test: On a task's pull request, a comment of an internal account and of a listed partner reach the task at once; a comment of an unknown account is held and shown until the person releases it; a comment that claims another author changes nothing.
 
-⬛ [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171 "porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.") 🟩 [FC08](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc08 "porelo-forge-clients#FC08 · Finished · - · GitHub's general comments, review comment edits and deletes, one review's comments, the merge base, pull requests by head branch and one review thread by its id with its resolver; Forgejo's general comments, review comments, the pull request of two branches and the server version, with what Forgejo cannot do measured; recorded live and from the container; described in both clients' READMEs.") 🟧 [GH09](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh09 "porelo-adapters#GH09 · Idea · - · Shared `Review1` cases in `porelo-build-contract` guard SARIF fidelity and native client calls, unsupported capabilities and authorized writes without duplicates; blocks [GH02]&#40;README.md#gh02&#41; and [GH10]&#40;README.md#gh10&#41;") 🔲 [GH02](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh02 "porelo-adapters#GH02 · Backlog · L · GitHub serves `Review1` beside `Build2` as SARIF 2.1.0 through the `github` client, preserving thread and origin evidence and sending explicit authorized writes with per-call credentials")
+⬛ [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171 "porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.") 🟩 [FC08](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc08 "porelo-forge-clients#FC08 · Finished · - · GitHub's general comments, review comment edits and deletes, one review's comments, the merge base, pull requests by head branch and one review thread by its id with its resolver; Forgejo's general comments, review comments, the pull request of two branches and the server version, with what Forgejo cannot do measured; recorded live and from the container; described in both clients' READMEs.") 🟧 [GH09](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh09 "porelo-adapters#GH09 · Idea · - · Shared `Review1` cases in `porelo-build-contract` guard SARIF fidelity and native client calls, unsupported capabilities and authorized writes without duplicates; blocks [GH02]&#40;README.md#gh02&#41; and [GH10]&#40;README.md#gh10&#41;") 🔲 [GH02](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh02 "porelo-adapters#GH02 · Backlog · L · GitHub serves `Review1` beside `Build2` as SARIF 2.1.0 through the `github` client, preserving thread and origin evidence and sending explicit authorized writes with per-call credentials") ⬜ [B358](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b358 "porelo#B358 · Accepted · - · A Task Reviews A Pull Request On The Central Forge")
 
 **Replies released, a thread resolved by an internal person ⚪ Not tested**
 

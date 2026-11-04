@@ -1,7 +1,7 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1042 344" role="img" aria-label="Sprint progress for release 0.11">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1042 374" role="img" aria-label="Sprint progress for release 0.11">
 <title>Sprint progress for release 0.11</title>
 <style>
 text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
@@ -67,17 +67,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 94)">
 <text x="0" y="17">1. Check allowed destinations</text>
-<desc>Estimated 1, Analyzed 2. B34: porelo#B34 · Analyzed · S · What The Resolver Can Actually Do; B10: porelo#B10 · Analyzed · L · What An Egress Set Can Express; B237: porelo#B237 · Estimated · S · A Name Granted Live Through A CNAME; </desc>
+<desc>Estimated 1, Analyzed 3. B34: porelo#B34 · Analyzed · S · What The Resolver Can Actually Do; B10: porelo#B10 · Analyzed · L · What An Egress Set Can Express; B237: porelo#B237 · Estimated · S · A Name Granted Live Through A CNAME; B152: porelo#B152 · Analyzed · S · Say What Offline Still Reaches; </desc>
 <svg x="392" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+<rect x="0.0" width="100.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
 
-<rect x="133.33333333333334" width="266.6666666666667" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+<rect x="100.0" width="300.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 3</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 3 done</text>
+<text class="legend" x="410" y="17">0 of 4 done</text>
 </svg>
 
 
@@ -180,15 +180,15 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 244)">
 <text x="0" y="17">6. Keep public SSH closed after the VPN is ready</text>
-<desc>Accepted 1. HO22: porelo-host#HO22 · Accepted · - · Ssh Reached Only Through The VPN Once It Is Up; </desc>
+<desc>Rejected 1. HO22: porelo-host#HO22 · Rejected · - · Ssh Reached Only Through The VPN Once It Is Up; </desc>
 <svg x="392" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 1 done</text>
+<text class="legend" x="410" y="17">1 of 1 done</text>
 </svg>
 
 
@@ -235,6 +235,25 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 
 <text x="942" y="17"><title>Know what a task can test: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 334)">
+<text x="0" y="17">9. Mutation testing with PIT</text>
+<desc>Accepted 10. GH13: porelo-adapters#GH13 · Accepted · - · A `pit` profile run by hand, with PIT and its JUnit 5 plugin pinned, and a report sorting the surviving mutants into real gaps and harmless ones; AG09: porelo-agy#AG09 · Accepted ·  · Mutation Testing With PIT; B396: porelo#B396 · Accepted · - · Mutation Testing With PIT; BT41: porelo-buildtools#BT41 · Accepted · - · Mutation Testing With PIT; CC45: porelo-claude-code#CC45 · Accepted ·  · Mutation Testing With PIT; CX12: porelo-codex#CX12 · Accepted ·  · Mutation Testing With PIT; FC17: porelo-forge-clients#FC17 · Accepted · - · Mutation Testing With PIT; IJ21: porelo-intellij#IJ21 · Accepted ·  · Mutation testing with PIT; OM42: porelo-omp#OM42 · Accepted ·  · Mutation Testing With PIT; PI43: porelo-pi#PI43 · Accepted ·  · Mutation Testing With PIT; </desc>
+<svg x="392" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 10</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 10 done</text>
+</svg>
+
+
+<text x="942" y="17"><title>Each repository measured by PIT: Not tested</title>⚪</text>
 
 </g>
 

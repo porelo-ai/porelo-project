@@ -68,6 +68,7 @@ sprints:
     functions:
       - title: "Let a limited service manage task accounts"
         test: "Register the project service and act as its own task. Try acting as a person or another project's task; both fail. Retire and restore the service; old tokens no longer work."
+        issues: [porelo-message-matrix#MX38]
         notes: ["Register A Project Application Service; Rotate And Revoke Service Secrets. Continue the room parent from sprint 3 after sprint 8."]
   - id: "10"
     title: "Show only people and tasks in the room"
@@ -142,3 +143,10 @@ sprints:
       - title: "Reach a directly addressed peer or explain why not"
         test: "Send to a peer with a valid direct transport address. Remove the required account and start or send again; the operation is refused with the missing requirement named rather than silently losing the message."
         issues: [porelo#B257]
+  - id: "20"
+    title: "An outside detector catalog measured"
+    goal: "An outside catalog of detectors is measured against the filter."
+    functions:
+      - title: "An outside detector catalog measured"
+        test: "The measurement states what the catalog finds and misses."
+        issues: [porelo-message-sluice#SL04]

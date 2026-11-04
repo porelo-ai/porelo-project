@@ -485,6 +485,8 @@ and the UTC time that text last changed; change it in the channel first, never i
 - **A release is planned in `plan/<release>/plan.yml`**: its sprints, the functions the operator tests and their
   issues, never an issue of the release as a whole. `porelo-release plan render` makes its page and `plan check`
   checks it; the plan is kept current at every change of state.
+- **`plan/later/plan.yml` holds every issue no release holds yet.** A new Idea goes there when it is filed, and leaves it when a release
+  takes it.
 - **Sprints are numbered from one within each release, without gaps.** A letter (`6a`, `6b`) marks only a
   sprint inserted into the running release; a release not yet started is renumbered instead, since no other
   repository names its sprints. A sprint reference names its release when the context does not make it clear.

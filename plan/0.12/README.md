@@ -3,11 +3,11 @@
 
 Installed packages, setup scripts and images have a verifiable origin
 
-*Stand: 2026-10-29T20:46:48Z*
+*Stand: 2026-11-04T04:34:32Z*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Accepted 1; Sprint 2: Estimated 2, Not filed yet 1; Sprint 3: Estimated 2, Accepted 1; Sprint 4: Estimated 2, Idea 1, Not filed yet 1; Sprint 5: Idea 1](progress-c2d6e5a4.svg)
+![Sprint 1: Estimated 1, Accepted 1; Sprint 2: Estimated 2, Not filed yet 1; Sprint 3: Estimated 2, Accepted 1; Sprint 4: Estimated 2, Idea 1, Not filed yet 1; Sprint 5: Implementing 1, Accepted 1, Idea 1](progress-cc6a3f30.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -80,6 +80,12 @@ An image build tries a configured second source after a bounded first attempt.
 Test: Make the first Ubuntu mirror stop answering and build the image. The first attempt ends within its bound and the configured fallback succeeds. An unknown source remains refused.
 
 🟧 [B263](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b263 "porelo#B263 · Idea · - · A Task Image Built Past A Stalled Mirror")
+
+**A vulnerability has a way in and is answered ⚪ Not tested**
+
+Test: Whoever finds a problem knows how to report it; every advisory is read and answered by its repository.
+
+🟨 [PJ32](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj32 "porelo-project#PJ32 · Implementing · M · A vulnerability has a way in") ⬜ [PJ47](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj47 "porelo-project#PJ47 · Accepted · — · A known vulnerability is read and answered")
 
 </td></tr></table>
 

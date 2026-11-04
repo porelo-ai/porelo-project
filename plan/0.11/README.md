@@ -3,11 +3,11 @@
 
 Tasks, builds and transports reach only the resources that were allowed
 
-*Stand: 2026-10-29T20:46:48Z*
+*Stand: 2026-11-04T04:34:32Z*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Analyzed 2; Sprint 2: Estimated 1, Analyzed 1, Idea 1; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Backlog 1, Accepted 1, Not filed yet 1; Sprint 5: Estimated 1, Accepted 2, Idea 1, Not filed yet 1; Sprint 6: Accepted 1; Sprint 7: Estimated 2; Sprint 8: Analyzed 1, Accepted 1, Not filed yet 1](progress-7a3db328.svg)
+![Sprint 1: Estimated 1, Analyzed 3; Sprint 2: Estimated 1, Analyzed 1, Idea 1; Sprint 3: Estimated 1, Analyzed 1; Sprint 4: Backlog 1, Accepted 1, Not filed yet 1; Sprint 5: Estimated 1, Accepted 2, Idea 1, Not filed yet 1; Sprint 6: Rejected 1; Sprint 7: Estimated 2; Sprint 8: Analyzed 1, Accepted 1, Not filed yet 1; Sprint 9: Accepted 10](progress-d4e42d71.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -23,7 +23,7 @@ A network permission works exactly as the person sees it.
 
 Test: Read resolver capability in doctor. Start a project with addresses, domains and sets. Reach an allowed destination; an unallowed one fails and is shown as refused. Allow a CNAME while the task runs; it becomes reachable. An incomplete set must not appear complete.
 
-⬛ [B34](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b34 "porelo#B34 · Analyzed · S · What The Resolver Can Actually Do") ⬛ [B10](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b10 "porelo#B10 · Analyzed · L · What An Egress Set Can Express") 🟪 [B237](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b237 "porelo#B237 · Estimated · S · A Name Granted Live Through A CNAME")
+⬛ [B34](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b34 "porelo#B34 · Analyzed · S · What The Resolver Can Actually Do") ⬛ [B10](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b10 "porelo#B10 · Analyzed · L · What An Egress Set Can Express") 🟪 [B237](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b237 "porelo#B237 · Estimated · S · A Name Granted Live Through A CNAME") ⬛ [B152](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b152 "porelo#B152 · Analyzed · S · Say What Offline Still Reaches")
 
 </td></tr></table>
 
@@ -93,7 +93,7 @@ The host has a tested recovery route while ordinary access stays inside the VPN.
 
 Test: Bring up the VPN, then try public SSH; it fails. Break the VPN and follow the documented recovery route successfully. Do not enable the restriction until this recovery route has been tested.
 
-⬜ [HO22](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho22 "porelo-host#HO22 · Accepted · - · Ssh Reached Only Through The VPN Once It Is Up")
+🟩 [HO22](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho22 "porelo-host#HO22 · Rejected · - · Ssh Reached Only Through The VPN Once It Is Up")
 
 </td></tr></table>
 
@@ -122,6 +122,20 @@ The person sees which checks need a capability and which failure ended a run.
 Test: Run capability-tagged tests with and without the needed capability. A task skips only what it lacks; a complete CI leg runs every case. Emit a declared failure in task.log after the step baseline; the loop watch stops the run and names it.
 
 ⬜ [PJ49](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj49 "porelo-project#PJ49 · Accepted · — · A test names the capability it needs") ⬛ [B119](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b119 "porelo#B119 · Analyzed · S · A Loop Seen In An Unattended Task's Log") ◻️ Capability tags never replace a complete green build on the forge.
+
+</td></tr></table>
+
+<table><tr><td>
+
+### Sprint 9: Mutation testing with PIT
+
+Each repository measures whether its tests notice a change.
+
+**Each repository measured by PIT ⚪ Not tested**
+
+Test: A mutation run per repository reports what its tests miss.
+
+⬜ [GH13](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh13 "porelo-adapters#GH13 · Accepted · - · A `pit` profile run by hand, with PIT and its JUnit 5 plugin pinned, and a report sorting the surviving mutants into real gaps and harmless ones") ⬜ [AG09](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag09 "porelo-agy#AG09 · Accepted ·  · Mutation Testing With PIT") ⬜ [B396](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b396 "porelo#B396 · Accepted · - · Mutation Testing With PIT") ⬜ [BT41](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt41 "porelo-buildtools#BT41 · Accepted · - · Mutation Testing With PIT") ⬜ [CC45](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc45 "porelo-claude-code#CC45 · Accepted ·  · Mutation Testing With PIT") ⬜ [CX12](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx12 "porelo-codex#CX12 · Accepted ·  · Mutation Testing With PIT") ⬜ [FC17](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc17 "porelo-forge-clients#FC17 · Accepted · - · Mutation Testing With PIT") ⬜ [IJ21](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij21 "porelo-intellij#IJ21 · Accepted ·  · Mutation testing with PIT") ⬜ [OM42](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om42 "porelo-omp#OM42 · Accepted ·  · Mutation Testing With PIT") ⬜ [PI43](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi43 "porelo-pi#PI43 · Accepted ·  · Mutation Testing With PIT")
 
 </td></tr></table>
 

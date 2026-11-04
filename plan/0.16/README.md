@@ -3,11 +3,11 @@
 
 Manage organization rules and personal access, and take in existing projects
 
-*Stand: 2026-11-02T21:22:31Z*
+*Stand: 2026-11-04T04:34:32Z*
 
 ## Sprint progress
 
-![Sprint 1: Analyzed 2; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Estimated 1, Accepted 1; Sprint 4: Accepted 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Backlog 1, Estimated 3, Analyzed 1](progress-8bbdfd3b.svg)
+![Sprint 1: Analyzed 2; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Estimated 1, Accepted 1; Sprint 4: Accepted 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Backlog 1, Estimated 4, Analyzed 1](progress-a97babac.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -93,7 +93,7 @@ The person chooses from what already exists and sees the actual token state.
 
 Test: Read all default repositories. Choose a signing key from a file or create one and inspect it in the shared overview. An unsuitable key is refused.
 
-🔲 [F147](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f147 "porelo-frontend#F147 · Backlog · XS · Every Repository Of Default Offered To Start In") 🟪 [F84](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f84 "porelo-frontend#F84 · Estimated · M · A Signing Key Found Or Made From The Window") 🟪 [F94](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f94 "porelo-frontend#F94 · Estimated · M · A Project's Keys Told In One Place")
+🔲 [F147](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f147 "porelo-frontend#F147 · Backlog · XS · Every Repository Of Default Offered To Start In") 🟪 [F84](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f84 "porelo-frontend#F84 · Estimated · M · A Signing Key Found Or Made From The Window") 🟪 [F94](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f94 "porelo-frontend#F94 · Estimated · M · A Project's Keys Told In One Place") 🟪 [F104](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f104 "porelo-frontend#F104 · Estimated · M · A Project Followed From A File")
 
 **Recognize a token awaiting organization approval ⚪ Not tested**
 

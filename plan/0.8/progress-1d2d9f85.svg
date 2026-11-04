@@ -228,23 +228,25 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 304)">
 <text x="0" y="17">8. Adapters say what they offer</text>
-<desc>Finished 1, Estimated 3, Accepted 2, Idea 1, Not filed yet 1. PJ66: porelo-project#PJ66 · Idea · — · An adapter offers the services it has; the deprecated contracts in porelo (from PJ66): Not filed yet; PJ74: porelo-project#PJ74 · Accepted · — · Forge and build server clients know nothing of Porelo; FC03: porelo-forge-clients#FC03 · Accepted · - · The Forge Calls Of The Adapters Move Here; FC09: porelo-forge-clients#FC09 · Finished · - · A rate limit told from a refusal with the delay to wait, the end of a paged list known, whether a failed request was sent, and every answer read up to a bound, on both forges; described in their READMEs; FC10: porelo-forge-clients#FC10 · Estimated · S · A Pull Request's Commits On GitHub; FC11: porelo-forge-clients#FC11 · Estimated · S · A Pull Request's Commits On Forgejo; FC13: porelo-forge-clients#FC13 · Estimated · M · GitHub's Nulls For A Deleted Fork And An Empty Review; </desc>
+<desc>Finished 1, Estimated 3, Analyzed 1, Accepted 2, Idea 1, Not filed yet 1. PJ66: porelo-project#PJ66 · Idea · — · An adapter offers the services it has; B308: porelo#B308 · Analyzed · L · A Guide For Adding A Provider Or An Agent; the deprecated contracts in porelo (from PJ66): Not filed yet; PJ74: porelo-project#PJ74 · Accepted · — · Forge and build server clients know nothing of Porelo; FC03: porelo-forge-clients#FC03 · Accepted · - · The Forge Calls Of The Adapters Move Here; FC09: porelo-forge-clients#FC09 · Finished · - · A rate limit told from a refusal with the delay to wait, the end of a paged list known, whether a failed request was sent, and every answer read up to a bound, on both forges; described in their READMEs; FC10: porelo-forge-clients#FC10 · Estimated · S · A Pull Request's Commits On GitHub; FC11: porelo-forge-clients#FC11 · Estimated · S · A Pull Request's Commits On Forgejo; FC13: porelo-forge-clients#FC13 · Estimated · M · GitHub's Nulls For A Deleted Fork And An Empty Review; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="50.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
+<rect x="0.0" width="44.44444444444444" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
 
-<rect x="50.0" width="150.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
+<rect x="44.44444444444444" width="133.33333333333334" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
 
-<rect x="200.0" width="100.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
+<rect x="177.77777777777777" width="44.44444444444444" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
 
-<rect x="300.0" width="50.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+<rect x="222.22222222222223" width="88.88888888888889" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
 
-<rect x="350.0" width="50.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+<rect x="311.1111111111111" width="44.44444444444444" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+
+<rect x="355.55555555555554" width="44.44444444444444" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">1 of 8 done</text>
+<text class="legend" x="410" y="17">1 of 9 done</text>
 </svg>
 
 
@@ -261,21 +263,23 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 334)">
 <text x="0" y="17">9. Review comments from GitHub</text>
-<desc>Finished 1, Backlog 1, Analyzed 2, Idea 1. B171: porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.; FC08: porelo-forge-clients#FC08 · Finished · - · GitHub's general comments, review comment edits and deletes, one review's comments, the merge base, pull requests by head branch and one review thread by its id with its resolver; Forgejo's general comments, review comments, the pull request of two branches and the server version, with what Forgejo cannot do measured; recorded live and from the container; described in both clients' READMEs.; GH09: porelo-adapters#GH09 · Idea · - · Shared `Review1` cases in `porelo-build-contract` guard SARIF fidelity and native client calls, unsupported capabilities and authorized writes without duplicates; blocks [GH02](README.md#gh02) and [GH10](README.md#gh10); GH02: porelo-adapters#GH02 · Backlog · L · GitHub serves `Review1` beside `Build2` as SARIF 2.1.0 through the `github` client, preserving thread and origin evidence and sending explicit authorized writes with per-call credentials; F191: porelo-frontend#F191 · Analyzed · M · Held And Outgoing Forge Comments Released; </desc>
+<desc>Finished 1, Backlog 1, Analyzed 2, Accepted 1, Idea 1. B171: porelo#B171 · Analyzed · L · Review1 beside Build2 for GitHub/Forgejo SARIF conversion; authenticated source/resolver rules, durable outbox and destination/content-bound releases with central rate limits.; FC08: porelo-forge-clients#FC08 · Finished · - · GitHub's general comments, review comment edits and deletes, one review's comments, the merge base, pull requests by head branch and one review thread by its id with its resolver; Forgejo's general comments, review comments, the pull request of two branches and the server version, with what Forgejo cannot do measured; recorded live and from the container; described in both clients' READMEs.; GH09: porelo-adapters#GH09 · Idea · - · Shared `Review1` cases in `porelo-build-contract` guard SARIF fidelity and native client calls, unsupported capabilities and authorized writes without duplicates; blocks [GH02](README.md#gh02) and [GH10](README.md#gh10); GH02: porelo-adapters#GH02 · Backlog · L · GitHub serves `Review1` beside `Build2` as SARIF 2.1.0 through the `github` client, preserving thread and origin evidence and sending explicit authorized writes with per-call credentials; B358: porelo#B358 · Accepted · - · A Task Reviews A Pull Request On The Central Forge; F191: porelo-frontend#F191 · Analyzed · M · Held And Outgoing Forge Comments Released; </desc>
 <svg x="344" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="80.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
+<rect x="0.0" width="66.66666666666667" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
 
-<rect x="80.0" width="80.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
+<rect x="66.66666666666667" width="66.66666666666667" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 1</title></rect>
 
-<rect x="160.0" width="160.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
+<rect x="133.33333333333334" width="133.33333333333334" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 2</title></rect>
 
-<rect x="320.0" width="80.0" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
+<rect x="266.6666666666667" width="66.66666666666667" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="333.3333333333333" width="66.66666666666667" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">1 of 5 done</text>
+<text class="legend" x="410" y="17">1 of 6 done</text>
 </svg>
 
 

@@ -1,7 +1,7 @@
 
 
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1114 674" role="img" aria-label="Sprint progress for release 0.17">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1114 704" role="img" aria-label="Sprint progress for release 0.17">
 <title>Sprint progress for release 0.17</title>
 <style>
 text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
@@ -229,15 +229,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 334)">
 <text x="0" y="17">9. Let a limited service manage task accounts</text>
-<desc>Not filed yet 1. Register A Project Application Service; Rotate And Revoke Service Secrets. Continue the room parent from sprint 3 after sprint 8.: Not filed yet; </desc>
+<desc>Accepted 1, Not filed yet 1. MX38: porelo-message-matrix#MX38 · Accepted · XL · A Room Shows No Helper; Register A Project Application Service; Rotate And Revoke Service Secrets. Continue the room parent from sprint 3 after sprint 8.: Not filed yet; </desc>
 <svg x="464" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 1 done</text>
+<text class="legend" x="410" y="17">0 of 2 done</text>
 </svg>
 
 
@@ -440,6 +442,25 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 
 <text x="1014" y="17"><title>Reach a directly addressed peer or explain why not: Not tested</title>⚪</text>
+
+</g>
+
+
+<g transform="translate(0 664)">
+<text x="0" y="17">20. An outside detector catalog measured</text>
+<desc>Estimated 1. SL04: porelo-message-sluice#SL04 · Estimated · L · An external content detector, measured before it is adopted; </desc>
+<svg x="464" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="400.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 1</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 1 done</text>
+</svg>
+
+
+<text x="1014" y="17"><title>An outside detector catalog measured: Not tested</title>⚪</text>
 
 </g>
 

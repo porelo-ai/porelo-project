@@ -1,0 +1,59 @@
+# The issues no release holds yet. A new Idea starts here. Issue states are not written here: they are read from each repository's index.
+release: "later"
+goal: "Everything not yet placed in a release"
+sprints:
+  - id: "1"
+    title: "Not yet placed"
+    goal: "An issue leaves this page when a release takes it."
+    functions:
+      - title: "porelo-adapters"
+        test: "Not planned for a test yet."
+        issues: [porelo-adapters#GH14]
+      - title: "porelo-agy"
+        test: "Not planned for a test yet."
+        issues: [porelo-agy#AG06]
+      - title: "porelo-ai.github.io"
+        test: "Not planned for a test yet."
+        issues: [porelo-ai.github.io#SI04]
+      - title: "porelo-buildtools"
+        test: "Not planned for a test yet."
+        issues: [porelo-buildtools#BT23]
+      - title: "porelo-claude-code"
+        test: "Not planned for a test yet."
+        issues: [porelo-claude-code#CC42]
+      - title: "porelo-codex"
+        test: "Not planned for a test yet."
+        issues: [porelo-codex#CX06, porelo-codex#CX09]
+      - title: "porelo-ecosystems"
+        test: "Not planned for a test yet."
+        issues: [porelo-ecosystems#EC04, porelo-ecosystems#EC05, porelo-ecosystems#EC06, porelo-ecosystems#EC07, porelo-ecosystems#EC08, porelo-ecosystems#EC09]
+      - title: "porelo-forge-clients"
+        test: "Not planned for a test yet."
+        issues: [porelo-forge-clients#FC15, porelo-forge-clients#FC16]
+      - title: "porelo-frontend"
+        test: "Not planned for a test yet."
+        issues: [porelo-frontend#F64, porelo-frontend#F149, porelo-frontend#F192, porelo-frontend#F193, porelo-frontend#F200, porelo-frontend#F205, porelo-frontend#F206, porelo-frontend#F207, porelo-frontend#F221, porelo-frontend#F233, porelo-frontend#F234, porelo-frontend#F235, porelo-frontend#F236, porelo-frontend#F238, porelo-frontend#F239, porelo-frontend#F240, porelo-frontend#F241, porelo-frontend#F242, porelo-frontend#F244, porelo-frontend#F245, porelo-frontend#F246, porelo-frontend#F247, porelo-frontend#F250, porelo-frontend#F251, porelo-frontend#F252, porelo-frontend#F253, porelo-frontend#F257, porelo-frontend#F259, porelo-frontend#F260, porelo-frontend#F261, porelo-frontend#F262, porelo-frontend#F263, porelo-frontend#F265, porelo-frontend#F266, porelo-frontend#F267, porelo-frontend#F279, porelo-frontend#F289, porelo-frontend#F292, porelo-frontend#F293, porelo-frontend#F294, porelo-frontend#F295, porelo-frontend#F296, porelo-frontend#F297, porelo-frontend#F298, porelo-frontend#F299, porelo-frontend#F300, porelo-frontend#F301, porelo-frontend#F302, porelo-frontend#F303, porelo-frontend#F304, porelo-frontend#F305, porelo-frontend#F306, porelo-frontend#F307, porelo-frontend#F308, porelo-frontend#F316, porelo-frontend#F317, porelo-frontend#F318, porelo-frontend#F320, porelo-frontend#F321, porelo-frontend#F323, porelo-frontend#F324, porelo-frontend#F328, porelo-frontend#F349]
+      - title: "porelo-host"
+        test: "Not planned for a test yet."
+        issues: [porelo-host#HO30, porelo-host#HO45, porelo-host#HO46, porelo-host#HO48, porelo-host#HO51, porelo-host#HO54, porelo-host#HO56, porelo-host#HO57, porelo-host#HO58, porelo-host#HO59, porelo-host#HO64, porelo-host#HO77, porelo-host#HO78, porelo-host#HO79, porelo-host#HO82, porelo-host#HO87, porelo-host#HO88, porelo-host#HO90, porelo-host#HO91, porelo-host#HO92, porelo-host#HO97, porelo-host#HO98, porelo-host#HO99, porelo-host#HO101, porelo-host#HO106, porelo-host#HO107, porelo-host#HO109, porelo-host#HO111]
+      - title: "porelo-intellij"
+        test: "Not planned for a test yet."
+        issues: [porelo-intellij#IJ19, porelo-intellij#IJ20, porelo-intellij#IJ22]
+      - title: "porelo-message-matrix"
+        test: "Not planned for a test yet."
+        issues: [porelo-message-matrix#MX45, porelo-message-matrix#MX60, porelo-message-matrix#MX63, porelo-message-matrix#MX64]
+      - title: "porelo-message-sluice"
+        test: "Not planned for a test yet."
+        issues: [porelo-message-sluice#SL34, porelo-message-sluice#SL39]
+      - title: "porelo-omp"
+        test: "Not planned for a test yet."
+        issues: [porelo-omp#OM34]
+      - title: "porelo-pi"
+        test: "Not planned for a test yet."
+        issues: [porelo-pi#PI44]
+      - title: "porelo-project"
+        test: "Not planned for a test yet."
+        issues: [porelo-project#A08, porelo-project#A09, porelo-project#A10, porelo-project#PJ09, porelo-project#PJ24, porelo-project#PJ33, porelo-project#PJ37, porelo-project#PJ48, porelo-project#PJ56, porelo-project#PJ76, porelo-project#PJ82, porelo-project#PJ84, porelo-project#PJ86, porelo-project#PJ90, porelo-project#PJ92, porelo-project#PJ93, porelo-project#PJ94]
+      - title: "porelo"
+        test: "Not planned for a test yet."
+        issues: [porelo#B30, porelo#B55, porelo#B56, porelo#B160, porelo#B227, porelo#B229, porelo#B281, porelo#B294, porelo#B295, porelo#B299, porelo#B301, porelo#B307, porelo#B309, porelo#B314, porelo#B319, porelo#B324, porelo#B325, porelo#B326, porelo#B327, porelo#B328, porelo#B330, porelo#B331, porelo#B332, porelo#B333, porelo#B350, porelo#B354, porelo#B357, porelo#B359, porelo#B360, porelo#B364, porelo#B371, porelo#B374, porelo#B386, porelo#B394, porelo#B397, porelo#B399, porelo#B400, porelo#B401, porelo#B403, porelo#B404, porelo#B405, porelo#B406, porelo#B407, porelo#B408, porelo#B410, porelo#B411, porelo#B412, porelo#B413, porelo#B414, porelo#B415, porelo#B416, porelo#B422, porelo#B423, porelo#B424, porelo#B425]

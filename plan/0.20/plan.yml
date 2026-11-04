@@ -10,6 +10,9 @@ sprints:
         test: "Probe Podman, nftables, user namespaces, cgroups and the daemon socket in ARM Lima. A refused unshare or missing firewall stops the task start. Check the ARM instruction baseline of the produced test executable."
         issues: [porelo#B251, porelo-project#PJ55]
         notes: ["Define And Check The ARM Baseline. The ARM parent also covers sprints 2 through 4. Use real Apple silicon; package building waits for this probe to pass."]
+      - title: "Tasks on macOS through Apple containers"
+        test: "A person on macOS runs tasks with the same guarantees, or the proof says why not."
+        issues: [porelo-project#PJ25]
   - id: "2"
     title: "Install native ARM core packages"
     goal: "A fresh ARM VM installs Porelo through the ordinary package channel."

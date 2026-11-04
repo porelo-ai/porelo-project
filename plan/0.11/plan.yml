@@ -8,7 +8,7 @@ sprints:
     functions:
       - title: "Check allowed destinations"
         test: "Read resolver capability in doctor. Start a project with addresses, domains and sets. Reach an allowed destination; an unallowed one fails and is shown as refused. Allow a CNAME while the task runs; it becomes reachable. An incomplete set must not appear complete."
-        issues: [porelo#B34, porelo#B10, porelo#B237]
+        issues: [porelo#B34, porelo#B10, porelo#B237, porelo#B152]
   - id: "2"
     title: "Let only Porelo own its Fedora socket"
     goal: "Package installation establishes the required socket boundary."
@@ -61,3 +61,10 @@ sprints:
         test: "Run capability-tagged tests with and without the needed capability. A task skips only what it lacks; a complete CI leg runs every case. Emit a declared failure in task.log after the step baseline; the loop watch stops the run and names it."
         issues: [porelo-project#PJ49, porelo#B119]
         notes: ["Capability tags never replace a complete green build on the forge."]
+  - id: "9"
+    title: "Mutation testing with PIT"
+    goal: "Each repository measures whether its tests notice a change."
+    functions:
+      - title: "Each repository measured by PIT"
+        test: "A mutation run per repository reports what its tests miss."
+        issues: [porelo-adapters#GH13, porelo-agy#AG09, porelo#B396, porelo-buildtools#BT41, porelo-claude-code#CC45, porelo-codex#CX12, porelo-forge-clients#FC17, porelo-intellij#IJ21, porelo-omp#OM42, porelo-pi#PI43]

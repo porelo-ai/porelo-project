@@ -3,11 +3,11 @@
 
 Communicate across machines with clear trust boundaries and hand over files only as allowed
 
-*Stand: 2026-11-02T21:22:31Z*
+*Stand: 2026-11-04T04:34:32Z; no commit time for PJ94-The-Plan-Pages-Are-Built-Outside-Main.md (excluded; no file-time fallback)*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Analyzed 1; Sprint 2: Analyzed 2, Not filed yet 1; Sprint 3: Backlog 1, Not filed yet 1; Sprint 4: Estimated 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Backlog 1, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Not filed yet 1; Sprint 10: Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Estimated 1, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Not filed yet 1; Sprint 15: Analyzed 1, Not filed yet 1; Sprint 16: Estimated 1, Not filed yet 1; Sprint 17: Not filed yet 1; Sprint 18: Estimated 2, Accepted 1; Sprint 19: Idea 1](progress-1b1e25e7.svg)
+![Sprint 1: Estimated 1, Analyzed 1; Sprint 2: Analyzed 2, Not filed yet 1; Sprint 3: Backlog 1, Not filed yet 1; Sprint 4: Estimated 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Backlog 1, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Accepted 1, Not filed yet 1; Sprint 10: Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Estimated 1, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Not filed yet 1; Sprint 15: Analyzed 1, Not filed yet 1; Sprint 16: Estimated 1, Not filed yet 1; Sprint 17: Not filed yet 1; Sprint 18: Estimated 2, Accepted 1; Sprint 19: Idea 1; Sprint 20: Estimated 1](progress-c953e939.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -135,7 +135,7 @@ The project service can act only as identities from its own project.
 
 Test: Register the project service and act as its own task. Try acting as a person or another project's task; both fail. Retire and restore the service; old tokens no longer work.
 
-◻️ Register A Project Application Service; Rotate And Revoke Service Secrets. Continue the room parent from sprint 3 after sprint 8.
+⬜ [MX38](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx38 "porelo-message-matrix#MX38 · Accepted · XL · A Room Shows No Helper") ◻️ Register A Project Application Service; Rotate And Revoke Service Secrets. Continue the room parent from sprint 3 after sprint 8.
 
 </td></tr></table>
 
@@ -276,6 +276,20 @@ A direct-only peer never appears usable when its required account is missing.
 Test: Send to a peer with a valid direct transport address. Remove the required account and start or send again; the operation is refused with the missing requirement named rather than silently losing the message.
 
 🟧 [B257](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b257 "porelo#B257 · Idea · - · A Direct Peer Reached Without A Conversation")
+
+</td></tr></table>
+
+<table><tr><td>
+
+### Sprint 20: An outside detector catalog measured
+
+An outside catalog of detectors is measured against the filter.
+
+**An outside detector catalog measured ⚪ Not tested**
+
+Test: The measurement states what the catalog finds and misses.
+
+🟪 [SL04](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl04 "porelo-message-sluice#SL04 · Estimated · L · An external content detector, measured before it is adopted")
 
 </td></tr></table>
 

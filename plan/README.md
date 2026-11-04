@@ -21,5 +21,6 @@ by `porelo-release plan render`, with a progress bar per sprint, and is not edit
 | [0.18](0.18/) | Keep MCP tools inspectable and require approval when their accepted definitions change |
 | [0.19](0.19/) | Use enterprise forges, read Jenkins builds and extend reviews to their pull requests |
 | [0.20](0.20/) | Work on Apple silicon, Fedora and Windows, with chosen drives and a shared secrets file |
+| [later](later/) | Everything not yet placed in a release; a new Idea starts here |
 
 The issues themselves are in [issues/](../issues/README.md).

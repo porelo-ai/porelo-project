@@ -39,3 +39,6 @@ sprints:
       - title: "Recover from an unavailable image source"
         test: "Make the first Ubuntu mirror stop answering and build the image. The first attempt ends within its bound and the configured fallback succeeds. An unknown source remains refused."
         issues: [porelo#B263]
+      - title: "A vulnerability has a way in and is answered"
+        test: "Whoever finds a problem knows how to report it; every advisory is read and answered by its repository."
+        issues: [porelo-project#PJ32, porelo-project#PJ47]

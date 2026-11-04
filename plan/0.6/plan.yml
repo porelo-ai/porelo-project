@@ -219,7 +219,7 @@ sprints:
       - title: "A compact failure loop stopped"
         test: "Run an acceptance scenario with an agent that redraws a compact view and repeats a failed tool call; the loop watch stops it before the scenario bound and names the repeated failure. A progressing scenario must continue."
         tested: "2026-10-28"
-        issues: [porelo#B244]
+        issues: [porelo#B244, porelo-codex#CX07]
   - id: "6d"
     title: "The person's secrets in one file, and an agent named per repository"
     goal: "Without a host: the secrets file is made and read on this computer, and a repository names its agent and the name it goes by."
@@ -240,7 +240,7 @@ sprints:
       - title: "The host's secrets from one file, typed as one master password"
         test: "Rent a host from a drive holding only `machine.yml` and the bundle; on the desktop type the master password once, at the host the drive's login; the host comes up with its VPN key in `/etc/wireguard` and its tokens and vault keys from the file, and no secret lies on the drive. A need the file does not bring is refused, never prompted for."
         tested: "2026-10-28"
-        issues: [porelo-host#HO37, porelo-frontend#F199, porelo-frontend#F195, porelo-frontend#F196]
+        issues: [porelo-host#HO37, porelo-frontend#F199, porelo-frontend#F195, porelo-frontend#F196, porelo-frontend#F222]
         covers: [porelo-project#PJ51]
   - id: "6f"
     title: "The host's files uploaded"
@@ -319,7 +319,7 @@ sprints:
       - title: "Each person's one key and card, kept in the registry"
         test: "A person's key and card are made once and filed under `people/` with the key also on their forge account; a card under another person's login, one whose key the forge account does not list, and a successor signed by a revoked key are refused, naming why; a changed key reaches the registry and each host; a lost key is replaced by an admin, and a single admin's backup key may only replace that entry."
         tested: "2026-11-02"
-        issues: [porelo#B337, porelo#B339, porelo#B338, porelo#B356, porelo#B346, porelo-frontend#F268, porelo-frontend#F280, porelo-forge-clients#FC04, porelo-forge-clients#FC07]
+        issues: [porelo#B337, porelo#B339, porelo#B338, porelo#B356, porelo#B346, porelo-frontend#F268, porelo-frontend#F280, porelo-forge-clients#FC04, porelo-forge-clients#FC07, porelo#B387]
         covers: [porelo-project#PJ83]
       - title: "A host reached over SSH only, its state taken from the registry"
         test: "The host's only open port is SSH; the forge and the homeserver are reached through their gates over the tunnel with no password and no VPN; the host takes its project admins, projects and persons from the signed registry state an admin brings, and refuses a card under another person's login, a host card not signed by a host admin of `owners.yml` and a successor card signed by a revoked key, naming why."
@@ -329,7 +329,7 @@ sprints:
       - title: "Admitted, registered, added and joined with one click, from lists"
         test: "The host admin admits a project admin by picking them from the registry's persons; the project admin registers their project and adds a developer the same way; the developer joins with one click; Machines, Projects and Forges are lists whose rows open their own pages, each list with a filter, each row with its ⋮; no VPN, CA or per-machine key is left in the interface."
         tested: "2026-11-02"
-        issues: [porelo#B352, porelo#B353, porelo-frontend#F269, porelo-frontend#F271, porelo-frontend#F272, porelo-frontend#F273, porelo-frontend#F278, porelo-frontend#F276]
+        issues: [porelo#B352, porelo#B353, porelo-frontend#F269, porelo-frontend#F271, porelo-frontend#F272, porelo-frontend#F273, porelo-frontend#F278, porelo-frontend#F276, porelo-frontend#F287]
         covers: [porelo-project#PJ83]
       - title: "Task keys certified, and each push judged when it arrives"
         test: "A task signs with its own key certified by the person who started it; the host records the certificate and the task's forge token, judges each push by its arrival, and refuses one by an expired certificate or a revoked key."
@@ -377,25 +377,25 @@ sprints:
     functions:
       - title: "The organization's page, and a project created there"
         test: "An organization made anew by Core's script shows its people, projects, hosts and owners; each person sees only the actions of their roles; an organization owner adds a project and names its project admin, who makes its project repository on first opening it; a lost key is withdrawn and replaced, and the organization goes on."
-        issues: [porelo#B391, porelo-frontend#F309, porelo-frontend#F311, porelo-frontend#F314, porelo-frontend#F315]
+        issues: [porelo#B391, porelo-frontend#F309, porelo-frontend#F311, porelo-frontend#F314, porelo-frontend#F315, porelo#B419, porelo#B420, porelo-frontend#F322, porelo-frontend#F326, porelo-frontend#F327, porelo-frontend#F329, porelo-frontend#F331, porelo-frontend#F337, porelo-frontend#F339, porelo-frontend#F344, porelo-frontend#F345, porelo-frontend#F346, porelo-frontend#F347, porelo-frontend#F348]
         notes: ["Core's organization commands"]
         covers: [porelo-project#PJ87, porelo-project#PJ88]
       - title: "The organization behind an interface"
         test: "The contract tests fail against an adapter that accepts an unsigned change, a played-back older state or a revoked card."
-        issues: [porelo#B390, porelo#B392]
+        issues: [porelo#B390, porelo#B392, porelo#B402]
         covers: [porelo-project#PJ87]
       - title: "A project edited on its own page, with no machine"
         test: "The project admin adds and removes repositories and members and changes a role on the project's page; a member sees it read-only; nothing on it names a host."
-        issues: [porelo-frontend#F310]
+        issues: [porelo-frontend#F310, porelo-frontend#F330, porelo-frontend#F338, porelo-frontend#F350]
         notes: ["Core's project commands"]
         covers: [porelo-project#PJ89]
       - title: "A host carries projects and follows them by itself"
         test: "A host admin puts a project on a host with their central token; every member is admitted there within five minutes or at once on Refresh, and a member removed is locked there at the same moment, with no step of anyone; a person connects once per host and finds every project they are in ready, with no Join; a project taken off the host leaves nothing of itself there."
-        issues: [porelo-host#HO49, porelo-host#HO84, porelo-host#HO93, porelo-host#HO94, porelo-host#HO95, porelo-host#HO96, porelo-message-matrix#MX65, porelo-message-matrix#MX67, porelo-frontend#F312, porelo-frontend#F313, porelo-frontend#F319]
+        issues: [porelo-host#HO49, porelo-host#HO84, porelo-host#HO93, porelo-host#HO94, porelo-host#HO95, porelo-host#HO96, porelo-message-matrix#MX65, porelo-message-matrix#MX67, porelo-frontend#F312, porelo-frontend#F313, porelo-frontend#F319, porelo#B336, porelo#B409, porelo-frontend#F248, porelo-frontend#F334, porelo-frontend#F335, porelo-frontend#F336, porelo-frontend#F340, porelo-frontend#F342, porelo-frontend#F343, porelo-host#HO100, porelo-host#HO102, porelo-host#HO103, porelo-host#HO104, porelo-host#HO110, porelo-host#HO112, porelo-host#HO60]
         covers: [porelo-project#PJ89]
       - title: "A host prepared once, its roles on it, and a person leaving"
         test: "A host set up anew carries its host admin and no project; on it the host admin, a project admin and members each do what their role allows and nothing more, without the VPN; any member runs the gathered push to the central forge with their own token; a person with no membership left is purged after seven days; the host has no forge user `operator`."
-        issues: [porelo-host#HO42, porelo-host#HO43, porelo-host#HO44, porelo-host#HO47, porelo-host#HO53, porelo-host#HO55, porelo-host#HO63, porelo-host#HO74]
+        issues: [porelo-host#HO42, porelo-host#HO43, porelo-host#HO44, porelo-host#HO47, porelo-host#HO53, porelo-host#HO55, porelo-host#HO63, porelo-host#HO74, porelo#B417, porelo#B418, porelo#B421, porelo-frontend#F332, porelo-frontend#F333, porelo-frontend#F341, porelo-host#HO108]
         covers: [porelo-project#PJ78, porelo-project#PJ83]
       - title: "The host vault opened by the person's key"
         test: "Opening the tunnel unlocks the person's host vault without a passphrase or prompt; the share stays in locked memory until the host restarts or the person is locked; after a reboot the vault waits for the next connection; a lost key means the vault is deleted and set up again."
@@ -404,13 +404,16 @@ sprints:
       - title: "Host cards by name, a forge on its own port, a fast build"
         test: "A host card with a DNS name or an IPv6 address is read and connected; a vault token is lent to a forge on a port other than 443; the porelo Build's verify ends in about 12 minutes, shown by a real Build and not by a step of the walk."
         issues: [porelo-frontend#F291, porelo#B373, porelo#B383]
+      - title: "A person sees who must review and sign"
+        test: "The project file alone needs a signer; a repository says whether its merge needs a review, and the page shows it."
+        issues: [porelo-project#PJ80, porelo-project#PJ81]
   - id: "6s"
     title: "The agent already on the machine is taken"
     goal: "Pulled forward from 0.7 beside the rebuild: the agent protocol only grows, and each packaged agent says what it finds of itself on the host."
     functions:
       - title: "The agent already on the machine is taken"
         test: "Without `--agent` and `--provider` the task starts with the Claude Code signed in there and says what it found and where; the interface shows the same choice."
-        issues: [porelo-project#PJ53, porelo#B225, porelo-claude-code#CC36, porelo#B224, porelo-frontend#F143]
+        issues: [porelo-project#PJ53, porelo#B225, porelo-claude-code#CC36, porelo#B224, porelo-frontend#F143, porelo-frontend#F325]
       - title: "Import one provider and recognize OMP"
         test: "Sign Pi in to two providers, import the chosen provider and start a task; the other sign-in must not be selected. Detect OMP through agent.db; its sign-in is shown as \"cannot say\" and left to `vault put` and `vault authorize`."
         issues: [porelo#B226, porelo-pi#PI36, porelo-omp#OM32]
@@ -499,6 +502,7 @@ sprints:
         issues: [porelo-intellij#IJ01, porelo-intellij#IJ02]
       - title: "The website builds in its task"
         test: "Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed."
+        issues: [porelo-ai.github.io#SI01]
         notes: ["Built by the website's move in sprint 8; tested here once it is there"]
   - id: "9"
     title: "Clearing up and counting"
@@ -509,16 +513,16 @@ sprints:
         issues: [porelo-buildtools#BT01]
       - title: "The gate and the transport held by tests"
         test: "Not a walk: a mutation run of `porelo-message-matrix` shows that removing a refusal of the gate or its parser, a certificate check on any trust path, or what keeps a message or a copy whole fails a unit test; a task of the project `default` joins no room, and a stalled client loses its connection."
-        issues: [porelo#B393, porelo-message-matrix#MX66, porelo-message-matrix#MX68, porelo-message-matrix#MX69, porelo-message-matrix#MX70, porelo-message-matrix#MX71, porelo-message-matrix#MX72, porelo-message-matrix#MX73, porelo-message-matrix#MX74, porelo-message-matrix#MX75]
+        issues: [porelo#B393, porelo-message-matrix#MX66, porelo-message-matrix#MX68, porelo-message-matrix#MX69, porelo-message-matrix#MX70, porelo-message-matrix#MX71, porelo-message-matrix#MX72, porelo-message-matrix#MX73, porelo-message-matrix#MX74, porelo-message-matrix#MX75, porelo-message-sluice#SL38]
       - title: "Small repairs of safety and robustness"
         test: "Not a walk: each issue's own acceptance holds: a forced removal kills what outlives its stop, the gate's route match holds for every decoded byte, the person's token is kept where each tool reads it, the push judge is armed only where it holds, a task of another project cannot be named as a peer, a transport borrows the token its lifecycle needs, a registry owner check works with an app token, and a stopped test walks core findings and cannot reach the person's vault."
-        issues: [porelo-host#HO81, porelo-host#HO83, porelo-host#HO85, porelo-message-sluice#SL37, porelo#B388, porelo#B395, porelo#B329, porelo#B398, porelo#B389]
+        issues: [porelo-host#HO81, porelo-host#HO83, porelo-host#HO85, porelo-message-sluice#SL37, porelo#B388, porelo#B395, porelo#B329, porelo#B398, porelo#B389, porelo-buildtools#BT03, porelo-host#HO113, porelo-host#HO14, porelo-host#HO61]
       - title: "Subagents and reviews, as a person sees them"
         test: "A task may start only the subagents its task allows; another is refused and the task says so. In IntelliJ, an open review shows that its push moved, and Approve and Reject are named in words."
-        issues: [porelo#B361, porelo-intellij#IJ16, porelo-intellij#IJ17]
+        issues: [porelo#B361, porelo-intellij#IJ16, porelo-intellij#IJ17, porelo-agy#AG08, porelo-claude-code#CC44, porelo-codex#CX11, porelo-omp#OM41]
       - title: "A ready server runs its setup again, and a rented one is found"
         test: "On a ready server, *Run its setup again* runs the setup once more and says how it ended; the server keeps its work. `porelo-host find` says which server is rented now, or that none is."
-        issues: [porelo-frontend#F223, porelo-frontend#F224]
+        issues: [porelo-frontend#F223, porelo-frontend#F224, porelo-frontend#F264]
       - title: "No channel file and no hand-over directory any more"
         test: "Every `AGENTS.md` describes Matrix, Forgejo and the gate; the channel file, the hand-over directory and the agents' own VM accounts are gone."
         notes: ["every repository's AGENTS.md rewritten"]
@@ -535,6 +539,9 @@ sprints:
       - title: "An unfollow leaves nothing of the project"
         test: "After `porelo project unfollow`, `porelo prune` finds nothing of the project left: no clone, no build lock, no upstream copy."
         issues: [porelo#B238]
+      - title: "Rules and document checks a contributor meets"
+        test: "One guide from any repository; document tests run where the agent works; an issue names nothing of another repository."
+        issues: [porelo-omp#OM18, porelo-project#PJ27, porelo-project#PJ46, porelo-project#PJ79]
   - id: "9a"
     title: "The host collection is checked before use"
     goal: "The host setup refuses a collection whose contents changed."
@@ -542,6 +549,9 @@ sprints:
       - title: "A changed collection refused"
         test: "Install the host collection through the interface, then offer a changed collection tarball with the original digest; installation is refused before its contents run."
         issues: [porelo-frontend#F137]
+      - title: "Every workflow runs on the local forge as on the central one"
+        test: "The same build runs green on the local forge and the central one."
+        issues: [porelo-project#PJ60]
   - id: "10"
     title: "Check the whole move"
     goal: "The setup and move are judged against their full parent criteria."

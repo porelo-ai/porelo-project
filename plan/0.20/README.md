@@ -3,11 +3,11 @@
 
 Work on Apple silicon, Fedora and Windows, with chosen drives and a shared secrets file
 
-*Stand: 2026-10-29T20:46:48Z*
+*Stand: 2026-11-04T04:34:32Z*
 
 ## Sprint progress
 
-![Sprint 1: Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Not filed yet 1; Sprint 3: Not filed yet 1; Sprint 4: Not filed yet 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Idea 2, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Implementing 1, Not filed yet 1; Sprint 10: Implementing 1, Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Rejected 2, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Backlog 1, Estimated 1; Sprint 15: Analyzed 1, Idea 2; Sprint 16: Idea 1](progress-609e48cd.svg)
+![Sprint 1: Analyzed 1, Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Not filed yet 1; Sprint 3: Not filed yet 1; Sprint 4: Not filed yet 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Idea 2, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Implementing 1, Not filed yet 1; Sprint 10: Implementing 1, Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Rejected 2, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Review 1, Estimated 1; Sprint 15: Analyzed 1, Idea 2; Sprint 16: Rejected 1](progress-0eff622a.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -24,6 +24,12 @@ The ARM VM starts a contained task or explains the missing capability.
 Test: Probe Podman, nftables, user namespaces, cgroups and the daemon socket in ARM Lima. A refused unshare or missing firewall stops the task start. Check the ARM instruction baseline of the produced test executable.
 
 🟧 [B251](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b251 "porelo#B251 · Idea · - · Porelo Inside a Lima VM") ⬜ [PJ55](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj55 "porelo-project#PJ55 · Accepted · — · Porelo runs on arm64") ◻️ Define And Check The ARM Baseline. The ARM parent also covers sprints 2 through 4. Use real Apple silicon; package building waits for this probe to pass.
+
+**Tasks on macOS through Apple containers ⚪ Not tested**
+
+Test: A person on macOS runs tasks with the same guarantees, or the proof says why not.
+
+⬛ [PJ25](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj25 "porelo-project#PJ25 · Analyzed · XL · McPorelo Apple Containers")
 
 </td></tr></table>
 
@@ -205,7 +211,7 @@ A Windows user connects without installing an SSH executable.
 
 Test: On Windows without an SSH binary, connect to the host, start a task and reconnect. A wrong host key is refused and the relay carries the full stream.
 
-🟪 [F37](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f37 "porelo-frontend#F37 · Estimated · L · Reach A Machine Without An ssh Binary") 🔲 [F108](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f108 "porelo-frontend#F108 · Backlog · M · A Machine Over Ssh From Windows")
+🟪 [F37](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f37 "porelo-frontend#F37 · Estimated · L · Reach A Machine Without An ssh Binary") 🟦 [F108](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f108 "porelo-frontend#F108 · Review · — · A Machine Over Ssh From Windows")
 
 </td></tr></table>
 
@@ -239,7 +245,7 @@ A person removed from a host and added again later under the same user name gets
 
 Test: Remove a person from a prepared host and add them again under the same user name: their Porelo sets its own password with the one-time passwords it was handed, rejoins the room under `&lt;host&gt;-&lt;user&gt;`, and no one else can use those passwords.
 
-🟧 [MX53](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx53 "porelo-message-matrix#MX53 · Idea · - · A Person Added Again Keeps Their Name")
+🟩 [MX53](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx53 "porelo-message-matrix#MX53 · Rejected · - · A Person Added Again Keeps Their Name")
 
 </td></tr></table>
 
