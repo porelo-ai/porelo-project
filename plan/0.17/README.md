@@ -3,11 +3,11 @@
 
 Communicate across machines with clear trust boundaries and hand over files only as allowed
 
-*Stand: 2026-11-04T05:56:42Z*
+*Stand: 2026-11-04T07:41:47Z*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Analyzed 1; Sprint 2: Analyzed 2, Not filed yet 1; Sprint 3: Backlog 1, Not filed yet 1; Sprint 4: Estimated 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Backlog 1, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Accepted 1, Not filed yet 1; Sprint 10: Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Estimated 1, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Not filed yet 1; Sprint 15: Analyzed 1, Not filed yet 1; Sprint 16: Estimated 1, Not filed yet 1; Sprint 17: Not filed yet 1; Sprint 18: Estimated 2, Accepted 1; Sprint 19: Idea 1; Sprint 20: Estimated 1](progress-c953e939.svg)
+![Sprint 1: Estimated 1, Analyzed 1; Sprint 2: Analyzed 2, Not filed yet 1; Sprint 3: Backlog 1, Analyzed 1, Not filed yet 1; Sprint 4: Estimated 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Backlog 1, Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Accepted 1, Not filed yet 1; Sprint 10: Not filed yet 1; Sprint 11: Not filed yet 1; Sprint 12: Estimated 1, Not filed yet 1; Sprint 13: Not filed yet 1; Sprint 14: Not filed yet 1; Sprint 15: Analyzed 1, Not filed yet 1; Sprint 16: Estimated 1, Not filed yet 1; Sprint 17: Not filed yet 1; Sprint 18: Estimated 2, Accepted 1; Sprint 19: Idea 1; Sprint 20: Estimated 1](progress-fc8652aa.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -51,7 +51,7 @@ Another account cannot replace the homeserver or send private chat into the room
 
 Test: Reach the homeserver through its account-owned Unix socket; a second account cannot connect. Read the room and a direct chat together and change the task reading them. Direct messages remain private, with no lost or repeated delivery.
 
-🔲 [MX29](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx29 "porelo-message-matrix#MX29 · Backlog · - · The Homeserver On A Socket Of The Account's Own") ◻️ Separate Room Polling And Positions. The room parent also covers sprints 9 through 11. Begin only after the move acceptance.
+🔲 [MX29](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx29 "porelo-message-matrix#MX29 · Backlog · - · The Homeserver On A Socket Of The Account's Own") ⬛ [MX77](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx77 "porelo-message-matrix#MX77 · Analyzed · M · The Room's Poll Has A Position Of Its Own") ◻️ Separate Room Polling And Positions. The room parent also covers sprints 9 through 11. Begin only after the move acceptance.
 
 </td></tr></table>
 

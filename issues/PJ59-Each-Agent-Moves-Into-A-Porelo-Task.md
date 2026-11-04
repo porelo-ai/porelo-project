@@ -165,7 +165,7 @@ Moving in again is a new start, from *The steps*.
 
 ## Acceptance
 
-- Sluice's move: `move-check.sh sluice` red before, green after, with its move issue in Review from inside the task.
+- Sluice's move: `build/move-check.sh` of porelo-host, copied to the host, red before, green after, with its move issue in Review from inside the task.
 - Every later move the same; the coordinator's own move last, in [PJ58](README.md#pj58)'s `porelo-all`.
 - Seen to fail first: the check against an agent that has not moved.
 
