@@ -1,0 +1,146 @@
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1188 134" role="img" aria-label="Sprint progress for release later">
+<title>Sprint progress for release later</title>
+<style>
+text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
+@media (prefers-color-scheme:dark){text{fill:#f0efec}.legend{fill:#c3c2b7}.c-surface{fill:#1a1a19}.c-grid{fill:#383835}.c-backlog{fill:#80bee6}.c-estimated{fill:#b497cf}.c-analyzed{fill:#77766f}.c-accepted{fill:#aaa9a2}.c-review{fill:#3987e5}.c-idea{fill:#d95926}.c-new{fill:#1a1a19}}
+</style>
+<rect width="100%" height="100%" fill="#fcfcfb" class="c-surface"/>
+
+
+<g transform="translate(0 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#0ca30c" class="c-done" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Finished / Rejected</text>
+</g>
+
+
+<g transform="translate(320 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#2a78d6" class="c-review" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Review</text>
+</g>
+
+
+<g transform="translate(640 0)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#fab219" class="c-impl" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Implementing / Rework</text>
+</g>
+
+
+<g transform="translate(0 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#8ac8f0" class="c-backlog" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Backlog</text>
+</g>
+
+
+<g transform="translate(320 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#9575b5" class="c-estimated" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Estimated</text>
+</g>
+
+
+<g transform="translate(640 24)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#77766f" class="c-analyzed" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Analyzed</text>
+</g>
+
+
+<g transform="translate(0 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#b9b8b2" class="c-accepted" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Accepted</text>
+</g>
+
+
+<g transform="translate(320 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#eb6834" class="c-idea" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Idea</text>
+</g>
+
+
+<g transform="translate(640 48)">
+<rect x="1" y="5" width="12" height="12" rx="3" fill="#ffffff" class="c-new" stroke="#e6e5e1"/>
+<text class="legend" x="19" y="16">Not filed yet / Missing</text>
+</g>
+
+
+
+<g transform="translate(0 94)">
+<text x="0" y="17">1. Not yet placed</text>
+<desc>Review 5, Implementing 1, Backlog 2, Estimated 6, Analyzed 4, Accepted 5, Idea 115. GH14: porelo-adapters#GH14 · Idea · - · The Stand-In Says A Short Thread Is Complete; AG06: porelo-agy#AG06 · Idea ·  · A Sign-In Without A Browser Is Tested On Every CLI Update; SI04: porelo-ai.github.io#SI04 · Estimated · S · The Site Looks Like Porelo's Website; BT23: porelo-buildtools#BT23 · Idea · - · One Upload Helper For Every Publish; CC42: porelo-claude-code#CC42 · Idea ·  · A Sign-In Without A Browser Is Tested On Every CLI Update; PJ80: porelo-project#PJ80 · Accepted · — · Only the project file needs a signer's signature; CX07: porelo-codex#CX07 · Estimated · S · A Repeated Refused Call Ends The Wake Scenario; CX06: porelo-codex#CX06 · Idea ·  · Rented Acceptance and Releases; CX09: porelo-codex#CX09 · Idea ·  · A Sign-In Without A Browser Is Tested On Every CLI Update; EC04: porelo-ecosystems#EC04 · Accepted · - · The Gradle Plugin; EC05: porelo-ecosystems#EC05 · Accepted · - · The npm Plugin; EC06: porelo-ecosystems#EC06 · Accepted · - · The pip Plugin; EC07: porelo-ecosystems#EC07 · Accepted · - · The Flutter Plugin; EC08: porelo-ecosystems#EC08 · Idea · M · The Maven Plugin Published As A Recommended Package; EC09: porelo-ecosystems#EC09 · Idea · M · A Project's Tools Installed In The Exact Version; FC15: porelo-forge-clients#FC15 · Idea · - · Sources And Javadoc Jars In A Release; FC16: porelo-forge-clients#FC16 · Idea · - · GitHub's Live Tests Through The App Token; F149: porelo-frontend#F149 · Idea · — · A Panel Plans The Release; F192: porelo-frontend#F192 · Review · — · A Machine That Refuses Every Key Said So; F193: porelo-frontend#F193 · Idea · — · What A Walk Left Open For Keys And Tasks; F200: porelo-frontend#F200 · Idea · — · KeePassXC Shipped On Windows And macOS; F205: porelo-frontend#F205 · Idea · — · The Host's Setup Commands Run By Their Paths; F207: porelo-frontend#F207 · Idea · — · A Task's Branch At The Forge Named By The Project's Scheme; F236: porelo-frontend#F236 · Idea · — · Root Reached On A Rented Server; F238: porelo-frontend#F238 · Idea · — · A Server With No Project Is Not Silent; F239: porelo-frontend#F239 · Idea · — · Known Values Offered In The Wizards; F240: porelo-frontend#F240 · Idea · — · The Walk Hand-Over Carries Porelo-Host; F242: porelo-frontend#F242 · Idea · — · A File Chooser Beside Every Path Field; F262: porelo-frontend#F262 · Idea · — · Lock And Purge Say What They Do; F263: porelo-frontend#F263 · Review · — · The Give-Back Confirmation Says What Is Lost; F265: porelo-frontend#F265 · Idea · — · The Server Page Shows What It Holds; F266: porelo-frontend#F266 · Idea · — · The Project Screen Shows Its Persons; F292: porelo-frontend#F292 · Idea · M · A Lock Confirmed By Each Host; F293: porelo-frontend#F293 · Idea · M · Host Deliveries Hardened; F295: porelo-frontend#F295 · Idea · S · No "Ask" Line Naming The Viewer; F296: porelo-frontend#F296 · Idea · M · Card Endpoints Per Login; F300: porelo-frontend#F300 · Idea · M · One Project, One Entry Across Machines; F302: porelo-frontend#F302 · Idea · S · Refresh Shows What It Did; F303: porelo-frontend#F303 · Idea · M · Menus Beside What They Act On; F304: porelo-frontend#F304 · Idea · M · No Message Asks A Step The Interface Can Take; F306: porelo-frontend#F306 · Idea · — · A Work Card Whose Terminal Has Ended; F307: porelo-frontend#F307 · Idea · — · Push And Pull Show Their Progress In The Interface; F308: porelo-frontend#F308 · Idea · — · The Needs You Header Counts What It Lists; F316: porelo-frontend#F316 · Review · — · An Owner Accepts A Lost Key's New Card; F317: porelo-frontend#F317 · Idea · — · A Homeserver's Token Reaches The Host; F318: porelo-frontend#F318 · Idea · — · An Owner Makes An Admin A Developer; F320: porelo-frontend#F320 · Review · M · A First Organization Without Hand Work; F321: porelo-frontend#F321 · Idea · S · Send The Terminal Input Fix Upstream; F323: porelo-frontend#F323 · Review · — · Refuse An Organization A Host Cannot Follow; F324: porelo-frontend#F324 · Idea · — · Removing A Project On Windows; F328: porelo-frontend#F328 · Idea · — · Letters Doubled In A Slow Window; F349: porelo-frontend#F349 · Idea · — · A Way Without Administration Rights; HO30: porelo-host#HO30 · Idea · - · The Forge's Job Bounds Measured; HO54: porelo-host#HO54 · Idea · - · The Host's Helpers Hardened; HO58: porelo-host#HO58 · Idea · - · The Services' Podman Kept Small; HO77: porelo-host#HO77 · Idea · - · Each Job In A Network Of Its Own; HO78: porelo-host#HO78 · Idea · - · Only The Gates' Sockets Forwarded; HO79: porelo-host#HO79 · Idea · - · A Person's SSH Login Confirmed By A Second Factor; HO90: porelo-host#HO90 · Idea · S · Each Person's State Named By Status; HO91: porelo-host#HO91 · Idea · - · SSH's Edges Left From Its Readings; HO92: porelo-host#HO92 · Idea · - · The Forge's Loopback Port Narrowed To Persons; HO97: porelo-host#HO97 · Idea · - · A Host Reached By IPv6 Alone; HO98: porelo-host#HO98 · Idea · - · A Project's Central Address Changed; HO99: porelo-host#HO99 · Idea · - · A Central Forge On A Private Authority; HO101: porelo-host#HO101 · Idea · - · One Forge Over SSH And HTTPS On A Port; HO106: porelo-host#HO106 · Idea · - · A Refused Root Key File Says Why; HO107: porelo-host#HO107 · Idea · - · A Project That No Token Can Cure; HO109: porelo-host#HO109 · Idea · - · How Long The Host Has Not Read Its Organization; HO111: porelo-host#HO111 · Idea · - · The Forge's Admin Tokens A Project Helper Leaves; IJ19: porelo-intellij#IJ19 · Idea ·  · A Fixed Plugin Loads Without A Restart; IJ20: porelo-intellij#IJ20 · Idea ·  · A review opens with its first file shown; IJ22: porelo-intellij#IJ22 · Idea ·  · A disconnected machine stays unconnected; MX76: porelo-message-matrix#MX76 · Idea · - · A Host Reaches The Room On The Development Machine; MX60: porelo-message-matrix#MX60 · Idea · - · The Gate Says Why It Failed; MX63: porelo-message-matrix#MX63 · Idea · - · A Loopback Client Signs In On The Person's Click; MX64: porelo-message-matrix#MX64 · Idea · - · No Port Reaches The Homeserver Behind Its Gate; SL39: porelo-message-sluice#SL39 · Idea · — · An Organization Proved Against Real GitHub; OM34: porelo-omp#OM34 · Idea ·  · The Shared Workflow Tests See Every Refusal Red; PI44: porelo-pi#PI44 · Idea ·  · A Copilot Task Uses The Models The Account Has; A08: porelo-project#A08 · Estimated · L · Agent Copilot CLI; A09: porelo-project#A09 · Analyzed · L · Agent Grok Build; A10: porelo-project#A10 · Analyzed · L · Agent OpenCode; PJ09: porelo-project#PJ09 · Analyzed · L · A gate's green says nothing until its reference set can change; PJ24: porelo-project#PJ24 · Estimated · M · Where The Agent Protocols Touch This; PJ33: porelo-project#PJ33 · Implementing · L · A plugin may carry its own license; PJ95: porelo-project#PJ95 · Idea · — · Where A Person May Not Add A Deploy Key; PJ48: porelo-project#PJ48 · Idea · — · GitHub does not run scheduled workflows reliably; PJ56: porelo-project#PJ56 · Idea · — · A release is tested together on one host; PJ82: porelo-project#PJ82 · Idea · — · A small change is tried only where it changed; PJ84: porelo-project#PJ84 · Idea · — · An IntelliJ plugin skill of our own; PJ86: porelo-project#PJ86 · Idea · — · A hard bound on the agents a task starts; PJ90: porelo-project#PJ90 · Idea · — · Several organizations on one machine; PJ92: porelo-project#PJ92 · Idea · — · Every Forge Call Behind One Contract; PJ93: porelo-project#PJ93 · Idea · — · Work Arrives Under The Branch Names A Forge Requires; PJ94: porelo-project#PJ94 · Backlog · — · The Plan Pages Are Built Outside Main; B30: porelo#B30 · Estimated · L · Credentials The Broker Has To Fetch; B55: porelo#B55 · Estimated · L · The Changelog Entry A Change Has To Bring; B56: porelo#B56 · Analyzed · S · Programs Porelo Runs That Could Be Calls; B281: porelo#B281 · Idea · - · Acceptance Legs In Less Wall Time; B294: porelo#B294 · Idea · - · A Task's Trust And Limits Measured Where Not Yet Seen; B295: porelo#B295 · Idea · - · A Task Without A Gate Knows Its Host; B299: porelo#B299 · Idea · - · A Project's Declared Parameters Reach An Interface; B301: porelo#B301 · Idea · - · An Unattended Task For An Issue Takes Its Phase From It; B307: porelo#B307 · Idea · - · Not Waiting Is Read Once The Screen Settles; B309: porelo#B309 · Idea · - · A Machine Sets Its Own Transport Settings; B324: porelo#B324 · Idea · - · A Moved Waiting Push Changes WatchProjects; B325: porelo#B325 · Idea · - · Tasks Started Together Share One Mirror Clone; B326: porelo#B326 · Idea · - · A Reject With Nothing Waiting Says So; B328: porelo#B328 · Idea · - · An Inbox Message Ends With A Newline; B333: porelo#B333 · Idea · - · Porelod Prunes Once A Day; B350: porelo#B350 · Idea · - · A Loopback Sign-In Over SSH Names Its Forward; B354: porelo#B354 · Idea · S · A Task Named By Its Key; B357: porelo#B357 · Idea · S · Build2 Waits 60 Seconds When The Forge Names No Wait; B359: porelo#B359 · Idea · M · A Trust Record That Keeps Who Could Sign When; B360: porelo#B360 · Idea · M · The Person's Own Files Read Only As Themselves; B371: porelo#B371 · Backlog · M · A History Judged Under The Rules Of Its Time; B394: porelo#B394 · Idea · S · An Online Task On A Host With No Forge Passes On To Its Upstream; B397: porelo#B397 · Idea · - · A Plain Git Credential Goes To Any Host A Project Names; B399: porelo#B399 · Idea · - · A Maven Server Password Brought Into The Vault On Command; B400: porelo#B400 · Idea · - · A Revoked Key Stops Certifying Off A Host Before A Start; B401: porelo#B401 · Idea · - · What The Write Contract Does Not Yet Hold; B403: porelo#B403 · Idea · - · A Start Judged On A Real Machine; B404: porelo#B404 · Idea · - · A List With The Organization Never Read; B405: porelo#B405 · Idea · - · A Host That Says Why A Project Has No Address; B406: porelo#B406 · Idea · M · A Revoked Person Comes Back Only When Agreed; B407: porelo#B407 · Idea · M · An Owner's Signature Counts For A Project's Files; B408: porelo#B408 · Idea · L · One Step To Recover From A Lost Key; B410: porelo#B410 · Idea · - · Two Forges On One Host Told Apart; B411: porelo#B411 · Idea · - · A Provider's Refusal Reaches The Person; B412: porelo#B412 · Idea · - · A Prompted Start That Failed Says So In Its Exit; B413: porelo#B413 · Idea · - · A Vault Entry With No Secret Counts None; B414: porelo#B414 · Idea · S · A Developer Reads An Organization At GitHub; B415: porelo#B415 · Idea · - · A Project Admin Told How To Open Without The Right; B416: porelo#B416 · Idea · - · A Forge That Refuses A Host's Read Key Says Why; B422: porelo#B422 · Idea · - · A Guarded Project On A Host; B423: porelo#B423 · Idea · - · Small Words Found In A Host Rehearsal; B424: porelo#B424 · Idea · - · A Person's Forge Token Replaced At Each Command; B425: porelo#B425 · Idea · - · What Only A Host Check Holds; </desc>
+<svg x="230" width="540" height="24" viewBox="0 0 540 24">
+<svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
+<rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
+
+<rect x="0.0" width="14.492753623188406" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 5</title></rect>
+
+<rect x="14.492753623188406" width="2.898550724637681" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 1</title></rect>
+
+<rect x="17.391304347826086" width="5.797101449275362" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 2</title></rect>
+
+<rect x="23.18840579710145" width="17.391304347826086" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 6</title></rect>
+
+<rect x="40.57971014492754" width="11.594202898550725" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 4</title></rect>
+
+<rect x="52.17391304347826" width="14.492753623188406" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 5</title></rect>
+
+<rect x="66.66666666666667" width="333.3333333333333" height="20" fill="#eb6834" class="c-idea" stroke="#fcfcfb"><title>Idea: 115</title></rect>
+
+</svg>
+<text class="legend" x="410" y="17">0 of 138 done</text>
+</svg>
+
+
+<text x="780" y="17"><title>porelo-adapters: Not tested</title>⚪</text>
+
+
+<text x="804" y="17"><title>porelo-agy: Not tested</title>⚪</text>
+
+
+<text x="828" y="17"><title>porelo-ai.github.io: Not tested</title>⚪</text>
+
+
+<text x="852" y="17"><title>porelo-buildtools: Not tested</title>⚪</text>
+
+
+<text x="876" y="17"><title>porelo-claude-code: Not tested</title>⚪</text>
+
+
+<text x="900" y="17"><title>porelo-codex: Not tested</title>⚪</text>
+
+
+<text x="924" y="17"><title>porelo-ecosystems: Not tested</title>⚪</text>
+
+
+<text x="948" y="17"><title>porelo-forge-clients: Not tested</title>⚪</text>
+
+
+<text x="972" y="17"><title>porelo-frontend: Not tested</title>⚪</text>
+
+
+<text x="996" y="17"><title>porelo-host: Not tested</title>⚪</text>
+
+
+<text x="1020" y="17"><title>porelo-intellij: Not tested</title>⚪</text>
+
+
+<text x="1044" y="17"><title>porelo-message-matrix: Not tested</title>⚪</text>
+
+
+<text x="1068" y="17"><title>porelo-message-sluice: Not tested</title>⚪</text>
+
+
+<text x="1092" y="17"><title>porelo-omp: Not tested</title>⚪</text>
+
+
+<text x="1116" y="17"><title>porelo-pi: Not tested</title>⚪</text>
+
+
+<text x="1140" y="17"><title>porelo-project: Not tested</title>⚪</text>
+
+
+<text x="1164" y="17"><title>porelo: Not tested</title>⚪</text>
+
+</g>
+
+</svg>
