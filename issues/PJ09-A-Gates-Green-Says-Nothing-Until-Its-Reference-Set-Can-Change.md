@@ -24,10 +24,9 @@ green cannot be calibrated without one gate that has ever gone red.
 - **Cannot change:** the gate says so where it reports (`porelo-omp`'s does; `porelo-claude-code`'s
   reads as working), or is removed - each agent's call, depending on whether a real reference set is
   coming.
-- **Nobody reads:** `porelo` ships and uploads a bill that no job of its own compares, while
-  `buildtools/check-packages.sh` justifies shipping it by a comparison that exists only in the agent
-  repositories. The sentence is corrected, and whether a comparison job is added there is the same
-  operator decision as [PJ08](README.md#pj08)'s.
+- **Nobody reads:** `porelo` ships and uploads a bill that no job of its own compares, and says so:
+  `Bill` in `dist/package-check` states that nothing in the repository compares one bill with the next.
+  Whether a comparison job is added there is the same operator decision as [PJ08](README.md#pj08)'s.
 - **The coordinating agent's standing duties** (the shared-block diff, cross-repository citations,
   stale statuses, renames) are duties, not gates, and each is counted as coverage only once it has
   fired.
@@ -38,10 +37,11 @@ green cannot be calibrated without one gate that has ever gone red.
   change it. Read today: `porelo-message-sluice`'s walk with an empty set; `compare-bills` in `update.yml`
   of `porelo-omp` (says it is a no-op) and `porelo-claude-code` (reads as working); `porelo` uploads
   `porelo.cdx.json` in `build.yml` and checks it only in `dist/package-check` (`BillTest`), comparing it
-  with nothing; `porelo-pi`'s `compare-bills`, which fired.
+  with nothing; `porelo-pi`'s `compare-bills`, which fired; `update.yml` of `porelo-codex` and `porelo-agy`, which
+  run no `compare-bills`.
 - **Per repository, by its agent, from a handover**: an assertion that the walk found anything; a line
-  where a gate reports that its set cannot change, or the gate removed; `porelo`'s justification
-  corrected, and a comparison job only if the operator decides so (as in [PJ08](README.md#pj08)).
+  where a gate reports that its set cannot change, or the gate removed; a comparison job in `porelo` only if
+  the operator decides so (as in [PJ08](README.md#pj08)).
 - **Seen to fail first:** each kind's gate made to fire on a crafted input; the empty walk passing is the
   first red.
 
@@ -52,8 +52,3 @@ green cannot be calibrated without one gate that has ever gone red.
   and is counted as coverage nowhere.
 - No justification in any repository asserts a check that repository does not perform.
 - Each kind has at least one gate seen to fire.
-
-## To be checked
-
-- `buildtools/check-packages.sh`, named in *The shape*, no longer exists in `porelo`; the bill is now
-  checked by `dist/package-check`. Where `porelo` now justifies shipping it - Agent Core's to read.

@@ -24,14 +24,14 @@ work for a person either.
   in the operator's office or is rented by the hour makes no difference to the setup. Porelo's own host is rented by
   the hour from Scaleway Elastic Metal through `porelo-machines` ([PJ40](README.md#pj40)'s *Renting the host*):
   - **It is set up from nothing by a script** and given back with nothing kept on it: the code is in the forge,
-    the person's own settings - configuration, notes, small files - are on a drive the person mounts
-    there, and the room's conversation and the usage records are copied off it as [PJ45](README.md#pj45) says.
+    the person's own settings - configuration, notes, small files - are on a drive the person keeps in their own
+    account there, if they choose one, and no part of the host's setup, and the room's conversation and the usage records are copied off it as [PJ45](README.md#pj45) says.
     Work not yet sent to the central forge by the gathered push is lost with a failed machine, an accepted risk
     ([decision](../doc/decisions.md#work-not-yet-sent-by-the-gathered-push-is-lost-with-a-failed-machine)).
   - **Keys deposited on a rented one are deposited for a time** ([PJ37](README.md#pj37)) and forgotten at its end;
     the package signing key is never on it, and releases stay the operator's.
-  - **Nothing on it is reachable from the internet**: the operator reaches Forgejo, Matrix and Porelo's ssh through a
-    VPN. Outgoing: the model providers through the broker, the dependency repositories, and the central forge for
+  - **Only ssh on it is reachable from the internet**: the firewall opens port 22 alone, and the operator reaches
+    Forgejo, Matrix and Porelo's daemon through forwards over ssh. Outgoing: the model providers through the broker, the dependency repositories, and the central forge for
     the gathered push and repository migration.
   - **Tests run in a VM pool**, with Ubuntu and Fedora kinds, as [PJ22](README.md#pj22) plans:
     each VM has one run account, and the whole VM is reset after each run.
@@ -56,8 +56,8 @@ work for a person either.
   Maven repository.
 - **The person reviews what Forgejo built green, gathered at the sprint's end**, and approves each task by merging
   its pull request `porelo/<task>` into the protected `main` on the host's forge. Only the person merges it.
-  The person starts the gathered push (porelo-buildtools
-  [BT06](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt06)), a plain `git push` without
+  The person starts the gathered push, `porelo-host-push` (porelo-host
+  [HO32](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho32)), a plain `git push` without
   force from the host's forge to the central forge, in dependency order and staggered to respect the limit on rented
   build servers. It asks for the person's fine-grained central token hidden and stores it nowhere
   ([PJ37](README.md#pj37)). A moved central forge refuses the push; its `main` comes to the host's forge as
@@ -75,7 +75,7 @@ work for a person either.
 - **What an agent learns goes into its repository's `AGENTS.md`, as a commit.** Nothing an agent needs is private
   any more: the machines, the accounts and the tools are named by `project.yml`, the `porelo.yml` files and the
   host's scripts, and the secrets stay in the vault behind the broker. So there is no local, uncommitted
-  `.AGENTS.md`: what holds on the host and the operator's preferences are committed, built by Forgejo and approved
+  `.AGENTS.md` once the move is done (the development machine still has one): what holds on the host and the operator's preferences are committed, built by Forgejo and approved
   with the sprint's other work, and nothing a task wrote reaches the next task unseen. The agents' own memory is
   switched off (porelo-claude-code
   [CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30)).
@@ -139,7 +139,7 @@ from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](READ
 1. **An agent works on the rented host.** No local forge, pool or room yet; the task follows the central forge as
    today.
    - *The host rented and given back at one command:* `porelo-host up porelo` rents from Scaleway Elastic Metal and
-     sets it up, the operator reaches it only through the VPN with the drive mounted, and `down` leaves nothing at
+     sets it up, the operator reaches it only over ssh, and `down` leaves nothing at
      the provider ([PJ40](README.md#pj40): porelo-frontend
      [F131](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f131),
      [F132](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f132),
@@ -161,8 +161,8 @@ from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](READ
      [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)).
 2. **The host from the interface, the agents in the room.**
    - *The host up and down from the interface, then a task started there:* *Put on a server* shows the steps and
-     asks at the stop for the drive's login and the vault's passphrase; it writes the machine file (project and keys
-     only) and the host's VPN key into the person's drive and offers the person's tunnel as a file. The machine
+     asks at the stop for the vault's passphrase; it uploads the machine file over the host's ssh into
+     `/etc/porelo-host/setup/`. The machine
      installs every agent and starts no task (decided): the operator then starts a task on the host as on any machine,
      and its agent is signed in on the way. A failed step's line names the command's own words (porelo
      [B258](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b258); porelo-host
@@ -171,7 +171,7 @@ from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](READ
      [F140](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f140),
      [F141](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f141)).
    - *Two agents talk in the room, and a message wakes the resting one:* two tasks on the host write to each other
-     in the project's room, the operator reads along through the VPN, a message naming a resting agent wakes it, and
+     in the project's room, the operator reads along through the forward over ssh, a message naming a resting agent wakes it, and
      a question for the operator comes in the operator's own channel (porelo-host
      [HO11](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho11); porelo-message-matrix
      [MX12](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx12), [MX31](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx31), [MX32](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx32), [MX33](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx33)).
@@ -186,7 +186,7 @@ from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](READ
      failing it ([PJ62](README.md#pj62); porelo
      [B253](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b253), moved there).
 4. **The local forge builds as the central one.**
-   - *Forgejo with its registry, a task fetching a snapshot by name:* the operator opens Forgejo through the VPN; a
+   - *Forgejo with its registry, a task fetching a snapshot by name:* the operator opens Forgejo through the forward over ssh, at `http://<host>.localhost:<web_port>/`; a
      task reaches its registry by a declared name on 443, trusts its certificate and fetches a snapshot, and
      reaches nothing else on the host (porelo-host
      [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08),
@@ -205,8 +205,8 @@ from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](READ
      builds it, and the verdict and a failed job's log are in the task's `/porelo/files` ([PJ61](README.md#pj61)).
    - *Only the person's merge approves the work:* the person merges `porelo/<task>` into the protected `main` on the
      host's forge, then starts the gathered push to the central forge; the same task push with the project `offline`
-     reaches no forge (porelo-buildtools
-     [BT06](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt06);
+     reaches no forge (porelo-host
+     [HO32](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho32);
      [PJ37](README.md#pj37)).
 6. **The move, first wave** ([PJ59](README.md#pj59)), the others working as today and the channel kept beside Matrix
    until the last has moved; each move a small issue of its own in the agent's repository, worked inside the new
@@ -246,5 +246,5 @@ from outside, [PJ27](README.md#pj27) with [PJ28](README.md#pj28) and [PJ32](READ
 
 - Whether Matrix delivers a message for an agent in a task into its mailbox; Porelo's half is there.
 - Whether the host's build reader returns the local Forgejo's verdict and failed-job logs to the task. The reader
-  runs on the host and reads the account's `ca-certificates.pem`; a task reaches only the services it is declared
+  runs on the host and reaches the forge through `git.sock`; a task reaches only the services it is declared
   to use, with its separate task CA bundle.

@@ -38,11 +38,14 @@ gathered and signed where it arises, and lists read from Git, the long wizards g
 - **Gone:** the forge password on the host (Git by the person's forge token, the web login through the tunnel); the
   project's own signing key (a project's signers are its project admins' keys); every per-machine key.
 - **Changing the key:** the person makes a new key and a new card that names the old key as its predecessor, signed by
-  both the new and the old key. Porelo commits it to the registry and brings it to each host the person is on.
-- **Losing the key:** a project admin (or for the host the host admin) puts the person's new key in the access file and
-  revokes the old one there; the identity is the person's login, not the key. An admin's own key is replaced by another
+  both the new and the old key. Porelo commits it to the organization's repository, and each host the person is on
+  takes it at its next follow.
+- **Losing the key:** an organization admin puts the person's new card in place of the old one
+  (`porelo org person replace`), which revokes the old key; the identity is the person's login, not the key. An admin's own key is replaced by another
   admin, or by the backup key. Each host keeps the revoked keys in a KRL.
-- **A stolen key** is revoked by an admin first, who also locks the person's host accounts at once. Once revoked, a
+- **A stolen key** is revoked by an organization admin first (`porelo org person revoke`), who also locks the person's
+  host accounts at once. **The code locks them later:** when the host takes the revocation, at its next follow, within
+  five minutes or at once on `org refresh`. Once revoked, a
   successor card signed by it is refused, so a thief cannot rotate it away. The person's host vault is deleted and set
   up again, and their provider sign-ins are renewed.
 - **Old commits stay verifiable:** the old key stays in Git's allowed signers with `valid-before` set to the change,
@@ -81,10 +84,15 @@ The service ports are the same local ports on every person's machine.
 
 **Everything over SSH.** Porelo opens one SSH tunnel per host with the person's key. The forge's web interface, its Git
 and Matrix are forwarded to `localhost`. On the host they listen on Unix sockets, reachable only by the admitted
-persons' group, not on TCP, and without TLS, since the tunnel encrypts. The web interface and Matrix know the person by
+persons' group, and without TLS, since the tunnel encrypts; the Git gate alone also listens on the host's loopback,
+`127.0.0.1:<git_port>`, for the host's own Git. The web interface and Matrix know the person by
 their login on the host; Git authenticates with the person's own forge token, which the host's sync makes. A task's
 container reaches none of these sockets, nor does any other task process; the host passes a task's branch on with the
-task's own token, limited to that repository and ending with the task. On the person's machine the forwards bind
+task's own token, limited to that repository and ending with the task. **The token itself is not limited to one
+repository:** it has `TASK_SCOPES = "write:repository"` on the person's one forge identity (`porelo-host`,
+`roles/porelo/files/porelo-host-person:169`), which is in each project's `developers` team, so it reaches all of them.
+The limit rests on the task never holding the token: its gate on the host holds it in the task's vault entry
+(`porelo`, `TaskSecrets.java:89`) and pushes only the task's own branch (`HostPush.java:120`). On the person's machine the forwards bind
 `127.0.0.1` only. The host's only open port is SSH. Today's return path to the messenger on the person's machine, a
 short-lived crutch, runs over `ssh -R` to that one socket only, until it goes. No VPN, no WireGuard, no host CA and no
 `sudo` in daily use.
@@ -97,35 +105,33 @@ admits them to the organisation. This is the way in, and Porelo builds on it.
 
 | Where | What | Written by |
 |---|---|---|
-| the organisation's **registry repository**, `owners.yml` | the registry's owners and the host admins | a registry owner |
-| the registry repository, `people/<login>.card` | each person's card | whoever may write there |
-| the registry repository, `hosts/<host>/card` | each host's card; added at setup, deleted at give-back | its host admin |
-| the registry repository, `hosts/<host>/access.yml` | the project admins and projects admitted there, each project with its access repository's address | its host admin |
-| each project's **access repository** (as today) | the access file: the project's persons, roles and hosts | the project admins |
+| the **organization's repository**, `owners.yml` | the organization's owners | an owner |
+| the organization's repository, `organization-admins.yml` | the organization admins | an owner |
+| the organization's repository, `people/<login>.card` | each person's card | that card's own key, or an organization admin in place of a refused or lost one |
+| the organization's repository, `hosts/<host>/host.yml` | the host's admins and the projects it carries | an organization admin adds it and changes its admins; its host admin what it carries |
+| the organization's repository, `hosts/<host>/card` | each host's card | its host admin |
+| the organization's repository, `projects/<project>/card` | a project's name and first admin | an organization admin |
+| the organization's repository, `projects/<project>/members.yml`, `repository.yml` | its members and roles, its repository's address | its project admins |
 
 Whether each person files their own card or chosen persons take cards and file them does not matter to Porelo.
 
 - Every commit is signed, every card is signed by its owner, and the history shows who set up, removed, admitted or
   locked what and when. The state is eventually consistent: Porelo shows what Git says beside what the host reports.
-- **Porelo reads instead of asking.** It gathers the lists and drop-downs from these repositories: the persons to admit
+- **Porelo reads instead of asking.** It gathers the lists and drop-downs from this repository: the persons to admit
   or add, the hosts, the projects on a host, and on each person's own machine what they were admitted to.
 - **Trust at first read:** Porelo accepts a new person card only if its key is also one of that forge account's own
   public keys (on GitHub `https://github.com/<login>.keys`), so nobody can file a card under another person's login
   first. On a forge with no public key list, an admin confirms the fingerprint out of band. The first `owners.yml` is
   accepted only if its signer is an owner of the forge organisation whose key is on their forge account's key list;
-  later changes are signed by a registry owner named in it. Porelo shows the fingerprints, and a host's key
+  later changes are signed by an owner named in it. Porelo shows the fingerprints, and a host's key
   at the first connection; comparing them out of band is possible, not required.
-- **Each path has its own signer,** since write access to the registry is wide: `owners.yml` by a registry owner;
-  `people/<login>.card` by that card's key (and its predecessor on a change); `hosts/<host>/…` by a host admin named in
-  `owners.yml`, the one who signed the host card first or their successor named there; anything else is ignored. A
+- **Each path has its own signer,** since write access to the organization's repository is wide, as the table says;
+  anything else is ignored. A
   commit that breaks this keeps the last good state and is named.
-- **The host never talks to the central forge on its own.** After each change, the Porelo of the admin who made it
-  brings the signed state to the host through the tunnel (as the access bundle goes today); the host checks the
-  signatures against its host admin's key, pinned at setup, and syncs. It needs neither the forge nor `owners.yml` for
-  that, so `hosts/<host>/access.yml` names each project admin with their key's fingerprint, and each project's access
-  file names each of its persons with theirs. The host refuses a brought state that does not descend from the one it
-  has, so an older, validly signed state cannot bring back a revoked person. A new host admin's key is pinned on the
-  host the same way as at setup.
+- **The host fetches the signed state itself.** Root's `porelo-host-person org follow`, every five minutes or at once
+  on `org refresh`, reads the central forge with the host's read-only deploy key and checks the state against its pin,
+  which holds its host admins' keys and the organization admins'; nothing is brought to it. The host refuses a state
+  that does not descend from the one it has, so an older, validly signed state cannot bring back a revoked person.
 - **Secrets,** if one is ever kept in Git, are encrypted with `age` to the keys of the persons, or the host, needing it.
 
 **The central forge's token does not lie on the host,** unless a project opts in (below). The gathered push, which takes
@@ -183,13 +189,14 @@ projects that must publish unattended; such a token is limited to pushing to tha
 1. **Each person, once:** installs Porelo, which reaches the central forge as given; their key is made, entered in
    their forge account, and their card is filed under `people/`.
 2. **Host admin:** sets up the server, the one wizard left, kept short; its card is filed under `hosts/`.
-3. **Host admin:** picks the project admin from the persons and clicks *Admit*; `hosts/<host>/access.yml` is committed
-   and brought to the host.
-4. **Project admin:** Porelo shows "admitted on host X"; they click *Register the project*, which brings it to the host.
-5. **Project admin:** picks the developer from the persons and clicks *Add to the project*; the access file is committed
-   and brought to the host, which syncs.
-6. **Developer:** Porelo shows "in project P on host X"; they click *Join*: following the project, the tunnel to the
-   host, ready to work.
+3. **Organization admin and host admin:** the organization admin adds the project with its first admin, picked from the
+   persons; the host admin puts it on the host (`porelo org host carry`), and the host takes it at its next follow.
+4. **Project admin:** opens the project once (`porelo project open`), which makes its repository; the host registers it
+   at its next follow.
+5. **Project admin:** picks the developer from the persons and adds them to the project; `members.yml` is committed,
+   and the host takes it at its next follow.
+6. **Developer:** the host stands under *Machines*; they click *Connect*, once per host: the tunnel to the host, every
+   project there ready to work.
 7. **Removing, locking, purging:** chosen from the person lists of project and host.
 
 ## Decided
@@ -197,7 +204,7 @@ projects that must publish unattended; such a token is limited to pushing to tha
 - One Ed25519 SSH key per person signs, authenticates and certifies; no OpenPGP and no gpg.
 - The person card is a small YAML file signed by the person's key; it holds no machine.
 - A changed key is announced by a card signed with the new and the old key; a lost or stolen key is replaced by an
-  admin in the access file, and the old one is revoked there and in the host's KRL.
+  organization admin, which revokes the old one, and the host's KRL takes it.
 - No machine card: a person reaches the host with their key from any machine.
 - A person's accounts on the host and its homeserver are per person, whatever machine they sit at, later perhaps a
   phone; a task's Matrix account is named by the task and the person's login.
@@ -205,12 +212,12 @@ projects that must publish unattended; such a token is limited to pushing to tha
   who starts it, for that task's lifetime; tasks without an issue or a project included.
 - No VPN; SSH carries everything.
 - Access to the central forge, by SSH or a personal access token, is given on each person's machine.
-- No package is sent between persons: the state lies signed in Git on the central forge, in the organisation's registry
-  repository (`owners.yml`, `people/`, `hosts/`) and in each project's access repository; Porelo builds its lists from
+- No package is sent between persons: the state lies signed in Git on the central forge, in the organization's
+  repository (`owners.yml`, `organization-admins.yml`, `people/`, `projects/`, `hosts/`); Porelo builds its lists from
   there.
-- Whoever has write access to the registry repository may commit cards; Porelo accepts them only by the rules of
+- Whoever has write access to the organization's repository may commit cards; Porelo accepts them only by the rules of
   building block 3.
-- The project admin registers their project on the host themselves, once the host admin has admitted them.
+- The host registers a project itself once the organization says it carries it; the project admin only opens it.
 - The central forge's token does not lie on the host unless a project opts in. The gathered push is started on purpose
   by a person admitted to push, never automatically, and sends that person's own token through the tunnel. The pull
   from the central forge into the host's forge works the same way.
@@ -218,27 +225,26 @@ projects that must publish unattended; such a token is limited to pushing to tha
   and makes them with the person's own token, started by that person, without webhooks.
 - A person who lost their key loses their host vault with it: the vault is deleted and set up again, and their agents'
   provider sign-ins are made once more.
-- A project with a single project admin, a single host admin and a registry with a single owner each list a second,
-  offline backup key, until a main key with certified working keys exists. The backup key may only replace the lost
-  key's entry among the signers or in `owners.yml`.
+- A single host admin and an organization with a single owner each list a second, offline backup key, until a main key
+  with certified working keys exists. The backup key may only replace the lost key on its own card or in `owners.yml`.
+  A project admin has no backup key: an organization admin names new admins.
 
 ## Acceptance
 
 - A developer joins a project on a host with one click after their card is filed, and a project admin is admitted and
   registers their project with one click each, with no value or key copied by hand.
-- Porelo refuses a card filed under another person's login, a host card signed by someone not named in `owners.yml`,
-  and a successor card signed by a revoked key, naming why; the host refuses a brought state that is not its own state's
+- Porelo refuses a card filed under another person's login, a host card signed by someone not among the host's admins,
+  and a successor card signed by a revoked key, naming why; the host refuses a fetched state that is not its own state's
   descendant.
 - The host's only open port is SSH, and no person needs a password beyond unlocking their own key.
 
 ## To be checked
 
 - The vault unlock above in detail, and how a provider sign-in reaches that vault over the tunnel.
-- The registry repository's exact layout and name, and the format of `owners.yml` and `hosts/<host>/access.yml`.
 - The forwards on a person's machine bind `127.0.0.1`, which other local users of that machine also reach; where the
   browser allows it, a socket private to the person is better.
 - SSHSIG in Java (Bouncy Castle) or through `ssh-keygen -Y`; `age` in Java or as a tool.
-- How each repository changes: porelo (key, cards, registry reading, vault unlock), porelo-frontend (lists instead of
+- How each repository changes: porelo (key, cards, the organization's reading, vault unlock), porelo-frontend (lists instead of
   wizards, the tunnel), porelo-host (accounts from person cards, KRL, SSH only, no WireGuard), porelo-message-matrix and
   porelo-message-sluice (Matrix over the tunnel, the return path by `ssh -R`).
 - Which held GUI findings of the walk this replaces.

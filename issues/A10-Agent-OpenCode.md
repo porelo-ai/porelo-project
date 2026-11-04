@@ -23,8 +23,9 @@ variable. A stored value may be a reference to a variable rather than a literal.
   whether the reference-to-a-variable form and a base URL per provider point it at the broker. If it
   cannot be brokered, the answer is written here and nothing is built.
 - **The provider it talks to** is one of the definitions `porelo/providers/` has (`anthropic`,
-  `github-copilot`, `openrouter`); a second provider in one task needs the vault to hold one credential
-  per provider (`porelo`).
+  `chatgpt`, `github-copilot`, `google`, `google-sign-in`, `openai`, `openrouter`). A task's agent has one
+  provider; a second one reaches the task as a further credential (`credentials:` in `project.yml`, or
+  `--credential`), seen there as `PORELO_TOKEN_<NAME>` and `PORELO_URL_<NAME>` (`porelo`, `doc/credentials.md`).
 - **A repository of its own**, shaped like `porelo-omp` (about 35 files): its `AgentMain` against
   `porelo-agent-api` and `porelo-wire`, its definition, the Debian and RPM packaging, unit tests, and an
   acceptance leg on a machine rented through `porelo-machines`.
@@ -44,5 +45,6 @@ variable. A stored value may be a reference to a variable rather than a literal.
 - The reference-to-a-variable form would need no file placed in the container at
   all, which would be simpler than what the supported agent needs. Worth confirming
   before building anything. - Agent Smith's to measure.
-- One credential per provider, which the vault cannot express today. - Agent Core's to decide, in
-  `porelo`'s vault.
+- Whether a further credential serves OpenCode's second provider: the vault holds one entry per provider and
+  a task may hold several, but OpenCode must then read each provider's base URL and token from those
+  variables. - Agent Core's to decide, in `porelo`.

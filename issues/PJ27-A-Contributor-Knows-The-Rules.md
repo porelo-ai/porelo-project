@@ -14,7 +14,7 @@ where to ask. They do not have to read `AGENTS.md`, which is written for agents,
 The rules a change must follow exist, but only in the shared block of each repository's `AGENTS.md`,
 addressed to the agents that work there. A person arriving at a public repository finds a README and a
 documentation site for users, and nothing that tells them what a commit, a test or an issue must look
-like here, or which of the ten repositories their change belongs in.
+like here, or which of the repositories their change belongs in.
 
 ## The shape
 
@@ -26,9 +26,9 @@ like here, or which of the ten repositories their change belongs in.
 - **The rules are not copied.** The page explains the process and the reasons, and points at the shared
   block of `AGENTS.md` as the one authoritative list, so there is no second copy to drift.
 - **Proposed sections of the page:**
-  1. **How the work is organised** - one project, ten repositories, what each holds (the table in
+  1. **How the work is organized** - one project, its repositories, what each holds (the table in
      `porelo-project`'s README), which repository a change belongs in.
-  2. **Issues** - every open task is a file in its repository's `issues/`, grouped Now, Soon and Later;
+  2. **Issues** - every open task is a file in its repository's `issues/`, grouped by state;
      the prefixes per repository (`project.yml`); a requirement not yet placed waits in
      `porelo-project`; how someone outside proposes one.
   3. **Making a change** - build and test locally (each repository's `build.md`); a fix starts with a
@@ -69,13 +69,15 @@ like here, or which of the ten repositories their change belongs in.
 
 - **Decided:** a vulnerability is reported through GitHub's private vulnerability reporting, with a `SECURITY.md` in each repository pointing to it ([PJ32](README.md#pj32)).
 - **Decided:** a code of conduct, the Contributor Covenant 2.1, its contact `michael@fuin.org`.
-- **Today**: no `doc/contributing.md` here, no `CONTRIBUTING.md` in any repository, no sign-off rule in
-  the shared block, no check of `Signed-off-by:`.
+- **Today**: `doc/contributing.md` stands here and the shared block holds the sign-off rule. Every repository
+  has a `CONTRIBUTING.md` and a README link but `porelo-ecosystems` and `porelo-forge-clients`, which have
+  neither, so the acceptance does not hold yet. `check-commits` (`CheckCommits`, with `--outside`) runs on a pull
+  request in each repository's `shared-rules.yml`; `porelo-project` has no such workflow and runs it nowhere.
 - **1. The page** `doc/contributing.md` in `porelo-project`, by the coordinator, built with the site.
 - **2. The shared block of `AGENTS.md`**: trailers allowed below the one line, `Assisted-by:` on every
   agent commit, no sign-off by an agent: done.
-- **3. The sign-off check** in `porelo-release` (`porelo-buildtools`), run by every repository's build on a
-  pull request from outside, with porelo-buildtools [BT17](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt17)'s exemptions (the bots' commits, GitHub's merges). Seen to fail
+- **3. The sign-off check** in `porelo-release` (`porelo-buildtools`), run by every repository's *Shared rules
+  check* on a pull request from outside, with porelo-buildtools [BT17](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt17)'s exemptions (the bots' commits, GitHub's merges). Seen to fail
   first: a pull request commit without `Signed-off-by:` passing.
 - **4. A `CONTRIBUTING.md` and a README link** in each repository, by its agent from a handover.
 - **5. The settings**, set by the operator in every public repository: done, private vulnerability

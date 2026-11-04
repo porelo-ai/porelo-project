@@ -22,7 +22,7 @@ where the agents and the person talk - the record of hand-overs, questions and a
   homeserver's database (Tuwunel's, in its podman volume), the usage records (`usage/<task>.jsonl`, appended
   line by line) and the Maven cache (Maven's local repository), whose download every new machine would otherwise repeat.
 - **Copied regularly and at down** to the project's store ([PJ40](README.md#pj40)): S3 object storage written by
-  `restic`, encrypted on the host and deduplicated, its address and keys on the person's drive. Nothing is
+  `restic`, encrypted on the host and deduplicated, its address and keys in the person's secrets file. Nothing is
   copied anywhere the person did not name.
 - **Put back at up**, before the homeserver and the tasks start, so a new machine continues the same room and the
   same records.
@@ -69,12 +69,13 @@ Read in today's code and in Tuwunel's documentation
   (`porelo-host` [HO07](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho07)): each entry's command writes its consistent copy into a local
   directory, and `restic backup` sends the directories to the store, `restic forget --keep-last 48` (one for
   the cache) thins it, and `restic restore` brings them back at up. restic reads its password and the store's key
-  from files on the person's drive (`RESTIC_PASSWORD_FILE` and the like), never through Ansible; Porelo's vault
-  hands no key out, so it is not their source.
+  from root's files under `/etc/porelo-host/store/` (`RESTIC_PASSWORD_FILE` and the like), which the stop fills on
+  standard input from the person's secrets file, never through Ansible; Porelo's vault hands no key out, so it is
+  not their source.
 - **One contract for the list,** so a new entry changes nothing in how it is copied: each entry is a
   command that writes its consistent copy into a directory it is given, and one that puts it back, run
   in the order the list names. The two above are its first entries. The vault is never one.
-- **The schedule and the target are the playbook's** ([PJ40](README.md#pj40)): a systemd user timer runs
+- **The schedule and the target are the playbook's** ([PJ40](README.md#pj40)): a systemd timer of root's runs
   the list every hour while the machine runs, and once more at down, into the project's store; up runs the
   restores before the homeserver and the tasks start. Plain systemd and `restic` are enough; nothing of
   Porelo's own schedules it.
@@ -100,4 +101,4 @@ Read in today's code and in Tuwunel's documentation
   nothing); measured once when the pin moves.
 - Whether anything Porelo sends into a room is media rather than text (an attachment, an image), which a
   backup leaves out.
-- How long a backup and its copy take on the mounted drive, with a room of a few weeks' messages.
+- How long a backup and its copy take, with a room of a few weeks' messages.

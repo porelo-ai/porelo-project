@@ -1,7 +1,7 @@
 # PJ52 — A repository's build tools are recognized and a project proposed
 
 **Status:** Estimated.
-**Size:** XL - three repositories, one of them new with an agent still to come; splits into the issues under *Plan*.
+**Size:** XL - three repositories; splits into the issues under *Plan*.
 
 **What must be true.** A developer whose checkout needs more than the default image - another JDK, Flutter, native
 toolchains - or more than the project `default` allows - a private package repository, more memory - gets drafts
@@ -12,7 +12,7 @@ commits in a project repository of their own. Nothing takes effect before the pe
 ## Why
 
 `default`'s rules are fixed ([PJ14](README.md#pj14)), and its image comes from a checkout's `porelo.yml` or local
-`.porelo.yml` once `porelo` [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192) is built.
+`.porelo.yml` (`porelo` [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)).
 Most of what both files must say is already written down elsewhere: a Maven project names its Java release in the
 pom and its Maven version in `.mvn/wrapper/maven-wrapper.properties`, a Flutter project its SDK in `pubspec.yaml`, a
 workflow its tool versions in `setup-java`, `setup-python` or `setup-node`; a company's mirror and the credentials it
@@ -24,7 +24,7 @@ and the first build fails behind the firewall.
 - **Two drafts, split as [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192) splits them.**
   - **Tools** - `base_image`, `snippet`, `env` - go into a `.porelo.yml`: in the checkout for the project `default`
     (kept out of git by the person's `.git/info/exclude`), or under
-    `$XDG_CONFIG_HOME/porelo/projects/<project>/<repository>/` for a followed project. A repository with its own
+    `$XDG_CONFIG_HOME/porelo/projects/<project>/<repository>/` for a project of the organization. A repository with its own
     `porelo.yml` gets no tools draft; its file wins.
   - **Rules** - egress hosts, the private repositories and their credentials (`porelo`
     [B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219)), memory - go into a draft
@@ -45,7 +45,9 @@ and the first build fails behind the firewall.
   person's local caches only - a parent pom or an imported BOM from the local repository or its `<relativePath>`, a
   Gradle version catalog from Gradle's cache. A value that sits in something not found there is named as unknown,
   with where it is set (for example "Java release: set in parent `org.fuin.porelo:porelo-parent`, not in the local
-  repository"), never guessed; building the project once fills the cache.
+  repository"), never guessed; building the project once fills the cache. **The code does not keep this:** `porelo` starts a
+  plugin in no network namespace or sandbox, and only the plugin's contract obliges it to open no connection
+  (`doc/ecosystem-plugins.md` in `porelo`).
 - **Recognition secures nothing.** It runs on a developer's own machine and eases the start of someone new to Porelo;
   it reads the files as the build tool itself would, and is judged by matching the real build.
 - **The Maven plugin builds the effective model with Maven's own `maven-model-builder`**, offline, with a resolver
@@ -70,7 +72,9 @@ and the first build fails behind the firewall.
   plugins ship, or are resolved by core on the host.
 - **Core merges the answers**: `porelo project init <checkout>` writes the tools draft and, when anything needs a
   rule, the `project.yml` draft, each value's source as a comment, and names where two plugins disagree (one base
-  image for a Java and a Node build) instead of choosing silently.
+  image for a Java and a Node build) instead of choosing silently. **Built so far:** it prints the `project.yml`
+  draft, with the sources beside it in the answer, and writes no file; `--project --yes` files the repository row
+  as one signed commit.
 - **The drafts are shown at once, before the first task, when a repository lands in `default`**: the command line's
   `task start` and the interface alike, so both behave the same. Taking the tools draft is a trust decision, since the
   image is built outside the task's firewall: it is asked at a terminal, never taken by `--yes`, and without a terminal
@@ -81,8 +85,8 @@ and the first build fails behind the firewall.
   reads for such a repository after [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)'s own sources.
 - **The person's own files are those of the machine's account where `porelod` runs**, not of the desktop the
   interface runs on; the drafts name the machine they were read on.
-- **Asked once**: a repository that already has a configuration - its `porelo.yml`, a `.porelo.yml`, or a followed
-  project naming it - is never asked about, and one whose drafts were declined is not asked again either; the
+- **Asked once**: a repository that already has a configuration - its `porelo.yml`, a `.porelo.yml`, or a project of
+  the organization naming it - is never asked about, and one whose drafts were declined is not asked again either; the
   daemon keeps which of the three a repository is. `porelo project init` shows the drafts whenever asked.
 - **How the command line shows them**, and the interface the same content:
 
@@ -121,7 +125,7 @@ and the first build fails behind the firewall.
 
 ## What Porelo's own repositories show
 
-Every Porelo repository but `porelo-project` already has a hand-written `porelo.yml` in [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)'s format. Together they
+Every Porelo repository but `porelo-project`, `porelo-ecosystems` and `porelo-forge-clients` has a hand-written `porelo.yml` in [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)'s format. Together they
 are the reference set the plugins are measured against:
 
 | What the file installs | Where | Where a plugin reads it |
@@ -153,7 +157,7 @@ its agent reads them.
     draft through [B192](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b192)'s reader and a new `project.yml` writer, since `EgressEdit` edits only `egress`;
   - **`configure` at the task start**, [B222](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b222): beside `placeAgentFiles` and after [B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219)'s relay, placing the plugin's files
     with `TaskRunner.place` from [B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219)'s variables.
-- **`porelo-ecosystems`, new**, one issue each:
+- **`porelo-ecosystems`**, one issue each; `plugins/` holds all five:
   - **a spike first**, done: the model builder as a native image, against MIMA's static runtime;
   - **Maven**, M to L, after the spike and `porelo`'s contract;
   - **Gradle, npm, pip, Flutter**, S to M each.

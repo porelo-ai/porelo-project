@@ -21,11 +21,10 @@ wizard of its own, with no plan across them.
 What a person meets today without a guide:
 
 - **Steps that need a terminal or Porelo's own words:** the SELinux policy, writing and signing
-  `project.yml`, the hosting provider's key and console, the drive's layout and the machine file, the
-  VPN client, a Matrix client, `gpgcheck=0` on Fedora, the remedies `porelo doctor` names.
+  `project.yml`, the hosting provider's key and console, the machine file, a Matrix client, `gpgcheck=0` on Fedora, the remedies `porelo doctor` names.
 - **Steps that need someone else:** packages, the task account and SELinux (root); deploy keys, the
   approval of a fine-grained token and the forge's administration right (the forge's administrator);
-  the project's signing key's fingerprint and enrolment approvals (the project's maintainer); a
+  the project's members, its repositories and the signature on its file (the project's admin); a
   central homeserver's registration token and invitations (its administrator); a provider's key or
   subscription and a hosting provider's quota (the account's owner); a company's CA and policy
   (security).
@@ -41,7 +40,7 @@ What a person meets today without a guide:
 - **A catalogue of steps, kept centrally in `porelo-wizard` first**, as data, versioned. Each step
   says who does it (the person, an administrator, a forge's administrator, a provider), how often (per
   machine, account, project or repository), what must be done before it, how to check it is done
-  (`porelo doctor --json`, `vault status`, `agents --json`, `project following --json`, and new
+  (`porelo doctor --json`, `vault status`, `agents --json`, `project list --json`, and new
   checks where none exist), what it runs, what it asks for (names, choices; a secret only by where it
   will be kept, never its value), and the instructions for whoever does it. Splitting the catalogue
   so that each repository ships its own steps, as an agent ships its definition, comes later if the
@@ -90,6 +89,6 @@ What a person meets today without a guide:
 - What of porelo-frontend's `SetupRun`, its new-machine wizard and its host dialog carries over, and
   what moves into the catalogue.
 - Which checks Porelo lacks today to say whether a step is done, beyond `doctor`, `vault status`,
-  `agents` and `project following`.
+  `agents` and `project list`.
 - Which steps can run without a person at all, and which must stay attended (a passphrase, a sign-in in
   a browser).

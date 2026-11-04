@@ -16,10 +16,9 @@ same machine.
 
 ## Found in the same test
 
-- **Several registries or forges.** The interface keeps one chosen registry ("Choose another…" replaces it). Core
-  keeps every registry it ever read and applies revocations and "key held by another login" across all of them, but
-  asks whether the forge lists a person's key only of the first registry's forge, ordered by a hash of its address
-  (`IdentityFacts.forge` in porelo): with two providers it is chance which one is asked.
+- **Several organizations or forges.** A machine holds one organization: `porelo org create` and `setup` answer
+  `exists` for another, and `--replace` puts the new one in its place. Whether the forge lists a person's key is
+  asked of that one organization's identity source alone.
 
 ## The idea
 

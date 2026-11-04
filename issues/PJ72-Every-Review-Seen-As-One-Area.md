@@ -73,33 +73,33 @@ possible, and the interface shows its state and brings approved work on.
 
 | # | Status | What it covers |
 |---|---|---|
-| porelo-frontend [F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78) | Estimated | A waiting push read as a pull request at a forge, not as git's diff. |
+| porelo-frontend [F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78) | Analyzed | A waiting push read as a pull request at a forge, not as git's diff. |
 | porelo [B150](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b150) | Analyzed | The whole diff in review, or said plainly where it was cut. |
-| porelo [B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136) | Estimated | An approve forwards exactly the commit the person read. |
+| porelo [B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136) | Analyzed | An approve forwards exactly the commit the person read. |
 | porelo [B283](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b283) | Idea | A retargeted symbolic link ranked dangerous in the review. |
-| porelo [B141](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b141) | Estimated | A new dependency marked and checked in the review; a finding holds the approve back. |
-| porelo [B145](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b145) | Estimated | Four eyes: a second person approves. |
-| porelo [B163](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b163) | Estimated | Several attempts at one assignment, their results side by side at the gate. |
-| porelo [B174](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b174), porelo-frontend [F112](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f112) | Estimated | What a piece of work did, in words, before it reaches the gate. |
-| porelo-intellij [IJ01](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij01), [IJ02](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij02) | Implementing | Waiting work reviewed, approved and rejected in IntelliJ; a new waiting push announced within seconds. |
+| porelo [B141](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b141) | Analyzed | A new dependency marked and checked in the review; a finding holds the approve back. |
+| porelo [B145](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b145) | Analyzed | Four eyes: a second person approves. |
+| porelo [B163](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b163) | Analyzed | Several attempts at one assignment, their results side by side at the gate. |
+| porelo [B174](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b174), porelo-frontend [F112](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f112) | Estimated; Analyzed | What a piece of work did, in words, before it reaches the gate. |
+| porelo-intellij [IJ01](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij01), [IJ02](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij02) | Finished | Waiting work reviewed, approved and rejected in IntelliJ; a new waiting push announced within seconds. |
 
 ### 2. Trying waiting work out
 
 | # | Status | What it covers |
 |---|---|---|
 | porelo [B95](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b95) | Idea | A fresh container to build and test waiting work in, never on the host or in the agent's container. |
-| porelo-frontend [F74](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f74) | Estimated | That container's run started from the interface, its result beside the review. |
-| porelo-frontend [F95](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f95) | Estimated | A waiting push fetched into a clone the person chooses. |
+| porelo-frontend [F74](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f74) | Analyzed | That container's run started from the interface, its result beside the review. |
+| porelo-frontend [F95](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f95) | Analyzed | A waiting push fetched into a clone the person chooses. |
 
 ### 3. Comments on lines
 
 | # | Status | What it covers |
 |---|---|---|
-| porelo [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166) | Estimated | The comment model: line comments sent back to the agent as messages. The others build on it. |
+| porelo [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166) | Analyzed | The comment model: line comments sent back to the agent as messages. The others build on it. |
 | porelo [B176](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b176) | Analyzed | A comment thread follows a new push to unchanged lines. |
-| porelo-message-sluice [SL24](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl24) | Estimated | A comment passes the filter only in its exact shape, in both directions. |
-| porelo-frontend [F107](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f107) | Estimated | Comments written and read in the interface's review, each with its origin. |
-| porelo-intellij [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04) | Estimated | The same in IntelliJ's diff. |
+| porelo-message-sluice [SL24](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl24) | Analyzed | A comment passes the filter only in its exact shape, in both directions. |
+| porelo-frontend [F107](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f107) | Analyzed | Comments written and read in the interface's review, each with its origin. |
+| porelo-intellij [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04) | Backlog | The same in IntelliJ's diff. |
 
 ### 4. An agent checks the work before the person
 
@@ -107,20 +107,20 @@ possible, and the interface shows its state and brings approved work on.
 |---|---|---|
 | [PJ67](README.md#pj67) | Idea | Rounds of check and fix at the gate until a check is clean or the rounds run out; the person approves with every round in view. |
 | [PJ64](README.md#pj64) | Idea | The agent and effort of a `check` task chosen by phase and risk. |
-| porelo [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172) | Estimated | A task in the role reviewer: reads waiting work, a branch or a pull request read-only, writes only comments. |
-| porelo-omp [OM19](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om19) | Estimated | A read-only mode asked for by name at a task's start. |
+| porelo [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172) | Analyzed | A task in the role reviewer: reads waiting work, a branch or a pull request read-only, writes only comments. |
+| porelo-omp [OM19](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om19) | Analyzed | A read-only mode asked for by name at a task's start. |
 
 ### 5. Reviews on a forge's pull request
 
 | # | Status | What it covers |
 |---|---|---|
-| porelo [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171) | Estimated | A pull request's review comments reach the task that made it, its replies go back; only listed accounts are delivered, outgoing ones released by the person. |
-| porelo-adapters [GH02](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh02) | Analyzed | GitHub's side of it: review comments, threads and suggestions read and written (`Review1`). |
+| porelo [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171) | Analyzed | A pull request's review comments reach the task that made it, its replies go back; only listed accounts are delivered, outgoing ones released by the person. |
+| porelo-adapters [GH02](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh02) | Backlog | GitHub's side of it: review comments, threads and suggestions read and written (`Review1`). |
 | [PJ66](README.md#pj66) | Idea | An adapter lists the services it offers, a forge's reviews among them. |
 | porelo [B288](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b288) | Idea | A reviewer task started by itself when the forge's build is green. |
 | porelo [B289](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b289) | Idea | A task removed once its pull request is merged. |
 | porelo-host [HO28](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho28) | Idea | The forge's events, a comment among them, routed to the right account's daemon; a speed-up only. |
-| porelo-frontend [F190](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f190) | Idea | The pull request on the host's forge approved from the interface and brought on to the central forge. |
+| porelo-frontend [F190](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f190) | Analyzed | The pull request on the host's forge approved from the interface and brought on to the central forge. |
 | [PJ34](README.md#pj34) | Accepted | Every change reaches `main` through a pull request with green checks. |
 
 ## Gaps seen across the themes
@@ -128,7 +128,7 @@ possible, and the interface shows its state and brings approved work on.
 - [PJ67](README.md#pj67) does not yet say that its check task is
   [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172)'s reviewer, nor that its findings
   are [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166)'s comments.
-- The forge's way (theme 5) and the comment model it needs (theme 3) are in no release plan.
+- The forge's way (theme 5) and the comment model it needs (theme 3) are named in [plan/0.8/plan.yml](../plan/0.8/plan.yml).
 - [B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166)'s comment model, [B171](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b171)'s and [GH02](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh02)'s `Review1`, [SL24](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl24)'s filter, [F107](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f107) and [IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04) are written against a model of
   Porelo's own; each is to be rewritten against the SARIF profile, handed over to its repository with this issue's
   text.

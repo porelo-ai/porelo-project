@@ -49,12 +49,14 @@ issue carries it through the whole handling of a project.
   block, no person's `hosts:` list; which projects a host carries is the host's, kept in the organization.
 - **A project is on one host at a time, and every member of the project is on it.** When a host admin puts a
   project on a host, every member of the project is admitted there; a member removed from it is locked on the host at
-  once. A member an admin locks stays listed and may nothing until unlocked. There is no choice of members per host.
+  once. **The code locks them later:** when the host takes the change, at its next follow by `porelo-host-follow.timer`,
+  within five minutes or at once on *Refresh*, and longer when a follow fails; a start elsewhere reads it at that start
+  (`doc/project-file.md` in `porelo`). A member an admin locks stays listed and may nothing until unlocked. There is no choice of members per host.
   Two hosts for one project, if wanted later, are designed then.
 - ***Projects* holds the person's own projects; *Organization* shows them all.** *Projects* lists the projects the
   person is an admin or a member of, with their role, and is the only place a project is edited: an admin adds and
   removes repositories and members, changes a member's role and locks or unlocks a member; a member sees the same page
-  and changes nothing. A project is added and removed by an organization owner, on the organization's page
+  and changes nothing. A project is added and removed by an organization admin, on the organization's page
   ([PJ88](README.md#pj88)). The organization's page lists every project with its
   admins and changes none; a project the person is in links to its page under *Projects*. Nobody joins a project on
   their own: an admin adds them.
@@ -102,7 +104,7 @@ issue carries it through the whole handling of a project.
   room is then kept there.
 - **A project's admins sign its members and its `project.yml`.** Any member with role admin changes both. After a
   change of admins or keys, a project stays at its last state until a current admin confirms once. Both roles
-  certify tasks. An organization owner may add and remove a project's admins, so a project whose admins all lost
+  certify tasks. An organization admin may add and remove a project's admins, so a project whose admins all lost
   their keys can be recovered; a project admin has no backup key.
 
 ## The order of the work

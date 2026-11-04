@@ -28,8 +28,8 @@ Read in what is published and in the shared rules, not measured:
 - **The shared rule that every native executable is built with `-march=x86-64`** gets an arm64
   counterpart, a fixed ARMv8 baseline checked the same way, agreed in the channel.
 - **Every other native package Porelo installs** is built the same way, each in its own repository:
-  the agent adapters (`porelo-claude-code`, `porelo-pi`, `porelo-omp`, `porelo-codex`),
-  `porelo-build-github`, `porelo-message-sluice` and `porelo-message-matrix`.
+  the agent adapters (`porelo-claude-code`, `porelo-pi`, `porelo-omp`, `porelo-codex`, `porelo-agy`),
+  `porelo-adapters`, `porelo-ecosystems`, `porelo-message-sluice` and `porelo-message-matrix`.
 - The interface's Linux build stays `amd64`; its macOS build is porelo-frontend [F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109)'s.
 
 ## How it is tested

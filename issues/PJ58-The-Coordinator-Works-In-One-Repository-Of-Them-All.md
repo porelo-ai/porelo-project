@@ -13,7 +13,7 @@ From [PJ39](README.md#pj39), sprint 8: "*new, `porelo-project`:* `porelo-all` wi
 The coordinator reads across all repositories today: the issues it plans, the commits it pushes, the workflows whose
 Builds it reads. On the host it does so with a checkout of each and the right to push to each. In a Porelo task it has
 one workspace and one upstream, and [PJ39](README.md#pj39) keeps every other repository read-only to it. Without one repository of them
-all, its task would either hold thirteen upstreams or see only `porelo-project`.
+all, its task would either hold an upstream per repository or see only `porelo-project`.
 
 ## The shape proposed
 
@@ -27,7 +27,7 @@ all, its task would either hold thirteen upstreams or see only `porelo-project`.
 - **The second workflow, after the operator's approval, splits `porelo-project/` back** into `porelo-project` and refuses a
   change to any other directory, so every other repository is read-only to the coordinator by construction.
 - **Pushes to the central forge stay as they are:** the coordinator does not push other repositories from here; that
-  is the push mirrors' work.
+  is the gathered push's work.
 
 ## Open questions
 

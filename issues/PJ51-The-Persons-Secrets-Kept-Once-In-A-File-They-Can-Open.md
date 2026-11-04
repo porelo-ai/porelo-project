@@ -9,33 +9,30 @@ only. The file is never unlocked on a host, and no secret lies in the clear on t
 
 ## Why
 
-Putting a project on a host today takes many secrets, each kept or typed its own way:
+Putting a project on a host takes many secrets:
 
-| Secret | For | Kept today |
+| Secret | For | Kept |
 |---|---|---|
 | The provider's API key | renting and giving back | the desktop's system store |
-| The ssh key `porelo-host` | reaching the host | the account's ssh directory |
-| The drive's login (e-mail, password, one-time code) | the host's drive | typed at each `up` |
-| Porelo's vault passphrase on the host | the host's vault | typed at each `up`; a new host has a new vault |
+| The person's one ssh key | reaching the host, signing | the person's own ssh agent |
+| Porelo's vault passphrase on the host | the host's vault | `secrets.kdbx`, per host; a new host has a new vault |
 | The agents' sign-ins | the agents on the host | a browser flow at each host |
-| The WireGuard keys, the host's and the person's | the VPN | a file in the tresor; a file on the desktop |
-| The machine file's keys (deploy keys, tokens) | Porelo's vault on the host | files in the tresor |
-| The project's signing key | `signed_by` | the desktop |
+| The machine file's keys (deploy keys, tokens) | Porelo's vault on the host | `secrets.kdbx` |
 | An age identity, for a drive not encrypted end to end | the host's secrets on such a drive | the desktop's system store |
 | Later, the backup's store key and password | [PJ45](README.md#pj45)'s copies | not yet placed |
 
-A person who works from more than one desktop keeps all of that more than once, and some of it lies on the drive in
-the clear, where every host that syncs the tresor can read it ([PJ50](README.md#pj50)).
+A person who works from more than one desktop would keep all of that more than once, and no secret may lie on a
+drive in the clear, where every host that syncs the tresor could read it ([PJ50](README.md#pj50)).
 
 ## The shape proposed
 
-- **KDBX 4**, the KeePass format, at `porelo/secrets.kdbx` on the person's drive: Argon2id and AES-256 or ChaCha20,
+- **KDBX 4**, the KeePass format, as `secrets.kdbx` at a place the person chooses on their desktop, such as their drive: Argon2id and AES-256 or ChaCha20,
   opened by the person at any time with KeePassXC, so the secrets never depend on Porelo to be read.
 - **Unlocked by a master password**, optionally together with a hardware key (KeePassXC's YubiKey challenge-response
   is part of KDBX 4's composite key today). Whether a passkey (FIDO2 with `hmac-secret`) can serve as that second part,
   in KeePassXC and in the interface's Dart, is to be measured.
 - **Unlocked on the desktop only.** At a host's stop the interface unlocks the file once and gives the host what its
-  waiting line names - the drive's login, the vault passphrase, the host's WireGuard key, the machine file's keys - on
+  waiting line names - the vault passphrase and the machine file's keys - on
   standard input. Nothing in the clear stays on the drive, which also keeps several hosts in one tresor from reading
   each other's secrets ([PJ50](README.md#pj50)).
 - **The one-time code stays out of it by default.** A TOTP seed beside its password puts both factors in one place;

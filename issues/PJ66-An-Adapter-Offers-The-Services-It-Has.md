@@ -16,16 +16,15 @@ Porelo reaches outside through several kinds of plug-ins today, each found its o
 |---|---|---|
 | agent | a program under `/usr/libexec/porelo/agents/<name>` | `Agent1` |
 | model provider | a data file `providers/<name>.yaml`, no program | none |
-| build | a program under `/usr/libexec/porelo/builds/<forge>` | `Build1`, `Build2` coming |
+| build | a program under `/usr/libexec/porelo/builds/<forge>` | `Build2` |
 | review (planned) | the same program as build | `Review1` |
 | transport | a program under `/usr/libexec/porelo/transports/<name>` | its verbs |
-| build tool (planned) | a program | `Ecosystem1` |
+| build tool | a program under `/usr/libexec/porelo/ecosystems/<name>` | `Ecosystem1` |
 
 Three things are mixed up:
 
 - **A build server is found and named as a forge:** `builds/<forge>` and `builds.forge: github` in the project file,
-  though Jenkins builds for Bitbucket. The repository being made for the build adapters ([PJ62](README.md#pj62)) carries
-  the same mix in its name.
+  though Jenkins builds for Bitbucket.
 - **A program's `describe` names one forge and one protocol version,** not the services it offers, so build and
   review behind one program cannot be told apart or asked for separately.
 - **A model provider is only a data file,** so nothing can read its limits ([PJ65](README.md#pj65)).
@@ -36,7 +35,7 @@ Three things are mixed up:
   of services, each with its contract and version, for example a GitHub adapter: `build` (`Build2`), `review`
   (`Review1`), `model-limits` (a new `Limits1`). Jenkins offers only `build`, Bitbucket only `review`.
 - **Each service is one contract,** a Java interface in Porelo's API kit and a varlink interface on the wire, as
-  `Agent1` and `Build1` are today, with its own version.
+  `Agent1` and `Build2` are today, with its own version.
 - **"Not supported" is an answer of its own** for a call a service of that adapter cannot serve, never an empty
   result read as nothing found: the rule porelo
   [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224) sets for agents, for every service.
@@ -51,7 +50,7 @@ Three things are mixed up:
 - **A contract version or a function can be deprecated** before it is removed: the contract says since which release,
   and in which it goes (in Java `@Deprecated(since = "...", forRemoval = true)`). Porelo still takes a deprecated one,
   says so at `describe` and at every start that uses it, and refuses it only from the release named. So a new contract
-  version, such as `Build2` beside `Build1`, needs no window in which adapters are refused.
+  version, such as a `Build3` beside `Build2`, needs no window in which adapters are refused.
 - **The project file names a service, its adapter and its credential,** for example `builds: { adapter: github,
   credential: github-actions }` and `reviews: { adapter: bitbucket, credential: … }`, so each service signs in with its
   own rights.
@@ -61,9 +60,8 @@ Three things are mixed up:
   porelo, with the person's ssh key or token ([PJ69](README.md#pj69)).
 - **Adapters are found in one place,** with a directory per adapter rather than per service, and an adapter's package
   installs it there.
-- **Repositories follow adapters, not services:** the repository [PJ62](README.md#pj62) makes is named
-  `porelo-adapters` (decided), for the adapters it holds - github, forgejo, later jenkins - with every service each
-  offers.
+- **Repositories follow adapters, not services:** the repository is named `porelo-adapters` (decided), for the
+  adapters it holds - github, forgejo, later jenkins - with every service each offers.
 - **Agents and transports move to the same `describe` with their next release** (decided), not all at once.
 
 ## Not in it

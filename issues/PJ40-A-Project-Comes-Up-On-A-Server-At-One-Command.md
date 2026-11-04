@@ -25,8 +25,10 @@ is where the command is tried and refined before anyone else relies on it.
 
 ## The shape proposed
 
-- **One command, two directions**: up - prepare the host, follow the project, install the agents, build; and down -
-  back up what must outlive the machine, stop every task, and leave the machine to be given back. **Starting tasks is
+- **One command, two directions**: up - prepare the host, take the organization's state, install the agents, build;
+  and down - back up what must outlive the machine, stop every task, and leave the machine to be given back. Built:
+  `up` installs every agent Porelo's repository offers, with no choice of the person's, and `down` refuses while any
+  person on the host holds a membership, naming each; the copy of [PJ45](README.md#pj45)'s list is not built. **Starting tasks is
   not part of it** (decided): the machine and the work on it are kept apart, so a machine never starts work its person
   did not start.
 - **Three sources, each saying only its own:**
@@ -37,16 +39,17 @@ is where the command is tried and refined before anyone else relies on it.
   - **Each repository's own files:** its image from its devcontainer file (porelo
     [B170](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b170)), its builds from its
     workflows. Nothing a repository already says is said again in `project.yml`.
-  - **A setup file of the person's, for the machine:** its address, how the person reaches it (a VPN), the drive
-    with the person's own settings, the hardware it offers. A project's file never names a machine, so one project
+  - **A setup file of the person's, for the machine:** the machine file, naming its provider, offer and zone, the
+    organization's settings and the keys for the vault, uploaded by the interface into `/etc/porelo-host/setup/`.
+    The person reaches the machine over ssh alone; no drive is part of it. A project's file never names a machine, so one project
     comes up on any of them.
 - **Porelo writes the configuration; Ansible sets up the host.** From the three sources Porelo generates an Ansible
   inventory and its variables, and the playbook runs **on the host itself** (decided): `host up` copies the
   collection and the inventory over ssh, installs `ansible-core` there from the distribution's packages and runs
-  `ansible-playbook -c local`: operating system packages, the VPN, KVM, the forge, the homeserver, Porelo's package
-  and account. So the person's computer, Linux, macOS or Windows, needs only an ssh client and `host up`; Ansible's
+  `ansible-playbook -c local`: operating system packages, a firewall leaving only ssh open, KVM, the forge, the
+  homeserver, Porelo's package and account. So the person's computer, Linux, macOS or Windows, needs only an ssh client and `host up`; Ansible's
   control node runs on no Windows natively, and podman is not assumed there. Ansible changes only what differs on a
-  second run and takes it down again; existing roles are used where they are sound (the homeserver, the VPN, KVM)
+  second run and takes it down again; existing roles are used where they are sound (the homeserver, KVM)
   rather than rebuilt.
 - **Renting is a step before up and after down**, and for Porelo's own project the host is rented by the hour
   (decided 2026-10-18): `host up` takes it from a provider before up and `host down` gives it back after down (see
@@ -59,23 +62,21 @@ is where the command is tried and refined before anyone else relies on it.
   writing the configuration, the follow, the keys and the images.
 - **What keeps a guarantee stays Porelo's**, and the playbook calls Porelo's own commands for it rather than doing it
   itself:
-  - **following the project**, verifying its signature (`porelo project follow --signed-by`); nothing started comes
-    from an unsigned file;
-  - **depositing keys**: provider tokens and the forge credential - keys or the person's own token - go into the server's vault through `porelo vault`, never
+  - **taking the project**: root's `porelo-host-person org follow`, every five minutes, takes the organization's
+    state through `porelo org fetch` and judges a project's file with `porelo project verify`, by its newest change;
+    no project file that fails that is started;
+  - **depositing keys**: provider tokens and other keys the machine file names go into the server's vault through `porelo vault`, from the person's secrets file on the stop's standard input, never
     through an inventory, a variable or a log; on a rented machine for a time ([PJ37](README.md#pj37)), and they
     leave with down;
-- **Nothing is restored but what was chosen**: the person's own settings come from the drive the person mounts,
-  and the data [PJ45](README.md#pj45) keeps comes back from the project's store; the code comes from the forge, everything else is built again.
+- **Nothing is restored but what was chosen**: the person's own settings come from the drive the person keeps in
+  their own account, if they choose one, and the data [PJ45](README.md#pj45) keeps comes back from the project's store; the code comes from the forge, everything else is built again.
 - **Two places outlive the machine, kept apart** (decided): what is the person's, and what is the project's.
-  - **The person's drive** is mounted at up and unmounted at down: a folder on a shared drive the person already
-    uses (a cloud drive with end-to-end encryption is preferred, since a VPN's key may lie there; the operator's
-    is Tresorit, which has a command-line client for Linux:
-    [Tresorit CLI unter Linux verwenden](https://support.tresorit.com/hc/de/articles/360009330614-Tresorit-CLI-unter-Linux-verwenden)),
-    reached with a credential that opens that one folder and nothing else of the person's, deposited like the
-    other keys and for a time on a rented machine. It holds the person's own small files, read and changed on
-    the host as anywhere else: configuration, notes, the VPN's key, the
-    person's machine file, and the keys to the project's store. Nothing runs on it: a database or a repository
-    on a mounted cloud drive is broken by its delayed, piecewise sync.
+  - **The person's drive** is no part of `up` or `down`, which ask no login for it and wait on no sync: the interface
+    sets it up in the person's own account on the host, if they choose one (Tresorit, which has a command-line
+    client for Linux:
+    [Tresorit CLI unter Linux verwenden](https://support.tresorit.com/hc/de/articles/360009330614-Tresorit-CLI-unter-Linux-verwenden)).
+    It holds the person's own small files, read and changed on the host as anywhere else: configuration and notes.
+    Nothing runs on it: a database or a repository on a mounted cloud drive is broken by its delayed, piecewise sync.
   - **The project's store** holds what [PJ45](README.md#pj45) keeps: the room, the usage records, the Maven
     cache. It is S3 object storage, which every provider offers, written by `restic`, which encrypts on the
     host before anything leaves it, deduplicates and keeps a set number of snapshots; so the store's provider
@@ -162,7 +163,7 @@ Secret Service), never in a file or a log.
 
 **No provider's own images, volumes or snapshots for the host**, with any provider: a host is a fresh install of
 the operating system, cloud-init `user_data`, labels and a delete, which every provider of bare metal offers. What
-outlives it is in the person's drive and the project's store, never at the provider; so a change of provider is a
+outlives it is with the person and in the project's store, never at the provider; so a change of provider is a
 new adapter and a word in the person's machine file. Hetzner's snapshots stay for the CI's test machines.
 
 ```
@@ -196,16 +197,15 @@ abstract interface class HostProvider {
 
 | up, in this order | down |
 |---|---|
-| packages, KVM, podman, the VPN | the last copy of [PJ45](README.md#pj45)'s list into the project's store |
-| the person's drive mounted, its one folder only | the services stopped |
-| Porelo's package, the account, `porelo setup` | the drive unmounted |
-| the keys into the vault through `porelo vault`, never through a variable | |
-| [PJ45](README.md#pj45)'s list restored from the project's store, before anything that reads it starts | |
-| the forge with its registry, the homeserver, the VM pool | |
-| `porelo project follow --signed-by`, the agents' packages | every task stopped |
-| a timer that copies the list every hour | |
+| packages, KVM, podman, a firewall leaving only ssh open | a refusal while any person holds a membership |
+| Porelo's package, the account, `porelo setup` | the follow stopped, the account's tasks stopped, its vault cleared |
+| the stop for what only the person can give: the vault, the keys | the homeserver, the VM pool and the forge taken off |
+| the keys into the vault through `porelo vault`, never through a variable | a VPN left by an earlier setup removed |
+| the forge with its registry, the VM pool, the agents' packages, the homeserver | not built: the last copy of [PJ45](README.md#pj45)'s list into the project's store |
+| the organization's follow, every five minutes | |
+| not built: [PJ45](README.md#pj45)'s list restored, before anything that reads it starts, and a timer that copies it every hour | |
 
-**3. Porelo's own commands keep the guarantees:** following a signed project, depositing keys, stopping tasks,
+**3. Porelo's own commands keep the guarantees:** judging a project's signed file, depositing keys, stopping tasks,
 and each list entry's copy and restore (the homeserver's in `porelo-message-matrix`, the usage records' in
 `porelo`).
 
@@ -225,8 +225,8 @@ lists nothing.
 
 - **`porelo-frontend`, the machine:** [F131](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f131) `host up` and `down`, [F132](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f132) Scaleway Elastic Metal, [F134](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f134)
   `porelo-host` built for Linux and Windows, [F135](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f135) the host from the interface, [F137](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f137) the collection taken by its
-  digest, [F140](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f140) the host's files written into the person's drive, [F141](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f141) an agent signed in at `up`'s stop.
-- **`porelo-host`, the system:** [HO02](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho02) Porelo's own commands, [HO05](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho05) the VPN, [HO06](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho06) the person's drive,
+  digest, [F140](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f140) the host's files written into the person's drive, undone by [F197](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f197) the host's files uploaded over its own ssh, [F141](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f141) an agent signed in at `up`'s stop.
+- **`porelo-host`, the system:** [HO02](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho02) Porelo's own commands, [HO05](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho05) the VPN and [HO06](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho06) the person's drive, both undone by [HO36](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho36), [HO37](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho37) and [HO38](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho38),
   [HO09](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho09) up and down in their order, [HO10](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho10) the vault opened over ssh, [HO11](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho11) the homeserver's packages,
   [HO07](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho07) the project's store ([PJ45](README.md#pj45)), [HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08) the forge with its registry, [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12) the VM pool,
   [HO13](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho13) the release's tarball and digest, [HO14](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho14) the collection's Python checked.

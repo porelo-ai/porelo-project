@@ -10,7 +10,7 @@ The concept is talked through with the operator first; only then does it become 
 
 ## Why
 
-Today the registry is built on Git alone. That was right as a first step, but it may as well be kept elsewhere, such
+The organization is built on Git alone. That was right as a first step, but it may as well be kept elsewhere, such
 as in a database, so it belongs behind an interface with more than one implementation.
 
 It touches Core (the registry's reading, filing and trust records) and Frontend (the forge page, the choice of the
@@ -36,20 +36,21 @@ registry), so it is settled here before either works on it.
   always spelled out, never called just "organization": the identity source is named by what it is ("vouched for by
   GitHub"), even where it is a GitHub organization, and a project's organization on a host's forge is its "forge
   organization".
-- **An organization holds four parts**, each changed only by the one it belongs to (see [Who may do what](#who-may-do-what)):
+- **An organization holds five parts**, each changed only by the one it belongs to (see [Who may do what](#who-may-do-what)):
 
   | Part | What it holds | Changed by |
   |---|---|---|
-  | Organization owners | who manages the organization's structure: its projects, its hosts, its owners | an organization owner |
+  | Organization owners | its owners and its organization admins | an organization owner |
+  | Organization admins | who manages the organization's structure: its cards, its projects, its hosts | an organization owner |
   | People | one card per person: login, public key, revocation | the person |
-  | Projects | one card per project: name and its first admin; the address of its project repository; its members, each with their role and whether locked | added and removed, and its first admin named, by an organization owner, who may also add and remove its admins; its address and members by its admins |
-  | Hosts | one card per host: address, host key; its host admins and the projects it carries, by name | added and removed by an organization owner; the rest by its host admins |
+  | Projects | one card per project: name and its first admin; the address of its project repository; its members, each with their role and whether locked | added and removed, and its first admin named, by an organization admin, who also acts on its admins; its address and developers by its admins |
+  | Hosts | one card per host: address, host key; its host admins and the projects it carries, by name | added by an organization admin, who also changes its host admins, and removed by that admin or a host admin; the rest by its host admins |
 
   A member's key is the one on their card, nowhere else, so a change of key or a revocation holds in every project
   at once. A project's repositories and agents stay in its `project.yml` ([PJ89](README.md#pj89)),
   which is Porelo's, not the adapter's: it stands in the repository that manages the project, the organization holds
   only that repository's address, and the adapter never opens it. There are no `signers`: the role decides. In the Git
-  adapter the organization is one repository: `owners.yml`, `people/<login>.card`, `projects/<project>/card`,
+  adapter the organization is one repository: `owners.yml`, `organization-admins.yml`, `people/<login>.card`, `projects/<project>/card`,
   `projects/<project>/repository.yml`, `projects/<project>/members.yml`, `hosts/<host>/card` and
   `hosts/<host>/host.yml`.
 - **With GitHub, a Porelo organization is a GitHub organization.** The organization's repository and its projects'
@@ -79,8 +80,8 @@ registry), so it is settled here before either works on it.
 - **Every adapter answers each question itself.** The questions are the contract; how an adapter answers them, a
   whole read of its store included, is its own.
 - **A project is on one host at a time.** Two hosts for one project, if wanted later, are designed then.
-- **An organization is made outside Porelo.** For Git today by a script or by hand, signed; later perhaps otherwise.
-  Porelo is given its address when it is set up.
+- **An organization is made with `porelo org create ADDRESS`**, which fills a repository made empty on the forge and
+  makes its founder first owner and first organization admin. Porelo is given its address when it is set up.
 - **Machines and projects are two separate processes** ([PJ89](README.md#pj89)).
   Machines: a host is set up, a project is put on it with every member it has and later taken off again; that is the
   host admin's. Projects: a project, its repositories and its members are edited; that is the project admin's and
@@ -99,13 +100,13 @@ Drawn by the Coordinator as a design canvas and agreed with the operator; it fol
   *Organization owners* with filters. Every action stands visibly in its row, and a person sees only the actions of
   their roles:
   - *People*: a person's state (trusted; not yet, the identity source not reached; revoked). In one's own row
-    *Change my key* and *Withdraw my card*; in another's row *Revoke the card…* for an organization owner. A person
+    *Change my key* and *Withdraw my card*; in another's row *Revoke the card…* for an organization admin. A person
     with no card yet sees a banner with *Add me* above the sections.
   - *Projects*: every project with its admins and whether one is its admin, a member or neither; *Open under
     Projects* where one is in it. *Add a project*, *Change the first admin…* and *Remove the project…* for an
-    organization owner.
+    organization admin.
   - *Hosts*: every host with its admins and the projects it carries; *Open the host's page* for its host admins.
-    *Add a host* and *Remove the host…* for an organization owner. Everything else about a host is on the host's
+    *Add a host* and *Remove the host…* for an organization admin. Everything else about a host is on the host's
     page under *Machines*: *Change address and host key…*, putting projects on it and taking them off, adding and
     removing host admins, and one's own connection.
   - *Organization owners*: *Add an organization owner* and *Remove* for an organization owner.
@@ -134,15 +135,14 @@ a second store, such as a database, only when it is needed.
 A second identity source, such as Forgejo, is not part of this change; it becomes an issue of its own later. GitHub
 is the only identity source behind the interface.
 
-## Draft API (Coordinator, from today's commands; Core to check against the code)
+## The API (`organization/api` in `porelo`)
 
 The identity source:
 
-- `vouches(login, fingerprint)`: whether the key belongs to that person: yes, no, or cannot say. The adapter asks its
-  source as it can (GitHub: the login's key lists); a list of all keys is not part of the API.
-- `owns(login)`: whether the login may found the organization as its first organization owner: yes, no, or cannot say; needed for the first owners
+- `keys(login)`, or `keys(login, fingerprint)`: the keys the source lists for that person, or cannot say. The adapter
+  asks its source as it can (GitHub: the login's key lists).
+- `owns(organisation, login)`: whether the login may found the organization as its first organization owner: yes, no, or cannot say; needed for the first owners
   file (GitHub: an owner of the GitHub organization).
-- Optional, for the interface's *See the keys the forge lists*: the keys of a login, where a source offers them.
 
 The store, `OrganizationStore`, asked by question wherever Porelo decides, read only for display.
 Every answer names the revision it rests on, and a revision can be given, so that several questions are
@@ -153,12 +153,13 @@ Every adapter answers each question itself; the questions are the contract.
 
 | Kind | Function | Input | Answer | The question or purpose |
 |---|---|---|---|---|
-| Connection | `open` | the adapter's configuration, unread | handle, or a refusal | connect |
-| | `close` | – | – | clean up |
+| Connection | `address` | – | where it is read from, as the store names it | connect |
+| | `read` | the identity source | what the organization says, what it trusted kept for the next read | |
 | | `describe` | – | the organization's name, where it is kept and who vouches for its keys, in words to show | the organization's page |
 | Questions | `trusts` | login, key | yes; no with the reason; cannot say | is it their key, and not revoked? |
 | | `keyHolder` | key | login, or nobody | does another person hold this key? |
 | | `isOrganizationOwner` | login | yes, no | may they change the organization's structure? |
+| | `isOrganizationAdmin` | login | yes, no | may they do the organization admin's work? |
 | | `isHostAdmin` | host, login | yes, no | may they administer this host? |
 | | `projectAdmins` | project | logins, or no such project | who answers for the project? |
 | | `isProjectMember` | project, login | the role, or no | may they work on the project? |
@@ -172,11 +173,12 @@ Every adapter answers each question itself; the questions are the contract.
 | | `getProjectRepository` | project | the address of its project repository, or none yet | |
 | | `getHosts` | – | hosts with their admins and projects | |
 | | `getOrganizationOwners` | – | organization owners | |
+| | `getOrganizationAdmins` | – | organization admins, or none before the list exists | |
 | | `getCard` | login | the person's card, or unknown | |
 | | `getHostCard` | host | the host's card, or unknown | |
 | | `getRefusals` | – | what a read refused, and its warnings | |
 | | `getSoleWithoutBackup` | – | each place held by one key with no backup key | |
-| Followed by a host | `fetchFor` | host, pin, last state | the organization's new state: persons, the host's admins, the projects it carries with their members and `signingKeys`; no `project.yml`; no with the reason | on the host: the adapter fetches the current state and checks it against the host's pin and the last state it took, so nothing older is played back |
+| Followed by a host | `check`, of `OfflineOrganization` | host, pin, last state | the organization's new state: persons, the host's admins, the projects it carries with their members and `signingKeys`; no `project.yml`; no with the reason | on the host: the adapter fetches the current state and checks it against the host's pin and the last state it took, so nothing older is played back |
 
 ## Who may do what
 
@@ -187,42 +189,46 @@ scope. A *member* has no right in the organization: being a member only lets the
 |---|---|
 | person | anyone whose card the organization holds; filing it needs a login and key the identity source vouches for |
 | organization owner | a person named among the organization owners; the first is one the identity source names as its owner (GitHub: an owner of the GitHub organization) |
+| organization admin | a person named in `organization-admins.yml`; `porelo org create` lists the founder; while the file is absent, the owners do that work |
 | project admin | a member of the project with role admin; the card names the first |
-| host admin | a person a host names among its admins |
+| host admin | a person a host names among its admins (machine admin in `doc/roles.md`) |
+| developer | a member of the project with role developer |
 
 | Function | Purpose | Role | Scope |
 |---|---|---|---|
 | `get…` | read everything | person | the whole organization |
+| `createOrganization` | fill the organization's repository and become its first owner and organization admin | identity source's owner | the organization |
 | `addCard` | file one's card | person | their own card |
 | `changeCard` | change one's key | person | their own card |
 | `revokeCard` | revoke a card | person | their own card |
-| `revokeCard` | revoke a card | organization owner | any card |
-| `addProject` | add a project and name its first admin | organization owner | any project |
-| `changeProjectAdmin` | name another first admin | organization owner | any project |
-| `addProjectAdmin`, `removeProjectAdmin` | add or remove an admin, to recover a project whose admins lost their keys | organization owner | any project |
-| `removeProject` | remove a project | organization owner | any project |
+| `revokeCard` | revoke a card | organization admin | any card |
+| `replaceCard` | put a new card in place of a lost key's | organization admin | any card |
+| `addProject` | add a project and name its first admin | organization admin | any project |
+| `changeProjectAdmin` | name another first admin, to recover a project whose admins lost their keys | organization admin | any project |
+| `removeProject` | remove a project | organization admin | any project |
 | `changeProjectRepository` | change the address of the project repository | project admin | their project |
-| `addProjectMember` | add a member with their role | project admin | their project |
-| `changeProjectMemberRole` | change a member's role | project admin | their project |
-| `removeProjectMember` | remove a member | project admin | their project |
-| `lockProjectMember`, `unlockProjectMember` | hold a member out of the project and let them back; a locked member stays listed and may nothing | project admin | their project |
-| `addHost` | add a host and name its first host admin | organization owner | any host |
-| `removeHost` | remove a host | organization owner | any host |
+| `addProjectMember` | add a member with their role | project admin for a developer, organization admin for an admin | their project; any project |
+| `changeProjectMemberRole` | change a member's role | organization admin | any project |
+| `removeProjectMember` | remove a member | project admin for a developer, organization admin for an admin | their project; any project |
+| `lockProjectMember`, `unlockProjectMember` | hold a member out of the project and let them back; a locked member stays listed and may nothing | project admin for a developer, organization admin for an admin | their project; any project |
+| `addHost` | add a host and name its first host admin | organization admin | any host |
+| `removeHost` | remove a host | organization admin, host admin | any host; their host |
 | `changeHost` | change a host's address and host key | host admin | their host |
-| `addHostAdmin` | name another host admin | host admin | their host |
-| `removeHostAdmin` | remove a host admin | host admin | their host |
+| `addHostAdmin` | name another host admin | organization admin | any host |
+| `removeHostAdmin` | remove a host admin | organization admin | any host |
 | `addProjectToHost` | put a project on the host | host admin | their host |
 | `removeProjectFromHost` | take a project off the host | host admin | their host |
 | `addOrganizationOwner` | name another organization owner | organization owner | the organization |
 | `removeOrganizationOwner` | remove an organization owner | organization owner | the organization |
+| `addOrganizationAdmin`, `removeOrganizationAdmin` | name or remove an organization admin | organization owner | the organization |
 | `addBackupKey`, `replaceKeyWithBackup` | file an offline backup key, and replace a lost key with it | organization owner, host admin | their own place |
 
 The last organization owner and a host's last host admin cannot be removed; the adapter refuses it. A project's
 repositories and agents are in its `project.yml`, changed by a signed commit of one of its admins, not through this
-API. A project admin has no backup key: an organization owner recovers a project by naming new admins.
+API. A project admin has no backup key: an organization admin recovers a project by naming new admins.
 
 The interface shows each person only what their roles allow: everyone reads the organization's page; adding and
-removing projects and hosts and changing the organization owners appear for an organization owner alone; a project's
+removing projects and hosts appear for an organization admin alone, and changing the organization owners and admins for an organization owner alone; a project's
 members and repositories can be changed by its admins alone; a host's management appears for its host admins
 alone; a person's own row under *People* holds *Change my key* and *Withdraw my card*, and a person with no card yet
 sees *Add me*.
@@ -233,5 +239,5 @@ sees *Add me*.
 of trust is closed; the Git adapter does it with signatures, as today, and how another adapter does it is no concern
 of Porelo's. Porelo uses only the API and relies on a correct implementation; it needs no knowledge of signatures.
 So a write hands the adapter the content and the acting person, and the adapter signs it as it must (Git: through
-the person's ssh-agent); `fetchFor` on the host is the adapter's code as well. This holds for the organization's
+the person's ssh-agent); `OfflineOrganization.check` on the host is the adapter's code as well. This holds for the organization's
 own store; `project.yml` and every work commit are checked by Porelo, with `signingKeys`.

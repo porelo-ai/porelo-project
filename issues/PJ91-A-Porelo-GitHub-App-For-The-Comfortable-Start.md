@@ -26,7 +26,7 @@ A user access token has only what both the person and the app may, and only in a
 | Migrating once to the host's forge | `porelo-host-project`, `POST /repos/migrate` | Contents: read | Replaced, if the forge's clone takes a user token, to be checked |
 | Reading an owner's membership | `HttpForgeDirectory`, `porelo` | Members: read, an organization permission | Not asked for. [B414](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b414), an idea so far, moves the first read to a repository's collaborator permission, Metadata: read |
 | Reading `ssh_signing_keys` | `HttpForgeDirectory` sends no token | None: GitHub serves it to anyone | Nothing to replace |
-| Adding and removing a member at the access repository | `ForgeCollaborators`, `porelo-frontend` | Administration: write | Replaced |
+| Adding and removing a member at a repository | `ForgeCollaborators`, `porelo-frontend`: nothing calls it, as a project's members stand in the organization and there is no access repository | Administration: write | Nothing to replace |
 | Listing repositories, reading `project.yml` | `GitHub`, `porelo-frontend` | Metadata: read, Contents: read | Replaced. It lists only where the app is installed |
 | Pushing approved commits back | `porelo-host-push` | Contents: write, and Workflows: write for a change under `.github/workflows/` | Replaced, given per run as today |
 

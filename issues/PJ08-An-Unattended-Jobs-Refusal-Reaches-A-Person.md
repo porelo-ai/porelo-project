@@ -31,12 +31,14 @@ construction; a scheduled one needs a place its refusal lands.
 - **Decided:** a refusal lands as a red run whose last step writes an `::error` annotation naming the reason, with a step summary; no issue is opened.
 - **Decided first, by the operator**: the organisation setting switched on, and the place a refusal
   lands.
-- **Run once by hand**: `update.yml` in `porelo-pi`, `porelo-omp` and `porelo-claude-code`, to see whether
+- **Run once by hand**: `update.yml` in `porelo-pi`, `porelo-omp`, `porelo-claude-code`, `porelo-codex` and `porelo-agy`, to see whether
   the pull request now opens.
 - **The unattended jobs, read in today's workflows** (scheduled, or started by `workflow_run`):
-  `sweep.yml` in `porelo`; `update.yml` in `porelo-pi`, `porelo-omp` and `porelo-claude-code`; `machines.yml`
-  in `porelo-buildtools`; `site.yml` in `porelo-ai.github.io`; `delete-runs.yml` in every repository. The
-  list, with where each refusal lands, is kept per repository.
+  `sweep.yml` in `porelo`; `update.yml` in `porelo-pi`, `porelo-omp`, `porelo-claude-code`, `porelo-codex` and
+  `porelo-agy`; `machines.yml` in `porelo-buildtools`; `site.yml` in `porelo-ai.github.io`; `shared-rules.yml`,
+  scheduled daily, in every repository but `porelo-parent` and `porelo-project`, which have none. `delete-runs.yml`
+  runs only by hand. No workflow starts by `workflow_run`. The list, with where each refusal lands, is kept per
+  repository.
 - **Each job gets a last step that reaches the chosen place on failure**, built by each repository's
   agent from a handover.
 - **Seen to fail first:** each job made to refuse on purpose, by hand, and the refusal not arriving.
@@ -50,6 +52,6 @@ construction; a scheduled one needs a place its refusal lands.
 
 ## To be checked
 
-- How many unattended jobs there are: `porelo-message-sluice` has none, `porelo-pi` and `porelo-omp` have
-  the weekly update; each other repository reports its own. - the coordinator's to confirm with each
+- How many unattended jobs there are: `porelo-message-sluice` has only `shared-rules.yml`, `porelo-pi` and
+  `porelo-omp` have the weekly update too; each other repository reports its own. - the coordinator's to confirm with each
   repository's agent, against the list in *Plan*.
