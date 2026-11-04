@@ -419,7 +419,7 @@ sprints:
         issues: [porelo#B226, porelo-pi#PI36, porelo-omp#OM32]
   - id: "7"
     title: "The move, wave 1: the smallest repositories"
-    goal: "Starts only once 6 to 6i are tested, since a moved agent talks in the room on this computer from the host. One agent per repository: each works its own move issue inside its new task to Review; the others work as today."
+    goal: "Starts only once 6 to 6i are tested, since a moved agent talks in the room on this computer from the host, over `ssh -R` to one socket only; the host is rented for hours, so the room stays here until the last agent has moved. One agent per repository: each works its own move issue inside its new task to Review; the others work as today."
     functions:
       - title: "Builds on the host's forge resolve snapshots with a read-only token"
         test: "Every project's organization on the host holds `PORELO_PACKAGES_READ_TOKEN` (scope `read:package`) and its own `MAVEN_SNAPSHOTS_URL`; a build on an unreviewed branch resolves snapshots with it and holds no publisher's token, only the deploying step on `main` does; a missing `MAVEN_SNAPSHOTS_URL` fails the Build on any forge but github.com."

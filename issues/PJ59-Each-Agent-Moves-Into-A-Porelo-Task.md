@@ -48,8 +48,10 @@ needed. After the real move, an agent's session on the development machine and i
 
 ### Before the first trial
 
-- **The room is reachable from the host**: `project.yml` names the development machine's published homeserver by a
-  name the host resolves to the machine's VPN address, with its CA and its registration token file.
+- **The room is reachable from the host**: the development machine opens `ssh -R` to the host, to one socket only, the
+  return path of [PJ83](README.md#pj83), and the host's tasks reach the room through it. The homeserver stays on the
+  development machine, since the host is rented for a few hours at a time and work here goes on without it. This path
+  is not built yet.
 - **A repository whose snapshots another one resolves builds on the host's forge first**: it is named in
   `forge_repositories` and its Build, deploying with `forge-release`, is green on the sprint's host before the first
   trial whose build resolves it. That holds for `porelo-parent` and `porelo-buildtools` before every trial, and for
@@ -136,7 +138,7 @@ What the coordinator finds missing in a task's context is said before the start.
 ### The room
 
 Every agent, in a task or not, talks in the project's one room. Its homeserver runs on the development machine,
-reached by the host's tasks over the VPN; the agents on the development machine use a room client in place of the
+reached by the host's tasks over `ssh -R`; the agents on the development machine use a room client in place of the
 channel's commands, and the channel file is read-only from the first trial on. After the real move the project's room
 is made anew on the host's homeserver and `project.yml` names it; the old room is cleared, and its history is not
 carried over.
@@ -176,8 +178,8 @@ Moving in again is a new start, from *The steps*.
   of 0.8; to be replanned after the cleanup of issue citations.
 
 - Today's homeserver is this account's own, on loopback only (`matrix: {}`), and the host's tasks cannot reach it.
-  Serving it on the VPN's address with a certificate the host trusts is work for porelo-message-matrix and porelo;
-  the issues are filed with Agent Matrix and Agent Core before the switch.
+  Serving it to the host over `ssh -R`, to one socket only, is work for porelo-message-matrix and
+  porelo-message-sluice; the issues are filed with Agent Matrix and Agent Sluice before the switch.
 - Where the local agents' room client lives (porelo-message-matrix, beside the transport, is the first guess), and
   that it waits for a message as `porelo-channel-wait` does.
 - What each agent needs in its task's image beyond its repository's `porelo.yml`: the agent's own tools, its
