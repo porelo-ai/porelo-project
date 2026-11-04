@@ -57,6 +57,7 @@ needed. After the real move, an agent's session on the development machine and i
   a freshly rented host builds at once, and `porelo-parent` and `porelo-buildtools` build on its forge only when changed
   there.
 - **The project `porelo` is `online`**, decided 2026-11-04: a task's push goes to its own branch on the forge without approval at the gate, and `porelo build status` reads its Build; `guarded` allows neither. `project.yml` changes before the first trial, with what that class asks of the file.
+  Read in the code by Agent Core, not run: the switch is a signed commit by the operator, as is every later `project.yml` change, and `project.yml` so far holds no signed commit; `builds:` is needed, with one block per project, so a trial on the host's forge and a dry run on the central one each have their own; no task of the project runs across the switch and `gate review` is empty first; a second trial under one task name needs `porelo/<task>` deleted; the pull request's approver is another account than `builds.credential`. Open: whether `access`, with `mail.transports` moved to `access.yml`, belongs to the first trial.
 
 ### Before each trial
 
