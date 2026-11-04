@@ -52,10 +52,10 @@ needed. After the real move, an agent's session on the development machine and i
   return path of [PJ83](README.md#pj83), and the host's tasks reach the room through it. The homeserver stays on the
   development machine, since the host is rented for a few hours at a time and work here goes on without it. This path
   is not built yet.
-- **A repository whose snapshots another one resolves builds on the host's forge first**: it is named in
-  `forge_repositories` and its Build, deploying with `forge-release`, is green on the sprint's host before the first
-  trial whose build resolves it. That holds for `porelo-parent` and `porelo-buildtools` before every trial, and for
-  `porelo` before every adapter's.
+- **Snapshots come from the central source; the host's registry holds only what was built there and has not yet gone
+  through the central forge** ([BT42](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt42)). So
+  a freshly rented host builds at once, and `porelo-parent` and `porelo-buildtools` build on its forge only when changed
+  there.
 
 ### Before each trial
 
@@ -66,13 +66,11 @@ needed. After the real move, an agent's session on the development machine and i
   values of [the local registry and publication settings](https://github.com/porelo-ai/porelo-host/blob/main/doc/local-forge.md#the-local-registry-and-publication-settings).
 - **The host's inventory names the repository in `forge_repositories`**: the forge migrates a repository, protects
   its `main` and makes the gate's identity only for those named.
-- **The forge's registry holds the snapshots the build resolves**, no older than the central forge's on the day of
-  the trial.
 - **The repository has a `porelo.yml`** whose image holds the agent's tools; the agent's sign-ins are in the host's
   vault. A task has no sub-agent of its own.
 - **The task's egress reaches what the build and the agent fetch**: Maven Central, Sonatype's snapshots, GitHub's
-  release downloads and API, and the skills' store. The task's own build reads the snapshots from the forge's
-  registry by their declared name, as [PJ75](README.md#pj75) makes possible before the first adapter's trial.
+  release downloads and API, and the skills' store. A snapshot built on the host and not yet central is read by the
+  task only with [PJ75](README.md#pj75), which a trial does not need unless it changes one.
 - **The skills the repository names are in the task** where its harness reads them, checked against their digests.
 
 ### The steps
