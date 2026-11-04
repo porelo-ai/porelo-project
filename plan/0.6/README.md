@@ -3,7 +3,7 @@
 
 Porelo is built in Porelo tasks
 
-*Stand: 2026-11-04T04:34:32Z*
+*Stand: 2026-11-04T05:44:48Z*
 
 ## Sprint progress
 
@@ -723,7 +723,7 @@ Test: Sign Pi in to two providers, import the chosen provider and start a task; 
 
 ### Sprint 7: The move, wave 1: the smallest repositories
 
-Starts only once 6 to 6i are tested, since a moved agent talks in the room on this computer from the host. One agent per repository: each works its own move issue inside its new task to Review; the others work as today.
+Starts only once 6 to 6i are tested, since a moved agent talks in the room on this computer from the host, over `ssh -R` to one socket only; the host is rented for hours, so the room stays here until the last agent has moved. One agent per repository: each works its own move issue inside its new task to Review; the others work as today.
 
 **Builds on the host's forge resolve snapshots with a read-only token ⚪ Not tested**
 

@@ -3,7 +3,7 @@
 
 Communicate across machines with clear trust boundaries and hand over files only as allowed
 
-*Stand: 2026-11-04T04:34:32Z; no commit time for PJ94-The-Plan-Pages-Are-Built-Outside-Main.md (excluded; no file-time fallback)*
+*Stand: 2026-11-04T05:44:48Z*
 
 ## Sprint progress
 
