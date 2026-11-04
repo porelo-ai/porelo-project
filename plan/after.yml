@@ -20,7 +20,7 @@ after:
   porelo-adapters#GH09: [porelo#B166, porelo#B171, porelo#B291, porelo#B292, porelo#B293, porelo-forge-clients#FC03]
   porelo-adapters#GH10: [porelo#B166, porelo#B171, porelo#B291, porelo#B292, porelo#B293, porelo-forge-clients#FC03]
   # porelo-frontend
-  porelo-frontend#F204: [porelo-buildtools#BT37]
+  porelo-frontend#F204: [porelo-buildtools#BT42]
   porelo-frontend#F203: [porelo-buildtools#BT37]
   porelo-frontend#F62: [porelo-project#PJ16]
   porelo-frontend#F74: [porelo#B95, porelo#B293]
@@ -50,7 +50,7 @@ after:
   # porelo-intellij
   porelo-intellij#IJ04: [porelo#B145, porelo#B166, porelo#B291, porelo#B292, porelo#B323]
   porelo-intellij#IJ13: [porelo#B171, porelo#B179, porelo#B293]
-  porelo-intellij#IJ14: [porelo-buildtools#BT37]
+  porelo-intellij#IJ14: [porelo-buildtools#BT42]
   porelo-intellij#IJ15: [porelo-buildtools#BT37]
   # porelo-message-matrix
   porelo-message-matrix#MX43: [porelo-buildtools#BT37]
