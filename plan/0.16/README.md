@@ -3,11 +3,11 @@
 
 Manage organization rules and personal access, and take in existing projects
 
-*Stand: 2026-11-04T05:49:29Z*
+*Stand: 2026-11-04T05:52:08Z*
 
 ## Sprint progress
 
-![Sprint 1: Analyzed 2; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Estimated 1, Accepted 1; Sprint 4: Accepted 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Backlog 1, Estimated 3, Analyzed 1](progress-3be3cd94.svg)
+![Sprint 1: Analyzed 2; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Estimated 1, Accepted 1; Sprint 4: Finished 1, Not filed yet 1; Sprint 5: Not filed yet 1; Sprint 6: Backlog 1, Estimated 3, Analyzed 1](progress-77cb660f.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -65,7 +65,7 @@ Each role offers its intended work area and a usable access route.
 
 Test: Open the interface as user, host-admin and access-admin. Walk setup, admitting a person and daily work. Each role sees its intended functions; the stated SSH and VPN routes can actually be reached.
 
-⬜ [PJ71](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj71 "porelo-project#PJ71 · Accepted · — · Who reaches a host, and by which way") ◻️ Separate Administrative Entry Points; Define Host Access Routes. Roles choose the offered functions and add no separate authorization check. Decide access routes before implementation; this parent also covers sprint 5.
+🟩 [PJ71](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj71 "porelo-project#PJ71 · Finished · - · Who reaches a host, and by which way") ◻️ Separate Administrative Entry Points; Define Host Access Routes. Roles choose the offered functions and add no separate authorization check. Decide access routes before implementation; this parent also covers sprint 5.
 
 </td></tr></table>
 

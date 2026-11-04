@@ -128,17 +128,17 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 184)">
 <text x="0" y="17">4. Open administration and daily work separately</text>
-<desc>Accepted 1, Not filed yet 1. PJ71: porelo-project#PJ71 · Accepted · — · Who reaches a host, and by which way; Separate Administrative Entry Points; Define Host Access Routes. Roles choose the offered functions and add no separate authorization check. Decide access routes before implementation; this parent also covers sprint 5.: Not filed yet; </desc>
+<desc>Finished 1, Not filed yet 1. PJ71: porelo-project#PJ71 · Finished · - · Who reaches a host, and by which way; Separate Administrative Entry Points; Define Host Access Routes. Roles choose the offered functions and add no separate authorization check. Decide access routes before implementation; this parent also covers sprint 5.: Not filed yet; </desc>
 <svg x="440" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="200.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
 
 <rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 2 done</text>
+<text class="legend" x="410" y="17">1 of 2 done</text>
 </svg>
 
 
