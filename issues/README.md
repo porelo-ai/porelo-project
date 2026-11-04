@@ -89,6 +89,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj95"></a>[PJ95](PJ95-Where-A-Person-May-Not-Add-A-Deploy-Key.md) | — | — | A person who may not add a machine's deploy key at the central forge still brings a project to a machine: Porelo hands them what to ask an administrator for, and no token comes to lie on a server. |
 | <a id="pj93"></a>[PJ93](PJ93-Work-Arrives-Under-The-Branch-Names-A-Forge-Requires.md) | — | — | Wherever Porelo pushes work, online or after a gate, the branch name follows what that repository's forge accepts, and a person can set it. |
 | <a id="pj92"></a>[PJ92](PJ92-Every-Forge-Call-Behind-One-Contract.md) | — | — | The window asks only Core, Core asks only an adapter, and only the adapter knows a forge, so any forge offering what Porelo needs can be used. |
 | <a id="pj90"></a>[PJ90](PJ90-Several-Organizations-On-One-Machine.md) | — | [PJ87](#pj87) | One machine works with several organizations at once, each holding only its own people, projects and hosts and answered by its own identity source; a person keeps one card, filed in each organization, and the interface shows them side by side. |
@@ -112,7 +113,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj37"></a>[PJ37](PJ37-Work-Reaches-The-Upstream-By-A-Machine-Key-Or-The-Persons-Token.md) | — | — | A machine reaches the upstream by keys of its own or by the person's own token, equal choices per project; the token as narrow as the forge allows, used on the host only, deposited for a time on a rented machine. | 0 |
 | <a id="pj52"></a>[PJ52](PJ52-A-Repositorys-Build-Tools-Are-Recognized-And-A-Project-Proposed.md) | XL | - | Drafts proposed from what a checkout and the person's tool settings say: the tools as a `.porelo.yml` the repository never receives, the rules (egress, private repositories, memory) as a `project.yml` for a project repository of the person's own; one plugin per build tool in `porelo-ecosystems`, a native executable of its own spoken to over varlink, that never runs the project's code and reads only local caches (Maven's effective model through MIMA, offline), measured against the Porelo repositories' own `porelo.yml`; credentials named by id and offered into the Porelo-Vault, never copied. |
 | <a id="pj46"></a>[PJ46](PJ46-Document-Tests-Run-Only-Where-The-Agent-Works.md) | M | — | The tests that read only issues and documents run on the agent's machine and in the daily Shared rules check, never in a Build: left out by the build tool's own switch, and naming no single issue, so setting an issue Finished touches no test. |
 | <a id="a08"></a>[A08](A08-Agent-Copilot-CLI.md) | L | — | Copilot CLI as a packaged agent: brokerable by environment variable (BYOK), which is not the Copilot subscription. |
@@ -145,3 +145,9 @@ Within each group, ordered by what to do next; the number is identity, not seque
 - **No project-wide message store**: a Matrix room is one.
 - **No chat client is shipped.** Any Matrix client will do, and no agent needs one.
 - **Room membership is not authorization.** Matrix distributes; Porelo decides, on the signature.
+
+## Rejected
+
+| # | What it covered | Why |
+|---|---|---|
+| <a id="pj37"></a>PJ37 | A machine reaches the upstream by keys of its own or by the person's own token, equal choices per project. | Overtaken (operator, 2026-11-04): machines read with a key per repository, a host forge's token is taken per command, the gathered push takes the person's token on stdin, and no token lies on a server. What remains is [PJ95](#pj95). |
