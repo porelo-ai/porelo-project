@@ -55,7 +55,7 @@ after:
   # porelo-message-matrix
   porelo-message-matrix#MX43: [porelo-buildtools#BT37]
   # porelo-message-sluice
-  porelo-message-sluice#SL35: [porelo-buildtools#BT42, porelo-message-matrix#MX57, porelo#B334]
+  porelo-message-sluice#SL35: [porelo-buildtools#BT42, porelo-host#HO52, porelo-message-matrix#MX57, porelo#B334]
   porelo-message-sluice#SL23: [porelo#B108]
   porelo-message-sluice#SL24: [porelo#B291, porelo#B292]
   # the agent adapters
