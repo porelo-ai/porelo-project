@@ -423,14 +423,11 @@ sprints:
     functions:
       - title: "Builds on the host's forge resolve snapshots with a read-only token"
         test: "Every project's organization on the host holds `PORELO_PACKAGES_READ_TOKEN` (scope `read:package`) and its own `MAVEN_SNAPSHOTS_URL`; a build on an unreviewed branch resolves snapshots with it and holds no publisher's token, only the deploying step on `main` does; a missing `MAVEN_SNAPSHOTS_URL` fails the Build on any forge but github.com."
-        issues: [porelo-host#HO52, porelo-buildtools#BT39, porelo-message-sluice#SL36, porelo-claude-code#CC41, porelo-pi#PI41, porelo-omp#OM38]
+        issues: [porelo-buildtools#BT42, porelo-host#HO52, porelo-buildtools#BT39, porelo-message-sluice#SL36, porelo-claude-code#CC41, porelo-pi#PI41, porelo-omp#OM38]
       - title: "porelo-message-sluice works wholly in its task"
         test: "Its move issue reaches Review inside the task with Forgejo's build green; its agent is reached in the room under its repository's name."
         issues: [porelo-message-sluice#SL35]
         covers: [porelo-project#PJ59]
-      - title: "porelo-buildtools in its task"
-        test: "Its move issue reaches Review inside the task with Forgejo's build green."
-        issues: [porelo-buildtools#BT37]
       - title: "porelo's Build on the host's Forgejo"
         test: "porelo's workflows run green on Forgejo and on GitHub on one commit, its acceptance job skipped on Forgejo; porelo's snapshots are in the forge's registry."
         issues: [porelo#B306]
@@ -451,6 +448,9 @@ sprints:
       - title: "porelo-agy and porelo-codex each in its own task"
         test: "Each move issue reaches Review inside its task with Forgejo's build green. Only Claude Code runs in the task: reviews come from new agents started apart, by the host's forge or by hand."
         issues: [porelo-agy#AG02, porelo-agy#AG04, porelo-codex#CX04, porelo-codex#CX08]
+      - title: "porelo-buildtools in its task"
+        test: "Its move issue reaches Review inside the task with Forgejo's build green."
+        issues: [porelo-buildtools#BT37]
   - id: "7c"
     title: "The move, wave 4: the other toolchains"
     goal: "Gradle and Flutter move."
