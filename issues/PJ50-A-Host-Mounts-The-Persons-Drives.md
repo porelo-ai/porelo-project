@@ -2,12 +2,13 @@
 
 **Status:** Implementing (2026-10-29), analyzed 2026-10-27, built as porelo-host [HO36](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho36) (M) and porelo-frontend [F197](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f197) (L, blocked by [HO36](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho36)); one layout `hosts/<project>/` beside `shared/`, the host named after its project (QF63 a), the old `porelo-host/` refused, never migrated. Built and tested in release 0.6 (2026-10-28): the setup files uploaded over ssh and the person's own Tresorit drive mounted in their own account (sprints 6f, 6g). Left for release 0.20, sprint 9: each host sees only the drive areas chosen for it, and OneDrive.
 
-**What must be true.** A host takes what it needs from the person's drives, in two roles. **Its own setup** - the
-machine file, its VPN key, the keys it puts into Porelo's vault - comes either from a tresor of its own or from its
-own folder in a tresor several hosts share, as the person chooses per host. **The person's private drives** - notes,
-how-tos and other files the person needs when working on any host - are mounted for the person's own use there, as
-many as the person names. Both work the same for Tresorit and for a drive with no tresors, such as OneDrive, where a
-folder takes a tresor's place.
+**What must be true.** The person's private drives - notes, how-tos and other files the person needs when working on
+any host - are mounted for the person's own use there, as many as the person names, in the person's own account and
+never where tasks run. It works the same for Tresorit and for a drive with no tresors, such as OneDrive, where a folder
+takes a tresor's place.
+
+A host's own setup from a drive, the first role this asked for, is gone: the rebuild has a host follow its organization,
+and the stop takes no secret as root.
 
 ## Why
 

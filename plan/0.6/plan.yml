@@ -449,10 +449,10 @@ sprints:
         issues: [porelo-pi#PI38, porelo-pi#PI39, porelo-omp#OM35, porelo-omp#OM36, porelo-claude-code#CC38, porelo-claude-code#CC39]
   - id: "7b"
     title: "The move, wave 3: the sub-agents' repositories"
-    goal: "porelo-agy and porelo-codex move, their sub-agents signed in inside the task."
+    goal: "porelo-agy and porelo-codex move."
     functions:
-      - title: "porelo-agy and porelo-codex each in its own task, their sub-agents signed in"
-        test: "Each move issue reaches Review inside its task with Forgejo's build green; Antigravity and Codex CLI answer there with their sign-ins from the vault."
+      - title: "porelo-agy and porelo-codex each in its own task"
+        test: "Each move issue reaches Review inside its task with Forgejo's build green. Only Claude Code runs in the task: reviews come from new agents started apart, by the host's forge or by hand."
         issues: [porelo-agy#AG02, porelo-agy#AG04, porelo-codex#CX04, porelo-codex#CX08]
   - id: "7c"
     title: "The move, wave 4: the other toolchains"

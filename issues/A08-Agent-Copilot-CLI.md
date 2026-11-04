@@ -1,7 +1,7 @@
 # A08 — Agent Copilot CLI
 
 **Status:** Estimated; a candidate, its brokering answered.
-**Size:** L - a new agent repository with its packaging and an acceptance leg; brokering is measured, and the subscription's token exchange at `api.github.com` has to be brokered and documented.
+**Size:** L - a new agent repository with its packaging and an acceptance leg; brokering is measured: on 1.0.95 the CLI makes no token exchange, sending the GitHub token itself.
 
 **What must be true.** GitHub Copilot CLI runs in a task as a packaged agent, signed in and brokered
 like the supported ones, with its real credential never in the container.
@@ -49,16 +49,16 @@ itself fronts models from several vendors.
 - **The built-in GitHub MCP server is turned off** (`--disable-builtin-mcps` among the sandboxed
   arguments); it would post the token to `<API URL>/mcp/readonly`. Its other calls to `api.github.com`
   (user, managed settings, update check, MCP registry) fail closed in a task and the CLI goes on.
-- **The provider exists**: `porelo/providers/github-copilot.yaml`. What is new is that the credential
-  Porelo swaps in is presented at `api.github.com`, and the short-lived token that comes back stays in
-  the agent.
+- **The provider exists**: `porelo/providers/github-copilot.yaml`. On 1.0.95 the credential Porelo swaps in
+  is presented to the model API itself, and no short-lived token comes back.
 - **A repository of its own**, shaped like `porelo-omp` (about 35 files): its `AgentMain` against
   `porelo-agent-api` and `porelo-wire`, its definition with `COPILOT_AUTO_UPDATE` off and the npm version
   pinned, the Debian and RPM packaging, unit tests, and an acceptance leg on a machine rented through
   `porelo-machines`.
 - **The sign-in happens on the host**: a fine-grained PAT with "Copilot Requests" given to the broker,
   never `--with-token` inside a task.
-- **Its documentation says** that a task holds a short-lived Copilot token.
+- **Its documentation says** that a task holds no Copilot credential, on the version measured, and that an exchange
+  must be measured again on a version that brings one back.
 - **Seen to fail first:** the acceptance leg that searches the container for the PAT, and a run with a
   pinned version that would have updated itself.
 
