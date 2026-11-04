@@ -56,6 +56,7 @@ needed. After the real move, an agent's session on the development machine and i
   through the central forge** ([BT42](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt42)). So
   a freshly rented host builds at once, and `porelo-parent` and `porelo-buildtools` build on its forge only when changed
   there.
+- **The project `porelo` is `online`**, decided 2026-11-04: a task's push goes to its own branch on the forge without approval at the gate, and `porelo build status` reads its Build; `guarded` allows neither. `project.yml` changes before the first trial, with what that class asks of the file.
 
 ### Before each trial
 
@@ -159,9 +160,6 @@ Moving in again is a new start, from *The steps*.
   test machine - are settled with `porelo-frontend`'s move.
 - **Testing against another repository's work before it is published**: whether a moved agent tests only against
   snapshots another repository's Build published, or where such a hand-over lies for a task.
-- **A guarded project's gate**: the gate passes a task's push on to the forge, with `--force` onto the task's own
-  branch, only in an `online` project; in `porelo`'s class, `guarded`, the push waits at the gate for approval. Where
-  the reading from outside reads that waiting work, and what an amended push does to it, is to be measured.
 
 ## Acceptance
 
