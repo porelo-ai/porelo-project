@@ -3,11 +3,11 @@
 
 An unattended task keeps its limits; a kernel of its own is offered only after proof
 
-*Stand: 2026-11-04T05:49:29Z*
+*Stand: 2026-11-04T05:56:42Z*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Analyzed 1, Not filed yet 1; Sprint 2: Estimated 2, Analyzed 1; Sprint 3: Accepted 1, Not filed yet 1; Sprint 4: Accepted 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Idea 2; Sprint 7: Idea 2; Sprint 8: Estimated 1, Not filed yet 1; Sprint 9: Estimated 1, Not filed yet 2; Sprint 10: Not filed yet 1](progress-63a92eec.svg)
+![Sprint 1: Estimated 1, Analyzed 1, Not filed yet 1; Sprint 2: Estimated 2, Analyzed 1; Sprint 3: Implementing 1, Not filed yet 1; Sprint 4: Accepted 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Idea 2; Sprint 7: Idea 2; Sprint 8: Estimated 1, Not filed yet 1; Sprint 9: Estimated 1, Not filed yet 2; Sprint 10: Not filed yet 1](progress-857080e2.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -51,7 +51,7 @@ Every container sees and keeps its own limits, whatever the host size.
 
 Test: Start the same configuration on a small and a large host. Read task CPU visibility and process limits. Run the homeserver and backup with a deliberately low process limit. Request an oversized VM pool; it is refused before creation.
 
-⬜ [PJ68](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj68 "porelo-project#PJ68 · Accepted · — · Every container fits the machine it runs on") ◻️ Limit Tasks And Image Builds; Limit Homeserver And Backup Runs; Limit Forge And Runner Jobs; Check VM Pool Capacity.
+🟨 [PJ68](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj68 "porelo-project#PJ68 · Implementing · — · Every container fits the machine it runs on") ◻️ Limit Tasks And Image Builds; Limit Homeserver And Backup Runs; Limit Forge And Runner Jobs; Check VM Pool Capacity.
 
 </td></tr></table>
 

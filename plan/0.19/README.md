@@ -3,11 +3,11 @@
 
 Use enterprise forges, read Jenkins builds and extend reviews to their pull requests
 
-*Stand: 2026-11-04T05:49:29Z*
+*Stand: 2026-11-04T05:56:42Z*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Not filed yet 1; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Estimated 1, Idea 2; Sprint 4: Idea 1; Sprint 5: Estimated 1, Not filed yet 1; Sprint 6: Not filed yet 3](progress-88aee513.svg)
+![Sprint 1: Estimated 1, Not filed yet 1; Sprint 2: Accepted 1, Not filed yet 1; Sprint 3: Estimated 1, Idea 2; Sprint 4: Idea 1; Sprint 5: Implementing 1, Not filed yet 1; Sprint 6: Not filed yet 3](progress-d79f8252.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -85,7 +85,7 @@ A task sees the same complete build before and after the central push.
 
 Test: Run every building repository's same workflow on the local and central forges without editing it. Resolve another repository's locally published artifact, including a child-module publication. Break that publication; the local run fails before any central tag. Request a declared machine kind, read the verdict and log in the task, and refuse undeclared kinds or commands.
 
-🟪 [PJ22](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj22 "porelo-project#PJ22 · Estimated · XL · One build, run locally as on the central forge") ◻️ Parent acceptance for one build, not duplicate implementation. This includes the forge, pool and task-build work from release 0.6 and this release; return the whole local VM after a run and keep provider names out of workflows.
+🟨 [PJ22](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj22 "porelo-project#PJ22 · Implementing · XL · One build, run locally as on the central forge") ◻️ Parent acceptance for one build, not duplicate implementation. This includes the forge, pool and task-build work from release 0.6 and this release; return the whole local VM after a run and keep provider names out of workflows.
 
 </td></tr></table>
 

@@ -94,19 +94,21 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 124)">
 <text x="0" y="17">2. Control sign-in from the person's terminal</text>
-<desc>Analyzed 1, Accepted 2, Not filed yet 1. B271: porelo#B271 · Analyzed · M · A Login Is Cancelled From Its Own Terminal; B270: porelo#B270 · Accepted · - · A Forge Token Stored By The Forge's Own Login; PJ54: porelo-project#PJ54 · Accepted · — · The ChatGPT sign-in is a provider; Parent acceptance for the ChatGPT provider delivered in release 0.6; no second implementation.: Not filed yet; </desc>
+<desc>Finished 1, Analyzed 1, Accepted 1, Not filed yet 1. B271: porelo#B271 · Analyzed · M · A Login Is Cancelled From Its Own Terminal; B270: porelo#B270 · Accepted · - · A Forge Token Stored By The Forge's Own Login; PJ54: porelo-project#PJ54 · Finished · - · The ChatGPT sign-in is a provider; Parent acceptance for the ChatGPT provider delivered in release 0.6; no second implementation.: Not filed yet; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="100.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+<rect x="0.0" width="100.0" height="20" fill="#0ca30c" class="c-done" stroke="#fcfcfb"><title>Finished / Rejected: 1</title></rect>
 
-<rect x="100.0" width="200.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 2</title></rect>
+<rect x="100.0" width="100.0" height="20" fill="#77766f" class="c-analyzed" stroke="#fcfcfb"><title>Analyzed: 1</title></rect>
+
+<rect x="200.0" width="100.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
 
 <rect x="300.0" width="100.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 4 done</text>
+<text class="legend" x="410" y="17">1 of 4 done</text>
 </svg>
 
 

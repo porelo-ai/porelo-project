@@ -3,11 +3,11 @@
 
 Secrets stay with their owner and reach only the permitted consumer
 
-*Stand: 2026-11-04T05:49:29Z*
+*Stand: 2026-11-04T05:56:42Z*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Analyzed 1, Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Analyzed 1, Accepted 2, Not filed yet 1; Sprint 3: Review 2, Not filed yet 1; Sprint 4: Estimated 2; Sprint 5: Estimated 2, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Not filed yet 1; Sprint 8: Not filed yet 1](progress-85c5c3c0.svg)
+![Sprint 1: Estimated 1, Analyzed 1, Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Finished 1, Analyzed 1, Accepted 1, Not filed yet 1; Sprint 3: Review 2, Not filed yet 1; Sprint 4: Estimated 2; Sprint 5: Estimated 2, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Not filed yet 1; Sprint 8: Not filed yet 1](progress-45ded959.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -49,7 +49,7 @@ Test: Complete the forge's device-code login in a terminal on the machine. The t
 
 Test: Ask a Codex task a question through the ChatGPT sign-in. The container contains none of the real tokens; a rotated refresh token survives an interrupted broker refresh. Check the chosen rule for the additional startup host; it is enforced.
 
-⬜ [PJ54](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj54 "porelo-project#PJ54 · Accepted · — · The ChatGPT sign-in is a provider") ◻️ Parent acceptance for the ChatGPT provider delivered in release 0.6; no second implementation.
+🟩 [PJ54](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj54 "porelo-project#PJ54 · Finished · - · The ChatGPT sign-in is a provider") ◻️ Parent acceptance for the ChatGPT provider delivered in release 0.6; no second implementation.
 
 </td></tr></table>
 

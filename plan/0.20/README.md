@@ -3,7 +3,7 @@
 
 Work on Apple silicon, Fedora and Windows, with chosen drives and a shared secrets file
 
-*Stand: 2026-11-04T05:49:29Z*
+*Stand: 2026-11-04T05:56:42Z*
 
 ## Sprint progress
 

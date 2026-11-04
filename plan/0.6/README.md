@@ -3,11 +3,11 @@
 
 Porelo is built in Porelo tasks
 
-*Stand: 2026-11-04T05:52:08Z*
+*Stand: 2026-11-04T05:56:42Z*
 
 ## Sprint progress
 
-![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 8; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Finished 1, Estimated 1; Sprint 6d: Finished 3; Sprint 6e: Finished 4, Review 1; Sprint 6f: Finished 2; Sprint 6g: Finished 2; Sprint 6h: Finished 2; Sprint 6i: Finished 7; Sprint 6j: Finished 9; Sprint 6k: Finished 5; Sprint 6l: Finished 3; Sprint 6m: Finished 57; Sprint 6n: Finished 7; Sprint 6q: Finished 28, Review 41, Implementing 1, Accepted 3, Not filed yet 2; Sprint 6s: Finished 7, Review 1, Implementing 1; Sprint 7: Rejected 1, Review 4, Backlog 1, Analyzed 2, Idea 3; Sprint 7a: Backlog 6; Sprint 7b: Analyzed 4; Sprint 7c: Review 3, Estimated 2, Idea 3, Not filed yet 1; Sprint 8: Implementing 1, Idea 2; Sprint 8a: Review 4, Implementing 3, Idea 3; Sprint 8b: Accepted 1; Sprint 8c: Finished 2, Estimated 1, Not filed yet 1; Sprint 9: Review 24, Implementing 4, Backlog 6, Estimated 7, Analyzed 2, Accepted 4, Not filed yet 2; Sprint 9a: Review 1, Analyzed 1; Sprint 10: Not filed yet 1](progress-932acb96.svg)
+![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 8; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Finished 1, Estimated 1; Sprint 6d: Finished 3; Sprint 6e: Finished 4, Review 1; Sprint 6f: Finished 2; Sprint 6g: Finished 2; Sprint 6h: Finished 2; Sprint 6i: Finished 7; Sprint 6j: Finished 9; Sprint 6k: Finished 5; Sprint 6l: Finished 3; Sprint 6m: Finished 57; Sprint 6n: Finished 7; Sprint 6q: Finished 28, Review 42, Implementing 1, Accepted 2, Not filed yet 2; Sprint 6s: Finished 7, Review 2; Sprint 7: Rejected 1, Review 4, Backlog 1, Analyzed 2, Idea 3; Sprint 7a: Backlog 6; Sprint 7b: Analyzed 4; Sprint 7c: Review 3, Estimated 2, Idea 3, Not filed yet 1; Sprint 8: Implementing 1, Idea 2; Sprint 8a: Review 6, Implementing 1, Idea 3; Sprint 8b: Accepted 1; Sprint 8c: Finished 2, Estimated 1, Not filed yet 1; Sprint 9: Finished 1, Review 27, Implementing 2, Backlog 6, Estimated 7, Analyzed 2, Accepted 2, Not filed yet 2; Sprint 9a: Implementing 1, Rework 1; Sprint 10: Not filed yet 1](progress-096ace2d.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -695,7 +695,7 @@ Test: A host card with a DNS name or an IPv6 address is read and connected; a va
 
 Test: The project file alone needs a signer; a repository says whether its merge needs a review, and the page shows it.
 
-⬜ [PJ80](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj80 "porelo-project#PJ80 · Accepted · — · Only the project file needs a signer's signature") ⬜ [PJ81](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj81 "porelo-project#PJ81 · Accepted · — · A repository says whether a merge needs a review")
+⬜ [PJ80](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj80 "porelo-project#PJ80 · Accepted · — · Only the project file needs a signer's signature") 🟦 [PJ81](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj81 "porelo-project#PJ81 · Review · — · A repository says whether a merge needs a review")
 
 </td></tr></table>
 
@@ -709,7 +709,7 @@ Pulled forward from 0.7 beside the rebuild: the agent protocol only grows, and e
 
 Test: Without `--agent` and `--provider` the task starts with the Claude Code signed in there and says what it found and where; the interface shows the same choice.
 
-🟨 [PJ53](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj53 "porelo-project#PJ53 · Implementing · XL · The agent already on the machine is the default") 🟩 [B225](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b225 "porelo#B225 · Finished · - · The Agent Found On The Machine") 🟩 [CC36](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc36 "porelo-claude-code#CC36 · Finished · - · Report What Claude Code Finds Of Itself On The Host") 🟩 [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224 "porelo#B224 · Finished · - · An Agent Protocol That Only Grows") 🟩 [F143](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f143 "porelo-frontend#F143 · Finished · - · The Agent The Machine Found Is The Default") 🟦 [F325](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f325 "porelo-frontend#F325 · Review · — · Going Back To The Machine's Agent")
+🟦 [PJ53](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj53 "porelo-project#PJ53 · Review · XL · The agent already on the machine is the default") 🟩 [B225](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b225 "porelo#B225 · Finished · - · The Agent Found On The Machine") 🟩 [CC36](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc36 "porelo-claude-code#CC36 · Finished · - · Report What Claude Code Finds Of Itself On The Host") 🟩 [B224](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b224 "porelo#B224 · Finished · - · An Agent Protocol That Only Grows") 🟩 [F143](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f143 "porelo-frontend#F143 · Finished · - · The Agent The Machine Found Is The Default") 🟦 [F325](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f325 "porelo-frontend#F325 · Review · — · Going Back To The Machine's Agent")
 
 **Import one provider and recognize OMP ⚪ Not tested**
 
@@ -843,7 +843,7 @@ The two repositories everything rests on move last of the code, each with a way 
 
 Test: Not a walk: each issue's own acceptance holds: `main` read by its pushes, a pull request from the same repository counted as inside, one directory per release plan, work allowed to wait on work begun, Codex's forge pull requests and snapshot package, and the busy check waiting on a tool the scenario ends.
 
-🟨 [BT35](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt35 "porelo-buildtools#BT35 · Implementing · M · Main Read By Its Pushes, Not Its Commit Dates") 🟨 [BT36](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt36 "porelo-buildtools#BT36 · Implementing · S · A Forge Pull Request From The Same Repository Counts As Inside") 🟨 [BT38](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt38 "porelo-buildtools#BT38 · Implementing · S · One Directory Per Release Plan") 🟦 [BT40](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt40 "porelo-buildtools#BT40 · Review · S · Work May Wait On Work Begun") 🟦 [CX03](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx03 "porelo-codex#CX03 · Review · S · Forge Pull Requests") 🟦 [CX05](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx05 "porelo-codex#CX05 · Review · M · Snapshot Package") 🟦 [OM39](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om39 "porelo-omp#OM39 · Review · S · The Busy Check Waits On A Tool The Scenario Ends")
+🟨 [BT35](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt35 "porelo-buildtools#BT35 · Implementing · M · Main Read By Its Pushes, Not Its Commit Dates") 🟦 [BT36](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt36 "porelo-buildtools#BT36 · Review · S · A Forge Pull Request From The Same Repository Counts As Inside") 🟦 [BT38](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt38 "porelo-buildtools#BT38 · Review · S · One Directory Per Release Plan") 🟦 [BT40](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt40 "porelo-buildtools#BT40 · Review · S · Work May Wait On Work Begun") 🟦 [CX03](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx03 "porelo-codex#CX03 · Review · S · Forge Pull Requests") 🟦 [CX05](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx05 "porelo-codex#CX05 · Review · M · Snapshot Package") 🟦 [OM39](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om39 "porelo-omp#OM39 · Review · S · The Busy Check Waits On A Tool The Scenario Ends")
 
 **porelo and porelo-host each in its task, with a way back ⚪ Not tested**
 
@@ -921,7 +921,7 @@ Test: A task may start only the subagents its task allows; another is refused an
 
 Test: On a ready server, *Run its setup again* runs the setup once more and says how it ended; the server keeps its work. `porelo-host find` says which server is rented now, or that none is.
 
-🟨 [F223](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f223 "porelo-frontend#F223 · Implementing · S · A Ready Server Runs Its Setup Again") 🟨 [F224](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f224 "porelo-frontend#F224 · Implementing · S · Porelo-Host Says Which Server Is Rented Now") ⬜ [F264](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f264 "porelo-frontend#F264 · Accepted · S · A Server With No Project Given Back")
+🟦 [F223](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f223 "porelo-frontend#F223 · Review · S · A Ready Server Runs Its Setup Again") 🟦 [F224](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f224 "porelo-frontend#F224 · Review · S · Porelo-Host Says Which Server Is Rented Now") 🟦 [F264](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f264 "porelo-frontend#F264 · Review · S · A Server With No Project Given Back")
 
 **No channel file and no hand-over directory any more ⚪ Not tested**
 
@@ -953,7 +953,7 @@ Test: Each issue shows what its tasks spent; a second Maven build downloads noth
 
 Test: One guide from any repository; document tests run where the agent works; an issue names nothing of another repository.
 
-🟪 [OM18](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om18 "porelo-omp#OM18 · Estimated · S · Prove GitHub Copilot by hand before a release") 🟨 [PJ27](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj27 "porelo-project#PJ27 · Implementing · L · A contributor knows the rules") 🟪 [PJ46](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj46 "porelo-project#PJ46 · Estimated · M · Document tests run only where the agent works") ⬜ [PJ79](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj79 "porelo-project#PJ79 · Accepted · — · An issue names nothing of another repository")
+🟪 [OM18](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om18 "porelo-omp#OM18 · Estimated · S · Prove GitHub Copilot by hand before a release") 🟨 [PJ27](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj27 "porelo-project#PJ27 · Implementing · L · A contributor knows the rules") 🟪 [PJ46](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj46 "porelo-project#PJ46 · Estimated · M · Document tests run only where the agent works") 🟩 [PJ79](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj79 "porelo-project#PJ79 · Finished · - · An issue names nothing of another repository")
 
 </td></tr></table>
 
@@ -967,13 +967,13 @@ The host setup refuses a collection whose contents changed.
 
 Test: Install the host collection through the interface, then offer a changed collection tarball with the original digest; installation is refused before its contents run.
 
-🟦 [F137](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f137 "porelo-frontend#F137 · Review · — · The Collection Taken Only By Its Digest")
+🟨 [F137](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f137 "porelo-frontend#F137 · Rework · — · The Collection Taken Only By Its Digest")
 
 **Every workflow runs on the local forge as on the central one ⚪ Not tested**
 
 Test: The same build runs green on the local forge and the central one.
 
-⬛ [PJ60](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj60 "porelo-project#PJ60 · Analyzed · S &#40;each of parent, buildtools, Sluice&#41; · Every workflow runs on the local forge as on the central one")
+🟨 [PJ60](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj60 "porelo-project#PJ60 · Implementing · S &#40;each of parent, buildtools, Sluice&#41; · Every workflow runs on the local forge as on the central one")
 
 </td></tr></table>
 

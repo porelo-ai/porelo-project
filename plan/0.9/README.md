@@ -3,11 +3,11 @@
 
 Running alone: the accounts, a machine nobody sits at, and hosts from any provider
 
-*Stand: 2026-11-04T05:49:29Z*
+*Stand: 2026-11-04T05:56:42Z*
 
 ## Sprint progress
 
-![Sprint 1: Idea 1, Not filed yet 1; Sprint 2: Implementing 1, Backlog 1; Sprint 3: Accepted 1, Not filed yet 1; Sprint 4: Estimated 1, Idea 1; Sprint 5: Estimated 1, Accepted 1; Sprint 6: Idea 1, Not filed yet 1; Sprint 7: Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Idea 2; Sprint 10: Idea 2](progress-f21748d3.svg)
+![Sprint 1: Idea 1, Not filed yet 1; Sprint 2: Review 1, Backlog 1; Sprint 3: Accepted 1, Not filed yet 1; Sprint 4: Estimated 1, Idea 1; Sprint 5: Estimated 1, Accepted 1; Sprint 6: Idea 1, Not filed yet 1; Sprint 7: Not filed yet 1; Sprint 8: Not filed yet 1; Sprint 9: Idea 2; Sprint 10: Idea 2](progress-a03928bd.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -43,7 +43,7 @@ A second identical setup reports that nothing changed.
 
 Test: Set the same credential twice and run setup twice. The second run reports unchanged in text and JSON, with no unnecessary service restart or credential change. Change the value; it is reported as changed.
 
-🟨 [B214](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b214 "porelo#B214 · Implementing · M · A Vault Entry Put Again Unchanged") 🔲 [B216](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b216 "porelo#B216 · Backlog · M · A Second Setup Says Nothing Changed")
+🟦 [B214](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b214 "porelo#B214 · Review · M · A Vault Entry Put Again Unchanged") 🔲 [B216](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b216 "porelo#B216 · Backlog · M · A Second Setup Says Nothing Changed")
 
 </td></tr></table>
 
