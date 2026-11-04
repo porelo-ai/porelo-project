@@ -88,6 +88,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj93"></a>[PJ93](PJ93-Work-Arrives-Under-The-Branch-Names-A-Forge-Requires.md) | — | — | Wherever Porelo pushes work, online or after a gate, the branch name follows what that repository's forge accepts, and a person can set it. |
 | <a id="pj92"></a>[PJ92](PJ92-Every-Forge-Call-Behind-One-Contract.md) | — | — | The window asks only Core, Core asks only an adapter, and only the adapter knows a forge, so any forge offering what Porelo needs can be used. |
 | <a id="pj90"></a>[PJ90](PJ90-Several-Organizations-On-One-Machine.md) | — | [PJ87](#pj87) | One machine works with several organizations at once, each holding only its own people, projects and hosts and answered by its own identity source; a person keeps one card, filed in each organization, and the interface shows them side by side. |
 | <a id="pj77"></a>[PJ77](PJ77-Agents-Compared-On-The-Same-Work.md) | — | — | Several agents with their own models build the same issue side by side, one more compares the results, and time, tokens and cost are measured; finished issues with their commit serve as references; the overview feeds which agent and model suits which work. |
