@@ -38,7 +38,7 @@ sprints:
     functions:
       - title: "Remove access without deleting another person's keys"
         test: "Follow and unfollow a project, then clear the machine. Read remaining deploy keys, unreviewed or unpushed work and old unused slots. Remove the project's keys in the GitHub test account; another project's key remains."
-        issues: [porelo#B117, porelo#B153, porelo-frontend#F96]
+        issues: [porelo#B117, porelo#B153]
   - id: "5"
     title: "Measure hardware protection first"
     goal: "A device store derives the share at unlock instead of keeping it stored."

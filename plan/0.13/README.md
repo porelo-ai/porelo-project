@@ -3,11 +3,11 @@
 
 Secrets stay with their owner and reach only the permitted consumer
 
-*Stand: 2026-11-04T05:44:48Z*
+*Stand: 2026-11-04T05:49:29Z*
 
 ## Sprint progress
 
-![Sprint 1: Estimated 1, Analyzed 1, Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Analyzed 1, Accepted 2, Not filed yet 1; Sprint 3: Review 2, Not filed yet 1; Sprint 4: Estimated 3; Sprint 5: Estimated 2, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Not filed yet 1; Sprint 8: Not filed yet 1](progress-08bebaa4.svg)
+![Sprint 1: Estimated 1, Analyzed 1, Accepted 1, Idea 1, Not filed yet 1; Sprint 2: Analyzed 1, Accepted 2, Not filed yet 1; Sprint 3: Review 2, Not filed yet 1; Sprint 4: Estimated 2; Sprint 5: Estimated 2, Not filed yet 1; Sprint 6: Not filed yet 1; Sprint 7: Not filed yet 1; Sprint 8: Not filed yet 1](progress-85c5c3c0.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -77,7 +77,7 @@ Unused access and remaining work stay visible during cleanup.
 
 Test: Follow and unfollow a project, then clear the machine. Read remaining deploy keys, unreviewed or unpushed work and old unused slots. Remove the project's keys in the GitHub test account; another project's key remains.
 
-🟪 [B117](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b117 "porelo#B117 · Estimated · M · What Clearing Leaves For A Person") 🟪 [B153](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b153 "porelo#B153 · Estimated · M · Unused Slots And Keys Reported") 🟪 [F96](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f96 "porelo-frontend#F96 · Estimated · M · Keys A Machine No Longer Knows, Found By Their Title")
+🟪 [B117](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b117 "porelo#B117 · Estimated · M · What Clearing Leaves For A Person") 🟪 [B153](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b153 "porelo#B153 · Estimated · M · Unused Slots And Keys Reported")
 
 </td></tr></table>
 

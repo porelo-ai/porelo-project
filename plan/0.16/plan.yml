@@ -45,7 +45,7 @@ sprints:
     functions:
       - title: "Choose a repository and signing key"
         test: "Read all default repositories. Choose a signing key from a file or create one and inspect it in the shared overview. An unsuitable key is refused."
-        issues: [porelo-frontend#F147, porelo-frontend#F84, porelo-frontend#F94, porelo-frontend#F104]
+        issues: [porelo-frontend#F147, porelo-frontend#F94, porelo-frontend#F104]
       - title: "Recognize a token awaiting organization approval"
         test: "Create a project against the GitHub test organization with a token awaiting approval. The interface says it is waiting for approval instead of calling it invalid; after approval the operation succeeds."
         issues: [porelo-frontend#F115, porelo-frontend#F59]

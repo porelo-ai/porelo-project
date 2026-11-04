@@ -319,7 +319,7 @@ sprints:
       - title: "Each person's one key and card, kept in the registry"
         test: "A person's key and card are made once and filed under `people/` with the key also on their forge account; a card under another person's login, one whose key the forge account does not list, and a successor signed by a revoked key are refused, naming why; a changed key reaches the registry and each host; a lost key is replaced by an admin, and a single admin's backup key may only replace that entry."
         tested: "2026-11-02"
-        issues: [porelo#B337, porelo#B339, porelo#B338, porelo#B356, porelo#B346, porelo-frontend#F268, porelo-frontend#F280, porelo-forge-clients#FC04, porelo-forge-clients#FC07, porelo#B387]
+        issues: [porelo#B337, porelo#B339, porelo#B338, porelo#B356, porelo#B346, porelo-frontend#F268, porelo-frontend#F280, porelo-forge-clients#FC04, porelo-forge-clients#FC07]
         covers: [porelo-project#PJ83]
       - title: "A host reached over SSH only, its state taken from the registry"
         test: "The host's only open port is SSH; the forge and the homeserver are reached through their gates over the tunnel with no password and no VPN; the host takes its project admins, projects and persons from the signed registry state an admin brings, and refuses a card under another person's login, a host card not signed by a host admin of `owners.yml` and a successor card signed by a revoked key, naming why."
@@ -329,7 +329,7 @@ sprints:
       - title: "Admitted, registered, added and joined with one click, from lists"
         test: "The host admin admits a project admin by picking them from the registry's persons; the project admin registers their project and adds a developer the same way; the developer joins with one click; Machines, Projects and Forges are lists whose rows open their own pages, each list with a filter, each row with its ⋮; no VPN, CA or per-machine key is left in the interface."
         tested: "2026-11-02"
-        issues: [porelo#B352, porelo#B353, porelo-frontend#F269, porelo-frontend#F271, porelo-frontend#F272, porelo-frontend#F273, porelo-frontend#F278, porelo-frontend#F276, porelo-frontend#F287]
+        issues: [porelo#B352, porelo#B353, porelo-frontend#F269, porelo-frontend#F271, porelo-frontend#F272, porelo-frontend#F273, porelo-frontend#F278, porelo-frontend#F276]
         covers: [porelo-project#PJ83]
       - title: "Task keys certified, and each push judged when it arrives"
         test: "A task signs with its own key certified by the person who started it; the host records the certificate and the task's forge token, judges each push by its arrival, and refuses one by an expired certificate or a revoked key."
@@ -391,7 +391,7 @@ sprints:
         covers: [porelo-project#PJ89]
       - title: "A host carries projects and follows them by itself"
         test: "A host admin puts a project on a host with their central token; every member is admitted there within five minutes or at once on Refresh, and a member removed is locked there at the same moment, with no step of anyone; a person connects once per host and finds every project they are in ready, with no Join; a project taken off the host leaves nothing of itself there."
-        issues: [porelo-host#HO49, porelo-host#HO84, porelo-host#HO93, porelo-host#HO94, porelo-host#HO95, porelo-host#HO96, porelo-message-matrix#MX65, porelo-message-matrix#MX67, porelo-frontend#F312, porelo-frontend#F313, porelo-frontend#F319, porelo#B336, porelo#B409, porelo-frontend#F248, porelo-frontend#F334, porelo-frontend#F335, porelo-frontend#F336, porelo-frontend#F340, porelo-frontend#F342, porelo-frontend#F343, porelo-host#HO100, porelo-host#HO102, porelo-host#HO103, porelo-host#HO104, porelo-host#HO110, porelo-host#HO112, porelo-host#HO60]
+        issues: [porelo-host#HO49, porelo-host#HO84, porelo-host#HO93, porelo-host#HO94, porelo-host#HO95, porelo-host#HO96, porelo-message-matrix#MX65, porelo-message-matrix#MX67, porelo-frontend#F312, porelo-frontend#F313, porelo-frontend#F319, porelo#B336, porelo#B409, porelo-frontend#F334, porelo-frontend#F335, porelo-frontend#F336, porelo-frontend#F340, porelo-frontend#F342, porelo-frontend#F343, porelo-host#HO100, porelo-host#HO102, porelo-host#HO103, porelo-host#HO104, porelo-host#HO110, porelo-host#HO112, porelo-host#HO60]
         covers: [porelo-project#PJ89]
       - title: "A host prepared once, its roles on it, and a person leaving"
         test: "A host set up anew carries its host admin and no project; on it the host admin, a project admin and members each do what their role allows and nothing more, without the VPN; any member runs the gathered push to the central forge with their own token; a person with no membership left is purged after seven days; the host has no forge user `operator`."
@@ -536,9 +536,6 @@ sprints:
       - title: "The tokens counted per task, the dependencies shared"
         test: "Each issue shows what its tasks spent; a second Maven build downloads nothing again."
         issues: [porelo#B148, porelo-project#PJ38, porelo#B193]
-      - title: "An unfollow leaves nothing of the project"
-        test: "After `porelo project unfollow`, `porelo prune` finds nothing of the project left: no clone, no build lock, no upstream copy."
-        issues: [porelo#B238]
       - title: "Rules and document checks a contributor meets"
         test: "One guide from any repository; document tests run where the agent works; an issue names nothing of another repository."
         issues: [porelo-omp#OM18, porelo-project#PJ27, porelo-project#PJ46, porelo-project#PJ79]

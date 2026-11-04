@@ -144,15 +144,15 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 184)">
 <text x="0" y="17">4. Remove access without deleting another person's keys</text>
-<desc>Estimated 3. B117: porelo#B117 · Estimated · M · What Clearing Leaves For A Person; B153: porelo#B153 · Estimated · M · Unused Slots And Keys Reported; F96: porelo-frontend#F96 · Estimated · M · Keys A Machine No Longer Knows, Found By Their Title; </desc>
+<desc>Estimated 2. B117: porelo#B117 · Estimated · M · What Clearing Leaves For A Person; B153: porelo#B153 · Estimated · M · Unused Slots And Keys Reported; </desc>
 <svg x="456" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 3</title></rect>
+<rect x="0.0" width="400.0" height="20" fill="#9575b5" class="c-estimated" stroke="#fcfcfb"><title>Estimated: 2</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 3 done</text>
+<text class="legend" x="410" y="17">0 of 2 done</text>
 </svg>
 
 
