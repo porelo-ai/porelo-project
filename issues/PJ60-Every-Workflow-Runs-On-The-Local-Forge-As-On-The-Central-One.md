@@ -1,6 +1,6 @@
 # PJ60 — Every workflow runs on the local forge as on the central one
 
-**Status:** Analyzed for sprint 4 (porelo-parent, porelo-buildtools, porelo-message-sluice); the later repositories are analysed with their sprints.
+**Status:** Implementing (operator, 2026-11-04). The later repositories are analysed with their sprints.
 
 **What must be true.** Every repository of the project that builds runs the same `build.yml` green on the local Forgejo
 and on the central forge, with no edit between them: the machines it asks for by kind, the registry and the provider

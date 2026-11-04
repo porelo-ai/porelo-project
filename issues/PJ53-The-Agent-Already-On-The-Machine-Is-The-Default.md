@@ -1,6 +1,6 @@
 # PJ53 — The agent already on the machine is the default
 
-**Status:** Implementing.
+**Status:** Review (operator, 2026-11-04).
 **Size:** XL - four repositories and a contract change every agent repository reads; splits into the issues under
 *Plan*.
 

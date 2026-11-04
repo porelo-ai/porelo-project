@@ -1,6 +1,6 @@
 # PJ81 — A repository says whether a merge needs a review
 
-**Status:** Accepted.
+**Status:** Review (operator, 2026-11-04).
 
 **What must be true.** The project file says for each repository whether a pull request on the host's local forge needs
 another person's approval before it is merged (`review: required`, the default) or whether a person with a developer's
