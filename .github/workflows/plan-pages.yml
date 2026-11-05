@@ -1,0 +1,91 @@
+# Renders the release plans from every repository's main and publishes the pages to the branch
+# plan-pages. main holds the sources.
+name: Plan pages
+
+on:
+    push:
+        branches: [main]
+        paths:
+            - "plan/**"
+            - ".github/scripts/plan-*"
+            - ".github/workflows/plan-pages.yml"
+    schedule:
+        # States change in other repositories, and often with [skip ci].
+        - cron: "17 * * * *"
+    workflow_dispatch:
+
+permissions:
+    contents: read
+
+concurrency:
+    group: plan-pages
+    cancel-in-progress: false
+
+jobs:
+    # Runs Maven and what it fetches, so it can only read.
+    render:
+        runs-on: ubuntu-24.04
+        timeout-minutes: 20
+        steps:
+            - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+              with:
+                  path: porelo-project
+                  fetch-depth: 0
+                  persist-credentials: false
+
+            - name: Render
+              env:
+                  GITHUB_TOKEN: ${{ github.token }}
+                  RELEASE_VERSION: "0.5.1"
+              run: |
+                  export JAVA_HOME="$JAVA_HOME_25_X64"
+                  bash porelo-project/.github/scripts/plan-pages.sh "$GITHUB_WORKSPACE"
+
+            - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+              with:
+                  name: plan-pages
+                  path: plan-pages
+                  if-no-files-found: error
+                  retention-days: 1
+                  overwrite: true
+
+    # Writes one commit, with no force, by the runner's git and gh alone: no checkout, no fetched
+    # action, and what it takes from the job before is only files, never run.
+    publish:
+        needs: render
+        runs-on: ubuntu-24.04
+        timeout-minutes: 5
+        permissions:
+            actions: read
+            contents: write
+        steps:
+            - name: Publish
+              env:
+                  GH_TOKEN: ${{ github.token }}
+              run: |
+                  gh auth setup-git
+                  gh run download "$GITHUB_RUN_ID" --repo "$GITHUB_REPOSITORY" --name plan-pages --dir pages
+                  git init -q repository
+                  cd repository
+                  git remote add origin "https://github.com/$GITHUB_REPOSITORY.git"
+                  parent=""
+                  asked=0
+                  # Exit 2 alone says the branch is not there yet; any other failure is no answer.
+                  git ls-remote --exit-code origin refs/heads/plan-pages >/dev/null || asked=$?
+                  if [ "$asked" = 0 ]; then
+                      git fetch -q origin +refs/heads/plan-pages:refs/remotes/origin/plan-pages
+                      parent=$(git rev-parse refs/remotes/origin/plan-pages)
+                  elif [ "$asked" != 2 ]; then
+                      exit "$asked"
+                  fi
+                  git --work-tree=../pages add -A .
+                  tree=$(git write-tree)
+                  if [ -n "$parent" ] && [ "$tree" = "$(git rev-parse "$parent^{tree}")" ]; then
+                      echo "the pages did not change"
+                      exit 0
+                  fi
+                  commit=$(git -c user.name="github-actions[bot]" \
+                      -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+                      commit-tree "$tree" ${parent:+-p "$parent"} -m "Render the plans from every repository's main")
+                  git push -q origin "$commit:refs/heads/plan-pages"
+                  echo "published $commit"

@@ -4,6 +4,7 @@ after:
   porelo-project#PJ38: [porelo#B148, porelo-message-sluice#SL35]
   porelo-project#PJ52: [porelo#B192]
   # porelo
+  porelo#B358: [porelo#B172]
   porelo#B305: [porelo-buildtools#BT37]
   porelo#B171: [porelo-message-sluice#SL24]
   porelo#B166: [porelo-message-sluice#SL24]

@@ -1,6 +1,6 @@
 # PJ94 — The Plan Pages Are Built Outside Main
 
-**Status:** Backlog.
+**Status:** Implementing.
 
 **What must be true.** The release plans always show the issues' real states without anyone remembering to render them, and no build
 writes to `main`.
@@ -24,3 +24,10 @@ those stood up to 140 commits behind `origin/main`.
 
 - How the workflow gets `porelo-release`, from the snapshot repository or by building it.
 - What reads the rendered pages today, such as the Coordinator's local progress page.
+
+## What was settled in building it
+
+- `porelo-release` comes from the snapshot repository, at the version the workflow names; a checkout of `porelo-buildtools` at that tag gives its dependencies.
+- A plan that does not render turns the run red, and the published pages stay. What `plan check` finds is a warning with the findings in the job summary, not red: on 2026-11-05 all 16 plans had findings, such as 45 lines in 0.6, so red would have hidden every page.
+- The table of issues by status is rendered there too, so it needs no one to remember it.
+- This repository's own commits with `[skip ci]` start no run at a push; the hourly run takes them.

@@ -483,8 +483,8 @@ and the UTC time that text last changed; change it in the channel first, never i
   not in `project.yml`, because `project.yml` is defined here.
 - **`project.yml`'s keys are documented in `porelo`, under `doc/project-file.md`**, not here.
 - **A release is planned in `plan/<release>/plan.yml`**: its sprints, the functions the operator tests and their
-  issues, never an issue of the release as a whole. `porelo-release plan render` makes its page and `plan check`
-  checks it; the plan is kept current at every change of state.
+  issues, never an issue of the release as a whole. The workflow `plan-pages.yml` renders its page from every repository's `main`, at a
+  push and hourly, onto the branch `plan-pages`, and says what `plan check` finds; the plan is kept current at every change of state.
 - **`plan/later/plan.yml` holds every issue no release holds yet.** A new Idea goes there when it is filed, and leaves it when a release
   takes it.
 - **Sprints are numbered from one within each release, without gaps.** A letter (`6a`, `6b`) marks only a
