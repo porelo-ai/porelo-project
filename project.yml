@@ -122,7 +122,7 @@ repositories:
 
 image:
 
-    base_image: "ubuntu:24.04@sha256:a853f94d226358a79c740cfc7bce0c289748f3fe3488d921d038ccd752c61b60"
+    from: "ubuntu:24.04@sha256:a853f94d226358a79c740cfc7bce0c289748f3fe3488d921d038ccd752c61b60"
 
 # Nothing that is not named here resolves at all. The builds are Java and Maven, and the Maven
 # Wrapper fetches Maven from the same host.
