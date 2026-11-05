@@ -47,7 +47,7 @@ and the first build fails behind the firewall.
   with where it is set (for example "Java release: set in parent `org.fuin.porelo:porelo-parent`, not in the local
   repository"), never guessed; building the project once fills the cache. **The code does not keep this:** `porelo` starts a
   plugin in no network namespace or sandbox, and only the plugin's contract obliges it to open no connection
-  (`doc/ecosystem-plugins.md` in `porelo`).
+  (`doc/ecosystem-adapters.md` in `porelo`).
 - **Recognition secures nothing.** It runs on a developer's own machine and eases the start of someone new to Porelo;
   it reads the files as the build tool itself would, and is judged by matching the real build.
 - **The Maven plugin builds the effective model with Maven's own `maven-model-builder`**, offline, with a resolver
