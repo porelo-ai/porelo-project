@@ -29,12 +29,12 @@ The issues themselves are in [issues/](https://github.com/porelo-ai/porelo-proje
 
 | Repository | Total | Idea | Accepted | Analyzed | Estimated | Backlog | Implementing | Review |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| porelo | 223 | 71 | 12 | 40 | 41 | 13 | 4 | 42 |
-| porelo-frontend | 144 | 44 | 2 | 11 | 15 | 6 | 0 | 66 |
+| porelo | 226 | 71 | 12 | 40 | 41 | 16 | 4 | 42 |
+| porelo-frontend | 146 | 44 | 2 | 11 | 15 | 8 | 0 | 66 |
 | porelo-project | 62 | 17 | 12 | 6 | 6 | 0 | 19 | 2 |
 | porelo-host | 56 | 26 | 0 | 0 | 1 | 3 | 0 | 26 |
 | porelo-message-matrix | 26 | 5 | 1 | 1 | 0 | 3 | 0 | 16 |
-| porelo-buildtools | 17 | 4 | 3 | 0 | 0 | 1 | 1 | 8 |
+| porelo-buildtools | 18 | 4 | 3 | 0 | 0 | 1 | 1 | 9 |
 | porelo-intellij | 13 | 6 | 1 | 0 | 1 | 1 | 1 | 3 |
 | porelo-ecosystems | 12 | 1 | 4 | 0 | 0 | 2 | 1 | 4 |
 | porelo-omp | 12 | 4 | 1 | 1 | 1 | 1 | 0 | 4 |
