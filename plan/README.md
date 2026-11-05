@@ -24,3 +24,28 @@ by `porelo-release plan render`, with a progress bar per sprint, and is not edit
 | [later](later/) | Everything not yet placed in a release; a new Idea starts here |
 
 The issues themselves are in [issues/](../issues/README.md).
+
+# Issues by status
+
+| Repository | Total | Idea | Accepted | Analyzed | Estimated | Backlog | Implementing | Review |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| porelo | 218 | 71 | 12 | 40 | 41 | 11 | 4 | 39 |
+| porelo-frontend | 143 | 43 | 2 | 11 | 15 | 8 | 0 | 64 |
+| porelo-project | 62 | 17 | 12 | 6 | 6 | 1 | 18 | 2 |
+| porelo-host | 56 | 26 | 0 | 0 | 1 | 3 | 0 | 26 |
+| porelo-message-matrix | 26 | 5 | 1 | 1 | 0 | 3 | 0 | 16 |
+| porelo-buildtools | 17 | 4 | 3 | 0 | 0 | 1 | 1 | 8 |
+| porelo-intellij | 13 | 6 | 1 | 0 | 1 | 1 | 1 | 3 |
+| porelo-ecosystems | 12 | 1 | 4 | 0 | 0 | 2 | 1 | 4 |
+| porelo-omp | 12 | 4 | 1 | 1 | 1 | 1 | 0 | 4 |
+| porelo-codex | 10 | 3 | 1 | 1 | 1 | 0 | 0 | 4 |
+| porelo-pi | 10 | 5 | 1 | 0 | 0 | 1 | 0 | 3 |
+| porelo-adapters | 9 | 6 | 2 | 0 | 0 | 1 | 0 | 0 |
+| porelo-claude-code | 9 | 2 | 1 | 0 | 2 | 1 | 0 | 3 |
+| porelo-message-sluice | 9 | 1 | 1 | 1 | 3 | 1 | 0 | 2 |
+| porelo-agy | 7 | 3 | 1 | 1 | 0 | 0 | 0 | 2 |
+| porelo-ai.github.io | 4 | 1 | 0 | 0 | 2 | 0 | 1 | 0 |
+| porelo-forge-clients | 4 | 2 | 1 | 1 | 0 | 0 | 0 | 0 |
+| porelo-parent | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| porelo-test-project | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| porelo-website | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
