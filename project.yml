@@ -18,6 +18,7 @@ project:
 # 'porelo' is not among them: that name belongs to the project's own repository, above.
 repositories:
 
+    # core and sluice are taken by the rehearsal host: their upstream is its forge, central is GitHub.
     core:
         upstream: "http://127.0.0.1:3001/porelo/porelo.git"
         central: "git@github.com:porelo-ai/porelo.git"
