@@ -20,8 +20,8 @@ repositories, toolchain, VM account and habits, and a fault found in the first m
 
 The move happens twice. **A trial move per repository**, in the sprint that prepares it: the repository runs in a task
 on the host rented for that sprint until its check is green, then goes the way back and is worked on the development
-machine again. **The real move of all of them at once**, once every repository has passed its trial: one switch in
-`project.yml` for all, then each repository's check on the host.
+machine again. **The real move of all of them at once**, once every repository has passed its trial: the host carries
+the whole project, then each repository's check on the host.
 
 Every repository's move follows these steps; a repository's own move issue states only what is particular to it, and
 the coordinator gives its agent this procedure when its move is due.
@@ -56,8 +56,19 @@ needed. After the real move, an agent's session on the development machine and i
   through the central forge** ([BT42](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt42)). So
   a freshly rented host builds at once, and `porelo-parent` and `porelo-buildtools` build on its forge only when changed
   there.
-- **The project `porelo` is `online`**, decided 2026-11-04: a task's push goes to its own branch on the forge without approval at the gate, and `porelo build status` reads its Build; `guarded` allows neither. `project.yml` changes before the first trial, with what that class asks of the file.
-  Read in the code by Agent Core, not run: the switch is a signed commit by the operator, as is every later `project.yml` change, and `project.yml` so far holds no signed commit; `builds:` is needed, with one block per project, so a trial on the host's forge and a dry run on the central one each have their own; no task of the project runs across the switch and `gate review` is empty first; a second trial under one task name needs `porelo/<task>` deleted; the pull request's approver is another account than `builds.credential`. Open: whether `access`, with `mail.transports` moved to `access.yml`, belongs to the first trial.
+- **`project.yml` names no host** (operator, 2026-11-06). It holds the project's rules and each repository's central
+  forge as `central:`, nothing that changes with the host the project is put on. Which host carries which repository
+  is the organization's: the host's `host.yml` names the project, whole or by some of its repositories
+  ([B479](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b479)). A host derives its own forge's
+  address for what it carries; a task pushes there, and the gathered push takes the work on to the central forge.
+  A build reader follows that derived address; no `builds:` block names a host's forge. How a project the host does
+  not carry, such as the default project, works on a host is open in
+  [B484](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b484).
+- **The project `porelo` is `online`**, decided 2026-11-04: a task's push goes to its own branch on the forge without
+  approval at the gate, and `porelo build status` reads its Build; `guarded` allows neither. `project.yml` changes for
+  that class once, signed by the operator. No task of the project runs across a carry, and `gate review` is empty
+  first; a second trial under one task name needs `porelo/<task>` deleted. Open: whether `access`, with
+  `mail.transports` moved to `access.yml`, belongs to the first trial.
 
 ### Before each trial
 
@@ -77,10 +88,10 @@ needed. After the real move, an agent's session on the development machine and i
 
 ### The steps
 
-The same for a trial and for the real move, which takes step 1 for every repository in one commit.
+The same for a trial and for the real move, which carries the whole project in step 1.
 
-1. **The switch:** in `project.yml` the repository takes the host's forge as its upstream; one commit in
-   porelo-project.
+1. **The carry:** the host carries the repository, `porelo org host carry <host> porelo --repository <name>` or, in
+   the window, *Put it on a machine…* with that repository chosen. `project.yml` does not change.
 2. **The start:** `porelo task start --repository <name> --agent <agent>` on the host, attended, its terminal opened
    by the operator.
 3. **The work:** the agent takes its move's own small change from start to review inside the task, through the gate,
@@ -149,7 +160,8 @@ Every trial ends with it, and a moved agent can take it at any time - for a fail
 or any other reason:
 
 1. What the host's forge holds of the task's work is fetched into the agent's local checkout.
-2. The repository's upstream switches back in `project.yml`, one commit in porelo-project.
+2. The host stops carrying the repository, `porelo org host uncarry <host> porelo --repository <name>`; it holds the
+   repository while work on it has not reached the central forge. `project.yml` does not change.
 3. The local session resumes, with its watcher.
 
 Work that only the host held is lost with the host, as for any work on it; the host's backup is what protects it.
