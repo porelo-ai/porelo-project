@@ -423,6 +423,7 @@ sprints:
         issues: [porelo-project#PJ53, porelo#B225, porelo-claude-code#CC36, porelo#B224, porelo-frontend#F143, porelo-frontend#F325]
       - title: "Import one provider and recognize OMP"
         test: "Sign Pi in to two providers, import the chosen provider and start a task; the other sign-in must not be selected. Detect OMP through agent.db; its sign-in is shown as \"cannot say\" and left to `vault put` and `vault authorize`."
+        tested: "2026-11-06"
         issues: [porelo#B226, porelo-pi#PI36, porelo-omp#OM32]
   - id: "7"
     title: "The move, wave 1: the smallest repositories"

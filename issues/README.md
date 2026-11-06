@@ -20,7 +20,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj53"></a>[PJ53](PJ53-The-Agent-Already-On-The-Machine-Is-The-Default.md) | XL | — | A start without `--agent` and `--provider` takes the agent already installed and signed in on the machine, with its provider: each packaged agent reports what it finds of itself on the host, by path and never a credential's value; `porelo` chooses, a flag still wins, the choice and its source are named, and what is found but not in the vault is offered for `vault import`. |
 
 ## Implementing
 
@@ -115,6 +114,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Title | What was built |
 |---|---|---|
+| <a id="pj53"></a>[PJ53](README.md#pj53) | The agent already on the machine is the default | A start without `--agent` and `--provider` takes the agent installed and signed in on the machine, with its provider; each packaged agent reports what it finds of itself by path, never a credential's value; the choice and its source are named, and a sign-in not in the vault is offered for `vault import` (0.6 sprint 6s). |
 | <a id="pj83"></a>[PJ83](README.md#pj83) | A person joins with one click | One Ed25519 key per person, cards and the organization signed in Git on the central forge, lists built from it, task keys certified per task, and SSH alone with no VPN (0.6 sprints 6m and 6q). |
 | <a id="pj89"></a>[PJ89](README.md#pj89) | A project is handled apart from its machines | A project and its members are edited on the project, which names no host; a host admin puts it on a host, and the host follows the organization by itself, admitting and locking members with no step of anyone; no Join, no access file (0.6 sprint 6q). |
 | <a id="pj88"></a>[PJ88](README.md#pj88) | A project created from the interface | An organization owner adds a project and names its project admin, who makes its project repository and signs its first `project.yml` on first opening it (0.6 sprint 6q). |
