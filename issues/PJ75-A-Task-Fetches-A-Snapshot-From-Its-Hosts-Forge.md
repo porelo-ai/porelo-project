@@ -1,6 +1,6 @@
 # PJ75 — A task fetches a snapshot from its host's forge
 
-**Status:** Idea.
+**Status:** Accepted (operator, 2026-11-06).
 **Size:** M - a read token for the task on the host, a destination for the registry at a host's start, and the task's Maven reading both sources.
 
 **What must be true.** A task on a host with a local forge fetches a snapshot from the forge's package registry by the
