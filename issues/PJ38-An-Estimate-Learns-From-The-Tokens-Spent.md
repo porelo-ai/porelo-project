@@ -103,7 +103,14 @@ Read in porelo-project, porelo and the coordinator's local files; nothing run. `
 the first issue built from start to Finished in tasks, which sprint 10's real move gives. Until then the acceptance
 runs on fixtures only.
 
-## Open questions
+## Answered
+
+- **Where the records and the statistic live** (operator, 2026-11-06): one file per repository,
+  `issues/finished.jsonl`, as recommended below.
+- **What becomes of the velocity file** (operator, 2026-11-06): both its minutes and its tokens are taken over as
+  the starting values of each T-shirt size; the statistic does not start empty.
+
+## Open questions as they were asked
 
 - **Where the records and the statistic live.** Recommended: one file per repository, `issues/finished.jsonl`, a
   line per finished issue, written by the agent owning the repository in the commit that sets Finished, since only it

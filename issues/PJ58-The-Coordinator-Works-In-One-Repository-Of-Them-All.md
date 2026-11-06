@@ -96,6 +96,8 @@ test needs only `porelo-all` and the refusal, not that move.
 
 ## Open questions
 
+Both stay open by the operator's word (2026-11-06): discussed when the coordinator's move is due.
+
 - **Who approves the split.** Recommended: the pull request the split opens in `porelo-project` on the host's forge,
   approved by the operator like any other repository's, so no new approval exists and nothing in `porelo-all` is ever
   merged. The other way, the gate of the coordinator's task, would approve before the refusal has run.
