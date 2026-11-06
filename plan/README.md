@@ -29,8 +29,8 @@ The issues themselves are in [issues/](https://github.com/porelo-ai/porelo-proje
 
 | Repository | Total | Idea | Accepted | Analyzed | Estimated | Backlog | Implementing | Review |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| porelo | 226 | 71 | 12 | 40 | 41 | 16 | 4 | 42 |
-| porelo-frontend | 146 | 44 | 2 | 11 | 15 | 8 | 0 | 66 |
+| porelo | 227 | 71 | 12 | 40 | 41 | 9 | 6 | 48 |
+| porelo-frontend | 149 | 46 | 2 | 11 | 15 | 6 | 0 | 69 |
 | porelo-project | 62 | 17 | 12 | 6 | 6 | 0 | 19 | 2 |
 | porelo-host | 56 | 26 | 0 | 0 | 1 | 3 | 0 | 26 |
 | porelo-message-matrix | 26 | 5 | 1 | 1 | 0 | 3 | 0 | 16 |
