@@ -19,7 +19,8 @@ project:
 repositories:
 
     core:
-        upstream: "git@github.com:porelo-ai/porelo.git"
+        upstream: "http://127.0.0.1:3001/porelo/porelo.git"
+        central: "git@github.com:porelo-ai/porelo.git"
         description: "The CLI, the daemon, the gate and the guarantees they make"
         issues: ["B", "P"]
         maturity: "crazy-chicken"
@@ -31,7 +32,8 @@ repositories:
         maturity: "crazy-chicken"
 
     sluice:
-        upstream: "git@github.com:porelo-ai/porelo-message-sluice.git"
+        upstream: "http://127.0.0.1:3001/porelo/porelo-message-sluice.git"
+        central: "git@github.com:porelo-ai/porelo-message-sluice.git"
         description: "The message filter: what may pass between tasks"
         issues: ["SL"]
         maturity: "crazy-chicken"
