@@ -3,11 +3,11 @@
 
 Everything not yet placed in a release
 
-*Stand: 2026-11-06T10:45:50Z*
+*Stand: 2026-11-06T17:21:12Z*
 
 ## Sprint progress
 
-![Sprint 1: Finished 1, Review 12, Implementing 2, Backlog 1, Estimated 6, Analyzed 6, Accepted 5, Idea 115](progress-d8cf5702.svg)
+![Sprint 1: Finished 1, Review 12, Implementing 2, Backlog 2, Estimated 6, Analyzed 6, Accepted 5, Idea 114](progress-b86444b5.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -89,7 +89,7 @@ Test: Not planned for a test yet.
 
 Test: Not planned for a test yet.
 
-🟦 [MX76](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx76 "porelo-message-matrix#MX76 · Review · M · A Host Reaches The Room On The Development Machine") 🟧 [MX60](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx60 "porelo-message-matrix#MX60 · Idea · - · The Gate Says Why It Failed") 🟧 [MX63](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx63 "porelo-message-matrix#MX63 · Idea · - · A Loopback Client Signs In On The Person's Click") 🟧 [MX64](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx64 "porelo-message-matrix#MX64 · Idea · - · No Port Reaches The Homeserver Behind Its Gate") 🟦 [MX79](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx79 "porelo-message-matrix#MX79 · Review · S · Only The Forward's Own Page Reads The Gate")
+🟦 [MX76](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx76 "porelo-message-matrix#MX76 · Review · M · A Host Reaches The Room On The Development Machine") 🔲 [MX60](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx60 "porelo-message-matrix#MX60 · Backlog · S · The Gate Says Why It Failed") 🟧 [MX63](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx63 "porelo-message-matrix#MX63 · Idea · - · A Loopback Client Signs In On The Person's Click") 🟧 [MX64](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx64 "porelo-message-matrix#MX64 · Idea · - · No Port Reaches The Homeserver Behind Its Gate") 🟦 [MX79](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx79 "porelo-message-matrix#MX79 · Review · S · Only The Forward's Own Page Reads The Gate")
 
 **porelo-message-sluice ⚪ Not tested**
 

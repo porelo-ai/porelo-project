@@ -29,21 +29,21 @@ The issues themselves are in [issues/](https://github.com/porelo-ai/porelo-proje
 
 | Repository | Total | Idea | Accepted | Analyzed | Estimated | Backlog | Implementing | Review |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| porelo | 213 | 72 | 12 | 41 | 41 | 7 | 5 | 35 |
-| porelo-frontend | 123 | 45 | 2 | 12 | 15 | 6 | 0 | 43 |
-| porelo-project | 57 | 17 | 12 | 6 | 6 | 0 | 15 | 1 |
-| porelo-host | 51 | 28 | 0 | 0 | 1 | 3 | 0 | 19 |
-| porelo-message-matrix | 25 | 5 | 1 | 1 | 0 | 3 | 0 | 15 |
-| porelo-buildtools | 19 | 5 | 3 | 0 | 0 | 1 | 1 | 9 |
-| porelo-ecosystems | 14 | 2 | 4 | 1 | 0 | 2 | 1 | 4 |
+| porelo | 221 | 71 | 12 | 41 | 41 | 8 | 6 | 42 |
+| porelo-frontend | 126 | 45 | 2 | 11 | 16 | 6 | 0 | 46 |
+| porelo-project | 56 | 16 | 12 | 6 | 6 | 1 | 15 | 0 |
+| porelo-host | 53 | 28 | 0 | 0 | 1 | 3 | 0 | 21 |
+| porelo-message-matrix | 26 | 3 | 1 | 1 | 0 | 3 | 2 | 16 |
+| porelo-buildtools | 19 | 4 | 3 | 0 | 1 | 1 | 1 | 9 |
+| porelo-ecosystems | 14 | 1 | 4 | 1 | 0 | 2 | 1 | 5 |
 | porelo-intellij | 13 | 6 | 1 | 0 | 1 | 1 | 1 | 3 |
 | porelo-omp | 12 | 4 | 1 | 1 | 1 | 1 | 0 | 4 |
-| porelo-codex | 10 | 3 | 1 | 1 | 1 | 0 | 0 | 4 |
+| porelo-codex | 10 | 3 | 1 | 0 | 2 | 0 | 0 | 4 |
 | porelo-pi | 10 | 5 | 1 | 0 | 0 | 1 | 0 | 3 |
 | porelo-adapters | 9 | 6 | 2 | 0 | 0 | 1 | 0 | 0 |
 | porelo-claude-code | 9 | 2 | 1 | 0 | 2 | 1 | 0 | 3 |
-| porelo-message-sluice | 9 | 1 | 1 | 1 | 3 | 1 | 0 | 2 |
-| porelo-agy | 7 | 3 | 1 | 1 | 0 | 0 | 0 | 2 |
+| porelo-message-sluice | 9 | 1 | 1 | 1 | 3 | 0 | 1 | 2 |
+| porelo-agy | 7 | 3 | 1 | 0 | 1 | 0 | 0 | 2 |
 | porelo-ai.github.io | 4 | 1 | 0 | 0 | 2 | 0 | 1 | 0 |
 | porelo-forge-clients | 4 | 2 | 1 | 1 | 0 | 0 | 0 | 0 |
 | porelo-parent | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |

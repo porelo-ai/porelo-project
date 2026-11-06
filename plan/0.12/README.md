@@ -3,7 +3,7 @@
 
 Installed packages, setup scripts and images have a verifiable origin
 
-*Stand: 2026-11-06T10:13:17Z*
+*Stand: 2026-11-06T17:21:12Z*
 
 ## Sprint progress
 
