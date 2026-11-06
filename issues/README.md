@@ -45,12 +45,12 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj75"></a>[PJ75](PJ75-A-Task-Fetches-A-Snapshot-From-Its-Hosts-Forge.md) | M + S | — | A task on a host with a local forge fetches a snapshot from the forge's registry by its declared name without a credential put into the project, and still reaches nothing else on the host; the private organization refuses it today with `401`; the shared building blocks' organization is public on the host, read by everyone there without a token. |
 
 ## Analyzed
 
 | # | Size | Blocked by | What it covers | Open questions |
 |---|---|---|---|---|
-| <a id="pj75"></a>[PJ75](PJ75-A-Task-Fetches-A-Snapshot-From-Its-Hosts-Forge.md) | M + S | — | A task on a host with a local forge fetches a snapshot from the forge's registry by its declared name without a credential put into the project, and still reaches nothing else on the host; the private organization refuses it today with `401`; the shared building blocks' organization is public on the host, read by everyone there without a token. |
 | <a id="pj09"></a>[PJ09](PJ09-A-Gates-Green-Says-Nothing-Until-Its-Reference-Set-Can-Change.md) | L | — | Every gate names its reference set; one that is empty, cannot change or is read by nothing is not counted as coverage. | — |
 | <a id="pj16"></a>[PJ16](PJ16-An-Organisation-Decides-Which-Providers-Its-Machines-Use.md) | L | — | A root-owned machine policy names the providers tasks may use, and narrows follows, prompts and the `online` class; a developer cannot widen it. | — |
 | <a id="pj03"></a>[PJ03](PJ03-An-Attachment-May-Be-Permitted.md) | XL | — | Whether a message may carry more than text becomes an operator's decision, per direction, project and peer, refused by default. | — |

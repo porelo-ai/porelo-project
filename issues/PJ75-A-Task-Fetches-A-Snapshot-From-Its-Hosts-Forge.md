@@ -1,6 +1,6 @@
 # PJ75 — A task fetches a snapshot from its host's forge
 
-**Status:** Analyzed.
+**Status:** Backlog (operator, 2026-11-06).
 **Size:** M + S - Porelo's package route, Maven answers and settings (M, porelo), the task token's `read:package` scope (S, porelo-host).
 
 **What must be true.** A task on a host with a local forge fetches a snapshot from the forge's package registry by the
