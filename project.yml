@@ -36,6 +36,8 @@ repositories:
         upstream: "http://127.0.0.1:3001/porelo/porelo-message-sluice.git"
         central: "git@github.com:porelo-ai/porelo-message-sluice.git"
         description: "The message filter: what may pass between tasks"
+        # For the rehearsal only: one person cannot approve their own pull request. Set back after.
+        review: "optional"
         issues: ["SL"]
         maturity: "crazy-chicken"
 
