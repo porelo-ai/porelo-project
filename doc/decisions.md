@@ -13,7 +13,7 @@ it stays and what would change the answer.
 | Only ssh reaches a host in normal work | a developer and a project admin reach a host by ssh with their own key, never by a VPN; the VPN is the installation's alone, and a VPN per person is allowed only while the project's own work moves onto its hosts | [entry](#only-ssh-reaches-a-host-in-normal-work) |
 | The project file alone needs the project admin's signature | a follow checks every commit that changes the project file, not the top of `main`; developers change the rest of the project's repository on their own; each repository says whether a merge needs a second person's review; an agent never merges | [entry](#the-project-file-alone-needs-the-project-admins-signature) |
 | A machine belongs to one organization, and a project to one host | Porelo's word for who manages people, projects and hosts is "organization"; a machine has one, set at setup; a project is on one host at a time, with every member | [entry](#a-machine-belongs-to-one-organization-and-a-project-to-one-host) |
-| A repository of its own stays in Default and says what it needs | a checkout with no project of an organization goes into `default`, and no start writes a project file for it; the repository's `porelo.yml` has the project file's form, less what defines a project, and every key it sets overrides the project file's, egress and limits included; in `default` the person allows it once on this machine and is asked again only where it changes; in a project of an organization it is signed by the project admin like the project file | [entry](#a-repository-of-its-own-stays-in-default-and-says-what-it-needs) |
+| A repository of its own stays in Default and says what it needs | a checkout with no project of an organization goes into `default`, and no start writes a project file for it; the repository's `porelo.yml` has the project file's form, less what defines a project, and adds to the project file's defaults: mappings merge, lists add, a value the repository sets wins; `null` removes a key, `"!entry"` removes an inherited list entry and `"!*"` all of them; in `default` the person allows it once on this machine; in a project of an organization the project admin signs it | [entry](#a-repository-of-its-own-stays-in-default-and-says-what-it-needs) |
 
 ## A library's license follows how it is used
 
@@ -111,11 +111,14 @@ hosts; each is designed when it is wanted.
 repository needs lies in the repository itself, in its `porelo.yml`. It has the project file's form, less the keys that
 define a project (its name, organization, repositories and members): image, egress, limits, credentials by name and
 kind and never by value, tool repositories and a block per ecosystem adapter that Porelo passes on unread. The project
-file holds the defaults, such as the base image or an in-house repository manager, so they change in one place. A key
-the repository's file sets overrides the project file's: a mapping is merged key by key, and a list or a value it sets
-replaces the project's whole, egress and limits included; a key it leaves out is taken from the project file. The first
-start's detection writes this file. In `default` the person allows its settings once on this machine; the allowance is
-kept outside the repository, bound to what was set, and a later change asks again for what changed. In a project of an
+file holds the defaults, such as the base image or an in-house repository manager, so they change in one place, and the
+repository's file adds to them: a mapping is merged key by key, a list takes the project's entries and then the
+repository's, egress, credentials, tool repositories and image lines alike, and a single value the repository sets, such
+as the base image or a limit, wins. `null` (or `~`) removes a key the project set. In a list, the quoted entry
+`"!entry"` removes that inherited entry and `"!*"` every inherited one; an unquoted `!` is refused, naming the quotes.
+The start and its dry run name each value's source: the project, the repository or Porelo's own default, and what was
+removed. The first start's detection writes this file. In `default` the person allows its settings once on this
+machine; the allowance is kept outside the repository, bound to what was set, and a later change asks again for what changed. In a project of an
 organization the project admin signs `porelo.yml` as the project file, and a follow checks every commit that changes
 it. **Why:** nearly every repository needs tools and settings of its own, and they belong with the repository, while a
 project of its own for each repository scatters the person's work and lists one project per checkout. An allowance or
