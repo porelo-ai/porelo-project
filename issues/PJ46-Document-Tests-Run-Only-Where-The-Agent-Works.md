@@ -1,6 +1,6 @@
 # PJ46 — Document tests run only where the agent works
 
-**Status:** Estimated.
+**Status:** Backlog (operator, 2026-11-06).
 **Size:** M - one or two lines of build configuration in each repository with a Build, no contract and no code; it
 crosses repositories, but every part is XS and none waits on another.
 
