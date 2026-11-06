@@ -3,7 +3,7 @@
 
 Trace what a task did, where its work came from and what was approved
 
-*Stand: 2026-11-06T06:17:40Z*
+*Stand: 2026-11-06T10:13:17Z*
 
 ## Sprint progress
 
