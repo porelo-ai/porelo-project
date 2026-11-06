@@ -12,6 +12,7 @@ it stays and what would change the answer.
 | A pull request's checks inform and never block | no repository requires a status check to merge; the *Workflow check* runs only on a pull request touching `.github/**` | [entry](#a-pull-requests-checks-inform-and-never-block) |
 | Only ssh reaches a host in normal work | a developer and a project admin reach a host by ssh with their own key, never by a VPN; the VPN is the installation's alone, and a VPN per person is allowed only while the project's own work moves onto its hosts | [entry](#only-ssh-reaches-a-host-in-normal-work) |
 | The project file alone needs the project admin's signature | a follow checks every commit that changes the project file, not the top of `main`; developers change the rest of the project's repository on their own; each repository says whether a merge needs a second person's review; an agent never merges | [entry](#the-project-file-alone-needs-the-project-admins-signature) |
+| A machine belongs to one organization, and a project to one host | Porelo's word for who manages people, projects and hosts is "organization"; a machine has one, set at setup; a project is on one host at a time, with every member | [entry](#a-machine-belongs-to-one-organization-and-a-project-to-one-host) |
 
 ## A library's license follows how it is used
 
@@ -91,3 +92,13 @@ signature and `main` takes no direct push; and what the signature protects is th
 review of each change. **What would change the answer:** a file outside the project file that
 decides what the machines do and cannot be listed as protected.
 
+## A machine belongs to one organization, and a project to one host
+
+**What holds:** what manages people, their keys, projects and hosts is called the organization, in the interface, the
+commands and the documents. The identity source that vouches for a login is named by what it is, and a project's
+organization on a host's forge is its forge organization. A machine belongs to one organization, set when Porelo is set
+up there, and the interface never asks which. A project is on one host at a time, and every member of the project is on
+it; a host admin decides which projects a host carries, never which persons. **Why:** one organization and one host per
+project keep every question of trust with one answer, and a person needs no choice where nothing is to choose. **What
+would change the answer:** a person who must work for two organizations on one machine, or a project that needs two
+hosts; each is designed when it is wanted.
