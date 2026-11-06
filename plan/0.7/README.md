@@ -3,11 +3,11 @@
 
 A developer starts in a repository they already have, led by the Porelo Wizard
 
-*Stand: 2026-11-06T17:21:12Z*
+*Stand: 2026-11-06T17:55:55Z*
 
 ## Sprint progress
 
-![Sprint 1: Review 1, Implementing 1, Estimated 2, Analyzed 2, Accepted 1; Sprint 2: Review 1, Estimated 2, Analyzed 2; Sprint 3: Analyzed 1, Idea 2; Sprint 4: Idea 1; Sprint 5: Estimated 1, Analyzed 2; Sprint 6: Estimated 3, Analyzed 1, Idea 2; Sprint 7: Review 1, Estimated 1; Sprint 8: Backlog 1, Estimated 1, Analyzed 1; Sprint 9: Idea 6; Sprint 10: Finished 1, Rejected 1, Review 4, Estimated 2, Analyzed 1, Not filed yet 1; Sprint 11: Accepted 2, Not filed yet 4; Sprint 12: Estimated 2; Sprint 13: Not filed yet 3; Sprint 14: Review 1, Idea 1; Sprint 15: Implementing 3, Idea 2; Sprint 16: Accepted 1, Idea 3](progress-260a9ed0.svg)
+![Sprint 1: Review 1, Implementing 1, Estimated 2, Analyzed 2, Accepted 1; Sprint 2: Review 1, Estimated 2, Analyzed 2; Sprint 3: Analyzed 1, Idea 2; Sprint 4: Idea 1; Sprint 5: Estimated 1, Analyzed 2; Sprint 6: Estimated 3, Analyzed 1, Idea 2; Sprint 7: Review 1, Estimated 1; Sprint 8: Backlog 1, Estimated 1, Analyzed 1; Sprint 9: Idea 6; Sprint 10: Finished 1, Rejected 1, Review 4, Estimated 2, Analyzed 1, Not filed yet 1; Sprint 11: Accepted 2, Not filed yet 4; Sprint 12: Estimated 2; Sprint 13: Not filed yet 3; Sprint 14: Review 1, Idea 1; Sprint 15: Review 1, Implementing 2, Idea 2; Sprint 16: Accepted 1, Idea 3](progress-d5380178.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -285,7 +285,7 @@ Test: A long command says how far it is.
 
 Test: A person joins another project on the machine.
 
-🟨 [MX52](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx52 "porelo-message-matrix#MX52 · Implementing · S · A Person Joins Another Project's Room Unchanged")
+🟦 [MX52](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx52 "porelo-message-matrix#MX52 · Review · S · A Person Joins Another Project's Room Unchanged")
 
 </td></tr></table>
 
