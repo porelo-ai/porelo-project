@@ -11,7 +11,6 @@ project="$root/porelo-project"
 tool="$root/plan-tool"
 pages="$root/plan-pages"
 organization="porelo-ai"
-: "${RELEASE_VERSION:?the release of porelo-release to render with}"
 : "${JAVA_HOME:?a JDK}"
 export JAVA_HOME PATH="$JAVA_HOME/bin:$PATH"
 
@@ -41,15 +40,17 @@ clone_repositories() {
         git clone -q --filter=blob:none "https://github.com/$organization/{}.git" '{}')
 }
 
-# Built from a tree of its own: the checkout beside the others stays on main, as the plans read it.
+# Built from porelo-buildtools' main, in a tree of its own: an internal page needs no release of its tool, and a
+# fix to the tool shows at the next run. The checkout beside the others stays on main, as the plans read it.
 fetch_tool() {
     local source="$root/plan-tool-source"
-    git -C "$root/porelo-buildtools" worktree add -q --detach "$source" "v$RELEASE_VERSION"
+    git -C "$root/porelo-buildtools" worktree add -q --detach "$source" main
     (cd "$source" \
-        && ./mvnw -q -B -ntp -s settings.xml dependency:copy \
-            "-Dartifact=org.fuin.porelo:porelo-release:$RELEASE_VERSION" "-DoutputDirectory=$tool" \
+        && ./mvnw -q -B -ntp -s settings.xml -pl release -am -DskipTests install \
         && ./mvnw -q -B -ntp -s settings.xml -pl release dependency:copy-dependencies \
             -DincludeScope=runtime "-DoutputDirectory=$tool")
+    cp "$source"/release/target/porelo-release-*.jar "$tool/"
+    rm -f "$tool"/porelo-release-*-sources.jar "$tool"/porelo-release-*-javadoc.jar
 }
 
 release_tool() {

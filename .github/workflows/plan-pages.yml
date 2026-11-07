@@ -36,7 +36,6 @@ jobs:
             - name: Render
               env:
                   GITHUB_TOKEN: ${{ github.token }}
-                  RELEASE_VERSION: "0.5.1"
               run: |
                   export JAVA_HOME="$JAVA_HOME_25_X64"
                   bash porelo-project/.github/scripts/plan-pages.sh "$GITHUB_WORKSPACE"
