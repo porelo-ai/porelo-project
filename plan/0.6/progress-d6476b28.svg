@@ -787,14 +787,14 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 1024)">
 <text x="0" y="17">7a. The move, wave 2: the agent adapters</text>
-<desc>Review 3, Backlog 3. PI38: porelo-pi#PI38 · Review · S · The Build Runs On The Local Forge As On The Central One; PI39: porelo-pi#PI39 · Backlog · S · The Repository's Agent Works In A Porelo Task; OM35: porelo-omp#OM35 · Review · S · The Build Runs On The Local Forge As On The Central One; OM36: porelo-omp#OM36 · Backlog · S · The Repository's Agent Works In A Porelo Task; CC38: porelo-claude-code#CC38 · Review · S · The Build Runs On The Local Forge As On The Central One; CC39: porelo-claude-code#CC39 · Backlog · S · The Repository's Agent Works In A Porelo Task; </desc>
+<desc>Review 3, Implementing 3. PI38: porelo-pi#PI38 · Review · S · The Build Runs On The Local Forge As On The Central One; PI39: porelo-pi#PI39 · Implementing · S · The Repository's Agent Works In A Porelo Task; OM35: porelo-omp#OM35 · Review · S · The Build Runs On The Local Forge As On The Central One; OM36: porelo-omp#OM36 · Implementing · S · The Repository's Agent Works In A Porelo Task; CC38: porelo-claude-code#CC38 · Review · S · The Build Runs On The Local Forge As On The Central One; CC39: porelo-claude-code#CC39 · Implementing · S · The Repository's Agent Works In A Porelo Task; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
 <rect x="0.0" width="200.0" height="20" fill="#2a78d6" class="c-review" stroke="#fcfcfb"><title>Review: 3</title></rect>
 
-<rect x="200.0" width="200.0" height="20" fill="#8ac8f0" class="c-backlog" stroke="#fcfcfb"><title>Backlog: 3</title></rect>
+<rect x="200.0" width="200.0" height="20" fill="#fab219" class="c-impl" stroke="#fcfcfb"><title>Implementing / Rework: 3</title></rect>
 
 </svg>
 <text class="legend" x="410" y="17">0 of 6 done</text>
