@@ -1037,19 +1037,24 @@ text{fill:#0b0b0b;font:13px system-ui,sans-serif}.legend{fill:#52514e}
 
 <g transform="translate(0 1294)">
 <text x="0" y="17">10. Check the whole move</text>
-<desc>Not filed yet 1. Parent acceptance only; the work is carried by the setup, build, move and recovery functions. The complete one-build proof is PJ22's alone, accepted in release 0.19.: Not filed yet; </desc>
+<desc>Accepted 1, Not filed yet 1. Parent acceptance only; the work is carried by the setup, build, move and recovery functions. The complete one-build proof is PJ22's alone, accepted in release 0.19.: Not filed yet; PJ97: porelo-project#PJ97 · Accepted · — · A Repository Can Be Renamed Without Losing Work; </desc>
 <svg x="568" width="540" height="24" viewBox="0 0 540 24">
 <svg x="0" y="2" width="400" height="20" viewBox="0 0 400 20">
 <rect width="400" height="20" rx="4" fill="#e6e5e1" class="c-grid"/>
 
-<rect x="0.0" width="400.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
+<rect x="0.0" width="200.0" height="20" fill="#b9b8b2" class="c-accepted" stroke="#fcfcfb"><title>Accepted: 1</title></rect>
+
+<rect x="200.0" width="200.0" height="20" fill="#ffffff" class="c-new" stroke="#fcfcfb"><title>Not filed yet / Missing: 1</title></rect>
 
 </svg>
-<text class="legend" x="410" y="17">0 of 1 done</text>
+<text class="legend" x="410" y="17">0 of 2 done</text>
 </svg>
 
 
 <text x="1118" y="17"><title>The setup, move and recovery proven together: Not tested</title>⚪</text>
+
+
+<text x="1142" y="17"><title>A repository renamed without losing work: Not tested</title>⚪</text>
 
 </g>
 

@@ -3,11 +3,11 @@
 
 Porelo is built in Porelo tasks
 
-*Stand: 2026-11-06T22:26:13Z*
+*Stand: 2026-11-07T04:34:41Z*
 
 ## Sprint progress
 
-![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 8; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Finished 1; Sprint 6d: Finished 3; Sprint 6e: Finished 4; Sprint 6f: Finished 2; Sprint 6g: Finished 2; Sprint 6h: Finished 2; Sprint 6i: Finished 7; Sprint 6j: Finished 9; Sprint 6k: Finished 5; Sprint 6l: Finished 3; Sprint 6m: Finished 57; Sprint 6n: Finished 7; Sprint 6q: Finished 72; Sprint 6s: Finished 9; Sprint 7: Review 9, Backlog 1; Sprint 7a: Review 3, Backlog 3; Sprint 7b: Review 2, Backlog 3; Sprint 7c: Review 4, Implementing 1, Backlog 3, Not filed yet 1; Sprint 8: Implementing 1, Analyzed 1, Idea 1; Sprint 8a: Review 6, Implementing 1, Analyzed 2, Idea 1; Sprint 8b: Analyzed 1; Sprint 8c: Finished 2, Estimated 1, Not filed yet 1; Sprint 9: Finished 1, Review 38, Implementing 1, Backlog 6, Analyzed 1, Not filed yet 2; Sprint 9a: Implementing 1, Rework 1; Sprint 10: Not filed yet 1](progress-7d2a6abb.svg)
+![Sprint 1: Finished 13; Sprint 2: Finished 15; Sprint 2b: Finished 5; Sprint 2c: Finished 26; Sprint 2d: Finished 13; Sprint 2e: Finished 14; Sprint 2f: Finished 3; Sprint 3: Finished 5; Sprint 4: Finished 10; Sprint 4a: Finished 5; Sprint 4b: Finished 1; Sprint 4c: Finished 1; Sprint 5: Finished 11; Sprint 6: Finished 8; Sprint 6a: Finished 1; Sprint 6b: Finished 1; Sprint 6c: Finished 1; Sprint 6d: Finished 3; Sprint 6e: Finished 4; Sprint 6f: Finished 2; Sprint 6g: Finished 2; Sprint 6h: Finished 2; Sprint 6i: Finished 7; Sprint 6j: Finished 9; Sprint 6k: Finished 5; Sprint 6l: Finished 3; Sprint 6m: Finished 57; Sprint 6n: Finished 7; Sprint 6q: Finished 72; Sprint 6s: Finished 9; Sprint 7: Review 9, Backlog 1; Sprint 7a: Review 3, Backlog 3; Sprint 7b: Review 2, Backlog 3; Sprint 7c: Review 4, Implementing 1, Backlog 3, Not filed yet 1; Sprint 8: Implementing 1, Analyzed 1, Idea 1; Sprint 8a: Review 6, Implementing 1, Analyzed 2, Idea 1; Sprint 8b: Analyzed 1; Sprint 8c: Finished 2, Estimated 1, Not filed yet 1; Sprint 9: Finished 1, Review 38, Implementing 1, Backlog 6, Analyzed 1, Not filed yet 2; Sprint 9a: Implementing 1, Rework 1; Sprint 10: Accepted 1, Not filed yet 1](progress-345515da.svg)
 
 Each sprint ends in functions the operator tests by hand; a bar shows the states of a sprint's issues, and a mark per function shows whether it is tested.
 
@@ -984,6 +984,12 @@ Test: Bring up the project, run the local builds, move each agent and restore th
 ◻️ Parent acceptance only; the work is carried by the setup, build, move and recovery functions. The complete one-build proof is PJ22's alone, accepted in release 0.19.
 
 covers [PJ40](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj40 "porelo-project#PJ40 · Implementing · XL · A project comes up on a server at one command") · Implementing, [PJ39](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj39 "porelo-project#PJ39 · Implementing · — · Porelo is built in Porelo tasks") · Implementing
+
+**A repository renamed without losing work ⚪ Not tested**
+
+Test: Rename a repository's key in the project file by hand while work waits at its gate and a task runs on it, on a following machine and on a host, in one step and in two; nothing is lost or made unreachable, or the rename is refused first with words naming the waiting work.
+
+⬜ [PJ97](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj97 "porelo-project#PJ97 · Accepted · — · A Repository Can Be Renamed Without Losing Work")
 
 </td></tr></table>
 

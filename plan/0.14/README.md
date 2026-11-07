@@ -3,7 +3,7 @@
 
 An unattended task keeps its limits; a kernel of its own is offered only after proof
 
-*Stand: 2026-11-06T22:26:13Z*
+*Stand: 2026-11-07T04:34:41Z*
 
 ## Sprint progress
 
