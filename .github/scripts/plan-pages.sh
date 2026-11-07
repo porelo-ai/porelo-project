@@ -46,7 +46,7 @@ fetch_tool() {
     local source="$root/plan-tool-source"
     git -C "$root/porelo-buildtools" worktree add -q --detach "$source" main
     (cd "$source" \
-        && ./mvnw -q -B -ntp -s settings.xml -pl release -am -DskipTests install \
+        && ./mvnw -q -B -ntp -s settings.xml -pl release -am -DskipTests -Dspotless.check.skip=true install \
         && ./mvnw -q -B -ntp -s settings.xml -pl release dependency:copy-dependencies \
             -DincludeScope=runtime "-DoutputDirectory=$tool")
     cp "$source"/release/target/porelo-release-*.jar "$tool/"
