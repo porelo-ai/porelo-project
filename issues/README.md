@@ -67,6 +67,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj98"></a>[PJ98](PJ98-Check-Cross-References-Of-Issues.md) | — | — | Citations between the repositories' issues and documents are checked in one place that sees every repository; no repository's build or task reads another repository's files for it. |
 | <a id="pj97"></a>[PJ97](PJ97-A-Repository-Can-Be-Renamed-Without-Losing-Work.md) | — | — | A repository's key renamed in the project file, by hand or signed, in one step or two, loses nothing on a following machine or a carrying host: waiting work, tasks, mirror, gate, the judged `porelo.yml` and the host's forge; measured today as a silent removal plus addition. |
 | <a id="pj91"></a>[PJ91](PJ91-A-Porelo-GitHub-App-For-The-Comfortable-Start.md) | — | — | A person starts at GitHub by installing Porelo's app and signing in from the window with a device code, with no token made by hand, no private key shipped and no token on a host; beside the token way and the manual way, the host's deploy keys staying. |
 | <a id="pj80"></a>[PJ80](PJ80-Only-The-Project-File-Needs-A-Signers-Signature.md) | — | — | A follow applies a new `main` when every commit that changes the project file, or another file deciding what the machines do, is signed by a key in `signers`; other commits need no signature, so developers change the rest of the project's repository on their own and the project admin signs changes to the project file. |
