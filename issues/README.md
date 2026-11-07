@@ -85,6 +85,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj99"></a>[PJ99](PJ99-Every-Rule-Of-AGENTS-md-Holds-Inside-A-Task.md) | — | — | An agent in a task, holding only its own repository, can follow every rule of the shared block; what a rule needs from outside is handed in at the start, checked outside the task, or the rule is reworded. |
 | <a id="pj95"></a>[PJ95](PJ95-Where-A-Person-May-Not-Add-A-Deploy-Key.md) | — | — | A person who may not add a machine's deploy key at the central forge still brings a project to a machine: Porelo hands them what to ask an administrator for, and no token comes to lie on a server. |
 | <a id="pj93"></a>[PJ93](PJ93-Work-Arrives-Under-The-Branch-Names-A-Forge-Requires.md) | — | — | Wherever Porelo pushes work, online or after a gate, the branch name follows what that repository's forge accepts, and a person can set it. |
 | <a id="pj92"></a>[PJ92](PJ92-Every-Forge-Call-Behind-One-Contract.md) | — | — | The window asks only Core, Core asks only an adapter, and only the adapter knows a forge, so any forge offering what Porelo needs can be used. |
