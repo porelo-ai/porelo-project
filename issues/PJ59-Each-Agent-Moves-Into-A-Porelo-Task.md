@@ -30,7 +30,9 @@ the coordinator gives its agent this procedure when its move is due.
 
 A task holds one repository, so each repository moves with an agent of its own, named after the repository or the
 nickname its entry in `project.yml` gives it. The trial moves go one at a time, also within one stage, in this order:
-the next starts only after the last one's check is green and the operator has accepted it.
+the next may start on the same rented host while the last one still runs there, and is checked only after the last one's
+check is green and the operator has accepted it. Trial moves run on rented hosts only, never on a local VM; between
+rentals come pauses without a machine, in which the gathered findings are fixed.
 
 1. `porelo-message-sluice`.
 2. `porelo-pi`, `porelo-omp` and `porelo-claude-code`.
