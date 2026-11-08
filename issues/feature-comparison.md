@@ -80,7 +80,7 @@ Each feature links to the page that describes it.
 | [Shows whether a task works or waits on somebody](https://github.com/porelo-ai/porelo/blob/main/doc/commands.md) | ✅ | ❔ | ❌ | ❌ | ❌ | ❌ | 🟡 | 🟡 | 🟡 | ❌ | ❌ |
 | [Leave the terminal and attach again](https://github.com/porelo-ai/porelo/blob/main/doc/running.md) | ✅ | 🟡 | ❔ | ❌ | ❌ | ✅ | ✅ | ❔ | 🟡 | 🟡 | 🟡 |
 | [A desktop interface, also for remote machines](https://github.com/porelo-ai/porelo-frontend)¹⁴ | ✅ | ❔ | ❌ | ❌ | ❌ | ❌ | 🟡 | 🟡 | ✅ | 🟡 | 🟡 |
-| [A programming interface for clients](https://github.com/porelo-ai/porelo/tree/main/daemon/src/main/resources/varlink) | ✅ | ❔ | ✅ | 🟡 | ❔ | 🟡 | ❌ | 🟡 | ❌ | ✅ | ✅ |
+| [A programming interface for clients](https://github.com/porelo-ai/porelo/tree/main/wire/src/main/resources/varlink) | ✅ | ❔ | ✅ | 🟡 | ❔ | 🟡 | ❌ | 🟡 | ❌ | ✅ | ✅ |
 | [Installed as a Linux package (apt/dnf)](https://github.com/porelo-ai/porelo/blob/main/README.md)¹⁵ | ✅ | ❔ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [Windows, with Porelo in WSL](https://github.com/porelo-ai/porelo-frontend)¹⁶ | ✅ | ✅ | 🟡 | 🟡 | ✅ | ❔ | ❔ | ❌ | ✅ | ✅ | ✅ |
 | [Its own certificate authority for outbound TLS](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md) | ✅ | ❔ | ❔ | ❔ | ❔ | ❌ | ❌ | ❌ | ❌ | ❔ | ❔ |

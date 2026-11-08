@@ -33,7 +33,7 @@ other is the normal case, not an edge case.
 - **First, `porelo` [B59](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b59)** on Linux: what survives a task with its own kernel.
 - **Then a reading of Apple Containers on a Mac**: fail-closed egress per container, a host socket in a
   container, the host's loopback mapped in. What is not there is written down as a guarantee not met.
-- **The contract**: the varlink definitions in `porelo/daemon/src/main/resources/varlink/`
+- **The contract**: the varlink definitions in `porelo/wire/src/main/resources/varlink/`
   (`org.fuin.porelo.Tasks1`) read for anything only Linux has.
 - **McPorelo**: a repository of its own, its own issues, its own acceptance suite running the shared
   scenarios.

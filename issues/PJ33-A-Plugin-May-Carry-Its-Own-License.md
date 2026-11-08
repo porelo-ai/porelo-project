@@ -51,7 +51,7 @@ and every outside contribution makes it harder, so this comes before contributio
 - **Today**: every module is GPL-3.0-or-later through `porelo-parent`'s `<licenses>`; no source carries
   a header; the interface libraries are `porelo/wire`, `porelo/agents/api` (which links `snakeyaml`,
   Apache-2.0) and `porelo/builds/api` (with `org.fuin.porelo.Build1.varlink`); the daemon's definitions
-  are in `porelo/daemon/src/main/resources/varlink/`.
+  are in `porelo/wire/src/main/resources/varlink/`.
 - **1. Legal advice**, by the operator.
 - **2. `porelo`**: `LICENSE` and `NOTICE` in each interface module, its POM's
   `<licenses>`, source headers, and the varlink definitions marked or moved so they carry Apache-2.0.
