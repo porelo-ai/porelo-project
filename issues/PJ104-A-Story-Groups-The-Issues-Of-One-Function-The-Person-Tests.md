@@ -23,17 +23,21 @@ on, and that the person can test on its own.
 - **A story's state is derived from its issues**: it stands at the state of its least advanced issue. One issue in
   Review and another still Implementing leave the story Implementing. Only the person's test moves a story past that,
   to tested.
-- **The open functions of the existing plans become stories**, by the coordinator.
+- **Every function of the existing plans becomes a story**, by the coordinator, tested ones too with their tested
+  date; no plan keeps its sprints.
 - **A story's number names no release** (`ST1`, `ST2`, …), so a story can move between releases.
+- **A story's data is a JSON head in its own file**, checked by a JSON schema, and `stories/README.md` is generated
+  from the heads; the prose below the head stays Markdown. Issues follow the same form afterwards
+  ([PJ105](README.md#pj105)).
 
 ## The shape proposed
 
-- **One file per story** in `stories/`, with an index `stories/README.md` grouped by state as the issue index is:
-  number (`ST1`, `ST2`, …), a name a user understands, what a user gains, the person's test, the issues it needs
-  (`repository#ID`), and the date the person tested it. The state is not written; it is derived from the issues'
-  indexes, as `plan.yml` does today.
-- **`plan/<release>/plan.yml` lists stories instead of sprints.** Plans whose functions are all tested stay as they
-  are, as their record; in the others, every function not yet tested becomes a story and the plan names it.
+- **One file per story** in `stories/`, its JSON head holding the number (`ST1`, `ST2`, …), a name a user
+  understands, what a user gains, the person's test, the issues it needs (`repository#ID`), and the date the person
+  tested it. The state is not written; it is derived from the issues. The index `stories/README.md`, grouped by state,
+  is generated from the heads, and a check refuses an index that differs from the generation.
+- **`plan/<release>/plan.yml` lists stories instead of sprints**, in every plan; each function becomes a story, and a
+  tested one keeps its tested date.
 - **`plan check` and the plan pages** read stories: the rendering in porelo-buildtools changes with this, as an issue
   of its own there.
 - **The coordinator's start** takes the stories as a parameter, beside `issue` and `phase` of [PJ99](README.md#pj99).
@@ -42,7 +46,8 @@ on, and that the person can test on its own.
 
 - A story with one issue in Review and one Implementing shows Implementing in the index and on the plan page.
 - `plan check` refuses a story naming an issue that does not exist, and a release naming a story that does not exist.
-- No function left untested in a plan is lost in the conversion: each is a story, with its test and its issues.
+- No function of a plan is lost in the conversion: each is a story, with its test, its issues and, where tested, its
+  date.
 
 ## To be checked
 

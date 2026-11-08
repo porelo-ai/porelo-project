@@ -67,6 +67,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj105"></a>[PJ105](PJ105-An-Issue-Carries-Its-Data-In-A-JSON-Head.md) | — | [PJ104](#pj104) | Every issue carries its data in a JSON head checked by one shared schema, each index is generated from the heads, and tools read the heads instead of Markdown tables. |
 | <a id="pj104"></a>[PJ104](PJ104-A-Story-Groups-The-Issues-Of-One-Function-The-Person-Tests.md) | — | — | A story groups every issue of one function a user values, with the person's test; releases name stories instead of sprints, a story's state is its least advanced issue's, and the coordinator is started with stories. |
 | <a id="pj98"></a>[PJ98](PJ98-Check-Cross-References-Of-Issues.md) | — | — | Citations between the repositories' issues and documents are checked in one place that sees every repository; no repository's build or task reads another repository's files for it. |
 | <a id="pj97"></a>[PJ97](PJ97-A-Repository-Can-Be-Renamed-Without-Losing-Work.md) | — | — | A repository's key renamed in the project file, by hand or signed, in one step or two, loses nothing on a following machine or a carrying host: waiting work, tasks, mirror, gate, the judged `porelo.yml` and the host's forge; measured today as a silent removal plus addition. |
