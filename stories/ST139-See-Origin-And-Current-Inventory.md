@@ -1,6 +1,6 @@
 # ST139 — See origin and current inventory
 
-**Priority:** Low · **State:** Analyzed
+**Priority:** 🔽 Low · **State:** Analyzed
 
 **What a user gains.** A person sees where a handed-over file came from and what the task changed, even after the file is removed.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B38](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b38)
-- [porelo#B156](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b156)
+- [porelo#B38](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b38) (Analyzed)
+- [porelo#B156](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b156) (Estimated)
 
 ## Data
 

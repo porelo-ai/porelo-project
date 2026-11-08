@@ -1,6 +1,6 @@
 # ST77 — Direct pushes and red checks refused
 
-**Priority:** Medium · **State:** Accepted
+**Priority:** 🟰 Medium · **State:** Accepted
 
 **What a user gains.** Direct pushes to main and merges with red checks are refused for every account, so main only changes through checked pull requests.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ34](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj34)
+- [porelo-project#PJ34](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj34) (Accepted)
 
 ## Notes
 

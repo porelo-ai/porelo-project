@@ -1,6 +1,6 @@
 # ST180 — Prove one build works locally and centrally
 
-**Priority:** Low · **State:** Implementing
+**Priority:** 🔽 Low · **State:** Implementing
 
 **What a user gains.** A person can rely on every building repository's workflow running unchanged on both the local and the central forge.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ22](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj22)
+- [porelo-project#PJ22](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj22) (Implementing)
 
 ## Notes
 

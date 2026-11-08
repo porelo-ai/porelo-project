@@ -1,6 +1,6 @@
 # ST142 — Require both project and machine to allow a provider
 
-**Priority:** Low · **State:** Analyzed
+**Priority:** 🔽 Low · **State:** Analyzed
 
 **What a user gains.** A provider runs only if both the project and the machine's root-owned rule allow it, so a project cannot widen what the machine permits.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B151](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b151)
-- [porelo-project#PJ16](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj16)
+- [porelo#B151](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b151) (Analyzed)
+- [porelo-project#PJ16](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj16) (Analyzed)
 
 ## Data
 

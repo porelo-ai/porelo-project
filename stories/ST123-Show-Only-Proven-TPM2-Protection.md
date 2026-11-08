@@ -1,14 +1,12 @@
 # ST123 — Show only proven TPM2 protection
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person sees TPM2 protection only when it is proven, so a slot that merely claims hardware protection is not accepted.
 
 **The test.** Set up and unlock a TPM2 slot. Offer a slot that only claims hardware protection; the proven slot is labeled correctly and the unsupported claim receives no more than USER_SCOPED.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

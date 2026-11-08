@@ -1,6 +1,6 @@
 # ST242 — The same command reads Forgejo
 
-**Priority:** Highest · **State:** Finished (2026-10-25)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-25)
 
 **What a user gains.** A person gets the same answer in the same shape from the same command whether the build runs on Forgejo or the other forge.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-adapters#GH07](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh07)
-- [porelo#B275](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b275)
+- [porelo-adapters#GH07](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh07) (Finished)
+- [porelo#B275](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b275) (Finished)
 
 ## Data
 

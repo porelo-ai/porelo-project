@@ -1,6 +1,6 @@
 # ST15 — The website builds in its task
 
-**Priority:** Highest · **State:** Estimated
+**Priority:** ⏫ Highest · **State:** Estimated
 
 **What a user gains.** The project website can be fully checked inside its own task, and the check passes with the Debian image and repository changes.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-ai.github.io#SI01](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si01)
+- [porelo-ai.github.io#SI01](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si01) (Estimated)
 
 ## Notes
 

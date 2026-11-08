@@ -1,14 +1,12 @@
 # ST187 — Run the supported ARM agents
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person on ARM can install each supported agent adapter and run a small task through the broker.
 
 **The test.** Install each supported adapter and run a small task through the broker. A wrong architecture or incompatible protocol is refused by name.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

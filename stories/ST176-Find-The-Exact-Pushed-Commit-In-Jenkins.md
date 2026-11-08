@@ -1,6 +1,6 @@
 # ST176 — Find the exact pushed commit in Jenkins
 
-**Priority:** Low · **State:** Accepted
+**Priority:** 🔽 Low · **State:** Accepted
 
 **What a user gains.** A task finds the exact pushed commit in Jenkins and receives its stages, verdict and failing log, for a green and a red commit.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ36](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj36)
+- [porelo-project#PJ36](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj36) (Accepted)
 
 ## Notes
 

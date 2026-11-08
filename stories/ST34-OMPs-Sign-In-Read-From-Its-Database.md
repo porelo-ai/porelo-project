@@ -1,6 +1,6 @@
 # ST34 — OMP's sign-in read from its database
 
-**Priority:** High · **State:** Idea
+**Priority:** 🔼 High · **State:** Idea
 
 **What a user gains.** A person can sign OMP in once and start tasks without running vault login, because the sign-in is read from OMP's own database.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-omp#OM33](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om33)
+- [porelo-omp#OM33](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om33) (Idea)
 
 ## Data
 

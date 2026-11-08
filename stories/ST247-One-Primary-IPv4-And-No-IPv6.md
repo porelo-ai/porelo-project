@@ -1,6 +1,6 @@
 # ST247 — One primary IPv4 and no IPv6
 
-**Priority:** Highest · **State:** Finished (2026-10-27)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-27)
 
 **What a user gains.** A person renting an IPv4-only machine gets exactly one primary IPv4 address and no IPv6, as the provider inventory shows.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT10](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt10)
+- [porelo-buildtools#BT10](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt10) (Finished)
 
 ## Data
 

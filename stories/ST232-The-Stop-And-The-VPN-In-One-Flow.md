@@ -1,6 +1,6 @@
 # ST232 — The stop and the VPN in one flow
 
-**Priority:** Highest · **State:** Finished (2026-10-25)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-25)
 
 **What a user gains.** A person handles the stop and the VPN in one flow, with a small dialog for the Tresorit e-mail and a terminal for the rest.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo-frontend#F171](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f171)
-- [porelo-host#HO25](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho25)
-- [porelo-frontend#F172](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f172)
+- [porelo-frontend#F171](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f171) (Finished)
+- [porelo-host#HO25](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho25) (Finished)
+- [porelo-frontend#F172](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f172) (Finished)
 
 ## Data
 

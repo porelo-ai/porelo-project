@@ -1,6 +1,6 @@
 # ST147 — Choose a repository and signing key
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A person sees all default repositories and can choose a signing key from a file or create a new one.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo-frontend#F147](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f147)
-- [porelo-frontend#F94](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f94)
-- [porelo-frontend#F104](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f104)
+- [porelo-frontend#F147](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f147) (Review)
+- [porelo-frontend#F94](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f94) (Estimated)
+- [porelo-frontend#F104](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f104) (Estimated)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST143 — Inherit signed rules through the organization
 
-**Priority:** Low · **State:** Accepted
+**Priority:** 🔽 Low · **State:** Accepted
 
 **What a user gains.** Settings inherit through signed organization, team and project rules, and a project can narrow a value but cannot widen it.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B198](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b198)
+- [porelo#B198](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b198) (Accepted)
 
 ## Notes
 

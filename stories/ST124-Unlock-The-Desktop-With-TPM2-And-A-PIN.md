@@ -1,14 +1,12 @@
 # ST124 — Unlock the desktop with TPM2 and a PIN
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person can unlock the desktop with TPM2 and a PIN on Linux and Windows, with wrong PINs or a missing TPM explained.
 
 **The test.** Enroll and unlock on Linux and Windows. Try a wrong PIN and a missing TPM; both are explained and refused. A capability the machine lacks is never offered.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

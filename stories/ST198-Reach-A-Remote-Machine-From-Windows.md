@@ -1,6 +1,6 @@
 # ST198 — Reach a remote machine from Windows
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A person on Windows with no SSH binary can still connect to a host, start a task and reconnect.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-frontend#F37](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f37)
-- [porelo-frontend#F108](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f108)
+- [porelo-frontend#F37](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f37) (Estimated)
+- [porelo-frontend#F108](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f108) (Review)
 
 ## Data
 

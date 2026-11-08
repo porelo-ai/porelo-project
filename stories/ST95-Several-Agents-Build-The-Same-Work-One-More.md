@@ -1,6 +1,6 @@
 # ST95 — Several agents build the same work, one more compares them
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A person can have two agents or models build the same issue side by side and let another agent name the better one.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ77](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj77)
+- [porelo-project#PJ77](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj77) (Idea)
 
 ## Data
 

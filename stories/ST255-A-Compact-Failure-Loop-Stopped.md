@@ -1,6 +1,6 @@
 # ST255 — A compact failure loop stopped
 
-**Priority:** Highest · **State:** Finished (2026-10-28)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-28)
 
 **What a user gains.** A task stops when an agent repeats a compact view redraw and a failed tool call in a loop, instead of running on without progress.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B244](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b244)
+- [porelo#B244](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b244) (Finished)
 
 ## Data
 

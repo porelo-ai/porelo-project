@@ -1,6 +1,6 @@
 # ST2 — porelo-message-sluice works wholly in its task
 
-**Priority:** Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Review
 
 **What a user gains.** The message-sluice component can be built, reviewed and checked entirely inside its own task on the host, with its build going green on the host's forge.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-message-sluice#SL35](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl35)
+- [porelo-message-sluice#SL35](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl35) (Finished)
 
 ## Covers
 

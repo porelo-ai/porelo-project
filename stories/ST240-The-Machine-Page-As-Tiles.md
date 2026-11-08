@@ -1,6 +1,6 @@
 # ST240 — The machine page as tiles
 
-**Priority:** Highest · **State:** Finished (2026-10-25)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-25)
 
 **What a user gains.** A person sees the machine's actions as icon tiles in the same grid as the project page, with taking the server down clearly marked.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F189](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f189)
+- [porelo-frontend#F189](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f189) (Finished)
 
 ## Data
 

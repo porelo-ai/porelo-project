@@ -1,6 +1,6 @@
 # ST276 — A forge's keys and repositories through its client
 
-**Priority:** Highest · **State:** Finished (2026-11-02)
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-02)
 
 **What a user gains.** A person's public SSH keys and repositories on Forgejo and GitHub are read, listed and managed through the forge's client, without a token for public keys.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo-forge-clients#FC02](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc02)
-- [porelo-forge-clients#FC05](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc05)
-- [porelo-forge-clients#FC06](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc06)
+- [porelo-forge-clients#FC02](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc02) (Finished)
+- [porelo-forge-clients#FC05](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc05) (Finished)
+- [porelo-forge-clients#FC06](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc06) (Finished)
 
 ## Data
 

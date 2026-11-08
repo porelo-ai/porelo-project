@@ -1,14 +1,12 @@
 # ST136 — Allow inner containers only in the proven case
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** Inner containers are allowed only in the proven case, so only allowed destinations work from inside one.
 
 **The test.** Try allowed and unallowed destinations from an inner container; only the allowed one works. A guarded task with nesting enabled is refused. If measurements require a separate kernel, nesting on a shared kernel remains refused.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

@@ -1,6 +1,6 @@
 # ST237 — The key, the VPN and the counts say their state
 
-**Priority:** Highest · **State:** Finished (2026-10-25)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-25)
 
 **What a user gains.** A person sees whether the Scaleway key works when it is stored, and the VPN and counts on the page state their real condition.
 
@@ -8,13 +8,13 @@
 
 **Issues:**
 
-- [porelo-frontend#F186](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f186)
-- [porelo-frontend#F177](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f177)
-- [porelo-frontend#F182](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f182)
-- [porelo-frontend#F183](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f183)
-- [porelo-frontend#F185](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f185)
-- [porelo#B279](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b279)
-- [porelo#B280](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b280)
+- [porelo-frontend#F186](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f186) (Finished)
+- [porelo-frontend#F177](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f177) (Finished)
+- [porelo-frontend#F182](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f182) (Finished)
+- [porelo-frontend#F183](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f183) (Finished)
+- [porelo-frontend#F185](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f185) (Finished)
+- [porelo#B279](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b279) (Finished)
+- [porelo#B280](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b280) (Finished)
 
 ## Data
 

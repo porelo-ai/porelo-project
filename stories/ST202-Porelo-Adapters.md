@@ -1,6 +1,6 @@
 # ST202 — porelo-adapters
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person gets the adapters repository as a named part of Porelo that is tracked as its own piece of work.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-adapters#GH14](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh14)
+- [porelo-adapters#GH14](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh14) (Idea)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST169 — Inspect MCP sessions through the broker
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A person can inspect MCP sessions through the broker, reading tool lists and calls in the journal.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B167](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b167)
-- [porelo-project#PJ15](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj15)
+- [porelo#B167](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b167) (Estimated)
+- [porelo-project#PJ15](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj15) (Estimated)
 
 ## Notes
 

@@ -1,6 +1,6 @@
 # ST130 — Give the agent only its actual broker address
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** An agent gets only its actual broker address, and a task without a broker gets none.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B250](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b250)
+- [porelo#B250](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b250) (Idea)
 
 ## Data
 

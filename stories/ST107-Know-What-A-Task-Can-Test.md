@@ -1,6 +1,6 @@
 # ST107 — Know what a task can test
 
-**Priority:** Medium · **State:** Accepted
+**Priority:** 🟰 Medium · **State:** Accepted
 
 **What a user gains.** A person knows what a task can test, since capability-tagged tests run only with the needed capability and skip only what lacks it.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-project#PJ49](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj49)
-- [porelo#B119](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b119)
+- [porelo-project#PJ49](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj49) (Accepted)
+- [porelo#B119](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b119) (Analyzed)
 
 ## Notes
 

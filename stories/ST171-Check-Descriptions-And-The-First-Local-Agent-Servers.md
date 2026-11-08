@@ -1,14 +1,12 @@
 # ST171 — Check descriptions and the first local agent servers
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** Tool descriptions are checked against rules, and Claude Code's and Pi's local MCP servers are pinned so a changed one is caught.
 
 **The test.** Trigger a description rule with a known counterexample. Start pinned Claude Code and Pi local servers, then change each package or digest; the changed start fails. The rule makes no claim of unlimited protection against prompt injection.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

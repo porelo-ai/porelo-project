@@ -1,14 +1,12 @@
 # ST48 — A chat answers questions about the current step
 
-**Priority:** High · **State:** Idea
+**Priority:** 🔼 High · **State:** Idea
 
 **What a user gains.** A person can ask a chat questions about the current wizard step using the Claude Code already signed in on the machine, and the chat never sees secrets.
 
 **The test.** Beside the wizard, with the Claude Code already signed in on the machine; it never sees a secret and runs nothing unconfirmed.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

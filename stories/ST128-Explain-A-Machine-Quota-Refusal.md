@@ -1,6 +1,6 @@
 # ST128 — Explain a machine quota refusal
 
-**Priority:** Low · **State:** Accepted
+**Priority:** 🔽 Low · **State:** Accepted
 
 **What a user gains.** A person is told the actual limit when a machine request is refused because the provider quota is used up.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT09](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt09)
+- [porelo-buildtools#BT09](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt09) (Accepted)
 
 ## Data
 

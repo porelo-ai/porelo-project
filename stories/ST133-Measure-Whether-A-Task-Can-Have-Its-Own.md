@@ -1,6 +1,6 @@
 # ST133 — Measure whether a task can have its own kernel
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A person can learn whether a task can have its own kernel, since the machine is probed with and without usable KVM.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B59](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b59)
+- [porelo#B59](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b59) (Estimated)
 
 ## Notes
 

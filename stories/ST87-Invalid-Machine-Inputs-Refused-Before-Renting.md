@@ -1,6 +1,6 @@
 # ST87 — Invalid machine inputs refused before renting
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** Invalid machine inputs, such as an unknown provider or a missing field, are refused before anything is rented, with the same variable read on both forges.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT33](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt33)
+- [porelo-buildtools#BT33](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt33) (Idea)
 
 ## Notes
 

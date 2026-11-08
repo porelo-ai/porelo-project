@@ -1,6 +1,6 @@
 # ST244 — Forgejo with its registry, a task fetching a snapshot by name
 
-**Priority:** Highest · **State:** Finished (2026-10-26)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-26)
 
 **What a user gains.** A person can open Forgejo through the VPN, and a task fetches a snapshot from its registry by a declared name.
 
@@ -8,13 +8,13 @@
 
 **Issues:**
 
-- [porelo-host#HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08)
-- [porelo-host#HO17](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho17)
-- [porelo#B233](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b233)
-- [porelo#B234](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b234)
-- [porelo-host#HO20](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho20)
-- [porelo#B266](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b266)
-- [porelo-host#HO26](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho26)
+- [porelo-host#HO08](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho08) (Finished)
+- [porelo-host#HO17](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho17) (Finished)
+- [porelo#B233](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b233) (Finished)
+- [porelo#B234](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b234) (Finished)
+- [porelo-host#HO20](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho20) (Finished)
+- [porelo#B266](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b266) (Finished)
+- [porelo-host#HO26](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho26) (Finished)
 
 ## Data
 

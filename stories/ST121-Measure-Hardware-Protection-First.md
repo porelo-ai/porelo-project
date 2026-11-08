@@ -1,6 +1,6 @@
 # ST121 — Measure hardware protection first
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A person can measure hardware protection first, with a token present, removed or untouched, before relying on it for unlocking.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B63](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b63)
-- [porelo-frontend#F52](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f52)
+- [porelo#B63](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b63) (Estimated)
+- [porelo-frontend#F52](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f52) (Estimated)
 
 ## Notes
 

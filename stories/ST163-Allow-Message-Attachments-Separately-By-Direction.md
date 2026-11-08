@@ -1,6 +1,6 @@
 # ST163 — Allow message attachments separately by direction
 
-**Priority:** Low · **State:** Analyzed
+**Priority:** 🔽 Low · **State:** Analyzed
 
 **What a user gains.** A person allows message attachments separately for each direction, and without permission they are refused or held.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ03](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj03)
+- [porelo-project#PJ03](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj03) (Analyzed)
 
 ## Notes
 

@@ -1,6 +1,6 @@
 # ST208 — porelo-ecosystems
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person gets the ecosystem plugins repository as a named part of Porelo that is tracked as its own piece of work.
 
@@ -8,14 +8,14 @@
 
 **Issues:**
 
-- [porelo-ecosystems#EC04](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec04)
-- [porelo-ecosystems#EC05](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec05)
-- [porelo-ecosystems#EC06](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec06)
-- [porelo-ecosystems#EC07](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec07)
-- [porelo-ecosystems#EC08](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec08)
-- [porelo-ecosystems#EC09](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec09)
-- [porelo-ecosystems#EC14](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec14)
-- [porelo-ecosystems#EC15](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec15)
+- [porelo-ecosystems#EC04](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec04) (Accepted)
+- [porelo-ecosystems#EC05](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec05) (Accepted)
+- [porelo-ecosystems#EC06](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec06) (Accepted)
+- [porelo-ecosystems#EC07](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec07) (Accepted)
+- [porelo-ecosystems#EC08](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec08) (Review)
+- [porelo-ecosystems#EC09](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec09) (Finished)
+- [porelo-ecosystems#EC14](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec14) (Analyzed)
+- [porelo-ecosystems#EC15](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec15) (Idea)
 
 ## Data
 

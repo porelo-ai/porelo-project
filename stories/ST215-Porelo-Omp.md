@@ -1,6 +1,6 @@
 # ST215 — porelo-omp
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person gets the OMP adapter repository as a named part of Porelo that is tracked as its own piece of work.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-omp#OM34](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om34)
+- [porelo-omp#OM34](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om34) (Idea)
 
 ## Data
 

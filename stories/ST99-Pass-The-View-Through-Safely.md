@@ -1,14 +1,12 @@
 # ST99 — Pass the view through safely
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A person can open task and trial views safely, since a missing or wrong token lets no byte through to the VNC server.
 
 **The test.** Open task and trial views. Use no token and a wrong token; no byte may reach the VNC server. End each view and confirm the relay and its processes are gone.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

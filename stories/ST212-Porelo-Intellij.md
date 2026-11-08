@@ -1,6 +1,6 @@
 # ST212 — porelo-intellij
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person gets the IntelliJ plugin repository as a named part of Porelo that is tracked as its own piece of work.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo-intellij#IJ19](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij19)
-- [porelo-intellij#IJ20](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij20)
-- [porelo-intellij#IJ22](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij22)
+- [porelo-intellij#IJ19](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij19) (Idea)
+- [porelo-intellij#IJ20](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij20) (Idea)
+- [porelo-intellij#IJ22](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij22) (Idea)
 
 ## Data
 

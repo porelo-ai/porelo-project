@@ -1,6 +1,6 @@
 # ST166 — Wake only the tasks addressed
 
-**Priority:** Low · **State:** Accepted
+**Priority:** 🔽 Low · **State:** Accepted
 
 **What a user gains.** Only the tasks addressed by nickname or @room are woken, including with non-ASCII text, and a message mentioning no one wakes none.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo#B112](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b112)
-- [porelo-frontend#F88](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f88)
-- [porelo#B274](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b274)
+- [porelo#B112](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b112) (Estimated)
+- [porelo-frontend#F88](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f88) (Estimated)
+- [porelo#B274](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b274) (Accepted)
 
 ## Data
 

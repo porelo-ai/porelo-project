@@ -1,6 +1,6 @@
 # ST231 — Nothing asked that Porelo can know
 
-**Priority:** Highest · **State:** Finished (2026-10-25)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-25)
 
 **What a user gains.** A person is not asked for anything Porelo can know itself, because the wizard writes the project's bundle and asks for no path on the server.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F167](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f167)
+- [porelo-frontend#F167](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f167) (Finished)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST241 — A build server asked from the command line
 
-**Priority:** Highest · **State:** Finished (2026-10-25)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-25)
 
 **What a user gains.** A person can ask a build server from the command line with porelo build status and see the commit and its result for a branch.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B256](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b256)
+- [porelo#B256](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b256) (Finished)
 
 ## Data
 

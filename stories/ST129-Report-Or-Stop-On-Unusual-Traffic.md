@@ -1,6 +1,6 @@
 # ST129 — Report or stop on unusual traffic
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** Unusual traffic, such as odd body sizes, clearance attempts or DNS names, is reported or stops the task on chosen alarms.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B139](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b139)
+- [porelo#B139](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b139) (Estimated)
 
 ## Notes
 

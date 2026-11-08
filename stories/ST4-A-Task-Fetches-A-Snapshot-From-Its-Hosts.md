@@ -1,6 +1,6 @@
 # ST4 — A task fetches a snapshot from its host's forge
 
-**Priority:** Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Backlog
 
 **What a user gains.** A task on the host can fetch Porelo's snapshot from the host's own forge registry by the name its project uses, without reaching outside.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ75](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj75)
+- [porelo-project#PJ75](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj75) (Backlog)
 
 ## Data
 

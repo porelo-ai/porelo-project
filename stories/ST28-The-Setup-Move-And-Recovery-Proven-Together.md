@@ -1,14 +1,12 @@
 # ST28 — The setup, move and recovery proven together
 
-**Priority:** Highest · **State:** Idea
+**Priority:** ⏫ Highest · **State:** Idea
 
 **What a user gains.** The setup, move to the host and recovery work together: a person brings up the project, runs local builds, moves each agent and restores the room and usage records.
 
 **The test.** Bring up the project, run the local builds, move each agent and restore the room and usage after giving the host back. Compare the results with every setup and move criterion; a missing local-build or recovery prerequisite keeps the parent acceptance open.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

@@ -1,14 +1,12 @@
 # ST170 — Hold only new or changed tools for approval
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** Only new or changed MCP tools are held for approval, so unchanged accepted tools run without asking again.
 
 **The test.** Accept two tools, leave one unchanged, change the second and add a third. The unchanged tool works; only the changed and new tools wait in Needs you. Reject them; they stay blocked.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

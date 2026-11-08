@@ -1,6 +1,6 @@
 # ST226 — A parent issue shown apart from the issues that carry its work
 
-**Priority:** Highest · **State:** Finished (2026-10-24)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-24)
 
 **What a user gains.** A person sees a parent issue as its own line under its function with its state, apart from the issues that carry the actual work.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT31](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt31)
+- [porelo-buildtools#BT31](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt31) (Finished)
 
 ## Data
 

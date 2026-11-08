@@ -1,6 +1,6 @@
 # ST112 — See the exact image and package contents
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A person can see the exact image and package contents, such as an SBOM, and an image tag alone is not enough for a project to follow.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo#B41](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b41)
-- [porelo#B98](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b98)
-- [porelo-buildtools#BT18](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt18)
+- [porelo#B41](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b41) (Estimated)
+- [porelo#B98](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b98) (Estimated)
+- [porelo-buildtools#BT18](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt18) (Idea)
 
 ## Notes
 

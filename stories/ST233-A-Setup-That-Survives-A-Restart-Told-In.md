@@ -1,6 +1,6 @@
 # ST233 — A setup that survives a restart, told in times and words
 
-**Priority:** Highest · **State:** Finished (2026-10-25)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-25)
 
 **What a user gains.** A person can close the interface during a setup and find it again after a restart under Machines, with its progress told in times and plain words.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-frontend#F169](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f169)
-- [porelo-frontend#F170](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f170)
+- [porelo-frontend#F169](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f169) (Finished)
+- [porelo-frontend#F170](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f170) (Finished)
 
 ## Data
 

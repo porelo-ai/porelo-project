@@ -1,6 +1,6 @@
 # ST179 — Install a build reader by its offered kind
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person finds build reader packages offered by kind in the setup list and the daemon's installable catalog, and can install one.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B287](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b287)
+- [porelo#B287](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b287) (Idea)
 
 ## Data
 

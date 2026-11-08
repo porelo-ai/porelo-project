@@ -1,6 +1,6 @@
 # ST63 — Rounds of check and fix at the gate
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A build task pushes to its gate, a reviewer leaves findings on that commit, and the builder fixes them in rounds before the person is asked.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ67](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj67)
+- [porelo-project#PJ67](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj67) (Idea)
 
 ## Data
 

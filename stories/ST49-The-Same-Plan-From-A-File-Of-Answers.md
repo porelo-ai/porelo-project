@@ -1,14 +1,12 @@
 # ST49 — The same plan from a file of answers
 
-**Priority:** High · **State:** Idea
+**Priority:** 🔼 High · **State:** Idea
 
 **What a user gains.** An administrator can run the same wizard plan on many machines from a file of answers, and a step that needs a person stops the run clearly.
 
 **The test.** The wizard runs with nobody there for many machines; a step that needs a person stops it and says so.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

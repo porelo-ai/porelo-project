@@ -1,14 +1,12 @@
 # ST153 — Keep a failing transport from blocking another
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A broken transport cannot block a working one, so the host keeps talking through the transports that work.
 
 **The test.** Connect the host to a working stub and a deliberately broken one. Call the broken transport; its error is named and the working transport still delivers. Inspect processes and task environments; secrets are absent.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

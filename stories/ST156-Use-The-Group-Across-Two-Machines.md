@@ -1,14 +1,12 @@
 # ST156 — Use the group across two machines
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person can run a task group across two machines, exchanging messages and reconnecting a machine, with invalid messages refused.
 
 **The test.** Start tasks on two machines, exchange messages and reconnect one machine. Valid messages arrive once. Substitute a wrong peer key; that identity is refused.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

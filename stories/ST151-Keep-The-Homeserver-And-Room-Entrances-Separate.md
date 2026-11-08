@@ -1,6 +1,6 @@
 # ST151 — Keep the homeserver and room entrances separate
 
-**Priority:** Low · **State:** Analyzed
+**Priority:** 🔽 Low · **State:** Analyzed
 
 **What a user gains.** The homeserver and room entrances are kept apart, so a second account cannot connect to another account's homeserver socket.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-message-matrix#MX29](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx29)
-- [porelo-message-matrix#MX77](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx77)
+- [porelo-message-matrix#MX29](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx29) (Backlog)
+- [porelo-message-matrix#MX77](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx77) (Analyzed)
 
 ## Notes
 

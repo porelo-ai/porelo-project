@@ -1,6 +1,6 @@
 # ST137 — Read events after the task is gone
 
-**Priority:** Low · **State:** Analyzed
+**Priority:** 🔽 Low · **State:** Analyzed
 
 **What a user gains.** A person can read a task's events after it is gone, even after clearing its runtime directory or restarting the machine.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B26](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b26)
-- [porelo#B116](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b116)
+- [porelo#B26](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b26) (Analyzed)
+- [porelo#B116](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b116) (Analyzed)
 
 ## Data
 

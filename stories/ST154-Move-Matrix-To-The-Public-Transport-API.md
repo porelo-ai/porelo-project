@@ -1,14 +1,12 @@
 # ST154 — Move Matrix to the public transport API
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person uses Matrix rooms, direct chats, enrollment and retirement through the public transport API, with the old call path gone.
 
 **The test.** Use rooms, direct chats, enrollment and retirement with a host that has no old call path. Offer an old transport; it is clearly refused. Verify delivery guarantees on every path.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

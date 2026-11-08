@@ -1,6 +1,6 @@
 # ST152 — Use the published transport contract
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A developer can build a transport against only the published API and wire libraries and use a stub to pass messages between tasks.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B123](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b123)
+- [porelo#B123](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b123) (Estimated)
 
 ## Notes
 

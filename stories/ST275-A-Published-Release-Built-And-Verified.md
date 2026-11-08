@@ -1,6 +1,6 @@
 # ST275 — A published release built and verified
 
-**Priority:** Highest · **State:** Finished (2026-11-02)
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-02)
 
 **What a user gains.** A person can build a published release, such as Buildtools 0.5.1, and verify it, building IntelliJ from an empty Gradle home against the pinned version.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-intellij#IJ09](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij09)
+- [porelo-intellij#IJ09](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij09) (Finished)
 
 ## Data
 

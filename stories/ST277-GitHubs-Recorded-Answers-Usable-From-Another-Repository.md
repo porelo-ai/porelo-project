@@ -1,6 +1,6 @@
 # ST277 — GitHub's recorded answers usable from another repository
 
-**Priority:** Highest · **State:** Finished (2026-11-02)
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-02)
 
 **What a user gains.** A developer in another repository can replay GitHub's recorded answers from the main and tests jar, without calling GitHub.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-forge-clients#FC12](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc12)
-- [porelo-forge-clients#FC14](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc14)
+- [porelo-forge-clients#FC12](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc12) (Finished)
+- [porelo-forge-clients#FC14](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc14) (Finished)
 
 ## Data
 

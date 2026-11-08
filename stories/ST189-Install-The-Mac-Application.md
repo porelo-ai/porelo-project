@@ -1,6 +1,6 @@
 # ST189 — Install the Mac application
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A person on a Mac can install the application in a fresh account and verify its checksum or attestation.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109)
+- [porelo-frontend#F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109) (Estimated)
 
 ## Notes
 

@@ -1,6 +1,6 @@
 # ST52 — The subagent number chosen when starting
 
-**Priority:** High · **State:** Idea
+**Priority:** 🔼 High · **State:** Idea
 
 **What a user gains.** A person sees the number of subagents that applies in the start dialog, can choose another number, and is told what applies.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F284](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f284)
+- [porelo-frontend#F284](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f284) (Idea)
 
 ## Data
 

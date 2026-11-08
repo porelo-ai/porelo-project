@@ -1,6 +1,6 @@
 # ST145 — Open administration and daily work separately
 
-**Priority:** Low · **State:** Review
+**Priority:** 🔽 Low · **State:** Review
 
 **What a user gains.** A person opens administration and daily work separately, as user, host-admin or access-admin, so each role sees only its own steps.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ71](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj71)
+- [porelo-project#PJ71](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj71) (Finished)
 
 ## Notes
 

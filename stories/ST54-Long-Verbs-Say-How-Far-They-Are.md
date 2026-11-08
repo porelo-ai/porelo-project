@@ -1,6 +1,6 @@
 # ST54 — Long verbs say how far they are
 
-**Priority:** High · **State:** Review
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** A person running a long command sees how far along it is.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-message-matrix#MX51](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx51)
+- [porelo-message-matrix#MX51](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx51) (Review)
 
 ## Data
 

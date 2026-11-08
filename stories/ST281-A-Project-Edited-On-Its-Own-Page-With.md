@@ -1,6 +1,6 @@
 # ST281 — A project edited on its own page, with no machine
 
-**Priority:** Highest · **State:** Finished (2026-11-03)
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-03)
 
 **What a user gains.** A project admin can edit a project on its own page, adding and removing repositories and members and changing a role, with no machine needed.
 
@@ -8,10 +8,10 @@
 
 **Issues:**
 
-- [porelo-frontend#F310](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f310)
-- [porelo-frontend#F330](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f330)
-- [porelo-frontend#F338](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f338)
-- [porelo-frontend#F350](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f350)
+- [porelo-frontend#F310](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f310) (Finished)
+- [porelo-frontend#F330](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f330) (Finished)
+- [porelo-frontend#F338](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f338) (Finished)
+- [porelo-frontend#F350](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f350) (Finished)
 
 ## Covers
 

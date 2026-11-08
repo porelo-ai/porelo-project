@@ -1,6 +1,6 @@
 # ST98 — Offer a screen only when enabled
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A task view screen is offered only when the project enables it, so without permission there is no way to look at it.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B100](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b100)
+- [porelo#B100](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b100) (Idea)
 
 ## Notes
 

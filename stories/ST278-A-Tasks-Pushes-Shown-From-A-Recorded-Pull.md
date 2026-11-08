@@ -1,6 +1,6 @@
 # ST278 — A task's pushes shown from a recorded pull request
 
-**Priority:** Highest · **State:** Finished (2026-11-02)
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-02)
 
 **What a user gains.** A person sees every push of a recorded pull request in the display, started on the adapters' GitHub stand-in.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-adapters#GH12](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh12)
+- [porelo-adapters#GH12](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh12) (Finished)
 
 ## Data
 

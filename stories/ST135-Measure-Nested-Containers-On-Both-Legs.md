@@ -1,6 +1,6 @@
 # ST135 — Measure nested containers on both legs
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A person can see how well nested containers keep to network, process and resource limits on both legs.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B169](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b169)
+- [porelo#B169](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b169) (Estimated)
 
 ## Notes
 

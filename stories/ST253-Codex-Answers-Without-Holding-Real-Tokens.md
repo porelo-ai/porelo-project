@@ -1,6 +1,6 @@
 # ST253 — Codex answers without holding real tokens
 
-**Priority:** Highest · **State:** Finished (2026-10-28)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-28)
 
 **What a user gains.** A person can ask a Codex task a question through the ChatGPT sign-in while the container holds none of the real tokens.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#P11](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p11)
+- [porelo#P11](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p11) (Finished)
 
 ## Data
 

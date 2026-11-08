@@ -1,6 +1,6 @@
 # ST68 — Its agent and effort chosen by the work
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A reviewer starts with the agent and effort that the project's rules set for the work's risk, so riskier work gets a more careful review.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ64](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj64)
+- [porelo-project#PJ64](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj64) (Idea)
 
 ## Data
 

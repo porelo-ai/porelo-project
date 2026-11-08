@@ -1,6 +1,6 @@
 # ST177 — Configure forge repositories and a pool
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person can choose the forge, its repositories and a pool through the dialog or command line, and a missing required piece is refused.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-frontend#F145](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f145)
-- [porelo-frontend#F146](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f146)
+- [porelo-frontend#F145](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f145) (Estimated)
+- [porelo-frontend#F146](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f146) (Idea)
 
 ## Data
 

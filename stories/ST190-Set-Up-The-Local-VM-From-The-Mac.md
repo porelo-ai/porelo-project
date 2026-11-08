@@ -1,14 +1,12 @@
 # ST190 — Set up the local VM from the Mac interface
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person on a Mac can create the local Lima VM in the interface, follow a project, start a task and use its terminal.
 
 **The test.** Create the Lima VM in the interface, follow a project, start a task, use its terminal and review a push. Connect to a remote machine over SSH too. A missing VM capability stops setup with a reason; cancellation leaves no unknown setup resources.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

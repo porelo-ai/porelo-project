@@ -1,6 +1,6 @@
 # ST243 — Both adapters pass one contract suite
 
-**Priority:** Highest · **State:** Finished (2026-10-25)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-25)
 
 **What a user gains.** Both forge adapters are held to one contract suite, so an adapter that breaks the contract fails the tests instead of misleading people.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B253](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b253)
-- [porelo-adapters#GH06](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh06)
+- [porelo#B253](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b253) (Finished)
+- [porelo-adapters#GH06](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh06) (Finished)
 
 ## Covers
 

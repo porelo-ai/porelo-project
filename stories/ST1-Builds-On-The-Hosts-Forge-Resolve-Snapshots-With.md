@@ -1,6 +1,6 @@
 # ST1 — Builds on the host's forge resolve snapshots with a read-only token
 
-**Priority:** Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Review
 
 **What a user gains.** Builds on the host's own forge can fetch Porelo snapshots with a read-only token, so they get what they need without being able to change anything.
 
@@ -8,13 +8,13 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT42](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt42)
-- [porelo-host#HO52](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho52)
-- [porelo-buildtools#BT39](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt39)
-- [porelo-message-sluice#SL36](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl36)
-- [porelo-claude-code#CC41](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc41)
-- [porelo-pi#PI41](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi41)
-- [porelo-omp#OM38](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om38)
+- [porelo-buildtools#BT42](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt42) (Review)
+- [porelo-host#HO52](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho52) (Review)
+- [porelo-buildtools#BT39](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt39) (Review)
+- [porelo-message-sluice#SL36](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl36) (Review)
+- [porelo-claude-code#CC41](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc41) (Review)
+- [porelo-pi#PI41](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi41) (Review)
+- [porelo-omp#OM38](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om38) (Review)
 
 ## Data
 

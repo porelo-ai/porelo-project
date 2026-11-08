@@ -1,6 +1,6 @@
 # ST203 — porelo-agy
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person gets the Antigravity adapter repository as a named part of Porelo that is tracked as its own piece of work.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-agy#AG06](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag06)
+- [porelo-agy#AG06](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag06) (Idea)
 
 ## Data
 

@@ -1,14 +1,12 @@
 # ST146 — Admit and remove another person
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A host admin can admit a second person with their own key and remove them again, so they reach the intended services only while admitted.
 
 **The test.** Admit a second computer with its own key and reach the intended services. Remove that person; their access ends while the other person's access remains. The handover file contains no private key.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

@@ -1,6 +1,6 @@
 # ST204 — porelo-ai.github.io
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A person gets the project website repository as a named part of Porelo that is tracked as its own piece of work.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-ai.github.io#SI04](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si04)
+- [porelo-ai.github.io#SI04](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si04) (Estimated)
 
 ## Data
 

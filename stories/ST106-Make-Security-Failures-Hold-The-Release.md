@@ -1,6 +1,6 @@
 # ST106 — Make security failures hold the release
 
-**Priority:** Medium · **State:** Estimated
+**Priority:** 🟰 Medium · **State:** Estimated
 
 **What a user gains.** A release is held back when a security check fails, because Fedora isolation and the misuse tests must pass on their intended legs.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B51](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b51)
-- [porelo#B142](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b142)
+- [porelo#B51](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b51) (Estimated)
+- [porelo#B142](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b142) (Estimated)
 
 ## Data
 

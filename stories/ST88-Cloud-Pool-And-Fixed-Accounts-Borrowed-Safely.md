@@ -1,14 +1,12 @@
 # ST88 — Cloud, pool and fixed accounts borrowed safely
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** Machines from a cloud source, a pool or a fixed server are lent safely, so a second run cannot take a machine already in use.
 
 **The test.** Request the same kind from a cloud source, pool and fixed server. A second run cannot take an occupied account. Return each lease; only its own cloud resources are deleted or its own borrowed account reset.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

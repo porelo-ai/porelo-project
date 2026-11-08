@@ -1,6 +1,6 @@
 # ST164 — Recognize a file spread across messages
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A file split over many messages, such as a ZIP or PEM, is recognized and refused once it passes the threshold.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-message-sluice#SL08](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl08)
+- [porelo-message-sluice#SL08](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl08) (Estimated)
 
 ## Notes
 

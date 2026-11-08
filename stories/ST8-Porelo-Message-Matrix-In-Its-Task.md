@@ -1,6 +1,6 @@
 # ST8 — porelo-message-matrix in its task
 
-**Priority:** Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Backlog
 
 **What a user gains.** The Matrix message transport can be developed inside its own task on the host and reach Review with a green build on the host's forge.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-message-matrix#MX43](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx43)
+- [porelo-message-matrix#MX43](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx43) (Backlog)
 
 ## Data
 

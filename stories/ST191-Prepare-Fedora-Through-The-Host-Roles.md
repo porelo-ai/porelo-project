@@ -1,6 +1,6 @@
 # ST191 — Prepare Fedora through the host roles
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person can prepare a Fedora host with the host roles, with SELinux, firewalld and dnf set up and forbidden service access refused.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-host#HO15](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho15)
-- [porelo-frontend#F138](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f138)
+- [porelo-host#HO15](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho15) (Idea)
+- [porelo-frontend#F138](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f138) (Idea)
 
 ## Notes
 

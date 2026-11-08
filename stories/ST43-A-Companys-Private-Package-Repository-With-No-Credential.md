@@ -1,6 +1,6 @@
 # ST43 — A company's private package repository, with no credential in the task
 
-**Priority:** High · **State:** Analyzed
+**Priority:** 🔼 High · **State:** Analyzed
 
 **What a user gains.** A task can build against a company's authenticated Nexus or Artifactory without ever holding the credential, since the settings are written outside the task.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B222](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b222)
-- [porelo#B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219)
+- [porelo#B222](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b222) (Analyzed)
+- [porelo#B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219) (Estimated)
 
 ## Data
 

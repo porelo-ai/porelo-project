@@ -1,6 +1,6 @@
 # ST115 — Keep project intake and sign-in free of hidden secrets
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** Project intake and sign-in keep secrets out of sight, so invalid credential names are refused and known test credentials do not leak.
 
@@ -8,10 +8,10 @@
 
 **Issues:**
 
-- [porelo#B202](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b202)
-- [porelo#B140](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b140)
-- [porelo#B178](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b178)
-- [porelo#B252](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b252)
+- [porelo#B202](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b202) (Accepted)
+- [porelo#B140](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b140) (Estimated)
+- [porelo#B178](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b178) (Analyzed)
+- [porelo#B252](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b252) (Idea)
 
 ## Notes
 

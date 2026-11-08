@@ -1,14 +1,12 @@
 # ST188 — Read messages and builds on ARM
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person on ARM can send filtered messages and read green and red builds, and invalid messages are refused.
 
 **The test.** Send a filtered message and read a green and a red build. An invalid message is refused and the red build includes its log. Check that the installed executables meet the ARM baseline.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

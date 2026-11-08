@@ -1,6 +1,6 @@
 # ST220 — Claude works in a task, signed in with the operator's subscription
 
-**Priority:** Highest · **State:** Finished (2026-10-23)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-23)
 
 **What a user gains.** A person can sign Claude Code in once with their own subscription, and tasks then work with only a short-lived token and no memory of the agent's own sign-in.
 
@@ -8,10 +8,10 @@
 
 **Issues:**
 
-- [porelo-claude-code#CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30)
-- [porelo-claude-code#CC24](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc24)
-- [porelo#B255](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b255)
-- [porelo-message-sluice#SL29](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl29)
+- [porelo-claude-code#CC30](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc30) (Finished)
+- [porelo-claude-code#CC24](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc24) (Finished)
+- [porelo#B255](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b255) (Finished)
+- [porelo-message-sluice#SL29](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl29) (Finished)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST113 — Recover from an unavailable image source
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** If the first Ubuntu mirror stops answering, an image build recovers by using the next source instead of failing.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B263](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b263)
+- [porelo#B263](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b263) (Idea)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST206 — porelo-claude-code
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person gets the Claude Code adapter repository as a named part of Porelo that is tracked as its own piece of work.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-claude-code#CC42](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc42)
+- [porelo-claude-code#CC42](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc42) (Idea)
 
 ## Data
 

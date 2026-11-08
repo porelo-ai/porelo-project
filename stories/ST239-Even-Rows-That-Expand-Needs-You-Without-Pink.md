@@ -1,6 +1,6 @@
 # ST239 — Even rows that expand, Needs you without pink
 
-**Priority:** Highest · **State:** Finished (2026-10-25)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-25)
 
 **What a user gains.** A person sees Projects, Forges, Machines and Needs you as even single-line rows that expand on demand, without distracting pink.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-frontend#F187](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f187)
-- [porelo-frontend#F188](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f188)
+- [porelo-frontend#F187](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f187) (Finished)
+- [porelo-frontend#F188](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f188) (Finished)
 
 ## Data
 

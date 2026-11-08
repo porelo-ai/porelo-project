@@ -1,6 +1,6 @@
 # ST286 — A person sees who must review and sign
 
-**Priority:** Highest · **State:** Finished (2026-11-03)
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-03)
 
 **What a user gains.** A person sees on a repository's page whether its merge needs a review and who must sign.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ81](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj81)
+- [porelo-project#PJ81](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj81) (Finished)
 
 ## Data
 

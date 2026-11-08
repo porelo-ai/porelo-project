@@ -1,6 +1,6 @@
 # ST118 — Verify the complete ChatGPT sign-in
 
-**Priority:** Low · **State:** Review
+**Priority:** 🔽 Low · **State:** Review
 
 **What a user gains.** A person can sign in to ChatGPT and ask a Codex task a question, with no sign-in material inside the container.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ54](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj54)
+- [porelo-project#PJ54](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj54) (Finished)
 
 ## Notes
 

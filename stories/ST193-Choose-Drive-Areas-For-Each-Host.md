@@ -1,6 +1,6 @@
 # ST193 — Choose drive areas for each host
 
-**Priority:** Low · **State:** Implementing
+**Priority:** 🔽 Low · **State:** Implementing
 
 **What a user gains.** A person can choose the drive areas for each host, so each host receives only its own whether vaults are separate or shared.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ50](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj50)
+- [porelo-project#PJ50](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj50) (Implementing)
 
 ## Notes
 

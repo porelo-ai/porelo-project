@@ -1,6 +1,6 @@
 # ST92 — Run waiting work in its own environment
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A person can run waiting work in its own isolated environment with gate try and read the streamed result, without it reaching the gate.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B95](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b95)
+- [porelo#B95](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b95) (Idea)
 
 ## Notes
 

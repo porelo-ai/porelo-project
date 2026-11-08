@@ -1,6 +1,6 @@
 # ST258 — The host's secrets from one file, typed as one master password
 
-**Priority:** Highest · **State:** Finished (2026-10-28)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-28)
 
 **What a user gains.** A person can rent a host with its secrets taken from one file and typed as one master password on the desktop.
 
@@ -8,10 +8,10 @@
 
 **Issues:**
 
-- [porelo-host#HO37](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho37)
-- [porelo-frontend#F199](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f199)
-- [porelo-frontend#F195](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f195)
-- [porelo-frontend#F196](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f196)
+- [porelo-host#HO37](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho37) (Finished)
+- [porelo-frontend#F199](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f199) (Finished)
+- [porelo-frontend#F195](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f195) (Finished)
+- [porelo-frontend#F196](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f196) (Finished)
 
 ## Covers
 

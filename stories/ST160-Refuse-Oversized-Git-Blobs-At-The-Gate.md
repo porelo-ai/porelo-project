@@ -1,6 +1,6 @@
 # ST160 — Refuse oversized Git blobs at the gate
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** Oversized Git blobs are refused at the gate, so a small blob waits for review and an oversized one never gets through.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B15](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b15)
+- [porelo#B15](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b15) (Estimated)
 
 ## Notes
 

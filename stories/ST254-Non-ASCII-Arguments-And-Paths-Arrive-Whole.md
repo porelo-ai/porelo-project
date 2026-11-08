@@ -1,6 +1,6 @@
 # ST254 — Non-ASCII arguments and paths arrive whole
 
-**Priority:** Highest · **State:** Finished (2026-10-28)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-28)
 
 **What a user gains.** Non-ASCII text in room messages, arguments and paths arrives whole through every launched program.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B215](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b215)
+- [porelo#B215](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b215) (Finished)
 
 ## Data
 

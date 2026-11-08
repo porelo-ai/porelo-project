@@ -1,6 +1,6 @@
 # ST157 — Let a limited service manage task accounts
 
-**Priority:** Low · **State:** Accepted
+**Priority:** 🔽 Low · **State:** Accepted
 
 **What a user gains.** A limited project service can manage task accounts as its own task but cannot act as a person or another project.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-message-matrix#MX38](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx38)
+- [porelo-message-matrix#MX38](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx38) (Accepted)
 
 ## Notes
 

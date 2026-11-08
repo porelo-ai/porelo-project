@@ -1,6 +1,6 @@
 # ST175 — Connect an existing Bitbucket project
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A person can connect an existing Bitbucket project and take a repository in as a Porelo project.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F72](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f72)
+- [porelo-frontend#F72](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f72) (Estimated)
 
 ## Notes
 

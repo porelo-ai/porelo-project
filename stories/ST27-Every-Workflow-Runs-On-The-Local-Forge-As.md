@@ -1,6 +1,6 @@
 # ST27 — Every workflow runs on the local forge as on the central one
 
-**Priority:** Highest · **State:** Implementing
+**Priority:** ⏫ Highest · **State:** Implementing
 
 **What a user gains.** Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ60](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj60)
+- [porelo-project#PJ60](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj60) (Implementing)
 
 ## Data
 

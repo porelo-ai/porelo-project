@@ -1,6 +1,6 @@
 # ST6 — porelo-agy and porelo-codex each in its own task
 
-**Priority:** Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Backlog
 
 **What a user gains.** The Antigravity and Codex adapters can each be worked on inside their own task on the host and reach Review with a green build on the host's forge.
 
@@ -8,10 +8,10 @@
 
 **Issues:**
 
-- [porelo-agy#AG02](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag02)
-- [porelo-agy#AG04](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag04)
-- [porelo-codex#CX04](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx04)
-- [porelo-codex#CX08](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx08)
+- [porelo-agy#AG02](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag02) (Backlog)
+- [porelo-agy#AG04](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag04) (Review)
+- [porelo-codex#CX04](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx04) (Backlog)
+- [porelo-codex#CX08](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx08) (Review)
 
 ## Data
 

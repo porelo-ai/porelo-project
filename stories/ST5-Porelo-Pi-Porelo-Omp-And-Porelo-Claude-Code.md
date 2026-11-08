@@ -1,6 +1,6 @@
 # ST5 — porelo-pi, porelo-omp and porelo-claude-code each in its own task, with snapshots of porelo from the registry
 
-**Priority:** Highest · **State:** Implementing
+**Priority:** ⏫ Highest · **State:** Implementing
 
 **What a user gains.** The Pi, OMP and Claude Code adapters can each be developed in their own task on the host and build there against Porelo snapshots from the local registry.
 
@@ -8,12 +8,12 @@
 
 **Issues:**
 
-- [porelo-pi#PI38](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi38)
-- [porelo-pi#PI39](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi39)
-- [porelo-omp#OM35](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om35)
-- [porelo-omp#OM36](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om36)
-- [porelo-claude-code#CC38](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc38)
-- [porelo-claude-code#CC39](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc39)
+- [porelo-pi#PI38](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi38) (Review)
+- [porelo-pi#PI39](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi39) (Implementing)
+- [porelo-omp#OM35](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om35) (Review)
+- [porelo-omp#OM36](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om36) (Implementing)
+- [porelo-claude-code#CC38](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc38) (Review)
+- [porelo-claude-code#CC39](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc39) (Implementing)
 
 ## Data
 

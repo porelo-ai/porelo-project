@@ -1,6 +1,6 @@
 # ST289 — Review in IntelliJ
 
-**Priority:** Highest · **State:** Finished (2026-10-29)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-29)
 
 **What a user gains.** A person can review in IntelliJ on the laptop, reading a waiting push and approving the displayed commit against the local Porelo.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-intellij#IJ01](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij01)
-- [porelo-intellij#IJ02](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij02)
+- [porelo-intellij#IJ01](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij01) (Finished)
+- [porelo-intellij#IJ02](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij02) (Finished)
 
 ## Data
 

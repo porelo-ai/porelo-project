@@ -1,6 +1,6 @@
 # ST97 — Return to the chosen files
 
-**Priority:** Medium · **State:** Estimated
+**Priority:** 🟰 Medium · **State:** Estimated
 
 **What a user gains.** A person can rewind a task to a turn snapshot and compare the restored files, and an unsupported session is told so.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B164](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b164)
+- [porelo#B164](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b164) (Estimated)
 
 ## Data
 

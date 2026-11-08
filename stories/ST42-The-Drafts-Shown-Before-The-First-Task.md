@@ -1,6 +1,6 @@
 # ST42 — The drafts shown before the first task
 
-**Priority:** High · **State:** Idea
+**Priority:** 🔼 High · **State:** Idea
 
 **What a user gains.** At the first start, a person sees the drafted proposals in the interface and can take or change them before any task runs.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F142](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f142)
+- [porelo-frontend#F142](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f142) (Rejected)
 
 ## Data
 

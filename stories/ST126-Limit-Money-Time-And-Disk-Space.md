@@ -1,6 +1,6 @@
 # ST126 — Limit money, time and disk space
 
-**Priority:** Low · **State:** Analyzed
+**Priority:** 🔽 Low · **State:** Analyzed
 
 **What a user gains.** A person can limit money, runtime and disk space, and an unknown price cannot bypass the dollar limit.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo#B177](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b177)
-- [porelo#B147](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b147)
-- [porelo#B185](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b185)
+- [porelo#B177](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b177) (Analyzed)
+- [porelo#B147](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b147) (Estimated)
+- [porelo#B185](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b185) (Estimated)
 
 ## Data
 

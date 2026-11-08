@@ -1,6 +1,6 @@
 # ST44 — Questions, a plan, and taken up again
 
-**Priority:** High · **State:** Accepted
+**Priority:** 🔼 High · **State:** Accepted
 
 **What a user gains.** A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ57](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj57)
+- [porelo-project#PJ57](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj57) (Accepted)
 
 ## Notes
 

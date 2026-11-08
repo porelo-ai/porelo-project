@@ -1,6 +1,6 @@
 # ST91 — A merge task and event route used deliberately
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A merge task starts only when it matches the advanced main, and a person can route events deliberately.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B290](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b290)
-- [porelo-host#HO28](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho28)
+- [porelo#B290](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b290) (Idea)
+- [porelo-host#HO28](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho28) (Idea)
 
 ## Data
 

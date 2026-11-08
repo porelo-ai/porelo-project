@@ -1,6 +1,6 @@
 # ST167 — Reach a directly addressed peer or explain why not
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A message to a directly addressed peer arrives, or the sender is told plainly why it cannot.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B257](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b257)
+- [porelo#B257](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b257) (Idea)
 
 ## Data
 

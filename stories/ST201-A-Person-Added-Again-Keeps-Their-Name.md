@@ -1,6 +1,6 @@
 # ST201 — A person added again keeps their name
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person removed from a prepared host and added again under the same user name keeps their Porelo data and name.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-message-matrix#MX53](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx53)
+- [porelo-message-matrix#MX53](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx53) (Rejected)
 
 ## Data
 

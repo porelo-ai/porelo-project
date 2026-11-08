@@ -1,6 +1,6 @@
 # ST58 — Who wrote it and what it touches, shown on waiting work
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B323](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b323)
+- [porelo#B323](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b323) (Idea)
 
 ## Covers
 

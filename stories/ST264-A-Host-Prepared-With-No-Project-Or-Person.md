@@ -1,6 +1,6 @@
 # ST264 — A host prepared with no project or person
 
-**Priority:** Highest · **State:** Finished (2026-10-30)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-30)
 
 **What a user gains.** A host admin can prepare a rented server from the interface with the VPN and shared services, with no project or person yet on it.
 
@@ -8,12 +8,12 @@
 
 **Issues:**
 
-- [porelo-message-matrix#MX54](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx54)
-- [porelo-frontend#F208](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f208)
-- [porelo-frontend#F209](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f209)
-- [porelo-frontend#F210](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f210)
-- [porelo-frontend#F212](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f212)
-- [porelo-frontend#F211](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f211)
+- [porelo-message-matrix#MX54](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx54) (Finished)
+- [porelo-frontend#F208](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f208) (Finished)
+- [porelo-frontend#F209](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f209) (Finished)
+- [porelo-frontend#F210](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f210) (Finished)
+- [porelo-frontend#F212](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f212) (Finished)
+- [porelo-frontend#F211](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f211) (Finished)
 
 ## Covers
 

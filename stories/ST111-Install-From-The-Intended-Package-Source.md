@@ -1,6 +1,6 @@
 # ST111 — Install from the intended package source
 
-**Priority:** Medium · **State:** Accepted
+**Priority:** 🟰 Medium · **State:** Accepted
 
 **What a user gains.** A person installing through the interface on fresh Fedora, Debian or Ubuntu gets packages only from the intended source, and a changed setup script is caught.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo#B196](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b196)
-- [porelo-frontend#F81](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f81)
-- [porelo#B260](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b260)
+- [porelo#B196](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b196) (Estimated)
+- [porelo-frontend#F81](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f81) (Estimated)
+- [porelo#B260](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b260) (Accepted)
 
 ## Data
 

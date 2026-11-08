@@ -1,6 +1,6 @@
 # ST235 — Buttons that read as buttons
 
-**Priority:** Highest · **State:** Finished (2026-10-25)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-25)
 
 **What a user gains.** A person sees the project page's actions as clear, equal buttons in the style they picked, with giving the server back clearly marked.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-frontend#F173](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f173)
-- [porelo-frontend#F176](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f176)
+- [porelo-frontend#F173](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f173) (Finished)
+- [porelo-frontend#F176](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f176) (Finished)
 
 ## Data
 

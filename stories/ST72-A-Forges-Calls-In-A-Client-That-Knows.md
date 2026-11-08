@@ -1,6 +1,6 @@
 # ST72 — A forge's calls in a client that knows nothing of Porelo
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** A client that knows nothing of Porelo can use GitHub's and Forgejo's pull requests, reviews, comments, checks and webhooks.
 
@@ -8,12 +8,12 @@
 
 **Issues:**
 
-- [porelo-project#PJ74](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj74)
-- [porelo-forge-clients#FC03](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc03)
-- [porelo-forge-clients#FC09](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc09)
-- [porelo-forge-clients#FC10](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc10)
-- [porelo-forge-clients#FC11](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc11)
-- [porelo-forge-clients#FC13](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc13)
+- [porelo-project#PJ74](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj74) (Implementing)
+- [porelo-forge-clients#FC03](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc03) (Analyzed)
+- [porelo-forge-clients#FC09](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc09) (Finished)
+- [porelo-forge-clients#FC10](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc10) (Finished)
+- [porelo-forge-clients#FC11](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc11) (Finished)
+- [porelo-forge-clients#FC13](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc13) (Finished)
 
 ## Data
 

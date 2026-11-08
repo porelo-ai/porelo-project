@@ -1,6 +1,6 @@
 # ST26 — A changed collection refused
 
-**Priority:** Highest · **State:** Implementing
+**Priority:** ⏫ Highest · **State:** Implementing
 
 **What a user gains.** A host collection that has been changed after publishing is refused, so a person installs only what was actually released.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F137](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f137)
+- [porelo-frontend#F137](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f137) (Rework)
 
 ## Data
 

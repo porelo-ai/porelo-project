@@ -1,6 +1,6 @@
 # ST13 — porelo and porelo-host each in its task, with a way back
 
-**Priority:** Highest · **State:** Idea
+**Priority:** ⏫ Highest · **State:** Idea
 
 **What a user gains.** Porelo and the host collection can each be built by an agent in its own task on the host, with a way back if the move needs undoing.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo-host#HO40](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho40)
-- [porelo-host#HO39](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho39)
-- [porelo#B305](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b305)
+- [porelo-host#HO40](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho40) (Analyzed)
+- [porelo-host#HO39](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho39) (Analyzed)
+- [porelo#B305](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b305) (Idea)
 
 ## Data
 

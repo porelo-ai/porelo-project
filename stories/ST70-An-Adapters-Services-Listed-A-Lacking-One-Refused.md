@@ -1,6 +1,6 @@
 # ST70 — An adapter's services listed, a lacking one refused
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A person sees which services, such as build and review, each installed adapter offers, and a service an adapter lacks is refused.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-project#PJ66](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj66)
-- [porelo#B308](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b308)
+- [porelo-project#PJ66](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj66) (Idea)
+- [porelo#B308](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b308) (Analyzed)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST37 — The providers' usage seen in a status line
 
-**Priority:** High · **State:** Idea
+**Priority:** 🔼 High · **State:** Idea
 
 **What a user gains.** A person sees all providers in use as one traffic light in the status line and can click to see each provider's usage.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B365](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b365)
-- [porelo-frontend#F282](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f282)
+- [porelo#B365](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b365) (Idea)
+- [porelo-frontend#F282](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f282) (Idea)
 
 ## Data
 

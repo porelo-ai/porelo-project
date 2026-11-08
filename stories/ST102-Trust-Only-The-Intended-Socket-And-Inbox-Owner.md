@@ -1,6 +1,6 @@
 # ST102 — Trust only the intended socket and inbox owner
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** On AppArmor, Porelo trusts only the intended socket and inbox owner and refuses another program's socket or a wrongly owned file.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B175](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b175)
-- [porelo#B184](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b184)
+- [porelo#B175](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b175) (Analyzed)
+- [porelo#B184](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b184) (Estimated)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST83 — An expiring token told ahead
 
-**Priority:** Medium · **State:** Accepted
+**Priority:** 🟰 Medium · **State:** Accepted
 
 **What a user gains.** A person is told ahead of time, once, when a forge token on a host is about to expire.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ70](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj70)
+- [porelo-project#PJ70](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj70) (Accepted)
 
 ## Data
 

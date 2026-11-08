@@ -1,6 +1,6 @@
 # ST125 — Measure price and enforce the token limit
 
-**Priority:** Low · **State:** Analyzed
+**Priority:** 🔽 Low · **State:** Analyzed
 
 **What a user gains.** A person sees what each model costs by dated price, an unpriced request is not shown as free, and the token limit is enforced.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B191](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b191)
-- [porelo#B138](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b138)
+- [porelo#B191](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b191) (Analyzed)
+- [porelo#B138](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b138) (Estimated)
 
 ## Notes
 

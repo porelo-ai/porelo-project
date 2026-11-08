@@ -1,6 +1,6 @@
 # ST178 — Request a declared build from the task
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A task can request a build of a declared kind and read the result in its files, and an undeclared kind is refused.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B254](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b254)
+- [porelo#B254](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b254) (Idea)
 
 ## Data
 

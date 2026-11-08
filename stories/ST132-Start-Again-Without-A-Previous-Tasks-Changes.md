@@ -1,6 +1,6 @@
 # ST132 — Start again without a previous task's changes
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A new task starts clean, inheriting none of an earlier task's Pi settings, extensions or PATH changes.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-pi#PI37](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi37)
-- [porelo#B282](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b282)
+- [porelo-pi#PI37](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi37) (Idea)
+- [porelo#B282](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b282) (Idea)
 
 ## Data
 

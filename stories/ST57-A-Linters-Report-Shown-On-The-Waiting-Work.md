@@ -1,6 +1,6 @@
 # ST57 — A linter's report shown on the waiting work
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A person adding a linter's SARIF report to waiting work sees each finding on its file and lines.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291)
-- [porelo#B292](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b292)
+- [porelo#B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291) (Idea)
+- [porelo#B292](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b292) (Idea)
 
 ## Covers
 

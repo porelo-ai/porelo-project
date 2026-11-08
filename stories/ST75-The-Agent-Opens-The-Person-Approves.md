@@ -1,6 +1,6 @@
 # ST75 — The agent opens, the person approves
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** The agent opens the pull request from its own forge account and only the person approves it, so authorship and approval stay separate.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F190](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f190)
+- [porelo-frontend#F190](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f190) (Analyzed)
 
 ## Covers
 

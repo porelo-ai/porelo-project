@@ -1,6 +1,6 @@
 # ST69 — A read-only OMP reviewer started explicitly
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** A person can start OMP as a read-only reviewer with a chosen thinking level, and the agent gets exactly those values.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B101](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b101)
-- [porelo-omp#OM19](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om19)
+- [porelo#B101](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b101) (Analyzed)
+- [porelo-omp#OM19](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om19) (Analyzed)
 
 ## Data
 

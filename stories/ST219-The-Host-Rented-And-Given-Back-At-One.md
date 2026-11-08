@@ -1,6 +1,6 @@
 # ST219 — The host rented and given back at one command
 
-**Priority:** Highest · **State:** Finished (2026-10-23)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-23)
 
 **What a user gains.** A person can rent a host from Scaleway and set it up with one command, and give it back with one command, reaching it only through the VPN.
 
@@ -8,13 +8,13 @@
 
 **Issues:**
 
-- [porelo-frontend#F131](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f131)
-- [porelo-frontend#F132](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f132)
-- [porelo-frontend#F134](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f134)
-- [porelo-host#HO09](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho09)
-- [porelo-host#HO05](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho05)
-- [porelo-host#HO06](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho06)
-- [porelo-host#HO02](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho02)
+- [porelo-frontend#F131](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f131) (Finished)
+- [porelo-frontend#F132](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f132) (Finished)
+- [porelo-frontend#F134](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f134) (Finished)
+- [porelo-host#HO09](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho09) (Finished)
+- [porelo-host#HO05](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho05) (Finished)
+- [porelo-host#HO06](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho06) (Finished)
+- [porelo-host#HO02](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho02) (Finished)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST138 — Detect changes to the history
 
-**Priority:** Low · **State:** Analyzed
+**Priority:** 🔽 Low · **State:** Analyzed
 
 **What a user gains.** A person can detect changes to the history, since a changed journal line or a truncated end is noticed on verification.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B154](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b154)
-- [porelo#B121](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b121)
+- [porelo#B154](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b154) (Implementing)
+- [porelo#B121](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b121) (Analyzed)
 
 ## Notes
 

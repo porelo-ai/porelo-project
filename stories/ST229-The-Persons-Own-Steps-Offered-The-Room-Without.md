@@ -1,6 +1,6 @@
 # ST229 — The person's own steps offered, the room without handwork
 
-**Priority:** Highest · **State:** Finished (2026-10-24)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-24)
 
 **What a user gains.** A person finds the VPN, joining the room and its tunnel offered in the interface as terminals with the command already filled in, so no handwork is needed.
 
@@ -8,13 +8,13 @@
 
 **Issues:**
 
-- [porelo-frontend#F157](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f157)
-- [porelo-frontend#F158](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f158)
-- [porelo-frontend#F159](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f159)
-- [porelo-frontend#F165](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f165)
-- [porelo-message-matrix#MX35](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx35)
-- [porelo#B264](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b264)
-- [porelo#B273](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b273)
+- [porelo-frontend#F157](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f157) (Finished)
+- [porelo-frontend#F158](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f158) (Finished)
+- [porelo-frontend#F159](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f159) (Finished)
+- [porelo-frontend#F165](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f165) (Finished)
+- [porelo-message-matrix#MX35](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx35) (Finished)
+- [porelo#B264](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b264) (Finished)
+- [porelo#B273](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b273) (Finished)
 
 ## Data
 

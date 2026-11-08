@@ -1,6 +1,6 @@
 # ST284 — The host vault opened by the person's key
 
-**Priority:** Highest · **State:** Finished (2026-11-03)
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-03)
 
 **What a user gains.** Opening the tunnel unlocks the person's host vault with their key, with no passphrase or prompt.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B345](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b345)
+- [porelo#B345](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b345) (Finished)
 
 ## Covers
 

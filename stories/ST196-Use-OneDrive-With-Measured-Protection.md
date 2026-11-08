@@ -1,6 +1,6 @@
 # ST196 — Use OneDrive with measured protection
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person can use OneDrive on a host with protected setup materials, sync a test area, and be told when a login is missing.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-host#HO16](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho16)
-- [porelo-frontend#F139](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f139)
+- [porelo-host#HO16](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho16) (Rejected)
+- [porelo-frontend#F139](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f139) (Rejected)
 
 ## Notes
 

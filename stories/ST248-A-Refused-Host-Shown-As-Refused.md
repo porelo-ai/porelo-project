@@ -1,6 +1,6 @@
 # ST248 — A refused host shown as refused
 
-**Priority:** Highest · **State:** Finished (2026-10-27)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-27)
 
 **What a user gains.** A person sees a host the agent refuses named as refused when trying a start with --dry-run, instead of discovering it later.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B235](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b235)
+- [porelo#B235](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b235) (Finished)
 
 ## Data
 

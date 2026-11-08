@@ -1,6 +1,6 @@
 # ST116 — Cancel the agent sign-in completely
 
-**Priority:** Low · **State:** Analyzed
+**Priority:** 🔽 Low · **State:** Analyzed
 
 **What a user gains.** A person can cancel an agent's sign-in completely with the supported escape, even if the agent ignores it.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B271](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b271)
+- [porelo#B271](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b271) (Analyzed)
 
 ## Data
 

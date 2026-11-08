@@ -1,6 +1,6 @@
 # ST236 — A setup run once, kept and found again
 
-**Priority:** Highest · **State:** Finished (2026-10-25)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-25)
 
 **What a user gains.** A setup runs once, is kept, and can be found again, with closing the interface saying in words whether the setup ends or keeps running.
 
@@ -8,10 +8,10 @@
 
 **Issues:**
 
-- [porelo-frontend#F180](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f180)
-- [porelo-frontend#F179](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f179)
-- [porelo-frontend#F178](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f178)
-- [porelo-frontend#F181](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f181)
+- [porelo-frontend#F180](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f180) (Finished)
+- [porelo-frontend#F179](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f179) (Finished)
+- [porelo-frontend#F178](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f178) (Finished)
+- [porelo-frontend#F181](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f181) (Finished)
 
 ## Data
 

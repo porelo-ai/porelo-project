@@ -1,6 +1,6 @@
 # ST79 — A comment written and a held one released
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A person can write a comment or reply in the IntelliJ plugin and release a held reply, with the same effect as in the interface.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-intellij#IJ13](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij13)
+- [porelo-intellij#IJ13](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij13) (Idea)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST17 — The gate and the transport held by tests
 
-**Priority:** Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Review
 
 **What a user gains.** The message gate and the transport are guarded by tests, shown by a mutation run, so a removed refusal gets noticed.
 
@@ -8,17 +8,17 @@
 
 **Issues:**
 
-- [porelo#B393](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b393)
-- [porelo-message-matrix#MX66](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx66)
-- [porelo-message-matrix#MX68](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx68)
-- [porelo-message-matrix#MX69](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx69)
-- [porelo-message-matrix#MX70](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx70)
-- [porelo-message-matrix#MX71](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx71)
-- [porelo-message-matrix#MX72](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx72)
-- [porelo-message-matrix#MX73](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx73)
-- [porelo-message-matrix#MX74](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx74)
-- [porelo-message-matrix#MX75](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx75)
-- [porelo-message-sluice#SL38](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl38)
+- [porelo#B393](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b393) (Review)
+- [porelo-message-matrix#MX66](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx66) (Review)
+- [porelo-message-matrix#MX68](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx68) (Review)
+- [porelo-message-matrix#MX69](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx69) (Review)
+- [porelo-message-matrix#MX70](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx70) (Review)
+- [porelo-message-matrix#MX71](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx71) (Review)
+- [porelo-message-matrix#MX72](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx72) (Review)
+- [porelo-message-matrix#MX73](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx73) (Review)
+- [porelo-message-matrix#MX74](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx74) (Review)
+- [porelo-message-matrix#MX75](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx75) (Review)
+- [porelo-message-sluice#SL38](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl38) (Review)
 
 ## Data
 

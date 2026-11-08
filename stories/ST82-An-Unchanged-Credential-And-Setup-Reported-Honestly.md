@@ -1,6 +1,6 @@
 # ST82 — An unchanged credential and setup reported honestly
 
-**Priority:** Medium · **State:** Review
+**Priority:** 🟰 Medium · **State:** Review
 
 **What a user gains.** Setting the same credential or running setup again reports honestly that nothing changed, in text and in the interface.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B214](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b214)
-- [porelo#B216](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b216)
+- [porelo#B214](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b214) (Review)
+- [porelo#B216](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b216) (Review)
 
 ## Data
 

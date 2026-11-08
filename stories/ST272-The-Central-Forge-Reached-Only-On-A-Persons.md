@@ -1,6 +1,6 @@
 # ST272 — The central forge reached only on a person's word
 
-**Priority:** Highest · **State:** Finished (2026-11-02)
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-02)
 
 **What a user gains.** The central forge is reached only when an admitted person starts the push or pull with their own token.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-host#HO72](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho72)
-- [porelo-frontend#F274](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f274)
+- [porelo-host#HO72](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho72) (Finished)
+- [porelo-frontend#F274](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f274) (Finished)
 
 ## Covers
 

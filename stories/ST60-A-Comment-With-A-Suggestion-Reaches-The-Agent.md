@@ -1,6 +1,6 @@
 # ST60 — A comment with a suggestion reaches the agent
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** A person can comment on a line with a suggestion in the review, and the task building that work receives it.
 
@@ -8,11 +8,11 @@
 
 **Issues:**
 
-- [porelo#B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136)
-- [porelo#B150](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b150)
-- [porelo#B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166)
-- [porelo-frontend#F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78)
-- [porelo-frontend#F107](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f107)
+- [porelo#B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136) (Analyzed)
+- [porelo#B150](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b150) (Analyzed)
+- [porelo#B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166) (Analyzed)
+- [porelo-frontend#F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78) (Analyzed)
+- [porelo-frontend#F107](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f107) (Analyzed)
 
 ## Data
 

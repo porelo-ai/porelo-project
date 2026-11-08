@@ -1,6 +1,6 @@
 # ST38 — The chosen branch receives the work
 
-**Priority:** High · **State:** Estimated
+**Priority:** 🔼 High · **State:** Estimated
 
 **What a user gains.** A person can choose a branch template or an explicit branch, and approved work lands on exactly that branch on the forge.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B190](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b190)
-- [porelo-frontend#F97](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f97)
+- [porelo#B190](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b190) (Review)
+- [porelo-frontend#F97](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f97) (Estimated)
 
 ## Data
 

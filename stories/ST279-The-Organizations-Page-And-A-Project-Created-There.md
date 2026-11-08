@@ -1,6 +1,6 @@
 # ST279 — The organization's page, and a project created there
 
-**Priority:** Highest · **State:** Finished (2026-11-03)
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-03)
 
 **What a user gains.** A person sees an organization's people, projects, hosts and owners on its page and can create a project there.
 
@@ -8,25 +8,25 @@
 
 **Issues:**
 
-- [porelo#B391](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b391)
-- [porelo-frontend#F309](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f309)
-- [porelo-frontend#F311](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f311)
-- [porelo-frontend#F314](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f314)
-- [porelo-frontend#F315](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f315)
-- [porelo#B419](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b419)
-- [porelo#B420](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b420)
-- [porelo-frontend#F322](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f322)
-- [porelo-frontend#F326](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f326)
-- [porelo-frontend#F327](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f327)
-- [porelo-frontend#F329](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f329)
-- [porelo-frontend#F331](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f331)
-- [porelo-frontend#F337](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f337)
-- [porelo-frontend#F339](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f339)
-- [porelo-frontend#F344](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f344)
-- [porelo-frontend#F345](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f345)
-- [porelo-frontend#F346](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f346)
-- [porelo-frontend#F347](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f347)
-- [porelo-frontend#F348](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f348)
+- [porelo#B391](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b391) (Finished)
+- [porelo-frontend#F309](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f309) (Finished)
+- [porelo-frontend#F311](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f311) (Finished)
+- [porelo-frontend#F314](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f314) (Finished)
+- [porelo-frontend#F315](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f315) (Finished)
+- [porelo#B419](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b419) (Finished)
+- [porelo#B420](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b420) (Finished)
+- [porelo-frontend#F322](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f322) (Finished)
+- [porelo-frontend#F326](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f326) (Finished)
+- [porelo-frontend#F327](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f327) (Finished)
+- [porelo-frontend#F329](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f329) (Finished)
+- [porelo-frontend#F331](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f331) (Finished)
+- [porelo-frontend#F337](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f337) (Finished)
+- [porelo-frontend#F339](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f339) (Finished)
+- [porelo-frontend#F344](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f344) (Finished)
+- [porelo-frontend#F345](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f345) (Finished)
+- [porelo-frontend#F346](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f346) (Finished)
+- [porelo-frontend#F347](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f347) (Finished)
+- [porelo-frontend#F348](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f348) (Finished)
 
 ## Covers
 

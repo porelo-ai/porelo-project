@@ -1,6 +1,6 @@
 # ST86 — Rented and given back through the module, a state from another computer refused
 
-**Priority:** Medium · **State:** Accepted
+**Priority:** 🟰 Medium · **State:** Accepted
 
 **What a user gains.** A person can rent a Scaleway host through the module and give it back, and a state file from another computer is refused.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-host#HO23](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho23)
-- [porelo-frontend#F166](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f166)
+- [porelo-host#HO23](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho23) (Estimated)
+- [porelo-frontend#F166](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f166) (Accepted)
 
 ## Data
 

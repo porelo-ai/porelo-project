@@ -1,6 +1,6 @@
 # ST3 — porelo's Build on the host's Forgejo
 
-**Priority:** Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Review
 
 **What a user gains.** Porelo itself builds with the same workflows on the host's own forge as on GitHub, so work on the host is checked the same way as everywhere else.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B306](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b306)
+- [porelo#B306](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b306) (Review)
 
 ## Data
 

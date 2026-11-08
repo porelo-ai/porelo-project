@@ -1,6 +1,6 @@
 # ST184 — Prove the Apple silicon VM can enforce the boundaries
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person on Apple silicon learns whether the local ARM VM can enforce the boundaries, with refusals showing what is missing.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B251](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b251)
-- [porelo-project#PJ55](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj55)
+- [porelo#B251](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b251) (Idea)
+- [porelo-project#PJ55](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj55) (Accepted)
 
 ## Notes
 

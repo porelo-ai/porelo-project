@@ -1,6 +1,6 @@
 # ST225 — The release plan page drawn as the local one
 
-**Priority:** Highest · **State:** Finished (2026-10-24)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-24)
 
 **What a user gains.** A person reads the release plan page drawn like the local one, with each sprint's bar following its issues' states and a coloured chip per issue.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT27](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt27)
-- [porelo-buildtools#BT29](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt29)
+- [porelo-buildtools#BT27](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt27) (Finished)
+- [porelo-buildtools#BT29](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt29) (Finished)
 
 ## Data
 

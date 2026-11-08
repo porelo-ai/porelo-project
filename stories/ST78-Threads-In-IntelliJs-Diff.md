@@ -1,6 +1,6 @@
 # ST78 — Threads in IntelliJ's diff
 
-**Priority:** Medium · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** A person sees every review thread on its lines in IntelliJ's diff, marked with who wrote it.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-intellij#IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04)
-- [porelo-intellij#IJ12](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij12)
+- [porelo-intellij#IJ04](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij04) (Backlog)
+- [porelo-intellij#IJ12](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij12) (Review)
 
 ## Notes
 

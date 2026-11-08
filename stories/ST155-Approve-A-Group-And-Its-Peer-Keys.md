@@ -1,6 +1,6 @@
 # ST155 — Approve a group and its peer keys
 
-**Priority:** Low · **State:** Backlog
+**Priority:** 🔽 Low · **State:** Backlog
 
 **What a user gains.** A person can create a task group, confirm its peers' fingerprints and message the group, and unconfirmed peers are refused.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B14](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b14)
+- [porelo#B14](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b14) (Backlog)
 
 ## Notes
 

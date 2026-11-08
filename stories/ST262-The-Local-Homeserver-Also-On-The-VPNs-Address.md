@@ -1,6 +1,6 @@
 # ST262 — The local homeserver also on the VPN's address
 
-**Priority:** Highest · **State:** Finished (2026-10-28)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-28)
 
 **What a user gains.** A person with the VPN up can reach the local homeserver on the VPN's address under its own certificate.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo-message-matrix#MX42](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx42)
-- [porelo-message-matrix#MX41](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx41)
-- [porelo#B300](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b300)
+- [porelo-message-matrix#MX42](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx42) (Finished)
+- [porelo-message-matrix#MX41](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx41) (Finished)
+- [porelo#B300](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b300) (Finished)
 
 ## Data
 

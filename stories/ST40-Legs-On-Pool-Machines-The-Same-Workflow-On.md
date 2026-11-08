@@ -1,6 +1,6 @@
 # ST40 — Legs on pool machines, the same workflow on both forges
 
-**Priority:** High · **State:** Idea
+**Priority:** 🔼 High · **State:** Idea
 
 **What a user gains.** The same acceptance legs run on pool machines on both the host's forge and the central one, so tests behave the same wherever they run.
 
@@ -8,12 +8,12 @@
 
 **Issues:**
 
-- [porelo-host#HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27)
-- [porelo#B322](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b322)
-- [porelo-claude-code#CC40](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc40)
-- [porelo-pi#PI40](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi40)
-- [porelo-omp#OM37](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om37)
-- [porelo-agy#AG05](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag05)
+- [porelo-host#HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27) (Idea)
+- [porelo#B322](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b322) (Idea)
+- [porelo-claude-code#CC40](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc40) (Idea)
+- [porelo-pi#PI40](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi40) (Idea)
+- [porelo-omp#OM37](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om37) (Idea)
+- [porelo-agy#AG05](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag05) (Idea)
 
 ## Data
 

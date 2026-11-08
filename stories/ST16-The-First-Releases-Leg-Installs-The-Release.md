@@ -1,6 +1,6 @@
 # ST16 — The first release's leg installs the release
 
-**Priority:** Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Backlog
 
 **What a user gains.** The first release can be installed from its published packages in a test leg, so a release is proven installable before people use it.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT01](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt01)
+- [porelo-buildtools#BT01](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt01) (Backlog)
 
 ## Data
 

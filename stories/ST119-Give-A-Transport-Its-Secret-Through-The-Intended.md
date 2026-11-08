@@ -1,6 +1,6 @@
 # ST119 — Give a transport its secret through the intended input
 
-**Priority:** Low · **State:** Review
+**Priority:** 🔽 Low · **State:** Review
 
 **What a user gains.** A transport such as Matrix gets its secret through the intended input, so it does not show in process environments or arguments.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B206](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b206)
-- [porelo-message-matrix#MX23](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx23)
+- [porelo#B206](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b206) (Review)
+- [porelo-message-matrix#MX23](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx23) (Review)
 
 ## Notes
 

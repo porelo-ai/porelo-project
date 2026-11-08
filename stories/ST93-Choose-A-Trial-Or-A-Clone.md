@@ -1,6 +1,6 @@
 # ST93 — Choose a trial or a clone
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** A person can choose from the interface to run a waiting commit in a trial container or to fetch it as a clone.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-frontend#F74](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f74)
-- [porelo-frontend#F95](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f95)
+- [porelo-frontend#F74](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f74) (Analyzed)
+- [porelo-frontend#F95](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f95) (Analyzed)
 
 ## Notes
 

@@ -1,6 +1,6 @@
 # ST288 — Import one provider and recognize OMP
 
-**Priority:** Highest · **State:** Finished (2026-11-06)
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-06)
 
 **What a user gains.** A person can sign Pi in to two providers, import only the chosen one, start a task, and have OMP recognized.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo#B226](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b226)
-- [porelo-pi#PI36](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi36)
-- [porelo-omp#OM32](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om32)
+- [porelo#B226](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b226) (Finished)
+- [porelo-pi#PI36](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi36) (Finished)
+- [porelo-omp#OM32](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om32) (Finished)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST256 — The secrets file made once and opened with KeePassXC
 
-**Priority:** Highest · **State:** Finished (2026-10-28)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-28)
 
 **What a user gains.** A person can make the secrets file once from the interface's terminal and open it with KeePassXC, with no secret appearing in the interface, files beside it or logs.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F198](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f198)
+- [porelo-frontend#F198](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f198) (Finished)
 
 ## Covers
 

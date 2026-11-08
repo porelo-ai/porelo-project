@@ -1,6 +1,6 @@
 # ST105 — Keep public SSH closed after the VPN is ready
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** Once the VPN is ready, public SSH stays closed, and a documented recovery path exists if the VPN breaks.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-host#HO22](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho22)
+- [porelo-host#HO22](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho22) (Rejected)
 
 ## Data
 

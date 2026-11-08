@@ -1,6 +1,6 @@
 # ST148 — Recognize a token awaiting organization approval
 
-**Priority:** Low · **State:** Analyzed
+**Priority:** 🔽 Low · **State:** Analyzed
 
 **What a user gains.** A person creating a project is told clearly when the GitHub token still awaits organization approval.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-frontend#F115](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f115)
-- [porelo-frontend#F59](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f59)
+- [porelo-frontend#F115](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f115) (Analyzed)
+- [porelo-frontend#F59](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f59) (Estimated)
 
 ## Data
 

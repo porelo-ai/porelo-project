@@ -1,6 +1,6 @@
 # ST41 — `porelo project init` proposes tools and rules
 
-**Priority:** High · **State:** Estimated
+**Priority:** 🔼 High · **State:** Estimated
 
 **What a user gains.** A person starting a Maven repository gets a proposed tool and rules file that porelo project init drafts, with each value explained.
 
@@ -8,12 +8,12 @@
 
 **Issues:**
 
-- [porelo-project#PJ52](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj52)
-- [porelo#B220](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b220)
-- [porelo#B221](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b221)
-- [porelo-ecosystems#EC01](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec01)
-- [porelo-ecosystems#EC02](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec02)
-- [porelo-ecosystems#EC03](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec03)
+- [porelo-project#PJ52](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj52) (Estimated)
+- [porelo#B220](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b220) (Review)
+- [porelo#B221](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b221) (Review)
+- [porelo-ecosystems#EC01](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec01) (Review)
+- [porelo-ecosystems#EC02](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec02) (Finished)
+- [porelo-ecosystems#EC03](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec03) (Review)
 
 ## Notes
 

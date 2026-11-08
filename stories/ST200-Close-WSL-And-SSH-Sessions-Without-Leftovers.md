@@ -1,6 +1,6 @@
 # ST200 — Close WSL and SSH sessions without leftovers
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person using IntelliJ on Windows can cancel WSL or SSH connections or close the IDE without leaving sessions behind.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-intellij#IJ10](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij10)
-- [porelo-intellij#IJ11](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij11)
+- [porelo-intellij#IJ10](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij10) (Idea)
+- [porelo-intellij#IJ11](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij11) (Idea)
 
 ## Data
 

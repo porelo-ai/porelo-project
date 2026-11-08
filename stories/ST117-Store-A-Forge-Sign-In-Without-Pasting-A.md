@@ -1,6 +1,6 @@
 # ST117 — Store a forge sign-in without pasting a token
 
-**Priority:** Low · **State:** Accepted
+**Priority:** 🔽 Low · **State:** Accepted
 
 **What a user gains.** A person can store a forge sign-in through the device-code login in a terminal, with no token to paste.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B270](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b270)
+- [porelo#B270](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b270) (Accepted)
 
 ## Data
 

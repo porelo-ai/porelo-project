@@ -1,6 +1,6 @@
 # ST74 — Replies released, a thread resolved by an internal person
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** The agent's reply shows on the pull request only after the person releases it, and an internal person can resolve a thread.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F191](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f191)
+- [porelo-frontend#F191](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f191) (Analyzed)
 
 ## Covers
 

@@ -1,6 +1,6 @@
 # ST94 — Approve one of several attempts
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** A person can start several attempts from one commit, compare their differences and approve one, while the others are dropped.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B163](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b163)
+- [porelo#B163](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b163) (Analyzed)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST110 — Sign packages and setup with the trusted key
 
-**Priority:** Medium · **State:** Estimated
+**Priority:** 🟰 Medium · **State:** Estimated
 
 **What a user gains.** A person can install Porelo and the Claude Code adapter from one joint published version and verify packages and setup with the trusted signing key.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B99](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b99)
-- [porelo-claude-code#CC23](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc23)
+- [porelo#B99](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b99) (Estimated)
+- [porelo-claude-code#CC23](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc23) (Estimated)
 
 ## Notes
 

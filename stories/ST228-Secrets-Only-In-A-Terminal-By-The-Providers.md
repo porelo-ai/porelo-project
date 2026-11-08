@@ -1,6 +1,6 @@
 # ST228 — Secrets only in a terminal, by the provider's own login
 
-**Priority:** Highest · **State:** Finished (2026-10-24)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-24)
 
 **What a user gains.** A person gives secrets only in a terminal, using the drive provider's own login, so Porelo never handles the password itself.
 
@@ -8,10 +8,10 @@
 
 **Issues:**
 
-- [porelo-frontend#F152](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f152)
-- [porelo-frontend#F153](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f153)
-- [porelo-frontend#F160](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f160)
-- [porelo#B269](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b269)
+- [porelo-frontend#F152](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f152) (Finished)
+- [porelo-frontend#F153](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f153) (Finished)
+- [porelo-frontend#F160](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f160) (Finished)
+- [porelo#B269](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b269) (Finished)
 
 ## Covers
 

@@ -1,6 +1,6 @@
 # ST194 — Use a secrets file readable by a separate tool
 
-**Priority:** Low · **State:** Implementing
+**Priority:** 🔽 Low · **State:** Implementing
 
 **What a user gains.** A person can open and change the secrets file in both KeePassXC and Porelo, with concurrent changes preserved or reported.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ51](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj51)
+- [porelo-project#PJ51](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj51) (Implementing)
 
 ## Notes
 

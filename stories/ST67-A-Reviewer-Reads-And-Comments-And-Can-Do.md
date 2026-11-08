@@ -1,6 +1,6 @@
 # ST67 — A reviewer reads and comments, and can do nothing more
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** A person can start a reviewer that reads waiting work and writes findings as comments, and it can do nothing more.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172)
+- [porelo#B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172) (Analyzed)
 
 ## Data
 

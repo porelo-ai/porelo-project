@@ -1,6 +1,6 @@
 # ST101 — Let only Porelo own its Fedora socket
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** On an enforcing SELinux Fedora machine, only Porelo can own its socket, so another program cannot stand in for it.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo#B135](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b135)
-- [porelo#B40](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b40)
-- [porelo#B284](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b284)
+- [porelo#B135](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b135) (Analyzed)
+- [porelo#B40](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b40) (Estimated)
+- [porelo#B284](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b284) (Idea)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST259 — The setup's files uploaded, not read from the drive
 
-**Priority:** Highest · **State:** Finished (2026-10-28)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-28)
 
 **What a user gains.** A person can rent a host from a drive that holds neither the machine file nor the bundle, since the setup's files are uploaded rather than read from the drive.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-host#HO36](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho36)
-- [porelo-frontend#F197](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f197)
+- [porelo-host#HO36](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho36) (Finished)
+- [porelo-frontend#F197](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f197) (Finished)
 
 ## Covers
 

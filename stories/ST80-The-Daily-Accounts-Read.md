@@ -1,6 +1,6 @@
 # ST80 — The daily accounts read
 
-**Priority:** Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A person can read the daily limits of two Claude Code subscriptions, Codex and Antigravity with porelo limits.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ65](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj65)
+- [porelo-project#PJ65](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj65) (Idea)
 
 ## Data
 

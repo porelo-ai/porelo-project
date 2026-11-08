@@ -1,14 +1,12 @@
 # ST192 — Use the ordinary host flow for Fedora
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person can pick Fedora in the ordinary host flow, go from stop to ready and take the host down, and unsupported images are refused.
 
 **The test.** Select Fedora, go through the stop to ready and take the host down. An unsupported image or missing tool is refused before partial installation.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

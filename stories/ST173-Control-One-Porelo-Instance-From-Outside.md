@@ -1,6 +1,6 @@
 # ST173 — Control one Porelo instance from outside
 
-**Priority:** Low · **State:** Accepted
+**Priority:** 🔽 Low · **State:** Accepted
 
 **What a user gains.** A person can control one Porelo instance from outside over MCP to start tasks, read status and send messages, while approving, rejecting and vault access stay refused.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ35](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj35)
+- [porelo-project#PJ35](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj35) (Accepted)
 
 ## Notes
 

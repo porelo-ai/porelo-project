@@ -1,6 +1,6 @@
 # ST96 — Open a task port locally
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** A person can open a task's web server port locally from the host, while access from elsewhere stays closed.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B165](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b165)
+- [porelo#B165](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b165) (Analyzed)
 
 ## Data
 

@@ -1,14 +1,12 @@
 # ST182 — Review a Bitbucket pull request
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person can review a Bitbucket pull request, reading threads and suggestions as SARIF and releasing a reply.
 
 **The test.** Read Bitbucket Data Center threads and suggestions as SARIF and release a reply. An unknown author is held; an unreleased reply never appears online. A build-reader result cannot stand in for a review result.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

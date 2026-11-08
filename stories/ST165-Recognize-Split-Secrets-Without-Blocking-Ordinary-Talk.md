@@ -1,14 +1,12 @@
 # ST165 — Recognize split secrets without blocking ordinary talk
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A secret spread over several messages is detected, while ordinary English conversation is not blocked.
 
 **The test.** Spread a secret over messages and examine 200 real English messages. The secret is detected and the ordinary conversation has no correlation finding. Findings from bursts or similarity alone remain SUSPICIOUS.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

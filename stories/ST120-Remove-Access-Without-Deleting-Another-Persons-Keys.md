@@ -1,6 +1,6 @@
 # ST120 — Remove access without deleting another person's keys
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A person can unfollow a project or clear a machine and lose access without deleting another person's keys.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B117](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b117)
-- [porelo#B153](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b153)
+- [porelo#B117](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b117) (Estimated)
+- [porelo#B153](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b153) (Estimated)
 
 ## Data
 

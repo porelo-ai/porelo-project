@@ -1,6 +1,6 @@
 # ST50 — A machine and a host reached from Windows
 
-**Priority:** High · **State:** Idea
+**Priority:** 🔼 High · **State:** Idea
 
 **What a user gains.** A person on Windows can reach a machine over SSH and see its projects, work, terminal and gate from the Windows build.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-frontend#F108](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f108)
-- [porelo-frontend#F290](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f290)
+- [porelo-frontend#F108](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f108) (Review)
+- [porelo-frontend#F290](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f290) (Idea)
 
 ## Data
 

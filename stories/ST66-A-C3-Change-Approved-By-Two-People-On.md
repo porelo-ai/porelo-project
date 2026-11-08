@@ -1,6 +1,6 @@
 # ST66 — A C3 change approved by two people, on what they read
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** A risky C3 change needs a second person to approve it, and a push after review voids the approval so people approve what they read.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B145](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b145)
+- [porelo#B145](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b145) (Analyzed)
 
 ## Data
 

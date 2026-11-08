@@ -1,6 +1,6 @@
 # ST100 — Check allowed destinations
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** A person sees whether the machine can check allowed destinations, and a task reaches only the addresses, domains and sets its project allows.
 
@@ -8,10 +8,10 @@
 
 **Issues:**
 
-- [porelo#B34](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b34)
-- [porelo#B10](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b10)
-- [porelo#B237](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b237)
-- [porelo#B152](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b152)
+- [porelo#B34](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b34) (Analyzed)
+- [porelo#B10](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b10) (Analyzed)
+- [porelo#B237](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b237) (Estimated)
+- [porelo#B152](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b152) (Analyzed)
 
 ## Data
 

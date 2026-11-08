@@ -1,6 +1,6 @@
 # ST7 — porelo-buildtools in its task
 
-**Priority:** Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Backlog
 
 **What a user gains.** The build tools can be developed inside their own task on the host and reach Review with a green build on the host's forge.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37)
+- [porelo-buildtools#BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37) (Backlog)
 
 ## Data
 

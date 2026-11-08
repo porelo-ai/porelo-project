@@ -1,6 +1,6 @@
 # ST270 — Admitted, registered, added and joined with one click, from lists
 
-**Priority:** Highest · **State:** Finished (2026-11-02)
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-02)
 
 **What a user gains.** A host admin can admit a project admin, register a project, add a developer and join the room with one click by picking from the registry's lists.
 
@@ -8,14 +8,14 @@
 
 **Issues:**
 
-- [porelo#B352](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b352)
-- [porelo#B353](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b353)
-- [porelo-frontend#F269](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f269)
-- [porelo-frontend#F271](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f271)
-- [porelo-frontend#F272](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f272)
-- [porelo-frontend#F273](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f273)
-- [porelo-frontend#F278](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f278)
-- [porelo-frontend#F276](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f276)
+- [porelo#B352](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b352) (Finished)
+- [porelo#B353](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b353) (Finished)
+- [porelo-frontend#F269](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f269) (Finished)
+- [porelo-frontend#F271](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f271) (Finished)
+- [porelo-frontend#F272](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f272) (Finished)
+- [porelo-frontend#F273](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f273) (Finished)
+- [porelo-frontend#F278](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f278) (Finished)
+- [porelo-frontend#F276](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f276) (Finished)
 
 ## Covers
 

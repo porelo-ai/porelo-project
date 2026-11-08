@@ -1,6 +1,6 @@
 # ST257 — A repository names its agent and the name it goes by
 
-**Priority:** Highest · **State:** Finished (2026-10-28)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-28)
 
 **What a user gains.** A repository can name its agent and a nickname, so each task starts with that repository's agent and appears in the room under that name.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B298](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b298)
-- [porelo-frontend#F148](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f148)
+- [porelo#B298](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b298) (Finished)
+- [porelo-frontend#F148](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f148) (Finished)
 
 ## Data
 

@@ -1,6 +1,6 @@
 # ST214 — porelo-message-sluice
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person gets the message sluice repository as a named part of Porelo that is tracked as its own piece of work.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-message-sluice#SL39](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl39)
+- [porelo-message-sluice#SL39](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl39) (Idea)
 
 ## Data
 

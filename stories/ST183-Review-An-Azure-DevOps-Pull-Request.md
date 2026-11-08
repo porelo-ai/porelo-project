@@ -1,14 +1,12 @@
 # ST183 — Review an Azure DevOps pull request
 
-**Priority:** Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person can review an Azure DevOps pull request, reading threads and suggestions as SARIF and releasing a reply.
 
 **The test.** Read Azure DevOps threads and suggestions as SARIF and release a reply. An unknown author is held; an unreleased reply never appears online. Refuse an unsupported mandatory review operation by name.
 
-**Issues:**
-
-- **Issues:** none yet
+**Issues:** none yet
 
 ## Notes
 

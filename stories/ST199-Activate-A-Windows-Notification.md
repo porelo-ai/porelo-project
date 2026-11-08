@@ -1,6 +1,6 @@
 # ST199 — Activate a Windows notification
 
-**Priority:** Low · **State:** Analyzed
+**Priority:** 🔽 Low · **State:** Analyzed
 
 **What a user gains.** A person on Windows can activate a notification and land in the correct running interface at the intended place.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F114](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f114)
+- [porelo-frontend#F114](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f114) (Analyzed)
 
 ## Data
 

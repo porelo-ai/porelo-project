@@ -1,6 +1,6 @@
 # ST185 — Tasks on macOS through Apple containers
 
-**Priority:** Low · **State:** Analyzed
+**Priority:** 🔽 Low · **State:** Analyzed
 
 **What a user gains.** A developer on macOS can run tasks through Apple containers with the same guarantees, or sees the proof of why not.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ25](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj25)
+- [porelo-project#PJ25](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj25) (Analyzed)
 
 ## Data
 

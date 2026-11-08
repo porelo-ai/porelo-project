@@ -1,6 +1,6 @@
 # ST267 — Developers added and dropped through the access file
 
-**Priority:** Highest · **State:** Finished (2026-10-30)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-30)
 
 **What a user gains.** Developers are added to or dropped from the signed access file, so a new developer joins from their own laptop with their own key.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo-frontend#F215](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f215)
-- [porelo-frontend#F216](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f216)
-- [porelo-frontend#F232](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f232)
+- [porelo-frontend#F215](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f215) (Finished)
+- [porelo-frontend#F216](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f216) (Finished)
+- [porelo-frontend#F232](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f232) (Finished)
 
 ## Covers
 

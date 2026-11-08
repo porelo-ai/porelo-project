@@ -1,6 +1,6 @@
 # ST127 — Keep container limits on large hosts
 
-**Priority:** Low · **State:** Implementing
+**Priority:** 🔽 Low · **State:** Implementing
 
 **What a user gains.** Container limits still apply on large hosts, so the same configuration behaves the same on small and large machines.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ68](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj68)
+- [porelo-project#PJ68](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj68) (Implementing)
 
 ## Notes
 

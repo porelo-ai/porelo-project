@@ -1,6 +1,6 @@
 # ST222 — The host up and down from the interface, then a task started there
 
-**Priority:** Highest · **State:** Finished (2026-10-23)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-23)
 
 **What a user gains.** A person can put a server up and take it down from the interface, be asked only at the stop for the drive login and vault passphrase, and then start a task there.
 
@@ -8,15 +8,15 @@
 
 **Issues:**
 
-- [porelo-frontend#F135](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f135)
-- [porelo-frontend#F140](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f140)
-- [porelo-frontend#F141](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f141)
-- [porelo-host#HO19](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho19)
-- [porelo-host#HO10](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho10)
-- [porelo#B258](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b258)
-- [porelo#B261](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b261)
-- [porelo-host#HO18](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho18)
-- [porelo-frontend#F151](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f151)
+- [porelo-frontend#F135](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f135) (Finished)
+- [porelo-frontend#F140](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f140) (Finished)
+- [porelo-frontend#F141](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f141) (Finished)
+- [porelo-host#HO19](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho19) (Finished)
+- [porelo-host#HO10](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho10) (Finished)
+- [porelo#B258](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b258) (Finished)
+- [porelo#B261](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b261) (Finished)
+- [porelo-host#HO18](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho18) (Finished)
+- [porelo-frontend#F151](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f151) (Finished)
 
 ## Data
 

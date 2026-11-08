@@ -1,6 +1,6 @@
 # ST59 — A report outside the profile refused
 
-**Priority:** Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** Reports with unsafe locations, fixes in the wrong file or other disallowed content are refused, so a bad report cannot do harm.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-message-sluice#SL24](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl24)
+- [porelo-message-sluice#SL24](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl24) (Analyzed)
 
 ## Data
 

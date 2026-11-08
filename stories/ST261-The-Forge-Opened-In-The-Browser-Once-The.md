@@ -1,6 +1,6 @@
 # ST261 — The forge opened in the browser once the VPN is up
 
-**Priority:** Highest · **State:** Finished (2026-10-28)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-28)
 
 **What a user gains.** A person can open the forge in the browser once the VPN is up and sign in with the lasting password.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-host#HO35](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho35)
-- [porelo-frontend#F202](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f202)
+- [porelo-host#HO35](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho35) (Finished)
+- [porelo-frontend#F202](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f202) (Finished)
 
 ## Data
 

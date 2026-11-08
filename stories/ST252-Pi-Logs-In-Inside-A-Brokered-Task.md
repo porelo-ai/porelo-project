@@ -1,6 +1,6 @@
 # ST252 — Pi logs in inside a brokered task
 
-**Priority:** Highest · **State:** Finished (2026-10-28)
+**Priority:** ⏫ Highest · **State:** Finished (2026-10-28)
 
 **What a user gains.** A Pi task behind the broker can log in and answer.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-pi#PI21](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi21)
+- [porelo-pi#PI21](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi21) (Finished)
 
 ## Data
 

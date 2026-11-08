@@ -1,6 +1,6 @@
 # ST168 — An outside detector catalog measured
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A person learns what an outside detector catalog finds and misses, from a measurement rather than a guess.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-message-sluice#SL04](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl04)
+- [porelo-message-sluice#SL04](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl04) (Estimated)
 
 ## Data
 

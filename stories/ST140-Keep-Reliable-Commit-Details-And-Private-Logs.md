@@ -1,6 +1,6 @@
 # ST140 — Keep reliable commit details and private logs
 
-**Priority:** Low · **State:** Estimated
+**Priority:** 🔽 Low · **State:** Estimated
 
 **What a user gains.** A person reads reliable commit details in merge trailers, forged agent details are rejected, and private logs stay private.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo#B144](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b144)
-- [porelo#B155](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b155)
-- [porelo#B143](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b143)
+- [porelo#B144](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b144) (Estimated)
+- [porelo#B155](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b155) (Estimated)
+- [porelo#B143](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b143) (Estimated)
 
 ## Data
 
