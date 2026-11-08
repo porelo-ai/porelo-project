@@ -85,6 +85,9 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj102"></a>[PJ102](PJ102-The-Shared-Rules-Read-True-Inside-A-Task.md) | — | — | Every rule of the shared block can be followed as written by an agent inside a task, and still outside one. |
+| <a id="pj101"></a>[PJ101](PJ101-A-Tasks-Commits-Name-Their-Harness-And-Model.md) | — | — | Every commit an agent makes in a task names the harness and model that drove it, and a commit without it is refused. |
+| <a id="pj100"></a>[PJ100](PJ100-A-Push-Is-Checked-For-A-Persons-Own-Terms.md) | — | — | Work leaves the gate carrying no word that names the person's own machine unless forwarded knowingly; the list of words is never public nor at rest on a host. |
 | <a id="pj99"></a>[PJ99](PJ99-Every-Rule-Of-AGENTS-md-Holds-Inside-A-Task.md) | — | — | An agent in a task, holding only its own repository, can follow every rule of the shared block; what a rule needs from outside is handed in at the start, checked outside the task, or the rule is reworded. |
 | <a id="pj95"></a>[PJ95](PJ95-Where-A-Person-May-Not-Add-A-Deploy-Key.md) | — | — | A person who may not add a machine's deploy key at the central forge still brings a project to a machine: Porelo hands them what to ask an administrator for, and no token comes to lie on a server. |
 | <a id="pj93"></a>[PJ93](PJ93-Work-Arrives-Under-The-Branch-Names-A-Forge-Requires.md) | — | — | Wherever Porelo pushes work, online or after a gate, the branch name follows what that repository's forge accepts, and a person can set it. |
