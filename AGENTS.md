@@ -495,20 +495,20 @@ and the UTC time that text last changed; change it in the channel first, never i
   repository's issue prefixes are `PJ`, and `A` for candidate agents without a repository; they are
   not in `project.yml`, because `project.yml` is defined here.
 - **`project.yml`'s keys are documented in `porelo`, under `doc/project-file.md`**, not here.
-- **A release is planned in `plan/<release>/plan.yml`**: its sprints, the functions the operator tests and their
-  issues, never an issue of the release as a whole. The workflow `plan-pages.yml` renders its page from every repository's `main`, at a
-  push and hourly, onto the branch `plan-pages`, and says what `plan check` finds; the plan is kept current at every change of state.
-- **`plan/later/plan.yml` holds every issue no release holds yet.** A new Idea goes there when it is filed, and leaves it when a release
-  takes it.
-- **Sprints are numbered from one within each release, without gaps.** A letter (`6a`, `6b`) marks only a
-  sprint inserted into the running release; a release not yet started is renumbered instead, since no other
-  repository names its sprints. A sprint reference names its release when the context does not make it clear.
-- **A requirement here is planned as an issue, and waited for, only while it is not split.** Once its parts are
-  filed in the repositories that build them, every wait on it moves to the part that is waited for, and the plan names
-  the requirement only under `covers`, as the acceptance of the whole; one built by a single repository is handed
-  over and leaves. `plan check` refuses a wait on a requirement that a plan names under `covers`.
-- **Every issue being worked on appears under the function it serves in `plan/<release>/plan.yml`.** Add
-  a new dependency or split issue when it is filed or started.
+- **Work is planned in `stories/`, one file a story**: a function of value to a user, the test the person runs at its
+  end, its priority and state, and every issue it needs. Work follows the stories' priority. `porelo-release stories
+  index stories` writes each story's readable part and `stories/README.md` from the stories' heads; never edit those
+  by hand. The workflow `stories-check.yml` checks them against every repository's index, at a push and hourly.
+- **A story's states and their changes are an issue's.** The coordinator sets Analyzed, Implementing and Review; the
+  person sets the rest. A story with no issue is an Idea. A story waits in Review only with every issue it needs in
+  Review, Finished or Rejected; its Finished, with the day its test passed, sets those still in Review to Finished.
+- **A release is a cut the person calls** (`porelo-release stories cut <version> stories --after <day>`): every story
+  Finished since the last one. No release is planned ahead.
+- **A requirement here is planned as an issue only while it is not split.** Once its parts are filed in the
+  repositories that build them, the story names those parts; one built by a single repository is handed over and
+  leaves.
+- **Every issue being worked on appears in the story it serves.** Add a new or split issue to it when it is filed or
+  started.
 
 ## Coordinating
 
@@ -523,7 +523,7 @@ The agent working here coordinates the agents of the other repositories.
   which does not know it is cited. Report every hit, never a truncated search.
 - **A check keyed on file names cannot verify a rename**; ask the history (`git log --diff-filter=D`)
   or the agent. A check over an empty set proves nothing, so assert it is not empty.
-- **Work is proposed because it serves the current sprint or unblocks another task.** Never propose
+- **Work is proposed because it serves the story of the highest priority or unblocks another task.** Never propose
   low-priority work merely to keep an idle role busy.
 - **`flutter-guided-walk` is developed independently and is excluded from coordinated Porelo
   changes, shared-rule rollouts, and release plans.**

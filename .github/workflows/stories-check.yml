@@ -1,0 +1,40 @@
+# Checks the stories against every repository's issue index on main. The stories and their index are written on main
+# by `porelo-release stories index`; this only checks them.
+name: Stories check
+
+on:
+    push:
+        branches: [main]
+        paths:
+            - "stories/**"
+            - ".github/scripts/stories-check.sh"
+            - ".github/workflows/stories-check.yml"
+    schedule:
+        # Issues change state in other repositories, and often with [skip ci].
+        - cron: "17 * * * *"
+    workflow_dispatch:
+
+permissions:
+    contents: read
+
+concurrency:
+    group: stories-check
+    cancel-in-progress: false
+
+jobs:
+    # Runs Maven and what it fetches, so it can only read.
+    check:
+        runs-on: ubuntu-24.04
+        timeout-minutes: 20
+        steps:
+            - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+              with:
+                  path: porelo-project
+                  persist-credentials: false
+
+            - name: Check
+              env:
+                  GITHUB_TOKEN: ${{ github.token }}
+              run: |
+                  export JAVA_HOME="$JAVA_HOME_25_X64"
+                  bash porelo-project/.github/scripts/stories-check.sh "$GITHUB_WORKSPACE"
