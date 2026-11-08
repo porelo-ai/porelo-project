@@ -29,7 +29,8 @@ on, and that the person can test on its own.
 - **A story has the states of an issue, set by the same hands** (AGENTS.md, the issue's states): Idea (anyone),
   Accepted or Rejected (the person), Analyzed (the coordinator: the issues it needs named), Estimated and Backlog (the
   person), Implementing (the coordinator, when its first issue is started), Review (the coordinator, when every issue
-  it needs is Finished or Rejected), Rework or Finished (the person, after the story's test). The state is written in
+  it needs is in Review, Finished or Rejected), Rework or Finished (the person, after the story's test; Finished
+  sets its issues still in Review to Finished with it). The state is written in
   the story's head; the index groups by it in the issues' order. In the conversion each story took the state of its
   least advanced issue, Review where all were finished, Finished where the person's test had passed.
 - **Every function of the existing plans becomes a story**, by the coordinator, tested ones too with their tested
@@ -54,8 +55,8 @@ on, and that the person can test on its own.
 
 ## Acceptance
 
-- The check refuses a story in Review while an issue it needs is neither Finished nor Rejected, and a story
-  Finished without the date its test passed.
+- The check refuses a story in Review while an issue it needs is in a state before Review, and a story Finished
+  without the date its test passed.
 - The check refuses a story naming an issue that does not exist, and a priority outside the five.
 - A release's cut lists exactly the stories tested since the last release.
 - No function of a plan is lost in the conversion: each is a story, with its test, its issues and, where tested, its
