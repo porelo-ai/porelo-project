@@ -3,9 +3,10 @@
 **Status:** Accepted.
 
 **What must be true.** The person says what is to be finished by naming stories, not issues: a story is one function
-of value to a user, with a name a user understands, a test the person runs at its end, and every issue across the
-repositories it needs. A release is a set of stories. The coordinator is started with one or more stories and
-coordinates their finishing in the person's name.
+of value to a user, with a name a user understands, what a user gains, a priority, a test the person runs at its
+end, and every issue across the repositories it needs. Work follows the stories' priority; a release is a cut the
+person calls when they choose, holding every story tested since the last one. The coordinator is started with one or
+more stories and coordinates their finishing in the person's name.
 
 ## Why
 
@@ -17,15 +18,23 @@ on, and that the person can test on its own.
 
 ## Decided by the operator (2026-11-08)
 
-- **Stories replace sprints.** A release names its stories; the order follows from what each waits on.
+- **Stories replace sprints, and releases are no longer planned.** The order of work follows each story's priority
+  and what it waits on. A release is a cut the person calls at some point; it holds every story tested since the
+  last release, listed when it is cut, never kept beforehand.
+- **A story has a priority, as Jira's:** `Highest`, `High`, `Medium`, `Low` or `Lowest`. In the conversion, the open
+  functions of plan 0.6 became `Highest`, of 0.7 `High`, of 0.8 to 0.12 `Medium`, the rest `Low`.
+- **A story may name no issue yet**: it then stands as Idea, a place for work a later story needs.
 - **Agents still file new issues as Ideas, and the coordinator files new stories as Ideas.** The person accepts a
   story as an issue is accepted.
-- **A story's state is derived from its issues**: it stands at the state of its least advanced issue. One issue in
-  Review and another still Implementing leave the story Implementing. Only the person's test moves a story past that,
-  to tested.
+- **A story has the states of an issue, set by the same hands** (AGENTS.md, the issue's states): Idea (anyone),
+  Accepted or Rejected (the person), Analyzed (the coordinator: the issues it needs named), Estimated and Backlog (the
+  person), Implementing (the coordinator, when its first issue is started), Review (the coordinator, when every issue
+  it needs is Finished or Rejected), Rework or Finished (the person, after the story's test). The state is written in
+  the story's head; the index groups by it in the issues' order. In the conversion each story took the state of its
+  least advanced issue, Review where all were finished, Finished where the person's test had passed.
 - **Every function of the existing plans becomes a story**, by the coordinator, tested ones too with their tested
   date; no plan keeps its sprints.
-- **A story's number names no release** (`ST1`, `ST2`, …), so a story can move between releases.
+- **A story's number names no release** (`ST1`, `ST2`, …).
 - **A story's data is a JSON head in its own file**, checked by a JSON schema, and `stories/README.md` is generated
   from the heads; the prose below the head stays Markdown. Issues follow the same form afterwards
   ([PJ105](README.md#pj105)).
@@ -33,19 +42,22 @@ on, and that the person can test on its own.
 ## The shape proposed
 
 - **One file per story** in `stories/`, its JSON head holding the number (`ST1`, `ST2`, …), a name a user
-  understands, what a user gains, the person's test, the issues it needs (`repository#ID`), and the date the person
-  tested it. The state is not written; it is derived from the issues. The index `stories/README.md`, grouped by state,
-  is generated from the heads, and a check refuses an index that differs from the generation.
-- **`plan/<release>/plan.yml` lists stories instead of sprints**, in every plan; each function becomes a story, and a
-  tested one keeps its tested date.
-- **`plan check` and the plan pages** read stories: the rendering in porelo-buildtools changes with this, as an issue
-  of its own there.
+  understands, its state, what a user gains, the person's test, its priority, the issues it needs
+  (`repository#ID`), and the date the person's test passed. The index `stories/README.md`, grouped by state and within
+  a state by priority, is generated from the heads, and a check refuses an index that differs from the generation. It
+  is the plan.
+- **`plan/` goes** once the stories are read in its place: each of its functions is a story, a tested one with its
+  tested date.
+- **The rendering in porelo-buildtools** reads stories, and lists at a release's cut the stories tested since the
+  last one, as an issue of its own there.
 - **The coordinator's start** takes the stories as a parameter, beside `issue` and `phase` of [PJ99](README.md#pj99).
 
 ## Acceptance
 
-- A story with one issue in Review and one Implementing shows Implementing in the index and on the plan page.
-- `plan check` refuses a story naming an issue that does not exist, and a release naming a story that does not exist.
+- The check refuses a story in Review while an issue it needs is neither Finished nor Rejected, and a story
+  Finished without the date its test passed.
+- The check refuses a story naming an issue that does not exist, and a priority outside the five.
+- A release's cut lists exactly the stories tested since the last release.
 - No function of a plan is lost in the conversion: each is a story, with its test, its issues and, where tested, its
   date.
 
