@@ -2,7 +2,7 @@
 
 ## Shared across the Porelo repositories
 
-> **BEGIN Shared Area** · sha256 `34413dbf083b9fc7` · changed 2026-11-08T10:45Z
+> **BEGIN Shared Area** · sha256 `59acd5398f5eb693` · changed 2026-11-08T11:47Z
 
 Identical in every repository `project.yml` names but `porelo-parent`, which holds only the parent pom
 and no `AGENTS.md`. The markers carry the SHA-256 of the lines between them (the first 16 hex digits)
@@ -477,7 +477,7 @@ and the UTC time that text last changed; change it in the channel first, never i
   with `+`: estimates summed, the earliest start and the stack's readiness, VM time and tokens counted
   once.
 
-> **END Shared Area** · sha256 `34413dbf083b9fc7`
+> **END Shared Area** · sha256 `59acd5398f5eb693`
 
 ## Work in this repository
 
