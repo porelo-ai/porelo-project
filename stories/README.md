@@ -8,9 +8,9 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 |---|---|
 | [Idea](#idea) | 101 |
 | [Accepted](#accepted) | 22 |
-| [Analyzed](#analyzed) | 38 |
+| [Analyzed](#analyzed) | 37 |
 | [Estimated](#estimated) | 24 |
-| [Backlog](#backlog) | 14 |
+| [Backlog](#backlog) | 15 |
 | [Implementing](#implementing) | 10 |
 | [Review](#review) | 14 |
 | [Finished](#finished) | 71 |
@@ -160,7 +160,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st36"></a>[ST36](ST36-Start-Local-Organization-And-Added-Providers.md) Start local, organization and added providers | 🔼 High | P:3 · B:1 | A person can use local, organization HTTPS and added providers such as xAI, Zhipu and Z.AI, with supported ones starting and unsupported ones refused clearly. |
 | <a id="st39"></a>[ST39](ST39-A-Failed-Delivery-Named-And-Kept-Visible.md) A failed delivery named and kept visible | 🔼 High | B:2 · F:1 | When a delivery to the forge fails, a person gets a named reason within a short time and the failure stays visible rather than disappearing. |
 | <a id="st43"></a>[ST43](ST43-A-Companys-Private-Package-Repository-With-No-Credential.md) A company's private package repository, with no credential in the task | 🔼 High | B:2 | A task can build against a company's authenticated Nexus or Artifactory without ever holding the credential, since the settings are written outside the task. |
-| <a id="st294"></a>[ST294](ST294-Plan-The-Stories-On-A-Board-In-The-Window.md) Plan the stories on a board in the window | 🔼 High | B:9 · F:4 · GH:4 · BT:2 | The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API. |
 | <a id="st59"></a>[ST59](ST59-A-Report-Outside-The-Profile-Refused.md) A report outside the profile refused | 🟰 Medium | SL:1 | Reports with unsafe locations, fixes in the wrong file or other disallowed content are refused, so a bad report cannot do harm. |
 | <a id="st60"></a>[ST60](ST60-A-Comment-With-A-Suggestion-Reaches-The-Agent.md) A comment with a suggestion reaches the agent | 🟰 Medium | B:3 · F:2 | A person can comment on a line with a suggestion in the review, and the task building that work receives it. |
 | <a id="st61"></a>[ST61](ST61-A-Thread-Follows-The-New-Push.md) A thread follows the new push | 🟰 Medium | B:1 | A review thread follows lines that stay unchanged after a new push, and threads on changed lines stay marked rather than moving wrongly. |
@@ -236,6 +235,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st291"></a>[ST291](ST291-The-Host-Run-By-A-Program-Of-Its-Own.md) The host run by a program of its own, built like porelo | ⏫ Highest | B:13 · HO:2 | A host admin's and an automation's work on a host runs as one Java program, porelo-host, built, signed and packaged like porelo; a person's own host commands are porelo commands; root's narrow boundaries act only for the account sudo names, and nothing asks for input that is not needed. |
 | <a id="st292"></a>[ST292](ST292-A-Whole-Move-Rehearsed-By-The-Agents-On-A.md) A whole move rehearsed by the agents on a rented server | ⏫ Highest | MX:3 · B:2 · F:2 · HO:1 | Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server. |
 | <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Every agent works in a Porelo task, moved one at a time | ⏫ Highest | none yet | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
+| <a id="st294"></a>[ST294](ST294-Plan-The-Stories-On-A-Board-In-The-Window.md) Plan the stories on a board in the window | 🔼 High | B:9 · F:4 · GH:4 · BT:2 | The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API. |
 | <a id="st78"></a>[ST78](ST78-Threads-In-IntelliJs-Diff.md) Threads in IntelliJ's diff | 🟰 Medium | IJ:2 | A person sees every review thread on its lines in IntelliJ's diff, marked with who wrote it. |
 | <a id="st155"></a>[ST155](ST155-Approve-A-Group-And-Its-Peer-Keys.md) Approve a group and its peer keys | 🔽 Low | B:1 | A person can create a task group, confirm its peers' fingerprints and message the group, and unconfirmed peers are refused. |
 
