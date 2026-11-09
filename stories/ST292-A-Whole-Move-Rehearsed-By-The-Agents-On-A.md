@@ -10,8 +10,8 @@
 
 - [porelo#B553](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b553) (Implementing)
 - [porelo#B554](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b554) (Implementing)
-- [porelo-frontend#F444](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f444) (Implementing)
-- [porelo-frontend#F445](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f445) (Implementing)
+- [porelo-frontend#F444](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f444) (Review)
+- [porelo-frontend#F445](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f445) (Review)
 - [porelo-host#HO158](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho158) (Implementing)
 - [porelo-message-matrix#MX89](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx89) (Implementing)
 - [porelo-message-matrix#MX90](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx90) (Implementing)

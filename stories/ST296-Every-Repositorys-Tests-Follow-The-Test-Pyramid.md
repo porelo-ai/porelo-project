@@ -23,7 +23,7 @@
 - [porelo-ecosystems#EC18](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec18) (Accepted)
 - [porelo-claude-code#CC50](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc50) (Accepted)
 - [porelo-omp#OM48](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om48) (Accepted)
-- [porelo-forge-clients#FC18](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc18) (Accepted)
+- [porelo-forge-clients#FC18](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc18) (Analyzed)
 
 ## Data
 

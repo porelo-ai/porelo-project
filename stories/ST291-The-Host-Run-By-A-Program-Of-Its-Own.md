@@ -11,12 +11,12 @@
 - [porelo#B540](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b540) (Implementing)
 - [porelo#B541](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b541) (Implementing)
 - [porelo#B542](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b542) (Backlog)
-- [porelo#B543](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b543) (Backlog)
+- [porelo#B543](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b543) (Implementing)
 - [porelo#B544](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b544) (Backlog)
 - [porelo#B545](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b545) (Backlog)
 - [porelo#B546](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b546) (Backlog)
 - [porelo#B547](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b547) (Backlog)
-- [porelo#B548](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b548) (Backlog)
+- [porelo#B548](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b548) (Implementing)
 - [porelo#B549](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b549) (Implementing)
 - [porelo#B550](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b550) (Backlog)
 - [porelo#B551](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b551) (Backlog)
@@ -25,7 +25,9 @@
 - [porelo-host#HO157](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho157) (Implementing)
 - [porelo#B569](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b569) (Backlog)
 - [porelo#B571](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b571) (Backlog)
-- [porelo#B572](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b572) (Idea)
+- [porelo#B572](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b572) (Backlog)
+- [porelo#B574](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b574) (Backlog)
+- [porelo#B580](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b580) (Backlog)
 
 ## Data
 
@@ -55,7 +57,9 @@
     "porelo-host#HO157",
     "porelo#B569",
     "porelo#B571",
-    "porelo#B572"
+    "porelo#B572",
+    "porelo#B574",
+    "porelo#B580"
   ],
   "tested": null
 }
