@@ -8,6 +8,7 @@
 
 **Issues:**
 
+- [porelo#B570](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b570) (Accepted)
 - [porelo-intellij#IJ23](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij23) (Accepted)
 - [porelo-mcp#MC11](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc11) (Accepted)
 - [porelo-forge-clients#FC18](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc18) (Accepted)
@@ -35,6 +36,7 @@
   "test": "Each repository's audit measures its suites against the shares of doc/test-pyramid.md and names every flow tested only through an integration or VM run; after the fixes, every such flow has unit tests over fakes, each module's unit suite runs in under a minute, and no plan needs a VM to see a flow work.",
   "priority": "Highest",
   "issues": [
+    "porelo#B570",
     "porelo-intellij#IJ23",
     "porelo-mcp#MC11",
     "porelo-forge-clients#FC18",
