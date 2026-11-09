@@ -7,8 +7,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 101 |
-| [Accepted](#accepted) | 23 |
-| [Analyzed](#analyzed) | 37 |
+| [Accepted](#accepted) | 22 |
+| [Analyzed](#analyzed) | 38 |
 | [Estimated](#estimated) | 24 |
 | [Backlog](#backlog) | 14 |
 | [Implementing](#implementing) | 10 |
@@ -129,7 +129,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st30"></a>[ST30](ST30-Work-Without-A-Project-With-Plain-Refusals.md) Work without a project, with plain refusals | 🔼 High | B:2 · F:1 · PJ:1 | A person can start work without a project and get plain refusals, with a checkout going into the default area unless a followed project claims the repository. |
 | <a id="st44"></a>[ST44](ST44-Questions-A-Plan-And-Taken-Up-Again.md) Questions, a plan, and taken up again | 🔼 High | PJ:1 | A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard. |
 | <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🔼 High | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
-| <a id="st294"></a>[ST294](ST294-Plan-The-Stories-On-A-Board-In-The-Window.md) Plan the stories on a board in the window | 🔼 High | none yet | The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
 | <a id="st77"></a>[ST77](ST77-Direct-Pushes-And-Red-Checks-Refused.md) Direct pushes and red checks refused | 🟰 Medium | PJ:1 | Direct pushes to main and merges with red checks are refused for every account, so main only changes through checked pull requests. |
 | <a id="st83"></a>[ST83](ST83-An-Expiring-Token-Told-Ahead.md) An expiring token told ahead | 🟰 Medium | PJ:1 | A person is told ahead of time, once, when a forge token on a host is about to expire. |
@@ -161,6 +160,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st36"></a>[ST36](ST36-Start-Local-Organization-And-Added-Providers.md) Start local, organization and added providers | 🔼 High | P:3 · B:1 | A person can use local, organization HTTPS and added providers such as xAI, Zhipu and Z.AI, with supported ones starting and unsupported ones refused clearly. |
 | <a id="st39"></a>[ST39](ST39-A-Failed-Delivery-Named-And-Kept-Visible.md) A failed delivery named and kept visible | 🔼 High | B:2 · F:1 | When a delivery to the forge fails, a person gets a named reason within a short time and the failure stays visible rather than disappearing. |
 | <a id="st43"></a>[ST43](ST43-A-Companys-Private-Package-Repository-With-No-Credential.md) A company's private package repository, with no credential in the task | 🔼 High | B:2 | A task can build against a company's authenticated Nexus or Artifactory without ever holding the credential, since the settings are written outside the task. |
+| <a id="st294"></a>[ST294](ST294-Plan-The-Stories-On-A-Board-In-The-Window.md) Plan the stories on a board in the window | 🔼 High | B:9 · F:4 · GH:4 · BT:2 | The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API. |
 | <a id="st59"></a>[ST59](ST59-A-Report-Outside-The-Profile-Refused.md) A report outside the profile refused | 🟰 Medium | SL:1 | Reports with unsafe locations, fixes in the wrong file or other disallowed content are refused, so a bad report cannot do harm. |
 | <a id="st60"></a>[ST60](ST60-A-Comment-With-A-Suggestion-Reaches-The-Agent.md) A comment with a suggestion reaches the agent | 🟰 Medium | B:3 · F:2 | A person can comment on a line with a suggestion in the review, and the task building that work receives it. |
 | <a id="st61"></a>[ST61](ST61-A-Thread-Follows-The-New-Push.md) A thread follows the new push | 🟰 Medium | B:1 | A review thread follows lines that stay unchanged after a new push, and threads on changed lines stay marked rather than moving wrongly. |

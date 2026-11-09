@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT35](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt35) (Implementing)
+- [porelo-buildtools#BT35](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt35) (Finished)
 - [porelo-buildtools#BT36](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt36) (Review)
 - [porelo-buildtools#BT38](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt38) (Review)
 - [porelo-buildtools#BT40](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt40) (Review)
