@@ -45,7 +45,7 @@
 - [porelo-message-matrix#MX95](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx95) (Backlog)
 - [porelo-message-matrix#MX96](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx96) (Backlog)
 - [porelo#B582](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b582) (Backlog)
-- [porelo-claude-code#CC51](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc51) (Backlog)
+- [porelo-claude-code#CC51](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc51) (Implementing)
 - [porelo-claude-code#CC52](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc52) (Backlog)
 - [porelo-pi#PI53](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi53) (Backlog)
 - [porelo-adapters#GH24](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh24) (Backlog)
@@ -59,6 +59,12 @@
 - [porelo-frontend#F458](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f458) (Backlog)
 - [porelo-frontend#F459](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f459) (Backlog)
 - [porelo-frontend#F460](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f460) (Backlog)
+- [porelo-host#HO162](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho162) (Backlog)
+- [porelo-host#HO163](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho163) (Backlog)
+- [porelo-host#HO164](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho164) (Backlog)
+- [porelo-host#HO165](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho165) (Backlog)
+- [porelo-buildtools#BT58](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt58) (Backlog)
+- [porelo-frontend#F461](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f461) (Backlog)
 
 ## Data
 
@@ -121,7 +127,13 @@
     "porelo-frontend#F457",
     "porelo-frontend#F458",
     "porelo-frontend#F459",
-    "porelo-frontend#F460"
+    "porelo-frontend#F460",
+    "porelo-host#HO162",
+    "porelo-host#HO163",
+    "porelo-host#HO164",
+    "porelo-host#HO165",
+    "porelo-buildtools#BT58",
+    "porelo-frontend#F461"
   ],
   "tested": null
 }
