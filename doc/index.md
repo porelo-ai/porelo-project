@@ -36,5 +36,7 @@ much as from the command line, for someone who has never used Porelo.
   what happens next.
 - [Decisions](decisions.md): the choices the project as a whole is built on, and the risks it
   accepts.
+- [The test pyramid](test-pyramid.md): the three levels every repository tests at, their shares, the
+  tools per stack, and how a repository's audit measures them.
 - [Moving an agent](moving-an-agent.md): how each agent moves into a Porelo task, one at a time,
   and how each move is checked.
