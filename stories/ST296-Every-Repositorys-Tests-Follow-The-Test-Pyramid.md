@@ -20,6 +20,9 @@
 - [porelo-codex#CX16](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx16) (Accepted)
 - [porelo-agy#AG15](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag15) (Accepted)
 - [porelo-adapters#GH23](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh23) (Accepted)
+- [porelo-frontend#F450](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f450) (Accepted)
+- [porelo-host#HO159](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho159) (Accepted)
+- [porelo-buildtools#BT57](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt57) (Accepted)
 
 ## Data
 
@@ -43,7 +46,10 @@
     "porelo-omp#OM48",
     "porelo-codex#CX16",
     "porelo-agy#AG15",
-    "porelo-adapters#GH23"
+    "porelo-adapters#GH23",
+    "porelo-frontend#F450",
+    "porelo-host#HO159",
+    "porelo-buildtools#BT57"
   ],
   "tested": null
 }
