@@ -7,7 +7,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 101 |
-| [Accepted](#accepted) | 22 |
+| [Accepted](#accepted) | 23 |
 | [Analyzed](#analyzed) | 37 |
 | [Estimated](#estimated) | 24 |
 | [Backlog](#backlog) | 16 |
@@ -126,6 +126,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
 | <a id="st29"></a>[ST29](ST29-A-Repository-Renamed-Without-Losing-Work.md) A repository renamed without losing work | ⏫ Highest | PJ:1 | A person can rename a repository's key in the project file without losing waiting work or tasks tied to it. |
+| <a id="st296"></a>[ST296](ST296-Every-Repositorys-Tests-Follow-The-Test-Pyramid.md) Every repository's tests follow the test pyramid | ⏫ Highest | none yet | Each repository proves its flows with unit tests that run in seconds, tests its real pieces narrowly on that core and keeps integration, VM and rented-machine runs for what nothing lower can show, so work is done and checked faster and a fault is found at the lowest level that shows it. |
 | <a id="st30"></a>[ST30](ST30-Work-Without-A-Project-With-Plain-Refusals.md) Work without a project, with plain refusals | 🔼 High | B:2 · F:1 · PJ:1 | A person can start work without a project and get plain refusals, with a checkout going into the default area unless a followed project claims the repository. |
 | <a id="st44"></a>[ST44](ST44-Questions-A-Plan-And-Taken-Up-Again.md) Questions, a plan, and taken up again | 🔼 High | PJ:1 | A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard. |
 | <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🔼 High | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
