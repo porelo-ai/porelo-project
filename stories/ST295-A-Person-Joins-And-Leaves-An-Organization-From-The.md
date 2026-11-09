@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo#B517](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b517) (Idea)
-- [porelo#B518](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b518) (Idea)
-- [porelo-frontend#F437](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f437) (Idea)
+- [porelo#B517](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b517) (Backlog)
+- [porelo#B518](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b518) (Backlog)
+- [porelo-frontend#F437](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f437) (Backlog)
 
 ## Data
 

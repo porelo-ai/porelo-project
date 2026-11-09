@@ -17,7 +17,7 @@
 - [porelo#B546](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b546) (Backlog)
 - [porelo#B547](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b547) (Backlog)
 - [porelo#B548](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b548) (Backlog)
-- [porelo#B549](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b549) (Backlog)
+- [porelo#B549](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b549) (Implementing)
 - [porelo#B550](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b550) (Backlog)
 - [porelo#B551](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b551) (Backlog)
 - [porelo#B552](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b552) (Backlog)
