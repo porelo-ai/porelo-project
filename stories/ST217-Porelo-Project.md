@@ -23,7 +23,7 @@
 - [porelo-project#PJ90](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj90) (Idea)
 - [porelo-project#PJ92](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj92) (Idea)
 - [porelo-project#PJ93](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj93) (Idea)
-- [porelo-project#PJ94](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj94) (Implementing)
+- [porelo-project#PJ94](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj94) (Rejected)
 - [porelo-project#PJ96](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj96) (Analyzed)
 - [porelo-project#PJ99](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj99) (Idea)
 - [porelo-project#PJ100](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj100) (Idea)

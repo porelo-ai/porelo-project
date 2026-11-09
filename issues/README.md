@@ -39,7 +39,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | <a id="pj40"></a>[PJ40](PJ40-A-Project-Comes-Up-On-A-Server-At-One-Command.md) | XL | — | Any project of several agents and repositories comes up on a server, owned or rented by the hour, at one command: Porelo writes an Ansible inventory from `project.yml`, the repositories' own files and the person's machine file; Ansible sets up the host from the host itself, `host up` (a Dart package of porelo-frontend, for the interface and the command line) rents it by the hour (Scaleway Elastic Metal for Porelo's own; OpenTofu later for others); following, keys and tasks stay Porelo's; Porelo's own project first. |
 | <a id="pj39"></a>[PJ39](PJ39-Porelo-Is-Built-In-Porelo-Tasks.md) | — | — | The agents work in Porelo tasks on one bare-metal host, owned or rented by the hour and set up by a script (at least 8 cores with 16 threads, 64 GB, one SSD of 1 TB): an `online` project whose upstream is a local Forgejo, one task per issue, phase and repository, Forgejo building and testing, the operator approving there, Matrix, what an agent learns committed to its `AGENTS.md` instead of memory, `porelo-all` for the coordinator; a plan in nine sprints after the groundwork, each ending in functions the operator tests. |
 | <a id="pj14"></a>[PJ14](PJ14-Work-Starts-Without-A-Project.md) | M | — | Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured. |
-| <a id="pj94"></a>[PJ94](PJ94-The-Plan-Pages-Are-Built-Outside-Main.md) | — | — | The release plans always show the issues' real states without anyone rendering them, and no build writes to `main`. |
 
 ## Backlog
 
@@ -160,4 +159,5 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | What it covered | Why |
 |---|---|---|
+| <a id="pj94"></a>PJ94 | The release plans always show the issues' real states without anyone rendering them, and no build writes to `main`. | Overtaken (operator, 2026-11-09): the stories and their check replaced the release plans and their pages on 2026-11-08; the `plan-pages` branch is deleted. |
 | <a id="pj37"></a>PJ37 | A machine reaches the upstream by keys of its own or by the person's own token, equal choices per project. | Overtaken (operator, 2026-11-04): machines read with a key per repository, a host forge's token is taken per command, the gathered push takes the person's token on stdin, and no token lies on a server. What remains is [PJ95](#pj95). |
