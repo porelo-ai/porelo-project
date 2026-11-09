@@ -15,6 +15,13 @@ so in two sentences; this page defines the levels and how each repository's audi
 A flow - its states, choices, limits and failure paths - belongs at the base: built as plain logic behind small
 interfaces, it is proven by unit tests over fakes. What the levels above add is only what the base cannot show.
 
+## porelo's command line
+
+porelo keeps a higher share of end-to-end tests over its command line than the table gives, since the command line is
+what its users meet. They still run last, as their own step before a hand-over. Faults are found earlier, by the unit
+tests, and those tests are written first so that they shape the domain classes: a class that is hard to test alone is
+designed again, not covered from the top.
+
 ## The tools per stack
 
 | Stack | Unit | Integration | End-to-end |
