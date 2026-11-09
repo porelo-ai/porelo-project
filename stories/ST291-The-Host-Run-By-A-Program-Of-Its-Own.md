@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B540](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b540) (Backlog)
-- [porelo#B541](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b541) (Backlog)
+- [porelo#B540](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b540) (Implementing)
+- [porelo#B541](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b541) (Implementing)
 - [porelo#B542](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b542) (Backlog)
 - [porelo#B543](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b543) (Backlog)
 - [porelo#B544](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b544) (Backlog)

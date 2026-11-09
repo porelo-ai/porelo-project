@@ -8,15 +8,14 @@
 
 **Issues:**
 
-- [porelo#B553](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b553) (Backlog)
-- [porelo#B554](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b554) (Backlog)
-- [porelo-frontend#F444](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f444) (Backlog)
-- [porelo-frontend#F445](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f445) (Backlog)
-- [porelo-host#HO158](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho158) (Backlog)
-- [porelo-message-matrix#MX89](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx89) (Backlog)
-- [porelo-message-matrix#MX90](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx90) (Backlog)
-- [porelo-message-matrix#MX91](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx91) (Backlog)
-- [porelo-message-matrix#MX92](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx92) (Backlog)
+- [porelo#B553](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b553) (Implementing)
+- [porelo#B554](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b554) (Implementing)
+- [porelo-frontend#F444](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f444) (Implementing)
+- [porelo-frontend#F445](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f445) (Implementing)
+- [porelo-host#HO158](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho158) (Implementing)
+- [porelo-message-matrix#MX89](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx89) (Implementing)
+- [porelo-message-matrix#MX90](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx90) (Implementing)
+- [porelo-message-matrix#MX91](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx91) (Implementing)
 
 ## Data
 
@@ -36,8 +35,7 @@
     "porelo-host#HO158",
     "porelo-message-matrix#MX89",
     "porelo-message-matrix#MX90",
-    "porelo-message-matrix#MX91",
-    "porelo-message-matrix#MX92"
+    "porelo-message-matrix#MX91"
   ],
   "tested": null
 }
