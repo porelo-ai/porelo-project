@@ -4,6 +4,7 @@ project:
     name: "porelo"
     description: "A hardened box an agent works in, and a gate its work leaves through"
     security_class: "online"
+    review: "optional"
 
     # The project's own repository: this one, holding the planning and the issues. A task can be
     # started for it, which is how an agent gets a task for planning.
