@@ -8,25 +8,26 @@
 
 **Issues:**
 
-- [porelo#B560](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b560) (Analyzed)
-- [porelo#B561](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b561) (Analyzed)
-- [porelo#B562](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b562) (Analyzed)
-- [porelo#B563](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b563) (Analyzed)
-- [porelo#B564](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b564) (Analyzed)
-- [porelo#B565](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b565) (Analyzed)
-- [porelo#B566](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b566) (Analyzed)
-- [porelo#B567](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b567) (Analyzed)
-- [porelo#B568](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b568) (Analyzed)
-- [porelo-adapters#GH19](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh19) (Analyzed)
-- [porelo-adapters#GH20](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh20) (Analyzed)
-- [porelo-adapters#GH21](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh21) (Analyzed)
-- [porelo-adapters#GH22](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh22) (Analyzed)
-- [porelo-buildtools#BT54](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt54) (Analyzed)
-- [porelo-buildtools#BT55](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt55) (Analyzed)
-- [porelo-frontend#F446](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f446) (Analyzed)
-- [porelo-frontend#F447](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f447) (Analyzed)
-- [porelo-frontend#F448](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f448) (Analyzed)
-- [porelo-frontend#F449](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f449) (Analyzed)
+- [porelo#B560](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b560) (Implementing)
+- [porelo#B561](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b561) (Backlog)
+- [porelo#B562](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b562) (Implementing)
+- [porelo#B563](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b563) (Backlog)
+- [porelo#B564](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b564) (Backlog)
+- [porelo#B565](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b565) (Backlog)
+- [porelo#B566](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b566) (Backlog)
+- [porelo#B567](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b567) (Backlog)
+- [porelo#B568](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b568) (Backlog)
+- [porelo-adapters#GH19](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh19) (Implementing)
+- [porelo-adapters#GH20](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh20) (Backlog)
+- [porelo-adapters#GH21](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh21) (Backlog)
+- [porelo-adapters#GH22](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh22) (Backlog)
+- [porelo-buildtools#BT54](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt54) (Review)
+- [porelo-buildtools#BT55](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt55) (Implementing)
+- [porelo-frontend#F446](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f446) (Implementing)
+- [porelo-frontend#F447](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f447) (Implementing)
+- [porelo-frontend#F448](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f448) (Implementing)
+- [porelo-frontend#F449](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f449) (Implementing)
+- [porelo-buildtools#BT56](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt56) (Analyzed)
 
 ## Data
 
@@ -57,7 +58,8 @@
     "porelo-frontend#F446",
     "porelo-frontend#F447",
     "porelo-frontend#F448",
-    "porelo-frontend#F449"
+    "porelo-frontend#F449",
+    "porelo-buildtools#BT56"
   ],
   "tested": null
 }

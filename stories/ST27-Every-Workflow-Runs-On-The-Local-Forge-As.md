@@ -8,7 +8,8 @@
 
 **Issues:**
 
-- [porelo-intellij#IJ14](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij14) (Implementing)
+- [porelo-intellij#IJ14](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij14) (Finished)
+- [porelo-message-matrix#MX80](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx80) (Review)
 
 ## Data
 
@@ -21,7 +22,8 @@
   "test": "The same build runs green on the local forge and the central one.",
   "priority": "Highest",
   "issues": [
-      "porelo-intellij#IJ14"
+    "porelo-intellij#IJ14",
+    "porelo-message-matrix#MX80"
   ],
   "tested": null
 }
