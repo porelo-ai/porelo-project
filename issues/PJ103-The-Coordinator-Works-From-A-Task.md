@@ -20,7 +20,7 @@ inside a task to use them, within limits it cannot widen itself.
 - **Porelo offers a task an MCP endpoint**, on loopback as the gate is reached, backed by the daemon's existing
   methods: start a task (repository, issue, phase, agent, minutes), list tasks, a task's state and its protocol, stop a
   task. The endpoint keeps no rules of its own; every refusal is the daemon's. Built in `porelo` as
-  [B507](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md) (Analyzed, L): served in the person's own
+  [B507](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b507) (Analyzed, L): served in the person's own
   account with no root, a `porelo task serve-mcp` process per allowed task bound to loopback like the gate, calling
   `porelod`, a systemd user unit, over the user's own varlink socket.
 - **Only a task the signed project file allows gets it**, and the same file sets its limits: how many tasks at once,
