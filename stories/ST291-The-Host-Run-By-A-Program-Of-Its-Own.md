@@ -24,6 +24,8 @@
 - [porelo-host#HO156](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho156) (Implementing)
 - [porelo-host#HO157](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho157) (Implementing)
 - [porelo#B569](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b569) (Backlog)
+- [porelo#B571](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b571) (Backlog)
+- [porelo#B572](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b572) (Idea)
 
 ## Data
 
@@ -51,7 +53,9 @@
     "porelo#B552",
     "porelo-host#HO156",
     "porelo-host#HO157",
-    "porelo#B569"
+    "porelo#B569",
+    "porelo#B571",
+    "porelo#B572"
   ],
   "tested": null
 }
