@@ -7,10 +7,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 101 |
-| [Accepted](#accepted) | 23 |
+| [Accepted](#accepted) | 22 |
 | [Analyzed](#analyzed) | 37 |
 | [Estimated](#estimated) | 24 |
-| [Backlog](#backlog) | 15 |
+| [Backlog](#backlog) | 16 |
 | [Implementing](#implementing) | 10 |
 | [Review](#review) | 14 |
 | [Finished](#finished) | 71 |
@@ -139,7 +139,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st109"></a>[ST109](ST109-Check-Unusual-Workflow-Spellings-Too.md) Check unusual workflow spellings too | 🟰 Medium | B:1 · BT:1 | Workflow files are checked even when written in unusual ways, so a corrected parent builds every Maven repository and a plugin version restore is caught. |
 | <a id="st111"></a>[ST111](ST111-Install-From-The-Intended-Package-Source.md) Install from the intended package source | 🟰 Medium | B:2 · F:1 | A person installing through the interface on fresh Fedora, Debian or Ubuntu gets packages only from the intended source, and a changed setup script is caught. |
 | <a id="st114"></a>[ST114](ST114-A-Vulnerability-Has-A-Way-In-And-Is.md) A vulnerability has a way in and is answered | 🟰 Medium | PJ:2 | Whoever finds a vulnerability knows how to report it, and every advisory is read and answered by its owner. |
-| <a id="st295"></a>[ST295](ST295-A-Person-Joins-And-Leaves-An-Organization-From-The.md) A person joins and leaves an organization from the window | 🟰 Medium | B:2 · F:1 | A person who cannot write an organization's repository asks to join it from the window by filing their card as a proposal, an owner accepts it there, and a member leaves an organization from the window, withdrawing their own card and roles and forgetting it on this computer. |
 | <a id="st117"></a>[ST117](ST117-Store-A-Forge-Sign-In-Without-Pasting-A.md) Store a forge sign-in without pasting a token | 🔽 Low | B:1 | A person can store a forge sign-in through the device-code login in a terminal, with no token to paste. |
 | <a id="st128"></a>[ST128](ST128-Explain-A-Machine-Quota-Refusal.md) Explain a machine quota refusal | 🔽 Low | BT:1 | A person is told the actual limit when a machine request is refused because the provider quota is used up. |
 | <a id="st143"></a>[ST143](ST143-Inherit-Signed-Rules-Through-The-Organization.md) Inherit signed rules through the organization | 🔽 Low | B:1 | Settings inherit through signed organization, team and project rules, and a project can narrow a value but cannot widen it. |
@@ -238,6 +237,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Every agent works in a Porelo task, moved one at a time | ⏫ Highest | none yet | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
 | <a id="st294"></a>[ST294](ST294-Plan-The-Stories-On-A-Board-In-The-Window.md) Plan the stories on a board in the window | 🔼 High | B:9 · F:4 · GH:4 · BT:3 | The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API. |
 | <a id="st78"></a>[ST78](ST78-Threads-In-IntelliJs-Diff.md) Threads in IntelliJ's diff | 🟰 Medium | IJ:2 | A person sees every review thread on its lines in IntelliJ's diff, marked with who wrote it. |
+| <a id="st295"></a>[ST295](ST295-A-Person-Joins-And-Leaves-An-Organization-From-The.md) A person joins and leaves an organization from the window | 🟰 Medium | B:2 · F:1 | A person who cannot write an organization's repository asks to join it from the window by filing their card as a proposal, an owner accepts it there, and a member leaves an organization from the window, withdrawing their own card and roles and forgetting it on this computer. |
 | <a id="st155"></a>[ST155](ST155-Approve-A-Group-And-Its-Peer-Keys.md) Approve a group and its peer keys | 🔽 Low | B:1 | A person can create a task group, confirm its peers' fingerprints and message the group, and unconfirmed peers are refused. |
 
 ## Implementing
