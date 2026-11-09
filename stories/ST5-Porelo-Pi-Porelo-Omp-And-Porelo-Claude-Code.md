@@ -9,11 +9,11 @@
 **Issues:**
 
 - [porelo-pi#PI38](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi38) (Review)
-- [porelo-pi#PI39](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi39) (Implementing)
+- [porelo-pi#PI39](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi39) (Review)
 - [porelo-omp#OM35](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om35) (Review)
-- [porelo-omp#OM36](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om36) (Implementing)
+- [porelo-omp#OM36](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om36) (Review)
 - [porelo-claude-code#CC38](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc38) (Review)
-- [porelo-claude-code#CC39](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc39) (Implementing)
+- [porelo-claude-code#CC39](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc39) (Review)
 
 ## Data
 

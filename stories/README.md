@@ -11,7 +11,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Analyzed](#analyzed) | 37 |
 | [Estimated](#estimated) | 24 |
 | [Backlog](#backlog) | 11 |
-| [Implementing](#implementing) | 9 |
+| [Implementing](#implementing) | 10 |
 | [Review](#review) | 14 |
 | [Finished](#finished) | 71 |
 
@@ -243,6 +243,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st12"></a>[ST12](ST12-The-Release-And-Pipeline-Tools-The-Move-Rests.md) The release and pipeline tools the move rests on | ⏫ Highest | BT:4 · CX:2 · OM:1 | The release and pipeline tools that the move to the host depends on each do their job, such as reading main, handling pull requests and running pipelines. |
 | <a id="st26"></a>[ST26](ST26-A-Changed-Collection-Refused.md) A changed collection refused | ⏫ Highest | F:1 | A host collection that has been changed after publishing is refused, so a person installs only what was actually released. |
 | <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | ⏫ Highest | PJ:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
+| <a id="st290"></a>[ST290](ST290-Agents-On-A-Host-Work-Their-Results-Off-Until.md) Agents on a host work their results off until done | ⏫ Highest | B:16 · F:6 · MX:4 · HO:2 · GH:1 | A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub. |
 | <a id="st51"></a>[ST51](ST51-A-KeePassXC-Key-That-Is-Usable.md) A KeePassXC key that is usable | 🔼 High | B:1 | A person using KeePassXC is asked for the master password once when making a key, and a retry works after the key is reported as not served. |
 | <a id="st127"></a>[ST127](ST127-Keep-Container-Limits-On-Large-Hosts.md) Keep container limits on large hosts | 🔽 Low | PJ:1 | Container limits still apply on large hosts, so the same configuration behaves the same on small and large machines. |
 | <a id="st180"></a>[ST180](ST180-Prove-One-Build-Works-Locally-And-Centrally.md) Prove one build works locally and centrally | 🔽 Low | PJ:1 | A person can rely on every building repository's workflow running unchanged on both the local and the central forge. |
