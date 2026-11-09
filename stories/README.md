@@ -7,7 +7,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 101 |
-| [Accepted](#accepted) | 22 |
+| [Accepted](#accepted) | 23 |
 | [Analyzed](#analyzed) | 37 |
 | [Estimated](#estimated) | 24 |
 | [Backlog](#backlog) | 15 |
@@ -139,6 +139,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st109"></a>[ST109](ST109-Check-Unusual-Workflow-Spellings-Too.md) Check unusual workflow spellings too | 🟰 Medium | B:1 · BT:1 | Workflow files are checked even when written in unusual ways, so a corrected parent builds every Maven repository and a plugin version restore is caught. |
 | <a id="st111"></a>[ST111](ST111-Install-From-The-Intended-Package-Source.md) Install from the intended package source | 🟰 Medium | B:2 · F:1 | A person installing through the interface on fresh Fedora, Debian or Ubuntu gets packages only from the intended source, and a changed setup script is caught. |
 | <a id="st114"></a>[ST114](ST114-A-Vulnerability-Has-A-Way-In-And-Is.md) A vulnerability has a way in and is answered | 🟰 Medium | PJ:2 | Whoever finds a vulnerability knows how to report it, and every advisory is read and answered by its owner. |
+| <a id="st295"></a>[ST295](ST295-A-Person-Joins-And-Leaves-An-Organization-From-The.md) A person joins and leaves an organization from the window | 🟰 Medium | B:2 · F:1 | A person who cannot write an organization's repository asks to join it from the window by filing their card as a proposal, an owner accepts it there, and a member leaves an organization from the window, withdrawing their own card and roles and forgetting it on this computer. |
 | <a id="st117"></a>[ST117](ST117-Store-A-Forge-Sign-In-Without-Pasting-A.md) Store a forge sign-in without pasting a token | 🔽 Low | B:1 | A person can store a forge sign-in through the device-code login in a terminal, with no token to paste. |
 | <a id="st128"></a>[ST128](ST128-Explain-A-Machine-Quota-Refusal.md) Explain a machine quota refusal | 🔽 Low | BT:1 | A person is told the actual limit when a machine request is refused because the provider quota is used up. |
 | <a id="st143"></a>[ST143](ST143-Inherit-Signed-Rules-Through-The-Organization.md) Inherit signed rules through the organization | 🔽 Low | B:1 | Settings inherit through signed organization, team and project rules, and a project can narrow a value but cannot widen it. |
@@ -247,7 +248,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st12"></a>[ST12](ST12-The-Release-And-Pipeline-Tools-The-Move-Rests.md) The release and pipeline tools the move rests on | ⏫ Highest | BT:4 · CX:2 · OM:1 | The release and pipeline tools that the move to the host depends on each do their job, such as reading main, handling pull requests and running pipelines. |
 | <a id="st26"></a>[ST26](ST26-A-Changed-Collection-Refused.md) A changed collection refused | ⏫ Highest | F:1 | A host collection that has been changed after publishing is refused, so a person installs only what was actually released. |
 | <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | ⏫ Highest | IJ:1 · MX:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
-| <a id="st290"></a>[ST290](ST290-Agents-On-A-Host-Work-Their-Results-Off-Until.md) Agents on a host work their results off until done | ⏫ Highest | B:16 · F:6 · MX:4 · HO:2 · GH:1 | A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub. |
+| <a id="st290"></a>[ST290](ST290-Agents-On-A-Host-Work-Their-Results-Off-Until.md) Agents on a host work their results off until done | ⏫ Highest | B:16 · F:5 · MX:4 · HO:2 · GH:1 | A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub. |
 | <a id="st51"></a>[ST51](ST51-A-KeePassXC-Key-That-Is-Usable.md) A KeePassXC key that is usable | 🔼 High | B:1 | A person using KeePassXC is asked for the master password once when making a key, and a retry works after the key is reported as not served. |
 | <a id="st127"></a>[ST127](ST127-Keep-Container-Limits-On-Large-Hosts.md) Keep container limits on large hosts | 🔽 Low | none yet | Container limits still apply on large hosts, so the same configuration behaves the same on small and large machines. |
 | <a id="st180"></a>[ST180](ST180-Prove-One-Build-Works-Locally-And-Centrally.md) Prove one build works locally and centrally | 🔽 Low | none yet | A person can rely on every building repository's workflow running unchanged on both the local and the central forge. |
