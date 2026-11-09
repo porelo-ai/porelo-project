@@ -6,9 +6,7 @@
 
 **The test.** Start the same configuration on a small and a large host. Read task CPU visibility and process limits. Run the homeserver and backup with a deliberately low process limit. Request an oversized VM pool; it is refused before creation.
 
-**Issues:**
-
-- [porelo-project#PJ68](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj68) (Implementing)
+**Issues:** none yet
 
 ## Notes
 
@@ -24,9 +22,7 @@
   "gain": "Container limits still apply on large hosts, so the same configuration behaves the same on small and large machines.",
   "test": "Start the same configuration on a small and a large host. Read task CPU visibility and process limits. Run the homeserver and backup with a deliberately low process limit. Request an oversized VM pool; it is refused before creation.",
   "priority": "Low",
-  "issues": [
-    "porelo-project#PJ68"
-  ],
+  "issues": [],
   "tested": null
 }
 ```

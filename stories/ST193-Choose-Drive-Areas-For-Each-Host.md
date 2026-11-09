@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ50](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj50) (Implementing)
+- [porelo-project#PJ106](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj106) (Backlog)
 
 ## Notes
 
@@ -25,7 +25,7 @@
   "test": "Configure two hosts in separate vaults and then in a shared vault. Each receives only its chosen area; an unselected personal area never appears.",
   "priority": "Low",
   "issues": [
-    "porelo-project#PJ50"
+      "porelo-project#PJ106"
   ],
   "tested": null
 }

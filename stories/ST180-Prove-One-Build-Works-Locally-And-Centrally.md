@@ -6,9 +6,7 @@
 
 **The test.** Run every building repository's same workflow on the local and central forges without editing it. Resolve another repository's locally published artifact, including a child-module publication. Break that publication; the local run fails before any central tag. Request a declared machine kind, read the verdict and log in the task, and refuse undeclared kinds or commands.
 
-**Issues:**
-
-- [porelo-project#PJ22](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj22) (Implementing)
+**Issues:** none yet
 
 ## Notes
 
@@ -24,9 +22,7 @@
   "gain": "A person can rely on every building repository's workflow running unchanged on both the local and the central forge.",
   "test": "Run every building repository's same workflow on the local and central forges without editing it. Resolve another repository's locally published artifact, including a child-module publication. Break that publication; the local run fails before any central tag. Request a declared machine kind, read the verdict and log in the task, and refuse undeclared kinds or commands.",
   "priority": "Low",
-  "issues": [
-    "porelo-project#PJ22"
-  ],
+  "issues": [],
   "tested": null
 }
 ```

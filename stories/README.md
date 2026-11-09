@@ -10,7 +10,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Accepted](#accepted) | 22 |
 | [Analyzed](#analyzed) | 37 |
 | [Estimated](#estimated) | 24 |
-| [Backlog](#backlog) | 13 |
+| [Backlog](#backlog) | 14 |
 | [Implementing](#implementing) | 10 |
 | [Review](#review) | 14 |
 | [Finished](#finished) | 71 |
@@ -234,6 +234,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | ⏫ Highest | PJ:3 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
 | <a id="st291"></a>[ST291](ST291-The-Host-Run-By-A-Program-Of-Its-Own.md) The host run by a program of its own, built like porelo | ⏫ Highest | B:13 · HO:2 | A host admin's and an automation's work on a host runs as one Java program, porelo-host, built, signed and packaged like porelo; a person's own host commands are porelo commands; root's narrow boundaries act only for the account sudo names, and nothing asks for input that is not needed. |
 | <a id="st292"></a>[ST292](ST292-A-Whole-Move-Rehearsed-By-The-Agents-On-A.md) A whole move rehearsed by the agents on a rented server | ⏫ Highest | MX:3 · B:2 · F:2 · HO:1 | Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server. |
+| <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Every agent works in a Porelo task, moved one at a time | ⏫ Highest | none yet | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
 | <a id="st78"></a>[ST78](ST78-Threads-In-IntelliJs-Diff.md) Threads in IntelliJ's diff | 🟰 Medium | IJ:2 | A person sees every review thread on its lines in IntelliJ's diff, marked with who wrote it. |
 | <a id="st155"></a>[ST155](ST155-Approve-A-Group-And-Its-Peer-Keys.md) Approve a group and its peer keys | 🔽 Low | B:1 | A person can create a task group, confirm its peers' fingerprints and message the group, and unconfirmed peers are refused. |
 
@@ -244,11 +245,11 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st5"></a>[ST5](ST5-Porelo-Pi-Porelo-Omp-And-Porelo-Claude-Code.md) porelo-pi, porelo-omp and porelo-claude-code each in its own task, with snapshots of porelo from the registry | ⏫ Highest | CC:2 · OM:2 · PI:2 | The Pi, OMP and Claude Code adapters can each be developed in their own task on the host and build there against Porelo snapshots from the local registry. |
 | <a id="st12"></a>[ST12](ST12-The-Release-And-Pipeline-Tools-The-Move-Rests.md) The release and pipeline tools the move rests on | ⏫ Highest | BT:4 · CX:2 · OM:1 | The release and pipeline tools that the move to the host depends on each do their job, such as reading main, handling pull requests and running pipelines. |
 | <a id="st26"></a>[ST26](ST26-A-Changed-Collection-Refused.md) A changed collection refused | ⏫ Highest | F:1 | A host collection that has been changed after publishing is refused, so a person installs only what was actually released. |
-| <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | ⏫ Highest | PJ:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
+| <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | ⏫ Highest | IJ:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
 | <a id="st290"></a>[ST290](ST290-Agents-On-A-Host-Work-Their-Results-Off-Until.md) Agents on a host work their results off until done | ⏫ Highest | B:16 · F:6 · MX:4 · HO:2 · GH:1 | A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub. |
 | <a id="st51"></a>[ST51](ST51-A-KeePassXC-Key-That-Is-Usable.md) A KeePassXC key that is usable | 🔼 High | B:1 | A person using KeePassXC is asked for the master password once when making a key, and a retry works after the key is reported as not served. |
-| <a id="st127"></a>[ST127](ST127-Keep-Container-Limits-On-Large-Hosts.md) Keep container limits on large hosts | 🔽 Low | PJ:1 | Container limits still apply on large hosts, so the same configuration behaves the same on small and large machines. |
-| <a id="st180"></a>[ST180](ST180-Prove-One-Build-Works-Locally-And-Centrally.md) Prove one build works locally and centrally | 🔽 Low | PJ:1 | A person can rely on every building repository's workflow running unchanged on both the local and the central forge. |
+| <a id="st127"></a>[ST127](ST127-Keep-Container-Limits-On-Large-Hosts.md) Keep container limits on large hosts | 🔽 Low | none yet | Container limits still apply on large hosts, so the same configuration behaves the same on small and large machines. |
+| <a id="st180"></a>[ST180](ST180-Prove-One-Build-Works-Locally-And-Centrally.md) Prove one build works locally and centrally | 🔽 Low | none yet | A person can rely on every building repository's workflow running unchanged on both the local and the central forge. |
 | <a id="st193"></a>[ST193](ST193-Choose-Drive-Areas-For-Each-Host.md) Choose drive areas for each host | 🔽 Low | PJ:1 | A person can choose the drive areas for each host, so each host receives only its own whether vaults are separate or shared. |
 | <a id="st194"></a>[ST194](ST194-Use-A-Secrets-File-Readable-By-A-Separate.md) Use a secrets file readable by a separate tool | 🔽 Low | PJ:1 | A person can open and change the secrets file in both KeePassXC and Porelo, with concurrent changes preserved or reported. |
 

@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ51](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj51) (Implementing)
+- [porelo-project#PJ107](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj107) (Backlog)
 
 ## Notes
 
@@ -25,7 +25,7 @@
   "test": "Open and change the KDBX file in KeePassXC and Porelo. Concurrent changes are preserved or an explicit conflict stops the write; silent overwriting is refused. The drive contains no plaintext secrets.",
   "priority": "Low",
   "issues": [
-    "porelo-project#PJ51"
+      "porelo-project#PJ107"
   ],
   "tested": null
 }

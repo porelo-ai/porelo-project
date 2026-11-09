@@ -1,22 +1,9 @@
-# PJ59 — Each agent moves into a Porelo task
+# Moving an agent
 
-**Status:** Implementing.
-**Size:** L - crosses every repository over three sprints; its own part here is the move's procedure, its check, the
-channel's bridge to the moved agents and the rules table, each agent's move an issue (S) of its own.
+How each agent of the project moves into a Porelo task of the project `porelo`, one agent at a time, in a fixed
+order, each move checked before the next begins. Each agent's move is a story of its own.
 
-**What must be true.** Each agent of the project works in a Porelo task of the project `porelo`, one agent at a time,
-in a fixed order, and each move is checked before the next begins; all of them talk in the
-project's room, whose homeserver runs on this machine until the last agent has moved.
-
-From [PJ39](README.md#pj39), sprints 6 to 8: "The move, one agent at a time, the others working as today and the channel kept
-beside Matrix until the last has moved".
-
-## Why
-
-Sprints 1 to 5 give the host, the room, the build servers read and the local forge. Nothing moves an agent by itself: each one has its own
-repositories, toolchain, VM account and habits, and a fault found in the first move must be fixed before the next.
-
-## Plan
+## The procedure
 
 The move happens twice. **A trial move per repository**, in the sprint that prepares it: the repository runs in a task
 on the host rented for that sprint until its check is green, then goes the way back and is worked on the development
@@ -51,21 +38,19 @@ needed. After the real move, an agent's session on the development machine and i
 ### Before the first trial
 
 - **The room is reachable from the host**: the development machine opens `ssh -R` to the host, to one socket only, the
-  return path of [PJ83](README.md#pj83), and the host's tasks reach the room through it. The homeserver stays on the
+  card's return path, and the host's tasks reach the room through it. The homeserver stays on the
   development machine, since the host is rented for a few hours at a time and work here goes on without it. This path
   is not built yet.
 - **Snapshots come from the central source; the host's registry holds only what was built there and has not yet gone
-  through the central forge** ([BT42](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt42)). So
+  through the central forge**. So
   a freshly rented host builds at once, and `porelo-parent` and `porelo-buildtools` build on its forge only when changed
   there.
 - **`project.yml` names no host** (operator, 2026-11-06). It holds the project's rules and each repository's central
   forge as `central:`, nothing that changes with the host the project is put on. Which host carries which repository
-  is the organization's: the host's `host.yml` names the project, whole or by some of its repositories
-  ([B479](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b479)). A host derives its own forge's
+  is the organization's: the host's `host.yml` names the project, whole or by some of its repositories. A host derives its own forge's
   address for what it carries; a task pushes there, and the gathered push takes the work on to the central forge.
   A build reader follows that derived address; no `builds:` block names a host's forge. How a project the host does
-  not carry, such as the default project, works on a host is open in
-  [B484](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b484).
+  not carry, such as the default project, works on a host is still open.
 - **The project `porelo` is `online`**, decided 2026-11-04: a task's push goes to its own branch on the forge without
   approval at the gate, and `porelo build status` reads its Build; `guarded` allows neither. `project.yml` changes for
   that class once, signed by the operator. No task of the project runs across a carry, and `gate review` is empty
@@ -85,7 +70,7 @@ needed. After the real move, an agent's session on the development machine and i
   vault. A task has no sub-agent of its own.
 - **The task's egress reaches what the build and the agent fetch**: Maven Central, Sonatype's snapshots, GitHub's
   release downloads and API, and the skills' store. A snapshot built on the host and not yet central is read by the
-  task only with [PJ75](README.md#pj75), which a trial does not need unless it changes one.
+  task only once a task can fetch a snapshot from its host's forge, which a trial does not need unless it changes one.
 - **The skills the repository names are in the task** where its harness reads them, checked against their digests.
 
 ### The steps
@@ -116,8 +101,8 @@ Read-only, on the host. Each line says what it found, and each fails by name bef
 ### Working in a task
 
 - **A moved agent runs attended**: Porelo wakes an agent resting at its prompt when a message names it. Only an agent
-  whose definition declares both its resting and its waiting screen is woken; a Pi in a task is woken only after
-  porelo-pi [PI33](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi33).
+  whose definition declares both its resting and its waiting screen is woken; a Pi in a task is woken only once porelo-pi
+  declares both screens.
 - **What a task cannot test runs in the forge's Build**: an acceptance leg on a machine from the host's pool. A
   hand-over names those legs in place of a VM run on the development machine.
 - **An adapter moves before the pool is there**: during its move the adapter's checks that rent a
@@ -176,57 +161,8 @@ Moving in again is a new start, from *The steps*.
 - **Testing against another repository's work before it is published**: whether a moved agent tests only against
   snapshots another repository's Build published, or where such a hand-over lies for a task.
 
-## Acceptance
+## When a move counts as done
 
 - Sluice's move: `build/move-check.sh` of porelo-host, copied to the host, red before, green after, with its move issue in Review from inside the task.
-- Every later move the same; the coordinator's own move last, in [PJ58](README.md#pj58)'s `porelo-all`.
+- Every later move the same; the coordinator's own move last, in the project `porelo-all`.
 - Seen to fail first: the check against an agent that has not moved.
-
-## To be checked
-
-- The release plan's sprints 7 to 8b of 0.6 follow the *Plan* as decided: each wave a trial move on the sprint's
-  rented host and back, then one real move of all repositories, and the coordinator's move after the reviewing tasks
-  of 0.8; to be replanned after the cleanup of issue citations.
-
-- Today's homeserver is this account's own, on loopback only (`matrix: {}`), and the host's tasks cannot reach it.
-  Serving it to the host over `ssh -R`, to one socket only, is work for porelo-message-matrix and
-  porelo-message-sluice; the issues are filed with Agent Matrix and Agent Sluice before the switch.
-- Where the local agents' room client lives (porelo-message-matrix, beside the transport, is the first guess), and
-  that it waits for a message as `porelo-channel-wait` does.
-- What each agent needs in its task's image beyond its repository's `porelo.yml`: the agent's own tools, its
-  sub-agents (Codex CLI, Antigravity CLI) and their sign-ins.
-- Whether `porelo talk tell` reaches an attended task's prompt as the wake does (B-side `wake.feature`).
-
-## Local rules Porelo replaces
-
-A local rule is dropped for an agent only once its replacement is shown in that agent's own task.
-The channel file is replaced by the room before the first move (see *Plan*).
-
-Partial coverage is not a complete replacement: [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148) and [PJ38](README.md#pj38) do not cover all timing fields.
-[B254](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b254) adds an explicit build request from a task; it is not required for the move because a task push can already start the forge workflow.
-
-| Rule short title | Replaced by | Issue |
-|---|---|---|
-| Freeze handed-over commits | Approval of the exact checked gate commit; a new review round after a new push | [B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136); [PJ67](README.md#pj67) |
-| Gather document pushes | Task push to the gate, bound approval and PR to main; the permanent link-publication order remains | [B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136); [PJ34](README.md#pj34); [PJ59](README.md#pj59) |
-| Push the exact commit | Commit-bound gate approval and the protected PR route to main | [B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136); [PJ34](README.md#pj34) |
-| One VM run per stack | Task checks according to capabilities; the full forge workflow with pool machines selected by kind | [PJ22](README.md#pj22); [PJ49](README.md#pj49); [PJ59](README.md#pj59); [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12); [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25) |
-| Targeted VM retest | Task checks and a full forge build of the new working state | [PJ22](README.md#pj22); [PJ49](README.md#pj49); [PJ59](README.md#pj59); [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12); [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25) |
-| Remember a push deadline | A scheduled gate/PR reminder for agreed publication times | No replacement issue yet. |
-| Render local plan previews | A release-plan panel showing current plan and work states; the script/HEADS preview stays until the display is equivalent | [F149](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f149); [PJ63](README.md#pj63); [PJ59](README.md#pj59) |
-| Evaluate local measurement files | Task usage and issue velocity for tokens; automatic timing and time-based reporting are also required | [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148) and [PJ38](README.md#pj38); No issue yet for the complete timing portion. |
-| Poll local RAM | Machine monitoring and notifications, container limits and a suitably sized pool | [PJ70](README.md#pj70); [PJ68](README.md#pj68); [B266](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b266); [HO20](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho20) |
-| Channel-file read markers | Matrix delivery and task mailbox instead of manually moved file markers | [PJ59](README.md#pj59); [B14](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b14) |
-| Channel-post headings | Message identity and addressing in Matrix and the task mailbox | [PJ59](README.md#pj59); [B14](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b14) |
-| Hand over a VELOCITY line | Automatic task records of start, readiness, wait, VM, sub-agent and rework times; task usage supplies tokens | [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148) and [PJ38](README.md#pj38); No issue yet for the complete time fields. |
-| Account for a stack once | Unique task/issue token attribution and allocation of shared time and VM effort; the permanent ban on double counting remains | [B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148) and [PJ38](README.md#pj38); No issue yet for shared time and VM allocation. |
-| Local sub-agent reading | A read-only reviewer task with agent/effort selection and documented gate review rounds | [B172](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b172); [PJ64](README.md#pj64); [PJ67](README.md#pj67) |
-| Resume in the worktree | A dedicated task with its assigned workspace and task continuation | [PJ59](README.md#pj59); [PJ64](README.md#pj64) |
-| Prepare local invocations | Task containers, declared egress, dependency caches and per-task settings | [B10](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b10); [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193); [PJ59](README.md#pj59); [PJ64](README.md#pj64) |
-| Close agy standard input | Dedicated Porelo tasks instead of manually started agy sub-agents | [PJ59](README.md#pj59); [PJ64](README.md#pj64) |
-| Harness Maven boundary | A task-owned Maven write area, shared read-only cache and checks according to capabilities | [B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193); [PJ49](README.md#pj49); [PJ59](README.md#pj59) |
-| Clean up local rentals | Attributed leases, return and VM reset through the shared rental tool; the general cleanup duty remains | [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12); [BT24](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt24); [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25); [PJ59](README.md#pj59) |
-| Arrange a VM slot in the channel | Lease locking, pool limits and controlled waiting or refusal | [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12); [BT24](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt24); [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25) |
-| Check Frontend on host and VM | Task checks according to capabilities and full forge workflows with machines selected by kind | [PJ22](README.md#pj22); [PJ49](README.md#pj49); [PJ59](README.md#pj59); [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12); [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25) |
-| Fixed frontend test account | A dedicated task and isolated test leases; the general test-vault authority remains | [PJ59](README.md#pj59); [HO12](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho12); [BT24](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt24); [BT25](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt25) |
-| Local rpm2cpio workaround | A prepared task/test image with rpm2cpio for the package-fixture run | [PJ59](README.md#pj59); No dedicated issue yet; capture it during the move. |

@@ -1,6 +1,6 @@
 # PJ74 — Forge and build server clients know nothing of Porelo
 
-**Status:** Implementing (operator, 2026-11-04).
+**Status:** Backlog (operator, 2026-11-09; was Implementing, never begun).
 
 **What must be true.** The calls to a forge's or a build server's API - pull requests, reviews and their comments,
 checks and builds, webhooks - live in one repository of their own, `porelo-forge-clients`, with one module per forge or

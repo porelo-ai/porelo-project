@@ -36,3 +36,5 @@ much as from the command line, for someone who has never used Porelo.
   what happens next.
 - [Decisions](decisions.md): the choices the project as a whole is built on, and the risks it
   accepts.
+- [Moving an agent](moving-an-agent.md): how each agent moves into a Porelo task, one at a time,
+  and how each move is checked.

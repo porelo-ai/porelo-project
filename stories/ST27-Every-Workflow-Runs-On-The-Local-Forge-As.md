@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ60](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj60) (Implementing)
+- [porelo-intellij#IJ14](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij14) (Implementing)
 
 ## Data
 
@@ -21,7 +21,7 @@
   "test": "The same build runs green on the local forge and the central one.",
   "priority": "Highest",
   "issues": [
-    "porelo-project#PJ60"
+      "porelo-intellij#IJ14"
   ],
   "tested": null
 }
