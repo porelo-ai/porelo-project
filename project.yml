@@ -3,11 +3,17 @@
 project:
     name: "porelo"
     description: "A hardened box an agent works in, and a gate its work leaves through"
-    security_class: "guarded"
+    security_class: "online"
 
     # The project's own repository: this one, holding the planning and the issues. A task can be
     # started for it, which is how an agent gets a task for planning.
     central: "git@github.com:porelo-ai/porelo-project.git"
+
+# The model a task runs on for each provider when its start names none.
+providers:
+    anthropic:
+        model: "claude-opus-5-5"
+        label: "Opus 5.5"
 
 # The repositories the work happens in. A task works on exactly one, named at
 # 'porelo task start --repository <name>'; these names are what a person types.
