@@ -18,7 +18,7 @@
 - [porelo#B526](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b526) (Review)
 - [porelo#B527](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b527) (Implementing)
 - [porelo#B528](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b528) (Review)
-- [porelo#B529](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b529) (Backlog)
+- [porelo#B529](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b529) (Implementing)
 - [porelo#B530](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b530) (Review)
 - [porelo#B531](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b531) (Review)
 - [porelo#B532](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b532) (Review)
@@ -44,6 +44,21 @@
 - [porelo#B581](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b581) (Backlog)
 - [porelo-message-matrix#MX95](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx95) (Backlog)
 - [porelo-message-matrix#MX96](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx96) (Backlog)
+- [porelo#B582](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b582) (Backlog)
+- [porelo-claude-code#CC51](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc51) (Backlog)
+- [porelo-claude-code#CC52](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc52) (Backlog)
+- [porelo-pi#PI53](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi53) (Backlog)
+- [porelo-adapters#GH24](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh24) (Backlog)
+- [porelo-adapters#GH25](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh25) (Backlog)
+- [porelo-frontend#F452](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f452) (Backlog)
+- [porelo-frontend#F453](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f453) (Backlog)
+- [porelo-frontend#F454](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f454) (Backlog)
+- [porelo-frontend#F455](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f455) (Backlog)
+- [porelo-frontend#F456](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f456) (Backlog)
+- [porelo-frontend#F457](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f457) (Backlog)
+- [porelo-frontend#F458](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f458) (Backlog)
+- [porelo-frontend#F459](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f459) (Backlog)
+- [porelo-frontend#F460](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f460) (Backlog)
 
 ## Data
 
@@ -97,7 +112,16 @@
     "porelo-claude-code#CC52",
     "porelo-pi#PI53",
     "porelo-adapters#GH24",
-    "porelo-adapters#GH25"
+    "porelo-adapters#GH25",
+    "porelo-frontend#F452",
+    "porelo-frontend#F453",
+    "porelo-frontend#F454",
+    "porelo-frontend#F455",
+    "porelo-frontend#F456",
+    "porelo-frontend#F457",
+    "porelo-frontend#F458",
+    "porelo-frontend#F459",
+    "porelo-frontend#F460"
   ],
   "tested": null
 }

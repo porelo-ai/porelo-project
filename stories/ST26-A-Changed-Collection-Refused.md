@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F137](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f137) (Rework)
+- [porelo-frontend#F137](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f137) (Review)
 
 ## Data
 
