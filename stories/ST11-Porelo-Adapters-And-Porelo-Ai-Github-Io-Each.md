@@ -1,4 +1,4 @@
-# ST11 — porelo-adapters and porelo-ai.github.io each in its own task
+# ST11 — Move: porelo-adapters and porelo-ai.github.io each in its own task
 
 **Priority:** ⏫ Highest · **State:** Idea
 
@@ -18,7 +18,7 @@
 {
   "$schema": "story-2.json",
   "id": "ST11",
-  "title": "porelo-adapters and porelo-ai.github.io each in its own task",
+  "title": "Move: porelo-adapters and porelo-ai.github.io each in its own task",
   "gain": "The adapters repository and the project website can each be developed in their own task on the host and reach Review with a green build on the host's forge.",
   "test": "Each move issue reaches Review inside its task with Forgejo's build green.",
   "priority": "Highest",

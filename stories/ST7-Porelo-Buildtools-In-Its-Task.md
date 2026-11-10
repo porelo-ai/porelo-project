@@ -1,4 +1,4 @@
-# ST7 — porelo-buildtools in its task
+# ST7 — Move: porelo-buildtools in its task
 
 **Priority:** ⏫ Highest · **State:** Backlog
 
@@ -16,7 +16,7 @@
 {
   "$schema": "story-2.json",
   "id": "ST7",
-  "title": "porelo-buildtools in its task",
+  "title": "Move: porelo-buildtools in its task",
   "gain": "The build tools can be developed inside their own task on the host and reach Review with a green build on the host's forge.",
   "test": "Its move issue reaches Review inside the task with Forgejo's build green.",
   "priority": "Highest",

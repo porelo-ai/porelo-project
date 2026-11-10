@@ -1,4 +1,4 @@
-# ST13 — porelo and porelo-host each in its task, with a way back
+# ST13 — Move: porelo and porelo-host each in its task, with a way back
 
 **Priority:** ⏫ Highest · **State:** Idea
 
@@ -18,7 +18,7 @@
 {
   "$schema": "story-2.json",
   "id": "ST13",
-  "title": "porelo and porelo-host each in its task, with a way back",
+  "title": "Move: porelo and porelo-host each in its task, with a way back",
   "gain": "Porelo and the host collection can each be built by an agent in its own task on the host, with a way back if the move needs undoing.",
   "test": "porelo's agent builds porelo in a task and porelo-host's agent its collection; each works on this machine again if a fault in Porelo or the host's setup stops it.",
   "priority": "Highest",
