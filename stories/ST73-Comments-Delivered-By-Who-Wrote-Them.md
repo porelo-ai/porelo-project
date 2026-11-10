@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST73",
   "title": "Comments delivered by who wrote them",
-  "state": "Accepted",
   "gain": "Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not.",
   "test": "On a task's pull request, a comment of an internal account and of a listed partner reach the task at once; a comment of an unknown account is held and shown until the person releases it; a comment that claims another author changes nothing.",
   "priority": "Medium",

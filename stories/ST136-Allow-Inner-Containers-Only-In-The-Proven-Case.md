@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST136",
   "title": "Allow inner containers only in the proven case",
   "state": "Idea",

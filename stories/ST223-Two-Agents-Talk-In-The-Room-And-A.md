@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST223",
   "title": "Two agents talk in the room, and a message wakes the resting one",
-  "state": "Finished",
   "gain": "Two agents on the host can talk to each other in the project's room, a message wakes the resting one, and the person can read along.",
   "test": "Two tasks on the host write to each other in the project's room; the operator reads along through the VPN; a message naming a resting agent wakes it.",
   "priority": "Highest",

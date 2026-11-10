@@ -17,9 +17,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST220",
   "title": "Claude works in a task, signed in with the operator's subscription",
-  "state": "Finished",
   "gain": "A person can sign Claude Code in once with their own subscription, and tasks then work with only a short-lived token and no memory of the agent's own sign-in.",
   "test": "Signed in by hand at the stop; the task holds only a short-lived token and no memory of the agent's own; Sluice answers a read-only question in its task.",
   "priority": "Highest",

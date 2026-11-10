@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST253",
   "title": "Codex answers without holding real tokens",
-  "state": "Finished",
   "gain": "A person can ask a Codex task a question through the ChatGPT sign-in while the container holds none of the real tokens.",
   "test": "Start a Codex task with the ChatGPT sign-in and ask it a question. Search the container for the real tokens; none are present. Interrupt a refresh after rotation and resume; the new refresh token must still work.",
   "priority": "Highest",

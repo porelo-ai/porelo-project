@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST185",
   "title": "Tasks on macOS through Apple containers",
-  "state": "Analyzed",
   "gain": "A developer on macOS can run tasks through Apple containers with the same guarantees, or sees the proof of why not.",
   "test": "A person on macOS runs tasks with the same guarantees, or the proof says why not.",
   "priority": "Low",

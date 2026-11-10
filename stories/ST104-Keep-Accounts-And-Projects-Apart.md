@@ -21,9 +21,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST104",
   "title": "Keep accounts and projects apart",
-  "state": "Idea",
   "gain": "Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's.",
   "test": "Run a transport against a declared and an undeclared destination; only the first works. Try reading Porelo data and review directories as a second account; access fails. Use project/task pairs a-b/c and a/b-c; state and credentials stay separate. Change PATH; privileged hooks still use their fixed programs.",
   "priority": "Medium",

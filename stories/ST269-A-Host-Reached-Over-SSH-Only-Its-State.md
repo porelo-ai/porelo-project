@@ -32,9 +32,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST269",
   "title": "A host reached over SSH only, its state taken from the registry",
-  "state": "Finished",
   "gain": "A host is reached over SSH only, and takes its project admins, projects and persons from the signed registry state, refusing mismatched or revoked cards with the reason.",
   "test": "The host's only open port is SSH, the forge and homeserver are reached through their gates over the tunnel, and the host takes its admins, projects and persons from the signed registry state, refusing a card under another login, an unsigned host card or a successor signed by a revoked key, with reasons.",
   "priority": "Highest",

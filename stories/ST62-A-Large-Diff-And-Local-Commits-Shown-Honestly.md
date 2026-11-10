@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST62",
   "title": "A large diff and local commits shown honestly",
-  "state": "Analyzed",
   "gain": "A person opening a very large diff sees it cut at a file boundary with a plain notice, and local commits are shown honestly.",
   "test": "Open a review larger than 4 MiB; it is cut at a file boundary, says so and keeps the full file list. Read a running task with local commits, then stop it. Summary, commits and diff agree in both states; missing parts must not appear complete.",
   "priority": "Medium",

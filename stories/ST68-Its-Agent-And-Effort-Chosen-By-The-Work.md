@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST68",
   "title": "Its agent and effort chosen by the work",
-  "state": "Idea",
   "gain": "A reviewer starts with the agent and effort that the project's rules set for the work's risk, so riskier work gets a more careful review.",
   "test": "A reviewer started for an issue with risk `harm` runs the agent and effort the project's rule names for `check`, and the start says which rule chose it; a flag overrides it.",
   "priority": "Medium",

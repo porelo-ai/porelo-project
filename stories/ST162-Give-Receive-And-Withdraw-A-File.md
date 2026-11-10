@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST162",
   "title": "Give, receive and withdraw a file",
   "state": "Idea",

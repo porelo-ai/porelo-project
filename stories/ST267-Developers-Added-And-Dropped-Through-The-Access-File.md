@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST267",
   "title": "Developers added and dropped through the access file",
-  "state": "Finished",
   "gain": "Developers are added to or dropped from the signed access file, so a new developer joins from their own laptop with their own key.",
   "test": "A developer added to the signed `access.yml` joins from their own laptop with their own key and works; one dropped is locked at once at the next `sync`, unless another project or the host admin still holds them; an unsigned or altered access file changes nothing; a project taken off locks whoever has no membership left, and `down` refuses while anyone holds one, naming them.",
   "priority": "Highest",

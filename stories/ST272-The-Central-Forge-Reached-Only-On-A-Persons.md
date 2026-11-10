@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST272",
   "title": "The central forge reached only on a person's word",
-  "state": "Finished",
   "gain": "The central forge is reached only when an admitted person starts the push or pull with their own token.",
   "test": "The gathered push and the pull run only when an admitted person starts them, with their own token sent through the tunnel and kept nowhere on the host.",
   "priority": "Highest",

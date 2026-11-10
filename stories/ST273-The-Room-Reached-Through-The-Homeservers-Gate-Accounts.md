@@ -22,9 +22,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST273",
   "title": "The room reached through the homeserver's gate, accounts by login",
-  "state": "Finished",
   "gain": "A person reaches the room through the homeserver's gate with Element and Porelo, with accounts by login and only through the tunnel.",
   "test": "Element and Porelo reach the homeserver only through the tunnel to its gate, which knows the person by their host login; a person's accounts are named by their login, not a machine; a lock for one project takes them out of that project's rooms only; no VPN address, machine token or certificate is left.",
   "priority": "Highest",

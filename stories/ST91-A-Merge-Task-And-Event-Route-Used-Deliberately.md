@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST91",
   "title": "A merge task and event route used deliberately",
-  "state": "Idea",
   "gain": "A merge task starts only when it matches the advanced main, and a person can route events deliberately.",
   "test": "Advance central main and refuse the gathered push; a matching merge task starts only with project opt-in. Send an event for account A; only its daemon receives it. Unknown or forged senders are refused. With the router absent, polling still works.",
   "priority": "Medium",

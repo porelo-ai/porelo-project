@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST15",
   "title": "The website builds in its task",
-  "state": "Estimated",
   "gain": "The project website can be fully checked inside its own task, and the check passes with the Debian image and repository changes.",
   "test": "Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed.",
   "priority": "Highest",

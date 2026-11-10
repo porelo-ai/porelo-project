@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST47",
   "title": "A terminal and live list used together",
-  "state": "Estimated",
   "gain": "A person can use the embedded terminal like an ordinary terminal and keep task list --watch open beside it.",
   "test": "Use the embedded terminal as an ordinary terminal and open task list --watch beside it. States and the clearance hint update. Input reaches the task whole and unchanged; Ctrl-C restores the terminal.",
   "priority": "High",

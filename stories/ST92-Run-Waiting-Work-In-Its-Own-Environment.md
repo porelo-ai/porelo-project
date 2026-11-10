@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST92",
   "title": "Run waiting work in its own environment",
-  "state": "Idea",
   "gain": "A person can run waiting work in its own isolated environment with gate try and read the streamed result, without it reaching the gate.",
   "test": "Run a waiting commit with gate try and read its streamed result. Try to reach the gate and vault from the trial; both are refused. Cancel the run and confirm its environment is removed.",
   "priority": "Medium",

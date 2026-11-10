@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST65",
   "title": "A dangerous change ranked by rule",
-  "state": "Idea",
   "gain": "Waiting work that deletes a test, changes a workflow, adds a dependency or retargets a symlink is ranked as dangerous by rule, so a person looks at it first.",
   "test": "Waiting work that deletes a test, changes a workflow, adds a dependency or retargets a symbolic link is ranked C2 or C3 by rule, with the reason shown; a reviewer's finding can raise the class, never lower it.",
   "priority": "Medium",

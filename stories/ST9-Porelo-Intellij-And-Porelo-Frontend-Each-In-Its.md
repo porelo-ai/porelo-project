@@ -17,9 +17,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST9",
   "title": "porelo-intellij and porelo-frontend each in its own task",
-  "state": "Backlog",
   "gain": "The IntelliJ plugin and the frontend can each be built in their own task on the host, with Gradle and Flutter builds running on the host's forge.",
   "test": "Gradle and Flutter build on Forgejo; the Windows job runs centrally only, named by a variable.",
   "priority": "Highest",

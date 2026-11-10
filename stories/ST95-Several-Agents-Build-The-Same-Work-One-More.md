@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST95",
   "title": "Several agents build the same work, one more compares them",
-  "state": "Idea",
   "gain": "A person can have two agents or models build the same issue side by side and let another agent name the better one.",
   "test": "Start the same issue with two agents or models side by side; a comparing agent names the better result and why, and each run's wall time, tokens and cost are shown beside it. A finished issue built again is compared against its own commit.",
   "priority": "Medium",

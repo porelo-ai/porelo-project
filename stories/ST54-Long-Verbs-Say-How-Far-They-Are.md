@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST54",
   "title": "Long verbs say how far they are",
-  "state": "Review",
   "gain": "A person running a long command sees how far along it is.",
   "test": "A long command says how far it is.",
   "priority": "High",

@@ -1,6 +1,6 @@
 # ST105 — Keep public SSH closed after the VPN is ready
 
-**Priority:** 🟰 Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Rejected
 
 **What a user gains.** Once the VPN is ready, public SSH stays closed, and a documented recovery path exists if the VPN breaks.
 
@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST105",
   "title": "Keep public SSH closed after the VPN is ready",
-  "state": "Idea",
   "gain": "Once the VPN is ready, public SSH stays closed, and a documented recovery path exists if the VPN breaks.",
   "test": "Bring up the VPN, then try public SSH; it fails. Break the VPN and follow the documented recovery route successfully. Do not enable the restriction until this recovery route has been tested.",
   "priority": "Medium",

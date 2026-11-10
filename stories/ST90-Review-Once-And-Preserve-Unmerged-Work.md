@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST90",
   "title": "Review once and preserve unmerged work",
-  "state": "Idea",
   "gain": "The same green build starts only one reviewer, and unmerged work is preserved rather than lost.",
   "test": "Report the same green build more than once; exactly one reviewer starts for that commit. Merge a task pull request; a task with no remaining work is removed, while unmerged work stays visible. With no project opt-in, neither action runs.",
   "priority": "Medium",

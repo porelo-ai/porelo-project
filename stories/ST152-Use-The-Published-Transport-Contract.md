@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST152",
   "title": "Use the published transport contract",
-  "state": "Estimated",
   "gain": "A developer can build a transport against only the published API and wire libraries and use a stub to pass messages between tasks.",
   "test": "Build the stub against only the API and wire libraries and transfer a message between tasks. Offer an unknown protocol version; it is refused by name before use.",
   "priority": "Low",

@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST67",
   "title": "A reviewer reads and comments, and can do nothing more",
-  "state": "Analyzed",
   "gain": "A person can start a reviewer that reads waiting work and writes findings as comments, and it can do nothing more.",
   "test": "`porelo task start --role reviewer` on waiting work writes its findings as comments beside the person's, marked with its task and role; its push, approve and reject are refused by the host.",
   "priority": "Medium",

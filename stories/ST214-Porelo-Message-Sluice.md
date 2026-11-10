@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST214",
   "title": "porelo-message-sluice",
-  "state": "Idea",
   "gain": "A person gets the message sluice repository as a named part of Porelo that is tracked as its own piece of work.",
   "test": "Not planned for a test yet.",
   "priority": "Low",

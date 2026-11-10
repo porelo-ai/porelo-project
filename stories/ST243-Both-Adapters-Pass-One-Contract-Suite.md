@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST243",
   "title": "Both adapters pass one contract suite",
-  "state": "Finished",
   "gain": "Both forge adapters are held to one contract suite, so an adapter that breaks the contract fails the tests instead of misleading people.",
   "test": "Every case from recorded answers; an adapter broken on purpose fails it.",
   "priority": "Highest",

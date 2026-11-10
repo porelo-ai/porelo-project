@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST150",
   "title": "Accept only admitted people as people",
-  "state": "Analyzed",
   "gain": "Only admitted people count as people in the room, so a machine signed in to the central homeserver cannot pass as one.",
   "test": "Sign two machines in to the central homeserver. Have an admitted person write in the room and directly. Have a foreign task claim to be a person and try a task-to-task direct chat. Only the admitted person is delivered as a person; forbidden paths are refused.",
   "priority": "Low",

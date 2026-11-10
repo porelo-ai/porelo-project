@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST69",
   "title": "A read-only OMP reviewer started explicitly",
-  "state": "Analyzed",
   "gain": "A person can start OMP as a read-only reviewer with a chosen thinking level, and the agent gets exactly those values.",
   "test": "Start OMP with read-only mode and a thinking level; the agent receives those values. An unknown mode or level is refused before the start. Try a reviewer push or approval; the host still refuses it.",
   "priority": "Medium",

@@ -1,6 +1,6 @@
 # ST5 — porelo-pi, porelo-omp and porelo-claude-code each in its own task, with snapshots of porelo from the registry
 
-**Priority:** ⏫ Highest · **State:** Implementing
+**Priority:** ⏫ Highest · **State:** Review
 
 **What a user gains.** The Pi, OMP and Claude Code adapters can each be developed in their own task on the host and build there against Porelo snapshots from the local registry.
 
@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST5",
   "title": "porelo-pi, porelo-omp and porelo-claude-code each in its own task, with snapshots of porelo from the registry",
-  "state": "Implementing",
   "gain": "The Pi, OMP and Claude Code adapters can each be developed in their own task on the host and build there against Porelo snapshots from the local registry.",
   "test": "Each of the three repositories has its own agent and task, builds on Forgejo and takes porelo from the local registry.",
   "priority": "Highest",

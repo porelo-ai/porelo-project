@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST59",
   "title": "A report outside the profile refused",
-  "state": "Analyzed",
   "gain": "Reports with unsafe locations, fixes in the wrong file or other disallowed content are refused, so a bad report cannot do harm.",
   "test": "Reports with a `file://` or `../` location, a fix in another file than its anchor, an external property file, a bidirectional control character, or more results than the limit are each refused, naming the element; nothing of them is shown or kept.",
   "priority": "Medium",

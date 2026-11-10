@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST87",
   "title": "Invalid machine inputs refused before renting",
-  "state": "Idea",
   "gain": "Invalid machine inputs, such as an unknown provider or a missing field, are refused before anything is rented, with the same variable read on both forges.",
   "test": "Read the same machine-provider variable on both forges. Request an unknown provider, omit a required parameter and supply an empty required secret; all are refused before renting. A complete request is accepted.",
   "priority": "Medium",

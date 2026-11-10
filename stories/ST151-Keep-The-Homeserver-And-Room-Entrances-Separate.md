@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST151",
   "title": "Keep the homeserver and room entrances separate",
-  "state": "Analyzed",
   "gain": "The homeserver and room entrances are kept apart, so a second account cannot connect to another account's homeserver socket.",
   "test": "Reach the homeserver through its account-owned Unix socket; a second account cannot connect. Read the room and a direct chat together and change the task reading them. Direct messages remain private, with no lost or repeated delivery.",
   "priority": "Low",

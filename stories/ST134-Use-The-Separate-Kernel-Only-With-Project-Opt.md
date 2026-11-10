@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST134",
   "title": "Use the separate kernel only with project opt-in",
   "state": "Idea",

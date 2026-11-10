@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST117",
   "title": "Store a forge sign-in without pasting a token",
-  "state": "Accepted",
   "gain": "A person can store a forge sign-in through the device-code login in a terminal, with no token to paste.",
   "test": "Complete the forge's device-code login in a terminal on the machine. The token is stored under the forge host's credential name and a task can use it through the host. Cancel the flow; no partial credential is saved.",
   "priority": "Low",

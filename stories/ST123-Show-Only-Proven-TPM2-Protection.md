@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST123",
   "title": "Show only proven TPM2 protection",
   "state": "Idea",

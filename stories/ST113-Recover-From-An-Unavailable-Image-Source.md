@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST113",
   "title": "Recover from an unavailable image source",
-  "state": "Idea",
   "gain": "If the first Ubuntu mirror stops answering, an image build recovers by using the next source instead of failing.",
   "test": "Make the first Ubuntu mirror stop answering and build the image. The first attempt ends within its bound and the configured fallback succeeds. An unknown source remains refused.",
   "priority": "Medium",

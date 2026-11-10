@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST255",
   "title": "A compact failure loop stopped",
-  "state": "Finished",
   "gain": "A task stops when an agent repeats a compact view redraw and a failed tool call in a loop, instead of running on without progress.",
   "test": "Run an acceptance scenario with an agent that redraws a compact view and repeats a failed tool call; the loop watch stops it before the scenario bound and names the repeated failure. A progressing scenario must continue.",
   "priority": "Highest",

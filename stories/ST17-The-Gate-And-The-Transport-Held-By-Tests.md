@@ -24,9 +24,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST17",
   "title": "The gate and the transport held by tests",
-  "state": "Review",
   "gain": "The message gate and the transport are guarded by tests, shown by a mutation run, so a removed refusal gets noticed.",
   "test": "Not a walk: a mutation run of `porelo-message-matrix` shows that removing a refusal of the gate or its parser, a certificate check on any trust path, or what keeps a message or a copy whole fails a unit test; a task of the project `default` joins no room, and a stalled client loses its connection.",
   "priority": "Highest",

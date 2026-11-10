@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST187",
   "title": "Run the supported ARM agents",
   "state": "Idea",

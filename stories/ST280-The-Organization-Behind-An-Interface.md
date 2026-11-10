@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST280",
   "title": "The organization behind an interface",
-  "state": "Finished",
   "gain": "The organization sits behind an interface whose contract tests fail an adapter that accepts an unsigned change, an older played-back state or a revoked card.",
   "test": "The contract tests fail against an adapter that accepts an unsigned change, a played-back older state or a revoked card.",
   "priority": "Highest",

@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST101",
   "title": "Let only Porelo own its Fedora socket",
-  "state": "Idea",
   "gain": "On an enforcing SELinux Fedora machine, only Porelo can own its socket, so another program cannot stand in for it.",
   "test": "Install the build on an enforcing SELinux Fedora machine and connect with Porelo. Have another program bind the protected socket; it is refused. Remove and reinstall the package; the module is removed and loaded as intended. Run the Fedora deploy path too, including --account.",
   "priority": "Medium",

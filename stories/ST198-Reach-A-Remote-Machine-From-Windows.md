@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST198",
   "title": "Reach a remote machine from Windows",
-  "state": "Estimated",
   "gain": "A person on Windows with no SSH binary can still connect to a host, start a task and reconnect.",
   "test": "On Windows without an SSH binary, connect to the host, start a task and reconnect. A wrong host key is refused and the relay carries the full stream.",
   "priority": "Low",

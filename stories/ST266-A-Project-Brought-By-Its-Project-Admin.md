@@ -22,9 +22,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST266",
   "title": "A project brought by its project admin",
-  "state": "Finished",
   "gain": "A project admin can bring a project onto the prepared host from the interface, with a second project added without new host setup.",
   "test": "The project admin brings a project onto the prepared host from the interface, with its repositories in their own forge organization, main protected, the gate, agents and gathered push set up, naming a signed access.yml (another host's host: block admits nothing), and a second project needs no new host setup.",
   "priority": "Highest",

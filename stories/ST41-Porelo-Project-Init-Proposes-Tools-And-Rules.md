@@ -23,9 +23,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST41",
   "title": "`porelo project init` proposes tools and rules",
-  "state": "Estimated",
   "gain": "A person starting a Maven repository gets a proposed tool and rules file that porelo project init drafts, with each value explained.",
   "test": "For a Maven repository, a `.porelo.yml` and where needed a `project.yml` draft, each value with its source; a project kept in a local repository is read again at `refresh`.",
   "priority": "High",

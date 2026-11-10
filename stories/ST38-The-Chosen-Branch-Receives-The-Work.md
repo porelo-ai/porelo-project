@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST38",
   "title": "The chosen branch receives the work",
-  "state": "Estimated",
   "gain": "A person can choose a branch template or an explicit branch, and approved work lands on exactly that branch on the forge.",
   "test": "Choose a branch template or an explicit branch, approve the work and read the result on GitHub. Only the chosen branch receives it; an existing online branch belonging to someone else is refused.",
   "priority": "High",

@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST265",
   "title": "A person admitted, locked and purged; a project registered and taken off",
-  "state": "Finished",
   "gain": "A host admin can admit a project admin, lock or purge a person, and register or take off a project, with each person getting their own account and token.",
   "test": "The host admin admits a project admin by hand, who gets an account of their own and a token of the shared homeserver, named `<host>-<account>` in the room; a locked person loses every access without a terminal, and a purge removes the account. A project registered and taken off leaves the host and its forge standing.",
   "priority": "Highest",

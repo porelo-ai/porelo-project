@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST116",
   "title": "Cancel the agent sign-in completely",
-  "state": "Analyzed",
   "gain": "A person can cancel an agent's sign-in completely with the supported escape, even if the agent ignores it.",
   "test": "Start vault login in its own terminal and cancel using the supported escape even if the agent consumes Ctrl-C. The login container stops and is removed, nothing is stored and the command exits nonzero.",
   "priority": "Low",

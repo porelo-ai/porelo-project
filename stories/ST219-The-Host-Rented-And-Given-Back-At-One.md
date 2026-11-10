@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST219",
   "title": "The host rented and given back at one command",
-  "state": "Finished",
   "gain": "A person can rent a host from Scaleway and set it up with one command, and give it back with one command, reaching it only through the VPN.",
   "test": "`porelo-host up porelo` rents from Scaleway and sets it up; the operator reaches it only through the VPN with the drive mounted; `down` leaves nothing at the provider.",
   "priority": "Highest",

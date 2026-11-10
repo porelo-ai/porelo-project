@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST120",
   "title": "Remove access without deleting another person's keys",
-  "state": "Estimated",
   "gain": "A person can unfollow a project or clear a machine and lose access without deleting another person's keys.",
   "test": "Follow and unfollow a project, then clear the machine. Read remaining deploy keys, unreviewed or unpushed work and old unused slots. Remove the project's keys in the GitHub test account; another project's key remains.",
   "priority": "Low",

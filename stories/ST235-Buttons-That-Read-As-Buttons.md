@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST235",
   "title": "Buttons that read as buttons",
-  "state": "Finished",
   "gain": "A person sees the project page's actions as clear, equal buttons in the style they picked, with giving the server back clearly marked.",
   "test": "The project page's actions are equal tiles in the style the operator picked; giving the server back is confirmed by its consequences.",
   "priority": "Highest",

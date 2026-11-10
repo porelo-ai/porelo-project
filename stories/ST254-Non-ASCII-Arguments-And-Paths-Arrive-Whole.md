@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST254",
   "title": "Non-ASCII arguments and paths arrive whole",
-  "state": "Finished",
   "gain": "Non-ASCII text in room messages, arguments and paths arrives whole through every launched program.",
   "test": "Send a room message and use a path containing non-ASCII characters through each launched program; the recipient sees exactly the text sent, without replacement characters or missing bytes.",
   "priority": "Highest",

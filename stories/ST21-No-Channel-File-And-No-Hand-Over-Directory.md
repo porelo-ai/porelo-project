@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST21",
   "title": "No channel file and no hand-over directory any more",
   "state": "Idea",

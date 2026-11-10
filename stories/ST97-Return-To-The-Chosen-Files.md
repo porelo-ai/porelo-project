@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST97",
   "title": "Return to the chosen files",
-  "state": "Estimated",
   "gain": "A person can rewind a task to a turn snapshot and compare the restored files, and an unsupported session is told so.",
   "test": "Create two turn snapshots, rewind and compare the restored files. An unsupported session restore must be explained, with a restart offered where appropriate.",
   "priority": "Medium",

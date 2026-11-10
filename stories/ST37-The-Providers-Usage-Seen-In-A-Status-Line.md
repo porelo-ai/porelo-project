@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST37",
   "title": "The providers' usage seen in a status line",
-  "state": "Idea",
   "gain": "A person sees all providers in use as one traffic light in the status line and can click to see each provider's usage.",
   "test": "The status line shows one traffic light for all providers in use; a click lists each provider with its own light; a provider past its configured critical threshold also raises a warning in needs you.",
   "priority": "High",

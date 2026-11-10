@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST14",
   "title": "The coordinator reads everything and changes only porelo-project",
-  "state": "Analyzed",
   "gain": "The coordinator can read every repository of the project but can change only the project repository, and any change elsewhere is refused.",
   "test": "In `porelo-all` every repository is there; a change outside `porelo-project/` is refused.",
   "priority": "Highest",

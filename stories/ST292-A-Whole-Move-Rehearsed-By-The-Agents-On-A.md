@@ -1,6 +1,6 @@
 # ST292 — A whole move rehearsed by the agents on a rented server
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Implementing
 
 **What a user gains.** Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server.
 
@@ -13,17 +13,17 @@
 - [porelo-frontend#F444](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f444) (Review)
 - [porelo-frontend#F445](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f445) (Review)
 - [porelo-host#HO158](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho158) (Implementing)
-- [porelo-message-matrix#MX89](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx89) (Implementing)
-- [porelo-message-matrix#MX90](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx90) (Implementing)
-- [porelo-message-matrix#MX91](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx91) (Implementing)
+- [porelo-message-matrix#MX89](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx89) (Review)
+- [porelo-message-matrix#MX90](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx90) (Review)
+- [porelo-message-matrix#MX91](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx91) (Review)
 
 ## Data
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST292",
   "title": "A whole move rehearsed by the agents on a rented server",
-  "state": "Backlog",
   "gain": "Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server.",
   "test": "The person rents a server with the rehearsal's root key and gives the order; the run sets up the host, signs in the test person, drives the window's main scenarios and the room's scenarios, pushes through the gate and pushes and pulls to central, takes Porelo off and asks to delete the server, reporting OK or FAIL per step, with no input from the person between renting and deleting.",
   "priority": "Highest",

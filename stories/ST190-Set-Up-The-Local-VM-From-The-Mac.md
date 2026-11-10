@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST190",
   "title": "Set up the local VM from the Mac interface",
   "state": "Idea",

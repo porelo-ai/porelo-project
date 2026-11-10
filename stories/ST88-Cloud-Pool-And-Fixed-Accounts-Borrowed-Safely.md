@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST88",
   "title": "Cloud, pool and fixed accounts borrowed safely",
   "state": "Idea",

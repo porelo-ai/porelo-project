@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST248",
   "title": "A refused host shown as refused",
-  "state": "Finished",
   "gain": "A person sees a host the agent refuses named as refused when trying a start with --dry-run, instead of discovering it later.",
   "test": "Run task start with --dry-run for an allowed host and one the agent refuses; the latter is named as refused and is refused again by the running task.",
   "priority": "Highest",

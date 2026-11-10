@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST262",
   "title": "The local homeserver also on the VPN's address",
-  "state": "Finished",
   "gain": "A person with the VPN up can reach the local homeserver on the VPN's address under its own certificate.",
   "test": "With the VPN up, the homeserver answers on `https://10.73.0.2:<port>` under its own certificate and still on `127.0.0.1`; with the VPN down, the loopback listener keeps running and nothing listens on another address.",
   "priority": "Highest",

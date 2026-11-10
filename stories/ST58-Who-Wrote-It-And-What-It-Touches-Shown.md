@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST58",
   "title": "Who wrote it and what it touches, shown on waiting work",
-  "state": "Idea",
   "gain": "A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon.",
   "test": "Waiting work, each comment and each finding carry the source level the daemon derived from authenticated data (E0, E1, I1, A) and the risk class of the change (C0-C3), shown in `porelo gate review`; a level claimed in the content changes nothing, and nothing is refused by them yet.",
   "priority": "Medium",

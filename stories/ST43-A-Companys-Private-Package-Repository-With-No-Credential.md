@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST43",
   "title": "A company's private package repository, with no credential in the task",
-  "state": "Analyzed",
   "gain": "A task can build against a company's authenticated Nexus or Artifactory without ever holding the credential, since the settings are written outside the task.",
   "test": "A task builds against an authenticated Nexus or Artifactory; `settings.xml` is written at the start and the credential stays in the vault.",
   "priority": "High",

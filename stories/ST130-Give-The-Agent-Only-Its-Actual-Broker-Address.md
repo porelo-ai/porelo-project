@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST130",
   "title": "Give the agent only its actual broker address",
-  "state": "Idea",
   "gain": "An agent gets only its actual broker address, and a task without a broker gets none.",
   "test": "Compare brokered and brokerless starts. Only a task with a broker receives its broker address; an agent reached by URL must not treat a relay as a broker.",
   "priority": "Low",

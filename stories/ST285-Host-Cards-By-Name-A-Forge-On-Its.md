@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST285",
   "title": "Host cards by name, a forge on its own port, a fast build",
-  "state": "Finished",
   "gain": "A person can use host cards with a DNS name or an IPv6 address, run a forge on its own port, and get a fast build.",
   "test": "A host card with a DNS name or an IPv6 address is read and connected; a vault token is lent to a forge on a port other than 443; the porelo Build's verify ends in about 12 minutes, shown by a real Build and not by a step of the walk.",
   "priority": "Highest",

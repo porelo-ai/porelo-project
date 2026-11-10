@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST83",
   "title": "An expiring token told ahead",
-  "state": "Accepted",
   "gain": "A person is told ahead of time, once, when a forge token on a host is about to expire.",
   "test": "A forge token set to expire soon on a host makes one message to the person, in the way they chose, naming the machine, the token, when it expires and how to renew it; it is not repeated until it changes.",
   "priority": "Medium",

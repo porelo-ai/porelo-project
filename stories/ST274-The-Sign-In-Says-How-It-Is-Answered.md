@@ -24,9 +24,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST274",
   "title": "The sign-in says how it is answered",
-  "state": "Finished",
   "gain": "A person signing an agent in on the host is told how it is answered, either to paste the code from the browser or to confirm on the device.",
   "test": "Signing an agent in on the host shows either \"Paste the code shown in your browser\" or \"Confirm on the device page\", as its definition says; a loopback sign-in on a host account is refused, naming the agent.",
   "priority": "Highest",

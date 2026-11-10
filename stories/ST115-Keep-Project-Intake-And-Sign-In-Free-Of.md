@@ -21,9 +21,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST115",
   "title": "Keep project intake and sign-in free of hidden secrets",
-  "state": "Idea",
   "gain": "Project intake and sign-in keep secrets out of sight, so invalid credential names are refused and known test credentials do not leak.",
   "test": "Load an invalid credential name; it is explicitly refused. Put a known test credential in the repository; start warns or stops under the project rule. Sign in and inspect container layers and temporary host directories; no plaintext remains there. Store a credential without expiry; the response and list say so.",
   "priority": "Low",

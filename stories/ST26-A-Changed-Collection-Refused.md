@@ -1,6 +1,6 @@
 # ST26 — A changed collection refused
 
-**Priority:** ⏫ Highest · **State:** Implementing
+**Priority:** ⏫ Highest · **State:** Review
 
 **What a user gains.** A host collection that has been changed after publishing is refused, so a person installs only what was actually released.
 
@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST26",
   "title": "A changed collection refused",
-  "state": "Implementing",
   "gain": "A host collection that has been changed after publishing is refused, so a person installs only what was actually released.",
   "test": "Install the host collection through the interface, then offer a changed collection tarball with the original digest; installation is refused before its contents run.",
   "priority": "Highest",

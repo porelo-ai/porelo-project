@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST16",
   "title": "The first release's leg installs the release",
-  "state": "Backlog",
   "gain": "The first release can be installed from its published packages in a test leg, so a release is proven installable before people use it.",
   "test": "Not a walk: on the first tag run of 0.6, on a `porelo-buildtools` release holding the change, an agent repository's and `porelo-frontend`'s legs install the released Porelo from its channel, and their logs name it; a reader refuses a wrong channel or a candidate as proof of the tested release. The release stops if it fails.",
   "priority": "Highest",

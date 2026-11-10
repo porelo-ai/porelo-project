@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST175",
   "title": "Connect an existing Bitbucket project",
-  "state": "Estimated",
   "gain": "A person can connect an existing Bitbucket project and take a repository in as a Porelo project.",
   "test": "Connect the test installation, read the identity and take in a repository as a project. Offer a token without the required rights and a wrong host key; both are clearly refused.",
   "priority": "Low",

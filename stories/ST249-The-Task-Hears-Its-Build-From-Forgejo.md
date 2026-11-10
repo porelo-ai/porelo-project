@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST249",
   "title": "The task hears its build from Forgejo",
-  "state": "Finished",
   "gain": "A task hears its build result from Forgejo after pushing through its gate, so it knows the verdict and reason without a person relaying it.",
   "test": "The task pushes through its gate to `porelo/<task>` on Forgejo, which builds it; the verdict and a red job's log are in the task's `/porelo/files`.",
   "priority": "Highest",

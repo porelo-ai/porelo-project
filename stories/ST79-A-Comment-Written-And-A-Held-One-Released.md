@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST79",
   "title": "A comment written and a held one released",
-  "state": "Idea",
   "gain": "A person can write a comment or reply in the IntelliJ plugin and release a held reply, with the same effect as in the interface.",
   "test": "A comment and a reply written in the plugin reach the task as in the interface; a held forge comment is released from the plugin one at a time.",
   "priority": "Medium",

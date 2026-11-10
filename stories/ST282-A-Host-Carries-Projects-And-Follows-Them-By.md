@@ -43,9 +43,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST282",
   "title": "A host carries projects and follows them by itself",
-  "state": "Finished",
   "gain": "A host admin can put a project on a host with their central token, and members are admitted there on their own as the host follows the project.",
   "test": "A host admin puts a project on a host with their central token; every member is admitted there within five minutes or at once on Refresh, and a member removed is locked there at the same moment, with no step of anyone; a person connects once per host and finds every project they are in ready, with no Join; a project taken off the host leaves nothing of itself there.",
   "priority": "Highest",

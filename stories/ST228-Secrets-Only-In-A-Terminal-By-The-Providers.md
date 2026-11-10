@@ -21,9 +21,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST228",
   "title": "Secrets only in a terminal, by the provider's own login",
-  "state": "Finished",
   "gain": "A person gives secrets only in a terminal, using the drive provider's own login, so Porelo never handles the password itself.",
   "test": "At the host's stop a terminal opens with Tresorit's own login, the code asked after the password; the vault's passphrase is typed there; the forge is reached with the person's token from GitHub's device-code login, and no deploy key is made; Ctrl+Shift+V pastes in every terminal of the interface.",
   "priority": "Highest",

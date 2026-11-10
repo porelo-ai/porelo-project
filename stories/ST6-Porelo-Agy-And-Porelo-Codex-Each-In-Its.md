@@ -17,9 +17,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST6",
   "title": "porelo-agy and porelo-codex each in its own task",
-  "state": "Backlog",
   "gain": "The Antigravity and Codex adapters can each be worked on inside their own task on the host and reach Review with a green build on the host's forge.",
   "test": "Each move issue reaches Review inside its task with Forgejo's build green. Only Claude Code runs in the task: reviews come from new agents started apart, by the host's forge or by hand.",
   "priority": "Highest",

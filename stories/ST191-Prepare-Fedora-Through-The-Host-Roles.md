@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST191",
   "title": "Prepare Fedora through the host roles",
-  "state": "Idea",
   "gain": "A person can prepare a Fedora host with the host roles, with SELinux, firewalld and dnf set up and forbidden service access refused.",
   "test": "Set up a Fedora test host and check SELinux, firewalld and dnf. Forbidden service access remains blocked. Run setup again; it makes no unjustified change.",
   "priority": "Low",

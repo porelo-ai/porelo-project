@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST40",
   "title": "Legs on pool machines, the same workflow on both forges",
-  "state": "Idea",
   "gain": "The same acceptance legs run on pool machines on both the host's forge and the central one, so tests behave the same wherever they run.",
   "test": "On the host's Forgejo, porelo's and each agent adapter's acceptance legs take a pool account by kind and the build is green; on GitHub the same workflow rents a server. No workflow names a provider.",
   "priority": "High",

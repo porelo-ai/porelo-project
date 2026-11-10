@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST240",
   "title": "The machine page as tiles",
-  "state": "Finished",
   "gain": "A person sees the machine's actions as icon tiles in the same grid as the project page, with taking the server down clearly marked.",
   "test": "The machine's actions stand in the project page's grid with one icon each; taking the server down stands apart in red.",
   "priority": "Highest",

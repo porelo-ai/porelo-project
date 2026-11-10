@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST75",
   "title": "The agent opens, the person approves",
-  "state": "Analyzed",
   "gain": "The agent opens the pull request from its own forge account and only the person approves it, so authorship and approval stay separate.",
   "test": "A task's approved work is a pull request opened by the agent's own forge account; the person approves it from the interface with their own account; an approval with the agent's account is refused.",
   "priority": "Medium",

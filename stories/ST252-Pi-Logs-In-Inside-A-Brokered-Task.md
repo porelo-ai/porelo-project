@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST252",
   "title": "Pi logs in inside a brokered task",
-  "state": "Finished",
   "gain": "A Pi task behind the broker can log in and answer.",
   "test": "A Pi task behind the broker logs in and answers.",
   "priority": "Highest",

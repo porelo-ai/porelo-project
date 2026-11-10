@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST98",
   "title": "Offer a screen only when enabled",
-  "state": "Idea",
   "gain": "A task view screen is offered only when the project enables it, so without permission there is no way to look at it.",
   "test": "Start projects with and without a task view. Without permission there is no access; with permission only the intended socket is offered.",
   "priority": "Medium",

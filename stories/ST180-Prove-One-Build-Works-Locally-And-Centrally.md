@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST180",
   "title": "Prove one build works locally and centrally",
   "state": "Implementing",

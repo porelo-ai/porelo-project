@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST107",
   "title": "Know what a task can test",
-  "state": "Accepted",
   "gain": "A person knows what a task can test, since capability-tagged tests run only with the needed capability and skip only what lacks it.",
   "test": "Run capability-tagged tests with and without the needed capability. A task skips only what it lacks; a complete CI leg runs every case. Emit a declared failure in task.log after the step baseline; the loop watch stops the run and names it.",
   "priority": "Medium",

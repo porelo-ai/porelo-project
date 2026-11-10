@@ -17,9 +17,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST25",
   "title": "Rules and document checks a contributor meets",
-  "state": "Backlog",
   "gain": "A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not.",
   "test": "One guide from any repository; document tests run where the agent works; an issue names nothing of another repository.",
   "priority": "Highest",

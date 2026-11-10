@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST148",
   "title": "Recognize a token awaiting organization approval",
-  "state": "Analyzed",
   "gain": "A person creating a project is told clearly when the GitHub token still awaits organization approval.",
   "test": "Create a project against the GitHub test organization with a token awaiting approval. The interface says it is waiting for approval instead of calling it invalid; after approval the operation succeeds.",
   "priority": "Low",

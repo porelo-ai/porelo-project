@@ -33,9 +33,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST283",
   "title": "A host prepared once, its roles on it, and a person leaving",
-  "state": "Finished",
   "gain": "A host is prepared once with its host admin and no project, roles are placed on it, and a person leaving loses access.",
   "test": "A host set up anew carries its host admin and no project; on it the host admin, a project admin and members each do what their role allows and nothing more, without the VPN; any member runs the gathered push to the central forge with their own token; a person with no membership left is purged after seven days; the host has no forge user `operator`.",
   "priority": "Highest",

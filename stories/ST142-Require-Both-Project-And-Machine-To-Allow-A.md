@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST142",
   "title": "Require both project and machine to allow a provider",
-  "state": "Analyzed",
   "gain": "A provider runs only if both the project and the machine's root-owned rule allow it, so a project cannot widen what the machine permits.",
   "test": "Configure different provider lists in the project and a root-owned machine rule. Start a provider allowed by both. Try a provider allowed at only one level and a custom provider definition; both are refused with a reason.",
   "priority": "Low",

@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST233",
   "title": "A setup that survives a restart, told in times and words",
-  "state": "Finished",
   "gain": "A person can close the interface during a setup and find it again after a restart under Machines, with its progress told in times and plain words.",
   "test": "Closing the interface during a setup warns; after a restart the server stands under Machines in preparation and goes on or comes down; each step shows its start and duration, an overrun step says so in words, no raw lines.",
   "priority": "Highest",

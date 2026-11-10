@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST55",
   "title": "A person joins another project",
-  "state": "Review",
   "gain": "A person can join another project on the same machine.",
   "test": "A person joins another project on the machine.",
   "priority": "High",

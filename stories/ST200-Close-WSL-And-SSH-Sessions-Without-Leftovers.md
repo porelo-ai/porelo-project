@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST200",
   "title": "Close WSL and SSH sessions without leftovers",
-  "state": "Idea",
   "gain": "A person using IntelliJ on Windows can cancel WSL or SSH connections or close the IDE without leaving sessions behind.",
   "test": "Use WSL and SSH from IntelliJ on real Windows, cancel while connecting and close the IDE. No child process, socket file or partial probe response remains. Reproduce any suspected relay defect before fixing it.",
   "priority": "Low",

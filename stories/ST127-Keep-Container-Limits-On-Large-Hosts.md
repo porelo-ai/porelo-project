@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST127",
   "title": "Keep container limits on large hosts",
   "state": "Implementing",

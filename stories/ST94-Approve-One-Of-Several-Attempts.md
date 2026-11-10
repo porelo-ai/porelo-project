@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST94",
   "title": "Approve one of several attempts",
-  "state": "Analyzed",
   "gain": "A person can start several attempts from one commit, compare their differences and approve one, while the others are dropped.",
   "test": "Start several attempts from one commit, read their differences and approve one. The other attempts are rejected; any rate limit is shown for the affected attempt.",
   "priority": "Medium",

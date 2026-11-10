@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST289",
   "title": "Review in IntelliJ",
-  "state": "Finished",
   "gain": "A person can review in IntelliJ on the laptop, reading a waiting push and approving the displayed commit against the local Porelo.",
   "test": "On the laptop, against the local Porelo: in IntelliJ read a waiting push, approve the displayed commit and reject another with a reason. A new push from a second task appears within the stated seconds; approval of the old commit is refused.",
   "priority": "Highest",

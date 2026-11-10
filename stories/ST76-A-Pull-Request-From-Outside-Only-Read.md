@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST76",
   "title": "A pull request from outside only read",
-  "state": "Idea",
   "gain": "A pull request from an unknown outside account is only read and commented on, never built, so strangers cannot run code.",
   "test": "A pull request of an unknown account on the host's Forgejo is read and commented, never built; the refusal to build names its source level.",
   "priority": "Medium",

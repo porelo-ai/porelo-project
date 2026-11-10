@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST229",
   "title": "The person's own steps offered, the room without handwork",
-  "state": "Finished",
   "gain": "A person finds the VPN, joining the room and its tunnel offered in the interface as terminals with the command already filled in, so no handwork is needed.",
   "test": "The interface offers the VPN, joining the room and its tunnel as terminals with the command filled in; the room shows no helper account, or one that answers what it is; needs-you rows name their machine and their way out, and stay readable when resolved; work starts from a visible button.",
   "priority": "Highest",

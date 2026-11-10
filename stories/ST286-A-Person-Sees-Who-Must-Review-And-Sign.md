@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST286",
   "title": "A person sees who must review and sign",
-  "state": "Finished",
   "gain": "A person sees on a repository's page whether its merge needs a review and who must sign.",
   "test": "A repository says whether its merge needs a review, and the page shows it.",
   "priority": "Highest",

@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST164",
   "title": "Recognize a file spread across messages",
-  "state": "Estimated",
   "gain": "A file split over many messages, such as a ZIP or PEM, is recognized and refused once it passes the threshold.",
   "test": "Split ZIP and PEM payloads into 2, 5, 20 and 100 messages and pass the threshold. The refusal names the contributing messages. Delete and rebuild the index; the verdict stays the same.",
   "priority": "Low",

@@ -1,6 +1,6 @@
 # ST193 — Choose drive areas for each host
 
-**Priority:** 🔽 Low · **State:** Implementing
+**Priority:** 🔽 Low · **State:** Backlog
 
 **What a user gains.** A person can choose the drive areas for each host, so each host receives only its own whether vaults are separate or shared.
 
@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST193",
   "title": "Choose drive areas for each host",
-  "state": "Implementing",
   "gain": "A person can choose the drive areas for each host, so each host receives only its own whether vaults are separate or shared.",
   "test": "Configure two hosts in separate vaults and then in a shared vault. Each receives only its chosen area; an unselected personal area never appears.",
   "priority": "Low",

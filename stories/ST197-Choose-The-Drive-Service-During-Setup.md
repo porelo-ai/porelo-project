@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST197",
   "title": "Choose the drive service during setup",
   "state": "Idea",

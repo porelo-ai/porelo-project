@@ -1,6 +1,6 @@
 # ST145 — Open administration and daily work separately
 
-**Priority:** 🔽 Low · **State:** Review
+**Priority:** 🔽 Low · **State:** Finished
 
 **What a user gains.** A person opens administration and daily work separately, as user, host-admin or access-admin, so each role sees only its own steps.
 
@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST145",
   "title": "Open administration and daily work separately",
-  "state": "Review",
   "gain": "A person opens administration and daily work separately, as user, host-admin or access-admin, so each role sees only its own steps.",
   "test": "Open the interface as user, host-admin and access-admin. Walk setup, admitting a person and daily work. Each role sees its intended functions; the stated SSH and VPN routes can actually be reached.",
   "priority": "Low",

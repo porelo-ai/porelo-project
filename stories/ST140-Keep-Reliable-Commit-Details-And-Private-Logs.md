@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST140",
   "title": "Keep reliable commit details and private logs",
-  "state": "Estimated",
   "gain": "A person reads reliable commit details in merge trailers, forged agent details are rejected, and private logs stay private.",
   "test": "Approve work from different models and read the merge trailers. Offer forged agent details; they cannot replace the host record. Send a test secret through broker and gate; it appears in no log. File permissions and retention match the stated rules.",
   "priority": "Low",

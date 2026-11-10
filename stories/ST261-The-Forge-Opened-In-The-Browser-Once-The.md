@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST261",
   "title": "The forge opened in the browser once the VPN is up",
-  "state": "Finished",
   "gain": "A person can open the forge in the browser once the VPN is up and sign in with the lasting password.",
   "test": "After the VPN, open `https://forge.porelo.internal/` and sign in with the lasting password: no hosts line, CA import or password file by hand; the CA's key never reached the host. A second host needs no new CA in Firefox; a certificate for another name signed by the CA fails `openssl verify`.",
   "priority": "Highest",

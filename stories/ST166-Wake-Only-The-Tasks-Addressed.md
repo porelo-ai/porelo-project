@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST166",
   "title": "Wake only the tasks addressed",
-  "state": "Accepted",
   "gain": "Only the tasks addressed by nickname or @room are woken, including with non-ASCII text, and a message mentioning no one wakes none.",
   "test": "Set two unique nicknames and send non-ASCII text mentioning one, then @room, then neither. First only the named task wakes, then all; the unaddressed message wakes none and is read at the next wake. Duplicate nicknames are refused and the interface shows the same names.",
   "priority": "Low",

@@ -17,9 +17,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST56",
   "title": "The gathered findings worked off",
-  "state": "Idea",
   "gain": "The gathered findings from earlier work are cleared, and anything larger becomes an issue of its own, so nothing open is lost.",
   "test": "B380, HO86 and F288 hold no open point; a point that proved larger is an issue of its own.",
   "priority": "High",

@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST121",
   "title": "Measure hardware protection first",
-  "state": "Estimated",
   "gain": "A person can measure hardware protection first, with a token present, removed or untouched, before relying on it for unlocking.",
   "test": "Measure a token present, removed and untouched. Enroll and unlock with a device-store stand-in. The stored state contains no share; unlock without authorization fails.",
   "priority": "Low",

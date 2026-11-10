@@ -17,9 +17,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST263",
   "title": "A rented host admitted to the room",
-  "state": "Finished",
   "gain": "A person can admit a rented host to the room, so a task there writes in the project's room and a local agent answers.",
   "test": "Rent a host and admit it: a task there writes in the project's room and a local agent answers; dismissing the host revokes its registration token, and its next message is refused.",
   "priority": "Highest",

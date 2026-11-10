@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST141",
   "title": "Read a coherent work history",
-  "state": "Estimated",
   "gain": "A person reads a coherent work history, replaying a session with terminal, broker and gate events and filtering the timeline.",
   "test": "Create a session with terminal, broker and gate events. Replay it and filter the timeline by source; time order is retained. Reach size and retention limits; neither host nor interface blocks.",
   "priority": "Low",

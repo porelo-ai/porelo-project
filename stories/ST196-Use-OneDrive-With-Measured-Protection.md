@@ -1,6 +1,6 @@
 # ST196 — Use OneDrive with measured protection
 
-**Priority:** 🔽 Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Rejected
 
 **What a user gains.** A person can use OneDrive on a host with protected setup materials, sync a test area, and be told when a login is missing.
 
@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST196",
   "title": "Use OneDrive with measured protection",
-  "state": "Idea",
   "gain": "A person can use OneDrive on a host with protected setup materials, sync a test area, and be told when a login is missing.",
   "test": "Sync a test area, restart the host and read it again. A missing login is named, unselected areas remain absent and secret setup material stays protected by the chosen encryption model.",
   "priority": "Low",

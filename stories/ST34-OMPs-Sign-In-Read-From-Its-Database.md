@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST34",
   "title": "OMP's sign-in read from its database",
-  "state": "Idea",
   "gain": "A person can sign OMP in once and start tasks without running vault login, because the sign-in is read from OMP's own database.",
   "test": "Sign OMP in and start a task with no `vault login`; the sign-in read from its SQLite database is offered for import.",
   "priority": "High",

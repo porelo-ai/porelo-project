@@ -22,9 +22,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST23",
   "title": "The room and the usage records outlive the host",
-  "state": "Backlog",
   "gain": "The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost.",
   "test": "After `down` and a new `up` the room is there with its messages, and so are the records.",
   "priority": "Highest",

@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST176",
   "title": "Find the exact pushed commit in Jenkins",
-  "state": "Accepted",
   "gain": "A task finds the exact pushed commit in Jenkins and receives its stages, verdict and failing log, for a green and a red commit.",
   "test": "Push a green and a red commit. The task receives commit, stages, verdict and the failing log. Offer a build of another commit; it is not accepted as the result of this push. The task contains no Jenkins credential.",
   "priority": "Low",

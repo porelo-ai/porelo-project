@@ -17,9 +17,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST250",
   "title": "Only the operator's approval brings the work to the central forge",
-  "state": "Finished",
   "gain": "Work reaches the central forge only after the operator approves it, and a project set offline sends nothing.",
   "test": "Nothing is there before the approval, the gathered push brings it after; with the project `offline` the push reaches no forge.",
   "priority": "Highest",

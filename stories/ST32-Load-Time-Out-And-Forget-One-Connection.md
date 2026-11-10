@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST32",
   "title": "Load, time out and forget one connection",
-  "state": "Analyzed",
   "gain": "A person sees pages load, connection actions time out and a connection be forgotten in one consistent way in the interface.",
   "test": "Load a page for the first time and open a rarely used connection action; both show the same loading state. Connect a server that accepts but never answers; the call ends with a named timeout. Forget one connection; the others remain.",
   "priority": "High",

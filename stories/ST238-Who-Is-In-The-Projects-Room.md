@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST238",
   "title": "Who is in the project's room",
-  "state": "Finished",
   "gain": "A person sees who is in the project's room, can remove an account, and can get a new password for one already in.",
   "test": "The messages page lists the room's accounts with Remove, and offers a new password to one already in.",
   "priority": "Highest",

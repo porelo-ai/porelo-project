@@ -17,9 +17,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST30",
   "title": "Work without a project, with plain refusals",
-  "state": "Accepted",
   "gain": "A person can start work without a project and get plain refusals, with a checkout going into the default area unless a followed project claims the repository.",
   "test": "A task starts in a checkout in `default`; a followed project naming the repository is offered to take it; a repository with no commit, an unreadable upstream or a failed fetch is named as what it is, with the next step.",
   "priority": "High",

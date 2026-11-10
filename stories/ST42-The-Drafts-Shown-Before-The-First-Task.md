@@ -1,6 +1,6 @@
 # ST42 — The drafts shown before the first task
 
-**Priority:** 🔼 High · **State:** Idea
+**Priority:** 🔼 High · **State:** Rejected
 
 **What a user gains.** At the first start, a person sees the drafted proposals in the interface and can take or change them before any task runs.
 
@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST42",
   "title": "The drafts shown before the first task",
-  "state": "Idea",
   "gain": "At the first start, a person sees the drafted proposals in the interface and can take or change them before any task runs.",
   "test": "At the first start in `default`, the interface shows what the machine proposes, to take or leave.",
   "priority": "High",

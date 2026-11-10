@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST147",
   "title": "Choose a repository and signing key",
-  "state": "Estimated",
   "gain": "A person sees all default repositories and can choose a signing key from a file or create a new one.",
   "test": "Read all default repositories. Choose a signing key from a file or create one and inspect it in the shared overview. An unsuitable key is refused.",
   "priority": "Low",

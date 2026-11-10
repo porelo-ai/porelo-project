@@ -21,6 +21,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST28",
   "title": "The setup, move and recovery proven together",
   "state": "Idea",

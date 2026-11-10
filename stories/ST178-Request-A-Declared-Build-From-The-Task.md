@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST178",
   "title": "Request a declared build from the task",
-  "state": "Idea",
   "gain": "A task can request a build of a declared kind and read the result in its files, and an undeclared kind is refused.",
   "test": "Ask a task to build on a declared kind and read the result in its files. An undeclared kind or command is refused; the task receives no machine credential.",
   "priority": "Low",

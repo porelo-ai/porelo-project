@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST221",
   "title": "Each repository brings its image, and each task its values",
-  "state": "Finished",
   "gain": "Each repository brings its own image from its porelo.yml and each task starts with its own issue and phase values, so tasks are set up the way their repository wants.",
   "test": "The task starts with `issue` and `phase`; its image is made from the repository's `porelo.yml`; `pruefung-b189-b192.sh` passes.",
   "priority": "Highest",

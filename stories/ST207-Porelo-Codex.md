@@ -17,9 +17,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST207",
   "title": "porelo-codex",
-  "state": "Idea",
   "gain": "A person gets the Codex adapter repository as a named part of Porelo that is tracked as its own piece of work.",
   "test": "Not planned for a test yet.",
   "priority": "Low",

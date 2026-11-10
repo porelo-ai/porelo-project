@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST199",
   "title": "Activate a Windows notification",
-  "state": "Analyzed",
   "gain": "A person on Windows can activate a notification and land in the correct running interface at the intended place.",
   "test": "Trigger and activate an MSIX toast; the correct running interface opens at the intended work.",
   "priority": "Low",

@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST177",
   "title": "Configure forge repositories and a pool",
-  "state": "Idea",
   "gain": "A person can choose the forge, its repositories and a pool through the dialog or command line, and a missing required piece is refused.",
   "test": "Choose the forge, repositories and pool through the dialog and CLI. Omit the required central token; setup refuses before creating a partial forge. With complete inputs, the same workflow uses the local pool and a central rented machine.",
   "priority": "Low",

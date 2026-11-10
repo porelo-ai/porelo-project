@@ -1,6 +1,6 @@
 # ST2 — porelo-message-sluice works wholly in its task
 
-**Priority:** ⏫ Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Finished
 
 **What a user gains.** The message-sluice component can be built, reviewed and checked entirely inside its own task on the host, with its build going green on the host's forge.
 
@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST2",
   "title": "porelo-message-sluice works wholly in its task",
-  "state": "Review",
   "gain": "The message-sluice component can be built, reviewed and checked entirely inside its own task on the host, with its build going green on the host's forge.",
   "test": "Its move issue reaches Review inside the task with Forgejo's build green; its agent is reached in the room under its repository's name.",
   "priority": "Highest",

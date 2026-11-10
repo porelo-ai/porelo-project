@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST224",
   "title": "The plan page made from the plan file",
-  "state": "Finished",
   "gain": "A person sees the release plan as a page made from the plan file, showing the same sprints, functions, states and marks as the local page.",
   "test": "`plan/0.6/README.md` shows the same sprints, functions, states and marks as the local page; `plan check` finds a planted fault.",
   "priority": "Highest",

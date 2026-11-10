@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST231",
   "title": "Nothing asked that Porelo can know",
-  "state": "Finished",
   "gain": "A person is not asked for anything Porelo can know itself, because the wizard writes the project's bundle and asks for no path on the server.",
   "test": "The wizard writes the project's bundle itself and asks for no path on the server; the public key is filled from the private one; the summary names the project.",
   "priority": "Highest",

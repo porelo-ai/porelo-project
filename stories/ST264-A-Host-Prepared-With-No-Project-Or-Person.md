@@ -23,9 +23,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST264",
   "title": "A host prepared with no project or person",
-  "state": "Finished",
   "gain": "A host admin can prepare a rented server from the interface with the VPN and shared services, with no project or person yet on it.",
   "test": "The host admin prepares a rented server from the interface: the VPN on `10.73.<n>.0/24`, the shared forge, runner, pool and homeserver under the host's names, their certificates signed by the host admin's lasting CA; no project and no person is made. A laptop reaches two hosts, one VPN each; a host whose network collides is refused.",
   "priority": "Highest",

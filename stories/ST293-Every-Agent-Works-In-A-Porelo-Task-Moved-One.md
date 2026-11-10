@@ -12,6 +12,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST293",
   "title": "Every agent works in a Porelo task, moved one at a time",
   "state": "Backlog",

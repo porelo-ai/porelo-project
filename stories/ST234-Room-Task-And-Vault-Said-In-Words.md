@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST234",
   "title": "Room, task and vault said in words",
-  "state": "Finished",
   "gain": "A person is told in plain words how to join the room, whether a task is running and what the vault holds, with numbered steps for Element.",
   "test": "The room is joined from the project's page with numbered steps for Element; a running task says whether its agent works, waits or ended, with a leave button; the locked-vault row names this computer's vault and the project, with a button to unlock and to stop following.",
   "priority": "Highest",

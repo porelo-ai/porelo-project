@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST247",
   "title": "One primary IPv4 and no IPv6",
-  "state": "Finished",
   "gain": "A person renting an IPv4-only machine gets exactly one primary IPv4 address and no IPv6, as the provider inventory shows.",
   "test": "Rent an IPv4-only leg machine and read the provider inventory; it shows exactly one primary IPv4 and no IPv6. Return the machine and confirm its resources are gone.",
   "priority": "Highest",

@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST128",
   "title": "Explain a machine quota refusal",
-  "state": "Accepted",
   "gain": "A person is told the actual limit when a machine request is refused because the provider quota is used up.",
   "test": "Exhaust the test provider quota and request a leg machine. The refusal states the actual limit returned by the provider. Inspect the inventory afterwards; nothing accidentally created by the refused request remains.",
   "priority": "Low",

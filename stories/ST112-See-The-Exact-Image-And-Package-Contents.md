@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST112",
   "title": "See the exact image and package contents",
-  "state": "Idea",
   "gain": "A person can see the exact image and package contents, such as an SBOM, and an image tag alone is not enough for a project to follow.",
   "test": "Read package contents or its SBOM. Follow a project with an image tag alone; start is refused until an explicit one-time exception. Change the digest; the next start names the change. Check a moving runner name; it is refused while a versioned runner is accepted.",
   "priority": "Medium",

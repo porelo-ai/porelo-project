@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST3",
   "title": "porelo's Build on the host's Forgejo",
-  "state": "Review",
   "gain": "Porelo itself builds with the same workflows on the host's own forge as on GitHub, so work on the host is checked the same way as everywhere else.",
   "test": "porelo's workflows run green on Forgejo and on GitHub on one commit, its acceptance job skipped on Forgejo; porelo's snapshots are in the forge's registry.",
   "priority": "Highest",

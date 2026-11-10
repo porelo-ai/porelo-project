@@ -27,15 +27,15 @@
 - [porelo-frontend#F447](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f447) (Review)
 - [porelo-frontend#F448](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f448) (Review)
 - [porelo-frontend#F449](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f449) (Review)
-- [porelo-buildtools#BT56](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt56) (Backlog)
+- [porelo-buildtools#BT56](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt56) (Review)
 
 ## Data
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST294",
   "title": "Plan the stories on a board in the window",
-  "state": "Backlog",
   "gain": "The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API.",
   "test": "Open Planning, find each story in its state's column sorted by priority, open a story and one of its issues, drag a story to another state and save; the change is in porelo-project's checkout. Rename a state in the configuration and the board shows it.",
   "priority": "High",

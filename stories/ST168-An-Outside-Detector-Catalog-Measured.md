@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST168",
   "title": "An outside detector catalog measured",
-  "state": "Estimated",
   "gain": "A person learns what an outside detector catalog finds and misses, from a measurement rather than a guess.",
   "test": "The measurement states what the catalog finds and misses.",
   "priority": "Low",

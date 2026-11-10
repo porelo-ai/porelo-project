@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST52",
   "title": "The subagent number chosen when starting",
-  "state": "Idea",
   "gain": "A person sees the number of subagents that applies in the start dialog, can choose another number, and is told what applies.",
   "test": "The start dialog shows the number of subagents that applies, takes another one, and says a number Core refuses before anything is made.",
   "priority": "High",

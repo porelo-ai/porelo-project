@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST246",
   "title": "The commit checked and a proven build reused",
-  "state": "Finished",
   "gain": "A commit is checked locally and in the build, a proven build is reused for the same tree, and a different tree or old result is refused.",
   "test": "Check a valid and an invalid commit locally and in the build; the invalid one is refused by name. Change only Actions and confirm no full Build starts. Reuse fresh legs for the same tree; a different tree or an old result must be refused.",
   "priority": "Highest",

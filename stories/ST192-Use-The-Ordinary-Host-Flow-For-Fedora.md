@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST192",
   "title": "Use the ordinary host flow for Fedora",
   "state": "Idea",

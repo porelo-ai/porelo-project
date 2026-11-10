@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST96",
   "title": "Open a task port locally",
-  "state": "Analyzed",
   "gain": "A person can open a task's web server port locally from the host, while access from elsewhere stays closed.",
   "test": "Start a web server in the task and open its port. Host-loopback access works; access from the network or through another account's relay socket is refused.",
   "priority": "Medium",

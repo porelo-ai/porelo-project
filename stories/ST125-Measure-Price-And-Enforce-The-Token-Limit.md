@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST125",
   "title": "Measure price and enforce the token limit",
-  "state": "Analyzed",
   "gain": "A person sees what each model costs by dated price, an unpriced request is not shown as free, and the token limit is enforced.",
   "test": "Use two models with dated prices and read an unpriced request; it is not shown as free. Reach a small token limit; further provider calls are refused. Raise the limit and deliberately resume.",
   "priority": "Low",

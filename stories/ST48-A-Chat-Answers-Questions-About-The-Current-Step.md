@@ -17,6 +17,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST48",
   "title": "A chat answers questions about the current step",
   "state": "Idea",

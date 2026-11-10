@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST35",
   "title": "Refuse an incompatible protocol and a meaningless option",
-  "state": "Analyzed",
   "gain": "An agent whose protocol is incompatible with the core is refused, while meaningless options no longer get in the way of compatible ones.",
   "test": "Install compatible and too-old core packages with the agent; only an incompatible protocol version is refused. Exercise the defined behavior of --now, or confirm its removal is explained; it must never be accepted without an effect.",
   "priority": "High",

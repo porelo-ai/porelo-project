@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST103",
   "title": "Keep image builds within their allowed sources",
-  "state": "Accepted",
   "gain": "Image builds fetch only from allowed sources, working with public and authenticated private ones, and an unlisted source is refused.",
   "test": "Build using an allowed public source and an authenticated private source. Fetch an unallowed destination from the snippet; that fetch is refused while the allowed fetches work. Inspect layers, build context and arguments; the private credential is absent.",
   "priority": "Medium",

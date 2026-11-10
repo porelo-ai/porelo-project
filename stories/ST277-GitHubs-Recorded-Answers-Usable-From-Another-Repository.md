@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST277",
   "title": "GitHub's recorded answers usable from another repository",
-  "state": "Finished",
   "gain": "A developer in another repository can replay GitHub's recorded answers from the main and tests jar, without calling GitHub.",
   "test": "A small program in another repository replays GitHub's answers from the main and the tests jar with no network, the tests jar read from Central's snapshots; the GitHub recorder keeps owning what an earlier request made when a later one of its kind is refused.",
   "priority": "Highest",

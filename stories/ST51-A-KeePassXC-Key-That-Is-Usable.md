@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST51",
   "title": "A KeePassXC key that is usable",
-  "state": "Implementing",
   "gain": "A person using KeePassXC is asked for the master password once when making a key, and a retry works after the key is reported as not served.",
   "test": "A new key made in KeePassXC asks for the master password once; a retry after key-not-served takes the key already made; no empty or orphaned entry is left; without a terminal the refusal says so.",
   "priority": "High",

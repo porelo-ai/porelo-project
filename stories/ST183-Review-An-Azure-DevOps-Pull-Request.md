@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST183",
   "title": "Review an Azure DevOps pull request",
   "state": "Idea",

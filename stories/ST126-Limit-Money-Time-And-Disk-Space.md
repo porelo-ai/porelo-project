@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST126",
   "title": "Limit money, time and disk space",
-  "state": "Analyzed",
   "gain": "A person can limit money, runtime and disk space, and an unknown price cannot bypass the dollar limit.",
   "test": "Cross a low dollar limit; an unknown price cannot bypass it. Exceed runtime with and without a person attached; the defined deferral rule holds. Exceed disk and mailbox limits and reduce free space below its minimum. Status names each reason and how to continue.",
   "priority": "Low",

@@ -28,9 +28,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST271",
   "title": "Task keys certified, and each push judged when it arrives",
-  "state": "Finished",
   "gain": "Task keys are certified by the person who started them, and each push is judged when it arrives, so a person can trust who a push came from.",
   "test": "A task signs with its own key certified by the person who started it; the host records the certificate and the task's forge token, judges each push by its arrival, and refuses one by an expired certificate or a revoked key.",
   "priority": "Highest",

@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST225",
   "title": "The release plan page drawn as the local one",
-  "state": "Finished",
   "gain": "A person reads the release plan page drawn like the local one, with each sprint's bar following its issues' states and a coloured chip per issue.",
   "test": "The page made from the plan shows each sprint's bar by its issues' states, coloured chips per issue and a mark per function, as the local page does, drawn as SVG so the central forge shows it too; every text in it is escaped.",
   "priority": "Highest",

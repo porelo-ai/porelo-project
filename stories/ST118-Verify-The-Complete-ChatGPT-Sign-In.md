@@ -1,6 +1,6 @@
 # ST118 — Verify the complete ChatGPT sign-in
 
-**Priority:** 🔽 Low · **State:** Review
+**Priority:** 🔽 Low · **State:** Finished
 
 **What a user gains.** A person can sign in to ChatGPT and ask a Codex task a question, with no sign-in material inside the container.
 
@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST118",
   "title": "Verify the complete ChatGPT sign-in",
-  "state": "Review",
   "gain": "A person can sign in to ChatGPT and ask a Codex task a question, with no sign-in material inside the container.",
   "test": "Ask a Codex task a question through the ChatGPT sign-in. The container contains none of the real tokens; a rotated refresh token survives an interrupted broker refresh. Check the chosen rule for the additional startup host; it is enforced.",
   "priority": "Low",

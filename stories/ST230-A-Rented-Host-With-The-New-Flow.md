@@ -17,9 +17,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST230",
   "title": "A rented host with the new flow",
-  "state": "Finished",
   "gain": "A person can run the whole flow from the interface on a rented 32-thread host, from installing the collection to working there.",
   "test": "On a rented host of 32 threads, the whole flow from the interface: the collection comes with porelo-host, its digest checked; the room's homeserver starts with no hand fix; two tasks talk; down leaves nothing at the provider.",
   "priority": "Highest",

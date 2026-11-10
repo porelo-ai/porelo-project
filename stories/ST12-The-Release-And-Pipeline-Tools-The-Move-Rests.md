@@ -1,6 +1,6 @@
 # ST12 — The release and pipeline tools the move rests on
 
-**Priority:** ⏫ Highest · **State:** Implementing
+**Priority:** ⏫ Highest · **State:** Review
 
 **What a user gains.** The release and pipeline tools that the move to the host depends on each do their job, such as reading main, handling pull requests and running pipelines.
 
@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST12",
   "title": "The release and pipeline tools the move rests on",
-  "state": "Implementing",
   "gain": "The release and pipeline tools that the move to the host depends on each do their job, such as reading main, handling pull requests and running pipelines.",
   "test": "Not a walk: each issue's own acceptance holds: `main` read by its pushes, a pull request from the same repository counted as inside, one directory per release plan, work allowed to wait on work begun, Codex's forge pull requests and snapshot package, and the busy check waiting on a tool the scenario ends.",
   "priority": "Highest",

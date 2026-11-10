@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST169",
   "title": "Inspect MCP sessions through the broker",
-  "state": "Estimated",
   "gain": "A person can inspect MCP sessions through the broker, reading tool lists and calls in the journal.",
   "test": "Use an HTTP MCP stand-in through the gateway and read its tool list and calls in the journal. Search the task for the server credential; it is absent. A local host command under mcp: is refused.",
   "priority": "Low",

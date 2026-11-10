@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST181",
   "title": "Review a GitLab merge request",
   "state": "Idea",

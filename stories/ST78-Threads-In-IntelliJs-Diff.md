@@ -23,9 +23,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST78",
   "title": "Threads in IntelliJ's diff",
-  "state": "Backlog",
   "gain": "A person sees every review thread on its lines in IntelliJ's diff, marked with who wrote it.",
   "test": "The plugin's review shows every thread of waiting work on its lines with its origin - person, task, forge account or linter - and a suggestion as a small diff.",
   "priority": "Medium",

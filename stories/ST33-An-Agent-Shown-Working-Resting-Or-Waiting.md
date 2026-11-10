@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST33",
   "title": "An agent shown working, resting or waiting",
-  "state": "Idea",
   "gain": "A person sees in the command line and on the task card whether an agent is working, resting or waiting, and both agree.",
   "test": "Attach to an agent, let it work, rest and wait, and compare the CLI with the task card. Both show the same state; rest must not appear as ongoing work. Check the Pi activity path too.",
   "priority": "High",

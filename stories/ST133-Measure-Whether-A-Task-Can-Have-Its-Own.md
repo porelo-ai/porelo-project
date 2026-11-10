@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST133",
   "title": "Measure whether a task can have its own kernel",
-  "state": "Estimated",
   "gain": "A person can learn whether a task can have its own kernel, since the machine is probed with and without usable KVM.",
   "test": "Probe with and without usable KVM; exercise network rules, sockets, attach and snapshot/restore. Without KVM or the runtime, doctor says unavailable. Without a working firewall, no task starts.",
   "priority": "Low",

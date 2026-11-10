@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST186",
   "title": "Install native ARM core packages",
   "state": "Idea",

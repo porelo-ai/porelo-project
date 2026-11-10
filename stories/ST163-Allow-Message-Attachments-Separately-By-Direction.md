@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST163",
   "title": "Allow message attachments separately by direction",
-  "state": "Analyzed",
   "gain": "A person allows message attachments separately for each direction, and without permission they are refused or held.",
   "test": "Send attachments both ways without permission; they are refused or held. Allow incoming attachments for one peer; its file reaches /porelo/files while outgoing attachments stay blocked. Try a URL on another host and an oversized attachment; both fail regardless of severity.",
   "priority": "Low",

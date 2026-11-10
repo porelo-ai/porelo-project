@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST80",
   "title": "The daily accounts read",
-  "state": "Idea",
   "gain": "A person can read the daily limits of two Claude Code subscriptions, Codex and Antigravity with porelo limits.",
   "test": "`porelo limits` shows two Claude Code subscriptions, Codex and Antigravity, each with its own meters, read time and source; an estimate is marked as such.",
   "priority": "Medium",

@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST129",
   "title": "Report or stop on unusual traffic",
-  "state": "Estimated",
   "gain": "Unusual traffic, such as odd body sizes, clearance attempts or DNS names, is reported or stops the task on chosen alarms.",
   "test": "Record normal traffic, then generate unusual body size, clearance attempts and DNS names. In alert-only mode an alert appears; in stop mode the task pauses or stops and its token becomes invalid.",
   "priority": "Low",

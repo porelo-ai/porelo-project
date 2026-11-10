@@ -17,9 +17,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST236",
   "title": "A setup run once, kept and found again",
-  "state": "Finished",
   "gain": "A setup runs once, is kept, and can be found again, with closing the interface saying in words whether the setup ends or keeps running.",
   "test": "Closing the interface ends or keeps its setup in words; after a restart a running setup is found, an interrupted one shows in Needs you with Go on; a second run of one project is refused; the protocol stays until the give-back, in one list.",
   "priority": "Highest",

@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST1",
   "title": "Builds on the host's forge resolve snapshots with a read-only token",
-  "state": "Review",
   "gain": "Builds on the host's own forge can fetch Porelo snapshots with a read-only token, so they get what they need without being able to change anything.",
   "test": "Every project's organization on the host holds `PORELO_PACKAGES_READ_TOKEN` (scope `read:package`) and its own `MAVEN_SNAPSHOTS_URL`; a build on an unreviewed branch resolves snapshots with it and holds no publisher's token, only the deploying step on `main` does; a missing `MAVEN_SNAPSHOTS_URL` fails the Build on any forge but github.com.",
   "priority": "Highest",

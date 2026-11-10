@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST63",
   "title": "Rounds of check and fix at the gate",
-  "state": "Idea",
   "gain": "A build task pushes to its gate, a reviewer leaves findings on that commit, and the builder fixes them in rounds before the person is asked.",
   "test": "A build task pushes to its gate; a reviewer reads that commit and leaves findings; the build task wakes, fixes and pushes again; the next check is clean, or the rounds stop at their bound.",
   "priority": "Medium",

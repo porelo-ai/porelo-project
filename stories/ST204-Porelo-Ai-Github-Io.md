@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST204",
   "title": "porelo-ai.github.io",
-  "state": "Estimated",
   "gain": "A person gets the project website repository as a named part of Porelo that is tracked as its own piece of work.",
   "test": "Not planned for a test yet.",
   "priority": "Low",

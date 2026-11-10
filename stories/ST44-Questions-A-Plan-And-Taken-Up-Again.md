@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST44",
   "title": "Questions, a plan, and taken up again",
-  "state": "Accepted",
   "gain": "A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard.",
   "test": "The questions first, the whole plan shown before anything runs, and after a pause it goes on where the person was; a step done elsewhere counts as done.",
   "priority": "High",

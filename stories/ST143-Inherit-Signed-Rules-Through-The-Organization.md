@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST143",
   "title": "Inherit signed rules through the organization",
-  "state": "Accepted",
   "gain": "Settings inherit through signed organization, team and project rules, and a project can narrow a value but cannot widen it.",
   "test": "Connect organization, team and project settings and narrow an allowed value. Try to widen a fixed value, alter a signature and insert an unrelated project. The permitted narrowing works; all three bypasses are refused by name.",
   "priority": "Low",

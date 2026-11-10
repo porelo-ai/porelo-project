@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST24",
   "title": "The tokens counted per task, the dependencies shared",
-  "state": "Analyzed",
   "gain": "A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again.",
   "test": "Each issue shows what its tasks spent; a second Maven build downloads nothing again.",
   "priority": "Highest",

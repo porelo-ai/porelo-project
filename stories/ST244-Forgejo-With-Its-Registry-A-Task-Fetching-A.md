@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST244",
   "title": "Forgejo with its registry, a task fetching a snapshot by name",
-  "state": "Finished",
   "gain": "A person can open Forgejo through the VPN, and a task fetches a snapshot from its registry by a declared name.",
   "test": "The operator opens Forgejo through the VPN; a task reaches its registry by a declared name on 443 and fetches a snapshot, and reaches nothing else on the host.",
   "priority": "Highest",

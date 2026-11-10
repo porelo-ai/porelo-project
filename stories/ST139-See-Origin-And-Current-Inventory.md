@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST139",
   "title": "See origin and current inventory",
-  "state": "Analyzed",
   "gain": "A person sees where a handed-over file came from and what the task changed, even after the file is removed.",
   "test": "Hand over a file, let the task modify files and remove it. Origin and change size remain readable. Compare text and JSON inventory: agents, providers, credentials, projects, models and last use agree; secret values are absent.",
   "priority": "Low",

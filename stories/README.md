@@ -1,19 +1,20 @@
 # Stories
 
-Written by `porelo-release stories index` from each story's head; a change goes into the story's file. Each story is one function of value to a user, with the test the person runs at its end and every issue it needs. A story moves through the same states as an issue, set by the same hands: Idea, Accepted or Rejected, Analyzed, Estimated, Backlog, Implementing, Review, Rework or Finished. Work follows the priority.
+Written by `porelo-release stories index` from each story's head; a change goes into the story's file. Each story is one function of value to a user, with the test the person runs at its end and every issue it needs. A story moves through the same states as an issue, in workflow.yml order: Idea, Accepted, In analysis, Analyzed, Under estimation, Estimated, Backlog, Implementing, Reading, Reworking, Review, Rework, Finishing, Finished, Rejected. Work follows the priority.
 
 Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Issues are counted by their prefix (`A` porelo-project, `AG` porelo-agy, `B` porelo, `BT` porelo-buildtools, `CC` porelo-claude-code, `CX` porelo-codex, `EC` porelo-ecosystems, `F` porelo-frontend, `FC` porelo-forge-clients, `GH` porelo-adapters, `HO` porelo-host, `IJ` porelo-intellij, `MC` porelo-mcp, `MX` porelo-message-matrix, `OM` porelo-omp, `P` porelo, `PA` porelo-parent, `PI` porelo-pi, `PJ` porelo-project, `SI` porelo-ai.github.io, `SL` porelo-message-sluice).
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 101 |
+| [Idea](#idea) | 97 |
 | [Accepted](#accepted) | 23 |
 | [Analyzed](#analyzed) | 37 |
 | [Estimated](#estimated) | 24 |
-| [Backlog](#backlog) | 16 |
-| [Implementing](#implementing) | 10 |
-| [Review](#review) | 14 |
-| [Finished](#finished) | 71 |
+| [Backlog](#backlog) | 18 |
+| [Implementing](#implementing) | 4 |
+| [Review](#review) | 15 |
+| [Finished](#finished) | 74 |
+| [Rejected](#rejected) | 4 |
 
 ## Idea
 
@@ -28,7 +29,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st34"></a>[ST34](ST34-OMPs-Sign-In-Read-From-Its-Database.md) OMP's sign-in read from its database | 🔼 High | OM:1 | A person can sign OMP in once and start tasks without running vault login, because the sign-in is read from OMP's own database. |
 | <a id="st37"></a>[ST37](ST37-The-Providers-Usage-Seen-In-A-Status-Line.md) The providers' usage seen in a status line | 🔼 High | B:1 · F:1 | A person sees all providers in use as one traffic light in the status line and can click to see each provider's usage. |
 | <a id="st40"></a>[ST40](ST40-Legs-On-Pool-Machines-The-Same-Workflow-On.md) Legs on pool machines, the same workflow on both forges | 🔼 High | AG:1 · B:1 · CC:1 · HO:1 · OM:1 · PI:1 | The same acceptance legs run on pool machines on both the host's forge and the central one, so tests behave the same wherever they run. |
-| <a id="st42"></a>[ST42](ST42-The-Drafts-Shown-Before-The-First-Task.md) The drafts shown before the first task | 🔼 High | F:1 | At the first start, a person sees the drafted proposals in the interface and can take or change them before any task runs. |
 | <a id="st45"></a>[ST45](ST45-A-Step-For-Someone-Else-Handed-Over.md) A step for someone else handed over | 🔼 High | none yet | When a setup step needs someone else, such as an administrator, the person gets instructions and a file to hand over, and the wizard waits for the result. |
 | <a id="st48"></a>[ST48](ST48-A-Chat-Answers-Questions-About-The-Current-Step.md) A chat answers questions about the current step | 🔼 High | none yet | A person can ask a chat questions about the current wizard step using the Claude Code already signed in on the machine, and the chat never sees secrets. |
 | <a id="st49"></a>[ST49](ST49-The-Same-Plan-From-A-File-Of-Answers.md) The same plan from a file of answers | 🔼 High | none yet | An administrator can run the same wizard plan on many machines from a file of answers, and a step that needs a person stops the run clearly. |
@@ -61,7 +61,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st99"></a>[ST99](ST99-Pass-The-View-Through-Safely.md) Pass the view through safely | 🟰 Medium | none yet | A person can open task and trial views safely, since a missing or wrong token lets no byte through to the VNC server. |
 | <a id="st101"></a>[ST101](ST101-Let-Only-Porelo-Own-Its-Fedora-Socket.md) Let only Porelo own its Fedora socket | 🟰 Medium | B:3 | On an enforcing SELinux Fedora machine, only Porelo can own its socket, so another program cannot stand in for it. |
 | <a id="st104"></a>[ST104](ST104-Keep-Accounts-And-Projects-Apart.md) Keep accounts and projects apart | 🟰 Medium | B:4 | Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's. |
-| <a id="st105"></a>[ST105](ST105-Keep-Public-SSH-Closed-After-The-VPN-Is.md) Keep public SSH closed after the VPN is ready | 🟰 Medium | HO:1 | Once the VPN is ready, public SSH stays closed, and a documented recovery path exists if the VPN breaks. |
 | <a id="st112"></a>[ST112](ST112-See-The-Exact-Image-And-Package-Contents.md) See the exact image and package contents | 🟰 Medium | B:2 · BT:1 | A person can see the exact image and package contents, such as an SBOM, and an image tag alone is not enough for a project to follow. |
 | <a id="st113"></a>[ST113](ST113-Recover-From-An-Unavailable-Image-Source.md) Recover from an unavailable image source | 🟰 Medium | B:1 | If the first Ubuntu mirror stops answering, an image build recovers by using the next source instead of failing. |
 | <a id="st115"></a>[ST115](ST115-Keep-Project-Intake-And-Sign-In-Free-Of.md) Keep project intake and sign-in free of hidden secrets | 🔽 Low | B:4 | Project intake and sign-in keep secrets out of sight, so invalid credential names are refused and known test credentials do not leak. |
@@ -101,10 +100,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st191"></a>[ST191](ST191-Prepare-Fedora-Through-The-Host-Roles.md) Prepare Fedora through the host roles | 🔽 Low | F:1 · HO:1 | A person can prepare a Fedora host with the host roles, with SELinux, firewalld and dnf set up and forbidden service access refused. |
 | <a id="st192"></a>[ST192](ST192-Use-The-Ordinary-Host-Flow-For-Fedora.md) Use the ordinary host flow for Fedora | 🔽 Low | none yet | A person can pick Fedora in the ordinary host flow, go from stop to ready and take the host down, and unsupported images are refused. |
 | <a id="st195"></a>[ST195](ST195-Open-The-Secrets-File-Only-On-The-Desktop.md) Open the secrets file only on the desktop | 🔽 Low | none yet | A person opens the secrets file only on the desktop, and setup gets host secrets through standard input so they do not show on host disks or in arguments. |
-| <a id="st196"></a>[ST196](ST196-Use-OneDrive-With-Measured-Protection.md) Use OneDrive with measured protection | 🔽 Low | F:1 · HO:1 | A person can use OneDrive on a host with protected setup materials, sync a test area, and be told when a login is missing. |
 | <a id="st197"></a>[ST197](ST197-Choose-The-Drive-Service-During-Setup.md) Choose the drive service during setup | 🔽 Low | none yet | A person can choose Tresorit or OneDrive as the drive service during setup, and selection, stop and resume work for either. |
 | <a id="st200"></a>[ST200](ST200-Close-WSL-And-SSH-Sessions-Without-Leftovers.md) Close WSL and SSH sessions without leftovers | 🔽 Low | IJ:2 | A person using IntelliJ on Windows can cancel WSL or SSH connections or close the IDE without leaving sessions behind. |
-| <a id="st201"></a>[ST201](ST201-A-Person-Added-Again-Keeps-Their-Name.md) A person added again keeps their name | 🔽 Low | MX:1 | A person removed from a prepared host and added again under the same user name keeps their Porelo data and name. |
 | <a id="st202"></a>[ST202](ST202-Porelo-Adapters.md) porelo-adapters | 🔽 Low | GH:1 | A person gets the adapters repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st203"></a>[ST203](ST203-Porelo-Agy.md) porelo-agy | 🔽 Low | AG:1 | A person gets the Antigravity adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st206"></a>[ST206](ST206-Porelo-Claude-Code.md) porelo-claude-code | 🔽 Low | CC:1 | A person gets the Claude Code adapter repository as a named part of Porelo that is tracked as its own piece of work. |
@@ -233,52 +230,50 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st18"></a>[ST18](ST18-Small-Repairs-Of-Safety-And-Robustness.md) Small repairs of safety and robustness | ⏫ Highest | HO:6 · B:5 · BT:1 · SL:1 | Small safety and robustness gaps are closed, so forced removals leave nothing running, tokens are kept where tools read them, and tasks cannot reach other projects or the person's vault. |
 | <a id="st23"></a>[ST23](ST23-The-Room-And-The-Usage-Records-Outlive-The.md) The room and the usage records outlive the host | ⏫ Highest | MX:3 · B:1 · HO:1 | The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost. |
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | ⏫ Highest | PJ:3 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
+| <a id="st290"></a>[ST290](ST290-Agents-On-A-Host-Work-Their-Results-Off-Until.md) Agents on a host work their results off until done | ⏫ Highest | B:23 · F:15 · HO:6 · MX:6 · GH:3 · CC:2 · BT:1 · PI:1 | A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub. |
 | <a id="st291"></a>[ST291](ST291-The-Host-Run-By-A-Program-Of-Its-Own.md) The host run by a program of its own, built like porelo | ⏫ Highest | B:18 · HO:2 | A host admin's and an automation's work on a host runs as one Java program, porelo-host, built, signed and packaged like porelo; a person's own host commands are porelo commands; root's narrow boundaries act only for the account sudo names, and nothing asks for input that is not needed. |
-| <a id="st292"></a>[ST292](ST292-A-Whole-Move-Rehearsed-By-The-Agents-On-A.md) A whole move rehearsed by the agents on a rented server | ⏫ Highest | MX:3 · B:2 · F:2 · HO:1 | Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server. |
 | <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Every agent works in a Porelo task, moved one at a time | ⏫ Highest | none yet | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
 | <a id="st294"></a>[ST294](ST294-Plan-The-Stories-On-A-Board-In-The-Window.md) Plan the stories on a board in the window | 🔼 High | B:9 · F:4 · GH:4 · BT:3 | The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API. |
 | <a id="st78"></a>[ST78](ST78-Threads-In-IntelliJs-Diff.md) Threads in IntelliJ's diff | 🟰 Medium | IJ:2 | A person sees every review thread on its lines in IntelliJ's diff, marked with who wrote it. |
 | <a id="st295"></a>[ST295](ST295-A-Person-Joins-And-Leaves-An-Organization-From-The.md) A person joins and leaves an organization from the window | 🟰 Medium | B:2 · F:1 | A person who cannot write an organization's repository asks to join it from the window by filing their card as a proposal, an owner accepts it there, and a member leaves an organization from the window, withdrawing their own card and roles and forgetting it on this computer. |
 | <a id="st155"></a>[ST155](ST155-Approve-A-Group-And-Its-Peer-Keys.md) Approve a group and its peer keys | 🔽 Low | B:1 | A person can create a task group, confirm its peers' fingerprints and message the group, and unconfirmed peers are refused. |
+| <a id="st193"></a>[ST193](ST193-Choose-Drive-Areas-For-Each-Host.md) Choose drive areas for each host | 🔽 Low | PJ:1 | A person can choose the drive areas for each host, so each host receives only its own whether vaults are separate or shared. |
+| <a id="st194"></a>[ST194](ST194-Use-A-Secrets-File-Readable-By-A-Separate.md) Use a secrets file readable by a separate tool | 🔽 Low | PJ:1 | A person can open and change the secrets file in both KeePassXC and Porelo, with concurrent changes preserved or reported. |
 
 ## Implementing
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st5"></a>[ST5](ST5-Porelo-Pi-Porelo-Omp-And-Porelo-Claude-Code.md) porelo-pi, porelo-omp and porelo-claude-code each in its own task, with snapshots of porelo from the registry | ⏫ Highest | CC:2 · OM:2 · PI:2 | The Pi, OMP and Claude Code adapters can each be developed in their own task on the host and build there against Porelo snapshots from the local registry. |
-| <a id="st12"></a>[ST12](ST12-The-Release-And-Pipeline-Tools-The-Move-Rests.md) The release and pipeline tools the move rests on | ⏫ Highest | BT:4 · CX:2 · OM:1 | The release and pipeline tools that the move to the host depends on each do their job, such as reading main, handling pull requests and running pipelines. |
-| <a id="st26"></a>[ST26](ST26-A-Changed-Collection-Refused.md) A changed collection refused | ⏫ Highest | F:1 | A host collection that has been changed after publishing is refused, so a person installs only what was actually released. |
-| <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | ⏫ Highest | IJ:1 · MX:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
-| <a id="st290"></a>[ST290](ST290-Agents-On-A-Host-Work-Their-Results-Off-Until.md) Agents on a host work their results off until done | ⏫ Highest | B:23 · F:15 · HO:6 · MX:6 · GH:3 · CC:2 · BT:1 · PI:1 | A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub. |
+| <a id="st292"></a>[ST292](ST292-A-Whole-Move-Rehearsed-By-The-Agents-On-A.md) A whole move rehearsed by the agents on a rented server | ⏫ Highest | MX:3 · B:2 · F:2 · HO:1 | Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server. |
 | <a id="st51"></a>[ST51](ST51-A-KeePassXC-Key-That-Is-Usable.md) A KeePassXC key that is usable | 🔼 High | B:1 | A person using KeePassXC is asked for the master password once when making a key, and a retry works after the key is reported as not served. |
 | <a id="st127"></a>[ST127](ST127-Keep-Container-Limits-On-Large-Hosts.md) Keep container limits on large hosts | 🔽 Low | none yet | Container limits still apply on large hosts, so the same configuration behaves the same on small and large machines. |
 | <a id="st180"></a>[ST180](ST180-Prove-One-Build-Works-Locally-And-Centrally.md) Prove one build works locally and centrally | 🔽 Low | none yet | A person can rely on every building repository's workflow running unchanged on both the local and the central forge. |
-| <a id="st193"></a>[ST193](ST193-Choose-Drive-Areas-For-Each-Host.md) Choose drive areas for each host | 🔽 Low | PJ:1 | A person can choose the drive areas for each host, so each host receives only its own whether vaults are separate or shared. |
-| <a id="st194"></a>[ST194](ST194-Use-A-Secrets-File-Readable-By-A-Separate.md) Use a secrets file readable by a separate tool | 🔽 Low | PJ:1 | A person can open and change the secrets file in both KeePassXC and Porelo, with concurrent changes preserved or reported. |
 
 ## Review
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
 | <a id="st1"></a>[ST1](ST1-Builds-On-The-Hosts-Forge-Resolve-Snapshots-With.md) Builds on the host's forge resolve snapshots with a read-only token | ⏫ Highest | BT:2 · CC:1 · HO:1 · OM:1 · PI:1 · SL:1 | Builds on the host's own forge can fetch Porelo snapshots with a read-only token, so they get what they need without being able to change anything. |
-| <a id="st2"></a>[ST2](ST2-Porelo-Message-Sluice-Works-Wholly-In-Its-Task.md) porelo-message-sluice works wholly in its task | ⏫ Highest | SL:1 | The message-sluice component can be built, reviewed and checked entirely inside its own task on the host, with its build going green on the host's forge. |
 | <a id="st3"></a>[ST3](ST3-Porelos-Build-On-The-Hosts-Forgejo.md) porelo's Build on the host's Forgejo | ⏫ Highest | B:1 | Porelo itself builds with the same workflows on the host's own forge as on GitHub, so work on the host is checked the same way as everywhere else. |
+| <a id="st5"></a>[ST5](ST5-Porelo-Pi-Porelo-Omp-And-Porelo-Claude-Code.md) porelo-pi, porelo-omp and porelo-claude-code each in its own task, with snapshots of porelo from the registry | ⏫ Highest | CC:2 · OM:2 · PI:2 | The Pi, OMP and Claude Code adapters can each be developed in their own task on the host and build there against Porelo snapshots from the local registry. |
 | <a id="st10"></a>[ST10](ST10-Test-Machines-By-Kind-From-The-VM-Pool.md) Test machines by kind from the VM pool | ⏫ Highest | BT:2 · HO:1 | A build leg that needs a test machine can ask for one by kind from the VM pool on the host's forge and gets an account that is reset afterward. |
+| <a id="st12"></a>[ST12](ST12-The-Release-And-Pipeline-Tools-The-Move-Rests.md) The release and pipeline tools the move rests on | ⏫ Highest | BT:4 · CX:2 · OM:1 | The release and pipeline tools that the move to the host depends on each do their job, such as reading main, handling pull requests and running pipelines. |
 | <a id="st17"></a>[ST17](ST17-The-Gate-And-The-Transport-Held-By-Tests.md) The gate and the transport held by tests | ⏫ Highest | MX:9 · B:1 · SL:1 | The message gate and the transport are guarded by tests, shown by a mutation run, so a removed refusal gets noticed. |
 | <a id="st19"></a>[ST19](ST19-Subagents-And-Reviews-As-A-Person-Sees-Them.md) Subagents and reviews, as a person sees them | ⏫ Highest | IJ:2 · AG:1 · B:1 · CC:1 · CX:1 · OM:1 | A person sees which subagents a task may start, and another subagent is refused with a clear message, with reviews shown plainly. |
 | <a id="st20"></a>[ST20](ST20-A-Ready-Server-Runs-Its-Setup-Again-And.md) A ready server runs its setup again, and a rented one is found | ⏫ Highest | F:3 | A person can run a ready server's setup again and see how it ended, and a rented server can be found again afterward. |
+| <a id="st26"></a>[ST26](ST26-A-Changed-Collection-Refused.md) A changed collection refused | ⏫ Highest | F:1 | A host collection that has been changed after publishing is refused, so a person installs only what was actually released. |
+| <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | ⏫ Highest | IJ:1 · MX:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
 | <a id="st54"></a>[ST54](ST54-Long-Verbs-Say-How-Far-They-Are.md) Long verbs say how far they are | 🔼 High | MX:1 | A person running a long command sees how far along it is. |
 | <a id="st55"></a>[ST55](ST55-A-Person-Joins-Another-Project.md) A person joins another project | 🔼 High | MX:1 | A person can join another project on the same machine. |
 | <a id="st82"></a>[ST82](ST82-An-Unchanged-Credential-And-Setup-Reported-Honestly.md) An unchanged credential and setup reported honestly | 🟰 Medium | B:2 | Setting the same credential or running setup again reports honestly that nothing changed, in text and in the interface. |
-| <a id="st118"></a>[ST118](ST118-Verify-The-Complete-ChatGPT-Sign-In.md) Verify the complete ChatGPT sign-in | 🔽 Low | PJ:1 | A person can sign in to ChatGPT and ask a Codex task a question, with no sign-in material inside the container. |
 | <a id="st119"></a>[ST119](ST119-Give-A-Transport-Its-Secret-Through-The-Intended.md) Give a transport its secret through the intended input | 🔽 Low | B:1 · MX:1 | A transport such as Matrix gets its secret through the intended input, so it does not show in process environments or arguments. |
-| <a id="st145"></a>[ST145](ST145-Open-Administration-And-Daily-Work-Separately.md) Open administration and daily work separately | 🔽 Low | PJ:1 | A person opens administration and daily work separately, as user, host-admin or access-admin, so each role sees only its own steps. |
 | <a id="st205"></a>[ST205](ST205-Porelo-Buildtools.md) porelo-buildtools | 🔽 Low | BT:1 | A person gets the build tools repository as a named part of Porelo that is tracked as its own piece of work. |
 
 ## Finished
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
+| <a id="st2"></a>[ST2](ST2-Porelo-Message-Sluice-Works-Wholly-In-Its-Task.md) porelo-message-sluice works wholly in its task | ⏫ Highest | SL:1 | The message-sluice component can be built, reviewed and checked entirely inside its own task on the host, with its build going green on the host's forge. |
 | <a id="st219"></a>[ST219](ST219-The-Host-Rented-And-Given-Back-At-One.md) The host rented and given back at one command | ⏫ Highest | HO:4 · F:3 | A person can rent a host from Scaleway and set it up with one command, and give it back with one command, reaching it only through the VPN. |
 | <a id="st220"></a>[ST220](ST220-Claude-Works-In-A-Task-Signed-In-With.md) Claude works in a task, signed in with the operator's subscription | ⏫ Highest | CC:2 · B:1 · SL:1 | A person can sign Claude Code in once with their own subscription, and tasks then work with only a short-lived token and no memory of the agent's own sign-in. |
 | <a id="st221"></a>[ST221](ST221-Each-Repository-Brings-Its-Image-And-Each-Task.md) Each repository brings its image, and each task its values | ⏫ Highest | B:2 | Each repository brings its own image from its porelo.yml and each task starts with its own issue and phase values, so tasks are set up the way their repository wants. |
@@ -350,3 +345,14 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st287"></a>[ST287](ST287-The-Agent-Already-On-The-Machine-Is-Taken.md) The agent already on the machine is taken | ⏫ Highest | B:2 · F:2 · CC:1 · PJ:1 | A person can start a task without naming an agent or provider and get the Claude Code already signed in on the machine, with a note saying what was used. |
 | <a id="st288"></a>[ST288](ST288-Import-One-Provider-And-Recognize-OMP.md) Import one provider and recognize OMP | ⏫ Highest | B:1 · OM:1 · PI:1 | A person can sign Pi in to two providers, import only the chosen one, start a task, and have OMP recognized. |
 | <a id="st289"></a>[ST289](ST289-Review-In-IntelliJ.md) Review in IntelliJ | ⏫ Highest | IJ:2 | A person can review in IntelliJ on the laptop, reading a waiting push and approving the displayed commit against the local Porelo. |
+| <a id="st118"></a>[ST118](ST118-Verify-The-Complete-ChatGPT-Sign-In.md) Verify the complete ChatGPT sign-in | 🔽 Low | PJ:1 | A person can sign in to ChatGPT and ask a Codex task a question, with no sign-in material inside the container. |
+| <a id="st145"></a>[ST145](ST145-Open-Administration-And-Daily-Work-Separately.md) Open administration and daily work separately | 🔽 Low | PJ:1 | A person opens administration and daily work separately, as user, host-admin or access-admin, so each role sees only its own steps. |
+
+## Rejected
+
+| Story | Priority | Issues | What a user gains |
+|---|---|---|---|
+| <a id="st42"></a>[ST42](ST42-The-Drafts-Shown-Before-The-First-Task.md) The drafts shown before the first task | 🔼 High | F:1 | At the first start, a person sees the drafted proposals in the interface and can take or change them before any task runs. |
+| <a id="st105"></a>[ST105](ST105-Keep-Public-SSH-Closed-After-The-VPN-Is.md) Keep public SSH closed after the VPN is ready | 🟰 Medium | HO:1 | Once the VPN is ready, public SSH stays closed, and a documented recovery path exists if the VPN breaks. |
+| <a id="st196"></a>[ST196](ST196-Use-OneDrive-With-Measured-Protection.md) Use OneDrive with measured protection | 🔽 Low | F:1 · HO:1 | A person can use OneDrive on a host with protected setup materials, sync a test area, and be told when a login is missing. |
+| <a id="st201"></a>[ST201](ST201-A-Person-Added-Again-Keeps-Their-Name.md) A person added again keeps their name | 🔽 Low | MX:1 | A person removed from a prepared host and added again under the same user name keeps their Porelo data and name. |

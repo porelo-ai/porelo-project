@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST77",
   "title": "Direct pushes and red checks refused",
-  "state": "Accepted",
   "gain": "Direct pushes to main and merges with red checks are refused for every account, so main only changes through checked pull requests.",
   "test": "Try direct pushes to main with the project account and another account; both fail. Try to merge a pull request with a red required check; it is refused. A permitted person can merge once all required checks pass.",
   "priority": "Medium",

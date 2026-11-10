@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST160",
   "title": "Refuse oversized Git blobs at the gate",
-  "state": "Estimated",
   "gain": "Oversized Git blobs are refused at the gate, so a small blob waits for review and an oversized one never gets through.",
   "test": "Configure a blob size limit and push a small and an oversized blob. The small blob waits for ordinary review; the large blob is refused with its size and the limit.",
   "priority": "Low",

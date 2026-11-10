@@ -24,9 +24,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST227",
   "title": "The host flow walked against stand-ins",
-  "state": "Finished",
   "gain": "A person can walk the whole host flow, up and down, in a development build against stand-in hosts, before using a real one.",
   "test": "In a development build against the stand-in porelo-host, the operator walks up and down: the host stands in Machines while it is prepared, each step in words with the time left, a stop shown as needs you, down from the host's own menu with no field typed again; a refused start names its cause in words.",
   "priority": "Highest",

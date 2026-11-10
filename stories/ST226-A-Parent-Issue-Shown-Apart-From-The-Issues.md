@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST226",
   "title": "A parent issue shown apart from the issues that carry its work",
-  "state": "Finished",
   "gain": "A person sees a parent issue as its own line under its function with its state, apart from the issues that carry the actual work.",
   "test": "A parent with no work of its own stands as one line under its function with its state, never as a chip or in a bar; `plan check` refuses a parent behind its parts.",
   "priority": "Highest",

@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST295",
   "title": "A person joins and leaves an organization from the window",
-  "state": "Backlog",
   "gain": "A person who cannot write an organization's repository asks to join it from the window by filing their card as a proposal, an owner accepts it there, and a member leaves an organization from the window, withdrawing their own card and roles and forgetting it on this computer.",
   "test": "On a test organization, a person without write access proposes their card from the window; an owner sees it on the person's row in People and accepts it; the person then works as a member; another member leaves from the window, and their card, roles and the organization on that computer are gone.",
   "priority": "Medium",

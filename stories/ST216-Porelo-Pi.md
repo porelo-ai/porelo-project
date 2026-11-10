@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST216",
   "title": "porelo-pi",
-  "state": "Idea",
   "gain": "A person gets the Pi adapter repository as a named part of Porelo that is tracked as its own piece of work.",
   "test": "Not planned for a test yet.",
   "priority": "Low",

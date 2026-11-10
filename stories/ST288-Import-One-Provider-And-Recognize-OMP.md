@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST288",
   "title": "Import one provider and recognize OMP",
-  "state": "Finished",
   "gain": "A person can sign Pi in to two providers, import only the chosen one, start a task, and have OMP recognized.",
   "test": "Sign Pi in to two providers, import the chosen provider and start a task; the other sign-in must not be selected. Detect OMP through agent.db; its sign-in is shown as \"cannot say\" and left to `vault put` and `vault authorize`.",
   "priority": "Highest",

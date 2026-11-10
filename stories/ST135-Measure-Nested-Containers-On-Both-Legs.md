@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST135",
   "title": "Measure nested containers on both legs",
-  "state": "Estimated",
   "gain": "A person can see how well nested containers keep to network, process and resource limits on both legs.",
   "test": "Exercise network, process and resource limits with an inner container on both legs. Record each guarantee as held or violated before deciding whether to offer nesting.",
   "priority": "Low",

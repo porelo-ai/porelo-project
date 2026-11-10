@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST287",
   "title": "The agent already on the machine is taken",
-  "state": "Finished",
   "gain": "A person can start a task without naming an agent or provider and get the Claude Code already signed in on the machine, with a note saying what was used.",
   "test": "Without `--agent` and `--provider` the task starts with the Claude Code signed in there and says what it found and where; the interface shows the same choice.",
   "priority": "Highest",

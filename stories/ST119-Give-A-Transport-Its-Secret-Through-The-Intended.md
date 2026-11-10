@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST119",
   "title": "Give a transport its secret through the intended input",
-  "state": "Review",
   "gain": "A transport such as Matrix gets its secret through the intended input, so it does not show in process environments or arguments.",
   "test": "Start Matrix with a test token, deliver a message and inspect /proc environments and process arguments during startup and operation. The token is absent. A transport with an unsupported secret-input protocol is refused before use.",
   "priority": "Low",

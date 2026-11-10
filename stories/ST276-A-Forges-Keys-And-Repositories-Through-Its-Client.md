@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST276",
   "title": "A forge's keys and repositories through its client",
-  "state": "Finished",
   "gain": "A person's public SSH keys and repositories on Forgejo and GitHub are read, listed and managed through the forge's client, without a token for public keys.",
   "test": "On Forgejo and on GitHub the client reads a person's public SSH keys without a token, lists, adds and deletes the signed-in person's own keys, tells whether a user owns an organization, and reads and creates a repository in it, against answers recorded from the real forge.",
   "priority": "Highest",

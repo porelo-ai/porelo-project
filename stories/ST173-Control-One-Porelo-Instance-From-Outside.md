@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST173",
   "title": "Control one Porelo instance from outside",
-  "state": "Accepted",
   "gain": "A person can control one Porelo instance from outside over MCP to start tasks, read status and send messages, while approving, rejecting and vault access stay refused.",
   "test": "Start a task, read status and send a message over MCP. Then try approve, reject and vault unlock; those operations are unavailable or explicitly refused.",
   "priority": "Low",

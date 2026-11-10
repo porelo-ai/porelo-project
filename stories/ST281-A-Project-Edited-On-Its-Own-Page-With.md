@@ -21,9 +21,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST281",
   "title": "A project edited on its own page, with no machine",
-  "state": "Finished",
   "gain": "A project admin can edit a project on its own page, adding and removing repositories and members and changing a role, with no machine needed.",
   "test": "The project admin adds and removes repositories and members and changes a role on the project's page; a member sees it read-only; nothing on it names a host.",
   "priority": "Highest",

@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST93",
   "title": "Choose a trial or a clone",
-  "state": "Analyzed",
   "gain": "A person can choose from the interface to run a waiting commit in a trial container or to fetch it as a clone.",
   "test": "Run a waiting commit in a trial container from the interface, then fetch the same commit into a chosen clone. Commit and result are visible. Choose a clone holding other or unsaved work; that work must not be overwritten.",
   "priority": "Medium",

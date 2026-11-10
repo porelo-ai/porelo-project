@@ -22,9 +22,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST222",
   "title": "The host up and down from the interface, then a task started there",
-  "state": "Finished",
   "gain": "A person can put a server up and take it down from the interface, be asked only at the stop for the drive login and vault passphrase, and then start a task there.",
   "test": "*Put on a server* shows the steps and asks at the stop for the drive's login and the vault's passphrase; it writes the machine file and the host's VPN key into the drive and offers the tunnel as a file; a task started on the host signs its agent in on the way.",
   "priority": "Highest",

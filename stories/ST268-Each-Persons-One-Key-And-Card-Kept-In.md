@@ -26,9 +26,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST268",
   "title": "Each person's one key and card, kept in the registry",
-  "state": "Finished",
   "gain": "Each person's key and card are made once and kept in the registry, and a card that does not match the forge account or a revoked key is refused with the reason.",
   "test": "A person's key and card are made once and filed under people/ with the key on their forge account; a card under another login, an unlisted key or a successor signed by a revoked key is refused with a reason, a changed key reaches the registry and hosts, and a lost key is replaced by an admin.",
   "priority": "Highest",

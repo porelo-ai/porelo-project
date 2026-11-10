@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST66",
   "title": "A C3 change approved by two people, on what they read",
-  "state": "Analyzed",
   "gain": "A risky C3 change needs a second person to approve it, and a push after review voids the approval so people approve what they read.",
   "test": "Approving a C3 change asks for a second person; a push the agent makes between review and approval is never forwarded unseen.",
   "priority": "Medium",

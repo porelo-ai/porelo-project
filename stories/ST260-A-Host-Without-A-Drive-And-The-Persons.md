@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST260",
   "title": "A host without a drive, and the person's own drive in their account",
-  "state": "Finished",
   "gain": "A person can rent a host without a drive, typing only the master password and sudo, or use their own drive in their own account.",
   "test": "Rent without a drive: no Tresorit client, only the master password and sudo typed. Rent again with the person's drive: it is mounted in the person's account, and Porelo's account cannot list it.",
   "priority": "Highest",

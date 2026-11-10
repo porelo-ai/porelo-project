@@ -37,9 +37,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST279",
   "title": "The organization's page, and a project created there",
-  "state": "Finished",
   "gain": "A person sees an organization's people, projects, hosts and owners on its page and can create a project there.",
   "test": "An organization made anew by Core's script shows its people, projects, hosts and owners; each person sees only the actions of their roles; an organization owner adds a project and names its project admin, who makes its project repository on first opening it; a lost key is withdrawn and replaced, and the organization goes on.",
   "priority": "Highest",

@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST157",
   "title": "Let a limited service manage task accounts",
-  "state": "Accepted",
   "gain": "A limited project service can manage task accounts as its own task but cannot act as a person or another project.",
   "test": "Register the project service and act as its own task. Try acting as a person or another project's task; both fail. Retire and restore the service; old tokens no longer work.",
   "priority": "Low",

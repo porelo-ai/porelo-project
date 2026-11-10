@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST242",
   "title": "The same command reads Forgejo",
-  "state": "Finished",
   "gain": "A person gets the same answer in the same shape from the same command whether the build runs on Forgejo or the other forge.",
   "test": "Against a Forgejo run in podman, the same answer in the same shape.",
   "priority": "Highest",

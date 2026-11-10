@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST241",
   "title": "A build server asked from the command line",
-  "state": "Finished",
   "gain": "A person can ask a build server from the command line with porelo build status and see the commit and its result for a branch.",
   "test": "`porelo build status --project=<project> --repository=<repository> --branch=main` shows the commit, the verdict, the jobs and a red job's log, on GitHub.",
   "priority": "Highest",

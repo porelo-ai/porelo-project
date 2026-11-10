@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST237",
   "title": "The key, the VPN and the counts say their state",
-  "state": "Finished",
   "gain": "A person sees whether the Scaleway key works when it is stored, and the VPN and counts on the page state their real condition.",
   "test": "A Scaleway key is checked when stored and in the wizard's first step; one VPN tile follows the tunnel; no NetworkManager popup; the give-back takes this computer's tunnel down; every menu count equals its list.",
   "priority": "Highest",

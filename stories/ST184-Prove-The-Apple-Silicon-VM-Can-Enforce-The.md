@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST184",
   "title": "Prove the Apple silicon VM can enforce the boundaries",
-  "state": "Idea",
   "gain": "A person on Apple silicon learns whether the local ARM VM can enforce the boundaries, with refusals showing what is missing.",
   "test": "Probe Podman, nftables, user namespaces, cgroups and the daemon socket in ARM Lima. A refused unshare or missing firewall stops the task start. Check the ARM instruction baseline of the produced test executable.",
   "priority": "Low",

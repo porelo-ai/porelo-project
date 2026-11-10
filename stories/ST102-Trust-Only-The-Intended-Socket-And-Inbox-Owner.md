@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST102",
   "title": "Trust only the intended socket and inbox owner",
-  "state": "Analyzed",
   "gain": "On AppArmor, Porelo trusts only the intended socket and inbox owner and refuses another program's socket or a wrongly owned file.",
   "test": "Start a real task on AppArmor. Offer another program's socket, an inbox file owned by the wrong account and a symbolic link. The real connection and delivery work; each planted entry or wrong socket is refused and named.",
   "priority": "Medium",

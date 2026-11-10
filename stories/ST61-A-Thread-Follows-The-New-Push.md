@@ -14,9 +14,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST61",
   "title": "A thread follows the new push",
-  "state": "Analyzed",
   "gain": "A review thread follows lines that stay unchanged after a new push, and threads on changed lines stay marked rather than moving wrongly.",
   "test": "A thread on lines the new push left unchanged moves with them; one on changed lines stays on its old commit and says so.",
   "priority": "Medium",

@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST189",
   "title": "Install the Mac application",
-  "state": "Estimated",
   "gain": "A person on a Mac can install the application in a fresh account and verify its checksum or attestation.",
   "test": "Install in a fresh account, verify the checksum or attestation and follow the documented Gatekeeper step. Open a terminal and type. A build without even an ad hoc signature is not accepted as an installable result.",
   "priority": "Low",

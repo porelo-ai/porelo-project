@@ -23,9 +23,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST108",
   "title": "Each repository measured by PIT",
-  "state": "Accepted",
   "gain": "Each repository is measured by mutation testing with PIT, so a person sees what its tests miss.",
   "test": "A mutation run per repository reports what its tests miss.",
   "priority": "Medium",

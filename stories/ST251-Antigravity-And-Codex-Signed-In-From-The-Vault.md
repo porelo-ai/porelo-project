@@ -20,9 +20,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST251",
   "title": "Antigravity and Codex signed in from the vault",
-  "state": "Finished",
   "gain": "A person can have Antigravity and Codex signed in from the vault, with the operator's Google subscription and Codex CLI sign-in.",
   "test": "Antigravity with the operator's Google subscription and Codex CLI with its sign-in, both from the vault, each answering in a task.",
   "priority": "Highest",

@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST72",
   "title": "A forge's calls in a client that knows nothing of Porelo",
-  "state": "Analyzed",
   "gain": "A client that knows nothing of Porelo can use GitHub's and Forgejo's pull requests, reviews, comments, checks and webhooks.",
   "test": "GitHub's and Forgejo's pull requests, reviews and their comments, checks and webhooks are called through `porelo-forge-clients`, one module per forge, under the LGPL; none of its modules names Porelo, its contracts or SARIF.",
   "priority": "Medium",

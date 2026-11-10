@@ -19,9 +19,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST57",
   "title": "A linter's report shown on the waiting work",
-  "state": "Idea",
   "gain": "A person adding a linter's SARIF report to waiting work sees each finding on its file and lines.",
   "test": "A SARIF report of a linter added to waiting work shows each finding on its file and lines in `porelo gate review` and in the interface, with its level and its source named as a linter.",
   "priority": "Medium",

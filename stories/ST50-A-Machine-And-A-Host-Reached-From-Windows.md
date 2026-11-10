@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST50",
   "title": "A machine and a host reached from Windows",
-  "state": "Idea",
   "gain": "A person on Windows can reach a machine over SSH and see its projects, work, terminal and gate from the Windows build.",
   "test": "From the Windows build, a machine over ssh shows its projects, work, a terminal and the gate; a host from its card is joined, prepared, admitted and added to, through one ssh process with loopback TCP ends and no master.",
   "priority": "High",

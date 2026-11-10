@@ -17,9 +17,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST36",
   "title": "Start local, organization and added providers",
-  "state": "Analyzed",
   "gain": "A person can use local, organization HTTPS and added providers such as xAI, Zhipu and Z.AI, with supported ones starting and unsupported ones refused clearly.",
   "test": "Use a loopback provider, an organization HTTPS provider, xAI, Zhipu and Z.AI. A supported dialect works; an unsupported dialect and HTTP outside loopback are refused before the start.",
   "priority": "High",

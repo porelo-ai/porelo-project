@@ -16,9 +16,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST232",
   "title": "The stop and the VPN in one flow",
-  "state": "Finished",
   "gain": "A person handles the stop and the VPN in one flow, with a small dialog for the Tresorit e-mail and a terminal for the rest.",
   "test": "At the stop a small dialog asks for the Tresorit e-mail and opens the terminal; a mistyped password is asked again in place; the VPN comes up as the setup's last step with only the sudo password, its handshake checked, and only then the server is ready.",
   "priority": "Highest",

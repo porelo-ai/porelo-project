@@ -15,9 +15,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST109",
   "title": "Check unusual workflow spellings too",
-  "state": "Accepted",
   "gain": "Workflow files are checked even when written in unusual ways, so a corrected parent builds every Maven repository and a plugin version restore is caught.",
   "test": "Build every Maven repository with the corrected parent. Restore a plugin version with a known advisory; the check names it. Offer the same forbidden workflow permission normally, quoted and in flow YAML; all forms are refused.",
   "priority": "Medium",

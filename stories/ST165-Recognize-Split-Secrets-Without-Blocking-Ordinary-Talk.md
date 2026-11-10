@@ -16,6 +16,7 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST165",
   "title": "Recognize split secrets without blocking ordinary talk",
   "state": "Idea",

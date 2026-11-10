@@ -18,9 +18,9 @@
 
 ```json
 {
+  "$schema": "story-2.json",
   "id": "ST155",
   "title": "Approve a group and its peer keys",
-  "state": "Backlog",
   "gain": "A person can create a task group, confirm its peers' fingerprints and message the group, and unconfirmed peers are refused.",
   "test": "Create a task group, confirm its fingerprints and send a group message. Offer an unconfirmed peer or changed key; delivery is refused until confirmation.",
   "priority": "Low",
