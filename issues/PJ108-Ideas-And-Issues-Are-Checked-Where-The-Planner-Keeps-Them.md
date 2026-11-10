@@ -5,8 +5,8 @@
   "$schema": "issue-1.json",
   "id": "PJ108",
   "title": "Ideas And Issues Are Checked Where The Planner Keeps Them",
-  "state": "Accepted",
-  "size": "-",
+  "state": "Analyzed",
+  "size": "L",
   "priority": "High",
   "rank": 1,
   "blockedBy": [],
@@ -14,8 +14,8 @@
 }
 ```
 
-**Why this size.** not sized yet: this issue is analyzed first. The analysis names what is missing, where, and which
-existing functions move; the work it finds is filed as issues in the repositories it names, and their sizes follow.
+**Why this size.** the work it finds crosses four repositories, each piece S or M; it is filed as issues in the
+repositories it names, and their sizes follow.
 
 Filed 2026-11-10 by the operator's request; accepted by the operator.
 
@@ -70,9 +70,10 @@ repositories' checks and `AGENTS.md`; and what it means for the work in flight. 
 - **An idea handed back.** A new daemon method in `porelo`, `Tasks1.ProposeIdea(title, whatMustBeTrue)`, called by
   the task's agent over its own task socket; the daemon takes the task from the socket, keeps the idea on the task's
   row and offers it through `List`/`Watch`. `porelo-mcp` needs no change: each `Tasks1` method the daemon describes
-  becomes a tool, offered in a task only when the signed project file allows it. The planner, running as the person on
-  the same computer, watches the daemon and files each idea as an issue in state *Idea* in the task's repository,
-  naming the task it came from; the person sees it on the board under *Idea*. An idea holds a title (one line) and
+  becomes a tool, offered in a task only when the signed project file allows it. The window, which already watches
+  Porelo's tasks, hands each idea to the planner's API, since the planner talks to no Porelo; the planner saves it at
+  once as an issue in state *Idea* in the task's repository, naming the task it came from, and the person sees it on
+  the board under *Idea*. An idea holds a title (one line) and
   *What must be true* (one or two sentences); its repository is the task's.
 - **The planner's check.** The planner's API takes an idea and a new issue (`POST .../ideas`, `POST .../issues`) and
   checks every field the issue schema asks for its state, answering a refusal per field as `application/problem+json`
@@ -86,8 +87,23 @@ repositories' checks and `AGENTS.md`; and what it means for the work in flight. 
 - **An issue's text into an unattended task, and the answer.** Already there: the planning screen's *Start work* goes
   through the window's `startTask` hook to Porelo's `Start`, which takes the text as `prompt` and runs unattended.
   What it answers when it ends comes with [B566](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b566): `Done(outcome DONE|BLOCKED, why)`, `Task.ended` and the answer on the
-  task's row. The planner shows that outcome beside the issue; the person moves the issue. The screen's own
+  task's row. The screen's own
   `StartStoryWork`/`GetStoryWork` calls exist only in its fake and give way to `Start` with the issue's text.
+
+- **An issue's state from the task's outcome.** The planner sets the state itself; nobody moves an issue by hand
+  out of or into a working state. The window reports each task's end to the planner as it watches it ([PL09](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl09): the
+  task's `ended` record), and the planner maps it by the work rule of the state the work runs in, kept in
+  `stories/work.yml` of the project's own repository ([PL07](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl07)) and applied in the planner's `core`:
+  - `DONE`: to the rule's `then`, the next working state (Implementing leads to Reading), when it names one; else to
+    its `done` state (Review).
+  - `DONE` from a reading with blocking findings: to the rule's `blocked` state (Reworking) while the issue has
+    readings left; on the last allowed reading the issue stays, under *Needs you* with its findings.
+  - `BLOCKED` or `FAILED`: the issue stays where it is, under *Needs you* with the task's `why`; it never counts as a
+    finding.
+
+  The planner saves the new state as any save ([PL05](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl05)): committed and pushed under the project's lock. The states
+  only the operator sets (Accepted, Estimated, Backlog, Rework, Finished, Rejected) stay the operator's choice, made in
+  the window.
 
 ### 3. What moves
 
@@ -101,8 +117,8 @@ repositories' checks and `AGENTS.md`; and what it means for the work in flight. 
 - **The checks in the repositories' builds:** `check-citations` stays as long as prose links to index rows in Git;
   `stories-check.yml` in `porelo-project` gives way to the planner's reading once the planner keeps the board.
 - **The rules in `AGENTS.md`:** the Shared Area says that an agent in a task writes no issue or story file and sets no
-  state; it ends with its outcome and hands its ideas back through `ProposeIdea`; an issue's state is set through the
-  planner. The issue skeleton, the states and the index stay as the description of the store's format, read by the
+  state; it ends with its outcome and hands its ideas back through `ProposeIdea`; the planner sets an issue's state
+  from that outcome. The issue skeleton, the states and the index stay as the description of the store's format, read by the
   planner. `PORELO_ISSUE_PREFIXES` goes, since a task cites no issue.
 - **What stays for this project while its issues are files:** the files, their heads and generated indexes, and the
   checks above; the planner checks them on every read and every save.
@@ -117,7 +133,8 @@ repositories' checks and `AGENTS.md`; and what it means for the work in flight. 
 - [PJ103](README.md#pj103) and [B507](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b507): **changed in words only**: a task is started with its work as text, not with an
   issue and a phase; [B507](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b507) itself names no issue.
 - [PL05](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl05) (moves saved): **kept**, and it takes the new issues and ideas through the same save.
-- [PL09](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl09) (the run from building to review): **changed**: it starts a task with the issue's text and reads its outcome.
+- [PL09](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl09) (the run from building to review): **changed**: it starts a task with the issue's text and sets the issue's state
+  from the task's outcome as above.
 
 ### The work it finds
 
@@ -127,12 +144,12 @@ repositories' checks and `AGENTS.md`; and what it means for the work in flight. 
 | porelo | `PORELO_ISSUE_PREFIXES` no longer handed to a task | XS | the Shared Area's rule |
 | porelo-buildtools | the issue and idea field check in `porelo-stories`, public, per-field faults | S | - |
 | porelo-planner | ideas and new issues taken over the API, checked, saved as *Idea* | M | the field check, [PL05](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl05) |
-| porelo-planner | ideas read from Porelo's tasks and filed | S | `ProposeIdea` |
 | porelo-planner | a broken file shown as a fault, not a refused repository | S | - |
 | porelo-planner | the screen's idea and issue form showing the planner's refusals | S | the API above |
 | porelo-project | the Shared Area: a task writes no issue file, sets no state, hands ideas back | S | agreement in the room |
 | porelo-project | `stories-check.yml` retired | XS | the planner keeping the board |
-| porelo-mcp, porelo-frontend | none | - | - |
+| porelo-frontend | each idea of a task the window watches handed to the planner's API | S | `ProposeIdea`, the planner's API |
+| porelo-mcp | none | - | - |
 
 **Size of the whole: L** - it crosses four repositories, and each piece is S or M.
 
@@ -142,10 +159,9 @@ repositories' checks and `AGENTS.md`; and what it means for the work in flight. 
 - Each piece of work it finds is named with its repository, its size, and what it waits for.
 - The operator has decided on the plan.
 
-## Open questions
+## Decided by the operator
 
-- **Who sets an issue's state once a task writes no issue file?** Proposed: the person, through the planner; an agent
-  in a task only answers its outcome. The coordinator outside a task keeps its rights until it works from a task.
-- **Is an idea a task hands back saved at once as an *Idea* issue, or held in the planner until a person accepts
-  it?** Proposed: saved at once, since *Idea* is the state anyone brings.
-- **Does `stories-check.yml` stay until the planner keeps the board, or go now?** Proposed: it stays until then.
+- **An issue's state is set by the planner from the task's outcome**, not by a person by hand; the mapping is the one
+  under *What is missing*.
+- **An idea a task hands back is saved at once as an issue in state *Idea*.**
+- **`stories-check.yml` stays until the planner keeps the board.**
