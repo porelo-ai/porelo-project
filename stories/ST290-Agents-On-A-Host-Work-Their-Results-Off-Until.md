@@ -52,7 +52,7 @@
 - [porelo-adapters#GH25](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh25) (Backlog)
 - [porelo-frontend#F452](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f452) (Review)
 - [porelo-frontend#F453](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f453) (Review)
-- [porelo-frontend#F454](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f454) (Backlog)
+- [porelo-frontend#F454](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f454) (Review)
 - [porelo-frontend#F455](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f455) (Backlog)
 - [porelo-frontend#F456](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f456) (Review)
 - [porelo-frontend#F457](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f457) (Backlog)

@@ -12,7 +12,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Estimated](#estimated) | 24 |
 | [Backlog](#backlog) | 18 |
 | [Implementing](#implementing) | 4 |
-| [Review](#review) | 15 |
+| [Review](#review) | 21 |
 | [Finished](#finished) | 74 |
 | [Rejected](#rejected) | 4 |
 
@@ -266,6 +266,12 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st54"></a>[ST54](ST54-Long-Verbs-Say-How-Far-They-Are.md) Long verbs say how far they are | 🔼 High | MX:1 | A person running a long command sees how far along it is. |
 | <a id="st55"></a>[ST55](ST55-A-Person-Joins-Another-Project.md) A person joins another project | 🔼 High | MX:1 | A person can join another project on the same machine. |
 | <a id="st82"></a>[ST82](ST82-An-Unchanged-Credential-And-Setup-Reported-Honestly.md) An unchanged credential and setup reported honestly | 🟰 Medium | B:2 | Setting the same credential or running setup again reports honestly that nothing changed, in text and in the interface. |
+| <a id="st297"></a>[ST297](ST297-A-Short-Download-Outage-Does-Not-Turn-A-Build.md) A short download outage does not turn a build red | 🟰 Medium | BT:5 · HO:2 · PI:1 | A build that fetches a pinned JDK or tool tries again by one shared rule with a deadline, so a short outage of a download site does not turn a build red. |
+| <a id="st298"></a>[ST298](ST298-Put-Only-Some-Repositories-Of-A-Project-On-A.md) Put only some repositories of a project on a host | 🟰 Medium | HO:3 · B:2 · F:1 | A person chooses from a list which repositories of a project a host carries; the host takes only those its card names and says what it took and why it left the rest. |
+| <a id="st299"></a>[ST299](ST299-Found-A-Porelo-Organization-From-The-Window.md) Found a Porelo organization from the window | 🟰 Medium | F:3 · B:1 | A person founds a Porelo organization from the window and is told everything founding needs before anything is filed; a grey button says in words why it waits. |
+| <a id="st300"></a>[ST300](ST300-A-Changed-Project-Or-Repository-File-Is-Taken-Once.md) A changed project or repository file is taken once an admin signs it anew | 🟰 Medium | B:2 · BT:1 · HO:1 | When a project's or a repository's porelo.yml changes, an admin signs it anew from the checkouts they keep, and hosts follow the newly signed file; an unsigned change is never taken. |
+| <a id="st301"></a>[ST301](ST301-A-Host-Is-Given-Back-Only-Once-Its-Work.md) A host is given back only once its work has reached central | 🟰 Medium | F:2 · HO:1 | A host is given back only when everything its tasks did has reached central; work still ahead of central is said, with the reason in words, and holds the give-back. |
+| <a id="st302"></a>[ST302](ST302-Keep-A-Machine-In-Order-From-The-Window.md) Keep a machine in order from the window | 🟰 Medium | B:3 | A person keeps a machine in order from the window: replaces or removes a vault entry, tightens permissions and removes a project the machine no longer knows. |
 | <a id="st119"></a>[ST119](ST119-Give-A-Transport-Its-Secret-Through-The-Intended.md) Give a transport its secret through the intended input | 🔽 Low | B:1 · MX:1 | A transport such as Matrix gets its secret through the intended input, so it does not show in process environments or arguments. |
 | <a id="st205"></a>[ST205](ST205-Porelo-Buildtools.md) porelo-buildtools | 🔽 Low | BT:1 | A person gets the build tools repository as a named part of Porelo that is tracked as its own piece of work. |
 

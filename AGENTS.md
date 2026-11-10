@@ -555,8 +555,8 @@ and the UTC time that text last changed; change it in the channel first, never i
 - **A requirement here is planned as an issue only while it is not split.** Once its parts are filed in the
   repositories that build them, the story names those parts; one built by a single repository is handed over and
   leaves.
-- **Every issue being worked on appears in the story it serves.** Add a new or split issue to it when it is filed or
-  started.
+- **Every issue not in Idea appears in the story it serves.** Add a new or split issue to it when it leaves Idea, is
+  filed in a later state or is started; an issue no story fits gets a new story (operator, 2026-11-10).
 
 ## Coordinating
 
