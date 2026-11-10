@@ -112,6 +112,11 @@ repositories:
         description: "Porelo's API as MCP tools, generated from the daemon's contract and holding no rule of its own"
         issues: ["MC"]
         maturity: "crazy-chicken"
+    planner:
+        central: "git@github.com:porelo-ai/porelo-planner.git"
+        description: "The planner: a project's stories and issues, kept in Git, served to the window over a REST API"
+        issues: ["PL"]
+        maturity: "crazy-chicken"
 
 image:
     from: "docker.io/library/ubuntu:24.04@sha256:68ee22004a9109b44973313b02ff7b1de250f1de0f5ecb628d73f579aaff33ac"
