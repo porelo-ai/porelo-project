@@ -11,8 +11,16 @@
 - [porelo-buildtools#BT46](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt46) (Review)
 - [porelo-buildtools#BT54](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt54) (Review)
 - [porelo-buildtools#BT55](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt55) (Review)
-- [porelo-buildtools#BT56](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt56) (Review)
+- [porelo-buildtools#BT56](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt56) (Analyzed)
 - [porelo-buildtools#BT59](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt59) (Backlog)
+- [porelo#B566](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b566) (Implementing)
+- [porelo-frontend#F446](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f446) (Review)
+- [porelo-frontend#F447](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f447) (Review)
+- [porelo-frontend#F448](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f448) (Review)
+- [porelo-frontend#F449](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f449) (Review)
+- [porelo-frontend#F467](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f467) (Backlog)
+- [porelo-project#PJ104](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj104) (Accepted)
+- [porelo-project#PJ105](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj105) (Accepted)
 
 ## Data
 
@@ -30,7 +38,15 @@
     "porelo-buildtools#BT54",
     "porelo-buildtools#BT55",
     "porelo-buildtools#BT56",
-    "porelo-buildtools#BT59"
+    "porelo-buildtools#BT59",
+    "porelo#B566",
+    "porelo-frontend#F446",
+    "porelo-frontend#F447",
+    "porelo-frontend#F448",
+    "porelo-frontend#F449",
+    "porelo-frontend#F467",
+    "porelo-project#PJ104",
+    "porelo-project#PJ105"
   ],
   "tested": null
 }
