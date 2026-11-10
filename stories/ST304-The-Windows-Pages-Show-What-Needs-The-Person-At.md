@@ -1,6 +1,6 @@
 # ST304 — The window's pages show what needs the person at a glance
 
-**Priority:** 🟰 Medium · **State:** Implementing
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** Every page of the window shows at a glance what needs the person, and each grey button, count and wait says why in words; a click answers at once.
 
@@ -11,13 +11,14 @@
 - [porelo-frontend#F353](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f353) (Review)
 - [porelo-frontend#F359](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f359) (Review)
 - [porelo-frontend#F360](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f360) (Review)
-- [porelo-frontend#F362](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f362) (Implementing)
+- [porelo-frontend#F362](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f362) (Review)
 - [porelo-frontend#F373](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f373) (Review)
 - [porelo-frontend#F376](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f376) (Review)
 - [porelo-frontend#F378](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f378) (Review)
 - [porelo-frontend#F381](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f381) (Review)
 - [porelo-frontend#F387](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f387) (Review)
 - [porelo-frontend#F429](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f429) (Review)
+- [porelo-frontend#F469](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f469) (Backlog)
 
 ## Data
 
@@ -39,7 +40,8 @@
     "porelo-frontend#F378",
     "porelo-frontend#F381",
     "porelo-frontend#F387",
-    "porelo-frontend#F429"
+    "porelo-frontend#F429",
+    "porelo-frontend#F469"
   ],
   "tested": null
 }

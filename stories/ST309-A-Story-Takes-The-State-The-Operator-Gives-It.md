@@ -10,6 +10,7 @@
 
 - [porelo-buildtools#BT60](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt60) (Review)
 - [porelo#B603](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b603) (Backlog)
+- [porelo-frontend#F470](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f470) (Backlog)
 
 ## Data
 
@@ -23,7 +24,8 @@
   "priority": "High",
   "issues": [
     "porelo-buildtools#BT60",
-    "porelo#B603"
+    "porelo#B603",
+    "porelo-frontend#F470"
   ],
   "tested": null
 }
