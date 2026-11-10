@@ -22,6 +22,17 @@
 - [porelo-project#PJ104](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj104) (Accepted)
 - [porelo-project#PJ105](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj105) (Accepted)
 - [porelo#B604](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b604) (Analyzed)
+- [porelo-planner#PL01](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl01) (Analyzed)
+- [porelo-planner#PL02](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl02) (Analyzed)
+- [porelo-planner#PL03](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl03) (Analyzed)
+- [porelo-planner#PL04](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl04) (Analyzed)
+- [porelo-planner#PL05](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl05) (Analyzed)
+- [porelo-planner#PL06](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl06) (Analyzed)
+- [porelo-planner#PL07](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl07) (Analyzed)
+- [porelo-planner#PL08](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl08) (Analyzed)
+- [porelo-planner#PL09](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl09) (Analyzed)
+- [porelo-planner#PL10](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl10) (Analyzed)
+- [porelo-planner#PL11](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl11) (Analyzed)
 
 ## Data
 
@@ -48,7 +59,18 @@
     "porelo-frontend#F467",
     "porelo-project#PJ104",
     "porelo-project#PJ105",
-    "porelo#B604"
+    "porelo#B604",
+    "porelo-planner#PL01",
+    "porelo-planner#PL02",
+    "porelo-planner#PL03",
+    "porelo-planner#PL04",
+    "porelo-planner#PL05",
+    "porelo-planner#PL06",
+    "porelo-planner#PL07",
+    "porelo-planner#PL08",
+    "porelo-planner#PL09",
+    "porelo-planner#PL10",
+    "porelo-planner#PL11"
   ],
   "tested": null
 }
