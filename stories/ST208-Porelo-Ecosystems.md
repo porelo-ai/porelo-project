@@ -14,9 +14,9 @@
 - [porelo-ecosystems#EC07](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec07) (Accepted)
 - [porelo-ecosystems#EC08](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec08) (Review)
 - [porelo-ecosystems#EC09](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec09) (Finished)
-- [porelo-ecosystems#EC14](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec14) (Backlog)
+- [porelo-ecosystems#EC14](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec14) (Review)
 - [porelo-ecosystems#EC15](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec15) (Idea)
-- [porelo-ecosystems#EC11](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec11) (Backlog)
+- [porelo-ecosystems#EC11](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec11) (Review)
 - [porelo-ecosystems#EC10](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec10) (Review)
 
 ## Data

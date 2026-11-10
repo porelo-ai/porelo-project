@@ -1,6 +1,6 @@
 # ST290 — Agents on a host work their results off until done
 
-**Priority:** ⏫ Highest · **State:** Accepted
+**Priority:** ⏫ Highest · **State:** Backlog
 
 **What a user gains.** A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub.
 
@@ -48,8 +48,8 @@
 - [porelo-claude-code#CC51](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc51) (Review)
 - [porelo-claude-code#CC52](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc52) (Review)
 - [porelo-pi#PI53](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi53) (Review)
-- [porelo-adapters#GH24](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh24) (Backlog)
-- [porelo-adapters#GH25](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh25) (Backlog)
+- [porelo-adapters#GH24](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh24) (Review)
+- [porelo-adapters#GH25](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh25) (Review)
 - [porelo-frontend#F452](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f452) (Review)
 - [porelo-frontend#F453](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f453) (Review)
 - [porelo-frontend#F454](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f454) (Review)
@@ -65,8 +65,8 @@
 - [porelo-host#HO165](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho165) (Backlog)
 - [porelo-buildtools#BT58](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt58) (Review)
 - [porelo-frontend#F461](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f461) (Backlog)
-- [porelo-frontend#F443](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f443) (Accepted)
-- [porelo#B539](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b539) (Analyzed)
+- [porelo-frontend#F443](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f443) (Backlog)
+- [porelo#B539](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b539) (Implementing)
 - [porelo#B537](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b537) (Backlog)
 - [porelo#B586](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b586) (Review)
 - [porelo-frontend#F464](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f464) (Backlog)
