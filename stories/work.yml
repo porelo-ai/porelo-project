@@ -1,0 +1,44 @@
+# The work each working state stands for, read by porelo-planner: the states work starts from, where success leads
+# (then: the next working state, else done), where a reading's blocking findings lead (blocked), one task per story or
+# per repository, the modes a task may start in (the first the default), the order the task is given ({story},
+# {issues} and {tasks} filled in) and the model per agent, the first agent the default. A working state is a key here.
+work:
+  In analysis:
+    from: [Accepted]
+    done: Analyzed
+    per: repository
+    modes: [UNATTENDED, AGENT]
+    order: >-
+      Analyze {issues} of {story}: read the code each names, write its plan, its size and what only the operator can
+      decide, and end with your outcome.
+    models: {claude: claude-opus-5-5, codex: gpt-6.1-sol}
+  Implementing:
+    from: [Backlog, Rework]
+    done: Review
+    then: Reading
+    per: repository
+    modes: [UNATTENDED, AGENT]
+    order: >-
+      Build {issues} of {story} as each issue's plan says: each test red first, then green; commit, and end with your
+      outcome.
+    models: {codex: gpt-6.1-sol, claude: claude-opus-5-5}
+  Reading:
+    from: [Implementing, Reworking]
+    done: Review
+    blocked: Reworking
+    per: repository
+    modes: [UNATTENDED]
+    order: >-
+      Read the changes {tasks} made for {issues} of {story}, change nothing, and end with one Findings: block, one
+      finding a line: <n>. <blocking|note> | <file or -> | <line or -> | <text>.
+    models: {agy: gemini-4-argon-high}
+  Reworking:
+    from: [Reading]
+    done: Review
+    then: Reading
+    per: repository
+    modes: [UNATTENDED, AGENT]
+    order: >-
+      Fix the blocking findings the reading of {issues} of {story} gave, each with a test seen to fail first; commit,
+      and end with your outcome.
+    models: {codex: gpt-6.1-sol, claude: claude-opus-5-5}
