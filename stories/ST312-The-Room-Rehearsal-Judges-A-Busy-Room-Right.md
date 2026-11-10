@@ -1,6 +1,6 @@
 # ST312 — The room rehearsal judges a busy room right
 
-**Priority:** 🟰 Medium · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Review
 
 **What a user gains.** The room rehearsal of a move says OK only where the room behaved and FAIL only where it did not, also in a room with history, other persons, retired tasks and other logins on the same host, and leaves no session or chat open behind it.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-message-matrix#MX99](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx99) (Backlog)
+- [porelo-message-matrix#MX99](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx99) (Review)
 
 ## Data
 

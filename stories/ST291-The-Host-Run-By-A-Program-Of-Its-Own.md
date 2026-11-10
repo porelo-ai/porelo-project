@@ -1,6 +1,6 @@
 # ST291 — The host run by a program of its own, built like porelo
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Implementing
 
 **What a user gains.** A host admin's and an automation's work on a host runs as one Java program, porelo-host, built, signed and packaged like porelo; a person's own host commands are porelo commands; root's narrow boundaries act only for the account sudo names, and nothing asks for input that is not needed.
 
@@ -22,8 +22,8 @@
 - [porelo#B551](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b551) (Review)
 - [porelo#B552](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b552) (Review)
 - [porelo-host#HO156](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho156) (Implementing)
-- [porelo-host#HO157](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho157) (Implementing)
-- [porelo#B569](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b569) (Backlog)
+- [porelo-host#HO157](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho157) (Review)
+- [porelo#B569](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b569) (Review)
 - [porelo#B571](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b571) (Review)
 - [porelo#B572](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b572) (Review)
 - [porelo#B574](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b574) (Review)

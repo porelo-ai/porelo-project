@@ -32,7 +32,7 @@
 - [porelo-frontend#F303](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f303) (Idea)
 - [porelo-frontend#F304](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f304) (Idea)
 - [porelo-frontend#F306](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f306) (Review)
-- [porelo-frontend#F307](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f307) (Idea)
+- [porelo-frontend#F307](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f307) (Rejected)
 - [porelo-frontend#F308](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f308) (Idea)
 - [porelo-frontend#F316](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f316) (Review)
 - [porelo-frontend#F317](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f317) (Idea)
