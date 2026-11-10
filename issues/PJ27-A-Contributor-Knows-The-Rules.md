@@ -72,7 +72,10 @@ like here, or which of the repositories their change belongs in.
 - **Today**: `doc/contributing.md` stands here and the shared block holds the sign-off rule. Every repository
   has a `CONTRIBUTING.md` and a README link but `porelo-ecosystems` and `porelo-forge-clients`, which have
   neither, so the acceptance does not hold yet. `check-commits` (`CheckCommits`, with `--outside`) runs on a pull
-  request in each repository's `shared-rules.yml`; `porelo-project` has no such workflow and runs it nowhere.
+  request in each repository's `shared-rules.yml`; `porelo-project` runs it on a pull request too, in its own
+  `shared-rules.yml` with porelo-release built from `porelo-buildtools` (`.github/scripts/commits-check.sh`), seen to fail
+  with `--outside` on a commit without `Signed-off-by:`. `porelo-ecosystems` (Agent Ecosystems) and `porelo-forge-clients`
+  (Agent Gorge) get their `CONTRIBUTING.md` and README link on the operator's word of 2026-11-10.
 - **1. The page** `doc/contributing.md` in `porelo-project`, by the coordinator, built with the site.
 - **2. The shared block of `AGENTS.md`**: trailers allowed below the one line, `Assisted-by:` on every
   agent commit, no sign-off by an agent: done.

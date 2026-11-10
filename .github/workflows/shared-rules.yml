@@ -1,0 +1,48 @@
+# A pull request's own commits held to the shared rule on commit messages, as every repository's Shared rules check
+# holds them. One from outside - from another repository, or opened by someone not a member - also carries its
+# author's Signed-off-by: on each commit, the Developer Certificate of Origin; Dependabot's and GitHub's own commits
+# are exempt by the author and committer they record.
+name: Shared rules check
+
+on:
+    pull_request:
+    workflow_dispatch:
+
+permissions:
+    contents: read
+
+jobs:
+    check:
+        if: github.event_name == 'pull_request'
+        runs-on: ubuntu-24.04
+        timeout-minutes: 20
+        steps:
+            # Every commit, both sides of the merge among them, so nothing is fetched again.
+            - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+              with:
+                  path: porelo-project
+                  persist-credentials: false
+                  fetch-depth: 0
+
+            - name: The pull request's commit messages
+              env:
+                  PR_BASE: ${{ github.event.pull_request.base.sha }}
+                  PR_HEAD: ${{ github.event.pull_request.head.sha }}
+                  PR_REPOSITORY: ${{ github.event.pull_request.head.repo.full_name }}
+                  PR_ASSOCIATION: ${{ github.event.pull_request.author_association }}
+                  PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+                  PR_SERVER: ${{ github.server_url }}
+              run: |
+                  set -eu
+                  export JAVA_HOME="$JAVA_HOME_25_X64"
+                  outside=--outside
+                  if [ "$PR_REPOSITORY" = "$GITHUB_REPOSITORY" ]; then
+                      case "$PR_ASSOCIATION" in OWNER | MEMBER) outside= ;; esac
+                      if [ "$PR_AUTHOR" = 'github-actions[bot]' ]; then
+                          outside=
+                      fi
+                      if [ "$PR_SERVER" != 'https://github.com' ]; then
+                          outside=
+                      fi
+                  fi
+                  bash porelo-project/.github/scripts/commits-check.sh "$GITHUB_WORKSPACE" "$PR_BASE..$PR_HEAD" $outside
