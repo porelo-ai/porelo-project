@@ -20,17 +20,12 @@
 - [porelo-adapters#GH20](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh20) (Review)
 - [porelo-adapters#GH21](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh21) (Backlog)
 - [porelo-adapters#GH22](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh22) (Backlog)
-- [porelo-buildtools#BT54](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt54) (Review)
-- [porelo-buildtools#BT55](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt55) (Review)
 - [porelo-frontend#F446](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f446) (Review)
 - [porelo-frontend#F447](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f447) (Review)
 - [porelo-frontend#F448](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f448) (Review)
 - [porelo-frontend#F449](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f449) (Review)
-- [porelo-buildtools#BT56](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt56) (Review)
 - [porelo-project#PJ104](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj104) (Accepted)
 - [porelo-project#PJ105](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj105) (Accepted)
-- [porelo-buildtools#BT59](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt59) (Backlog)
-- [porelo-buildtools#BT46](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt46) (Review)
 - [porelo-frontend#F467](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f467) (Backlog)
 
 ## Data
@@ -56,17 +51,12 @@
     "porelo-adapters#GH20",
     "porelo-adapters#GH21",
     "porelo-adapters#GH22",
-    "porelo-buildtools#BT54",
-    "porelo-buildtools#BT55",
     "porelo-frontend#F446",
     "porelo-frontend#F447",
     "porelo-frontend#F448",
     "porelo-frontend#F449",
-    "porelo-buildtools#BT56",
     "porelo-project#PJ104",
     "porelo-project#PJ105",
-    "porelo-buildtools#BT59",
-    "porelo-buildtools#BT46",
     "porelo-frontend#F467"
   ],
   "tested": null
