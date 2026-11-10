@@ -11,7 +11,7 @@ which every machine has, which Porelo keeps itself, and which nobody configures.
 ## Why
 
 What is measured already: in a fresh account, in a checkout with an ssh `origin`, a task starts with
-no project named, the repository is listed under `default`, and approved work arrives at `origin`;
+no project named, the repository is listed under `default`, and approved work arrives in the checkout;
 the same from the interface, with a repository named by hand and one picked from GitHub's list;
 a project of an organization cannot be called `default`; egress for `default` is refused, naming a project
 repository as the way.
@@ -25,9 +25,9 @@ repository as the way.
 3. **Its settings are Porelo's defaults and cannot be changed**: class `guarded`, the default base
    image, no egress beyond the agent's provider. Whoever needs more makes a project repository.
 4. **No messaging**: its tasks are standalone and nobody's peers.
-5. **Approved work goes to the repository's `origin`**, reached with what the developer already has
-   (an ssh key in their agent, or an https token set once); a repository picked in the interface is
-   bound with its own deploy key.
+5. **Approved work goes back where the work came from**: for a checked-out repository into that checkout
+   (`WorkOrigin.fromCheckout`), from where the developer pushes it as always, so Porelo never reaches its remote;
+   a repository picked in the interface is bound with its own deploy key, and approved work goes to it.
 6. **A repository stays in `default` until removed there, or until a project of the organization names
    it**; then that project takes new tasks, and the offer to remove it from `default` is made. A
    running task keeps its project. `default` cannot be removed.
@@ -56,9 +56,3 @@ repository as the way.
   reason.
 - A repository that a project of the organization names starts its next task in that project, and the offer to
   remove it from `default` is made - measured, not only built.
-
-## To be checked
-
-- *Why* and point 5 of *The shape* say approved work goes to the repository's `origin`; `porelo`
-  makes a checkout the source both ways, so approved work goes back into the checkout and Porelo never
-  reaches its remote (`WorkOrigin.fromCheckout`) - the coordinator's to bring this issue in line.
