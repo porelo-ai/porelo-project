@@ -14,6 +14,15 @@
 - [porelo-ecosystems#EC01](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec01) (Review)
 - [porelo-ecosystems#EC02](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec02) (Finished)
 - [porelo-ecosystems#EC03](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec03) (Review)
+- [porelo#B449](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b449) (Backlog)
+- [porelo-ecosystems#EC12](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec12) (Backlog)
+- [porelo-ecosystems#EC13](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec13) (Implementing)
+- [porelo#B444](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b444) (Review)
+- [porelo#B452](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b452) (Review)
+- [porelo#B455](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b455) (Review)
+- [porelo#B503](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b503) (Review)
+- [porelo-ecosystems#EC17](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec17) (Review)
+- [porelo-frontend#F385](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f385) (Review)
 
 ## Notes
 
@@ -35,7 +44,16 @@
     "porelo#B221",
     "porelo-ecosystems#EC01",
     "porelo-ecosystems#EC02",
-    "porelo-ecosystems#EC03"
+    "porelo-ecosystems#EC03",
+    "porelo#B449",
+    "porelo-ecosystems#EC12",
+    "porelo-ecosystems#EC13",
+    "porelo#B444",
+    "porelo#B452",
+    "porelo#B455",
+    "porelo#B503",
+    "porelo-ecosystems#EC17",
+    "porelo-frontend#F385"
   ],
   "tested": null
 }

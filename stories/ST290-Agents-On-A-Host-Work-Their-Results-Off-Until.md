@@ -1,6 +1,6 @@
 # ST290 — Agents on a host work their results off until done
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Accepted
 
 **What a user gains.** A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub.
 
@@ -65,6 +65,20 @@
 - [porelo-host#HO165](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho165) (Backlog)
 - [porelo-buildtools#BT58](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt58) (Review)
 - [porelo-frontend#F461](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f461) (Backlog)
+- [porelo-frontend#F443](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f443) (Accepted)
+- [porelo#B539](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b539) (Analyzed)
+- [porelo#B537](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b537) (Backlog)
+- [porelo#B586](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b586) (Review)
+- [porelo-frontend#F464](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f464) (Backlog)
+- [porelo#B493](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b493) (Review)
+- [porelo#B497](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b497) (Review)
+- [porelo#B535](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b535) (Review)
+- [porelo#B583](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b583) (Review)
+- [porelo#B584](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b584) (Review)
+- [porelo#B585](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b585) (Review)
+- [porelo-host#HO142](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho142) (Review)
+- [porelo-host#HO145](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho145) (Review)
+- [porelo-host#HO146](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho146) (Review)
 
 ## Data
 
@@ -133,7 +147,21 @@
     "porelo-host#HO164",
     "porelo-host#HO165",
     "porelo-buildtools#BT58",
-    "porelo-frontend#F461"
+    "porelo-frontend#F461",
+    "porelo-frontend#F443",
+    "porelo#B539",
+    "porelo#B537",
+    "porelo#B586",
+    "porelo-frontend#F464",
+    "porelo#B493",
+    "porelo#B497",
+    "porelo#B535",
+    "porelo#B583",
+    "porelo#B584",
+    "porelo#B585",
+    "porelo-host#HO142",
+    "porelo-host#HO145",
+    "porelo-host#HO146"
   ],
   "tested": null
 }

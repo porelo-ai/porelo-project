@@ -11,6 +11,8 @@
 - [porelo#B41](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b41) (Estimated)
 - [porelo#B98](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b98) (Estimated)
 - [porelo-buildtools#BT18](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt18) (Idea)
+- [porelo#B443](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b443) (Review)
+- [porelo-frontend#F382](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f382) (Review)
 
 ## Notes
 
@@ -29,7 +31,9 @@
   "issues": [
     "porelo#B41",
     "porelo#B98",
-    "porelo-buildtools#BT18"
+    "porelo-buildtools#BT18",
+    "porelo#B443",
+    "porelo-frontend#F382"
   ],
   "tested": null
 }

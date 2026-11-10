@@ -28,6 +28,7 @@
 - [porelo-host#HO128](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho128) (Idea)
 - [porelo-host#HO129](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho129) (Review)
 - [porelo-host#HO130](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho130) (Idea)
+- [porelo-host#HO153](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho153) (Backlog)
 
 ## Data
 
@@ -59,7 +60,8 @@
     "porelo-host#HO111",
     "porelo-host#HO128",
     "porelo-host#HO129",
-    "porelo-host#HO130"
+    "porelo-host#HO130",
+    "porelo-host#HO153"
   ],
   "tested": null
 }

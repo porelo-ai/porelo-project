@@ -9,6 +9,8 @@
 **Issues:**
 
 - [porelo-frontend#F190](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f190) (Analyzed)
+- [porelo#B481](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b481) (Review)
+- [porelo-host#HO137](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho137) (Review)
 
 ## Covers
 
@@ -25,7 +27,9 @@
   "test": "A task's approved work is a pull request opened by the agent's own forge account; the person approves it from the interface with their own account; an approval with the agent's account is refused.",
   "priority": "Medium",
   "issues": [
-    "porelo-frontend#F190"
+    "porelo-frontend#F190",
+    "porelo#B481",
+    "porelo-host#HO137"
   ],
   "tested": null
 }

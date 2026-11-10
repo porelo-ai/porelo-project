@@ -10,6 +10,9 @@
 
 - [porelo#B222](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b222) (Analyzed)
 - [porelo#B219](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b219) (Estimated)
+- [porelo#B467](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b467) (Backlog)
+- [porelo#B468](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b468) (Review)
+- [porelo-ecosystems#EC16](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec16) (Review)
 
 ## Data
 
@@ -23,7 +26,10 @@
   "priority": "High",
   "issues": [
     "porelo#B222",
-    "porelo#B219"
+    "porelo#B219",
+    "porelo#B467",
+    "porelo#B468",
+    "porelo-ecosystems#EC16"
   ],
   "tested": null
 }

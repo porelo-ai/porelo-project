@@ -1,6 +1,6 @@
 # ST294 — Plan the stories on a board in the window
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Accepted
 
 **What a user gains.** The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API.
 
@@ -28,6 +28,10 @@
 - [porelo-frontend#F448](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f448) (Review)
 - [porelo-frontend#F449](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f449) (Review)
 - [porelo-buildtools#BT56](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt56) (Review)
+- [porelo-project#PJ104](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj104) (Accepted)
+- [porelo-project#PJ105](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj105) (Accepted)
+- [porelo-buildtools#BT59](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt59) (Backlog)
+- [porelo-buildtools#BT46](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt46) (Review)
 
 ## Data
 
@@ -59,7 +63,11 @@
     "porelo-frontend#F447",
     "porelo-frontend#F448",
     "porelo-frontend#F449",
-    "porelo-buildtools#BT56"
+    "porelo-buildtools#BT56",
+    "porelo-project#PJ104",
+    "porelo-project#PJ105",
+    "porelo-buildtools#BT59",
+    "porelo-buildtools#BT46"
   ],
   "tested": null
 }

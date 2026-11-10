@@ -9,6 +9,9 @@
 **Issues:**
 
 - [porelo#B123](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b123) (Estimated)
+- [porelo#B559](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b559) (Backlog)
+- [porelo#B509](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b509) (Review)
+- [porelo#B510](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b510) (Review)
 
 ## Notes
 
@@ -25,7 +28,10 @@
   "test": "Build the stub against only the API and wire libraries and transfer a message between tasks. Offer an unknown protocol version; it is refused by name before use.",
   "priority": "Low",
   "issues": [
-    "porelo#B123"
+    "porelo#B123",
+    "porelo#B559",
+    "porelo#B509",
+    "porelo#B510"
   ],
   "tested": null
 }

@@ -12,6 +12,10 @@
 - [porelo#B140](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b140) (Estimated)
 - [porelo#B178](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b178) (Analyzed)
 - [porelo#B252](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b252) (Idea)
+- [porelo#B438](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b438) (Review)
+- [porelo#B439](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b439) (Review)
+- [porelo#B441](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b441) (Review)
+- [porelo#B446](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b446) (Review)
 
 ## Notes
 
@@ -31,7 +35,11 @@
     "porelo#B202",
     "porelo#B140",
     "porelo#B178",
-    "porelo#B252"
+    "porelo#B252",
+    "porelo#B438",
+    "porelo#B439",
+    "porelo#B441",
+    "porelo#B446"
   ],
   "tested": null
 }

@@ -1,6 +1,6 @@
 # ST5 — porelo-pi, porelo-omp and porelo-claude-code each in its own task, with snapshots of porelo from the registry
 
-**Priority:** ⏫ Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Backlog
 
 **What a user gains.** The Pi, OMP and Claude Code adapters can each be developed in their own task on the host and build there against Porelo snapshots from the local registry.
 
@@ -14,6 +14,7 @@
 - [porelo-omp#OM36](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om36) (Review)
 - [porelo-claude-code#CC38](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc38) (Review)
 - [porelo-claude-code#CC39](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc39) (Review)
+- [porelo-omp#OM44](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om44) (Backlog)
 
 ## Data
 
@@ -31,7 +32,8 @@
     "porelo-omp#OM35",
     "porelo-omp#OM36",
     "porelo-claude-code#CC38",
-    "porelo-claude-code#CC39"
+    "porelo-claude-code#CC39",
+    "porelo-omp#OM44"
   ],
   "tested": null
 }

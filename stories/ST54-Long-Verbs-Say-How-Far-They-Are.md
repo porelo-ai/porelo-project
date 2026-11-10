@@ -9,6 +9,7 @@
 **Issues:**
 
 - [porelo-message-matrix#MX51](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx51) (Review)
+- [porelo#B490](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b490) (Review)
 
 ## Data
 
@@ -21,7 +22,8 @@
   "test": "A long command says how far it is.",
   "priority": "High",
   "issues": [
-    "porelo-message-matrix#MX51"
+    "porelo-message-matrix#MX51",
+    "porelo#B490"
   ],
   "tested": null
 }

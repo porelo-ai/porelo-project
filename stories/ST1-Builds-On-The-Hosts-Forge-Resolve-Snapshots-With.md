@@ -15,6 +15,12 @@
 - [porelo-claude-code#CC41](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc41) (Review)
 - [porelo-pi#PI41](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi41) (Review)
 - [porelo-omp#OM38](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om38) (Review)
+- [porelo-agy#AG13](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag13) (Review)
+- [porelo-claude-code#CC47](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc47) (Review)
+- [porelo-codex#CX15](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx15) (Review)
+- [porelo-host#HO147](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho147) (Review)
+- [porelo-omp#OM45](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om45) (Review)
+- [porelo-pi#PI47](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi47) (Review)
 
 ## Data
 
@@ -33,7 +39,13 @@
     "porelo-message-sluice#SL36",
     "porelo-claude-code#CC41",
     "porelo-pi#PI41",
-    "porelo-omp#OM38"
+    "porelo-omp#OM38",
+    "porelo-agy#AG13",
+    "porelo-claude-code#CC47",
+    "porelo-codex#CX15",
+    "porelo-host#HO147",
+    "porelo-omp#OM45",
+    "porelo-pi#PI47"
   ],
   "tested": null
 }

@@ -24,6 +24,7 @@
 - [porelo-claude-code#CC50](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc50) (Accepted)
 - [porelo-omp#OM48](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om48) (Accepted)
 - [porelo-forge-clients#FC18](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc18) (Analyzed)
+- [porelo#B512](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b512) (Review)
 
 ## Data
 
@@ -51,7 +52,8 @@
     "porelo-ecosystems#EC18",
     "porelo-claude-code#CC50",
     "porelo-omp#OM48",
-    "porelo-forge-clients#FC18"
+    "porelo-forge-clients#FC18",
+    "porelo#B512"
   ],
   "tested": null
 }

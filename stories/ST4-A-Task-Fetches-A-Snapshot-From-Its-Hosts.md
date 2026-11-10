@@ -9,6 +9,8 @@
 **Issues:**
 
 - [porelo-project#PJ75](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj75) (Backlog)
+- [porelo#B474](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b474) (Backlog)
+- [porelo-host#HO131](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho131) (Review)
 
 ## Data
 
@@ -21,7 +23,9 @@
   "test": "A build inside a task on the host fetches porelo's snapshot from the forge's registry by the name its project declares, with no credential put into the project; the task reaches nothing else on the host.",
   "priority": "Highest",
   "issues": [
-    "porelo-project#PJ75"
+    "porelo-project#PJ75",
+    "porelo#B474",
+    "porelo-host#HO131"
   ],
   "tested": null
 }

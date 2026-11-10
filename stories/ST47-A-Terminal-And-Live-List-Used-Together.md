@@ -10,6 +10,9 @@
 
 - [porelo-frontend#F105](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f105) (Estimated)
 - [porelo#B48](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b48) (Estimated)
+- [porelo#B472](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b472) (Review)
+- [porelo#B473](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b473) (Review)
+- [porelo-frontend#F383](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f383) (Review)
 
 ## Data
 
@@ -23,7 +26,10 @@
   "priority": "High",
   "issues": [
     "porelo-frontend#F105",
-    "porelo#B48"
+    "porelo#B48",
+    "porelo#B472",
+    "porelo#B473",
+    "porelo-frontend#F383"
   ],
   "tested": null
 }

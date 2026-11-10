@@ -10,6 +10,7 @@
 
 - [porelo-pi#PI37](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi37) (Idea)
 - [porelo#B282](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b282) (Idea)
+- [porelo-pi#PI46](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi46) (Review)
 
 ## Data
 
@@ -23,7 +24,8 @@
   "priority": "Low",
   "issues": [
     "porelo-pi#PI37",
-    "porelo#B282"
+    "porelo#B282",
+    "porelo-pi#PI46"
   ],
   "tested": null
 }

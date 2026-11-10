@@ -1,6 +1,6 @@
 # ST27 — Every workflow runs on the local forge as on the central one
 
-**Priority:** ⏫ Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Analyzed
 
 **What a user gains.** Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places.
 
@@ -10,6 +10,7 @@
 
 - [porelo-intellij#IJ14](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij14) (Finished)
 - [porelo-message-matrix#MX80](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx80) (Review)
+- [porelo-message-sluice#SL40](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl40) (Analyzed)
 
 ## Data
 
@@ -23,7 +24,8 @@
   "priority": "Highest",
   "issues": [
     "porelo-intellij#IJ14",
-    "porelo-message-matrix#MX80"
+    "porelo-message-matrix#MX80",
+    "porelo-message-sluice#SL40"
   ],
   "tested": null
 }

@@ -1,12 +1,14 @@
 # ST127 — Keep container limits on large hosts
 
-**Priority:** 🔽 Low · **State:** Implementing
+**Priority:** 🔽 Low · **State:** Review
 
 **What a user gains.** Container limits still apply on large hosts, so the same configuration behaves the same on small and large machines.
 
 **The test.** Start the same configuration on a small and a large host. Read task CPU visibility and process limits. Run the homeserver and backup with a deliberately low process limit. Request an oversized VM pool; it is refused before creation.
 
-**Issues:** none yet
+**Issues:**
+
+- [porelo-message-matrix#MX94](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx94) (Review)
 
 ## Notes
 
@@ -19,11 +21,12 @@
   "$schema": "story-2.json",
   "id": "ST127",
   "title": "Keep container limits on large hosts",
-  "state": "Implementing",
   "gain": "Container limits still apply on large hosts, so the same configuration behaves the same on small and large machines.",
   "test": "Start the same configuration on a small and a large host. Read task CPU visibility and process limits. Run the homeserver and backup with a deliberately low process limit. Request an oversized VM pool; it is refused before creation.",
   "priority": "Low",
-  "issues": [],
+  "issues": [
+    "porelo-message-matrix#MX94"
+  ],
   "tested": null
 }
 ```

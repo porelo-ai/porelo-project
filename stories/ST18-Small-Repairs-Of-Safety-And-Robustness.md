@@ -21,6 +21,7 @@
 - [porelo-host#HO113](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho113) (Review)
 - [porelo-host#HO14](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho14) (Review)
 - [porelo-host#HO61](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho61) (Review)
+- [porelo-buildtools#BT48](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt48) (Backlog)
 
 ## Data
 
@@ -45,7 +46,8 @@
     "porelo-buildtools#BT03",
     "porelo-host#HO113",
     "porelo-host#HO14",
-    "porelo-host#HO61"
+    "porelo-host#HO61",
+    "porelo-buildtools#BT48"
   ],
   "tested": null
 }

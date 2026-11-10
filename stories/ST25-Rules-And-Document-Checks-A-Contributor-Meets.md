@@ -1,6 +1,6 @@
 # ST25 — Rules and document checks a contributor meets
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Accepted
 
 **What a user gains.** A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not.
 
@@ -12,6 +12,7 @@
 - [porelo-project#PJ27](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj27) (Implementing)
 - [porelo-project#PJ46](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj46) (Backlog)
 - [porelo-project#PJ79](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj79) (Finished)
+- [porelo-project#PJ98](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj98) (Accepted)
 
 ## Data
 
@@ -27,7 +28,8 @@
     "porelo-omp#OM18",
     "porelo-project#PJ27",
     "porelo-project#PJ46",
-    "porelo-project#PJ79"
+    "porelo-project#PJ79",
+    "porelo-project#PJ98"
   ],
   "tested": null
 }

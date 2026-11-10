@@ -11,6 +11,7 @@
 - [porelo#B144](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b144) (Estimated)
 - [porelo#B155](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b155) (Estimated)
 - [porelo#B143](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b143) (Estimated)
+- [porelo-claude-code#CC46](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc46) (Review)
 
 ## Data
 
@@ -25,7 +26,8 @@
   "issues": [
     "porelo#B144",
     "porelo#B155",
-    "porelo#B143"
+    "porelo#B143",
+    "porelo-claude-code#CC46"
   ],
   "tested": null
 }

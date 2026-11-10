@@ -10,6 +10,7 @@
 
 - [porelo#B26](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b26) (Analyzed)
 - [porelo#B116](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b116) (Analyzed)
+- [porelo#B514](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b514) (Backlog)
 
 ## Data
 
@@ -23,7 +24,8 @@
   "priority": "Low",
   "issues": [
     "porelo#B26",
-    "porelo#B116"
+    "porelo#B116",
+    "porelo#B514"
   ],
   "tested": null
 }
