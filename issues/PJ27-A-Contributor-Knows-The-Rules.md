@@ -1,8 +1,7 @@
 # PJ27 — A contributor knows the rules
 
-**Status:** Implementing; the page, every repository's `CONTRIBUTING.md` and README link, the shared block and the
-repositories' settings are done; left: the sign-off check run by every repository's *Shared rules check* on a pull
-request.
+**Status:** Review; the page, every repository's `CONTRIBUTING.md` and README link, the shared block, the
+repositories' settings and the sign-off check on a pull request in every repository's *Shared rules check* are done.
 **Size:** L - crosses every repository: one page, a sign-off check in the shared tooling, a `CONTRIBUTING.md` in each repository, and the operator's settings.
 
 **What must be true.** Someone who wants to change Porelo finds, from any repository, one guide that

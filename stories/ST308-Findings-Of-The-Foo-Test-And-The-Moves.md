@@ -1,6 +1,6 @@
 # ST308 — Findings of the foo test and the moves
 
-**Priority:** 🟰 Medium · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Implementing
 
 **What a user gains.** What the foo test and the trial moves found in hosts, projects, starts and the setup is fixed, so a person's move and daily work run as the finished stories promise.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B437](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b437) (Backlog)
+- [porelo#B437](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b437) (Implementing)
 - [porelo-frontend#F377](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f377) (Review)
 - [porelo-frontend#F379](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f379) (Review)
 - [porelo-frontend#F400](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f400) (Review)
@@ -43,6 +43,7 @@
 - [porelo-host#HO136](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho136) (Review)
 - [porelo-host#HO139](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho139) (Review)
 - [porelo-host#HO144](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho144) (Review)
+- [porelo#B593](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b593) (Implementing)
 
 ## Data
 
@@ -89,7 +90,8 @@
     "porelo-host#HO124",
     "porelo-host#HO136",
     "porelo-host#HO139",
-    "porelo-host#HO144"
+    "porelo-host#HO144",
+    "porelo#B593"
   ],
   "tested": null
 }

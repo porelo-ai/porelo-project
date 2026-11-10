@@ -9,7 +9,7 @@
 **Issues:**
 
 - [porelo-omp#OM18](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om18) (Backlog)
-- [porelo-project#PJ27](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj27) (Implementing)
+- [porelo-project#PJ27](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj27) (Review)
 - [porelo-project#PJ46](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj46) (Backlog)
 - [porelo-project#PJ79](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj79) (Finished)
 - [porelo-project#PJ98](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj98) (Accepted)

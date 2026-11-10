@@ -1,6 +1,6 @@
 # ST304 — The window's pages show what needs the person at a glance
 
-**Priority:** 🟰 Medium · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Implementing
 
 **What a user gains.** Every page of the window shows at a glance what needs the person, and each grey button, count and wait says why in words; a click answers at once.
 
@@ -11,7 +11,7 @@
 - [porelo-frontend#F353](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f353) (Review)
 - [porelo-frontend#F359](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f359) (Review)
 - [porelo-frontend#F360](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f360) (Review)
-- [porelo-frontend#F362](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f362) (Backlog)
+- [porelo-frontend#F362](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f362) (Implementing)
 - [porelo-frontend#F373](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f373) (Review)
 - [porelo-frontend#F376](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f376) (Review)
 - [porelo-frontend#F378](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f378) (Review)
