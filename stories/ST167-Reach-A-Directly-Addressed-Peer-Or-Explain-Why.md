@@ -9,7 +9,7 @@
 **Issues:**
 
 - [porelo#B257](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b257) (Idea)
-- [porelo-message-matrix#MX100](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx100) (Backlog)
+- [porelo-message-matrix#MX100](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx100) (Review)
 - [porelo-message-matrix#MX98](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx98) (Review)
 
 ## Data

@@ -13,7 +13,7 @@
 - [porelo-buildtools#BT55](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt55) (Review)
 - [porelo-buildtools#BT56](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt56) (Analyzed)
 - [porelo-buildtools#BT59](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt59) (Backlog)
-- [porelo#B566](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b566) (Implementing)
+- [porelo#B566](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b566) (Review)
 - [porelo-frontend#F446](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f446) (Rework)
 - [porelo-frontend#F447](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f447) (Rework)
 - [porelo-frontend#F448](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f448) (Rework)
@@ -24,16 +24,17 @@
 - [porelo#B604](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b604) (Review)
 - [porelo-planner#PL01](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl01) (Review)
 - [porelo-planner#PL02](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl02) (Review)
-- [porelo-planner#PL03](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl03) (Implementing)
-- [porelo-planner#PL04](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl04) (Backlog)
+- [porelo-planner#PL03](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl03) (Review)
+- [porelo-planner#PL04](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl04) (Review)
 - [porelo-planner#PL05](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl05) (Backlog)
 - [porelo-planner#PL06](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl06) (Backlog)
-- [porelo-planner#PL07](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl07) (Backlog)
+- [porelo-planner#PL07](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl07) (Review)
 - [porelo-planner#PL08](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl08) (Backlog)
 - [porelo-planner#PL09](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl09) (Backlog)
 - [porelo-planner#PL10](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl10) (Backlog)
 - [porelo-planner#PL11](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl11) (Review)
 - [porelo-planner#PL12](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl12) (Implementing)
+- [porelo-planner#PL16](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl16) (Backlog)
 - [porelo-frontend#F471](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f471) (Review)
 - [porelo-buildtools#BT61](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt61) (Review)
 - [porelo-buildtools#BT62](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt62) (Review)
@@ -76,6 +77,7 @@
     "porelo-planner#PL10",
     "porelo-planner#PL11",
     "porelo-planner#PL12",
+    "porelo-planner#PL16",
     "porelo-frontend#F471",
     "porelo-buildtools#BT61",
     "porelo-buildtools#BT62"

@@ -11,8 +11,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 24 |
 | [Backlog](#backlog) | 20 |
-| [Implementing](#implementing) | 6 |
-| [Review](#review) | 24 |
+| [Implementing](#implementing) | 5 |
+| [Review](#review) | 25 |
 | [Finished](#finished) | 74 |
 | [Rejected](#rejected) | 5 |
 
@@ -36,7 +36,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st52"></a>[ST52](ST52-The-Subagent-Number-Chosen-When-Starting.md) The subagent number chosen when starting | 🔼 High | F:1 | A person sees the number of subagents that applies in the start dialog, can choose another number, and is told what applies. |
 | <a id="st53"></a>[ST53](ST53-A-Start-That-Waits-For-Its-Helpers.md) A start that waits for its helpers | 🔼 High | B:1 | A start waits until both the gate and the relay are up, and ends with a clear code if either does not come up. |
 | <a id="st56"></a>[ST56](ST56-The-Gathered-Findings-Worked-Off.md) The gathered findings worked off | 🔼 High | B:2 · F:1 · HO:1 | The gathered findings from earlier work are cleared, and anything larger becomes an issue of its own, so nothing open is lost. |
-| <a id="st311"></a>[ST311](ST311-A-Planner-App-Serves-The-Board-To-The-Window.md) A planner app serves the board to the window | 🔼 High | PL:12 · BT:7 · F:6 · B:2 · PJ:2 | The window reads and changes stories and issues through porelo-planner, a Spring Boot GraalVM native app running beside it, over a REST API described in OpenAPI; the app reads and writes the stories and issues in Git, and porelo keeps only its task functions. |
+| <a id="st311"></a>[ST311](ST311-A-Planner-App-Serves-The-Board-To-The-Window.md) A planner app serves the board to the window | 🔼 High | PL:13 · BT:7 · F:6 · B:2 · PJ:2 | The window reads and changes stories and issues through porelo-planner, a Spring Boot GraalVM native app running beside it, over a REST API described in OpenAPI; the app reads and writes the stories and issues in Git, and porelo keeps only its task functions. |
 | <a id="st57"></a>[ST57](ST57-A-Linters-Report-Shown-On-The-Waiting-Work.md) A linter's report shown on the waiting work | 🟰 Medium | B:2 | A person adding a linter's SARIF report to waiting work sees each finding on its file and lines. |
 | <a id="st58"></a>[ST58](ST58-Who-Wrote-It-And-What-It-Touches-Shown.md) Who wrote it and what it touches, shown on waiting work | 🟰 Medium | B:1 | A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon. |
 | <a id="st63"></a>[ST63](ST63-Rounds-Of-Check-And-Fix-At-The-Gate.md) Rounds of check and fix at the gate | 🟰 Medium | PJ:1 | A build task pushes to its gate, a reviewer leaves findings on that commit, and the builder fixes them in rounds before the person is asked. |
@@ -252,7 +252,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st292"></a>[ST292](ST292-A-Whole-Move-Rehearsed-By-The-Agents-On-A.md) A whole move rehearsed by the agents on a rented server | ⏫ Highest | B:3 · F:3 · MX:3 · HO:1 | Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server. |
 | <a id="st303"></a>[ST303](ST303-A-Person-Learns-Before-Installing-Whether-A-Server-Can.md) A person learns before installing whether a server can carry their work | 🟰 Medium | HO:6 · F:2 | Before installing, a person learns what a server offers and what tasks and jobs will take on it, so they choose a server that carries their work. |
 | <a id="st306"></a>[ST306](ST306-A-Failed-Credential-Or-Tool-Says-What-Happened-And.md) A failed credential or tool says what happened and what to do | 🟰 Medium | B:3 | When a credential or a required tool fails, porelo says which one, what happened and what the person can do, instead of a bare failure. |
-| <a id="st308"></a>[ST308](ST308-Findings-Of-The-Foo-Test-And-The-Moves.md) Findings of the foo test and the moves | 🟰 Medium | F:19 · B:11 · HO:6 | What the foo test and the trial moves found in hosts, projects, starts and the setup is fixed, so a person's move and daily work run as the finished stories promise. |
 | <a id="st180"></a>[ST180](ST180-Prove-One-Build-Works-Locally-And-Centrally.md) Prove one build works locally and centrally | 🔽 Low | none yet | A person can rely on every building repository's workflow running unchanged on both the local and the central forge. |
 
 ## Review
@@ -279,6 +278,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st300"></a>[ST300](ST300-A-Changed-Project-Or-Repository-File-Is-Taken-Once.md) A changed project or repository file is taken once an admin signs it anew | 🟰 Medium | B:2 · BT:1 · HO:1 | When a project's or a repository's porelo.yml changes, an admin signs it anew from the checkouts they keep, and hosts follow the newly signed file; an unsigned change is never taken. |
 | <a id="st301"></a>[ST301](ST301-A-Host-Is-Given-Back-Only-Once-Its-Work.md) A host is given back only once its work has reached central | 🟰 Medium | F:2 · HO:1 | A host is given back only when everything its tasks did has reached central; work still ahead of central is said, with the reason in words, and holds the give-back. |
 | <a id="st302"></a>[ST302](ST302-Keep-A-Machine-In-Order-From-The-Window.md) Keep a machine in order from the window | 🟰 Medium | B:3 | A person keeps a machine in order from the window: replaces or removes a vault entry, tightens permissions and removes a project the machine no longer knows. |
+| <a id="st308"></a>[ST308](ST308-Findings-Of-The-Foo-Test-And-The-Moves.md) Findings of the foo test and the moves | 🟰 Medium | F:19 · B:11 · HO:6 | What the foo test and the trial moves found in hosts, projects, starts and the setup is fixed, so a person's move and daily work run as the finished stories promise. |
 | <a id="st312"></a>[ST312](ST312-The-Room-Rehearsal-Judges-A-Busy-Room-Right.md) The room rehearsal judges a busy room right | 🟰 Medium | MX:1 | The room rehearsal of a move says OK only where the room behaved and FAIL only where it did not, also in a room with history, other persons, retired tasks and other logins on the same host, and leaves no session or chat open behind it. |
 | <a id="st119"></a>[ST119](ST119-Give-A-Transport-Its-Secret-Through-The-Intended.md) Give a transport its secret through the intended input | 🔽 Low | B:1 · MX:1 | A transport such as Matrix gets its secret through the intended input, so it does not show in process environments or arguments. |
 | <a id="st127"></a>[ST127](ST127-Keep-Container-Limits-On-Large-Hosts.md) Keep container limits on large hosts | 🔽 Low | MX:1 | Container limits still apply on large hosts, so the same configuration behaves the same on small and large machines. |
