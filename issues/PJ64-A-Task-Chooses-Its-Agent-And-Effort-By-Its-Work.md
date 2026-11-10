@@ -1,6 +1,18 @@
 # PJ64 — A task chooses its agent and effort by its work
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ64",
+  "title": "A task chooses its agent and effort by its work",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 11,
+  "blockedBy": [],
+  "covers": "A task gets the agent, provider, model and effort its work calls for - by its phase (`build`, `check`, `rework`) and its issue's risk - on one effort scale each agent maps to its provider, with a flag, the project's rule, its default and the machine's agent in that order; a `check` task only reads and reports."
+}
+```
 
 **What must be true.** A task started for an issue gets the agent, provider, model and reasoning effort its work calls
 for, chosen by a rule of the project from what the task is for - building, checking, reworking - and how much harm a

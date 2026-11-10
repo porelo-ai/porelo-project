@@ -1,6 +1,18 @@
 # PJ80 — Only the project file needs a signer's signature
 
-**Status:** Accepted.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ80",
+  "title": "Only the project file needs a signer's signature",
+  "state": "Accepted",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 5,
+  "blockedBy": [],
+  "covers": "A follow applies a new `main` when every commit that changes the project file, or another file deciding what the machines do, is signed by a key in `signers`; other commits need no signature, so developers change the rest of the project's repository on their own and the project admin signs changes to the project file."
+}
+```
 
 **What must be true.** A machine reading a project applies a new `main` when every commit that changes the project
 file - or another file that decides what happens on the machines - is signed by the key of one of the project's

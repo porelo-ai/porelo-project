@@ -1,6 +1,20 @@
 # PJ03 — An attachment may be permitted
 
-**Status:** Analyzed. **Size:** XL - three repositories and a design to decide first; it splits into the filter's settings per part and direction in `porelo-message-sluice` (M), the permission, the host-side fetch and the hold in `porelo` (L), and the Matrix transport carrying an `mxc://` part to the host (M).
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ03",
+  "title": "An attachment may be permitted",
+  "state": "Analyzed",
+  "size": "XL",
+  "priority": "Medium",
+  "rank": 6,
+  "blockedBy": [],
+  "covers": "Whether a message may carry more than text becomes an operator's decision, per direction, project and peer, refused by default."
+}
+```
+
+**Why this size.** three repositories and a design to decide first; it splits into the filter's settings per part and direction in `porelo-message-sluice` (M), the permission, the host-side fetch and the hold in `porelo` (L), and the Matrix transport carrying an `mxc://` part to the host (M).
 
 **What must be true.** Whether a message may carry something other than text is a decision an
 operator makes, per direction, per project and per peer - not a constant compiled into the filter.

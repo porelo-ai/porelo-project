@@ -1,6 +1,18 @@
 # PJ104 — A Story Groups The Issues Of One Function The Person Tests
 
-**Status:** Accepted.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ104",
+  "title": "A Story Groups The Issues Of One Function The Person Tests",
+  "state": "Accepted",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 1,
+  "blockedBy": [],
+  "covers": "A story groups every issue of one function a user values, with the person's test; work follows each story's priority, a release is a cut of the stories tested since the last, a story moves through an issue's states, and the coordinator is started with stories."
+}
+```
 
 **What must be true.** The person says what is to be finished by naming stories, not issues: a story is one function
 of value to a user, with a name a user understands, what a user gains, a priority, a test the person runs at its

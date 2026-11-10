@@ -1,7 +1,22 @@
 # A08 — Agent Copilot CLI
 
-**Status:** Estimated; a candidate, its brokering answered.
-**Size:** L - a new agent repository with its packaging and an acceptance leg; brokering is measured: on 1.0.95 the CLI makes no token exchange, sending the GitHub token itself.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "A08",
+  "title": "Agent Copilot CLI",
+  "state": "Estimated",
+  "size": "L",
+  "priority": "Medium",
+  "rank": 2,
+  "blockedBy": [],
+  "covers": "Copilot CLI as a packaged agent: brokerable by environment variable (BYOK), which is not the Copilot subscription."
+}
+```
+
+**Why this size.** a new agent repository with its packaging and an acceptance leg; brokering is measured: on 1.0.95 the CLI makes no token exchange, sending the GitHub token itself.
+
+**How it stands.** A candidate, its brokering answered.
 
 **What must be true.** GitHub Copilot CLI runs in a task as a packaged agent, signed in and brokered
 like the supported ones, with its real credential never in the container.

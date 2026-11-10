@@ -1,6 +1,20 @@
 # PJ57 — A person is led from nothing to work
 
-**Status:** Accepted; built in sprints 11 and 13 of release 0.7, the usability release, after porelo-project [PJ39](README.md#pj39).
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ57",
+  "title": "A person is led from nothing to work",
+  "state": "Accepted",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 7,
+  "blockedBy": [],
+  "covers": "The Porelo Wizard, in a repository of its own with an agent of its own: questions first, a plan of every step, progress kept and taken up again, hand-overs with instructions to an administrator or a forge's, and a chat beside it in the interface; the core of the usability sprint."
+}
+```
+
+**How it stands.** Built in sprints 11 and 13 of release 0.7, the usability release, after porelo-project [PJ39](README.md#pj39).
 
 **What must be true.** A person who wants to work with Porelo is led from an empty machine to their
 first reviewed work by one guide, the Porelo Wizard. It asks first what the person has and wants, plans

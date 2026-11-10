@@ -1,8 +1,22 @@
 # PJ14 — Work starts without a project
 
-**Status:** Implementing; built in `porelo` and `porelo-frontend` and measured, three points of the acceptance
-left.
-**Size:** M - two refusals and an offer in `porelo`, the offer shown in `porelo-frontend`, and a walk measuring all three.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ14",
+  "title": "Work starts without a project",
+  "state": "Implementing",
+  "size": "M",
+  "priority": "Medium",
+  "rank": 3,
+  "blockedBy": [],
+  "covers": "Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured."
+}
+```
+
+**Why this size.** two refusals and an offer in `porelo`, the offer shown in `porelo-frontend`, and a walk measuring all three.
+
+**How it stands.** Built in `porelo` and `porelo-frontend` and measured, three points of the acceptance left.
 
 **What must be true.** A developer who has a repository checked out, or picks one in the interface,
 starts a task on it without writing a project first. That work belongs to the project **`default`**,

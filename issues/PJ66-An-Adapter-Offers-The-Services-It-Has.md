@@ -1,6 +1,18 @@
 # PJ66 — An adapter offers the services it has
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ66",
+  "title": "An adapter offers the services it has",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 13,
+  "blockedBy": [],
+  "covers": "Each adapter Porelo finds lists the services it offers - agent, build, review, model limits, transport - each by its own contract and version, answers \"not supported\" where a service cannot, and a project names adapter and credential per service, so a forge, a build server and a model provider are never mixed up."
+}
+```
 
 **What must be true.** Every program Porelo finds to reach something outside itself - an agent, a build server, a
 forge's reviews, a model provider's limits, a transport - says which services it offers, each by its own contract and

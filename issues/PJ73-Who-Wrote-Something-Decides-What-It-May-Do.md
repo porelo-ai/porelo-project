@@ -1,6 +1,18 @@
 # PJ73 — Who wrote something decides what it may do
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ73",
+  "title": "Who wrote something decides what it may do",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 16,
+  "blockedBy": [],
+  "covers": "Every pull request, commit and review comment gets a source level from authenticated data (external unknown, external known, internal, agent) and its code a risk class by what it touches; the weaker decides which operations Porelo performs - delivery to an agent, suggestions, reviewers, builds, secrets, forge replies, approvals."
+}
+```
 
 **What must be true.** Every pull request, commit and review comment that reaches Porelo carries a source level the
 daemon derives from authenticated data, never from the content itself, and the code it changes carries a risk class

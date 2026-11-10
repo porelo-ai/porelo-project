@@ -1,7 +1,20 @@
 # PJ90 — Several organizations on one machine
 
-**Status:** Idea.
-**Severity:** low; a nice to have.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ90",
+  "title": "Several organizations on one machine",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 9,
+  "blockedBy": ["PJ87"],
+  "covers": "One machine works with several organizations at once, each holding only its own people, projects and hosts and answered by its own identity source; a person keeps one card, filed in each organization, and the interface shows them side by side."
+}
+```
+
+**Severity.** Low; a nice to have.
 
 **What must be true.** One machine works with several organizations at once, each kept apart: each holds only its
 own people, projects and hosts, and its revocations and key checks are answered by its own identity source. A person

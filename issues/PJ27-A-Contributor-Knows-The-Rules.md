@@ -1,8 +1,22 @@
 # PJ27 — A contributor knows the rules
 
-**Status:** Review; the page, every repository's `CONTRIBUTING.md` and README link, the shared block, the
-repositories' settings and the sign-off check on a pull request in every repository's *Shared rules check* are done.
-**Size:** L - crosses every repository: one page, a sign-off check in the shared tooling, a `CONTRIBUTING.md` in each repository, and the operator's settings.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ27",
+  "title": "A contributor knows the rules",
+  "state": "Review",
+  "size": "L",
+  "priority": "Medium",
+  "rank": 1,
+  "blockedBy": [],
+  "covers": "One guide for contributors in `porelo-project`'s `doc/`, linked from every repository's README and `CONTRIBUTING.md`: how the work is organised, how a change is made, what it must satisfy."
+}
+```
+
+**Why this size.** crosses every repository: one page, a sign-off check in the shared tooling, a `CONTRIBUTING.md` in each repository, and the operator's settings.
+
+**How it stands.** The page, every repository's `CONTRIBUTING.md` and README link, the shared block, the repositories' settings and the sign-off check on a pull request in every repository's *Shared rules check* are done.
 
 **What must be true.** Someone who wants to change Porelo finds, from any repository, one guide that
 says how the work is organised, how a change is made, what it must satisfy before it is accepted, and

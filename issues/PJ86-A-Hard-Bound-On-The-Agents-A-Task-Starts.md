@@ -1,6 +1,18 @@
 # PJ86 — A hard bound on the agents a task starts
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ86",
+  "title": "A hard bound on the agents a task starts",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 19,
+  "blockedBy": [],
+  "covers": "Porelo itself bounds the agents a task runs at once, counting an agent that starts another copy of itself through its shell, by a process limit in the task container or a cap at the provider proxy, beside the soft switch each agent CLI offers."
+}
+```
 
 **What must be true.** The number of agents a task runs at once is bounded by Porelo itself, not only by the agent
 CLI's own switch: an agent that starts another copy of itself through its shell, as `claude -p` or `codex exec`,

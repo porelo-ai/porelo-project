@@ -1,6 +1,18 @@
 # PJ67 — A change is checked before it leaves the machine
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ67",
+  "title": "A change is checked before it leaves the machine",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 14,
+  "blockedBy": [],
+  "covers": "Work waiting at a task's gate is checked by another agent's `check` task on that very commit; its findings stay with the commit and wake the building task, which fixes and pushes again, in bounded rounds, before the person approves at the gate with every round in view."
+}
+```
 
 **What must be true.** A task's work that waits at its gate is checked by another agent in a task of its own before
 the person sees it: the check reads exactly the commit that waits, leaves its findings beside it, and the building task,

@@ -1,6 +1,18 @@
 # PJ101 — A Task's Commits Name Their Harness And Model
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ101",
+  "title": "A Task's Commits Name Their Harness And Model",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 3,
+  "blockedBy": [],
+  "covers": "Every commit an agent makes in a task names the harness and model that drove it, and a commit without it is refused."
+}
+```
 
 **What must be true.** Every commit an agent makes in a task carries the `Assisted-by: <harness>, <model>` trailer of
 the harness and model that drove it, and a commit without it is refused before it is handed over.

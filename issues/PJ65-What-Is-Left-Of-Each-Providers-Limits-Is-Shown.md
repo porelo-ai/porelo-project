@@ -1,6 +1,18 @@
 # PJ65 — What is left of each provider's limits is shown
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ65",
+  "title": "What is left of each provider's limits is shown",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 12,
+  "blockedBy": [],
+  "covers": "Every account the agents spend on - subscriptions by share of a window, API keys by tokens or money, a forge's AI credits, a company's budget per developer, several of a kind told apart - with its meters read by each provider's adapter or estimated from Porelo's own count, shown in one view with what is left and when it comes back."
+}
+```
 
 **What must be true.** A person sees, for every account their agents spend on, what is left of its limits and when it
 comes back - a subscription's share of its window, an API key's tokens or money, a provider's AI credits, a company's

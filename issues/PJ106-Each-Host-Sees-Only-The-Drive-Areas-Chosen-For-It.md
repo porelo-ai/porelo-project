@@ -1,7 +1,22 @@
 # PJ106 — Each host sees only the drive areas chosen for it
 
-**Status:** Backlog (operator, 2026-11-09).
-**Size:** M - the part of [PJ50](README.md#pj50) not built in 0.6; [PJ50](README.md#pj50) built the mount itself (porelo-host HO36, porelo-frontend F197).
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ106",
+  "title": "Each host sees only the drive areas chosen for it",
+  "state": "Backlog",
+  "size": "M",
+  "priority": "Medium",
+  "rank": 3,
+  "blockedBy": [],
+  "covers": "Each host sees only the drive areas the person chose for it, and OneDrive is mounted as Tresorit is."
+}
+```
+
+**Why this size.** the part of [PJ50](README.md#pj50) not built in 0.6; [PJ50](README.md#pj50) built the mount itself (porelo-host HO36, porelo-frontend F197).
+
+**How it stands.** Set by the operator, 2026-11-09.
 
 **What must be true.** A person chooses, per host, which areas of their drive that host may see, and the host mounts
 only those; OneDrive is mounted the way Tresorit is.

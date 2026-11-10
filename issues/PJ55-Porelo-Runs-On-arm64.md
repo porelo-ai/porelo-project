@@ -1,6 +1,18 @@
 # PJ55 — Porelo runs on arm64
 
-**Status:** Accepted.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ55",
+  "title": "Porelo runs on arm64",
+  "state": "Accepted",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 8,
+  "blockedBy": [],
+  "covers": "Porelo and every native package it installs built, tested and published for arm64, so a Linux VM on Apple silicon installs them, for porelo-frontend [F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109): built and checked on GitHub's arm64 runners on every Build; for a release, a Mac rented for the whole test window tests every part, the interface included."
+}
+```
 
 **What must be true.** Porelo and every native package it installs are built, tested and published for
 arm64 (aarch64 Linux), so a Linux VM on Apple silicon installs them like an x86-64 machine does.

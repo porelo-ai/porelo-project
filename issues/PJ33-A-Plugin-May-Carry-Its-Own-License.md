@@ -1,7 +1,22 @@
 # PJ33 — A plugin may carry its own license
 
-**Status:** Backlog (operator, 2026-11-10: back from Implementing until the legal advice of step 1 is given). The license is decided: Apache-2.0 for the parts others link.
-**Size:** L - crosses `porelo` (three modules, the varlink definitions, the documentation) and the shared tooling's license check, after legal advice.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ33",
+  "title": "A plugin may carry its own license",
+  "state": "Backlog",
+  "size": "L",
+  "priority": "Medium",
+  "rank": 1,
+  "blockedBy": [],
+  "covers": "An agent, build reader, transport or client may carry its own license: the interface libraries (`porelo-agent-api`, `porelo-build-api`, `porelo-wire`, the varlink definitions) under Apache-2.0, Porelo itself GPL, the boundary written down."
+}
+```
+
+**Why this size.** crosses `porelo` (three modules, the varlink definitions, the documentation) and the shared tooling's license check, after legal advice.
+
+**How it stands.** Set by the operator, 2026-11-10: back from Implementing until the legal advice of step 1 is given. The license is decided: Apache-2.0 for the parts others link.
 
 **What must be true.** Whoever writes an agent, a build reader, a messaging transport or a client for
 Porelo may license it as they choose, proprietary included, while Porelo itself stays under the GPL

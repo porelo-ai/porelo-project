@@ -1,6 +1,18 @@
 # PJ49 — A test names the capability it needs
 
-**Status:** Accepted.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ49",
+  "title": "A test names the capability it needs",
+  "state": "Accepted",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 9,
+  "blockedBy": [],
+  "covers": "A test that needs what a Porelo task does not give - a nested container, `/dev/kvm`, the kernel keyring, a desktop session - carries a tag naming that capability; the tags say only what the agent runs in its task before it pushes; the task is finished when the build its push started, which runs every test, is green; mending a test to run in a task comes first where it is cheap."
+}
+```
 
 **What must be true.** A test that needs something a Porelo task does not give - a nested container, `/dev/kvm`, the
 kernel keyring, a desktop session - says so by a tag naming that capability. Each place a build runs names the

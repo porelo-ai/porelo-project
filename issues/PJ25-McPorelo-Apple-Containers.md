@@ -1,7 +1,23 @@
 # PJ25 — McPorelo Apple Containers
 
-**Status:** Analyzed; parked: native Porelo on macOS is not planned in the near future, while the interface on macOS with Porelo in a local VM comes first (`porelo-frontend` [F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109)).
-**Size:** XL - a second implementation of the guarantees on another platform; it splits into `porelo` [B59](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b59) measured on Linux (L), a reading of Apple Containers' primitives (M), the daemon's contract checked free of Linux primitives (M), McPorelo itself in a repository of its own (several L), and one client and shared acceptance scenarios (L).
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ25",
+  "title": "McPorelo Apple Containers",
+  "state": "Analyzed",
+  "size": "XL",
+  "priority": "Medium",
+  "rank": 9,
+  "blockedBy": [],
+  "covers": "McPorelo: the same guarantees on Apple Containers, driven by one client through the daemon's contract.",
+  "openQuestions": 4
+}
+```
+
+**Why this size.** a second implementation of the guarantees on another platform; it splits into `porelo` [B59](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b59) measured on Linux (L), a reading of Apple Containers' primitives (M), the daemon's contract checked free of Linux primitives (M), McPorelo itself in a repository of its own (several L), and one client and shared acceptance scenarios (L).
+
+**How it stands.** Parked: native Porelo on macOS is not planned in the near future, while the interface on macOS with Porelo in a local VM comes first (`porelo-frontend` [F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109)).
 
 **What must be true.** A person on macOS can run tasks with the same guarantees as on Linux, through
 a sibling project on Apple Containers, and drive either kind of host from one client without

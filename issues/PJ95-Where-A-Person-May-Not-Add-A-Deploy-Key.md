@@ -1,6 +1,18 @@
 # PJ95 — Where A Person May Not Add A Deploy Key
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ95",
+  "title": "Where A Person May Not Add A Deploy Key",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 6,
+  "blockedBy": [],
+  "covers": "A person who may not add a machine's deploy key at the central forge still brings a project to a machine: Porelo hands them what to ask an administrator for, and no token comes to lie on a server."
+}
+```
 
 **What must be true.** A person who may not add a deploy key to a repository at the central forge can still bring their
 project to a machine: Porelo says what is missing and hands them, ready to send, what an administrator has to do. No

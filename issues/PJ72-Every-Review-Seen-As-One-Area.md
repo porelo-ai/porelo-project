@@ -1,6 +1,18 @@
-# [PJ72](README.md#pj72) — Every review seen as one area
+# PJ72 — Every review seen as one area
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ72",
+  "title": "Every review seen as one area",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 15,
+  "blockedBy": [],
+  "covers": "Every issue about reviewing work - by the person at the gate, by a checking agent, by comments on a forge's pull request - listed in one place by theme, so the order and the gaps are decided for the area as a whole; Porelo reads and writes review data only as SARIF, the adapters convert to and from each forge, IntelliJ reuses what it ships."
+}
+```
 
 **What must be true.** Every issue about reviewing work - by a person at the gate, by an agent in a task of its own,
 or by comments on a forge's pull request - is listed here, grouped by theme, so that the order in which they are

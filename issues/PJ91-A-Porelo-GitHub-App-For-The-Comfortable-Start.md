@@ -1,7 +1,20 @@
 # PJ91 — A Porelo GitHub App for the comfortable start
 
-**Status:** Accepted.
-**Severity:** medium; nothing fails without it, but the token is the hardest step of a start.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ91",
+  "title": "A Porelo GitHub App for the comfortable start",
+  "state": "Accepted",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 4,
+  "blockedBy": [],
+  "covers": "A person starts at GitHub by installing Porelo's app and signing in from the window with a device code, with no token made by hand, no private key shipped and no token on a host; beside the token way and the manual way, the host's deploy keys staying."
+}
+```
+
+**Severity.** Medium; nothing fails without it, but the token is the hardest step of a start.
 
 **What must be true.** A person who wants it comfortable starts with Porelo at GitHub without making a token by hand: they
 install Porelo's app, choose the repositories and sign in from the window with a code. No private key of Porelo's ships in a

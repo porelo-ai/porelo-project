@@ -1,7 +1,20 @@
 # PJ52 — A repository's build tools are recognized and a project proposed
 
-**Status:** Estimated.
-**Size:** XL - three repositories; splits into the issues under *Plan*.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ52",
+  "title": "A repository's build tools are recognized and a project proposed",
+  "state": "Estimated",
+  "size": "XL",
+  "priority": "Medium",
+  "rank": 1,
+  "blockedBy": [],
+  "covers": "Drafts proposed from what a checkout and the person's tool settings say: the tools as a `.porelo.yml` the repository never receives, the rules (egress, private repositories, memory) as a `project.yml` for a project repository of the person's own; one plugin per build tool in `porelo-ecosystems`, a native executable of its own spoken to over varlink, that never runs the project's code and reads only local caches (Maven's effective model through MIMA, offline), measured against the Porelo repositories' own `porelo.yml`; credentials named by id and offered into the Porelo-Vault, never copied."
+}
+```
+
+**Why this size.** three repositories; splits into the issues under *Plan*.
 
 **What must be true.** A developer whose checkout needs more than the default image - another JDK, Flutter, native
 toolchains - or more than the project `default` allows - a private package repository, more memory - gets drafts

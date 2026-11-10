@@ -1,6 +1,18 @@
 # PJ77 — Agents compared on the same work
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ77",
+  "title": "Agents compared on the same work",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 10,
+  "blockedBy": [],
+  "covers": "Several agents with their own models build the same issue side by side, one more compares the results, and time, tokens and cost are measured; finished issues with their commit serve as references; the overview feeds which agent and model suits which work."
+}
+```
 
 **What must be true.** Several agents, each with its own model, build the same issue side by side in tasks of their own,
 and one more agent compares their results. Each run's wall time, tokens and cost are measured. From many such runs,

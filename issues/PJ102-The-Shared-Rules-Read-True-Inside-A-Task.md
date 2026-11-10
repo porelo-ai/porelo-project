@@ -1,6 +1,18 @@
 # PJ102 — The Shared Rules Read True Inside A Task
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ102",
+  "title": "The Shared Rules Read True Inside A Task",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 2,
+  "blockedBy": [],
+  "covers": "Every rule of the shared block can be followed as written by an agent inside a task, and still outside one."
+}
+```
 
 **What must be true.** Every rule of the shared block of `AGENTS.md` can be followed as written by an agent inside a
 Porelo task, and still by one working outside a task.

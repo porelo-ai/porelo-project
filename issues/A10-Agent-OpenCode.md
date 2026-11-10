@@ -1,7 +1,22 @@
 # A10 — Agent OpenCode
 
-**Status:** Analyzed; a candidate.
-**Size:** L - a new agent repository with its packaging and an acceptance leg; brokering is documented, so the measurement is short, and the per-provider credential may need a vault change in `porelo`.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "A10",
+  "title": "Agent OpenCode",
+  "state": "Analyzed",
+  "size": "L",
+  "priority": "Medium",
+  "rank": 8,
+  "blockedBy": [],
+  "covers": "OpenCode as a packaged agent: a base URL configurable per provider."
+}
+```
+
+**Why this size.** a new agent repository with its packaging and an acceptance leg; brokering is documented, so the measurement is short, and the per-provider credential may need a vault change in `porelo`.
+
+**How it stands.** A candidate.
 
 **What must be true.** OpenCode runs in a task as a packaged agent, signed in and brokered like the
 supported ones, with its real credential never in the container.

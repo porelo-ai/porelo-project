@@ -1,8 +1,21 @@
 # PJ38 — An estimate learns from the tokens spent
 
-**Status:** Analyzed.
-**Size:** M + S - the gatherer, the record, the statistic and its page (M, porelo-project); the task's start values
-kept in its usage record after removal (S, porelo).
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ38",
+  "title": "An estimate learns from the tokens spent",
+  "state": "Analyzed",
+  "size": "M",
+  "priority": "Medium",
+  "rank": 3,
+  "blockedBy": [],
+  "covers": "The new tokens of build and rework, counted per task tagged with its issue and phase, are written beside an issue's estimated size before it is Finished; a velocity per size is kept, and a new estimate is compared with finished issues of its size; porelo keeps a task's start values in its usage record.",
+  "openQuestions": 2
+}
+```
+
+**Why this size.** the gatherer, the record, the statistic and its page (porelo-project); beside it an S in porelo: the task's start values kept in its usage record after removal.
 
 **What must be true.** Before an issue is set Finished, the tokens actually spent on it are written beside the
 size it was estimated at. Every finished issue adds to a statistic - a velocity: what a size has cost in tokens so

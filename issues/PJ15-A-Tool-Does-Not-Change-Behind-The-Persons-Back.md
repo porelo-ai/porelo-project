@@ -1,7 +1,22 @@
 # PJ15 — A tool does not change behind the person's back
 
-**Status:** Estimated; the measurement of whether the broker carries an MCP session comes first.
-**Size:** XL - the broker has to understand MCP first; it splits into the measurement (S), pinning and the hold in `porelo` (L, on `porelo` [B167](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b167)'s gateway), acceptance under *Needs you* in `porelo-frontend` (M), the description rules in `porelo-message-sluice` (M), and pinned in-container servers in each agent repository (M each).
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ15",
+  "title": "A tool does not change behind the person's back",
+  "state": "Estimated",
+  "size": "XL",
+  "priority": "Medium",
+  "rank": 3,
+  "blockedBy": [],
+  "covers": "An MCP server's tools are pinned when a person accepts them, a change is held until accepted again, and descriptions written to steer the agent are caught."
+}
+```
+
+**Why this size.** the broker has to understand MCP first; it splits into the measurement (S), pinning and the hold in `porelo` (L, on `porelo` [B167](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b167)'s gateway), acceptance under *Needs you* in `porelo-frontend` (M), the description rules in `porelo-message-sluice` (M), and pinned in-container servers in each agent repository (M each).
+
+**How it stands.** The measurement of whether the broker carries an MCP session comes first.
 
 **What must be true.** What an MCP server tells an agent about its tools is something a person has
 seen and accepted, and a server that changes it afterwards - a rug pull - is stopped until a person

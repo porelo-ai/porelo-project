@@ -1,6 +1,20 @@
 # PJ16 — An organisation decides which providers its machines use
 
-**Status:** Analyzed. **Size:** L - several modules of `porelo` (start, clearance, class, doctor) and the interface's side in `porelo-frontend`; nothing of it exists today.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ16",
+  "title": "An organisation decides which providers its machines use",
+  "state": "Analyzed",
+  "size": "L",
+  "priority": "Medium",
+  "rank": 5,
+  "blockedBy": [],
+  "covers": "A root-owned machine policy names the providers tasks may use, and narrows follows, prompts and the `online` class; a developer cannot widen it."
+}
+```
+
+**Why this size.** several modules of `porelo` (start, clearance, class, doctor) and the interface's side in `porelo-frontend`; nothing of it exists today.
 
 **What must be true.** An organisation can say which model providers the tasks on its machines may
 use, and a developer working on such a machine cannot widen that list - not by choosing another

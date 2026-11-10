@@ -1,7 +1,20 @@
 # PJ24 — Where The Agent Protocols Touch This
 
-**Status:** Estimated.
-**Size:** M - a reading task: four specifications read, an answer each written down; no code.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ24",
+  "title": "Where The Agent Protocols Touch This",
+  "state": "Estimated",
+  "size": "M",
+  "priority": "Medium",
+  "rank": 5,
+  "blockedBy": [],
+  "covers": "For A2A, MCP, ACP and AG-UI each: adopted, answered otherwise, or refused, with the reason and what would change it."
+}
+```
+
+**Why this size.** a reading task: four specifications read, an answer each written down; no code.
 
 **What must be true.** For each of the four agent protocols - A2A, MCP, ACP and AG-UI - this
 project can say whether it adopts it, is already doing it another way, or refuses it - with the

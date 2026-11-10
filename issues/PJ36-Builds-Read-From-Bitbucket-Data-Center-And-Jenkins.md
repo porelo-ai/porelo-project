@@ -1,6 +1,18 @@
 # PJ36 — Builds read from Bitbucket Data Center and Jenkins
 
-**Status:** Accepted.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ36",
+  "title": "Builds read from Bitbucket Data Center and Jenkins",
+  "state": "Accepted",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 13,
+  "blockedBy": [],
+  "covers": "Builds of a push read from Bitbucket Data Center and Jenkins, the build server separate from the forge."
+}
+```
 
 **What must be true.** A task in an `online` project whose repository is on Bitbucket Data Center and whose
 builds run on Jenkins is told what the build of its push did, as a task on GitHub is today: the commit it

@@ -1,6 +1,18 @@
 # PJ70 — A machine nobody sits at tells its person what needs them
 
-**Status:** Accepted.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ70",
+  "title": "A machine nobody sits at tells its person what needs them",
+  "state": "Accepted",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 6,
+  "blockedBy": [],
+  "covers": "A machine nobody sits at watches what it needs to go on - credentials and their expiry, the vault, its services, memory and disk, a rented host's running time - and tells its person what needs them, wherever they are."
+}
+```
 
 **What must be true.** A machine that works while nobody sits at it - a rented host, or this computer while the
 person is away - watches what it needs to go on working, and tells its person when something needs them, wherever

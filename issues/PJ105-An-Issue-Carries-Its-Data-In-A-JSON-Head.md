@@ -1,8 +1,22 @@
 # PJ105 — An Issue Carries Its Data In A JSON Head
 
-**Status:** Implementing. Backlog by the operator's order to build it (2026-11-10).
-**Size:** M - the tooling in porelo-buildtools is BT46's pattern for issues (M); each repository's conversion is one command and a commit (XS each).
-**Blocked by:** -. Stories already have their head (BT46, in Review), which [PJ104](README.md#pj104) waited for.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ105",
+  "title": "An Issue Carries Its Data In A JSON Head",
+  "state": "Implementing",
+  "size": "M",
+  "priority": "Medium",
+  "rank": 1,
+  "blockedBy": [],
+  "covers": "Every issue carries its data in a JSON head checked by one shared schema, each index is generated from the heads, and tools read the heads instead of Markdown tables."
+}
+```
+
+**Why this size.** the tooling in porelo-buildtools is BT46's pattern for issues (M); each repository's conversion is one command and a commit (XS each).
+
+Stories already have their head (BT46, in Review), which [PJ104](README.md#pj104) waited for.
 
 **What must be true.** Every issue in every repository of the project carries its data - number, title, state, size,
 what it is blocked by, the one line its index shows - in a JSON head at the top of its own file, checked by one JSON

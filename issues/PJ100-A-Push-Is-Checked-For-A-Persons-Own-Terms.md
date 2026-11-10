@@ -1,6 +1,18 @@
 # PJ100 — A Push Is Checked For A Person's Own Terms
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ100",
+  "title": "A Push Is Checked For A Person's Own Terms",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 4,
+  "blockedBy": [],
+  "covers": "Work leaves the gate carrying no word that names the person's own machine unless forwarded knowingly; the list of words is never public nor at rest on a host."
+}
+```
 
 **What must be true.** Work an agent made in a task never leaves the gate carrying a word that names the person's own
 machine, accounts or paths, unless the person forwards it knowingly; and the list of those words is never public and

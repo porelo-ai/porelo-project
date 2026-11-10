@@ -1,6 +1,20 @@
 # PJ09 — A gate's green says nothing until its reference set can change
 
-**Status:** Analyzed. **Size:** L - crosses every repository: a census of the gates, then a small change in each one found empty, unchangeable or unread.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ09",
+  "title": "A gate's green says nothing until its reference set can change",
+  "state": "Analyzed",
+  "size": "L",
+  "priority": "Medium",
+  "rank": 4,
+  "blockedBy": [],
+  "covers": "Every gate names its reference set; one that is empty, cannot change or is read by nothing is not counted as coverage."
+}
+```
+
+**Why this size.** crosses every repository: a census of the gates, then a small change in each one found empty, unchangeable or unread.
 
 **What must be true.** Every gate says what it compares against, and whether that reference set is
 able to change. A gate whose reference set cannot change, is empty, or is read by nothing is named as

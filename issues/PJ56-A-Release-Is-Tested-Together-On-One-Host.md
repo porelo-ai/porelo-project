@@ -1,6 +1,18 @@
 # PJ56 — A release is tested together on one host
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ56",
+  "title": "A release is tested together on one host",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 20,
+  "blockedBy": [],
+  "covers": "Every part's release candidate installed and tested together on one host rented for the release's test window, a VM per operating system and an account per part, the arm64 Mac of [PJ55](#pj55) beside it; the per-push legs stay."
+}
+```
 
 **What must be true.** Before a release, every part's release candidate - `porelo`, the agent
 adapters, the message sluice and transport, the build reader and the interface - is installed and

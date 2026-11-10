@@ -1,7 +1,22 @@
 # A09 — Agent Grok Build
 
-**Status:** Analyzed; a candidate.
-**Size:** L - a new agent repository with its packaging and an acceptance leg, after a measurement of whether it can be brokered; it needs a provider `porelo` does not have yet, and pins a Rust binary rather than an npm package.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "A09",
+  "title": "Agent Grok Build",
+  "state": "Analyzed",
+  "size": "L",
+  "priority": "Medium",
+  "rank": 7,
+  "blockedBy": [],
+  "covers": "Grok Build as a packaged agent: a candidate, brokering unverified."
+}
+```
+
+**Why this size.** a new agent repository with its packaging and an acceptance leg, after a measurement of whether it can be brokered; it needs a provider `porelo` does not have yet, and pins a Rust binary rather than an npm package.
+
+**How it stands.** A candidate.
 
 **What must be true.** Grok Build runs in a task as a packaged agent, signed in and brokered like the
 supported ones, with its real credential never in the container.

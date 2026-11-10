@@ -1,6 +1,18 @@
 # PJ98 — Check Cross References of Issues
 
-**Status:** Accepted.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ98",
+  "title": "Check Cross References of Issues",
+  "state": "Accepted",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 2,
+  "blockedBy": [],
+  "covers": "Citations between the repositories' issues and documents are checked in one place that sees every repository; no repository's build or task reads another repository's files for it."
+}
+```
 
 **What must be true.** The citations between the repositories' issues and documents are checked in one place that
 sees every repository of the project: a citation of another repository's issue where only words belong, and a link

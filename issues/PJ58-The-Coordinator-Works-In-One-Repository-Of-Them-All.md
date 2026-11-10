@@ -1,8 +1,21 @@
 # PJ58 — The coordinator works in one repository of them all
 
-**Status:** Analyzed.
-**Size:** L - crosses porelo-project (the two workflows and their scripts) and porelo-host (the repository on the
-forge and two identities), with a signed `project.yml` change and an end-to-end run on a forge.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ58",
+  "title": "The coordinator works in one repository of them all",
+  "state": "Analyzed",
+  "size": "L",
+  "priority": "Medium",
+  "rank": 2,
+  "blockedBy": [],
+  "covers": "The coordinator reads every repository in `porelo-all` on the local Forgejo and changes only `porelo-project`: an incremental rebuild of every `main` by `git subtree`, a split of `porelo-project/` back as a pull request in `porelo-project`, a change elsewhere refused by name; porelo-host makes the repository and its two identities.",
+  "openQuestions": 2
+}
+```
+
+**Why this size.** crosses porelo-project (the two workflows and their scripts) and porelo-host (the repository on the forge and two identities), with a signed `project.yml` change and an end-to-end run on a forge.
 
 **What must be true.** The coordinator's task reads every repository of the project in one checkout, `porelo-all`, a
 private repository on the local Forgejo, and can change only `porelo-project`: a change anywhere else is refused by

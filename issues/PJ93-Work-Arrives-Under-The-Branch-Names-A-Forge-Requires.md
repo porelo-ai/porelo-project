@@ -1,6 +1,18 @@
 # PJ93 — Work Arrives Under The Branch Names A Forge Requires
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ93",
+  "title": "Work Arrives Under The Branch Names A Forge Requires",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 7,
+  "blockedBy": [],
+  "covers": "Wherever Porelo pushes work, online or after a gate, the branch name follows what that repository's forge accepts, and a person can set it."
+}
+```
 
 **What must be true.** Wherever Porelo pushes work, online or after a gate, the branch name follows what that repository's forge accepts,
 such as `feature/<agent>/<task>` and `bugfix/<agent>/<task>`, a person can set it without knowing the code, and a name the forge would

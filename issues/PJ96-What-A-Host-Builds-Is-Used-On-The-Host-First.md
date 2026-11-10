@@ -1,8 +1,23 @@
 # PJ96 — What A Host Builds Is Used On The Host First
 
-**Status:** Analyzed; Accepted by the operator.
-**Size:** L - crosses `porelo-host` (what the host's forge keeps and serves), `porelo` (how a task reaches it) and the
-repositories whose builds publish packages; three issues of S or M once split.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ96",
+  "title": "What A Host Builds Is Used On The Host First",
+  "state": "Analyzed",
+  "size": "L",
+  "priority": "Medium",
+  "rank": 1,
+  "blockedBy": [],
+  "covers": "What a host's own builds make - snapshots, skill packages, installable packages - is used by the other tasks on that host at once, reached on the host, not through the central repositories; the central build stays the only way out.",
+  "openQuestions": 1
+}
+```
+
+**Why this size.** crosses `porelo-host` (what the host's forge keeps and serves), `porelo` (how a task reaches it) and the repositories whose builds publish packages; three issues of S or M once split.
+
+**How it stands.** Accepted by the operator.
 
 **What must be true.** What a host's own builds produce - Maven snapshots, the skill packages, installable packages -
 is usable by every other task on that host as soon as it is built, without waiting for the central build to publish it

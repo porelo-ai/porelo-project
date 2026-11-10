@@ -1,7 +1,22 @@
 # PJ75 — A task fetches a snapshot from its host's forge
 
-**Status:** Backlog (operator, 2026-11-06).
-**Size:** M + S - Porelo's package route, Maven answers and settings (M, porelo), the task token's `read:package` scope (S, porelo-host).
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ75",
+  "title": "A task fetches a snapshot from its host's forge",
+  "state": "Backlog",
+  "size": "M",
+  "priority": "Medium",
+  "rank": 5,
+  "blockedBy": [],
+  "covers": "A task on a host with a local forge fetches a snapshot from the forge's registry by its declared name without a credential put into the project, and still reaches nothing else on the host; the private organization refuses it today with `401`; the shared building blocks' organization is public on the host, read by everyone there without a token."
+}
+```
+
+**Why this size.** Porelo's package route, Maven answers and settings (porelo); beside it an S in porelo-host: the task token's `read:package` scope.
+
+**How it stands.** Set by the operator, 2026-11-06.
 
 **What must be true.** A task on a host with a local forge fetches a snapshot from the forge's package registry by the
 name its project declares, without the person putting a credential into the project; and it still reaches nothing else

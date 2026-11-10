@@ -1,6 +1,20 @@
 # PJ48 — GitHub does not run scheduled workflows reliably
 
-**Status:** Idea. A collection of ways to solve it; nothing is decided.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ48",
+  "title": "GitHub does not run scheduled workflows reliably",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 21,
+  "blockedBy": [],
+  "covers": "GitHub starts scheduled workflows late or drops them, silently, while the updates, the sweep and the daily rules check must run when nobody develops; ideas: start them from outside by `workflow_dispatch`, catch up only what is overdue, notice a missing run, and where such a timer runs."
+}
+```
+
+**How it stands.** A collection of ways to solve it; nothing is decided.
 
 **The problem.** GitHub is the primary system: the updates of the packaged agents, the sweep of abandoned test
 machines and the daily *Shared rules check* run there on a `schedule`, and they must run when nobody develops too.

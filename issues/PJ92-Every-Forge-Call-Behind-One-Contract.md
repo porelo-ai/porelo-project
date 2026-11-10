@@ -1,6 +1,20 @@
 # PJ92 — Every Forge Call Behind One Contract
 
-**Status:** Idea. Taken up when the next forge is to be implemented; only then do its open questions matter. Nothing is built before.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ92",
+  "title": "Every Forge Call Behind One Contract",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 8,
+  "blockedBy": [],
+  "covers": "The window asks only Core, Core asks only an adapter, and only the adapter knows a forge, so any forge offering what Porelo needs can be used."
+}
+```
+
+**How it stands.** Taken up when the next forge is to be implemented; only then do its open questions matter. Nothing is built before.
 
 **What must be true.** A person can use Porelo on any forge that offers what Porelo needs, by installing that forge's adapter: the
 window asks only Core, Core asks only the adapter, and only the adapter knows a forge's addresses, paths and answers.

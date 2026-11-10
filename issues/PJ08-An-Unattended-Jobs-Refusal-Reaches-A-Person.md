@@ -1,6 +1,20 @@
 # PJ08 — An unattended job's refusal reaches a person
 
-**Status:** Estimated. **Size:** L - crosses about six repositories' workflows after a decision on where a refusal lands; each change itself is a few lines.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ08",
+  "title": "An unattended job's refusal reaches a person",
+  "state": "Estimated",
+  "size": "L",
+  "priority": "Medium",
+  "rank": 4,
+  "blockedBy": [],
+  "covers": "An unattended job's refusal reaches a person."
+}
+```
+
+**Why this size.** crosses about six repositories' workflows after a decision on where a refusal lands; each change itself is a few lines.
 
 **What must be true.** Where a job nobody is watching refuses something, the refusal reaches a person.
 

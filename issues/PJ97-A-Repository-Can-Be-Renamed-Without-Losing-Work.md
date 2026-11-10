@@ -1,6 +1,18 @@
 # PJ97 — A Repository Can Be Renamed Without Losing Work
 
-**Status:** Accepted.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ97",
+  "title": "A Repository Can Be Renamed Without Losing Work",
+  "state": "Accepted",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 3,
+  "blockedBy": [],
+  "covers": "A repository's key renamed in the project file, by hand or signed, in one step or two, loses nothing on a following machine or a carrying host: waiting work, tasks, mirror, gate, the judged `porelo.yml` and the host's forge; measured today as a silent removal plus addition."
+}
+```
 
 **What must be true.** A person renames a repository's key under `repositories:` in a project file - by a signed
 change or by hand, in one step or in two - and nothing is lost, orphaned or made unreachable on any machine that

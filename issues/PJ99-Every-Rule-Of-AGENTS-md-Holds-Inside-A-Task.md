@@ -1,6 +1,20 @@
 # PJ99 — Every Rule Of AGENTS.md Holds Inside A Task
 
-**Status:** Idea. Its groups are open for the operator's decisions; nothing is built from it before.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ99",
+  "title": "Every Rule Of AGENTS.md Holds Inside A Task",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 5,
+  "blockedBy": [],
+  "covers": "An agent in a task, holding only its own repository, can follow every rule of the shared block; what a rule needs from outside is handed in at the start, checked outside the task, or the rule is reworded."
+}
+```
+
+**How it stands.** Its groups are open for the operator's decisions; nothing is built from it before.
 
 **What must be true.** An agent working in a Porelo task, whose workspace holds its one repository and nothing else,
 can follow every rule of the shared block of `AGENTS.md`. What a rule needs from outside that repository is handed

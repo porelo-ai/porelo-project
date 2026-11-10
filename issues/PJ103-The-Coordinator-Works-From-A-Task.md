@@ -1,6 +1,18 @@
 # PJ103 — The Coordinator Works From A Task
 
-**Status:** Idea.
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ103",
+  "title": "The Coordinator Works From A Task",
+  "state": "Idea",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 1,
+  "blockedBy": [],
+  "covers": "The coordinator runs in a task like every agent, mostly without a shell: it starts, follows and stops the tasks it started through an MCP endpoint Porelo offers, within limits the signed project file sets."
+}
+```
 
 **What must be true.** The coordinator runs in a Porelo task like every other agent, with no shell for its ordinary
 work, and still does everything its role needs: it starts a task per issue and phase, follows and stops the tasks it

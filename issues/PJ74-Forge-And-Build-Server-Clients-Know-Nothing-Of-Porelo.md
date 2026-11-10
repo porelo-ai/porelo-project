@@ -1,6 +1,20 @@
 # PJ74 — Forge and build server clients know nothing of Porelo
 
-**Status:** Backlog (operator, 2026-11-09; was Implementing, never begun).
+```json
+{
+  "$schema": "issue-1.json",
+  "id": "PJ74",
+  "title": "Forge and build server clients know nothing of Porelo",
+  "state": "Backlog",
+  "size": "-",
+  "priority": "Medium",
+  "rank": 4,
+  "blockedBy": [],
+  "covers": "The calls to forges' and build servers' APIs in a repository of their own, `porelo-forge-clients`, one module per forge, LGPL, knowing nothing of Porelo; `porelo-adapters` translates what they return into Porelo's contracts and SARIF; owned by Agent Gorge; started in 0.8 with GitHub and Forgejo."
+}
+```
+
+**How it stands.** Set by the operator, 2026-11-09; was Implementing, never begun.
 
 **What must be true.** The calls to a forge's or a build server's API - pull requests, reviews and their comments,
 checks and builds, webhooks - live in one repository of their own, `porelo-forge-clients`, with one module per forge or
