@@ -1,6 +1,6 @@
 # PJ33 — A plugin may carry its own license
 
-**Status:** Implementing (operator, 2026-11-04). The license is decided: Apache-2.0 for the parts others link.
+**Status:** Backlog (operator, 2026-11-10: back from Implementing until the legal advice of step 1 is given). The license is decided: Apache-2.0 for the parts others link.
 **Size:** L - crosses `porelo` (three modules, the varlink definitions, the documentation) and the shared tooling's license check, after legal advice.
 
 **What must be true.** Whoever writes an agent, a build reader, a messaging transport or a client for

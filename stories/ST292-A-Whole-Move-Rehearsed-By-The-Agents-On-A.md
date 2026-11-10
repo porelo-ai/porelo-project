@@ -1,6 +1,6 @@
 # ST292 — A whole move rehearsed by the agents on a rented server
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Implementing
 
 **What a user gains.** Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server.
 
@@ -16,8 +16,7 @@
 - [porelo-message-matrix#MX89](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx89) (Review)
 - [porelo-message-matrix#MX90](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx90) (Review)
 - [porelo-message-matrix#MX91](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx91) (Review)
-- [porelo#B556](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b556) (Backlog)
-- [porelo-message-matrix#MX99](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx99) (Backlog)
+- [porelo#B556](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b556) (Implementing)
 - [porelo-frontend#F463](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f463) (Review)
 
 ## Data
@@ -40,7 +39,6 @@
     "porelo-message-matrix#MX90",
     "porelo-message-matrix#MX91",
     "porelo#B556",
-    "porelo-message-matrix#MX99",
     "porelo-frontend#F463"
   ],
   "tested": null

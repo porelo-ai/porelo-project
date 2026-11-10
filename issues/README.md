@@ -27,7 +27,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
 | <a id="pj105"></a>[PJ105](PJ105-An-Issue-Carries-Its-Data-In-A-JSON-Head.md) | M | — | Every issue carries its data in a JSON head checked by one shared schema, each index is generated from the heads, and tools read the heads instead of Markdown tables. |
-| <a id="pj33"></a>[PJ33](PJ33-A-Plugin-May-Carry-Its-Own-License.md) | L | — | An agent, build reader, transport or client may carry its own license: the interface libraries (`porelo-agent-api`, `porelo-build-api`, `porelo-wire`, the varlink definitions) under Apache-2.0, Porelo itself GPL, the boundary written down. |
 | <a id="pj32"></a>[PJ32](PJ32-A-Vulnerability-Has-A-Way-In.md) | M | — | Whoever finds a vulnerability reports it privately through a `SECURITY.md` in every repository and one page in `doc/`; a fix gets a GitHub advisory and a changelog line. |
 | <a id="pj14"></a>[PJ14](PJ14-Work-Starts-Without-A-Project.md) | M | — | Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured. |
 
@@ -35,6 +34,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj33"></a>[PJ33](PJ33-A-Plugin-May-Carry-Its-Own-License.md) | L | — | An agent, build reader, transport or client may carry its own license: the interface libraries (`porelo-agent-api`, `porelo-build-api`, `porelo-wire`, the varlink definitions) under Apache-2.0, Porelo itself GPL, the boundary written down. |
 | <a id="pj107"></a>[PJ107](PJ107-The-Secrets-File-Keeps-Changes-From-KeePassXC-And-Porelo.md) | L | — | Changes made to the secrets file in KeePassXC and by Porelo at the same time are both kept, and the wizard asks how the person works. |
 | <a id="pj106"></a>[PJ106](PJ106-Each-Host-Sees-Only-The-Drive-Areas-Chosen-For-It.md) | M | — | Each host sees only the drive areas the person chose for it, and OneDrive is mounted as Tresorit is. |
 | <a id="pj74"></a>[PJ74](PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md) | — | — | The calls to forges' and build servers' APIs in a repository of their own, `porelo-forge-clients`, one module per forge, LGPL, knowing nothing of Porelo; `porelo-adapters` translates what they return into Porelo's contracts and SARIF; owned by Agent Gorge; started in 0.8 with GitHub and Forgejo. |
