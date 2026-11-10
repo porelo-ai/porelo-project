@@ -2,7 +2,7 @@
 
 Written by `porelo-release stories index` from each story's head; a change goes into the story's file. Each story is one function of value to a user, with the test the person runs at its end and every issue it needs. A story moves through the same states as an issue, in workflow.yml order: Idea, Accepted, In analysis, Analyzed, Under estimation, Estimated, Backlog, Implementing, Reading, Reworking, Review, Rework, Finishing, Finished, Rejected. Work follows the priority.
 
-Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Issues are counted by their prefix (`A` porelo-project, `AG` porelo-agy, `B` porelo, `BT` porelo-buildtools, `CC` porelo-claude-code, `CX` porelo-codex, `EC` porelo-ecosystems, `F` porelo-frontend, `FC` porelo-forge-clients, `GH` porelo-adapters, `HO` porelo-host, `IJ` porelo-intellij, `MC` porelo-mcp, `MX` porelo-message-matrix, `OM` porelo-omp, `P` porelo, `PA` porelo-parent, `PI` porelo-pi, `PJ` porelo-project, `SI` porelo-ai.github.io, `SL` porelo-message-sluice).
+Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Issues are counted by their prefix (`A` porelo-project, `AG` porelo-agy, `B` porelo, `BT` porelo-buildtools, `CC` porelo-claude-code, `CX` porelo-codex, `EC` porelo-ecosystems, `F` porelo-frontend, `FC` porelo-forge-clients, `GH` porelo-adapters, `HO` porelo-host, `IJ` porelo-intellij, `MC` porelo-mcp, `MX` porelo-message-matrix, `OM` porelo-omp, `P` porelo, `PA` porelo-parent, `PI` porelo-pi, `PJ` porelo-project, `PL` porelo-planner, `SI` porelo-ai.github.io, `SL` porelo-message-sluice).
 
 | State | Stories |
 |---|---|
@@ -10,11 +10,11 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Accepted](#accepted) | 24 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 24 |
-| [Backlog](#backlog) | 23 |
+| [Backlog](#backlog) | 22 |
 | [Implementing](#implementing) | 5 |
 | [Review](#review) | 21 |
 | [Finished](#finished) | 74 |
-| [Rejected](#rejected) | 4 |
+| [Rejected](#rejected) | 5 |
 
 ## Idea
 
@@ -36,7 +36,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st52"></a>[ST52](ST52-The-Subagent-Number-Chosen-When-Starting.md) The subagent number chosen when starting | 🔼 High | F:1 | A person sees the number of subagents that applies in the start dialog, can choose another number, and is told what applies. |
 | <a id="st53"></a>[ST53](ST53-A-Start-That-Waits-For-Its-Helpers.md) A start that waits for its helpers | 🔼 High | B:1 | A start waits until both the gate and the relay are up, and ends with a clear code if either does not come up. |
 | <a id="st56"></a>[ST56](ST56-The-Gathered-Findings-Worked-Off.md) The gathered findings worked off | 🔼 High | B:2 · F:1 · HO:1 | The gathered findings from earlier work are cleared, and anything larger becomes an issue of its own, so nothing open is lost. |
-| <a id="st311"></a>[ST311](ST311-A-Planner-App-Serves-The-Board-To-The-Window.md) A planner app serves the board to the window | 🔼 High | BT:5 · F:5 · PJ:2 · B:1 | The window reads and changes stories and issues through porelo-planner, a Spring Boot GraalVM native app running beside it, over a REST API described in OpenAPI; the app reads and writes the stories and issues in Git, and porelo keeps only its task functions. |
+| <a id="st311"></a>[ST311](ST311-A-Planner-App-Serves-The-Board-To-The-Window.md) A planner app serves the board to the window | 🔼 High | BT:5 · F:5 · B:2 · PJ:2 | The window reads and changes stories and issues through porelo-planner, a Spring Boot GraalVM native app running beside it, over a REST API described in OpenAPI; the app reads and writes the stories and issues in Git, and porelo keeps only its task functions. |
 | <a id="st57"></a>[ST57](ST57-A-Linters-Report-Shown-On-The-Waiting-Work.md) A linter's report shown on the waiting work | 🟰 Medium | B:2 | A person adding a linter's SARIF report to waiting work sees each finding on its file and lines. |
 | <a id="st58"></a>[ST58](ST58-Who-Wrote-It-And-What-It-Touches-Shown.md) Who wrote it and what it touches, shown on waiting work | 🟰 Medium | B:1 | A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon. |
 | <a id="st63"></a>[ST63](ST63-Rounds-Of-Check-And-Fix-At-The-Gate.md) Rounds of check and fix at the gate | 🟰 Medium | PJ:1 | A build task pushes to its gate, a reviewer leaves findings on that commit, and the builder fixes them in rounds before the person is asked. |
@@ -236,7 +236,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st23"></a>[ST23](ST23-The-Room-And-The-Usage-Records-Outlive-The.md) The room and the usage records outlive the host | ⏫ Highest | MX:3 · B:1 · HO:1 | The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost. |
 | <a id="st291"></a>[ST291](ST291-The-Host-Run-By-A-Program-Of-Its-Own.md) The host run by a program of its own, built like porelo | ⏫ Highest | B:19 · HO:2 | A host admin's and an automation's work on a host runs as one Java program, porelo-host, built, signed and packaged like porelo; a person's own host commands are porelo commands; root's narrow boundaries act only for the account sudo names, and nothing asks for input that is not needed. |
 | <a id="st292"></a>[ST292](ST292-A-Whole-Move-Rehearsed-By-The-Agents-On-A.md) A whole move rehearsed by the agents on a rented server | ⏫ Highest | MX:4 · B:3 · F:3 · HO:1 | Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server. |
-| <a id="st294"></a>[ST294](ST294-Plan-The-Stories-On-A-Board-In-The-Window.md) Plan the stories on a board in the window | 🔼 High | B:7 · GH:4 | The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API. |
 | <a id="st309"></a>[ST309](ST309-A-Story-Takes-The-State-The-Operator-Gives-It.md) A story takes the state the operator gives it | 🔼 High | B:1 · BT:1 · F:1 | The operator puts a story into any state, on the story board or in its head, and it keeps that state whatever its issues' states are; where an issue does not fit that state by the automatic rule, a warning names it and asks to go on anyway, and it is never refused. |
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | 🟰 Medium | PJ:4 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
 | <a id="st78"></a>[ST78](ST78-Threads-In-IntelliJs-Diff.md) Threads in IntelliJ's diff | 🟰 Medium | IJ:2 | A person sees every review thread on its lines in IntelliJ's diff, marked with who wrote it. |
@@ -368,6 +367,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
 | <a id="st42"></a>[ST42](ST42-The-Drafts-Shown-Before-The-First-Task.md) The drafts shown before the first task | 🔼 High | F:1 | At the first start, a person sees the drafted proposals in the interface and can take or change them before any task runs. |
+| <a id="st294"></a>[ST294](ST294-Plan-The-Stories-On-A-Board-In-The-Window.md) Plan the stories on a board in the window | 🔼 High | B:7 · GH:4 | The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API. |
 | <a id="st105"></a>[ST105](ST105-Keep-Public-SSH-Closed-After-The-VPN-Is.md) Keep public SSH closed after the VPN is ready | 🟰 Medium | HO:1 | Once the VPN is ready, public SSH stays closed, and a documented recovery path exists if the VPN breaks. |
 | <a id="st196"></a>[ST196](ST196-Use-OneDrive-With-Measured-Protection.md) Use OneDrive with measured protection | 🔽 Low | F:1 · HO:1 | A person can use OneDrive on a host with protected setup materials, sync a test area, and be told when a login is missing. |
 | <a id="st201"></a>[ST201](ST201-A-Person-Added-Again-Keeps-Their-Name.md) A person added again keeps their name | 🔽 Low | MX:1 | A person removed from a prepared host and added again under the same user name keeps their Porelo data and name. |

@@ -1,6 +1,6 @@
 # ST294 — Plan the stories on a board in the window
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Rejected
 
 **What a user gains.** The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API.
 
@@ -8,13 +8,13 @@
 
 **Issues:**
 
-- [porelo#B560](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b560) (Implementing)
-- [porelo#B561](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b561) (Implementing)
-- [porelo#B562](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b562) (Implementing)
-- [porelo#B563](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b563) (Review)
-- [porelo#B564](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b564) (Implementing)
-- [porelo#B565](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b565) (Backlog)
-- [porelo#B567](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b567) (Backlog)
+- [porelo#B560](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b560) (Rejected)
+- [porelo#B561](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b561) (Rejected)
+- [porelo#B562](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b562) (Rejected)
+- [porelo#B563](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b563) (Rejected)
+- [porelo#B564](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b564) (Rejected)
+- [porelo#B565](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b565) (Rejected)
+- [porelo#B567](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b567) (Rejected)
 - [porelo-adapters#GH19](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh19) (Rejected)
 - [porelo-adapters#GH20](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh20) (Rejected)
 - [porelo-adapters#GH21](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh21) (Rejected)

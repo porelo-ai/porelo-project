@@ -14,13 +14,14 @@
 - [porelo-buildtools#BT56](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt56) (Analyzed)
 - [porelo-buildtools#BT59](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt59) (Backlog)
 - [porelo#B566](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b566) (Implementing)
-- [porelo-frontend#F446](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f446) (Review)
-- [porelo-frontend#F447](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f447) (Review)
-- [porelo-frontend#F448](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f448) (Review)
-- [porelo-frontend#F449](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f449) (Review)
+- [porelo-frontend#F446](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f446) (Rework)
+- [porelo-frontend#F447](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f447) (Rework)
+- [porelo-frontend#F448](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f448) (Rework)
+- [porelo-frontend#F449](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f449) (Rework)
 - [porelo-frontend#F467](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f467) (Backlog)
 - [porelo-project#PJ104](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj104) (Accepted)
 - [porelo-project#PJ105](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj105) (Accepted)
+- [porelo#B604](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b604) (Analyzed)
 
 ## Data
 
@@ -46,7 +47,8 @@
     "porelo-frontend#F449",
     "porelo-frontend#F467",
     "porelo-project#PJ104",
-    "porelo-project#PJ105"
+    "porelo-project#PJ105",
+    "porelo#B604"
   ],
   "tested": null
 }
