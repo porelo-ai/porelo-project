@@ -1,6 +1,6 @@
 # ST308 — Findings of the foo test and the moves
 
-**Priority:** 🟰 Medium · **State:** Estimated
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** What the foo test and the trial moves found in hosts, projects, starts and the setup is fixed, so a person's move and daily work run as the finished stories promise.
 
@@ -9,9 +9,9 @@
 **Issues:**
 
 - [porelo#B437](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b437) (Backlog)
-- [porelo-frontend#F377](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f377) (Backlog)
-- [porelo-frontend#F379](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f379) (Backlog)
-- [porelo-frontend#F400](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f400) (Estimated)
+- [porelo-frontend#F377](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f377) (Review)
+- [porelo-frontend#F379](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f379) (Review)
+- [porelo-frontend#F400](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f400) (Review)
 - [porelo#B426](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b426) (Review)
 - [porelo#B430](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b430) (Review)
 - [porelo#B431](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b431) (Review)

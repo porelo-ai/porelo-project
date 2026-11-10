@@ -16,7 +16,6 @@
 - [porelo#B565](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b565) (Backlog)
 - [porelo#B566](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b566) (Backlog)
 - [porelo#B567](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b567) (Backlog)
-- [porelo#B568](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b568) (Backlog)
 - [porelo-adapters#GH19](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh19) (Review)
 - [porelo-adapters#GH20](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh20) (Review)
 - [porelo-adapters#GH21](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh21) (Backlog)
@@ -32,6 +31,7 @@
 - [porelo-project#PJ105](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj105) (Accepted)
 - [porelo-buildtools#BT59](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt59) (Backlog)
 - [porelo-buildtools#BT46](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt46) (Review)
+- [porelo-frontend#F467](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f467) (Backlog)
 
 ## Data
 
@@ -52,7 +52,6 @@
     "porelo#B565",
     "porelo#B566",
     "porelo#B567",
-    "porelo#B568",
     "porelo-adapters#GH19",
     "porelo-adapters#GH20",
     "porelo-adapters#GH21",
@@ -67,7 +66,8 @@
     "porelo-project#PJ104",
     "porelo-project#PJ105",
     "porelo-buildtools#BT59",
-    "porelo-buildtools#BT46"
+    "porelo-buildtools#BT46",
+    "porelo-frontend#F467"
   ],
   "tested": null
 }
