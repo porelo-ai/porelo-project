@@ -7,7 +7,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 98 |
-| [Accepted](#accepted) | 26 |
+| [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 25 |
 | [Backlog](#backlog) | 20 |
@@ -130,6 +130,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🔼 High | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
 | <a id="st314"></a>[ST314](ST314-The-Planner-Moves-Work-On-From-State-To-State.md) The planner moves work on from state to state by itself | 🔼 High | none yet | The planner moves an issue on by itself when its task ends, as the project's configuration says from which state to which and how often: work that ends DONE in Implementing goes to Reading and a reader starts with that state's instructions, a reading that asks for rework goes to Reworking and the builder starts with the findings, and a reading that is OK goes to Review for the person. |
 | <a id="st318"></a>[ST318](ST318-Logging-In-The-Frontend-And-The-Planner.md) Logging in the frontend and the planner | 🔼 High | F:3 · PL:2 | The window and the planner each keep a log with levels; a person sets the level in the window, INFO by default, raises or lowers it there, and opens either log file on the local machine from a link in the window. The planner's backend log, written through its Java logging, lies beside the window's log, so a fault is read in one place and Needs you keeps only what asks for an action. |
+| <a id="st320"></a>[ST320](ST320-The-Work-Tools-Live-With-Their-Users.md) The work tools live with their users | 🔼 High | none yet | The issue and story tooling (stage records, stats, the stories and issues index, check-commits and citations) moves from the build tools to the planner, the native-image checks to Core, and dead release-plan code goes. Each part then lives with the agent who uses and changes it, so a change to the work format is made by its owner, not by Machines. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
 | <a id="st77"></a>[ST77](ST77-Direct-Pushes-And-Red-Checks-Refused.md) Direct pushes and red checks refused | 🟰 Medium | PJ:1 | Direct pushes to main and merges with red checks are refused for every account, so main only changes through checked pull requests. |
 | <a id="st83"></a>[ST83](ST83-An-Expiring-Token-Told-Ahead.md) An expiring token told ahead | 🟰 Medium | PJ:1 | A person is told ahead of time, once, when a forge token on a host is about to expire. |
