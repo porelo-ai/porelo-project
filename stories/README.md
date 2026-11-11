@@ -7,10 +7,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 98 |
-| [Accepted](#accepted) | 27 |
+| [Accepted](#accepted) | 26 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 25 |
-| [Backlog](#backlog) | 19 |
+| [Backlog](#backlog) | 20 |
 | [Implementing](#implementing) | 5 |
 | [Review](#review) | 26 |
 | [Finished](#finished) | 74 |
@@ -141,7 +141,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st111"></a>[ST111](ST111-Install-From-The-Intended-Package-Source.md) Install from the intended package source | 🟰 Medium | B:5 · F:1 | A person installing through the interface on fresh Fedora, Debian or Ubuntu gets packages only from the intended source, and a changed setup script is caught. |
 | <a id="st114"></a>[ST114](ST114-A-Vulnerability-Has-A-Way-In-And-Is.md) A vulnerability has a way in and is answered | 🟰 Medium | PJ:2 | Whoever finds a vulnerability knows how to report it, and every advisory is read and answered by its owner. |
 | <a id="st317"></a>[ST317](ST317-Builds-Take-Outside-Downloads-From-A-Cache.md) Builds take outside downloads from a cache | 🟰 Medium | none yet | Every build fetches what it needs from outside - container images, toolchains, packages - from a cache when it can, so an outage of a registry such as Codeberg's no longer turns a build red, and the cache keeps only the newest copy of each thing so it never fills up. |
-| <a id="st319"></a>[ST319](ST319-Discuss-An-Idea-With-An-Agent-In-The-Planner.md) Discuss an idea with an agent in the planner | 🟰 Medium | PJ:1 | "Discuss an idea" in the planner starts, through the usual Start dialog, a task that reads all of the project's repositories as one. The person discusses the idea with its agent, who writes it to a file. When the task ends, the path returns to the planner, which makes a story in Idea with sub-issues per repository; the task's staged changes are dropped, and the next stage's agents start on them. |
 | <a id="st117"></a>[ST117](ST117-Store-A-Forge-Sign-In-Without-Pasting-A.md) Store a forge sign-in without pasting a token | 🔽 Low | B:1 | A person can store a forge sign-in through the device-code login in a terminal, with no token to paste. |
 | <a id="st128"></a>[ST128](ST128-Explain-A-Machine-Quota-Refusal.md) Explain a machine quota refusal | 🔽 Low | BT:1 | A person is told the actual limit when a machine request is refused because the provider quota is used up. |
 | <a id="st143"></a>[ST143](ST143-Inherit-Signed-Rules-Through-The-Organization.md) Inherit signed rules through the organization | 🔽 Low | B:1 | Settings inherit through signed organization, team and project rules, and a project can narrow a value but cannot widen it. |
@@ -246,6 +245,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st295"></a>[ST295](ST295-A-Person-Joins-And-Leaves-An-Organization-From-The.md) A person joins and leaves an organization from the window | 🟰 Medium | B:2 · F:1 | A person who cannot write an organization's repository asks to join it from the window by filing their card as a proposal, an owner accepts it there, and a member leaves an organization from the window, withdrawing their own card and roles and forgetting it on this computer. |
 | <a id="st304"></a>[ST304](ST304-The-Windows-Pages-Show-What-Needs-The-Person-At.md) The window's pages show what needs the person at a glance | 🟰 Medium | F:11 | Every page of the window shows at a glance what needs the person, and each grey button, count and wait says why in words; a click answers at once. |
 | <a id="st310"></a>[ST310](ST310-A-Coordinator-Agent-Assists-The-User.md) A coordinator agent assists the user | 🟰 Medium | B:1 | While agents work on a project's stories, one coordinator agent oversees the story, the tasks' progress and the findings, and is the user's one session to talk to across repositories; it starts and stops nothing itself. |
+| <a id="st319"></a>[ST319](ST319-Discuss-An-Idea-With-An-Agent-In-The-Planner.md) Discuss an idea with an agent in the planner | 🟰 Medium | PL:2 · PJ:1 | "Discuss an idea" in the planner starts, through the usual Start dialog, a task that reads all of the project's repositories as one. The person discusses the idea with its agent, who writes it to a file. When the task ends, the path returns to the planner, which makes a story in Idea with sub-issues per repository; the task's staged changes are dropped, and the next stage's agents start on them. |
 | <a id="st155"></a>[ST155](ST155-Approve-A-Group-And-Its-Peer-Keys.md) Approve a group and its peer keys | 🔽 Low | B:1 | A person can create a task group, confirm its peers' fingerprints and message the group, and unconfirmed peers are refused. |
 | <a id="st193"></a>[ST193](ST193-Choose-Drive-Areas-For-Each-Host.md) Choose drive areas for each host | 🔽 Low | PJ:1 | A person can choose the drive areas for each host, so each host receives only its own whether vaults are separate or shared. |
 | <a id="st194"></a>[ST194](ST194-Use-A-Secrets-File-Readable-By-A-Separate.md) Use a secrets file readable by a separate tool | 🔽 Low | PJ:1 | A person can open and change the secrets file in both KeePassXC and Porelo, with concurrent changes preserved or reported. |
