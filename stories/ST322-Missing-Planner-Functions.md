@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo-planner#PL72](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl72) (Backlog)
-- [porelo-planner#PL73](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl73) (Backlog)
-- [porelo-planner#PL74](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl74) (Backlog)
+- [porelo-planner#PL72](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl72) (Review)
+- [porelo-planner#PL73](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl73) (Review)
+- [porelo-planner#PL74](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl74) (Review)
 - [porelo-planner#PL50](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl50) (Backlog)
 
 ## Data

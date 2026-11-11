@@ -16,7 +16,7 @@
 - [porelo-adapters#GH31](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh31) (Review)
 - [porelo-intellij#IJ27](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij27) (Review)
 - [porelo-forge-clients#FC21](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc21) (Review)
-- [porelo-host#HO168](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho168) (Implementing)
+- [porelo-host#HO168](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho168) (Review)
 - [porelo-planner#PL52](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl52) (Finished)
 - [porelo-frontend#F484](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f484) (Review)
 - [porelo-ai.github.io#SI08](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si08) (Review)
