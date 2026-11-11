@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ58](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj58) (Analyzed)
+- [porelo-project#PJ58](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj58) (Rejected)
 - [porelo-planner#PL57](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl57) (Idea)
 - [porelo-planner#PL58](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl58) (Idea)
 - [porelo-frontend#F487](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f487) (Idea)

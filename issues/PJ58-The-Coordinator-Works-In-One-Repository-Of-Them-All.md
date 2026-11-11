@@ -5,7 +5,7 @@
   "$schema": "issue-1.json",
   "id": "PJ58",
   "title": "One Repository Of Them All, Read Only",
-  "state": "Analyzed",
+  "state": "Rejected",
   "size": "M",
   "priority": "Medium",
   "rank": 2,
@@ -14,6 +14,8 @@
   "openQuestions": 1
 }
 ```
+
+**Rejected (2026-11-11).** Replaced by porelo's B619: the read-all checkout is made at task start, on every host and on a person's own machine, so no forge repository of them all is needed. Not every host has a local forge.
 
 **Split by the operator (2026-11-11).** This issue keeps the read-only half: `porelo-all`, its rebuild and a task
 that follows it. The split of `porelo-project/` back, the refusal of a change elsewhere and the split's identity are

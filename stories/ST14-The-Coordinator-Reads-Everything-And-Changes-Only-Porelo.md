@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ58](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj58) (Analyzed)
+- [porelo-project#PJ58](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj58) (Rejected)
 - [porelo-project#PJ110](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj110) (Analyzed)
 
 ## Data

@@ -9,13 +9,13 @@
   "size": "M",
   "priority": "Medium",
   "rank": 3,
-  "blockedBy": [
-    "PJ58"
-  ],
+  "blockedBy": [],
   "covers": "A change a task pushes to a `porelo/*` branch of `porelo-all` is split back: refused by name when any path lies outside `porelo-project/`, else `git subtree split --prefix=porelo-project` pushed to a branch of `porelo-project` on the host's forge as a pull request, by an identity that writes only branches of `porelo-project`.",
   "openQuestions": 1
 }
 ```
+
+**Since 2026-11-11.** [PJ58](README.md#pj58) is rejected; the read-only checkout of every repository is porelo's B619, made at task start. This issue builds on it and waits for it.
 
 **Why this size.** Split from [PJ58](README.md#pj58) by the operator (2026-11-11): `split.sh` with its red tests, the
 second workflow, the split's identity on the host's forge and the run on the rehearsal VM, on top of [PJ58](README.md#pj58)'s
