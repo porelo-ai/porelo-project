@@ -6,7 +6,13 @@
 
 **The test.** Start the window and the planner: both log files lie side by side, at INFO. Set DEBUG in the window: both logs gain debug lines without a restart; set WARN: info lines stop. Click the log link: the file opens in the local viewer. A planner message that only informs shows in the log, not in Needs you.
 
-**Issues:** none yet
+**Issues:**
+
+- [porelo-frontend#F483](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f483) (Idea)
+- [porelo-frontend#F485](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f485) (Idea)
+- [porelo-frontend#F486](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f486) (Idea)
+- [porelo-planner#PL54](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl54) (Idea)
+- [porelo-planner#PL55](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl55) (Idea)
 
 ## Data
 
@@ -19,7 +25,13 @@
   "test": "Start the window and the planner: both log files lie side by side, at INFO. Set DEBUG in the window: both logs gain debug lines without a restart; set WARN: info lines stop. Click the log link: the file opens in the local viewer. A planner message that only informs shows in the log, not in Needs you.",
   "priority": "High",
   "state": "Accepted",
-  "issues": [],
+  "issues": [
+    "porelo-frontend#F483",
+    "porelo-frontend#F485",
+    "porelo-frontend#F486",
+    "porelo-planner#PL54",
+    "porelo-planner#PL55"
+  ],
   "tested": null
 }
 ```

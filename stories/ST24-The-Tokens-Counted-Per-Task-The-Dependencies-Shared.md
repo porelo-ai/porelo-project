@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148) (Review)
+- [porelo#B148](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b148) (Finished)
 - [porelo-project#PJ38](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj38) (Analyzed)
 - [porelo#B193](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b193) (Backlog)
 - [porelo-buildtools#BT45](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt45) (Review)
