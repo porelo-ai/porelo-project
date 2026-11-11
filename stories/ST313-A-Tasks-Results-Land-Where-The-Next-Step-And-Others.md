@@ -2,9 +2,9 @@
 
 **Priority:** 🔼 High · **State:** Idea
 
-**What a user gains.** Whatever a task hands back besides its commits, a reading's findings, an idea or a file it made such as a picture, is kept where the next step and other people find it, also after the computer it ran on is gone; ideas become issues the normal way.
+**What a user gains.** A reading's findings are kept as a Markdown file in the repository, where each state's start instructions tell the agent to put them, so the next task finds them in its source, works them off and deletes them, all in Git's history; ideas become issues the normal way.
 
-**The test.** Run a story's work with a reading that has findings, a task that brings back an idea and a task that makes a picture: on another computer, the findings are readable and the rework uses them, the idea is an issue in Idea, and the picture can be opened, while Git holds none of them but the issue.
+**The test.** Run a story's work with a reading that has findings and a task that brings back an idea: the findings file lies where the project's setting says, a rework started with that state's instructions works them off and deletes the file, and the idea is an issue in Idea; on another computer Git shows both commits.
 
 **Issues:**
 
@@ -18,8 +18,8 @@
   "$schema": "story-2.json",
   "id": "ST313",
   "title": "A task's results land where the next step and others find them",
-  "gain": "Whatever a task hands back besides its commits, a reading's findings, an idea or a file it made such as a picture, is kept where the next step and other people find it, also after the computer it ran on is gone; ideas become issues the normal way.",
-  "test": "Run a story's work with a reading that has findings, a task that brings back an idea and a task that makes a picture: on another computer, the findings are readable and the rework uses them, the idea is an issue in Idea, and the picture can be opened, while Git holds none of them but the issue.",
+  "gain": "A reading's findings are kept as a Markdown file in the repository, where each state's start instructions tell the agent to put them, so the next task finds them in its source, works them off and deletes them, all in Git's history; ideas become issues the normal way.",
+  "test": "Run a story's work with a reading that has findings and a task that brings back an idea: the findings file lies where the project's setting says, a rework started with that state's instructions works them off and deletes the file, and the idea is an issue in Idea; on another computer Git shows both commits.",
   "priority": "High",
   "state": "Idea",
   "issues": [

@@ -10,41 +10,69 @@
   "priority": "High",
   "rank": 1,
   "blockedBy": [],
-  "covers": "Everything a task hands back besides its commits lands in a known place: a reading's findings kept as input for the next step and readable by others, an idea filed as an issue, and a file it made that does not belong in Git, such as a picture, kept and reachable."
+  "covers": "A reading's findings are written as a Markdown file in the repository, where the start instructions of each state tell the agent to put them, and the next task finds them in its source, works them off and deletes the file; the start instructions per state come from the store's adapter through the planner's API."
 }
 ```
 
-**What must be true.** Everything a task hands back besides its commits lands in a known place that outlives the
-computer it ran on:
-- A reading's findings are kept as input for the next step, and others can read them.
-- An idea is filed as an issue the normal way.
-- A file the task made that does not belong in Git, such as a picture or a report, is kept and reachable.
+**What must be true.** A reading's findings are kept like any other change to the source: as a Markdown file committed
+to the repository, so they are in Git's history, readable by everyone with read access, and outlive the computer the
+task ran on.
+- Where the file goes is a setting of the project, in `project.yml`, which a repository's `porelo.yml` may override.
+- The agent learns it from its start instructions: what it is told when its work starts says where to write its
+  findings, and, for the task that works them off, to delete the file once they are done.
+- The next task, a rework for example, finds the findings in its source like any other file, with no other channel.
+- The start instructions are defined per state in the planner (for example, what an agent is told at *Start Review*).
+  As they depend on how a store is implemented, the planner asks the store's adapter for them through its API, and the
+  window puts them into the message a task is started with.
 
-Git's commits remain the history; a story's run itself (order, containers, machines, reading count) is not kept.
+Files a task makes that do not belong in Git, such as a picture, stay out of this issue: their story exists already
+([B15](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b15) in ST160 and
+[PJ03](README.md#pj03) in ST163) and comes later. Ideas follow [PJ108](README.md#pj108).
 
 ## Why
 
-Found in the operator's planner test on 2026-11-11 and handed over by Agent Planner. Read in porelo-planner `main`
-(core `WorkEnds`, `NextStep`, app `WorkRecord`, store/git `StoreReader`):
+Found in the operator's planner test on 2026-11-11 and handed over by Agent Planner.
 
-- **Findings.** A reading's findings come back as a `Findings:` block at the end of the reader's answer. The planner
-  checks them and keeps them only in its local work record, under the account's state directory on that computer.
-  From there they feed the next step's rework prompt. Nothing writes them to the store: with the local record they are
-  lost, and nobody else sees them.
-- **Ideas.** An idea an agent brings back has no path. It lands only if the agent writes and commits the issue file
-  itself, and the planner never learns of it. [PJ108](README.md#pj108) plans that path (`ProposeIdea`, saved by the
-  planner as an issue in *Idea*).
-- **Files.** A file a task makes that does not belong in Git, such as a generated picture, has no place to go.
-  [B15](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b15) hands intermediate artifacts between
-  working tasks over the message transport, and says outright that it is not for the work's result.
-  [PJ03](README.md#pj03) decides whether a message may carry more than text at all.
+**Findings today.** Read in porelo-planner `main` (core `WorkEnds`, `NextStep`, app `WorkRecord`, store/git
+`StoreReader`): a reading's findings come back as a `Findings:` block at the end of the reader's answer. The planner
+checks them and keeps them only in its local work record, under the account's state directory on that computer. From
+there they feed the next step's rework prompt. Nothing writes them to the store: with the local record they are lost,
+and nobody else sees them.
+
+**What porelo carries from a task today**, read in porelo `main` (`doc/commands.md`, `doc/reach.md`,
+`apps/app-model/.../AgentEnding.java`):
+- **A declared end:** `Done(task, outcome: DONE|BLOCKED, why)` over the task's own MCP endpoint, for itself only and
+  only where the project allows `Done` ([B566](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b566)).
+  `why` is at most 1024 UTF-8 bytes, one line, no control characters; a longer one is refused, not cut. BLOCKED needs
+  a reason. The daemon keeps outcome, reason and time in the host's private task record; a later start clears it.
+- **The agent's last answer:** the daemon reads the end of the agent's log (at most 2 MiB, the last 40 lines), the
+  agent's adapter names the line that ends the run, and its `answer` keeps at most the last 16 KiB, with `answerCut`
+  when it was longer. Beside it: `finished`, `error`, `source`, the provider's status and `unpushed`.
+- **Toward the window:** `List` and `Watch` answer `ended` (`outcome`, `why`, `at`) and the run's end with its
+  `answer`, only to endpoints allowed Logs or Tail; the reason never reaches another agent's prompt. One varlink message
+  is at most 4 MiB.
+- **No file:** nothing hands a file from a task to the daemon. Files leave a task only through Git, by the gate or a
+  push.
+
+So findings fit today only into the 16 KiB answer, and a reason of 1024 bytes holds a cause, not findings. Writing them
+as a file in the repository needs none of these channels to grow.
+
+## Decided by the operator
+
+- **Findings are a Markdown file in Git**, committed like any other change to the source; the task that works them off
+  deletes the file, so the history shows both.
+- **Where the file goes is a project setting** in `project.yml`, overridable in a repository's `porelo.yml`, and the
+  window uses it in the message a task is started with.
+- **Start instructions are defined per state in the planner**, and the planner asks the store's adapter for them
+  through its API, as they depend on the store's implementation. This is part of the story.
+- **Files that do not belong in Git come later**, under their own story.
 
 ## Open
 
-- Who writes the results: the planner through the store's adapter (one way for every store, checked), or the agent
-  by its own commit (Git only, past the planner)?
-- Do the findings go into the issue's own file, visible to everyone with read access, or somewhere beside it?
-- Where does a file a task made land, and who may read it: the host's forge, a store beside the issues, or the
-  person's own computer? How long is it kept?
-- Does [B15](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b15) carry it after all, or is a
-  task's result a path of its own?
+- The setting's name and shape in `project.yml` and `porelo.yml`, and its default. `project.yml` is signed, so a
+  change to it goes to the operator to sign.
+- The adapter's API for the start instructions: the call, what it answers per state, and how a project or repository
+  changes the wording.
+- The file's name and format: one file per issue and reading, and what it holds (the reading, the findings with their
+  places, the verdict).
+- What a reading with no findings writes, and how the planner sees from the commit that findings exist.
