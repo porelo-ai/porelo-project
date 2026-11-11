@@ -20,6 +20,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj109"></a>[PJ109](PJ109-Where-A-Tasks-Results-Are-Kept.md) | - | - | Everything a task hands back besides its commits lands in a known place: a reading's findings kept as input for the next step and readable by others, an idea filed as an issue, and a file it made that does not belong in Git, such as a picture, kept and reachable. |
 | <a id="pj103"></a>[PJ103](PJ103-The-Coordinator-Works-From-A-Task.md) | - | - | The coordinator runs in a task like every agent, mostly without a shell: it starts, follows and stops the tasks it started through an MCP endpoint Porelo offers, within limits the signed project file sets. |
 | <a id="pj102"></a>[PJ102](PJ102-The-Shared-Rules-Read-True-Inside-A-Task.md) | - | - | Every rule of the shared block can be followed as written by an agent inside a task, and still outside one. |
 | <a id="pj101"></a>[PJ101](PJ101-A-Tasks-Commits-Name-Their-Harness-And-Model.md) | - | - | Every commit an agent makes in a task names the harness and model that drove it, and a commit without it is refused. |

@@ -6,7 +6,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 96 |
+| [Idea](#idea) | 97 |
 | [Accepted](#accepted) | 23 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 24 |
@@ -37,6 +37,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st53"></a>[ST53](ST53-A-Start-That-Waits-For-Its-Helpers.md) A start that waits for its helpers | 🔼 High | B:1 | A start waits until both the gate and the relay are up, and ends with a clear code if either does not come up. |
 | <a id="st56"></a>[ST56](ST56-The-Gathered-Findings-Worked-Off.md) The gathered findings worked off | 🔼 High | B:2 · F:1 · HO:1 | The gathered findings from earlier work are cleared, and anything larger becomes an issue of its own, so nothing open is lost. |
 | <a id="st311"></a>[ST311](ST311-A-Planner-App-Serves-The-Board-To-The-Window.md) A planner app serves the board to the window | 🔼 High | PL:24 · BT:8 · F:6 · B:2 · PJ:2 | The window reads and changes stories and issues through porelo-planner, a Spring Boot GraalVM native app running beside it, over a REST API described in OpenAPI; the app reads and writes the stories and issues in Git, and porelo keeps only its task functions. |
+| <a id="st313"></a>[ST313](ST313-A-Tasks-Results-Land-Where-The-Next-Step-And-Others.md) A task's results land where the next step and others find them | 🔼 High | PJ:2 | Whatever a task hands back besides its commits, a reading's findings, an idea or a file it made such as a picture, is kept where the next step and other people find it, also after the computer it ran on is gone; ideas become issues the normal way. |
 | <a id="st57"></a>[ST57](ST57-A-Linters-Report-Shown-On-The-Waiting-Work.md) A linter's report shown on the waiting work | 🟰 Medium | B:2 | A person adding a linter's SARIF report to waiting work sees each finding on its file and lines. |
 | <a id="st58"></a>[ST58](ST58-Who-Wrote-It-And-What-It-Touches-Shown.md) Who wrote it and what it touches, shown on waiting work | 🟰 Medium | B:1 | A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon. |
 | <a id="st63"></a>[ST63](ST63-Rounds-Of-Check-And-Fix-At-The-Gate.md) Rounds of check and fix at the gate | 🟰 Medium | PJ:1 | A build task pushes to its gate, a reviewer leaves findings on that commit, and the builder fixes them in rounds before the person is asked. |
