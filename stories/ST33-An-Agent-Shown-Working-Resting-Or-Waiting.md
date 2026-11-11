@@ -10,7 +10,7 @@
 
 - [porelo#B118](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b118) (Backlog)
 - [porelo-frontend#F99](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f99) (Idea)
-- [porelo-pi#PI33](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi33) (Idea)
+- [porelo-pi#PI33](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi33) (Estimated)
 - [porelo#B506](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b506) (Backlog)
 
 ## Data

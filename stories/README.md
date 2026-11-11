@@ -6,10 +6,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 98 |
-| [Accepted](#accepted) | 28 |
+| [Idea](#idea) | 91 |
+| [Accepted](#accepted) | 29 |
 | [Analyzed](#analyzed) | 40 |
-| [Estimated](#estimated) | 25 |
+| [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 20 |
 | [Implementing](#implementing) | 5 |
 | [Review](#review) | 26 |
@@ -26,7 +26,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st22"></a>[ST22](ST22-Machines-Asked-For-By-Kind-Only.md) Machines asked for by kind only | ⏫ Highest | none yet | Machines are requested only by kind, so a call naming a specific provider or server type is refused with a message naming the kind to use. |
 | <a id="st28"></a>[ST28](ST28-The-Setup-Move-And-Recovery-Proven-Together.md) The setup, move and recovery proven together | ⏫ Highest | none yet | The setup, move to the host and recovery work together: a person brings up the project, runs local builds, moves each agent and restores the room and usage records. |
 | <a id="st33"></a>[ST33](ST33-An-Agent-Shown-Working-Resting-Or-Waiting.md) An agent shown working, resting or waiting | 🔼 High | B:2 · F:1 · PI:1 | A person sees in the command line and on the task card whether an agent is working, resting or waiting, and both agree. |
-| <a id="st34"></a>[ST34](ST34-OMPs-Sign-In-Read-From-Its-Database.md) OMP's sign-in read from its database | 🔼 High | OM:1 | A person can sign OMP in once and start tasks without running vault login, because the sign-in is read from OMP's own database. |
 | <a id="st37"></a>[ST37](ST37-The-Providers-Usage-Seen-In-A-Status-Line.md) The providers' usage seen in a status line | 🔼 High | B:1 · F:1 | A person sees all providers in use as one traffic light in the status line and can click to see each provider's usage. |
 | <a id="st40"></a>[ST40](ST40-Legs-On-Pool-Machines-The-Same-Workflow-On.md) Legs on pool machines, the same workflow on both forges | 🔼 High | AG:1 · B:1 · CC:1 · HO:1 · OM:1 · PI:1 | The same acceptance legs run on pool machines on both the host's forge and the central one, so tests behave the same wherever they run. |
 | <a id="st45"></a>[ST45](ST45-A-Step-For-Someone-Else-Handed-Over.md) A step for someone else handed over | 🔼 High | none yet | When a setup step needs someone else, such as an administrator, the person gets instructions and a file to hand over, and the wizard waits for the result. |
@@ -45,7 +44,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st68"></a>[ST68](ST68-Its-Agent-And-Effort-Chosen-By-The-Work.md) Its agent and effort chosen by the work | 🟰 Medium | PJ:1 | A reviewer starts with the agent and effort that the project's rules set for the work's risk, so riskier work gets a more careful review. |
 | <a id="st70"></a>[ST70](ST70-An-Adapters-Services-Listed-A-Lacking-One-Refused.md) An adapter's services listed, a lacking one refused | 🟰 Medium | B:1 · PJ:1 | A person sees which services, such as build and review, each installed adapter offers, and a service an adapter lacks is refused. |
 | <a id="st71"></a>[ST71](ST71-A-Deprecated-Contract-Still-Taken-With-A-Warning.md) A deprecated contract still taken, with a warning | 🟰 Medium | none yet | An adapter that speaks only a deprecated contract still works, and a person is warned at every start so they know to update it. |
-| <a id="st76"></a>[ST76](ST76-A-Pull-Request-From-Outside-Only-Read.md) A pull request from outside only read | 🟰 Medium | GH:1 | A pull request from an unknown outside account is only read and commented on, never built, so strangers cannot run code. |
 | <a id="st79"></a>[ST79](ST79-A-Comment-Written-And-A-Held-One-Released.md) A comment written and a held one released | 🟰 Medium | IJ:1 | A person can write a comment or reply in the IntelliJ plugin and release a held reply, with the same effect as in the interface. |
 | <a id="st80"></a>[ST80](ST80-The-Daily-Accounts-Read.md) The daily accounts read | 🟰 Medium | PJ:1 | A person can read the daily limits of two Claude Code subscriptions, Codex and Antigravity with porelo limits. |
 | <a id="st81"></a>[ST81](ST81-The-Accounts-In-The-Interface-The-Low-Ones.md) The accounts in the interface, the low ones first | 🟰 Medium | none yet | A person sees every configured account in the interface in the form that reads best for its kind, with the lowest ones first. |
@@ -103,10 +101,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st195"></a>[ST195](ST195-Open-The-Secrets-File-Only-On-The-Desktop.md) Open the secrets file only on the desktop | 🔽 Low | none yet | A person opens the secrets file only on the desktop, and setup gets host secrets through standard input so they do not show on host disks or in arguments. |
 | <a id="st197"></a>[ST197](ST197-Choose-The-Drive-Service-During-Setup.md) Choose the drive service during setup | 🔽 Low | none yet | A person can choose Tresorit or OneDrive as the drive service during setup, and selection, stop and resume work for either. |
 | <a id="st200"></a>[ST200](ST200-Close-WSL-And-SSH-Sessions-Without-Leftovers.md) Close WSL and SSH sessions without leftovers | 🔽 Low | IJ:2 | A person using IntelliJ on Windows can cancel WSL or SSH connections or close the IDE without leaving sessions behind. |
-| <a id="st202"></a>[ST202](ST202-Porelo-Adapters.md) porelo-adapters | 🔽 Low | GH:1 | A person gets the adapters repository as a named part of Porelo that is tracked as its own piece of work. |
-| <a id="st203"></a>[ST203](ST203-Porelo-Agy.md) porelo-agy | 🔽 Low | AG:1 | A person gets the Antigravity adapter repository as a named part of Porelo that is tracked as its own piece of work. |
-| <a id="st206"></a>[ST206](ST206-Porelo-Claude-Code.md) porelo-claude-code | 🔽 Low | CC:1 | A person gets the Claude Code adapter repository as a named part of Porelo that is tracked as its own piece of work. |
-| <a id="st207"></a>[ST207](ST207-Porelo-Codex.md) porelo-codex | 🔽 Low | CX:4 · PJ:1 | A person gets the Codex adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st208"></a>[ST208](ST208-Porelo-Ecosystems.md) porelo-ecosystems | 🔽 Low | EC:10 | A person gets the ecosystem plugins repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st209"></a>[ST209](ST209-Porelo-Forge-Clients.md) porelo-forge-clients | 🔽 Low | FC:2 | A person gets the forge clients repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st210"></a>[ST210](ST210-Porelo-Frontend.md) porelo-frontend | 🔽 Low | F:39 | A person gets the frontend repository as a named part of Porelo that is tracked as its own piece of work. |
@@ -115,7 +109,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st213"></a>[ST213](ST213-Porelo-Message-Matrix.md) porelo-message-matrix | 🔽 Low | MX:5 | A person gets the Matrix transport repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st214"></a>[ST214](ST214-Porelo-Message-Sluice.md) porelo-message-sluice | 🔽 Low | SL:1 | A person gets the message sluice repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st215"></a>[ST215](ST215-Porelo-Omp.md) porelo-omp | 🔽 Low | OM:1 | A person gets the OMP adapter repository as a named part of Porelo that is tracked as its own piece of work. |
-| <a id="st216"></a>[ST216](ST216-Porelo-Pi.md) porelo-pi | 🔽 Low | PI:1 | A person gets the Pi adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st217"></a>[ST217](ST217-Porelo-Project.md) porelo-project | 🔽 Low | PJ:18 · A:3 | A person gets the project repository repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st218"></a>[ST218](ST218-Porelo.md) porelo | 🔽 Low | B:51 | A person gets the Porelo core repository as a named part of Porelo that is tracked as its own piece of work. |
 
@@ -130,7 +123,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🔼 High | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
 | <a id="st314"></a>[ST314](ST314-The-Planner-Moves-Work-On-From-State-To-State.md) The planner moves work on from state to state by itself | 🔼 High | PL:1 | The planner moves an issue on by itself when its task ends, as the project's work rules say: work that ends DONE in Implementing goes to Reading and a reader starts with the proposed model; an OK reading goes to Review; a blocking reading goes to Reworking and asks the person under Needs you, whose entry opens the Reworking dialog; a task that fails stays with a warning and asks too. |
 | <a id="st318"></a>[ST318](ST318-Logging-In-The-Frontend-And-The-Planner.md) Logging in the frontend and the planner | 🔼 High | F:3 · PL:2 | The window and the planner each keep a log with levels; a person sets the level in the window, INFO by default, raises or lowers it there, and opens either log file on the local machine from a link in the window. The planner's backend log, written through its Java logging, lies beside the window's log, so a fault is read in one place and Needs you keeps only what asks for an action. |
-| <a id="st320"></a>[ST320](ST320-The-Work-Tools-Live-With-Their-Users.md) The work tools live with their users | 🔼 High | BT:4 · PL:3 · B:2 · CC:2 · AG:1 · CX:1 · OM:1 · PI:1 | The issue and story tooling (stage records, stats, the stories and issues index, check-commits and citations) moves from the build tools to the planner, the native-image checks to Core, and dead release-plan code goes. Each part then lives with the agent who uses and changes it, so a change to the work format is made by its owner, not by Machines. |
+| <a id="st320"></a>[ST320](ST320-The-Work-Tools-Live-With-Their-Users.md) The work tools live with their users | 🔼 High | BT:4 · CC:3 · PL:3 · B:2 · AG:1 · CX:1 · OM:1 · PI:1 | The issue and story tooling (stage records, stats, the stories and issues index, check-commits and citations) moves from the build tools to the planner, the native-image checks to Core, and dead release-plan code goes. Each part then lives with the agent who uses and changes it, so a change to the work format is made by its owner, not by Machines. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
 | <a id="st77"></a>[ST77](ST77-Direct-Pushes-And-Red-Checks-Refused.md) Direct pushes and red checks refused | 🟰 Medium | PJ:1 | Direct pushes to main and merges with red checks are refused for every account, so main only changes through checked pull requests. |
 | <a id="st83"></a>[ST83](ST83-An-Expiring-Token-Told-Ahead.md) An expiring token told ahead | 🟰 Medium | PJ:1 | A person is told ahead of time, once, when a forge token on a host is about to expire. |
@@ -151,6 +144,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st166"></a>[ST166](ST166-Wake-Only-The-Tasks-Addressed.md) Wake only the tasks addressed | 🔽 Low | B:2 · F:1 | Only the tasks addressed by nickname or @room are woken, including with non-ASCII text, and a message mentioning no one wakes none. |
 | <a id="st173"></a>[ST173](ST173-Control-One-Porelo-Instance-From-Outside.md) Control one Porelo instance from outside | 🔽 Low | MC:8 · B:1 · PJ:1 | A person can control one Porelo instance from outside over MCP to start tasks, read status and send messages, while approving, rejecting and vault access stay refused. |
 | <a id="st176"></a>[ST176](ST176-Find-The-Exact-Pushed-Commit-In-Jenkins.md) Find the exact pushed commit in Jenkins | 🔽 Low | PJ:1 | A task finds the exact pushed commit in Jenkins and receives its stages, verdict and failing log, for a green and a red commit. |
+| <a id="st207"></a>[ST207](ST207-Porelo-Codex.md) porelo-codex | 🔽 Low | CX:4 · PJ:1 | A person gets the Codex adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 
 ## Analyzed
 
@@ -202,10 +196,12 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
 | <a id="st15"></a>[ST15](ST15-The-Website-Builds-In-Its-Task.md) Move: The website builds in its task | ⏫ Highest | SI:1 | The project website can be fully checked inside its own task, and the check passes with the Debian image and repository changes. |
+| <a id="st34"></a>[ST34](ST34-OMPs-Sign-In-Read-From-Its-Database.md) OMP's sign-in read from its database | 🔼 High | OM:1 | A person can sign OMP in once and start tasks without running vault login, because the sign-in is read from OMP's own database. |
 | <a id="st38"></a>[ST38](ST38-The-Chosen-Branch-Receives-The-Work.md) The chosen branch receives the work | 🔼 High | F:4 · B:1 | A person can choose a branch template or an explicit branch, and approved work lands on exactly that branch on the forge. |
 | <a id="st41"></a>[ST41](ST41-Porelo-Project-Init-Proposes-Tools-And-Rules.md) `porelo project init` proposes tools and rules | 🔼 High | B:7 · EC:6 · F:1 · PJ:1 | A person starting a Maven repository gets a proposed tool and rules file that porelo project init drafts, with each value explained. |
 | <a id="st47"></a>[ST47](ST47-A-Terminal-And-Live-List-Used-Together.md) A terminal and live list used together | 🔼 High | B:3 · F:2 | A person can use the embedded terminal like an ordinary terminal and keep task list --watch open beside it. |
 | <a id="st315"></a>[ST315](ST315-The-Planners-Git-Adapter-Alone-Handles-Stories-And-Issues.md) The planner's Git adapter alone handles stories and issues | 🔼 High | PL:1 | Stories and issues kept as files in Git are read, checked, indexed and written by the planner's Git store adapter alone, so the build tools no longer carry a stories library or story and issue commands, and no repository's build or hand-over runs a check of issue files. |
+| <a id="st76"></a>[ST76](ST76-A-Pull-Request-From-Outside-Only-Read.md) A pull request from outside only read | 🟰 Medium | GH:1 | A pull request from an unknown outside account is only read and commented on, never built, so strangers cannot run code. |
 | <a id="st97"></a>[ST97](ST97-Return-To-The-Chosen-Files.md) Return to the chosen files | 🟰 Medium | B:1 | A person can rewind a task to a turn snapshot and compare the restored files, and an unsupported session is told so. |
 | <a id="st106"></a>[ST106](ST106-Make-Security-Failures-Hold-The-Release.md) Make security failures hold the release | 🟰 Medium | B:2 | A release is held back when a security check fails, because Fedora isolation and the misuse tests must pass on their intended legs. |
 | <a id="st110"></a>[ST110](ST110-Sign-Packages-And-Setup-With-The-Trusted-Key.md) Sign packages and setup with the trusted key | 🟰 Medium | B:1 · CC:1 | A person can install Porelo and the Claude Code adapter from one joint published version and verify packages and setup with the trusted signing key. |
@@ -225,7 +221,11 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st175"></a>[ST175](ST175-Connect-An-Existing-Bitbucket-Project.md) Connect an existing Bitbucket project | 🔽 Low | F:1 | A person can connect an existing Bitbucket project and take a repository in as a Porelo project. |
 | <a id="st189"></a>[ST189](ST189-Install-The-Mac-Application.md) Install the Mac application | 🔽 Low | F:1 | A person on a Mac can install the application in a fresh account and verify its checksum or attestation. |
 | <a id="st198"></a>[ST198](ST198-Reach-A-Remote-Machine-From-Windows.md) Reach a remote machine from Windows | 🔽 Low | F:2 | A person on Windows with no SSH binary can still connect to a host, start a task and reconnect. |
+| <a id="st202"></a>[ST202](ST202-Porelo-Adapters.md) porelo-adapters | 🔽 Low | GH:1 | A person gets the adapters repository as a named part of Porelo that is tracked as its own piece of work. |
+| <a id="st203"></a>[ST203](ST203-Porelo-Agy.md) porelo-agy | 🔽 Low | AG:1 | A person gets the Antigravity adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st204"></a>[ST204](ST204-Porelo-Ai-Github-Io.md) porelo-ai.github.io | 🔽 Low | SI:1 | A person gets the project website repository as a named part of Porelo that is tracked as its own piece of work. |
+| <a id="st206"></a>[ST206](ST206-Porelo-Claude-Code.md) porelo-claude-code | 🔽 Low | CC:1 | A person gets the Claude Code adapter repository as a named part of Porelo that is tracked as its own piece of work. |
+| <a id="st216"></a>[ST216](ST216-Porelo-Pi.md) porelo-pi | 🔽 Low | PI:1 | A person gets the Pi adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 
 ## Backlog
 

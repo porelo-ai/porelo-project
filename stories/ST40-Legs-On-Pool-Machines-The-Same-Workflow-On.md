@@ -10,10 +10,10 @@
 
 - [porelo-host#HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27) (Idea)
 - [porelo#B322](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b322) (Idea)
-- [porelo-claude-code#CC40](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc40) (Idea)
-- [porelo-pi#PI40](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi40) (Idea)
-- [porelo-omp#OM37](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om37) (Idea)
-- [porelo-agy#AG05](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag05) (Idea)
+- [porelo-claude-code#CC40](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc40) (Estimated)
+- [porelo-pi#PI40](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi40) (Estimated)
+- [porelo-omp#OM37](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om37) (Estimated)
+- [porelo-agy#AG05](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag05) (Estimated)
 
 ## Data
 

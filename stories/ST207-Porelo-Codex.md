@@ -1,6 +1,6 @@
 # ST207 — porelo-codex
 
-**Priority:** 🔽 Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Accepted
 
 **What a user gains.** A person gets the Codex adapter repository as a named part of Porelo that is tracked as its own piece of work.
 
@@ -10,8 +10,8 @@
 
 - [porelo-project#PJ80](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj80) (Accepted)
 - [porelo-codex#CX07](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx07) (Estimated)
-- [porelo-codex#CX06](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx06) (Idea)
-- [porelo-codex#CX09](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx09) (Idea)
+- [porelo-codex#CX06](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx06) (Estimated)
+- [porelo-codex#CX09](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx09) (Estimated)
 - [porelo-codex#CX14](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx14) (Analyzed)
 
 ## Data

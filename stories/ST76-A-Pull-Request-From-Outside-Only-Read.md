@@ -1,6 +1,6 @@
 # ST76 — A pull request from outside only read
 
-**Priority:** 🟰 Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Estimated
 
 **What a user gains.** A pull request from an unknown outside account is only read and commented on, never built, so strangers cannot run code.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-adapters#GH10](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh10) (Idea)
+- [porelo-adapters#GH10](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh10) (Estimated)
 
 ## Covers
 

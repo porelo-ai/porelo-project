@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-planner#PL64](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl64) (Idea)
+- [porelo-planner#PL64](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl64) (Estimated)
 
 ## Data
 
