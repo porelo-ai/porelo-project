@@ -13,6 +13,8 @@
 - [porelo-planner#PL58](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl58) (Idea)
 - [porelo-frontend#F487](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f487) (Idea)
 - [porelo-frontend#F488](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f488) (Idea)
+- [porelo-planner#PL46](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl46) (Idea)
+- [porelo-planner#PL41](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl41) (Accepted)
 
 ## Data
 
@@ -30,7 +32,9 @@
     "porelo-planner#PL57",
     "porelo-planner#PL58",
     "porelo-frontend#F487",
-    "porelo-frontend#F488"
+    "porelo-frontend#F488",
+    "porelo-planner#PL46",
+    "porelo-planner#PL41"
   ],
   "tested": null
 }
