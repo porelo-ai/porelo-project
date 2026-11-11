@@ -11,6 +11,7 @@
 - [porelo-planner#PL72](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl72) (Accepted)
 - [porelo-planner#PL73](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl73) (Accepted)
 - [porelo-planner#PL74](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl74) (Accepted)
+- [porelo-planner#PL50](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl50) (Backlog)
 
 ## Data
 
@@ -26,7 +27,8 @@
   "issues": [
     "porelo-planner#PL72",
     "porelo-planner#PL73",
-    "porelo-planner#PL74"
+    "porelo-planner#PL74",
+    "porelo-planner#PL50"
   ],
   "tested": null
 }
