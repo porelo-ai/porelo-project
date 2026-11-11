@@ -24,6 +24,10 @@
 - [porelo#B623](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b623) (Review)
 - [porelo-pi#PI55](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi55) (Review)
 - [porelo-parent#PA01](https://github.com/porelo-ai/porelo-parent/blob/main/issues/README.md#pa01) (Implementing)
+- [porelo-claude-code#CC60](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc60) (Review)
+- [porelo-omp#OM52](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om52) (Review)
+- [porelo-codex#CX20](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx20) (Review)
+- [porelo-agy#AG20](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag20) (Review)
 
 ## Data
 
@@ -52,7 +56,11 @@
     "porelo#B618",
     "porelo#B623",
     "porelo-pi#PI55",
-    "porelo-parent#PA01"
+    "porelo-parent#PA01",
+    "porelo-claude-code#CC60",
+    "porelo-omp#OM52",
+    "porelo-codex#CX20",
+    "porelo-agy#AG20"
   ],
   "tested": null
 }

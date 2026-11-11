@@ -17,13 +17,13 @@
 - [porelo-planner#PL61](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl61) (Backlog)
 - [porelo#B621](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b621) (Backlog)
 - [porelo#B622](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b622) (Implementing)
-- [porelo-claude-code#CC56](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc56) (Estimated)
+- [porelo-claude-code#CC56](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc56) (Review)
 - [porelo-claude-code#CC57](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc57) (Review)
 - [porelo-claude-code#CC59](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc59) (Review)
-- [porelo-pi#PI57](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi57) (Estimated)
-- [porelo-omp#OM51](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om51) (Estimated)
-- [porelo-codex#CX19](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx19) (Estimated)
-- [porelo-agy#AG18](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag18) (Estimated)
+- [porelo-pi#PI57](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi57) (Review)
+- [porelo-omp#OM51](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om51) (Review)
+- [porelo-codex#CX19](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx19) (Review)
+- [porelo-agy#AG18](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag18) (Review)
 
 ## Data
 
