@@ -8,17 +8,21 @@
 
 **Issues:**
 
-- [porelo-message-matrix#MX107](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx107) (Idea)
-- [porelo-ecosystems#EC22](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec22) (Analyzed)
-- [porelo-mcp#MC13](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc13) (Idea)
-- [porelo-message-sluice#SL52](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl52) (Analyzed)
-- [porelo-adapters#GH31](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh31) (Idea)
-- [porelo-intellij#IJ27](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij27) (Analyzed)
-- [porelo-forge-clients#FC21](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc21) (Idea)
-- [porelo-host#HO168](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho168) (Estimated)
-- [porelo-planner#PL52](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl52) (Idea)
-- [porelo-frontend#F484](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f484) (Idea)
-- [porelo-ai.github.io#SI08](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si08) (Idea)
+- [porelo-message-matrix#MX107](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx107) (Review)
+- [porelo-ecosystems#EC22](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec22) (Review)
+- [porelo-mcp#MC13](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc13) (Review)
+- [porelo-message-sluice#SL52](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl52) (Review)
+- [porelo-adapters#GH31](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh31) (Review)
+- [porelo-intellij#IJ27](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij27) (Review)
+- [porelo-forge-clients#FC21](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc21) (Review)
+- [porelo-host#HO168](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho168) (Implementing)
+- [porelo-planner#PL52](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl52) (Finished)
+- [porelo-frontend#F484](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f484) (Implementing)
+- [porelo-ai.github.io#SI08](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si08) (Implementing)
+- [porelo#B618](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b618) (Implementing)
+- [porelo#B623](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b623) (Implementing)
+- [porelo-pi#PI55](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi55) (Review)
+- [porelo-parent#PA01](https://github.com/porelo-ai/porelo-parent/blob/main/issues/README.md#pa01) (Implementing)
 
 ## Data
 
@@ -42,7 +46,11 @@
     "porelo-host#HO168",
     "porelo-planner#PL52",
     "porelo-frontend#F484",
-    "porelo-ai.github.io#SI08"
+    "porelo-ai.github.io#SI08",
+    "porelo#B618",
+    "porelo#B623",
+    "porelo-pi#PI55",
+    "porelo-parent#PA01"
   ],
   "tested": null
 }

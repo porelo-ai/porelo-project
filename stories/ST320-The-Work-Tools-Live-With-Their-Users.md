@@ -6,7 +6,23 @@
 
 **The test.** Each moved part is built, published and used from its new home, and porelo-buildtools keeps only CI, machines, pins and publishing. Every repository's shared rules check still runs check-commits and check-citations green. A stage line and a planner board move are written and checked against the planner's format. No module or command is left that nobody calls.
 
-**Issues:** none yet
+**Issues:**
+
+- [porelo-buildtools#BT70](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt70) (Review)
+- [porelo-buildtools#BT71](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt71) (Estimated)
+- [porelo-buildtools#BT72](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt72) (Estimated)
+- [porelo-buildtools#BT73](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt73) (Review)
+- [porelo-planner#PL59](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl59) (Analyzed)
+- [porelo-planner#PL60](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl60) (Analyzed)
+- [porelo-planner#PL61](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl61) (Analyzed)
+- [porelo#B621](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b621) (Estimated)
+- [porelo#B622](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b622) (Implementing)
+- [porelo-claude-code#CC56](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc56) (Analyzed)
+- [porelo-claude-code#CC57](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc57) (Review)
+- [porelo-pi#PI57](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi57) (Analyzed)
+- [porelo-omp#OM51](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om51) (Analyzed)
+- [porelo-codex#CX19](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx19) (Analyzed)
+- [porelo-agy#AG18](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag18) (Analyzed)
 
 ## Data
 
@@ -19,7 +35,23 @@
   "test": "Each moved part is built, published and used from its new home, and porelo-buildtools keeps only CI, machines, pins and publishing. Every repository's shared rules check still runs check-commits and check-citations green. A stage line and a planner board move are written and checked against the planner's format. No module or command is left that nobody calls.",
   "priority": "High",
   "state": "Accepted",
-  "issues": [],
+  "issues": [
+    "porelo-buildtools#BT70",
+    "porelo-buildtools#BT71",
+    "porelo-buildtools#BT72",
+    "porelo-buildtools#BT73",
+    "porelo-planner#PL59",
+    "porelo-planner#PL60",
+    "porelo-planner#PL61",
+    "porelo#B621",
+    "porelo#B622",
+    "porelo-claude-code#CC56",
+    "porelo-claude-code#CC57",
+    "porelo-pi#PI57",
+    "porelo-omp#OM51",
+    "porelo-codex#CX19",
+    "porelo-agy#AG18"
+  ],
   "tested": null
 }
 ```

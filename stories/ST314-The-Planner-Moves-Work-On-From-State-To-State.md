@@ -6,7 +6,9 @@
 
 **The test.** With Implementing then Reading, and Reading done Review or blocked Reworking: an issue's work ends DONE, the planner sets Reading and starts the reader without a dialog; an OK reading sets Review; a blocking one sets Reworking and a Needs-you entry opens its dialog, nothing starts unasked; a failed task keeps its card, with a warning and a Needs-you entry to its result.
 
-**Issues:** none yet
+**Issues:**
+
+- [porelo-planner#PL64](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl64) (Idea)
 
 ## Data
 
@@ -19,7 +21,9 @@
   "test": "With Implementing then Reading, and Reading done Review or blocked Reworking: an issue's work ends DONE, the planner sets Reading and starts the reader without a dialog; an OK reading sets Review; a blocking one sets Reworking and a Needs-you entry opens its dialog, nothing starts unasked; a failed task keeps its card, with a warning and a Needs-you entry to its result.",
   "priority": "High",
   "state": "Accepted",
-  "issues": [],
+  "issues": [
+    "porelo-planner#PL64"
+  ],
   "tested": null
 }
 ```
