@@ -7,10 +7,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 92 |
-| [Accepted](#accepted) | 28 |
+| [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 31 |
-| [Backlog](#backlog) | 22 |
+| [Backlog](#backlog) | 23 |
 | [Implementing](#implementing) | 4 |
 | [Review](#review) | 26 |
 | [Finished](#finished) | 74 |
@@ -124,7 +124,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🔼 High | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
 | <a id="st314"></a>[ST314](ST314-The-Planner-Moves-Work-On-From-State-To-State.md) The planner moves work on from state to state by itself | 🔼 High | PL:3 · F:1 | The planner moves an issue on by itself when its task ends, as the project's work rules say: work that ends DONE in Implementing goes to Reading and a reader starts with the proposed model; an OK reading goes to Review; a blocking reading goes to Reworking and asks the person under Needs you, whose entry opens the Reworking dialog; a task that fails stays with a warning and asks too. |
 | <a id="st318"></a>[ST318](ST318-Logging-In-The-Frontend-And-The-Planner.md) Logging in the frontend and the planner | 🔼 High | F:3 · PL:2 | The window and the planner each keep a log with levels; a person sets the level in the window, INFO by default, raises or lowers it there, and opens either log file on the local machine from a link in the window. The planner's backend log, written through its Java logging, lies beside the window's log, so a fault is read in one place and Needs you keeps only what asks for an action. |
-| <a id="st322"></a>[ST322](ST322-Missing-Planner-Functions.md) Missing planner functions | 🔼 High | PL:4 | The planning board does what a person reaches for: the search finds an issue and shows its story, a story's priority is changed on the board, and a disabled action names the run that holds it and leads there. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
 | <a id="st77"></a>[ST77](ST77-Direct-Pushes-And-Red-Checks-Refused.md) Direct pushes and red checks refused | 🟰 Medium | PJ:1 | Direct pushes to main and merges with red checks are refused for every account, so main only changes through checked pull requests. |
 | <a id="st83"></a>[ST83](ST83-An-Expiring-Token-Told-Ahead.md) An expiring token told ahead | 🟰 Medium | PJ:1 | A person is told ahead of time, once, when a forge token on a host is about to expire. |
@@ -242,6 +241,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st23"></a>[ST23](ST23-The-Room-And-The-Usage-Records-Outlive-The.md) The room and the usage records outlive the host | ⏫ Highest | MX:3 · B:1 · HO:1 | The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost. |
 | <a id="st290"></a>[ST290](ST290-Agents-On-A-Host-Work-Their-Results-Off-Until.md) Agents on a host work their results off until done | ⏫ Highest | B:32 · F:19 · HO:9 · MX:6 · GH:3 · CC:2 · BT:1 · PI:1 | A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub. |
 | <a id="st309"></a>[ST309](ST309-A-Story-Takes-The-State-The-Operator-Gives-It.md) A story takes the state the operator gives it | 🔼 High | B:1 · BT:1 · F:1 | The operator puts a story into any state, on the story board or in its head, and it keeps that state whatever its issues' states are; where an issue does not fit that state by the automatic rule, a warning names it and asks to go on anyway, and it is never refused. |
+| <a id="st322"></a>[ST322](ST322-Missing-Planner-Functions.md) Missing planner functions | 🔼 High | PL:4 | The planning board does what a person reaches for: the search finds an issue and shows its story, a story's priority is changed on the board, and a disabled action names the run that holds it and leads there. |
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | 🟰 Medium | PJ:4 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
 | <a id="st78"></a>[ST78](ST78-Threads-In-IntelliJs-Diff.md) Threads in IntelliJ's diff | 🟰 Medium | IJ:2 | A person sees every review thread on its lines in IntelliJ's diff, marked with who wrote it. |
 | <a id="st295"></a>[ST295](ST295-A-Person-Joins-And-Leaves-An-Organization-From-The.md) A person joins and leaves an organization from the window | 🟰 Medium | B:2 · F:1 | A person who cannot write an organization's repository asks to join it from the window by filing their card as a proposal, an owner accepts it there, and a member leaves an organization from the window, withdrawing their own card and roles and forgetting it on this computer. |
