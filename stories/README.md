@@ -1,6 +1,6 @@
 # Stories
 
-Written by `porelo-release stories index` from each story's head; a change goes into the story's file. Each story is one function of value to a user, with the test the person runs at its end and every issue it needs. A story moves through the same states as an issue, in workflow.yml order: Idea, Accepted, In analysis, Analyzed, Under estimation, Estimated, Backlog, Implementing, Reading, Reworking, Review, Rework, Finishing, Finished, Rejected. Work follows the priority.
+Written by `porelo-release stories index` from each story's head; a change goes into the story's file. Each story is one function of value to a user, with the test the person runs at its end and every issue it needs. A story moves through the same states as an issue, in workflow.yml order: Idea, Accepted, In analysis, Analyzed, Under estimation, Estimated, Backlog, Implementing, Reading, Reworking, Review, Rework, Finished, Rejected. Work follows the priority.
 
 Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Issues are counted by their prefix (`A` porelo-project, `AG` porelo-agy, `B` porelo, `BT` porelo-buildtools, `CC` porelo-claude-code, `CX` porelo-codex, `EC` porelo-ecosystems, `F` porelo-frontend, `FC` porelo-forge-clients, `GH` porelo-adapters, `HO` porelo-host, `IJ` porelo-intellij, `MC` porelo-mcp, `MX` porelo-message-matrix, `OM` porelo-omp, `P` porelo, `PA` porelo-parent, `PI` porelo-pi, `PJ` porelo-project, `PL` porelo-planner, `SI` porelo-ai.github.io, `SL` porelo-message-sluice).
 
