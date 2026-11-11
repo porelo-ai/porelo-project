@@ -8,6 +8,7 @@
 
 **Issues:**
 
+- [porelo-frontend#F475](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f475) (Implementing)
 - [porelo-planner#PL64](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl64) (Estimated)
 
 ## Data
@@ -22,6 +23,7 @@
   "priority": "High",
   "state": "Accepted",
   "issues": [
+    "porelo-frontend#F475",
     "porelo-planner#PL64"
   ],
   "tested": null

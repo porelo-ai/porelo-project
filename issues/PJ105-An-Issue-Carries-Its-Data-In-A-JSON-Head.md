@@ -5,7 +5,7 @@
   "$schema": "issue-1.json",
   "id": "PJ105",
   "title": "An Issue Carries Its Data In A JSON Head",
-  "state": "Implementing",
+  "state": "Review",
   "size": "M",
   "priority": "Medium",
   "rank": 1,

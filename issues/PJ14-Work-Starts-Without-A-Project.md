@@ -5,7 +5,7 @@
   "$schema": "issue-1.json",
   "id": "PJ14",
   "title": "Work starts without a project",
-  "state": "Implementing",
+  "state": "Backlog",
   "size": "M",
   "priority": "Medium",
   "rank": 3,

@@ -96,20 +96,20 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | <a id="pj74"></a>[PJ74](PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md) | - | - | The calls to forges' and build servers' APIs in a repository of their own, `porelo-forge-clients`, one module per forge, LGPL, knowing nothing of Porelo; `porelo-adapters` translates what they return into Porelo's contracts and SARIF; owned by Agent Gorge; started in 0.8 with GitHub and Forgejo. |
 | <a id="pj75"></a>[PJ75](PJ75-A-Task-Fetches-A-Snapshot-From-Its-Hosts-Forge.md) | M | - | A task on a host with a local forge fetches a snapshot from the forge's registry by its declared name without a credential put into the project, and still reaches nothing else on the host; the private organization refuses it today with `401`; the shared building blocks' organization is public on the host, read by everyone there without a token. |
 | <a id="pj46"></a>[PJ46](PJ46-Document-Tests-Run-Only-Where-The-Agent-Works.md) | M | - | The tests that read only issues and documents run on the agent's machine and in the daily Shared rules check, never in a Build: left out by the build tool's own switch, and naming no single issue, so setting an issue Finished touches no test. |
+| <a id="pj32"></a>[PJ32](PJ32-A-Vulnerability-Has-A-Way-In.md) | M | - | Whoever finds a vulnerability reports it privately through a `SECURITY.md` in every repository and one page in `doc/`; a fix gets a GitHub advisory and a changelog line. |
+| <a id="pj14"></a>[PJ14](PJ14-Work-Starts-Without-A-Project.md) | M | - | Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured. |
 
 ## Implementing
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
-| <a id="pj105"></a>[PJ105](PJ105-An-Issue-Carries-Its-Data-In-A-JSON-Head.md) | M | - | Every issue carries its data in a JSON head checked by one shared schema, each index is generated from the heads, and tools read the heads instead of Markdown tables. |
-| <a id="pj32"></a>[PJ32](PJ32-A-Vulnerability-Has-A-Way-In.md) | M | - | Whoever finds a vulnerability reports it privately through a `SECURITY.md` in every repository and one page in `doc/`; a fix gets a GitHub advisory and a changelog line. |
-| <a id="pj14"></a>[PJ14](PJ14-Work-Starts-Without-A-Project.md) | M | - | Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured. |
 
 ## Review
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
 | <a id="pj27"></a>[PJ27](PJ27-A-Contributor-Knows-The-Rules.md) | L | - | One guide for contributors in `porelo-project`'s `doc/`, linked from every repository's README and `CONTRIBUTING.md`: how the work is organised, how a change is made, what it must satisfy. |
+| <a id="pj105"></a>[PJ105](PJ105-An-Issue-Carries-Its-Data-In-A-JSON-Head.md) | M | - | Every issue carries its data in a JSON head checked by one shared schema, each index is generated from the heads, and tools read the heads instead of Markdown tables. |
 
 ## Finished
 

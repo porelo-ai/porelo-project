@@ -20,7 +20,7 @@
 - [porelo-frontend#F449](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f449) (Implementing)
 - [porelo-frontend#F467](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f467) (Rejected)
 - [porelo-project#PJ104](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj104) (Accepted)
-- [porelo-project#PJ105](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj105) (Implementing)
+- [porelo-project#PJ105](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj105) (Review)
 - [porelo#B604](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b604) (Review)
 - [porelo-planner#PL01](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl01) (Finished)
 - [porelo-planner#PL02](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl02) (Finished)
