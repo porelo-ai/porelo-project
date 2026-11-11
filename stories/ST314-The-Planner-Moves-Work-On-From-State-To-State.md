@@ -2,9 +2,9 @@
 
 **Priority:** 🔼 High · **State:** Accepted
 
-**What a user gains.** The planner moves an issue on by itself when its task ends, as the project's configuration says from which state to which and how often: work that ends DONE in Implementing goes to Reading and a reader starts with that state's instructions, a reading that asks for rework goes to Reworking and the builder starts with the findings, and a reading that is OK goes to Review for the person.
+**What a user gains.** The planner moves an issue on by itself when its task ends, as the project's work rules say: work that ends DONE in Implementing goes to Reading and a reader starts with the proposed model; an OK reading goes to Review; a blocking reading goes to Reworking and asks the person under Needs you, whose entry opens the Reworking dialog; a task that fails stays with a warning and asks too.
 
-**The test.** With a configuration of Implementing to Reading, Reading to Reworking or Review, and at most two readings: start an issue's work and let it end DONE; the planner sets Reading and starts the reader with its instructions; a reading with findings sets Reworking and starts the builder with them; the next reading OK sets Review, and the person is asked only there; a third reading is never started.
+**The test.** With Implementing then Reading, and Reading done Review or blocked Reworking: an issue's work ends DONE, the planner sets Reading and starts the reader without a dialog; an OK reading sets Review; a blocking one sets Reworking and a Needs-you entry opens its dialog, nothing starts unasked; a failed task keeps its card, with a warning and a Needs-you entry to its result.
 
 **Issues:** none yet
 
@@ -15,8 +15,8 @@
   "$schema": "story-2.json",
   "id": "ST314",
   "title": "The planner moves work on from state to state by itself",
-  "gain": "The planner moves an issue on by itself when its task ends, as the project's configuration says from which state to which and how often: work that ends DONE in Implementing goes to Reading and a reader starts with that state's instructions, a reading that asks for rework goes to Reworking and the builder starts with the findings, and a reading that is OK goes to Review for the person.",
-  "test": "With a configuration of Implementing to Reading, Reading to Reworking or Review, and at most two readings: start an issue's work and let it end DONE; the planner sets Reading and starts the reader with its instructions; a reading with findings sets Reworking and starts the builder with them; the next reading OK sets Review, and the person is asked only there; a third reading is never started.",
+  "gain": "The planner moves an issue on by itself when its task ends, as the project's work rules say: work that ends DONE in Implementing goes to Reading and a reader starts with the proposed model; an OK reading goes to Review; a blocking reading goes to Reworking and asks the person under Needs you, whose entry opens the Reworking dialog; a task that fails stays with a warning and asks too.",
+  "test": "With Implementing then Reading, and Reading done Review or blocked Reworking: an issue's work ends DONE, the planner sets Reading and starts the reader without a dialog; an OK reading sets Review; a blocking one sets Reworking and a Needs-you entry opens its dialog, nothing starts unasked; a failed task keeps its card, with a warning and a Needs-you entry to its result.",
   "priority": "High",
   "state": "Accepted",
   "issues": [],
