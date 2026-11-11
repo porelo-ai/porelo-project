@@ -1,6 +1,6 @@
 # ST180 — Prove one build works locally and centrally
 
-**Priority:** 🔽 Low · **State:** Implementing
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person can rely on every building repository's workflow running unchanged on both the local and the central forge.
 
@@ -19,7 +19,7 @@
   "$schema": "story-2.json",
   "id": "ST180",
   "title": "Prove one build works locally and centrally",
-  "state": "Implementing",
+  "state": "Idea",
   "gain": "A person can rely on every building repository's workflow running unchanged on both the local and the central forge.",
   "test": "Run every building repository's same workflow on the local and central forges without editing it. Resolve another repository's locally published artifact, including a child-module publication. Break that publication; the local run fails before any central tag. Request a declared machine kind, read the verdict and log in the task, and refuse undeclared kinds or commands.",
   "priority": "Low",

@@ -1,6 +1,6 @@
 # ST306 — A failed credential or tool says what happened and what to do
 
-**Priority:** 🟰 Medium · **State:** Implementing
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** When a credential or a required tool fails, porelo says which one, what happened and what the person can do, instead of a bare failure.
 
@@ -9,8 +9,8 @@
 **Issues:**
 
 - [porelo#B440](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b440) (Review)
-- [porelo#B458](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b458) (Implementing)
-- [porelo#B459](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b459) (Implementing)
+- [porelo#B458](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b458) (Backlog)
+- [porelo#B459](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b459) (Backlog)
 
 ## Data
 

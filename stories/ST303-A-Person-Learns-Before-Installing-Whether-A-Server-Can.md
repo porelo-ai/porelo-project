@@ -1,6 +1,6 @@
 # ST303 — A person learns before installing whether a server can carry their work
 
-**Priority:** 🟰 Medium · **State:** Implementing
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** Before installing, a person learns what a server offers and what tasks and jobs will take on it, so they choose a server that carries their work.
 
@@ -14,7 +14,7 @@
 - [porelo-host#HO119](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho119) (Review)
 - [porelo-host#HO120](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho120) (Review)
 - [porelo-host#HO121](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho121) (Review)
-- [porelo-host#HO125](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho125) (Implementing)
+- [porelo-host#HO125](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho125) (Backlog)
 - [porelo-host#HO127](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho127) (Review)
 
 ## Data

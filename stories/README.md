@@ -6,12 +6,12 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 91 |
+| [Idea](#idea) | 92 |
 | [Accepted](#accepted) | 29 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 31 |
-| [Backlog](#backlog) | 20 |
-| [Implementing](#implementing) | 5 |
+| [Backlog](#backlog) | 23 |
+| [Implementing](#implementing) | 1 |
 | [Review](#review) | 26 |
 | [Finished](#finished) | 74 |
 | [Rejected](#rejected) | 5 |
@@ -88,6 +88,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st177"></a>[ST177](ST177-Configure-Forge-Repositories-And-A-Pool.md) Configure forge repositories and a pool | 🔽 Low | F:2 | A person can choose the forge, its repositories and a pool through the dialog or command line, and a missing required piece is refused. |
 | <a id="st178"></a>[ST178](ST178-Request-A-Declared-Build-From-The-Task.md) Request a declared build from the task | 🔽 Low | B:1 | A task can request a build of a declared kind and read the result in its files, and an undeclared kind is refused. |
 | <a id="st179"></a>[ST179](ST179-Install-A-Build-Reader-By-Its-Offered-Kind.md) Install a build reader by its offered kind | 🔽 Low | B:1 | A person finds build reader packages offered by kind in the setup list and the daemon's installable catalog, and can install one. |
+| <a id="st180"></a>[ST180](ST180-Prove-One-Build-Works-Locally-And-Centrally.md) Prove one build works locally and centrally | 🔽 Low | none yet | A person can rely on every building repository's workflow running unchanged on both the local and the central forge. |
 | <a id="st181"></a>[ST181](ST181-Review-A-GitLab-Merge-Request.md) Review a GitLab merge request | 🔽 Low | none yet | A person can review a GitLab merge request, with its threads and suggestions in the waiting work and replies released back. |
 | <a id="st182"></a>[ST182](ST182-Review-A-Bitbucket-Pull-Request.md) Review a Bitbucket pull request | 🔽 Low | none yet | A person can review a Bitbucket pull request, reading threads and suggestions as SARIF and releasing a reply. |
 | <a id="st183"></a>[ST183](ST183-Review-An-Azure-DevOps-Pull-Request.md) Review an Azure DevOps pull request | 🔽 Low | none yet | A person can review an Azure DevOps pull request, reading threads and suggestions as SARIF and releasing a reply. |
@@ -245,7 +246,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | 🟰 Medium | PJ:4 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
 | <a id="st78"></a>[ST78](ST78-Threads-In-IntelliJs-Diff.md) Threads in IntelliJ's diff | 🟰 Medium | IJ:2 | A person sees every review thread on its lines in IntelliJ's diff, marked with who wrote it. |
 | <a id="st295"></a>[ST295](ST295-A-Person-Joins-And-Leaves-An-Organization-From-The.md) A person joins and leaves an organization from the window | 🟰 Medium | B:2 · F:1 | A person who cannot write an organization's repository asks to join it from the window by filing their card as a proposal, an owner accepts it there, and a member leaves an organization from the window, withdrawing their own card and roles and forgetting it on this computer. |
+| <a id="st303"></a>[ST303](ST303-A-Person-Learns-Before-Installing-Whether-A-Server-Can.md) A person learns before installing whether a server can carry their work | 🟰 Medium | HO:6 · F:2 | Before installing, a person learns what a server offers and what tasks and jobs will take on it, so they choose a server that carries their work. |
 | <a id="st304"></a>[ST304](ST304-The-Windows-Pages-Show-What-Needs-The-Person-At.md) The window's pages show what needs the person at a glance | 🟰 Medium | F:11 | Every page of the window shows at a glance what needs the person, and each grey button, count and wait says why in words; a click answers at once. |
+| <a id="st306"></a>[ST306](ST306-A-Failed-Credential-Or-Tool-Says-What-Happened-And.md) A failed credential or tool says what happened and what to do | 🟰 Medium | B:3 | When a credential or a required tool fails, porelo says which one, what happened and what the person can do, instead of a bare failure. |
+| <a id="st307"></a>[ST307](ST307-A-Task-Start-With-No-Name-Picks-The-Name.md) A task start with no name picks the name the person expects | 🟰 Medium | B:10 | A task started without a name gets the name and the task the person expects; a second start asks before making another task, and a container's name does not double the project's. |
 | <a id="st310"></a>[ST310](ST310-A-Coordinator-Agent-Assists-The-User.md) A coordinator agent assists the user | 🟰 Medium | B:1 | While agents work on a project's stories, one coordinator agent oversees the story, the tasks' progress and the findings, and is the user's one session to talk to across repositories; it starts and stops nothing itself. |
 | <a id="st319"></a>[ST319](ST319-Discuss-An-Idea-With-An-Agent-In-The-Planner.md) Discuss an idea with an agent in the planner | 🟰 Medium | PL:4 · F:2 · PJ:1 | "Discuss an idea" in the planner starts, through the usual Start dialog, a task that reads all of the project's repositories as one. The person discusses the idea with its agent, who writes it to a file. When the task ends, the path returns to the planner, which makes a story in Idea with sub-issues per repository; the task's staged changes are dropped, and the next stage's agents start on them. |
 | <a id="st155"></a>[ST155](ST155-Approve-A-Group-And-Its-Peer-Keys.md) Approve a group and its peer keys | 🔽 Low | B:1 | A person can create a task group, confirm its peers' fingerprints and message the group, and unconfirmed peers are refused. |
@@ -257,10 +261,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
 | <a id="st292"></a>[ST292](ST292-A-Whole-Move-Rehearsed-By-The-Agents-On-A.md) A whole move rehearsed by the agents on a rented server | ⏫ Highest | B:3 · F:3 · MX:3 · HO:1 | Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server. |
-| <a id="st303"></a>[ST303](ST303-A-Person-Learns-Before-Installing-Whether-A-Server-Can.md) A person learns before installing whether a server can carry their work | 🟰 Medium | HO:6 · F:2 | Before installing, a person learns what a server offers and what tasks and jobs will take on it, so they choose a server that carries their work. |
-| <a id="st306"></a>[ST306](ST306-A-Failed-Credential-Or-Tool-Says-What-Happened-And.md) A failed credential or tool says what happened and what to do | 🟰 Medium | B:3 | When a credential or a required tool fails, porelo says which one, what happened and what the person can do, instead of a bare failure. |
-| <a id="st307"></a>[ST307](ST307-A-Task-Start-With-No-Name-Picks-The-Name.md) A task start with no name picks the name the person expects | 🟰 Medium | B:10 | A task started without a name gets the name and the task the person expects; a second start asks before making another task, and a container's name does not double the project's. |
-| <a id="st180"></a>[ST180](ST180-Prove-One-Build-Works-Locally-And-Centrally.md) Prove one build works locally and centrally | 🔽 Low | none yet | A person can rely on every building repository's workflow running unchanged on both the local and the central forge. |
 
 ## Review
 
