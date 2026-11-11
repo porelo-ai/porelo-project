@@ -10,9 +10,9 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Accepted](#accepted) | 23 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 24 |
-| [Backlog](#backlog) | 20 |
+| [Backlog](#backlog) | 19 |
 | [Implementing](#implementing) | 5 |
-| [Review](#review) | 25 |
+| [Review](#review) | 26 |
 | [Finished](#finished) | 74 |
 | [Rejected](#rejected) | 5 |
 
@@ -36,7 +36,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st52"></a>[ST52](ST52-The-Subagent-Number-Chosen-When-Starting.md) The subagent number chosen when starting | 🔼 High | F:1 | A person sees the number of subagents that applies in the start dialog, can choose another number, and is told what applies. |
 | <a id="st53"></a>[ST53](ST53-A-Start-That-Waits-For-Its-Helpers.md) A start that waits for its helpers | 🔼 High | B:1 | A start waits until both the gate and the relay are up, and ends with a clear code if either does not come up. |
 | <a id="st56"></a>[ST56](ST56-The-Gathered-Findings-Worked-Off.md) The gathered findings worked off | 🔼 High | B:2 · F:1 · HO:1 | The gathered findings from earlier work are cleared, and anything larger becomes an issue of its own, so nothing open is lost. |
-| <a id="st311"></a>[ST311](ST311-A-Planner-App-Serves-The-Board-To-The-Window.md) A planner app serves the board to the window | 🔼 High | PL:13 · BT:7 · F:6 · B:2 · PJ:2 | The window reads and changes stories and issues through porelo-planner, a Spring Boot GraalVM native app running beside it, over a REST API described in OpenAPI; the app reads and writes the stories and issues in Git, and porelo keeps only its task functions. |
+| <a id="st311"></a>[ST311](ST311-A-Planner-App-Serves-The-Board-To-The-Window.md) A planner app serves the board to the window | 🔼 High | PL:24 · BT:8 · F:6 · B:2 · PJ:2 | The window reads and changes stories and issues through porelo-planner, a Spring Boot GraalVM native app running beside it, over a REST API described in OpenAPI; the app reads and writes the stories and issues in Git, and porelo keeps only its task functions. |
 | <a id="st57"></a>[ST57](ST57-A-Linters-Report-Shown-On-The-Waiting-Work.md) A linter's report shown on the waiting work | 🟰 Medium | B:2 | A person adding a linter's SARIF report to waiting work sees each finding on its file and lines. |
 | <a id="st58"></a>[ST58](ST58-Who-Wrote-It-And-What-It-Touches-Shown.md) Who wrote it and what it touches, shown on waiting work | 🟰 Medium | B:1 | A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon. |
 | <a id="st63"></a>[ST63](ST63-Rounds-Of-Check-And-Fix-At-The-Gate.md) Rounds of check and fix at the gate | 🟰 Medium | PJ:1 | A build task pushes to its gate, a reviewer leaves findings on that commit, and the builder fixes them in rounds before the person is asked. |
@@ -238,7 +238,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st78"></a>[ST78](ST78-Threads-In-IntelliJs-Diff.md) Threads in IntelliJ's diff | 🟰 Medium | IJ:2 | A person sees every review thread on its lines in IntelliJ's diff, marked with who wrote it. |
 | <a id="st295"></a>[ST295](ST295-A-Person-Joins-And-Leaves-An-Organization-From-The.md) A person joins and leaves an organization from the window | 🟰 Medium | B:2 · F:1 | A person who cannot write an organization's repository asks to join it from the window by filing their card as a proposal, an owner accepts it there, and a member leaves an organization from the window, withdrawing their own card and roles and forgetting it on this computer. |
 | <a id="st304"></a>[ST304](ST304-The-Windows-Pages-Show-What-Needs-The-Person-At.md) The window's pages show what needs the person at a glance | 🟰 Medium | F:11 | Every page of the window shows at a glance what needs the person, and each grey button, count and wait says why in words; a click answers at once. |
-| <a id="st307"></a>[ST307](ST307-A-Task-Start-With-No-Name-Picks-The-Name.md) A task start with no name picks the name the person expects | 🟰 Medium | B:10 | A task started without a name gets the name and the task the person expects; a second start asks before making another task, and a container's name does not double the project's. |
 | <a id="st310"></a>[ST310](ST310-A-Coordinator-Agent-Assists-The-User.md) A coordinator agent assists the user | 🟰 Medium | B:1 | While agents work on a project's stories, one coordinator agent oversees the story, the tasks' progress and the findings, and is the user's one session to talk to across repositories; it starts and stops nothing itself. |
 | <a id="st155"></a>[ST155](ST155-Approve-A-Group-And-Its-Peer-Keys.md) Approve a group and its peer keys | 🔽 Low | B:1 | A person can create a task group, confirm its peers' fingerprints and message the group, and unconfirmed peers are refused. |
 | <a id="st193"></a>[ST193](ST193-Choose-Drive-Areas-For-Each-Host.md) Choose drive areas for each host | 🔽 Low | PJ:1 | A person can choose the drive areas for each host, so each host receives only its own whether vaults are separate or shared. |
@@ -248,10 +247,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st291"></a>[ST291](ST291-The-Host-Run-By-A-Program-Of-Its-Own.md) The host run by a program of its own, built like porelo | ⏫ Highest | B:19 · HO:2 | A host admin's and an automation's work on a host runs as one Java program, porelo-host, built, signed and packaged like porelo; a person's own host commands are porelo commands; root's narrow boundaries act only for the account sudo names, and nothing asks for input that is not needed. |
 | <a id="st292"></a>[ST292](ST292-A-Whole-Move-Rehearsed-By-The-Agents-On-A.md) A whole move rehearsed by the agents on a rented server | ⏫ Highest | B:3 · F:3 · MX:3 · HO:1 | Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server. |
 | <a id="st303"></a>[ST303](ST303-A-Person-Learns-Before-Installing-Whether-A-Server-Can.md) A person learns before installing whether a server can carry their work | 🟰 Medium | HO:6 · F:2 | Before installing, a person learns what a server offers and what tasks and jobs will take on it, so they choose a server that carries their work. |
 | <a id="st306"></a>[ST306](ST306-A-Failed-Credential-Or-Tool-Says-What-Happened-And.md) A failed credential or tool says what happened and what to do | 🟰 Medium | B:3 | When a credential or a required tool fails, porelo says which one, what happened and what the person can do, instead of a bare failure. |
+| <a id="st307"></a>[ST307](ST307-A-Task-Start-With-No-Name-Picks-The-Name.md) A task start with no name picks the name the person expects | 🟰 Medium | B:10 | A task started without a name gets the name and the task the person expects; a second start asks before making another task, and a container's name does not double the project's. |
 | <a id="st180"></a>[ST180](ST180-Prove-One-Build-Works-Locally-And-Centrally.md) Prove one build works locally and centrally | 🔽 Low | none yet | A person can rely on every building repository's workflow running unchanged on both the local and the central forge. |
 
 ## Review
@@ -266,6 +265,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st19"></a>[ST19](ST19-Subagents-And-Reviews-As-A-Person-Sees-Them.md) Subagents and reviews, as a person sees them | ⏫ Highest | IJ:2 · AG:1 · B:1 · CC:1 · CX:1 · OM:1 | A person sees which subagents a task may start, and another subagent is refused with a clear message, with reviews shown plainly. |
 | <a id="st20"></a>[ST20](ST20-A-Ready-Server-Runs-Its-Setup-Again-And.md) A ready server runs its setup again, and a rented one is found | ⏫ Highest | F:3 | A person can run a ready server's setup again and see how it ended, and a rented server can be found again afterward. |
 | <a id="st26"></a>[ST26](ST26-A-Changed-Collection-Refused.md) A changed collection refused | ⏫ Highest | F:1 | A host collection that has been changed after publishing is refused, so a person installs only what was actually released. |
+| <a id="st291"></a>[ST291](ST291-The-Host-Run-By-A-Program-Of-Its-Own.md) The host run by a program of its own, built like porelo | ⏫ Highest | B:19 · HO:2 | A host admin's and an automation's work on a host runs as one Java program, porelo-host, built, signed and packaged like porelo; a person's own host commands are porelo commands; root's narrow boundaries act only for the account sudo names, and nothing asks for input that is not needed. |
 | <a id="st51"></a>[ST51](ST51-A-KeePassXC-Key-That-Is-Usable.md) A KeePassXC key that is usable | 🔼 High | B:1 | A person using KeePassXC is asked for the master password once when making a key, and a retry works after the key is reported as not served. |
 | <a id="st54"></a>[ST54](ST54-Long-Verbs-Say-How-Far-They-Are.md) Long verbs say how far they are | 🔼 High | B:1 · MX:1 | A person running a long command sees how far along it is. |
 | <a id="st55"></a>[ST55](ST55-A-Person-Joins-Another-Project.md) A person joins another project | 🔼 High | MX:1 | A person can join another project on the same machine. |

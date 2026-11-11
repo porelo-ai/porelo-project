@@ -1,6 +1,6 @@
 # ST307 — A task start with no name picks the name the person expects
 
-**Priority:** 🟰 Medium · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Implementing
 
 **What a user gains.** A task started without a name gets the name and the task the person expects; a second start asks before making another task, and a container's name does not double the project's.
 
@@ -13,11 +13,11 @@
 - [porelo#B538](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b538) (Implementing)
 - [porelo#B596](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b596) (Review)
 - [porelo#B597](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b597) (Review)
-- [porelo#B598](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b598) (Backlog)
-- [porelo#B599](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b599) (Backlog)
-- [porelo#B600](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b600) (Backlog)
-- [porelo#B601](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b601) (Backlog)
-- [porelo#B602](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b602) (Backlog)
+- [porelo#B598](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b598) (Review)
+- [porelo#B599](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b599) (Review)
+- [porelo#B600](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b600) (Review)
+- [porelo#B601](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b601) (Review)
+- [porelo#B602](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b602) (Review)
 
 ## Data
 

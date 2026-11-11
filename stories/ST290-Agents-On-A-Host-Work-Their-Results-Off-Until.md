@@ -59,7 +59,7 @@
 - [porelo-frontend#F458](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f458) (Review)
 - [porelo-frontend#F459](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f459) (Review)
 - [porelo-frontend#F460](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f460) (Review)
-- [porelo-host#HO162](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho162) (Backlog)
+- [porelo-host#HO162](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho162) (Review)
 - [porelo-host#HO163](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho163) (Backlog)
 - [porelo-host#HO164](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho164) (Rejected)
 - [porelo-host#HO165](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho165) (Backlog)
