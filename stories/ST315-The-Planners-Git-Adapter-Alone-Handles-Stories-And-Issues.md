@@ -6,7 +6,9 @@
 
 **The test.** In a repository with no story or issue tooling in its build: change an issue's state and add an idea through the planner; the file, its head and the index are written and checked by the planner's Git adapter; a broken head shows as a fault on the board; porelo-buildtools builds without porelo-stories or the story and issue commands, and every repository's build passes without them.
 
-**Issues:** none yet
+**Issues:**
+
+- [porelo-planner#PL41](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl41) (Accepted)
 
 ## Data
 
@@ -19,7 +21,9 @@
   "test": "In a repository with no story or issue tooling in its build: change an issue's state and add an idea through the planner; the file, its head and the index are written and checked by the planner's Git adapter; a broken head shows as a fault on the board; porelo-buildtools builds without porelo-stories or the story and issue commands, and every repository's build passes without them.",
   "priority": "High",
   "state": "Estimated",
-  "issues": [],
+  "issues": [
+    "porelo-planner#PL41"
+  ],
   "tested": null
 }
 ```

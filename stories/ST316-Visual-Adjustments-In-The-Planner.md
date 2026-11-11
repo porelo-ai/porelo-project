@@ -6,7 +6,10 @@
 
 **The test.** Every story card and issue tile shows its size (XS to XL) beside its priority; folding the box "Estimated" hides its tiles, keeps its header and count and the column's width, while the column's own chevron still narrows it; folding one story card leaves only its heading with number and priority, the cards beside it open.
 
-**Issues:** none yet
+**Issues:**
+
+- [porelo-planner#PL47](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl47) (Idea)
+- [porelo-planner#PL48](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl48) (Idea)
 
 ## Data
 
@@ -19,7 +22,10 @@
   "test": "Every story card and issue tile shows its size (XS to XL) beside its priority; folding the box \"Estimated\" hides its tiles, keeps its header and count and the column's width, while the column's own chevron still narrows it; folding one story card leaves only its heading with number and priority, the cards beside it open.",
   "priority": "Medium",
   "state": "Idea",
-  "issues": [],
+  "issues": [
+    "porelo-planner#PL47",
+    "porelo-planner#PL48"
+  ],
   "tested": null
 }
 ```
