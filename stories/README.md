@@ -6,8 +6,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 99 |
-| [Accepted](#accepted) | 25 |
+| [Idea](#idea) | 98 |
+| [Accepted](#accepted) | 26 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 25 |
 | [Backlog](#backlog) | 19 |
@@ -38,7 +38,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st56"></a>[ST56](ST56-The-Gathered-Findings-Worked-Off.md) The gathered findings worked off | 🔼 High | B:2 · F:1 · HO:1 | The gathered findings from earlier work are cleared, and anything larger becomes an issue of its own, so nothing open is lost. |
 | <a id="st311"></a>[ST311](ST311-A-Planner-App-Serves-The-Board-To-The-Window.md) A planner app serves the board to the window | 🔼 High | PL:24 · BT:8 · F:6 · B:2 · PJ:2 | The window reads and changes stories and issues through porelo-planner, a Spring Boot GraalVM native app running beside it, over a REST API described in OpenAPI; the app reads and writes the stories and issues in Git, and porelo keeps only its task functions. |
 | <a id="st313"></a>[ST313](ST313-A-Tasks-Results-Land-Where-The-Next-Step-And-Others.md) A task's results land where the next step and others find them | 🔼 High | PJ:2 | A reading's findings are kept as a Markdown file in the repository, where each state's start instructions tell the agent to put them, so the next task finds them in its source, works them off and deletes them, all in Git's history; ideas become issues the normal way. |
-| <a id="st318"></a>[ST318](ST318-Logging-In-The-Frontend-And-The-Planner.md) Logging in the frontend and the planner | 🔼 High | none yet | The window and the planner each keep a log with levels; a person sets the level in the window, INFO by default, raises or lowers it there, and opens either log file on the local machine from a link in the window. The planner's backend log, written through its Java logging, lies beside the window's log, so a fault is read in one place and Needs you keeps only what asks for an action. |
 | <a id="st57"></a>[ST57](ST57-A-Linters-Report-Shown-On-The-Waiting-Work.md) A linter's report shown on the waiting work | 🟰 Medium | B:2 | A person adding a linter's SARIF report to waiting work sees each finding on its file and lines. |
 | <a id="st58"></a>[ST58](ST58-Who-Wrote-It-And-What-It-Touches-Shown.md) Who wrote it and what it touches, shown on waiting work | 🟰 Medium | B:1 | A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon. |
 | <a id="st63"></a>[ST63](ST63-Rounds-Of-Check-And-Fix-At-The-Gate.md) Rounds of check and fix at the gate | 🟰 Medium | PJ:1 | A build task pushes to its gate, a reviewer leaves findings on that commit, and the builder fixes them in rounds before the person is asked. |
@@ -130,6 +129,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st44"></a>[ST44](ST44-Questions-A-Plan-And-Taken-Up-Again.md) Questions, a plan, and taken up again | 🔼 High | PJ:1 | A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard. |
 | <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🔼 High | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
 | <a id="st314"></a>[ST314](ST314-The-Planner-Moves-Work-On-From-State-To-State.md) The planner moves work on from state to state by itself | 🔼 High | none yet | The planner moves an issue on by itself when its task ends, as the project's configuration says from which state to which and how often: work that ends DONE in Implementing goes to Reading and a reader starts with that state's instructions, a reading that asks for rework goes to Reworking and the builder starts with the findings, and a reading that is OK goes to Review for the person. |
+| <a id="st318"></a>[ST318](ST318-Logging-In-The-Frontend-And-The-Planner.md) Logging in the frontend and the planner | 🔼 High | none yet | The window and the planner each keep a log with levels; a person sets the level in the window, INFO by default, raises or lowers it there, and opens either log file on the local machine from a link in the window. The planner's backend log, written through its Java logging, lies beside the window's log, so a fault is read in one place and Needs you keeps only what asks for an action. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
 | <a id="st77"></a>[ST77](ST77-Direct-Pushes-And-Red-Checks-Refused.md) Direct pushes and red checks refused | 🟰 Medium | PJ:1 | Direct pushes to main and merges with red checks are refused for every account, so main only changes through checked pull requests. |
 | <a id="st83"></a>[ST83](ST83-An-Expiring-Token-Told-Ahead.md) An expiring token told ahead | 🟰 Medium | PJ:1 | A person is told ahead of time, once, when a forge token on a host is about to expire. |
