@@ -10,7 +10,7 @@
 
 - [porelo-frontend#F483](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f483) (Review)
 - [porelo-frontend#F485](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f485) (Backlog)
-- [porelo-frontend#F486](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f486) (Backlog)
+- [porelo-frontend#F486](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f486) (Review)
 - [porelo-planner#PL54](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl54) (Estimated)
 - [porelo-planner#PL55](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl55) (Estimated)
 
