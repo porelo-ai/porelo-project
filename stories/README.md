@@ -7,9 +7,9 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 97 |
-| [Accepted](#accepted) | 25 |
+| [Accepted](#accepted) | 24 |
 | [Analyzed](#analyzed) | 40 |
-| [Estimated](#estimated) | 24 |
+| [Estimated](#estimated) | 25 |
 | [Backlog](#backlog) | 19 |
 | [Implementing](#implementing) | 5 |
 | [Review](#review) | 26 |
@@ -128,7 +128,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st44"></a>[ST44](ST44-Questions-A-Plan-And-Taken-Up-Again.md) Questions, a plan, and taken up again | 🔼 High | PJ:1 | A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard. |
 | <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🔼 High | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
 | <a id="st314"></a>[ST314](ST314-The-Planner-Moves-Work-On-From-State-To-State.md) The planner moves work on from state to state by itself | 🔼 High | none yet | The planner moves an issue on by itself when its task ends, as the project's configuration says from which state to which and how often: work that ends DONE in Implementing goes to Reading and a reader starts with that state's instructions, a reading that asks for rework goes to Reworking and the builder starts with the findings, and a reading that is OK goes to Review for the person. |
-| <a id="st315"></a>[ST315](ST315-The-Planners-Git-Adapter-Alone-Handles-Stories-And-Issues.md) The planner's Git adapter alone handles stories and issues | 🔼 High | none yet | Stories and issues kept as files in Git are read, checked, indexed and written by the planner's Git store adapter alone, so the build tools no longer carry a stories library or story and issue commands, and no repository's build or hand-over runs a check of issue files. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
 | <a id="st77"></a>[ST77](ST77-Direct-Pushes-And-Red-Checks-Refused.md) Direct pushes and red checks refused | 🟰 Medium | PJ:1 | Direct pushes to main and merges with red checks are refused for every account, so main only changes through checked pull requests. |
 | <a id="st83"></a>[ST83](ST83-An-Expiring-Token-Told-Ahead.md) An expiring token told ahead | 🟰 Medium | PJ:1 | A person is told ahead of time, once, when a forge token on a host is about to expire. |
@@ -201,6 +200,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st38"></a>[ST38](ST38-The-Chosen-Branch-Receives-The-Work.md) The chosen branch receives the work | 🔼 High | F:4 · B:1 | A person can choose a branch template or an explicit branch, and approved work lands on exactly that branch on the forge. |
 | <a id="st41"></a>[ST41](ST41-Porelo-Project-Init-Proposes-Tools-And-Rules.md) `porelo project init` proposes tools and rules | 🔼 High | B:7 · EC:6 · F:1 · PJ:1 | A person starting a Maven repository gets a proposed tool and rules file that porelo project init drafts, with each value explained. |
 | <a id="st47"></a>[ST47](ST47-A-Terminal-And-Live-List-Used-Together.md) A terminal and live list used together | 🔼 High | B:3 · F:2 | A person can use the embedded terminal like an ordinary terminal and keep task list --watch open beside it. |
+| <a id="st315"></a>[ST315](ST315-The-Planners-Git-Adapter-Alone-Handles-Stories-And-Issues.md) The planner's Git adapter alone handles stories and issues | 🔼 High | none yet | Stories and issues kept as files in Git are read, checked, indexed and written by the planner's Git store adapter alone, so the build tools no longer carry a stories library or story and issue commands, and no repository's build or hand-over runs a check of issue files. |
 | <a id="st97"></a>[ST97](ST97-Return-To-The-Chosen-Files.md) Return to the chosen files | 🟰 Medium | B:1 | A person can rewind a task to a turn snapshot and compare the restored files, and an unsupported session is told so. |
 | <a id="st106"></a>[ST106](ST106-Make-Security-Failures-Hold-The-Release.md) Make security failures hold the release | 🟰 Medium | B:2 | A release is held back when a security check fails, because Fedora isolation and the misuse tests must pass on their intended legs. |
 | <a id="st110"></a>[ST110](ST110-Sign-Packages-And-Setup-With-The-Trusted-Key.md) Sign packages and setup with the trusted key | 🟰 Medium | B:1 · CC:1 | A person can install Porelo and the Claude Code adapter from one joint published version and verify packages and setup with the trusted signing key. |
