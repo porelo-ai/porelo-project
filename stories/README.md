@@ -7,7 +7,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 98 |
-| [Accepted](#accepted) | 24 |
+| [Accepted](#accepted) | 25 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 25 |
 | [Backlog](#backlog) | 19 |
@@ -139,6 +139,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st109"></a>[ST109](ST109-Check-Unusual-Workflow-Spellings-Too.md) Check unusual workflow spellings too | 🟰 Medium | B:1 · BT:1 | Workflow files are checked even when written in unusual ways, so a corrected parent builds every Maven repository and a plugin version restore is caught. |
 | <a id="st111"></a>[ST111](ST111-Install-From-The-Intended-Package-Source.md) Install from the intended package source | 🟰 Medium | B:5 · F:1 | A person installing through the interface on fresh Fedora, Debian or Ubuntu gets packages only from the intended source, and a changed setup script is caught. |
 | <a id="st114"></a>[ST114](ST114-A-Vulnerability-Has-A-Way-In-And-Is.md) A vulnerability has a way in and is answered | 🟰 Medium | PJ:2 | Whoever finds a vulnerability knows how to report it, and every advisory is read and answered by its owner. |
+| <a id="st317"></a>[ST317](ST317-Builds-Take-Outside-Downloads-From-A-Cache.md) Builds take outside downloads from a cache | 🟰 Medium | none yet | Every build fetches what it needs from outside - container images, toolchains, packages - from a cache when it can, so an outage of a registry such as Codeberg's no longer turns a build red, and the cache keeps only the newest copy of each thing so it never fills up. |
 | <a id="st117"></a>[ST117](ST117-Store-A-Forge-Sign-In-Without-Pasting-A.md) Store a forge sign-in without pasting a token | 🔽 Low | B:1 | A person can store a forge sign-in through the device-code login in a terminal, with no token to paste. |
 | <a id="st128"></a>[ST128](ST128-Explain-A-Machine-Quota-Refusal.md) Explain a machine quota refusal | 🔽 Low | BT:1 | A person is told the actual limit when a machine request is refused because the provider quota is used up. |
 | <a id="st143"></a>[ST143](ST143-Inherit-Signed-Rules-Through-The-Organization.md) Inherit signed rules through the organization | 🔽 Low | B:1 | Settings inherit through signed organization, team and project rules, and a project can narrow a value but cannot widen it. |
