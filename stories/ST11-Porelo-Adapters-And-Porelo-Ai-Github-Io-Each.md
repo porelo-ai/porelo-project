@@ -9,7 +9,7 @@
 **Issues:**
 
 - [porelo-adapters#GH11](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh11) (Analyzed)
-- [porelo-ai.github.io#SI05](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si05) (Implementing)
+- [porelo-ai.github.io#SI05](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si05) (Backlog)
 - [porelo-ai.github.io#SI06](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si06) (Idea)
 
 ## Data

@@ -8,7 +8,9 @@
 
 **Issues:**
 
-- [porelo-frontend#F475](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f475) (Implementing)
+- [porelo-planner#PL71](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl71) (Backlog)
+- [porelo-planner#PL70](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl70) (Backlog)
+- [porelo-frontend#F475](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f475) (Review)
 - [porelo-planner#PL64](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl64) (Estimated)
 
 ## Data
@@ -23,6 +25,8 @@
   "priority": "High",
   "state": "Accepted",
   "issues": [
+    "porelo-planner#PL71",
+    "porelo-planner#PL70",
     "porelo-frontend#F475",
     "porelo-planner#PL64"
   ],
