@@ -9,6 +9,7 @@
 **Issues:**
 
 - [porelo-project#PJ58](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj58) (Analyzed)
+- [porelo-project#PJ110](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj110) (Analyzed)
 
 ## Data
 
@@ -21,7 +22,8 @@
   "test": "In `porelo-all` every repository is there; a change outside `porelo-project/` is refused.",
   "priority": "Highest",
   "issues": [
-    "porelo-project#PJ58"
+    "porelo-project#PJ58",
+    "porelo-project#PJ110"
   ],
   "tested": null
 }

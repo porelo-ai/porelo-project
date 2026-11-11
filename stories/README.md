@@ -6,8 +6,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 99 |
-| [Accepted](#accepted) | 26 |
+| [Idea](#idea) | 98 |
+| [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 25 |
 | [Backlog](#backlog) | 19 |
@@ -64,7 +64,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st112"></a>[ST112](ST112-See-The-Exact-Image-And-Package-Contents.md) See the exact image and package contents | 🟰 Medium | B:3 · BT:1 · F:1 | A person can see the exact image and package contents, such as an SBOM, and an image tag alone is not enough for a project to follow. |
 | <a id="st113"></a>[ST113](ST113-Recover-From-An-Unavailable-Image-Source.md) Recover from an unavailable image source | 🟰 Medium | B:1 | If the first Ubuntu mirror stops answering, an image build recovers by using the next source instead of failing. |
 | <a id="st316"></a>[ST316](ST316-Visual-Adjustments-In-The-Planner.md) Visual adjustments in the planner | 🟰 Medium | PL:2 | The planning board reads at a glance: every story card and issue tile shows its T-shirt size beside its priority, folding a state's box hides the stories and issues in it while the column keeps its width, and a single card can be folded down to its heading with number and priority. |
-| <a id="st319"></a>[ST319](ST319-Discuss-An-Idea-With-An-Agent-In-The-Planner.md) Discuss an idea with an agent in the planner | 🟰 Medium | none yet | "Discuss an idea" in the planner starts, through the usual Start dialog, a task that reads all of the project's repositories as one. The person discusses the idea with its agent, who writes it to a file. When the task ends, the path returns to the planner, which makes a story in Idea with sub-issues per repository; the task's staged changes are dropped, and the next stage's agents start on them. |
 | <a id="st115"></a>[ST115](ST115-Keep-Project-Intake-And-Sign-In-Free-Of.md) Keep project intake and sign-in free of hidden secrets | 🔽 Low | B:8 | Project intake and sign-in keep secrets out of sight, so invalid credential names are refused and known test credentials do not leak. |
 | <a id="st122"></a>[ST122](ST122-Unlock-The-Machine-With-The-Right-Touched-Token.md) Unlock the machine with the right touched token | 🔽 Low | none yet | A person can unlock a machine after a restart with the right touched token, and the wrong or missing token is refused. |
 | <a id="st123"></a>[ST123](ST123-Show-Only-Proven-TPM2-Protection.md) Show only proven TPM2 protection | 🔽 Low | none yet | A person sees TPM2 protection only when it is proven, so a slot that merely claims hardware protection is not accepted. |
@@ -142,6 +141,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st111"></a>[ST111](ST111-Install-From-The-Intended-Package-Source.md) Install from the intended package source | 🟰 Medium | B:5 · F:1 | A person installing through the interface on fresh Fedora, Debian or Ubuntu gets packages only from the intended source, and a changed setup script is caught. |
 | <a id="st114"></a>[ST114](ST114-A-Vulnerability-Has-A-Way-In-And-Is.md) A vulnerability has a way in and is answered | 🟰 Medium | PJ:2 | Whoever finds a vulnerability knows how to report it, and every advisory is read and answered by its owner. |
 | <a id="st317"></a>[ST317](ST317-Builds-Take-Outside-Downloads-From-A-Cache.md) Builds take outside downloads from a cache | 🟰 Medium | none yet | Every build fetches what it needs from outside - container images, toolchains, packages - from a cache when it can, so an outage of a registry such as Codeberg's no longer turns a build red, and the cache keeps only the newest copy of each thing so it never fills up. |
+| <a id="st319"></a>[ST319](ST319-Discuss-An-Idea-With-An-Agent-In-The-Planner.md) Discuss an idea with an agent in the planner | 🟰 Medium | PJ:1 | "Discuss an idea" in the planner starts, through the usual Start dialog, a task that reads all of the project's repositories as one. The person discusses the idea with its agent, who writes it to a file. When the task ends, the path returns to the planner, which makes a story in Idea with sub-issues per repository; the task's staged changes are dropped, and the next stage's agents start on them. |
 | <a id="st117"></a>[ST117](ST117-Store-A-Forge-Sign-In-Without-Pasting-A.md) Store a forge sign-in without pasting a token | 🔽 Low | B:1 | A person can store a forge sign-in through the device-code login in a terminal, with no token to paste. |
 | <a id="st128"></a>[ST128](ST128-Explain-A-Machine-Quota-Refusal.md) Explain a machine quota refusal | 🔽 Low | BT:1 | A person is told the actual limit when a machine request is refused because the provider quota is used up. |
 | <a id="st143"></a>[ST143](ST143-Inherit-Signed-Rules-Through-The-Organization.md) Inherit signed rules through the organization | 🔽 Low | B:1 | Settings inherit through signed organization, team and project rules, and a project can narrow a value but cannot widen it. |
@@ -155,7 +155,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st14"></a>[ST14](ST14-The-Coordinator-Reads-Everything-And-Changes-Only-Porelo.md) The coordinator reads everything and changes only porelo-project | ⏫ Highest | PJ:1 | The coordinator can read every repository of the project but can change only the project repository, and any change elsewhere is refused. |
+| <a id="st14"></a>[ST14](ST14-The-Coordinator-Reads-Everything-And-Changes-Only-Porelo.md) The coordinator reads everything and changes only porelo-project | ⏫ Highest | PJ:2 | The coordinator can read every repository of the project but can change only the project repository, and any change elsewhere is refused. |
 | <a id="st24"></a>[ST24](ST24-The-Tokens-Counted-Per-Task-The-Dependencies-Shared.md) The tokens counted per task, the dependencies shared | ⏫ Highest | B:2 · BT:1 · PJ:1 | A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again. |
 | <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | ⏫ Highest | IJ:1 · MX:1 · SL:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
 | <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Move: Every agent works in a Porelo task, moved one at a time | ⏫ Highest | HO:4 · MX:3 | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |

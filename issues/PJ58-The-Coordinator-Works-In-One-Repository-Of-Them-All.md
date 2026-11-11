@@ -1,19 +1,25 @@
-# PJ58 — The coordinator works in one repository of them all
+# PJ58 — One Repository Of Them All, Read Only
 
 ```json
 {
   "$schema": "issue-1.json",
   "id": "PJ58",
-  "title": "The coordinator works in one repository of them all",
+  "title": "One Repository Of Them All, Read Only",
   "state": "Analyzed",
-  "size": "L",
+  "size": "M",
   "priority": "Medium",
   "rank": 2,
   "blockedBy": [],
-  "covers": "The coordinator reads every repository in `porelo-all` on the local Forgejo and changes only `porelo-project`: an incremental rebuild of every `main` by `git subtree`, a split of `porelo-project/` back as a pull request in `porelo-project`, a change elsewhere refused by name; porelo-host makes the repository and its two identities.",
-  "openQuestions": 2
+  "covers": "`porelo-all` on the local Forgejo holds every repository of the project as a `git subtree`, rebuilt incrementally from every `main`; a task that follows it reads every repository, and nothing it changes goes back. Handing `porelo-project/` back is [PJ110](README.md#pj110).",
+  "openQuestions": 1
 }
 ```
+
+**Split by the operator (2026-11-11).** This issue keeps the read-only half: `porelo-all`, its rebuild and a task
+that follows it. The split of `porelo-project/` back, the refusal of a change elsewhere and the split's identity are
+[PJ110](README.md#pj110). The read-only half comes first, for ST319's task that discusses an idea: it reads every
+repository and its changes are thrown away, so it needs no split. ST14 and the coordinator's move need both. The size
+was L (148) for both; M here is the share of the rebuild, steps 1 to 5 without the split, to be estimated anew.
 
 **Why this size.** crosses porelo-project (the two workflows and their scripts) and porelo-host (the repository on the forge and two identities), with a signed `project.yml` change and an end-to-end run on a forge.
 
@@ -109,11 +115,8 @@ test needs only `porelo-all` and the refusal, not that move.
 
 ## Open questions
 
-Both stay open by the operator's word (2026-11-06): discussed when the coordinator's move is due.
+It stays open by the operator's word (2026-11-06); the other, who approves the split, went to [PJ110](README.md#pj110) with the split: discussed when the coordinator's move is due.
 
-- **Who approves the split.** Recommended: the pull request the split opens in `porelo-project` on the host's forge,
-  approved by the operator like any other repository's, so no new approval exists and nothing in `porelo-all` is ever
-  merged. The other way, the gate of the coordinator's task, would approve before the refusal has run.
 - **How fresh `porelo-all` must be.** A workflow in `porelo-all` cannot see a merge in another repository, so "at
   every merge" means changing every repository's workflows to start it. Recommended: a scheduled rebuild every five
   minutes and on demand, a no-op when no `main` moved, so `porelo-all` lags a merge by minutes and no other
@@ -123,6 +126,4 @@ Both stay open by the operator's word (2026-11-06): discussed when the coordinat
 
 - How long a rebuild of `porelo-all` takes with `--squash` for the read-only repositories, first and incremental.
 - Whether the forgejo reader of [PJ22](README.md#pj22) reads `porelo-all`'s workflows like any other.
-- Whether the gate's pull request on `porelo-all`, which is never merged, can be left closed by the split or must be
-  kept from opening.
 - Whether a host's forge runs scheduled workflows while it is up for a few hours, and runs a missed one at start.
