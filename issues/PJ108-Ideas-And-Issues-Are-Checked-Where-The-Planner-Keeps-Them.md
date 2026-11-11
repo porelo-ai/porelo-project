@@ -5,7 +5,7 @@
   "$schema": "issue-1.json",
   "id": "PJ108",
   "title": "Ideas And Issues Are Checked Where The Planner Keeps Them",
-  "state": "Analyzed",
+  "state": "Accepted",
   "size": "L",
   "priority": "High",
   "rank": 1,
