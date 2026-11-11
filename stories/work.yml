@@ -3,7 +3,8 @@
 # per repository, the modes a task may start in, the order the task is given ({story}, {issues} and {tasks} filled in)
 # and the model per agent. Modes and models are proposals: the first mode and the first agent's model are preselected
 # in the task dialog, where the person may change them, and a task that starts by itself takes them. A working state
-# is a key here.
+# is a key here. A task works all of a story's issues in its repository; each issue goes to a sub-agent of its own,
+# named by the issue's id, so each issue is measured alone and the task's own time is shared evenly among them.
 work:
   In analysis:
     from: [Idea, Accepted]
@@ -11,8 +12,8 @@ work:
     per: repository
     modes: [UNATTENDED, AGENT]
     order: >-
-      Analyze {issues} of {story}: read the code each names, write its plan, its size and what only the operator can
-      decide, and end with your outcome.
+      Analyze {issues} of {story}, each issue in a sub-agent of its own named by its id: read the code it names,
+      write its plan, its size and what only the operator can decide; then end with your outcome.
     models: {claude: claude-opus-5-5, codex: gpt-6.1-sol}
   Under estimation:
     from: [Analyzed]
@@ -20,8 +21,9 @@ work:
     per: repository
     modes: [UNATTENDED, AGENT]
     order: >-
-      Estimate {issues} of {story}: read each issue's plan and the code it names, set its size (XS to XL) against the
-      measured velocity, name what makes it uncertain, and end with your outcome.
+      Estimate {issues} of {story}, each issue in a sub-agent of its own named by its id: read its plan and the code it
+      names, set its size (XS to XL) against the measured velocity, name what makes it uncertain; then end with your
+      outcome.
     models: {claude: claude-opus-5-5, codex: gpt-6.1-sol}
   Implementing:
     from: [Backlog, Rework]
@@ -30,8 +32,8 @@ work:
     per: repository
     modes: [UNATTENDED, AGENT]
     order: >-
-      Build {issues} of {story} as each issue's plan says: each test red first, then green; commit, and end with your
-      outcome.
+      Build {issues} of {story}, each issue in a sub-agent of its own named by its id, as the issue's plan says: each
+      test red first, then green; review each, commit, and end with your outcome.
     models: {codex: gpt-6.1-sol, claude: claude-opus-5-5}
   Reading:
     from: [Implementing, Reworking, Review]
@@ -50,6 +52,6 @@ work:
     per: repository
     modes: [UNATTENDED, AGENT]
     order: >-
-      Fix the blocking findings the reading of {issues} of {story} gave, each with a test seen to fail first; commit,
-      and end with your outcome.
+      Fix the blocking findings the reading of {issues} of {story} gave, each issue's in a sub-agent of its own named by
+      its id, each with a test seen to fail first; commit, and end with your outcome.
     models: {codex: gpt-6.1-sol, claude: claude-opus-5-5}
