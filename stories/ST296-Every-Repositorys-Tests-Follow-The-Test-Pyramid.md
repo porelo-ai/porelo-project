@@ -1,6 +1,6 @@
 # ST296 — Every repository's tests follow the test pyramid
 
-**Priority:** ⏫ Highest · **State:** Analyzed
+**Priority:** ⏫ Highest · **State:** Estimated
 
 **What a user gains.** Each repository proves its flows with unit tests that run in seconds, tests its real pieces narrowly on that core and keeps integration, VM and rented-machine runs for what nothing lower can show, so work is done and checked faster and a fault is found at the lowest level that shows it.
 
@@ -27,7 +27,11 @@
 - [porelo-codex#CX16](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx16) (Estimated)
 - [porelo-agy#AG15](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag15) (Estimated)
 - [porelo-buildtools#BT57](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt57) (Estimated)
-- [porelo-frontend#F450](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f450) (Analyzed)
+- [porelo-frontend#F495](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f495) (Estimated)
+- [porelo-frontend#F496](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f496) (Estimated)
+- [porelo-frontend#F497](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f497) (Estimated)
+- [porelo-frontend#F498](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f498) (Estimated)
+- [porelo-frontend#F499](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f499) (Estimated)
 - [porelo-message-matrix#MX93](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx93) (Estimated)
 - [porelo-host#HO159](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho159) (Estimated)
 - [porelo-intellij#IJ23](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij23) (Estimated)
@@ -71,7 +75,11 @@
     "porelo-codex#CX16",
     "porelo-agy#AG15",
     "porelo-buildtools#BT57",
-    "porelo-frontend#F450",
+    "porelo-frontend#F495",
+    "porelo-frontend#F496",
+    "porelo-frontend#F497",
+    "porelo-frontend#F498",
+    "porelo-frontend#F499",
     "porelo-message-matrix#MX93",
     "porelo-host#HO159",
     "porelo-intellij#IJ23",

@@ -5,12 +5,12 @@
   "$schema": "issue-1.json",
   "id": "PJ57",
   "title": "A person is led from nothing to work",
-  "state": "Analyzed",
+  "state": "Estimated",
   "size": "XL",
   "priority": "Medium",
   "rank": 7,
   "blockedBy": [],
-  "covers": "The Porelo Wizard, in a repository of its own with an agent of its own: questions first, a plan of every step, progress kept and taken up again, hand-overs with instructions to an administrator or a forge's, and a chat beside it in the interface; the core of the usability sprint."
+  "covers": "The Porelo Wizard, its catalogue and its CLI in porelo-frontend: questions first, a plan of every step, progress kept and taken up again, hand-overs with instructions to an administrator or a forge's, a plan run without a person by the wizard's own CLI, and a chat beside it in the interface; the core of the usability sprint."
 }
 ```
 
@@ -91,8 +91,14 @@ What a person meets today without a guide:
   `default` without a project, the agent signed in on the machine as the default, the drafts of a
   project from a checkout - become steps in its catalogue.
 
-**Why this size.** XL: it crosses four repositories (porelo, porelo-frontend, a new porelo-wizard with an agent of its
-own, porelo-project) and makes a new repository. It is built as the six issues of L or smaller that *Plan* names.
+**Why this size.** XL: it crosses three repositories (porelo, porelo-frontend, porelo-project). It is built as the six
+issues of L or smaller that *Plan* names.
+
+## Decided by the operator (2026-11-12)
+
+- The catalogue lives in porelo-frontend for now. There is no porelo-wizard repository and no agent of its own.
+- The plan without a person runs by a CLI of the wizard's own, not by the window run headless.
+- The chat shows a notice of what it sends to the agent's provider, and on request a preview of exactly what is sent.
 
 ## Plan
 
@@ -103,6 +109,13 @@ vault, drive and harden, kept in the settings after every step. Its other wizard
 The window reads porelo over varlink, not the CLI. It already has `Doctor`, `FirstStart`, `Credentials`,
 `AgentSignIns`, `Projects`, `CheckProjectFile`, `Keyslots`, `MessageMembers` and `DeployKey`.
 
+**Where the CLI lives (a proposal).** In porelo-frontend, as a pure-Dart package `packages/porelo_wizard` beside
+`packages/porelo_host`, which already gives the window a package and a command of its own (`porelo-host`), built for
+Linux and Windows and shipped inside the window's packages and alone. The package holds the catalogue, its schema, the
+plan and its progress; the window and the CLI `porelo-wizard` both use it, so the plan has one implementation. The CLI
+reads a step's readiness through `porelo doctor --json --step <name>` (step 1), so it needs no varlink client and no
+Flutter.
+
 1. **porelo: one readiness check per step** (M, Agent Core). A daemon method `Readiness(step)` answers
    `{state, detail, remedy}`, the shape `Doctor`'s findings already have. It is built from doctor's probes and three
    new ones: an agent can start (today only a provider grant in `Credentials` says so), a repository's deploy key and
@@ -110,27 +123,34 @@ The window reads porelo over varlink, not the CLI. It already has `Doctor`, `Fir
    `porelo doctor --json --step <name>` gives the same answer on the CLI. The wizard reads one shape, not a dozen.
    A project's signed file (`project verify --json`) and messaging (doctor's messages and transports) are already
    covered.
-2. **porelo-wizard: the catalogue** (L, new repository and agent). The step catalogue as data with a JSON schema. Each
-   step names who does it, how often, what comes before it, its `Readiness` step, what it runs, what it asks for
-   (a secret only by where it is kept) and its instructions per role. The repository's CI checks every step against the
-   schema, and checks that each `Readiness` name is one porelo answers. The first steps are the window's seven
-   `SetupStep`s, `porelo setup`, the vault, an agent's sign-in, and work in `default`.
+2. **porelo-frontend: the catalogue** (M). In `packages/porelo_wizard`, the step catalogue as data with a JSON schema.
+   Each step names who does it, how often, what comes before it, its `Readiness` step, what it runs, what it asks for
+   (a secret only by where it is kept) and its instructions per role. porelo-frontend's build checks every step against
+   the schema, and checks that each `Readiness` name is one porelo answers. The first steps are the window's seven
+   `SetupStep`s, `porelo setup`, the vault, an agent's sign-in, and work in `default`. It is M, not L as before: no new
+   repository and no agent are made.
 3. **porelo-frontend: the plan and its progress** (L). The questions first, then the plan of only the steps the
-   answers need, shown before anything runs. Progress is kept the way `SetupRun` keeps it today. A step is done when
-   its `Readiness` says so, also when someone else did it by hand. `SetupRun`'s steps become catalogue steps, and the
-   machine wizard becomes the plan's first part. The red test comes first: a plan made from a fake catalogue and fake
-   answers, taken up again after a restart, with a step done elsewhere seen as done.
-4. **Hand-overs** (M, porelo-wizard and porelo-frontend). A step for someone else is given to them as instructions,
-   plus a file they can run where the step can run without a person. The wizard waits on the step's `Readiness`.
+   answers need, shown before anything runs. The plan and its progress are plain Dart in `packages/porelo_wizard`;
+   the window shows them. Progress is kept the way `SetupRun` keeps it today. A step is done when its `Readiness` says
+   so, also when someone else did it by hand. `SetupRun`'s steps become catalogue steps, and the machine wizard becomes
+   the plan's first part. The red test comes first: a plan made from a fake catalogue and fake answers, taken up again
+   after a restart, with a step done elsewhere seen as done.
+4. **Hand-overs** (M, porelo-frontend). A step for someone else is given to them as instructions, plus a file they
+   can run where the step can run without a person. The wizard waits on the step's `Readiness`.
 5. **The chat beside the wizard** (L, porelo-frontend). It uses `flutter_ai_toolkit`, with Porelo's own
    `LlmProvider`: Claude Code run with no person (`claude -p --output-format stream-json`, reading only, in the
    documentation's directory). It sees the plan, the current step and the checks' output, never a secret, and it runs
-   nothing. The first test is a fake provider that streams an answer about the current step.
-6. **Running without a person** (M). The same plan runs from a file of answers. A step that must stay attended stops
-   it and says so. Agent Core lists those steps: the passphrase, a browser or device sign-in, a signature with a key in
-   a locked store, and `ConfirmFirstStart`. The vault is unattended once its passphrase comes from a file the person
-   made (`vault init --passphrase-stdin` or `--passphrase-command`). `porelo setup` and `TakeProject` run without a
-   terminal.
+   nothing. Before the first question it shows a notice: what it sends goes to the agent's provider, and what that is
+   (the plan, the current step, the checks' output). On request it shows a preview of exactly the text it sends next,
+   built by the same function that builds what is sent. It uses the agent the person signed in; choosing another
+   provider is not part of this issue. The first test is a fake provider that streams an answer about the current step.
+6. **Running without a person** (L, porelo-frontend). The CLI `porelo-wizard` of `packages/porelo_wizard` runs the same
+   plan from a file of answers, with no window and no desktop, as for a company's rollout. A step that must stay
+   attended stops it and says so. Agent Core lists those steps: the passphrase, a browser or device sign-in, a
+   signature with a key in a locked store, and `ConfirmFirstStart`. The vault is unattended once its passphrase comes
+   from a file the person made (`vault init --passphrase-stdin` or `--passphrase-command`). `porelo setup` and
+   `TakeProject` run without a terminal. The CLI is built for Linux and Windows and shipped inside the window's
+   packages and alone, as `porelo-host` is. It is L, not M as before: the CLI and its packaging are new.
 
 Order: 1 and 2 first, side by side. Then 3. Then 4 and 6. 5 can start after 3.
 
@@ -140,24 +160,19 @@ Order: 1 and 2 first, side by side. Then 3. Then 4 and 6. 5 can start after 3.
   first reviewed work in `default`. The wizard is stopped and taken up again on the way.
 - A step done by an administrator elsewhere is seen as done when the wizard is taken up again. Its hand-over showed
   them the instructions and a file they could run.
-- A plan runs from a file of answers on a fresh machine, and stops at the first attended step, naming it.
+- `porelo-wizard`, with no window, runs a plan from a file of answers on a fresh machine, and stops at the first
+  attended step, naming it.
 - The chat answers a question about the current step and never receives a secret. A test shows this: the provider is
   given a step whose vault passphrase was typed, and gets no secret.
-
-## Open questions
-
-- **A new repository and agent, `porelo-wizard`**: is it made, under which organization, and whose agent owns it?
-  Or does the catalogue live in porelo-frontend until it is needed elsewhere?
-- **What the person is told** about what the chat sends to the agent's provider, and how they choose another
-  (kept from before).
-- **Who runs the unattended plan**: a CLI of porelo-wizard's own, or the window run headless? The CLI serves a
-  company's rollout without a desktop; the window keeps one implementation.
+- The chat shows its notice before the first question, and its preview is exactly what the provider then receives;
+  a test compares the two.
 
 ## To be checked
 
-- Which of `host_dialog.dart`'s fifteen states are steps of the catalogue, and which are the dialog's own (F450's
-  slice 5 makes it a model either way).
+- Which of `host_dialog.dart`'s fifteen states are steps of the catalogue, and which are the dialog's own
+  (porelo-frontend's F499 makes it a model either way).
 - Whether `flutter_ai_toolkit`'s current release builds with the window's Flutter 3.47 and its licence check.
 - How the catalogue's instructions stay true when the repository that does a step changes: the step's `Readiness`
-  run in porelo-wizard's acceptance leg against the released porelo is the proposal (this replaces the earlier open
-  question on where the format is checked, which the plan's step 2 answers).
+  run in porelo-frontend's acceptance leg against the released porelo is the proposal.
+- Whether the window's varlink client can move into `packages/porelo_wizard` without Flutter, should the CLI need more
+  than `porelo doctor --json --step`.

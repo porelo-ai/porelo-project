@@ -77,7 +77,7 @@ as a file in the repository needs none of these channels to grow.
   places, the verdict).
 - What a reading with no findings writes, and how the planner sees from the commit that findings exist.
 
-## Analysis (Agent Planner, 2026-11-12)
+## Analysis (Agent Planner, 2026-11-12, revised with the operator's answers)
 
 **Size:** L - it crosses porelo-planner (start instructions per state from the store's adapter, the findings read from
 a file), porelo-frontend (the instructions into a task's start message), porelo (the setting in `project.yml` and
@@ -114,14 +114,30 @@ comes from `stories/work.yml` (`order` with `{story}`, `{issues}`, `{tasks}`). N
 | porelo | the findings place as a setting in `project.yml`, overridable in `porelo.yml` | S | the operator's word on the name |
 | porelo-frontend | none beyond PL90's: the order already carries the instructions | - | - |
 
-**Open questions (the operator's):**
+**Decided by the operator (2026-11-12):** a clean reading writes its file too, so a missing file always means the
+reader did not finish its work, never a clean reading.
 
-- The setting's name, shape and default, for example `findings: {dir: "readings/"}` in `project.yml` with a
-  repository's `porelo.yml` able to override `dir`; `project.yml` is signed, so a change goes to the operator to sign.
-- The file: one per issue and reading, named `<dir>/<ISSUE>-reading-<n>.md`, holding the reading's verdict and the
-  findings in today's row form (`<n>. <blocking|note> | <file or -> | <line or -> | <text>`).
-- A reading without findings writes the file with an empty findings list, so a missing file always means the reader
-  did not finish its work, never a clean reading.
+**Proposed, for the operator's word:**
+
+- **The setting.** In `project.yml`, at the project's top level: `readings: {directory: readings}`, a path relative to
+  each repository's root, no `..`, no leading `/`; its default, when absent, is `readings`. A repository's `porelo.yml`
+  may give its own `readings.directory`, which wins for that repository. `project.yml` is signed, so adding it goes to
+  the operator to sign; the default needs no change to any signed file.
+- **The file.** One per issue and reading round: `<directory>/<ISSUE>-reading-<round>.md`, for example
+  `readings/TP01-reading-1.md`. Markdown, in this form:
+
+      # TP01 - reading 1
+
+      Read: the work of Porelo task <task>, at commit <sha>.
+
+      Findings:
+      1. blocking | src/Hello.java | 12 | The greeting is not the one asked for.
+      2. note | - | - | The test names no reason.
+
+  The `Findings:` block keeps today's rows (`<n>. <blocking|note> | <file or -> | <line or -> | <text>`), so one
+  reader and one check serve the file and the answer alike; a clean reading writes `Findings:` with no row.
+- **Its end.** The rework that works the findings off deletes the file in the same commit as its fix, so the history
+  shows both; the next reading writes the next round's file.
 
 **To be checked:** how the planner reads a file on a task's branch that porelo names (B646's reported branch) through
 its Git store, and whether the reader's commit reaches the forge before the planner reads it (the gate's `waiting`).

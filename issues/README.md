@@ -68,7 +68,6 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | <a id="pj16"></a>[PJ16](PJ16-An-Organisation-Decides-Which-Providers-Its-Machines-Use.md) | L | - | A root-owned machine policy names the providers tasks may use, and narrows follows, prompts and the `online` class; a developer cannot widen it. | - |
 | <a id="pj03"></a>[PJ03](PJ03-An-Attachment-May-Be-Permitted.md) | XL | - | Whether a message may carry more than text becomes an operator's decision, per direction, project and peer, refused by default. | - |
 | <a id="a09"></a>[A09](A09-Agent-Grok-Build.md) | L | - | Grok Build as a packaged agent: a candidate, brokering unverified. | - |
-| <a id="pj57"></a>[PJ57](PJ57-A-Person-Is-Led-From-Nothing-To-Work.md) | XL | - | The Porelo Wizard, in a repository of its own with an agent of its own: questions first, a plan of every step, progress kept and taken up again, hand-overs with instructions to an administrator or a forge's, and a chat beside it in the interface; the core of the usability sprint. | - |
 | <a id="a10"></a>[A10](A10-Agent-OpenCode.md) | L | - | OpenCode as a packaged agent: a base URL configurable per provider. | - |
 | <a id="pj25"></a>[PJ25](PJ25-McPorelo-Apple-Containers.md) | XL | - | McPorelo: the same guarantees on Apple Containers, driven by one client through the daemon's contract. | 4 |
 
@@ -83,6 +82,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | <a id="pj08"></a>[PJ08](PJ08-An-Unattended-Jobs-Refusal-Reaches-A-Person.md) | L | - | An unattended job's refusal reaches a person. |
 | <a id="pj91"></a>[PJ91](PJ91-A-Porelo-GitHub-App-For-The-Comfortable-Start.md) | XL | - | A person starts at GitHub by installing Porelo's app and signing in from the window with a device code, with no token made by hand, no private key shipped and no token on a host; beside the token way and the manual way, the host's deploy keys staying. |
 | <a id="pj24"></a>[PJ24](PJ24-Where-The-Agent-Protocols-Touch-This.md) | M | - | For A2A, MCP, ACP and AG-UI each: adopted, answered otherwise, or refused, with the reason and what would change it. |
+| <a id="pj57"></a>[PJ57](PJ57-A-Person-Is-Led-From-Nothing-To-Work.md) | XL | - | The Porelo Wizard, its catalogue and its CLI in porelo-frontend: questions first, a plan of every step, progress kept and taken up again, hand-overs with instructions to an administrator or a forge's, a plan run without a person by the wizard's own CLI, and a chat beside it in the interface; the core of the usability sprint. |
 
 ## Backlog
 
