@@ -5,7 +5,7 @@
   "$schema": "issue-1.json",
   "id": "PJ97",
   "title": "A Repository Can Be Renamed Without Losing Work",
-  "state": "Analyzed",
+  "state": "Estimated",
   "size": "L",
   "priority": "Medium",
   "rank": 3,
@@ -91,6 +91,13 @@ Credentials and vault entries are keyed by address and need nothing.
 4. **By hand, in two steps (remove, then add).** This cannot be told apart from a removal plus an addition, so it is not guessed. The warning of step 2 fires, and `porelo project rename-repository PROJECT OLD NEW` does the move of step 3 and prints the line the person must change in the file.
 5. **On a host, in porelo-host.** While a card names a key the file does not list, or the other way round, nothing is taken off. The mismatch is reported until both agree, and a rename the follow detects as in step 2 is carried by the address the host already keys its copy by.
 6. **Docs.** `doc/running.md` gets a section on renaming a repository.
+
+
+## Decided by the operator (2026-11-12)
+
+- **The identity:** the key stays the name a person types; porelo detects a rename by the unchanged address.
+- **A detected rename moves by itself:** porelo moves the mirror and the judged record to the new key under the gate's lock, with no command needed.
+- **A rename that also changes the address** stays a removal plus an addition, with the warning only.
 
 ## Open questions
 

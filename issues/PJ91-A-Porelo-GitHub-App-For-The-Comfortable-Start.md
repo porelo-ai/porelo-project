@@ -5,8 +5,8 @@
   "$schema": "issue-1.json",
   "id": "PJ91",
   "title": "A Porelo GitHub App for the comfortable start",
-  "state": "Accepted",
-  "size": "-",
+  "state": "Estimated",
+  "size": "XL",
   "priority": "Medium",
   "rank": 4,
   "blockedBy": [],
@@ -127,6 +127,52 @@ Build it after [B270](https://github.com/porelo-ai/porelo/blob/main/issues/base/
 | `porelo` | S | The default client id, `doc/credentials.md` ("Porelo ships none of its own"), a decision. Up to M if personal accounts come with it |
 | `porelo-host` | XS | None in the code if the token on standard input holds; the words in `doc/local-forge.md` |
 | `porelo-forge-clients`, `porelo-adapters` | none | A token is a token to them |
+
+
+## The build and review adapters' part (Agent Adapters, 2026-11-12)
+
+Read in porelo-adapters `main` (6213f20) and porelo `main` (`apps/app-task/.../BuildsWiring.java`). Nothing was run
+at GitHub; what GitHub grants is from its documentation.
+
+### 1. The table of uses misses the build and review reads
+
+Proposed rows for section 1, "Which uses of today's token it replaces":
+
+| Use | Where | The app's permission | With the app |
+|---|---|---|---|
+| Reading a branch's head, a commit's runs, their jobs and a failed job's log | `GitHubReader`, `porelo-adapters`: `git/ref/heads/{branch}`, `actions/runs?head_sha=`, `actions/runs/{id}/jobs`, `actions/jobs/{id}/logs` | Actions: read, Contents: read, Metadata: read | Not replaced while the reads run on the host, see 2 |
+| Reading a pull request's review comments and writing a released one | the GitHub adapter's `Review1`, not built yet | Pull requests: read, and write for a released comment | As the build reads, see 2 |
+
+**So the app's set lacks Actions: read**, and Pull requests: read and write once reviews ship. The set in "So the app
+asks for one set" grows by those two; as section 4 says, a permission added later asks every installer anew, so they
+belong in it from the first day if the app is to serve the builds or the reviews at all.
+
+### 2. The build reads run on the host, with a token of the host's vault
+
+`BuildsWiring` starts the build reader on the host for a task's whole life, with the credential `project.yml`'s
+`builds` names, read from the vault of the person's account on the host ("run porelo host forge-token on this host").
+That is a token lying on a host, which PJ91's "no token on a host" excludes for the app's token, and a user access
+token lives eight hours, shorter than many tasks, with a refresh that writes back.
+
+So either:
+
+- the builds keep their own read token on the host, by the token way, holding only Actions: read, Contents: read and
+  Metadata: read - the app then does not touch the builds, and the window's words say so; or
+- the app's refresh token lies on the host for the builds, against PJ91's rule.
+
+The proposal is the first: a read-only token for the builds, made by the token way. It adds one question to PJ91's
+open ones for the operator: **may the builds keep a read-only token on the host beside the app?**
+
+### 3. What porelo-adapters changes
+
+Nothing in its code: `GitHubReader` sends `Authorization: Bearer <token>`, which GitHub's documentation names for
+user access tokens as for the others, and the log request after the redirect carries none. Size here: none, as PJ91
+says. To be checked in PJ91's trial: one `actions/runs?head_sha=` and one job log read with a user access token of the
+test app holding Actions: read.
+
+## Decided by the operator (2026-11-12)
+
+- **Builds keep a read-only token on the host beside the app:** porelo reads a task's builds for its whole life with a read-only token made the token way; the app does not replace it.
 
 ## Open questions
 

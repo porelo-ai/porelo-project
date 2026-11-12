@@ -6,10 +6,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 84 |
-| [Accepted](#accepted) | 25 |
-| [Analyzed](#analyzed) | 45 |
-| [Estimated](#estimated) | 29 |
+| [Idea](#idea) | 81 |
+| [Accepted](#accepted) | 23 |
+| [Analyzed](#analyzed) | 47 |
+| [Estimated](#estimated) | 32 |
 | [Backlog](#backlog) | 44 |
 | [Implementing](#implementing) | 4 |
 | [Review](#review) | 29 |
@@ -20,9 +20,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st33"></a>[ST33](ST33-An-Agent-Shown-Working-Resting-Or-Waiting.md) An agent shown working, resting or waiting | 🔼 High | B:2 · F:1 · PI:1 | A person sees in the command line and on the task card whether an agent is working, resting or waiting, and both agree. |
-| <a id="st50"></a>[ST50](ST50-A-Machine-And-A-Host-Reached-From-Windows.md) A machine and a host reached from Windows | 🔼 High | F:4 | A person on Windows can reach a machine over SSH and see its projects, work, terminal and gate from the Windows build. |
-| <a id="st56"></a>[ST56](ST56-The-Gathered-Findings-Worked-Off.md) The gathered findings worked off | 🔼 High | B:2 · F:1 · HO:1 | The gathered findings from earlier work are cleared, and anything larger becomes an issue of its own, so nothing open is lost. |
 | <a id="st37"></a>[ST37](ST37-The-Providers-Usage-Seen-In-A-Status-Line.md) The providers' usage seen in a status line | 🟰 Medium | B:1 · F:1 | A person sees all providers in use as one traffic light in the status line and can click to see each provider's usage. |
 | <a id="st57"></a>[ST57](ST57-A-Linters-Report-Shown-On-The-Waiting-Work.md) A linter's report shown on the waiting work | 🟰 Medium | B:2 | A person adding a linter's SARIF report to waiting work sees each finding on its file and lines. |
 | <a id="st58"></a>[ST58](ST58-Who-Wrote-It-And-What-It-Touches-Shown.md) Who wrote it and what it touches, shown on waiting work | 🟰 Medium | B:1 | A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon. |
@@ -109,8 +106,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st296"></a>[ST296](ST296-Every-Repositorys-Tests-Follow-The-Test-Pyramid.md) Every repository's tests follow the test pyramid | ⏫ Highest | B:2 · AG:1 · BT:1 · CC:1 · CX:1 · EC:1 · F:1 · FC:1 · GH:1 · HO:1 · IJ:1 · MC:1 · MX:1 · OM:1 · PI:1 · SL:1 | Each repository proves its flows with unit tests that run in seconds, tests its real pieces narrowly on that core and keeps integration, VM and rented-machine runs for what nothing lower can show, so work is done and checked faster and a fault is found at the lowest level that shows it. |
-| <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🔼 High | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
 | <a id="st77"></a>[ST77](ST77-Direct-Pushes-And-Red-Checks-Refused.md) Direct pushes and red checks refused | 🟰 Medium | PJ:1 | Direct pushes to main and merges with red checks are refused for every account, so main only changes through checked pull requests. |
 | <a id="st83"></a>[ST83](ST83-An-Expiring-Token-Told-Ahead.md) An expiring token told ahead | 🟰 Medium | PJ:1 | A person is told ahead of time, once, when a forge token on a host is about to expire. |
@@ -142,7 +137,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st14"></a>[ST14](ST14-The-Coordinator-Reads-Everything-And-Changes-Only-Porelo.md) The coordinator reads everything and changes only porelo-project | ⏫ Highest | PJ:2 | The coordinator can read every repository of the project but can change only the project repository, and any change elsewhere is refused. |
 | <a id="st24"></a>[ST24](ST24-The-Tokens-Counted-Per-Task-The-Dependencies-Shared.md) The tokens counted per task, the dependencies shared | ⏫ Highest | B:2 · BT:1 · PJ:1 | A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again. |
 | <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | ⏫ Highest | IJ:1 · MX:1 · SL:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
-| <a id="st29"></a>[ST29](ST29-A-Repository-Renamed-Without-Losing-Work.md) A repository renamed without losing work | ⏫ Highest | PJ:1 | A person can rename a repository's key in the project file without losing waiting work or tasks tied to it. |
+| <a id="st296"></a>[ST296](ST296-Every-Repositorys-Tests-Follow-The-Test-Pyramid.md) Every repository's tests follow the test pyramid | ⏫ Highest | B:2 · AG:1 · BT:1 · CC:1 · CX:1 · EC:1 · F:1 · FC:1 · GH:1 · HO:1 · IJ:1 · MC:1 · MX:1 · OM:1 · PI:1 · SL:1 | Each repository proves its flows with unit tests that run in seconds, tests its real pieces narrowly on that core and keeps integration, VM and rented-machine runs for what nothing lower can show, so work is done and checked faster and a fault is found at the lowest level that shows it. |
 | <a id="st30"></a>[ST30](ST30-Work-Without-A-Project-With-Plain-Refusals.md) Work without a project, with plain refusals | 🔼 High | B:6 · F:5 · PJ:1 | A person can start work without a project and get plain refusals, with a checkout going into the default area unless a followed project claims the repository. |
 | <a id="st31"></a>[ST31](ST31-Keys-And-Providers-Without-Stumbling.md) Keys and providers without stumbling | 🔼 High | B:2 · P:1 | A person can paste a key into vault put and have it read whole, and an agent given an unknown provider is refused with a clear message. |
 | <a id="st32"></a>[ST32](ST32-Load-Time-Out-And-Forget-One-Connection.md) Load, time out and forget one connection | 🔼 High | F:4 · B:2 | A person sees pages load, connection actions time out and a connection be forgotten in one consistent way in the interface. |
@@ -152,7 +147,9 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st40"></a>[ST40](ST40-Legs-On-Pool-Machines-The-Same-Workflow-On.md) Legs on pool machines, the same workflow on both forges | 🔼 High | AG:1 · B:1 · CC:1 · HO:1 · OM:1 · PI:1 | The same acceptance legs run on pool machines on both the host's forge and the central one, so tests behave the same wherever they run. |
 | <a id="st43"></a>[ST43](ST43-A-Companys-Private-Package-Repository-With-No-Credential.md) A company's private package repository, with no credential in the task | 🔼 High | B:4 · EC:1 | A task can build against a company's authenticated Nexus or Artifactory without ever holding the credential, since the settings are written outside the task. |
 | <a id="st44"></a>[ST44](ST44-Questions-A-Plan-And-Taken-Up-Again.md) Questions, a plan, and taken up again | 🔼 High | PJ:1 | A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard. |
+| <a id="st50"></a>[ST50](ST50-A-Machine-And-A-Host-Reached-From-Windows.md) A machine and a host reached from Windows | 🔼 High | F:4 | A person on Windows can reach a machine over SSH and see its projects, work, terminal and gate from the Windows build. |
 | <a id="st53"></a>[ST53](ST53-A-Start-That-Waits-For-Its-Helpers.md) A start that waits for its helpers | 🔼 High | B:1 | A start waits until both the gate and the relay are up, and ends with a clear code if either does not come up. |
+| <a id="st56"></a>[ST56](ST56-The-Gathered-Findings-Worked-Off.md) The gathered findings worked off | 🔼 High | B:2 · F:1 · HO:1 | The gathered findings from earlier work are cleared, and anything larger becomes an issue of its own, so nothing open is lost. |
 | <a id="st313"></a>[ST313](ST313-A-Tasks-Results-Land-Where-The-Next-Step-And-Others.md) A task's results land where the next step and others find them | 🔼 High | PJ:2 | A reading's findings are kept as a Markdown file in the repository, where each state's start instructions tell the agent to put them, so the next task finds them in its source, works them off and deletes them, all in Git's history; ideas become issues the normal way. |
 | <a id="st59"></a>[ST59](ST59-A-Report-Outside-The-Profile-Refused.md) A report outside the profile refused | 🟰 Medium | SL:1 | Reports with unsafe locations, fixes in the wrong file or other disallowed content are refused, so a bad report cannot do harm. |
 | <a id="st60"></a>[ST60](ST60-A-Comment-With-A-Suggestion-Reaches-The-Agent.md) A comment with a suggestion reaches the agent | 🟰 Medium | B:3 · F:2 | A person can comment on a line with a suggestion in the review, and the task building that work receives it. |
@@ -189,6 +186,9 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
+| <a id="st29"></a>[ST29](ST29-A-Repository-Renamed-Without-Losing-Work.md) A repository renamed without losing work | ⏫ Highest | PJ:1 | A person can rename a repository's key in the project file without losing waiting work or tasks tied to it. |
+| <a id="st33"></a>[ST33](ST33-An-Agent-Shown-Working-Resting-Or-Waiting.md) An agent shown working, resting or waiting | 🔼 High | B:2 · F:1 · PI:1 | A person sees in the command line and on the task card whether an agent is working, resting or waiting, and both agree. |
+| <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🔼 High | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
 | <a id="st76"></a>[ST76](ST76-A-Pull-Request-From-Outside-Only-Read.md) A pull request from outside only read | 🟰 Medium | GH:1 | A pull request from an unknown outside account is only read and commented on, never built, so strangers cannot run code. |
 | <a id="st97"></a>[ST97](ST97-Return-To-The-Chosen-Files.md) Return to the chosen files | 🟰 Medium | B:1 | A person can rewind a task to a turn snapshot and compare the restored files, and an unsupported session is told so. |
 | <a id="st106"></a>[ST106](ST106-Make-Security-Failures-Hold-The-Release.md) Make security failures hold the release | 🟰 Medium | B:2 | A release is held back when a security check fails, because Fedora isolation and the misuse tests must pass on their intended legs. |

@@ -1,6 +1,6 @@
 # ST296 — Every repository's tests follow the test pyramid
 
-**Priority:** ⏫ Highest · **State:** Accepted
+**Priority:** ⏫ Highest · **State:** Analyzed
 
 **What a user gains.** Each repository proves its flows with unit tests that run in seconds, tests its real pieces narrowly on that core and keeps integration, VM and rented-machine runs for what nothing lower can show, so work is done and checked faster and a fault is found at the lowest level that shows it.
 
@@ -14,7 +14,7 @@
 - [porelo-codex#CX16](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx16) (Analyzed)
 - [porelo-agy#AG15](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag15) (Analyzed)
 - [porelo-buildtools#BT57](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt57) (Analyzed)
-- [porelo-frontend#F450](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f450) (Accepted)
+- [porelo-frontend#F450](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f450) (Analyzed)
 - [porelo-message-matrix#MX93](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx93) (Analyzed)
 - [porelo-host#HO159](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho159) (Analyzed)
 - [porelo-intellij#IJ23](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij23) (Analyzed)

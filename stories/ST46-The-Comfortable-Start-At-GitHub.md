@@ -1,6 +1,6 @@
 # ST46 — The comfortable start at GitHub
 
-**Priority:** 🔼 High · **State:** Accepted
+**Priority:** 🔼 High · **State:** Estimated
 
 **What a user gains.** A person can start at GitHub without creating a token by hand, using a trial app first.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ91](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj91) (Accepted)
+- [porelo-project#PJ91](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj91) (Estimated)
 
 ## Data
 

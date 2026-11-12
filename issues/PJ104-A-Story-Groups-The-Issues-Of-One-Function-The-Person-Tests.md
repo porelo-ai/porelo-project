@@ -5,7 +5,7 @@
   "$schema": "issue-1.json",
   "id": "PJ104",
   "title": "A Story Groups The Issues Of One Function The Person Tests",
-  "state": "Accepted",
+  "state": "Rejected",
   "size": "-",
   "priority": "Medium",
   "rank": 1,
@@ -77,3 +77,7 @@ on, and that the person can test on its own.
 ## To be checked
 
 - The rendering's change in porelo-buildtools and its size.
+
+## Decided by the operator (2026-11-12)
+
+- Rejected: what PJ104 asks of the planner is held by PL59 and PL84 (Agent Planner's reading, 2026-11-12); nothing new is built for it.

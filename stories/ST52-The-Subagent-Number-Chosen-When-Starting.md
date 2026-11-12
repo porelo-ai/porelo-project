@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F284](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f284) (Idea)
+- [porelo-frontend#F284](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f284) (Rejected)
 
 ## Data
 

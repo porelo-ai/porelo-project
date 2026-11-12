@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ108](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj108) (Analyzed)
+- [porelo-project#PJ108](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj108) (Estimated)
 - [porelo-project#PJ109](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj109) (Analyzed)
 
 ## Data

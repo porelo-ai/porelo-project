@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F105](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f105) (Estimated)
+- [porelo-frontend#F105](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f105) (Backlog)
 - [porelo#B48](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b48) (Backlog)
 - [porelo#B472](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b472) (Review)
 - [porelo#B473](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b473) (Review)
