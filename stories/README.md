@@ -10,10 +10,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Accepted](#accepted) | 25 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 31 |
-| [Backlog](#backlog) | 22 |
-| [Implementing](#implementing) | 5 |
+| [Backlog](#backlog) | 23 |
+| [Implementing](#implementing) | 4 |
 | [Review](#review) | 27 |
-| [Finished](#finished) | 74 |
+| [Finished](#finished) | 75 |
 | [Rejected](#rejected) | 5 |
 
 ## Idea
@@ -241,6 +241,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st290"></a>[ST290](ST290-Agents-On-A-Host-Work-Their-Results-Off-Until.md) Agents on a host work their results off until done | ⏫ Highest | B:32 · F:19 · HO:9 · MX:6 · GH:3 · CC:2 · BT:1 · PI:1 | A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub. |
 | <a id="st318"></a>[ST318](ST318-Logging-In-The-Frontend-And-The-Planner.md) Logging in the frontend and the planner | 🔼 High | F:3 · PL:2 | The window and the planner each keep a log with levels; a person sets the level in the window, INFO by default, raises or lowers it there, and opens either log file on the local machine from a link in the window. The planner's backend log, written through its Java logging, lies beside the window's log, so a fault is read in one place and Needs you keeps only what asks for an action. |
 | <a id="st322"></a>[ST322](ST322-Missing-Planner-Functions.md) Missing planner functions | 🔼 High | PL:4 | The planning board does what a person reaches for: the search finds an issue and shows its story, a story's priority is changed on the board, and a disabled action names the run that holds it and leads there. |
+| <a id="st323"></a>[ST323](ST323-A-Rented-Rehearsal-Fails-Early-And-Cleans-Up.md) A rented rehearsal fails early and cleans up after itself | 🔼 High | HO:1 | A rehearsal on a rented server stops before it touches the server when a program it needs cannot run, can be run again on the same server after a clean down, and takes the read keys it left at central off by itself, so the person only rents and deletes the server. |
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | 🟰 Medium | PJ:4 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
 | <a id="st78"></a>[ST78](ST78-Threads-In-IntelliJs-Diff.md) Threads in IntelliJ's diff | 🟰 Medium | IJ:2 | A person sees every review thread on its lines in IntelliJ's diff, marked with who wrote it. |
 | <a id="st295"></a>[ST295](ST295-A-Person-Joins-And-Leaves-An-Organization-From-The.md) A person joins and leaves an organization from the window | 🟰 Medium | B:2 · F:1 | A person who cannot write an organization's repository asks to join it from the window by filing their card as a proposal, an owner accepts it there, and a member leaves an organization from the window, withdrawing their own card and roles and forgetting it on this computer. |
@@ -256,7 +257,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st292"></a>[ST292](ST292-A-Whole-Move-Rehearsed-By-The-Agents-On-A.md) A whole move rehearsed by the agents on a rented server | ⏫ Highest | B:3 · F:3 · MX:3 · HO:1 | Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server. |
 | <a id="st314"></a>[ST314](ST314-The-Planner-Moves-Work-On-From-State-To-State.md) The planner moves work on from state to state by itself | 🔼 High | PL:4 · F:2 | The planner moves an issue on by itself when its task ends, as the project's work rules say: work that ends DONE in Implementing goes to Reading and a reader starts with the proposed model; an OK reading goes to Review; a blocking reading goes to Reworking and asks the person under Needs you, whose entry opens the Reworking dialog; a task that fails stays with a warning and asks too. |
 | <a id="st320"></a>[ST320](ST320-The-Work-Tools-Live-With-Their-Users.md) The work tools live with their users | 🔼 High | BT:4 · B:3 · CC:3 · PL:3 · AG:1 · CX:1 · OM:1 · PI:1 | The issue and story tooling (stage records, stats, the stories and issues index, check-commits and citations) moves from the build tools to the planner, the native-image checks to Core, and dead release-plan code goes. Each part then lives with the agent who uses and changes it, so a change to the work format is made by its owner, not by Machines. |
 | <a id="st317"></a>[ST317](ST317-Builds-Take-Outside-Downloads-From-A-Cache.md) Builds take outside downloads from a cache | 🟰 Medium | B:2 · AG:1 · BT:1 · CC:1 · CX:1 · EC:1 · F:1 · FC:1 · GH:1 · HO:1 · IJ:1 · MC:1 · MX:1 · OM:1 · PA:1 · PI:1 · PL:1 · SI:1 · SL:1 | Every build fetches what it needs from outside - container images, toolchains, packages - from a cache when it can, so an outage of a registry such as Codeberg's no longer turns a build red, and the cache keeps only the newest copy of each thing so it never fills up. |
@@ -370,6 +370,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st287"></a>[ST287](ST287-The-Agent-Already-On-The-Machine-Is-Taken.md) The agent already on the machine is taken | ⏫ Highest | B:2 · F:2 · CC:1 · PJ:1 | A person can start a task without naming an agent or provider and get the Claude Code already signed in on the machine, with a note saying what was used. |
 | <a id="st288"></a>[ST288](ST288-Import-One-Provider-And-Recognize-OMP.md) Import one provider and recognize OMP | ⏫ Highest | B:1 · OM:1 · PI:1 | A person can sign Pi in to two providers, import only the chosen one, start a task, and have OMP recognized. |
 | <a id="st289"></a>[ST289](ST289-Review-In-IntelliJ.md) Review in IntelliJ | ⏫ Highest | IJ:2 | A person can review in IntelliJ on the laptop, reading a waiting push and approving the displayed commit against the local Porelo. |
+| <a id="st292"></a>[ST292](ST292-A-Whole-Move-Rehearsed-By-The-Agents-On-A.md) A whole move rehearsed by the agents on a rented server | ⏫ Highest | B:3 · F:3 · MX:3 · HO:1 | Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server. |
 | <a id="st118"></a>[ST118](ST118-Verify-The-Complete-ChatGPT-Sign-In.md) Verify the complete ChatGPT sign-in | 🔽 Low | PJ:1 | A person can sign in to ChatGPT and ask a Codex task a question, with no sign-in material inside the container. |
 | <a id="st145"></a>[ST145](ST145-Open-Administration-And-Daily-Work-Separately.md) Open administration and daily work separately | 🔽 Low | PJ:1 | A person opens administration and daily work separately, as user, host-admin or access-admin, so each role sees only its own steps. |
 
