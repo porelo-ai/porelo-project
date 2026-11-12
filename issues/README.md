@@ -91,18 +91,13 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
 | <a id="pj33"></a>[PJ33](PJ33-A-Plugin-May-Carry-Its-Own-License.md) | L | - | An agent, build reader, transport or client may carry its own license: the interface libraries (`porelo-agent-api`, `porelo-build-api`, `porelo-wire`, the varlink definitions) under Apache-2.0, Porelo itself GPL, the boundary written down. |
+| <a id="pj32"></a>[PJ32](PJ32-A-Vulnerability-Has-A-Way-In.md) | M | - | Whoever finds a vulnerability reports it privately through a `SECURITY.md` in every repository and one page in `doc/`; a fix gets a GitHub advisory and a changelog line. |
 | <a id="pj107"></a>[PJ107](PJ107-The-Secrets-File-Keeps-Changes-From-KeePassXC-And-Porelo.md) | L | - | Changes made to the secrets file in KeePassXC and by Porelo at the same time are both kept, and the wizard asks how the person works. |
+| <a id="pj14"></a>[PJ14](PJ14-Work-Starts-Without-A-Project.md) | M | - | Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured. |
 | <a id="pj106"></a>[PJ106](PJ106-Each-Host-Sees-Only-The-Drive-Areas-Chosen-For-It.md) | M | - | Each host sees only the drive areas the person chose for it, and OneDrive is mounted as Tresorit is. |
 | <a id="pj74"></a>[PJ74](PJ74-Forge-And-Build-Server-Clients-Know-Nothing-Of-Porelo.md) | - | - | The calls to forges' and build servers' APIs in a repository of their own, `porelo-forge-clients`, one module per forge, LGPL, knowing nothing of Porelo; `porelo-adapters` translates what they return into Porelo's contracts and SARIF; owned by Agent Gorge; started in 0.8 with GitHub and Forgejo. |
 | <a id="pj75"></a>[PJ75](PJ75-A-Task-Fetches-A-Snapshot-From-Its-Hosts-Forge.md) | M | - | A task on a host with a local forge fetches a snapshot from the forge's registry by its declared name without a credential put into the project, and still reaches nothing else on the host; the private organization refuses it today with `401`; the shared building blocks' organization is public on the host, read by everyone there without a token. |
 | <a id="pj46"></a>[PJ46](PJ46-Document-Tests-Run-Only-Where-The-Agent-Works.md) | M | - | The tests that read only issues and documents run on the agent's machine and in the daily Shared rules check, never in a Build: left out by the build tool's own switch, and naming no single issue, so setting an issue Finished touches no test. |
-| <a id="pj32"></a>[PJ32](PJ32-A-Vulnerability-Has-A-Way-In.md) | M | - | Whoever finds a vulnerability reports it privately through a `SECURITY.md` in every repository and one page in `doc/`; a fix gets a GitHub advisory and a changelog line. |
-| <a id="pj14"></a>[PJ14](PJ14-Work-Starts-Without-A-Project.md) | M | - | Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured. |
-
-## Implementing
-
-| # | Size | Blocked by | What it covers |
-|---|---|---|---|
 
 ## Review
 
