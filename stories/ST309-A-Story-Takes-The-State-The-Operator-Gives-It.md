@@ -12,7 +12,7 @@
 - [porelo#B603](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b603) (Rejected)
 - [porelo-frontend#F470](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f470) (Backlog)
 - [porelo-planner#PL84](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl84) (Idea)
-- [porelo-planner#PL45](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl45) (Estimated)
+- [porelo-planner#PL45](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl45) (Backlog)
 
 ## Data
 

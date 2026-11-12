@@ -12,6 +12,7 @@
 - [porelo-agy#AG04](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag04) (Review)
 - [porelo-codex#CX04](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx04) (Backlog)
 - [porelo-codex#CX08](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx08) (Review)
+- [porelo-project#PJ112](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj112) (Backlog)
 
 ## Data
 
@@ -27,7 +28,8 @@
     "porelo-agy#AG02",
     "porelo-agy#AG04",
     "porelo-codex#CX04",
-    "porelo-codex#CX08"
+    "porelo-codex#CX08",
+    "porelo-project#PJ112"
   ],
   "tested": null
 }

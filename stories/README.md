@@ -6,11 +6,11 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 93 |
+| [Idea](#idea) | 91 |
 | [Accepted](#accepted) | 28 |
-| [Analyzed](#analyzed) | 40 |
-| [Estimated](#estimated) | 34 |
-| [Backlog](#backlog) | 36 |
+| [Analyzed](#analyzed) | 39 |
+| [Estimated](#estimated) | 33 |
+| [Backlog](#backlog) | 40 |
 | [Implementing](#implementing) | 4 |
 | [Review](#review) | 27 |
 | [Finished](#finished) | 76 |
@@ -20,8 +20,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st11"></a>[ST11](ST11-Porelo-Adapters-And-Porelo-Ai-Github-Io-Each.md) Move: porelo-adapters and porelo-ai.github.io each in its own task | ⏫ Highest | SI:2 · GH:1 | The adapters repository and the project website can each be developed in their own task on the host and reach Review with a green build on the host's forge. |
-| <a id="st13"></a>[ST13](ST13-Porelo-And-Porelo-Host-Each-In-Its-Task.md) Move: porelo and porelo-host each in its task, with a way back | ⏫ Highest | HO:2 · B:1 | Porelo and the host collection can each be built by an agent in its own task on the host, with a way back if the move needs undoing. |
 | <a id="st21"></a>[ST21](ST21-No-Channel-File-And-No-Hand-Over-Directory.md) No channel file and no hand-over directory any more | ⏫ Highest | none yet | Every repository's guide for agents describes the current Matrix, Forgejo and gate setup, with no leftover channel file or hand-over directory to confuse anyone. |
 | <a id="st22"></a>[ST22](ST22-Machines-Asked-For-By-Kind-Only.md) Machines asked for by kind only | ⏫ Highest | none yet | Machines are requested only by kind, so a call naming a specific provider or server type is refused with a message naming the kind to use. |
 | <a id="st28"></a>[ST28](ST28-The-Setup-Move-And-Recovery-Proven-Together.md) The setup, move and recovery proven together | ⏫ Highest | none yet | The setup, move to the host and recovery work together: a person brings up the project, runs local builds, moves each agent and restores the room and usage records. |
@@ -154,7 +152,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st14"></a>[ST14](ST14-The-Coordinator-Reads-Everything-And-Changes-Only-Porelo.md) The coordinator reads everything and changes only porelo-project | ⏫ Highest | PJ:2 | The coordinator can read every repository of the project but can change only the project repository, and any change elsewhere is refused. |
 | <a id="st24"></a>[ST24](ST24-The-Tokens-Counted-Per-Task-The-Dependencies-Shared.md) The tokens counted per task, the dependencies shared | ⏫ Highest | B:2 · BT:1 · PJ:1 | A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again. |
 | <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | ⏫ Highest | IJ:1 · MX:1 · SL:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
-| <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Move: Every agent works in a Porelo task, moved one at a time | ⏫ Highest | HO:4 · MX:3 | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
 | <a id="st31"></a>[ST31](ST31-Keys-And-Providers-Without-Stumbling.md) Keys and providers without stumbling | 🔼 High | B:2 · P:1 | A person can paste a key into vault put and have it read whole, and an agent given an unknown provider is refused with a clear message. |
 | <a id="st32"></a>[ST32](ST32-Load-Time-Out-And-Forget-One-Connection.md) Load, time out and forget one connection | 🔼 High | F:4 · B:2 | A person sees pages load, connection actions time out and a connection be forgotten in one consistent way in the interface. |
 | <a id="st35"></a>[ST35](ST35-Refuse-An-Incompatible-Protocol-And-A-Meaningless-Option.md) Refuse an incompatible protocol and a meaningless option | 🔼 High | B:2 · CC:1 | An agent whose protocol is incompatible with the core is refused, while meaningless options no longer get in the way of compatible ones. |
@@ -196,7 +193,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st15"></a>[ST15](ST15-The-Website-Builds-In-Its-Task.md) Move: The website builds in its task | ⏫ Highest | SI:2 | The project website can be fully checked inside its own task, and the check passes with the Debian image and repository changes. |
 | <a id="st34"></a>[ST34](ST34-OMPs-Sign-In-Read-From-Its-Database.md) OMP's sign-in read from its database | 🔼 High | OM:1 | A person can sign OMP in once and start tasks without running vault login, because the sign-in is read from OMP's own database. |
 | <a id="st38"></a>[ST38](ST38-The-Chosen-Branch-Receives-The-Work.md) The chosen branch receives the work | 🔼 High | F:4 · B:1 | A person can choose a branch template or an explicit branch, and approved work lands on exactly that branch on the forge. |
 | <a id="st41"></a>[ST41](ST41-Porelo-Project-Init-Proposes-Tools-And-Rules.md) `porelo project init` proposes tools and rules | 🔼 High | B:7 · EC:7 · F:1 · PJ:1 | A person starting a Maven repository gets a proposed tool and rules file that porelo project init drafts, with each value explained. |
@@ -236,15 +232,19 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
 | <a id="st4"></a>[ST4](ST4-A-Task-Fetches-A-Snapshot-From-Its-Hosts.md) A task fetches a snapshot from its host's forge | ⏫ Highest | B:1 · HO:1 · PJ:1 | A task on the host can fetch Porelo's snapshot from the host's own forge registry by the name its project uses, without reaching outside. |
-| <a id="st5"></a>[ST5](ST5-Porelo-Pi-Porelo-Omp-And-Porelo-Claude-Code.md) Move: porelo-pi, porelo-omp and porelo-claude-code each in its own task, with snapshots of porelo from the registry | ⏫ Highest | OM:3 · CC:2 · PI:2 | The Pi, OMP and Claude Code adapters can each be developed in their own task on the host and build there against Porelo snapshots from the local registry. |
-| <a id="st6"></a>[ST6](ST6-Porelo-Agy-And-Porelo-Codex-Each-In-Its.md) Move: porelo-agy and porelo-codex each in its own task | ⏫ Highest | AG:2 · CX:2 | The Antigravity and Codex adapters can each be worked on inside their own task on the host and reach Review with a green build on the host's forge. |
-| <a id="st7"></a>[ST7](ST7-Porelo-Buildtools-In-Its-Task.md) Move: porelo-buildtools in its task | ⏫ Highest | BT:1 | The build tools can be developed inside their own task on the host and reach Review with a green build on the host's forge. |
-| <a id="st8"></a>[ST8](ST8-Porelo-Message-Matrix-In-Its-Task.md) Move: porelo-message-matrix in its task | ⏫ Highest | MX:1 | The Matrix message transport can be developed inside its own task on the host and reach Review with a green build on the host's forge. |
-| <a id="st9"></a>[ST9](ST9-Porelo-Intellij-And-Porelo-Frontend-Each-In-Its.md) Move: porelo-intellij and porelo-frontend each in its own task | ⏫ Highest | F:2 · IJ:2 | The IntelliJ plugin and the frontend can each be built in their own task on the host, with Gradle and Flutter builds running on the host's forge. |
+| <a id="st5"></a>[ST5](ST5-Porelo-Pi-Porelo-Omp-And-Porelo-Claude-Code.md) Move: porelo-pi, porelo-omp and porelo-claude-code each in its own task, with snapshots of porelo from the registry | ⏫ Highest | OM:3 · CC:2 · PI:2 · PJ:1 | The Pi, OMP and Claude Code adapters can each be developed in their own task on the host and build there against Porelo snapshots from the local registry. |
+| <a id="st6"></a>[ST6](ST6-Porelo-Agy-And-Porelo-Codex-Each-In-Its.md) Move: porelo-agy and porelo-codex each in its own task | ⏫ Highest | AG:2 · CX:2 · PJ:1 | The Antigravity and Codex adapters can each be worked on inside their own task on the host and reach Review with a green build on the host's forge. |
+| <a id="st7"></a>[ST7](ST7-Porelo-Buildtools-In-Its-Task.md) Move: porelo-buildtools in its task | ⏫ Highest | BT:1 · PJ:1 | The build tools can be developed inside their own task on the host and reach Review with a green build on the host's forge. |
+| <a id="st8"></a>[ST8](ST8-Porelo-Message-Matrix-In-Its-Task.md) Move: porelo-message-matrix in its task | ⏫ Highest | MX:1 · PJ:1 | The Matrix message transport can be developed inside its own task on the host and reach Review with a green build on the host's forge. |
+| <a id="st9"></a>[ST9](ST9-Porelo-Intellij-And-Porelo-Frontend-Each-In-Its.md) Move: porelo-intellij and porelo-frontend each in its own task | ⏫ Highest | F:2 · IJ:2 · PJ:1 | The IntelliJ plugin and the frontend can each be built in their own task on the host, with Gradle and Flutter builds running on the host's forge. |
+| <a id="st11"></a>[ST11](ST11-Porelo-Adapters-And-Porelo-Ai-Github-Io-Each.md) Move: porelo-adapters and porelo-ai.github.io each in its own task | ⏫ Highest | SI:2 · GH:1 · PJ:1 | The adapters repository and the project website can each be developed in their own task on the host and reach Review with a green build on the host's forge. |
+| <a id="st13"></a>[ST13](ST13-Porelo-And-Porelo-Host-Each-In-Its-Task.md) Move: porelo and porelo-host each in its task, with a way back | ⏫ Highest | HO:2 · B:1 · PJ:1 | Porelo and the host collection can each be built by an agent in its own task on the host, with a way back if the move needs undoing. |
+| <a id="st15"></a>[ST15](ST15-The-Website-Builds-In-Its-Task.md) Move: The website builds in its task | ⏫ Highest | SI:2 · PJ:1 | The project website can be fully checked inside its own task, and the check passes with the Debian image and repository changes. |
 | <a id="st17"></a>[ST17](ST17-The-Gate-And-The-Transport-Held-By-Tests.md) The gate and the transport held by tests | ⏫ Highest | SL:10 · MX:9 · B:1 | The message gate and the transport are guarded by tests, shown by a mutation run, so a removed refusal gets noticed. |
 | <a id="st18"></a>[ST18](ST18-Small-Repairs-Of-Safety-And-Robustness.md) Small repairs of safety and robustness | ⏫ Highest | HO:6 · B:5 · BT:2 · SL:1 | Small safety and robustness gaps are closed, so forced removals leave nothing running, tokens are kept where tools read them, and tasks cannot reach other projects or the person's vault. |
 | <a id="st23"></a>[ST23](ST23-The-Room-And-The-Usage-Records-Outlive-The.md) The room and the usage records outlive the host | ⏫ Highest | MX:3 · B:1 · HO:1 | The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost. |
 | <a id="st290"></a>[ST290](ST290-Agents-On-A-Host-Work-Their-Results-Off-Until.md) Agents on a host work their results off until done | ⏫ Highest | B:32 · F:19 · HO:9 · MX:6 · GH:3 · CC:2 · BT:1 · PI:1 | A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub. |
+| <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Move: Every agent works in a Porelo task, moved one at a time | ⏫ Highest | HO:4 · MX:3 · PJ:1 | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
 | <a id="st325"></a>[ST325](ST325-A-Move-On-The-Board-Is-Saved-At-Once.md) A move on the board is saved at once | ⏫ Highest | PL:3 | A person moves a story or an issue on the planning board and it is saved at once, with no Save and no Undo; a move that can do harm warns first, a slow save shows as still saving instead of as a failure, and each row in Needs you offers the action that answers it. |
 | <a id="st309"></a>[ST309](ST309-A-Story-Takes-The-State-The-Operator-Gives-It.md) A story takes the state the operator gives it | 🔼 High | PL:2 · B:1 · BT:1 · F:1 | The operator puts a story into any state, on the story board or in its head, and it keeps that state whatever its issues' states are; where an issue does not fit that state by the automatic rule, a warning names it and asks to go on anyway, and it is never refused. |
 | <a id="st311"></a>[ST311](ST311-A-Planner-App-Serves-The-Board-To-The-Window.md) A planner app serves the board to the window | 🔼 High | PL:24 · BT:8 · F:6 · B:2 · PJ:2 | The window reads and changes stories and issues through porelo-planner, a Spring Boot GraalVM native app running beside it, over a REST API described in OpenAPI; the app reads and writes the stories and issues in Git, and porelo keeps only its task functions. |

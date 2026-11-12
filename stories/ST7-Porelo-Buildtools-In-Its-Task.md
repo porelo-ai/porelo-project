@@ -9,6 +9,7 @@
 **Issues:**
 
 - [porelo-buildtools#BT37](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt37) (Backlog)
+- [porelo-project#PJ113](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj113) (Backlog)
 
 ## Data
 
@@ -21,7 +22,8 @@
   "test": "Its move issue reaches Review inside the task with Forgejo's build green.",
   "priority": "Highest",
   "issues": [
-    "porelo-buildtools#BT37"
+    "porelo-buildtools#BT37",
+    "porelo-project#PJ113"
   ],
   "tested": null
 }

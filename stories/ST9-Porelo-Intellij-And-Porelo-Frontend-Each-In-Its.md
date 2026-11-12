@@ -12,6 +12,7 @@
 - [porelo-intellij#IJ15](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij15) (Backlog)
 - [porelo-frontend#F203](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f203) (Backlog)
 - [porelo-frontend#F204](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f204) (Review)
+- [porelo-project#PJ115](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj115) (Backlog)
 
 ## Data
 
@@ -27,7 +28,8 @@
     "porelo-intellij#IJ14",
     "porelo-intellij#IJ15",
     "porelo-frontend#F203",
-    "porelo-frontend#F204"
+    "porelo-frontend#F204",
+    "porelo-project#PJ115"
   ],
   "tested": null
 }

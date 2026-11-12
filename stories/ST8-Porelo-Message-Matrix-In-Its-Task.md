@@ -9,6 +9,7 @@
 **Issues:**
 
 - [porelo-message-matrix#MX43](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx43) (Backlog)
+- [porelo-project#PJ114](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj114) (Backlog)
 
 ## Data
 
@@ -21,7 +22,8 @@
   "test": "Its move issue reaches Review inside the task with Forgejo's build green.",
   "priority": "Highest",
   "issues": [
-    "porelo-message-matrix#MX43"
+    "porelo-message-matrix#MX43",
+    "porelo-project#PJ114"
   ],
   "tested": null
 }
