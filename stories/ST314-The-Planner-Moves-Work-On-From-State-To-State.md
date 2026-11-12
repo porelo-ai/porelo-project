@@ -44,7 +44,9 @@
     "porelo#B647",
     "porelo#B648",
     "porelo-planner#PL90",
-    "porelo-planner#PL92"
+    "porelo-planner#PL92",
+    "porelo-frontend#F500",
+    "porelo-frontend#F501"
   ],
   "tested": null
 }
