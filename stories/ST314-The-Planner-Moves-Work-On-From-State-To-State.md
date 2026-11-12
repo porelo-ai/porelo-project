@@ -12,6 +12,8 @@
 - [porelo-planner#PL70](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl70) (Review)
 - [porelo-frontend#F475](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f475) (Review)
 - [porelo-planner#PL64](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl64) (Review)
+- [porelo-frontend#F492](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f492) (Implementing)
+- [porelo-planner#PL85](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl85) (Backlog)
 
 ## Data
 
@@ -28,7 +30,9 @@
     "porelo-planner#PL71",
     "porelo-planner#PL70",
     "porelo-frontend#F475",
-    "porelo-planner#PL64"
+    "porelo-planner#PL64",
+    "porelo-frontend#F492",
+    "porelo-planner#PL85"
   ],
   "tested": null
 }
