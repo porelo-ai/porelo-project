@@ -5,10 +5,10 @@
   "$schema": "issue-1.json",
   "id": "PJ109",
   "title": "Where A Task's Results Are Kept",
-  "state": "Analyzed",
+  "state": "Backlog",
   "size": "L",
   "priority": "High",
-  "rank": 2,
+  "rank": 1,
   "blockedBy": [],
   "covers": "A reading's findings are written as a Markdown file in the repository, where the start instructions of each state tell the agent to put them, and the next task finds them in its source, works them off and deletes the file; the start instructions per state come from the store's adapter through the planner's API."
 }
@@ -117,7 +117,7 @@ comes from `stories/work.yml` (`order` with `{story}`, `{issues}`, `{tasks}`). N
 **Decided by the operator (2026-11-12):** a clean reading writes its file too, so a missing file always means the
 reader did not finish its work, never a clean reading.
 
-**Proposed, for the operator's word:**
+**Decided by the operator (2026-11-12), all three as proposed:**
 
 - **The setting.** In `project.yml`, at the project's top level: `readings: {directory: readings}`, a path relative to
   each repository's root, no `..`, no leading `/`; its default, when absent, is `readings`. A repository's `porelo.yml`

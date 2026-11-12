@@ -1,6 +1,6 @@
 # ST46 — The comfortable start at GitHub
 
-**Priority:** 🔼 High · **State:** Estimated
+**Priority:** 🟰 Medium · **State:** Estimated
 
 **What a user gains.** A person can start at GitHub without creating a token by hand, using a trial app first.
 
@@ -19,7 +19,7 @@
   "title": "The comfortable start at GitHub",
   "gain": "A person can start at GitHub without creating a token by hand, using a trial app first.",
   "test": "A person starts at GitHub without making a token by hand, on a trial app first.",
-  "priority": "High",
+  "priority": "Medium",
   "issues": [
     "porelo-project#PJ91"
   ],

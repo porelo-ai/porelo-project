@@ -1,6 +1,6 @@
 # ST33 — An agent shown working, resting or waiting
 
-**Priority:** 🔼 High · **State:** Estimated
+**Priority:** 🔼 High · **State:** Backlog
 
 **What a user gains.** A person sees in the command line and on the task card whether an agent is working, resting or waiting, and both agree.
 
@@ -9,8 +9,8 @@
 **Issues:**
 
 - [porelo#B118](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b118) (Backlog)
-- [porelo-frontend#F99](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f99) (Estimated)
-- [porelo-pi#PI33](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi33) (Estimated)
+- [porelo-frontend#F99](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f99) (Backlog)
+- [porelo-pi#PI33](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi33) (Backlog)
 - [porelo#B506](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b506) (Backlog)
 
 ## Data

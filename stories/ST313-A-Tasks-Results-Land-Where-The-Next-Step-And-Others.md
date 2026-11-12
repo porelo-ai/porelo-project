@@ -1,6 +1,6 @@
 # ST313 — A task's results land where the next step and others find them
 
-**Priority:** 🔼 High · **State:** Analyzed
+**Priority:** 🔼 High · **State:** Backlog
 
 **What a user gains.** A reading's findings are kept as a Markdown file in the repository, where each state's start instructions tell the agent to put them, so the next task finds them in its source, works them off and deletes them, all in Git's history; ideas become issues the normal way.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-project#PJ108](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj108) (Estimated)
-- [porelo-project#PJ109](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj109) (Analyzed)
+- [porelo-project#PJ108](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj108) (Backlog)
+- [porelo-project#PJ109](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj109) (Backlog)
 
 ## Data
 

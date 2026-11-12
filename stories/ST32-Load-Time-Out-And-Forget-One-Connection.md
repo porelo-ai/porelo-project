@@ -1,6 +1,6 @@
 # ST32 — Load, time out and forget one connection
 
-**Priority:** 🔼 High · **State:** Analyzed
+**Priority:** 🔼 High · **State:** Backlog
 
 **What a user gains.** A person sees pages load, connection actions time out and a connection be forgotten in one consistent way in the interface.
 
@@ -8,11 +8,11 @@
 
 **Issues:**
 
-- [porelo#B200](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b200) (Analyzed)
-- [porelo-frontend#F91](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f91) (Estimated)
-- [porelo-frontend#F93](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f93) (Estimated)
+- [porelo#B200](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b200) (Backlog)
+- [porelo-frontend#F91](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f91) (Backlog)
+- [porelo-frontend#F93](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f93) (Backlog)
 - [porelo#B321](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b321) (Review)
-- [porelo-frontend#F219](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f219) (Analyzed)
+- [porelo-frontend#F219](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f219) (Backlog)
 - [porelo-frontend#F367](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f367) (Review)
 
 ## Data

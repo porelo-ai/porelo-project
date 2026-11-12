@@ -1,6 +1,6 @@
 # ST36 — Start local, organization and added providers
 
-**Priority:** 🔼 High · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Estimated
 
 **What a user gains.** A person can use local, organization HTTPS and added providers such as xAI, Zhipu and Z.AI, with supported ones starting and unsupported ones refused clearly.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#P10](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p10) (Analyzed)
+- [porelo#P10](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p10) (Backlog)
 - [porelo#B149](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b149) (Estimated)
 - [porelo#P07](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p07) (Estimated)
 - [porelo#P08](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p08) (Estimated)
@@ -22,7 +22,7 @@
   "title": "Start local, organization and added providers",
   "gain": "A person can use local, organization HTTPS and added providers such as xAI, Zhipu and Z.AI, with supported ones starting and unsupported ones refused clearly.",
   "test": "Use a loopback provider, an organization HTTPS provider, xAI, Zhipu and Z.AI. A supported dialect works; an unsupported dialect and HTTP outside loopback are refused before the start.",
-  "priority": "High",
+  "priority": "Medium",
   "issues": [
     "porelo#P10",
     "porelo#B149",

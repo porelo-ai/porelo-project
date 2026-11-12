@@ -1,6 +1,6 @@
 # ST44 — Questions, a plan, and taken up again
 
-**Priority:** 🔼 High · **State:** Estimated
+**Priority:** 🟰 Medium · **State:** Estimated
 
 **What a user gains.** A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard.
 
@@ -25,7 +25,7 @@
   "title": "Questions, a plan, and taken up again",
   "gain": "A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard.",
   "test": "The questions first, the whole plan shown before anything runs, and after a pause it goes on where the person was; a step done elsewhere counts as done.",
-  "priority": "High",
+  "priority": "Medium",
   "issues": [
     "porelo-project#PJ57"
   ],
