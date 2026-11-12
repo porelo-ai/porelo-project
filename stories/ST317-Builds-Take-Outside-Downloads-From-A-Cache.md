@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT78](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt78) (Backlog)
+- [porelo-buildtools#BT78](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt78) (Review)
 - [porelo-message-matrix#MX107](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx107) (Review)
 - [porelo-ecosystems#EC22](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec22) (Review)
 - [porelo-mcp#MC13](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc13) (Review)
