@@ -25,6 +25,10 @@
 - [porelo-codex#CX19](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx19) (Review)
 - [porelo-agy#AG18](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag18) (Review)
 - [porelo#B630](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b630) (Backlog)
+- [porelo-buildtools#BT64](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt64) (Review)
+- [porelo-buildtools#BT65](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt65) (Review)
+- [porelo-planner#PL81](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl81) (Review)
+- [porelo-adapters#GH29](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh29) (Review)
 
 ## Data
 
@@ -54,7 +58,11 @@
     "porelo-omp#OM51",
     "porelo-codex#CX19",
     "porelo-agy#AG18",
-    "porelo#B630"
+    "porelo#B630",
+    "porelo-buildtools#BT64",
+    "porelo-buildtools#BT65",
+    "porelo-planner#PL81",
+    "porelo-adapters#GH29"
   ],
   "tested": null
 }

@@ -9,6 +9,7 @@
 **Issues:**
 
 - [porelo-adapters#GH14](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh14) (Estimated)
+- [porelo-adapters#GH16](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh16) (Estimated)
 
 ## Data
 
@@ -21,7 +22,8 @@
   "test": "Not planned for a test yet.",
   "priority": "Low",
   "issues": [
-    "porelo-adapters#GH14"
+    "porelo-adapters#GH14",
+    "porelo-adapters#GH16"
   ],
   "tested": null
 }

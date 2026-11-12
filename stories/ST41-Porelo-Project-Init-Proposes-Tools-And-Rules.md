@@ -23,6 +23,7 @@
 - [porelo#B503](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b503) (Review)
 - [porelo-ecosystems#EC17](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec17) (Review)
 - [porelo-frontend#F385](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f385) (Review)
+- [porelo-ecosystems#EC20](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec20) (Review)
 
 ## Notes
 
@@ -53,7 +54,8 @@
     "porelo#B455",
     "porelo#B503",
     "porelo-ecosystems#EC17",
-    "porelo-frontend#F385"
+    "porelo-frontend#F385",
+    "porelo-ecosystems#EC20"
   ],
   "tested": null
 }

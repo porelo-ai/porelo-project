@@ -9,6 +9,10 @@
 **Issues:**
 
 - [porelo-planner#PL41](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl41) (Finished)
+- [porelo-planner#PL42](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl42) (Review)
+- [porelo-planner#PL14](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl14) (Estimated)
+- [porelo-planner#PL62](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl62) (Estimated)
+- [porelo-planner#PL15](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl15) (Estimated)
 
 ## Data
 
@@ -22,7 +26,11 @@
   "priority": "High",
   "state": "Estimated",
   "issues": [
-    "porelo-planner#PL41"
+    "porelo-planner#PL41",
+    "porelo-planner#PL42",
+    "porelo-planner#PL14",
+    "porelo-planner#PL62",
+    "porelo-planner#PL15"
   ],
   "tested": null
 }

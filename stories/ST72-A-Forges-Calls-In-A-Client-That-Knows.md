@@ -14,6 +14,8 @@
 - [porelo-forge-clients#FC10](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc10) (Finished)
 - [porelo-forge-clients#FC11](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc11) (Finished)
 - [porelo-forge-clients#FC13](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc13) (Finished)
+- [porelo-forge-clients#FC19](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc19) (Review)
+- [porelo-forge-clients#FC20](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc20) (Review)
 
 ## Data
 
@@ -31,7 +33,9 @@
       "porelo-forge-clients#FC09",
       "porelo-forge-clients#FC10",
       "porelo-forge-clients#FC11",
-      "porelo-forge-clients#FC13"
+      "porelo-forge-clients#FC13",
+    "porelo-forge-clients#FC19",
+    "porelo-forge-clients#FC20"
   ],
   "tested": null
 }

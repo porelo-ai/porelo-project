@@ -17,6 +17,7 @@
 - [porelo-frontend#F488](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f488) (Review)
 - [porelo-planner#PL46](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl46) (Finished)
 - [porelo-planner#PL41](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl41) (Finished)
+- [porelo-planner#PL67](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl67) (Review)
 
 ## Data
 
@@ -38,7 +39,8 @@
     "porelo-frontend#F487",
     "porelo-frontend#F488",
     "porelo-planner#PL46",
-    "porelo-planner#PL41"
+    "porelo-planner#PL41",
+    "porelo-planner#PL67"
   ],
   "tested": null
 }

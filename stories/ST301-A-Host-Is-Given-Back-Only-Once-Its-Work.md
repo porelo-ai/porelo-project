@@ -1,6 +1,6 @@
 # ST301 — A host is given back only once its work has reached central
 
-**Priority:** 🟰 Medium · **State:** Review
+**Priority:** 🟰 Medium · **State:** Accepted
 
 **What a user gains.** A host is given back only when everything its tasks did has reached central; work still ahead of central is said, with the reason in words, and holds the give-back.
 
@@ -11,6 +11,7 @@
 - [porelo-frontend#F428](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f428) (Review)
 - [porelo-frontend#F462](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f462) (Review)
 - [porelo-host#HO143](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho143) (Review)
+- [porelo-host#HO167](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho167) (Accepted)
 
 ## Data
 
@@ -25,7 +26,8 @@
   "issues": [
     "porelo-frontend#F428",
     "porelo-frontend#F462",
-    "porelo-host#HO143"
+    "porelo-host#HO143",
+    "porelo-host#HO167"
   ],
   "tested": null
 }

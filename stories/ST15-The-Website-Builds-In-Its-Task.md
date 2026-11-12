@@ -9,6 +9,7 @@
 **Issues:**
 
 - [porelo-ai.github.io#SI01](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si01) (Estimated)
+- [porelo-ai.github.io#SI07](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si07) (Review)
 
 ## Notes
 
@@ -25,7 +26,8 @@
   "test": "Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed.",
   "priority": "Highest",
   "issues": [
-    "porelo-ai.github.io#SI01"
+    "porelo-ai.github.io#SI01",
+    "porelo-ai.github.io#SI07"
   ],
   "tested": null
 }
