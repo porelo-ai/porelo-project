@@ -17,6 +17,7 @@
 - [porelo-host#HO151](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho151) (Review)
 - [porelo-pi#PI49](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi49) (Review)
 - [porelo-host#HO171](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho171) (Accepted)
+- [porelo#B641](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b641) (Review)
 
 ## Data
 
@@ -37,7 +38,8 @@
     "porelo-host#HO150",
     "porelo-host#HO151",
     "porelo-pi#PI49",
-    "porelo-host#HO171"
+    "porelo-host#HO171",
+    "porelo#B641"
   ],
   "tested": null
 }

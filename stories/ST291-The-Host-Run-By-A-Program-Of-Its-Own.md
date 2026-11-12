@@ -1,6 +1,6 @@
 # ST291 — The host run by a program of its own, built like porelo
 
-**Priority:** ⏫ Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Backlog
 
 **What a user gains.** A host admin's and an automation's work on a host runs as one Java program, porelo-host, built, signed and packaged like porelo; a person's own host commands are porelo commands; root's narrow boundaries act only for the account sudo names, and nothing asks for input that is not needed.
 
@@ -30,6 +30,8 @@
 - [porelo#B580](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b580) (Review)
 - [porelo#B557](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b557) (Review)
 - [porelo-frontend#F473](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f473) (Review)
+- [porelo#B587](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b587) (Backlog)
+- [porelo#B592](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b592) (Backlog)
 
 ## Data
 
@@ -63,7 +65,9 @@
     "porelo#B574",
     "porelo#B580",
     "porelo#B557",
-    "porelo-frontend#F473"
+    "porelo-frontend#F473",
+    "porelo#B587",
+    "porelo#B592"
   ],
   "tested": null
 }

@@ -1,6 +1,6 @@
 # ST40 — Legs on pool machines, the same workflow on both forges
 
-**Priority:** 🔼 High · **State:** Estimated
+**Priority:** 🔼 High · **State:** Backlog
 
 **What a user gains.** The same acceptance legs run on pool machines on both the host's forge and the central one, so tests behave the same wherever they run.
 
@@ -9,7 +9,7 @@
 **Issues:**
 
 - [porelo-host#HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27) (Backlog)
-- [porelo#B322](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b322) (Estimated)
+- [porelo#B322](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b322) (Backlog)
 - [porelo-claude-code#CC40](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc40) (Backlog)
 - [porelo-pi#PI40](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi40) (Backlog)
 - [porelo-omp#OM37](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om37) (Backlog)

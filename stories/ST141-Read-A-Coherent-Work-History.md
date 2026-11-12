@@ -10,6 +10,7 @@
 
 - [porelo#B168](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b168) (Estimated)
 - [porelo-frontend#F111](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f111) (Backlog)
+- [porelo#B629](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b629) (Backlog)
 
 ## Data
 
@@ -23,7 +24,8 @@
   "priority": "Low",
   "issues": [
     "porelo#B168",
-    "porelo-frontend#F111"
+    "porelo-frontend#F111",
+    "porelo#B629"
   ],
   "tested": null
 }

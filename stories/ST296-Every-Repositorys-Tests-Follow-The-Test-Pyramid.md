@@ -44,6 +44,8 @@
 - [porelo-omp#OM48](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om48) (Estimated)
 - [porelo-forge-clients#FC18](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc18) (Estimated)
 - [porelo#B512](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b512) (Review)
+- [porelo#B625](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b625) (Review)
+- [porelo-buildtools#BT82](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt82) (Estimated)
 
 ## Data
 
@@ -91,7 +93,9 @@
     "porelo-claude-code#CC50",
     "porelo-omp#OM48",
     "porelo-forge-clients#FC18",
-    "porelo#B512"
+    "porelo#B512",
+    "porelo#B625",
+    "porelo-buildtools#BT82"
   ],
   "tested": null
 }

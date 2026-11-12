@@ -23,6 +23,7 @@
 - [porelo-mcp#MC12](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc12) (Review)
 - [porelo-message-matrix#MX101](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx101) (Review)
 - [porelo-message-sluice#SL51](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl51) (Review)
+- [porelo#B606](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b606) (Backlog)
 
 ## Data
 
@@ -49,7 +50,8 @@
     "porelo-intellij#IJ24",
     "porelo-mcp#MC12",
     "porelo-message-matrix#MX101",
-    "porelo-message-sluice#SL51"
+    "porelo-message-sluice#SL51",
+    "porelo#B606"
   ],
   "tested": null
 }

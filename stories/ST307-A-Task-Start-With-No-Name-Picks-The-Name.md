@@ -1,6 +1,6 @@
 # ST307 — A task start with no name picks the name the person expects
 
-**Priority:** 🟰 Medium · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Accepted
 
 **What a user gains.** A task started without a name gets the name and the task the person expects; a second start asks before making another task, and a container's name does not double the project's.
 
@@ -18,6 +18,8 @@
 - [porelo#B600](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b600) (Review)
 - [porelo#B601](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b601) (Review)
 - [porelo#B602](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b602) (Review)
+- [porelo#B608](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b608) (Accepted)
+- [porelo#B610](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b610) (Accepted)
 
 ## Data
 
@@ -39,7 +41,9 @@
     "porelo#B599",
     "porelo#B600",
     "porelo#B601",
-    "porelo#B602"
+    "porelo#B602",
+    "porelo#B608",
+    "porelo#B610"
   ],
   "tested": null
 }

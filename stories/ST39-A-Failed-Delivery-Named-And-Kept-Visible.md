@@ -1,6 +1,6 @@
 # ST39 — A failed delivery named and kept visible
 
-**Priority:** 🔼 High · **State:** Estimated
+**Priority:** 🔼 High · **State:** Backlog
 
 **What a user gains.** When a delivery to the forge fails, a person gets a named reason within a short time and the failure stays visible rather than disappearing.
 
@@ -9,7 +9,7 @@
 **Issues:**
 
 - [porelo#B179](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b179) (Backlog)
-- [porelo#B197](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b197) (Estimated)
+- [porelo#B197](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b197) (Backlog)
 - [porelo-frontend#F117](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f117) (Review)
 
 ## Data

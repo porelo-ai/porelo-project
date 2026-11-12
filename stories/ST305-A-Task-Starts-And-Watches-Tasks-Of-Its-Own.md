@@ -1,6 +1,6 @@
 # ST305 — A task starts and watches tasks of its own through MCP
 
-**Priority:** 🟰 Medium · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Accepted
 
 **What a user gains.** A task the signed project file allows starts, lists, reads and stops tasks of its own through an MCP endpoint, within the file's limits and held to its own project.
 
@@ -11,6 +11,7 @@
 - [porelo#B507](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b507) (Review)
 - [porelo#B573](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b573) (Analyzed)
 - [porelo-mcp#MC03](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc03) (Review)
+- [porelo#B609](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b609) (Accepted)
 
 ## Data
 
@@ -25,7 +26,8 @@
   "issues": [
     "porelo#B507",
     "porelo#B573",
-    "porelo-mcp#MC03"
+    "porelo-mcp#MC03",
+    "porelo#B609"
   ],
   "tested": null
 }
