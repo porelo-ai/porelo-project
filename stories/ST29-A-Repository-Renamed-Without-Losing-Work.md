@@ -1,6 +1,6 @@
 # ST29 — A repository renamed without losing work
 
-**Priority:** ⏫ Highest · **State:** Accepted
+**Priority:** ⏫ Highest · **State:** Analyzed
 
 **What a user gains.** A person can rename a repository's key in the project file without losing waiting work or tasks tied to it.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-project#PJ97](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj97) (Accepted)
+- [porelo-project#PJ97](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj97) (Analyzed)
 
 ## Data
 

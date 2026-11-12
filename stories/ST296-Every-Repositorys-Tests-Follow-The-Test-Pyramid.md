@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B570](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b570) (Accepted)
+- [porelo#B570](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b570) (Analyzed)
 - [porelo-mcp#MC11](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc11) (Analyzed)
 - [porelo-pi#PI52](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi52) (Analyzed)
 - [porelo-codex#CX16](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx16) (Analyzed)

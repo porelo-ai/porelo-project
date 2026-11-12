@@ -5,8 +5,8 @@
   "$schema": "issue-1.json",
   "id": "PJ97",
   "title": "A Repository Can Be Renamed Without Losing Work",
-  "state": "Accepted",
-  "size": "-",
+  "state": "Analyzed",
+  "size": "L",
   "priority": "Medium",
   "rank": 3,
   "blockedBy": [],
@@ -75,9 +75,29 @@ will do it by hand. Measured today, a rename is taken as a removal plus an addit
   forge.
 - Seen to fail first: each of the measured losses above, reproduced by a test before its fix.
 
+**Why this size.** L: it crosses porelo (follow, mirror, gate, judged record) and porelo-host (the host's follow). Porelo's part is M.
+
+## Plan
+
+Read in porelo's code on 2026-11-12 (Agent Core). The key names three things on a machine:
+- the mirror, `mirrors/<project>/<key>.git` (`GateSupport.mirror`);
+- the judged `porelo.yml` record, `organization/settings-taken/<project>/<key>` (`RepositorySettingsSignature`);
+- a task's repository label.
+Credentials and vault entries are keyed by address and need nothing.
+
+1. **Red first.** In a `GitGate` and `ProjectInventory` test, a key renamed with the same address, with work waiting and a task labelled with the old key: `gate pending -r <new>` lists the work, and `gate approve` reaches the address. Today it says nothing is pending.
+2. **Detection, in porelo.** When a followed project's file changes, its `repositories:` before and after are compared. A key gone plus a key added with the same address is a rename. A key gone whose mirror holds waiting work, or that a running or kept task carries, is named in `project verify` and in the follow's answer before anything changes. A start under the old key keeps being refused.
+3. **The move, in porelo.** A detected rename moves the mirror and the judged record to the new key under the gate's lock, and records the old key as an alias. Gate commands and a running task's gate resolve the alias until the last task carrying the old label is removed.
+4. **By hand, in two steps (remove, then add).** This cannot be told apart from a removal plus an addition, so it is not guessed. The warning of step 2 fires, and `porelo project rename-repository PROJECT OLD NEW` does the move of step 3 and prints the line the person must change in the file.
+5. **On a host, in porelo-host.** While a card names a key the file does not list, or the other way round, nothing is taken off. The mismatch is reported until both agree, and a rename the follow detects as in step 2 is carried by the address the host already keys its copy by.
+6. **Docs.** `doc/running.md` gets a section on renaming a repository.
+
 ## Open questions
+
+1. **The identity.** The key stays the name a person types, and porelo detects a rename by the unchanged address (recommended). Or should the central address become the identity of the local state outright? That moves every mirror and record once and makes a key change free.
+2. **A detected rename: automatic, or asked?** Should porelo move the mirror and records on its own when the address is the same, or only say so and wait for `project rename-repository`?
+3. **A rename that also changes the address.** Should it stay a removal plus an addition, with the warning only?
 
 ## To be checked
 
-- Analysis: which repositories build which part (`porelo` for the follow, the mirror and the gate; `porelo-host` for
-  the host's follow), and whether the key should stay the identity at all or the central address take its place.
+- Which mirror a kept task's gate serves after it starts again under a renamed key (not shown in the measurement).

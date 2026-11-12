@@ -7,8 +7,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 87 |
-| [Accepted](#accepted) | 29 |
-| [Analyzed](#analyzed) | 39 |
+| [Accepted](#accepted) | 26 |
+| [Analyzed](#analyzed) | 42 |
 | [Estimated](#estimated) | 29 |
 | [Backlog](#backlog) | 44 |
 | [Implementing](#implementing) | 5 |
@@ -112,10 +112,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st29"></a>[ST29](ST29-A-Repository-Renamed-Without-Losing-Work.md) A repository renamed without losing work | ⏫ Highest | PJ:1 | A person can rename a repository's key in the project file without losing waiting work or tasks tied to it. |
 | <a id="st296"></a>[ST296](ST296-Every-Repositorys-Tests-Follow-The-Test-Pyramid.md) Every repository's tests follow the test pyramid | ⏫ Highest | B:2 · AG:1 · BT:1 · CC:1 · CX:1 · EC:1 · F:1 · FC:1 · GH:1 · HO:1 · IJ:1 · MC:1 · MX:1 · OM:1 · PI:1 · SL:1 | Each repository proves its flows with unit tests that run in seconds, tests its real pieces narrowly on that core and keeps integration, VM and rented-machine runs for what nothing lower can show, so work is done and checked faster and a fault is found at the lowest level that shows it. |
-| <a id="st30"></a>[ST30](ST30-Work-Without-A-Project-With-Plain-Refusals.md) Work without a project, with plain refusals | 🔼 High | B:6 · F:5 · PJ:1 | A person can start work without a project and get plain refusals, with a checkout going into the default area unless a followed project claims the repository. |
-| <a id="st44"></a>[ST44](ST44-Questions-A-Plan-And-Taken-Up-Again.md) Questions, a plan, and taken up again | 🔼 High | PJ:1 | A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard. |
 | <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🔼 High | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
 | <a id="st313"></a>[ST313](ST313-A-Tasks-Results-Land-Where-The-Next-Step-And-Others.md) A task's results land where the next step and others find them | 🔼 High | PJ:2 | A reading's findings are kept as a Markdown file in the repository, where each state's start instructions tell the agent to put them, so the next task finds them in its source, works them off and deletes them, all in Git's history; ideas become issues the normal way. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
@@ -149,12 +146,15 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st14"></a>[ST14](ST14-The-Coordinator-Reads-Everything-And-Changes-Only-Porelo.md) The coordinator reads everything and changes only porelo-project | ⏫ Highest | PJ:2 | The coordinator can read every repository of the project but can change only the project repository, and any change elsewhere is refused. |
 | <a id="st24"></a>[ST24](ST24-The-Tokens-Counted-Per-Task-The-Dependencies-Shared.md) The tokens counted per task, the dependencies shared | ⏫ Highest | B:2 · BT:1 · PJ:1 | A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again. |
 | <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | ⏫ Highest | IJ:1 · MX:1 · SL:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
+| <a id="st29"></a>[ST29](ST29-A-Repository-Renamed-Without-Losing-Work.md) A repository renamed without losing work | ⏫ Highest | PJ:1 | A person can rename a repository's key in the project file without losing waiting work or tasks tied to it. |
+| <a id="st30"></a>[ST30](ST30-Work-Without-A-Project-With-Plain-Refusals.md) Work without a project, with plain refusals | 🔼 High | B:6 · F:5 · PJ:1 | A person can start work without a project and get plain refusals, with a checkout going into the default area unless a followed project claims the repository. |
 | <a id="st31"></a>[ST31](ST31-Keys-And-Providers-Without-Stumbling.md) Keys and providers without stumbling | 🔼 High | B:2 · P:1 | A person can paste a key into vault put and have it read whole, and an agent given an unknown provider is refused with a clear message. |
 | <a id="st32"></a>[ST32](ST32-Load-Time-Out-And-Forget-One-Connection.md) Load, time out and forget one connection | 🔼 High | F:4 · B:2 | A person sees pages load, connection actions time out and a connection be forgotten in one consistent way in the interface. |
 | <a id="st35"></a>[ST35](ST35-Refuse-An-Incompatible-Protocol-And-A-Meaningless-Option.md) Refuse an incompatible protocol and a meaningless option | 🔼 High | B:2 · CC:1 | An agent whose protocol is incompatible with the core is refused, while meaningless options no longer get in the way of compatible ones. |
 | <a id="st36"></a>[ST36](ST36-Start-Local-Organization-And-Added-Providers.md) Start local, organization and added providers | 🔼 High | P:3 · B:1 | A person can use local, organization HTTPS and added providers such as xAI, Zhipu and Z.AI, with supported ones starting and unsupported ones refused clearly. |
 | <a id="st39"></a>[ST39](ST39-A-Failed-Delivery-Named-And-Kept-Visible.md) A failed delivery named and kept visible | 🔼 High | B:2 · F:1 | When a delivery to the forge fails, a person gets a named reason within a short time and the failure stays visible rather than disappearing. |
 | <a id="st43"></a>[ST43](ST43-A-Companys-Private-Package-Repository-With-No-Credential.md) A company's private package repository, with no credential in the task | 🔼 High | B:4 · EC:1 | A task can build against a company's authenticated Nexus or Artifactory without ever holding the credential, since the settings are written outside the task. |
+| <a id="st44"></a>[ST44](ST44-Questions-A-Plan-And-Taken-Up-Again.md) Questions, a plan, and taken up again | 🔼 High | PJ:1 | A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard. |
 | <a id="st59"></a>[ST59](ST59-A-Report-Outside-The-Profile-Refused.md) A report outside the profile refused | 🟰 Medium | SL:1 | Reports with unsafe locations, fixes in the wrong file or other disallowed content are refused, so a bad report cannot do harm. |
 | <a id="st60"></a>[ST60](ST60-A-Comment-With-A-Suggestion-Reaches-The-Agent.md) A comment with a suggestion reaches the agent | 🟰 Medium | B:3 · F:2 | A person can comment on a line with a suggestion in the review, and the task building that work receives it. |
 | <a id="st61"></a>[ST61](ST61-A-Thread-Follows-The-New-Push.md) A thread follows the new push | 🟰 Medium | B:1 | A review thread follows lines that stay unchanged after a new push, and threads on changed lines stay marked rather than moving wrongly. |
