@@ -1,6 +1,6 @@
 # ST336 — A story's page shows its description and issues well
 
-**Priority:** 🟰 Medium · **State:** Estimated
+**Priority:** 🔼 High · **State:** Backlog
 
 **What a user gains.** On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting.
 
@@ -20,7 +20,8 @@
   "title": "A story's page shows its description and issues well",
   "gain": "On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting.",
   "test": "Open a story with a long Markdown description and many issues: the description renders as Markdown and folds; the issue list searches, filters and sorts, and keeps that when the person comes back.",
-  "priority": "Medium",
+  "priority": "High",
+  "state": "Backlog",
   "issues": [
     "porelo-planner#PL36",
     "porelo-planner#PL37"
