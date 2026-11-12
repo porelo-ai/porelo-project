@@ -1,6 +1,6 @@
 # ST30 — Work without a project, with plain refusals
 
-**Priority:** 🔼 High · **State:** Analyzed
+**Priority:** 🔼 High · **State:** Estimated
 
 **What a user gains.** A person can start work without a project and get plain refusals, with a checkout going into the default area unless a followed project claims the repository.
 
@@ -9,9 +9,9 @@
 **Issues:**
 
 - [porelo-project#PJ14](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj14) (Backlog)
-- [porelo#B33](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b33) (Analyzed)
+- [porelo#B33](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b33) (Estimated)
 - [porelo-frontend#F118](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f118) (Review)
-- [porelo#B355](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b355) (Analyzed)
+- [porelo#B355](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b355) (Estimated)
 - [porelo#B457](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b457) (Review)
 - [porelo#B470](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b470) (Review)
 - [porelo-frontend#F369](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f369) (Review)

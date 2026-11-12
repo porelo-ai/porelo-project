@@ -8,22 +8,37 @@
 
 **Issues:**
 
-- [porelo#B570](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b570) (Analyzed)
-- [porelo-mcp#MC11](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc11) (Analyzed)
-- [porelo-pi#PI52](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi52) (Analyzed)
-- [porelo-codex#CX16](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx16) (Analyzed)
-- [porelo-agy#AG15](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag15) (Analyzed)
-- [porelo-buildtools#BT57](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt57) (Analyzed)
+- [porelo#B652](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b652) (Estimated)
+- [porelo#B653](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b653) (Estimated)
+- [porelo#B654](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b654) (Estimated)
+- [porelo#B655](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b655) (Estimated)
+- [porelo#B656](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b656) (Estimated)
+- [porelo#B657](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b657) (Estimated)
+- [porelo#B658](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b658) (Estimated)
+- [porelo#B659](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b659) (Estimated)
+- [porelo#B660](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b660) (Estimated)
+- [porelo#B661](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b661) (Estimated)
+- [porelo#B662](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b662) (Estimated)
+- [porelo#B663](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b663) (Estimated)
+- [porelo#B664](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b664) (Estimated)
+- [porelo#B665](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b665) (Estimated)
+- [porelo-mcp#MC11](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc11) (Estimated)
+- [porelo-pi#PI52](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi52) (Estimated)
+- [porelo-codex#CX16](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx16) (Estimated)
+- [porelo-agy#AG15](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag15) (Estimated)
+- [porelo-buildtools#BT57](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt57) (Estimated)
 - [porelo-frontend#F450](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f450) (Analyzed)
-- [porelo-message-matrix#MX93](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx93) (Analyzed)
-- [porelo-host#HO159](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho159) (Analyzed)
-- [porelo-intellij#IJ23](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij23) (Analyzed)
-- [porelo-message-sluice#SL50](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl50) (Analyzed)
-- [porelo-adapters#GH23](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh23) (Analyzed)
-- [porelo-ecosystems#EC18](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec18) (Analyzed)
-- [porelo-claude-code#CC50](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc50) (Analyzed)
-- [porelo-omp#OM48](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om48) (Analyzed)
-- [porelo-forge-clients#FC18](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc18) (Analyzed)
+- [porelo-message-matrix#MX93](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx93) (Estimated)
+- [porelo-host#HO159](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho159) (Estimated)
+- [porelo-intellij#IJ23](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij23) (Estimated)
+- [porelo-message-sluice#SL53](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl53) (Estimated)
+- [porelo-message-sluice#SL54](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl54) (Estimated)
+- [porelo-message-sluice#SL55](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl55) (Estimated)
+- [porelo-adapters#GH23](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh23) (Estimated)
+- [porelo-ecosystems#EC18](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec18) (Estimated)
+- [porelo-claude-code#CC50](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc50) (Estimated)
+- [porelo-omp#OM48](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om48) (Estimated)
+- [porelo-forge-clients#FC18](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc18) (Estimated)
 - [porelo#B512](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b512) (Review)
 
 ## Data
@@ -37,7 +52,20 @@
   "test": "Each repository's audit measures its suites against the shares of doc/test-pyramid.md; the guards proven only from above move down first, then real waits give way to an injected clock; after the fixes every flow has unit tests over fakes, each module's unit suite runs in under a minute, and no plan needs a VM to see a flow work.",
   "priority": "Highest",
   "issues": [
-    "porelo#B570",
+    "porelo#B652",
+    "porelo#B653",
+    "porelo#B654",
+    "porelo#B655",
+    "porelo#B656",
+    "porelo#B657",
+    "porelo#B658",
+    "porelo#B659",
+    "porelo#B660",
+    "porelo#B661",
+    "porelo#B662",
+    "porelo#B663",
+    "porelo#B664",
+    "porelo#B665",
     "porelo-mcp#MC11",
     "porelo-pi#PI52",
     "porelo-codex#CX16",
@@ -47,7 +75,9 @@
     "porelo-message-matrix#MX93",
     "porelo-host#HO159",
     "porelo-intellij#IJ23",
-    "porelo-message-sluice#SL50",
+    "porelo-message-sluice#SL53",
+    "porelo-message-sluice#SL54",
+    "porelo-message-sluice#SL55",
     "porelo-adapters#GH23",
     "porelo-ecosystems#EC18",
     "porelo-claude-code#CC50",

@@ -1,6 +1,6 @@
 # ST53 — A start that waits for its helpers
 
-**Priority:** 🔼 High · **State:** Analyzed
+**Priority:** 🔼 High · **State:** Estimated
 
 **What a user gains.** A start waits until both the gate and the relay are up, and ends with a clear code if either does not come up.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B384](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b384) (Analyzed)
+- [porelo#B384](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b384) (Estimated)
 
 ## Data
 

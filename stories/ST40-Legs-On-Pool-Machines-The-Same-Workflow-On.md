@@ -1,6 +1,6 @@
 # ST40 — Legs on pool machines, the same workflow on both forges
 
-**Priority:** 🔼 High · **State:** Analyzed
+**Priority:** 🔼 High · **State:** Estimated
 
 **What a user gains.** The same acceptance legs run on pool machines on both the host's forge and the central one, so tests behave the same wherever they run.
 
@@ -8,12 +8,13 @@
 
 **Issues:**
 
-- [porelo-host#HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27) (Analyzed)
-- [porelo#B322](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b322) (Analyzed)
+- [porelo-host#HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27) (Estimated)
+- [porelo#B322](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b322) (Estimated)
 - [porelo-claude-code#CC40](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc40) (Estimated)
 - [porelo-pi#PI40](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi40) (Estimated)
 - [porelo-omp#OM37](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om37) (Estimated)
 - [porelo-agy#AG05](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag05) (Estimated)
+- [porelo-buildtools#BT84](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt84) (Estimated)
 
 ## Data
 
@@ -31,7 +32,8 @@
     "porelo-claude-code#CC40",
     "porelo-pi#PI40",
     "porelo-omp#OM37",
-    "porelo-agy#AG05"
+    "porelo-agy#AG05",
+    "porelo-buildtools#BT84"
   ],
   "tested": null
 }
