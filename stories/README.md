@@ -6,7 +6,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 82 |
+| [Idea](#idea) | 83 |
 | [Accepted](#accepted) | 23 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 39 |
@@ -102,6 +102,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st217"></a>[ST217](ST217-Porelo-Project.md) porelo-project | 🔽 Low | PJ:18 · A:3 | A person gets the project repository repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st218"></a>[ST218](ST218-Porelo.md) porelo | 🔽 Low | B:51 | A person gets the Porelo core repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st343"></a>[ST343](ST343-A-Tasks-Timeline-Seen-In-An-Open-Source-Tool.md) A task's timeline seen in an open-source tool on the same machine | 🔽 Low | none yet | A person who wants charts, trace views or evaluations points the export at an open-source tool running locally (MLflow with SQLite first, OpenLIT or Langfuse where their extra services are worth it), with the tool's own telemetry off, and sees the runs of their tasks there; Porelo installs nothing of it by default. |
+| <a id="st344"></a>[ST344](ST344-Lightweight-Alternative-To-Porelo-On-Mac-Windows-Desktops.md) Lightweight Alternative to Porelo on Mac/Windows Desktops | 🔽 Low | none yet | A person on a Mac or Windows desktop runs agent tasks without a VM: the window and the planner manage tasks through a runtime-neutral interface, with a native sandbox such as sandbox-runtime behind it, and are told plainly which of Porelo's protections that runtime does not give. |
 
 ## Accepted
 
