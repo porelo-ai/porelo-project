@@ -8,10 +8,10 @@
 
 **Issues:**
 
-- [porelo#B380](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b380) (Idea)
+- [porelo#B380](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b380) (Analyzed)
 - [porelo-host#HO86](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho86) (Analyzed)
 - [porelo-frontend#F288](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f288) (Idea)
-- [porelo#B203](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b203) (Accepted)
+- [porelo#B203](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b203) (Analyzed)
 
 ## Data
 

@@ -6,25 +6,22 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 87 |
+| [Idea](#idea) | 84 |
 | [Accepted](#accepted) | 25 |
-| [Analyzed](#analyzed) | 43 |
+| [Analyzed](#analyzed) | 45 |
 | [Estimated](#estimated) | 29 |
 | [Backlog](#backlog) | 44 |
 | [Implementing](#implementing) | 4 |
 | [Review](#review) | 29 |
-| [Finished](#finished) | 76 |
+| [Finished](#finished) | 77 |
 | [Rejected](#rejected) | 5 |
 
 ## Idea
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st21"></a>[ST21](ST21-No-Channel-File-And-No-Hand-Over-Directory.md) No channel file and no hand-over directory any more | ⏫ Highest | none yet | Every repository's guide for agents describes the current Matrix, Forgejo and gate setup, with no leftover channel file or hand-over directory to confuse anyone. |
 | <a id="st33"></a>[ST33](ST33-An-Agent-Shown-Working-Resting-Or-Waiting.md) An agent shown working, resting or waiting | 🔼 High | B:2 · F:1 · PI:1 | A person sees in the command line and on the task card whether an agent is working, resting or waiting, and both agree. |
-| <a id="st40"></a>[ST40](ST40-Legs-On-Pool-Machines-The-Same-Workflow-On.md) Legs on pool machines, the same workflow on both forges | 🔼 High | AG:1 · B:1 · CC:1 · HO:1 · OM:1 · PI:1 | The same acceptance legs run on pool machines on both the host's forge and the central one, so tests behave the same wherever they run. |
 | <a id="st50"></a>[ST50](ST50-A-Machine-And-A-Host-Reached-From-Windows.md) A machine and a host reached from Windows | 🔼 High | F:4 | A person on Windows can reach a machine over SSH and see its projects, work, terminal and gate from the Windows build. |
-| <a id="st53"></a>[ST53](ST53-A-Start-That-Waits-For-Its-Helpers.md) A start that waits for its helpers | 🔼 High | B:1 | A start waits until both the gate and the relay are up, and ends with a clear code if either does not come up. |
 | <a id="st56"></a>[ST56](ST56-The-Gathered-Findings-Worked-Off.md) The gathered findings worked off | 🔼 High | B:2 · F:1 · HO:1 | The gathered findings from earlier work are cleared, and anything larger becomes an issue of its own, so nothing open is lost. |
 | <a id="st37"></a>[ST37](ST37-The-Providers-Usage-Seen-In-A-Status-Line.md) The providers' usage seen in a status line | 🟰 Medium | B:1 · F:1 | A person sees all providers in use as one traffic light in the status line and can click to see each provider's usage. |
 | <a id="st57"></a>[ST57](ST57-A-Linters-Report-Shown-On-The-Waiting-Work.md) A linter's report shown on the waiting work | 🟰 Medium | B:2 | A person adding a linter's SARIF report to waiting work sees each finding on its file and lines. |
@@ -152,8 +149,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st35"></a>[ST35](ST35-Refuse-An-Incompatible-Protocol-And-A-Meaningless-Option.md) Refuse an incompatible protocol and a meaningless option | 🔼 High | B:2 · CC:1 | An agent whose protocol is incompatible with the core is refused, while meaningless options no longer get in the way of compatible ones. |
 | <a id="st36"></a>[ST36](ST36-Start-Local-Organization-And-Added-Providers.md) Start local, organization and added providers | 🔼 High | P:3 · B:1 | A person can use local, organization HTTPS and added providers such as xAI, Zhipu and Z.AI, with supported ones starting and unsupported ones refused clearly. |
 | <a id="st39"></a>[ST39](ST39-A-Failed-Delivery-Named-And-Kept-Visible.md) A failed delivery named and kept visible | 🔼 High | B:2 · F:1 | When a delivery to the forge fails, a person gets a named reason within a short time and the failure stays visible rather than disappearing. |
+| <a id="st40"></a>[ST40](ST40-Legs-On-Pool-Machines-The-Same-Workflow-On.md) Legs on pool machines, the same workflow on both forges | 🔼 High | AG:1 · B:1 · CC:1 · HO:1 · OM:1 · PI:1 | The same acceptance legs run on pool machines on both the host's forge and the central one, so tests behave the same wherever they run. |
 | <a id="st43"></a>[ST43](ST43-A-Companys-Private-Package-Repository-With-No-Credential.md) A company's private package repository, with no credential in the task | 🔼 High | B:4 · EC:1 | A task can build against a company's authenticated Nexus or Artifactory without ever holding the credential, since the settings are written outside the task. |
 | <a id="st44"></a>[ST44](ST44-Questions-A-Plan-And-Taken-Up-Again.md) Questions, a plan, and taken up again | 🔼 High | PJ:1 | A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard. |
+| <a id="st53"></a>[ST53](ST53-A-Start-That-Waits-For-Its-Helpers.md) A start that waits for its helpers | 🔼 High | B:1 | A start waits until both the gate and the relay are up, and ends with a clear code if either does not come up. |
 | <a id="st313"></a>[ST313](ST313-A-Tasks-Results-Land-Where-The-Next-Step-And-Others.md) A task's results land where the next step and others find them | 🔼 High | PJ:2 | A reading's findings are kept as a Markdown file in the repository, where each state's start instructions tell the agent to put them, so the next task finds them in its source, works them off and deletes them, all in Git's history; ideas become issues the normal way. |
 | <a id="st59"></a>[ST59](ST59-A-Report-Outside-The-Profile-Refused.md) A report outside the profile refused | 🟰 Medium | SL:1 | Reports with unsafe locations, fixes in the wrong file or other disallowed content are refused, so a bad report cannot do harm. |
 | <a id="st60"></a>[ST60](ST60-A-Comment-With-A-Suggestion-Reaches-The-Agent.md) A comment with a suggestion reaches the agent | 🟰 Medium | B:3 · F:2 | A person can comment on a line with a suggestion in the review, and the task building that work receives it. |
@@ -317,6 +316,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
 | <a id="st2"></a>[ST2](ST2-Porelo-Message-Sluice-Works-Wholly-In-Its-Task.md) porelo-message-sluice works wholly in its task | ⏫ Highest | SL:1 | The message-sluice component can be built, reviewed and checked entirely inside its own task on the host, with its build going green on the host's forge. |
+| <a id="st21"></a>[ST21](ST21-No-Channel-File-And-No-Hand-Over-Directory.md) No channel file and no hand-over directory any more | ⏫ Highest | none yet | Every repository's guide for agents describes the current Matrix, Forgejo and gate setup, with no leftover channel file or hand-over directory to confuse anyone. |
 | <a id="st219"></a>[ST219](ST219-The-Host-Rented-And-Given-Back-At-One.md) The host rented and given back at one command | ⏫ Highest | HO:4 · F:3 | A person can rent a host from Scaleway and set it up with one command, and give it back with one command, reaching it only through the VPN. |
 | <a id="st220"></a>[ST220](ST220-Claude-Works-In-A-Task-Signed-In-With.md) Claude works in a task, signed in with the operator's subscription | ⏫ Highest | CC:2 · B:1 · SL:1 | A person can sign Claude Code in once with their own subscription, and tasks then work with only a short-lived token and no memory of the agent's own sign-in. |
 | <a id="st221"></a>[ST221](ST221-Each-Repository-Brings-Its-Image-And-Each-Task.md) Each repository brings its image, and each task its values | ⏫ Highest | B:2 | Each repository brings its own image from its porelo.yml and each task starts with its own issue and phase values, so tasks are set up the way their repository wants. |

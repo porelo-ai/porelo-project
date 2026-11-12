@@ -1,6 +1,6 @@
 # ST21 — No channel file and no hand-over directory any more
 
-**Priority:** ⏫ Highest · **State:** Idea
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-12)
 
 **What a user gains.** Every repository's guide for agents describes the current Matrix, Forgejo and gate setup, with no leftover channel file or hand-over directory to confuse anyone.
 
@@ -19,11 +19,11 @@
   "$schema": "story-2.json",
   "id": "ST21",
   "title": "No channel file and no hand-over directory any more",
-  "state": "Idea",
   "gain": "Every repository's guide for agents describes the current Matrix, Forgejo and gate setup, with no leftover channel file or hand-over directory to confuse anyone.",
   "test": "Every `AGENTS.md` describes Matrix, Forgejo and the gate; the channel file, the hand-over directory and the agents' own VM accounts are gone.",
   "priority": "Highest",
+  "state": "Finished",
   "issues": [],
-  "tested": null
+  "tested": "2026-11-12"
 }
 ```
