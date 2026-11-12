@@ -26,7 +26,7 @@
 - [porelo-pi#PI52](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi52) (Estimated)
 - [porelo-codex#CX16](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx16) (Estimated)
 - [porelo-agy#AG15](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag15) (Estimated)
-- [porelo-buildtools#BT57](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt57) (Estimated)
+- [porelo-buildtools#BT57](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt57) (Implementing)
 - [porelo-frontend#F495](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f495) (Estimated)
 - [porelo-frontend#F496](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f496) (Estimated)
 - [porelo-frontend#F497](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f497) (Estimated)
