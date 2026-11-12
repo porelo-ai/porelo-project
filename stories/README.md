@@ -10,7 +10,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Accepted](#accepted) | 25 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 32 |
-| [Backlog](#backlog) | 22 |
+| [Backlog](#backlog) | 23 |
 | [Implementing](#implementing) | 4 |
 | [Review](#review) | 27 |
 | [Finished](#finished) | 76 |
@@ -239,6 +239,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st18"></a>[ST18](ST18-Small-Repairs-Of-Safety-And-Robustness.md) Small repairs of safety and robustness | ⏫ Highest | HO:6 · B:5 · BT:2 · SL:1 | Small safety and robustness gaps are closed, so forced removals leave nothing running, tokens are kept where tools read them, and tasks cannot reach other projects or the person's vault. |
 | <a id="st23"></a>[ST23](ST23-The-Room-And-The-Usage-Records-Outlive-The.md) The room and the usage records outlive the host | ⏫ Highest | MX:3 · B:1 · HO:1 | The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost. |
 | <a id="st290"></a>[ST290](ST290-Agents-On-A-Host-Work-Their-Results-Off-Until.md) Agents on a host work their results off until done | ⏫ Highest | B:32 · F:19 · HO:9 · MX:6 · GH:3 · CC:2 · BT:1 · PI:1 | A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub. |
+| <a id="st325"></a>[ST325](ST325-A-Move-On-The-Board-Is-Saved-At-Once.md) A move on the board is saved at once | ⏫ Highest | PL:3 | A person moves a story or an issue on the planning board and it is saved at once, with no Save and no Undo; a move that can do harm warns first, a slow save shows as still saving instead of as a failure, and each row in Needs you offers the action that answers it. |
 | <a id="st318"></a>[ST318](ST318-Logging-In-The-Frontend-And-The-Planner.md) Logging in the frontend and the planner | 🔼 High | F:3 · PL:2 | The window and the planner each keep a log with levels; a person sets the level in the window, INFO by default, raises or lowers it there, and opens either log file on the local machine from a link in the window. The planner's backend log, written through its Java logging, lies beside the window's log, so a fault is read in one place and Needs you keeps only what asks for an action. |
 | <a id="st322"></a>[ST322](ST322-Missing-Planner-Functions.md) Missing planner functions | 🔼 High | PL:4 | The planning board does what a person reaches for: the search finds an issue and shows its story, a story's priority is changed on the board, and a disabled action names the run that holds it and leads there. |
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | 🟰 Medium | PJ:4 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
