@@ -1,6 +1,6 @@
 # ST48 — A chat answers questions about the current step
 
-**Priority:** 🔼 High · **State:** Idea
+**Priority:** 🔽 Low · **State:** Idea
 
 **What a user gains.** A person can ask a chat questions about the current wizard step using the Claude Code already signed in on the machine, and the chat never sees secrets.
 
@@ -20,10 +20,10 @@
   "$schema": "story-2.json",
   "id": "ST48",
   "title": "A chat answers questions about the current step",
-  "state": "Idea",
   "gain": "A person can ask a chat questions about the current wizard step using the Claude Code already signed in on the machine, and the chat never sees secrets.",
   "test": "Beside the wizard, with the Claude Code already signed in on the machine; it never sees a secret and runs nothing unconfirmed.",
-  "priority": "High",
+  "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

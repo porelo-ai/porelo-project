@@ -1,12 +1,14 @@
 # ST28 — The setup, move and recovery proven together
 
-**Priority:** ⏫ Highest · **State:** Idea
+**Priority:** ⏫ Highest · **State:** Backlog
 
 **What a user gains.** The setup, move to the host and recovery work together: a person brings up the project, runs local builds, moves each agent and restores the room and usage records.
 
 **The test.** Bring up the project, run the local builds, move each agent and restore the room and usage after giving the host back. Compare the results with every setup and move criterion; a missing local-build or recovery prerequisite keeps the parent acceptance open.
 
-**Issues:** none yet
+**Issues:**
+
+- [porelo-project#PJ120](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj120) (Backlog)
 
 ## Notes
 
@@ -24,11 +26,13 @@
   "$schema": "story-2.json",
   "id": "ST28",
   "title": "The setup, move and recovery proven together",
-  "state": "Idea",
   "gain": "The setup, move to the host and recovery work together: a person brings up the project, runs local builds, moves each agent and restores the room and usage records.",
   "test": "Bring up the project, run the local builds, move each agent and restore the room and usage after giving the host back. Compare the results with every setup and move criterion; a missing local-build or recovery prerequisite keeps the parent acceptance open.",
   "priority": "Highest",
-  "issues": [],
+  "state": "Backlog",
+  "issues": [
+    "porelo-project#PJ120"
+  ],
   "tested": null
 }
 ```

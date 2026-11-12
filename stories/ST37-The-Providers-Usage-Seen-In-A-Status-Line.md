@@ -1,6 +1,6 @@
 # ST37 — The providers' usage seen in a status line
 
-**Priority:** 🔼 High · **State:** Idea
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A person sees all providers in use as one traffic light in the status line and can click to see each provider's usage.
 
@@ -20,7 +20,7 @@
   "title": "The providers' usage seen in a status line",
   "gain": "A person sees all providers in use as one traffic light in the status line and can click to see each provider's usage.",
   "test": "The status line shows one traffic light for all providers in use; a click lists each provider with its own light; a provider past its configured critical threshold also raises a warning in needs you.",
-  "priority": "High",
+  "priority": "Medium",
   "issues": [
     "porelo#B365",
     "porelo-frontend#F282"

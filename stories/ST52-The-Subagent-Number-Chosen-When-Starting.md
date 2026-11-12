@@ -1,6 +1,6 @@
 # ST52 — The subagent number chosen when starting
 
-**Priority:** 🔼 High · **State:** Idea
+**Priority:** 🔼 High · **State:** Rejected
 
 **What a user gains.** A person sees the number of subagents that applies in the start dialog, can choose another number, and is told what applies.
 
@@ -20,6 +20,7 @@
   "gain": "A person sees the number of subagents that applies in the start dialog, can choose another number, and is told what applies.",
   "test": "The start dialog shows the number of subagents that applies, takes another one, and says a number Core refuses before anything is made.",
   "priority": "High",
+  "state": "Rejected",
   "issues": [
     "porelo-frontend#F284"
   ],
