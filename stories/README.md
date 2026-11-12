@@ -9,8 +9,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Idea](#idea) | 91 |
 | [Accepted](#accepted) | 28 |
 | [Analyzed](#analyzed) | 39 |
-| [Estimated](#estimated) | 33 |
-| [Backlog](#backlog) | 40 |
+| [Estimated](#estimated) | 29 |
+| [Backlog](#backlog) | 44 |
 | [Implementing](#implementing) | 4 |
 | [Review](#review) | 27 |
 | [Finished](#finished) | 76 |
@@ -193,10 +193,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st34"></a>[ST34](ST34-OMPs-Sign-In-Read-From-Its-Database.md) OMP's sign-in read from its database | 🔼 High | OM:1 | A person can sign OMP in once and start tasks without running vault login, because the sign-in is read from OMP's own database. |
-| <a id="st38"></a>[ST38](ST38-The-Chosen-Branch-Receives-The-Work.md) The chosen branch receives the work | 🔼 High | F:4 · B:1 | A person can choose a branch template or an explicit branch, and approved work lands on exactly that branch on the forge. |
-| <a id="st41"></a>[ST41](ST41-Porelo-Project-Init-Proposes-Tools-And-Rules.md) `porelo project init` proposes tools and rules | 🔼 High | B:7 · EC:7 · F:1 · PJ:1 | A person starting a Maven repository gets a proposed tool and rules file that porelo project init drafts, with each value explained. |
-| <a id="st47"></a>[ST47](ST47-A-Terminal-And-Live-List-Used-Together.md) A terminal and live list used together | 🔼 High | B:3 · F:2 | A person can use the embedded terminal like an ordinary terminal and keep task list --watch open beside it. |
 | <a id="st76"></a>[ST76](ST76-A-Pull-Request-From-Outside-Only-Read.md) A pull request from outside only read | 🟰 Medium | GH:1 | A pull request from an unknown outside account is only read and commented on, never built, so strangers cannot run code. |
 | <a id="st97"></a>[ST97](ST97-Return-To-The-Chosen-Files.md) Return to the chosen files | 🟰 Medium | B:1 | A person can rewind a task to a turn snapshot and compare the restored files, and an unsupported session is told so. |
 | <a id="st106"></a>[ST106](ST106-Make-Security-Failures-Hold-The-Release.md) Make security failures hold the release | 🟰 Medium | B:2 | A release is held back when a security check fails, because Fedora isolation and the misuse tests must pass on their intended legs. |
@@ -246,6 +242,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st290"></a>[ST290](ST290-Agents-On-A-Host-Work-Their-Results-Off-Until.md) Agents on a host work their results off until done | ⏫ Highest | B:32 · F:19 · HO:9 · MX:6 · GH:3 · CC:2 · BT:1 · PI:1 | A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub. |
 | <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Move: Every agent works in a Porelo task, moved one at a time | ⏫ Highest | HO:4 · MX:3 · PJ:1 | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
 | <a id="st325"></a>[ST325](ST325-A-Move-On-The-Board-Is-Saved-At-Once.md) A move on the board is saved at once | ⏫ Highest | PL:3 | A person moves a story or an issue on the planning board and it is saved at once, with no Save and no Undo; a move that can do harm warns first, a slow save shows as still saving instead of as a failure, and each row in Needs you offers the action that answers it. |
+| <a id="st34"></a>[ST34](ST34-OMPs-Sign-In-Read-From-Its-Database.md) OMP's sign-in read from its database | 🔼 High | OM:1 | A person can sign OMP in once and start tasks without running vault login, because the sign-in is read from OMP's own database. |
+| <a id="st38"></a>[ST38](ST38-The-Chosen-Branch-Receives-The-Work.md) The chosen branch receives the work | 🔼 High | F:4 · B:1 | A person can choose a branch template or an explicit branch, and approved work lands on exactly that branch on the forge. |
+| <a id="st41"></a>[ST41](ST41-Porelo-Project-Init-Proposes-Tools-And-Rules.md) `porelo project init` proposes tools and rules | 🔼 High | B:7 · EC:7 · F:1 · PJ:1 | A person starting a Maven repository gets a proposed tool and rules file that porelo project init drafts, with each value explained. |
+| <a id="st47"></a>[ST47](ST47-A-Terminal-And-Live-List-Used-Together.md) A terminal and live list used together | 🔼 High | B:3 · F:2 | A person can use the embedded terminal like an ordinary terminal and keep task list --watch open beside it. |
 | <a id="st309"></a>[ST309](ST309-A-Story-Takes-The-State-The-Operator-Gives-It.md) A story takes the state the operator gives it | 🔼 High | PL:2 · B:1 · BT:1 · F:1 | The operator puts a story into any state, on the story board or in its head, and it keeps that state whatever its issues' states are; where an issue does not fit that state by the automatic rule, a warning names it and asks to go on anyway, and it is never refused. |
 | <a id="st311"></a>[ST311](ST311-A-Planner-App-Serves-The-Board-To-The-Window.md) A planner app serves the board to the window | 🔼 High | PL:24 · BT:8 · F:6 · B:2 · PJ:2 | The window reads and changes stories and issues through porelo-planner, a Spring Boot GraalVM native app running beside it, over a REST API described in OpenAPI; the app reads and writes the stories and issues in Git, and porelo keeps only its task functions. |
 | <a id="st315"></a>[ST315](ST315-The-Planners-Git-Adapter-Alone-Handles-Stories-And-Issues.md) The planner's Git adapter alone handles stories and issues | 🔼 High | PL:5 | Stories and issues kept as files in Git are read, checked, indexed and written by the planner's Git store adapter alone, so the build tools no longer carry a stories library or story and issue commands, and no repository's build or hand-over runs a check of issue files. |
