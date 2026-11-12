@@ -5,7 +5,7 @@
   "$schema": "issue-1.json",
   "id": "PJ108",
   "title": "Ideas And Issues Are Checked Where The Planner Keeps Them",
-  "state": "Accepted",
+  "state": "Analyzed",
   "size": "L",
   "priority": "High",
   "rank": 1,
@@ -165,3 +165,48 @@ repositories' checks and `AGENTS.md`; and what it means for the work in flight. 
   under *What is missing*.
 - **An idea a task hands back is saved at once as an issue in state *Idea*.**
 - **`stories-check.yml` stays until the planner keeps the board.**
+
+## Analysis (Agent Planner, 2026-11-12)
+
+**Size:** L stays: the work still crosses porelo, porelo-planner, porelo-frontend and porelo-project.
+
+**What changed since the analysis was written (replaces "3. What moves" and the porelo-planner rows of "The work it
+finds").**
+
+- **Built in the planner already.**
+  - New issues over the API: `POST /projects/{project}/issues` (`NewIssueRequest`: repository, title, mustBeTrue,
+    size, worker, revision) checks every field and refuses per field (`IssueRefused`, 422, naming the field).
+  - Ideas from a discussion: `POST /projects/{project}/ideas` takes a discussed idea and saves it as a story with
+    its issues, checked against the idea format with up to 100 faults (`IdeaRefused`).
+  - A broken file is a fault, not a refused repository: the board lists each file whose head breaks its schema under
+    the project's faults, and reads the rest (seen on porelo's real board today: four issue heads in `issues/base/`).
+  - The screen's new-issue form sends the form and shows the planner's refusal beside its field
+    (`screen/lib/src/ui/new_issue_dialog.dart`).
+  - An issue's state from a task's end: `WorkEnds.judge` and `NextStep.after` map a builder's DONE to the rule's
+    `then` or `done`, a reading with blocking findings to `blocked` while rounds are left, FAILED and UNPUSHED to
+    Needs you.
+- **The check has one copy, in the planner**, not in `porelo-stories`: the work format lives in porelo-planner's
+  `store/git`, and the build tools' `issues` and `stories` commands call the planner's executable (porelo-planner's
+  AGENTS.md; [PL59](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl59)). The row "the issue
+  and idea field check in `porelo-stories`" goes.
+- **Still missing on the planner's side.**
+  - A declared BLOCKED end. The task's end the window reports (`Ended`: at, finished, why, answer, unpushed) carries no
+    outcome, so `WorkEnds.Outcome.of(finished, unpushed)` takes a task that declared `Done(outcome BLOCKED, why)` and
+    finished as DONE, and its issue moves on to the next state. Needed: the window reports the declared outcome with
+    the end, and the planner keeps a BLOCKED issue where it is under Needs you with its `why`. Size M (a contract change
+    between the window and the planner, core and app). This one does harm today: work that said it could not be done
+    moves on as done.
+  - An idea a task hands back while it works names the task it came from: `NewIssueRequest` gains the task's name,
+    shown on the issue. Size S.
+- **Unchanged:** porelo's `Tasks1.ProposeIdea` (M), `PORELO_ISSUE_PREFIXES` dropped (XS), the Shared Area's rule (S),
+  `stories-check.yml` retired once the planner keeps the board (XS), the window handing each proposed idea to
+  `POST .../issues` (S).
+
+**The work it finds, porelo-planner's rows (replacing the three):**
+
+| Repository | Work | Size | Waits for |
+|---|---|---|---|
+| porelo-planner | a declared BLOCKED end keeps its issue under Needs you, the outcome reported with the end | M | porelo-frontend reporting the outcome |
+| porelo-planner | a new issue names the task it came from | S | - |
+
+**Open questions:** none for the planner's part.

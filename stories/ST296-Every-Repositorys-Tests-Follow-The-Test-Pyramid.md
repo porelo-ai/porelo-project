@@ -19,7 +19,7 @@
 - [porelo-host#HO159](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho159) (Analyzed)
 - [porelo-intellij#IJ23](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij23) (Analyzed)
 - [porelo-message-sluice#SL50](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl50) (Analyzed)
-- [porelo-adapters#GH23](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh23) (Accepted)
+- [porelo-adapters#GH23](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh23) (Analyzed)
 - [porelo-ecosystems#EC18](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec18) (Analyzed)
 - [porelo-claude-code#CC50](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc50) (Analyzed)
 - [porelo-omp#OM48](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om48) (Analyzed)

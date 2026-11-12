@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-host#HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27) (Idea)
+- [porelo-host#HO27](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho27) (Analyzed)
 - [porelo#B322](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b322) (Idea)
 - [porelo-claude-code#CC40](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc40) (Estimated)
 - [porelo-pi#PI40](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi40) (Estimated)

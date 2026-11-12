@@ -1,6 +1,6 @@
 # ST328 — An attended session opens on the person's text, and its last answer is read
 
-**Priority:** 🔼 High · **State:** Implementing
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** A person who starts an attended session with an opening text, as a discussion in the planner does, sees Claude Code, Antigravity CLI, Codex CLI or Oh My Pi answer that text as its first turn and then wait for them; each agent declares where its last message stands, so a reader's answer is never empty.
 
@@ -8,10 +8,10 @@
 
 **Issues:**
 
-- [porelo-claude-code#CC61](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc61) (Implementing)
-- [porelo-agy#AG21](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag21) (Implementing)
-- [porelo-codex#CX21](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx21) (Implementing)
-- [porelo-omp#OM53](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om53) (Implementing)
+- [porelo-claude-code#CC61](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc61) (Review)
+- [porelo-agy#AG21](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag21) (Review)
+- [porelo-codex#CX21](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx21) (Review)
+- [porelo-omp#OM53](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om53) (Review)
 
 ## Data
 

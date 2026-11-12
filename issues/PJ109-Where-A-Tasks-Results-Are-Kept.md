@@ -5,8 +5,8 @@
   "$schema": "issue-1.json",
   "id": "PJ109",
   "title": "Where A Task's Results Are Kept",
-  "state": "Accepted",
-  "size": "-",
+  "state": "Analyzed",
+  "size": "L",
   "priority": "High",
   "rank": 2,
   "blockedBy": [],
@@ -76,3 +76,52 @@ as a file in the repository needs none of these channels to grow.
 - The file's name and format: one file per issue and reading, and what it holds (the reading, the findings with their
   places, the verdict).
 - What a reading with no findings writes, and how the planner sees from the commit that findings exist.
+
+## Analysis (Agent Planner, 2026-11-12)
+
+**Size:** L - it crosses porelo-planner (start instructions per state from the store's adapter, the findings read from
+a file), porelo-frontend (the instructions into a task's start message), porelo (the setting in `project.yml` and
+`porelo.yml`), and depends on a reader and a rework reaching another task's branch.
+
+**The planner today.** A reader is told by a fixed text (`NextStep.FINDINGS`) to end its answer with one `Findings:`
+block; `WorkEnds.findings` reads it from the answer the window reports with ENDED; the findings live only in the
+planner's local work record (`WorkRecord`), from where `NextStep` puts them into the rework's order. The order's text
+comes from `stories/work.yml` (`order` with `{story}`, `{issues}`, `{tasks}`). Nothing writes findings to the store.
+
+**Plan, the planner's part.**
+
+1. **Start instructions per state, from the store's adapter.** The store interface (`store/api`) gains the instructions
+   for a working state: where findings go, and what the task does with findings it finds. The Git store gives them from
+   the project's setting; the planner adds them to every order it builds (`WorkOrder.prompt`, `NextStep.task`), so the
+   window puts them into the start message as it does the order today. No new endpoint is needed for the window: the
+   order it already receives carries them. The fixed `FINDINGS` text becomes the Git store's instruction.
+2. **Findings read from the reader's commit.** The reader commits one Markdown file per issue and reading at the
+   configured place; the planner reads it from the reader's branch after its end, checks it (the same rules as the
+   `Findings:` block today: numbered rows, blocking or note, file and line), and judges blocking as today. The answer's
+   block stays as the fallback until every reader writes the file.
+3. **The rework finds the file in its source** and deletes it with its fix; the planner's rework order says so.
+4. **A reader and a rework reach the work they read.** Both need the other task's branch: the reader the builder's,
+   the rework the reader's file. This is [PL90](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl90)
+   with porelo's B646 (a task started naming the tasks whose work it reads, its gate giving those branches read only,
+   the branch reported per task). PJ109 waits for it.
+
+**The work it finds:**
+
+| Repository | Work | Size | Waits for |
+|---|---|---|---|
+| porelo-planner | start instructions per working state from the store's adapter, in every order | M | the setting's name and shape |
+| porelo-planner | findings read from the reader's committed file, the answer's block as fallback | M | PL90, porelo B646 |
+| porelo | the findings place as a setting in `project.yml`, overridable in `porelo.yml` | S | the operator's word on the name |
+| porelo-frontend | none beyond PL90's: the order already carries the instructions | - | - |
+
+**Open questions (the operator's):**
+
+- The setting's name, shape and default, for example `findings: {dir: "readings/"}` in `project.yml` with a
+  repository's `porelo.yml` able to override `dir`; `project.yml` is signed, so a change goes to the operator to sign.
+- The file: one per issue and reading, named `<dir>/<ISSUE>-reading-<n>.md`, holding the reading's verdict and the
+  findings in today's row form (`<n>. <blocking|note> | <file or -> | <line or -> | <text>`).
+- A reading without findings writes the file with an empty findings list, so a missing file always means the reader
+  did not finish its work, never a clean reading.
+
+**To be checked:** how the planner reads a file on a task's branch that porelo names (B646's reported branch) through
+its Git store, and whether the reader's commit reaches the forge before the planner reads it (the gate's `waiting`).
