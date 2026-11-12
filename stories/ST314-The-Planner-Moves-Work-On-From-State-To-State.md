@@ -20,6 +20,8 @@
 - [porelo#B648](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b648) (Idea)
 - [porelo-planner#PL90](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl90) (Idea)
 - [porelo-planner#PL92](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl92) (Idea)
+- [porelo-frontend#F500](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f500) (Backlog)
+- [porelo-frontend#F501](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f501) (Backlog)
 
 ## Data
 
