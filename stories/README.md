@@ -6,7 +6,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 92 |
+| [Idea](#idea) | 95 |
 | [Accepted](#accepted) | 28 |
 | [Analyzed](#analyzed) | 40 |
 | [Estimated](#estimated) | 36 |
@@ -62,6 +62,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st104"></a>[ST104](ST104-Keep-Accounts-And-Projects-Apart.md) Keep accounts and projects apart | 🟰 Medium | B:4 | Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's. |
 | <a id="st112"></a>[ST112](ST112-See-The-Exact-Image-And-Package-Contents.md) See the exact image and package contents | 🟰 Medium | B:3 · BT:1 · F:1 | A person can see the exact image and package contents, such as an SBOM, and an image tag alone is not enough for a project to follow. |
 | <a id="st113"></a>[ST113](ST113-Recover-From-An-Unavailable-Image-Source.md) Recover from an unavailable image source | 🟰 Medium | B:1 | If the first Ubuntu mirror stops answering, an image build recovers by using the next source instead of failing. |
+| <a id="st341"></a>[ST341](ST341-A-Tasks-Records-Reach-A-Collector-Over-OpenTelemetry.md) A task's records reach a collector over OpenTelemetry | 🟰 Medium | B:1 | An organization's OpenTelemetry collector receives its people's task records, read from the local journal, never instead of it: off by default, chosen per kind of record and destination in the CLI, only allowed fields leave, so prompts, tool output and agent output stay home unless chosen and secrets never leave; a failed export never blocks a task and is shown. |
+| <a id="st342"></a>[ST342](ST342-The-Agents-Own-Telemetry-Kept-With-Porelos-Records.md) The agents' own telemetry kept with Porelo's records | 🟰 Medium | none yet | The OpenTelemetry an agent writes itself (Claude Code, Codex, Gemini, omp natively, pi through an extension) is received inside Porelo on the person's machine and kept in the task's journal under its run, its content switches set off unless chosen, so a person reads tokens, tool calls and errors beside Porelo's own records and no agent sends telemetry anywhere else. |
 | <a id="st115"></a>[ST115](ST115-Keep-Project-Intake-And-Sign-In-Free-Of.md) Keep project intake and sign-in free of hidden secrets | 🔽 Low | B:8 | Project intake and sign-in keep secrets out of sight, so invalid credential names are refused and known test credentials do not leak. |
 | <a id="st122"></a>[ST122](ST122-Unlock-The-Machine-With-The-Right-Touched-Token.md) Unlock the machine with the right touched token | 🔽 Low | none yet | A person can unlock a machine after a restart with the right touched token, and the wrong or missing token is refused. |
 | <a id="st123"></a>[ST123](ST123-Show-Only-Proven-TPM2-Protection.md) Show only proven TPM2 protection | 🔽 Low | none yet | A person sees TPM2 protection only when it is proven, so a slot that merely claims hardware protection is not accepted. |
@@ -112,6 +114,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st215"></a>[ST215](ST215-Porelo-Omp.md) porelo-omp | 🔽 Low | OM:1 | A person gets the OMP adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st217"></a>[ST217](ST217-Porelo-Project.md) porelo-project | 🔽 Low | PJ:18 · A:3 | A person gets the project repository repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st218"></a>[ST218](ST218-Porelo.md) porelo | 🔽 Low | B:51 | A person gets the Porelo core repository as a named part of Porelo that is tracked as its own piece of work. |
+| <a id="st343"></a>[ST343](ST343-A-Tasks-Timeline-Seen-In-An-Open-Source-Tool.md) A task's timeline seen in an open-source tool on the same machine | 🔽 Low | none yet | A person who wants charts, trace views or evaluations points the export at an open-source tool running locally (MLflow with SQLite first, OpenLIT or Langfuse where their extra services are worth it), with the tool's own telemetry off, and sees the runs of their tasks there; Porelo installs nothing of it by default. |
 
 ## Accepted
 
