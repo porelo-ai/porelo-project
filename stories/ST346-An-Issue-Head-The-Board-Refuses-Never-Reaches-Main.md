@@ -1,6 +1,6 @@
 # ST346 — An issue head the board refuses never reaches main
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** Every repository's checks and the prepush refuse an issue head the planner's board would refuse, naming the file and field.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT81](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt81) (Backlog)
+- [porelo-buildtools#BT81](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt81) (Review)
 
 ## Notes
 

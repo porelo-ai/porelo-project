@@ -12,7 +12,7 @@
 - [porelo-buildtools#BT54](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt54) (Review)
 - [porelo-buildtools#BT55](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt55) (Review)
 - [porelo-buildtools#BT56](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt56) (Rejected)
-- [porelo-buildtools#BT59](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt59) (Backlog)
+- [porelo-buildtools#BT59](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt59) (Rejected)
 - [porelo#B566](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b566) (Review)
 - [porelo-frontend#F446](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f446) (Review)
 - [porelo-frontend#F447](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f447) (Review)
@@ -49,7 +49,7 @@
 - [porelo-planner#PL25](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl25) (Review)
 - [porelo-planner#PL26](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl26) (Review)
 - [porelo-planner#PL27](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl27) (Review)
-- [porelo-buildtools#BT68](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt68) (Backlog)
+- [porelo-buildtools#BT68](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt68) (Review)
 - [porelo-planner#PL87](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl87) (Backlog)
 
 ## Data

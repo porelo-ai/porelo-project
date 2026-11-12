@@ -1,6 +1,6 @@
 # ST297 — A short download outage does not turn a build red
 
-**Priority:** 🟰 Medium · **State:** Accepted
+**Priority:** 🟰 Medium · **State:** Review
 
 **What a user gains.** A build that fetches a pinned JDK or tool tries again by one shared rule with a deadline, so a short outage of a download site does not turn a build red.
 
@@ -16,7 +16,7 @@
 - [porelo-host#HO150](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho150) (Review)
 - [porelo-host#HO151](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho151) (Review)
 - [porelo-pi#PI49](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi49) (Review)
-- [porelo-host#HO171](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho171) (Accepted)
+- [porelo-host#HO171](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho171) (Review)
 - [porelo#B641](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b641) (Review)
 
 ## Data

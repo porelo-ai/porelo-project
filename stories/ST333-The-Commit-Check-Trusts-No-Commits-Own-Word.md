@@ -1,6 +1,6 @@
 # ST333 — The commit check trusts no commit's own word
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** The commit check gives no exemption, trailer or switch-off of the stage rule to whoever writes a commit, in the planner and in the build tools alike, so a commit cannot excuse itself from the rules.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT79](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt79) (Backlog)
+- [porelo-buildtools#BT79](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt79) (Review)
 - [porelo-planner#PL82](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl82) (Review)
 
 ## Data

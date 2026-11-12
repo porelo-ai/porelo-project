@@ -9,7 +9,7 @@
 **Issues:**
 
 - [porelo-buildtools#BT69](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt69) (Review)
-- [porelo-planner#PL29](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl29) (Backlog)
+- [porelo-planner#PL29](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl29) (Implementing)
 - [porelo-planner#PL30](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl30) (Backlog)
 - [porelo-frontend#F476](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f476) (Backlog)
 - [porelo-frontend#F474](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f474) (Review)

@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-omp#OM33](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om33) (Backlog)
+- [porelo-omp#OM33](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om33) (Review)
 
 ## Data
 

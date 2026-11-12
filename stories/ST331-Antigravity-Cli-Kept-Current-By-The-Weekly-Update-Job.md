@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-agy#AG19](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag19) (Backlog)
+- [porelo-agy#AG19](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag19) (Review)
 
 ## Data
 

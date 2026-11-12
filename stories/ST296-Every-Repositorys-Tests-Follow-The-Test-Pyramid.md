@@ -45,7 +45,7 @@
 - [porelo-forge-clients#FC18](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc18) (Estimated)
 - [porelo#B512](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b512) (Review)
 - [porelo#B625](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b625) (Review)
-- [porelo-buildtools#BT82](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt82) (Estimated)
+- [porelo-buildtools#BT82](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt82) (Review)
 
 ## Data
 
