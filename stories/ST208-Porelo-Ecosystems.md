@@ -8,10 +8,10 @@
 
 **Issues:**
 
-- [porelo-ecosystems#EC04](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec04) (Accepted)
-- [porelo-ecosystems#EC05](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec05) (Accepted)
-- [porelo-ecosystems#EC06](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec06) (Accepted)
-- [porelo-ecosystems#EC07](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec07) (Accepted)
+- [porelo-ecosystems#EC04](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec04) (Analyzed)
+- [porelo-ecosystems#EC05](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec05) (Analyzed)
+- [porelo-ecosystems#EC06](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec06) (Analyzed)
+- [porelo-ecosystems#EC07](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec07) (Analyzed)
 - [porelo-ecosystems#EC08](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec08) (Review)
 - [porelo-ecosystems#EC09](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec09) (Finished)
 - [porelo-ecosystems#EC14](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec14) (Review)

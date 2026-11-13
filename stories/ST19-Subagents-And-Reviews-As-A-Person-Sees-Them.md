@@ -1,6 +1,6 @@
 # ST19 — Subagents and reviews, as a person sees them
 
-**Priority:** ⏫ Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Backlog
 
 **What a user gains.** A person sees which subagents a task may start, and another subagent is refused with a clear message, with reviews shown plainly.
 
@@ -15,6 +15,7 @@
 - [porelo-claude-code#CC44](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc44) (Review)
 - [porelo-codex#CX11](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx11) (Review)
 - [porelo-omp#OM41](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om41) (Review)
+- [porelo#B669](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b669) (Backlog)
 
 ## Data
 
@@ -33,7 +34,8 @@
     "porelo-agy#AG08",
     "porelo-claude-code#CC44",
     "porelo-codex#CX11",
-    "porelo-omp#OM41"
+    "porelo-omp#OM41",
+    "porelo#B669"
   ],
   "tested": null
 }

@@ -16,6 +16,7 @@
 - [porelo-agy#AG05](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag05) (Implementing)
 - [porelo-buildtools#BT84](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt84) (Review)
 - [porelo-host#HO178](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho178) (Review)
+- [porelo-host#HO177](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho177) (Review)
 
 ## Data
 
@@ -35,7 +36,8 @@
     "porelo-omp#OM37",
     "porelo-agy#AG05",
     "porelo-buildtools#BT84",
-    "porelo-host#HO178"
+    "porelo-host#HO178",
+    "porelo-host#HO177"
   ],
   "tested": null
 }

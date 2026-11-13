@@ -23,6 +23,11 @@
 - [porelo#B634](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b634) (Review)
 - [porelo#B635](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b635) (Backlog)
 - [porelo#B639](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b639) (Review)
+- [porelo#B668](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b668) (Backlog)
+- [porelo-frontend#F503](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f503) (Backlog)
+- [porelo-planner#PL96](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl96) (Review)
+- [porelo-frontend#F532](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f532) (Review)
+- [porelo-frontend#F533](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f533) (Backlog)
 
 ## Data
 
@@ -50,7 +55,12 @@
     "porelo#B631",
     "porelo#B634",
     "porelo#B635",
-    "porelo#B639"
+    "porelo#B639",
+    "porelo#B668",
+    "porelo-frontend#F503",
+    "porelo-planner#PL96",
+    "porelo-frontend#F532",
+    "porelo-frontend#F533"
   ],
   "tested": null
 }

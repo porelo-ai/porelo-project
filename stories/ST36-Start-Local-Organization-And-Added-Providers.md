@@ -1,6 +1,6 @@
 # ST36 — Start local, organization and added providers
 
-**Priority:** 🟰 Medium · **State:** Estimated
+**Priority:** 🟰 Medium · **State:** Idea
 
 **What a user gains.** A person can use local, organization HTTPS and added providers such as xAI, Zhipu and Z.AI, with supported ones starting and unsupported ones refused clearly.
 
@@ -12,6 +12,7 @@
 - [porelo#B149](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b149) (Estimated)
 - [porelo#P07](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p07) (Estimated)
 - [porelo#P08](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p08) (Estimated)
+- [porelo-frontend#F506](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f506) (Idea)
 
 ## Data
 
@@ -27,7 +28,8 @@
     "porelo#P10",
     "porelo#B149",
     "porelo#P07",
-    "porelo#P08"
+    "porelo#P08",
+    "porelo-frontend#F506"
   ],
   "tested": null
 }

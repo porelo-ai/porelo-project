@@ -9,6 +9,7 @@
 **Issues:**
 
 - [porelo-project#PJ120](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj120) (Backlog)
+- [porelo-host#HO185](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho185) (Review)
 
 ## Notes
 
@@ -31,7 +32,8 @@
   "priority": "Highest",
   "state": "Backlog",
   "issues": [
-    "porelo-project#PJ120"
+    "porelo-project#PJ120",
+    "porelo-host#HO185"
   ],
   "tested": null
 }
