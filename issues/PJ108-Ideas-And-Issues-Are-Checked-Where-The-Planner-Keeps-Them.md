@@ -7,7 +7,7 @@
   "title": "Ideas And Issues Are Checked Where The Planner Keeps Them",
   "state": "Backlog",
   "size": "L",
-  "priority": "High",
+  "priority": "Medium",
   "rank": 1,
   "blockedBy": [],
   "covers": "A task knows nothing of stories or issues: it gets its work as text and hands back its result, its work through Git and its ideas through the planner; whether an idea or an issue holds every field it must is checked by the planner's backend, and before it by the window, not by tools in the repository."

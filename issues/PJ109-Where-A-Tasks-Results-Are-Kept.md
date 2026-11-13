@@ -7,7 +7,7 @@
   "title": "Where A Task's Results Are Kept",
   "state": "Backlog",
   "size": "L",
-  "priority": "High",
+  "priority": "Medium",
   "rank": 1,
   "blockedBy": [],
   "covers": "A reading's findings are written as a Markdown file in the repository, where the start instructions of each state tell the agent to put them, and the next task finds them in its source, works them off and deletes the file; the start instructions per state come from the store's adapter through the planner's API."

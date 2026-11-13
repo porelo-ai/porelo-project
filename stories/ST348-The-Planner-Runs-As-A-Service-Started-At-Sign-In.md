@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-planner#PL33](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl33) (Implementing)
+- [porelo-planner#PL33](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl33) (Backlog)
 - [porelo-planner#PL111](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl111) (Backlog)
 
 ## Data
