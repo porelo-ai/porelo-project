@@ -29,6 +29,7 @@
   "gain": "Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server.",
   "test": "The person rents a server with the rehearsal's root key and gives the order; the run sets up the host, signs in the test person, drives the window's main scenarios and the room's scenarios, pushes through the gate and pushes and pulls to central, takes Porelo off and asks to delete the server, reporting OK or FAIL per step, with no input from the person between renting and deleting.",
   "priority": "Highest",
+  "state": "Finished",
   "issues": [
     "porelo#B553",
     "porelo#B554",
@@ -41,7 +42,6 @@
     "porelo#B556",
     "porelo-frontend#F463"
   ],
-  "tested": "2026-11-12",
-  "state": "Finished"
+  "tested": "2026-11-12"
 }
 ```

@@ -20,7 +20,7 @@
 - [porelo-host#HO176](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho176) (Review)
 - [porelo-message-matrix#MX108](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx108) (Review)
 - [porelo-omp#OM58](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om58) (Review)
-- [porelo-parent#PA02](https://github.com/porelo-ai/porelo-parent/blob/main/issues/README.md#pa02) (Backlog)
+- [porelo-parent#PA02](https://github.com/porelo-ai/porelo-parent/blob/main/issues/README.md#pa02) (Review)
 - [porelo-pi#PI60](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi60) (Review)
 - [porelo-planner#PL98](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl98) (Backlog)
 - [porelo-planner#PL110](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl110) (Backlog)

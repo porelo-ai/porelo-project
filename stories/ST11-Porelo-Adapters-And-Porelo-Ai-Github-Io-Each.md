@@ -1,6 +1,6 @@
 # ST11 — Move: porelo-adapters and porelo-ai.github.io each in its own task
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Idea
 
 **What a user gains.** The adapters repository and the project website can each be developed in their own task on the host and reach Review with a green build on the host's forge.
 
@@ -23,7 +23,7 @@
   "gain": "The adapters repository and the project website can each be developed in their own task on the host and reach Review with a green build on the host's forge.",
   "test": "Each move issue reaches Review inside its task with Forgejo's build green.",
   "priority": "Highest",
-  "state": "Backlog",
+  "state": "Idea",
   "issues": [
     "porelo-adapters#GH11",
     "porelo-ai.github.io#SI05",

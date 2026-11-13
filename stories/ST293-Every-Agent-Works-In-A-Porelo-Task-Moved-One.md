@@ -1,6 +1,6 @@
 # ST293 — Move: Every agent works in a Porelo task, moved one at a time
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Analyzed
 
 **What a user gains.** Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room.
 
@@ -27,7 +27,7 @@
   "gain": "Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room.",
   "test": "Every agent's move story is accepted in the order of doc/moving-an-agent.md; after the last move every agent answers in the project's room from its task and none works outside one.",
   "priority": "Highest",
-  "state": "Backlog",
+  "state": "Analyzed",
   "issues": [
     "porelo-message-matrix#MX82",
     "porelo-host#HO132",

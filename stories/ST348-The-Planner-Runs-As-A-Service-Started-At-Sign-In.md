@@ -1,6 +1,6 @@
 # ST348 — The planner runs as a service started at sign-in
 
-**Priority:** 🔽 Low · **State:** Idea
+**Priority:** 🔽 Low · **State:** Backlog
 
 **What a user gains.** The planner runs as a service the system knows, started at sign-in, so the window finds it running without starting it.
 
@@ -21,7 +21,7 @@
   "gain": "The planner runs as a service the system knows, started at sign-in, so the window finds it running without starting it.",
   "test": "Sign in: the planner runs before the window is opened, and the window shows its board at once.",
   "priority": "Low",
-  "state": "Idea",
+  "state": "Backlog",
   "issues": [
     "porelo-planner#PL33",
     "porelo-planner#PL111"

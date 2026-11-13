@@ -1,6 +1,6 @@
 # ST132 — Start again without a previous task's changes
 
-**Priority:** 🟰 Medium · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Accepted
 
 **What a user gains.** A new task starts clean, inheriting none of an earlier task's Pi settings, extensions or PATH changes.
 
@@ -25,7 +25,7 @@
   "gain": "A new task starts clean, inheriting none of an earlier task's Pi settings, extensions or PATH changes.",
   "test": "Change Pi settings, extensions and PATH in a task; a new task inherits none of them. Make a continuation fail without a session identifier. The recorded session is discarded and the next start says it is fresh.",
   "priority": "Medium",
-  "state": "Backlog",
+  "state": "Accepted",
   "issues": [
     "porelo-pi#PI37",
     "porelo#B282",

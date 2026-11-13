@@ -1,6 +1,6 @@
 # ST25 — Rules and document checks a contributor meets
 
-**Priority:** 🟰 Medium · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Accepted
 
 **What a user gains.** A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not.
 
@@ -24,7 +24,7 @@
   "gain": "A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not.",
   "test": "One guide from any repository; document tests run where the agent works; an issue names nothing of another repository.",
   "priority": "Medium",
-  "state": "Backlog",
+  "state": "Accepted",
   "issues": [
     "porelo-omp#OM18",
     "porelo-project#PJ27",

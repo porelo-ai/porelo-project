@@ -1,6 +1,6 @@
 # ST358 — The Windows packing shared and the planner ended gracefully on Windows
 
-**Priority:** 🟰 Medium · **State:** Implementing
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** The window's Windows packing and install check can be called by another repository, such as the planner, with its app's name, version and files, and on Windows the window asks the planner it started to end through its own stop, ending it hard only when it does not end in time.
 
@@ -25,7 +25,7 @@
   "gain": "The window's Windows packing and install check can be called by another repository, such as the planner, with its app's name, version and files, and on Windows the window asks the planner it started to end through its own stop, ending it hard only when it does not end in time.",
   "test": "The planner's Windows build packs itself with the window's scripts at a pinned commit and leaves no signing key or file behind; closing the window on Windows ends the planner without an error, or hard after the wait.",
   "priority": "Medium",
-  "state": "Implementing",
+  "state": "Backlog",
   "issues": [
     "porelo-frontend#F507",
     "porelo-frontend#F538"
