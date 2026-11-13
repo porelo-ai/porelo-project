@@ -7,7 +7,7 @@
   "title": "An organisation decides which providers its machines use",
   "state": "Analyzed",
   "size": "L",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 5,
   "blockedBy": [],
   "covers": "A root-owned machine policy names the providers tasks may use, and narrows follows, prompts and the `online` class; a developer cannot widen it."

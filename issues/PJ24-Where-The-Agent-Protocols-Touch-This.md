@@ -7,7 +7,7 @@
   "title": "Where The Agent Protocols Touch This",
   "state": "Estimated",
   "size": "M",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 5,
   "blockedBy": [],
   "covers": "For A2A, MCP, ACP and AG-UI each: adopted, answered otherwise, or refused, with the reason and what would change it."

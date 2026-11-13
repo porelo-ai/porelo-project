@@ -1,6 +1,6 @@
 # ST305 — A task starts and watches tasks of its own through MCP
 
-**Priority:** 🟰 Medium · **State:** Accepted
+**Priority:** 🔼 High · **State:** Accepted
 
 **What a user gains.** A task the signed project file allows starts, lists, reads and stops tasks of its own through an MCP endpoint, within the file's limits and held to its own project.
 
@@ -22,7 +22,7 @@
   "title": "A task starts and watches tasks of its own through MCP",
   "gain": "A task the signed project file allows starts, lists, reads and stops tasks of its own through an MCP endpoint, within the file's limits and held to its own project.",
   "test": "From a task, start a second task over MCP, read its state and stop it; a start beyond the file's limits and a read of another project's task are refused.",
-  "priority": "Medium",
+  "priority": "High",
   "issues": [
     "porelo#B507",
     "porelo#B573",

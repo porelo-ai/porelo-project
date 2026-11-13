@@ -11,14 +11,14 @@
 - [porelo#B499](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b499) (Review)
 - [porelo#B500](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b500) (Review)
 - [porelo#B504](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b504) (Review)
-- [porelo-frontend#F509](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f509) (Backlog)
+- [porelo-frontend#F509](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f509) (Review)
 - [porelo-frontend#F525](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f525) (Backlog)
-- [porelo-frontend#F513](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f513) (Backlog)
-- [porelo-frontend#F514](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f514) (Backlog)
+- [porelo-frontend#F513](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f513) (Review)
+- [porelo-frontend#F514](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f514) (Review)
 - [porelo-frontend#F529](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f529) (Backlog)
 - [porelo-frontend#F534](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f534) (Backlog)
 - [porelo-frontend#F530](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f530) (Review)
-- [porelo#B677](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b677) (Backlog)
+- [porelo#B677](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b677) (Review)
 
 ## Data
 

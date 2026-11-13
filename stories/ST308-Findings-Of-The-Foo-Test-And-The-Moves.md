@@ -1,6 +1,6 @@
 # ST308 — Findings of the foo test and the moves
 
-**Priority:** 🟰 Medium · **State:** Accepted
+**Priority:** 🔼 High · **State:** Accepted
 
 **What a user gains.** What the foo test and the trial moves found in hosts, projects, starts and the setup is fixed, so a person's move and daily work run as the finished stories promise.
 
@@ -61,7 +61,7 @@
   "title": "Findings of the foo test and the moves",
   "gain": "What the foo test and the trial moves found in hosts, projects, starts and the setup is fixed, so a person's move and daily work run as the finished stories promise.",
   "test": "Repeat the foo test's and the moves' steps that found each finding: each step now does what its issue says.",
-  "priority": "Medium",
+  "priority": "High",
   "issues": [
     "porelo#B437",
     "porelo-frontend#F377",

@@ -7,7 +7,7 @@
   "title": "Several organizations on one machine",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 9,
   "blockedBy": ["PJ87"],
   "covers": "One machine works with several organizations at once, each holding only its own people, projects and hosts and answered by its own identity source; a person keeps one card, filed in each organization, and the interface shows them side by side."

@@ -7,7 +7,7 @@
   "title": "The Shared Rules Read True Inside A Task",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 2,
   "blockedBy": [],
   "covers": "Every rule of the shared block can be followed as written by an agent inside a task, and still outside one."

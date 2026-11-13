@@ -1,6 +1,6 @@
 # ST115 — Keep project intake and sign-in free of hidden secrets
 
-**Priority:** 🔽 Low · **State:** Idea
+**Priority:** 🔼 High · **State:** Idea
 
 **What a user gains.** Project intake and sign-in keep secrets out of sight, so invalid credential names are refused and known test credentials do not leak.
 
@@ -30,7 +30,7 @@
   "title": "Keep project intake and sign-in free of hidden secrets",
   "gain": "Project intake and sign-in keep secrets out of sight, so invalid credential names are refused and known test credentials do not leak.",
   "test": "Load an invalid credential name; it is explicitly refused. Put a known test credential in the repository; start warns or stops under the project rule. Sign in and inspect container layers and temporary host directories; no plaintext remains there. Store a credential without expiry; the response and list say so.",
-  "priority": "Low",
+  "priority": "High",
   "issues": [
     "porelo#B202",
     "porelo#B140",

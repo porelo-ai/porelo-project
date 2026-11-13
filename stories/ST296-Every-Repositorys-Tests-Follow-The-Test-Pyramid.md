@@ -1,6 +1,6 @@
 # ST296 — Every repository's tests follow the test pyramid
 
-**Priority:** ⏫ Highest · **State:** Estimated
+**Priority:** 🟰 Medium · **State:** Estimated
 
 **What a user gains.** Each repository proves its flows with unit tests that run in seconds, tests its real pieces narrowly on that core and keeps integration, VM and rented-machine runs for what nothing lower can show, so work is done and checked faster and a fault is found at the lowest level that shows it.
 
@@ -58,7 +58,7 @@
   "title": "Every repository's tests follow the test pyramid",
   "gain": "Each repository proves its flows with unit tests that run in seconds, tests its real pieces narrowly on that core and keeps integration, VM and rented-machine runs for what nothing lower can show, so work is done and checked faster and a fault is found at the lowest level that shows it.",
   "test": "Each repository's audit measures its suites against the shares of doc/test-pyramid.md; the guards proven only from above move down first, then real waits give way to an injected clock; after the fixes every flow has unit tests over fakes, each module's unit suite runs in under a minute, and no plan needs a VM to see a flow work.",
-  "priority": "Highest",
+  "priority": "Medium",
   "issues": [
     "porelo#B652",
     "porelo#B653",

@@ -1,6 +1,6 @@
 # ST38 — The chosen branch receives the work
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** A person can choose a branch template or an explicit branch, and approved work lands on exactly that branch on the forge.
 
@@ -23,7 +23,7 @@
   "title": "The chosen branch receives the work",
   "gain": "A person can choose a branch template or an explicit branch, and approved work lands on exactly that branch on the forge.",
   "test": "Choose a branch template or an explicit branch, approve the work and read the result on GitHub. Only the chosen branch receives it; an existing online branch belonging to someone else is refused.",
-  "priority": "High",
+  "priority": "Medium",
   "state": "Backlog",
   "issues": [
     "porelo#B190",

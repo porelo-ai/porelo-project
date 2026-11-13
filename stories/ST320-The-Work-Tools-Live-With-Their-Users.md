@@ -1,6 +1,6 @@
 # ST320 — The work tools live with their users
 
-**Priority:** 🔼 High · **State:** Implementing
+**Priority:** 🟰 Medium · **State:** Implementing
 
 **What a user gains.** The issue and story tooling (stage records, stats, the stories and issues index, check-commits and citations) moves from the build tools to the planner, the native-image checks to Core, and dead release-plan code goes. Each part then lives with the agent who uses and changes it, so a change to the work format is made by its owner, not by Machines.
 
@@ -16,7 +16,7 @@
 - [porelo-planner#PL60](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl60) (Review)
 - [porelo-planner#PL61](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl61) (Review)
 - [porelo#B621](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b621) (Review)
-- [porelo#B622](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b622) (Implementing)
+- [porelo#B622](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b622) (Review)
 - [porelo-claude-code#CC56](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc56) (Review)
 - [porelo-claude-code#CC57](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc57) (Review)
 - [porelo-claude-code#CC59](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc59) (Review)
@@ -42,7 +42,7 @@
   "title": "The work tools live with their users",
   "gain": "The issue and story tooling (stage records, stats, the stories and issues index, check-commits and citations) moves from the build tools to the planner, the native-image checks to Core, and dead release-plan code goes. Each part then lives with the agent who uses and changes it, so a change to the work format is made by its owner, not by Machines.",
   "test": "Each moved part is built, published and used from its new home, and porelo-buildtools keeps only CI, machines, pins and publishing. Every repository's shared rules check still runs check-commits and check-citations green. A stage line and a planner board move are written and checked against the planner's format. No module or command is left that nobody calls.",
-  "priority": "High",
+  "priority": "Medium",
   "state": "Implementing",
   "issues": [
     "porelo-buildtools#BT70",

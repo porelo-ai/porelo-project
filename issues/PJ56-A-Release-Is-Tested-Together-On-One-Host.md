@@ -7,7 +7,7 @@
   "title": "A release is tested together on one host",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 20,
   "blockedBy": [],
   "covers": "Every part's release candidate installed and tested together on one host rented for the release's test window, a VM per operating system and an account per part, the arm64 Mac of [PJ55](#pj55) beside it; the per-push legs stay."

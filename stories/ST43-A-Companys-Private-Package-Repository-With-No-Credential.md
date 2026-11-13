@@ -1,6 +1,6 @@
 # ST43 — A company's private package repository, with no credential in the task
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** A task can build against a company's authenticated Nexus or Artifactory without ever holding the credential, since the settings are written outside the task.
 
@@ -23,7 +23,7 @@
   "title": "A company's private package repository, with no credential in the task",
   "gain": "A task can build against a company's authenticated Nexus or Artifactory without ever holding the credential, since the settings are written outside the task.",
   "test": "A task builds against an authenticated Nexus or Artifactory; `settings.xml` is written at the start and the credential stays in the vault.",
-  "priority": "High",
+  "priority": "Medium",
   "issues": [
     "porelo#B222",
     "porelo#B219",

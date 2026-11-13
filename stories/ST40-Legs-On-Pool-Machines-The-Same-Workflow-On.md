@@ -1,6 +1,6 @@
 # ST40 — Legs on pool machines, the same workflow on both forges
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** The same acceptance legs run on pool machines on both the host's forge and the central one, so tests behave the same wherever they run.
 
@@ -27,7 +27,7 @@
   "title": "Legs on pool machines, the same workflow on both forges",
   "gain": "The same acceptance legs run on pool machines on both the host's forge and the central one, so tests behave the same wherever they run.",
   "test": "On the host's Forgejo, porelo's and each agent adapter's acceptance legs take a pool account by kind and the build is green; on GitHub the same workflow rents a server. No workflow names a provider.",
-  "priority": "High",
+  "priority": "Medium",
   "issues": [
     "porelo-host#HO27",
     "porelo#B322",

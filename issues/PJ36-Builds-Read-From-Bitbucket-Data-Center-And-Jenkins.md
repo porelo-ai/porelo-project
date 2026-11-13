@@ -7,7 +7,7 @@
   "title": "Builds read from Bitbucket Data Center and Jenkins",
   "state": "Accepted",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 13,
   "blockedBy": [],
   "covers": "Builds of a push read from Bitbucket Data Center and Jenkins, the build server separate from the forge."

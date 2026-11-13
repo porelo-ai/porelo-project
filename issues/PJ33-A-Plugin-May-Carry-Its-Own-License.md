@@ -7,7 +7,7 @@
   "title": "A plugin may carry its own license",
   "state": "Backlog",
   "size": "L",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 1,
   "blockedBy": [],
   "covers": "An agent, build reader, transport or client may carry its own license: the interface libraries (`porelo-agent-api`, `porelo-build-api`, `porelo-wire`, the varlink definitions) under Apache-2.0, Porelo itself GPL, the boundary written down."

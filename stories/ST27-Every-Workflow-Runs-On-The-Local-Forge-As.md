@@ -1,6 +1,6 @@
 # ST27 — Every workflow runs on the local forge as on the central one
 
-**Priority:** ⏫ Highest · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places.
 
@@ -21,7 +21,7 @@
   "title": "Every workflow runs on the local forge as on the central one",
   "gain": "Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places.",
   "test": "The same build runs green on the local forge and the central one.",
-  "priority": "Highest",
+  "priority": "Medium",
   "issues": [
     "porelo-intellij#IJ14",
     "porelo-message-matrix#MX80",

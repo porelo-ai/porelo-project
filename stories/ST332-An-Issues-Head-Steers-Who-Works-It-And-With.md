@@ -1,6 +1,6 @@
 # ST332 — An issue's head steers who works it and with what
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** An issue's head may say who works it, a person or an agent, and how much harm its change can do; the planner leaves a person's issue to the person, the work rules pick the model and effort for the issue's risk, and the start dialog proposes that choice and says where it came from.
 
@@ -24,7 +24,7 @@
   "title": "An issue's head steers who works it and with what",
   "gain": "An issue's head may say who works it, a person or an agent, and how much harm its change can do; the planner leaves a person's issue to the person, the work rules pick the model and effort for the issue's risk, and the start dialog proposes that choice and says where it came from.",
   "test": "Mark one issue Manual and one Agent with a high risk: work moves only the Agent issue on by itself, and its Start dialog proposes the rules' model and effort for that risk, naming the rule; the Manual issue waits for the person.",
-  "priority": "High",
+  "priority": "Medium",
   "state": "Backlog",
   "issues": [
     "porelo-buildtools#BT75",

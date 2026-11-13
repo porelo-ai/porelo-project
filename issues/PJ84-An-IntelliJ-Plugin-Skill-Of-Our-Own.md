@@ -7,7 +7,7 @@
   "title": "An IntelliJ plugin skill of our own",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 18,
   "blockedBy": [],
   "covers": "A reviewed skill in the shared skills store for building the IntelliJ plugin, stating what holds for today's IntelliJ Platform - Gradle plugin and SDK versions, descriptor, threading, services, tool windows, a headless test run - built from what the plugin's spike measured, since the skills on offer are outdated or tied to a third party."

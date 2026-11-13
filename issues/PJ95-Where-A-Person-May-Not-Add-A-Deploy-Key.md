@@ -7,7 +7,7 @@
   "title": "Where A Person May Not Add A Deploy Key",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 6,
   "blockedBy": [],
   "covers": "A person who may not add a machine's deploy key at the central forge still brings a project to a machine: Porelo hands them what to ask an administrator for, and no token comes to lie on a server."

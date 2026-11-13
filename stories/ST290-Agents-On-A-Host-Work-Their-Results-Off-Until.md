@@ -1,6 +1,6 @@
 # ST290 — Agents on a host work their results off until done
 
-**Priority:** ⏫ Highest · **State:** Accepted
+**Priority:** 🟰 Medium · **State:** Accepted
 
 **What a user gains.** A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub.
 
@@ -97,7 +97,7 @@
   "title": "Agents on a host work their results off until done",
   "gain": "A person moves a project of class online to a rented host; its tasks push to the host's own forge and work off every build result, reading and message there until done, and the person then looks at the host's forge and pushes to GitHub.",
   "test": "On a rented host with an online project: each agent signs in once by its login task; tasks push to the host's Forgejo, follow every run of a commit to its final verdict, take a person's line by name or to all agents, and rework until done; the person reads rows, machine pages, gate and builds, then pushes to GitHub.",
-  "priority": "Highest",
+  "priority": "Medium",
   "issues": [
     "porelo#B519",
     "porelo#B520",

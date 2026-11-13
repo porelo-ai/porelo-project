@@ -1,6 +1,6 @@
 # ST60 — A comment with a suggestion reaches the agent
 
-**Priority:** 🟰 Medium · **State:** Analyzed
+**Priority:** 🔼 High · **State:** Analyzed
 
 **What a user gains.** A person can comment on a line with a suggestion in the review, and the task building that work receives it.
 
@@ -23,7 +23,7 @@
   "title": "A comment with a suggestion reaches the agent",
   "gain": "A person can comment on a line with a suggestion in the review, and the task building that work receives it.",
   "test": "In the interface's review a person comments on a line with a suggestion; the building task receives it as untrusted review input, pushes a fix, and the review shows the thread answered on the new commit.",
-  "priority": "Medium",
+  "priority": "High",
   "issues": [
     "porelo#B136",
     "porelo#B150",

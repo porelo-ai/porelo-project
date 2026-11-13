@@ -7,7 +7,7 @@
   "title": "GitHub does not run scheduled workflows reliably",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 21,
   "blockedBy": [],
   "covers": "GitHub starts scheduled workflows late or drops them, silently, while the updates, the sweep and the daily rules check must run when nobody develops; ideas: start them from outside by `workflow_dispatch`, catch up only what is overdue, notice a missing run, and where such a timer runs."

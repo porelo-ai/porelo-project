@@ -1,6 +1,6 @@
 # ST303 — A person learns before installing whether a server can carry their work
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** Before installing, a person learns what a server offers and what tasks and jobs will take on it, so they choose a server that carries their work.
 
@@ -27,7 +27,7 @@
   "title": "A person learns before installing whether a server can carry their work",
   "gain": "Before installing, a person learns what a server offers and what tasks and jobs will take on it, so they choose a server that carries their work.",
   "test": "Run the check against a small and a large server before installing: each says in words which work it can carry, and a measuring run reads what a task and a job take.",
-  "priority": "High",
+  "priority": "Medium",
   "issues": [
     "porelo-frontend#F357",
     "porelo-frontend#F358",

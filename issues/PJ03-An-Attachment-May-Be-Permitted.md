@@ -7,7 +7,7 @@
   "title": "An attachment may be permitted",
   "state": "Analyzed",
   "size": "XL",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 6,
   "blockedBy": [],
   "covers": "Whether a message may carry more than text becomes an operator's decision, per direction, project and peer, refused by default."

@@ -7,7 +7,7 @@
   "title": "A gate's green says nothing until its reference set can change",
   "state": "Analyzed",
   "size": "L",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 4,
   "blockedBy": [],
   "covers": "Every gate names its reference set; one that is empty, cannot change or is read by nothing is not counted as coverage."

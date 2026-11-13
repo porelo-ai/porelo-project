@@ -7,7 +7,7 @@
   "title": "Every Rule Of AGENTS.md Holds Inside A Task",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 5,
   "blockedBy": [],
   "covers": "An agent in a task, holding only its own repository, can follow every rule of the shared block; what a rule needs from outside is handed in at the start, checked outside the task, or the rule is reworded."

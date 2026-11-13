@@ -7,7 +7,7 @@
   "title": "A small change is tried only where it changed",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 17,
   "blockedBy": [],
   "covers": "On a host with a local forge, a bugfix or small change made in a task is tried on the host's VM only in the area it changed, to shorten the runs on the local VM, and the second agent's review is limited to that area; both only show that nothing there is broken, the full test runs on the central forge; a project with only the central forge is not affected."

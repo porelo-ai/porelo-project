@@ -7,7 +7,7 @@
   "title": "An agent orchestrates Porelo machines",
   "state": "Accepted",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 12,
   "blockedBy": [],
   "covers": "An MCP server outside Porelo lets an agent steer tasks and machines of one or many Porelo instances, without approving work or opening a vault."

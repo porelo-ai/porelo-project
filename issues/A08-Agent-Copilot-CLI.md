@@ -7,7 +7,7 @@
   "title": "Agent Copilot CLI",
   "state": "Estimated",
   "size": "L",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 2,
   "blockedBy": [],
   "covers": "Copilot CLI as a packaged agent: brokerable by environment variable (BYOK), which is not the Copilot subscription."

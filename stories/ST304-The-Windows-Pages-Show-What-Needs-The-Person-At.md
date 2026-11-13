@@ -1,6 +1,6 @@
 # ST304 — The window's pages show what needs the person at a glance
 
-**Priority:** 🟰 Medium · **State:** Backlog
+**Priority:** 🔼 High · **State:** Backlog
 
 **What a user gains.** Every page of the window shows at a glance what needs the person, and each grey button, count and wait says why in words; a click answers at once.
 
@@ -22,7 +22,7 @@
 - [porelo-frontend#F477](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f477) (Review)
 - [porelo#B613](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b613) (Review)
 - [porelo#B617](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b617) (Backlog)
-- [porelo-frontend#F528](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f528) (Backlog)
+- [porelo-frontend#F528](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f528) (Review)
 - [porelo-frontend#F511](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f511) (Review)
 
 ## Data
@@ -34,7 +34,7 @@
   "title": "The window's pages show what needs the person at a glance",
   "gain": "Every page of the window shows at a glance what needs the person, and each grey button, count and wait says why in words; a click answers at once.",
   "test": "Open the work, Needs you and side bar pages with waiting work: each wait and grey button names its reason, counts say what they count, empty lists start folded, and every click shows at once that it arrived.",
-  "priority": "Medium",
+  "priority": "High",
   "issues": [
     "porelo-frontend#F353",
     "porelo-frontend#F359",

@@ -7,7 +7,7 @@
   "title": "The secrets file keeps changes from KeePassXC and Porelo",
   "state": "Backlog",
   "size": "L",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 2,
   "blockedBy": [],
   "covers": "Changes made to the secrets file in KeePassXC and by Porelo at the same time are both kept, and the wizard asks how the person works."

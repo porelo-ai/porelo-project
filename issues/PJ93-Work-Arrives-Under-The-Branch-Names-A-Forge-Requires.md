@@ -7,7 +7,7 @@
   "title": "Work Arrives Under The Branch Names A Forge Requires",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 7,
   "blockedBy": [],
   "covers": "Wherever Porelo pushes work, online or after a gate, the branch name follows what that repository's forge accepts, and a person can set it."

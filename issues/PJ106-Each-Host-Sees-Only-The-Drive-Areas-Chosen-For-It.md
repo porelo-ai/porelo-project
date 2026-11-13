@@ -7,7 +7,7 @@
   "title": "Each host sees only the drive areas chosen for it",
   "state": "Backlog",
   "size": "M",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 3,
   "blockedBy": [],
   "covers": "Each host sees only the drive areas the person chose for it, and OneDrive is mounted as Tresorit is."

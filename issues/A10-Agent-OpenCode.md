@@ -7,7 +7,7 @@
   "title": "Agent OpenCode",
   "state": "Analyzed",
   "size": "L",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 8,
   "blockedBy": [],
   "covers": "OpenCode as a packaged agent: a base URL configurable per provider."

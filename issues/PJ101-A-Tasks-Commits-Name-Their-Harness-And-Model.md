@@ -7,7 +7,7 @@
   "title": "A Task's Commits Name Their Harness And Model",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 3,
   "blockedBy": [],
   "covers": "Every commit an agent makes in a task names the harness and model that drove it, and a commit without it is refused."

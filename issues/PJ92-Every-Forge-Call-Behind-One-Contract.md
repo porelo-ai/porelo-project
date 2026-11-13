@@ -7,7 +7,7 @@
   "title": "Every Forge Call Behind One Contract",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 8,
   "blockedBy": [],
   "covers": "The window asks only Core, Core asks only an adapter, and only the adapter knows a forge, so any forge offering what Porelo needs can be used."

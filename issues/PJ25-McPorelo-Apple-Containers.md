@@ -7,7 +7,7 @@
   "title": "McPorelo Apple Containers",
   "state": "Analyzed",
   "size": "XL",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 9,
   "blockedBy": [],
   "covers": "McPorelo: the same guarantees on Apple Containers, driven by one client through the daemon's contract.",

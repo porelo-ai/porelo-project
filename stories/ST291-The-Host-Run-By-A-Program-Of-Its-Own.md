@@ -1,6 +1,6 @@
 # ST291 — The host run by a program of its own, built like porelo
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** A host admin's and an automation's work on a host runs as one Java program, porelo-host, built, signed and packaged like porelo; a person's own host commands are porelo commands; root's narrow boundaries act only for the account sudo names, and nothing asks for input that is not needed.
 
@@ -42,7 +42,7 @@
   "title": "The host run by a program of its own, built like porelo",
   "gain": "A host admin's and an automation's work on a host runs as one Java program, porelo-host, built, signed and packaged like porelo; a person's own host commands are porelo commands; root's narrow boundaries act only for the account sudo names, and nothing asks for input that is not needed.",
   "test": "On a host set up from the package: follow, persons, projects, push judge, gates and pool run as porelo-host; a person signs in, makes the forge token, starts a task, pushes through the gate, reads the central state and pushes and pulls to central with porelo commands, typing only the vault passphrase; no old host script is installed.",
-  "priority": "Highest",
+  "priority": "Medium",
   "issues": [
     "porelo#B540",
     "porelo#B541",

@@ -9,8 +9,8 @@
 **Issues:**
 
 - [porelo#B228](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b228) (Backlog)
-- [porelo#P09](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p09) (Backlog)
-- [porelo#B316](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b316) (Backlog)
+- [porelo#P09](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md#p09) (Review)
+- [porelo#B316](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b316) (Review)
 - [porelo#B686](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b686) (Backlog)
 
 ## Data

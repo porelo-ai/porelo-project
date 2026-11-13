@@ -7,7 +7,7 @@
   "title": "Agent Grok Build",
   "state": "Analyzed",
   "size": "L",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 7,
   "blockedBy": [],
   "covers": "Grok Build as a packaged agent: a candidate, brokering unverified."

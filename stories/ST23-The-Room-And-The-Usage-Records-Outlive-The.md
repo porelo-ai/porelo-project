@@ -1,6 +1,6 @@
 # ST23 — The room and the usage records outlive the host
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost.
 
@@ -27,7 +27,7 @@
   "title": "The room and the usage records outlive the host",
   "gain": "The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost.",
   "test": "After `down` and a new `up` the room is there with its messages, and so are the records.",
-  "priority": "Highest",
+  "priority": "Medium",
   "issues": [
     "porelo-message-matrix#MX24",
     "porelo-message-matrix#MX36",

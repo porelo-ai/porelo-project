@@ -1,6 +1,6 @@
 # ST24 — The tokens counted per task, the dependencies shared
 
-**Priority:** ⏫ Highest · **State:** Analyzed
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again.
 
@@ -22,7 +22,7 @@
   "title": "The tokens counted per task, the dependencies shared",
   "gain": "A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again.",
   "test": "Each issue shows what its tasks spent; a second Maven build downloads nothing again.",
-  "priority": "Highest",
+  "priority": "Medium",
   "issues": [
     "porelo#B148",
     "porelo-project#PJ38",

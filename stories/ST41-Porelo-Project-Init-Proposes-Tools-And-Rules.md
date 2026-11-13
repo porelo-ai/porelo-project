@@ -1,6 +1,6 @@
 # ST41 — `porelo project init` proposes tools and rules
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** A person starting a Maven repository gets a proposed tool and rules file that porelo project init drafts, with each value explained.
 
@@ -38,7 +38,7 @@
   "title": "`porelo project init` proposes tools and rules",
   "gain": "A person starting a Maven repository gets a proposed tool and rules file that porelo project init drafts, with each value explained.",
   "test": "For a Maven repository, a `.porelo.yml` and where needed a `project.yml` draft, each value with its source; a project kept in a local repository is read again at `refresh`.",
-  "priority": "High",
+  "priority": "Medium",
   "state": "Backlog",
   "issues": [
     "porelo-project#PJ52",

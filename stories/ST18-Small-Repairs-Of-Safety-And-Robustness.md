@@ -1,6 +1,6 @@
 # ST18 — Small repairs of safety and robustness
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** 🔼 High · **State:** Backlog
 
 **What a user gains.** Small safety and robustness gaps are closed, so forced removals leave nothing running, tokens are kept where tools read them, and tasks cannot reach other projects or the person's vault.
 
@@ -22,7 +22,7 @@
 - [porelo-host#HO14](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho14) (Review)
 - [porelo-host#HO61](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho61) (Review)
 - [porelo-buildtools#BT48](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt48) (Backlog)
-- [porelo#B674](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b674) (Backlog)
+- [porelo#B674](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b674) (Review)
 - [porelo#B679](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b679) (Backlog)
 - [porelo#B680](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b680) (Backlog)
 
@@ -35,7 +35,7 @@
   "title": "Small repairs of safety and robustness",
   "gain": "Small safety and robustness gaps are closed, so forced removals leave nothing running, tokens are kept where tools read them, and tasks cannot reach other projects or the person's vault.",
   "test": "Each issue's acceptance holds: forced removal kills what outlives a stop, the gate's route match holds for every decoded byte, the person's token sits where each tool reads it, the push judge is armed only where it holds, another project's task cannot be a peer, a transport borrows its lifecycle token, a registry owner check works with an app token, and a stopped test cannot reach the vault.",
-  "priority": "Highest",
+  "priority": "High",
   "issues": [
     "porelo-host#HO81",
     "porelo-host#HO83",

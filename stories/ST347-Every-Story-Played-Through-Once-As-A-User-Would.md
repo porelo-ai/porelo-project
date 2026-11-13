@@ -30,11 +30,11 @@
 - [porelo-frontend#F522](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f522) (Backlog)
 - [porelo-frontend#F523](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f523) (Backlog)
 - [porelo-claude-code#CC66](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc66) (Review)
-- [porelo#B681](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b681) (Backlog)
-- [porelo#B682](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b682) (Backlog)
-- [porelo#B683](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b683) (Backlog)
-- [porelo#B684](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b684) (Backlog)
-- [porelo#B685](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b685) (Backlog)
+- [porelo#B681](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b681) (Implementing)
+- [porelo#B682](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b682) (Implementing)
+- [porelo#B683](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b683) (Implementing)
+- [porelo#B684](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b684) (Review)
+- [porelo#B685](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b685) (Implementing)
 
 ## Data
 

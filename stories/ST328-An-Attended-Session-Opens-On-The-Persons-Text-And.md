@@ -1,6 +1,6 @@
 # ST328 — An attended session opens on the person's text, and its last answer is read
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔽 Low · **State:** Backlog
 
 **What a user gains.** A person who starts an attended session with an opening text, as a discussion in the planner does, sees Claude Code, Antigravity CLI, Codex CLI or Oh My Pi answer that text as its first turn and then wait for them; each agent declares where its last message stands, so a reader's answer is never empty.
 
@@ -31,7 +31,7 @@
   "title": "An attended session opens on the person's text, and its last answer is read",
   "gain": "A person who starts an attended session with an opening text, as a discussion in the planner does, sees Claude Code, Antigravity CLI, Codex CLI or Oh My Pi answer that text as its first turn and then wait for them; each agent declares where its last message stands, so a reader's answer is never empty.",
   "test": "Start an attended task with an opening text for each of Claude Code, agy, codex and omp: each answers the text first and then waits at its prompt; run a reader with each, and the answer the task records is the agent's own last reply.",
-  "priority": "High",
+  "priority": "Low",
   "issues": [
     "porelo-claude-code#CC61",
     "porelo-agy#AG21",

@@ -7,7 +7,7 @@
   "title": "A hard bound on the agents a task starts",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 19,
   "blockedBy": [],
   "covers": "Porelo itself bounds the agents a task runs at once, counting an agent that starts another copy of itself through its shell, by a process limit in the task container or a cap at the provider proxy, beside the soft switch each agent CLI offers."

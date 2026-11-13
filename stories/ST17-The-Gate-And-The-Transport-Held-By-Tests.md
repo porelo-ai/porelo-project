@@ -1,6 +1,6 @@
 # ST17 — The gate and the transport held by tests
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** The message gate and the transport are guarded by tests, shown by a mutation run, so a removed refusal gets noticed.
 
@@ -38,7 +38,7 @@
   "title": "The gate and the transport held by tests",
   "gain": "The message gate and the transport are guarded by tests, shown by a mutation run, so a removed refusal gets noticed.",
   "test": "Not a walk: a mutation run of `porelo-message-matrix` shows that removing a refusal of the gate or its parser, a certificate check on any trust path, or what keeps a message or a copy whole fails a unit test; a task of the project `default` joins no room, and a stalled client loses its connection.",
-  "priority": "Highest",
+  "priority": "Medium",
   "issues": [
     "porelo#B393",
     "porelo-message-matrix#MX66",

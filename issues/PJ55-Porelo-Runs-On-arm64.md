@@ -7,7 +7,7 @@
   "title": "Porelo runs on arm64",
   "state": "Accepted",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 8,
   "blockedBy": [],
   "covers": "Porelo and every native package it installs built, tested and published for arm64, so a Linux VM on Apple silicon installs them, for porelo-frontend [F109](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f109): built and checked on GitHub's arm64 runners on every Build; for a release, a Mac rented for the whole test window tests every part, the interface included."

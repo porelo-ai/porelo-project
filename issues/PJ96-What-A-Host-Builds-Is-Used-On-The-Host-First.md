@@ -7,7 +7,7 @@
   "title": "What A Host Builds Is Used On The Host First",
   "state": "Analyzed",
   "size": "L",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 1,
   "blockedBy": [],
   "covers": "What a host's own builds make - snapshots, skill packages, installable packages - is used by the other tasks on that host at once, reached on the host, not through the central repositories; the central build stays the only way out.",

@@ -7,7 +7,7 @@
   "title": "A tool does not change behind the person's back",
   "state": "Estimated",
   "size": "XL",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 3,
   "blockedBy": [],
   "covers": "An MCP server's tools are pinned when a person accepts them, a change is held until accepted again, and descriptions written to steer the agent are caught."

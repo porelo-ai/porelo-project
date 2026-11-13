@@ -7,7 +7,7 @@
   "title": "A Push Is Checked For A Person's Own Terms",
   "state": "Idea",
   "size": "-",
-  "priority": "Medium",
+  "priority": "Low",
   "rank": 4,
   "blockedBy": [],
   "covers": "Work leaves the gate carrying no word that names the person's own machine unless forwarded knowingly; the list of words is never public nor at rest on a host."
