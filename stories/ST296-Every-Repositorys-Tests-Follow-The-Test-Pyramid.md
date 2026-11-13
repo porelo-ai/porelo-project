@@ -46,7 +46,7 @@
 - [porelo#B512](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b512) (Review)
 - [porelo#B625](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b625) (Review)
 - [porelo-buildtools#BT82](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt82) (Review)
-- [porelo-buildtools#BT87](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt87) (Backlog)
+- [porelo-buildtools#BT87](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt87) (Review)
 - [porelo-buildtools#BT88](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt88) (Review)
 - [porelo#B716](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b716) (Backlog)
 - [porelo#B707](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b707) (Backlog)

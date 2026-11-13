@@ -10,7 +10,7 @@
 
 - [porelo#B440](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b440) (Review)
 - [porelo#B458](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b458) (Backlog)
-- [porelo#B459](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b459) (Backlog)
+- [porelo#B459](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b459) (Implementing)
 
 ## Data
 

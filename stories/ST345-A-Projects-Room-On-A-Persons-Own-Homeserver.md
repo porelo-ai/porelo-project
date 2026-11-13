@@ -1,6 +1,6 @@
 # ST345 — A project's room on a person's own homeserver
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** A person whose organization project names a Matrix room is told how to name its homeserver and can name a local one on loopback.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo#B636](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b636) (Backlog)
-- [porelo#B637](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b637) (Backlog)
+- [porelo#B636](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b636) (Review)
+- [porelo#B637](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b637) (Review)
 - [porelo#B731](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b731) (Review)
 
 ## Notes

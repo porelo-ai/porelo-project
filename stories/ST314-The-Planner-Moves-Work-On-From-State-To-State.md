@@ -32,7 +32,7 @@
 - [porelo#B671](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b671) (Review)
 - [porelo-frontend#F510](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f510) (Backlog)
 - [porelo-planner#PL118](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl118) (Review)
-- [porelo-planner#PL119](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl119) (Backlog)
+- [porelo-planner#PL119](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl119) (Review)
 - [porelo-planner#PL120](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl120) (Review)
 
 ## Data

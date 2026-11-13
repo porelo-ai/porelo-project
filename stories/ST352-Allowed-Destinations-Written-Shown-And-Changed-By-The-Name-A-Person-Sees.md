@@ -11,7 +11,7 @@
 - [porelo#B10](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b10) (Analyzed)
 - [porelo#B34](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b34) (Analyzed)
 - [porelo#B152](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b152) (Analyzed)
-- [porelo#B729](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b729) (Backlog)
+- [porelo#B729](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b729) (Review)
 
 ## Notes
 

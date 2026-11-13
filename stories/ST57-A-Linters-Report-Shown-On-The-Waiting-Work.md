@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291) (Idea)
+- [porelo#B291](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b291) (Accepted)
 - [porelo#B292](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b292) (Idea)
 
 ## Covers

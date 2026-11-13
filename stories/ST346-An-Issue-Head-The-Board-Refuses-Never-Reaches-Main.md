@@ -22,10 +22,11 @@
 - [porelo-omp#OM58](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om58) (Review)
 - [porelo-parent#PA02](https://github.com/porelo-ai/porelo-parent/blob/main/issues/README.md#pa02) (Review)
 - [porelo-pi#PI60](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi60) (Review)
-- [porelo-planner#PL98](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl98) (Backlog)
-- [porelo-planner#PL110](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl110) (Backlog)
+- [porelo-planner#PL98](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl98) (Review)
+- [porelo-planner#PL110](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl110) (Review)
 - [porelo-buildtools#BT89](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt89) (Review)
 - [porelo-planner#PL78](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl78) (Review)
+- [porelo#B744](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b744) (Review)
 
 ## Notes
 
@@ -59,7 +60,8 @@
     "porelo-planner#PL98",
     "porelo-planner#PL110",
     "porelo-buildtools#BT89",
-    "porelo-planner#PL78"
+    "porelo-planner#PL78",
+    "porelo#B744"
   ],
   "tested": null
 }
