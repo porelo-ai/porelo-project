@@ -103,7 +103,7 @@ comes from `stories/work.yml` (`order` with `{story}`, `{issues}`, `{tasks}`). N
 4. **A reader and a rework reach the work they read.** Both need the other task's branch: the reader the builder's,
    the rework the reader's file. This is [PL90](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl90)
    with porelo's B646 (a task started naming the tasks whose work it reads, its gate giving those branches read only,
-   the branch reported per task). PJ109 waits for it.
+   the branch reported per task). [PJ109](README.md#pj109) waits for it.
 
 **The work it finds:**
 

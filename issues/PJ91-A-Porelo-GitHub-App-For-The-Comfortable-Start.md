@@ -151,23 +151,23 @@ belong in it from the first day if the app is to serve the builds or the reviews
 
 `BuildsWiring` starts the build reader on the host for a task's whole life, with the credential `project.yml`'s
 `builds` names, read from the vault of the person's account on the host ("run porelo host forge-token on this host").
-That is a token lying on a host, which PJ91's "no token on a host" excludes for the app's token, and a user access
+That is a token lying on a host, which [PJ91](README.md#pj91)'s "no token on a host" excludes for the app's token, and a user access
 token lives eight hours, shorter than many tasks, with a refresh that writes back.
 
 So either:
 
 - the builds keep their own read token on the host, by the token way, holding only Actions: read, Contents: read and
   Metadata: read - the app then does not touch the builds, and the window's words say so; or
-- the app's refresh token lies on the host for the builds, against PJ91's rule.
+- the app's refresh token lies on the host for the builds, against [PJ91](README.md#pj91)'s rule.
 
-The proposal is the first: a read-only token for the builds, made by the token way. It adds one question to PJ91's
+The proposal is the first: a read-only token for the builds, made by the token way. It adds one question to [PJ91](README.md#pj91)'s
 open ones for the operator: **may the builds keep a read-only token on the host beside the app?**
 
 ### 3. What porelo-adapters changes
 
 Nothing in its code: `GitHubReader` sends `Authorization: Bearer <token>`, which GitHub's documentation names for
-user access tokens as for the others, and the log request after the redirect carries none. Size here: none, as PJ91
-says. To be checked in PJ91's trial: one `actions/runs?head_sha=` and one job log read with a user access token of the
+user access tokens as for the others, and the log request after the redirect carries none. Size here: none, as [PJ91](README.md#pj91)
+says. To be checked in [PJ91](README.md#pj91)'s trial: one `actions/runs?head_sha=` and one job log read with a user access token of the
 test app holding Actions: read.
 
 ## Decided by the operator (2026-11-12)

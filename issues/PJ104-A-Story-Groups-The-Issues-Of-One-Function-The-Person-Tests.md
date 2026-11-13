@@ -80,4 +80,4 @@ on, and that the person can test on its own.
 
 ## Decided by the operator (2026-11-12)
 
-- Rejected: what PJ104 asks of the planner is held by PL59 and PL84 (Agent Planner's reading, 2026-11-12); nothing new is built for it.
+- Rejected: what [PJ104](README.md#pj104) asks of the planner is held by PL59 and PL84 (Agent Planner's reading, 2026-11-12); nothing new is built for it.
