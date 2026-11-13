@@ -11,7 +11,7 @@
 - [porelo-project#PJ14](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj14) (Backlog)
 - [porelo#B33](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b33) (Review)
 - [porelo-frontend#F118](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f118) (Review)
-- [porelo#B355](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b355) (Backlog)
+- [porelo#B355](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b355) (Review)
 - [porelo#B457](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b457) (Review)
 - [porelo#B470](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b470) (Review)
 - [porelo-frontend#F369](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f369) (Review)
@@ -20,6 +20,9 @@
 - [porelo-frontend#F468](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f468) (Review)
 - [porelo#B594](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b594) (Review)
 - [porelo#B595](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b595) (Review)
+- [porelo#B724](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b724) (Review)
+- [porelo-frontend#F541](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f541) (Review)
+- [porelo-frontend#F540](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f540) (Review)
 
 ## Data
 
@@ -43,7 +46,10 @@
     "porelo-frontend#F397",
     "porelo-frontend#F468",
     "porelo#B594",
-    "porelo#B595"
+    "porelo#B595",
+    "porelo#B724",
+    "porelo-frontend#F541",
+    "porelo-frontend#F540"
   ],
   "tested": null
 }

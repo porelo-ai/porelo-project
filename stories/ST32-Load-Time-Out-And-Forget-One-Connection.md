@@ -1,6 +1,6 @@
 # ST32 — Load, time out and forget one connection
 
-**Priority:** 🔼 High · **State:** Review
+**Priority:** 🔼 High · **State:** Backlog
 
 **What a user gains.** A person sees pages load, connection actions time out and a connection be forgotten in one consistent way in the interface.
 
@@ -14,6 +14,7 @@
 - [porelo#B321](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b321) (Review)
 - [porelo-frontend#F219](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f219) (Review)
 - [porelo-frontend#F367](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f367) (Review)
+- [porelo#B695](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b695) (Backlog)
 
 ## Data
 
@@ -25,13 +26,15 @@
   "gain": "A person sees pages load, connection actions time out and a connection be forgotten in one consistent way in the interface.",
   "test": "Load a page for the first time and open a rarely used connection action; both show the same loading state. Connect a server that accepts but never answers; the call ends with a named timeout. Forget one connection; the others remain.",
   "priority": "High",
+  "state": "Backlog",
   "issues": [
     "porelo#B200",
     "porelo-frontend#F91",
     "porelo-frontend#F93",
     "porelo#B321",
     "porelo-frontend#F219",
-    "porelo-frontend#F367"
+    "porelo-frontend#F367",
+    "porelo#B695"
   ],
   "tested": null
 }

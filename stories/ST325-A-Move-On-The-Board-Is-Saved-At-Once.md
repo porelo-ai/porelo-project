@@ -1,6 +1,6 @@
 # ST325 — A move on the board is saved at once
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** A person moves a story or an issue on the planning board and it is saved at once, with no Save and no Undo; a move that can do harm warns first, a slow save shows as still saving instead of as a failure, and each row in Needs you offers the action that answers it.
 
@@ -12,7 +12,9 @@
 - [porelo-planner#PL43](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl43) (Review)
 - [porelo-planner#PL77](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl77) (Review)
 - [porelo-planner#PL99](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl99) (Review)
-- [porelo-planner#PL112](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl112) (Backlog)
+- [porelo-planner#PL112](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl112) (Review)
+- [porelo-planner#PL117](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl117) (Review)
+- [porelo-planner#PL114](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl114) (Review)
 
 ## Data
 
@@ -24,13 +26,15 @@
   "gain": "A person moves a story or an issue on the planning board and it is saved at once, with no Save and no Undo; a move that can do harm warns first, a slow save shows as still saving instead of as a failure, and each row in Needs you offers the action that answers it.",
   "test": "Drag a story to another state: it is saved without a Save button and the board shows it within seconds; a move of a story with running tasks or issues in other repositories warns and can be cancelled; a slow save reads as saving, then saved; a row in Needs you after a stopped or failed step offers start again, stop or move on, and that action works from the row.",
   "priority": "High",
-  "state": "Backlog",
+  "state": "Review",
   "issues": [
     "porelo-planner#PL38",
     "porelo-planner#PL43",
     "porelo-planner#PL77",
     "porelo-planner#PL99",
-    "porelo-planner#PL112"
+    "porelo-planner#PL112",
+    "porelo-planner#PL117",
+    "porelo-planner#PL114"
   ],
   "tested": null
 }

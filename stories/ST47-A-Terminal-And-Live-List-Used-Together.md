@@ -1,6 +1,6 @@
 # ST47 — A terminal and live list used together
 
-**Priority:** 🟰 Medium · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Implementing
 
 **What a user gains.** A person can use the embedded terminal like an ordinary terminal and keep task list --watch open beside it.
 
@@ -27,7 +27,7 @@
   "gain": "A person can use the embedded terminal like an ordinary terminal and keep task list --watch open beside it.",
   "test": "Use the embedded terminal as an ordinary terminal and open task list --watch beside it. States and the clearance hint update. Input reaches the task whole and unchanged; Ctrl-C restores the terminal.",
   "priority": "Medium",
-  "state": "Backlog",
+  "state": "Implementing",
   "issues": [
     "porelo-frontend#F105",
     "porelo#B48",

@@ -8,8 +8,6 @@
 
 **Issues:**
 
-- [porelo-host#HO170](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho170) (Implementing)
-- [porelo#B620](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b620) (Implementing)
 - [porelo-project#PJ58](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj58) (Rejected)
 - [porelo-planner#PL57](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl57) (Finished)
 - [porelo-planner#PL58](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl58) (Review)
@@ -21,13 +19,15 @@
 - [porelo#B619](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b619) (Review)
 - [porelo#B631](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b631) (Review)
 - [porelo#B634](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b634) (Review)
-- [porelo#B635](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b635) (Backlog)
 - [porelo#B639](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b639) (Review)
-- [porelo#B668](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b668) (Backlog)
+- [porelo#B668](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b668) (Review)
 - [porelo-frontend#F503](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f503) (Backlog)
 - [porelo-planner#PL96](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl96) (Review)
 - [porelo-frontend#F532](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f532) (Review)
-- [porelo-frontend#F533](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f533) (Backlog)
+- [porelo#B709](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b709) (Review)
+- [porelo-frontend#F535](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f535) (Review)
+- [porelo-frontend#F537](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f537) (Backlog)
+- [porelo#B725](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b725) (Review)
 
 ## Data
 
@@ -41,8 +41,6 @@
   "priority": "High",
   "state": "Implementing",
   "issues": [
-    "porelo-host#HO170",
-    "porelo#B620",
     "porelo-project#PJ58",
     "porelo-planner#PL57",
     "porelo-planner#PL58",
@@ -54,13 +52,15 @@
     "porelo#B619",
     "porelo#B631",
     "porelo#B634",
-    "porelo#B635",
     "porelo#B639",
     "porelo#B668",
     "porelo-frontend#F503",
     "porelo-planner#PL96",
     "porelo-frontend#F532",
-    "porelo-frontend#F533"
+    "porelo#B709",
+    "porelo-frontend#F535",
+    "porelo-frontend#F537",
+    "porelo#B725"
   ],
   "tested": null
 }

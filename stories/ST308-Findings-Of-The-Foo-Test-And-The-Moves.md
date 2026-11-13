@@ -1,6 +1,6 @@
 # ST308 — Findings of the foo test and the moves
 
-**Priority:** 🔼 High · **State:** Accepted
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** What the foo test and the trial moves found in hosts, projects, starts and the setup is fixed, so a person's move and daily work run as the finished stories promise.
 
@@ -48,7 +48,7 @@
 - [porelo#B612](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b612) (Review)
 - [porelo#B614](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b614) (Review)
 - [porelo#B615](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b615) (Review)
-- [porelo#B616](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b616) (Accepted)
+- [porelo#B616](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b616) (Review)
 - [porelo#B627](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b627) (Review)
 - [porelo#B628](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b628) (Review)
 

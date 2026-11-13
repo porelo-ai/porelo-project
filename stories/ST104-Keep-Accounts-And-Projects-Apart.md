@@ -12,6 +12,7 @@
 - [porelo#B50](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b50) (Review)
 - [porelo#B246](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b246) (Accepted)
 - [porelo#B249](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b249) (Idea)
+- [porelo-host#HO188](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho188) (Backlog)
 
 ## Notes
 
@@ -31,7 +32,8 @@
     "porelo#B199",
     "porelo#B50",
     "porelo#B246",
-    "porelo#B249"
+    "porelo#B249",
+    "porelo-host#HO188"
   ],
   "tested": null
 }

@@ -1,6 +1,6 @@
 # ST346 — An issue head the board refuses never reaches main
 
-**Priority:** 🔽 Low · **State:** Backlog
+**Priority:** 🔼 High · **State:** Backlog
 
 **What a user gains.** Every repository's checks and the prepush refuse an issue head the planner's board would refuse, naming the file and field.
 
@@ -14,7 +14,7 @@
 - [porelo-agy#AG24](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag24) (Review)
 - [porelo-claude-code#CC65](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc65) (Review)
 - [porelo-codex#CX23](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx23) (Review)
-- [porelo-ecosystems#EC23](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec23) (Backlog)
+- [porelo-ecosystems#EC23](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec23) (Review)
 - [porelo-forge-clients#FC22](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc22) (Review)
 - [porelo-frontend#F505](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f505) (Backlog)
 - [porelo-host#HO176](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho176) (Review)
@@ -24,6 +24,8 @@
 - [porelo-pi#PI60](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi60) (Review)
 - [porelo-planner#PL98](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl98) (Backlog)
 - [porelo-planner#PL110](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl110) (Backlog)
+- [porelo-buildtools#BT89](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt89) (Review)
+- [porelo-planner#PL78](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl78) (Review)
 
 ## Notes
 
@@ -38,7 +40,7 @@
   "title": "An issue head the board refuses never reaches main",
   "gain": "Every repository's checks and the prepush refuse an issue head the planner's board would refuse, naming the file and field.",
   "test": "An issue head the planner's board would refuse fails the repository's checks and the prepush, naming the file and the field.",
-  "priority": "Low",
+  "priority": "High",
   "issues": [
     "porelo-buildtools#BT81",
     "porelo#B672",
@@ -55,7 +57,9 @@
     "porelo-parent#PA02",
     "porelo-pi#PI60",
     "porelo-planner#PL98",
-    "porelo-planner#PL110"
+    "porelo-planner#PL110",
+    "porelo-buildtools#BT89",
+    "porelo-planner#PL78"
   ],
   "tested": null
 }

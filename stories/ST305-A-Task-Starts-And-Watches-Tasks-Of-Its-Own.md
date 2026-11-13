@@ -9,7 +9,7 @@
 **Issues:**
 
 - [porelo#B507](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b507) (Review)
-- [porelo#B573](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b573) (Analyzed)
+- [porelo#B573](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b573) (Review)
 - [porelo-mcp#MC03](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc03) (Review)
 - [porelo#B609](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b609) (Accepted)
 

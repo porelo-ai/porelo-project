@@ -1,6 +1,6 @@
 # ST41 — `porelo project init` proposes tools and rules
 
-**Priority:** 🟰 Medium · **State:** Backlog
+**Priority:** 🟰 Medium · **State:** Analyzed
 
 **What a user gains.** A person starting a Maven repository gets a proposed tool and rules file that porelo project init drafts, with each value explained.
 
@@ -24,6 +24,18 @@
 - [porelo-ecosystems#EC17](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec17) (Review)
 - [porelo-frontend#F385](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f385) (Review)
 - [porelo-ecosystems#EC20](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec20) (Review)
+- [porelo#B727](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b727) (Finished)
+- [porelo#B722](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b722) (Backlog)
+- [porelo#B721](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b721) (Backlog)
+- [porelo#B720](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b720) (Backlog)
+- [porelo#B719](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b719) (Backlog)
+- [porelo#B718](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b718) (Backlog)
+- [porelo-ecosystems#EC29](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec29) (Backlog)
+- [porelo-ecosystems#EC28](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec28) (Review)
+- [porelo-ecosystems#EC27](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec27) (Review)
+- [porelo-ecosystems#EC26](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec26) (Finished)
+- [porelo-ecosystems#EC25](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec25) (Analyzed)
+- [porelo-ecosystems#EC24](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec24) (Analyzed)
 
 ## Notes
 
@@ -39,7 +51,7 @@
   "gain": "A person starting a Maven repository gets a proposed tool and rules file that porelo project init drafts, with each value explained.",
   "test": "For a Maven repository, a `.porelo.yml` and where needed a `project.yml` draft, each value with its source; a project kept in a local repository is read again at `refresh`.",
   "priority": "Medium",
-  "state": "Backlog",
+  "state": "Analyzed",
   "issues": [
     "porelo-project#PJ52",
     "porelo#B220",
@@ -56,7 +68,19 @@
     "porelo#B503",
     "porelo-ecosystems#EC17",
     "porelo-frontend#F385",
-    "porelo-ecosystems#EC20"
+    "porelo-ecosystems#EC20",
+    "porelo#B727",
+    "porelo#B722",
+    "porelo#B721",
+    "porelo#B720",
+    "porelo#B719",
+    "porelo#B718",
+    "porelo-ecosystems#EC29",
+    "porelo-ecosystems#EC28",
+    "porelo-ecosystems#EC27",
+    "porelo-ecosystems#EC26",
+    "porelo-ecosystems#EC25",
+    "porelo-ecosystems#EC24"
   ],
   "tested": null
 }

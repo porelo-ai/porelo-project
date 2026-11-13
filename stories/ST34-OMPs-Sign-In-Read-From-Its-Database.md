@@ -1,6 +1,6 @@
 # ST34 — OMP's sign-in read from its database
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** A person can sign OMP in once and start tasks without running vault login, because the sign-in is read from OMP's own database.
 
@@ -20,7 +20,7 @@
   "gain": "A person can sign OMP in once and start tasks without running vault login, because the sign-in is read from OMP's own database.",
   "test": "Sign OMP in and start a task with no `vault login`; the sign-in read from its SQLite database is offered for import.",
   "priority": "High",
-  "state": "Backlog",
+  "state": "Review",
   "issues": [
     "porelo-omp#OM33"
   ],

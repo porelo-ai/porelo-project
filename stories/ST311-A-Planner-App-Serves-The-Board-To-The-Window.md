@@ -1,6 +1,6 @@
 # ST311 — A planner app serves the board to the window
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** The window reads and changes stories and issues through porelo-planner, a Spring Boot GraalVM native app running beside it, over a REST API described in OpenAPI; the app reads and writes the stories and issues in Git, and porelo keeps only its task functions.
 
@@ -50,7 +50,7 @@
 - [porelo-planner#PL26](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl26) (Review)
 - [porelo-planner#PL27](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl27) (Review)
 - [porelo-buildtools#BT68](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt68) (Review)
-- [porelo-planner#PL87](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl87) (Implementing)
+- [porelo-planner#PL87](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl87) (Review)
 
 ## Data
 
@@ -62,7 +62,7 @@
   "gain": "The window reads and changes stories and issues through porelo-planner, a Spring Boot GraalVM native app running beside it, over a REST API described in OpenAPI; the app reads and writes the stories and issues in Git, and porelo keeps only its task functions.",
   "test": "Start porelo-planner on the computer the window runs on and open Planning: every story shows in its state's column by priority, a story and one of its issues open, a story moved and saved is in porelo-project's Git, a story put into a state its issues do not fit keeps that state after a warning naming those issues, and the OpenAPI description names every call the window makes.",
   "priority": "High",
-  "state": "Backlog",
+  "state": "Review",
   "issues": [
     "porelo-buildtools#BT46",
     "porelo-buildtools#BT54",

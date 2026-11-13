@@ -1,6 +1,6 @@
 # ST18 — Small repairs of safety and robustness
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** Small safety and robustness gaps are closed, so forced removals leave nothing running, tokens are kept where tools read them, and tasks cannot reach other projects or the person's vault.
 
@@ -17,14 +17,12 @@
 - [porelo#B329](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b329) (Review)
 - [porelo#B398](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b398) (Review)
 - [porelo#B389](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b389) (Review)
-- [porelo-buildtools#BT03](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt03) (Backlog)
 - [porelo-host#HO113](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho113) (Review)
 - [porelo-host#HO14](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho14) (Review)
 - [porelo-host#HO61](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho61) (Review)
-- [porelo-buildtools#BT48](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt48) (Backlog)
 - [porelo#B674](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b674) (Review)
-- [porelo#B679](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b679) (Backlog)
-- [porelo#B680](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b680) (Backlog)
+- [porelo#B679](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b679) (Review)
+- [porelo-claude-code#CC69](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc69) (Review)
 
 ## Data
 
@@ -46,14 +44,12 @@
     "porelo#B329",
     "porelo#B398",
     "porelo#B389",
-    "porelo-buildtools#BT03",
     "porelo-host#HO113",
     "porelo-host#HO14",
     "porelo-host#HO61",
-    "porelo-buildtools#BT48",
     "porelo#B674",
     "porelo#B679",
-    "porelo#B680"
+    "porelo-claude-code#CC69"
   ],
   "tested": null
 }

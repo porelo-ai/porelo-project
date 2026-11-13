@@ -1,6 +1,6 @@
 # ST322 — Missing planner functions
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** The planning board does what a person reaches for: the search finds an issue and shows its story, a story's priority is changed on the board, and a disabled action names the run that holds it and leads there.
 
@@ -24,7 +24,7 @@
   "gain": "The planning board does what a person reaches for: the search finds an issue and shows its story, a story's priority is changed on the board, and a disabled action names the run that holds it and leads there.",
   "test": "Search for an issue's number: its story shows with the issue marked, scrolled into view. Change a story's priority on its page and from its card: the board re-sorts and the change is saved. Open a story's menu while a run needs attention: the disabled Start work names that run and opens it.",
   "priority": "High",
-  "state": "Backlog",
+  "state": "Review",
   "issues": [
     "porelo-planner#PL72",
     "porelo-planner#PL73",

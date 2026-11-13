@@ -1,6 +1,6 @@
 # ST334 — The window and the planner on Windows
 
-**Priority:** 🔼 High · **State:** Implementing
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** A person on Windows plans as on Linux: the window finds and starts porelo-planner's Windows build and reads the board through it; the planner is built, tested and shipped for Windows on the pinned GraalVM, and the Windows builds stay green on slow runners.
 
@@ -12,7 +12,6 @@
 - [porelo-planner#PL29](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl29) (Review)
 - [porelo-planner#PL30](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl30) (Review)
 - [porelo-frontend#F474](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f474) (Review)
-- [porelo-frontend#F507](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f507) (Implementing)
 - [porelo-buildtools#BT85](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt85) (Review)
 - [porelo-planner#PL115](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl115) (Review)
 
@@ -31,7 +30,6 @@
     "porelo-planner#PL29",
     "porelo-planner#PL30",
     "porelo-frontend#F474",
-    "porelo-frontend#F507",
     "porelo-buildtools#BT85",
     "porelo-planner#PL115"
   ],
