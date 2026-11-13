@@ -134,9 +134,9 @@ egress:
     domains: ["fuinorg.jfrog.io"]
 
 # The project's conversation: its tasks and the people in it talk in the project's Matrix room.
-# '{}' is this account's own homeserver on loopback, set up by the first task start; nothing
-# leaves the machine. A project's own tasks are each other's peers without being listed here;
-# the one 'matrix:' peer is what gives the project its conversation.
+# No homeserver named: tasks start without a conversation, and their agents cannot talk to each
+# other. To give them one, a project admin names mail.transports.matrix.homeserver and a room
+# here and signs.
 mail:
     transports:
         matrix: {}
