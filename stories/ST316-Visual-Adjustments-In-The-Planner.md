@@ -8,8 +8,9 @@
 
 **Issues:**
 
-- [porelo-planner#PL47](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl47) (Implementing)
-- [porelo-planner#PL48](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl48) (Backlog)
+- [porelo-planner#PL47](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl47) (Review)
+- [porelo-planner#PL48](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl48) (Review)
+- [porelo-buildtools#BT86](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt86) (Review)
 
 ## Data
 
@@ -24,7 +25,8 @@
   "state": "Backlog",
   "issues": [
     "porelo-planner#PL47",
-    "porelo-planner#PL48"
+    "porelo-planner#PL48",
+    "porelo-buildtools#BT86"
   ],
   "tested": null
 }

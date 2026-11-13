@@ -14,7 +14,7 @@
 - [porelo-omp#OM36](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om36) (Review)
 - [porelo-claude-code#CC38](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc38) (Review)
 - [porelo-claude-code#CC39](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc39) (Review)
-- [porelo-omp#OM44](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om44) (Backlog)
+- [porelo-omp#OM44](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om44) (Review)
 - [porelo-project#PJ111](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj111) (Backlog)
 
 ## Data

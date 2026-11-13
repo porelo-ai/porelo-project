@@ -29,6 +29,8 @@
 - [porelo-buildtools#BT65](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt65) (Review)
 - [porelo-planner#PL81](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl81) (Review)
 - [porelo-adapters#GH29](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh29) (Review)
+- [porelo-planner#PL102](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl102) (Review)
+- [porelo-planner#PL103](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl103) (Analyzed)
 
 ## Data
 
@@ -62,7 +64,9 @@
     "porelo-buildtools#BT64",
     "porelo-buildtools#BT65",
     "porelo-planner#PL81",
-    "porelo-adapters#GH29"
+    "porelo-adapters#GH29",
+    "porelo-planner#PL102",
+    "porelo-planner#PL103"
   ],
   "tested": null
 }
