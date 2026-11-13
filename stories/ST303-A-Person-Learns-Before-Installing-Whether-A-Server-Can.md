@@ -1,6 +1,6 @@
 # ST303 — A person learns before installing whether a server can carry their work
 
-**Priority:** 🟰 Medium · **State:** Review
+**Priority:** 🔼 High · **State:** Backlog
 
 **What a user gains.** Before installing, a person learns what a server offers and what tasks and jobs will take on it, so they choose a server that carries their work.
 
@@ -16,6 +16,7 @@
 - [porelo-host#HO121](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho121) (Review)
 - [porelo-host#HO125](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho125) (Review)
 - [porelo-host#HO127](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho127) (Review)
+- [porelo-host#HO186](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho186) (Backlog)
 
 ## Data
 
@@ -26,7 +27,7 @@
   "title": "A person learns before installing whether a server can carry their work",
   "gain": "Before installing, a person learns what a server offers and what tasks and jobs will take on it, so they choose a server that carries their work.",
   "test": "Run the check against a small and a large server before installing: each says in words which work it can carry, and a measuring run reads what a task and a job take.",
-  "priority": "Medium",
+  "priority": "High",
   "issues": [
     "porelo-frontend#F357",
     "porelo-frontend#F358",
@@ -35,7 +36,8 @@
     "porelo-host#HO120",
     "porelo-host#HO121",
     "porelo-host#HO125",
-    "porelo-host#HO127"
+    "porelo-host#HO127",
+    "porelo-host#HO186"
   ],
   "tested": null
 }

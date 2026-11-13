@@ -29,6 +29,7 @@
 - [porelo-frontend#F521](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f521) (Backlog)
 - [porelo-frontend#F522](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f522) (Backlog)
 - [porelo-frontend#F523](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f523) (Backlog)
+- [porelo-claude-code#CC66](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc66) (Review)
 
 ## Data
 
@@ -62,7 +63,8 @@
     "porelo-frontend#F520",
     "porelo-frontend#F521",
     "porelo-frontend#F522",
-    "porelo-frontend#F523"
+    "porelo-frontend#F523",
+    "porelo-claude-code#CC66"
   ],
   "tested": null
 }
