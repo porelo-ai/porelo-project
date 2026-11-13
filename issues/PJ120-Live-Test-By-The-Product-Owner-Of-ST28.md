@@ -18,7 +18,7 @@
 
 **Why this size.** One live run of the story's test by the operator, with no code (S).
 
-**What must be true.** The operator has run [ST28](../stories/ST28-The-Setup-Move-And-Recovery-Proven-Together.md)'s test live:
+**What must be true.** The operator has run [ST28](../stories/README.md#st28)'s test live:
 Bring up the project, run the local builds, move each agent and restore the room and usage after giving the host back. Compare the results with every setup and move criterion; a missing local-build or recovery prerequisite keeps the parent acceptance open.
 It passed, or each failure is filed as an issue of the repository it falls in.
 

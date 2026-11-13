@@ -18,7 +18,7 @@
 
 **Why this size.** One live run of the story's test by the operator, with no code (S).
 
-**What must be true.** The operator has run [ST6](../stories/ST6-Porelo-Agy-And-Porelo-Codex-Each-In-Its.md)'s test live:
+**What must be true.** The operator has run [ST6](../stories/README.md#st6)'s test live:
 Each move issue reaches Review inside its task with Forgejo's build green. Only Claude Code runs in the task: reviews come from new agents started apart, by the host's forge or by hand.
 It passed, or each failure is filed as an issue of the repository it falls in.
 

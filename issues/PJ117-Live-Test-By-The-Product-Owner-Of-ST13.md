@@ -18,7 +18,7 @@
 
 **Why this size.** One live run of the story's test by the operator, with no code (S).
 
-**What must be true.** The operator has run [ST13](../stories/ST13-Porelo-And-Porelo-Host-Each-In-Its-Task.md)'s test live:
+**What must be true.** The operator has run [ST13](../stories/README.md#st13)'s test live:
 porelo's agent builds porelo in a task and porelo-host's agent its collection; each works on this machine again if a fault in Porelo or the host's setup stops it.
 It passed, or each failure is filed as an issue of the repository it falls in.
 

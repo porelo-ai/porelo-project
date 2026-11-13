@@ -18,7 +18,7 @@
 
 **Why this size.** One live run of the story's test by the operator, with no code (S).
 
-**What must be true.** The operator has run [ST293](../stories/ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md)'s test live:
+**What must be true.** The operator has run [ST293](../stories/README.md#st293)'s test live:
 Every agent's move story is accepted in the order of doc/moving-an-agent.md; after the last move every agent answers in the project's room from its task and none works outside one.
 It passed, or each failure is filed as an issue of the repository it falls in.
 

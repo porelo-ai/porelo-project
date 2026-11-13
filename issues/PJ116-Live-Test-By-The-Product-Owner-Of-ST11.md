@@ -18,7 +18,7 @@
 
 **Why this size.** One live run of the story's test by the operator, with no code (S).
 
-**What must be true.** The operator has run [ST11](../stories/ST11-Porelo-Adapters-And-Porelo-Ai-Github-Io-Each.md)'s test live:
+**What must be true.** The operator has run [ST11](../stories/README.md#st11)'s test live:
 Each move issue reaches Review inside its task with Forgejo's build green.
 It passed, or each failure is filed as an issue of the repository it falls in.
 

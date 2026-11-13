@@ -18,7 +18,7 @@
 
 **Why this size.** One live run of the story's test by the operator, with no code (S).
 
-**What must be true.** The operator has run [ST5](../stories/ST5-Porelo-Pi-Porelo-Omp-And-Porelo-Claude-Code.md)'s test live:
+**What must be true.** The operator has run [ST5](../stories/README.md#st5)'s test live:
 Each of the three repositories has its own agent and task, builds on Forgejo and takes porelo from the local registry.
 It passed, or each failure is filed as an issue of the repository it falls in.
 

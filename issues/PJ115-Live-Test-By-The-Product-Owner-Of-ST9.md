@@ -18,7 +18,7 @@
 
 **Why this size.** One live run of the story's test by the operator, with no code (S).
 
-**What must be true.** The operator has run [ST9](../stories/ST9-Porelo-Intellij-And-Porelo-Frontend-Each-In-Its.md)'s test live:
+**What must be true.** The operator has run [ST9](../stories/README.md#st9)'s test live:
 Gradle and Flutter build on Forgejo; the Windows job runs centrally only, named by a variable.
 It passed, or each failure is filed as an issue of the repository it falls in.
 

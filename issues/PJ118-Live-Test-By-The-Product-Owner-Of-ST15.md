@@ -18,7 +18,7 @@
 
 **Why this size.** One live run of the story's test by the operator, with no code (S).
 
-**What must be true.** The operator has run [ST15](../stories/ST15-The-Website-Builds-In-Its-Task.md)'s test live:
+**What must be true.** The operator has run [ST15](../stories/README.md#st15)'s test live:
 Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed.
 It passed, or each failure is filed as an issue of the repository it falls in.
 
