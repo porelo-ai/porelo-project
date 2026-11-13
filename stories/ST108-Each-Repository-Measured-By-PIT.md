@@ -12,7 +12,7 @@
 - [porelo-agy#AG09](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag09) (Accepted)
 - [porelo#B396](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b396) (Accepted)
 - [porelo-buildtools#BT41](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt41) (Accepted)
-- [porelo-claude-code#CC45](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc45) (Backlog)
+- [porelo-claude-code#CC45](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc45) (Review)
 - [porelo-codex#CX12](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx12) (Accepted)
 - [porelo-forge-clients#FC17](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc17) (Estimated)
 - [porelo-intellij#IJ21](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij21) (Accepted)

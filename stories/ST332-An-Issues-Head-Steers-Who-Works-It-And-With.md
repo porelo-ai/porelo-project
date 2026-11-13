@@ -12,7 +12,7 @@
 - [porelo-buildtools#BT77](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt77) (Review)
 - [porelo-planner#PL65](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl65) (Review)
 - [porelo-planner#PL66](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl66) (Review)
-- [porelo-planner#PL69](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl69) (Backlog)
+- [porelo-planner#PL69](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl69) (Review)
 
 ## Data
 

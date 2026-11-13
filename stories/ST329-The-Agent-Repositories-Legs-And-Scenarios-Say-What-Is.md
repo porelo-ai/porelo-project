@@ -9,12 +9,12 @@
 **Issues:**
 
 - [porelo-agy#AG12](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag12) (Estimated)
-- [porelo-claude-code#CC49](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc49) (Estimated)
+- [porelo-claude-code#CC49](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc49) (Review)
 - [porelo-omp#OM47](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om47) (Estimated)
 - [porelo-pi#PI50](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi50) (Estimated)
 - [porelo-agy#AG14](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag14) (Estimated)
-- [porelo-claude-code#CC54](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc54) (Estimated)
-- [porelo-claude-code#CC58](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc58) (Estimated)
+- [porelo-claude-code#CC54](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc54) (Review)
+- [porelo-claude-code#CC58](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc58) (Review)
 - [porelo-pi#PI51](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi51) (Estimated)
 
 ## Data

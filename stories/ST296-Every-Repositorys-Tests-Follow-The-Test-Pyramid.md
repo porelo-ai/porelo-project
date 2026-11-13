@@ -40,7 +40,7 @@
 - [porelo-message-sluice#SL55](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl55) (Estimated)
 - [porelo-adapters#GH23](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh23) (Estimated)
 - [porelo-ecosystems#EC18](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec18) (Estimated)
-- [porelo-claude-code#CC50](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc50) (Estimated)
+- [porelo-claude-code#CC50](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc50) (Review)
 - [porelo-omp#OM48](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om48) (Estimated)
 - [porelo-forge-clients#FC18](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc18) (Estimated)
 - [porelo#B512](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b512) (Review)

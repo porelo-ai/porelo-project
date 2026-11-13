@@ -6,13 +6,13 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 83 |
+| [Idea](#idea) | 84 |
 | [Accepted](#accepted) | 26 |
 | [Analyzed](#analyzed) | 32 |
-| [Estimated](#estimated) | 34 |
-| [Backlog](#backlog) | 55 |
+| [Estimated](#estimated) | 33 |
+| [Backlog](#backlog) | 54 |
 | [Implementing](#implementing) | 5 |
-| [Review](#review) | 29 |
+| [Review](#review) | 31 |
 | [Finished](#finished) | 77 |
 | [Rejected](#rejected) | 5 |
 
@@ -103,6 +103,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st218"></a>[ST218](ST218-Porelo.md) porelo | 🔽 Low | B:51 | A person gets the Porelo core repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st343"></a>[ST343](ST343-A-Tasks-Timeline-Seen-In-An-Open-Source-Tool.md) A task's timeline seen in an open-source tool on the same machine | 🔽 Low | none yet | A person who wants charts, trace views or evaluations points the export at an open-source tool running locally (MLflow with SQLite first, OpenLIT or Langfuse where their extra services are worth it), with the tool's own telemetry off, and sees the runs of their tasks there; Porelo installs nothing of it by default. |
 | <a id="st344"></a>[ST344](ST344-Lightweight-Alternative-To-Porelo-On-Mac-Windows-Desktops.md) Lightweight Alternative to Porelo on Mac/Windows Desktops | 🔽 Low | none yet | A person on a Mac or Windows desktop runs agent tasks without a VM: the window and the planner manage tasks through a runtime-neutral interface, with a native sandbox such as sandbox-runtime behind it, and are told plainly which of Porelo's protections that runtime does not give. |
+| <a id="st348"></a>[ST348](ST348-The-Planner-Runs-As-A-Service-Started-At-Sign-In.md) The planner runs as a service started at sign-in | 🔽 Low | PL:1 | The planner runs as a service the system knows, started at sign-in, so the window finds it running without starting it. |
 
 ## Accepted
 
@@ -208,7 +209,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st202"></a>[ST202](ST202-Porelo-Adapters.md) porelo-adapters | 🔽 Low | GH:2 | A person gets the adapters repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st203"></a>[ST203](ST203-Porelo-Agy.md) porelo-agy | 🔽 Low | AG:1 | A person gets the Antigravity adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st204"></a>[ST204](ST204-Porelo-Ai-Github-Io.md) porelo-ai.github.io | 🔽 Low | SI:1 | A person gets the project website repository as a named part of Porelo that is tracked as its own piece of work. |
-| <a id="st206"></a>[ST206](ST206-Porelo-Claude-Code.md) porelo-claude-code | 🔽 Low | CC:1 | A person gets the Claude Code adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st216"></a>[ST216](ST216-Porelo-Pi.md) porelo-pi | 🔽 Low | PI:1 | A person gets the Pi adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 
 ## Backlog
@@ -255,14 +255,13 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st331"></a>[ST331](ST331-Antigravity-Cli-Kept-Current-By-The-Weekly-Update-Job.md) Antigravity CLI kept current by the weekly update job | 🔼 High | AG:1 | The weekly update job follows Antigravity CLI as porelo-claude-code's follows Claude Code: it finds a new release, pins it, runs the unit suite and both acceptance legs and proposes the change, so the agent stays current without hand work. |
 | <a id="st332"></a>[ST332](ST332-An-Issues-Head-Steers-Who-Works-It-And-With.md) An issue's head steers who works it and with what | 🔼 High | PL:3 · BT:2 | An issue's head may say who works it, a person or an agent, and how much harm its change can do; the planner leaves a person's issue to the person, the work rules pick the model and effort for the issue's risk, and the start dialog proposes that choice and says where it came from. |
 | <a id="st334"></a>[ST334](ST334-The-Window-And-The-Planner-On-Windows.md) The window and the planner on Windows | 🔼 High | F:2 · PL:2 · BT:1 | A person on Windows plans as on Linux: the window finds and starts porelo-planner's Windows build and reads the board through it; the planner is built, tested and shipped for Windows on the pinned GraalVM, and the Windows builds stay green on slow runners. |
-| <a id="st335"></a>[ST335](ST335-The-Planner-Runs-Beside-The-Window-And-Follows-Its.md) The planner runs beside the window and follows its updates | 🔼 High | F:3 · PL:2 | The planner runs as a service the system knows, started at sign-in; the window follows it to a new address and starts it again where it is gone, and a planner the window started ends with the window, so the window never talks to a stale planner. |
+| <a id="st335"></a>[ST335](ST335-The-Planner-Runs-Beside-The-Window-And-Follows-Its.md) The planner runs beside the window and follows its updates | 🔼 High | F:3 · PL:1 | The window follows the planner to a new address and starts it again where it is gone, and a planner the window started ends with the window, so the window never talks to a stale planner. |
 | <a id="st336"></a>[ST336](ST336-A-Storys-Page-Shows-Its-Description-And-Issues-Well.md) A story's page shows its description and issues well | 🔼 High | PL:2 | On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting. |
 | <a id="st339"></a>[ST339](ST339-The-Planning-Screen-Tried-On-Its-Own-Against-A.md) The planning screen tried on its own against a mock | 🔼 High | PL:1 | A small app run from the source embeds only the planning screen against a mock, so the screen can be tried and shown quickly without the window, a planner or a forge. |
 | <a id="st347"></a>[ST347](ST347-Every-Story-Played-Through-Once-As-A-User-Would.md) Every story played through once, as a user would | 🔼 High | F:9 · HO:6 · PL:6 | Each High story's test runs once, automated, on a test VM the way a person would play it, at the command line or in the window, so a story's end is shown working before the person tries it. |
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | 🟰 Medium | PJ:4 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
 | <a id="st78"></a>[ST78](ST78-Threads-In-IntelliJs-Diff.md) Threads in IntelliJ's diff | 🟰 Medium | IJ:2 | A person sees every review thread on its lines in IntelliJ's diff, marked with who wrote it. |
 | <a id="st295"></a>[ST295](ST295-A-Person-Joins-And-Leaves-An-Organization-From-The.md) A person joins and leaves an organization from the window | 🟰 Medium | B:2 · F:1 | A person who cannot write an organization's repository asks to join it from the window by filing their card as a proposal, an owner accepts it there, and a member leaves an organization from the window, withdrawing their own card and roles and forgetting it on this computer. |
-| <a id="st303"></a>[ST303](ST303-A-Person-Learns-Before-Installing-Whether-A-Server-Can.md) A person learns before installing whether a server can carry their work | 🟰 Medium | HO:6 · F:2 | Before installing, a person learns what a server offers and what tasks and jobs will take on it, so they choose a server that carries their work. |
 | <a id="st304"></a>[ST304](ST304-The-Windows-Pages-Show-What-Needs-The-Person-At.md) The window's pages show what needs the person at a glance | 🟰 Medium | F:12 · B:2 | Every page of the window shows at a glance what needs the person, and each grey button, count and wait says why in words; a click answers at once. |
 | <a id="st306"></a>[ST306](ST306-A-Failed-Credential-Or-Tool-Says-What-Happened-And.md) A failed credential or tool says what happened and what to do | 🟰 Medium | B:3 | When a credential or a required tool fails, porelo says which one, what happened and what the person can do, instead of a bare failure. |
 | <a id="st310"></a>[ST310](ST310-A-Coordinator-Agent-Assists-The-User.md) A coordinator agent assists the user | 🟰 Medium | B:1 | While agents work on a project's stories, one coordinator agent oversees the story, the tasks' progress and the findings, and is the user's one session to talk to across repositories; it starts and stops nothing itself. |
@@ -310,10 +309,12 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st299"></a>[ST299](ST299-Found-A-Porelo-Organization-From-The-Window.md) Found a Porelo organization from the window | 🟰 Medium | F:3 · B:1 | A person founds a Porelo organization from the window and is told everything founding needs before anything is filed; a grey button says in words why it waits. |
 | <a id="st300"></a>[ST300](ST300-A-Changed-Project-Or-Repository-File-Is-Taken-Once.md) A changed project or repository file is taken once an admin signs it anew | 🟰 Medium | B:2 · BT:1 · HO:1 | When a project's or a repository's porelo.yml changes, an admin signs it anew from the checkouts they keep, and hosts follow the newly signed file; an unsigned change is never taken. |
 | <a id="st302"></a>[ST302](ST302-Keep-A-Machine-In-Order-From-The-Window.md) Keep a machine in order from the window | 🟰 Medium | B:3 | A person keeps a machine in order from the window: replaces or removes a vault entry, tightens permissions and removes a project the machine no longer knows. |
+| <a id="st303"></a>[ST303](ST303-A-Person-Learns-Before-Installing-Whether-A-Server-Can.md) A person learns before installing whether a server can carry their work | 🟰 Medium | HO:6 · F:2 | Before installing, a person learns what a server offers and what tasks and jobs will take on it, so they choose a server that carries their work. |
 | <a id="st312"></a>[ST312](ST312-The-Room-Rehearsal-Judges-A-Busy-Room-Right.md) The room rehearsal judges a busy room right | 🟰 Medium | MX:5 | The room rehearsal of a move says OK only where the room behaved and FAIL only where it did not, also in a room with history, other persons, retired tasks and other logins on the same host, and leaves no session or chat open behind it. |
 | <a id="st119"></a>[ST119](ST119-Give-A-Transport-Its-Secret-Through-The-Intended.md) Give a transport its secret through the intended input | 🔽 Low | B:1 · MX:1 | A transport such as Matrix gets its secret through the intended input, so it does not show in process environments or arguments. |
 | <a id="st127"></a>[ST127](ST127-Keep-Container-Limits-On-Large-Hosts.md) Keep container limits on large hosts | 🔽 Low | MX:1 | Container limits still apply on large hosts, so the same configuration behaves the same on small and large machines. |
 | <a id="st205"></a>[ST205](ST205-Porelo-Buildtools.md) porelo-buildtools | 🔽 Low | BT:1 | A person gets the build tools repository as a named part of Porelo that is tracked as its own piece of work. |
+| <a id="st206"></a>[ST206](ST206-Porelo-Claude-Code.md) porelo-claude-code | 🔽 Low | CC:1 | A person gets the Claude Code adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 
 ## Finished
 
