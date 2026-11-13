@@ -1,6 +1,6 @@
 # ST210 — porelo-frontend
 
-**Priority:** 🔽 Low · **State:** Idea
+**Priority:** 🔼 High · **State:** Idea
 
 **What a user gains.** A person gets the frontend repository as a named part of Porelo that is tracked as its own piece of work.
 
@@ -57,7 +57,7 @@
   "title": "porelo-frontend",
   "gain": "A person gets the frontend repository as a named part of Porelo that is tracked as its own piece of work.",
   "test": "Not planned for a test yet.",
-  "priority": "Low",
+  "priority": "High",
   "issues": [
     "porelo-frontend#F149",
     "porelo-frontend#F192",
