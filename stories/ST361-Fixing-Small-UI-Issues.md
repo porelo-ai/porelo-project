@@ -18,8 +18,9 @@
 - [porelo-frontend#F552](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f552) (Review)
 - [porelo-frontend#F553](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f553) (Backlog)
 - [porelo-frontend#F554](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f554) (Review)
-- [porelo-frontend#F555](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f555) (Backlog)
+- [porelo-frontend#F555](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f555) (Review)
 - [porelo-frontend#F556](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f556) (Review)
+- [porelo-frontend#F558](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f558) (Backlog)
 - [porelo-host#HO190](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho190) (Review)
 - [porelo#B764](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b764) (Review)
 
@@ -47,6 +48,7 @@
     "porelo-frontend#F554",
     "porelo-frontend#F555",
     "porelo-frontend#F556",
+    "porelo-frontend#F558",
     "porelo-host#HO190",
     "porelo#B764"
   ],
