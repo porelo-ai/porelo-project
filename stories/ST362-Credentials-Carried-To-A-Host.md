@@ -6,7 +6,17 @@
 
 **The test.** On a rented host whose provider rows say not authenticated, open each import dialog: it lists this computer's vault entry and each local agent's sign-in file for that provider, without values, a source that cannot be carried greyed with its reason. Pick one: the row says authenticated and a task there uses it. No value appears in the window, a log or a process list.
 
-**Issues:** none yet
+**Issues:**
+
+- [porelo#B774](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b774) (Review)
+- [porelo#B775](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b775) (Review)
+- [porelo-claude-code#CC73](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc73) (Review)
+- [porelo-codex#CX26](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx26) (Review)
+- [porelo-agy#AG29](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag29) (Review)
+- [porelo-pi#PI65](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi65) (Review)
+- [porelo-omp#OM63](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om63) (Review)
+- [porelo-frontend#F572](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f572) (Review)
+- [porelo-frontend#F575](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f575) (Backlog)
 
 ## Data
 
@@ -20,6 +30,16 @@
   "tested": null,
   "priority": "High",
   "state": "Backlog",
-  "issues": []
+  "issues": [
+    "porelo#B774",
+    "porelo#B775",
+    "porelo-claude-code#CC73",
+    "porelo-codex#CX26",
+    "porelo-agy#AG29",
+    "porelo-pi#PI65",
+    "porelo-omp#OM63",
+    "porelo-frontend#F572",
+    "porelo-frontend#F575"
+  ]
 }
 ```
