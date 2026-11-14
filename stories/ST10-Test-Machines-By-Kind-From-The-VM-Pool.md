@@ -27,7 +27,6 @@
   "gain": "A build leg that needs a test machine can ask for one by kind from the VM pool on the host's forge and gets an account that is reset afterward.",
   "test": "porelo-frontend's leased leg asks for the kind `amd64` on Forgejo and gets an account of the pool, reset afterwards, and a rented machine on the central forge; no workflow names a provider.",
   "priority": "Highest",
-  "state": "Finished",
   "issues": [
     "porelo-host#HO12",
     "porelo-buildtools#BT24",

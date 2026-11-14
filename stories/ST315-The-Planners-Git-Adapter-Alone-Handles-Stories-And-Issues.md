@@ -25,7 +25,6 @@
   "gain": "Stories and issues kept as files in Git are read, checked, indexed and written by the planner's Git store adapter alone, so the build tools no longer carry a stories library or story and issue commands, and no repository's build or hand-over runs a check of issue files.",
   "test": "In a repository with no story or issue tooling in its build: change an issue's state and add an idea through the planner; the file, its head and the index are written and checked by the planner's Git adapter; a broken head shows as a fault on the board; porelo-buildtools builds without porelo-stories or the story and issue commands, and every repository's build passes without them.",
   "priority": "Low",
-  "state": "Backlog",
   "issues": [
     "porelo-planner#PL41",
     "porelo-planner#PL42",

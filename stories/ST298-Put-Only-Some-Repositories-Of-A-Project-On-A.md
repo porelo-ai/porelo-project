@@ -25,7 +25,6 @@
   "gain": "A person chooses from a list which repositories of a project a host carries; the host takes only those its card names and says what it took and why it left the rest.",
   "test": "Put two of a project's three repositories on a host from the window. The host carries those two, the third is not on it, and the project's page says what the follow took and the reason for the one left out.",
   "priority": "Medium",
-  "state": "Finished",
   "issues": [
     "porelo#B479",
     "porelo#B489",

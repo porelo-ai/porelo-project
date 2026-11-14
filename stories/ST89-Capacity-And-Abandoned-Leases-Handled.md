@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST89",
   "title": "Capacity and abandoned leases handled",
-  "state": "Idea",
   "gain": "When a provider is full the next configured source is used, and machines left by an interrupted run are recovered instead of staying lost.",
   "test": "Fill the chosen provider and confirm the configured next source is used. Interrupt a run and lose its state. The sweep finds attributable leftovers, removes only those and reports anything it cannot resolve; other resources remain.",
   "priority": "Medium",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

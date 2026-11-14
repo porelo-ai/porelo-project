@@ -25,7 +25,6 @@
   "gain": "A person founds a Porelo organization from the window and is told everything founding needs before anything is filed; a grey button says in words why it waits.",
   "test": "Start founding without a needed part: the window names what is missing and files nothing. Supply it and found the organization; it is named apart from the forge organization.",
   "priority": "Medium",
-  "state": "Finished",
   "issues": [
     "porelo#B428",
     "porelo-frontend#F356",

@@ -20,7 +20,6 @@
   "gain": "The weekly update job follows Antigravity CLI as porelo-claude-code's follows Claude Code: it finds a new release, pins it, runs the unit suite and both acceptance legs and proposes the change, so the agent stays current without hand work.",
   "test": "After a new Antigravity CLI release, the next weekly job proposes a change pinning it, with the suite and both legs green.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-agy#AG19"
   ],

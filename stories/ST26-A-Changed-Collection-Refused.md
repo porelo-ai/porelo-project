@@ -20,7 +20,6 @@
   "gain": "A host collection that has been changed after publishing is refused, so a person installs only what was actually released.",
   "test": "Install the host collection through the interface, then offer a changed collection tarball with the original digest; installation is refused before its contents run.",
   "priority": "Highest",
-  "state": "Finished",
   "issues": [
     "porelo-frontend#F137"
   ],

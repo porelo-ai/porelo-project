@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST99",
   "title": "Pass the view through safely",
-  "state": "Idea",
   "gain": "A person can open task and trial views safely, since a missing or wrong token lets no byte through to the VNC server.",
   "test": "Open task and trial views. Use no token and a wrong token; no byte may reach the VNC server. End each view and confirm the relay and its processes are gone.",
   "priority": "Medium",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

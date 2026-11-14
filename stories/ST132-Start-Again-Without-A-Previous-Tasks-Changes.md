@@ -25,7 +25,6 @@
   "gain": "A new task starts clean, inheriting none of an earlier task's Pi settings, extensions or PATH changes.",
   "test": "Change Pi settings, extensions and PATH in a task; a new task inherits none of them. Make a continuation fail without a session identifier. The recorded session is discarded and the next start says it is fresh.",
   "priority": "Medium",
-  "state": "Accepted",
   "issues": [
     "porelo-pi#PI37",
     "porelo#B282",

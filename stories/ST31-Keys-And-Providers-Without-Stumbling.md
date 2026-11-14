@@ -24,7 +24,6 @@
   "gain": "A person can paste a key into vault put and have it read whole, and an agent given an unknown provider is refused with a clear message.",
   "test": "A key pasted at `vault put` is read whole; an agent given a provider it does not know is refused before the start.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo#B228",
     "porelo#P09",

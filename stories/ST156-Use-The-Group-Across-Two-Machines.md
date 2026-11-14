@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST156",
   "title": "Use the group across two machines",
-  "state": "Idea",
   "gain": "A person can run a task group across two machines, exchanging messages and reconnecting a machine, with invalid messages refused.",
   "test": "Start tasks on two machines, exchange messages and reconnect one machine. Valid messages arrive once. Substitute a wrong peer key; that identity is refused.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

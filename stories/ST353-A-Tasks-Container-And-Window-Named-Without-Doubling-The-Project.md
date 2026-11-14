@@ -25,7 +25,6 @@
   "gain": "A task's container is named porelo-pi, not porelo-porelo-pi, tasks made before keep working and projects do not clash, and a window going back into an existing task names its project and task.",
   "test": "Start a task in project porelo: the container is porelo-pi; a task made before still starts and ends; the same task name in a second project does not clash; going back into the task, the window reads project/task.",
   "priority": "Medium",
-  "state": "Accepted",
   "issues": [
     "porelo#B538",
     "porelo#B608"

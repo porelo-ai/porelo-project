@@ -24,7 +24,6 @@
   "gain": "The window and the planner each keep a log with levels; a person sets the level in the window, INFO by default, raises or lowers it there, and opens either log file on the local machine from a link in the window. The planner's backend log, written through its Java logging, lies beside the window's log, so a fault is read in one place and Needs you keeps only what asks for an action.",
   "test": "Start the window and the planner: both log files lie side by side, at INFO. Set DEBUG in the window: both logs gain debug lines without a restart; set WARN: info lines stop. Click the log link: the file opens in the local viewer. A planner message that only informs shows in the log, not in Needs you.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-frontend#F483",
     "porelo-frontend#F485",

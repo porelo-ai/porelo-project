@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST182",
   "title": "Review a Bitbucket pull request",
-  "state": "Idea",
   "gain": "A person can review a Bitbucket pull request, reading threads and suggestions as SARIF and releasing a reply.",
   "test": "Read Bitbucket Data Center threads and suggestions as SARIF and release a reply. An unknown author is held; an unreleased reply never appears online. A build-reader result cannot stand in for a review result.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

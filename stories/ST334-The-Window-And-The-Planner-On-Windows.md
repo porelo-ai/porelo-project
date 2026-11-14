@@ -25,7 +25,6 @@
   "gain": "A person on Windows plans as on Linux: the window finds and starts porelo-planner's Windows build and reads the board through it; the planner is built, tested and shipped for Windows on the pinned GraalVM, and the Windows builds stay green on slow runners.",
   "test": "Install the window and the planner on Windows x64 and open Planning: the board appears, read through the local planner; the Windows build of both repositories is green.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-buildtools#BT69",
     "porelo-planner#PL29",

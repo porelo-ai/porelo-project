@@ -22,7 +22,6 @@
   "gain": "A person can run a ready server's setup again and see how it ended, and a rented server can be found again afterward.",
   "test": "On a ready server, *Run its setup again* runs the setup once more and says how it ended; the server keeps its work. `porelo-host find` says which server is rented now, or that none is.",
   "priority": "Highest",
-  "state": "Finished",
   "issues": [
     "porelo-frontend#F223",
     "porelo-frontend#F224",

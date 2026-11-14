@@ -21,7 +21,6 @@
   "gain": "The planner runs as a service the system knows, started at sign-in, so the window finds it running without starting it.",
   "test": "Sign in: the planner runs before the window is opened, and the window shows its board at once.",
   "priority": "Low",
-  "state": "Backlog",
   "issues": [
     "porelo-planner#PL33",
     "porelo-planner#PL111"

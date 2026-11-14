@@ -34,7 +34,6 @@
   "gain": "Small safety and robustness gaps are closed, so forced removals leave nothing running, tokens are kept where tools read them, and tasks cannot reach other projects or the person's vault.",
   "test": "Each issue's acceptance holds: forced removal kills what outlives a stop, the gate's route match holds for every decoded byte, the person's token sits where each tool reads it, the push judge is armed only where it holds, another project's task cannot be a peer, a transport borrows its lifecycle token, a registry owner check works with an app token, and a stopped test cannot reach the vault.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-host#HO81",
     "porelo-host#HO83",

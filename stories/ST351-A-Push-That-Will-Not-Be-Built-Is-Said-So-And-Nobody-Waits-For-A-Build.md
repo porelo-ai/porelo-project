@@ -26,7 +26,6 @@
   "gain": "When a push will not be built, because it waits at the gate for a person, no build followed or the watch did not start, the agent and the person are told at once and nobody waits for a build report.",
   "test": "Push from a task whose work waits at the gate, from a project that follows no builds, and from one whose build watch did not start: the agent is told at once that no build comes and does not wait, and the window reads that no build comes for this push.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo#B710",
     "porelo#B712",

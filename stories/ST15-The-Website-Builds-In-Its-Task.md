@@ -26,7 +26,6 @@
   "gain": "The project website can be fully checked inside its own task, and the check passes with the Debian image and repository changes.",
   "test": "Run the full website check inside its task; it passes after the Debian-image and repository-name blockers are fixed.",
   "priority": "Highest",
-  "state": "Backlog",
   "issues": [
     "porelo-ai.github.io#SI01",
     "porelo-ai.github.io#SI07",

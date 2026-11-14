@@ -24,7 +24,6 @@
   "gain": "A person gets one message naming the machine, the service and the cause when a service such as the room's homeserver stops on a host.",
   "test": "The room's homeserver stopped on a host makes one message naming the machine, the service, since when and its last error line; when it runs again, the person is told it is resolved.",
   "priority": "Medium",
-  "state": "Finished",
   "issues": [
     "porelo#B501"
   ],

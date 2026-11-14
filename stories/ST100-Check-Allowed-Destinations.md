@@ -22,7 +22,6 @@
   "gain": "A person sees whether the machine can check allowed destinations, and a task reaches only the addresses, domains and sets its project allows.",
   "test": "Read resolver capability in doctor. Start a project with addresses, domains and sets. Reach an allowed destination; an unallowed one fails and is shown as refused. Allow a CNAME while the task runs; it becomes reachable. An incomplete set must not appear complete.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo#B237",
     "porelo#B502",

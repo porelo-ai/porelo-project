@@ -20,7 +20,6 @@
   "gain": "A person can join another project on the same machine.",
   "test": "A person joins another project on the machine.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-message-matrix#MX52"
   ],

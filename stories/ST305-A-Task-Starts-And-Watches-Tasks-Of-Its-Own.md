@@ -22,7 +22,6 @@
   "gain": "A task the signed project file allows starts, lists, reads and stops tasks of its own through an MCP endpoint, within the file's limits and held to its own project.",
   "test": "From a task, start a second task over MCP, read its state and stop it; a start beyond the file's limits and a read of another project's task are refused.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo#B507",
     "porelo#B573",

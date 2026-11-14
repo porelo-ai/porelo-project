@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST183",
   "title": "Review an Azure DevOps pull request",
-  "state": "Idea",
   "gain": "A person can review an Azure DevOps pull request, reading threads and suggestions as SARIF and releasing a reply.",
   "test": "Read Azure DevOps threads and suggestions as SARIF and release a reply. An unknown author is held; an unreleased reply never appears online. Refuse an unsupported mandatory review operation by name.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

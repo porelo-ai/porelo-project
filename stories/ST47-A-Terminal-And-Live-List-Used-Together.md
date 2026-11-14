@@ -27,7 +27,6 @@
   "gain": "A person can use the embedded terminal like an ordinary terminal and keep task list --watch open beside it.",
   "test": "Use the embedded terminal as an ordinary terminal and open task list --watch beside it. States and the clearance hint update. Input reaches the task whole and unchanged; Ctrl-C restores the terminal.",
   "priority": "Medium",
-  "state": "Backlog",
   "issues": [
     "porelo-frontend#F105",
     "porelo#B48",

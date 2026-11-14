@@ -24,7 +24,6 @@
   "gain": "Each agent repository's acceptance scenarios name a task by its own name in Porelo's commands and take its container's name from porelo task status --json, so the scenarios keep passing when Porelo changes how it names containers.",
   "test": "Run the acceptance legs of porelo-agy, porelo-claude-code, porelo-codex, porelo-omp and porelo-pi against the current porelo: all pass, and no scenario builds a container name by hand.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-agy#AG17",
     "porelo-claude-code#CC55",

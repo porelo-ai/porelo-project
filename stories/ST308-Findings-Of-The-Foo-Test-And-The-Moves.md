@@ -62,7 +62,6 @@
   "gain": "What the foo test and the trial moves found in hosts, projects, starts and the setup is fixed, so a person's move and daily work run as the finished stories promise.",
   "test": "Repeat the foo test's and the moves' steps that found each finding: each step now does what its issue says.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo#B437",
     "porelo-frontend#F377",

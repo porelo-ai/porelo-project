@@ -21,7 +21,6 @@
   "gain": "Setting the same credential or running setup again reports honestly that nothing changed, in text and in the interface.",
   "test": "Set the same credential twice and run setup twice. The second run reports unchanged in text and JSON, with no unnecessary service restart or credential change. Change the value; it is reported as changed.",
   "priority": "Medium",
-  "state": "Finished",
   "issues": [
     "porelo#B214",
     "porelo#B216"

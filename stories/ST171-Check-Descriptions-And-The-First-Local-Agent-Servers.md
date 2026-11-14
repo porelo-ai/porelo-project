@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST171",
   "title": "Check descriptions and the first local agent servers",
-  "state": "Idea",
   "gain": "Tool descriptions are checked against rules, and Claude Code's and Pi's local MCP servers are pinned so a changed one is caught.",
   "test": "Trigger a description rule with a known counterexample. Start pinned Claude Code and Pi local servers, then change each package or digest; the changed start fails. The rule makes no claim of unlimited protection against prompt injection.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

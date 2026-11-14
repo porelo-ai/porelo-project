@@ -26,7 +26,6 @@
   "gain": "The gathered findings from earlier work are cleared, and anything larger becomes an issue of its own, so nothing open is lost.",
   "test": "B380, HO86 and F288 hold no open point; a point that proved larger is an issue of its own.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo#B649",
     "porelo#B650",

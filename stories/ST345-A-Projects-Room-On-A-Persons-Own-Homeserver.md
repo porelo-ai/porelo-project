@@ -26,7 +26,6 @@
   "gain": "A person whose organization project names a Matrix room is told how to name its homeserver and can name a local one on loopback.",
   "test": "An organization project naming a Matrix room without a homeserver starts its tasks with no room and says how to name one, and a loopback homeserver named for the project is used with its own token.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo#B636",
     "porelo#B637",

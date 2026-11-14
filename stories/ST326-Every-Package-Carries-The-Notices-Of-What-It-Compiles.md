@@ -35,7 +35,6 @@
   "gain": "Every package Porelo ships, the adapters, agents, transports, the window and the plugin, carries one THIRD-PARTY-NOTICES file with the full license and notice texts of every third-party library and runtime compiled into it, made by one shared generator, so a person can see what they install and under which licenses.",
   "test": "Install the .deb or .rpm of porelo-agy, porelo-codex, porelo-message-matrix and the window, and the IntelliJ plugin zip: each holds a THIRD-PARTY-NOTICES file naming every compiled-in library with its full license text, LGPL-3.0 and Bouncy Castle included; nothing compiled in is missing from it.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-adapters#GH30",
     "porelo-agy#AG16",

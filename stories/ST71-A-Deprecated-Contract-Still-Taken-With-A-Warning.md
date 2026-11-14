@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST71",
   "title": "A deprecated contract still taken, with a warning",
-  "state": "Idea",
   "gain": "An adapter that speaks only a deprecated contract still works, and a person is warned at every start so they know to update it.",
   "test": "An adapter that speaks only a deprecated contract version still works, and every start that uses it says since when it is deprecated and in which release it goes.",
   "priority": "Medium",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

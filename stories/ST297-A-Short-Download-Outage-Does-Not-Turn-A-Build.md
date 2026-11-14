@@ -29,7 +29,6 @@
   "gain": "A build that fetches a pinned JDK or tool tries again by one shared rule with a deadline, so a short outage of a download site does not turn a build red.",
   "test": "Make a pinned download fail twice and then succeed: the build stays green and says it tried again. Make it fail past the deadline: the build fails and names the download.",
   "priority": "Medium",
-  "state": "Finished",
   "issues": [
     "porelo-buildtools#BT43",
     "porelo-buildtools#BT49",

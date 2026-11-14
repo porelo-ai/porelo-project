@@ -20,7 +20,6 @@
   "gain": "On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting.",
   "test": "Open a story with a long Markdown description and many issues: the description renders as Markdown and folds; the issue list searches, filters and sorts, and keeps that when the person comes back.",
   "priority": "Medium",
-  "state": "Review",
   "issues": [
     "porelo-planner#PL37"
   ],

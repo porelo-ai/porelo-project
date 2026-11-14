@@ -38,7 +38,6 @@
   "gain": "Every page of the window shows at a glance what needs the person, and each grey button, count and wait says why in words; a click answers at once.",
   "test": "Open the work, Needs you and side bar pages with waiting work: each wait and grey button names its reason, counts say what they count, empty lists start folded, and every click shows at once that it arrived.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-frontend#F353",
     "porelo-frontend#F359",

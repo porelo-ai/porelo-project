@@ -27,7 +27,6 @@
   "gain": "A new CI snapshot removes the older ones of its system and keeps one before it, the agent repositories read only their own groups' snapshots, a kept start that never ran keeps its caller's key across a reboot, and an allowed-signers file that is not valid UTF-8 is read line by line instead of refused whole.",
   "test": "After a new snapshot only it and the one before remain, each deletion said; an agent repository's build runs the snapshot filter; a --keep start that never ran finds its key after a reboot; a signers file with one invalid byte still gives its other lines.",
   "priority": "Medium",
-  "state": "Backlog",
   "issues": [
     "porelo-buildtools#BT03",
     "porelo-buildtools#BT48",

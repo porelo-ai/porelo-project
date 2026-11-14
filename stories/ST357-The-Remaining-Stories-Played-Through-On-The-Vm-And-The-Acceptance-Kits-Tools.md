@@ -37,7 +37,6 @@
   "gain": "These stories' tests also run once, automated, on the test VM or on Windows as a person would play them, and the acceptance kit reads the terminal reliably for it: cursor moves, what a start printed, and that the vault echoes no secret.",
   "test": "Each listed walk runs green once on the VM or on Windows, and the kit's terminal checks pass on a recorded terminal session.",
   "priority": "Medium",
-  "state": "Backlog",
   "issues": [
     "porelo-planner#PL105",
     "porelo-planner#PL107",

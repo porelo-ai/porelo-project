@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST136",
   "title": "Allow inner containers only in the proven case",
-  "state": "Idea",
   "gain": "Inner containers are allowed only in the proven case, so only allowed destinations work from inside one.",
   "test": "Try allowed and unallowed destinations from an inner container; only the allowed one works. A guarded task with nesting enabled is refused. If measurements require a separate kernel, nesting on a shared kernel remains refused.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST187",
   "title": "Run the supported ARM agents",
-  "state": "Idea",
   "gain": "A person on ARM can install each supported agent adapter and run a small task through the broker.",
   "test": "Install each supported adapter and run a small task through the broker. A wrong architecture or incompatible protocol is refused by name.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

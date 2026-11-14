@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST162",
   "title": "Give, receive and withdraw a file",
-  "state": "Idea",
   "gain": "A person can put a file in a task's drop and hand it to an allowed peer, and unsafe files such as symbolic links or oversized ones are refused.",
   "test": "Put a file in the task's drop and hand it to an allowed peer. Try a symbolic link, an oversized file and an undeclared recipient; each handover fails. Read the recipient's permissions and withdraw the artifact; no shared writable task directory exists.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

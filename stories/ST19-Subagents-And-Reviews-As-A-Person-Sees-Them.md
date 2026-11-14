@@ -27,7 +27,6 @@
   "gain": "A person sees which subagents a task may start, and another subagent is refused with a clear message, with reviews shown plainly.",
   "test": "A task may start only the subagents its task allows; another is refused and the task says so. In IntelliJ, an open review shows that its push moved, and Approve and Reject are named in words.",
   "priority": "Medium",
-  "state": "Finished",
   "issues": [
     "porelo#B361",
     "porelo-intellij#IJ16",

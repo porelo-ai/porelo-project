@@ -26,7 +26,6 @@
   "gain": "A start waits until both the gate and the relay are up, and ends with a clear code if either does not come up.",
   "test": "A start whose gate or relay does not come up ends with a code; a start waits for both; two starts of one name never stop each other's task.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo#B384",
     "porelo#B730",

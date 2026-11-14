@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST190",
   "title": "Set up the local VM from the Mac interface",
-  "state": "Idea",
   "gain": "A person on a Mac can create the local Lima VM in the interface, follow a project, start a task and use its terminal.",
   "test": "Create the Lima VM in the interface, follow a project, start a task, use its terminal and review a push. Connect to a remote machine over SSH too. A missing VM capability stops setup with a reason; cancellation leaves no unknown setup resources.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

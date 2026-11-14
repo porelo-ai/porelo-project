@@ -21,7 +21,6 @@
   "gain": "A person running a long command sees how far along it is.",
   "test": "A long command says how far it is.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-message-matrix#MX51",
     "porelo#B490"

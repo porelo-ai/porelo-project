@@ -24,7 +24,6 @@
   "gain": "The room rehearsal of a move says OK only where the room behaved and FAIL only where it did not, also in a room with history, other persons, retired tasks and other logins on the same host, and leaves no session or chat open behind it.",
   "test": "Run the room rehearsal against a room with earlier messages, a second person, a retired task and another login on the host: every step's OK or FAIL matches what the room did, and afterwards the test person has no open session or chat left.",
   "priority": "Medium",
-  "state": "Finished",
   "issues": [
     "porelo-message-matrix#MX99",
     "porelo-message-matrix#MX102",

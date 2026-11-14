@@ -26,7 +26,6 @@
   "gain": "The window follows the planner to a new address and starts it again where it is gone, and a planner the window started ends with the window, so the window never talks to a stale planner.",
   "test": "Update porelo-planner while the window is open, close and reopen the window: it talks to the new planner, whose version it shows; kill the planner: the window finds it again on its new port.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-frontend#F478",
     "porelo-frontend#F479",

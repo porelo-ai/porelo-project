@@ -24,7 +24,6 @@
   "gain": "When a project's or a repository's porelo.yml changes, an admin signs it anew from the checkouts they keep, and hosts follow the newly signed file; an unsigned change is never taken.",
   "test": "Change a repository's porelo.yml and push it unsigned: hosts keep the old one. Sign it anew as admin: the host's copy follows, and check-commits accepts Porelo's own trailers.",
   "priority": "Medium",
-  "state": "Finished",
   "issues": [
     "porelo#B477",
     "porelo#B488",

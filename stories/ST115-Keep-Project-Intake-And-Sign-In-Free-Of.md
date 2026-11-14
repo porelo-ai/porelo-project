@@ -28,7 +28,6 @@
   "gain": "Project intake and sign-in keep secrets out of sight, so invalid credential names are refused and known test credentials do not leak.",
   "test": "Load an invalid credential name; it is explicitly refused. Put a known test credential in the repository; start warns or stops under the project rule. Sign in and inspect container layers and temporary host directories; no plaintext remains there. Store a credential without expiry; the response and list say so.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo#B202",
     "porelo#B438",

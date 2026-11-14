@@ -30,7 +30,6 @@
   "gain": "A task started without a name gets the name and the task the person expects; a second start asks before making another task, and a container's name does not double the project's.",
   "test": "Start a task without a name twice in one repository: the first takes the fitting name, the second asks; the container is named after the repository alone and older tasks still work.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo#B466",
     "porelo#B469",

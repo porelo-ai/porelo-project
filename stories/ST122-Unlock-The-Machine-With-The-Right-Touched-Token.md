@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST122",
   "title": "Unlock the machine with the right touched token",
-  "state": "Idea",
   "gain": "A person can unlock a machine after a restart with the right touched token, and the wrong or missing token is refused.",
   "test": "Enroll a machine with the token and unlock after a restart. Try without the token and without touching it; both fail within a bounded wait with a clear reason. Only nonsecret derivation parameters remain stored.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

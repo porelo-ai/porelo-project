@@ -20,7 +20,6 @@
   "gain": "Porelo itself builds with the same workflows on the host's own forge as on GitHub, so work on the host is checked the same way as everywhere else.",
   "test": "porelo's workflows run green on Forgejo and on GitHub on one commit, its acceptance job skipped on Forgejo; porelo's snapshots are in the forge's registry.",
   "priority": "Highest",
-  "state": "Finished",
   "issues": [
     "porelo#B306"
   ],

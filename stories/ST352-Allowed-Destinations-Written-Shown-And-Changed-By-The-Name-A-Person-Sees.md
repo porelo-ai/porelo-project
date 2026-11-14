@@ -27,7 +27,6 @@
   "gain": "A person writes allowed addresses and sets in project.yml, sees refused lookups, what the machine's resolver can do and what still works offline, and changes a running task's egress by the name porelo task list shows.",
   "test": "Put an address and a set in project.yml: a refused lookup is shown; porelo doctor names the resolver's capability; the documents say per provider what offline still reaches; porelo shield egress --task with the name from the task list changes the running task's egress.",
   "priority": "Medium",
-  "state": "Analyzed",
   "issues": [
     "porelo#B10",
     "porelo#B34",

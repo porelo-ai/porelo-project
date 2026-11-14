@@ -25,7 +25,6 @@
   "gain": "A person on a measuring host whose root switched on test mode can start an uncertified task after a clear warning, and no other host accepts such a start.",
   "test": "As root, set the test switch through the role on a measuring host; porelo task start warns and asks, and starts only after a yes or --yes; with the switch off, or taken away at down, the same start is refused.",
   "priority": "Medium",
-  "state": "Finished",
   "issues": [
     "porelo#B717",
     "porelo-host#HO187"

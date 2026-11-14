@@ -21,7 +21,6 @@
   "gain": "On Windows the window starts the planner itself and opens a host's vault without help, so a person works from a Windows desktop as from Linux.",
   "test": "On a Windows desktop open the window: it starts the planner and shows the board, and a host's card opens that host's vault on its own.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-frontend#F476",
     "porelo-frontend#F512"

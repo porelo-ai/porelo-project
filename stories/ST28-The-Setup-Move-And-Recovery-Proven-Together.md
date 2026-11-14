@@ -30,7 +30,6 @@
   "gain": "The setup, move to the host and recovery work together: a person brings up the project, runs local builds, moves each agent and restores the room and usage records.",
   "test": "Bring up the project, run the local builds, move each agent and restore the room and usage after giving the host back. Compare the results with every setup and move criterion; a missing local-build or recovery prerequisite keeps the parent acceptance open.",
   "priority": "Highest",
-  "state": "Backlog",
   "issues": [
     "porelo-project#PJ120",
     "porelo-host#HO185"

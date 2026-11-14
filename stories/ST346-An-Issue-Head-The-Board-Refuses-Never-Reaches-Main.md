@@ -42,7 +42,6 @@
   "gain": "Every repository's checks and the prepush refuse an issue head the planner's board would refuse, naming the file and field.",
   "test": "An issue head the planner's board would refuse fails the repository's checks and the prepush, naming the file and the field.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-buildtools#BT81",
     "porelo#B672",

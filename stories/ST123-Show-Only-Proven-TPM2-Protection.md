@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST123",
   "title": "Show only proven TPM2 protection",
-  "state": "Idea",
   "gain": "A person sees TPM2 protection only when it is proven, so a slot that merely claims hardware protection is not accepted.",
   "test": "Set up and unlock a TPM2 slot. Offer a slot that only claims hardware protection; the proven slot is labeled correctly and the unsupported claim receives no more than USER_SCOPED.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

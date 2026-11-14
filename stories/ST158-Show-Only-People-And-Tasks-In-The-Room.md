@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST158",
   "title": "Show only people and tasks in the room",
-  "state": "Idea",
   "gain": "A person sees only people and tasks in the project room's member list, with no administrator or relay among them.",
   "test": "Admit the first task and person and read the member list; no administrator or relay is a member. Try inviting an unrelated person into the lobby; it is refused. Reuse an empty room under the chosen recovery rule.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

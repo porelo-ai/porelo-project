@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST188",
   "title": "Read messages and builds on ARM",
-  "state": "Idea",
   "gain": "A person on ARM can send filtered messages and read green and red builds, and invalid messages are refused.",
   "test": "Send a filtered message and read a green and a red build. An invalid message is refused and the red build includes its log. Check that the installed executables meet the ARM baseline.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

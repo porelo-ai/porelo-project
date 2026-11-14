@@ -23,7 +23,6 @@
   "gain": "The adapters repository and the project website can each be developed in their own task on the host and reach Review with a green build on the host's forge.",
   "test": "Each move issue reaches Review inside its task with Forgejo's build green.",
   "priority": "Highest",
-  "state": "Backlog",
   "issues": [
     "porelo-adapters#GH11",
     "porelo-ai.github.io#SI05",

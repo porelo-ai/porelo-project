@@ -21,7 +21,6 @@
   "gain": "The commit check gives no exemption, trailer or switch-off of the stage rule to whoever writes a commit, in the planner and in the build tools alike, so a commit cannot excuse itself from the rules.",
   "test": "Push a commit that names itself a bot, carries an exempting trailer or deletes a stage file: check-commits refuses it in both the planner's and the build tools' check.",
   "priority": "High",
-  "state": "Finished",
   "issues": [
     "porelo-buildtools#BT79",
     "porelo-planner#PL82"

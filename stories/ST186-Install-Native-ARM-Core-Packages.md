@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST186",
   "title": "Install native ARM core packages",
-  "state": "Idea",
   "gain": "A person can install native ARM core packages in a fresh ARM VM, see the right architecture and start a task.",
   "test": "Install a fresh ARM VM, read package architecture and --version and start a task. A missing or wrong-architecture package is refused without silently substituting emulation.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

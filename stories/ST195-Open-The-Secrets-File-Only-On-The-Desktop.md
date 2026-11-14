@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST195",
   "title": "Open the secrets file only on the desktop",
-  "state": "Idea",
   "gain": "A person opens the secrets file only on the desktop, and setup gets host secrets through standard input so they do not show on host disks or in arguments.",
   "test": "Run setup with the secrets file and complete its stop. Inspect host disks and process arguments: the file is opened only on the desktop and the host never receives the whole decrypted collection. Enter the TOTP personally under the chosen rule.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST172",
   "title": "Apply the same checks to the other agents",
-  "state": "Idea",
   "gain": "OMP, Codex and Antigravity get the same checks, so an allowed server package is pinned and an altered one is refused.",
   "test": "For OMP, Codex and Antigravity, start an allowed server package and then alter its contents. The allowed version works; a changed or unlisted version is refused.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

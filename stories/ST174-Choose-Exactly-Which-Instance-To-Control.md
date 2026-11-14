@@ -19,10 +19,10 @@
   "$schema": "story-2.json",
   "id": "ST174",
   "title": "Choose exactly which instance to control",
-  "state": "Idea",
   "gain": "A person can choose exactly which Porelo instance to control, and a wrong or unpermitted target is refused.",
   "test": "Configure two instances, start a task on one and perform an allowed setup step there. A wrong instance identifier and a forbidden administrative action are refused; the other instance remains untouched.",
   "priority": "Low",
+  "state": "Idea",
   "issues": [],
   "tested": null
 }

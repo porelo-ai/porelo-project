@@ -27,7 +27,6 @@
   "gain": "The small findings of the last code readings are cleared: a removal frees its name whatever fails before it, vault put says what uses an entry, an agent's default provider is one it knows and an unknown one is refused with its origin, porelo keep never leaves an older work record, and the documents name only options that exist.",
   "test": "Each of these cases behaves as said, gate pending shows what arrived, and the user documentation names no option that does not exist.",
   "priority": "Medium",
-  "state": "Backlog",
   "issues": [
     "porelo#B708",
     "porelo#B715",
