@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B761](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b761) (Backlog)
+- [porelo#B761](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b761) (Review)
 - [porelo#B762](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b762) (Backlog)
 
 ## Data
