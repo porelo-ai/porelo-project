@@ -6,11 +6,11 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 83 |
+| [Idea](#idea) | 81 |
 | [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 32 |
-| [Estimated](#estimated) | 32 |
-| [Backlog](#backlog) | 39 |
+| [Estimated](#estimated) | 31 |
+| [Backlog](#backlog) | 42 |
 | [Implementing](#implementing) | 4 |
 | [Review](#review) | 1 |
 | [Finished](#finished) | 136 |
@@ -20,8 +20,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st11"></a>[ST11](ST11-Porelo-Adapters-And-Porelo-Ai-Github-Io-Each.md) Move: porelo-adapters and porelo-ai.github.io each in its own task | ⏫ Highest | SI:2 · GH:1 · PJ:1 | The adapters repository and the project website can each be developed in their own task on the host and reach Review with a green build on the host's forge. |
-| <a id="st13"></a>[ST13](ST13-Porelo-And-Porelo-Host-Each-In-Its-Task.md) Move: porelo and porelo-host each in its task, with a way back | ⏫ Highest | HO:2 · B:1 · PJ:1 | Porelo and the host collection can each be built by an agent in its own task on the host, with a way back if the move needs undoing. |
 | <a id="st210"></a>[ST210](ST210-Porelo-Frontend.md) porelo-frontend | 🔼 High | F:41 | A person gets the frontend repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st22"></a>[ST22](ST22-Machines-Asked-For-By-Kind-Only.md) Machines asked for by kind only | 🟰 Medium | BT:2 · B:1 | Machines are requested only by kind, so a call naming a specific provider or server type is refused with a message naming the kind to use. |
 | <a id="st36"></a>[ST36](ST36-Start-Local-Organization-And-Added-Providers.md) Start local, organization and added providers | 🟰 Medium | P:3 · B:1 · F:1 | A person can use local, organization HTTPS and added providers such as xAI, Zhipu and Z.AI, with supported ones starting and unsupported ones refused clearly. |
@@ -140,7 +138,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Move: Every agent works in a Porelo task, moved one at a time | ⏫ Highest | HO:4 · MX:3 · PJ:1 | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
+| <a id="st11"></a>[ST11](ST11-Porelo-Adapters-And-Porelo-Ai-Github-Io-Each.md) Move: porelo-adapters and porelo-ai.github.io each in its own task | ⏫ Highest | SI:2 · GH:1 · PJ:1 | The adapters repository and the project website can each be developed in their own task on the host and reach Review with a green build on the host's forge. |
 | <a id="st60"></a>[ST60](ST60-A-Comment-With-A-Suggestion-Reaches-The-Agent.md) A comment with a suggestion reaches the agent | 🔼 High | B:4 · F:2 | A person can comment on a line with a suggestion in the review, and the task building that work receives it. |
 | <a id="st14"></a>[ST14](ST14-The-Coordinator-Reads-Everything-And-Changes-Only-Porelo.md) The coordinator reads everything and changes only porelo-project | 🟰 Medium | PJ:2 | The coordinator can read every repository of the project but can change only the project repository, and any change elsewhere is refused. |
 | <a id="st24"></a>[ST24](ST24-The-Tokens-Counted-Per-Task-The-Dependencies-Shared.md) The tokens counted per task, the dependencies shared | 🟰 Medium | B:2 · BT:1 · PJ:1 | A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again. |
@@ -177,7 +175,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st15"></a>[ST15](ST15-The-Website-Builds-In-Its-Task.md) Move: The website builds in its task | ⏫ Highest | SI:2 · PJ:1 | The project website can be fully checked inside its own task, and the check passes with the Debian image and repository changes. |
 | <a id="st29"></a>[ST29](ST29-A-Repository-Renamed-Without-Losing-Work.md) A repository renamed without losing work | 🟰 Medium | PJ:1 | A person can rename a repository's key in the project file without losing waiting work or tasks tied to it. |
 | <a id="st44"></a>[ST44](ST44-Questions-A-Plan-And-Taken-Up-Again.md) Questions, a plan, and taken up again | 🟰 Medium | PJ:1 | A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard. |
 | <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🟰 Medium | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
@@ -219,7 +216,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st7"></a>[ST7](ST7-Porelo-Buildtools-In-Its-Task.md) Move: porelo-buildtools in its task | ⏫ Highest | BT:1 · PJ:1 | The build tools can be developed inside their own task on the host and reach Review with a green build on the host's forge. |
 | <a id="st8"></a>[ST8](ST8-Porelo-Message-Matrix-In-Its-Task.md) Move: porelo-message-matrix in its task | ⏫ Highest | MX:1 · PJ:1 | The Matrix message transport can be developed inside its own task on the host and reach Review with a green build on the host's forge. |
 | <a id="st9"></a>[ST9](ST9-Porelo-Intellij-And-Porelo-Frontend-Each-In-Its.md) Move: porelo-intellij and porelo-frontend each in its own task | ⏫ Highest | F:2 · IJ:2 · PJ:1 | The IntelliJ plugin and the frontend can each be built in their own task on the host, with Gradle and Flutter builds running on the host's forge. |
+| <a id="st13"></a>[ST13](ST13-Porelo-And-Porelo-Host-Each-In-Its-Task.md) Move: porelo and porelo-host each in its task, with a way back | ⏫ Highest | HO:2 · B:1 · PJ:1 | Porelo and the host collection can each be built by an agent in its own task on the host, with a way back if the move needs undoing. |
+| <a id="st15"></a>[ST15](ST15-The-Website-Builds-In-Its-Task.md) Move: The website builds in its task | ⏫ Highest | SI:2 · PJ:1 | The project website can be fully checked inside its own task, and the check passes with the Debian image and repository changes. |
 | <a id="st28"></a>[ST28](ST28-The-Setup-Move-And-Recovery-Proven-Together.md) The setup, move and recovery proven together | ⏫ Highest | HO:1 · PJ:1 | The setup, move to the host and recovery work together: a person brings up the project, runs local builds, moves each agent and restores the room and usage records. |
+| <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Move: Every agent works in a Porelo task, moved one at a time | ⏫ Highest | HO:4 · MX:3 · PJ:1 | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
 | <a id="st104"></a>[ST104](ST104-Keep-Accounts-And-Projects-Apart.md) Keep accounts and projects apart | 🔼 High | B:7 · HO:1 | Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's. |
 | <a id="st347"></a>[ST347](ST347-Every-Story-Played-Through-Once-As-A-User-Would.md) Every story played through once, as a user would | 🔼 High | HO:6 · B:5 · F:2 · PL:2 · CC:1 | Each High story's test runs once, automated, on a test VM the way a person would play it, at the command line or in the window, so a story's end is shown working before the person tries it. |
 | <a id="st359"></a>[ST359](ST359-Credentials-And-Task-Boundaries-Hardened-After-This-Run.md) Credentials and task boundaries hardened after this run | 🔼 High | B:5 | Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods. |
