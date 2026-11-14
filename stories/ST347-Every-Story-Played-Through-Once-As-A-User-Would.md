@@ -16,14 +16,14 @@
 - [porelo-host#HO184](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho184) (Review)
 - [porelo-planner#PL104](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl104) (Review)
 - [porelo-planner#PL106](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl106) (Review)
-- [porelo-frontend#F522](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f522) (Backlog)
+- [porelo-frontend#F522](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f522) (Review)
 - [porelo-frontend#F523](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f523) (Backlog)
 - [porelo-claude-code#CC66](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc66) (Review)
-- [porelo#B681](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b681) (Implementing)
-- [porelo#B682](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b682) (Implementing)
-- [porelo#B683](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b683) (Implementing)
+- [porelo#B681](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b681) (Review)
+- [porelo#B682](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b682) (Review)
+- [porelo#B683](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b683) (Review)
 - [porelo#B684](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b684) (Review)
-- [porelo#B685](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b685) (Implementing)
+- [porelo#B685](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b685) (Review)
 
 ## Data
 

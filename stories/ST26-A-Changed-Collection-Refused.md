@@ -1,6 +1,6 @@
 # ST26 — A changed collection refused
 
-**Priority:** ⏫ Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-14)
 
 **What a user gains.** A host collection that has been changed after publishing is refused, so a person installs only what was actually released.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F137](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f137) (Review)
+- [porelo-frontend#F137](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f137) (Finished)
 
 ## Data
 
@@ -20,9 +20,10 @@
   "gain": "A host collection that has been changed after publishing is refused, so a person installs only what was actually released.",
   "test": "Install the host collection through the interface, then offer a changed collection tarball with the original digest; installation is refused before its contents run.",
   "priority": "Highest",
+  "state": "Finished",
   "issues": [
     "porelo-frontend#F137"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```

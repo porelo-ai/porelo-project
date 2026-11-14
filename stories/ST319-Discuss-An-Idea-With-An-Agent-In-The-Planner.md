@@ -1,6 +1,6 @@
 # ST319 — Discuss an idea with an agent in the planner
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Finished (2026-11-14)
 
 **What a user gains.** "Discuss an idea" in the planner starts, through the usual Start dialog, a task that reads all of the project's repositories as one. The person discusses the idea with its agent, who writes it to a file. When the task ends, the path returns to the planner, which makes a story in Idea with sub-issues per repository; the task's staged changes are dropped, and the next stage's agents start on them.
 
@@ -10,25 +10,25 @@
 
 - [porelo-project#PJ58](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj58) (Rejected)
 - [porelo-planner#PL57](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl57) (Finished)
-- [porelo-planner#PL58](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl58) (Review)
-- [porelo-frontend#F487](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f487) (Review)
-- [porelo-frontend#F488](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f488) (Review)
+- [porelo-planner#PL58](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl58) (Finished)
+- [porelo-frontend#F487](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f487) (Finished)
+- [porelo-frontend#F488](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f488) (Finished)
 - [porelo-planner#PL46](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl46) (Finished)
 - [porelo-planner#PL41](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl41) (Finished)
-- [porelo-planner#PL67](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl67) (Review)
-- [porelo#B619](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b619) (Review)
-- [porelo#B631](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b631) (Review)
-- [porelo#B634](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b634) (Review)
-- [porelo#B639](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b639) (Review)
-- [porelo#B668](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b668) (Review)
-- [porelo-frontend#F503](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f503) (Backlog)
-- [porelo-planner#PL96](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl96) (Review)
-- [porelo-frontend#F532](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f532) (Review)
-- [porelo#B709](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b709) (Review)
-- [porelo-frontend#F535](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f535) (Review)
-- [porelo-frontend#F537](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f537) (Backlog)
-- [porelo#B725](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b725) (Review)
-- [porelo#B737](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b737) (Review)
+- [porelo-planner#PL67](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl67) (Finished)
+- [porelo#B619](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b619) (Finished)
+- [porelo#B631](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b631) (Finished)
+- [porelo#B634](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b634) (Finished)
+- [porelo#B639](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b639) (Finished)
+- [porelo#B668](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b668) (Finished)
+- [porelo-frontend#F503](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f503) (Finished)
+- [porelo-planner#PL96](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl96) (Finished)
+- [porelo-frontend#F532](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f532) (Finished)
+- [porelo#B709](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b709) (Finished)
+- [porelo-frontend#F535](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f535) (Finished)
+- [porelo-frontend#F537](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f537) (Finished)
+- [porelo#B725](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b725) (Finished)
+- [porelo#B737](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b737) (Finished)
 
 ## Data
 
@@ -40,7 +40,7 @@
   "gain": "\"Discuss an idea\" in the planner starts, through the usual Start dialog, a task that reads all of the project's repositories as one. The person discusses the idea with its agent, who writes it to a file. When the task ends, the path returns to the planner, which makes a story in Idea with sub-issues per repository; the task's staged changes are dropped, and the next stage's agents start on them.",
   "test": "Click Discuss an idea, pick an agent and start: the task can read every repository of the project. Discuss an idea and let the agent write it. End the task: the planner shows a new story in Idea, with its gain, test and one issue per repository named, and the task's changes reach no repository. Move the story on: each issue's agent starts on its issue.",
   "priority": "High",
-  "state": "Backlog",
+  "state": "Finished",
   "issues": [
     "porelo-project#PJ58",
     "porelo-planner#PL57",
@@ -64,6 +64,6 @@
     "porelo#B725",
     "porelo#B737"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```

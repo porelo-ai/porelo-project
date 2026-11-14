@@ -113,12 +113,12 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
 | <a id="pj27"></a>[PJ27](PJ27-A-Contributor-Knows-The-Rules.md) | L | - | One guide for contributors in `porelo-project`'s `doc/`, linked from every repository's README and `CONTRIBUTING.md`: how the work is organised, how a change is made, what it must satisfy. |
-| <a id="pj105"></a>[PJ105](PJ105-An-Issue-Carries-Its-Data-In-A-JSON-Head.md) | M | - | Every issue carries its data in a JSON head checked by one shared schema, each index is generated from the heads, and tools read the heads instead of Markdown tables. |
 
 ## Finished
 
 | # | Title | What was built |
 |---|---|---|
+| <a id="pj105"></a>[PJ105](README.md#pj105) | An issue carries its data in a JSON head | Every issue carries its data in a JSON head checked by `issue-1.json`; each repository's index is generated from the heads by `porelo-release issues index` and checked by `issues check`. |
 | <a id="pj51"></a>[PJ51](README.md#pj51) | The person's secrets kept once in a file they can open | The host's secrets kept once in secrets.kdbx with one master password given on stdin (HO37, F198, F199, tested 2026-10-28); concurrent changes and the wizard's question went to [PJ107](README.md#pj107). |
 | <a id="pj50"></a>[PJ50](README.md#pj50) | A host mounts the person's drives | Setup files uploaded over ssh and the person's Tresorit drive mounted in their own account (HO36, F197, tested 2026-10-28); the drive areas per host and OneDrive went to [PJ106](README.md#pj106). |
 | <a id="pj40"></a>[PJ40](README.md#pj40) | A project comes up on a server at one command | A rented host goes up and down at one command, built as F131-F141 and HO02-HO14 and run at every move; the project's store lives on in ST23 with HO07. |

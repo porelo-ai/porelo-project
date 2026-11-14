@@ -1,6 +1,6 @@
 # ST318 — Logging in the frontend and the planner
 
-**Priority:** 🔼 High · **State:** Review
+**Priority:** 🔼 High · **State:** Finished (2026-11-14)
 
 **What a user gains.** The window and the planner each keep a log with levels; a person sets the level in the window, INFO by default, raises or lowers it there, and opens either log file on the local machine from a link in the window. The planner's backend log, written through its Java logging, lies beside the window's log, so a fault is read in one place and Needs you keeps only what asks for an action.
 
@@ -8,11 +8,11 @@
 
 **Issues:**
 
-- [porelo-frontend#F483](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f483) (Review)
-- [porelo-frontend#F485](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f485) (Review)
-- [porelo-frontend#F486](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f486) (Review)
-- [porelo-planner#PL54](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl54) (Review)
-- [porelo-planner#PL55](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl55) (Review)
+- [porelo-frontend#F483](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f483) (Finished)
+- [porelo-frontend#F485](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f485) (Finished)
+- [porelo-frontend#F486](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f486) (Finished)
+- [porelo-planner#PL54](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl54) (Finished)
+- [porelo-planner#PL55](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl55) (Finished)
 
 ## Data
 
@@ -24,7 +24,7 @@
   "gain": "The window and the planner each keep a log with levels; a person sets the level in the window, INFO by default, raises or lowers it there, and opens either log file on the local machine from a link in the window. The planner's backend log, written through its Java logging, lies beside the window's log, so a fault is read in one place and Needs you keeps only what asks for an action.",
   "test": "Start the window and the planner: both log files lie side by side, at INFO. Set DEBUG in the window: both logs gain debug lines without a restart; set WARN: info lines stop. Click the log link: the file opens in the local viewer. A planner message that only informs shows in the log, not in Needs you.",
   "priority": "High",
-  "state": "Review",
+  "state": "Finished",
   "issues": [
     "porelo-frontend#F483",
     "porelo-frontend#F485",
@@ -32,6 +32,6 @@
     "porelo-planner#PL54",
     "porelo-planner#PL55"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```

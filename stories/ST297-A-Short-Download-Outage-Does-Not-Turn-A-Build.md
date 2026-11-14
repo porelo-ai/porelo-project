@@ -1,6 +1,6 @@
 # ST297 — A short download outage does not turn a build red
 
-**Priority:** 🟰 Medium · **State:** Review
+**Priority:** 🟰 Medium · **State:** Finished (2026-11-14)
 
 **What a user gains.** A build that fetches a pinned JDK or tool tries again by one shared rule with a deadline, so a short outage of a download site does not turn a build red.
 
@@ -8,16 +8,16 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT43](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt43) (Review)
-- [porelo-buildtools#BT49](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt49) (Review)
-- [porelo-buildtools#BT51](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt51) (Review)
-- [porelo-buildtools#BT52](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt52) (Review)
-- [porelo-buildtools#BT53](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt53) (Review)
-- [porelo-host#HO150](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho150) (Review)
-- [porelo-host#HO151](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho151) (Review)
-- [porelo-pi#PI49](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi49) (Review)
-- [porelo-host#HO171](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho171) (Review)
-- [porelo#B641](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b641) (Review)
+- [porelo-buildtools#BT43](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt43) (Finished)
+- [porelo-buildtools#BT49](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt49) (Finished)
+- [porelo-buildtools#BT51](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt51) (Finished)
+- [porelo-buildtools#BT52](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt52) (Finished)
+- [porelo-buildtools#BT53](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt53) (Finished)
+- [porelo-host#HO150](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho150) (Finished)
+- [porelo-host#HO151](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho151) (Finished)
+- [porelo-pi#PI49](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi49) (Finished)
+- [porelo-host#HO171](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho171) (Finished)
+- [porelo#B641](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b641) (Finished)
 
 ## Data
 
@@ -29,6 +29,7 @@
   "gain": "A build that fetches a pinned JDK or tool tries again by one shared rule with a deadline, so a short outage of a download site does not turn a build red.",
   "test": "Make a pinned download fail twice and then succeed: the build stays green and says it tried again. Make it fail past the deadline: the build fails and names the download.",
   "priority": "Medium",
+  "state": "Finished",
   "issues": [
     "porelo-buildtools#BT43",
     "porelo-buildtools#BT49",
@@ -41,6 +42,6 @@
     "porelo-host#HO171",
     "porelo#B641"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```

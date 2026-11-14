@@ -1,6 +1,6 @@
 # ST359 — Credentials and task boundaries hardened after this run
 
-**Priority:** 🔼 High · **State:** Idea
+**Priority:** 🔼 High · **State:** Backlog
 
 **What a user gains.** Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods.
 
@@ -8,11 +8,11 @@
 
 **Issues:**
 
-- [porelo#B249](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b249) (Idea)
-- [porelo#B140](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b140) (Estimated)
-- [porelo#B178](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b178) (Analyzed)
-- [porelo#B252](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b252) (Idea)
-- [porelo#B609](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b609) (Accepted)
+- [porelo#B249](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b249) (Backlog)
+- [porelo#B140](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b140) (Backlog)
+- [porelo#B178](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b178) (Backlog)
+- [porelo#B252](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b252) (Backlog)
+- [porelo#B609](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b609) (Backlog)
 
 ## Notes
 

@@ -1,6 +1,6 @@
 # ST205 — porelo-buildtools
 
-**Priority:** 🔽 Low · **State:** Review
+**Priority:** 🔽 Low · **State:** Finished (2026-11-14)
 
 **What a user gains.** A person gets the build tools repository as a named part of Porelo that is tracked as its own piece of work.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-buildtools#BT23](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt23) (Review)
+- [porelo-buildtools#BT23](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt23) (Finished)
 
 ## Data
 
@@ -20,9 +20,10 @@
   "gain": "A person gets the build tools repository as a named part of Porelo that is tracked as its own piece of work.",
   "test": "Not planned for a test yet.",
   "priority": "Low",
+  "state": "Finished",
   "issues": [
     "porelo-buildtools#BT23"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```

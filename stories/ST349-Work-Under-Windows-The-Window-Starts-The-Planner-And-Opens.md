@@ -1,6 +1,6 @@
 # ST349 — Work under Windows: the window starts the planner and opens a host's vault
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Finished (2026-11-14)
 
 **What a user gains.** On Windows the window starts the planner itself and opens a host's vault without help, so a person works from a Windows desktop as from Linux.
 
@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-frontend#F476](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f476) (Review)
-- [porelo-frontend#F512](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f512) (Backlog)
+- [porelo-frontend#F476](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f476) (Finished)
+- [porelo-frontend#F512](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f512) (Finished)
 
 ## Data
 
@@ -21,11 +21,11 @@
   "gain": "On Windows the window starts the planner itself and opens a host's vault without help, so a person works from a Windows desktop as from Linux.",
   "test": "On a Windows desktop open the window: it starts the planner and shows the board, and a host's card opens that host's vault on its own.",
   "priority": "High",
-  "state": "Backlog",
+  "state": "Finished",
   "issues": [
     "porelo-frontend#F476",
     "porelo-frontend#F512"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```

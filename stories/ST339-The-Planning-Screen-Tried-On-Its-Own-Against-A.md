@@ -1,6 +1,6 @@
 # ST339 — The planning screen tried on its own against a mock
 
-**Priority:** 🔼 High · **State:** Review
+**Priority:** 🔼 High · **State:** Finished (2026-11-14)
 
 **What a user gains.** A small app run from the source embeds only the planning screen against a mock, so the screen can be tried and shown quickly without the window, a planner or a forge.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-planner#PL35](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl35) (Review)
+- [porelo-planner#PL35](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl35) (Finished)
 
 ## Data
 
@@ -20,10 +20,10 @@
   "gain": "A small app run from the source embeds only the planning screen against a mock, so the screen can be tried and shown quickly without the window, a planner or a forge.",
   "test": "Run the test app from the source: the planning screen shows a mock board, takes moves and shows every state the window can hand it.",
   "priority": "High",
-  "state": "Review",
+  "state": "Finished",
   "issues": [
     "porelo-planner#PL35"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```

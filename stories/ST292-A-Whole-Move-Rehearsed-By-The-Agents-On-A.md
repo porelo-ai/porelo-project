@@ -10,14 +10,14 @@
 
 - [porelo#B553](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b553) (Finished)
 - [porelo#B554](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b554) (Finished)
-- [porelo-frontend#F444](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f444) (Review)
-- [porelo-frontend#F445](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f445) (Review)
+- [porelo-frontend#F444](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f444) (Finished)
+- [porelo-frontend#F445](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f445) (Finished)
 - [porelo-host#HO158](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho158) (Finished)
 - [porelo-message-matrix#MX89](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx89) (Finished)
 - [porelo-message-matrix#MX90](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx90) (Finished)
 - [porelo-message-matrix#MX91](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx91) (Finished)
 - [porelo#B556](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b556) (Finished)
-- [porelo-frontend#F463](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f463) (Review)
+- [porelo-frontend#F463](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f463) (Finished)
 
 ## Data
 

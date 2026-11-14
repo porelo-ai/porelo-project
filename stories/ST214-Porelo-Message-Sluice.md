@@ -9,6 +9,7 @@
 **Issues:**
 
 - [porelo-message-sluice#SL39](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl39) (Idea)
+- [porelo-message-sluice#SL56](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl56) (Backlog)
 
 ## Data
 
@@ -21,7 +22,8 @@
   "test": "Not planned for a test yet.",
   "priority": "Low",
   "issues": [
-    "porelo-message-sluice#SL39"
+    "porelo-message-sluice#SL39",
+    "porelo-message-sluice#SL56"
   ],
   "tested": null
 }

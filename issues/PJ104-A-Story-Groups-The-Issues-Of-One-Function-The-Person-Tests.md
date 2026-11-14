@@ -49,8 +49,7 @@ on, and that the person can test on its own.
   date; no plan keeps its sprints.
 - **A story's number names no release** (`ST1`, `ST2`, …).
 - **A story's data is a JSON head in its own file**, checked by a JSON schema, and `stories/README.md` is generated
-  from the heads; the prose below the head stays Markdown. Issues follow the same form afterwards
-  ([PJ105](README.md#pj105)).
+  from the heads; the prose below the head stays Markdown. Issues follow the same form afterwards.
 
 ## The shape proposed
 

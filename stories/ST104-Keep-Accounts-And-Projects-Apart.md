@@ -14,7 +14,7 @@
 - [porelo-host#HO188](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho188) (Review)
 - [porelo#B735](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b735) (Review)
 - [porelo#B741](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b741) (Backlog)
-- [porelo#B742](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b742) (Backlog)
+- [porelo#B742](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b742) (Review)
 - [porelo#B743](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b743) (Implementing)
 
 ## Notes

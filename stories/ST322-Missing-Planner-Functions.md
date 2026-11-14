@@ -1,6 +1,6 @@
 # ST322 — Missing planner functions
 
-**Priority:** 🔼 High · **State:** Review
+**Priority:** 🔼 High · **State:** Finished (2026-11-14)
 
 **What a user gains.** The planning board does what a person reaches for: the search finds an issue and shows its story, a story's priority is changed on the board, and a disabled action names the run that holds it and leads there.
 
@@ -8,11 +8,11 @@
 
 **Issues:**
 
-- [porelo-planner#PL72](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl72) (Review)
-- [porelo-planner#PL73](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl73) (Review)
-- [porelo-planner#PL74](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl74) (Review)
-- [porelo-planner#PL50](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl50) (Review)
-- [porelo-frontend#F490](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f490) (Review)
+- [porelo-planner#PL72](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl72) (Finished)
+- [porelo-planner#PL73](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl73) (Finished)
+- [porelo-planner#PL74](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl74) (Finished)
+- [porelo-planner#PL50](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl50) (Finished)
+- [porelo-frontend#F490](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f490) (Finished)
 
 ## Data
 
@@ -24,7 +24,7 @@
   "gain": "The planning board does what a person reaches for: the search finds an issue and shows its story, a story's priority is changed on the board, and a disabled action names the run that holds it and leads there.",
   "test": "Search for an issue's number: its story shows with the issue marked, scrolled into view. Change a story's priority on its page and from its card: the board re-sorts and the change is saved. Open a story's menu while a run needs attention: the disabled Start work names that run and opens it.",
   "priority": "High",
-  "state": "Review",
+  "state": "Finished",
   "issues": [
     "porelo-planner#PL72",
     "porelo-planner#PL73",
@@ -32,6 +32,6 @@
     "porelo-planner#PL50",
     "porelo-frontend#F490"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```

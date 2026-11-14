@@ -11,6 +11,8 @@
 - [porelo-intellij#IJ19](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij19) (Idea)
 - [porelo-intellij#IJ20](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij20) (Idea)
 - [porelo-intellij#IJ22](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij22) (Idea)
+- [porelo-intellij#IJ28](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij28) (Backlog)
+- [porelo-intellij#IJ30](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij30) (Backlog)
 
 ## Data
 
@@ -25,7 +27,9 @@
   "issues": [
     "porelo-intellij#IJ19",
     "porelo-intellij#IJ20",
-    "porelo-intellij#IJ22"
+    "porelo-intellij#IJ22",
+    "porelo-intellij#IJ28",
+    "porelo-intellij#IJ30"
   ],
   "tested": null
 }

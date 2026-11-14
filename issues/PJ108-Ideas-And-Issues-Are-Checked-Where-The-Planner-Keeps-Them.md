@@ -128,7 +128,7 @@ repositories' checks and `AGENTS.md`; and what it means for the work in flight. 
 - [BT64](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt64) and [BT65](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt65) (the public readers): **kept**; the planner reads with them.
 - [PL03](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl03) (the store read from Git): **kept**, with one change: a file that breaks its schema is listed as a fault on
   the board instead of refusing its whole repository.
-- [PJ105](README.md#pj105) (an issue's JSON head): **kept**; the head is what the planner checks. Its acceptance
+- An issue's JSON head: **kept**; the head is what the planner checks. Its acceptance
   "the document checks refuse a hand-edited index" becomes the planner's and `issues check`'s.
 - [PJ103](README.md#pj103) and [B507](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b507): **changed in words only**: a task is started with its work as text, not with an
   issue and a phase; [B507](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b507) itself names no issue.

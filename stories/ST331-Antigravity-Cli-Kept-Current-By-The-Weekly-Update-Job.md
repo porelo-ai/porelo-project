@@ -1,6 +1,6 @@
 # ST331 — Antigravity CLI kept current by the weekly update job
 
-**Priority:** 🔼 High · **State:** Review
+**Priority:** 🔼 High · **State:** Finished (2026-11-14)
 
 **What a user gains.** The weekly update job follows Antigravity CLI as porelo-claude-code's follows Claude Code: it finds a new release, pins it, runs the unit suite and both acceptance legs and proposes the change, so the agent stays current without hand work.
 
@@ -20,10 +20,10 @@
   "gain": "The weekly update job follows Antigravity CLI as porelo-claude-code's follows Claude Code: it finds a new release, pins it, runs the unit suite and both acceptance legs and proposes the change, so the agent stays current without hand work.",
   "test": "After a new Antigravity CLI release, the next weekly job proposes a change pinning it, with the suite and both legs green.",
   "priority": "High",
-  "state": "Review",
+  "state": "Finished",
   "issues": [
     "porelo-agy#AG19"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```

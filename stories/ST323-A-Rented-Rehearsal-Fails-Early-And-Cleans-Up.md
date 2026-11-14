@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-host#HO174](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho174) (Review)
+- [porelo-host#HO174](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho174) (Finished)
 
 ## Data
 

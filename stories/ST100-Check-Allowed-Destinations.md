@@ -1,6 +1,6 @@
 # ST100 — Check allowed destinations
 
-**Priority:** 🔼 High · **State:** Review
+**Priority:** 🔼 High · **State:** Finished (2026-11-14)
 
 **What a user gains.** A person sees whether the machine can check allowed destinations, and a task reaches only the addresses, domains and sets its project allows.
 
@@ -8,9 +8,9 @@
 
 **Issues:**
 
-- [porelo#B237](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b237) (Review)
-- [porelo#B502](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b502) (Review)
-- [porelo#B706](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b706) (Review)
+- [porelo#B237](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b237) (Finished)
+- [porelo#B502](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b502) (Finished)
+- [porelo#B706](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b706) (Finished)
 
 ## Data
 
@@ -22,11 +22,12 @@
   "gain": "A person sees whether the machine can check allowed destinations, and a task reaches only the addresses, domains and sets its project allows.",
   "test": "Read resolver capability in doctor. Start a project with addresses, domains and sets. Reach an allowed destination; an unallowed one fails and is shown as refused. Allow a CNAME while the task runs; it becomes reachable. An incomplete set must not appear complete.",
   "priority": "High",
+  "state": "Finished",
   "issues": [
     "porelo#B237",
     "porelo#B502",
     "porelo#B706"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```

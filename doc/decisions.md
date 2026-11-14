@@ -14,6 +14,7 @@ it stays and what would change the answer.
 | The project file alone needs the project admin's signature | a follow checks every commit that changes the project file, not the top of `main`; developers change the rest of the project's repository on their own; each repository says whether a merge needs a second person's review; an agent never merges | [entry](#the-project-file-alone-needs-the-project-admins-signature) |
 | A machine belongs to one organization, and a project to one host | Porelo's word for who manages people, projects and hosts is "organization"; a machine has one, set at setup; a project is on one host at a time, with every member | [entry](#a-machine-belongs-to-one-organization-and-a-project-to-one-host) |
 | A repository of its own stays in Default and says what it needs | a checkout with no project of an organization goes into `default`, and no start writes a project file for it; the repository's `porelo.yml` has the project file's form, less what defines a project, and adds to the project file's defaults: mappings merge, lists add, a value the repository sets wins; `null` removes a key, `"!entry"` removes an inherited list entry and `"!*"` all of them; in `default` the person allows it once on this machine; in a project of an organization it is signed by the project admin or a developer with access to the repository | [entry](#a-repository-of-its-own-stays-in-default-and-says-what-it-needs) |
+| An issue's and a story's data stand in a JSON head | one JSON object checked by a shared schema at the top of each issue or story file, the prose below it Markdown by hand; every index is generated from the heads and never edited by hand | [entry](#an-issues-and-a-storys-data-stand-in-a-json-head) |
 
 ## A library's license follows how it is used
 
@@ -124,3 +125,12 @@ repository, and a follow checks every commit that changes it. **Why:** nearly ev
 project of its own for each repository scatters the person's work and lists one project per checkout. An allowance or
 a signature on what the repository sets keeps the rule that nobody widens a task's reach by a commit alone. **What
 would change the answer:** a setting that cannot be judged where it is allowed or signed.
+
+## An issue's and a story's data stand in a JSON head
+
+Each issue and each story keeps its data - number, title, state, size, priority, what blocks it, the one line its index
+shows - in one JSON object at the top of its own file, checked by a schema shared by every repository; the prose below
+it stays Markdown, written by hand. Every `issues/README.md` and `stories/README.md` is generated from the heads, and
+the document checks refuse an index edited by hand. **Why:** the data stood twice, in the file and in an index row,
+kept in step by hand, and every tool parsed Markdown tables; one checked place per issue serves every tool alike and
+leaves nothing to drift. **What would change the answer:** a tool that cannot read a JSON head.

@@ -1,6 +1,6 @@
 # ST51 — A KeePassXC key that is usable
 
-**Priority:** 🔼 High · **State:** Review
+**Priority:** 🔼 High · **State:** Finished (2026-11-14)
 
 **What a user gains.** A person using KeePassXC is asked for the master password once when making a key, and a retry works after the key is reported as not served.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B385](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b385) (Review)
+- [porelo#B385](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b385) (Finished)
 
 ## Data
 
@@ -20,9 +20,10 @@
   "gain": "A person using KeePassXC is asked for the master password once when making a key, and a retry works after the key is reported as not served.",
   "test": "A new key made in KeePassXC asks for the master password once; a retry after key-not-served takes the key already made; no empty or orphaned entry is left; without a terminal the refusal says so.",
   "priority": "High",
+  "state": "Finished",
   "issues": [
     "porelo#B385"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```

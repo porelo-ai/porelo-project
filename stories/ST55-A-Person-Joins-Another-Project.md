@@ -1,6 +1,6 @@
 # ST55 — A person joins another project
 
-**Priority:** 🔼 High · **State:** Review
+**Priority:** 🔼 High · **State:** Finished (2026-11-14)
 
 **What a user gains.** A person can join another project on the same machine.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-message-matrix#MX52](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx52) (Review)
+- [porelo-message-matrix#MX52](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx52) (Finished)
 
 ## Data
 
@@ -20,9 +20,10 @@
   "gain": "A person can join another project on the same machine.",
   "test": "A person joins another project on the machine.",
   "priority": "High",
+  "state": "Finished",
   "issues": [
     "porelo-message-matrix#MX52"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```

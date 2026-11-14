@@ -1,6 +1,6 @@
 # ST294 — Plan the stories on a board in the window
 
-**Priority:** 🔼 High · **State:** Review
+**Priority:** 🔼 High · **State:** Finished (2026-11-14)
 
 **What a user gains.** The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API.
 
@@ -19,7 +19,7 @@
 - [porelo-adapters#GH20](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh20) (Rejected)
 - [porelo-adapters#GH21](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh21) (Rejected)
 - [porelo-adapters#GH22](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh22) (Rejected)
-- [porelo-frontend#F451](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f451) (Review)
+- [porelo-frontend#F451](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f451) (Finished)
 
 ## Data
 
@@ -31,6 +31,7 @@
   "gain": "The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API.",
   "test": "Open Planning, find each story in its state's column sorted by priority, open a story and one of its issues, drag a story to another state and save; the change is in porelo-project's checkout. Rename a state in the configuration and the board shows it.",
   "priority": "High",
+  "state": "Finished",
   "issues": [
     "porelo#B560",
     "porelo#B561",
@@ -45,6 +46,6 @@
     "porelo-adapters#GH22",
     "porelo-frontend#F451"
   ],
-  "tested": null
+  "tested": "2026-11-14"
 }
 ```
