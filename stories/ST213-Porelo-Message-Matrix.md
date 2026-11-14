@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-message-matrix#MX76](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx76) (Review)
+- [porelo-message-matrix#MX76](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx76) (Rejected)
 - [porelo-message-matrix#MX60](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx60) (Backlog)
 - [porelo-message-matrix#MX63](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx63) (Idea)
 - [porelo-message-matrix#MX64](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx64) (Idea)

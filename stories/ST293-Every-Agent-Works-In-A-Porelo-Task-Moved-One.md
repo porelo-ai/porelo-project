@@ -8,12 +8,12 @@
 
 **Issues:**
 
-- [porelo-message-matrix#MX82](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx82) (Rejected)
+- [porelo-message-matrix#MX109](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx109) (Backlog)
+- [porelo-host#HO189](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho189) (Backlog)
 - [porelo-host#HO132](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho132) (Review)
 - [porelo-host#HO138](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho138) (Review)
 - [porelo-host#HO141](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho141) (Review)
 - [porelo-host#HO148](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho148) (Review)
-- [porelo-message-matrix#MX81](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx81) (Rejected)
 - [porelo-message-matrix#MX84](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx84) (Review)
 - [porelo-project#PJ119](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj119) (Backlog)
 
@@ -29,12 +29,12 @@
   "priority": "Highest",
   "state": "Backlog",
   "issues": [
-    "porelo-message-matrix#MX82",
+    "porelo-message-matrix#MX109",
+    "porelo-host#HO189",
     "porelo-host#HO132",
     "porelo-host#HO138",
     "porelo-host#HO141",
     "porelo-host#HO148",
-    "porelo-message-matrix#MX81",
     "porelo-message-matrix#MX84",
     "porelo-project#PJ119"
   ],
