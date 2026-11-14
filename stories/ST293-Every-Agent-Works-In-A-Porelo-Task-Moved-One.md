@@ -10,6 +10,7 @@
 
 - [porelo-message-matrix#MX109](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx109) (Backlog)
 - [porelo-host#HO189](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho189) (Backlog)
+- [porelo#B763](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b763) (Backlog)
 - [porelo-host#HO132](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho132) (Review)
 - [porelo-host#HO138](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho138) (Review)
 - [porelo-host#HO141](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho141) (Review)
@@ -31,6 +32,7 @@
   "issues": [
     "porelo-message-matrix#MX109",
     "porelo-host#HO189",
+    "porelo#B763",
     "porelo-host#HO132",
     "porelo-host#HO138",
     "porelo-host#HO141",
