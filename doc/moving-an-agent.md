@@ -29,18 +29,17 @@ rentals come pauses without a machine, in which the gathered findings are fixed.
 6. `porelo-intellij` and `porelo-frontend`.
 7. `porelo-adapters` and `porelo-ai.github.io`.
 8. `porelo` and `porelo-host`, last of the builders.
-9. The coordinator, once tasks that review work exist; until then it reads the moved agents' work from outside, and
-   stays on the development machine after the real move.
+9. The coordinator, once tasks that review work exist; until then it stays on the development machine with no line
+   to the moved agents, and the operator speaks with them in the host's room.
 
 `porelo-parent` has no agent and does not move: a change to it is a task on that repository, started when one is
 needed. After the real move, an agent's session on the development machine and its VM accounts stop.
 
 ### Before the first trial
 
-- **The room is reachable from the host**: the development machine opens `ssh -R` to the host, to one socket only, the
-  card's return path, and the host's tasks reach the room through it. The homeserver stays on the
-  development machine, since the host is rented for a few hours at a time and work here goes on without it. This path
-  is not built yet.
+- **Nothing runs between the development machine and the host's tasks**: no tunnel, no bridge and no shared room. A
+  moved agent talks only in the project's room on the host's homeserver, with the operator; the agents on the
+  development machine keep their room there. Work crosses only through the central forge, by the gathered push.
 - **Snapshots come from the central source; the host's registry holds only what was built there and has not yet gone
   through the central forge**. So
   a freshly rented host builds at once, and `porelo-parent` and `porelo-buildtools` build on its forge only when changed
@@ -109,8 +108,8 @@ Read-only, on the host. Each line says what it found, and each fails by name bef
   machine from the host's pool are switched off. porelo's Build moves to the forge before the adapters, so they build
   against its snapshots there, and its acceptance job is off on the forge the same way. Each adapter switches them on again in its own issue of release 0.7,
   planned once the pool and machines asked for by kind are done.
-- **The reading before a hand-over is done from outside**: the coordinator has the pull request's diff read against
-  the repository's skills by a sub-agent on the development machine and posts the findings in the room.
+- **The reading before a hand-over is done on the host**: a reader started apart from the task, by the forge or by
+  hand, reads the pull request's diff against the repository's skills and posts its findings in the host's room.
 - **A fix after a reading amends the task's commit** and is pushed with `--force` to the task's own unmerged branch,
   which the gate lets through; the work stays one commit. `main` is never pushed with force.
 - **A revoked sign-in** is renewed with `porelo vault login <agent> --force` and a restart of the task, which keeps
@@ -126,7 +125,7 @@ Read-only, on the host. Each line says what it found, and each fails by name bef
 - **its commit attribution**, `Assisted-by: <tool>, <model>` (the harness, such as `Claude Code`, never the agent's
   name), and no other trailer of its own;
 - **which forge its upstream is**: the host's forge, and the central forge only through the gathered push;
-- **the room in place of the channel**: it reads and writes the project's room, not the channel file;
+- **the room in place of the channel**: it reads and writes the project's room on the host, not the channel file;
 - **the operator's language and time zone**, as the development machine's local rules state them;
 - **every local rule Porelo does not yet replace in the task**, until its replacement is shown in that agent's own
   task.
@@ -135,11 +134,10 @@ What the coordinator finds missing in a task's context is said before the start.
 
 ### The room
 
-Every agent, in a task or not, talks in the project's one room. Its homeserver runs on the development machine,
-reached by the host's tasks over `ssh -R`; the agents on the development machine use a room client in place of the
-channel's commands, and the channel file is read-only from the first trial on. After the real move the project's room
-is made anew on the host's homeserver and `project.yml` names it; the old room is cleared, and its history is not
-carried over.
+A moved agent talks in the project's room on the host's homeserver, with the operator, and with the other moved agents.
+The agents on the development machine keep their own room on its homeserver; nothing joins the two rooms, and no agent
+writes in both. After the real move the host's room is the project's room and `project.yml` names it; the development
+machine's room is cleared, and its history is not carried over.
 
 ### The way back
 
