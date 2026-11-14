@@ -15,12 +15,12 @@
 - [porelo-frontend#F549](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f549) (Review)
 - [porelo-frontend#F550](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f550) (Backlog)
 - [porelo-frontend#F551](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f551) (Backlog)
-- [porelo-frontend#F552](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f552) (Implementing)
+- [porelo-frontend#F552](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f552) (Review)
 - [porelo-frontend#F553](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f553) (Backlog)
-- [porelo-frontend#F554](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f554) (Backlog)
+- [porelo-frontend#F554](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f554) (Review)
 - [porelo-frontend#F555](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f555) (Backlog)
-- [porelo-frontend#F556](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f556) (Backlog)
-- [porelo-host#HO190](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho190) (Backlog)
+- [porelo-frontend#F556](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f556) (Review)
+- [porelo-host#HO190](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho190) (Review)
 - [porelo#B764](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b764) (Review)
 
 ## Data
