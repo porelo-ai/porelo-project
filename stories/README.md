@@ -10,9 +10,9 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
-| [Backlog](#backlog) | 44 |
+| [Backlog](#backlog) | 43 |
 | [Implementing](#implementing) | 4 |
-| [Review](#review) | 1 |
+| [Review](#review) | 2 |
 | [Finished](#finished) | 136 |
 | [Rejected](#rejected) | 5 |
 
@@ -243,7 +243,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st313"></a>[ST313](ST313-A-Tasks-Results-Land-Where-The-Next-Step-And-Others.md) A task's results land where the next step and others find them | 🟰 Medium | PJ:2 · PL:2 | A reading's findings are kept as a Markdown file in the repository, where each state's start instructions tell the agent to put them, so the next task finds them in its source, works them off and deletes them, all in Git's history; ideas become issues the normal way. |
 | <a id="st320"></a>[ST320](ST320-The-Work-Tools-Live-With-Their-Users.md) The work tools live with their users | 🟰 Medium | PL:7 · BT:6 · B:3 · CC:3 · AG:1 · CX:1 · GH:1 · OM:1 · PI:1 | The issue and story tooling (stage records, stats, the stories and issues index, check-commits and citations) moves from the build tools to the planner, the native-image checks to Core, and dead release-plan code goes. Each part then lives with the agent who uses and changes it, so a change to the work format is made by its owner, not by Machines. |
 | <a id="st332"></a>[ST332](ST332-An-Issues-Head-Steers-Who-Works-It-And-With.md) An issue's head steers who works it and with what | 🟰 Medium | PL:3 · B:2 · BT:2 | An issue's head may say who works it, a person or an agent, and how much harm its change can do; the planner leaves a person's issue to the person, the work rules pick the model and effort for the issue's risk, and the start dialog proposes that choice and says where it came from. |
-| <a id="st336"></a>[ST336](ST336-A-Storys-Page-Shows-Its-Description-And-Issues-Well.md) A story's page shows its description and issues well | 🟰 Medium | PL:1 | On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting. |
 | <a id="st354"></a>[ST354](ST354-The-Small-Findings-Of-The-Nights-Readings-Cleared.md) The small findings of the night's readings cleared | 🟰 Medium | B:4 | The small findings of the last code readings are cleared: a removal frees its name whatever fails before it, vault put says what uses an entry, an agent's default provider is one it knows and an unknown one is refused with its origin, porelo keep never leaves an older work record, and the documents name only options that exist. |
 | <a id="st355"></a>[ST355](ST355-Snapshots-And-Keys-Kept-Tidy.md) Snapshots and keys kept tidy | 🟰 Medium | B:2 · BT:2 | A new CI snapshot removes the older ones of its system and keeps one before it, the agent repositories read only their own groups' snapshots, a kept start that never ran keeps its caller's key across a reboot, and an allowed-signers file that is not valid UTF-8 is read line by line instead of refused whole. |
 | <a id="st356"></a>[ST356](ST356-A-Task-That-Reads-Everything-Hands-Back-Its-Result-And-Ends-As-Chosen.md) A task that reads everything hands back its result and ends as chosen | 🟰 Medium | B:2 · F:1 · HO:1 | A task started with a result file hands that file back at its end, up to 1 MiB, and the window reads it; at the start the person can choose that the task ends with its agent or stops when they leave its shell; a read-all task sees every repository, writes none and leaves nothing behind; the idea walk says at the builder's own step when a builder ended unfinished and why. |
@@ -269,6 +268,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
 | <a id="st102"></a>[ST102](ST102-Trust-Only-The-Intended-Socket-And-Inbox-Owner.md) Trust only the intended socket and inbox owner | 🔼 High | B:2 | On AppArmor, Porelo trusts only the intended socket and inbox owner and refuses another program's socket or a wrongly owned file. |
+| <a id="st336"></a>[ST336](ST336-A-Storys-Page-Shows-Its-Description-And-Issues-Well.md) A story's page shows its description and issues well | 🟰 Medium | PL:1 | On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting. |
 
 ## Finished
 
