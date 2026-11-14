@@ -1,6 +1,6 @@
 # ST35 — Refuse an incompatible protocol and a meaningless option
 
-**Priority:** 🟰 Medium · **State:** Implementing
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** An agent whose protocol is incompatible with the core is refused, while meaningless options no longer get in the way of compatible ones.
 
@@ -9,7 +9,7 @@
 **Issues:**
 
 - [porelo#B230](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b230) (Review)
-- [porelo-claude-code#CC22](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc22) (Implementing)
+- [porelo-claude-code#CC22](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc22) (Backlog)
 - [porelo#B201](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b201) (Review)
 
 ## Data

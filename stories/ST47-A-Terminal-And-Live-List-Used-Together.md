@@ -1,6 +1,6 @@
 # ST47 — A terminal and live list used together
 
-**Priority:** 🟰 Medium · **State:** Implementing
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** A person can use the embedded terminal like an ordinary terminal and keep task list --watch open beside it.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-frontend#F105](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f105) (Implementing)
+- [porelo-frontend#F105](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f105) (Backlog)
 - [porelo#B48](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b48) (Review)
 - [porelo#B472](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b472) (Review)
 - [porelo#B473](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b473) (Review)
@@ -27,7 +27,7 @@
   "gain": "A person can use the embedded terminal like an ordinary terminal and keep task list --watch open beside it.",
   "test": "Use the embedded terminal as an ordinary terminal and open task list --watch beside it. States and the clearance hint update. Input reaches the task whole and unchanged; Ctrl-C restores the terminal.",
   "priority": "Medium",
-  "state": "Implementing",
+  "state": "Backlog",
   "issues": [
     "porelo-frontend#F105",
     "porelo#B48",
