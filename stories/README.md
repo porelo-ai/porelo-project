@@ -10,8 +10,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
-| [Backlog](#backlog) | 43 |
-| [Implementing](#implementing) | 4 |
+| [Backlog](#backlog) | 44 |
+| [Implementing](#implementing) | 3 |
 | [Review](#review) | 2 |
 | [Finished](#finished) | 136 |
 | [Rejected](#rejected) | 5 |
@@ -220,7 +220,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st15"></a>[ST15](ST15-The-Website-Builds-In-Its-Task.md) Move: The website builds in its task | ⏫ Highest | SI:2 · PJ:1 | The project website can be fully checked inside its own task, and the check passes with the Debian image and repository changes. |
 | <a id="st28"></a>[ST28](ST28-The-Setup-Move-And-Recovery-Proven-Together.md) The setup, move and recovery proven together | ⏫ Highest | HO:1 · PJ:1 | The setup, move to the host and recovery work together: a person brings up the project, runs local builds, moves each agent and restores the room and usage records. |
 | <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Move: Every agent works in a Porelo task, moved one at a time | ⏫ Highest | HO:5 · MX:2 · B:1 · PJ:1 | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
-| <a id="st361"></a>[ST361](ST361-Fixing-Small-UI-Issues.md) Fixing small UI issues | ⏫ Highest | PL:4 · F:3 | The planner's board says only what is true and offers only what a person needs: an issue's link to its story's row is not reported as broken, one Reload planning button brings the board up to date whatever went wrong, and no separate switch for finished and rejected stories stands beside the columns that fold; a story's or an issue's description reads as written, its Markdown rendered. |
+| <a id="st361"></a>[ST361](ST361-Fixing-Small-UI-Issues.md) Fixing small UI issues | ⏫ Highest | F:4 · PL:4 | The planner's board says only what is true and offers only what a person needs: an issue's link to its story's row is not reported as broken, one Reload planning button brings the board up to date whatever went wrong, and no separate switch for finished and rejected stories stands beside the columns that fold; a story's or an issue's description reads as written, its Markdown rendered. |
 | <a id="st104"></a>[ST104](ST104-Keep-Accounts-And-Projects-Apart.md) Keep accounts and projects apart | 🔼 High | B:7 · HO:1 | Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's. |
 | <a id="st347"></a>[ST347](ST347-Every-Story-Played-Through-Once-As-A-User-Would.md) Every story played through once, as a user would | 🔼 High | HO:6 · B:5 · F:2 · PL:2 · CC:1 | Each High story's test runs once, automated, on a test VM the way a person would play it, at the command line or in the window, so a story's end is shown working before the person tries it. |
 | <a id="st359"></a>[ST359](ST359-Credentials-And-Task-Boundaries-Hardened-After-This-Run.md) Credentials and task boundaries hardened after this run | 🔼 High | B:5 | Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods. |
@@ -230,6 +230,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st23"></a>[ST23](ST23-The-Room-And-The-Usage-Records-Outlive-The.md) The room and the usage records outlive the host | 🟰 Medium | MX:3 · B:2 · HO:1 | The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost. |
 | <a id="st30"></a>[ST30](ST30-Work-Without-A-Project-With-Plain-Refusals.md) Work without a project, with plain refusals | 🟰 Medium | B:7 · F:7 · PJ:1 | A person can start work without a project and get plain refusals, with a checkout going into the default area unless a followed project claims the repository. |
 | <a id="st33"></a>[ST33](ST33-An-Agent-Shown-Working-Resting-Or-Waiting.md) An agent shown working, resting or waiting | 🟰 Medium | B:4 · F:1 · PI:1 | A person sees in the command line and on the task card whether an agent is working, resting or waiting, and both agree. |
+| <a id="st35"></a>[ST35](ST35-Refuse-An-Incompatible-Protocol-And-A-Meaningless-Option.md) Refuse an incompatible protocol and a meaningless option | 🟰 Medium | B:2 · CC:1 | An agent whose protocol is incompatible with the core is refused, while meaningless options no longer get in the way of compatible ones. |
 | <a id="st40"></a>[ST40](ST40-Legs-On-Pool-Machines-The-Same-Workflow-On.md) Legs on pool machines, the same workflow on both forges | 🟰 Medium | HO:3 · AG:1 · B:1 · BT:1 · CC:1 · OM:1 · PI:1 | The same acceptance legs run on pool machines on both the host's forge and the central one, so tests behave the same wherever they run. |
 | <a id="st43"></a>[ST43](ST43-A-Companys-Private-Package-Repository-With-No-Credential.md) A company's private package repository, with no credential in the task | 🟰 Medium | B:4 · EC:1 | A task can build against a company's authenticated Nexus or Artifactory without ever holding the credential, since the settings are written outside the task. |
 | <a id="st50"></a>[ST50](ST50-A-Machine-And-A-Host-Reached-From-Windows.md) A machine and a host reached from Windows | 🟰 Medium | F:6 · B:1 | A person on Windows can reach a machine over SSH and see its projects, work, terminal and gate from the Windows build. |
@@ -258,7 +259,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st35"></a>[ST35](ST35-Refuse-An-Incompatible-Protocol-And-A-Meaningless-Option.md) Refuse an incompatible protocol and a meaningless option | 🟰 Medium | B:2 · CC:1 | An agent whose protocol is incompatible with the core is refused, while meaningless options no longer get in the way of compatible ones. |
 | <a id="st38"></a>[ST38](ST38-The-Chosen-Branch-Receives-The-Work.md) The chosen branch receives the work | 🟰 Medium | F:4 · B:1 | A person can choose a branch template or an explicit branch, and approved work lands on exactly that branch on the forge. |
 | <a id="st47"></a>[ST47](ST47-A-Terminal-And-Live-List-Used-Together.md) A terminal and live list used together | 🟰 Medium | F:5 · B:3 | A person can use the embedded terminal like an ordinary terminal and keep task list --watch open beside it. |
 | <a id="st358"></a>[ST358](ST358-The-Windows-Packing-Shared-And-The-Planner-Ended-Gracefully-On-Windows.md) The Windows packing shared and the planner ended gracefully on Windows | 🟰 Medium | F:2 | The window's Windows packing and install check can be called by another repository, such as the planner, with its app's name, version and files, and on Windows the window asks the planner it started to end through its own stop, ending it hard only when it does not end in time. |
