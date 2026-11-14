@@ -10,8 +10,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
-| [Backlog](#backlog) | 47 |
-| [Review](#review) | 2 |
+| [Backlog](#backlog) | 45 |
+| [Review](#review) | 4 |
 | [Finished](#finished) | 136 |
 | [Rejected](#rejected) | 5 |
 
@@ -219,11 +219,9 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st15"></a>[ST15](ST15-The-Website-Builds-In-Its-Task.md) Move: The website builds in its task | ⏫ Highest | SI:2 · PJ:1 | The project website can be fully checked inside its own task, and the check passes with the Debian image and repository changes. |
 | <a id="st28"></a>[ST28](ST28-The-Setup-Move-And-Recovery-Proven-Together.md) The setup, move and recovery proven together | ⏫ Highest | HO:1 · PJ:1 | The setup, move to the host and recovery work together: a person brings up the project, runs local builds, moves each agent and restores the room and usage records. |
 | <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Move: Every agent works in a Porelo task, moved one at a time | ⏫ Highest | HO:5 · MX:2 · B:1 · PJ:1 | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
-| <a id="st361"></a>[ST361](ST361-Fixing-Small-UI-Issues.md) Fixing small UI issues | ⏫ Highest | F:10 · PL:4 · B:1 · HO:1 · IJ:1 | The planner's board says only what is true and offers only what a person needs: an issue's link to its story's row is not reported as broken, one Reload planning button brings the board up to date whatever went wrong, and no separate switch for finished and rejected stories stands beside the columns that fold; a story's or an issue's description reads as written, its Markdown rendered. |
 | <a id="st104"></a>[ST104](ST104-Keep-Accounts-And-Projects-Apart.md) Keep accounts and projects apart | 🔼 High | B:7 · HO:1 | Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's. |
 | <a id="st347"></a>[ST347](ST347-Every-Story-Played-Through-Once-As-A-User-Would.md) Every story played through once, as a user would | 🔼 High | HO:6 · B:5 · F:2 · PL:2 · CC:1 | Each High story's test runs once, automated, on a test VM the way a person would play it, at the command line or in the window, so a story's end is shown working before the person tries it. |
 | <a id="st359"></a>[ST359](ST359-Credentials-And-Task-Boundaries-Hardened-After-This-Run.md) Credentials and task boundaries hardened after this run | 🔼 High | B:5 | Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods. |
-| <a id="st360"></a>[ST360](ST360-A-Task-Keeps-Its-Limit-And-Key-Across-A-Restart.md) A task keeps its limit and key across a restart | 🔼 High | B:2 | An unattended run stops at its time limit even when porelod restarted in between, and a caller finds its task by its key after a machine restart, also when the task's start failed and it was kept, so no run goes on unbounded and no second task is started by mistake. |
 | <a id="st4"></a>[ST4](ST4-A-Task-Fetches-A-Snapshot-From-Its-Hosts.md) A task fetches a snapshot from its host's forge | 🟰 Medium | B:1 · HO:1 · PJ:1 | A task on the host can fetch Porelo's snapshot from the host's own forge registry by the name its project uses, without reaching outside. |
 | <a id="st17"></a>[ST17](ST17-The-Gate-And-The-Transport-Held-By-Tests.md) The gate and the transport held by tests | 🟰 Medium | SL:10 · MX:9 · B:1 | The message gate and the transport are guarded by tests, shown by a mutation run, so a removed refusal gets noticed. |
 | <a id="st23"></a>[ST23](ST23-The-Room-And-The-Usage-Records-Outlive-The.md) The room and the usage records outlive the host | 🟰 Medium | MX:3 · B:2 · HO:1 | The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost. |
@@ -261,7 +259,9 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
+| <a id="st361"></a>[ST361](ST361-Fixing-Small-UI-Issues.md) Fixing small UI issues | ⏫ Highest | F:10 · PL:4 · B:1 · HO:1 · IJ:1 | The planner's board says only what is true and offers only what a person needs: an issue's link to its story's row is not reported as broken, one Reload planning button brings the board up to date whatever went wrong, and no separate switch for finished and rejected stories stands beside the columns that fold; a story's or an issue's description reads as written, its Markdown rendered. |
 | <a id="st102"></a>[ST102](ST102-Trust-Only-The-Intended-Socket-And-Inbox-Owner.md) Trust only the intended socket and inbox owner | 🔼 High | B:2 | On AppArmor, Porelo trusts only the intended socket and inbox owner and refuses another program's socket or a wrongly owned file. |
+| <a id="st360"></a>[ST360](ST360-A-Task-Keeps-Its-Limit-And-Key-Across-A-Restart.md) A task keeps its limit and key across a restart | 🔼 High | B:2 | An unattended run stops at its time limit even when porelod restarted in between, and a caller finds its task by its key after a machine restart, also when the task's start failed and it was kept, so no run goes on unbounded and no second task is started by mistake. |
 | <a id="st336"></a>[ST336](ST336-A-Storys-Page-Shows-Its-Description-And-Issues-Well.md) A story's page shows its description and issues well | 🟰 Medium | PL:1 | On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting. |
 
 ## Finished

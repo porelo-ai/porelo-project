@@ -1,6 +1,6 @@
 # ST361 — Fixing small UI issues
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Review
 
 **What a user gains.** The planner's board says only what is true and offers only what a person needs: an issue's link to its story's row is not reported as broken, one Reload planning button brings the board up to date whatever went wrong, and no separate switch for finished and rejected stories stands beside the columns that fold; a story's or an issue's description reads as written, its Markdown rendered.
 
@@ -14,14 +14,14 @@
 - [porelo-planner#PL36](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl36) (Review)
 - [porelo-frontend#F549](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f549) (Review)
 - [porelo-frontend#F550](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f550) (Review)
-- [porelo-frontend#F551](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f551) (Backlog)
+- [porelo-frontend#F551](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f551) (Review)
 - [porelo-frontend#F552](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f552) (Review)
 - [porelo-frontend#F553](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f553) (Review)
 - [porelo-frontend#F554](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f554) (Review)
 - [porelo-frontend#F555](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f555) (Review)
 - [porelo-frontend#F556](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f556) (Review)
 - [porelo-frontend#F558](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f558) (Review)
-- [porelo-frontend#F560](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f560) (Backlog)
+- [porelo-frontend#F560](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f560) (Review)
 - [porelo-host#HO190](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho190) (Review)
 - [porelo-intellij#IJ31](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij31) (Review)
 - [porelo#B764](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b764) (Review)

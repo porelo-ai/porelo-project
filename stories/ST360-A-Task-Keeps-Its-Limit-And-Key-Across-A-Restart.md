@@ -1,6 +1,6 @@
 # ST360 — A task keeps its limit and key across a restart
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** An unattended run stops at its time limit even when porelod restarted in between, and a caller finds its task by its key after a machine restart, also when the task's start failed and it was kept, so no run goes on unbounded and no second task is started by mistake.
 
@@ -9,7 +9,7 @@
 **Issues:**
 
 - [porelo#B761](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b761) (Review)
-- [porelo#B762](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b762) (Backlog)
+- [porelo#B762](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b762) (Review)
 
 ## Data
 
