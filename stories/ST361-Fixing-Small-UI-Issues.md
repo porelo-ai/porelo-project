@@ -67,8 +67,10 @@
 - [porelo#B771](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b771) (Review)
 - [porelo#B772](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b772) (Backlog)
 - [porelo#B773](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b773) (Review)
-- [porelo#B776](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b776) (Backlog)
-- [porelo#B777](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b777) (Backlog)
+- [porelo#B776](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b776) (Review)
+- [porelo#B777](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b777) (Review)
+- [porelo#B778](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b778) (Review)
+- [porelo#B779](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b779) (Backlog)
 
 ## Data
 
@@ -141,7 +143,9 @@
     "porelo#B772",
     "porelo#B773",
     "porelo#B776",
-    "porelo#B777"
+    "porelo#B777",
+    "porelo#B778",
+    "porelo#B779"
   ],
   "tested": null
 }
