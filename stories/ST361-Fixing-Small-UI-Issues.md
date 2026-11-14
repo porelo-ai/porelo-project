@@ -47,6 +47,9 @@
 - [porelo-host#HO191](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho191) (Review)
 - [porelo-buildtools#BT90](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt90) (Review)
 - [porelo-ai.github.io#SI10](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si10) (Review)
+- [porelo-planner#PL131](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl131) (Review)
+- [porelo-planner#PL133](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl133) (Review)
+- [porelo-planner#PL132](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl132) (Review)
 
 ## Data
 
@@ -97,7 +100,10 @@
     "porelo-omp#OM62",
     "porelo-host#HO191",
     "porelo-buildtools#BT90",
-    "porelo-ai.github.io#SI10"
+    "porelo-ai.github.io#SI10",
+    "porelo-planner#PL131",
+    "porelo-planner#PL133",
+    "porelo-planner#PL132"
   ],
   "tested": null
 }
