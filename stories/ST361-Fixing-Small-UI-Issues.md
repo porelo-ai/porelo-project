@@ -1,6 +1,6 @@
 # ST361 — Fixing small UI issues
 
-**Priority:** ⏫ Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Backlog
 
 **What a user gains.** The planner's board says only what is true and offers only what a person needs: an issue's link to its story's row is not reported as broken, one Reload planning button brings the board up to date whatever went wrong, and no separate switch for finished and rejected stories stands beside the columns that fold; a story's or an issue's description reads as written, its Markdown rendered.
 
@@ -25,6 +25,28 @@
 - [porelo-host#HO190](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho190) (Review)
 - [porelo-intellij#IJ31](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij31) (Review)
 - [porelo#B764](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b764) (Review)
+- [porelo-frontend#F559](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f559) (Review)
+- [porelo-frontend#F561](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f561) (Review)
+- [porelo-frontend#F562](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f562) (Review)
+- [porelo-frontend#F563](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f563) (Backlog)
+- [porelo-host#HO192](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho192) (Review)
+- [porelo#B767](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b767) (Review)
+- [porelo-codex#CX25](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx25) (Review)
+- [porelo-agy#AG28](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag28) (Review)
+- [porelo-intellij#IJ32](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij32) (Review)
+- [porelo-ecosystems#EC30](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec30) (Review)
+- [porelo-mcp#MC14](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc14) (Review)
+- [porelo-planner#PL130](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl130) (Review)
+- [porelo-forge-clients#FC23](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc23) (Review)
+- [porelo-adapters#GH35](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh35) (Review)
+- [porelo-message-sluice#SL57](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl57) (Review)
+- [porelo-message-matrix#MX111](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx111) (Review)
+- [porelo-claude-code#CC72](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc72) (Review)
+- [porelo-pi#PI64](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi64) (Review)
+- [porelo-omp#OM62](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om62) (Review)
+- [porelo-host#HO191](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho191) (Review)
+- [porelo-buildtools#BT90](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt90) (Review)
+- [porelo-ai.github.io#SI10](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si10) (Review)
 
 ## Data
 
@@ -53,7 +75,29 @@
     "porelo-frontend#F560",
     "porelo-host#HO190",
     "porelo-intellij#IJ31",
-    "porelo#B764"
+    "porelo#B764",
+    "porelo-frontend#F559",
+    "porelo-frontend#F561",
+    "porelo-frontend#F562",
+    "porelo-frontend#F563",
+    "porelo-host#HO192",
+    "porelo#B767",
+    "porelo-codex#CX25",
+    "porelo-agy#AG28",
+    "porelo-intellij#IJ32",
+    "porelo-ecosystems#EC30",
+    "porelo-mcp#MC14",
+    "porelo-planner#PL130",
+    "porelo-forge-clients#FC23",
+    "porelo-adapters#GH35",
+    "porelo-message-sluice#SL57",
+    "porelo-message-matrix#MX111",
+    "porelo-claude-code#CC72",
+    "porelo-pi#PI64",
+    "porelo-omp#OM62",
+    "porelo-host#HO191",
+    "porelo-buildtools#BT90",
+    "porelo-ai.github.io#SI10"
   ],
   "tested": null
 }
