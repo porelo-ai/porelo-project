@@ -1,7 +1,8 @@
 # The work each working state stands for, read by porelo-planner: the states work starts from, where success leads
 # (then: the next working state, else done), where a reading's blocking findings lead (blocked), one task per story or
 # per repository, the modes a task may start in, the order the task is given ({story}, {issues} and {tasks} filled in)
-# and the model per agent. Modes and models are proposals: the first mode and the first agent's model are preselected
+# and the model per agent. A rule with result: (ANALYSIS or ESTIMATE) starts a task that reads only, pushes nothing and
+# hands back its result file, which the planner saves. Modes and models are proposals: the first mode and the first agent's model are preselected
 # in the task dialog, where the person may change them, and a task that starts by itself takes them. A working state
 # is a key here. A task works all of a story's issues in its repository; each issue goes to a sub-agent of its own,
 # named by the issue's id, so each issue is measured alone and the task's own time is shared evenly among them.
@@ -11,18 +12,20 @@ work:
     done: Analyzed
     per: repository
     modes: [UNATTENDED, AGENT]
+    result: ANALYSIS
     order: >-
-      Analyze {issues} of {story}, each issue in a sub-agent of its own named by its id: read the code it names,
-      write its plan, its size and what only the operator can decide; then end with your outcome.
+      Analyze {issues} of {story}, each issue in a sub-agent of its own named by its id: read the code it names and
+      give its plan, its size and what only the operator can decide; then end with your outcome.
     models: {claude: claude-opus-5-5, codex: gpt-6.1-sol}
   Under estimation:
     from: [Analyzed]
     done: Estimated
     per: repository
     modes: [UNATTENDED, AGENT]
+    result: ESTIMATE
     order: >-
       Estimate {issues} of {story}, each issue in a sub-agent of its own named by its id: read its plan and the code it
-      names, set its size (XS to XL) against the measured velocity, name what makes it uncertain; then end with your
+      names, give its size (XS to XL) against the measured velocity, name what makes it uncertain; then end with your
       outcome.
     models: {claude: claude-opus-5-5, codex: gpt-6.1-sol}
   Implementing:
