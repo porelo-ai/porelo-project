@@ -9,8 +9,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Idea](#idea) | 82 |
 | [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 31 |
-| [Under estimation](#under-estimation) | 1 |
-| [Estimated](#estimated) | 31 |
+| [Estimated](#estimated) | 32 |
 | [Backlog](#backlog) | 47 |
 | [Finished](#finished) | 144 |
 | [Rejected](#rejected) | 5 |
@@ -170,16 +169,11 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st185"></a>[ST185](ST185-Tasks-On-MacOS-Through-Apple-Containers.md) Tasks on macOS through Apple containers | 🔽 Low | PJ:1 | A developer on macOS can run tasks through Apple containers with the same guarantees, or sees the proof of why not. |
 | <a id="st199"></a>[ST199](ST199-Activate-A-Windows-Notification.md) Activate a Windows notification | 🔽 Low | F:1 | A person on Windows can activate a notification and land in the correct running interface at the intended place. |
 
-## Under estimation
-
-| Story | Priority | Issues | What a user gains |
-|---|---|---|---|
-| <a id="st366"></a>[ST366](ST366-The-documentation-of-porelo-pi-says-what-the-implementation-does.md) The documentation of porelo-pi says what the implementation does | 🔼 High | PI:1 | Whoever reads porelo-pi's README, doc/index.md, doc/decisions.md, build.md or CONTRIBUTING.md can rely on it: every statement there holds for the code, scripts and configuration on main. |
-
 ## Estimated
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
+| <a id="st366"></a>[ST366](ST366-The-documentation-of-porelo-pi-says-what-the-implementation-does.md) The documentation of porelo-pi says what the implementation does | 🔼 High | PI:1 | Whoever reads porelo-pi's README, doc/index.md, doc/decisions.md, build.md or CONTRIBUTING.md can rely on it: every statement there holds for the code, scripts and configuration on main. |
 | <a id="st29"></a>[ST29](ST29-A-Repository-Renamed-Without-Losing-Work.md) A repository renamed without losing work | 🟰 Medium | PJ:1 | A person can rename a repository's key in the project file without losing waiting work or tasks tied to it. |
 | <a id="st44"></a>[ST44](ST44-Questions-A-Plan-And-Taken-Up-Again.md) Questions, a plan, and taken up again | 🟰 Medium | PJ:1 | A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard. |
 | <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🟰 Medium | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
