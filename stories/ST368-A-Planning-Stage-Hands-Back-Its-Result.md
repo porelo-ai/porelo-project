@@ -1,6 +1,6 @@
 # ST368 — A planning stage hands back its result, and the planner stores it
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** An issue stands in Analyzed or Estimated only when its plan or estimate really stands in the planning store. Analysis and estimation tasks no longer write the store's file format, open a pull request or pass the gate, so no stale copy of a repository can put a second issue file on main or move an issue whose central text holds no plan. The same flow works for a store that is not Git.
 
@@ -8,11 +8,11 @@
 
 **Issues:**
 
-- [porelo-planner#PL141](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl141) (Backlog)
-- [porelo-planner#PL142](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl142) (Backlog)
-- [porelo-planner#PL143](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl143) (Backlog)
-- [porelo-frontend#F591](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f591) (Backlog)
-- [porelo#B791](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b791) (Backlog)
+- [porelo-planner#PL141](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl141) (Review)
+- [porelo-planner#PL142](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl142) (Review)
+- [porelo-planner#PL143](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl143) (Review)
+- [porelo-frontend#F591](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f591) (Review)
+- [porelo#B791](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b791) (Review)
 
 ## Data
 
@@ -25,7 +25,7 @@
   "test": "Start an analysis from the board, unattended: no push, no gate, no pull request. The issue stands in Analyzed with plan, size and points to check in its central file, and no second issue file exists. An estimation ends in Estimated likewise. A stage task without a valid result leaves the issue in its working state, the board says why, and the store is unchanged.",
   "tested": null,
   "priority": "High",
-  "state": "Backlog",
+  "state": "Review",
   "issues": [
     "porelo-planner#PL141",
     "porelo-planner#PL142",

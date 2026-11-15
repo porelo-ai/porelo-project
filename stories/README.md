@@ -11,8 +11,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [In analysis](#in-analysis) | 1 |
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
-| [Backlog](#backlog) | 49 |
-| [Review](#review) | 1 |
+| [Backlog](#backlog) | 46 |
+| [Review](#review) | 4 |
 | [Finished](#finished) | 140 |
 | [Rejected](#rejected) | 5 |
 
@@ -230,8 +230,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st104"></a>[ST104](ST104-Keep-Accounts-And-Projects-Apart.md) Keep accounts and projects apart | 🔼 High | B:7 · HO:1 | Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's. |
 | <a id="st347"></a>[ST347](ST347-Every-Story-Played-Through-Once-As-A-User-Would.md) Every story played through once, as a user would | 🔼 High | HO:6 · B:5 · F:2 · PL:2 · CC:1 | Each High story's test runs once, automated, on a test VM the way a person would play it, at the command line or in the window, so a story's end is shown working before the person tries it. |
 | <a id="st359"></a>[ST359](ST359-Credentials-And-Task-Boundaries-Hardened-After-This-Run.md) Credentials and task boundaries hardened after this run | 🔼 High | B:7 | Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods. |
-| <a id="st367"></a>[ST367](ST367-Findings-Of-The-Live-Test-On-A-Rented-Host.md) Findings of the live test on a rented host | 🔼 High | F:5 · B:3 · CC:1 · CX:1 · OM:1 · PI:1 · PL:1 | A person who rents a host, hands it their token, signs an agent in and runs planned work there sees each step progress in the window, can approve the pull request a task opens, and gets work done on the host's newest copy, without false refusals or raw error and event lines. |
-| <a id="st368"></a>[ST368](ST368-A-Planning-Stage-Hands-Back-Its-Result.md) A planning stage hands back its result, and the planner stores it | 🔼 High | PL:3 · B:1 · F:1 | An issue stands in Analyzed or Estimated only when its plan or estimate really stands in the planning store. Analysis and estimation tasks no longer write the store's file format, open a pull request or pass the gate, so no stale copy of a repository can put a second issue file on main or move an issue whose central text holds no plan. The same flow works for a store that is not Git. |
 | <a id="st4"></a>[ST4](ST4-A-Task-Fetches-A-Snapshot-From-Its-Hosts.md) A task fetches a snapshot from its host's forge | 🟰 Medium | B:1 · HO:1 · PJ:1 | A task on the host can fetch Porelo's snapshot from the host's own forge registry by the name its project uses, without reaching outside. |
 | <a id="st17"></a>[ST17](ST17-The-Gate-And-The-Transport-Held-By-Tests.md) The gate and the transport held by tests | 🟰 Medium | SL:10 · MX:9 · B:1 | The message gate and the transport are guarded by tests, shown by a mutation run, so a removed refusal gets noticed. |
 | <a id="st23"></a>[ST23](ST23-The-Room-And-The-Usage-Records-Outlive-The.md) The room and the usage records outlive the host | 🟰 Medium | MX:3 · B:2 · HO:1 | The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost. |
@@ -259,7 +257,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st357"></a>[ST357](ST357-The-Remaining-Stories-Played-Through-On-The-Vm-And-The-Acceptance-Kits-Tools.md) The remaining stories played through on the VM, and the acceptance kit's tools | 🟰 Medium | F:7 · B:5 · PL:4 | These stories' tests also run once, automated, on the test VM or on Windows as a person would play them, and the acceptance kit reads the terminal reliably for it: cursor moves, what a start printed, and that the vault echoes no secret. |
 | <a id="st358"></a>[ST358](ST358-The-Windows-Packing-Shared-And-The-Planner-Ended-Gracefully-On-Windows.md) The Windows packing shared and the planner ended gracefully on Windows | 🟰 Medium | F:2 | The window's Windows packing and install check can be called by another repository, such as the planner, with its app's name, version and files, and on Windows the window asks the planner it started to end through its own stop, ending it hard only when it does not end in time. |
 | <a id="st363"></a>[ST363](ST363-A-Repository-Carried-Onto-A-Host-From-Its-Menu.md) A repository carried onto a host from its menu | 🟰 Medium | F:1 | A person who sees a repository on a machine's project page moves it onto that machine, or off it, from the repository's own menu, without going to the machine page first. |
-| <a id="st365"></a>[ST365](ST365-The-Planning-Board-After-The-Test.md) The planning board after the test | 🟰 Medium | PL:2 | A person who finishes a story on the planning board finishes its issues in Review with it in one move, and the first board after the planner starts reads every repository at one moment, so it shows no false problems. |
 | <a id="st155"></a>[ST155](ST155-Approve-A-Group-And-Its-Peer-Keys.md) Approve a group and its peer keys | 🔽 Low | B:1 | A person can create a task group, confirm its peers' fingerprints and message the group, and unconfirmed peers are refused. |
 | <a id="st193"></a>[ST193](ST193-Choose-Drive-Areas-For-Each-Host.md) Choose drive areas for each host | 🔽 Low | PJ:1 | A person can choose the drive areas for each host, so each host receives only its own whether vaults are separate or shared. |
 | <a id="st194"></a>[ST194](ST194-Use-A-Secrets-File-Readable-By-A-Separate.md) Use a secrets file readable by a separate tool | 🔽 Low | PJ:1 | A person can open and change the secrets file in both KeePassXC and Porelo, with concurrent changes preserved or reported. |
@@ -271,7 +268,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
+| <a id="st367"></a>[ST367](ST367-Findings-Of-The-Live-Test-On-A-Rented-Host.md) Findings of the live test on a rented host | 🔼 High | F:5 · B:3 · CC:1 · CX:1 · OM:1 · PI:1 · PL:1 | A person who rents a host, hands it their token, signs an agent in and runs planned work there sees each step progress in the window, can approve the pull request a task opens, and gets work done on the host's newest copy, without false refusals or raw error and event lines. |
+| <a id="st368"></a>[ST368](ST368-A-Planning-Stage-Hands-Back-Its-Result.md) A planning stage hands back its result, and the planner stores it | 🔼 High | PL:3 · B:1 · F:1 | An issue stands in Analyzed or Estimated only when its plan or estimate really stands in the planning store. Analysis and estimation tasks no longer write the store's file format, open a pull request or pass the gate, so no stale copy of a repository can put a second issue file on main or move an issue whose central text holds no plan. The same flow works for a store that is not Git. |
 | <a id="st336"></a>[ST336](ST336-A-Storys-Page-Shows-Its-Description-And-Issues-Well.md) A story's page shows its description and issues well | 🟰 Medium | PL:1 | On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting. |
+| <a id="st365"></a>[ST365](ST365-The-Planning-Board-After-The-Test.md) The planning board after the test | 🟰 Medium | PL:2 · F:1 | A person who finishes a story on the planning board finishes its issues in Review with it in one move, and the first board after the planner starts reads every repository at one moment, so it shows no false problems. |
 
 ## Finished
 
