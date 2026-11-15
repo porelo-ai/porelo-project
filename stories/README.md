@@ -11,8 +11,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 46 |
-| [Review](#review) | 2 |
-| [Finished](#finished) | 139 |
+| [Review](#review) | 1 |
+| [Finished](#finished) | 140 |
 | [Rejected](#rejected) | 5 |
 
 ## Idea
@@ -260,7 +260,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st362"></a>[ST362](ST362-Credentials-Carried-To-A-Host.md) Credentials carried to a host | 🔼 High | F:10 · B:5 · AG:1 · CC:1 · CX:1 · OM:1 · PI:1 · PL:1 | A person who has already signed in to a provider on this computer need not sign in again on each host: a small dialog on a host's provider row offers this computer's vault entries and the local agents' own sign-in files for that provider, for every provider available here, and the chosen one goes into the host's vault, never shown, logged or put in a command line. |
 | <a id="st336"></a>[ST336](ST336-A-Storys-Page-Shows-Its-Description-And-Issues-Well.md) A story's page shows its description and issues well | 🟰 Medium | PL:1 | On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting. |
 
 ## Finished
@@ -388,6 +387,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st349"></a>[ST349](ST349-Work-Under-Windows-The-Window-Starts-The-Planner-And-Opens.md) Work under Windows: the window starts the planner and opens a host's vault | 🔼 High | F:2 | On Windows the window starts the planner itself and opens a host's vault without help, so a person works from a Windows desktop as from Linux. |
 | <a id="st351"></a>[ST351](ST351-A-Push-That-Will-Not-Be-Built-Is-Said-So-And-Nobody-Waits-For-A-Build.md) A push that will not be built is said so, and nobody waits for a build | 🔼 High | B:2 · F:1 | When a push will not be built, because it waits at the gate for a person, no build followed or the watch did not start, the agent and the person are told at once and nobody waits for a build report. |
 | <a id="st360"></a>[ST360](ST360-A-Task-Keeps-Its-Limit-And-Key-Across-A-Restart.md) A task keeps its limit and key across a restart | 🔼 High | B:2 | An unattended run stops at its time limit even when porelod restarted in between, and a caller finds its task by its key after a machine restart, also when the task's start failed and it was kept, so no run goes on unbounded and no second task is started by mistake. |
+| <a id="st362"></a>[ST362](ST362-Credentials-Carried-To-A-Host.md) Credentials carried to a host | 🔼 High | F:10 · B:5 · AG:1 · CC:1 · CX:1 · OM:1 · PI:1 · PL:1 | A person who has already signed in to a provider on this computer need not sign in again on each host: a small dialog on a host's provider row offers this computer's vault entries and the local agents' own sign-in files for that provider, for every provider available here, and the chosen one goes into the host's vault, never shown, logged or put in a command line. |
 | <a id="st19"></a>[ST19](ST19-Subagents-And-Reviews-As-A-Person-Sees-Them.md) Subagents and reviews, as a person sees them | 🟰 Medium | B:2 · IJ:2 · AG:1 · CC:1 · CX:1 · OM:1 | A person sees which subagents a task may start, and another subagent is refused with a clear message, with reviews shown plainly. |
 | <a id="st64"></a>[ST64](ST64-The-Person-Approves-With-Every-Round-In-View.md) The person approves with every round in view | 🟰 Medium | B:2 | A person approving at the gate or in the interface sees the diff with the latest findings and all the rounds that led to it. |
 | <a id="st82"></a>[ST82](ST82-An-Unchanged-Credential-And-Setup-Reported-Honestly.md) An unchanged credential and setup reported honestly | 🟰 Medium | B:2 | Setting the same credential or running setup again reports honestly that nothing changed, in text and in the interface. |
