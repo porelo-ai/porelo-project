@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B175](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b175) (Review)
+- [porelo#B175](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b175) (Finished)
 - [porelo#B184](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b184) (Review)
 
 ## Data
