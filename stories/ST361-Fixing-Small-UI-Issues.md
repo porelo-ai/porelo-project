@@ -1,6 +1,6 @@
 # ST361 — Fixing small UI issues
 
-**Priority:** ⏫ Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Finished (2026-11-15)
 
 **What a user gains.** The planner's board says only what is true and offers only what a person needs: an issue's link to its story's row is not reported as broken, one Reload planning button brings the board up to date whatever went wrong, and no separate switch for finished and rejected stories stands beside the columns that fold; a story's or an issue's description reads as written, its Markdown rendered.
 
@@ -8,68 +8,67 @@
 
 **Issues:**
 
-- [porelo-planner#PL127](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl127) (Review)
-- [porelo-planner#PL128](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl128) (Review)
-- [porelo-planner#PL129](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl129) (Review)
-- [porelo-planner#PL36](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl36) (Review)
-- [porelo-frontend#F549](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f549) (Review)
-- [porelo-frontend#F550](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f550) (Review)
-- [porelo-frontend#F551](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f551) (Review)
-- [porelo-frontend#F552](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f552) (Review)
-- [porelo-frontend#F553](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f553) (Review)
-- [porelo-frontend#F554](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f554) (Review)
-- [porelo-frontend#F555](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f555) (Review)
-- [porelo-frontend#F556](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f556) (Review)
-- [porelo-frontend#F558](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f558) (Review)
-- [porelo-frontend#F560](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f560) (Review)
-- [porelo-host#HO190](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho190) (Review)
-- [porelo-intellij#IJ31](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij31) (Review)
-- [porelo#B764](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b764) (Review)
-- [porelo-frontend#F559](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f559) (Review)
-- [porelo-frontend#F561](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f561) (Review)
-- [porelo-frontend#F562](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f562) (Review)
-- [porelo-frontend#F563](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f563) (Review)
-- [porelo-host#HO192](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho192) (Review)
-- [porelo#B767](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b767) (Review)
-- [porelo-codex#CX25](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx25) (Review)
-- [porelo-agy#AG28](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag28) (Review)
-- [porelo-intellij#IJ32](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij32) (Review)
-- [porelo-ecosystems#EC30](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec30) (Review)
-- [porelo-mcp#MC14](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc14) (Review)
-- [porelo-planner#PL130](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl130) (Review)
-- [porelo-forge-clients#FC23](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc23) (Review)
-- [porelo-adapters#GH35](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh35) (Review)
-- [porelo-message-sluice#SL57](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl57) (Review)
-- [porelo-message-matrix#MX111](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx111) (Review)
-- [porelo-claude-code#CC72](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc72) (Review)
-- [porelo-pi#PI64](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi64) (Review)
-- [porelo-omp#OM62](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om62) (Review)
-- [porelo-host#HO191](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho191) (Review)
-- [porelo-buildtools#BT90](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt90) (Review)
-- [porelo-ai.github.io#SI10](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si10) (Review)
-- [porelo-planner#PL131](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl131) (Review)
-- [porelo-planner#PL133](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl133) (Review)
-- [porelo-planner#PL132](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl132) (Review)
-- [porelo-planner#PL134](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl134) (Review)
-- [porelo-planner#PL135](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl135) (Review)
-- [porelo-planner#PL136](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl136) (Review)
-- [porelo-frontend#F564](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f564) (Review)
-- [porelo-frontend#F565](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f565) (Review)
-- [porelo-frontend#F566](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f566) (Review)
-- [porelo-frontend#F567](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f567) (Review)
-- [porelo-frontend#F568](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f568) (Review)
-- [porelo-frontend#F570](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f570) (Review)
-- [porelo-frontend#F571](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f571) (Review)
-- [porelo-frontend#F573](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f573) (Review)
-- [porelo-frontend#F574](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f574) (Review)
-- [porelo-frontend#F576](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f576) (Review)
-- [porelo#B770](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b770) (Review)
-- [porelo#B771](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b771) (Review)
+- [porelo-planner#PL127](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl127) (Finished)
+- [porelo-planner#PL128](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl128) (Finished)
+- [porelo-planner#PL129](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl129) (Finished)
+- [porelo-planner#PL36](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl36) (Finished)
+- [porelo-frontend#F549](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f549) (Finished)
+- [porelo-frontend#F550](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f550) (Finished)
+- [porelo-frontend#F551](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f551) (Finished)
+- [porelo-frontend#F552](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f552) (Finished)
+- [porelo-frontend#F553](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f553) (Finished)
+- [porelo-frontend#F554](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f554) (Finished)
+- [porelo-frontend#F555](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f555) (Finished)
+- [porelo-frontend#F556](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f556) (Finished)
+- [porelo-frontend#F558](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f558) (Finished)
+- [porelo-frontend#F560](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f560) (Finished)
+- [porelo-host#HO190](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho190) (Finished)
+- [porelo-intellij#IJ31](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij31) (Finished)
+- [porelo#B764](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b764) (Finished)
+- [porelo-frontend#F559](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f559) (Finished)
+- [porelo-frontend#F561](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f561) (Finished)
+- [porelo-frontend#F562](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f562) (Finished)
+- [porelo-frontend#F563](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f563) (Finished)
+- [porelo-host#HO192](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho192) (Finished)
+- [porelo#B767](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b767) (Finished)
+- [porelo-codex#CX25](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx25) (Finished)
+- [porelo-agy#AG28](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag28) (Finished)
+- [porelo-intellij#IJ32](https://github.com/porelo-ai/porelo-intellij/blob/main/issues/README.md#ij32) (Finished)
+- [porelo-ecosystems#EC30](https://github.com/porelo-ai/porelo-ecosystems/blob/main/issues/README.md#ec30) (Finished)
+- [porelo-mcp#MC14](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc14) (Finished)
+- [porelo-planner#PL130](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl130) (Finished)
+- [porelo-forge-clients#FC23](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc23) (Finished)
+- [porelo-adapters#GH35](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh35) (Finished)
+- [porelo-message-sluice#SL57](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl57) (Finished)
+- [porelo-message-matrix#MX111](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx111) (Finished)
+- [porelo-claude-code#CC72](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc72) (Finished)
+- [porelo-pi#PI64](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi64) (Finished)
+- [porelo-omp#OM62](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om62) (Finished)
+- [porelo-host#HO191](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho191) (Finished)
+- [porelo-buildtools#BT90](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt90) (Finished)
+- [porelo-ai.github.io#SI10](https://github.com/porelo-ai/porelo-ai.github.io/blob/main/issues/README.md#si10) (Finished)
+- [porelo-planner#PL131](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl131) (Finished)
+- [porelo-planner#PL133](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl133) (Finished)
+- [porelo-planner#PL132](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl132) (Finished)
+- [porelo-planner#PL134](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl134) (Finished)
+- [porelo-planner#PL135](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl135) (Finished)
+- [porelo-planner#PL136](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl136) (Finished)
+- [porelo-frontend#F564](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f564) (Finished)
+- [porelo-frontend#F565](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f565) (Finished)
+- [porelo-frontend#F567](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f567) (Finished)
+- [porelo-frontend#F568](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f568) (Finished)
+- [porelo-frontend#F570](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f570) (Finished)
+- [porelo-frontend#F571](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f571) (Finished)
+- [porelo-frontend#F573](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f573) (Finished)
+- [porelo-frontend#F574](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f574) (Finished)
+- [porelo-frontend#F576](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f576) (Finished)
+- [porelo#B770](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b770) (Finished)
+- [porelo#B771](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b771) (Finished)
 - [porelo#B772](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b772) (Rejected)
-- [porelo#B773](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b773) (Review)
-- [porelo#B776](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b776) (Review)
-- [porelo#B777](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b777) (Review)
-- [porelo#B778](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b778) (Review)
+- [porelo#B773](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b773) (Finished)
+- [porelo#B776](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b776) (Finished)
+- [porelo#B777](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b777) (Finished)
+- [porelo#B778](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b778) (Finished)
 
 ## Data
 
@@ -129,7 +128,6 @@
     "porelo-planner#PL136",
     "porelo-frontend#F564",
     "porelo-frontend#F565",
-    "porelo-frontend#F566",
     "porelo-frontend#F567",
     "porelo-frontend#F568",
     "porelo-frontend#F570",
@@ -145,6 +143,7 @@
     "porelo#B777",
     "porelo#B778"
   ],
-  "tested": null
+  "tested": "2026-11-15",
+  "state": "Finished"
 }
 ```

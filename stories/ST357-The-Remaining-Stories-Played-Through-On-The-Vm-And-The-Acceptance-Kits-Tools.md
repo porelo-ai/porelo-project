@@ -23,6 +23,7 @@
 - [porelo#B689](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b689) (Backlog)
 - [porelo#B701](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b701) (Backlog)
 - [porelo#B779](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b779) (Backlog)
+- [porelo#B780](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b780) (Review)
 
 ## Notes
 
@@ -53,7 +54,8 @@
     "porelo#B687",
     "porelo#B689",
     "porelo#B701",
-    "porelo#B779"
+    "porelo#B779",
+    "porelo#B780"
   ],
   "tested": null
 }
