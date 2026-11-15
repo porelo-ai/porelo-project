@@ -8,7 +8,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 |---|---|
 | [Idea](#idea) | 82 |
 | [Accepted](#accepted) | 27 |
-| [Analyzed](#analyzed) | 32 |
+| [Analyzed](#analyzed) | 31 |
+| [Under estimation](#under-estimation) | 1 |
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 47 |
 | [Finished](#finished) | 144 |
@@ -138,7 +139,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
 | <a id="st60"></a>[ST60](ST60-A-Comment-With-A-Suggestion-Reaches-The-Agent.md) A comment with a suggestion reaches the agent | 🔼 High | B:4 · F:2 | A person can comment on a line with a suggestion in the review, and the task building that work receives it. |
-| <a id="st366"></a>[ST366](ST366-The-documentation-of-porelo-pi-says-what-the-implementation-does.md) The documentation of porelo-pi says what the implementation does | 🔼 High | PI:1 | Whoever reads porelo-pi's README, doc/index.md, doc/decisions.md, build.md or CONTRIBUTING.md can rely on it: every statement there holds for the code, scripts and configuration on main. |
 | <a id="st14"></a>[ST14](ST14-The-Coordinator-Reads-Everything-And-Changes-Only-Porelo.md) The coordinator reads everything and changes only porelo-project | 🟰 Medium | PJ:2 | The coordinator can read every repository of the project but can change only the project repository, and any change elsewhere is refused. |
 | <a id="st24"></a>[ST24](ST24-The-Tokens-Counted-Per-Task-The-Dependencies-Shared.md) The tokens counted per task, the dependencies shared | 🟰 Medium | B:2 · BT:1 · PJ:1 | A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again. |
 | <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | 🟰 Medium | IJ:1 · MX:1 · SL:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
@@ -169,6 +169,12 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st163"></a>[ST163](ST163-Allow-Message-Attachments-Separately-By-Direction.md) Allow message attachments separately by direction | 🔽 Low | PJ:1 | A person allows message attachments separately for each direction, and without permission they are refused or held. |
 | <a id="st185"></a>[ST185](ST185-Tasks-On-MacOS-Through-Apple-Containers.md) Tasks on macOS through Apple containers | 🔽 Low | PJ:1 | A developer on macOS can run tasks through Apple containers with the same guarantees, or sees the proof of why not. |
 | <a id="st199"></a>[ST199](ST199-Activate-A-Windows-Notification.md) Activate a Windows notification | 🔽 Low | F:1 | A person on Windows can activate a notification and land in the correct running interface at the intended place. |
+
+## Under estimation
+
+| Story | Priority | Issues | What a user gains |
+|---|---|---|---|
+| <a id="st366"></a>[ST366](ST366-The-documentation-of-porelo-pi-says-what-the-implementation-does.md) The documentation of porelo-pi says what the implementation does | 🔼 High | PI:1 | Whoever reads porelo-pi's README, doc/index.md, doc/decisions.md, build.md or CONTRIBUTING.md can rely on it: every statement there holds for the code, scripts and configuration on main. |
 
 ## Estimated
 
