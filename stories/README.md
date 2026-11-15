@@ -6,7 +6,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 82 |
+| [Idea](#idea) | 83 |
 | [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
@@ -21,6 +21,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 |---|---|---|---|
 | <a id="st210"></a>[ST210](ST210-Porelo-Frontend.md) porelo-frontend | 🔼 High | F:41 | A person gets the frontend repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st364"></a>[ST364](ST364-An-Agents-Own-Sign-In-Made-On-The-Host.md) An agent's own sign-in made on the host | 🔼 High | B:3 · F:2 · AG:1 · CC:1 · CX:1 · OM:1 · PI:1 | A person whose agent signs in through a provider's login (not an API key) signs that agent in on the host itself, so the host and the person's own machine each keep their own sign-in and neither signs the other out; API keys are still carried as before. |
+| <a id="st366"></a>[ST366](ST366-The-documentation-of-porelo-pi-says-what-the-implementation-does.md) The documentation of porelo-pi says what the implementation does | 🔼 High | PI:1 | Whoever reads porelo-pi's README, doc/index.md, doc/decisions.md, build.md or CONTRIBUTING.md can rely on it: every statement there holds for the code, scripts and configuration on main. |
 | <a id="st22"></a>[ST22](ST22-Machines-Asked-For-By-Kind-Only.md) Machines asked for by kind only | 🟰 Medium | BT:2 · B:1 | Machines are requested only by kind, so a call naming a specific provider or server type is refused with a message naming the kind to use. |
 | <a id="st36"></a>[ST36](ST36-Start-Local-Organization-And-Added-Providers.md) Start local, organization and added providers | 🟰 Medium | P:3 · B:1 · F:1 | A person can use local, organization HTTPS and added providers such as xAI, Zhipu and Z.AI, with supported ones starting and unsupported ones refused clearly. |
 | <a id="st37"></a>[ST37](ST37-The-Providers-Usage-Seen-In-A-Status-Line.md) The providers' usage seen in a status line | 🟰 Medium | B:1 · F:1 | A person sees all providers in use as one traffic light in the status line and can click to see each provider's usage. |
