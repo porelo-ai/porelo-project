@@ -21,6 +21,18 @@
 - [porelo-codex#CX31](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx31) (Backlog)
 - [porelo-pi#PI72](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi72) (Backlog)
 - [porelo-omp#OM68](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om68) (Backlog)
+- [porelo#B794](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b794) (Backlog)
+- [porelo-frontend#F601](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f601) (Backlog)
+- [porelo-frontend#F602](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f602) (Backlog)
+- [porelo-frontend#F603](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f603) (Backlog)
+- [porelo-frontend#F604](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f604) (Backlog)
+- [porelo-planner#PL150](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl150) (Backlog)
+- [porelo-planner#PL151](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl151) (Backlog)
+- [porelo-planner#PL152](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl152) (Backlog)
+- [porelo-planner#PL153](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl153) (Backlog)
+- [porelo-planner#PL154](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl154) (Backlog)
+- [porelo-planner#PL155](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl155) (Backlog)
+- [porelo-frontend#F605](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f605) (Backlog)
 
 ## Data
 
@@ -47,7 +59,19 @@
     "porelo-claude-code#CC78",
     "porelo-codex#CX31",
     "porelo-pi#PI72",
-    "porelo-omp#OM68"
+    "porelo-omp#OM68",
+    "porelo#B794",
+    "porelo-frontend#F601",
+    "porelo-frontend#F602",
+    "porelo-frontend#F603",
+    "porelo-frontend#F604",
+    "porelo-planner#PL150",
+    "porelo-planner#PL151",
+    "porelo-planner#PL152",
+    "porelo-planner#PL153",
+    "porelo-planner#PL154",
+    "porelo-planner#PL155",
+    "porelo-frontend#F605"
   ]
 }
 ```
