@@ -34,6 +34,9 @@
 - [porelo-planner#PL155](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl155) (Backlog)
 - [porelo-frontend#F605](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f605) (Backlog)
 - [porelo-claude-code#CC79](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc79) (Backlog)
+- [porelo-planner#PL156](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl156) (Backlog)
+- [porelo-planner#PL157](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl157) (Idea)
+- [porelo-frontend#F606](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f606) (Backlog)
 
 ## Data
 
@@ -73,7 +76,10 @@
     "porelo-planner#PL154",
     "porelo-planner#PL155",
     "porelo-frontend#F605",
-    "porelo-claude-code#CC79"
+    "porelo-claude-code#CC79",
+    "porelo-planner#PL156",
+    "porelo-planner#PL157",
+    "porelo-frontend#F606"
   ]
 }
 ```
