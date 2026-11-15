@@ -8,8 +8,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 |---|---|
 | [Idea](#idea) | 82 |
 | [Accepted](#accepted) | 27 |
-| [In analysis](#in-analysis) | 1 |
-| [Analyzed](#analyzed) | 31 |
+| [Analyzed](#analyzed) | 32 |
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 47 |
 | [Finished](#finished) | 144 |
@@ -134,17 +133,12 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st176"></a>[ST176](ST176-Find-The-Exact-Pushed-Commit-In-Jenkins.md) Find the exact pushed commit in Jenkins | 🔽 Low | PJ:1 | A task finds the exact pushed commit in Jenkins and receives its stages, verdict and failing log, for a green and a red commit. |
 | <a id="st207"></a>[ST207](ST207-Porelo-Codex.md) porelo-codex | 🔽 Low | CX:4 · PJ:1 | A person gets the Codex adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 
-## In analysis
-
-| Story | Priority | Issues | What a user gains |
-|---|---|---|---|
-| <a id="st366"></a>[ST366](ST366-The-documentation-of-porelo-pi-says-what-the-implementation-does.md) The documentation of porelo-pi says what the implementation does | 🔼 High | PI:1 | Whoever reads porelo-pi's README, doc/index.md, doc/decisions.md, build.md or CONTRIBUTING.md can rely on it: every statement there holds for the code, scripts and configuration on main. |
-
 ## Analyzed
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
 | <a id="st60"></a>[ST60](ST60-A-Comment-With-A-Suggestion-Reaches-The-Agent.md) A comment with a suggestion reaches the agent | 🔼 High | B:4 · F:2 | A person can comment on a line with a suggestion in the review, and the task building that work receives it. |
+| <a id="st366"></a>[ST366](ST366-The-documentation-of-porelo-pi-says-what-the-implementation-does.md) The documentation of porelo-pi says what the implementation does | 🔼 High | PI:1 | Whoever reads porelo-pi's README, doc/index.md, doc/decisions.md, build.md or CONTRIBUTING.md can rely on it: every statement there holds for the code, scripts and configuration on main. |
 | <a id="st14"></a>[ST14](ST14-The-Coordinator-Reads-Everything-And-Changes-Only-Porelo.md) The coordinator reads everything and changes only porelo-project | 🟰 Medium | PJ:2 | The coordinator can read every repository of the project but can change only the project repository, and any change elsewhere is refused. |
 | <a id="st24"></a>[ST24](ST24-The-Tokens-Counted-Per-Task-The-Dependencies-Shared.md) The tokens counted per task, the dependencies shared | 🟰 Medium | B:2 · BT:1 · PJ:1 | A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again. |
 | <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | 🟰 Medium | IJ:1 · MX:1 · SL:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
