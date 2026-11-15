@@ -10,7 +10,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
-| [Backlog](#backlog) | 46 |
+| [Backlog](#backlog) | 47 |
 | [Review](#review) | 1 |
 | [Finished](#finished) | 140 |
 | [Rejected](#rejected) | 5 |
@@ -250,6 +250,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st357"></a>[ST357](ST357-The-Remaining-Stories-Played-Through-On-The-Vm-And-The-Acceptance-Kits-Tools.md) The remaining stories played through on the VM, and the acceptance kit's tools | 🟰 Medium | F:7 · B:5 · PL:4 | These stories' tests also run once, automated, on the test VM or on Windows as a person would play them, and the acceptance kit reads the terminal reliably for it: cursor moves, what a start printed, and that the vault echoes no secret. |
 | <a id="st358"></a>[ST358](ST358-The-Windows-Packing-Shared-And-The-Planner-Ended-Gracefully-On-Windows.md) The Windows packing shared and the planner ended gracefully on Windows | 🟰 Medium | F:2 | The window's Windows packing and install check can be called by another repository, such as the planner, with its app's name, version and files, and on Windows the window asks the planner it started to end through its own stop, ending it hard only when it does not end in time. |
 | <a id="st363"></a>[ST363](ST363-A-Repository-Carried-Onto-A-Host-From-Its-Menu.md) A repository carried onto a host from its menu | 🟰 Medium | F:1 | A person who sees a repository on a machine's project page moves it onto that machine, or off it, from the repository's own menu, without going to the machine page first. |
+| <a id="st365"></a>[ST365](ST365-The-Planning-Board-After-The-Test.md) The planning board after the test | 🟰 Medium | PL:2 | A person who finishes a story on the planning board finishes its issues in Review with it in one move, and the first board after the planner starts reads every repository at one moment, so it shows no false problems. |
 | <a id="st155"></a>[ST155](ST155-Approve-A-Group-And-Its-Peer-Keys.md) Approve a group and its peer keys | 🔽 Low | B:1 | A person can create a task group, confirm its peers' fingerprints and message the group, and unconfirmed peers are refused. |
 | <a id="st193"></a>[ST193](ST193-Choose-Drive-Areas-For-Each-Host.md) Choose drive areas for each host | 🔽 Low | PJ:1 | A person can choose the drive areas for each host, so each host receives only its own whether vaults are separate or shared. |
 | <a id="st194"></a>[ST194](ST194-Use-A-Secrets-File-Readable-By-A-Separate.md) Use a secrets file readable by a separate tool | 🔽 Low | PJ:1 | A person can open and change the secrets file in both KeePassXC and Porelo, with concurrent changes preserved or reported. |
