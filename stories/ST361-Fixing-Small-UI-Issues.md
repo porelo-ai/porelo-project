@@ -1,6 +1,6 @@
 # ST361 — Fixing small UI issues
 
-**Priority:** ⏫ Highest · **State:** Backlog
+**Priority:** ⏫ Highest · **State:** Review
 
 **What a user gains.** The planner's board says only what is true and offers only what a person needs: an issue's link to its story's row is not reported as broken, one Reload planning button brings the board up to date whatever went wrong, and no separate switch for finished and rejected stories stands beside the columns that fold; a story's or an issue's description reads as written, its Markdown rendered.
 
@@ -65,12 +65,11 @@
 - [porelo-frontend#F576](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f576) (Review)
 - [porelo#B770](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b770) (Review)
 - [porelo#B771](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b771) (Review)
-- [porelo#B772](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b772) (Backlog)
+- [porelo#B772](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b772) (Rejected)
 - [porelo#B773](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b773) (Review)
 - [porelo#B776](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b776) (Review)
 - [porelo#B777](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b777) (Review)
 - [porelo#B778](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b778) (Review)
-- [porelo#B779](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b779) (Backlog)
 
 ## Data
 
@@ -144,8 +143,7 @@
     "porelo#B773",
     "porelo#B776",
     "porelo#B777",
-    "porelo#B778",
-    "porelo#B779"
+    "porelo#B778"
   ],
   "tested": null
 }
