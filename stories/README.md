@@ -8,9 +8,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 |---|---|
 | [Idea](#idea) | 82 |
 | [Accepted](#accepted) | 27 |
-| [Analyzed](#analyzed) | 32 |
+| [In analysis](#in-analysis) | 1 |
+| [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
-| [Backlog](#backlog) | 47 |
+| [Backlog](#backlog) | 49 |
 | [Review](#review) | 1 |
 | [Finished](#finished) | 140 |
 | [Rejected](#rejected) | 5 |
@@ -134,12 +135,17 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st176"></a>[ST176](ST176-Find-The-Exact-Pushed-Commit-In-Jenkins.md) Find the exact pushed commit in Jenkins | 🔽 Low | PJ:1 | A task finds the exact pushed commit in Jenkins and receives its stages, verdict and failing log, for a green and a red commit. |
 | <a id="st207"></a>[ST207](ST207-Porelo-Codex.md) porelo-codex | 🔽 Low | CX:4 · PJ:1 | A person gets the Codex adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 
+## In analysis
+
+| Story | Priority | Issues | What a user gains |
+|---|---|---|---|
+| <a id="st366"></a>[ST366](ST366-The-documentation-of-porelo-pi-says-what-the-implementation-does.md) The documentation of porelo-pi says what the implementation does | 🔼 High | PI:1 | Whoever reads porelo-pi's README, doc/index.md, doc/decisions.md, build.md or CONTRIBUTING.md can rely on it: every statement there holds for the code, scripts and configuration on main. |
+
 ## Analyzed
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
 | <a id="st60"></a>[ST60](ST60-A-Comment-With-A-Suggestion-Reaches-The-Agent.md) A comment with a suggestion reaches the agent | 🔼 High | B:4 · F:2 | A person can comment on a line with a suggestion in the review, and the task building that work receives it. |
-| <a id="st366"></a>[ST366](ST366-The-documentation-of-porelo-pi-says-what-the-implementation-does.md) The documentation of porelo-pi says what the implementation does | 🔼 High | PI:1 | Whoever reads porelo-pi's README, doc/index.md, doc/decisions.md, build.md or CONTRIBUTING.md can rely on it: every statement there holds for the code, scripts and configuration on main. |
 | <a id="st14"></a>[ST14](ST14-The-Coordinator-Reads-Everything-And-Changes-Only-Porelo.md) The coordinator reads everything and changes only porelo-project | 🟰 Medium | PJ:2 | The coordinator can read every repository of the project but can change only the project repository, and any change elsewhere is refused. |
 | <a id="st24"></a>[ST24](ST24-The-Tokens-Counted-Per-Task-The-Dependencies-Shared.md) The tokens counted per task, the dependencies shared | 🟰 Medium | B:2 · BT:1 · PJ:1 | A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again. |
 | <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | 🟰 Medium | IJ:1 · MX:1 · SL:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
@@ -224,6 +230,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st104"></a>[ST104](ST104-Keep-Accounts-And-Projects-Apart.md) Keep accounts and projects apart | 🔼 High | B:7 · HO:1 | Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's. |
 | <a id="st347"></a>[ST347](ST347-Every-Story-Played-Through-Once-As-A-User-Would.md) Every story played through once, as a user would | 🔼 High | HO:6 · B:5 · F:2 · PL:2 · CC:1 | Each High story's test runs once, automated, on a test VM the way a person would play it, at the command line or in the window, so a story's end is shown working before the person tries it. |
 | <a id="st359"></a>[ST359](ST359-Credentials-And-Task-Boundaries-Hardened-After-This-Run.md) Credentials and task boundaries hardened after this run | 🔼 High | B:7 | Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods. |
+| <a id="st367"></a>[ST367](ST367-Findings-Of-The-Live-Test-On-A-Rented-Host.md) Findings of the live test on a rented host | 🔼 High | F:5 · B:3 · CC:1 · CX:1 · OM:1 · PI:1 · PL:1 | A person who rents a host, hands it their token, signs an agent in and runs planned work there sees each step progress in the window, can approve the pull request a task opens, and gets work done on the host's newest copy, without false refusals or raw error and event lines. |
+| <a id="st368"></a>[ST368](ST368-A-Planning-Stage-Hands-Back-Its-Result.md) A planning stage hands back its result, and the planner stores it | 🔼 High | PL:3 · B:1 · F:1 | An issue stands in Analyzed or Estimated only when its plan or estimate really stands in the planning store. Analysis and estimation tasks no longer write the store's file format, open a pull request or pass the gate, so no stale copy of a repository can put a second issue file on main or move an issue whose central text holds no plan. The same flow works for a store that is not Git. |
 | <a id="st4"></a>[ST4](ST4-A-Task-Fetches-A-Snapshot-From-Its-Hosts.md) A task fetches a snapshot from its host's forge | 🟰 Medium | B:1 · HO:1 · PJ:1 | A task on the host can fetch Porelo's snapshot from the host's own forge registry by the name its project uses, without reaching outside. |
 | <a id="st17"></a>[ST17](ST17-The-Gate-And-The-Transport-Held-By-Tests.md) The gate and the transport held by tests | 🟰 Medium | SL:10 · MX:9 · B:1 | The message gate and the transport are guarded by tests, shown by a mutation run, so a removed refusal gets noticed. |
 | <a id="st23"></a>[ST23](ST23-The-Room-And-The-Usage-Records-Outlive-The.md) The room and the usage records outlive the host | 🟰 Medium | MX:3 · B:2 · HO:1 | The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost. |
