@@ -11,8 +11,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 46 |
-| [Review](#review) | 4 |
-| [Finished](#finished) | 137 |
+| [Review](#review) | 3 |
+| [Finished](#finished) | 138 |
 | [Rejected](#rejected) | 5 |
 
 ## Idea
@@ -260,7 +260,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st102"></a>[ST102](ST102-Trust-Only-The-Intended-Socket-And-Inbox-Owner.md) Trust only the intended socket and inbox owner | 🔼 High | B:2 | On AppArmor, Porelo trusts only the intended socket and inbox owner and refuses another program's socket or a wrongly owned file. |
 | <a id="st360"></a>[ST360](ST360-A-Task-Keeps-Its-Limit-And-Key-Across-A-Restart.md) A task keeps its limit and key across a restart | 🔼 High | B:2 | An unattended run stops at its time limit even when porelod restarted in between, and a caller finds its task by its key after a machine restart, also when the task's start failed and it was kept, so no run goes on unbounded and no second task is started by mistake. |
 | <a id="st362"></a>[ST362](ST362-Credentials-Carried-To-A-Host.md) Credentials carried to a host | 🔼 High | F:10 · B:5 · AG:1 · CC:1 · CX:1 · OM:1 · PI:1 · PL:1 | A person who has already signed in to a provider on this computer need not sign in again on each host: a small dialog on a host's provider row offers this computer's vault entries and the local agents' own sign-in files for that provider, for every provider available here, and the chosen one goes into the host's vault, never shown, logged or put in a command line. |
 | <a id="st336"></a>[ST336](ST336-A-Storys-Page-Shows-Its-Description-And-Issues-Well.md) A story's page shows its description and issues well | 🟰 Medium | PL:1 | On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting. |
@@ -362,6 +361,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st55"></a>[ST55](ST55-A-Person-Joins-Another-Project.md) A person joins another project | 🔼 High | MX:1 | A person can join another project on the same machine. |
 | <a id="st56"></a>[ST56](ST56-The-Gathered-Findings-Worked-Off.md) The gathered findings worked off | 🔼 High | B:5 · F:1 · HO:1 | The gathered findings from earlier work are cleared, and anything larger becomes an issue of its own, so nothing open is lost. |
 | <a id="st100"></a>[ST100](ST100-Check-Allowed-Destinations.md) Check allowed destinations | 🔼 High | B:3 | A person sees whether the machine can check allowed destinations, and a task reaches only the addresses, domains and sets its project allows. |
+| <a id="st102"></a>[ST102](ST102-Trust-Only-The-Intended-Socket-And-Inbox-Owner.md) Trust only the intended socket and inbox owner | 🔼 High | B:2 | On AppArmor, Porelo trusts only the intended socket and inbox owner and refuses another program's socket or a wrongly owned file. |
 | <a id="st115"></a>[ST115](ST115-Keep-Project-Intake-And-Sign-In-Free-Of.md) Keep project intake and sign-in free of hidden secrets | 🔼 High | B:5 | Project intake and sign-in keep secrets out of sight, so invalid credential names are refused and known test credentials do not leak. |
 | <a id="st116"></a>[ST116](ST116-Cancel-The-Agent-Sign-In-Completely.md) Cancel the agent sign-in completely | 🔼 High | B:1 | A person can cancel an agent's sign-in completely with the supported escape, even if the agent ignores it. |
 | <a id="st294"></a>[ST294](ST294-Plan-The-Stories-On-A-Board-In-The-Window.md) Plan the stories on a board in the window | 🔼 High | B:7 · GH:4 · F:1 | The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API. |
