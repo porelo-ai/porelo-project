@@ -1,6 +1,6 @@
 # ST366 — The documentation of porelo-pi says what the implementation does
 
-**Priority:** 🔼 High · **State:** Idea
+**Priority:** 🔼 High · **State:** In analysis
 
 **What a user gains.** Whoever reads porelo-pi's README, doc/index.md, doc/decisions.md, build.md or CONTRIBUTING.md can rely on it: every statement there holds for the code, scripts and configuration on main.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-pi#PI68](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi68) (Idea)
+- [porelo-pi#PI68](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi68) (In analysis)
 
 ## Data
 
