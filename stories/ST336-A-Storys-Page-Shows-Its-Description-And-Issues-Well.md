@@ -1,6 +1,6 @@
 # ST336 — A story's page shows its description and issues well
 
-**Priority:** 🟰 Medium · **State:** Review
+**Priority:** 🟰 Medium · **State:** Finished
 
 **What a user gains.** On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-planner#PL37](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl37) (Review)
+- [porelo-planner#PL37](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl37) (Finished)
 
 ## Data
 

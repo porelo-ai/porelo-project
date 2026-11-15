@@ -12,8 +12,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 46 |
-| [Review](#review) | 1 |
-| [Finished](#finished) | 143 |
+| [Finished](#finished) | 144 |
 | [Rejected](#rejected) | 5 |
 
 ## Idea
@@ -264,12 +263,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st328"></a>[ST328](ST328-An-Attended-Session-Opens-On-The-Persons-Text-And.md) An attended session opens on the person's text, and its last answer is read | 🔽 Low | B:4 · OM:3 · AG:2 · CC:2 · CX:1 · PI:1 | A person who starts an attended session with an opening text, as a discussion in the planner does, sees Claude Code, Antigravity CLI, Codex CLI or Oh My Pi answer that text as its first turn and then wait for them; each agent declares where its last message stands, so a reader's answer is never empty. |
 | <a id="st348"></a>[ST348](ST348-The-Planner-Runs-As-A-Service-Started-At-Sign-In.md) The planner runs as a service started at sign-in | 🔽 Low | PL:2 | The planner runs as a service the system knows, started at sign-in, so the window finds it running without starting it. |
 
-## Review
-
-| Story | Priority | Issues | What a user gains |
-|---|---|---|---|
-| <a id="st336"></a>[ST336](ST336-A-Storys-Page-Shows-Its-Description-And-Issues-Well.md) A story's page shows its description and issues well | 🟰 Medium | PL:1 | On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting. |
-
 ## Finished
 
 | Story | Priority | Issues | What a user gains |
@@ -409,6 +402,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st309"></a>[ST309](ST309-A-Story-Takes-The-State-The-Operator-Gives-It.md) A story takes the state the operator gives it | 🟰 Medium | PL:2 · B:1 · BT:1 · F:1 | The operator puts a story into any state, on the story board or in its head, and it keeps that state whatever its issues' states are; where an issue does not fit that state by the automatic rule, a warning names it and asks to go on anyway, and it is never refused. |
 | <a id="st312"></a>[ST312](ST312-The-Room-Rehearsal-Judges-A-Busy-Room-Right.md) The room rehearsal judges a busy room right | 🟰 Medium | MX:5 | The room rehearsal of a move says OK only where the room behaved and FAIL only where it did not, also in a room with history, other persons, retired tasks and other logins on the same host, and leaves no session or chat open behind it. |
 | <a id="st317"></a>[ST317](ST317-Builds-Take-Outside-Downloads-From-A-Cache.md) Builds take outside downloads from a cache | 🟰 Medium | B:2 · AG:1 · BT:1 · CC:1 · CX:1 · EC:1 · F:1 · FC:1 · GH:1 · HO:1 · IJ:1 · MC:1 · MX:1 · OM:1 · PA:1 · PI:1 · PL:1 · SI:1 · SL:1 | Every build fetches what it needs from outside - container images, toolchains, packages - from a cache when it can, so an outage of a registry such as Codeberg's no longer turns a build red, and the cache keeps only the newest copy of each thing so it never fills up. |
+| <a id="st336"></a>[ST336](ST336-A-Storys-Page-Shows-Its-Description-And-Issues-Well.md) A story's page shows its description and issues well | 🟰 Medium | PL:1 | On a story's page the description is shown in the format it is written in and can be folded away, and its issue list has the window's list design with search, filters and sorting. |
 | <a id="st350"></a>[ST350](ST350-A-Task-Starts-Without-A-Certificate-On-A-Host-In-Test-Mode.md) A task starts without a certificate on a host in test mode | 🟰 Medium | B:1 · HO:1 | A person on a measuring host whose root switched on test mode can start an uncertified task after a clear warning, and no other host accepts such a start. |
 | <a id="st365"></a>[ST365](ST365-The-Planning-Board-After-The-Test.md) The planning board after the test | 🟰 Medium | PL:2 · F:1 | A person who finishes a story on the planning board finishes its issues in Review with it in one move, and the first board after the planner starts reads every repository at one moment, so it shows no false problems. |
 | <a id="st118"></a>[ST118](ST118-Verify-The-Complete-ChatGPT-Sign-In.md) Verify the complete ChatGPT sign-in | 🔽 Low | PJ:1 | A person can sign in to ChatGPT and ask a Codex task a question, with no sign-in material inside the container. |
