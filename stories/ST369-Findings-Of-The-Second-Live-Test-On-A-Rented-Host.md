@@ -18,7 +18,7 @@
 - [porelo-planner#PL148](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl148) (Review)
 - [porelo-planner#PL149](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl149) (Backlog)
 - [porelo-claude-code#CC78](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc78) (Backlog)
-- [porelo-codex#CX31](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx31) (Backlog)
+- [porelo-codex#CX31](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx31) (Review)
 - [porelo-pi#PI72](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi72) (Review)
 - [porelo-omp#OM68](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om68) (Review)
 - [porelo#B794](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b794) (Backlog)
@@ -41,6 +41,10 @@
 - [porelo-planner#PL158](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl158) (Backlog)
 - [porelo-claude-code#CC80](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc80) (Backlog)
 - [porelo-frontend#F607](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f607) (Backlog)
+- [porelo-codex#CX32](https://github.com/porelo-ai/porelo-codex/blob/main/issues/README.md#cx32) (Review)
+- [porelo-pi#PI73](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi73) (Review)
+- [porelo-omp#OM69](https://github.com/porelo-ai/porelo-omp/blob/main/issues/README.md#om69) (Review)
+- [porelo-agy#AG31](https://github.com/porelo-ai/porelo-agy/blob/main/issues/README.md#ag31) (Review)
 
 ## Data
 
@@ -87,7 +91,11 @@
     "porelo#B795",
     "porelo-planner#PL158",
     "porelo-claude-code#CC80",
-    "porelo-frontend#F607"
+    "porelo-frontend#F607",
+    "porelo-codex#CX32",
+    "porelo-pi#PI73",
+    "porelo-omp#OM69",
+    "porelo-agy#AG31"
   ]
 }
 ```
