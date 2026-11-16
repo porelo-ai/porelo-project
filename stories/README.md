@@ -11,7 +11,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 47 |
-| [Implementing](#implementing) | 1 |
+| [Reading](#reading) | 1 |
 | [Finished](#finished) | 144 |
 | [Rejected](#rejected) | 5 |
 
@@ -258,7 +258,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st328"></a>[ST328](ST328-An-Attended-Session-Opens-On-The-Persons-Text-And.md) An attended session opens on the person's text, and its last answer is read | 🔽 Low | B:4 · OM:3 · AG:2 · CC:2 · CX:1 · PI:1 | A person who starts an attended session with an opening text, as a discussion in the planner does, sees Claude Code, Antigravity CLI, Codex CLI or Oh My Pi answer that text as its first turn and then wait for them; each agent declares where its last message stands, so a reader's answer is never empty. |
 | <a id="st348"></a>[ST348](ST348-The-Planner-Runs-As-A-Service-Started-At-Sign-In.md) The planner runs as a service started at sign-in | 🔽 Low | PL:2 | The planner runs as a service the system knows, started at sign-in, so the window finds it running without starting it. |
 
-## Implementing
+## Reading
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
