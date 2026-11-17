@@ -1,6 +1,6 @@
 # ST372 — porelo-claude-code's documentation says what its code does
 
-**Priority:** 🟰 Medium · **State:** Idea
+**Priority:** 🟰 Medium · **State:** In analysis
 
 **What a user gains.** Whoever installs, signs in, starts a task or builds the adapter can trust its README, user guide, decisions, build.md and AGENTS.md: every claim in them matches what the code and the agent definition actually do.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-claude-code#CC81](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc81) (Idea)
+- [porelo-claude-code#CC81](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc81) (In analysis)
 
 ## Data
 
