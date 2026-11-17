@@ -8,8 +8,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 |---|---|
 | [Idea](#idea) | 83 |
 | [Accepted](#accepted) | 27 |
-| [In analysis](#in-analysis) | 1 |
-| [Analyzed](#analyzed) | 31 |
+| [Analyzed](#analyzed) | 32 |
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 49 |
 | [Review](#review) | 2 |
@@ -136,12 +135,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st176"></a>[ST176](ST176-Find-The-Exact-Pushed-Commit-In-Jenkins.md) Find the exact pushed commit in Jenkins | 🔽 Low | PJ:1 | A task finds the exact pushed commit in Jenkins and receives its stages, verdict and failing log, for a green and a red commit. |
 | <a id="st207"></a>[ST207](ST207-Porelo-Codex.md) porelo-codex | 🔽 Low | CX:4 · PJ:1 | A person gets the Codex adapter repository as a named part of Porelo that is tracked as its own piece of work. |
 
-## In analysis
-
-| Story | Priority | Issues | What a user gains |
-|---|---|---|---|
-| <a id="st376"></a>[ST376](ST376-Pis-documentation-says-what-the-adapter-does-today.md) Pi's documentation says what the adapter does today | 🟰 Medium | PI:1 | Whoever runs Pi in Porelo finds in doc/index.md everything the adapter does and rules out (ask_person, waking, effort, skills off, vault import, continuing a session) without reading the code. |
-
 ## Analyzed
 
 | Story | Priority | Issues | What a user gains |
@@ -164,6 +157,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st94"></a>[ST94](ST94-Approve-One-Of-Several-Attempts.md) Approve one of several attempts | 🟰 Medium | B:1 | A person can start several attempts from one commit, compare their differences and approve one, while the others are dropped. |
 | <a id="st96"></a>[ST96](ST96-Open-A-Task-Port-Locally.md) Open a task port locally | 🟰 Medium | B:1 | A person can open a task's web server port locally from the host, while access from elsewhere stays closed. |
 | <a id="st352"></a>[ST352](ST352-Allowed-Destinations-Written-Shown-And-Changed-By-The-Name-A-Person-Sees.md) Allowed destinations written, shown and changed by the name a person sees | 🟰 Medium | B:4 | A person writes allowed addresses and sets in project.yml, sees refused lookups, what the machine's resolver can do and what still works offline, and changes a running task's egress by the name porelo task list shows. |
+| <a id="st376"></a>[ST376](ST376-Pis-documentation-says-what-the-adapter-does-today.md) Pi's documentation says what the adapter does today | 🟰 Medium | PI:1 | Whoever runs Pi in Porelo finds in doc/index.md everything the adapter does and rules out (ask_person, waking, effort, skills off, vault import, continuing a session) without reading the code. |
 | <a id="st125"></a>[ST125](ST125-Measure-Price-And-Enforce-The-Token-Limit.md) Measure price and enforce the token limit | 🔽 Low | B:2 | A person sees what each model costs by dated price, an unpriced request is not shown as free, and the token limit is enforced. |
 | <a id="st126"></a>[ST126](ST126-Limit-Money-Time-And-Disk-Space.md) Limit money, time and disk space | 🔽 Low | B:3 · F:1 | A person can limit money, runtime and disk space, and an unknown price cannot bypass the dollar limit. |
 | <a id="st137"></a>[ST137](ST137-Read-Events-After-The-Task-Is-Gone.md) Read events after the task is gone | 🔽 Low | B:3 | A person can read a task's events after it is gone, even after clearing its runtime directory or restarting the machine. |
