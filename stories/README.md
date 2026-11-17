@@ -6,7 +6,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 83 |
+| [Idea](#idea) | 84 |
 | [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
@@ -51,6 +51,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st329"></a>[ST329](ST329-The-Agent-Repositories-Legs-And-Scenarios-Say-What-Is.md) The agent repositories' legs and scenarios say what is true | 🟰 Medium | CC:5 · PI:3 · AG:2 · OM:2 | The agent repositories' acceptance legs and scenarios fail only for a real fault: a clean-up says when nothing was rented, a scenario decides by what the task ran rather than by the model's words, a busy loop is held in the foreground, the pinned CLI shows no false installation warning, and the bill generator is locked past its advisories. |
 | <a id="st341"></a>[ST341](ST341-A-Tasks-Records-Reach-A-Collector-Over-OpenTelemetry.md) A task's records reach a collector over OpenTelemetry | 🟰 Medium | B:1 | An organization's OpenTelemetry collector receives its people's task records, read from the local journal, never instead of it: off by default, chosen per kind of record and destination in the CLI, only allowed fields leave, so prompts, tool output and agent output stay home unless chosen and secrets never leave; a failed export never blocks a task and is shown. |
 | <a id="st342"></a>[ST342](ST342-The-Agents-Own-Telemetry-Kept-With-Porelos-Records.md) The agents' own telemetry kept with Porelo's records | 🟰 Medium | none yet | The OpenTelemetry an agent writes itself (Claude Code, Codex, Gemini, omp natively, pi through an extension) is received inside Porelo on the person's machine and kept in the task's journal under its run, its content switches set off unless chosen, so a person reads tokens, tool calls and errors beside Porelo's own records and no agent sends telemetry anywhere else. |
+| <a id="st376"></a>[ST376](ST376-Pis-documentation-says-what-the-adapter-does-today.md) Pi's documentation says what the adapter does today | 🟰 Medium | PI:1 | Whoever runs Pi in Porelo finds in doc/index.md everything the adapter does and rules out (ask_person, waking, effort, skills off, vault import, continuing a session) without reading the code. |
 | <a id="st45"></a>[ST45](ST45-A-Step-For-Someone-Else-Handed-Over.md) A step for someone else handed over | 🔽 Low | none yet | When a setup step needs someone else, such as an administrator, the person gets instructions and a file to hand over, and the wizard waits for the result. |
 | <a id="st48"></a>[ST48](ST48-A-Chat-Answers-Questions-About-The-Current-Step.md) A chat answers questions about the current step | 🔽 Low | none yet | A person can ask a chat questions about the current wizard step using the Claude Code already signed in on the machine, and the chat never sees secrets. |
 | <a id="st49"></a>[ST49](ST49-The-Same-Plan-From-A-File-Of-Answers.md) The same plan from a file of answers | 🔽 Low | none yet | An administrator can run the same wizard plan on many machines from a file of answers, and a step that needs a person stops the run clearly. |
