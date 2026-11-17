@@ -10,7 +10,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
-| [Backlog](#backlog) | 48 |
+| [Backlog](#backlog) | 49 |
 | [Finished](#finished) | 144 |
 | [Rejected](#rejected) | 5 |
 
@@ -225,6 +225,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st359"></a>[ST359](ST359-Credentials-And-Task-Boundaries-Hardened-After-This-Run.md) Credentials and task boundaries hardened after this run | 🔼 High | B:7 | Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods. |
 | <a id="st366"></a>[ST366](ST366-The-documentation-of-porelo-pi-says-what-the-implementation-does.md) The documentation of porelo-pi says what the implementation does | 🔼 High | PI:1 | Whoever reads porelo-pi's README, doc/index.md, doc/decisions.md, build.md or CONTRIBUTING.md can rely on it: every statement there holds for the code, scripts and configuration on main. |
 | <a id="st369"></a>[ST369](ST369-Findings-Of-The-Second-Live-Test-On-A-Rented-Host.md) Findings of the second live test on a rented host | 🔼 High | PL:13 · F:12 · CC:3 · B:2 · CX:2 · OM:2 · PI:2 · AG:1 | A person who sets up a rented host and puts a project on it gives the host their forge token only where the window cannot hand it on by itself, and meets no other step of the second live test that stops, repeats or misleads them. |
+| <a id="st371"></a>[ST371](ST371-A-Rented-Hosts-Pull-Requests-Read-Before-The-First-Start.md) A rented host's pull requests read before the first start | 🔼 High | B:1 · F:1 | A person whose project a rented host carries sees that project's open pull requests in Needs you before starting any work there, and where they cannot be read, is told the machine's reason instead of being told that it stopped answering. |
 | <a id="st4"></a>[ST4](ST4-A-Task-Fetches-A-Snapshot-From-Its-Hosts.md) A task fetches a snapshot from its host's forge | 🟰 Medium | B:1 · HO:1 · PJ:1 | A task on the host can fetch Porelo's snapshot from the host's own forge registry by the name its project uses, without reaching outside. |
 | <a id="st17"></a>[ST17](ST17-The-Gate-And-The-Transport-Held-By-Tests.md) The gate and the transport held by tests | 🟰 Medium | SL:10 · MX:9 · B:1 | The message gate and the transport are guarded by tests, shown by a mutation run, so a removed refusal gets noticed. |
 | <a id="st23"></a>[ST23](ST23-The-Room-And-The-Usage-Records-Outlive-The.md) The room and the usage records outlive the host | 🟰 Medium | MX:3 · B:2 · HO:1 | The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost. |
