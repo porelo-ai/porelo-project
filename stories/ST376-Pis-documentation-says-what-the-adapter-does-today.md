@@ -1,6 +1,6 @@
 # ST376 — Pi's documentation says what the adapter does today
 
-**Priority:** 🟰 Medium · **State:** Estimated
+**Priority:** 🟰 Medium · **State:** Backlog
 
 **What a user gains.** Whoever runs Pi in Porelo finds in doc/index.md everything the adapter does and rules out (ask_person, waking, effort, skills off, vault import, continuing a session) without reading the code.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-pi#PI74](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi74) (Estimated)
+- [porelo-pi#PI74](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi74) (Backlog)
 
 ## Data
 
