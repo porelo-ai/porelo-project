@@ -10,7 +10,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
-| [Backlog](#backlog) | 50 |
+| [Backlog](#backlog) | 48 |
+| [Review](#review) | 2 |
 | [Finished](#finished) | 144 |
 | [Rejected](#rejected) | 5 |
 
@@ -220,13 +221,11 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st15"></a>[ST15](ST15-The-Website-Builds-In-Its-Task.md) Move: The website builds in its task | ⏫ Highest | SI:2 · PJ:1 | The project website can be fully checked inside its own task, and the check passes with the Debian image and repository changes. |
 | <a id="st28"></a>[ST28](ST28-The-Setup-Move-And-Recovery-Proven-Together.md) The setup, move and recovery proven together | ⏫ Highest | HO:1 · PJ:1 | The setup, move to the host and recovery work together: a person brings up the project, runs local builds, moves each agent and restores the room and usage records. |
 | <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Move: Every agent works in a Porelo task, moved one at a time | ⏫ Highest | HO:5 · MX:2 · B:1 · PJ:1 | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
-| <a id="st373"></a>[ST373](ST373-An-Analysis-Is-Not-Lost-For-A-Heading-In-Its-Plan.md) An analysis is not lost for a heading in its plan | ⏫ Highest | PL:1 | A person who starts the analysis of a story gets its plans saved on the board, even where the agent opened a plan with a heading of its own, instead of losing the whole run to a format refusal. |
 | <a id="st104"></a>[ST104](ST104-Keep-Accounts-And-Projects-Apart.md) Keep accounts and projects apart | 🔼 High | B:7 · HO:1 | Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's. |
 | <a id="st347"></a>[ST347](ST347-Every-Story-Played-Through-Once-As-A-User-Would.md) Every story played through once, as a user would | 🔼 High | HO:6 · B:5 · F:2 · PL:2 · CC:1 | Each High story's test runs once, automated, on a test VM the way a person would play it, at the command line or in the window, so a story's end is shown working before the person tries it. |
 | <a id="st359"></a>[ST359](ST359-Credentials-And-Task-Boundaries-Hardened-After-This-Run.md) Credentials and task boundaries hardened after this run | 🔼 High | B:7 | Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods. |
 | <a id="st369"></a>[ST369](ST369-Findings-Of-The-Second-Live-Test-On-A-Rented-Host.md) Findings of the second live test on a rented host | 🔼 High | PL:13 · F:12 · CC:3 · B:2 · CX:2 · OM:2 · PI:2 · AG:1 | A person who sets up a rented host and puts a project on it gives the host their forge token only where the window cannot hand it on by itself, and meets no other step of the second live test that stops, repeats or misleads them. |
 | <a id="st371"></a>[ST371](ST371-A-Rented-Hosts-Pull-Requests-Read-Before-The-First-Start.md) A rented host's pull requests read before the first start | 🔼 High | B:1 · F:1 | A person whose project a rented host carries sees that project's open pull requests in Needs you before starting any work there, and where they cannot be read, is told the machine's reason instead of being told that it stopped answering. |
-| <a id="st374"></a>[ST374](ST374-Stop-Work-From-Needs-You-At-Once.md) Stop work from Needs you at once | 🔼 High | F:1 · PL:1 | A person who sees a story's running or raised work in Needs you can stop it there right after the window starts, without opening Planning first. |
 | <a id="st4"></a>[ST4](ST4-A-Task-Fetches-A-Snapshot-From-Its-Hosts.md) A task fetches a snapshot from its host's forge | 🟰 Medium | B:1 · HO:1 · PJ:1 | A task on the host can fetch Porelo's snapshot from the host's own forge registry by the name its project uses, without reaching outside. |
 | <a id="st17"></a>[ST17](ST17-The-Gate-And-The-Transport-Held-By-Tests.md) The gate and the transport held by tests | 🟰 Medium | SL:10 · MX:9 · B:1 | The message gate and the transport are guarded by tests, shown by a mutation run, so a removed refusal gets noticed. |
 | <a id="st23"></a>[ST23](ST23-The-Room-And-The-Usage-Records-Outlive-The.md) The room and the usage records outlive the host | 🟰 Medium | MX:3 · B:2 · HO:1 | The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost. |
@@ -260,6 +259,13 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st315"></a>[ST315](ST315-The-Planners-Git-Adapter-Alone-Handles-Stories-And-Issues.md) The planner's Git adapter alone handles stories and issues | 🔽 Low | PL:6 | Stories and issues kept as files in Git are read, checked, indexed and written by the planner's Git store adapter alone, so the build tools no longer carry a stories library or story and issue commands, and no repository's build or hand-over runs a check of issue files. |
 | <a id="st328"></a>[ST328](ST328-An-Attended-Session-Opens-On-The-Persons-Text-And.md) An attended session opens on the person's text, and its last answer is read | 🔽 Low | B:4 · OM:3 · AG:2 · CC:2 · CX:1 · PI:1 | A person who starts an attended session with an opening text, as a discussion in the planner does, sees Claude Code, Antigravity CLI, Codex CLI or Oh My Pi answer that text as its first turn and then wait for them; each agent declares where its last message stands, so a reader's answer is never empty. |
 | <a id="st348"></a>[ST348](ST348-The-Planner-Runs-As-A-Service-Started-At-Sign-In.md) The planner runs as a service started at sign-in | 🔽 Low | PL:2 | The planner runs as a service the system knows, started at sign-in, so the window finds it running without starting it. |
+
+## Review
+
+| Story | Priority | Issues | What a user gains |
+|---|---|---|---|
+| <a id="st373"></a>[ST373](ST373-An-Analysis-Is-Not-Lost-For-A-Heading-In-Its-Plan.md) An analysis is not lost for a heading in its plan | ⏫ Highest | PL:1 | A person who starts the analysis of a story gets its plans saved on the board, even where the agent opened a plan with a heading of its own, instead of losing the whole run to a format refusal. |
+| <a id="st374"></a>[ST374](ST374-Stop-Work-From-Needs-You-At-Once.md) Stop work from Needs you at once | 🔼 High | F:1 · PL:1 | A person who sees a story's running or raised work in Needs you can stop it there right after the window starts, without opening Planning first. |
 
 ## Finished
 
