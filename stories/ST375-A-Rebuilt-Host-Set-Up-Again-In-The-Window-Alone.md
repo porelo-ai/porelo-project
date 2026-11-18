@@ -12,6 +12,8 @@
 - [porelo-frontend#F610](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f610) (Backlog)
 - [porelo-frontend#F612](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f612) (Backlog)
 - [porelo-frontend#F613](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f613) (Backlog)
+- [porelo#B801](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b801) (Backlog)
+- [porelo-frontend#F614](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f614) (Backlog)
 
 ## Data
 
@@ -29,7 +31,9 @@
     "porelo-frontend#F611",
     "porelo-frontend#F610",
     "porelo-frontend#F612",
-    "porelo-frontend#F613"
+    "porelo-frontend#F613",
+    "porelo#B801",
+    "porelo-frontend#F614"
   ]
 }
 ```
