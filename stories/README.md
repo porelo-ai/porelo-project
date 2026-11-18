@@ -9,8 +9,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Idea](#idea) | 83 |
 | [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 31 |
-| [Under estimation](#under-estimation) | 1 |
-| [Estimated](#estimated) | 31 |
+| [Estimated](#estimated) | 32 |
 | [Backlog](#backlog) | 50 |
 | [Review](#review) | 2 |
 | [Finished](#finished) | 144 |
@@ -172,12 +171,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st185"></a>[ST185](ST185-Tasks-On-MacOS-Through-Apple-Containers.md) Tasks on macOS through Apple containers | 🔽 Low | PJ:1 | A developer on macOS can run tasks through Apple containers with the same guarantees, or sees the proof of why not. |
 | <a id="st199"></a>[ST199](ST199-Activate-A-Windows-Notification.md) Activate a Windows notification | 🔽 Low | F:1 | A person on Windows can activate a notification and land in the correct running interface at the intended place. |
 
-## Under estimation
-
-| Story | Priority | Issues | What a user gains |
-|---|---|---|---|
-| <a id="st378"></a>[ST378](ST378-Pis-Nutzerdokumentation-stimmt-mit-dem-was-das-Paket-tut-berein.md) Pis Nutzerdokumentation stimmt mit dem, was das Paket tut, überein | 🟰 Medium | PI:1 | Wer Pi in Porelo installiert, anmeldet und einen Task startet, kann sich auf README und doc/index.md verlassen: Befehle, Provider, Modelle, erreichbare Hosts, Paketgröße und Fehlermeldungen stimmen mit dem Verhalten überein. |
-
 ## Estimated
 
 | Story | Priority | Issues | What a user gains |
@@ -193,6 +186,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st330"></a>[ST330](ST330-An-Agent-Package-Depends-On-The-Agent-Protocol-Porelos.md) An agent package depends on the agent protocol Porelo's package provides | 🟰 Medium | AG:1 · CX:1 · OM:1 · PI:1 | Each agent package names at install time the agent contract that Porelo's package provides, so a person cannot install an agent that does not fit the installed Porelo. |
 | <a id="st337"></a>[ST337](ST337-The-Board-Answers-At-Once-With-Hundreds-Of-Stories.md) The board answers at once with hundreds of stories | 🟰 Medium | PL:1 | The board builds only the cards in sight, so unfolding a column of hundreds of stories and typing in the search answer within a frame. |
 | <a id="st338"></a>[ST338](ST338-An-Estimate-Learns-From-What-Finished-Work-Spent.md) An estimate learns from what finished work spent | 🟰 Medium | PL:1 | Per size and repository, the minutes and new tokens finished issues spent per phase are computed from Porelo's task records, so an estimate rests on what work really cost. |
+| <a id="st378"></a>[ST378](ST378-Pis-Nutzerdokumentation-stimmt-mit-dem-was-das-Paket-tut-berein.md) Pis Nutzerdokumentation stimmt mit dem, was das Paket tut, überein | 🟰 Medium | PI:1 | Wer Pi in Porelo installiert, anmeldet und einen Task startet, kann sich auf README und doc/index.md verlassen: Befehle, Provider, Modelle, erreichbare Hosts, Paketgröße und Fehlermeldungen stimmen mit dem Verhalten überein. |
 | <a id="st120"></a>[ST120](ST120-Remove-Access-Without-Deleting-Another-Persons-Keys.md) Remove access without deleting another person's keys | 🔽 Low | B:2 | A person can unfollow a project or clear a machine and lose access without deleting another person's keys. |
 | <a id="st121"></a>[ST121](ST121-Measure-Hardware-Protection-First.md) Measure hardware protection first | 🔽 Low | B:1 · F:1 | A person can measure hardware protection first, with a token present, removed or untouched, before relying on it for unlocking. |
 | <a id="st129"></a>[ST129](ST129-Report-Or-Stop-On-Unusual-Traffic.md) Report or stop on unusual traffic | 🔽 Low | B:1 | Unusual traffic, such as odd body sizes, clearance attempts or DNS names, is reported or stops the task on chosen alarms. |

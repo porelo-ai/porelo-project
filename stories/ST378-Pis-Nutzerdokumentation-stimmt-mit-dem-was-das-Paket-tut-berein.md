@@ -1,6 +1,6 @@
 # ST378 — Pis Nutzerdokumentation stimmt mit dem, was das Paket tut, überein
 
-**Priority:** 🟰 Medium · **State:** Under estimation
+**Priority:** 🟰 Medium · **State:** Estimated
 
 **What a user gains.** Wer Pi in Porelo installiert, anmeldet und einen Task startet, kann sich auf README und doc/index.md verlassen: Befehle, Provider, Modelle, erreichbare Hosts, Paketgröße und Fehlermeldungen stimmen mit dem Verhalten überein.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-pi#PI74](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi74) (Under estimation)
+- [porelo-pi#PI74](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi74) (Estimated)
 
 ## Data
 
