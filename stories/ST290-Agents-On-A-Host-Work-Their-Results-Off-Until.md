@@ -88,6 +88,7 @@
 - [porelo#B607](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b607) (Review)
 - [porelo-claude-code#CC64](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc64) (Accepted)
 - [porelo#B799](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b799) (Backlog)
+- [porelo#B800](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b800) (Backlog)
 
 ## Data
 
@@ -179,7 +180,8 @@
     "porelo#B591",
     "porelo#B607",
     "porelo-claude-code#CC64",
-    "porelo#B799"
+    "porelo#B799",
+    "porelo#B800"
   ],
   "tested": null
 }
