@@ -4,7 +4,7 @@
 # and the model per agent. A rule with result: (ANALYSIS or ESTIMATE) starts a task that reads only, pushes nothing and
 # hands back its result file, which the planner saves. Modes and models are proposals: the first mode and the first agent's model are preselected
 # in the task dialog, where the person may change them, and a task that starts by itself takes them. A working state
-# is a key here. A story has one issue per repository, so the planner starts one agent for each issue; in analysis and
+# is a key here. A story typically has one issue per repository, so the planner starts one agent for each issue; in analysis and
 # estimation that agent works alone. The planner appends the result file's format and bounds to the order itself.
 work:
   In analysis:
