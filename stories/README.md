@@ -6,8 +6,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 82 |
-| [Accepted](#accepted) | 27 |
+| [Idea](#idea) | 83 |
+| [Accepted](#accepted) | 28 |
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 52 |
@@ -102,11 +102,13 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st218"></a>[ST218](ST218-Porelo.md) porelo | 🔽 Low | B:51 | A person gets the Porelo core repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st343"></a>[ST343](ST343-A-Tasks-Timeline-Seen-In-An-Open-Source-Tool.md) A task's timeline seen in an open-source tool on the same machine | 🔽 Low | none yet | A person who wants charts, trace views or evaluations points the export at an open-source tool running locally (MLflow with SQLite first, OpenLIT or Langfuse where their extra services are worth it), with the tool's own telemetry off, and sees the runs of their tasks there; Porelo installs nothing of it by default. |
 | <a id="st344"></a>[ST344](ST344-Lightweight-Alternative-To-Porelo-On-Mac-Windows-Desktops.md) Lightweight Alternative to Porelo on Mac/Windows Desktops | 🔽 Low | none yet | A person on a Mac or Windows desktop runs agent tasks without a VM: the window and the planner manage tasks through a runtime-neutral interface, with a native sandbox such as sandbox-runtime behind it, and are told plainly which of Porelo's protections that runtime does not give. |
+| <a id="st381"></a>[ST381](ST381-A-Forge-And-Matrix-Of-Ones-Own-On-Windows-And-macOS.md) A forge and Matrix of one's own on Windows and macOS | 🔽 Low | none yet | A person on Windows, whose Porelo runs in WSL, or on macOS, whose Porelo runs in a lightweight VM, gets a forge and Matrix of their own as a Linux user does: installed, seen and uninstalled from the window, either inside WSL or the VM, or on a host when that serves better, whichever the analysis finds sound. |
 
 ## Accepted
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
+| <a id="st380"></a>[ST380](ST380-A-Forge-And-Matrix-Of-Ones-Own-Installed-And-Seen.md) A forge and Matrix of one's own, installed and seen | 🔼 High | none yet | A person installs and uninstalls a forge or Matrix from the window, each alone, alike on their computer or a host; uninstall refuses while work is not at central. Under each machine both have a page: what waits for central or review, what agents ask, a jump to forge or client. The machine's page only says how each stands; My forges becomes Central forges, listing only those. |
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | 🟰 Medium | PJ:4 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
 | <a id="st58"></a>[ST58](ST58-Who-Wrote-It-And-What-It-Touches-Shown.md) Who wrote it and what it touches, shown on waiting work | 🟰 Medium | B:1 | A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
