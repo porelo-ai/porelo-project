@@ -12,8 +12,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Estimated](#estimated) | 33 |
 | [Backlog](#backlog) | 49 |
 | [Implementing](#implementing) | 3 |
-| [Review](#review) | 2 |
-| [Finished](#finished) | 146 |
+| [Finished](#finished) | 148 |
 | [Rejected](#rejected) | 5 |
 
 ## Idea
@@ -272,13 +271,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st347"></a>[ST347](ST347-Every-Story-Played-Through-Once-As-A-User-Would.md) Every story played through once, as a user would | 🔼 High | HO:6 · B:5 · F:2 · PL:2 · CC:1 | Each High story's test runs once, automated, on a test VM the way a person would play it, at the command line or in the window, so a story's end is shown working before the person tries it. |
 | <a id="st370"></a>[ST370](ST370-Stories-And-Issues-Kept-In-GitHub-Issues.md) Stories and issues kept in GitHub Issues | 🔼 High | PL:8 · B:5 · BT:3 · FC:3 · F:2 · HO:1 · PJ:1 | A person plans in GitHub Issues instead of Markdown in every repository: the board loads in about a second, and moving an issue needs no fetch, commit and push; no task holds a GitHub token. The tracker is named apart from the forge and the issue model apart from its GitHub mapping, so another tracker, such as Jira beside Bitbucket, needs only its own store, client and mapping later. |
 
-## Review
-
-| Story | Priority | Issues | What a user gains |
-|---|---|---|---|
-| <a id="st104"></a>[ST104](ST104-Keep-Accounts-And-Projects-Apart.md) Keep accounts and projects apart | 🔼 High | B:7 · HO:1 | Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's. |
-| <a id="st359"></a>[ST359](ST359-Credentials-And-Task-Boundaries-Hardened-After-This-Run.md) Credentials and task boundaries hardened after this run | 🔼 High | B:7 | Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods. |
-
 ## Finished
 
 | Story | Priority | Issues | What a user gains |
@@ -378,6 +370,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st56"></a>[ST56](ST56-The-Gathered-Findings-Worked-Off.md) The gathered findings worked off | 🔼 High | B:5 · F:1 · HO:1 | The gathered findings from earlier work are cleared, and anything larger becomes an issue of its own, so nothing open is lost. |
 | <a id="st100"></a>[ST100](ST100-Check-Allowed-Destinations.md) Check allowed destinations | 🔼 High | B:3 | A person sees whether the machine can check allowed destinations, and a task reaches only the addresses, domains and sets its project allows. |
 | <a id="st102"></a>[ST102](ST102-Trust-Only-The-Intended-Socket-And-Inbox-Owner.md) Trust only the intended socket and inbox owner | 🔼 High | B:2 | On AppArmor, Porelo trusts only the intended socket and inbox owner and refuses another program's socket or a wrongly owned file. |
+| <a id="st104"></a>[ST104](ST104-Keep-Accounts-And-Projects-Apart.md) Keep accounts and projects apart | 🔼 High | B:7 · HO:1 | Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's. |
 | <a id="st115"></a>[ST115](ST115-Keep-Project-Intake-And-Sign-In-Free-Of.md) Keep project intake and sign-in free of hidden secrets | 🔼 High | B:5 | Project intake and sign-in keep secrets out of sight, so invalid credential names are refused and known test credentials do not leak. |
 | <a id="st116"></a>[ST116](ST116-Cancel-The-Agent-Sign-In-Completely.md) Cancel the agent sign-in completely | 🔼 High | B:1 | A person can cancel an agent's sign-in completely with the supported escape, even if the agent ignores it. |
 | <a id="st294"></a>[ST294](ST294-Plan-The-Stories-On-A-Board-In-The-Window.md) Plan the stories on a board in the window | 🔼 High | B:7 · GH:4 · F:1 | The operator sees every story by state, the most important first, opens a story or an issue, and changes a story's state by drag and drop, read from and written through a story API whose states are configured, not built in; a state change calls an action API. |
@@ -404,6 +397,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st346"></a>[ST346](ST346-An-Issue-Head-The-Board-Refuses-Never-Reaches-Main.md) An issue head the board refuses never reaches main | 🔼 High | PL:3 · B:2 · BT:2 · AG:1 · CC:1 · CX:1 · EC:1 · F:1 · FC:1 · GH:1 · HO:1 · MX:1 · OM:1 · PA:1 · PI:1 | Every repository's checks and the prepush refuse an issue head the planner's board would refuse, naming the file and field. |
 | <a id="st349"></a>[ST349](ST349-Work-Under-Windows-The-Window-Starts-The-Planner-And-Opens.md) Work under Windows: the window starts the planner and opens a host's vault | 🔼 High | F:2 | On Windows the window starts the planner itself and opens a host's vault without help, so a person works from a Windows desktop as from Linux. |
 | <a id="st351"></a>[ST351](ST351-A-Push-That-Will-Not-Be-Built-Is-Said-So-And-Nobody-Waits-For-A-Build.md) A push that will not be built is said so, and nobody waits for a build | 🔼 High | B:2 · F:1 | When a push will not be built, because it waits at the gate for a person, no build followed or the watch did not start, the agent and the person are told at once and nobody waits for a build report. |
+| <a id="st359"></a>[ST359](ST359-Credentials-And-Task-Boundaries-Hardened-After-This-Run.md) Credentials and task boundaries hardened after this run | 🔼 High | B:7 | Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods. |
 | <a id="st360"></a>[ST360](ST360-A-Task-Keeps-Its-Limit-And-Key-Across-A-Restart.md) A task keeps its limit and key across a restart | 🔼 High | B:2 | An unattended run stops at its time limit even when porelod restarted in between, and a caller finds its task by its key after a machine restart, also when the task's start failed and it was kept, so no run goes on unbounded and no second task is started by mistake. |
 | <a id="st362"></a>[ST362](ST362-Credentials-Carried-To-A-Host.md) Credentials carried to a host | 🔼 High | F:10 · B:5 · AG:1 · CC:1 · CX:1 · OM:1 · PI:1 · PL:1 | A person who has already signed in to a provider on this computer need not sign in again on each host: a small dialog on a host's provider row offers this computer's vault entries and the local agents' own sign-in files for that provider, for every provider available here, and the chosen one goes into the host's vault, never shown, logged or put in a command line. |
 | <a id="st367"></a>[ST367](ST367-Findings-Of-The-Live-Test-On-A-Rented-Host.md) Findings of the live test on a rented host | 🔼 High | F:5 · B:3 · CC:1 · CX:1 · OM:1 · PI:1 · PL:1 | A person who rents a host, hands it their token, signs an agent in and runs planned work there sees each step progress in the window, can approve the pull request a task opens, and gets work done on the host's newest copy, without false refusals or raw error and event lines. |

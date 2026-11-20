@@ -1,6 +1,6 @@
 # ST104 — Keep accounts and projects apart
 
-**Priority:** 🔼 High · **State:** Review
+**Priority:** 🔼 High · **State:** Finished (2026-11-20)
 
 **What a user gains.** Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's.
 
@@ -41,6 +41,7 @@
     "porelo#B742",
     "porelo#B743"
   ],
-  "tested": null
+  "tested": "2026-11-20",
+  "state": "Finished"
 }
 ```

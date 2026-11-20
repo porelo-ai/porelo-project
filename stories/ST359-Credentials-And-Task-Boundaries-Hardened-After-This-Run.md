@@ -1,6 +1,6 @@
 # ST359 — Credentials and task boundaries hardened after this run
 
-**Priority:** 🔼 High · **State:** Review
+**Priority:** 🔼 High · **State:** Finished (2026-11-20)
 
 **What a user gains.** Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods.
 
@@ -39,6 +39,7 @@
     "porelo#B768",
     "porelo#B769"
   ],
-  "tested": null
+  "tested": "2026-11-20",
+  "state": "Finished"
 }
 ```
