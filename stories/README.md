@@ -7,10 +7,10 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 82 |
-| [Accepted](#accepted) | 28 |
+| [Accepted](#accepted) | 27 |
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
-| [Backlog](#backlog) | 51 |
+| [Backlog](#backlog) | 52 |
 | [Review](#review) | 2 |
 | [Finished](#finished) | 144 |
 | [Rejected](#rejected) | 5 |
@@ -106,7 +106,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st370"></a>[ST370](ST370-Stories-And-Issues-Kept-In-GitHub-Issues.md) Stories and issues kept in GitHub Issues | 🔼 High | none yet | A person plans in GitHub Issues instead of Markdown files in every repository: the board loads in about a second however many repositories the project has, and analysing, estimating or moving an issue needs no fetch, commit and push. A task still hands its result in to the planner, which writes it to GitHub with the person's own access; no task holds a GitHub token. |
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | 🟰 Medium | PJ:4 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
 | <a id="st58"></a>[ST58](ST58-Who-Wrote-It-And-What-It-Touches-Shown.md) Who wrote it and what it touches, shown on waiting work | 🟰 Medium | B:1 | A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
@@ -225,6 +224,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st347"></a>[ST347](ST347-Every-Story-Played-Through-Once-As-A-User-Would.md) Every story played through once, as a user would | 🔼 High | HO:6 · B:5 · F:2 · PL:2 · CC:1 | Each High story's test runs once, automated, on a test VM the way a person would play it, at the command line or in the window, so a story's end is shown working before the person tries it. |
 | <a id="st359"></a>[ST359](ST359-Credentials-And-Task-Boundaries-Hardened-After-This-Run.md) Credentials and task boundaries hardened after this run | 🔼 High | B:7 | Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods. |
 | <a id="st369"></a>[ST369](ST369-Findings-Of-The-Second-Live-Test-On-A-Rented-Host.md) Findings of the second live test on a rented host | 🔼 High | PL:13 · F:12 · CC:3 · B:2 · CX:2 · OM:2 · PI:2 · AG:1 | A person who sets up a rented host and puts a project on it gives the host their forge token only where the window cannot hand it on by itself, and meets no other step of the second live test that stops, repeats or misleads them. |
+| <a id="st370"></a>[ST370](ST370-Stories-And-Issues-Kept-In-GitHub-Issues.md) Stories and issues kept in GitHub Issues | 🔼 High | PL:7 · B:4 · FC:3 · BT:2 · F:2 · HO:1 | A person plans in GitHub Issues instead of Markdown files in every repository: the board loads in about a second however many repositories the project has, and analysing, estimating or moving an issue needs no fetch, commit and push. A task still hands its result in to the planner, which writes it to GitHub with the person's own access; no task holds a GitHub token. |
 | <a id="st371"></a>[ST371](ST371-A-Rented-Hosts-Pull-Requests-Read-Before-The-First-Start.md) A rented host's pull requests read before the first start | 🔼 High | B:1 · F:1 | A person whose project a rented host carries sees that project's open pull requests in Needs you before starting any work there, and where they cannot be read, is told the machine's reason instead of being told that it stopped answering. |
 | <a id="st375"></a>[ST375](ST375-A-Rebuilt-Host-Set-Up-Again-In-The-Window-Alone.md) A rebuilt host set up again in the window alone | 🔼 High | F:5 · B:1 | A person whose rented host was rebuilt or rented again under the same name sets it up again in the window alone, is told plainly when files of an earlier setup are in the way, and sees how far handing on the token has come. |
 | <a id="st377"></a>[ST377](ST377-An-Idea-Discussed-On-A-Rented-Host-Comes-Through.md) An idea discussed on a rented host comes through | 🔼 High | B:2 · PL:1 | A person who discusses an idea on a rented host that carries only some of the project's repositories starts the discussion without fixing anything on the host by hand, the agent sees no errors for repositories that are not there, and the idea it writes down is saved the first time. |
