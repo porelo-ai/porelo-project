@@ -1,6 +1,6 @@
 # ST60 — A comment with a suggestion reaches the agent
 
-**Priority:** 🔼 High · **State:** Analyzed
+**Priority:** 🔼 High · **State:** Estimated
 
 **What a user gains.** A person can comment on a line with a suggestion in the review, and the task building that work receives it.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo#B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136) (Analyzed)
+- [porelo#B136](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b136) (Estimated)
 - [porelo#B150](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b150) (Review)
 - [porelo#B166](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b166) (Backlog)
 - [porelo-frontend#F78](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f78) (Backlog)

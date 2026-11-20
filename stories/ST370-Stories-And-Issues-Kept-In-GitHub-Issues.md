@@ -30,6 +30,7 @@
 - [porelo-project#PJ122](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj122) (Accepted)
 - [porelo#B806](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b806) (Review)
 - [porelo-buildtools#BT94](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt94) (Backlog)
+- [porelo-planner#PL181](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl181) (Implementing)
 
 ## Data
 
@@ -65,7 +66,8 @@
     "porelo-host#HO195",
     "porelo-project#PJ122",
     "porelo#B806",
-    "porelo-buildtools#BT94"
+    "porelo-buildtools#BT94",
+    "porelo-planner#PL181"
   ]
 }
 ```

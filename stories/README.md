@@ -7,11 +7,11 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 83 |
-| [Accepted](#accepted) | 29 |
-| [Analyzed](#analyzed) | 32 |
-| [Estimated](#estimated) | 31 |
+| [Accepted](#accepted) | 28 |
+| [Analyzed](#analyzed) | 30 |
+| [Estimated](#estimated) | 33 |
 | [Backlog](#backlog) | 52 |
-| [Implementing](#implementing) | 1 |
+| [Implementing](#implementing) | 2 |
 | [Finished](#finished) | 146 |
 | [Rejected](#rejected) | 5 |
 
@@ -107,8 +107,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st382"></a>[ST382](ST382-Stories-And-Issues-Kept-By-Hand-Through-The-Planner.md) Stories and issues kept by hand through the planner | ⏫ Highest | none yet | A person, or an agent acting for them, keeps the board by hand through the planner alone, on GitHub and in a local store alike: makes a story with its issues, hangs an issue into a story or out of it, sets what blocks it, corrects size, estimate, priority and rank, edits title and text, comments, splits an issue and cuts a release, without opening the tracker. |
-| <a id="st383"></a>[ST383](ST383-Entry-Points-Only-Map-And-Services-Do-The-Work.md) Entry points only map, and services do the work | 🔼 High | none yet | Whoever changes Porelo finds each use case in one service: an entry point (a REST controller, an MCP method, a command) only checks its input, maps it to a record, calls the service and maps the answer back; the service holds locks, revisions, rules, storing and events without knowing the transport, and is tested without it. |
+| <a id="st383"></a>[ST383](ST383-Entry-Points-Only-Map-And-Services-Do-The-Work.md) Entry points only map, and services do the work | 🔼 High | B:5 · MX:4 · BT:1 · F:1 · GH:1 · HO:1 · IJ:1 · PL:1 · SL:1 | Whoever changes Porelo finds each use case in one service: an entry point (a REST controller, an MCP method, a command) only checks its input, maps it to a record, calls the service and maps the answer back; the service holds locks, revisions, rules, storing and events without knowing the transport, and is tested without it. |
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | 🟰 Medium | PJ:4 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
 | <a id="st58"></a>[ST58](ST58-Who-Wrote-It-And-What-It-Touches-Shown.md) Who wrote it and what it touches, shown on waiting work | 🟰 Medium | B:1 | A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
@@ -141,8 +140,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st60"></a>[ST60](ST60-A-Comment-With-A-Suggestion-Reaches-The-Agent.md) A comment with a suggestion reaches the agent | 🔼 High | B:4 · F:2 | A person can comment on a line with a suggestion in the review, and the task building that work receives it. |
-| <a id="st380"></a>[ST380](ST380-A-Forge-And-Matrix-Of-Ones-Own-Installed-And-Seen.md) A forge and Matrix of one's own, installed and seen | 🔼 High | F:6 · MX:3 · HO:2 | A person installs and uninstalls a forge or Matrix from the window, each alone, alike on their computer or a host; uninstall refuses while work is not at central. Under each machine both have a page: what waits for central or review, what agents ask, a jump to forge or client. The machine's page only says how each stands; My forges becomes Central forges, listing only those. |
 | <a id="st14"></a>[ST14](ST14-The-Coordinator-Reads-Everything-And-Changes-Only-Porelo.md) The coordinator reads everything and changes only porelo-project | 🟰 Medium | PJ:2 | The coordinator can read every repository of the project but can change only the project repository, and any change elsewhere is refused. |
 | <a id="st24"></a>[ST24](ST24-The-Tokens-Counted-Per-Task-The-Dependencies-Shared.md) The tokens counted per task, the dependencies shared | 🟰 Medium | B:2 · BT:1 · PJ:1 | A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again. |
 | <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | 🟰 Medium | IJ:1 · MX:1 · SL:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
@@ -178,6 +175,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
+| <a id="st60"></a>[ST60](ST60-A-Comment-With-A-Suggestion-Reaches-The-Agent.md) A comment with a suggestion reaches the agent | 🔼 High | B:4 · F:2 | A person can comment on a line with a suggestion in the review, and the task building that work receives it. |
+| <a id="st380"></a>[ST380](ST380-A-Forge-And-Matrix-Of-Ones-Own-Installed-And-Seen.md) A forge and Matrix of one's own, installed and seen | 🔼 High | F:6 · MX:3 · HO:2 | A person installs and uninstalls a forge or Matrix from the window, each alone, alike on their computer or a host; uninstall refuses while work is not at central. Under each machine both have a page: what waits for central or review, what agents ask, a jump to forge or client. The machine's page only says how each stands; My forges becomes Central forges, listing only those. |
 | <a id="st29"></a>[ST29](ST29-A-Repository-Renamed-Without-Losing-Work.md) A repository renamed without losing work | 🟰 Medium | PJ:1 | A person can rename a repository's key in the project file without losing waiting work or tasks tied to it. |
 | <a id="st44"></a>[ST44](ST44-Questions-A-Plan-And-Taken-Up-Again.md) Questions, a plan, and taken up again | 🟰 Medium | PJ:1 | A person answers questions, sees the whole plan before anything runs, and can pick the setup up again after a pause in the wizard. |
 | <a id="st46"></a>[ST46](ST46-The-Comfortable-Start-At-GitHub.md) The comfortable start at GitHub | 🟰 Medium | PJ:1 | A person can start at GitHub without creating a token by hand, using a trial app first. |
@@ -271,7 +270,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st370"></a>[ST370](ST370-Stories-And-Issues-Kept-In-GitHub-Issues.md) Stories and issues kept in GitHub Issues | 🔼 High | PL:7 · B:5 · BT:3 · FC:3 · F:2 · HO:1 · PJ:1 | A person plans in GitHub Issues instead of Markdown in every repository: the board loads in about a second, and moving an issue needs no fetch, commit and push; no task holds a GitHub token. The tracker is named apart from the forge and the issue model apart from its GitHub mapping, so another tracker, such as Jira beside Bitbucket, needs only its own store, client and mapping later. |
+| <a id="st382"></a>[ST382](ST382-Stories-And-Issues-Kept-By-Hand-Through-The-Planner.md) Stories and issues kept by hand through the planner | ⏫ Highest | PL:2 | A person, or an agent acting for them, keeps the board by hand through the planner alone, on GitHub and in a local store alike: makes a story with its issues, hangs an issue into a story or out of it, sets what blocks it, corrects size, estimate, priority and rank, edits title and text, comments, splits an issue and cuts a release, without opening the tracker. |
+| <a id="st370"></a>[ST370](ST370-Stories-And-Issues-Kept-In-GitHub-Issues.md) Stories and issues kept in GitHub Issues | 🔼 High | PL:8 · B:5 · BT:3 · FC:3 · F:2 · HO:1 · PJ:1 | A person plans in GitHub Issues instead of Markdown in every repository: the board loads in about a second, and moving an issue needs no fetch, commit and push; no task holds a GitHub token. The tracker is named apart from the forge and the issue model apart from its GitHub mapping, so another tracker, such as Jira beside Bitbucket, needs only its own store, client and mapping later. |
 
 ## Finished
 
