@@ -8,14 +8,14 @@
 
 **Issues:**
 
-- [porelo#B199](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b199) (Review)
-- [porelo#B50](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b50) (Review)
-- [porelo#B246](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b246) (Review)
-- [porelo-host#HO188](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho188) (Review)
-- [porelo#B735](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b735) (Review)
-- [porelo#B741](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b741) (Review)
-- [porelo#B742](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b742) (Review)
-- [porelo#B743](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b743) (Review)
+- [porelo#B199](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b199) (Finished)
+- [porelo#B50](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b50) (Finished)
+- [porelo#B246](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b246) (Finished)
+- [porelo-host#HO188](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho188) (Finished)
+- [porelo#B735](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b735) (Finished)
+- [porelo#B741](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b741) (Finished)
+- [porelo#B742](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b742) (Finished)
+- [porelo#B743](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b743) (Finished)
 
 ## Notes
 

@@ -29,7 +29,7 @@
 - [porelo-planner#PL150](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl150) (Review)
 - [porelo-planner#PL151](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl151) (Review)
 - [porelo-planner#PL152](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl152) (Review)
-- [porelo-planner#PL153](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl153) (Implementing)
+- [porelo-planner#PL153](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl153) (Review)
 - [porelo-planner#PL154](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl154) (Review)
 - [porelo-planner#PL155](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl155) (Implementing)
 - [porelo-frontend#F605](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f605) (Review)

@@ -14,7 +14,7 @@
 - [porelo#B813](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b813) (Accepted)
 - [porelo#B814](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b814) (Accepted)
 - [porelo-planner#PL184](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl184) (Accepted)
-- [porelo-frontend#F625](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f625) (Accepted)
+- [porelo-frontend#F625](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f625) (Estimated)
 - [porelo-message-matrix#MX116](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx116) (Estimated)
 - [porelo-message-matrix#MX117](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx117) (Estimated)
 - [porelo-message-matrix#MX118](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx118) (Estimated)
