@@ -6,7 +6,14 @@
 
 **The test.** In a test organization a person makes issues by hand: one with no Status, one with no Priority, one with a Status the workflow lacks, one closed while its Status is open, one with a fence left open, and overrides a sum field. The board shows each, the odd ones with a warning and a fix offered; a stage result written to the fenced one deletes nothing; the overridden sum stays.
 
-**Issues:** none yet
+**Issues:**
+
+- [porelo-planner#PL171](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl171) (Backlog)
+- [porelo-planner#PL172](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl172) (Backlog)
+- [porelo-planner#PL173](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl173) (Backlog)
+- [porelo-planner#PL174](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl174) (Backlog)
+- [porelo-planner#PL175](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl175) (Backlog)
+- [porelo-planner#PL176](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl176) (Backlog)
 
 ## Data
 
@@ -20,6 +27,13 @@
   "tested": null,
   "priority": "High",
   "state": "Backlog",
-  "issues": []
+  "issues": [
+    "porelo-planner#PL171",
+    "porelo-planner#PL172",
+    "porelo-planner#PL173",
+    "porelo-planner#PL174",
+    "porelo-planner#PL175",
+    "porelo-planner#PL176"
+  ]
 }
 ```

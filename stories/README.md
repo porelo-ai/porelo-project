@@ -7,8 +7,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 83 |
-| [Accepted](#accepted) | 28 |
-| [Analyzed](#analyzed) | 31 |
+| [Accepted](#accepted) | 27 |
+| [Analyzed](#analyzed) | 32 |
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 52 |
 | [Implementing](#implementing) | 1 |
@@ -108,7 +108,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st380"></a>[ST380](ST380-A-Forge-And-Matrix-Of-Ones-Own-Installed-And-Seen.md) A forge and Matrix of one's own, installed and seen | 🔼 High | none yet | A person installs and uninstalls a forge or Matrix from the window, each alone, alike on their computer or a host; uninstall refuses while work is not at central. Under each machine both have a page: what waits for central or review, what agents ask, a jump to forge or client. The machine's page only says how each stands; My forges becomes Central forges, listing only those. |
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | 🟰 Medium | PJ:4 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
 | <a id="st58"></a>[ST58](ST58-Who-Wrote-It-And-What-It-Touches-Shown.md) Who wrote it and what it touches, shown on waiting work | 🟰 Medium | B:1 | A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
@@ -142,6 +141,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
 | <a id="st60"></a>[ST60](ST60-A-Comment-With-A-Suggestion-Reaches-The-Agent.md) A comment with a suggestion reaches the agent | 🔼 High | B:4 · F:2 | A person can comment on a line with a suggestion in the review, and the task building that work receives it. |
+| <a id="st380"></a>[ST380](ST380-A-Forge-And-Matrix-Of-Ones-Own-Installed-And-Seen.md) A forge and Matrix of one's own, installed and seen | 🔼 High | F:6 · MX:3 · HO:2 | A person installs and uninstalls a forge or Matrix from the window, each alone, alike on their computer or a host; uninstall refuses while work is not at central. Under each machine both have a page: what waits for central or review, what agents ask, a jump to forge or client. The machine's page only says how each stands; My forges becomes Central forges, listing only those. |
 | <a id="st14"></a>[ST14](ST14-The-Coordinator-Reads-Everything-And-Changes-Only-Porelo.md) The coordinator reads everything and changes only porelo-project | 🟰 Medium | PJ:2 | The coordinator can read every repository of the project but can change only the project repository, and any change elsewhere is refused. |
 | <a id="st24"></a>[ST24](ST24-The-Tokens-Counted-Per-Task-The-Dependencies-Shared.md) The tokens counted per task, the dependencies shared | 🟰 Medium | B:2 · BT:1 · PJ:1 | A person sees what each issue's tasks spent in tokens, and repeated Maven builds reuse shared dependencies instead of downloading them again. |
 | <a id="st27"></a>[ST27](ST27-Every-Workflow-Runs-On-The-Local-Forge-As.md) Every workflow runs on the local forge as on the central one | 🟰 Medium | IJ:1 · MX:1 · SL:1 | Every workflow runs on the local forge exactly as on the central one, so a green build means the same in both places. |
@@ -230,7 +230,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st371"></a>[ST371](ST371-A-Rented-Hosts-Pull-Requests-Read-Before-The-First-Start.md) A rented host's pull requests read before the first start | 🔼 High | B:1 · F:1 | A person whose project a rented host carries sees that project's open pull requests in Needs you before starting any work there, and where they cannot be read, is told the machine's reason instead of being told that it stopped answering. |
 | <a id="st375"></a>[ST375](ST375-A-Rebuilt-Host-Set-Up-Again-In-The-Window-Alone.md) A rebuilt host set up again in the window alone | 🔼 High | F:5 · B:1 | A person whose rented host was rebuilt or rented again under the same name sets it up again in the window alone, is told plainly when files of an earlier setup are in the way, and sees how far handing on the token has come. |
 | <a id="st377"></a>[ST377](ST377-An-Idea-Discussed-On-A-Rented-Host-Comes-Through.md) An idea discussed on a rented host comes through | 🔼 High | B:2 · PL:1 | A person who discusses an idea on a rented host that carries only some of the project's repositories starts the discussion without fixing anything on the host by hand, the agent sees no errors for repositories that are not there, and the idea it writes down is saved the first time. |
-| <a id="st379"></a>[ST379](ST379-Every-Story-And-Issue-Read-And-Written-Robustly.md) Every story and issue read and written robustly | 🔼 High | none yet | A person sees every story and issue on the board, however it was edited by hand in the tracker: one the planner cannot fully read is shown with a warning and an offer to correct it, never left out. A field counts as set and is never checked against the text or the comments, and a write never deletes text the planner did not place. |
+| <a id="st379"></a>[ST379](ST379-Every-Story-And-Issue-Read-And-Written-Robustly.md) Every story and issue read and written robustly | 🔼 High | PL:6 | A person sees every story and issue on the board, however it was edited by hand in the tracker: one the planner cannot fully read is shown with a warning and an offer to correct it, never left out. A field counts as set and is never checked against the text or the comments, and a write never deletes text the planner did not place. |
 | <a id="st4"></a>[ST4](ST4-A-Task-Fetches-A-Snapshot-From-Its-Hosts.md) A task fetches a snapshot from its host's forge | 🟰 Medium | B:1 · HO:1 · PJ:1 | A task on the host can fetch Porelo's snapshot from the host's own forge registry by the name its project uses, without reaching outside. |
 | <a id="st17"></a>[ST17](ST17-The-Gate-And-The-Transport-Held-By-Tests.md) The gate and the transport held by tests | 🟰 Medium | SL:10 · MX:9 · B:1 | The message gate and the transport are guarded by tests, shown by a mutation run, so a removed refusal gets noticed. |
 | <a id="st23"></a>[ST23](ST23-The-Room-And-The-Usage-Records-Outlive-The.md) The room and the usage records outlive the host | 🟰 Medium | MX:3 · B:2 · HO:1 | The room with its messages and the usage records survive taking the host down and bringing it up again, so history is not lost. |
