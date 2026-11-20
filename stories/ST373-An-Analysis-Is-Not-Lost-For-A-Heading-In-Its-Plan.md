@@ -1,6 +1,6 @@
 # ST373 — An analysis is not lost for a heading in its plan
 
-**Priority:** ⏫ Highest · **State:** Review
+**Priority:** ⏫ Highest · **State:** Finished
 
 **What a user gains.** A person who starts the analysis of a story gets its plans saved on the board, even where the agent opened a plan with a heading of its own, instead of losing the whole run to a format refusal.
 
@@ -8,7 +8,7 @@
 
 **Issues:**
 
-- [porelo-planner#PL160](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl160) (Review)
+- [porelo-planner#PL160](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl160) (Finished)
 
 ## Data
 
@@ -21,7 +21,6 @@
   "test": "On a rented host, start the analysis of a story whose agent writes a plan opening with a second-level heading: the planner saves it, the issue shows the plan under its Plan section with that heading as a third-level one, and no format refusal is shown.",
   "tested": null,
   "priority": "Highest",
-  "state": "Review",
   "issues": [
     "porelo-planner#PL160"
   ]

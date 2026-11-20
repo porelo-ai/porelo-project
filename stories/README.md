@@ -12,8 +12,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 52 |
 | [Implementing](#implementing) | 1 |
-| [Review](#review) | 2 |
-| [Finished](#finished) | 144 |
+| [Review](#review) | 1 |
+| [Finished](#finished) | 145 |
 | [Rejected](#rejected) | 5 |
 
 ## Idea
@@ -276,7 +276,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st373"></a>[ST373](ST373-An-Analysis-Is-Not-Lost-For-A-Heading-In-Its-Plan.md) An analysis is not lost for a heading in its plan | ⏫ Highest | PL:1 | A person who starts the analysis of a story gets its plans saved on the board, even where the agent opened a plan with a heading of its own, instead of losing the whole run to a format refusal. |
 | <a id="st374"></a>[ST374](ST374-Stop-Work-From-Needs-You-At-Once.md) Stop work from Needs you at once | 🔼 High | F:1 · PL:1 | A person who sees a story's running or raised work in Needs you can stop it there right after the window starts, without opening Planning first. |
 
 ## Finished
@@ -365,6 +364,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st289"></a>[ST289](ST289-Review-In-IntelliJ.md) Review in IntelliJ | ⏫ Highest | IJ:2 | A person can review in IntelliJ on the laptop, reading a waiting push and approving the displayed commit against the local Porelo. |
 | <a id="st292"></a>[ST292](ST292-A-Whole-Move-Rehearsed-By-The-Agents-On-A.md) A whole move rehearsed by the agents on a rented server | ⏫ Highest | B:3 · F:3 · MX:3 · HO:1 | Once a person has rented a server, the agents rehearse a whole move on it by themselves with a test identity in a test organization: the host, the window driven in a local VM, the room and the push and pull to central; problems show before the person's own test, and the person only rents and deletes the server. |
 | <a id="st361"></a>[ST361](ST361-Fixing-Small-UI-Issues.md) Fixing small UI issues | ⏫ Highest | F:23 · PL:11 · B:9 · HO:3 · IJ:2 · AG:1 · BT:1 · CC:1 · CX:1 · EC:1 · FC:1 · GH:1 · MC:1 · MX:1 · OM:1 · PI:1 · SI:1 · SL:1 | The planner's board says only what is true and offers only what a person needs: an issue's link to its story's row is not reported as broken, one Reload planning button brings the board up to date whatever went wrong, and no separate switch for finished and rejected stories stands beside the columns that fold; a story's or an issue's description reads as written, its Markdown rendered. |
+| <a id="st373"></a>[ST373](ST373-An-Analysis-Is-Not-Lost-For-A-Heading-In-Its-Plan.md) An analysis is not lost for a heading in its plan | ⏫ Highest | PL:1 | A person who starts the analysis of a story gets its plans saved on the board, even where the agent opened a plan with a heading of its own, instead of losing the whole run to a format refusal. |
 | <a id="st18"></a>[ST18](ST18-Small-Repairs-Of-Safety-And-Robustness.md) Small repairs of safety and robustness | 🔼 High | B:7 · HO:6 · CC:1 · SL:1 | Small safety and robustness gaps are closed, so forced removals leave nothing running, tokens are kept where tools read them, and tasks cannot reach other projects or the person's vault. |
 | <a id="st31"></a>[ST31](ST31-Keys-And-Providers-Without-Stumbling.md) Keys and providers without stumbling | 🔼 High | B:4 · P:1 | A person can paste a key into vault put and have it read whole, and an agent given an unknown provider is refused with a clear message. |
 | <a id="st32"></a>[ST32](ST32-Load-Time-Out-And-Forget-One-Connection.md) Load, time out and forget one connection | 🔼 High | F:4 · B:3 | A person sees pages load, connection actions time out and a connection be forgotten in one consistent way in the interface. |

@@ -13,7 +13,7 @@
 - [porelo-forge-clients#FC26](https://github.com/porelo-ai/porelo-forge-clients/blob/main/issues/README.md#fc26) (Review)
 - [porelo-planner#PL164](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl164) (Review)
 - [porelo-planner#PL125](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl125) (Review)
-- [porelo-planner#PL165](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl165) (Backlog)
+- [porelo-planner#PL165](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl165) (Review)
 - [porelo-planner#PL166](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl166) (Backlog)
 - [porelo-planner#PL167](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl167) (Backlog)
 - [porelo-planner#PL169](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl169) (Implementing)
@@ -28,7 +28,7 @@
 - [porelo-buildtools#BT93](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt93) (Backlog)
 - [porelo-host#HO195](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho195) (Implementing)
 - [porelo-project#PJ122](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj122) (Accepted)
-- [porelo#B806](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b806) (Implementing)
+- [porelo#B806](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b806) (Review)
 - [porelo-buildtools#BT94](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt94) (Backlog)
 
 ## Data
