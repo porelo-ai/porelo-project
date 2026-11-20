@@ -1,6 +1,6 @@
 # ST347 — Every story played through once, as a user would
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Implementing
 
 **What a user gains.** Each High story's test runs once, automated, on a test VM the way a person would play it, at the command line or in the window, so a story's end is shown working before the person tries it.
 
@@ -17,7 +17,7 @@
 - [porelo-planner#PL104](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl104) (Review)
 - [porelo-planner#PL106](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl106) (Review)
 - [porelo-frontend#F522](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f522) (Review)
-- [porelo-frontend#F523](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f523) (Backlog)
+- [porelo-frontend#F523](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f523) (Implementing)
 - [porelo-claude-code#CC66](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc66) (Review)
 - [porelo#B681](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b681) (Review)
 - [porelo#B682](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b682) (Review)

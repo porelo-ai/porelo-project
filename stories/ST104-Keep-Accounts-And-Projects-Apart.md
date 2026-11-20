@@ -1,6 +1,6 @@
 # ST104 — Keep accounts and projects apart
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** Accounts and projects stay apart, so a transport reaches only a declared destination and one project cannot reach another's.
 
@@ -13,9 +13,9 @@
 - [porelo#B246](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b246) (Review)
 - [porelo-host#HO188](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho188) (Review)
 - [porelo#B735](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b735) (Review)
-- [porelo#B741](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b741) (Backlog)
+- [porelo#B741](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b741) (Review)
 - [porelo#B742](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b742) (Review)
-- [porelo#B743](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b743) (Backlog)
+- [porelo#B743](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b743) (Review)
 
 ## Notes
 

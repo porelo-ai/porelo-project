@@ -1,6 +1,6 @@
 # ST359 — Credentials and task boundaries hardened after this run
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** Credentials stay out of sight and off disk, the hooks start only their fixed programs, and a resumed task follows its project's current MCP methods.
 
@@ -12,7 +12,7 @@
 - [porelo#B140](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b140) (Review)
 - [porelo#B178](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b178) (Review)
 - [porelo#B252](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b252) (Review)
-- [porelo#B609](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b609) (Backlog)
+- [porelo#B609](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b609) (Review)
 - [porelo#B768](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b768) (Review)
 - [porelo#B769](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b769) (Review)
 
