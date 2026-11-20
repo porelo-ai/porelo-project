@@ -47,6 +47,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Size | Blocked by | What it covers |
 |---|---|---|---|
+| <a id="pj122"></a>[PJ122](PJ122-A-Commit-Names-Its-Issue-After-The-Cut-Over.md) | - | - | From the day the issues move to the tracker, every commit made for an issue carries one trailer per issue with the tracker's reference, so the tracker shows the commits on the issue; the shared rules and check-commits allow and check it. |
 | <a id="pj98"></a>[PJ98](PJ98-Check-Cross-References-Of-Issues.md) | - | - | Citations between the repositories' issues and documents are checked in one place that sees every repository; no repository's build or task reads another repository's files for it. |
 | <a id="pj70"></a>[PJ70](PJ70-A-Machine-Nobody-Sits-At-Tells-Its-Person-What-Needs-Them.md) | - | - | A machine nobody sits at watches what it needs to go on - credentials and their expiry, the vault, its services, memory and disk, a rented host's running time - and tells its person what needs them, wherever they are. |
 | <a id="pj49"></a>[PJ49](PJ49-A-Test-Names-The-Capability-It-Needs.md) | - | - | A test that needs what a Porelo task does not give - a nested container, `/dev/kvm`, the kernel keyring, a desktop session - carries a tag naming that capability; the tags say only what the agent runs in its task before it pushes; the task is finished when the build its push started, which runs every test, is green; mending a test to run in a task comes first where it is cheap. |

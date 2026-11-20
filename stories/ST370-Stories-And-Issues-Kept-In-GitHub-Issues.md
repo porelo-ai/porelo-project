@@ -1,6 +1,6 @@
 # ST370 — Stories and issues kept in GitHub Issues
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Implementing
 
 **What a user gains.** A person plans in GitHub Issues instead of Markdown in every repository: the board loads in about a second, and moving an issue needs no fetch, commit and push; no task holds a GitHub token. The tracker is named apart from the forge and the issue model apart from its GitHub mapping, so another tracker, such as Jira beside Bitbucket, needs only its own store, client and mapping later.
 
@@ -22,11 +22,12 @@
 - [porelo#B804](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b804) (Implementing)
 - [porelo#B805](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b805) (Implementing)
 - [porelo#B803](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b803) (Backlog)
-- [porelo-frontend#F615](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f615) (Backlog)
+- [porelo-frontend#F615](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f615) (Implementing)
 - [porelo-frontend#F616](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f616) (Implementing)
 - [porelo-buildtools#BT92](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt92) (Backlog)
 - [porelo-buildtools#BT93](https://github.com/porelo-ai/porelo-buildtools/blob/main/issues/README.md#bt93) (Backlog)
 - [porelo-host#HO195](https://github.com/porelo-ai/porelo-host/blob/main/issues/README.md#ho195) (Backlog)
+- [porelo-project#PJ122](https://github.com/porelo-ai/porelo-project/blob/main/issues/README.md#pj122) (Accepted)
 
 ## Data
 
@@ -39,7 +40,7 @@
   "test": "In a test organization the planner shows the board from GitHub Issues: stories with sub-issues across repositories, state, priority and size as project fields. Moving an issue shows on GitHub at once, without a commit. A finished task's result appears on its issue under the person's name. A carried-over project keeps each old id, and its Markdown issues, indexes and their checks are gone.",
   "tested": null,
   "priority": "High",
-  "state": "Backlog",
+  "state": "Implementing",
   "issues": [
     "porelo-forge-clients#FC24",
     "porelo-forge-clients#FC25",
@@ -59,7 +60,8 @@
     "porelo-frontend#F616",
     "porelo-buildtools#BT92",
     "porelo-buildtools#BT93",
-    "porelo-host#HO195"
+    "porelo-host#HO195",
+    "porelo-project#PJ122"
   ]
 }
 ```
