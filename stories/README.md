@@ -7,7 +7,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | State | Stories |
 |---|---|
 | [Idea](#idea) | 83 |
-| [Accepted](#accepted) | 27 |
+| [Accepted](#accepted) | 28 |
 | [Analyzed](#analyzed) | 32 |
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 52 |
@@ -107,6 +107,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
+| <a id="st382"></a>[ST382](ST382-Stories-And-Issues-Kept-By-Hand-Through-The-Planner.md) Stories and issues kept by hand through the planner | ⏫ Highest | none yet | A person, or an agent acting for them, keeps the board by hand through the planner alone, on GitHub and in a local store alike: makes a story with its issues, hangs an issue into a story or out of it, sets what blocks it, corrects size, estimate, priority and rank, edits title and text, comments, splits an issue and cuts a release, without opening the tracker. |
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | 🟰 Medium | PJ:4 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
 | <a id="st58"></a>[ST58](ST58-Who-Wrote-It-And-What-It-Touches-Shown.md) Who wrote it and what it touches, shown on waiting work | 🟰 Medium | B:1 | A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
