@@ -12,8 +12,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 52 |
 | [Implementing](#implementing) | 1 |
-| [Review](#review) | 1 |
-| [Finished](#finished) | 145 |
+| [Finished](#finished) | 146 |
 | [Rejected](#rejected) | 5 |
 
 ## Idea
@@ -272,12 +271,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 |---|---|---|---|
 | <a id="st370"></a>[ST370](ST370-Stories-And-Issues-Kept-In-GitHub-Issues.md) Stories and issues kept in GitHub Issues | 🔼 High | PL:7 · B:5 · BT:3 · FC:3 · F:2 · HO:1 · PJ:1 | A person plans in GitHub Issues instead of Markdown in every repository: the board loads in about a second, and moving an issue needs no fetch, commit and push; no task holds a GitHub token. The tracker is named apart from the forge and the issue model apart from its GitHub mapping, so another tracker, such as Jira beside Bitbucket, needs only its own store, client and mapping later. |
 
-## Review
-
-| Story | Priority | Issues | What a user gains |
-|---|---|---|---|
-| <a id="st374"></a>[ST374](ST374-Stop-Work-From-Needs-You-At-Once.md) Stop work from Needs you at once | 🔼 High | F:1 · PL:1 | A person who sees a story's running or raised work in Needs you can stop it there right after the window starts, without opening Planning first. |
-
 ## Finished
 
 | Story | Priority | Issues | What a user gains |
@@ -407,6 +400,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st362"></a>[ST362](ST362-Credentials-Carried-To-A-Host.md) Credentials carried to a host | 🔼 High | F:10 · B:5 · AG:1 · CC:1 · CX:1 · OM:1 · PI:1 · PL:1 | A person who has already signed in to a provider on this computer need not sign in again on each host: a small dialog on a host's provider row offers this computer's vault entries and the local agents' own sign-in files for that provider, for every provider available here, and the chosen one goes into the host's vault, never shown, logged or put in a command line. |
 | <a id="st367"></a>[ST367](ST367-Findings-Of-The-Live-Test-On-A-Rented-Host.md) Findings of the live test on a rented host | 🔼 High | F:5 · B:3 · CC:1 · CX:1 · OM:1 · PI:1 · PL:1 | A person who rents a host, hands it their token, signs an agent in and runs planned work there sees each step progress in the window, can approve the pull request a task opens, and gets work done on the host's newest copy, without false refusals or raw error and event lines. |
 | <a id="st368"></a>[ST368](ST368-A-Planning-Stage-Hands-Back-Its-Result.md) A planning stage hands back its result, and the planner stores it | 🔼 High | PL:3 · B:1 · F:1 | An issue stands in Analyzed or Estimated only when its plan or estimate really stands in the planning store. Analysis and estimation tasks no longer write the store's file format, open a pull request or pass the gate, so no stale copy of a repository can put a second issue file on main or move an issue whose central text holds no plan. The same flow works for a store that is not Git. |
+| <a id="st374"></a>[ST374](ST374-Stop-Work-From-Needs-You-At-Once.md) Stop work from Needs you at once | 🔼 High | F:1 · PL:1 | A person who sees a story's running or raised work in Needs you can stop it there right after the window starts, without opening Planning first. |
 | <a id="st19"></a>[ST19](ST19-Subagents-And-Reviews-As-A-Person-Sees-Them.md) Subagents and reviews, as a person sees them | 🟰 Medium | B:2 · IJ:2 · AG:1 · CC:1 · CX:1 · OM:1 | A person sees which subagents a task may start, and another subagent is refused with a clear message, with reviews shown plainly. |
 | <a id="st64"></a>[ST64](ST64-The-Person-Approves-With-Every-Round-In-View.md) The person approves with every round in view | 🟰 Medium | B:2 | A person approving at the gate or in the interface sees the diff with the latest findings and all the rounds that led to it. |
 | <a id="st82"></a>[ST82](ST82-An-Unchanged-Credential-And-Setup-Reported-Honestly.md) An unchanged credential and setup reported honestly | 🟰 Medium | B:2 | Setting the same credential or running setup again reports honestly that nothing changed, in text and in the interface. |
