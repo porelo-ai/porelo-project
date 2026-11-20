@@ -267,7 +267,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st370"></a>[ST370](ST370-Stories-And-Issues-Kept-In-GitHub-Issues.md) Stories and issues kept in GitHub Issues | 🔼 High | PL:7 · B:4 · FC:3 · BT:2 · F:2 · HO:1 · PJ:1 | A person plans in GitHub Issues instead of Markdown in every repository: the board loads in about a second, and moving an issue needs no fetch, commit and push; no task holds a GitHub token. The tracker is named apart from the forge and the issue model apart from its GitHub mapping, so another tracker, such as Jira beside Bitbucket, needs only its own store, client and mapping later. |
+| <a id="st370"></a>[ST370](ST370-Stories-And-Issues-Kept-In-GitHub-Issues.md) Stories and issues kept in GitHub Issues | 🔼 High | PL:7 · B:5 · BT:3 · FC:3 · F:2 · HO:1 · PJ:1 | A person plans in GitHub Issues instead of Markdown in every repository: the board loads in about a second, and moving an issue needs no fetch, commit and push; no task holds a GitHub token. The tracker is named apart from the forge and the issue model apart from its GitHub mapping, so another tracker, such as Jira beside Bitbucket, needs only its own store, client and mapping later. |
 
 ## Review
 
