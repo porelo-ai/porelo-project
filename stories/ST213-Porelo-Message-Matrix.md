@@ -13,7 +13,7 @@
 - [porelo-message-matrix#MX63](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx63) (Idea)
 - [porelo-message-matrix#MX64](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx64) (Idea)
 - [porelo-message-matrix#MX79](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx79) (Review)
-- [porelo-message-matrix#MX110](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx110) (Backlog)
+- [porelo-message-matrix#MX110](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx110) (Review)
 
 ## Data
 

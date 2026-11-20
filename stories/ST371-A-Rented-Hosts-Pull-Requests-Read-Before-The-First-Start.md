@@ -10,7 +10,7 @@
 
 - [porelo#B796](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b796) (Review)
 - [porelo-frontend#F608](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f608) (Review)
-- [porelo#B816](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b816) (Implementing)
+- [porelo#B816](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b816) (Review)
 
 ## Data
 
