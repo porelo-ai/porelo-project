@@ -6,8 +6,8 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | State | Stories |
 |---|---|
-| [Idea](#idea) | 83 |
-| [Accepted](#accepted) | 27 |
+| [Idea](#idea) | 82 |
+| [Accepted](#accepted) | 28 |
 | [Analyzed](#analyzed) | 31 |
 | [Estimated](#estimated) | 31 |
 | [Backlog](#backlog) | 51 |
@@ -21,7 +21,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 |---|---|---|---|
 | <a id="st210"></a>[ST210](ST210-Porelo-Frontend.md) porelo-frontend | 🔼 High | F:41 | A person gets the frontend repository as a named part of Porelo that is tracked as its own piece of work. |
 | <a id="st364"></a>[ST364](ST364-An-Agents-Own-Sign-In-Made-On-The-Host.md) An agent's own sign-in made on the host | 🔼 High | B:3 · F:2 · AG:1 · CC:1 · CX:1 · OM:1 · PI:1 | A person whose agent signs in through a provider's login (not an API key) signs that agent in on the host itself, so the host and the person's own machine each keep their own sign-in and neither signs the other out; API keys are still carried as before. |
-| <a id="st370"></a>[ST370](ST370-Stories-And-Issues-Kept-In-GitHub-Issues.md) Stories and issues kept in GitHub Issues | 🔼 High | none yet | A person plans in GitHub Issues instead of Markdown files in every repository: the board loads in about a second however many repositories the project has, and analysing, estimating or moving an issue needs no fetch, commit and push. A task still hands its result in to the planner, which writes it to GitHub with the person's own access; no task holds a GitHub token. |
 | <a id="st22"></a>[ST22](ST22-Machines-Asked-For-By-Kind-Only.md) Machines asked for by kind only | 🟰 Medium | BT:2 · B:1 | Machines are requested only by kind, so a call naming a specific provider or server type is refused with a message naming the kind to use. |
 | <a id="st36"></a>[ST36](ST36-Start-Local-Organization-And-Added-Providers.md) Start local, organization and added providers | 🟰 Medium | P:3 · B:1 · F:1 | A person can use local, organization HTTPS and added providers such as xAI, Zhipu and Z.AI, with supported ones starting and unsupported ones refused clearly. |
 | <a id="st37"></a>[ST37](ST37-The-Providers-Usage-Seen-In-A-Status-Line.md) The providers' usage seen in a status line | 🟰 Medium | B:1 · F:1 | A person sees all providers in use as one traffic light in the status line and can click to see each provider's usage. |
@@ -107,6 +106,7 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
+| <a id="st370"></a>[ST370](ST370-Stories-And-Issues-Kept-In-GitHub-Issues.md) Stories and issues kept in GitHub Issues | 🔼 High | none yet | A person plans in GitHub Issues instead of Markdown files in every repository: the board loads in about a second however many repositories the project has, and analysing, estimating or moving an issue needs no fetch, commit and push. A task still hands its result in to the planner, which writes it to GitHub with the person's own access; no task holds a GitHub token. |
 | <a id="st25"></a>[ST25](ST25-Rules-And-Document-Checks-A-Contributor-Meets.md) Rules and document checks a contributor meets | 🟰 Medium | PJ:4 · OM:1 | A contributor finds one guide to the rules from any repository, can run document checks where the agent works, and issues do not name things they should not. |
 | <a id="st58"></a>[ST58](ST58-Who-Wrote-It-And-What-It-Touches-Shown.md) Who wrote it and what it touches, shown on waiting work | 🟰 Medium | B:1 | A person sees on waiting work, and on each comment and finding, who wrote it and what it touches, as derived by the daemon. |
 | <a id="st73"></a>[ST73](ST73-Comments-Delivered-By-Who-Wrote-Them.md) Comments delivered by who wrote them | 🟰 Medium | B:2 · GH:2 · FC:1 | Comments on a task's pull request reach the task according to who wrote them, so internal accounts and listed partners count and others do not. |
