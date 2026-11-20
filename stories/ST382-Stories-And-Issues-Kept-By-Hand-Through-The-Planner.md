@@ -8,8 +8,8 @@
 
 **Issues:**
 
-- [porelo-planner#PL182](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl182) (Implementing)
-- [porelo-planner#PL183](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl183) (Idea)
+- [porelo-planner#PL182](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl182) (Review)
+- [porelo-planner#PL183](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl183) (Implementing)
 
 ## Data
 

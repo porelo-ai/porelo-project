@@ -8,8 +8,9 @@
 
 **Issues:**
 
-- [porelo#B796](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b796) (Backlog)
+- [porelo#B796](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b796) (Review)
 - [porelo-frontend#F608](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f608) (Review)
+- [porelo#B816](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b816) (Idea)
 
 ## Data
 
@@ -25,7 +26,8 @@
   "state": "Backlog",
   "issues": [
     "porelo#B796",
-    "porelo-frontend#F608"
+    "porelo-frontend#F608",
+    "porelo#B816"
   ]
 }
 ```
