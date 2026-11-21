@@ -1,6 +1,6 @@
 # ST384 — Builds fail only for a fault
 
-**Priority:** 🔼 High · **State:** Backlog
+**Priority:** 🔼 High · **State:** Implementing
 
 **What a user gains.** Whoever pushes to Porelo can trust a red Build: it fails only for a fault in what was pushed, never by chance of timing, a cache or a runner, so no Build is re-run to get past it.
 
@@ -21,7 +21,7 @@
 - [porelo-frontend#F632](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f632) (Review)
 - [porelo-message-sluice#SL59](https://github.com/porelo-ai/porelo-message-sluice/blob/main/issues/README.md#sl59) (Review)
 - [porelo-mcp#MC15](https://github.com/porelo-ai/porelo-mcp/blob/main/issues/README.md#mc15) (Review)
-- [porelo-adapters#GH38](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh38) (Backlog)
+- [porelo-adapters#GH38](https://github.com/porelo-ai/porelo-adapters/blob/main/issues/README.md#gh38) (Review)
 - [porelo-message-matrix#MX120](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx120) (Review)
 - [porelo-claude-code#CC83](https://github.com/porelo-ai/porelo-claude-code/blob/main/issues/README.md#cc83) (Review)
 - [porelo-pi#PI76](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi76) (Review)
