@@ -10,9 +10,9 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | [Accepted](#accepted) | 28 |
 | [Analyzed](#analyzed) | 30 |
 | [Estimated](#estimated) | 33 |
-| [Backlog](#backlog) | 48 |
-| [Implementing](#implementing) | 5 |
-| [Review](#review) | 1 |
+| [Backlog](#backlog) | 47 |
+| [Implementing](#implementing) | 3 |
+| [Review](#review) | 4 |
 | [Finished](#finished) | 148 |
 | [Rejected](#rejected) | 5 |
 
@@ -224,7 +224,6 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 | <a id="st15"></a>[ST15](ST15-The-Website-Builds-In-Its-Task.md) Move: The website builds in its task | ⏫ Highest | SI:2 · PJ:1 | The project website can be fully checked inside its own task, and the check passes with the Debian image and repository changes. |
 | <a id="st28"></a>[ST28](ST28-The-Setup-Move-And-Recovery-Proven-Together.md) The setup, move and recovery proven together | ⏫ Highest | HO:1 · PJ:1 | The setup, move to the host and recovery work together: a person brings up the project, runs local builds, moves each agent and restores the room and usage records. |
 | <a id="st293"></a>[ST293](ST293-Every-Agent-Works-In-A-Porelo-Task-Moved-One.md) Move: Every agent works in a Porelo task, moved one at a time | ⏫ Highest | HO:5 · MX:2 · B:1 · PJ:1 | Each agent of the project works in a Porelo task on the host, moved one at a time in a fixed order, each move checked before the next, all of them in the project's room. |
-| <a id="st369"></a>[ST369](ST369-Findings-Of-The-Second-Live-Test-On-A-Rented-Host.md) Findings of the second live test on a rented host | 🔼 High | PL:13 · F:12 · CC:3 · B:2 · CX:2 · OM:2 · PI:2 · AG:1 | A person who sets up a rented host and puts a project on it gives the host their forge token only where the window cannot hand it on by itself, and meets no other step of the second live test that stops, repeats or misleads them. |
 | <a id="st375"></a>[ST375](ST375-A-Rebuilt-Host-Set-Up-Again-In-The-Window-Alone.md) A rebuilt host set up again in the window alone | 🔼 High | F:5 · B:1 | A person whose rented host was rebuilt or rented again under the same name sets it up again in the window alone, is told plainly when files of an earlier setup are in the way, and sees how far handing on the token has come. |
 | <a id="st377"></a>[ST377](ST377-An-Idea-Discussed-On-A-Rented-Host-Comes-Through.md) An idea discussed on a rented host comes through | 🔼 High | B:2 · PL:1 | A person who discusses an idea on a rented host that carries only some of the project's repositories starts the discussion without fixing anything on the host by hand, the agent sees no errors for repositories that are not there, and the idea it writes down is saved the first time. |
 | <a id="st379"></a>[ST379](ST379-Every-Story-And-Issue-Read-And-Written-Robustly.md) Every story and issue read and written robustly | 🔼 High | PL:6 | A person sees every story and issue on the board, however it was edited by hand in the tracker: one the planner cannot fully read is shown with a warning and an offer to correct it, never left out. A field counts as set and is never checked against the text or the comments, and a write never deletes text the planner did not place. |
@@ -267,16 +266,17 @@ Priority: ⏫ Highest · 🔼 High · 🟰 Medium · 🔽 Low · ⏬ Lowest. Iss
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
-| <a id="st382"></a>[ST382](ST382-Stories-And-Issues-Kept-By-Hand-Through-The-Planner.md) Stories and issues kept by hand through the planner | ⏫ Highest | PL:2 | A person, or an agent acting for them, keeps the board by hand through the planner alone, on GitHub and in a local store alike: makes a story with its issues, hangs an issue into a story or out of it, sets what blocks it, corrects size, estimate, priority and rank, edits title and text, comments, splits an issue and cuts a release, without opening the tracker. |
 | <a id="st347"></a>[ST347](ST347-Every-Story-Played-Through-Once-As-A-User-Would.md) Every story played through once, as a user would | 🔼 High | HO:6 · B:5 · F:2 · PL:2 · CC:1 | Each High story's test runs once, automated, on a test VM the way a person would play it, at the command line or in the window, so a story's end is shown working before the person tries it. |
 | <a id="st370"></a>[ST370](ST370-Stories-And-Issues-Kept-In-GitHub-Issues.md) Stories and issues kept in GitHub Issues | 🔼 High | PL:8 · B:5 · BT:3 · FC:3 · F:2 · HO:1 · PJ:1 | A person plans in GitHub Issues instead of Markdown in every repository: the board loads in about a second, and moving an issue needs no fetch, commit and push; no task holds a GitHub token. The tracker is named apart from the forge and the issue model apart from its GitHub mapping, so another tracker, such as Jira beside Bitbucket, needs only its own store, client and mapping later. |
-| <a id="st371"></a>[ST371](ST371-A-Rented-Hosts-Pull-Requests-Read-Before-The-First-Start.md) A rented host's pull requests read before the first start | 🔼 High | B:2 · F:1 | A person whose project a rented host carries sees that project's open pull requests in Needs you before starting any work there, and where they cannot be read, is told the machine's reason instead of being told that it stopped answering. |
 | <a id="st384"></a>[ST384](ST384-Builds-Fail-Only-For-A-Fault.md) Builds fail only for a fault | 🔼 High | PL:2 · B:1 · F:1 · MX:1 · PI:1 | Whoever pushes to Porelo can trust a red Build: it fails only for a fault in what was pushed, never by chance of timing, a cache or a runner, so no Build is re-run to get past it. |
 
 ## Review
 
 | Story | Priority | Issues | What a user gains |
 |---|---|---|---|
+| <a id="st382"></a>[ST382](ST382-Stories-And-Issues-Kept-By-Hand-Through-The-Planner.md) Stories and issues kept by hand through the planner | ⏫ Highest | PL:2 | A person, or an agent acting for them, keeps the board by hand through the planner alone, on GitHub and in a local store alike: makes a story with its issues, hangs an issue into a story or out of it, sets what blocks it, corrects size, estimate, priority and rank, edits title and text, comments, splits an issue and cuts a release, without opening the tracker. |
+| <a id="st369"></a>[ST369](ST369-Findings-Of-The-Second-Live-Test-On-A-Rented-Host.md) Findings of the second live test on a rented host | 🔼 High | PL:13 · F:12 · CC:3 · B:2 · CX:2 · OM:2 · PI:2 · AG:1 | A person who sets up a rented host and puts a project on it gives the host their forge token only where the window cannot hand it on by itself, and meets no other step of the second live test that stops, repeats or misleads them. |
+| <a id="st371"></a>[ST371](ST371-A-Rented-Hosts-Pull-Requests-Read-Before-The-First-Start.md) A rented host's pull requests read before the first start | 🔼 High | B:2 · F:1 | A person whose project a rented host carries sees that project's open pull requests in Needs you before starting any work there, and where they cannot be read, is told the machine's reason instead of being told that it stopped answering. |
 | <a id="st385"></a>[ST385](ST385-Review-In-Intellij-On-Windows-Through-Wsl.md) Review in IntelliJ on Windows through WSL | 🔼 High | IJ:1 | A person on Windows whose Porelo runs in a WSL distribution reads and opens a waiting push from IntelliJ as on Linux, without changing their own git configuration. |
 
 ## Finished

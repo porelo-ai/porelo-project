@@ -1,6 +1,6 @@
 # ST382 — Stories and issues kept by hand through the planner
 
-**Priority:** ⏫ Highest · **State:** Implementing
+**Priority:** ⏫ Highest · **State:** Review
 
 **What a user gains.** A person, or an agent acting for them, keeps the board by hand through the planner alone, on GitHub and in a local store alike: makes a story with its issues, hangs an issue into a story or out of it, sets what blocks it, corrects size, estimate, priority and rank, edits title and text, comments, splits an issue and cuts a release, without opening the tracker.
 
@@ -21,7 +21,7 @@
   "gain": "A person, or an agent acting for them, keeps the board by hand through the planner alone, on GitHub and in a local store alike: makes a story with its issues, hangs an issue into a story or out of it, sets what blocks it, corrects size, estimate, priority and rank, edits title and text, comments, splits an issue and cuts a release, without opening the tracker.",
   "test": "In a test organization and in a local store, do each of these through the planner's API and then in the window: the change shows on the board and in the tracker, a stale revision is refused, and text the planner did not place stays.",
   "priority": "Highest",
-  "state": "Implementing",
+  "state": "Review",
   "issues": [
     "porelo-planner#PL182",
     "porelo-planner#PL183"

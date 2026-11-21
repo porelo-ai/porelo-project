@@ -1,6 +1,6 @@
 # ST371 — A rented host's pull requests read before the first start
 
-**Priority:** 🔼 High · **State:** Implementing
+**Priority:** 🔼 High · **State:** Review
 
 **What a user gains.** A person whose project a rented host carries sees that project's open pull requests in Needs you before starting any work there, and where they cannot be read, is told the machine's reason instead of being told that it stopped answering.
 
@@ -23,7 +23,7 @@
   "test": "On a rented host that carries a project, with the forge token stored and no work started there yet: Needs you shows no 'cannot be read' item for the project, and an open pull request on the host's forge shows as waiting for the person's merge. A machine that refuses the watch is shown with its own reason and as Refused.",
   "tested": null,
   "priority": "High",
-  "state": "Implementing",
+  "state": "Review",
   "issues": [
     "porelo#B796",
     "porelo-frontend#F608",
