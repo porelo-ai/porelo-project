@@ -12,7 +12,6 @@
 - [porelo-planner#PL189](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl189) (Review)
 - [porelo-frontend#F631](https://github.com/porelo-ai/porelo-frontend/blob/main/issues/README.md#f631) (Review)
 - [porelo#B818](https://github.com/porelo-ai/porelo/blob/main/issues/base/README.md#b818) (Implementing)
-- [porelo-pi#PI75](https://github.com/porelo-ai/porelo-pi/blob/main/issues/README.md#pi75) (Review)
 - [porelo-message-matrix#MX110](https://github.com/porelo-ai/porelo-message-matrix/blob/main/issues/README.md#mx110) (Review)
 - [porelo-planner#PL190](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl190) (Review)
 - [porelo-planner#PL191](https://github.com/porelo-ai/porelo-planner/blob/main/issues/README.md#pl191) (Review)
@@ -49,7 +48,6 @@
     "porelo-planner#PL189",
     "porelo-frontend#F631",
     "porelo#B818",
-    "porelo-pi#PI75",
     "porelo-message-matrix#MX110",
     "porelo-planner#PL190",
     "porelo-planner#PL191",
