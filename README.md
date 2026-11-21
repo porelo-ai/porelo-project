@@ -17,7 +17,7 @@ repository's chapter is <https://porelo-ai.github.io/porelo-project/>.
 | | |
 |---|---|
 | [`project.yml`](project.yml) | The project definition. What the repositories are, what class of trust a task runs under, what it may reach. |
-| `issues/` | The requirements that belong to the project rather than to one of its repositories. |
+| [Issues](https://github.com/porelo-ai/porelo-project/issues) | The stories, and the requirements that belong to the project rather than to one of its repositories, on the project board [porelo-ai/1](https://github.com/orgs/porelo-ai/projects/1). |
 
 ## What a project is, and why this repository exists
 
@@ -63,7 +63,7 @@ third of it.
 
 ## Planning happens here, work happens there
 
-A requirement starts here as markdown, in `issues/`. Once it is clear enough to say which
+A requirement starts here as an issue of this repository. Once it is clear enough to say which
 repository does what, it **moves into that repository as an issue** - and from then on it is that
 repository's, reviewed through that repository's gate like anything else.
 

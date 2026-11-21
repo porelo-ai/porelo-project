@@ -40,11 +40,11 @@ again.
 |---|---|---|---|
 | [Anthropic](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#the-providers-porelo-ships) | its own agent, natively | subscription token or API key | the case already built |
 | [OpenRouter](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#the-providers-porelo-ships) | any agent speaking the OpenAI dialect | API key, as a bearer token | the second case built, and the first with an agent not its own |
-| [OpenAI](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md) | its own agent, or any speaking its dialect | account or API key | the most imitated dialect |
-| [Google](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md) | its own agent, or a provider-agnostic one | account or API key | one agent each |
+| [OpenAI](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#the-providers-porelo-ships) | its own agent, or any speaking its dialect | account or API key | the most imitated dialect |
+| [Google](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#the-providers-porelo-ships) | its own agent, or a provider-agnostic one | account or API key | one agent each |
 | [GitHub Copilot](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#the-providers-porelo-ships) | its own agent, or as a provider inside others | forge account, granted once by device flow; the token never expires | shipped, measured with two agents |
-| [xAI](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md) | its own agent, or its public API | subscription or API key | one agent each |
-| [Zhipu](https://github.com/porelo-ai/porelo/blob/main/issues/providers/README.md) | an endpoint compatible with another vendor's dialect | API key, in a variable of its own | **the broker's destination endpoint cannot be a constant** |
+| [xAI](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#the-providers-porelo-ships) | its own agent, or its public API | subscription or API key | one agent each |
+| [Zhipu](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#the-providers-porelo-ships) | an endpoint compatible with another vendor's dialect | API key, in a variable of its own | **the broker's destination endpoint cannot be a constant** |
 
 Pi reaches GitHub Copilot through the broker, with the sign-in on the host
 ([a subscription granted once](https://github.com/porelo-ai/porelo/blob/main/doc/credentials.md#a-subscription-granted-once-github-copilot)).

@@ -72,11 +72,9 @@ into a shared skill or this block, one that concerns only this machine into `.AG
 
 ## Work in this repository
 
-- **This repository holds no product code**, only `project.yml` and the requirements not yet placed.
-  There is no build: it is Markdown.
-- **A requirement moves to the repository that builds it as a handover, not a copy.** This
-  repository's issue prefixes are `PJ`, and `A` for candidate agents without a repository; they are
-  not in `project.yml`, because `project.yml` is defined here.
+- **This repository holds no product code**, only `project.yml` and its documentation; the stories and the
+  requirements not yet placed are its GitHub Issues. There is no build: it is Markdown.
+- **A requirement moves to the repository that builds it as a handover, not a copy.**
 - **`project.yml`'s keys are documented in `porelo`, under `doc/project-file.md`**, not here.
 
 | Before you | Load |

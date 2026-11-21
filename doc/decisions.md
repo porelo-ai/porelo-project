@@ -126,11 +126,11 @@ project of its own for each repository scatters the person's work and lists one 
 a signature on what the repository sets keeps the rule that nobody widens a task's reach by a commit alone. **What
 would change the answer:** a setting that cannot be judged where it is allowed or signed.
 
-## An issue's and a story's data stand in a JSON head
+## Stories and issues live in GitHub Issues
 
-Each issue and each story keeps its data - number, title, state, size, priority, what blocks it, the one line its index
-shows - in one JSON object at the top of its own file, checked by a schema shared by every repository; the prose below
-it stays Markdown, written by hand. Every `issues/README.md` and `stories/README.md` is generated from the heads, and
-the document checks refuse an index edited by hand. **Why:** the data stood twice, in the file and in an index row,
-kept in step by hand, and every tool parsed Markdown tables; one checked place per issue serves every tool alike and
-leaves nothing to drift. **What would change the answer:** a tool that cannot read a JSON head.
+Every story and issue is a GitHub issue of its repository, a story one of porelo-project's, on one project board
+(`porelo-ai/1`, named by `project.yml`'s tracker) whose fields hold state, priority, size and worker; a story's issues
+are its sub-issues. No repository keeps Markdown issue files, an index or stories. **Why:** Markdown files kept the data
+twice and in every repository, every tool parsed them, and a person saw the plan only through a checkout; the board is
+one place the planner reads and writes and a person sees in the browser. **What would change the answer:** a project
+with only a local forge, which needs an issues store of its own.

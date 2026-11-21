@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Holds a pull request's commits to the shared rule on commit messages; one from outside also carries its author's
 # Signed-off-by: on each commit. porelo-project has no Maven build, so porelo-release is built from porelo-buildtools'
-# main, as stories-check.sh does.
+# main.
 #
 # Usage: commits-check.sh ROOT RANGE [--outside], with this repository checked out as ROOT/porelo-project.
 set -euo pipefail

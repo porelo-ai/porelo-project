@@ -16,15 +16,14 @@ product owner. A requirement that belongs to the project as a whole, or is not y
 
 ## Issues
 
-Every open task is a file in its repository's `issues/`, listed in that folder's `README.md`. Each
-repository has its own prefixes, named in [`project.yml`](https://github.com/porelo-ai/porelo-project/blob/main/project.yml)
-(`B` for the core, `F` for the interface, and so on). An issue says what must be true and how it is
-judged done, and moves through states of which the operator sets the deciding ones
-([Issues](https://github.com/porelo-ai/porelo-project/blob/main/AGENTS.md#issues)).
+Every open task is a GitHub issue of the repository that builds it, and every story an issue of
+[porelo-project](https://github.com/porelo-ai/porelo-project/issues), all on the project board
+[porelo-ai/1](https://github.com/orgs/porelo-ai/projects/1), which `project.yml` names as the project's tracker. An
+issue says what must be true and how it is judged done, and moves through the board's states, of which the operator
+sets the deciding ones.
 
 **From outside, a change starts as a GitHub issue** in the repository it belongs to: what should be
-true, and why. Once it is agreed there, it becomes an issue file, and a pull request for it is
-welcome.
+true, and why. Once it is agreed there, a pull request for it is welcome.
 
 ## Making a change
 
