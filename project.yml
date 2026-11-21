@@ -161,3 +161,33 @@ mail:
         matrix: {}
     peers:
         michi: { address: "matrix:", trust: external }
+
+# The tracker that keeps the stories and issues since the carry-over.
+tracker:
+    kind: "github"
+    project: "porelo-ai/1"
+
+# What the planner starts each repository's velocity from until enough items are measured: median
+# wall minutes from the Markdown era's records, core on its own and every other repository on one
+# shared grid, since the spread within a size is wider than the differences between repositories.
+velocity:
+    seed:
+        core:          { XS: 15, S: 40, M: 80, L: 120, XL: 240 }
+        frontend:      { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        sluice:        { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        matrix:        { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        claude:        { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        pi:            { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        omp:           { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        codex:         { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        agy:           { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        buildtools:    { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        parent:        { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        github:        { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        forge-clients: { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        ecosystems:    { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        intellij:      { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        host:          { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        site:          { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        mcp:           { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
+        planner:       { XS: 10, S: 25, M: 50, L: 80, XL: 160 }
