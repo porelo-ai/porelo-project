@@ -19,6 +19,9 @@ description: porelo-project rules for stories: a story as an issue of this repos
   leaves.
 - **Every issue not in Idea appears in the story it serves.** Add a new or split issue to it when it leaves Idea, is
   filed in a later state or is started; an issue no story fits gets a new story.
+- **A story in work is not widened**: a new issue joins it only when it is a bug or the story cannot be finished
+  without it. Any other finding made during a work package goes into that package's follow-up story, which the person
+  reviews as a whole.
 - **A story's priority is the highest priority of its issues before Review**, changed with theirs. A story whose only
   open work is the operator's live test keeps the test's priority; one with nothing open before Review keeps its own;
   a story the operator set to Low stays Low and its open issues go down to Low.
