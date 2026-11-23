@@ -22,6 +22,9 @@ description: porelo-project rules for stories: a story as an issue of this repos
 - **A requirement here is planned as an issue only while it is not split.** Once its parts are filed in the
   repositories that build them, the story names those parts; one built by a single repository is handed over and
   leaves.
+- **A part of a story is placed in the repository whose responsibility it is**, by that repository's and module's
+  README boundary and what it must never depend on, never in the one that happens to reach the forge or call the
+  code nearby; the coordinator checks the boundary before filing a part, and a part outside it goes to its owner.
 - **Every issue not in Idea appears in the story it serves.** Add a new or split issue to it when it leaves Idea, is
   filed in a later state or is started; an issue no story fits gets a new story.
 - **A story in work is not widened**: a new issue joins it only when it is a bug or the story cannot be finished
