@@ -14,6 +14,11 @@ description: porelo-project rules for stories: a story as an issue of this repos
 - **A story's states and their changes are an issue's.** The coordinator sets Analyzed, Implementing and Review; the
   person sets the rest. A story with no issue is an Idea. A story waits in Review only with every issue it needs in
   Review, Finished or Rejected; its Finished, with the day its test passed, sets those still in Review to Finished.
+- **Before Review, a story stands where its furthest issue stands**, counting only issues not rejected: a story is
+  in a state of active building (Implementing, Reading, Reworking) only while one of its issues is, and then in the
+  furthest of them, however many still wait in Idea; without one, an issue in Review or
+  later counts as Backlog, so the story stands at most in Backlog. A blocked issue shows as blocked and moves no story
+  back. Each issue that stands before its story's state is shown as a warning on the story.
 - **A requirement here is planned as an issue only while it is not split.** Once its parts are filed in the
   repositories that build them, the story names those parts; one built by a single repository is handed over and
   leaves.
