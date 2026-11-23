@@ -26,6 +26,9 @@ The agent working here coordinates the agents of the other repositories.
 - **Coordination follows the plan's open issues, not the posts**: nobody waits on Review or a push,
   dependents build on what stands, and a new architecture decision first lists the issues it makes
   needless and stops them at once.
+- **An interface that several repositories build against is agreed and provided first**: the providing agent agrees
+  it in the room with every agent that uses it and posts it as a local commit before the work behind it, so no
+  dependent agent is blocked; a gap one of them finds goes back to the provider first.
 - **A story's issues are pushed in the same round as the story, porelo-project last**, so its stories
   check finds each one on `main`; they never wait for a code commit.
 - **Before asking the operator, or passing on an agent's claim ("never ran", a sum of sizes), look
