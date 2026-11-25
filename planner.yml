@@ -1,0 +1,7 @@
+# The planner's own settings for this planning repository; Porelo's project.yml carries none of them.
+# Every key is documented in the porelo-planner repository, doc/index.md.
+
+# The tracker that keeps the stories and issues: the GitHub project porelo-ai/1.
+tracker:
+    kind: github
+    project: porelo-ai/1
