@@ -11,8 +11,10 @@ description: porelo-project rules for stories: a story as an issue of this repos
   `porelo-ai/1`: a function of value to a user, the test the person runs at its end, its priority and state, and
   every issue it needs as its sub-issues. Work follows the stories' priority. Stories and issues are read and written
   through the planner, never by hand on GitHub's fields.
-- **A story's states and their changes are an issue's.** The coordinator sets Analyzed, Implementing and Review; the
-  person sets the rest. A story with no issue is an Idea. A story waits in Review only with every issue it needs in
+- **A story's states and their changes are an issue's.** The coordinator moves an issue as the planner's own work
+  rules do: into a stage's working state when the person orders that stage, and into its done state when the stage's
+  work is handed in (In analysis to Analyzed, Under estimation to Estimated, Preparing for Backlog to Backlog,
+  Implementing to Review). The person orders each stage and sets New, Accepted, Finished and Rejected. A story with no issue is an Idea. A story waits in Review only with every issue it needs in
   Review, Finished or Rejected; its Finished, with the day its test passed, sets those still in Review to Finished.
 - **Before Review, a story stands where its furthest issue stands**, counting only issues not rejected: a story is
   in a state of active building (Implementing, Reading, Reworking) only while one of its issues is, and then in the
