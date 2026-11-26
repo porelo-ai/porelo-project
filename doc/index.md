@@ -40,3 +40,7 @@ much as from the command line, for someone who has never used Porelo.
   tools per stack, and how a repository's audit measures them.
 - [Moving an agent](moving-an-agent.md): how each agent moves into a Porelo task, one at a time,
   and how each move is checked.
+- [Porelo compared](feature-comparison.md): what Porelo has, plans and lacks, beside twelve tools that
+  isolate or run coding agents.
+- [Security guidelines](security-guidelines.md): twenty security guidelines for AI coding tools,
+  compared point by point with what Porelo does.
